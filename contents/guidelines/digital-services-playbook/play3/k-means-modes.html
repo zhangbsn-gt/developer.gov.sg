@@ -1,0 +1,69 @@
+---
+title: K-Means / K-Modes Clustering
+layout: layout-sidenav
+permalink: /discover/understand-how-your-service-is-performing/k-means-modes/
+---
+
+<div class="row">
+    <div class="col">
+        <h3 class="has-text-weight-semibold margin--bottom">Grouping your Data</h3>
+        <p>K-means clustering is a commonly used way to group data points by their numeric characteristics. For example, if you have a dataset that looks like the 1st table below, where each row represents all the information about a single person and all the information you have about each person is numeric (rather than categorical), you can perform k-means clustering on it.</p>
+        <p>K-modes clustering is an extension of k-means, grouping data points by their numeric and categorical characteristics. If you have a dataset that looks like the 2nd table below, where each row again represents all the information about a single person, but this information includes numeric and categorical aspects, k-means won’t work, but you can perform k-modes clustering on it. Generally, k-modes clustering is more flexible than k-means clustering, but it is also slower.</p>
+        <p>In k-means / k-modes clustering, this is what (essentially) happens:</p>
+        <ul>
+            <li>Researcher: Hey computer, here’s my dataset. Divide the observations into k clusters.</li>
+            <li>Computer: Okay. [Runs the k-means / k-modes algorithm] Here you go.</li>
+        </ul>
+        <p>What this means is that as the researcher, you have no input during the actual clustering process. All your decisions (cleaning the dataset, identifying relevant variables, selecting the number k) are made beforehand.</p>
+        <p>Then you hand over to the computer, and it will do the heavy lifting for you with no user bias. Depending on how large your dataset is, it can take quite a while for the algorithm to finish running.</p>
+        <h5 class="has-text-weight-semibold margin--top--lg margin--bottom">Preparing the Data</h5>
+        <p>Arrange your data such that each row refers to a single observation (this can be a person, an organization, etc.) in the dataset, and all the information related to that observation is on the same row, in different columns.</p>
+        <p>Make a copy of your dataset. Work on the copy henceforth so that you can always revert to the original version if you change your mind.</p>
+        <p>Look at the information captured in the column variables, and identify which variable meets at least 1 of the following criteria:</p>
+        <ul>
+            <li>Your exploratory analysis shows that this variable is significantly correlated with your area of interest (e.g. your scatterplot suggests that education level is correlated with family size);</li>
+            <li>You think people who are different in this aspect (e.g. different races, different education levels) may behave differently in your area of interest;</li>
+            <li>Previous research literature has identified this as an important issue for your area of interest.</li>
+        </ul>
+        <p>Drop all other variables from your dataset, leaving only those that meet the criteria above. Clustering will be performed using these variables. Use k-means clustering if all the variables are numeric, and k-modes otherwise.</p>
+        <h5 class="has-text-weight-semibold margin--top--lg margin--bottom">Deciding the Numbers of Clusters</h5>
+        <p>The k-means / k-modes algorithm will not recommend an appropriate number of clusters, k, to you. This decision has to be made by you before the algorithm is run. But how do you know what number is appropriate?</p>
+        <p>If you choose a very large number for k, you can group your observations such that the observations within each cluster are extremely similar to one another, with nuanced characteristics that would have been lost in larger clusters. However, such clusters are probably not very useful—suppose the target group for your policy contains 100,000 people, and you have successfully grouped them into 1,000 clusters of 100+ people each, do you actually want to tailor your implementation approach for 1,000 different profiles?</p>
+        <p>If you choose a very small number for k, you end up with large clusters, which are unlikely to be distinct from one another. Such clusters are probably not very useful, either, because you might as well perform analysis on the entire group.</p>
+        <p>In our experience, the sweet spot (for policy work, at least) is somewhere in the single digit region, between 3 and maybe 7-8. On a technical level, you want to pick the k just before diminishing marginal returns set in (i.e. if you increase beyond this value for k, you will continue to get more nuanced clusters, but the improvements are much smaller than what you got up to this value). There are a few options to pick this k. For now, we will only cover the first one, the elbow method:</p>
+        <p>Elbow Method: Try out a reasonable range of values for k and plot out the amount of variation explained by each option. Look at the resulting curve & visually identify where a sharp turn (i.e. the ‘elbow’) occurs. Use the value at the elbow as your k.</p>
+        <p>Note that this method requires you to perform the clustering repeatedly for each possible value of k. If your dataset is too large for this to be done within a reasonable amount of time, you can take a sample from the dataset and work on that instead. Repeat with a few different samples in case your initial sample was not a good representation of your full dataset.</p>
+        <h5 class="has-text-weight-semibold margin--top--lg margin--bottom">Performing the Clustering</h5>
+        <p>RUNNING THE K-MEANS FUNCTION IN R</p>
+        <p>The k-means function is available from R’s stats package, which is loaded automatically when you start R. To run it, simply enter the following:</p>
+        <code>result <- kmeans(<your dataset>, <k>)</code>
+        <p class="margin--top">When the function is done, you can obtain a vector of integers (values ranging from 1 to k) indicating which cluster each observation has been allocated, by entering result$cluster. You can also view the characteristics for each cluster by entering result$centers. Check out R’s help page for kmeans for more details.</p>
+        <p>RUNNING THE K-MODES FUNCTION IN R</p>
+        <p>The k-modes function is an in-house function written by us [ ]. Save the script to your computer & load it into R:</p>
+        <code>source(“< where/you/saved/the/script/km.R >”)</code>
+        <p class="margin--top">To run it, enter the following:</p>
+        <code>result <- km(<your dataset>, <k>)</code>
+        <p class="margin--top">When the function is done3, you can obtain a vector of integers (values ranging from 1 to k) indicating which cluster each observation has been allocated, by entering result$cluster. You can also view the characteristics for each cluster by entering result$modes.</p>
+        <h5 class="has-text-weight-semibold margin--top--lg margin--bottom">Interpreting Results</h5>
+        <p>Append the cluster vector to your original dataset (including any variable that you might have dropped during the pre-processing stage) and compare the characteristics for each cluster. Examine all the characteristics and identify those significantly different from the population baseline. Based on these characteristics, build up a narrative for each cluster.</p>
+        <p>Here are two functions [ & ] that you may find useful for this purpose. They compare a characteristic of your choice (either categorical or numeric) by the cluster assignment, and return you the results in a table so you can easily tell whether some clusters are markedly different from others.</p>
+        <code> > cp(dataset$marital, dataset$cluster) </code>
+        <p class="margin--top">How to read this table: Each column represents one cluster. Each row represents one category in the categorical variable. Within each cluster column, you see the percentage of observations in this cluster that fall into this category. The last column shows the overall percentage of observations that fall into this category, while the last row shows the overall percentage of observations in each cluster (i.e. the population baseline).</p>
+        <p>Interpretation: Cluster 1 is predominantly single, while cluster 2 is predominantly married (contrast with the overall situation, where 36% are single & 46% are married). Cluster 3 seems to be relatively close to the population baseline, where cluster 4 has a significant proportion of divorcees.</p>
+        <code> > cp.n(dataset$height, dataset$cluster) </code>
+        <p class="margin--top">How to read this table: Each column represents one cluster. Each row represents one summary statistic (minimum, 25th percentile, 50th percentile, mean, 75th percentile, and maximum) for the numeric variable. With each cluster column, you see the number for that summary statistic. The last column shows the number for that summary statistic in the overall group (i.e. the population baseline).</p>
+        <p>Interpretation: The people in clusters 1 and 5 are relatively short, while the people in clusters 2 and 4 are relatively tall. Cluster 3 appears to be relatively close to the overall baseline. (There are 2 clusters each for short and tall people. Perhaps these people got assigned into different clusters because they differ in some other respect. Remember to run the comparison for all other variables!)</p>
+        <h5 class="has-text-weight-semibold margin--top--lg margin--bottom">Points to Note</h5>
+        <p>The k-means / k-modes algorithms presented here have certain limitations, which you should keep in mind so that you don’t become overly reliant on them:</p>
+        <ul>
+            <li>The results are susceptible to your choice of k, so a different k can lead to very different clusters. Be prepared to justify your choice</li>
+            <li>The algorithms work by randomly selecting k observations as cluster starting points within the data, and iterate through all observations to match them to the nearest cluster until a stable equiplibrium is reached. If you re-run the algorithm, you may end up with different cluster assignments</li>
+            <li>The algorithms place equal importance on each variable in the dataset during the clustering process, and does not take into account any natural grouping among the variables (e.g. you may want to consider income and wealth variables together, such that people with similar characteristics for all related variables are allocated the same cluster). This is not done here, which may lead to suboptimal clustering choices</li>
+            <li>The algorithms are not ideal for graphical output. If you want to visualize your dataset in a 2- or 3-dimensional space to show clusters, there is no ready way to do so using the results from these algorithms</li>
+        </ul>
+    </div>
+</div>
+
+<hr class="margin--bottom--lg margin--top--lg">
+
+{%- include sgds-feedback.html -%}

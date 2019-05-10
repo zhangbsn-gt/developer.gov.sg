@@ -1,0 +1,29 @@
+title: Government Developer Portal
+
+email: johnson_koh@tech.gov.sg
+
+description: Extend Government's Potential
+
+baseurl: ""
+
+url: "https://developer.gov.sg"
+
+last_updated: 5 June 2018
+
+markdown: kramdown
+
+plugins:
+  - jekyll-assets
+  - jekyll-seo-tag
+
+breadcrumbs:
+  root:
+    hide: false
+    image: false # Show image or title text
+
+assets:
+  sources:
+    - fonts
+
+exclude:
+  - discourse/
