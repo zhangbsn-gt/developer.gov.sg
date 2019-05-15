@@ -5,7 +5,7 @@ permalink: /terms/
 category: Terms
 breadcrumb: Terms
 ---
-{% include contribute-term.html %} <!-- Contains vue template for contribution-form -->
+{% include vue-app-terms-contribute-form.html %} <!-- Contains vue template for contribution-form -->
 <div id="terms">
     <div :style="contributeButtonContainerStyle">
         <button type="button" class="sgds-button default" v-on:click="showContributionForm = !showContributionForm">
@@ -31,4 +31,4 @@ breadcrumb: Terms
     </div>
 </div>
 
-<script src="/assets/js/search-vue-app.js" type="text/javascript"></script>
+<script src="/assets/js/vue-app-terms.js" type="text/javascript"></script>
