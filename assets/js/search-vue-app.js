@@ -1,15 +1,30 @@
+const contributionForm = {
+    delimiters: ["((", "))"], // {{}} clashes with jekyll's templating, must change
+    template: '#contribute-terms',
+    data: function() {
+        return {
+        }
+    }
+}
+
 const vm = new Vue({
     el: '#terms',
     delimiters: ["((", "))"], // {{}} clashes with jekyll's templating, must change
+    components: { 'contribution-form': contributionForm },
     data: {
         terms: [],
         search: '',
         displaySearchResults: false,
-        searchBarStyles: {
+        showContributionForm: false,
+        searchBarStyle: {
             display: 'flex'
         },
-        filteredTermStyle: {
-
+        contributeButtonContainerStyle: {
+            display: 'flex',
+            flexDirection: 'row-reverse'
+        },
+        contributionFormStyle: {
+            padding: '1rem 0'
         }
     },
     computed: {
@@ -24,7 +39,7 @@ const vm = new Vue({
                     const link = term.link.toLowerCase();
                     return name.indexOf(searchLowercase) !== -1 ||
                         fullName.indexOf(searchLowercase) !== -1 ||
-                        description.indexOf(searchLowercase) !== -1 || 
+                        description.indexOf(searchLowercase) !== -1 ||
                         link.indexOf(searchLowercase) !== -1 ||
                         term.category.indexOf(searchLowercase) !== -1;
                 })
@@ -48,6 +63,7 @@ const vm = new Vue({
         })
     }
 });
+
 function sortLoadedTerms(terms) {
     terms.sort(function(a, b) {
         var nameA = a.name.toUpperCase();
