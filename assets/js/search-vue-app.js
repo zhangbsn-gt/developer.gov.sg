@@ -3,6 +3,31 @@ const contributionForm = {
     template: '#contribute-terms',
     data: function() {
         return {
+            form: {} // See template for all fields
+        }
+    },
+    methods: {
+        encode: function(data) {
+            const encodedDataArray = [];
+            for (const key in data) {
+                if (data.hasOwnProperty(key)) {
+                    encodedDataArray.push(encodeURIComponent(key) +
+                    '=' + encodeURIComponent(data[key]))
+                }
+            }
+            return encodedDataArray.join('&');
+        },
+        handleSubmit: function() {
+            const axiosConfig = {
+                header: { "Content-Type": "application/x-www-form-urlencoded" }
+            };
+            const dataToEncode = this.form;
+            dataToEncode["form-name"] = "contribute-terms-form", // check template
+            axios.post(
+                "/",
+                this.encode(dataToEncode),
+                axiosConfig
+            );
         }
     }
 }
