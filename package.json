@@ -5,6 +5,8 @@
   "main": "",
   "dependencies": {
     "@octokit/rest": "^16.25.5",
+    "encoding": "^0.1.12",
+    "js-yaml": "^3.13.1",
     "netlify-lambda": "^1.4.7"
   },
   "devDependencies": {},

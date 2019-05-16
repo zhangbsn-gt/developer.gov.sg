@@ -2,6 +2,7 @@ const Octokit = require("@octokit/rest");
 const octokit = new Octokit({
     auth: process.env.GITHUB_TOKEN
 });
+const yaml = require('js-yaml');
 
 exports.handler = async function(event, context, callback) {
     let form = event.payload;
@@ -16,9 +17,11 @@ exports.handler = async function(event, context, callback) {
         path: "_data/terms.yml"
     });
 
-    let termsFile = Buffer.from(contents.data.content, "base64").toString();
+    let termsFileYaml = Buffer.from(contents.data.content, "base64").toString();
+    
+    let terms = yaml.safeLoad(termsFileYaml);
 
-    let { name, email, term, category, description, link } = form;
+    console.log(JSON.stringify(terms, null, 2));
 
     callback(null, {
         statusCode: 200,
