@@ -39,7 +39,7 @@ exports.handler = async function(event, context, callback) {
     });
 
     const newBranchId = await generateId();
-    const newRefName = "heads/terms-" + new Date().toISOString().substring(0, 11) + newBranchId;
+    const newRefName = `heads/terms-${new Date().toISOString().substring(0, 10)}-${newBranchId}`;
     const newRef = await octokit.git.createRef({
         owner: repoOwner,
         repo: "developer.gov.sg",
