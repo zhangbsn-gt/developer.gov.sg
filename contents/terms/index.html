@@ -27,10 +27,10 @@ breadcrumb: Terms
         </button>
     </div>
     <div v-if="showContributionForm" :style="contributionFormStyle">
-        <contribution-form></contribution-form>
+        <contribution-form v-on:form-submit-success="showContributionForm = false"></contribution-form>
     </div>
     <label for="search-input">
-        Search an initialism or acronym:
+        Search a government technology initialism or acronym:
     </label>
     <div v-bind:style="searchBarStyle">
         <input
