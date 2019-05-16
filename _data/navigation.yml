@@ -6,18 +6,47 @@
 
      - title: Inception
        url: /workflows/inception/
+       lvl3:
+          - title: Form Cross-Functional Team
+            url: /workflows/inception/form-team/
+          - title: Identify What You Will Need
+            url: /workflows/inception/what-you-need/
+          - title: Identify Product Features
+            url: /workflows/inception/product-backlog/
 
      - title: Construction and Iteration
        url: /workflows/construction-iteration/
+       lvl3:
+          - title: Use Design System
+            url: /workflows/construction-iteration/design-system/
+          - title: Design for Accessibility
+            url: /workflows/construction-iteration/design-accessibility/
+          - title: Create a Website
+            url: /workflows/construction-iteration/create-website/
+          - title: Create a Microservice
+            url: /workflows/construction-iteration/create-microservice/
 
      - title: Release
        url: /workflows/release/
+       lvl3:
+          - title: Ensure Production Readiness
+            url: /workflows/release/production-readiness/
+          - title: Deploy the Solution
+            url: /workflows/release/deploy-solution/
 
      - title: Production
        url: /workflows/production/
+       lvl3:
+          - title: Monitor System Performance
+            url: /workflows/production/monitor-system-performance/
+          - title: Prepare for Disaster
+            url: /workflows/production/prepare-for-disaster/
 
      - title: Retirement
        url: /workflows/retirement/
+       lvl3:
+          - title: Migrate Users to New Product
+            url: /workflows/retirement/migrate-users/
 
 - title: Products
   url: /products/
@@ -25,144 +54,116 @@
      - title: Analytics
        url: /products/analytics/
        lvl3:
-          - title: Whole-of-Government Application Analytics
+          - title: WOGAA
             url: /products/analytics/wogaa/
           - title: Sentimeter
-            url:
+            url: /products/analytics/sentimeter/
 
      - title: Blockchain
-       url:
+       url: /products/blockchain/
        lvl3:
           - title: OpenCerts
-            url:
+            url: /products/blockchain/opencerts/
 
      - title: Business Application
-       url:
+       url: /products/business-application/
        lvl3:
-          - title: Initials
-            url:
           - title: FormSG
-            url:
+            url: /products/business-application/formsg/
           - title: OpenDoc
-            url:
+            url: /products/business-application/opendoc/
           - title: GoSG
-            url:
-          - title: LicenseOne
-            url:
+            url: /products/business-application/gosg/
 
      - title: Chat Bot
-       url:
+       url: /products/chatbot/
        lvl3:
           - title: Ask Jamie
-            url:
-
-     - title: Collaboration
-       url:
-       lvl3:
-          - title: Digital Workplace
-            url:
-          - title: Aura
-            url:
+            url: /products/chatbot/ask-jamie/
 
      - title: Content Management
-       url:
+       url: /products/content-management/
        lvl3:
           - title: Isomer
-            url:
+            url: /products/content-management/isomer/
           - title: Content Website Platform
-            url:
+            url: /products/content-management/content-website-platform/
 
      - title: CI/CD/CT
-       url:
+       url: /products/ci-cd-ct/
        lvl3:
           - title: SHIP
-            url:
+            url: /products/ci-cd-ct/ship/
           - title: HATS
-            url:
+            url: /products/ci-cd-ct/hats/
 
      - title: Data Sharing
-       url: /products/application-integration/
+       url: /products/data-sharing/
        lvl3:
           - title: Data.Gov.Sg
-            url:
-          - title: IRAS API
-            url:
-          - title: OneMap
-            url:
-          - title: NDI API
-            url:
-          - title: Land Transport DataMall
-            url:
-          - title: MAS APIs
-            url:
-          - title: SingStat
-            url:
-          - title: Trees.Sg
-            url:
-          - title: URA Space
-            url:
+            url: /products/data-sharing/data-gov-sg/
+          - title: NDI-API
+            url: /products/data-sharing/ndi-api/
           - title: APEX
-            url: /products/application-integration/apex/
-          - title: Sensor Data Exchange
-            url:
+            url: /products/data-sharing/apex/
+          - title: OneMap
+            url: /products/data-sharing/onemap/
+          - title: Land Transport Data Mall
+            url: /products/data-sharing/land-transport-data-mall/
+          - title: IRAS API
+            url: /products/data-sharing/iras-api/
+          - title: MAS API
+            url: /products/data-sharing/mas-api/
           - title: Networked Trade Platform
-            url:
+            url: /products/data-sharing/networked-trade-platform/
           - title: Enterprise Data Hub
-            url:
+            url: /products/data-sharing/enterprise-data-hub/
 
      - title: Design
-       url:
+       url: /products/design/
        lvl3:
           - title: Design System
-            url:
+            url: /products/design/design-system/
 
      - title: Grants
-       url:
+       url: /products/grants/
        lvl3:
-          - title: Business Grants Portal
-            url:
-          - title: TRANS Grants
-            url:
+          - title: TRANS Grant
+            url: /products/grants/trans-grant/
 
      - title: Hosting
-       url:
+       url: /products/hosting/
        lvl3:
           - title: Government Commercial Cloud
-            url:
+            url: /products/hosting/government-commercial-cloud/
           - title: Government Private Cloud
-            url:
+            url: /products/hosting/government-private-cloud/
           - title: NECTAR
-            url:
+            url: /products/hosting/nectar/
 
      - title: Identity Management
-       url:
+       url: /products/identity-management/
        lvl3:
-          - title: National Digital Identity
-            url:
           - title: SingPass
-            url:
+            url: /products/identity-management/singpass/
           - title: CorpPass
-            url:
+            url: /products/identity-management/corppass/
           - title: MyInfo
-            url:
+            url: /products/identity-management/myinfo/
           - title: Unique Entity Number
-            url:
-          - title: Passport
-            url:
+            url: /products/identity-management/unique-entity-number/
 
      - title: Marketplaces
-       url:
+       url: /products/marketplaces/
        lvl3:
-          - title: GEMS
-            url:
           - title: CloudStore
-            url:
+            url: /products/marketplaces/cloudstore/
 
      - title: Security
-       url:
+       url: /products/security/
        lvl3:
           - title: GITSIR
-            url:
+            url: /products/security/gitsir/
 
 - title: Guidelines
   url: /guidelines/
