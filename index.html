@@ -3,35 +3,59 @@ title: Home
 layout: layout-default
 ---
 
-<div id="notification-bar" class="sgds-notification has-background-dark has-text-warning is-marginless">
+<div id="notification-bar" class="sgds-notification bg-primary is-marginless">
     <div class="sgds-container">
         <div class="row">
-            <div class="col">
-                <p><span class="sgds-icon sgds-icon-circle-info"></span> This website is in beta - your valuable feedback will help us in improving it.</p>
+            <div class="col has-text-centered has-text-white">
+                <h6>This website is in beta - your valuable feedback will help us in improving it.</h6>
             </div>
         </div>
     </div>
 </div>
 
-<section class="sgds-section has-background-black">
-    <div class="sgds-container">
-        <div class="row has-text-white">
-            <div class="col is-6 is-offset-1">
-                <h3 class="display padding--bottom--lg"><b>Developer Portal</b></h3>
-                <h6>Build Gov Digital Services with reusable components, dig into our technical documentation, and share ideas with the communities.</h6>
+<section class="sgds-hero bg-hero">
+    <div class="sgds-hero-body sgds-container is-fluid">
+        <div class="row is-vcentered">
+            <div class="col is-8 is-offset-2 has-text-centered has-text-white">
+                <h1 class="display"><b>Government Developer Portal</b></h1>
+                <br>
+                <h5 class="is-hidden-mobile">Build your first digital service with government products, dig into our technical documentation, or share your ideas with the community.</h5>
             </div>
         </div>
     </div>
 </section>
 
-<section class="sgds-section has-background-light">
+<section class="sgds-section is-paddingless" id="key-highlights">
+    <div class="sgds-container">
+        <div class="row is-gapless has-text-centered">
+            <div class="col" onclick="location.href='/develop/tools/';">
+                <h5 class="has-text-white"><b>Government Products</b></h5>
+                <h6 class="has-text-white-trans is-small">Standardized and reusable components to develop more effective services with lesser costs</h6>
+            </div>
+            <div class="col" onclick="location.href='/discover/';">
+                <h5 class="has-text-white"><b>Digital Playbooks</b></h5>
+                <h6 class="has-text-white-trans is-small">Playbooks to help agencies discover some methods in creating better digital services</h6>
+            </div>
+            <div class="col" onclick="location.href='/participate/';">
+                <h5 class="has-text-white"><b>Working with Us</b></h5>
+                <h6 class="has-text-white-trans is-small">Experiments and blog of our latest news and stories for developers working in government</h6>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="sgds-section bg-light">
     <div class="sgds-container">
         <div class="content">
-            <div class="row">
-                <div class="col is-6 is-offset-1">
-                    <h5 class="padding--bottom">Start your Agile Journey</h5>
-                    <p>Many agencies or teams think about going Agile but struggle with various challenges. These challenges can be easily conquered, even if the agency or team has little knowledge of Agile.</p>
-                    <a class="sgds-button is-rounded" href="/workflows/">Learn More</a>
+            <div class="row has-text-centered">
+                <div class="col is-10 is-offset-1">
+                    <h2 class="has-text-weight-normal has-text-secondary">Build Your First Government Digital Service</h2>
+                    <p>Understand the tools that government provides and build your first digital service. In this tutorial, you'll learn to build and deploy a web application, connect your app to a backend database and capture data to analyze user behavior.</p>
+                </div>
+            </div>
+            <div class="row has-text-centered">
+                <div class="col">
+                    <a class="sgds-button is-rounded is-medium" href="">Start Tutorial</a>
                 </div>
             </div>
         </div>
@@ -41,15 +65,22 @@ layout: layout-default
 <section class="sgds-section">
     <div class="sgds-container">
         <div class="content">
-            <div class="row">
+            <div class="row has-text-centered">
                 <div class="col is-10 is-offset-1">
-                    <h5>Latest Events</h5>
+                    <div class="row">
+                        <div class="col is-6 is-flex">
+                            <h3 class="has-text-weight-normal has-text-primary">Latest Events</h3>
+                        </div>
+                        <div class="col is-6 has-text-right">
+                            <h5 class="has-text-weight-normal has-text-primary"><a href="/participate/">view all</a></h5>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col is-10 is-offset-1">
                     <div class="row">
-                        <div class="col is-4 is-flex">
+                        <div class="col is-6 is-flex">
                             <div class="sgds-card sgds-card-button" href="#" onclick="window.open('https://www.tech.gov.sg/media/events/stack-2018-developer-conference')">
                                 <div class="sgds-card-image">
                                     <figure class="sgds-image is-16by9">
@@ -57,12 +88,12 @@ layout: layout-default
                                     </figure>
                                 </div>
                                 <div class="sgds-card-content">
-                                    <h6 class="padding--bottom"><b>Stack X Cloud</b></h6>
-                                    <p>A half-day technology event organised by the GovTech to share government commercial cloud policy and playbook.</p>
+                                    <h4 class="padding--bottom has-text-weight-semibold">Stack 2018 <span class="sgds-icon sgds-icon-external"></span></h4>
+                                    <small>STACK is the Government Technology Agency’s (GovTech) first-ever developer conference for developers, programmers and technologists from the public and private sectors.</small>
                                 </div>
                             </div>
                         </div>
-                        <div class="col is-4 is-flex">
+                        <div class="col is-6 is-flex">
                             <div class="sgds-card sgds-card-button" href="#" onclick="window.open('https://apiservices.iras.gov.sg/iras/devportal/')">
                                 <div class="sgds-card-image">
                                     <figure class="sgds-image is-16by9">
@@ -70,44 +101,37 @@ layout: layout-default
                                     </figure>
                                 </div>
                                 <div class="sgds-card-content">
-                                    <h6 class="padding--bottom"><b>Stack 2018</b></h6>
-                                    <p>STACK is the GovTech first-ever developer conference for developers, programmers and technologists from the public and private sectors.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col is-4 is-flex">
-                            <div class="sgds-card sgds-card-button" href="#" onclick="window.open('https://apiservices.iras.gov.sg/iras/devportal/')">
-                                <div class="sgds-card-image">
-                                    <figure class="sgds-image is-16by9">
-                                        <img src="/assets/img/img_placeholder.png" alt="GovTech Stack">
-                                    </figure>
-                                </div>
-                                <div class="sgds-card-content">
-                                    <h6 class="padding--bottom"><b>Developer Workshop</b></h6>
-                                    <p>GovTech held its inaugural GovTech Stack Developer’s workshop to familiarise developers with NECTAR and APEX platforms.</p>
+                                    <h4 class="padding--bottom has-text-weight-semibold">GovTech Stack <span class="sgds-icon sgds-icon-external"></span></h4>
+                                    <small>A marketplace that offers APIs which enables applications to embed or optimize tax management capabilities across a range of tax transactions.</small>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <a class="sgds-button is-rounded margin--top" href="/events/">View All Events</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section class="sgds-section has-background-light">
+<section class="sgds-section bg-light">
     <div class="sgds-container">
         <div class="content">
-            <div class="row">
+            <div class="row has-text-centered">
                 <div class="col is-10 is-offset-1">
-                    <h5>Join Our Communities</h5>
+                    <div class="row">
+                        <div class="col is-6 is-flex">
+                            <h3 class="has-text-weight-normal has-text-primary">Recent Updates</h3>
+                        </div>
+                        <div class="col is-6 has-text-right">
+                            <h5 class="has-text-weight-normal has-text-primary"><a href="/participate/">view all</a></h5>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col is-10 is-offset-1">
                     <div class="row">
-                        <div class="col is-4 is-flex">
+                        <div class="col is-6 is-flex">
                             <div class="sgds-card sgds-card-button" href="#" onclick="window.open('https://www.tech.gov.sg/media/events/stack-2018-developer-conference')">
                                 <div class="sgds-card-image">
                                     <figure class="sgds-image is-16by9">
@@ -115,12 +139,12 @@ layout: layout-default
                                     </figure>
                                 </div>
                                 <div class="sgds-card-content">
-                                    <h6 class="padding--bottom"><b>Design System</b></h6>
-                                    <p>Uniting teams that create digital services, through inclusive design, open-source code and shared insights.</p>
+                                    <h4 class="padding--bottom has-text-weight-semibold">Design Studio</h4>
+                                    <small>STACK is the Government Technology Agency’s (GovTech) first-ever developer conference for developers, programmers and technologists from the public and private sectors.</small>
                                 </div>
                             </div>
                         </div>
-                        <div class="col is-4 is-flex">
+                        <div class="col is-6 is-flex">
                             <div class="sgds-card sgds-card-button" href="#" onclick="window.open('https://apiservices.iras.gov.sg/iras/devportal/')">
                                 <div class="sgds-card-image">
                                     <figure class="sgds-image is-16by9">
@@ -128,27 +152,30 @@ layout: layout-default
                                     </figure>
                                 </div>
                                 <div class="sgds-card-content">
-                                    <h6 class="padding--bottom"><b>API and Data Exchange</b></h6>
-                                    <p>Connect and share information about creating and consuming Government APIs.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col is-4 is-flex">
-                            <div class="sgds-card sgds-card-button" href="#" onclick="window.open('https://apiservices.iras.gov.sg/iras/devportal/')">
-                                <div class="sgds-card-image">
-                                    <figure class="sgds-image is-16by9">
-                                        <img src="/assets/img/img_placeholder.png" alt="GovTech Stack">
-                                    </figure>
-                                </div>
-                                <div class="sgds-card-content">
-                                    <h6 class="padding--bottom"><b>Open Data</b></h6>
-                                    <p>For those who develop, innovate or carry out research using Singapore's public datasets.</p>
+                                    <h4 class="padding--bottom has-text-weight-semibold">Brown Bag</h4>
+                                    <small>A marketplace that offers APIs which enables applications to embed or optimize tax management capabilities across a range of tax transactions.</small>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <a class="sgds-button is-rounded margin--top" href="/communities/">View All Communities</a>
-                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="sgds-section bg-secondary">
+    <div class="sgds-container">
+        <div class="content">
+            <div class="row has-text-centered">
+                <div class="col is-10 is-offset-1">
+                    <h2 class="has-text-white has-text-weight-normal is-offset-1">Join our Community</h2>
+                </div>
+            </div>
+            <div class="row has-text-centered">
+                <div class="col is-10 is-offset-1">
+                    <p class="has-text-white padding--bottom--lg">Have a question? Need help with an app or an integration? Join our community and get answers directly from our team and partners on our Q&A Forum !</p>
+                    <a class="sgds-button is-rounded is-medium" href="https://form.sg/forms/govtech/5b02943839e23a001a1be70f" target="_blank">Let's Connect</a>
                 </div>
             </div>
         </div>

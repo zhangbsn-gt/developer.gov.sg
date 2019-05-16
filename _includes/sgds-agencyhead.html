@@ -1,4 +1,4 @@
-<div class="masthead-container is-fixed" id="navbar">
+<div class="masthead-container" id="navbar">
     {% include sgds-masthead.html %}
     <nav class="navbar is-transparent">
         <div class="sgds-container">
@@ -6,13 +6,24 @@
                 <a class="navbar-item" href="/">
                     <img src="/assets/img/logo_sgds.png" alt="">
                 </a>
-                <div class="navbar-burger burger" data-target="mainnav-1">
+                <div class="navbar-burger burger" data-target="navbarMain">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
             </div>
-            <div id="mainnav-1" class="navbar-menu">
+            <div id="navbarMain" class="navbar-menu">
+
+                <div class="navbar-item is-hidden-desktop">
+                    <!--<form action="{{ site.baseurl }}/search/" method="get">-->
+                    <!--<div class="field has-addons">-->
+                    <!--<div class="control is-expanded">-->
+                    <!--<input class="input is-fullwidth" id="search-box" type="text" placeholder="What are you looking for?" name="query">-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--</form>-->
+                    <!--<hr class="is-marginless margin&#45;&#45;top&#45;&#45;sm">-->
+                </div>
                 {%- assign links = site.data.navigation -%}
                 {%- for lvl1item in links -%}
                 <div class="navbar-item is-stretched">
@@ -20,19 +31,31 @@
                     {%- if page.url contains lvl1item.url -%}
                     {%- assign class = 'is-active' -%}
                     {%- endif -%}
-                    <a class="navbar-item is-uppercase {{class}}" href="{{ lvl1item.url }}">
-                        {{ lvl1item.title }}
+                    <a class="navbar-link is-uppercase {{class}}"
+                       href="{{ lvl1item.url }} ">
+                        <h6>{{ lvl1item.title }}</h6>
                     </a>
                 </div>
                 {%- endfor -%}
             </div>
             <div class="navbar-end is-hidden-touch">
                 <div class="navbar-item">
-                    <a class="navbar-item is-uppercase sgds-button is-rounded" href="/terms/">
-                        Gov Acronyms
+                    <a class="navbar-link is-uppercase sgds-button is-rounded is-large"
+                       href="/terms/">
+                        <h6>Gov Acronyms</h6>
                     </a>
                 </div>
             </div>
         </div>
     </nav>
+    <!--<div class="sgds-container hide is-hidden-touch search-bar" id="search-bar">-->
+    <!--<div class="row">-->
+    <!--<div class="col">-->
+    <!--<hr class="margin&#45;&#45;bottom&#45;&#45;sm">-->
+    <!--<form action="{{ site.baseurl }}/search/" method="get">-->
+    <!--{% include sgds-search-box.html %}-->
+    <!--</form>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
 </div>
