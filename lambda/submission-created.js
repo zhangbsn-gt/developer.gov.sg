@@ -29,7 +29,9 @@ exports.handler = async function(event, context, callback) {
         category: formData.category
     })
 
-    console.log(JSON.stringify(terms, null, 2));
+    let updatedTermsYaml = yaml.safeDump(terms);
+
+    console.loge(updatedTermsYaml);
 
     // Create a new ref (branch)
     // octokit.git.createRef({owner, repo, ref, sha})
