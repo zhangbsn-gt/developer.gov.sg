@@ -10,8 +10,6 @@ exports.handler = async function(event, context, callback) {
 
     let formData = eventBody.payload.data;
 
-    console.log(JSON.stringify(formData));
-
     let repoOwner = process.env.GITHUB_OWNER;
 
     let response = await octokit.repos.getContents({
@@ -34,26 +32,11 @@ exports.handler = async function(event, context, callback) {
 
     let updatedTermsYaml = yaml.safeDump(terms);
 
-    console.log(updatedTermsYaml);
-
-    // get ref of latest dev branch
     const devRef = await octokit.git.getRef({
         owner: repoOwner,
         repo: "developer.gov.sg",
         ref: "heads/dev"
     });
-
-    console.log(JSON.stringify(devRef));
-    // {
-    //     "ref": "refs/heads/featureA",
-    //     "node_id": "MDM6UmVmcmVmcy9oZWFkcy9mZWF0dXJlQQ==",
-    //     "url": "https://api.github.com/repos/octocat/Hello-World/git/refs/heads/featureA",
-    //     "object": {
-    //       "type": "commit",
-    //       "sha": "aa218f56b14c9653891f9e74264a383fa43fefbd",
-    //       "url": "https://api.github.com/repos/octocat/Hello-World/git/commits/aa218f56b14c9653891f9e74264a383fa43fefbd"
-    //     }
-    //   }
 
     const newBranchId = await generateId();
 
@@ -61,8 +44,10 @@ exports.handler = async function(event, context, callback) {
         owner: repoOwner,
         repo: "developer.gov.sg",
         ref: "refs/heads/terms-" + newBranchId,
-        sha: devRef.object.sha
+        sha: devRef.data.object.sha
     });
+
+    console.log(JSON.stringify(newRef));
 
     // get current commit
     // get current commit's tree
