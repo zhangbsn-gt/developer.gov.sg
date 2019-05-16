@@ -4,8 +4,8 @@ layout: null
 [
     {% for term in site.data.terms %}
         {
-            "name": "{{ term.name }}",
-            "fullName": "{{ term.full_name }}",
+            "term": "{{ term.term }}",
+            "full_term": "{{ term.full_term }}",
             "description": "{{ term.description }}",
             "link": "{{ term.link }}",
             "category": [

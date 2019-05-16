@@ -58,12 +58,12 @@ const vm = new Vue({
             if (vm.terms.length > 0) {
                 return vm.terms.filter(function(term) {
                     const searchLowercase = vm.search.toLowerCase();
-                    const name = term.name.toLowerCase();
-                    const fullName = term.fullName.toLowerCase();
+                    const termName = term.term.toLowerCase();
+                    const fullTerm = term.full_term.toLowerCase();
                     const description = term.description.toLowerCase();
                     const link = term.link.toLowerCase();
-                    return name.indexOf(searchLowercase) !== -1 ||
-                        fullName.indexOf(searchLowercase) !== -1 ||
+                    return termName.indexOf(searchLowercase) !== -1 ||
+                        fullTerm.indexOf(searchLowercase) !== -1 ||
                         description.indexOf(searchLowercase) !== -1 ||
                         link.indexOf(searchLowercase) !== -1 ||
                         term.category.indexOf(searchLowercase) !== -1;
@@ -91,8 +91,8 @@ const vm = new Vue({
 
 function sortLoadedTerms(terms) {
     terms.sort(function(a, b) {
-        var nameA = a.name.toUpperCase();
-        var nameB = b.name.toUpperCase();
+        var nameA = a.term.toUpperCase();
+        var nameB = b.term.toUpperCase();
         if (nameA < nameB) {
             return -1;
         }
