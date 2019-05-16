@@ -17,7 +17,7 @@ exports.handler = async function(event, context, callback) {
         path: "_data/terms.yml"
     });
 
-    let termsFileYaml = Buffer.from(contents.data.content, "base64").toString();
+    let termsFileYaml = Buffer.from(response.data.content, "base64").toString();
     
     let terms = yaml.safeLoad(termsFileYaml);
 
