@@ -39,22 +39,73 @@ exports.handler = async function(event, context, callback) {
     });
 
     const newBranchId = await generateId();
-
+    const newRefName = "refs/heads/terms-" + newBranchId;
     const newRef = await octokit.git.createRef({
         owner: repoOwner,
         repo: "developer.gov.sg",
-        ref: "refs/heads/terms-" + newBranchId,
+        ref: newRefName,
         sha: devRef.data.object.sha
     });
 
-    console.log(JSON.stringify(newRef));
+    console.log("created ref: " + newRef.ref);
 
-    // get current commit
-    // get current commit's tree
     // post new blob object with new content => blob SHA
+    const newBlob = await octokit.git.createBlob({
+        owner: repoOwner,
+        repo: "developer.gov.sg",
+        content: updatedTermsYaml
+    });
+
+    console.log("created blob: " + newBlob.sha);
+
+    // get current commit => commit object {tree: {url, sha}}
+    const currentCommit = await octokit.git.getCommit({
+        owner: repoOwner,
+        repo: "developer.gov.sg",
+        commit_sha: devRef.data.object.sha
+    });
+
+    console.log("current commit: " + currentCommit.sha);
+
     // post new tree object with file path pointer replaced with new blob SHA => tree SHA
+    const newTree = await octokit.git.createTree({
+        owner: repoOwner,
+        repo: "developer.gov.sg",
+        tree: [
+            {
+                path: "_data/terms.yml",
+                mode: "100644",
+                type: "blob",
+                sha: newBlob.sha
+            }
+        ],
+        base_tree: currentCommit.tree.sha
+    });
+
+    console.log("created tree: " + newTree.sha);
+
     // create new commit with current commit SHA as parent and new tree SHA => commit SHA
+    const newCommit = await octokit.git.createCommit({
+        owner: repoOwner,
+        repo: "developer.gov.sg",
+        message:
+            "new term suggested by " +
+            `${formData.contributor} <${formData.contributor_email}>`,
+        tree: newTree.sha,
+        parents: [currentCommit.sha]
+    });
+
+    console.log("created commit: " + newCommit.sha);
+
     // update ref to point to commit SHA
+    const updateRefResults = await octokit.git.updateRef({
+        owner: repoOwner,
+        repo: "developer.gov.sg",
+        ref: newRefName,
+        sha: newCommit.sha
+    });
+
+    console.log("updated ref to new commit: " + updateRefResults.url);
 
     callback(null, {
         statusCode: 200,
