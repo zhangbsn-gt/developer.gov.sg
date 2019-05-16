@@ -118,6 +118,10 @@
             url: /products/data-sharing/networked-trade-platform/
           - title: Enterprise Data Hub
             url: /products/data-sharing/enterprise-data-hub/
+          - title: SingStat Table Builder
+            url: /products/data-sharing/singstat-table-builder/
+          - title: URA Space
+            url: /products/data-sharing/ura-space/
 
      - title: Design
        url: /products/design/
