@@ -22,13 +22,13 @@ exports.handler = async function(event, context, callback) {
 
     let termsFileRaw = Buffer.from(response.data.content, "base64").toString();
 
-    let newTerm = {
+    let newTerm = [{
         term: formData.term,
         full_term: formData.full_term,
         description: formData.description,
         link: formData.link,
         category: [formData.category]
-    };
+    }];
     let newTermYaml = yaml.safeDump(newTerm);
     let updatedTermsYaml = "";
     if (termsFileRaw[termsFileRaw.length - 1] === "\n") {

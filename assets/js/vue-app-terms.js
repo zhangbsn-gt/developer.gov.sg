@@ -21,6 +21,7 @@ const contributionForm = {
             return encodedDataArray.join("&");
         },
         handleSubmit: function() {
+            const vm = this;
             const axiosConfig = {
                 header: { "Content-Type": "application/x-www-form-urlencoded" }
             };
@@ -35,9 +36,9 @@ const contributionForm = {
                         text:
                             "Your contribution has been submitted! <a href>View its progress here</a>"
                     }).show();
-                    this.$emit("form-submit-success");
+                    vm.$emit("form-submit-success");
                 })
-                .catch(function() {
+                .catch(function(error) {
                     new Noty({
                         type: "error",
                         layout: "bottomRight",
