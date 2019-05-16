@@ -176,35 +176,25 @@
        url: /guidelines/data-sharing/
        lvl3:
           - title: API Playbook
-            url: /guidelines/api-playbook/
+            url: /guidelines/data-sharing/api-playbook/
 
      - title: Design
        url: /guidelines/design/
        lvl3:
           - title: Digital Service Standards
-            url: /guidelines/digital-service-standards/
+            url: /guidelines/design/digital-service-standards/
           - title: Accessibility Design
-            url: /guidelines/accessibility-design/
-
-     - title: Hosting
-       url: /guidelines/hosting/
-       lvl3:
-          - title: Containerisation Playbook
-            url: /guidelines/containerisation-playbook/
-
-     - title: Security
-       url: /guidelines/security/
-       lvl3:
-          - title: DevSecOps Playbook
-            url: /guidelines/devsecops-playbook/
+            url: /guidelines/design/accessibility-design/
 
      - title: Strategy
-       url: /guidelines/security/
+       url: /guidelines/strategy/
        lvl3:
           - title: Digital Government Blueprint
-            url: /guidelines/digital-government-blueprint/
-          - title: Ministry Family
-            url: /guidelines/digital-government-blueprint/
+            url: /guidelines/strategy/digital-government-blueprint/
+          - title: Ministry Family Digitalisation Plans
+            url: /guidelines/strategy/ministry-family-digitalisation-plans/
+          - title: Smart Nation
+            url: /guidelines/strategy/smart-nation/
 
 - title: Events
   url: /events/
