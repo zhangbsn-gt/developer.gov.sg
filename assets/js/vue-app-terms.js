@@ -33,9 +33,7 @@ const contributionForm = {
                         type: "success",
                         layout: "bottomRight",
                         text:
-                            "Your contribution has been submitted! <a href='" +
-                            response.data +
-                            "'>View its progress here</a>"
+                            "Your contribution has been submitted! <a href>View its progress here</a>"
                     }).show();
                     this.$emit("form-submit-success");
                 })
