@@ -21,13 +21,20 @@ exports.handler = async function(event, context, callback) {
 
     let terms = yaml.safeLoad(termsFileYaml);
 
-    delete formData.ip; // Injected by Netlify. Don't pick it up.
     terms.push({
-        ...formData
+        term: formData.term,
+        full_term: formData.full_term,
+        description: formData.description,
+        link: formData.link,
+        category: formData.category
     })
 
     console.log(JSON.stringify(terms, null, 2));
 
+    // Create a new ref (branch)
+    // octokit.git.createRef({owner, repo, ref, sha})
+    // octokit.repos.updateFile({owner, repo, path, message, content, sha})
+    
     callback(null, {
         statusCode: 200,
         body: "success!"

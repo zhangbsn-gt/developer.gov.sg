@@ -1,30 +1,30 @@
 #!!! categories should be in lowercase!!!
-- name: SGTS
-  full_name: Singapore Government Tech Stack
+- term: SGTS
+  full_term: Singapore Government Tech Stack
   description: Description of SGTS
   link:
   category:
     - platform
-- name: GCC
-  full_name: Government Commercial Cloud
+- term: GCC
+  full_term: Government Commercial Cloud
   description: Description of GCC
   link:
   category:
     - platform
-- name: Nectar
-  full_name: Nectar
+- term: Nectar
+  full_term: Nectar
   description: A container-based platform-as-a-service that allows rapid deployment of web services and applications within the government.
   link:
   category:
     - platform
-- name: CWP
-  full_name: Content Website Platform
+- term: CWP
+  full_term: Content Website Platform
   description: Description of CWP
   link:
   category:
     - platform
-- name: NDI
-  full_name: National Digital Identity
+- term: NDI
+  full_term: National Digital Identity
   description: Description of NDI
   link:
   category:
