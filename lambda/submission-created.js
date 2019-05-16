@@ -15,7 +15,8 @@ exports.handler = async function(event, context, callback) {
     let response = await octokit.repos.getContents({
         owner: repoOwner,
         repo: "developer.gov.sg",
-        path: "_data/terms.yml"
+        path: "_data/terms.yml",
+        ref: "dev"
     });
 
     let termsFileYaml = Buffer.from(response.data.content, "base64").toString();
