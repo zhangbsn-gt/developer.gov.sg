@@ -5,7 +5,7 @@ const octokit = new Octokit({
 const yaml = require("js-yaml");
 
 exports.handler = async function(event, context, callback) {
-    let eventBody = JSON.parse(event.body)
+    let eventBody = JSON.parse(event.body);
 
     let formData = eventBody.payload.data;
 
@@ -27,16 +27,16 @@ exports.handler = async function(event, context, callback) {
         description: formData.description,
         link: formData.link,
         category: formData.category
-    })
+    });
 
     let updatedTermsYaml = yaml.safeDump(terms);
 
-    console.loge(updatedTermsYaml);
+    console.log(updatedTermsYaml);
 
     // Create a new ref (branch)
     // octokit.git.createRef({owner, repo, ref, sha})
     // octokit.repos.updateFile({owner, repo, path, message, content, sha})
-    
+
     callback(null, {
         statusCode: 200,
         body: "success!"
