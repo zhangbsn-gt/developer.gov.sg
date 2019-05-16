@@ -6,11 +6,10 @@ const yaml = require("js-yaml");
 
 exports.handler = async function(event, context, callback) {
     let eventBody = JSON.parse(event.body)
-    let form = eventBody.payload;
-    let site = eventBody.site;
 
-    console.log(JSON.stringify(form, null, 2));
-    console.log(JSON.stringify(site, null, 2));
+    let formData = eventBody.payload.data;
+
+    console.log(JSON.stringify(formData));
 
     let response = await octokit.repos.getContents({
         owner: process.env.GITHUB_OWNER,
@@ -21,6 +20,11 @@ exports.handler = async function(event, context, callback) {
     let termsFileYaml = Buffer.from(response.data.content, "base64").toString();
 
     let terms = yaml.safeLoad(termsFileYaml);
+
+    delete formData.ip; // Injected by Netlify. Don't pick it up.
+    terms.push({
+        ...formData
+    })
 
     console.log(JSON.stringify(terms, null, 2));
 
