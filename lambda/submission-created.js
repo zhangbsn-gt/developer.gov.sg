@@ -5,10 +5,11 @@ const octokit = new Octokit({
 const yaml = require("js-yaml");
 
 exports.handler = async function(event, context, callback) {
-    let form = event.payload;
-    let site = event.site;
+    let form = event.body.payload;
+    let site = event.body.site;
 
-    console.log(JSON.stringify(event, null, 2));
+    console.log(JSON.stringify(form, null, 2));
+    console.log(JSON.stringify(site, null, 2))
 
     let response = await octokit.repos.getContents({
         owner: process.env.GITHUB_OWNER,
