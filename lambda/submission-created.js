@@ -11,67 +11,66 @@ exports.handler = async function(event, context, callback) {
     let formData = eventBody.payload.data;
 
     let repoOwner = process.env.GITHUB_OWNER;
+    let repoName = "developer.gov.sg";
 
     let response = await octokit.repos.getContents({
         owner: repoOwner,
-        repo: "developer.gov.sg",
+        repo: repoName,
         path: "_data/terms.yml",
         ref: "dev"
     });
 
-    let termsFileYaml = Buffer.from(response.data.content, "base64").toString();
+    let termsFileRaw = Buffer.from(response.data.content, "base64").toString();
 
-    let terms = yaml.safeLoad(termsFileYaml);
-
-    terms.push({
+    let newTerm = {
         term: formData.term,
         full_term: formData.full_term,
         description: formData.description,
         link: formData.link,
         category: [formData.category]
-    });
-
-    let updatedTermsYaml = yaml.safeDump(terms);
+    };
+    let newTermYaml = yaml.safeDump(newTerm);
+    let updatedTermsYaml = "";
+    if (termsFileRaw[termsFileRaw.length - 1] === "\n") {
+        updatedTermsYaml = termsFileRaw + newTermYaml;
+    } else {
+        updatedTermsYaml = termsFileRaw + "\n" + newTermYaml;
+    }
 
     const devRef = await octokit.git.getRef({
         owner: repoOwner,
-        repo: "developer.gov.sg",
+        repo: repoName,
         ref: "heads/dev"
     });
 
     const newBranchId = await generateId();
-    const newRefName = `heads/terms-${new Date().toISOString().substring(0, 10)}-${newBranchId}`;
+    const newBranchName = `terms-${new Date().toISOString().substring(0, 10)}-${newBranchId}`;
+    const newRefName = `heads/${newBranchName}`;
     const newRef = await octokit.git.createRef({
         owner: repoOwner,
-        repo: "developer.gov.sg",
+        repo: repoName,
         ref: "refs/" + newRefName,
         sha: devRef.data.object.sha
     });
 
-    console.log("created ref: " + JSON.stringify(newRef.data));
-
     // post new blob object with new content => blob SHA
     const newBlob = await octokit.git.createBlob({
         owner: repoOwner,
-        repo: "developer.gov.sg",
+        repo: repoName,
         content: updatedTermsYaml
     });
-
-    console.log("created blob: " + JSON.stringify(newBlob.data));
 
     // get current commit => commit object {tree: {url, sha}}
     const currentCommit = await octokit.git.getCommit({
         owner: repoOwner,
-        repo: "developer.gov.sg",
+        repo: repoName,
         commit_sha: devRef.data.object.sha
     });
-
-    console.log("current commit: " + JSON.stringify(currentCommit.data));
 
     // post new tree object with file path pointer replaced with new blob SHA => tree SHA
     const newTree = await octokit.git.createTree({
         owner: repoOwner,
-        repo: "developer.gov.sg",
+        repo: repoName,
         tree: [
             {
                 path: "_data/terms.yml",
@@ -83,12 +82,10 @@ exports.handler = async function(event, context, callback) {
         base_tree: currentCommit.data.tree.sha
     });
 
-    console.log("created tree: " + JSON.stringify(newTree.data));
-
     // create new commit with current commit SHA as parent and new tree SHA => commit SHA
     const newCommit = await octokit.git.createCommit({
         owner: repoOwner,
-        repo: "developer.gov.sg",
+        repo: repoName,
         message:
             "new term suggested by " +
             `${formData.contributor} <${formData.contributor_email}>`,
@@ -96,23 +93,28 @@ exports.handler = async function(event, context, callback) {
         parents: [currentCommit.data.sha]
     });
 
-    console.log("created commit: " + JSON.stringify(newCommit.data));
-
     // update ref to point to commit SHA
     const updateRefResults = await octokit.git.updateRef({
         owner: repoOwner,
-        repo: "developer.gov.sg",
+        repo: repoName,
         ref: newRefName,
         sha: newCommit.data.sha
     });
 
-    console.log(
-        "updated ref to new commit: " + JSON.stringify(updateRefResults.data)
-    );
+    // Create new PR to dev
+    const prResults = await octokit.pulls.create({
+        owner: repoOwner,
+        repo: repoName,
+        title: "New Government Term Suggestion",
+        head: newBranchName,
+        base: "dev",
+        body: newTermYaml,
+        maintainer_can_modify: true
+    });
 
     callback(null, {
         statusCode: 200,
-        body: "success!"
+        body: "success"
     });
 };
 
