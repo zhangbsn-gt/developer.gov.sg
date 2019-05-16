@@ -1,31 +1,31 @@
 - term: SGTS
   full_term: Singapore Government Tech Stack
   description: Description of SGTS
-  link:
+  link: null
   category:
     - platform
 - term: GCC
   full_term: Government Commercial Cloud
   description: Description of GCC
-  link:
+  link: null
   category:
     - platform
 - term: Nectar
   full_term: Nectar
   description: A container-based platform-as-a-service that allows rapid deployment of web services and applications within the government.
-  link:
+  link: null
   category:
     - platform
 - term: CWP
   full_term: Content Website Platform
   description: Description of CWP
-  link:
+  link: null
   category:
     - platform
 - term: NDI
   full_term: National Digital Identity
   description: Description of NDI
-  link:
+  link: null
   category:
     - authentication
     - data
