@@ -29,3 +29,9 @@
   category:
     - authentication
     - data
+- term: NECTAR
+  full_term: 'NExt-generation Container ARchitecture '
+  description: GovTech's Next-generation Container Architecture for the whole of government
+  link: 'https://blog.gds-gov.tech/nectar-10e0eb1581cf'
+  category:
+    - platform
