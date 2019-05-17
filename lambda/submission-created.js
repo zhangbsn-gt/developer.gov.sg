@@ -18,7 +18,7 @@ exports.handler = async function (event, context, callback) {
         console.log(path);
         let pathArr = path.split("/");
         let breadcrumb = pathArr[3].toUpperCase();
-        let productName = pathArr.split("/")[1].charAt(0).toUpperCase() + pathArr.split("/")[1].slice(1);
+        let productName = pathArr[1].charAt(0).toUpperCase() + pathArr[1].slice(1);
         let content = formData.page_content;
 
         content = content.replace(/<h3>/g, '</div></div><hr class="margin--bottom--lg margin--top--lg"><div class="row"><div class="col"><h3 class="has-text-weight-semibold margin--bottom">')
