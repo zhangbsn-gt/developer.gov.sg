@@ -15,7 +15,6 @@ exports.handler = async function (event, context, callback) {
 
     if (formData.hasOwnProperty("form_name") && formData.form_name === "edit-form") {
         let path = formData.page_path;
-        console.log(path);
         let pathArr = path.split("/");
         let breadcrumb = pathArr[3].toUpperCase();
         let productName = pathArr[1].charAt(0).toUpperCase() + pathArr[1].slice(1);
@@ -25,7 +24,7 @@ exports.handler = async function (event, context, callback) {
             .replace(/<h2>/g, '<hr class="margin--bottom--lg margin--top--lg"><div class="row"><div class="col"><h2 class="has-text-weight-semibold margin--bottom">')
             .replace(/<h1>/g, '<hr class="margin--bottom--lg margin--top--lg"><div class="row"><div class="col"><h1 class="has-text-weight-semibold margin--bottom">')
             .replace('<div class="ql-editor" data-gramm="false" contenteditable="true"></div></div><hr class="margin--bottom--lg margin--top--lg">',
-                `---\ntitle: ${formData.page_title}\nlayout: layout-sidenav\npermalink: ${path}\ncategory: ${productName}\nbreadcrumb: ${breadcrumb}\n---\n {%- include vue-modal.html -%}\n<div class="devportal-editable">\n`)
+                `---\ntitle: ${formData.page_title}\nlayout: layout-sidenav\npermalink: ${path}\ncategory: ${productName}\nbreadcrumb: ${breadcrumb}\n---\n {%- include vue-edit-modal.html -%}\n<div class="devportal-editable">\n`)
             .replace(/<a/g, '<a class="sgds-button is-rounded is-medium is-primary margin--top--lg"');
         content += '</div></div>\n<hr class="margin--bottom--lg margin--top--lg">\n{%- include sgds-search-product.html -%}';
         content = beautify_html(content, { indent_size: 2, space_in_empty_paren: true });
