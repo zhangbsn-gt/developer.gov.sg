@@ -16,6 +16,7 @@ exports.handler = async function (event, context, callback) {
     if (formData.hasOwnProperty("form_name") && formData.form_name === "edit-form") {
         let path = formData.page_path;
         let pathArr = path.split("/");
+        console.log(pathArr);
         let breadcrumb = pathArr[3].toUpperCase();
         let productName = pathArr.split("/")[1].charAt(0).toUpperCase() + pathArr.split("/")[1].slice(1);
         let content = formData.page_content;
