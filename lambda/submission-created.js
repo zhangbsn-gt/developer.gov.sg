@@ -97,6 +97,12 @@ exports.handler = async function (event, context, callback) {
             body: content,
             maintainer_can_modify: true
         });
+
+        callback(null, {
+            statusCode: 200,
+            body: prResults.data.html_url
+        });
+        return;
     }
 
 
