@@ -102,7 +102,6 @@ exports.handler = async function (event, context, callback) {
             statusCode: 200,
             body: prResults.data.html_url
         });
-        return;
     } else {
 
         let response = await octokit.repos.getContents({
