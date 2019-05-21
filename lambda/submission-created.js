@@ -1,17 +1,26 @@
-const Octokit = require("@octokit/rest");
-const octokit = new Octokit({
-    auth: process.env.GITHUB_TOKEN
-});
 const yaml = require("js-yaml");
 const crypto = require("crypto");
 const beautify_html = require('js-beautify').html;
+const Octokit = require("@octokit/rest");
+
+const githubToken = process.env.GITHUB_TOKEN;
+const repoOwner = process.env.GITHUB_OWNER;
+const githubRef = process.env.GITHUB_REF;
+
+if (!githubToken ||
+    !repoOwner ||
+    !githubRef) {
+    throw new Error("One or more environment variables were not defined!");
+}
+
+const octokit = new Octokit({
+    auth: githubToken
+});
 
 exports.handler = async function (event, context, callback) {
     let eventBody = JSON.parse(event.body);
     let formData = eventBody.payload.data;
-    let repoOwner = process.env.GITHUB_OWNER;
     let repoName = "developer.gov.sg";
-    let ref = process.env.GITHUB_REF;
 
     if (formData.hasOwnProperty("form_name") && formData.form_name === "edit-form") {
         let path = formData.page_path;
@@ -32,7 +41,7 @@ exports.handler = async function (event, context, callback) {
         const devRef = await octokit.git.getRef({
             owner: repoOwner,
             repo: repoName,
-            ref: `heads/${ref}`
+            ref: `heads/${githubRef}`
         });
         const newBranchId = await generateId();
         const newBranchName = `edits-${new Date().toISOString().substring(0, 10)}-${newBranchId}`;
@@ -93,7 +102,7 @@ exports.handler = async function (event, context, callback) {
             repo: repoName,
             title: `New Edits for ${formData.page_title}`,
             head: newBranchName,
-            base: ref,
+            base: githubRef,
             body: content,
             maintainer_can_modify: true
         });
@@ -103,12 +112,11 @@ exports.handler = async function (event, context, callback) {
             body: prResults.data.html_url
         });
     } else {
-
         let response = await octokit.repos.getContents({
             owner: repoOwner,
             repo: repoName,
             path: "_data/terms.yml",
-            ref: ref
+            ref: githubRef
         });
 
         let termsFileRaw = Buffer.from(response.data.content, "base64").toString();
@@ -131,7 +139,7 @@ exports.handler = async function (event, context, callback) {
         const devRef = await octokit.git.getRef({
             owner: repoOwner,
             repo: repoName,
-            ref: `heads/${ref}`
+            ref: `heads/${githubRef}`
         });
 
         const newBranchId = await generateId();
@@ -198,11 +206,10 @@ exports.handler = async function (event, context, callback) {
             repo: repoName,
             title: "New Government Term Suggestion",
             head: newBranchName,
-            base: ref,
+            base: githubRef,
             body: newTermYaml,
             maintainer_can_modify: true
         });
-
     }
 
     callback(null, {
