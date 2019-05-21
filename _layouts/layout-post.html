@@ -2,17 +2,52 @@
 layout: layout-default
 ---
 
-<section class="sgds-section is-small sgds-section-pagetitle">
-  <div class="sgds-container ">
+<section class="sgds-section is-small has-background-black padding--bottom--lg padding--top--lg">
+  <div class="sgds-container">
     {% include sgds-breadcrumb.html %}
+    <h4 class="display has-text-white">{{page.title}}</h4>
   </div>
-  <div class="sgds-container ">
-    <div class="row">
-      <div class="col">
-        <h2 class="has-text-white">{{page.title}}</h2>
+</section>
+
+{% if page.url contains "/docs/" %}
+<section class="sgds-section is-paddingless is-hidden-desktop">
+  <div class="sgds-dropdown is-fullwidth">
+    <div class="sgds-dropdown-trigger">
+      <button class="sgds-button is-outlined is-large" aria-haspopup="true" aria-controls="sgds-dropdown-menu">
+        <span>Choose a component</span>
+        <span class="icon">
+          <span class="sgds-icon sgds-icon-chevron-down"></span>
+        </span>
+      </button>
+    </div>
+    <div class="sgds-dropdown-menu" id="sgds-dropdown-menu" role="menu">
+      <div class="sgds-dropdown-content padding">
+        <div class="row is-multiline is-mobile">
+          {%- assign links = site.data.navigation -%}
+          {%- for link in links -%}
+          {%- if link.title == 'Docs' -%}
+          {%- for title in link.lvl2 -%}
+          {%- for title2 in title.lvl3 -%}
+          <div class="col is-4-mobile has-text-centered">
+            <a href="{{title2.url}}" class="sgds-dropdown-item">
+              <span class="sgds-icon {{title2.icon}} is-size-4"></span><br>{{title2.title}}
+            </a>
+          </div>
+          {%- endfor -%}
+          {%- endfor -%}
+          {%- endif -%}
+          {%- endfor -%}
+        </div>
       </div>
     </div>
   </div>
 </section>
+{% endif %}
 
-{{content}}
+<section class="sgds-section is-small">
+  <div class="sgds-container">
+    <div class="content">
+      {{content}}
+    </div>
+  </div>
+</section>

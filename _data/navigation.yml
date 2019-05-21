@@ -196,18 +196,6 @@
           - title: Smart Nation
             url: /guidelines/strategy/smart-nation/
 
-- title: Events
-  url: /events/
-  lvl2:
-     - title: Conferences
-       url: /events/conferences/
-
-     - title: Meetups
-       url: /events/meetups/
-
-     - title: Workshops
-       url: /events/workshops/
-
 - title: Communities
   url: /communities/
   lvl2:
