@@ -1,226 +1,226 @@
 - title: Workflows
   url: /workflows/
   lvl2:
-     - title: Concept
-       url: /workflows/concept/
+    - title: Concept
+      url: /workflows/concept/
 
-     - title: Inception
-       url: /workflows/inception/
+    - title: Inception
+      url: /workflows/inception/
 
-     - title: Construction and Iteration
-       url: /workflows/construction-iteration/
+    - title: Construction and Iteration
+      url: /workflows/construction-iteration/
 
-     - title: Release
-       url: /workflows/release/
+    - title: Release
+      url: /workflows/release/
 
-     - title: Production
-       url: /workflows/production/
+    - title: Production
+      url: /workflows/production/
 
-     - title: Retirement
-       url: /workflows/retirement/
+    - title: Retirement
+      url: /workflows/retirement/
 
 - title: Products
   url: /products/
   lvl2:
-     - title: Analytics
-       url: /products/analytics/
-       lvl3:
-          - title: Whole-of-Government Application Analytics
-            url: /products/analytics/wogaa/
-          - title: Sentimeter
-            url:
+    - title: Analytics
+      url: /products/analytics/
+      lvl3:
+        - title: Whole-of-Government Application Analytics
+          url: /products/analytics/wogaa/
+        - title: Sentimeter
+          url: /products/analytics/sentimeter
 
-     - title: Blockchain
-       url:
-       lvl3:
-          - title: OpenCerts
-            url:
+    - title: Blockchain
+      url: /products/blockchain
+      lvl3:
+        - title: OpenCerts
+          url: /products/blockchain/opencerts
 
-     - title: Business Application
-       url:
-       lvl3:
-          - title: Initials
-            url:
-          - title: FormSG
-            url:
-          - title: OpenDoc
-            url:
-          - title: GoSG
-            url:
-          - title: LicenseOne
-            url:
+    - title: Business Application
+      url:
+      lvl3:
+        - title: Initials
+          url:
+        - title: FormSG
+          url:
+        - title: OpenDoc
+          url:
+        - title: GoSG
+          url:
+        - title: LicenseOne
+          url:
 
-     - title: Chat Bot
-       url:
-       lvl3:
-          - title: Ask Jamie
-            url:
+    - title: Chat Bot
+      url:
+      lvl3:
+        - title: Ask Jamie
+          url:
 
-     - title: Collaboration
-       url:
-       lvl3:
-          - title: Digital Workplace
-            url:
-          - title: Aura
-            url:
+    - title: Collaboration
+      url:
+      lvl3:
+        - title: Digital Workplace
+          url:
+        - title: Aura
+          url:
 
-     - title: Content Management
-       url:
-       lvl3:
-          - title: Isomer
-            url:
-          - title: Content Website Platform
-            url:
+    - title: Content Management
+      url:
+      lvl3:
+        - title: Isomer
+          url:
+        - title: Content Website Platform
+          url:
 
-     - title: CI/CD/CT
-       url:
-       lvl3:
-          - title: SHIP
-            url:
-          - title: HATS
-            url:
+    - title: CI/CD/CT
+      url:
+      lvl3:
+        - title: SHIP
+          url:
+        - title: HATS
+          url:
 
-     - title: Data Sharing
-       url: /products/application-integration/
-       lvl3:
-          - title: Data.Gov.Sg
-            url:
-          - title: IRAS API
-            url:
-          - title: OneMap
-            url:
-          - title: NDI API
-            url:
-          - title: Land Transport DataMall
-            url:
-          - title: MAS APIs
-            url:
-          - title: SingStat
-            url:
-          - title: Trees.Sg
-            url:
-          - title: URA Space
-            url:
-          - title: APEX
-            url: /products/application-integration/apex/
-          - title: Sensor Data Exchange
-            url:
-          - title: Networked Trade Platform
-            url:
-          - title: Enterprise Data Hub
-            url:
+    - title: Data Sharing
+      url: /products/application-integration/
+      lvl3:
+        - title: Data.Gov.Sg
+          url:
+        - title: IRAS API
+          url:
+        - title: OneMap
+          url:
+        - title: NDI API
+          url:
+        - title: Land Transport DataMall
+          url:
+        - title: MAS APIs
+          url:
+        - title: SingStat
+          url:
+        - title: Trees.Sg
+          url:
+        - title: URA Space
+          url:
+        - title: APEX
+          url: /products/application-integration/apex/
+        - title: Sensor Data Exchange
+          url:
+        - title: Networked Trade Platform
+          url:
+        - title: Enterprise Data Hub
+          url:
 
-     - title: Design
-       url:
-       lvl3:
-          - title: Design System
-            url:
+    - title: Design
+      url:
+      lvl3:
+        - title: Design System
+          url:
 
-     - title: Grants
-       url:
-       lvl3:
-          - title: Business Grants Portal
-            url:
-          - title: TRANS Grants
-            url:
+    - title: Grants
+      url:
+      lvl3:
+        - title: Business Grants Portal
+          url:
+        - title: TRANS Grants
+          url:
 
-     - title: Hosting
-       url:
-       lvl3:
-          - title: Government Commercial Cloud
-            url:
-          - title: Government Private Cloud
-            url:
-          - title: NECTAR
-            url:
+    - title: Hosting
+      url:
+      lvl3:
+        - title: Government Commercial Cloud
+          url:
+        - title: Government Private Cloud
+          url:
+        - title: NECTAR
+          url:
 
-     - title: Identity Management
-       url:
-       lvl3:
-          - title: National Digital Identity
-            url:
-          - title: SingPass
-            url:
-          - title: CorpPass
-            url:
-          - title: MyInfo
-            url:
-          - title: Unique Entity Number
-            url:
-          - title: Passport
-            url:
+    - title: Identity Management
+      url:
+      lvl3:
+        - title: National Digital Identity
+          url:
+        - title: SingPass
+          url:
+        - title: CorpPass
+          url:
+        - title: MyInfo
+          url:
+        - title: Unique Entity Number
+          url:
+        - title: Passport
+          url:
 
-     - title: Marketplaces
-       url:
-       lvl3:
-          - title: GEMS
-            url:
-          - title: CloudStore
-            url:
+    - title: Marketplaces
+      url:
+      lvl3:
+        - title: GEMS
+          url:
+        - title: CloudStore
+          url:
 
-     - title: Security
-       url:
-       lvl3:
-          - title: GITSIR
-            url:
+    - title: Security
+      url:
+      lvl3:
+        - title: GITSIR
+          url:
 
 - title: Guidelines
   url: /guidelines/
   lvl2:
-     - title: Data Sharing
-       url: /guidelines/data-sharing/
-       lvl3:
-          - title: API Playbook
-            url: /guidelines/api-playbook/
+    - title: Data Sharing
+      url: /guidelines/data-sharing/
+      lvl3:
+        - title: API Playbook
+          url: /guidelines/api-playbook/
 
-     - title: Design
-       url: /guidelines/design/
-       lvl3:
-          - title: Digital Service Standards
-            url: /guidelines/digital-service-standards/
-          - title: Accessibility Design
-            url: /guidelines/accessibility-design/
+    - title: Design
+      url: /guidelines/design/
+      lvl3:
+        - title: Digital Service Standards
+          url: /guidelines/digital-service-standards/
+        - title: Accessibility Design
+          url: /guidelines/accessibility-design/
 
-     - title: Hosting
-       url: /guidelines/hosting/
-       lvl3:
-          - title: Containerisation Playbook
-            url: /guidelines/containerisation-playbook/
+    - title: Hosting
+      url: /guidelines/hosting/
+      lvl3:
+        - title: Containerisation Playbook
+          url: /guidelines/containerisation-playbook/
 
-     - title: Security
-       url: /guidelines/security/
-       lvl3:
-          - title: DevSecOps Playbook
-            url: /guidelines/devsecops-playbook/
+    - title: Security
+      url: /guidelines/security/
+      lvl3:
+        - title: DevSecOps Playbook
+          url: /guidelines/devsecops-playbook/
 
-     - title: Strategy
-       url: /guidelines/security/
-       lvl3:
-          - title: Digital Government Blueprint
-            url: /guidelines/digital-government-blueprint/
-          - title: Ministry Family
-            url: /guidelines/digital-government-blueprint/
+    - title: Strategy
+      url: /guidelines/security/
+      lvl3:
+        - title: Digital Government Blueprint
+          url: /guidelines/digital-government-blueprint/
+        - title: Ministry Family
+          url: /guidelines/digital-government-blueprint/
 
 - title: Events
   url: /events/
   lvl2:
-     - title: Conferences
-       url: /events/conferences/
+    - title: Conferences
+      url: /events/conferences/
 
-     - title: Meetups
-       url: /events/meetups/
+    - title: Meetups
+      url: /events/meetups/
 
-     - title: Workshops
-       url: /events/workshops/
+    - title: Workshops
+      url: /events/workshops/
 
 - title: Communities
   url: /communities/
   lvl2:
-     - title: Agile
-       url: /communities/agile/
+    - title: Agile
+      url: /communities/agile/
 
-     - title: API
-       url: /communities/API/
+    - title: API
+      url: /communities/API/
 
-     - title: Design
-       url: /communities/design/
+    - title: Design
+      url: /communities/design/
