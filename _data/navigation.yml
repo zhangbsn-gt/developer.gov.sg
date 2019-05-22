@@ -3,6 +3,13 @@
   lvl2:
      - title: Concept
        url: /workflows/concept/
+       lvl3:
+          - title: Digital Government Blueprint
+            url: /workflows/concept/digital-government-blueprint/
+          - title: Ministry Family Digitalisation Plan
+            url: /workflows/concept/ministry-family-digitalisation-plan/
+          - title: Smart Nation
+            url: /workflows/concept/smart-nation/
 
      - title: Inception
        url: /workflows/inception/
@@ -81,14 +88,6 @@
           - title: Ask Jamie
             url: /products/chatbot/ask-jamie/
 
-     - title: Content Management
-       url: /products/content-management/
-       lvl3:
-          - title: Isomer
-            url: /products/content-management/isomer/
-          - title: Content Website Platform
-            url: /products/content-management/content-website-platform/
-
      - title: CI/CD/CT
        url: /products/ci-cd-ct/
        lvl3:
@@ -96,6 +95,14 @@
             url: /products/ci-cd-ct/ship/
           - title: HATS
             url: /products/ci-cd-ct/hats/
+
+     - title: Content Management
+       url: /products/content-management/
+       lvl3:
+          - title: Isomer
+            url: /products/content-management/isomer/
+          - title: Content Website Platform
+            url: /products/content-management/content-website-platform/
 
      - title: Data Sharing
        url: /products/data-sharing/
