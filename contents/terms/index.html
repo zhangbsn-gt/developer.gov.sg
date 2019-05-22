@@ -6,54 +6,79 @@ category: Gov Acronyms
 breadcrumb: Gov Acronyms
 ---
 
+{% include vue-app-terms-contribute-form.html %}
+<!-- Contains vue template for contribution-form -->
 <section class="sgds-section">
     <div class="sgds-container">
         <div class="content">
             <div class="row">
                 <div class="col is-10 is-offset-1">
                     <div id="terms">
+                        <div :style="contributeButtonContainerStyle">
+                            <button
+                                type="button"
+                                class="sgds-button default"
+                                v-on:click="showContributionForm = !showContributionForm"
+                            >
+                                Contribute with your own term
+                                <span
+                                    class="sgds-icon sgds-icon-chevron-down"
+                                    v-if="!showContributionForm"
+                                ></span>
+                                <span
+                                    class="sgds-icon sgds-icon-chevron-up"
+                                    v-if="showContributionForm"
+                                ></span>
+                            </button>
+                        </div>
+                        <div
+                            v-if="showContributionForm"
+                            :style="contributionFormStyle"
+                        >
+                            <contribution-form
+                                v-on:form-submit-success="showContributionForm = false"
+                            ></contribution-form>
+                        </div>
                         <label for="search-input" class="has-text-centered">
-                            <h5 class="padding--bottom--lg">Tech Acronyms used in Government</h5>
+                            <h5 class="padding--bottom--lg">
+                                Tech Acronyms used in Government
+                            </h5>
                         </label>
                         <div class="control has-icons-left">
                             <input
-                                    type="text"
-                                    id="search-input"
-                                    class="input is-medium"
-                                    placeholder="Search an acronym"
-                                    v-model="search">
+                                type="text"
+                                id="search-input"
+                                class="input is-medium"
+                                placeholder="Search an acronym"
+                                v-model="search"
+                            />
                             <span class="icon">
-                                <i class="sgds-icon sgds-icon-search is-size-6 search-bar"></i>
+                                <i
+                                    class="sgds-icon sgds-icon-search is-size-6 search-bar"
+                                ></i>
                             </span>
                         </div>
-                        <br>
-                        <div v-for="term in filteredTerms"
-                             v-cloak
-                             v-bind:style="filteredTermStyle"
-                             class="sgds-card">
+                        <br />
+                        <div
+                            v-for="term in filteredTerms"
+                            v-cloak
+                            class="sgds-card"
+                        >
                             <div class="sgds-card-content">
-                                <div class="row">
-                                    <div class="col is-3">
-                                        <h5>(( term.name ))</h5>
-                                    </div>
-                                    <div class="col is-9">
-                                        <h6>(( term.fullName ))</h6>
-                                        <p>(( term.description ))</p>
-                                    </div>
+                                <div class="col is-3">
+                                    <h5>(( term.term ))</h5>
+                                </div>
+                                <div class="col is-9">
+                                    <h6>(( term.full_term ))</h6>
+                                    <p>(( term.description ))</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    {% if jekyll.environment == "production" %}
-                    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-                    {% endif %}
-                    {% if jekyll.environment != "production" %}
-                    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" type="text/javascript"></script>
-                    {% endif %}
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<script src="/assets/js/search-vue-app.js" type="text/javascript"></script>
+<script src="/assets/js/vue-app-terms.js" type="text/javascript"></script>
