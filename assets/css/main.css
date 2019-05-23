@@ -43,11 +43,6 @@
     float: right;
 }
 
-#editor {
-    overflow: scroll;
-    max-height: 60vh;
-}
-
 .modal-enter {
     opacity: 0;
 }
@@ -60,4 +55,9 @@
 .modal-leave-active .modal-container {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
+}
+
+#editor {
+    overflow: scroll;
+    max-height: 60vh;
 }
