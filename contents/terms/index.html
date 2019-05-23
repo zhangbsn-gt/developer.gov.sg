@@ -15,29 +15,16 @@ breadcrumb: Gov Acronyms
                 <div class="col is-10 is-offset-1">
                     <div id="terms">
                         <div :style="contributeButtonContainerStyle">
-                            <button
-                                type="button"
-                                class="sgds-button default"
-                                v-on:click="showContributionForm = !showContributionForm"
-                            >
+                            <button type="button" class="sgds-button default"
+                                v-on:click="showContributionForm = !showContributionForm">
                                 Contribute with your own term
-                                <span
-                                    class="sgds-icon sgds-icon-chevron-down"
-                                    v-if="!showContributionForm"
-                                ></span>
-                                <span
-                                    class="sgds-icon sgds-icon-chevron-up"
-                                    v-if="showContributionForm"
-                                ></span>
+                                <span class="sgds-icon sgds-icon-chevron-down" v-if="!showContributionForm"></span>
+                                <span class="sgds-icon sgds-icon-chevron-up" v-if="showContributionForm"></span>
                             </button>
                         </div>
-                        <div
-                            v-if="showContributionForm"
-                            :style="contributionFormStyle"
-                        >
-                            <contribution-form
-                                v-on:form-submit-success="showContributionForm = false"
-                            ></contribution-form>
+                        <div v-if="showContributionForm" :style="contributionFormStyle">
+                            <contribution-form v-on:form-submit-success="showContributionForm = false">
+                            </contribution-form>
                         </div>
                         <label for="search-input" class="has-text-centered">
                             <h5 class="has-text-weight-semibold margin--bottom">
@@ -45,25 +32,14 @@ breadcrumb: Gov Acronyms
                             </h5>
                         </label>
                         <div class="control has-icons-left">
-                            <input
-                                type="text"
-                                id="search-input"
-                                class="input is-medium"
-                                placeholder="Search an acronym"
-                                v-model="search"
-                            />
+                            <input type="text" id="search-input" class="input is-medium" placeholder="Search an acronym"
+                                v-model="search" />
                             <span class="icon">
-                                <i
-                                    class="sgds-icon sgds-icon-search is-size-6 search-bar"
-                                ></i>
+                                <i class="sgds-icon sgds-icon-search is-size-6 search-bar"></i>
                             </span>
                         </div>
                         <br />
-                        <div
-                            v-for="term in filteredTerms"
-                            v-cloak
-                            class="sgds-card"
-                        >
+                        <div v-for="term in filteredTerms" v-cloak class="sgds-card">
                             <div class="sgds-card-content">
                                 <div class="col is-3">
                                     <h5>(( term.term ))</h5>
