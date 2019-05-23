@@ -23,13 +23,12 @@ const editorModal = {
             dataToEncode["form-name"] = this.form_name;
             axios
                 .post("/", urlEncode(dataToEncode), axiosConfig)
-                .then(function(response) {
-                    console.log(response);
+                .then(response => {
                     new Noty({
                         type: "success",
                         layout: "bottomRight",
                         text:
-                            "Your contribution has been submitted! <a href>View its progress here</a>"
+                            "Your contribution has been submitted! <a href='https://github.com/GovTechSG/developer.gov.sg/pulls'>View its progress here</a>"
                     }).show();
                     this.$emit("form-submit-success");
                 })
