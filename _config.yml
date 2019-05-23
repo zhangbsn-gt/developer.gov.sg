@@ -27,3 +27,5 @@ assets:
 
 exclude:
   - discourse/
+  - scripts
+  - lambda

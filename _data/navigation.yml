@@ -179,38 +179,38 @@
 - title: Guidelines
   url: /guidelines/
   lvl2:
-     - title: Data Sharing
-       url: /guidelines/data-sharing/
-       lvl3:
-          - title: API Playbook
-            url: /guidelines/data-sharing/api-playbook/
+    - title: Data Sharing
+      url: /guidelines/data-sharing/
+      lvl3:
+        - title: API Playbook
+          url: /guidelines/data-sharing/api-playbook/
 
-     - title: Design
-       url: /guidelines/design/
-       lvl3:
-          - title: Digital Service Standards
-            url: /guidelines/design/digital-service-standards/
-          - title: Accessibility Design
-            url: /guidelines/design/accessibility-design/
+    - title: Design
+      url: /guidelines/design/
+      lvl3:
+        - title: Digital Service Standards
+          url: /guidelines/design/digital-service-standards/
+        - title: Accessibility Design
+          url: /guidelines/design/accessibility-design/
 
-     - title: Strategy
-       url: /guidelines/strategy/
-       lvl3:
-          - title: Digital Government Blueprint
-            url: /guidelines/strategy/digital-government-blueprint/
-          - title: Ministry Family Digitalisation Plans
-            url: /guidelines/strategy/ministry-family-digitalisation-plans/
-          - title: Smart Nation
-            url: /guidelines/strategy/smart-nation/
+    - title: Strategy
+      url: /guidelines/strategy/
+      lvl3:
+        - title: Digital Government Blueprint
+          url: /guidelines/strategy/digital-government-blueprint/
+        - title: Ministry Family Digitalisation Plans
+          url: /guidelines/strategy/ministry-family-digitalisation-plans/
+        - title: Smart Nation
+          url: /guidelines/strategy/smart-nation/
 
 - title: Communities
   url: /communities/
   lvl2:
-     - title: Agile
-       url: /communities/agile/
+    - title: Agile
+      url: /communities/agile/
 
-     - title: API
-       url: /communities/API/
+    - title: API
+      url: /communities/API/
 
-     - title: Design
-       url: /communities/design/
+    - title: Design
+      url: /communities/design/
