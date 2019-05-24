@@ -1,6 +1,6 @@
 const yaml = require("js-yaml");
 const crypto = require("crypto");
-const beautify_html = require('js-beautify').html;
+const beautifyHtml = require("js-beautify").html;
 const Octokit = require("@octokit/rest");
 
 const githubToken = process.env.GITHUB_TOKEN;
@@ -17,32 +17,37 @@ const octokit = new Octokit({
     auth: githubToken
 });
 
-exports.handler = async function (event, context, callback) {
+exports.handler = async function(event, context, callback) {
     let eventBody = JSON.parse(event.body);
     let formData = eventBody.payload.data;
     let repoName = "developer.gov.sg";
 
     if (formData.hasOwnProperty("form_name") && formData.form_name === "edit-form") {
         let path = formData.page_path;
-        let pathArr = path.split("/");
-        let breadcrumb = pathArr[3].toUpperCase();
-        let productName = pathArr[1].charAt(0).toUpperCase() + pathArr[1].slice(1);
+        let title = formData.page_title;
+        let category = formData.page_category;
         let content = formData.page_content;
 
-        content = content.replace(/<h3>/g, '</div></div><hr class="margin--bottom--lg margin--top--lg"><div class="row"><div class="col"><h3 class="has-text-weight-semibold margin--bottom">')
-            .replace(/<h2>/g, '<hr class="margin--bottom--lg margin--top--lg"><div class="row"><div class="col"><h2 class="has-text-weight-semibold margin--bottom">')
-            .replace(/<h1>/g, '<hr class="margin--bottom--lg margin--top--lg"><div class="row"><div class="col"><h1 class="has-text-weight-semibold margin--bottom">')
-            .replace('<div class="ql-editor" data-gramm="false" contenteditable="true"></div></div><hr class="margin--bottom--lg margin--top--lg">',
-                `---\ntitle: ${formData.page_title}\nlayout: layout-sidenav\npermalink: ${path}\ncategory: ${productName}\nbreadcrumb: ${breadcrumb}\n---\n {%- include vue-edit-modal.html -%}\n<div class="devportal-editable">\n`)
-            .replace(/<a/g, '<a class="sgds-button is-rounded is-medium is-primary margin--top--lg"');
-        content += '</div></div>\n<hr class="margin--bottom--lg margin--top--lg">\n{%- include sgds-search-product.html -%}';
-        content = beautify_html(content, { indent_size: 2, space_in_empty_paren: true });
+        let newPage =
+            `---\n` +
+            `title: ${title}\n` +
+            `layout: layout-sidenav\n` +
+            `permalink: ${path}\n` +
+            `category: ${category}\n` +
+            `breadcrumb: ${title.toUpperCase()}\n` +
+            `---\n`;
 
-        const devRef = await octokit.git.getRef({
+        const formattedContent = beautifyHtml(content, {
+            wrap_line_length: 120
+        });
+        newPage += formattedContent;
+
+        const baseRef = await octokit.git.getRef({
             owner: repoOwner,
             repo: repoName,
             ref: `heads/${githubRef}`
         });
+
         const newBranchId = await generateId();
         const newBranchName = `edits-${new Date().toISOString().substring(0, 10)}-${newBranchId}`;
         const newRefName = `heads/${newBranchName}`;
@@ -50,33 +55,31 @@ exports.handler = async function (event, context, callback) {
             owner: repoOwner,
             repo: repoName,
             ref: "refs/" + newRefName,
-            sha: devRef.data.object.sha
+            sha: baseRef.data.object.sha
         });
 
         const newBlob = await octokit.git.createBlob({
             owner: repoOwner,
             repo: repoName,
-            content: content
+            content: newPage
         });
 
         const currentCommit = await octokit.git.getCommit({
             owner: repoOwner,
             repo: repoName,
-            commit_sha: devRef.data.object.sha
+            commit_sha: baseRef.data.object.sha
         });
 
         // post new tree object with file path pointer replaced with new blob SHA => tree SHA
         const newTree = await octokit.git.createTree({
             owner: repoOwner,
             repo: repoName,
-            tree: [
-                {
-                    path: "contents" + path + "index.html",
-                    mode: "100644",
-                    type: "blob",
-                    sha: newBlob.data.sha
-                }
-            ],
+            tree: [{
+                path: "contents" + path + "index.html",
+                mode: "100644",
+                type: "blob",
+                sha: newBlob.data.sha
+            }],
             base_tree: currentCommit.data.tree.sha
         });
 
@@ -84,7 +87,7 @@ exports.handler = async function (event, context, callback) {
         const newCommit = await octokit.git.createCommit({
             owner: repoOwner,
             repo: repoName,
-            message: `New Edits for ${formData.page_title}`,
+            message: `New edits for ${formData.page_title} page`,
             tree: newTree.data.sha,
             parents: [currentCommit.data.sha]
         });
@@ -100,10 +103,10 @@ exports.handler = async function (event, context, callback) {
         const prResults = await octokit.pulls.create({
             owner: repoOwner,
             repo: repoName,
-            title: `New Edits for ${formData.page_title}`,
+            title: `New edits for ${formData.page_title} page`,
             head: newBranchName,
             base: githubRef,
-            body: content,
+            body: newPage,
             maintainer_can_modify: true
         });
 
@@ -136,7 +139,7 @@ exports.handler = async function (event, context, callback) {
             updatedTermsYaml = termsFileRaw + "\n" + newTermYaml;
         }
 
-        const devRef = await octokit.git.getRef({
+        const baseRef = await octokit.git.getRef({
             owner: repoOwner,
             repo: repoName,
             ref: `heads/${githubRef}`
@@ -149,7 +152,7 @@ exports.handler = async function (event, context, callback) {
             owner: repoOwner,
             repo: repoName,
             ref: "refs/" + newRefName,
-            sha: devRef.data.object.sha
+            sha: baseRef.data.object.sha
         });
 
         // post new blob object with new content => blob SHA
@@ -163,21 +166,19 @@ exports.handler = async function (event, context, callback) {
         const currentCommit = await octokit.git.getCommit({
             owner: repoOwner,
             repo: repoName,
-            commit_sha: devRef.data.object.sha
+            commit_sha: baseRef.data.object.sha
         });
 
         // post new tree object with file path pointer replaced with new blob SHA => tree SHA
         const newTree = await octokit.git.createTree({
             owner: repoOwner,
             repo: repoName,
-            tree: [
-                {
-                    path: "_data/terms.yml",
-                    mode: "100644",
-                    type: "blob",
-                    sha: newBlob.data.sha
-                }
-            ],
+            tree: [{
+                path: "_data/terms.yml",
+                mode: "100644",
+                type: "blob",
+                sha: newBlob.data.sha
+            }],
             base_tree: currentCommit.data.tree.sha
         });
 
@@ -185,9 +186,7 @@ exports.handler = async function (event, context, callback) {
         const newCommit = await octokit.git.createCommit({
             owner: repoOwner,
             repo: repoName,
-            message:
-                "new term suggested by " +
-                `${formData.contributor} <${formData.contributor_email}>`,
+            message: `New term suggested by ${formData.contributor} <${formData.contributor_email}>`,
             tree: newTree.data.sha,
             parents: [currentCommit.data.sha]
         });
@@ -204,23 +203,23 @@ exports.handler = async function (event, context, callback) {
         const prResults = await octokit.pulls.create({
             owner: repoOwner,
             repo: repoName,
-            title: "New Government Term Suggestion",
+            title: `New Government Acronym Suggestion`,
             head: newBranchName,
             base: githubRef,
             body: newTermYaml,
             maintainer_can_modify: true
         });
-    }
 
-    callback(null, {
-        statusCode: 200,
-        body: prResults.data.html_url
-    });
+        callback(null, {
+            statusCode: 200,
+            body: prResults.data.html_url
+        });
+    }
 };
 
 async function generateId() {
     return new Promise((resolve, reject) => {
-        crypto.randomBytes(4, function (err, buffer) {
+        crypto.randomBytes(4, function(err, buffer) {
             if (err) {
                 reject(err);
             }

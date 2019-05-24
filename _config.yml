@@ -26,6 +26,8 @@ assets:
     - fonts
 
 exclude:
-  - discourse/
-  - scripts
+  - discourse
+  - functions
   - lambda
+  - node_modules
+  - scripts

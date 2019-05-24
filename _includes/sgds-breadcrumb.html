@@ -13,9 +13,11 @@
             {% capture current_breadcrumb_md_url %}{{next_prepender}}/{{ splitted_url_parts[i] }}/{% endcapture %}
             {% capture next_prepender %}{{next_prepender}}/{{ splitted_url_parts[i] }}{% endcapture %}
 
-            {% if current_breadcrumb_url == breadcrumb_page.permalink or current_breadcrumb_md_url == breadcrumb_page.permalink %}
-              <li class="is-marginless"><a class="has-text-white" href="{{ site.baseurl }}{{breadcrumb_page.permalink}}">{{breadcrumb_page.breadcrumb | upcase}}</a></li>
-            {% endif %}
+            {% for breadcrumb_page in site.pages %}
+                {% if current_breadcrumb_url == breadcrumb_page.permalink or current_breadcrumb_md_url == breadcrumb_page.permalink %}
+                <li><a href="{{ site.baseurl }}{{breadcrumb_page.permalink}}"><small>{{breadcrumb_page.breadcrumb | upcase}}</small></a></li>
+                {% endif %}
+            {% endfor %}
 
         {% endfor %}
     </ul>
