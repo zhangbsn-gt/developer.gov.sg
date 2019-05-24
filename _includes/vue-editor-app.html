@@ -1,8 +1,8 @@
 <div id="edit-app">
     <a
-        class="sgds-button is-primary pull-right"
+        class="sgds-button is-rounded"
         @click="openEditor('{{ page.title }}', '{{ page.permalink }}', '{{ page.category }}')"
-        >Edit</a
+        >Edit Page</a
     >
     <editor-modal
         v-if="showEditorModal"
@@ -47,16 +47,16 @@
                                 <input id="page_content" name="page_content" class="input" type="hidden"/>
                                 <input id="form_name" name="form_name" class="input" type="hidden"/>
                                 <button
-                                    type="button"
-                                    class="modal-default-button sgds-button is-secondary"
-                                    @click="$emit('close')"
-                                    >Cancel</button
+                                        type="submit"
+                                        class="modal-default-button sgds-button is-rounded is-primary"
+                                        @click.prevent="submit"
+                                >Send for Review</button
                                 >
                                 <button
-                                    type="submit"
-                                    class="modal-default-button sgds-button is-primary"
-                                    @click.prevent="submit"
-                                    >Submit</button
+                                    type="button"
+                                    class="modal-default-button sgds-button is-rounded margin--right"
+                                    @click="$emit('close')"
+                                    >Cancel</button
                                 >
                             </form>
                             

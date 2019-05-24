@@ -15,7 +15,7 @@
 
             {% for breadcrumb_page in site.pages %}
                 {% if current_breadcrumb_url == breadcrumb_page.permalink or current_breadcrumb_md_url == breadcrumb_page.permalink %}
-                <li><a href="{{ site.baseurl }}{{breadcrumb_page.permalink}}"><small>{{breadcrumb_page.breadcrumb | upcase}}</small></a></li>
+                <li><a class="has-text-white" href="{{ site.baseurl }}{{breadcrumb_page.permalink}}">{{breadcrumb_page.breadcrumb | upcase}}</a></li>
                 {% endif %}
             {% endfor %}
 
