@@ -78,3 +78,11 @@
     padding-top: 1rem!important;
     margin-top: 1rem!important;
 }
+
+.ql-editor p, .article p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
