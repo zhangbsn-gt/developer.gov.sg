@@ -202,15 +202,3 @@
           url: /guidelines/strategy/ministry-family-digitalisation-plans/
         - title: Smart Nation
           url: /guidelines/strategy/smart-nation/
-
-- title: Communities
-  url: /communities/
-  lvl2:
-    - title: Agile
-      url: /communities/agile/
-
-    - title: API
-      url: /communities/API/
-
-    - title: Design
-      url: /communities/design/
