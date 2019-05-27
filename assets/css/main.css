@@ -89,3 +89,8 @@
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
+
+hr{
+    margin-bottom: 2rem!important;
+    margin-top: 2rem!important;
+}
