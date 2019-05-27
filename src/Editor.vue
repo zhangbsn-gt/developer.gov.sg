@@ -133,7 +133,8 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
+/* no scoped css. styles apply .article, outside this component */
 .modal-mask {
   position: fixed;
   z-index: 9998;
@@ -188,9 +189,48 @@ export default {
   transform: scale(1.1);
 }
 
-#editor {
+/*Custom styling for editable page*/
+/* .article applies to outer html*/
+.ql-editor {
+  font-family: "Source Sans Pro", BlinkMacSystemFont, -apple-system, "Segoe UI",
+    "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   overflow: scroll;
   min-height: 60vh;
   max-height: 60vh;
+}
+
+.ql-editor h5,
+.article h5 {
+  font-size: 2rem !important;
+  font-weight: 600 !important;
+  margin-bottom: 1rem !important;
+}
+
+.ql-editor h6,
+.article h6 {
+  font-size: 1.5rem !important;
+  font-weight: 600 !important;
+  margin-bottom: 1rem !important;
+}
+
+.ql-editor h5:nth-child(n + 2),
+.article h5:nth-child(n + 2) {
+  border-top: 1px solid #d6d6d6;
+  padding-top: 2rem !important;
+  margin-top: 2rem !important;
+}
+
+.ql-editor p,
+.article p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+hr {
+  margin-bottom: 2rem !important;
+  margin-top: 2rem !important;
 }
 </style>
