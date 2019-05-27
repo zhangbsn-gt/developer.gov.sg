@@ -1,0 +1,196 @@
+<template>
+  <div>
+    <transition name="modal">
+      <div class="modal-mask">
+        <div class="modal-wrapper">
+          <div class="modal-container">
+            <div class="modal-header">
+              <h5>Editing {{ page_title }}</h5>
+            </div>
+
+            <div class="modal-body">
+              <div id="editor">
+                <span v-html="initial_content"></span>
+              </div>
+            </div>
+
+            <div class="modal-footer">
+              <form
+                id="edit-form"
+                name="edit-form"
+                method="POST"
+                data-netlify="true"
+                data-netlify-honeypot="honeypot-field"
+              >
+                <!-- Spam guard -->
+                <input type="hidden" name="honeypot-field" value="edit-form">
+                <input id="page_path" name="page_path" class="input" type="hidden">
+                <input id="page_title" name="page_title" class="input" type="hidden">
+                <input id="page_content" name="page_content" class="input" type="hidden">
+                <input id="form_name" name="form_name" class="input" type="hidden">
+                <button
+                  type="submit"
+                  class="modal-default-button sgds-button is-rounded is-primary"
+                  @click.prevent="submit"
+                >Send for Review</button>
+                <button
+                  type="button"
+                  class="modal-default-button sgds-button is-rounded margin--right"
+                  @click="$emit('close')"
+                >Cancel</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </transition>
+  </div>
+</template>
+
+<script>
+import axios from "axios";
+import Noty from "noty";
+import Quill from "quill";
+import "quill/dist/quill.snow.css";
+import { urlEncode } from "./lib";
+export default {
+  props: ["initial_content", "page_path", "page_title", "page_category"],
+  data() {
+    return {
+      form_name: "edit-form"
+    };
+  },
+  methods: {
+    submit() {
+      const axiosConfig = {
+        header: {
+          "Content-Type": "application/x-www-form-urlencoded"
+        }
+      };
+      this.page_content = document.querySelector(".ql-editor").innerHTML;
+      const dataToEncode = {
+        page_path: this.page_path,
+        page_title: this.page_title,
+        page_category: this.page_category,
+        page_content: this.page_content,
+        form_name: this.form_name
+      };
+      dataToEncode["form-name"] = this.form_name;
+      axios
+        .post("/", urlEncode(dataToEncode), axiosConfig)
+        .then(response => {
+          new Noty({
+            type: "success",
+            layout: "bottomRight",
+            text:
+              "Your contribution has been submitted! <a href='https://github.com/GovTechSG/developer.gov.sg/pulls'>View its progress here</a>"
+          }).show();
+          this.$emit("form-submit-success");
+        })
+        .catch(function(error) {
+          new Noty({
+            type: "error",
+            layout: "bottomRight",
+            text:
+              "There was an error processing your request. Please try again."
+          }).show();
+        });
+    }
+  },
+  mounted() {
+    this.editor = new Quill("#editor", {
+      theme: "snow",
+      modules: {
+        toolbar: [
+          [
+            {
+              header: [5, 6, false]
+            }
+          ],
+          ["bold", "italic", "underline", "link"],
+          ["blockquote", "code-block"],
+          [
+            {
+              list: "ordered"
+            },
+            {
+              list: "bullet"
+            }
+          ],
+          ["clean"]
+          // [{ header: 1 }, { header: 2 }], // custom button values
+          // [{ script: "sub" }, { script: "super" }], // superscript/subscript
+          // [{ indent: "-1" }, { indent: "+1" }], // outdent/indent
+          // [{ direction: "rtl" }], // text direction
+          // [{ size: ["small", false, "large", "huge"] }], // custom dropdown
+          // [{ color: [] }, { background: [] }], // dropdown with defaults from theme
+          // [{ font: [] }],
+          // [{ align: [] }],
+        ]
+      }
+    });
+  }
+};
+</script>
+
+<style scoped>
+.modal-mask {
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: table;
+  transition: opacity 0.3s ease;
+}
+
+.modal-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.modal-container {
+  width: 70%;
+  margin: 0px auto;
+  padding: 60px 30px;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
+  transition: all 0.3s ease;
+}
+
+.modal-header h3 {
+  margin-top: 0;
+  color: #888888;
+}
+
+.modal-body {
+  margin: 20px 0;
+}
+
+.modal-default-button {
+  float: right;
+}
+
+.modal-enter {
+  opacity: 0;
+}
+
+.modal-leave-active {
+  opacity: 0;
+}
+
+.modal-enter .modal-container,
+.modal-leave-active .modal-container {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+#editor {
+  overflow: scroll;
+  min-height: 60vh;
+  max-height: 60vh;
+}
+</style>

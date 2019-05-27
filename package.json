@@ -5,15 +5,33 @@
   "main": "",
   "dependencies": {
     "@octokit/rest": "^16.25.5",
+    "axios": "^0.18.0",
     "encoding": "^0.1.12",
     "js-beautify": "^1.10.0",
     "js-yaml": "^3.13.1",
-    "netlify-lambda": "^1.4.7"
+    "netlify-lambda": "^1.4.7",
+    "noty": "^3.2.0-beta",
+    "quill": "^1.3.6"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^2.1.1",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
+    "vue": "^2.6.10",
+    "vue-loader": "^15.7.0",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2"
+  },
   "scripts": {
     "servelambda": "netlify-lambda serve lambda",
     "buildlambda": "netlify-lambda build lambda",
+    "buildstatic": "NODE_ENV=production webpack",
+    "devserver": "webpack --watch | bundle exec jekyll serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
