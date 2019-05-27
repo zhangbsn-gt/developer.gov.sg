@@ -10,7 +10,9 @@ const editorModal = {
     methods: {
         submit() {
             const axiosConfig = {
-                header: { "Content-Type": "application/x-www-form-urlencoded" }
+                header: {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                }
             };
             this.page_content = document.querySelector(".ql-editor").innerHTML;
             const dataToEncode = {
@@ -27,8 +29,7 @@ const editorModal = {
                     new Noty({
                         type: "success",
                         layout: "bottomRight",
-                        text:
-                            "Your contribution has been submitted! <a href='https://github.com/GovTechSG/developer.gov.sg/pulls'>View its progress here</a>"
+                        text: "Your contribution has been submitted! <a href='https://github.com/GovTechSG/developer.gov.sg/pulls'>View its progress here</a>"
                     }).show();
                     this.$emit("form-submit-success");
                 })
@@ -36,8 +37,7 @@ const editorModal = {
                     new Noty({
                         type: "error",
                         layout: "bottomRight",
-                        text:
-                            "There was an error processing your request. Please try again."
+                        text: "There was an error processing your request. Please try again."
                     }).show();
                 });
         }
@@ -47,11 +47,16 @@ const editorModal = {
             theme: "snow",
             modules: {
                 toolbar: [
-                    [{ header: [1, 2, 3, 4, 5, 6, false] }],
-
+                    [{
+                        header: [5, 6, false]
+                    }],
                     ["bold", "italic", "underline", "link"],
                     ["blockquote", "code-block"],
-                    [{ list: "ordered" }, { list: "bullet" }],
+                    [{
+                        list: "ordered"
+                    }, {
+                        list: "bullet"
+                    }],
                     ["clean"]
                     // [{ header: 1 }, { header: 2 }], // custom button values
                     // [{ script: "sub" }, { script: "super" }], // superscript/subscript
@@ -95,8 +100,8 @@ function urlEncode(data) {
         if (data.hasOwnProperty(key)) {
             encodedDataArray.push(
                 encodeURIComponent(key) +
-                    "=" +
-                    encodeURIComponent(data[key])
+                "=" +
+                encodeURIComponent(data[key])
             );
         }
     }
