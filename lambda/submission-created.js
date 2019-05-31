@@ -26,12 +26,13 @@ exports.handler = async function(event, context, callback) {
         let path = formData.page_path;
         let title = formData.page_title;
         let category = formData.page_category;
+        let layout = formData.page_layout;
         let content = formData.page_content;
 
         let newPage =
             `---\n` +
             `title: ${title}\n` +
-            `layout: layout-sidenav\n` +
+            `layout: ${layout}\n` +
             `permalink: ${path}\n` +
             `category: ${category}\n` +
             `breadcrumb: ${title.toUpperCase()}\n` +
