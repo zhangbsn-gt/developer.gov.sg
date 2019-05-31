@@ -5,7 +5,8 @@ const {
 module.exports = {
     mode: process.env.NODE_ENV || "development",
     entry: {
-        "vue-editor-app": "./src/vue-editor-app.js",
+        "vue-edit-category-app": "./src/vue-edit-category-app.js",
+        "vue-edit-product-app": "./src/vue-edit-product-app.js",
         "vue-terms-app": "./src/vue-terms-app.js"
     },
     output: {

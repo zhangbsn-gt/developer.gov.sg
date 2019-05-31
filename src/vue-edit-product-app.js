@@ -1,10 +1,10 @@
 import Vue from "vue";
-import EditorApp from "./EditorApp.vue";
+import EditProduct from "./EditProduct.vue";
 
 const mountElement = document.querySelector("#edit-app");
 new Vue({
     render: createElement => {
-        return createElement(EditorApp, {
+        return createElement(EditProduct, {
             props: {
                 ...mountElement.dataset
             }
