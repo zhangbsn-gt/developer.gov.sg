@@ -1,5 +1,5 @@
 <template>
-    <div class="modal-mask" v-on:keypress="logKey">
+    <div class="modal-mask">
         <div class="modal-wrapper">
             <div class="modal-container">
                 <div class="modal-top">
