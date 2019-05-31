@@ -25,9 +25,15 @@ assets:
   sources:
     - fonts
 
+include:
+  - assets
+  - contents
+  - sgds-govtech
+
 exclude:
   - discourse
   - functions
   - lambda
   - node_modules
   - scripts
+  - src
