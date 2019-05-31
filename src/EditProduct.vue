@@ -1,46 +1,62 @@
 <template>
     <div id="edit-product-app">
         <a class="sgds-button is-rounded" @click="openEditor">Edit This Page</a>
-        <transition name="modal">
-            <EditorModal
-                v-if="showEditorModal && currentStage === stages.edit"
-                :onMount="mountQuillEditor"
-                @close-modal="showEditorModal = false"
-            >
-                <template v-slot:modal-header>
-                    <h5>{{ title }}</h5>
-                </template>
+        <EditorModal
+            :key="stages.edit"
+            v-if="showEditStageModal"
+            :onMount="mountQuillEditor"
+            @close-modal="closeEditor"
+        >
+            <template v-slot:modal-header>
+                <h5>{{ title }}</h5>
+            </template>
 
-                <template v-slot:modal-body>
-                    <div id="editor">
-                        <span v-html="content"></span>
-                    </div>
-                </template>
+            <template v-slot:modal-body>
+                <div id="editor">
+                    <span v-html="page_content"></span>
+                </div>
+            </template>
 
-                <template v-slot:modal-footer>
-                    <form
-                        id="edit-form"
-                        name="edit-form"
-                        method="POST"
-                        data-netlify="true"
-                        data-netlify-honeypot="honeypot-field"
-                    >
-                        <!-- Spam guard -->
-                        <input type="hidden" name="honeypot-field" value="edit-form">
-                        <button
-                            type="submit"
-                            class="modal-default-button sgds-button is-rounded is-primary"
-                            @click.prevent="submit"
-                        >Verify Government Email</button>
-                        <button
-                            type="button"
-                            class="modal-default-button sgds-button is-rounded margin--right"
-                            @click="closeEditor"
-                        >Cancel</button>
-                    </form>
-                </template>
-            </EditorModal>
-        </transition>
+            <template v-slot:modal-footer>
+                <form
+                    id="edit-form"
+                    name="edit-form"
+                    method="POST"
+                    data-netlify="true"
+                    data-netlify-honeypot="honeypot-field"
+                >
+                    <!-- Spam guard -->
+                    <input type="hidden" name="honeypot-field" value="edit-form">
+                    <button
+                        type="submit"
+                        class="modal-default-button sgds-button is-rounded is-primary"
+                        @click.prevent="toSubmitStage"
+                    >Verify Government Email</button>
+                    <button
+                        type="button"
+                        class="modal-default-button sgds-button is-rounded margin--right"
+                        @click="closeEditor"
+                    >Cancel</button>
+                </form>
+            </template>
+        </EditorModal>
+
+        <EditorModal v-if="showSubmitStageModal" @close-modal="closeEditor" :key="stages.submit">
+            <template v-slot:modal-header>Submit changes</template>
+
+            <template v-slot:modal-body>
+                Enter email and OTP
+                (preview changes)
+            </template>
+
+            <template v-slot:modal-footer>
+                <button
+                    type="button"
+                    class="modal-default-button sgds-button is-rounded"
+                    @click="toEditStage"
+                >Back</button>
+            </template>
+        </EditorModal>
     </div>
 </template>
 
@@ -67,7 +83,9 @@ export default {
         return data;
     },
     created() {
-        this.content = document.getElementsByClassName("article")[0].innerHTML;
+        this.page_content = document.getElementsByClassName(
+            "article"
+        )[0].innerHTML;
     },
     methods: {
         openEditor() {
@@ -103,7 +121,7 @@ export default {
                     }).show();
                     this.showEditorModal = false;
                 })
-                .catch((error) => {
+                .catch(error => {
                     new Noty({
                         type: "error",
                         layout: "bottomRight",
@@ -144,13 +162,32 @@ export default {
                     ]
                 }
             });
+        },
+        toSubmitStage() {
+            this.page_content = document.querySelector(".ql-editor").innerHTML;
+            this.currentStage = this.stages.submit;
+        },
+        toEditStage() {
+            this.currentStage = this.stages.edit;
+        }
+    },
+    computed: {
+        showEditStageModal() {
+            return (
+                this.showEditorModal && this.currentStage === this.stages.edit
+            );
+        },
+        showSubmitStageModal() {
+            return (
+                this.showEditorModal && this.currentStage === this.stages.submit
+            );
         }
     }
 };
 </script>
 
 <style>
-.modal-enter {
+/* .modal-enter {
     opacity: 0;
 }
 
@@ -162,7 +199,7 @@ export default {
 .modal-leave-active .modal-container {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
-}
+} */
 
 /*Custom styling for editable page*/
 /* .article applies to outer html*/
