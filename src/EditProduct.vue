@@ -1,5 +1,5 @@
 <template>
-    <div id="edit-app">
+    <div id="edit-product-app">
         <a class="sgds-button is-rounded" @click="openEditor">Edit This Page</a>
         <transition name="modal">
             <EditorModal
@@ -47,10 +47,7 @@
 <script>
 import axios from "axios";
 import Noty from "noty";
-import "noty/lib/noty.css";
-import "noty/lib/themes/mint.css";
 import Quill from "quill";
-import "quill/dist/quill.snow.css";
 import EditorModal from "./EditorModal.vue";
 import { urlEncode } from "./lib";
 
