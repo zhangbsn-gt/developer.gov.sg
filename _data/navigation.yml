@@ -1,180 +1,180 @@
 - title: Workflows
   url: /workflows/
   lvl2:
-     - title: Concept
-       url: /workflows/concept/
-       lvl3:
-          - title: Digital Government Blueprint
-            url: /workflows/concept/digital-government-blueprint/
-          - title: Ministry Family Digitalisation Plan
-            url: /workflows/concept/ministry-family-digitalisation-plan/
-          - title: Smart Nation
-            url: /workflows/concept/smart-nation/
+    - title: Concept
+      url: /workflows/concept/
+      lvl3:
+        - title: Digital Government Blueprint
+          url: /workflows/concept/digital-government-blueprint/
+        - title: Ministry Family Digitalisation Plan
+          url: /workflows/concept/ministry-family-digitalisation-plan/
+        - title: Smart Nation
+          url: /workflows/concept/smart-nation/
 
-     - title: Inception
-       url: /workflows/inception/
-       lvl3:
-          - title: Form Cross-Functional Team
-            url: /workflows/inception/form-team/
-          - title: Identify What You Will Need
-            url: /workflows/inception/what-you-need/
-          - title: Identify Product Features
-            url: /workflows/inception/product-backlog/
+    - title: Inception
+      url: /workflows/inception/
+      lvl3:
+        - title: Form Cross-Functional Team
+          url: /workflows/inception/form-team/
+        - title: Identify What You Will Need
+          url: /workflows/inception/what-you-need/
+        - title: Identify Product Features
+          url: /workflows/inception/product-backlog/
 
-     - title: Construction and Iteration
-       url: /workflows/construction-iteration/
-       lvl3:
-          - title: Use Design System
-            url: /workflows/construction-iteration/design-system/
-          - title: Design for Accessibility
-            url: /workflows/construction-iteration/design-accessibility/
-          - title: Create a Website
-            url: /workflows/construction-iteration/create-website/
-          - title: Create a Microservice
-            url: /workflows/construction-iteration/create-microservice/
+    - title: Construction and Iteration
+      url: /workflows/construction-iteration/
+      lvl3:
+        - title: Use Design System
+          url: /workflows/construction-iteration/design-system/
+        - title: Design for Accessibility
+          url: /workflows/construction-iteration/design-accessibility/
+        - title: Create a Website
+          url: /workflows/construction-iteration/create-website/
+        - title: Create a Microservice
+          url: /workflows/construction-iteration/create-microservice/
 
-     - title: Release
-       url: /workflows/release/
-       lvl3:
-          - title: Ensure Production Readiness
-            url: /workflows/release/production-readiness/
-          - title: Deploy the Solution
-            url: /workflows/release/deploy-solution/
+    - title: Release
+      url: /workflows/release/
+      lvl3:
+        - title: Ensure Production Readiness
+          url: /workflows/release/production-readiness/
+        - title: Deploy the Solution
+          url: /workflows/release/deploy-solution/
 
-     - title: Production
-       url: /workflows/production/
-       lvl3:
-          - title: Monitor System Performance
-            url: /workflows/production/monitor-system-performance/
-          - title: Prepare for Disaster
-            url: /workflows/production/prepare-for-disaster/
+    - title: Production
+      url: /workflows/production/
+      lvl3:
+        - title: Monitor System Performance
+          url: /workflows/production/monitor-system-performance/
+        - title: Prepare for Disaster
+          url: /workflows/production/prepare-for-disaster/
 
-     - title: Retirement
-       url: /workflows/retirement/
-       lvl3:
-          - title: Migrate Users to New Product
-            url: /workflows/retirement/migrate-users/
+    - title: Retirement
+      url: /workflows/retirement/
+      lvl3:
+        - title: Migrate Users to New Product
+          url: /workflows/retirement/migrate-users/
 
 - title: Products
   url: /products/
   lvl2:
-     - title: Analytics
-       url: /products/analytics/
-       lvl3:
-          - title: WOGAA
-            url: /products/analytics/wogaa/
-          - title: Sentimeter
-            url: /products/analytics/sentimeter/
+    - title: Analytics
+      url: /products/analytics/
+      lvl3:
+        - title: WOGAA
+          url: /products/analytics/wogaa/
+        - title: Sentimeter
+          url: /products/analytics/sentimeter/
 
-     - title: Blockchain
-       url: /products/blockchain/
-       lvl3:
-          - title: OpenCerts
-            url: /products/blockchain/opencerts/
+    - title: Blockchain
+      url: /products/blockchain/
+      lvl3:
+        - title: OpenCerts
+          url: /products/blockchain/opencerts/
 
-     - title: Business Application
-       url: /products/business-application/
-       lvl3:
-          - title: FormSG
-            url: /products/business-application/formsg/
-          - title: OpenDoc
-            url: /products/business-application/opendoc/
-          - title: GoSG
-            url: /products/business-application/gosg/
+    - title: Business Application
+      url: /products/business-application/
+      lvl3:
+        - title: FormSG
+          url: /products/business-application/formsg/
+        - title: OpenDoc
+          url: /products/business-application/opendoc/
+        - title: GoSG
+          url: /products/business-application/gosg/
 
-     - title: Chat Bot
-       url: /products/chatbot/
-       lvl3:
-          - title: Ask Jamie
-            url: /products/chatbot/ask-jamie/
+    - title: Chat Bot
+      url: /products/chatbot/
+      lvl3:
+        - title: Ask Jamie
+          url: /products/chatbot/ask-jamie/
 
-     - title: CI/CD/CT
-       url: /products/ci-cd-ct/
-       lvl3:
-          - title: SHIP
-            url: /products/ci-cd-ct/ship/
-          - title: HATS
-            url: /products/ci-cd-ct/hats/
+    - title: CI/CD/CT
+      url: /products/ci-cd-ct/
+      lvl3:
+        - title: SHIP
+          url: /products/ci-cd-ct/ship/
+        - title: HATS
+          url: /products/ci-cd-ct/hats/
 
-     - title: Content Management
-       url: /products/content-management/
-       lvl3:
-          - title: Isomer
-            url: /products/content-management/isomer/
-          - title: Content Website Platform
-            url: /products/content-management/content-website-platform/
+    - title: Content Management
+      url: /products/content-management/
+      lvl3:
+        - title: Isomer
+          url: /products/content-management/isomer/
+        - title: Content Website Platform
+          url: /products/content-management/content-website-platform/
 
-     - title: Data Sharing
-       url: /products/data-sharing/
-       lvl3:
-          - title: Data.Gov.Sg
-            url: /products/data-sharing/data-gov-sg/
-          - title: NDI-API
-            url: /products/data-sharing/ndi-api/
-          - title: APEX
-            url: /products/data-sharing/apex/
-          - title: OneMap
-            url: /products/data-sharing/onemap/
-          - title: Land Transport Data Mall
-            url: /products/data-sharing/land-transport-data-mall/
-          - title: IRAS API
-            url: /products/data-sharing/iras-api/
-          - title: MAS API
-            url: /products/data-sharing/mas-api/
-          - title: Networked Trade Platform
-            url: /products/data-sharing/networked-trade-platform/
-          - title: Enterprise Data Hub
-            url: /products/data-sharing/enterprise-data-hub/
-          - title: SingStat Table Builder
-            url: /products/data-sharing/singstat-table-builder/
-          - title: URA Space
-            url: /products/data-sharing/ura-space/
+    - title: Data Sharing
+      url: /products/data-sharing/
+      lvl3:
+        - title: Data.Gov.Sg
+          url: /products/data-sharing/data-gov-sg/
+        - title: NDI-API
+          url: /products/data-sharing/ndi-api/
+        - title: APEX
+          url: /products/data-sharing/apex/
+        - title: OneMap
+          url: /products/data-sharing/onemap/
+        - title: Land Transport Data Mall
+          url: /products/data-sharing/land-transport-data-mall/
+        - title: IRAS API
+          url: /products/data-sharing/iras-api/
+        - title: MAS API
+          url: /products/data-sharing/mas-api/
+        - title: Networked Trade Platform
+          url: /products/data-sharing/networked-trade-platform/
+        - title: Enterprise Data Hub
+          url: /products/data-sharing/enterprise-data-hub/
+        - title: SingStat Table Builder
+          url: /products/data-sharing/singstat-table-builder/
+        - title: URA Space
+          url: /products/data-sharing/ura-space/
 
-     - title: Design
-       url: /products/design/
-       lvl3:
-          - title: Design System
-            url: /products/design/design-system/
+    - title: Design
+      url: /products/design/
+      lvl3:
+        - title: Design System
+          url: /products/design/design-system/
 
-     - title: Grants
-       url: /products/grants/
-       lvl3:
-          - title: TRANS Grant
-            url: /products/grants/trans-grant/
+    - title: Grants
+      url: /products/grants/
+      lvl3:
+        - title: TRANS Grant
+          url: /products/grants/trans-grant/
 
-     - title: Hosting
-       url: /products/hosting/
-       lvl3:
-          - title: Government Commercial Cloud
-            url: /products/hosting/government-commercial-cloud/
-          - title: Government Private Cloud
-            url: /products/hosting/government-private-cloud/
-          - title: NECTAR
-            url: /products/hosting/nectar/
+    - title: Hosting
+      url: /products/hosting/
+      lvl3:
+        - title: Government Commercial Cloud
+          url: /products/hosting/government-commercial-cloud/
+        - title: Government Private Cloud
+          url: /products/hosting/government-private-cloud/
+        - title: NECTAR
+          url: /products/hosting/nectar/
 
-     - title: Identity Management
-       url: /products/identity-management/
-       lvl3:
-          - title: SingPass
-            url: /products/identity-management/singpass/
-          - title: CorpPass
-            url: /products/identity-management/corppass/
-          - title: MyInfo
-            url: /products/identity-management/myinfo/
-          - title: Unique Entity Number
-            url: /products/identity-management/unique-entity-number/
+    - title: Identity Management
+      url: /products/identity-management/
+      lvl3:
+        - title: SingPass
+          url: /products/identity-management/singpass/
+        - title: CorpPass
+          url: /products/identity-management/corppass/
+        - title: MyInfo
+          url: /products/identity-management/myinfo/
+        - title: Unique Entity Number
+          url: /products/identity-management/unique-entity-number/
 
-     - title: Marketplaces
-       url: /products/marketplaces/
-       lvl3:
-          - title: CloudStore
-            url: /products/marketplaces/cloudstore/
+    - title: Marketplaces
+      url: /products/marketplaces/
+      lvl3:
+        - title: CloudStore
+          url: /products/marketplaces/cloudstore/
 
-     - title: Security
-       url: /products/security/
-       lvl3:
-          - title: GITSIR
-            url: /products/security/gitsir/
+    - title: Security
+      url: /products/security/
+      lvl3:
+        - title: GITSIR
+          url: /products/security/gitsir/
 
 - title: Guidelines
   url: /guidelines/
@@ -202,15 +202,3 @@
           url: /guidelines/strategy/ministry-family-digitalisation-plans/
         - title: Smart Nation
           url: /guidelines/strategy/smart-nation/
-
-- title: Communities
-  url: /communities/
-  lvl2:
-    - title: Agile
-      url: /communities/agile/
-
-    - title: API
-      url: /communities/API/
-
-    - title: Design
-      url: /communities/design/

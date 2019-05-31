@@ -1,12 +1,10 @@
 ---
 layout: layout-default
 ---
-<section class="sgds-section has-background-black padding--bottom--lg padding--top--lg" style="background: url('/assets/img/bg_splash.jpg') fixed top center; background-size: auto 100%;">
+<section class="sgds-section has-background-black padding--bottom--lg padding--top--lg" style="background: url('/assets/img/bg_splash.jpg') fixed top center; background-size: 100% 100%;">
     <div class="sgds-container">
-        <div class="content has-text-white">
-            {% include sgds-breadcrumb.html %}
-            <h4 class="has-text-weight-bold">{{page.title}}</h4>
-        </div>
+        {% include sgds-breadcrumb.html %}
+        <h4 class="has-text-white has-text-weight-bold">{{page.title}}</h4>
     </div>
 </section>
 
@@ -57,8 +55,11 @@ layout: layout-default
                 </div>
             </div>
             <div class="col is-9 is-12-touch">
-                <div class="content">
+                <div class="content article">
                     {{content}}
+                </div>
+                <div class="has-background-light padding margin--top--lg">
+                    {% include vue-editor-app.html %}
                 </div>
             </div>
         </div>

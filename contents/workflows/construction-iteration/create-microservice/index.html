@@ -5,61 +5,37 @@ permalink: /workflows/construction-iteration/create-microservice/
 category: Workflows
 breadcrumb: Create a Microservice
 ---
-
-<div class="row">
-    <div class="col is-8">
-        <h5 class="has-text-weight-semibold margin--bottom">Overview</h5>
-        <p>A microservice (a.k.a. service-oriented application) is self-contained piece of business function, that is loosely coupled, independently deployable, highly maintainable and testable. It usually has an interface (API) to interact with other microservices.</p>
-        <p>A microservice in itself does not complete nor fulfil an entire business workflow but plays an integral part which can be a supporting or even a critical component of the business. In a microservice architecture, microservices interface with other microservices to achieve a business outcome - an example of such will be a microservice that receives data from a web form, transforms the data into some useful, and then passes the transformed data to another microservice to generate a report, insert this data into the database, and finally another to send a reply email automatically etc.</p>
-        <p>A microservice can be written in many languages to interact with other microservices as long as they conform to a standard way of interfacing with each other in a consistent manner. The current industry standard for this interface is to use RESTful APIs to do so. Some other methods include SOAP APIs. You will need servers and/or a hosting platform that provides all the essential tools for a build pipeline.</p>
-        <p>Microservices are usually more expensive to create and maintain than a web content service as requirements are always changing; it requires constant operation; a solid team to orchestrate the build pipeline, etc.</p>
-        <blockquote>
-            <b>CAVEAT</b>
-            <p>The use of microservices is not a magical formula that can be applied to existing monolithic systems, such as SAP or ERP. A “lift and shift” method is not possible as it requires a re-design of the entire architecture of the monolithic system into multiple microservices. Before embarking on a journey to build applications using microservices, first understand the steps needed to take to undergo this transformation.</p>
-            <p>The easiest way to get started is to start small, work on non-critical applications using microservices. Then, eventually, move on to building larger applications.</p>
-        </blockquote>
-
-        <hr class="margin--bottom--lg margin--top--lg">
-
-        <h5 class="has-text-weight-semibold margin--bottom">Choose Build Pipeline</h5>
-        <p>Building applications would minimally require these in the build pipeline:</p>
-        <ul>
-            <li>A source code repository system to store and version control source code (such as Github, Bitbucket or similar)</li>
-            <li>A build artifact repository to store build artifacts (such as Nexus Repository, S3 or similar)</li>
-            <li>A secrets management system to store and manage secrets (such as HashiCorp Vault, CyberArk or similar)</li>
-        </ul>
-        <blockquote>
-            <p>SHIP is a product that provides services of a build pipeline for the whole of government. It provides managed services like Atlassian Bitbucket, Bamboo, Confluence, Jira to enable teams to build applications rapidly without having to worry about hardware costs and operations overheads of maintaining these services.</p>
-        </blockquote>
-        <p>Teams can also create and customise their own build pipeline using other means such as hosting their own servers and purchasing licenses to meet their own needs.</p>
-        <a class="sgds-button is-rounded margin--top" href="" target="_blank">Find out more about SHIP</a>
-
-        <hr class="margin--bottom--lg margin--top--lg">
-
-        <h5 class="has-text-weight-semibold margin--bottom">Choose Hosting Platform</h5>
-        <p>After deciding on the build pipeline, the application will require a hosting platform to host the application.</p>
-        <blockquote>
-            <p>NECTAR is a managed container hosting platform that helps to build (and host) applications using containers (Docker). Applications that are designed and use microservices can leverage on NECTAR to enable rapid building of container images to complement its design as containers can be independently tested, replaced, auto-scaled throughout the lifetime of the entire application. Project teams will not have to worry about operations and maintenance of the infrastructure of NECTAR as it is managed by the NECTAR team.</p>
-        </blockquote>
-        <p>GCC can also host applications with managed services.</p>
-        <a class="sgds-button is-rounded margin--top" href="" target="_blank">Find out more about NECTAR</a>
-
-        <hr class="margin--bottom--lg margin--top--lg">
-
-        <h5 class="has-text-weight-semibold margin--bottom">Choose Gateway</h5>
-        <blockquote>
-            <p>APEX is a centralized API Exchange gateway where APIs for all government agencies are hosted. Using such a gateway allows microservices within the same project or other projects to interface with each other.</p>
-        </blockquote>
-        <p>In addition, APEX can be used to interface between the Government Intranet and the Internet, if the application needs to bridge this network.</p>
-        <a class="sgds-button is-rounded margin--top" href="" target="_blank">Find out more about APEX</a>
-    </div>
-    <div class="col is-3 is-offset-1">
-        <p class="has-text-weight-bold margin--bottom has-background-primary has-text-white padding--sm">Products Used</p>
-        <ul>
-            <li>GCC <span class="sgds-icon sgds-icon-external"></span></li>
-            <li>GPC <span class="sgds-icon sgds-icon-external"></span></li>
-            <li>NECTAR <span class="sgds-icon sgds-icon-external"></span></li>
-            <li>APEX <span class="sgds-icon sgds-icon-external"></span></li>
-        </ul>
-    </div>
-</div>
+<h5>Overview</h5>
+<p>A microservice (a.k.a. service-oriented application) is self-contained piece of business function, that is loosely coupled, independently deployable, highly maintainable and testable. It usually has an interface (API) to interact with other microservices.</p>
+<p>A microservice in itself does not complete nor fulfil an entire business workflow but plays an integral part which can be a supporting or even a critical component of the business. In a microservice architecture, microservices interface with other microservices to achieve a business outcome - an example of such will be a microservice that receives data from a web form, transforms the data into some useful, and then passes the transformed data to another microservice to generate a report, insert this data into the database, and finally another to send a reply email automatically etc.</p>
+<p>A microservice can be written in many languages to interact with other microservices as long as they conform to a standard way of interfacing with each other in a consistent manner. The current industry standard for this interface is to use RESTful APIs to do so. Some other methods include SOAP APIs. You will need servers and/or a hosting platform that provides all the essential tools for a build pipeline.</p>
+<p>Microservices are usually more expensive to create and maintain than a web content service as requirements are always changing; it requires constant operation; a solid team to orchestrate the build pipeline, etc.</p>
+<blockquote>
+    <h6>CAVEAT</h6>
+    <p>The use of microservices is not a magical formula that can be applied to existing monolithic systems, such as SAP or ERP. A “lift and shift” method is not possible as it requires a re-design of the entire architecture of the monolithic system into multiple microservices. Before embarking on a journey to build applications using microservices, first understand the steps needed to take to undergo this transformation.</p>
+    <p>The easiest way to get started is to start small, work on non-critical applications using microservices. Then, eventually, move on to building larger applications.</p>
+</blockquote>
+<h5>Choose Build Pipeline</h5>
+<p>Building applications would minimally require these in the build pipeline:</p>
+<ul>
+    <li>A source code repository system to store and version control source code (such as Github, Bitbucket or similar)</li>
+    <li>A build artifact repository to store build artifacts (such as Nexus Repository, S3 or similar)</li>
+    <li>A secrets management system to store and manage secrets (such as HashiCorp Vault, CyberArk or similar)</li>
+</ul>
+<blockquote>
+    <p>SHIP is a product that provides services of a build pipeline for the whole of government. It provides managed services like Atlassian Bitbucket, Bamboo, Confluence, Jira to enable teams to build applications rapidly without having to worry about hardware costs and operations overheads of maintaining these services.</p>
+</blockquote>
+<p>Teams can also create and customise their own build pipeline using other means such as hosting their own servers and purchasing licenses to meet their own needs.</p>
+<a href="" target="_blank">Find out more about SHIP</a>
+<h5>Choose Hosting Platform</h5>
+<p>After deciding on the build pipeline, the application will require a hosting platform to host the application.</p>
+<blockquote>
+    <p>NECTAR is a managed container hosting platform that helps to build (and host) applications using containers (Docker). Applications that are designed and use microservices can leverage on NECTAR to enable rapid building of container images to complement its design as containers can be independently tested, replaced, auto-scaled throughout the lifetime of the entire application. Project teams will not have to worry about operations and maintenance of the infrastructure of NECTAR as it is managed by the NECTAR team.</p>
+</blockquote>
+<p>GCC can also host applications with managed services.</p>
+<a href="" target="_blank">Find out more about NECTAR</a>
+<blockquote>
+    <p>APEX is a centralized API Exchange gateway where APIs for all government agencies are hosted. Using such a gateway allows microservices within the same project or other projects to interface with each other.</p>
+</blockquote>
+<p>In addition, APEX can be used to interface between the Government Intranet and the Internet, if the application needs to bridge this network.</p>
+<a href="" target="_blank">Find out more about APEX</a>
