@@ -84,11 +84,11 @@ export default {
             };
             this.page_content = document.querySelector(".ql-editor").innerHTML;
             const dataToEncode = {
-                page_path: this.page_path,
-                page_title: this.page_title,
-                page_category: this.page_category,
+                page_path: this.permalink,
+                page_title: this.title,
+                page_category: this.category,
                 page_content: this.page_content,
-                page_layout: this.page_layout,
+                page_layout: this.layout,
                 form_name: this.form_name
             };
             dataToEncode["form-name"] = this.form_name;
