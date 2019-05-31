@@ -7,6 +7,7 @@
                 :page_path="permalink"
                 :page_title="title"
                 :page_category="category"
+                :page_layout="layout"
                 :initial_content="content"
                 @close="showEditorModal = false"
                 @form-submit-success="showEditorModal = false"
@@ -18,7 +19,7 @@
 <script>
 import EditorModal from "./EditorModal.vue";
 export default {
-    props: ["title", "permalink", "category"],
+    props: ["title", "permalink", "category", "layout"],
     components: { EditorModal },
     data() {
         return {

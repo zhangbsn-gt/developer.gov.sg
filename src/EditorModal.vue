@@ -22,10 +22,6 @@
                     >
                         <!-- Spam guard -->
                         <input type="hidden" name="honeypot-field" value="edit-form">
-                        <input id="page_path" name="page_path" class="input" type="hidden">
-                        <input id="page_title" name="page_title" class="input" type="hidden">
-                        <input id="page_content" name="page_content" class="input" type="hidden">
-                        <input id="form_name" name="form_name" class="input" type="hidden">
                         <button
                             type="submit"
                             class="modal-default-button sgds-button is-rounded is-primary"
@@ -50,7 +46,13 @@ import Quill from "quill";
 import "quill/dist/quill.snow.css";
 import { urlEncode } from "./lib";
 export default {
-    props: ["initial_content", "page_path", "page_title", "page_category"],
+    props: [
+        "page_path",
+        "page_title",
+        "page_category",
+        "page_layout",
+        "initial_content"
+    ],
     data() {
         return {
             form_name: "edit-form"
@@ -69,6 +71,7 @@ export default {
                 page_title: this.page_title,
                 page_category: this.page_category,
                 page_content: this.page_content,
+                page_layout: this.page_layout,
                 form_name: this.form_name
             };
             dataToEncode["form-name"] = this.form_name;
