@@ -18,26 +18,16 @@
             </template>
 
             <template v-slot:modal-footer>
-                <form
-                    id="edit-form"
-                    name="edit-form"
-                    method="POST"
-                    data-netlify="true"
-                    data-netlify-honeypot="honeypot-field"
-                >
-                    <!-- Spam guard -->
-                    <input type="hidden" name="honeypot-field" value="edit-form">
-                    <button
-                        type="submit"
-                        class="modal-default-button sgds-button is-rounded is-primary"
-                        @click.prevent="toSubmitStage"
-                    >Verify Government Email</button>
-                    <button
-                        type="button"
-                        class="modal-default-button sgds-button is-rounded margin--right"
-                        @click="closeEditor"
-                    >Cancel</button>
-                </form>
+                <button
+                    type="button"
+                    class="modal-default-button sgds-button is-rounded is-primary"
+                    @click="toSubmitStage"
+                >Verify Government Email</button>
+                <button
+                    type="button"
+                    class="modal-default-button sgds-button is-rounded margin--right"
+                    @click="closeEditor"
+                >Cancel</button>
             </template>
         </EditorModal>
 
@@ -52,7 +42,12 @@
             <template v-slot:modal-footer>
                 <button
                     type="button"
-                    class="modal-default-button sgds-button is-rounded"
+                    class="modal-default-button sgds-button is-rounded is-primary"
+                    @click="submit"
+                >Submit Changes for Review</button>
+                <button
+                    type="button"
+                    class="modal-default-button sgds-button is-rounded margin--right"
                     @click="toEditStage"
                 >Back</button>
             </template>
@@ -100,7 +95,6 @@ export default {
                     "Content-Type": "application/x-www-form-urlencoded"
                 }
             };
-            this.page_content = document.querySelector(".ql-editor").innerHTML;
             const dataToEncode = {
                 page_path: this.permalink,
                 page_title: this.title,
