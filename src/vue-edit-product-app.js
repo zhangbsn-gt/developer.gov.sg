@@ -5,6 +5,10 @@ import "noty/lib/noty.css";
 import "noty/lib/themes/mint.css";
 import "quill/dist/quill.snow.css";
 
+import VModal from "vue-js-modal";
+
+Vue.use(VModal, { dynamic: true, injectModalsContainer: true });
+
 const mountElement = document.querySelector("#edit-product-app");
 new Vue({
     render: createElement => {
