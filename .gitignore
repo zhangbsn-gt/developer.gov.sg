@@ -4,4 +4,4 @@ _site
 .vscode
 node_modules
 functions
-assets/js/*.bundle.js
+assets/bundles
