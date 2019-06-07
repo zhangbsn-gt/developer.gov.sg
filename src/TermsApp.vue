@@ -38,15 +38,17 @@
             v-cloak
             class="sgds-card"
             :key="term.term"
-            :style="{marginTop: '6px'}"
+            :style="{marginTop: '5px'}"
         >
             <div class="sgds-card-content">
-                <div class="col is-3">
-                    <h5>{{term.term}}</h5>
-                </div>
-                <div class="col is-9">
-                    <h6>{{term.full_term}}</h6>
-                    <p>{{term.description}}</p>
+                <div class="row">
+                    <div class="col is-3">
+                        <h6 class="margin--top is-uppercase">{{term.term}}</h6>
+                    </div>
+                    <div class="col is-9">
+                        <p class="has-text-weight-bold">{{term.full_term}}</p>
+                        <p>{{term.description}}</p>
+                    </div>
                 </div>
             </div>
         </div>
