@@ -1,54 +1,88 @@
 <template>
     <div class="modal-container">
         <div class="modal-header">
-            <h6>Editing {{ page_title }}</h6>
+            <h5>Editing {{ page_title }}</h5>
             <button class="sgds-button is-rounded" type="button" @click="$emit('close')">
                 <span class="sgds-icon sgds-icon-cross"></span>
             </button>
         </div>
 
         <div class="modal-body">
-            <!-- Mount Quill Here -->
-            <div id="editor"></div>
-
-            <div class="row">
-                <div class="col align-children-right">
-                    <label for="email">Verify your government email</label>
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="me@gov.sg"
-                        v-model="email"
-                    >
-                    <button
-                        type="button"
-                        class="sgds-button is-info"
-                        @click="requestOtp"
-                    >Send email OTP</button>
-                </div>
+            <div class="sgds-tabs">
+                <ul>
+                    <li :class="{'is-active': !showOriginal}">
+                        <a @click.prevent="showOriginal = false" :style="{cursor: 'pointer'}">Editor</a>
+                    </li>
+                    <li :class="{'is-active': showOriginal}">
+                        <a
+                            @click.prevent="showOriginal = true"
+                            :style="{cursor: 'pointer'}"
+                        >Original</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="editor-wrapper" v-show="!showOriginal">
+                <!-- Mount Quill Here -->
+                <div id="editor"></div>
             </div>
 
-            <div class="row">
-                <div class="col align-children-right">
-                    <label for="otp">Enter your 6-digit OTP sent to your email</label>
-                    <input type="number" name="otp" id="otp" v-model="otp">
-                </div>
-            </div>
+            <div id="original-content" class="article" v-show="showOriginal" v-html="page_content"></div>
         </div>
 
         <div class="modal-footer">
-            <button
-                type="button"
-                class="modal-default-button sgds-button is-rounded is-primary"
-                :disabled="!this.otp || this.otp.length < 6"
-                @click="submit"
-            >Submit Changes</button>
-            <button
-                type="button"
-                class="modal-default-button sgds-button is-rounded margin--right"
-                @click="$emit('close')"
-            >Cancel</button>
+            <div class="row">
+                <div class="col">
+                    <h6>Submit contributions</h6>
+                    <span :class="verifyStageStyles">verify government email</span>
+                    &bull;
+                    <span :class="submitStageStyles">submit changes</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div v-if="stage === 'verify'">
+                        <form>
+                            <label for="email">Verify your government email</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="me@gov.sg"
+                                v-model="email"
+                            >
+                            <p class="modal-footer-buttons">
+                                <button
+                                    type="submit"
+                                    class="sgds-button is-info"
+                                    @click.prevent="requestOtp"
+                                    :disabled="!emailRegex.test(email)"
+                                >Send email OTP</button>
+                            </p>
+                        </form>
+                    </div>
+
+                    <div v-if="stage === 'submit'">
+                        <form>
+                            <label for="otp">Enter your 6-digit OTP sent to your email</label>
+                            <input type="number" name="otp" id="otp" v-model="otp">
+
+                            <p class="modal-footer-buttons">
+                                <button
+                                    type="button"
+                                    class="sgds-button"
+                                    @click="stage = 'verify'"
+                                >Back</button>
+                                <button
+                                    type="submit"
+                                    class="sgds-button is-primary"
+                                    :disabled="!this.otp || this.otp.length < 6"
+                                    @click.prevent="submit"
+                                >Submit Changes</button>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -57,7 +91,7 @@
 import axios from "axios";
 import Noty from "noty";
 import Quill from "quill";
-import { urlEncode } from "./lib";
+import { urlEncode, emailRegex } from "./lib";
 export default {
     props: [
         "page_path",
@@ -69,9 +103,12 @@ export default {
     data() {
         return {
             quill: null,
+            showOriginal: false,
             form_name: "edit-form",
             email: null,
-            otp: null
+            otp: null,
+            stage: "verify",
+            emailRegex
         };
     },
     methods: {
@@ -82,9 +119,11 @@ export default {
                     this.email
                 }. Please enter it before submitting your edits.`
             }).show();
+            this.stage = "submit";
         },
         submit() {
-            const updatedContent = document.querySelector(".ql-editor").innerHTML
+            const updatedContent = document.querySelector(".ql-editor")
+                .innerHTML;
             const axiosConfig = {
                 header: {
                     "Content-Type": "application/x-www-form-urlencoded"
@@ -104,7 +143,6 @@ export default {
                 .then(response => {
                     new Noty({
                         type: "success",
-                        layout: "bottomRight",
                         text:
                             "Your contribution has been submitted! <a href='https://github.com/GovTechSG/developer.gov.sg/pulls'>View its progress here</a>"
                     }).show();
@@ -113,11 +151,22 @@ export default {
                 .catch(error => {
                     new Noty({
                         type: "error",
-                        layout: "bottomRight",
                         text:
                             "There was an error processing your request. Please try again."
                     }).show();
                 });
+        }
+    },
+    computed: {
+        verifyStageStyles() {
+            return {
+                bold: "verify" === this.stage
+            };
+        },
+        submitStageStyles() {
+            return {
+                bold: "submit" === this.stage
+            };
         }
     },
     mounted() {
@@ -167,20 +216,35 @@ export default {
     justify-content: space-between;
 }
 
-.modal-body {
+.modal-body,
+.modal-footer {
     margin: 20px 0;
 }
 
-.modal-footer {
-    min-height: 40px;
+.modal-footer-buttons {
+    margin-top: 12px;
 }
 
 .modal-default-button {
     float: right;
 }
 
+.bold {
+    font-weight: bold;
+}
+
+.justified {
+    display: flex;
+    justify-content: space-between;
+}
+
 .align-children-right {
     display: flex;
     justify-content: flex-end;
+}
+
+#original-content {
+    overflow: scroll;
+    max-height: 60vh;
 }
 </style>

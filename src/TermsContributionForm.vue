@@ -134,7 +134,6 @@ export default {
                 .then(response => {
                     new Noty({
                         type: "success",
-                        layout: "bottomRight",
                         text:
                             "Your contribution has been submitted! <a href>View its progress here</a>"
                     }).show();
@@ -143,7 +142,6 @@ export default {
                 .catch(error => {
                     new Noty({
                         type: "error",
-                        layout: "bottomRight",
                         text:
                             "There was an error processing your request. Please try again."
                     }).show();
