@@ -45,6 +45,7 @@
                             <label for="email">Verify your government email</label>
                             <input
                                 type="email"
+                                class="input"
                                 id="email"
                                 name="email"
                                 placeholder="me@gov.sg"
@@ -63,14 +64,14 @@
 
                     <div v-if="stage === 'submit'">
                         <form>
-                            <label for="otp">Enter your 6-digit OTP sent to your email</label>
-                            <input type="number" name="otp" id="otp" v-model="otp">
+                            <label for="otp">Enter your 6-digit OTP sent to your email at {{ email }}</label>
+                            <input type="number" name="otp" id="otp" class="input" v-model="otp">
 
                             <p class="modal-footer-buttons">
                                 <button
                                     type="button"
                                     class="sgds-button"
-                                    @click="stage = 'verify'"
+                                    @click.prevent="stage = 'verify'"
                                 >Back</button>
                                 <button
                                     type="submit"
