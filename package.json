@@ -2,7 +2,20 @@
   "name": "developer.gov.sg",
   "version": "0.0.0",
   "description": "developer.gov.sg",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "license": "ISC",
+  "author": "",
   "main": "",
+  "scripts": {
+    "buildlambda": "netlify-lambda build lambda",
+    "buildstatic": "NODE_ENV=production webpack",
+    "devserver": "webpack --watch | bundle exec jekyll serve",
+    "servelambda": "netlify-lambda serve lambda",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "dependencies": {
     "@octokit/rest": "^16.25.5",
     "axios": "^0.18.0",
@@ -32,18 +45,5 @@
     "vue-template-compiler": "^2.6.10",
     "webpack": "^4.32.2",
     "webpack-cli": "^3.3.2"
-  },
-  "scripts": {
-    "servelambda": "netlify-lambda serve lambda",
-    "buildlambda": "netlify-lambda build lambda",
-    "buildstatic": "NODE_ENV=production webpack",
-    "devserver": "webpack --watch | bundle exec jekyll serve",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": ""
-  },
-  "author": "",
-  "license": "ISC"
+  }
 }
