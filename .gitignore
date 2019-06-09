@@ -5,3 +5,4 @@ _site
 node_modules
 functions
 assets/bundles
+assets/**/*.bundle.js
