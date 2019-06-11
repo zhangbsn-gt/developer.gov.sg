@@ -18,5 +18,6 @@ module.exports = {
     githubToken,
     repoOwner,
     githubRef,
-    otpServiceUrl
+    otpServiceUrl,
+    repoName: "developer.gov.sg"
 };

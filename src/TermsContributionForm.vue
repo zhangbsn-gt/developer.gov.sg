@@ -1,45 +1,38 @@
 <template>
     <div class="sgds-card">
-        <form
-            name="contribute-terms-form"
-            method="POST"
-            data-netlify="true"
-            data-netlify-honeypot="honeypot-field"
-            @submit.prevent="handleSubmit"
-        >
+        <form @submit.prevent="handleSubmit">
             <div class="sgds-card-content">
                 <p>Have an initialism/acronym to contribute? Suggest them to us here!</p>
 
-                <p>
-                    <label for="contribute-terms-contributor">Your name*</label>
+                <div>
+                    <label for="contributor">Your name*</label>
                     <input
-                        id="contribute-terms-contributor"
+                        id="contributor"
                         name="contributor"
                         class="input"
                         type="text"
-                        placeholder="Richard Yang"
                         v-model="form.contributor"
                         required
                     >
-                </p>
+                </div>
 
-                <p>
-                    <label for="contribute-terms-contributor-email">Your government email*</label>
+                <div>
+                    <label for="contributor-email">Your government email*</label>
                     <input
-                        id="contribute-terms-contributor-email"
+                        id="contributor-email"
                         name="contributor_email"
                         class="input"
                         type="email"
-                        placeholder="richard_yang@tech.gov.sg"
+                        placeholder="me@.gov.sg"
                         v-model="form.contributor_email"
                         required
                     >
-                </p>
+                </div>
 
-                <p>
-                    <label for="contribute-terms-term">Initialism/acronym*</label>
+                <div>
+                    <label for="term">Initialism/acronym*</label>
                     <input
-                        id="contribute-terms-term"
+                        id="term"
                         name="term"
                         class="input"
                         type="text"
@@ -47,12 +40,12 @@
                         v-model="form.term"
                         required
                     >
-                </p>
+                </div>
 
-                <p>
-                    <label for="contribute-terms-full-term">Full term*</label>
+                <div>
+                    <label for="full-term">Full term*</label>
                     <input
-                        id="contribute-terms-full-term"
+                        id="full-term"
                         name="full_term"
                         class="input"
                         type="text"
@@ -60,12 +53,12 @@
                         v-model="form.full_term"
                         required
                     >
-                </p>
+                </div>
 
-                <p>
-                    <label for="contribute-terms-description">Short description*</label>
+                <div>
+                    <label for="description">Short description*</label>
                     <input
-                        id="contribute-terms-description"
+                        id="description"
                         name="description"
                         class="input"
                         type="text"
@@ -73,37 +66,52 @@
                         v-model="form.description"
                         required
                     >
-                </p>
+                </div>
 
-                <p>
-                    <label for="contribute-terms-link">Links/URLs</label>
+                <div>
+                    <label for="link">Links/URLs</label>
                     <input
-                        id="contribute-terms-link"
+                        id="link"
                         name="link"
                         class="input"
                         type="text"
                         placeholder="https://tech.gov.sg"
                         v-model="form.link"
                     >
-                </p>
+                </div>
 
-                <p>
-                    <label for="contribute-terms-category">Category</label>
+                <div>
+                    <label for="categories">Categories</label>
                     <input
-                        id="contribute-terms-category"
-                        name="category"
+                        id="categories"
+                        name="categories"
                         class="input"
                         type="text"
                         placeholder="platform, data"
                         v-model="form.category"
                     >
-                </p>
-                <input type="hidden" name="honeypot-field">
+                    <button
+                        class="sgds-button is-primary"
+                        type="button"
+                        @click.prevent="addCategory(form.category)"
+                    >Add</button>
+                    <div>
+                        <p>Categories</p>
+                        <p v-for="(category, index) of form.categories" :key="index">
+                            {{ category }}
+                            <span
+                                class="sgds-icon sgds-icon-cross"
+                                @click="form.categories.splice(index, 1)"
+                                :style="{cursor: 'pointer'}"
+                            ></span>
+                        </p>
+                    </div>
+                </div>
             </div>
             <div class="sgds-card-footer">
                 <div class="sgds-card-footer-item">
                     <span>
-                        <button class="sgds-button default" type="submit">Submit</button>
+                        <button class="sgds-button" type="submit">Submit</button>
                     </span>
                 </div>
             </div>
@@ -119,31 +127,45 @@ import { urlEncode } from "./lib";
 export default {
     data: function() {
         return {
-            form: {} // See template for all fields
+            form: {
+                contributor: null,
+                contributor_email: null,
+                term: null,
+                full_term: null,
+                description: null,
+                link: null,
+                category: null,
+                categories: []
+            }
         };
     },
     methods: {
+        addCategory(category) {
+            this.form.categories.push(category);
+        },
         handleSubmit() {
-            const axiosConfig = {
-                header: { "Content-Type": "application/x-www-form-urlencoded" }
-            };
-            const dataToEncode = this.form;
-            dataToEncode["form-name"] = "contribute-terms-form"; // check template
             axios
-                .post("/", urlEncode(dataToEncode), axiosConfig)
+                .post("/.netlify/functions/api/terms", {
+                    contributor: this.contributor,
+                    contributor_email: this.contributor_email,
+                    term: this.term,
+                    full_term: this.full_term,
+                    description: this.description,
+                    link: this.link,
+                    categories: this.categories
+                })
                 .then(response => {
                     new Noty({
                         type: "success",
-                        text:
-                            "Your contribution has been submitted! <a href>View its progress here</a>"
+                        text: `Your term has been submitted! You can view its approval progress <a href='${
+                            response.data.pr
+                        }'>here.</a>`
                     }).show();
-                    this.$emit("form-submit-success");
                 })
                 .catch(error => {
                     new Noty({
                         type: "error",
-                        text:
-                            "There was an error processing your request. Please try again."
+                        text: `An error has occurred: ${error.message || error}`
                     }).show();
                 });
         }
