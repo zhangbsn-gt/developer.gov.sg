@@ -46,25 +46,31 @@
                             <input
                                 type="email"
                                 class="input"
+                                :class="{'is-danger': errors.email}"
                                 id="email"
                                 name="email"
                                 placeholder="me@gov.sg"
                                 v-model="email"
                             >
+                            <p class="help is-danger" v-if="errors.email">{{errors.email}}</p>
                             <p class="modal-footer-buttons">
                                 <button
                                     type="submit"
                                     class="sgds-button is-info"
                                     @click.prevent="requestOtp"
-                                    :disabled="!emailRegex.test(email)"
-                                >Send email OTP</button>
+                                >
+                                    <!-- :disabled="!emailRegex.test(email)" -->
+                                    Send email OTP
+                                </button>
                             </p>
                         </form>
                     </div>
 
                     <div v-if="stage === 'submit'">
                         <form>
-                            <label for="otp">Enter your 6-digit OTP sent to your email at {{ email }}</label>
+                            <label
+                                for="otp"
+                            >Enter your 6-digit OTP sent to your email at {{ email }}</label>
                             <input type="number" name="otp" id="otp" class="input" v-model="otp">
 
                             <p class="modal-footer-buttons">
@@ -77,7 +83,7 @@
                                     type="submit"
                                     class="sgds-button is-primary"
                                     :disabled="!this.otp || this.otp.length < 6"
-                                    @click.prevent="submit"
+                                    @click.prevent="submitChanges"
                                 >Submit Changes</button>
                             </p>
                         </form>
@@ -105,47 +111,60 @@ export default {
         return {
             quill: null,
             showOriginal: false,
-            form_name: "edit-form",
             email: null,
             otp: null,
             stage: "verify",
-            emailRegex
+            emailRegex,
+            errors: {
+                email: null,
+                otp: null
+            }
         };
     },
     methods: {
         requestOtp() {
-            new Noty({
-                type: "success",
-                text: `An OTP has been sent to ${
-                    this.email
-                }. Please enter it before submitting your edits.`
-            }).show();
-            this.stage = "submit";
-        },
-        submit() {
-            const updatedContent = document.querySelector(".ql-editor")
-                .innerHTML;
-            const axiosConfig = {
-                header: {
-                    "Content-Type": "application/x-www-form-urlencoded"
-                }
-            };
-            const dataToEncode = {
-                page_path: this.page_path,
-                page_title: this.page_title,
-                page_category: this.page_category,
-                page_content: updatedContent,
-                page_layout: this.page_layout,
-                form_name: this.form_name
-            };
-            dataToEncode["form-name"] = this.form_name;
+            // if (!this.email || !emailRegex.test(this.email)) {
+            //     this.errors.email = "Please enter a valid email";
+            //     return;
+            // }
             axios
-                .post("/", urlEncode(dataToEncode), axiosConfig)
-                .then(response => {
+                .post("/.netlify/functions/api/request-otp", {
+                    email: this.email
+                })
+                .then(() => {
                     new Noty({
                         type: "success",
-                        text:
-                            "Your contribution has been submitted! <a href='https://github.com/GovTechSG/developer.gov.sg/pulls'>View its progress here</a>"
+                        text: `An OTP has been sent to ${
+                            this.email
+                        }. Please enter it before submitting your edits.`
+                    }).show();
+                    this.stage = "submit";
+                })
+                .catch(error => {
+                    new Noty({
+                        type: "error",
+                        text: `An error has occurred: ${error.message || error}`
+                    }).show();
+                });
+        },
+        submitChanges() {
+            const updatedContent = document.querySelector(".ql-editor")
+                .innerHTML;
+            axios
+                .post("/.netlify/functions/api/submit-product-changes", {
+                    page_path: this.page_path,
+                    page_title: this.page_title,
+                    page_category: this.page_category,
+                    page_content: updatedContent,
+                    page_layout: this.page_layout,
+                    contributor: this.email,
+                    otp: this.otp
+                })
+                .then(response => {
+                    let prLink = response.data.pr;
+                    new Noty({
+                        type: "success",
+                        text: `Your contribution has been submitted! <a href='${prLink}'>View its progress here</a>`
                     }).show();
                     this.showEditorModal = false;
                 })

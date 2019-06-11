@@ -22,7 +22,6 @@ export default {
     },
     methods: {
         openEditor() {
-            // this.showEditorModal = true;
             this.$modal.show(
                 EditorModal,
                 {
