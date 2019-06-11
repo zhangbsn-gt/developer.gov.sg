@@ -1,3 +1,4 @@
+const crypto = require("crypto");
 async function generateId(bytes = 4, encoding = "hex") {
     return new Promise((resolve, reject) => {
         crypto.randomBytes(bytes, function(err, buffer) {

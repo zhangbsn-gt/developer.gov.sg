@@ -58,10 +58,8 @@
                                     type="submit"
                                     class="sgds-button is-info"
                                     @click.prevent="requestOtp"
-                                >
-                                    <!-- :disabled="!emailRegex.test(email)" -->
-                                    Send email OTP
-                                </button>
+                                    :disabled="!emailRegex.test(email)"
+                                >Send email OTP</button>
                             </p>
                         </form>
                     </div>
@@ -82,7 +80,7 @@
                                 <button
                                     type="submit"
                                     class="sgds-button is-primary"
-                                    :disabled="!this.otp || this.otp.length < 6"
+                                    :disabled="!this.otp || this.otp.length !== 6"
                                     @click.prevent="submitChanges"
                                 >Submit Changes</button>
                             </p>
@@ -123,10 +121,10 @@ export default {
     },
     methods: {
         requestOtp() {
-            // if (!this.email || !emailRegex.test(this.email)) {
-            //     this.errors.email = "Please enter a valid email";
-            //     return;
-            // }
+            if (!this.email || !emailRegex.test(this.email)) {
+                this.errors.email = "Please enter a valid email";
+                return;
+            }
             axios
                 .post("/.netlify/functions/api/request-otp", {
                     email: this.email
@@ -166,13 +164,16 @@ export default {
                         type: "success",
                         text: `Your contribution has been submitted! <a href='${prLink}'>View its progress here</a>`
                     }).show();
-                    this.showEditorModal = false;
+                    this.$emit("close");
                 })
-                .catch(error => {
+                .catch(err => {
+                    let message = "";
+                    if (err.response && err.response.data) {
+                        message = err.response.data.error;
+                    }
                     new Noty({
                         type: "error",
-                        text:
-                            "There was an error processing your request. Please try again."
+                        text: `There was an error submitting your changes. ${message}`
                     }).show();
                 });
         }
