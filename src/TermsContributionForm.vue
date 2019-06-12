@@ -10,10 +10,12 @@
                         id="contributor"
                         name="contributor"
                         class="input"
+                        :class="{'is-danger': errors.contributor}"
                         type="text"
                         v-model="form.contributor"
                         required
                     >
+                    <p class="help is-danger" v-if="errors.contributor">{{errors.contributor}}</p>
                 </div>
 
                 <div>
@@ -22,11 +24,16 @@
                         id="contributor-email"
                         name="contributor_email"
                         class="input"
+                        :class="{'is-danger': errors.contributor_email}"
                         type="email"
                         placeholder="me@.gov.sg"
                         v-model="form.contributor_email"
                         required
                     >
+                    <p
+                        class="help is-danger"
+                        v-if="errors.contributor_email"
+                    >{{errors.contributor_email}}</p>
                 </div>
 
                 <div>
@@ -35,11 +42,13 @@
                         id="term"
                         name="term"
                         class="input"
+                        :class="{'is-danger': errors.term}"
                         type="text"
                         placeholder="SGTS"
                         v-model="form.term"
                         required
                     >
+                    <p class="help is-danger" v-if="errors.term">{{errors.term}}</p>
                 </div>
 
                 <div>
@@ -48,11 +57,13 @@
                         id="full-term"
                         name="full_term"
                         class="input"
+                        :class="{'is-danger': errors.full_term}"
                         type="text"
                         placeholder="Singapore Government Tech Stack"
                         v-model="form.full_term"
                         required
                     >
+                    <p class="help is-danger" v-if="errors.full_term">{{errors.full_term}}</p>
                 </div>
 
                 <div>
@@ -61,11 +72,13 @@
                         id="description"
                         name="description"
                         class="input"
+                        :class="{'is-danger': errors.description}"
                         type="text"
                         placeholder="SGTS is ..."
                         v-model="form.description"
                         required
                     >
+                    <p class="help is-danger" v-if="errors.description">{{errors.description}}</p>
                 </div>
 
                 <div>
@@ -131,7 +144,7 @@
 <script>
 import axios from "axios";
 import Noty from "noty";
-import { urlEncode } from "./lib";
+import { urlEncode, emailRegex } from "./lib";
 import LoadingSpinner from "./LoadingSpinner.vue";
 
 export default {
@@ -148,6 +161,15 @@ export default {
                 link: null,
                 category: null,
                 categories: []
+            },
+            errors: {
+                contributor: null,
+                contributor_email: null,
+                term: null,
+                full_term: null,
+                description: null,
+                link: null,
+                categories: null
             }
         };
     },
@@ -156,6 +178,10 @@ export default {
             this.form.categories.push(category);
         },
         handleSubmit() {
+            let hasErrors = this.detectFormErrors();
+            if (hasErrors) {
+                return;
+            }
             this.processingSubmission = true;
             axios
                 .post("/.netlify/functions/api/terms", {
@@ -184,6 +210,27 @@ export default {
                 .finally(() => {
                     this.processingSubmission = false;
                 });
+        },
+        detectFormErrors() {
+            let hasErrors = false;
+            [
+                "contributor",
+                "contributor_email",
+                "term",
+                "full_term",
+                "description"
+            ].forEach(field => {
+                if (!this.form[field]) {
+                    hasErrors = true;
+                    this.errors[field] = "Please enter a valid value.";
+                }
+            });
+            if (!emailRegex.test(this.form.contributor_email)) {
+                hasErrors = true;
+                this.errors.contributor_email =
+                    "Please enter a valid government email.";
+            }
+            return hasErrors;
         }
     }
 };
