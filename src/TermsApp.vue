@@ -6,7 +6,7 @@
                 class="sgds-button default"
                 v-on:click="showContributionForm = !showContributionForm"
             >
-                Contribute with your own term
+                Contribute an acronym
                 <span
                     class="sgds-icon sgds-icon-chevron-down"
                     v-if="!showContributionForm"
@@ -103,7 +103,7 @@ export default {
                         fullTerm.indexOf(searchLowercase) !== -1 ||
                         description.indexOf(searchLowercase) !== -1 ||
                         link.indexOf(searchLowercase) !== -1 ||
-                        term.category.indexOf(searchLowercase) !== -1
+                        term.categories.indexOf(searchLowercase) !== -1
                     );
                 });
             } else {
