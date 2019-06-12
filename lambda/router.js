@@ -314,7 +314,7 @@ router.post("/terms", async (req, res) => {
         } <${submission.contributor_email}>`,
         head: newBranchName,
         base: githubRef,
-        body: "```" + JSON.stringify(newTerm, null, 4) + "```",
+        body: "```\n" + JSON.stringify(newTerm, null, 4) + "\n```",
         maintainer_can_modify: true
     });
 

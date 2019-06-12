@@ -110,7 +110,17 @@
             <div class="sgds-card-footer">
                 <div class="sgds-card-footer-item">
                     <span>
-                        <button class="sgds-button" type="submit">Submit</button>
+                        <button
+                            class="sgds-button"
+                            :style="{minWidth: '100px'}"
+                            type="submit"
+                            :disabled="processingSubmission"
+                        >
+                            <template v-if="!processingSubmission">Submit</template>
+                            <template v-else>
+                                <LoadingSpinner/>
+                            </template>
+                        </button>
                     </span>
                 </div>
             </div>
@@ -122,10 +132,13 @@
 import axios from "axios";
 import Noty from "noty";
 import { urlEncode } from "./lib";
+import LoadingSpinner from "./LoadingSpinner.vue";
 
 export default {
+    components: { LoadingSpinner },
     data: function() {
         return {
+            processingSubmission: false,
             form: {
                 contributor: null,
                 contributor_email: null,
@@ -143,6 +156,7 @@ export default {
             this.form.categories.push(category);
         },
         handleSubmit() {
+            this.processingSubmission = true;
             axios
                 .post("/.netlify/functions/api/terms", {
                     contributor: this.form.contributor,
@@ -166,6 +180,9 @@ export default {
                         type: "error",
                         text: `An error has occurred: ${error.message || error}`
                     }).show();
+                })
+                .finally(() => {
+                    this.processingSubmission = false;
                 });
         }
     }
