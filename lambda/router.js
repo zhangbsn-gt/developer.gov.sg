@@ -3,7 +3,6 @@ const express = require("express");
 const beautifyHtml = require("js-beautify").html;
 const Octokit = require("@octokit/rest");
 const axios = require("axios");
-const yaml = require("js-yaml");
 const packageInfo = require("../package.json");
 const {
     githubToken,
@@ -215,28 +214,30 @@ router.post("/terms", async (req, res) => {
     let response = await octokit.repos.getContents({
         owner: repoOwner,
         repo: repoName,
-        path: "_data/terms.yml",
+        path: "terms.json",
         ref: githubRef
     });
 
     let termsFileRaw = Buffer.from(response.data.content, "base64").toString();
+    let termsJson = termsFileRaw
+        .split("\n")
+        .slice(2)
+        .join("\n");
+    let existingTerms = JSON.parse(termsJson);
 
-    let newTerm = [
-        {
-            term: submission.term,
-            full_term: submission.full_term,
-            description: submission.description,
-            link: submission.link,
-            categories: submission.categories
-        }
-    ];
-    let newTermYaml = yaml.safeDump(newTerm);
-    let updatedTermsYaml = "";
-    if (termsFileRaw[termsFileRaw.length - 1] === "\n") {
-        updatedTermsYaml = termsFileRaw + newTermYaml;
-    } else {
-        updatedTermsYaml = termsFileRaw + "\n" + newTermYaml;
-    }
+    let newTerm = {
+        term: submission.term,
+        full_term: submission.full_term,
+        description: submission.description,
+        link: submission.link || "",
+        categories:
+            submission.categories.length > 0 ? submission.categories : []
+    };
+
+    existingTerms.push(newTerm);
+    lib.sortTerms(existingTerms);
+
+    let newContent = "---\n" + "---\n" + JSON.stringify(existingTerms, null, 4);
 
     const baseRef = await octokit.git.getRef({
         owner: repoOwner,
@@ -260,7 +261,7 @@ router.post("/terms", async (req, res) => {
     const newBlob = await octokit.git.createBlob({
         owner: repoOwner,
         repo: repoName,
-        content: updatedTermsYaml
+        content: newContent
     });
 
     // get current commit => commit object {tree: {url, sha}}
@@ -276,7 +277,7 @@ router.post("/terms", async (req, res) => {
         repo: repoName,
         tree: [
             {
-                path: "_data/terms.yml",
+                path: "terms.json",
                 mode: "100644",
                 type: "blob",
                 sha: newBlob.data.sha
@@ -313,7 +314,7 @@ router.post("/terms", async (req, res) => {
         } <${submission.contributor_email}>`,
         head: newBranchName,
         base: githubRef,
-        body: newTermYaml,
+        body: "```" + JSON.stringify(newTerm, null, 4) + "```",
         maintainer_can_modify: true
     });
 

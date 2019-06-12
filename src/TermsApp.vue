@@ -117,7 +117,6 @@ export default {
                 console.error(err);
                 return;
             }
-            sortLoadedTerms(data);
             this.terms = data;
         });
     }

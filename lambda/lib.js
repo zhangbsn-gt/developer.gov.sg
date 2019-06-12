@@ -14,7 +14,21 @@ function getMissingParams(paramList, requestBody) {
         return Object.keys(requestBody).indexOf(param) === -1;
     });
 }
+function sortTerms(terms) {
+    terms.sort((a, b) => {
+        var nameA = a.term.toUpperCase();
+        var nameB = b.term.toUpperCase();
+        if (nameA < nameB) {
+            return -1;
+        }
+        if (nameA > nameB) {
+            return 1;
+        }
+        return 0;
+    });
+}
 module.exports = {
     generateId,
-    getMissingParams
+    getMissingParams,
+    sortTerms
 };
