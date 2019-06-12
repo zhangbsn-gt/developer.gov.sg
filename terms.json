@@ -1,18 +1,39 @@
 ---
-layout: null
 ---
 [
-    {% for term in site.data.terms %}
-        {
-            "term": "{{ term.term }}",
-            "full_term": "{{ term.full_term }}",
-            "description": "{{ term.description }}",
-            "link": "{{ term.link }}",
-            "category": [
-                {% for category in term.category %}
-                "{{ category }}"{% unless forloop.last %},{% endunless %}
-                {% endfor %}
-            ]
-        }{% unless forloop.last %},{% endunless %}
-    {% endfor %}
+    {
+        "term": "SGTS",
+        "full_term": "Singapore Government Tech Stack",
+        "description": "Description of SGTS",
+        "link": "",
+        "categories": ["platform"]
+    },
+    {
+        "term": "GCC",
+        "full_term": "Government Commercial Cloud",
+        "description": "Description of GCC",
+        "link": "",
+        "categories": ["platform"]
+    },
+    {
+        "term": "CWP",
+        "full_term": "Content Website Platform",
+        "description": "Description of CWP",
+        "link": "",
+        "categories": []
+    },
+    {
+        "term": "NDI",
+        "full_term": "National Digital Identity",
+        "description": "Description of NDI",
+        "link": "",
+        "categories": ["authentication", "data"]
+    },
+    {
+        "term": "NECTAR",
+        "full_term": "NExt-generation Container ARchitecture ",
+        "description": "GovTech's Next-generation Container Architecture for the whole of government",
+        "link": "https://blog.gds-gov.tech/nectar-10e0eb1581cf",
+        "categories": ["platform"]
+    }
 ]
