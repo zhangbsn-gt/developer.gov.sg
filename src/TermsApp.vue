@@ -48,6 +48,16 @@
                     <div class="col is-9">
                         <p class="has-text-weight-bold">{{term.full_term}}</p>
                         <p>{{term.description}}</p>
+                        <p v-if="term.link"><a :href="term.link">{{term.link}}</a></p>
+
+                        <span class="categories" v-if="term.categories.length > 0">
+                            <p class="has-text-weight-bold">Categories</p>
+                            <ul>
+                                <li v-for="(category, index) of term.categories" :key="category + index">
+                                    {{category}}
+                                </li>
+                            </ul>
+                        </span>
                     </div>
                 </div>
             </div>

@@ -82,6 +82,16 @@
 
                 <div>
                     <label for="categories">Categories</label>
+                    <div>
+                        <p v-for="(category, index) of form.categories" :key="index">
+                            {{ category }}
+                            <span
+                                class="sgds-icon sgds-icon-cross"
+                                @click="form.categories.splice(index, 1)"
+                                :style="{cursor: 'pointer'}"
+                            ></span>
+                        </p>
+                    </div>
                     <input
                         id="categories"
                         name="categories"
@@ -95,17 +105,6 @@
                         type="button"
                         @click.prevent="addCategory(form.category)"
                     >Add</button>
-                    <div>
-                        <p>Categories</p>
-                        <p v-for="(category, index) of form.categories" :key="index">
-                            {{ category }}
-                            <span
-                                class="sgds-icon sgds-icon-cross"
-                                @click="form.categories.splice(index, 1)"
-                                :style="{cursor: 'pointer'}"
-                            ></span>
-                        </p>
-                    </div>
                 </div>
             </div>
             <div class="sgds-card-footer">
@@ -146,13 +145,13 @@ export default {
         handleSubmit() {
             axios
                 .post("/.netlify/functions/api/terms", {
-                    contributor: this.contributor,
-                    contributor_email: this.contributor_email,
-                    term: this.term,
-                    full_term: this.full_term,
-                    description: this.description,
-                    link: this.link,
-                    categories: this.categories
+                    contributor: this.form.contributor,
+                    contributor_email: this.form.contributor_email,
+                    term: this.form.term,
+                    full_term: this.form.full_term,
+                    description: this.form.description,
+                    link: this.form.link,
+                    categories: this.form.categories
                 })
                 .then(response => {
                     new Noty({
