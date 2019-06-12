@@ -14,8 +14,11 @@
                 <span class="sgds-icon sgds-icon-chevron-up" v-if="showContributionForm"></span>
             </button>
         </div>
-        <div v-if="showContributionForm" :style="contributionFormStyle">
-            <ContributionForm v-on:form-submit-success="showContributionForm = false"></ContributionForm>
+        <div v-if="showContributionForm" :style="contributionFormStyle" class="sgds-card">
+            <div class="sgds-card-content">
+                <p>Have an initialism/acronym to contribute? Suggest them to us here!</p>
+                <ContributionForm/>
+            </div>
         </div>
         <label for="search-input" class="has-text-centered">
             <h5 class="has-text-weight-semibold margin--bottom">Tech Acronyms used in Government</h5>
@@ -34,11 +37,10 @@
         </div>
         <br>
         <div
-            v-for="term in filteredTerms"
+            v-for="(term, index) of filteredTerms"
             v-cloak
-            class="sgds-card"
+            class="sgds-card term-card"
             :key="term.term"
-            :style="{marginTop: '5px'}"
         >
             <div class="sgds-card-content">
                 <div class="row">
@@ -48,16 +50,37 @@
                     <div class="col is-9">
                         <p class="has-text-weight-bold">{{term.full_term}}</p>
                         <p>{{term.description}}</p>
-                        <p v-if="term.link"><a :href="term.link">{{term.link}}</a></p>
+                        <p v-if="term.link">
+                            <a :href="term.link">{{term.link}}</a>
+                        </p>
 
                         <span class="categories" v-if="term.categories.length > 0">
                             <p class="has-text-weight-bold">Categories</p>
                             <ul>
-                                <li v-for="(category, index) of term.categories" :key="category + index">
-                                    {{category}}
-                                </li>
+                                <li
+                                    v-for="(category, index) of term.categories"
+                                    :key="category + index"
+                                >{{category}}</li>
                             </ul>
                         </span>
+                    </div>
+                </div>
+            </div>
+            <div class="sgds-card-footer">
+                <div class="sgds-card-footer-item">
+                    <div class="row">
+                        <div class="col edit-term">
+                            <span>
+                                <a href @click.prevent="editTerm(index)">
+                                    Suggest an edit for {{ term.term }}
+                                    <span class="sgds-icon sgds-icon-chevron-down"></span>
+                                    <span class="sgds-icon sgds-icon-chevron-up"></span>
+                                </a>
+                            </span>
+                            <div v-if="editing[index]">
+                                <ContributionForm/>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -77,17 +100,20 @@ export default {
             search: "",
             displaySearchResults: false,
             showContributionForm: false,
-            searchBarStyle: {
-                display: "flex"
-            },
             contributeButtonContainerStyle: {
                 display: "flex",
                 flexDirection: "row-reverse"
             },
             contributionFormStyle: {
                 padding: "1rem 0"
-            }
+            },
+            editing: []
         };
+    },
+    methods: {
+        editTerm(index) {
+            this.$set(this.editing, index, !this.editing[index]);
+        }
     },
     computed: {
         filteredTerms() {
@@ -124,4 +150,12 @@ export default {
 </script>
 
 <style scoped>
+.term-card {
+    margin-top: 10px;
+}
+.edit-term {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 </style>
