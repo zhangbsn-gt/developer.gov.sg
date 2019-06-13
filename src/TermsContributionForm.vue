@@ -89,7 +89,7 @@
         <div>
             <label for="categories">Categories</label>
             <div>
-                <p v-for="(category, index) of form.categories" :key="index">
+                <p v-for="(category, index) of form.categories" :key="index + category">
                     {{ category }}
                     <span
                         class="sgds-icon sgds-icon-cross"
@@ -137,6 +137,33 @@ import LoadingSpinner from "./LoadingSpinner.vue";
 
 export default {
     components: { LoadingSpinner },
+    props: {
+        type: {
+            type: String,
+            required: true,
+            validator(value) {
+                return ["add", "edit"].indexOf(value) !== -1;
+            }
+        },
+        termId: {
+            type: Number
+        },
+        term: {
+            type: String
+        },
+        full_term: {
+            type: String
+        },
+        description: {
+            type: String
+        },
+        link: {
+            type: String
+        },
+        categories: {
+            type: Array
+        }
+    },
     data: function() {
         return {
             processingSubmission: false,
@@ -162,6 +189,12 @@ export default {
         };
     },
     methods: {
+        raiseNoty() {
+            new Noty({
+                type: "success",
+                text: "Here is a notification!"
+            }).show();
+        },
         addCategory(category) {
             this.form.categories.push(category);
         },
@@ -171,20 +204,34 @@ export default {
                 return;
             }
             this.processingSubmission = true;
-            axios
-                .post("/.netlify/functions/api/terms", {
-                    contributor: this.form.contributor,
-                    contributor_email: this.form.contributor_email,
-                    term: this.form.term,
-                    full_term: this.form.full_term,
-                    description: this.form.description,
-                    link: this.form.link,
-                    categories: this.form.categories
-                })
+            let submission = {
+                contributor: this.form.contributor,
+                contributor_email: this.form.contributor_email,
+                term: this.form.term,
+                full_term: this.form.full_term,
+                description: this.form.description,
+                link: this.form.link,
+                categories: this.form.categories
+            };
+            if (this.type === "edit") {
+                submission = Object.assign({ id: this.termId }, submission);
+            }
+
+            let axiosConfig = {
+                url: "/.netlify/functions/api/terms",
+                data: submission
+            };
+            if (this.type === "add") {
+                axiosConfig.method = "post";
+            }
+            if (this.type === "edit") {
+                axiosConfig.method = "put";
+            }
+            axios(axiosConfig)
                 .then(response => {
                     new Noty({
                         type: "success",
-                        text: `Your term has been submitted! You can view its approval progress <a href='${
+                        text: `Submission successful! You can view its approval progress <a href='${
                             response.data.pr
                         }'>here.</a>`
                     }).show();
@@ -197,6 +244,7 @@ export default {
                 })
                 .finally(() => {
                     this.processingSubmission = false;
+                    this.$emit("close");
                 });
         },
         detectFormErrors() {
@@ -219,6 +267,20 @@ export default {
                     "Please enter a valid government email.";
             }
             return hasErrors;
+        },
+        populateFormFromProps() {
+            ["term", "full_term", "description", "link", "categories"].forEach(
+                field => {
+                    if (this[field]) {
+                        this.form[field] = this[field];
+                    }
+                }
+            );
+        }
+    },
+    created() {
+        if ((this.type === "edit")) {
+            this.populateFormFromProps();
         }
     }
 };

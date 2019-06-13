@@ -1,4 +1,11 @@
 const crypto = require("crypto");
+
+module.exports = {
+    generateId,
+    getMissingParams,
+    sortTerms
+};
+
 async function generateId(bytes = 4, encoding = "hex") {
     return new Promise((resolve, reject) => {
         crypto.randomBytes(bytes, function(err, buffer) {
@@ -9,11 +16,13 @@ async function generateId(bytes = 4, encoding = "hex") {
         });
     });
 }
+
 function getMissingParams(paramList, requestBody) {
     return paramList.filter(param => {
         return Object.keys(requestBody).indexOf(param) === -1;
     });
 }
+
 function sortTerms(terms) {
     terms.sort((a, b) => {
         var nameA = a.term.toUpperCase();
@@ -27,8 +36,3 @@ function sortTerms(terms) {
         return 0;
     });
 }
-module.exports = {
-    generateId,
-    getMissingParams,
-    sortTerms
-};

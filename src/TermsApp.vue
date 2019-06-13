@@ -17,7 +17,7 @@
         <div v-if="showContributionForm" :style="contributionFormStyle" class="sgds-card">
             <div class="sgds-card-content">
                 <p>Have an initialism/acronym to contribute? Suggest them to us here!</p>
-                <ContributionForm/>
+                <ContributionForm type="add" @close="showContributionForm = false"/>
             </div>
         </div>
         <label for="search-input" class="has-text-centered">
@@ -37,10 +37,10 @@
         </div>
         <br>
         <div
-            v-for="(term, index) of filteredTerms"
+            v-for="term of filteredTerms"
             v-cloak
             class="sgds-card term-card"
-            :key="term.term"
+            :key="term.id + term.term"
         >
             <div class="sgds-card-content">
                 <div class="row">
@@ -58,8 +58,8 @@
                             <p class="has-text-weight-bold">Categories</p>
                             <ul>
                                 <li
-                                    v-for="(category, index) of term.categories"
-                                    :key="category + index"
+                                    v-for="category of term.categories"
+                                    :key="term.term + category"
                                 >{{category}}</li>
                             </ul>
                         </span>
@@ -71,14 +71,26 @@
                     <div class="row">
                         <div class="col edit-term">
                             <span>
-                                <a href @click.prevent="editTerm(index)">
+                                <a href @click.prevent="editTerm(term.id)">
                                     Suggest an edit for {{ term.term }}
-                                    <span class="sgds-icon sgds-icon-chevron-down"></span>
-                                    <span class="sgds-icon sgds-icon-chevron-up"></span>
+                                    <span
+                                        class="sgds-icon sgds-icon-chevron-down"
+                                        v-if="!editing[term.id]"
+                                    ></span>
+                                    <span class="sgds-icon sgds-icon-chevron-up" v-else></span>
                                 </a>
                             </span>
-                            <div v-if="editing[index]">
-                                <ContributionForm/>
+                            <div v-if="editing[term.id]">
+                                <ContributionForm
+                                    type="edit"
+                                    @close="editing[term.id] = false"
+                                    :termId="term.id"
+                                    :term="term.term"
+                                    :full_term="term.full_term"
+                                    :description="term.description"
+                                    :link="term.link"
+                                    :categories="term.categories"
+                                />
                             </div>
                         </div>
                     </div>
@@ -107,7 +119,7 @@ export default {
             contributionFormStyle: {
                 padding: "1rem 0"
             },
-            editing: []
+            editing: {}
         };
     },
     methods: {
@@ -143,7 +155,14 @@ export default {
                 console.error(err);
                 return;
             }
-            this.terms = data;
+            this.terms = data.map((termInfo, index) =>
+                Object.assign(
+                    {
+                        id: index
+                    },
+                    termInfo
+                )
+            );
         });
     }
 };

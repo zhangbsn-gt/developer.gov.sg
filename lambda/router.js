@@ -115,7 +115,7 @@ router.post("/submit-product-changes", async (req, res) => {
         });
 
         const newBranchId = await lib.generateId();
-        const newBranchName = `edits-${new Date()
+        const newBranchName = `product-edits-${new Date()
             .toISOString()
             .substring(0, 10)}-${newBranchId}`;
         const newRefName = `heads/${newBranchName}`;
@@ -246,7 +246,7 @@ router.post("/terms", async (req, res) => {
     });
 
     const newBranchId = await lib.generateId();
-    const newBranchName = `terms-${new Date()
+    const newBranchName = `term-new-${new Date()
         .toISOString()
         .substring(0, 10)}-${newBranchId}`;
     const newRefName = `heads/${newBranchName}`;
@@ -309,12 +309,147 @@ router.post("/terms", async (req, res) => {
     const prResults = await octokit.pulls.create({
         owner: repoOwner,
         repo: repoName,
-        title: `New Government Acronym Suggestion from ${
+        title: `New Government Acronym suggestion from ${
             submission.contributor
         } <${submission.contributor_email}>`,
         head: newBranchName,
         base: githubRef,
         body: "```\n" + JSON.stringify(newTerm, null, 4) + "\n```",
+        maintainer_can_modify: true
+    });
+
+    res.json({
+        pr: prResults.data.html_url
+    });
+});
+
+router.put("/terms", async (req, res) => {
+    let submission = req.body;
+    let missingParams = lib.getMissingParams(
+        [
+            "id",
+            "contributor",
+            "contributor_email",
+            "term",
+            "full_term",
+            "description"
+        ],
+        submission
+    );
+    if (missingParams.length > 0) {
+        res.status(400).json({
+            error: `The following parameters are missing: ${missingParams.join(
+                ", "
+            )}`
+        });
+        return;
+    }
+
+    const updatedTerm = {
+        term: submission.term,
+        full_term: submission.full_term,
+        description: submission.description,
+        link: submission.link || "",
+        categories:
+            submission.categories.length > 0 ? submission.categories : []
+    };
+
+    let response = await octokit.repos.getContents({
+        owner: repoOwner,
+        repo: repoName,
+        path: "terms.json",
+        ref: githubRef
+    });
+
+    let termsFileRaw = Buffer.from(response.data.content, "base64").toString();
+    let termsJson = termsFileRaw
+        .split("\n")
+        .slice(2)
+        .join("\n");
+    let existingTerms = JSON.parse(termsJson);
+
+    existingTerms.splice(submission.id, 1, updatedTerm);
+
+    let newContent = "---\n" + "---\n" + JSON.stringify(existingTerms, null, 4);
+
+    const baseRef = await octokit.git.getRef({
+        owner: repoOwner,
+        repo: repoName,
+        ref: `heads/${githubRef}`
+    });
+
+    const newBranchId = await lib.generateId();
+    const newBranchName = `term-edits-${new Date()
+        .toISOString()
+        .substring(0, 10)}-${newBranchId}-edit`;
+
+    const newRefName = `heads/${newBranchName}`;
+
+    const newRef = await octokit.git.createRef({
+        owner: repoOwner,
+        repo: repoName,
+        ref: "refs/" + newRefName,
+        sha: baseRef.data.object.sha
+    });
+
+    // post new blob object with new content => blob SHA
+    const newBlob = await octokit.git.createBlob({
+        owner: repoOwner,
+        repo: repoName,
+        content: newContent
+    });
+
+    // get current commit => commit object {tree: {url, sha}}
+    const currentCommit = await octokit.git.getCommit({
+        owner: repoOwner,
+        repo: repoName,
+        commit_sha: baseRef.data.object.sha
+    });
+
+    // post new tree object with file path pointer replaced with new blob SHA => tree SHA
+    const newTree = await octokit.git.createTree({
+        owner: repoOwner,
+        repo: repoName,
+        tree: [
+            {
+                path: "terms.json",
+                mode: "100644",
+                type: "blob",
+                sha: newBlob.data.sha
+            }
+        ],
+        base_tree: currentCommit.data.tree.sha
+    });
+
+    // create new commit with current commit SHA as parent and new tree SHA => commit SHA
+    const newCommit = await octokit.git.createCommit({
+        owner: repoOwner,
+        repo: repoName,
+        message: `New Government acronym edit from ${submission.contributor} <${
+            submission.contributor_email
+        }>`,
+        tree: newTree.data.sha,
+        parents: [currentCommit.data.sha]
+    });
+
+    // update ref to point to commit SHA
+    const updateRefResults = await octokit.git.updateRef({
+        owner: repoOwner,
+        repo: repoName,
+        ref: newRefName,
+        sha: newCommit.data.sha
+    });
+
+    // Create new PR to dev
+    const prResults = await octokit.pulls.create({
+        owner: repoOwner,
+        repo: repoName,
+        title: `New Government acronym edit from ${submission.contributor} <${
+            submission.contributor_email
+        }>`,
+        head: newBranchName,
+        base: githubRef,
+        body: "```\n" + JSON.stringify(updatedTerm, null, 4) + "\n```",
         maintainer_can_modify: true
     });
 
