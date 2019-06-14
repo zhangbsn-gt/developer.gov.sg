@@ -1,58 +1,44 @@
----
----
 [
     {
         "term": "CWP",
         "full_term": "Content Website Platform",
         "description": "Description of CWP",
-        "link": "",
+        "links": [],
         "categories": []
     },
     {
         "term": "GCC",
         "full_term": "Government Commercial Cloud",
         "description": "Description of GCC",
-        "link": "",
-        "categories": [
-            "platform"
-        ]
+        "links": [],
+        "categories": ["platform"]
     },
     {
         "term": "NDI",
         "full_term": "National Digital Identity",
         "description": "Description of NDI",
-        "link": "",
-        "categories": [
-            "authentication",
-            "data"
-        ]
+        "links": [],
+        "categories": ["authentication", "data"]
     },
     {
         "term": "NECTAR",
         "full_term": "Next-generation Container Architecture ",
         "description": "GovTech's Next-generation Container Architecture for the whole of government",
-        "link": "https://blog.gds-gov.tech/nectar-10e0eb1581cf",
-        "categories": [
-            "platform"
-        ]
+        "links": ["https://blog.gds-gov.tech/nectar-10e0eb1581cf"],
+        "categories": ["platform"]
     },
     {
         "term": "SGDS",
         "full_term": "Singapore Government Design System",
         "description": "SGDS is a series of frontend components (consisting of HTML, CSS and JavaScript) that enables government agencies to have a common design language.",
-        "link": "https://designsystem.gov.sg",
-        "categories": [
-            "design",
-            "frontend"
-        ]
+        "links": ["https://designsystem.gov.sg"],
+        "categories": ["design", "frontend"]
     },
     {
         "term": "SGTS",
         "full_term": "Singapore Government Tech Stack",
         "description": "Description of SGTS",
-        "link": "https://tech.gov.sg",
-        "categories": [
-            "platform"
-        ]
+        "links": ["https://tech.gov.sg"],
+        "categories": ["platform"]
     }
 ]
