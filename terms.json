@@ -7,6 +7,16 @@
         "categories": []
     },
     {
+        "term": "DWP",
+        "full_term": "Digital Workplace",
+        "description": "DWP is a programme that aims to improve the day-to-day experience and productivity of public officers through a series of digital tools",
+        "links": [
+            "https://play.google.com/store/apps/details?id=sg.gov.digitalworkplace&hl=en_SG",
+            "https://apps.apple.com/sg/app/dwp-mobile/id1329488106"
+        ],
+        "categories": []
+    },
+    {
         "term": "GCC",
         "full_term": "Government Commercial Cloud",
         "description": "Description of GCC",
