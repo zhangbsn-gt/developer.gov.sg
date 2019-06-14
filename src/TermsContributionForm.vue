@@ -279,7 +279,7 @@ export default {
         }
     },
     created() {
-        if ((this.type === "edit")) {
+        if (this.type === "edit") {
             this.populateFormFromProps();
         }
     }

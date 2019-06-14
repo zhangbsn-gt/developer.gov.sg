@@ -3,6 +3,7 @@ const express = require("express");
 const beautifyHtml = require("js-beautify").html;
 const Octokit = require("@octokit/rest");
 const axios = require("axios");
+const slugify = require("slugify");
 const packageInfo = require("../package.json");
 const {
     githubToken,
@@ -25,8 +26,8 @@ router.get("/", (req, res) =>
 );
 
 router.post("/request-otp", async (req, res) => {
-    const postBody = req.body;
-    if (!postBody.email) {
+    const requestBody = req.body;
+    if (!requestBody.email) {
         res.status(400).json({
             error: "The email parameter is missing."
         });
@@ -34,12 +35,11 @@ router.post("/request-otp", async (req, res) => {
     }
 
     try {
-        let endpoint = new URL("/otp/get", otpServiceUrl);
-        let response = await axios.post(endpoint.href, {
-            email: postBody.email
-        });
-
-        res.json(response.data);
+        let otpResponse = await lib.otp.requestOtp(
+            otpServiceUrl,
+            requestBody.email
+        );
+        res.json(otpResponse.data);
     } catch (err) {
         res.status(500).json({
             error: err.message || "Error requesting for email verification OTP."
@@ -48,7 +48,7 @@ router.post("/request-otp", async (req, res) => {
 });
 
 router.post("/submit-product-changes", async (req, res) => {
-    let postBody = req.body;
+    let requestBody = req.body;
 
     let missingParams = lib.getMissingParams(
         [
@@ -60,7 +60,7 @@ router.post("/submit-product-changes", async (req, res) => {
             "page_content",
             "page_layout"
         ],
-        postBody
+        requestBody
     );
     if (missingParams.length > 0) {
         res.status(400).json({
@@ -71,15 +71,11 @@ router.post("/submit-product-changes", async (req, res) => {
         return;
     }
 
-    let contributor = postBody.contributor;
-    let otp = postBody.otp;
+    let contributor = requestBody.contributor;
+    let otp = requestBody.otp;
 
     try {
-        let endpoint = new URL("/otp/validate", otpServiceUrl);
-        await axios.post(endpoint.href, {
-            email: contributor,
-            otp: otp
-        });
+        await lib.otp.verifyOtp(otpServiceUrl, contributor, otp);
     } catch (err) {
         res.status(403).json({
             error: "OTP validation failed."
@@ -87,11 +83,11 @@ router.post("/submit-product-changes", async (req, res) => {
         return;
     }
 
-    let path = postBody.page_path;
-    let title = postBody.page_title;
-    let category = postBody.page_category;
-    let content = postBody.page_content;
-    let layout = postBody.page_layout;
+    let path = requestBody.page_path;
+    let title = requestBody.page_title;
+    let category = requestBody.page_category;
+    let content = requestBody.page_content;
+    let layout = requestBody.page_layout;
 
     let newPage =
         `---\n` +
@@ -119,6 +115,7 @@ router.post("/submit-product-changes", async (req, res) => {
             .toISOString()
             .substring(0, 10)}-${newBranchId}`;
         const newRefName = `heads/${newBranchName}`;
+
         const newRef = await octokit.git.createRef({
             owner: repoOwner,
             repo: repoName,
@@ -157,7 +154,7 @@ router.post("/submit-product-changes", async (req, res) => {
         const newCommit = await octokit.git.createCommit({
             owner: repoOwner,
             repo: repoName,
-            message: `New edits for ${title} page from ${contributor}`,
+            message: `New edits for ${title} page by ${contributor}`,
             tree: newTree.data.sha,
             parents: [currentCommit.data.sha]
         });
@@ -173,11 +170,24 @@ router.post("/submit-product-changes", async (req, res) => {
         const prResults = await octokit.pulls.create({
             owner: repoOwner,
             repo: repoName,
-            title: `New edits for ${title} page from ${contributor}`,
+            title: `New edits for ${title} page by ${contributor}`,
             head: newBranchName,
             base: githubRef,
             body: newPage,
             maintainer_can_modify: true
+        });
+
+        const issueUpdateResults = await octokit.issues.update({
+            owner: repoOwner,
+            repo: repoName,
+            issue_number: prResults.data.number,
+            labels: [
+                "product",
+                slugify(title, {
+                    lower: true,
+                    remove: /[*+~.()'"!:@]/g
+                })
+            ]
         });
 
         res.json({
@@ -318,6 +328,19 @@ router.post("/terms", async (req, res) => {
         maintainer_can_modify: true
     });
 
+    const issueUpdateResults = await octokit.issues.update({
+        owner: repoOwner,
+        repo: repoName,
+        issue_number: prResults.data.number,
+        labels: [
+            "term",
+            slugify(submission.term, {
+                lower: true,
+                remove: /[*+~.()'"!:@]/g
+            })
+        ]
+    });
+
     res.json({
         pr: prResults.data.html_url
     });
@@ -451,6 +474,19 @@ router.put("/terms", async (req, res) => {
         base: githubRef,
         body: "```\n" + JSON.stringify(updatedTerm, null, 4) + "\n```",
         maintainer_can_modify: true
+    });
+
+    const issueUpdateResults = await octokit.issues.update({
+        owner: repoOwner,
+        repo: repoName,
+        issue_number: prResults.data.number,
+        labels: [
+            "term",
+            slugify(submission.term, {
+                lower: true,
+                remove: /[*+~.()'"!:@]/g
+            })
+        ]
     });
 
     res.json({

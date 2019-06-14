@@ -1,9 +1,11 @@
 const crypto = require("crypto");
+const otp = require("./otp");
 
 module.exports = {
     generateId,
     getMissingParams,
-    sortTerms
+    sortTerms,
+    otp
 };
 
 async function generateId(bytes = 4, encoding = "hex") {
