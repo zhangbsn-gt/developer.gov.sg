@@ -300,9 +300,9 @@ router.post("/terms", async (req, res) => {
     const newCommit = await octokit.git.createCommit({
         owner: repoOwner,
         repo: repoName,
-        message: `New Government Acronym suggestion from ${
-            submission.contributor
-        } <${submission.contributor_email}>`,
+        message: `New acronym suggestion from ${submission.contributor} <${
+            submission.contributor_email
+        }>`,
         tree: newTree.data.sha,
         parents: [currentCommit.data.sha]
     });
@@ -319,9 +319,9 @@ router.post("/terms", async (req, res) => {
     const prResults = await octokit.pulls.create({
         owner: repoOwner,
         repo: repoName,
-        title: `New Government Acronym suggestion from ${
-            submission.contributor
-        } <${submission.contributor_email}>`,
+        title: `New acronym suggestion from ${submission.contributor} <${
+            submission.contributor_email
+        }>`,
         head: newBranchName,
         base: githubRef,
         body: "```\n" + JSON.stringify(newTerm, null, 4) + "\n```",
@@ -391,7 +391,7 @@ router.put("/terms", async (req, res) => {
         .join("\n");
     let existingTerms = JSON.parse(termsJson);
 
-    existingTerms.splice(submission.id, 1, updatedTerm);
+    let replacedTerm = existingTerms.splice(submission.id, 1, updatedTerm);
 
     let newContent = "---\n" + "---\n" + JSON.stringify(existingTerms, null, 4);
 
@@ -448,7 +448,7 @@ router.put("/terms", async (req, res) => {
     const newCommit = await octokit.git.createCommit({
         owner: repoOwner,
         repo: repoName,
-        message: `New Government acronym edit from ${submission.contributor} <${
+        message: `New acronym change from ${submission.contributor} <${
             submission.contributor_email
         }>`,
         tree: newTree.data.sha,
@@ -467,7 +467,7 @@ router.put("/terms", async (req, res) => {
     const prResults = await octokit.pulls.create({
         owner: repoOwner,
         repo: repoName,
-        title: `New Government acronym edit from ${submission.contributor} <${
+        title: `New acronym change from ${submission.contributor} <${
             submission.contributor_email
         }>`,
         head: newBranchName,
@@ -476,17 +476,26 @@ router.put("/terms", async (req, res) => {
         maintainer_can_modify: true
     });
 
+    let labels = [
+        "term",
+        slugify(updatedTerm.term, {
+            lower: true,
+            remove: /[*+~.()'"!:@]/g
+        })
+    ];
+    if (replacedTerm[0].term !== updatedTerm.term) {
+        labels.push(
+            slugify(replacedTerm[0].term, {
+                lower: true,
+                remove: /[*+~.()'"!:@]/g
+            })
+        );
+    }
     const issueUpdateResults = await octokit.issues.update({
         owner: repoOwner,
         repo: repoName,
         issue_number: prResults.data.number,
-        labels: [
-            "term",
-            slugify(submission.term, {
-                lower: true,
-                remove: /[*+~.()'"!:@]/g
-            })
-        ]
+        labels
     });
 
     res.json({
