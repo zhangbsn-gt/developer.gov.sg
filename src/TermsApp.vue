@@ -142,12 +142,13 @@ export default {
                     const fullTerm = term.full_term.toLowerCase();
                     const description = term.description.toLowerCase();
                     const links = term.links.join("\n");
+                    const categories = term.categories.join("\n")
                     return (
                         termName.indexOf(searchLowercase) !== -1 ||
                         fullTerm.indexOf(searchLowercase) !== -1 ||
                         description.indexOf(searchLowercase) !== -1 ||
                         links.indexOf(searchLowercase) !== -1 ||
-                        term.categories.indexOf(searchLowercase) !== -1
+                        categories.indexOf(searchLowercase) !== -1
                     );
                 });
             } else {
