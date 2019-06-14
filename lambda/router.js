@@ -307,9 +307,7 @@ router.post("/terms", async (req, res) => {
     const newCommit = await octokit.git.createCommit({
         owner: githubRepoOwner,
         repo: githubRepoName,
-        message: `New acronym suggestion from ${submission.contributor} <${
-            submission.contributor_email
-        }>`,
+        message: `New acronym suggestion from ${submission.email}`,
         tree: newTree.data.sha,
         parents: [currentCommit.data.sha]
     });
@@ -326,9 +324,7 @@ router.post("/terms", async (req, res) => {
     const prResults = await octokit.pulls.create({
         owner: githubRepoOwner,
         repo: githubRepoName,
-        title: `New acronym suggestion from ${submission.contributor} <${
-            submission.contributor_email
-        }>`,
+        title: `New acronym suggestion from ${submission.email}`,
         head: newBranchName,
         base: githubBaseRef,
         body: "```\n" + JSON.stringify(newTerm, null, 4) + "\n```",
@@ -360,8 +356,6 @@ router.put("/terms", async (req, res) => {
             "email",
             "otp",
             "id",
-            "contributor",
-            "contributor_email",
             "term",
             "full_term",
             "description"
@@ -466,9 +460,7 @@ router.put("/terms", async (req, res) => {
     const newCommit = await octokit.git.createCommit({
         owner: githubRepoOwner,
         repo: githubRepoName,
-        message: `New acronym change from ${submission.contributor} <${
-            submission.contributor_email
-        }>`,
+        message: `New acronym change from ${submission.email}`,
         tree: newTree.data.sha,
         parents: [currentCommit.data.sha]
     });
@@ -485,9 +477,7 @@ router.put("/terms", async (req, res) => {
     const prResults = await octokit.pulls.create({
         owner: githubRepoOwner,
         repo: githubRepoName,
-        title: `New acronym change from ${submission.contributor} <${
-            submission.contributor_email
-        }>`,
+        title: `New acronym change from ${submission.email}`,
         head: newBranchName,
         base: githubBaseRef,
         body: "```\n" + JSON.stringify(updatedTerm, null, 4) + "\n```",

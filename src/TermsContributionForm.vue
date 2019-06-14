@@ -107,11 +107,10 @@
 import axios from "axios";
 import Noty from "noty";
 import { urlEncode } from "./lib";
-import LoadingSpinner from "./LoadingSpinner.vue";
 import VerifyAndSubmit from "./VerifyAndSubmit.vue";
 
 export default {
-    components: { LoadingSpinner, VerifyAndSubmit },
+    components: { VerifyAndSubmit },
     props: {
         type: {
             type: String,

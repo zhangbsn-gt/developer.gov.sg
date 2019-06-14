@@ -30,64 +30,7 @@
         </div>
 
         <div class="modal-footer">
-            <div class="row">
-                <div class="col">
-                    <h6>Submit contributions</h6>
-                    <span :class="verifyStageStyles">verify government email</span>
-                    &bull;
-                    <span :class="submitStageStyles">submit changes</span>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <div v-if="stage === 'verify'">
-                        <form>
-                            <label for="email">Verify your government email</label>
-                            <input
-                                type="email"
-                                class="input"
-                                :class="{'is-danger': errors.email}"
-                                id="email"
-                                name="email"
-                                placeholder="me@gov.sg"
-                                v-model="email"
-                            >
-                            <p class="help is-danger" v-if="errors.email">{{errors.email}}</p>
-                            <p class="modal-footer-buttons">
-                                <button
-                                    type="submit"
-                                    class="sgds-button is-info"
-                                    @click.prevent="requestOtp"
-                                    :disabled="!emailRegex.test(email)"
-                                >Send email OTP</button>
-                            </p>
-                        </form>
-                    </div>
-
-                    <div v-if="stage === 'submit'">
-                        <form>
-                            <label
-                                for="otp"
-                            >Enter your 6-digit OTP sent to your email at {{ email }}</label>
-                            <input type="number" name="otp" id="otp" class="input" v-model="otp">
-
-                            <p class="modal-footer-buttons">
-                                <button
-                                    type="button"
-                                    class="sgds-button"
-                                    @click.prevent="stage = 'verify'"
-                                >Back</button>
-                                <button
-                                    type="submit"
-                                    class="sgds-button is-primary"
-                                    :disabled="!this.otp || this.otp.length !== 6"
-                                    @click.prevent="submitChanges"
-                                >Submit Changes</button>
-                            </p>
-                        </form>
-                    </div>
-                </div>
-            </div>
+            <VerifyAndSubmit @submit="submitChanges"/>
         </div>
     </div>
 </template>
@@ -97,7 +40,10 @@ import axios from "axios";
 import Noty from "noty";
 import Quill from "quill";
 import { urlEncode, emailRegex } from "./lib";
+import VerifyAndSubmit from "./VerifyAndSubmit.vue";
+
 export default {
+    components: { VerifyAndSubmit },
     props: [
         "page_path",
         "page_title",
@@ -145,7 +91,7 @@ export default {
                     }).show();
                 });
         },
-        submitChanges() {
+        submitChanges({email, otp}) {
             const updatedContent = document.querySelector(".ql-editor")
                 .innerHTML;
             axios
@@ -155,8 +101,8 @@ export default {
                     page_category: this.page_category,
                     page_content: updatedContent,
                     page_layout: this.page_layout,
-                    contributor: this.email,
-                    otp: this.otp
+                    email,
+                    otp
                 })
                 .then(response => {
                     let prLink = response.data.pr;
@@ -176,18 +122,6 @@ export default {
                         text: `There was an error submitting your changes. ${message}`
                     }).show();
                 });
-        }
-    },
-    computed: {
-        verifyStageStyles() {
-            return {
-                bold: "verify" === this.stage
-            };
-        },
-        submitStageStyles() {
-            return {
-                bold: "submit" === this.stage
-            };
         }
     },
     mounted() {
