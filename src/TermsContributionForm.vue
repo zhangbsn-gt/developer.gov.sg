@@ -1,36 +1,7 @@
 <template>
     <form @submit.prevent="handleSubmit">
         <div>
-            <label for="contributor">Your name*</label>
-            <input
-                id="contributor"
-                name="contributor"
-                class="input"
-                :class="{'is-danger': errors.contributor}"
-                type="text"
-                v-model="form.contributor"
-                required
-            >
-            <p class="help is-danger" v-if="errors.contributor">{{errors.contributor}}</p>
-        </div>
-
-        <div>
-            <label for="contributor-email">Your government email*</label>
-            <input
-                id="contributor-email"
-                name="contributor_email"
-                class="input"
-                :class="{'is-danger': errors.contributor_email}"
-                type="email"
-                placeholder="me@.gov.sg"
-                v-model="form.contributor_email"
-                required
-            >
-            <p class="help is-danger" v-if="errors.contributor_email">{{errors.contributor_email}}</p>
-        </div>
-
-        <div>
-            <label for="term">Initialism/acronym*</label>
+            <label for="term">Acronym/initialism*</label>
             <input
                 id="term"
                 name="term"
@@ -45,7 +16,7 @@
         </div>
 
         <div>
-            <label for="full-term">Full term*</label>
+            <label for="full-term">What it stands for*</label>
             <input
                 id="full-term"
                 name="full_term"
@@ -128,30 +99,19 @@
             >Add</button>
         </div>
 
-        <div class="submit">
-            <button
-                class="sgds-button is-primary"
-                :style="{minWidth: '100px'}"
-                type="submit"
-                :disabled="processingSubmission"
-            >
-                <template v-if="!processingSubmission">Submit</template>
-                <template v-else>
-                    <LoadingSpinner/>
-                </template>
-            </button>
-        </div>
+        <VerifyAndSubmit @submit="submit"/>
     </form>
 </template>
 
 <script>
 import axios from "axios";
 import Noty from "noty";
-import { urlEncode, emailRegex } from "./lib";
+import { urlEncode } from "./lib";
 import LoadingSpinner from "./LoadingSpinner.vue";
+import VerifyAndSubmit from "./VerifyAndSubmit.vue";
 
 export default {
-    components: { LoadingSpinner },
+    components: { LoadingSpinner, VerifyAndSubmit },
     props: {
         type: {
             type: String,
@@ -183,8 +143,6 @@ export default {
         return {
             processingSubmission: false,
             form: {
-                contributor: null,
-                contributor_email: null,
                 term: null,
                 full_term: null,
                 description: null,
@@ -194,8 +152,6 @@ export default {
                 categories: []
             },
             errors: {
-                contributor: null,
-                contributor_email: null,
                 term: null,
                 full_term: null,
                 description: null
@@ -203,24 +159,16 @@ export default {
         };
     },
     methods: {
-        raiseNoty() {
-            new Noty({
-                type: "success",
-                text: "Here is a notification!"
-            }).show();
-        },
-        addCategory(category) {
-            this.form.categories.push(category);
-        },
-        handleSubmit() {
+        requestOtp() {},
+        submit({email, otp}) {
             let hasErrors = this.detectFormErrors();
             if (hasErrors) {
                 return;
             }
             this.processingSubmission = true;
             let submission = {
-                contributor: this.form.contributor,
-                contributor_email: this.form.contributor_email,
+                email,
+                otp,
                 term: this.form.term,
                 full_term: this.form.full_term,
                 description: this.form.description,
@@ -264,8 +212,6 @@ export default {
         detectFormErrors() {
             let hasErrors = false;
             [
-                "contributor",
-                "contributor_email",
                 "term",
                 "full_term",
                 "description"
@@ -275,11 +221,6 @@ export default {
                     this.errors[field] = "Please enter a valid value.";
                 }
             });
-            if (!emailRegex.test(this.form.contributor_email)) {
-                hasErrors = true;
-                this.errors.contributor_email =
-                    "Please enter a valid government email.";
-            }
             return hasErrors;
         },
         populateFormFromProps() {

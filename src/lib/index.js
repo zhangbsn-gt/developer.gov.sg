@@ -3,14 +3,13 @@ export function urlEncode(data) {
     for (const key in data) {
         if (data.hasOwnProperty(key)) {
             encodedDataArray.push(
-                encodeURIComponent(key) +
-                "=" +
-                encodeURIComponent(data[key])
+                encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
             );
         }
     }
     return encodedDataArray.join("&");
 }
+
 export function sortLoadedTerms(terms) {
     terms.sort((a, b) => {
         var nameA = a.term.toUpperCase();
@@ -24,18 +23,21 @@ export function sortLoadedTerms(terms) {
         return 0;
     });
 }
+
 export function loadJson(location, callback) {
     const xhr = getXHR();
     xhr.open("GET", location, true);
     xhr.onreadystatechange = createStateChangeListener(xhr, callback);
     xhr.send();
 }
-export function getXHR() {
+
+function getXHR() {
     return window.XMLHttpRequest
         ? new window.XMLHttpRequest()
         : new ActiveXObject("Microsoft.XMLHTTP");
 }
-export function createStateChangeListener(xhr, callback) {
+
+function createStateChangeListener(xhr, callback) {
     return function() {
         if (xhr.readyState === 4 && xhr.status === 200) {
             try {
@@ -46,5 +48,6 @@ export function createStateChangeListener(xhr, callback) {
         }
     };
 }
+
 export const emailRegex = /.*/;
 // /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@(?:[a-zA-Z0-9-]{1,62}\.)*gov\.sg$/;

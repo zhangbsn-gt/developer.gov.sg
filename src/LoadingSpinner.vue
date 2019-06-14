@@ -1,13 +1,25 @@
 <template>
     <div class="spinner">
-        <div class="bounce1"></div>
-        <div class="bounce2"></div>
-        <div class="bounce3"></div>
+        <div class="bounce1" :style="bounceStyle"></div>
+        <div class="bounce2" :style="bounceStyle"></div>
+        <div class="bounce3" :style="bounceStyle"></div>
     </div>
 </template>
 
 <script>
-export default {};
+export default {
+    props: {
+        color: {
+            type: String,
+            default: "#333" // Anything that background-color accepts: #ababab, orange etc
+        }
+    },
+    computed: {
+        bounceStyle() {
+            return { backgroundColor: this.color };
+        }
+    }
+};
 </script>
 
 <style scoped>
@@ -21,7 +33,7 @@ export default {};
 .spinner > div {
     width: 14px;
     height: 14px;
-    background-color: #333;
+    /* background-color: #333; */
     margin: 0 1px;
     border-radius: 100%;
     display: inline-block;

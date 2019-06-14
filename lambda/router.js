@@ -35,7 +35,6 @@ router.post("/request-otp", async (req, res) => {
 
     try {
         let otpResponse = await lib.otp.requestOtp(
-            otpServiceUrl,
             requestBody.email
         );
         res.json(otpResponse.data);
@@ -51,7 +50,7 @@ router.post("/submit-product-changes", async (req, res) => {
 
     let missingParams = lib.getMissingParams(
         [
-            "contributor",
+            "email",
             "otp",
             "page_path",
             "page_title",
@@ -70,11 +69,11 @@ router.post("/submit-product-changes", async (req, res) => {
         return;
     }
 
-    let contributor = requestBody.contributor;
+    let email = requestBody.email;
     let otp = requestBody.otp;
 
     try {
-        await lib.otp.verifyOtp(otpServiceUrl, contributor, otp);
+        await lib.otp.verifyOtp(email, otp);
     } catch (err) {
         res.status(403).json({
             error: "OTP validation failed."
@@ -153,7 +152,7 @@ router.post("/submit-product-changes", async (req, res) => {
         const newCommit = await octokit.git.createCommit({
             owner: githubRepoOwner,
             repo: githubRepoName,
-            message: `New edits for ${title} page by ${contributor}`,
+            message: `New edits for ${title} page by ${email}`,
             tree: newTree.data.sha,
             parents: [currentCommit.data.sha]
         });
@@ -169,7 +168,7 @@ router.post("/submit-product-changes", async (req, res) => {
         const prResults = await octokit.pulls.create({
             owner: githubRepoOwner,
             repo: githubRepoName,
-            title: `New edits for ${title} page by ${contributor}`,
+            title: `New edits for ${title} page by ${email}`,
             head: newBranchName,
             base: githubBaseRef,
             body: newPage,
@@ -203,8 +202,8 @@ router.post("/terms", async (req, res) => {
     let submission = req.body;
     let missingParams = lib.getMissingParams(
         [
-            "contributor",
-            "contributor_email",
+            "email",
+            "otp",
             "term",
             "full_term",
             "description"
@@ -216,6 +215,18 @@ router.post("/terms", async (req, res) => {
             error: `The following parameters are missing: ${missingParams.join(
                 ", "
             )}`
+        });
+        return;
+    }
+
+    const email = submission.email;
+    const otp = submission.otp;
+
+    try {
+        await lib.otp.verifyOtp(email, otp);
+    } catch (err) {
+        res.status(403).json({
+            error: "OTP validation failed."
         });
         return;
     }
@@ -346,6 +357,8 @@ router.put("/terms", async (req, res) => {
     let submission = req.body;
     let missingParams = lib.getMissingParams(
         [
+            "email",
+            "otp",
             "id",
             "contributor",
             "contributor_email",
@@ -360,6 +373,18 @@ router.put("/terms", async (req, res) => {
             error: `The following parameters are missing: ${missingParams.join(
                 ", "
             )}`
+        });
+        return;
+    }
+
+    const email = submission.email;
+    const otp = submission.otp;
+
+    try {
+        await lib.otp.verifyOtp(email, otp);
+    } catch (err) {
+        res.status(403).json({
+            error: "OTP validation failed."
         });
         return;
     }
