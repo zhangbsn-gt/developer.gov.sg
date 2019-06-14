@@ -74,9 +74,9 @@
             </div>
             <div class="sgds-card-footer">
                 <div class="sgds-card-footer-item">
-                    <div class="row">
-                        <div class="col edit-term">
-                            <span>
+                    <div class="row edit-term">
+                        <div class="col">
+                            <span class="center-row-content">
                                 <a href @click.prevent="editTerm(term.id)">
                                     Suggest an edit for {{ term.term }}
                                     <span
@@ -179,8 +179,15 @@ export default {
     margin-top: 10px;
 }
 .edit-term {
+    flex: 1 1 auto;
+}
+.edit-term > .col {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
+}
+.center-row-content {
+    display: flex;
+    justify-content: center;
 }
 </style>
