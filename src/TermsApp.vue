@@ -50,11 +50,17 @@
                     <div class="col is-9">
                         <p class="has-text-weight-bold">{{term.full_term}}</p>
                         <p>{{term.description}}</p>
-                        <p v-if="term.link">
-                            <a :href="term.link">{{term.link}}</a>
-                        </p>
 
-                        <span class="categories" v-if="term.categories.length > 0">
+                        <div v-if="term.links.length > 0">
+                            <p class="has-text-weight-bold">Links</p>
+                            <ul>
+                                <li v-for="link of term.links" :key="term.term + link">
+                                    <a :href="link">{{link}}</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div v-if="term.categories.length > 0">
                             <p class="has-text-weight-bold">Categories</p>
                             <ul>
                                 <li
@@ -62,7 +68,7 @@
                                     :key="term.term + category"
                                 >{{category}}</li>
                             </ul>
-                        </span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -88,7 +94,7 @@
                                     :term="term.term"
                                     :full_term="term.full_term"
                                     :description="term.description"
-                                    :link="term.link"
+                                    :links="term.links"
                                     :categories="term.categories"
                                 />
                             </div>
@@ -135,12 +141,12 @@ export default {
                     const termName = term.term.toLowerCase();
                     const fullTerm = term.full_term.toLowerCase();
                     const description = term.description.toLowerCase();
-                    const link = term.link.toLowerCase();
+                    const links = term.links.join("\n");
                     return (
                         termName.indexOf(searchLowercase) !== -1 ||
                         fullTerm.indexOf(searchLowercase) !== -1 ||
                         description.indexOf(searchLowercase) !== -1 ||
-                        link.indexOf(searchLowercase) !== -1 ||
+                        links.indexOf(searchLowercase) !== -1 ||
                         term.categories.indexOf(searchLowercase) !== -1
                     );
                 });

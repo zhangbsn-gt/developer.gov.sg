@@ -76,6 +76,16 @@
 
         <div>
             <label for="link">Links/URLs</label>
+            <div>
+                <p v-for="(link, index) of form.links" :key="index + link">
+                    {{ link }}
+                    <span
+                        class="sgds-icon sgds-icon-cross"
+                        @click="form.links.splice(index, 1)"
+                        :style="{cursor: 'pointer'}"
+                    ></span>
+                </p>
+            </div>
             <input
                 id="link"
                 name="link"
@@ -84,6 +94,11 @@
                 placeholder="https://tech.gov.sg"
                 v-model="form.link"
             >
+            <button
+                class="sgds-button"
+                type="button"
+                @click.prevent="form.links.push(form.link)"
+            >Add</button>
         </div>
 
         <div>
@@ -99,17 +114,17 @@
                 </p>
             </div>
             <input
-                id="categories"
-                name="categories"
+                id="category"
+                name="category"
                 class="input"
                 type="text"
-                placeholder="platform, data"
+                placeholder="platform"
                 v-model="form.category"
             >
             <button
                 class="sgds-button"
                 type="button"
-                @click.prevent="addCategory(form.category)"
+                @click.prevent="form.categories.push(form.category);"
             >Add</button>
         </div>
 
@@ -157,8 +172,8 @@ export default {
         description: {
             type: String
         },
-        link: {
-            type: String
+        links: {
+            type: Array
         },
         categories: {
             type: Array
@@ -174,6 +189,7 @@ export default {
                 full_term: null,
                 description: null,
                 link: null,
+                links: [],
                 category: null,
                 categories: []
             },
@@ -182,9 +198,7 @@ export default {
                 contributor_email: null,
                 term: null,
                 full_term: null,
-                description: null,
-                link: null,
-                categories: null
+                description: null
             }
         };
     },
@@ -210,7 +224,7 @@ export default {
                 term: this.form.term,
                 full_term: this.form.full_term,
                 description: this.form.description,
-                link: this.form.link,
+                links: this.form.links,
                 categories: this.form.categories
             };
             if (this.type === "edit") {

@@ -1,10 +1,12 @@
 const githubToken = loadEnvVar("GITHUB_TOKEN");
 
-const repoOwner = loadEnvVar("GITHUB_OWNER");
+const githubRepoOwner = loadEnvVar("GITHUB_OWNER");
 
-const githubRef = loadEnvVar("GITHUB_REF");
+const githubBaseRef = loadEnvVar("GITHUB_REF");
 
 const otpServiceUrl = loadEnvVar("OTP_SERVICE_URL");
+
+const githubSvcUser = Number.parseInt(loadEnvVar("GITHUB_SVC_USER"));
 
 function loadEnvVar(envVarName) {
     if (process.env[envVarName]) {
@@ -16,8 +18,9 @@ function loadEnvVar(envVarName) {
 
 module.exports = {
     githubToken,
-    repoOwner,
-    githubRef,
-    otpServiceUrl,
-    repoName: "developer.gov.sg"
+    githubBaseRef,
+    githubSvcUser,
+    githubRepoOwner,
+    githubRepoName: "developer.gov.sg",
+    otpServiceUrl
 };
