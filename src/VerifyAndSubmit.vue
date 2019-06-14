@@ -5,7 +5,7 @@
                 <h6>Submit your contributions</h6>
                 <span :class="{bold: stage === stages.verify}">verify government email</span>
                 &bull;
-                <span :class="{bold: stage === stages.submit}">submit changes</span>
+                <span :class="{bold: stage === stages.submit}">make submission</span>
             </div>
         </div>
 
@@ -13,7 +13,7 @@
             <div class="col">
                 <div v-if="stage === stages.verify">
                     <form>
-                        <label for="contributor-email">Verify you government email*</label>
+                        <label for="contributor-email">Verify your government email*</label>
                         <input
                             id="contributor-email"
                             name="email"
@@ -28,7 +28,7 @@
                         <p>
                             <button
                                 type="submit"
-                                class="sgds-button is-info"
+                                class="sgds-button is-primary"
                                 @click.prevent="requestOtp"
                                 :disabled="!emailRegex.test(email)"
                             >Send email OTP</button>
@@ -38,7 +38,7 @@
 
                 <div v-if="stage === stages.submit">
                     <form>
-                        <label for="otp">Enter your 6-digit OTP sent to your email at {{ email }}</label>
+                        <label for="otp">Enter the 6-digit OTP sent to your email at {{ email }}</label>
                         <input
                             type="number"
                             name="otp"
@@ -89,7 +89,7 @@ export default {
             otp: null,
             errors: {
                 email: null,
-                otp: null,
+                otp: null
             }
         };
     },
@@ -121,7 +121,7 @@ export default {
         },
         submit() {
             if (!this.otp || this.otp.length !== 6) {
-                this.errors.otp = "Please a valid 6-digit OTP."
+                this.errors.otp = "Please a valid 6-digit OTP.";
                 return;
             }
             this.$emit("submit", {

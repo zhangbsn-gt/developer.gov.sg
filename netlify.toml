@@ -2,3 +2,5 @@
   command = "npm run buildstatic && npm run buildlambda && jekyll build"
   publish = "_site/"
   functions = "functions"
+[dev]
+  command = "npm run devserver"
