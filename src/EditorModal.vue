@@ -26,7 +26,7 @@
                 <div id="editor"></div>
             </div>
 
-            <div id="original-content" class="article" v-show="showOriginal" v-html="page_content"></div>
+            <div class="article original-content" v-show="showOriginal" v-html="page_content"></div>
         </div>
 
         <div class="modal-footer">
@@ -179,7 +179,8 @@ export default {
     justify-content: flex-end;
 }
 
-#original-content {
+.original-content {
+    border: 1px solid #d6d6d6;
     overflow: scroll;
     max-height: 60vh;
 }
