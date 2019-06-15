@@ -39,59 +39,40 @@
 import axios from "axios";
 import Noty from "noty";
 import Quill from "quill";
-import { urlEncode, emailRegex } from "./lib";
 import VerifyAndSubmit from "./VerifyAndSubmit.vue";
 
 export default {
     components: { VerifyAndSubmit },
-    props: [
-        "page_path",
-        "page_title",
-        "page_category",
-        "page_content",
-        "page_layout"
-    ],
+    props: {
+        page_path: {
+            type: String,
+            required: true
+        },
+        page_title: {
+            type: String,
+            required: true
+        },
+        page_category: {
+            type: String,
+            required: true
+        },
+        page_content: {
+            type: String,
+            required: true
+        },
+        page_layout: {
+            type: String,
+            required: true
+        }
+    },
     data() {
         return {
             quill: null,
-            showOriginal: false,
-            email: null,
-            otp: null,
-            stage: "verify",
-            emailRegex,
-            errors: {
-                email: null,
-                otp: null
-            }
+            showOriginal: false
         };
     },
     methods: {
-        requestOtp() {
-            if (!this.email || !emailRegex.test(this.email)) {
-                this.errors.email = "Please enter a valid email";
-                return;
-            }
-            axios
-                .post("/.netlify/functions/api/request-otp", {
-                    email: this.email
-                })
-                .then(() => {
-                    new Noty({
-                        type: "success",
-                        text: `An OTP has been sent to ${
-                            this.email
-                        }. Please enter it before submitting your edits.`
-                    }).show();
-                    this.stage = "submit";
-                })
-                .catch(error => {
-                    new Noty({
-                        type: "error",
-                        text: `An error has occurred: ${error.message || error}`
-                    }).show();
-                });
-        },
-        submitChanges({email, otp}) {
+        submitChanges({ email, otp }) {
             const updatedContent = document.querySelector(".ql-editor")
                 .innerHTML;
             axios
