@@ -1,14 +1,14 @@
+const path = require("path");
 const express = require("express");
 const beautifyHtml = require("js-beautify").html;
+const yaml = require("js-yaml");
 const Octokit = require("@octokit/rest");
-const slugify = require("slugify");
 const packageInfo = require("../package.json");
 const {
     githubToken,
     githubBaseRef,
     githubSvcUser,
     githubRepoOwner,
-    otpServiceUrl,
     githubRepoName
 } = require("./config");
 const lib = require("./lib");
@@ -34,9 +34,7 @@ router.post("/request-otp", async (req, res) => {
     }
 
     try {
-        let otpResponse = await lib.otp.requestOtp(
-            requestBody.email
-        );
+        let otpResponse = await lib.otp.requestOtp(requestBody.email);
         res.json(otpResponse.data);
     } catch (err) {
         res.status(500).json({
@@ -46,9 +44,9 @@ router.post("/request-otp", async (req, res) => {
 });
 
 router.post("/submit-product-changes", async (req, res) => {
-    let requestBody = req.body;
+    let submission = req.body;
 
-    let missingParams = lib.getMissingParams(
+    let missingParams = lib.utils.getMissingParams(
         [
             "email",
             "otp",
@@ -58,7 +56,7 @@ router.post("/submit-product-changes", async (req, res) => {
             "page_content",
             "page_layout"
         ],
-        requestBody
+        submission
     );
     if (missingParams.length > 0) {
         res.status(400).json({
@@ -69,8 +67,8 @@ router.post("/submit-product-changes", async (req, res) => {
         return;
     }
 
-    let email = requestBody.email;
-    let otp = requestBody.otp;
+    let email = submission.email;
+    let otp = submission.otp;
 
     try {
         await lib.otp.verifyOtp(email, otp);
@@ -81,133 +79,59 @@ router.post("/submit-product-changes", async (req, res) => {
         return;
     }
 
-    let path = requestBody.page_path;
-    let title = requestBody.page_title;
-    let category = requestBody.page_category;
-    let content = requestBody.page_content;
-    let layout = requestBody.page_layout;
+    let pagePath = submission.page_path;
+    let pageTitle = submission.page_title;
+    let pageCategory = submission.page_category;
+    let pageContent = submission.page_content;
+    let pageLayout = submission.page_layout;
 
     let newPage =
         `---\n` +
-        `title: ${title}\n` +
-        `layout: ${layout}\n` +
-        `permalink: ${path}\n` +
-        `category: ${category}\n` +
-        `breadcrumb: ${title.toUpperCase()}\n` +
+        `title: ${pageTitle}\n` +
+        `layout: ${pageLayout}\n` +
+        `permalink: ${pagePath}\n` +
+        `category: ${pageCategory}\n` +
+        `breadcrumb: ${pageTitle.toUpperCase()}\n` +
         `---\n`;
 
-    const formattedContent = beautifyHtml(content, {
+    const formattedContent = beautifyHtml(pageContent, {
         wrap_line_length: 120
     });
     newPage += formattedContent;
 
     try {
-        const baseRef = await octokit.git.getRef({
-            owner: githubRepoOwner,
-            repo: githubRepoName,
-            ref: `heads/${githubBaseRef}`
+        const newBranchId = await lib.utils.generateId();
+        const pr = await lib.github.createNewBranchAndPullRequest({
+            filePath: path.join("contents", pagePath, "index.html"),
+            fileContent: newPage,
+            baseBranchName: githubBaseRef,
+            newBranchName: `product-edit-${new Date()
+                .toISOString()
+                .substring(0, 10)}-${newBranchId}`,
+            commitMessage: `New edits for ${pageTitle} page by ${email}`,
+            prTitle: `New edits for ${pageTitle} page by ${email}`,
+            prBody: newPage
         });
 
-        const newBranchId = await lib.generateId();
-        const newBranchName = `product-edit-${new Date()
-            .toISOString()
-            .substring(0, 10)}-${newBranchId}`;
-        const newRefName = `heads/${newBranchName}`;
-
-        const newRef = await octokit.git.createRef({
-            owner: githubRepoOwner,
-            repo: githubRepoName,
-            ref: "refs/" + newRefName,
-            sha: baseRef.data.object.sha
-        });
-
-        const newBlob = await octokit.git.createBlob({
-            owner: githubRepoOwner,
-            repo: githubRepoName,
-            content: newPage
-        });
-
-        const currentCommit = await octokit.git.getCommit({
-            owner: githubRepoOwner,
-            repo: githubRepoName,
-            commit_sha: baseRef.data.object.sha
-        });
-
-        // post new tree object with file path pointer replaced with new blob SHA => tree SHA
-        const newTree = await octokit.git.createTree({
-            owner: githubRepoOwner,
-            repo: githubRepoName,
-            tree: [
-                {
-                    path: "contents" + path + "index.html",
-                    mode: "100644",
-                    type: "blob",
-                    sha: newBlob.data.sha
-                }
-            ],
-            base_tree: currentCommit.data.tree.sha
-        });
-
-        // create new commit with current commit SHA as parent and new tree SHA => commit SHA
-        const newCommit = await octokit.git.createCommit({
-            owner: githubRepoOwner,
-            repo: githubRepoName,
-            message: `New edits for ${title} page by ${email}`,
-            tree: newTree.data.sha,
-            parents: [currentCommit.data.sha]
-        });
-
-        // update ref to point to commit SHA
-        const updateRefResults = await octokit.git.updateRef({
-            owner: githubRepoOwner,
-            repo: githubRepoName,
-            ref: newRefName,
-            sha: newCommit.data.sha
-        });
-
-        const prResults = await octokit.pulls.create({
-            owner: githubRepoOwner,
-            repo: githubRepoName,
-            title: `New edits for ${title} page by ${email}`,
-            head: newBranchName,
-            base: githubBaseRef,
-            body: newPage,
-            maintainer_can_modify: true
-        });
-
-        const issueUpdateResults = await octokit.issues.update({
-            owner: githubRepoOwner,
-            repo: githubRepoName,
-            issue_number: prResults.data.number,
-            labels: [
-                "product",
-                slugify(title, {
-                    lower: true,
-                    remove: /[*+~.()'"!:@]/g
-                })
-            ]
+        await lib.github.addLabelsToPullRequest({
+            labels: ["product", pageTitle],
+            prNumber: pr.data.number
         });
 
         res.json({
-            pr: prResults.data.html_url
+            pr: pr.data.html_url
         });
     } catch (err) {
         res.status(500).json({
-            error: err.message || "Error submitting contributions."
+            error: err.message || "Error submitting product changes."
         });
     }
 });
 
 router.post("/terms", async (req, res) => {
     let submission = req.body;
-    let missingParams = lib.getMissingParams(
-        [
-            "email",
-            "otp",
-            "term",
-            "full_term",
-            "description"
-        ],
+    let missingParams = lib.utils.getMissingParams(
+        ["email", "otp", "term", "full_term", "description"],
         submission
     );
     if (missingParams.length > 0) {
@@ -221,7 +145,6 @@ router.post("/terms", async (req, res) => {
 
     const email = submission.email;
     const otp = submission.otp;
-
     try {
         await lib.otp.verifyOtp(email, otp);
     } catch (err) {
@@ -231,135 +154,67 @@ router.post("/terms", async (req, res) => {
         return;
     }
 
-    let response = await octokit.repos.getContents({
-        owner: githubRepoOwner,
-        repo: githubRepoName,
-        path: "terms.json",
-        ref: githubBaseRef
-    });
+    try {
+        let termsFileContents = await octokit.repos.getContents({
+            owner: githubRepoOwner,
+            repo: githubRepoName,
+            path: "terms.json",
+            ref: githubBaseRef
+        });
 
-    let termsFileRaw = Buffer.from(response.data.content, "base64").toString();
+        let termsFileRaw = Buffer.from(
+            termsFileContents.data.content,
+            "base64"
+        ).toString();
 
-    let existingTerms = JSON.parse(termsFileRaw);
+        let existingTerms = JSON.parse(termsFileRaw);
 
-    let newTerm = {
-        term: submission.term,
-        full_term: submission.full_term,
-        description: submission.description,
-        links: submission.links.length > 0 ? submission.links : [],
-        categories:
-            submission.categories.length > 0 ? submission.categories : []
-    };
+        let newTerm = {
+            term: submission.term,
+            full_term: submission.full_term,
+            description: submission.description,
+            links: submission.links.length > 0 ? submission.links : [],
+            categories:
+                submission.categories.length > 0 ? submission.categories : []
+        };
 
-    existingTerms.push(newTerm);
-    lib.sortTerms(existingTerms);
+        existingTerms.push(newTerm);
+        lib.utils.sortTerms(existingTerms);
 
-    let newContent = JSON.stringify(existingTerms, null, 4);
+        const updatedTerms = JSON.stringify(existingTerms, null, 4);
 
-    const baseRef = await octokit.git.getRef({
-        owner: githubRepoOwner,
-        repo: githubRepoName,
-        ref: `heads/${githubBaseRef}`
-    });
+        const newBranchId = await lib.utils.generateId();
+        const pr = await lib.github.createNewBranchAndPullRequest({
+            filePath: "terms.json",
+            fileContent: updatedTerms,
+            baseBranchName: githubBaseRef,
+            newBranchName: `term-new-${new Date()
+                .toISOString()
+                .substring(0, 10)}-${newBranchId}`,
+            commitMessage: `New term suggestion from ${submission.email}`,
+            prTitle: `New term suggestion from ${submission.email}`,
+            prBody: yaml.safeDump(newTerm)
+        });
 
-    const newBranchId = await lib.generateId();
-    const newBranchName = `term-new-${new Date()
-        .toISOString()
-        .substring(0, 10)}-${newBranchId}`;
-    const newRefName = `heads/${newBranchName}`;
-    const newRef = await octokit.git.createRef({
-        owner: githubRepoOwner,
-        repo: githubRepoName,
-        ref: "refs/" + newRefName,
-        sha: baseRef.data.object.sha
-    });
+        await lib.github.addLabelsToPullRequest({
+            labels: ["term", submission.term],
+            prNumber: pr.data.number
+        });
 
-    // post new blob object with new content => blob SHA
-    const newBlob = await octokit.git.createBlob({
-        owner: githubRepoOwner,
-        repo: githubRepoName,
-        content: newContent
-    });
-
-    // get current commit => commit object {tree: {url, sha}}
-    const currentCommit = await octokit.git.getCommit({
-        owner: githubRepoOwner,
-        repo: githubRepoName,
-        commit_sha: baseRef.data.object.sha
-    });
-
-    // post new tree object with file path pointer replaced with new blob SHA => tree SHA
-    const newTree = await octokit.git.createTree({
-        owner: githubRepoOwner,
-        repo: githubRepoName,
-        tree: [
-            {
-                path: "terms.json",
-                mode: "100644",
-                type: "blob",
-                sha: newBlob.data.sha
-            }
-        ],
-        base_tree: currentCommit.data.tree.sha
-    });
-
-    // create new commit with current commit SHA as parent and new tree SHA => commit SHA
-    const newCommit = await octokit.git.createCommit({
-        owner: githubRepoOwner,
-        repo: githubRepoName,
-        message: `New acronym suggestion from ${submission.email}`,
-        tree: newTree.data.sha,
-        parents: [currentCommit.data.sha]
-    });
-
-    // update ref to point to commit SHA
-    const updateRefResults = await octokit.git.updateRef({
-        owner: githubRepoOwner,
-        repo: githubRepoName,
-        ref: newRefName,
-        sha: newCommit.data.sha
-    });
-
-    // Create new PR to dev
-    const prResults = await octokit.pulls.create({
-        owner: githubRepoOwner,
-        repo: githubRepoName,
-        title: `New acronym suggestion from ${submission.email}`,
-        head: newBranchName,
-        base: githubBaseRef,
-        body: "```\n" + JSON.stringify(newTerm, null, 4) + "\n```",
-        maintainer_can_modify: true
-    });
-
-    const issueUpdateResults = await octokit.issues.update({
-        owner: githubRepoOwner,
-        repo: githubRepoName,
-        issue_number: prResults.data.number,
-        labels: [
-            "term",
-            slugify(submission.term, {
-                lower: true,
-                remove: /[*+~.()'"!:@]/g
-            })
-        ]
-    });
-
-    res.json({
-        pr: prResults.data.html_url
-    });
+        res.json({
+            pr: pr.data.html_url
+        });
+    } catch (err) {
+        res.status(500).json({
+            error: err.message || "Error submitting new term"
+        });
+    }
 });
 
 router.put("/terms", async (req, res) => {
     let submission = req.body;
-    let missingParams = lib.getMissingParams(
-        [
-            "email",
-            "otp",
-            "id",
-            "term",
-            "full_term",
-            "description"
-        ],
+    let missingParams = lib.utils.getMissingParams(
+        ["email", "otp", "id", "term", "full_term", "description"],
         submission
     );
     if (missingParams.length > 0) {
@@ -392,14 +247,17 @@ router.put("/terms", async (req, res) => {
             submission.categories.length > 0 ? submission.categories : []
     };
 
-    let response = await octokit.repos.getContents({
+    let termsFileContent = await octokit.repos.getContents({
         owner: githubRepoOwner,
         repo: githubRepoName,
         path: "terms.json",
         ref: githubBaseRef
     });
 
-    let termsFileRaw = Buffer.from(response.data.content, "base64").toString();
+    let termsFileRaw = Buffer.from(
+        termsFileContent.data.content,
+        "base64"
+    ).toString();
 
     let existingTerms = JSON.parse(termsFileRaw);
 
@@ -407,107 +265,32 @@ router.put("/terms", async (req, res) => {
 
     let newContent = JSON.stringify(existingTerms, null, 4);
 
-    const baseRef = await octokit.git.getRef({
-        owner: githubRepoOwner,
-        repo: githubRepoName,
-        ref: `heads/${githubBaseRef}`
+    const newBranchId = await lib.utils.generateId();
+    let pr = await lib.github.createNewBranchAndPullRequest({
+        filePath: "terms.json",
+        fileContent: newContent,
+        baseBranchName: githubBaseRef,
+        newBranchName: `term-edit-${new Date()
+            .toISOString()
+            .substring(0, 10)}-${newBranchId}`,
+        commitMessage: `New term edits from ${submission.email}`,
+        prTitle: `New term edits from ${submission.email}`,
+        prBody: yaml.safeDump(updatedTerm)
     });
 
-    const newBranchId = await lib.generateId();
-    const newBranchName = `term-edit-${new Date()
-        .toISOString()
-        .substring(0, 10)}-${newBranchId}-edit`;
-
-    const newRefName = `heads/${newBranchName}`;
-
-    const newRef = await octokit.git.createRef({
-        owner: githubRepoOwner,
-        repo: githubRepoName,
-        ref: "refs/" + newRefName,
-        sha: baseRef.data.object.sha
-    });
-
-    // post new blob object with new content => blob SHA
-    const newBlob = await octokit.git.createBlob({
-        owner: githubRepoOwner,
-        repo: githubRepoName,
-        content: newContent
-    });
-
-    // get current commit => commit object {tree: {url, sha}}
-    const currentCommit = await octokit.git.getCommit({
-        owner: githubRepoOwner,
-        repo: githubRepoName,
-        commit_sha: baseRef.data.object.sha
-    });
-
-    // post new tree object with file path pointer replaced with new blob SHA => tree SHA
-    const newTree = await octokit.git.createTree({
-        owner: githubRepoOwner,
-        repo: githubRepoName,
-        tree: [
-            {
-                path: "terms.json",
-                mode: "100644",
-                type: "blob",
-                sha: newBlob.data.sha
-            }
-        ],
-        base_tree: currentCommit.data.tree.sha
-    });
-
-    // create new commit with current commit SHA as parent and new tree SHA => commit SHA
-    const newCommit = await octokit.git.createCommit({
-        owner: githubRepoOwner,
-        repo: githubRepoName,
-        message: `New acronym change from ${submission.email}`,
-        tree: newTree.data.sha,
-        parents: [currentCommit.data.sha]
-    });
-
-    // update ref to point to commit SHA
-    const updateRefResults = await octokit.git.updateRef({
-        owner: githubRepoOwner,
-        repo: githubRepoName,
-        ref: newRefName,
-        sha: newCommit.data.sha
-    });
-
-    // Create new PR to dev
-    const prResults = await octokit.pulls.create({
-        owner: githubRepoOwner,
-        repo: githubRepoName,
-        title: `New acronym change from ${submission.email}`,
-        head: newBranchName,
-        base: githubBaseRef,
-        body: "```\n" + JSON.stringify(updatedTerm, null, 4) + "\n```",
-        maintainer_can_modify: true
-    });
-
-    let labels = [
-        "term",
-        slugify(updatedTerm.term, {
-            lower: true,
-            remove: /[*+~.()'"!:@]/g
-        })
-    ];
+    let labels = ["term", updatedTerm.term];
     if (replacedTerm[0].term !== updatedTerm.term) {
-        labels.push(
-            slugify(replacedTerm[0].term, {
-                lower: true,
-                remove: /[*+~.()'"!:@]/g
-            })
-        );
+        // If term name has been changed, add old term to label also
+        labels.push(replacedTerm[0].term);
     }
-    const issueUpdateResults = await octokit.issues.update({
-        owner: githubRepoOwner,
-        repo: githubRepoName,
-        issue_number: prResults.data.number,
-        labels
+
+    await lib.github.addLabelsToPullRequest({
+        labels: labels,
+        prNumber: pr.data.number
     });
 
     res.json({
-        pr: prResults.data.html_url
+        pr: pr.data.html_url
     });
 });
 module.exports = router;
