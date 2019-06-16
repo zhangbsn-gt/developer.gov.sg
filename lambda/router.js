@@ -85,6 +85,25 @@ router.post("/submit-product-changes", async (req, res) => {
     let pageContent = submission.page_content;
     let pageLayout = submission.page_layout;
 
+    let pullRequestLabels = ["product", pageTitle];
+    try {
+        const conflictingPr = await lib.github.checkForConflictingPr(
+            pullRequestLabels
+        );
+        if (conflictingPr) {
+            res.status(400).json({
+                error: `Can't make submission; pending changes at ${
+                    conflictingPr.url
+                }`
+            });
+            return;
+        }
+    } catch (err) {
+        res.status(500).json({
+            error: "Couldn't check for conflicting pull requests"
+        });
+    }
+
     let newPage =
         `---\n` +
         `title: ${pageTitle}\n` +
@@ -114,7 +133,7 @@ router.post("/submit-product-changes", async (req, res) => {
         });
 
         await lib.github.addLabelsToPullRequest({
-            labels: ["product", pageTitle],
+            labels: pullRequestLabels,
             prNumber: pr.data.number
         });
 

@@ -13,7 +13,8 @@ const octokit = new Octokit({
 
 module.exports = {
     createNewBranchAndPullRequest,
-    addLabelsToPullRequest
+    addLabelsToPullRequest,
+    checkForConflictingPr
 };
 
 /**
@@ -118,4 +119,22 @@ async function addLabelsToPullRequest({ labels, prNumber }) {
             })
         )
     });
+}
+/**
+ *
+ * @param {*} labels
+ * @returns {(Object|boolean)} Returns conflicting PR object, or false if there aren't any
+ */
+async function checkForConflictingPr(labels) {
+    const pullRequests = await octokit.pulls.list({
+        owner: githubRepoOwner,
+        repo: githubRepoName,
+        state: "open",
+        base: githubBaseRef
+    });
+    if (pullRequests.data.length > 0) {
+        // Find conflicting PRs
+        
+    }
+    return false;
 }
