@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
 const serverless = require("serverless-http");
-const router = require("./router");
+const router = require("./app/router");
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({

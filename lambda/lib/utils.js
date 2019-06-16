@@ -2,7 +2,8 @@ const crypto = require("crypto");
 module.exports = {
     generateId,
     getMissingParams,
-    sortTerms
+    sortTerms,
+    firstArrayContainsSecondArray
 };
 
 async function generateId(bytes = 4, encoding = "hex") {
@@ -34,4 +35,10 @@ function sortTerms(terms) {
         }
         return 0;
     });
+}
+
+function firstArrayContainsSecondArray(first, second) {
+    return second.reduce((previous, current) => {
+        return previous && (first.indexOf(current) !== -1);
+    }, true);
 }

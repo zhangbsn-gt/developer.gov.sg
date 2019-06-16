@@ -3,15 +3,14 @@ const express = require("express");
 const beautifyHtml = require("js-beautify").html;
 const yaml = require("js-yaml");
 const Octokit = require("@octokit/rest");
-const packageInfo = require("../package.json");
+const packageInfo = require("../../package.json");
 const {
     githubToken,
     githubBaseRef,
-    githubSvcUser,
     githubRepoOwner,
     githubRepoName
 } = require("./config");
-const lib = require("./lib");
+const lib = require("../lib");
 
 const octokit = new Octokit({
     auth: githubToken
@@ -173,6 +172,25 @@ router.post("/terms", async (req, res) => {
         return;
     }
 
+    let pullRequestLabels = ["term", submission.term];
+    try {
+        const conflictingPr = await lib.github.checkForConflictingPr(
+            pullRequestLabels
+        );
+        if (conflictingPr) {
+            res.status(400).json({
+                error: `Can't make submission; pending changes at ${
+                    conflictingPr.url
+                }`
+            });
+            return;
+        }
+    } catch (err) {
+        res.status(500).json({
+            error: "Couldn't check for conflicting pull requests"
+        });
+    }
+
     try {
         let termsFileContents = await octokit.repos.getContents({
             owner: githubRepoOwner,
@@ -216,7 +234,7 @@ router.post("/terms", async (req, res) => {
         });
 
         await lib.github.addLabelsToPullRequest({
-            labels: ["term", submission.term],
+            labels: pullRequestLabels,
             prNumber: pr.data.number
         });
 
@@ -255,6 +273,25 @@ router.put("/terms", async (req, res) => {
             error: "OTP validation failed."
         });
         return;
+    }
+
+    let pullRequestLabels = ["term", submission.term];
+    try {
+        const conflictingPr = await lib.github.checkForConflictingPr(
+            pullRequestLabels
+        );
+        if (conflictingPr) {
+            res.status(400).json({
+                error: `Can't make submission; pending changes at ${
+                    conflictingPr.url
+                }`
+            });
+            return;
+        }
+    } catch (err) {
+        res.status(500).json({
+            error: "Couldn't check for conflicting pull requests"
+        });
     }
 
     const updatedTerm = {
@@ -297,14 +334,13 @@ router.put("/terms", async (req, res) => {
         prBody: yaml.safeDump(updatedTerm)
     });
 
-    let labels = ["term", updatedTerm.term];
     if (replacedTerm[0].term !== updatedTerm.term) {
         // If term name has been changed, add old term to label also
-        labels.push(replacedTerm[0].term);
+        pullRequestLabels.push(replacedTerm[0].term);
     }
 
     await lib.github.addLabelsToPullRequest({
-        labels: labels,
+        labels: pullRequestLabels,
         prNumber: pr.data.number
     });
 

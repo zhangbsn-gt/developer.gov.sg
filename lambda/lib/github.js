@@ -1,12 +1,13 @@
 const Octokit = require("@octokit/rest");
 const slugify = require("slugify");
+const utils = require("./utils");
 const {
     githubToken,
     githubBaseRef,
     githubSvcUser,
     githubRepoOwner,
     githubRepoName
-} = require("../config");
+} = require("../app/config");
 const octokit = new Octokit({
     auth: githubToken
 });
@@ -134,7 +135,19 @@ async function checkForConflictingPr(labels) {
     });
     if (pullRequests.data.length > 0) {
         // Find conflicting PRs
-        
+        let conflict = false;
+        for (const pr of pullRequests.data) {
+            if (
+                utils.firstArrayContainsSecondArray(
+                    pr.labels.map(label => label.name),
+                    labels
+                ) && pr.user.login === githubSvcUser
+            ) {
+                conflict = true;
+            }
+        }
+        return conflict;
+    } else {
+        return false;
     }
-    return false;
 }
