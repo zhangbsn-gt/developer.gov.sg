@@ -48,7 +48,7 @@
                             v-model="otp"
                             required
                         >
-
+                        <p class="help is-danger" v-if="errors.otp">{{errors.otp}}</p>
                         <p class="modal-footer-buttons">
                             <button
                                 type="button"
