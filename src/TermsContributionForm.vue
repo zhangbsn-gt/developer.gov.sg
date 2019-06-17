@@ -158,7 +158,6 @@ export default {
         };
     },
     methods: {
-        requestOtp() {},
         submit({email, otp}) {
             let hasErrors = this.detectFormErrors();
             if (hasErrors) {
