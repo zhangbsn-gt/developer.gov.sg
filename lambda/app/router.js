@@ -3,6 +3,7 @@ const express = require("express");
 const beautifyHtml = require("js-beautify").html;
 const yaml = require("js-yaml");
 const Octokit = require("@octokit/rest");
+const utils = require("../lib/utils");
 const packageInfo = require("../../package.json");
 const {
     githubToken,
@@ -84,7 +85,7 @@ router.post("/submit-product-changes", async (req, res) => {
     let pageContent = submission.page_content;
     let pageLayout = submission.page_layout;
 
-    let pullRequestLabels = ["product", pageTitle];
+    let pullRequestLabels = ["product", utils.toLowerCaseSlug(pageTitle)];
     try {
         const conflictingPr = await lib.github.checkForConflictingPr(
             pullRequestLabels
@@ -172,7 +173,7 @@ router.post("/terms", async (req, res) => {
         return;
     }
 
-    let pullRequestLabels = ["term", submission.term];
+    let pullRequestLabels = ["term", utils.toLowerCaseSlug(submission.term)];
     try {
         const conflictingPr = await lib.github.checkForConflictingPr(
             pullRequestLabels
@@ -205,6 +206,17 @@ router.post("/terms", async (req, res) => {
         ).toString();
 
         let existingTerms = JSON.parse(termsFileRaw);
+
+        if (
+            existingTerms.find(term => {
+                submission.term === term.term;
+            })
+        ) {
+            res.status(403).json({
+                error: "Cannot add term since one already exists."
+            });
+            return;
+        }
 
         let newTerm = {
             term: submission.term,
@@ -275,7 +287,7 @@ router.put("/terms", async (req, res) => {
         return;
     }
 
-    let pullRequestLabels = ["term", submission.term];
+    let pullRequestLabels = ["term", utils.toLowerCaseSlug(submission.term)];
     try {
         const conflictingPr = await lib.github.checkForConflictingPr(
             pullRequestLabels
@@ -317,7 +329,18 @@ router.put("/terms", async (req, res) => {
 
     let existingTerms = JSON.parse(termsFileRaw);
 
-    let replacedTerm = existingTerms.splice(submission.id, 1, updatedTerm);
+    // If changing term name to one that already exists
+    if (
+        existingTerms[submission.id].term !== submission.term &&
+        existingTerms.find(termEntry => termEntry.term === submission.term)
+    ) {
+        res.status(403).json({
+            error: "Cannot add term since one already exists."
+        });
+        return;
+    }
+
+    existingTerms.splice(submission.id, 1, updatedTerm);
 
     let newContent = JSON.stringify(existingTerms, null, 4);
 
@@ -333,11 +356,6 @@ router.put("/terms", async (req, res) => {
         prTitle: `New term edits from ${submission.email}`,
         prBody: yaml.safeDump(updatedTerm)
     });
-
-    if (replacedTerm[0].term !== updatedTerm.term) {
-        // If term name has been changed, add old term to label also
-        pullRequestLabels.push(replacedTerm[0].term);
-    }
 
     await lib.github.addLabelsToPullRequest({
         labels: pullRequestLabels,

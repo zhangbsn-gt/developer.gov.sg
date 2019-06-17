@@ -2,7 +2,7 @@ const githubToken = loadEnvVar("GITHUB_TOKEN");
 
 const githubRepoOwner = loadEnvVar("GITHUB_OWNER");
 
-const githubBaseRef = loadEnvVar("GITHUB_REF");
+const githubBaseRef = loadEnvVar("BRANCH"); // https://www.netlify.com/docs/continuous-deployment/#environment-variables
 
 const otpServiceUrl = loadEnvVar("OTP_SERVICE_URL");
 

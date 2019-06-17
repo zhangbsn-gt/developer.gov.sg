@@ -1,9 +1,11 @@
 const crypto = require("crypto");
+const slugify = require("slugify");
 module.exports = {
     generateId,
     getMissingParams,
     sortTerms,
-    firstArrayContainsSecondArray
+    firstArrayContainsSecondArray,
+    toLowerCaseSlug
 };
 
 async function generateId(bytes = 4, encoding = "hex") {
@@ -39,6 +41,13 @@ function sortTerms(terms) {
 
 function firstArrayContainsSecondArray(first, second) {
     return second.reduce((previous, current) => {
-        return previous && (first.indexOf(current) !== -1);
+        return previous && first.indexOf(current) !== -1;
     }, true);
+}
+
+function toLowerCaseSlug(thing) {
+    return slugify(thing, {
+        lower: true,
+        remove: /[*+~.()'"!:@]/g
+    });
 }

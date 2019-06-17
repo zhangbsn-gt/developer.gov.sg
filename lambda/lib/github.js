@@ -1,6 +1,6 @@
 const Octokit = require("@octokit/rest");
-const slugify = require("slugify");
 const utils = require("./utils");
+
 const {
     githubToken,
     githubBaseRef,
@@ -113,20 +113,15 @@ async function addLabelsToPullRequest({ labels, prNumber }) {
         owner: githubRepoOwner,
         repo: githubRepoName,
         issue_number: prNumber,
-        labels: labels.map(label =>
-            slugify(label, {
-                lower: true,
-                remove: /[*+~.()'"!:@]/g
-            })
-        )
+        labels
     });
 }
 /**
  *
- * @param {*} labels
+ * @param {*} labelsToCheck
  * @returns {(Object|boolean)} Returns conflicting PR object, or false if there aren't any
  */
-async function checkForConflictingPr(labels) {
+async function checkForConflictingPr(labelsToCheck) {
     const pullRequests = await octokit.pulls.list({
         owner: githubRepoOwner,
         repo: githubRepoName,
@@ -135,19 +130,17 @@ async function checkForConflictingPr(labels) {
     });
     if (pullRequests.data.length > 0) {
         // Find conflicting PRs
-        let conflict = false;
         for (const pr of pullRequests.data) {
             if (
                 utils.firstArrayContainsSecondArray(
                     pr.labels.map(label => label.name),
-                    labels
-                ) && pr.user.login === githubSvcUser
+                    labelsToCheck
+                ) &&
+                pr.user.id === githubSvcUser
             ) {
-                conflict = true;
+                return pr;
             }
         }
-        return conflict;
-    } else {
-        return false;
     }
+    return false;
 }

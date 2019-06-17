@@ -158,7 +158,7 @@ export default {
         };
     },
     methods: {
-        submit({email, otp}) {
+        submit({ email, otp }) {
             let hasErrors = this.detectFormErrors();
             if (hasErrors) {
                 return;
@@ -196,10 +196,14 @@ export default {
                         }'>here.</a>`
                     }).show();
                 })
-                .catch(error => {
+                .catch(err => {
+                    let message = err.message || err;
+                    if (err.response && err.response.data) {
+                        message = err.response.data.error
+                    }
                     new Noty({
                         type: "error",
-                        text: `An error has occurred: ${error.message || error}`
+                        text: `An error has occurred: ${message}`
                     }).show();
                 })
                 .finally(() => {
@@ -209,11 +213,7 @@ export default {
         },
         detectFormErrors() {
             let hasErrors = false;
-            [
-                "term",
-                "full_term",
-                "description"
-            ].forEach(field => {
+            ["term", "full_term", "description"].forEach(field => {
                 if (!this.form[field]) {
                     hasErrors = true;
                     this.errors[field] = "Please enter a valid value.";
@@ -234,6 +234,12 @@ export default {
     created() {
         if (this.type === "edit") {
             this.populateFormFromProps();
+        }
+        if (this.links) {
+            this.form.links = [...this.links];
+        }
+        if (this.categories) {
+            this.form.categories = [...this.categories];
         }
     }
 };

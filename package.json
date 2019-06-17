@@ -11,10 +11,15 @@
   "main": "",
   "scripts": {
     "buildlambda": "netlify-lambda build lambda",
+    "buildsite": "npm run buildstatic && jekyll build",
     "buildstatic": "NODE_ENV=production webpack",
+    "deploynetlify": "npm run testlambda && npm run buildlambda && npm run testsite && npm run buildsite",
     "devserver": "webpack --watch | bundle exec jekyll serve",
+    "netlifydev": "BRANCH=dev netlify dev",
     "servelambda": "netlify-lambda serve lambda",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "testlambda": "mocha --recursive './lambda/test/*.js'",
+    "testsite": "exit 0"
   },
   "dependencies": {
     "@octokit/rest": "^16.28.0",
@@ -40,6 +45,7 @@
     "css-loader": "^2.1.1",
     "file-loader": "^4.0.0",
     "mini-css-extract-plugin": "^0.7.0",
+    "mocha": "^6.1.4",
     "netlify-lambda": "^1.4.7",
     "safe-regex": "^2.0.2",
     "style-loader": "^0.23.1",
