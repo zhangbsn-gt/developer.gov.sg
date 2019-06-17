@@ -76,7 +76,7 @@ export default {
             const updatedContent = document.querySelector(".ql-editor")
                 .innerHTML;
             axios
-                .post("/.netlify/functions/api/submit-product-changes", {
+                .post("/.netlify/functions/api/submit-article-changes", {
                     page_path: this.page_path,
                     page_title: this.page_title,
                     page_category: this.page_category,

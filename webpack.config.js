@@ -5,7 +5,7 @@ const { VueLoaderPlugin } = require("vue-loader");
 module.exports = {
     mode: process.env.NODE_ENV || "development",
     entry: {
-        "vue-edit-product-app": "./src/vue-edit-product-app.js",
+        "vue-article-editor-app": "./src/vue-article-editor-app.js",
         "vue-terms-app": "./src/vue-terms-app.js",
         "sgds/sgds": "./src/importSgds.js" // output to sgds/sgds.bundle.js
     },

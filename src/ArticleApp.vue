@@ -1,11 +1,11 @@
 <template>
-    <div id="edit-product-app">
+    <div id="article-editor-app">
         <a class="sgds-button is-rounded" @click="openEditor">Edit This Page</a>
     </div>
 </template>
 
 <script>
-import EditorModal from "./EditorModal.vue";
+import ArticleEditor from "./ArticleEditor.vue";
 
 export default {
     props: ["title", "permalink", "category", "layout"],
@@ -22,7 +22,7 @@ export default {
     methods: {
         openEditor() {
             this.$modal.show(
-                EditorModal,
+                ArticleEditor,
                 {
                     page_path: this.permalink,
                     page_title: this.title,
