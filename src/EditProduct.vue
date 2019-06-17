@@ -9,7 +9,6 @@ import EditorModal from "./EditorModal.vue";
 
 export default {
     props: ["title", "permalink", "category", "layout"],
-    components: { EditorModal },
     data() {
         return {
             page_content: null
@@ -22,7 +21,6 @@ export default {
     },
     methods: {
         openEditor() {
-            // this.showEditorModal = true;
             this.$modal.show(
                 EditorModal,
                 {

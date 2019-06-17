@@ -1,7 +1,10 @@
 ---
 layout: layout-sidenav
 ---
-{{content}}
+<div class="article">
+    {{content}}
+</div>
+
 <div class="has-background-light padding margin--top--lg">
     <div id="edit-product-app" 
         data-title="{{ page.title }}" 
@@ -9,17 +12,5 @@ layout: layout-sidenav
         data-category="{{ page.category }}" 
         data-layout="{{ page.layout }}">
     </div>
-
-    <form hidden name="edit-form" method="POST" data-netlify="true" data-netlify-honeypot="honeypot-field">
-        <!-- Spam guard -->
-        <input type="hidden" name="honeypot-field" value="edit-form" />
-        <input name="page_path" />
-        <input name="page_title" />
-        <input name="page_category" />
-        <input name="page_layout" />
-        <input name="page_content" />
-        <input name="form_name" />
-    </form>
-
     <script src="/assets/bundles/vue-edit-product-app.bundle.js" type="text/javascript"></script>
 </div>

@@ -1,152 +1,253 @@
 <template>
-    <div class="sgds-card">
-        <form
-            name="contribute-terms-form"
-            method="POST"
-            data-netlify="true"
-            data-netlify-honeypot="honeypot-field"
-            @submit.prevent="handleSubmit"
-        >
-            <div class="sgds-card-content">
-                <p>Have an initialism/acronym to contribute? Suggest them to us here!</p>
+    <form @submit.prevent="handleSubmit">
+        <div>
+            <label for="term">Acronym/initialism*</label>
+            <input
+                id="term"
+                name="term"
+                class="input"
+                :class="{'is-danger': errors.term}"
+                type="text"
+                placeholder="SGTS"
+                v-model="form.term"
+                required
+            >
+            <p class="help is-danger" v-if="errors.term">{{errors.term}}</p>
+        </div>
 
-                <p>
-                    <label for="contribute-terms-contributor">Your name*</label>
-                    <input
-                        id="contribute-terms-contributor"
-                        name="contributor"
-                        class="input"
-                        type="text"
-                        placeholder="Richard Yang"
-                        v-model="form.contributor"
-                        required
-                    >
-                </p>
+        <div>
+            <label for="full-term">What it stands for*</label>
+            <input
+                id="full-term"
+                name="full_term"
+                class="input"
+                :class="{'is-danger': errors.full_term}"
+                type="text"
+                placeholder="Singapore Government Tech Stack"
+                v-model="form.full_term"
+                required
+            >
+            <p class="help is-danger" v-if="errors.full_term">{{errors.full_term}}</p>
+        </div>
 
-                <p>
-                    <label for="contribute-terms-contributor-email">Your government email*</label>
-                    <input
-                        id="contribute-terms-contributor-email"
-                        name="contributor_email"
-                        class="input"
-                        type="email"
-                        placeholder="richard_yang@tech.gov.sg"
-                        v-model="form.contributor_email"
-                        required
-                    >
-                </p>
+        <div>
+            <label for="description">Short description*</label>
+            <input
+                id="description"
+                name="description"
+                class="input"
+                :class="{'is-danger': errors.description}"
+                type="text"
+                placeholder="SGTS is ..."
+                v-model="form.description"
+                required
+            >
+            <p class="help is-danger" v-if="errors.description">{{errors.description}}</p>
+        </div>
 
-                <p>
-                    <label for="contribute-terms-term">Initialism/acronym*</label>
-                    <input
-                        id="contribute-terms-term"
-                        name="term"
-                        class="input"
-                        type="text"
-                        placeholder="SGTS"
-                        v-model="form.term"
-                        required
-                    >
+        <div>
+            <label for="link">Links/URLs</label>
+            <div>
+                <p v-for="(link, index) of form.links" :key="index + link">
+                    {{ link }}
+                    <span
+                        class="sgds-icon sgds-icon-cross"
+                        @click="form.links.splice(index, 1)"
+                        :style="{cursor: 'pointer'}"
+                    ></span>
                 </p>
-
-                <p>
-                    <label for="contribute-terms-full-term">Full term*</label>
-                    <input
-                        id="contribute-terms-full-term"
-                        name="full_term"
-                        class="input"
-                        type="text"
-                        placeholder="Singapore Government Tech Stack"
-                        v-model="form.full_term"
-                        required
-                    >
-                </p>
-
-                <p>
-                    <label for="contribute-terms-description">Short description*</label>
-                    <input
-                        id="contribute-terms-description"
-                        name="description"
-                        class="input"
-                        type="text"
-                        placeholder="SGTS is ..."
-                        v-model="form.description"
-                        required
-                    >
-                </p>
-
-                <p>
-                    <label for="contribute-terms-link">Links/URLs</label>
-                    <input
-                        id="contribute-terms-link"
-                        name="link"
-                        class="input"
-                        type="text"
-                        placeholder="https://tech.gov.sg"
-                        v-model="form.link"
-                    >
-                </p>
-
-                <p>
-                    <label for="contribute-terms-category">Category</label>
-                    <input
-                        id="contribute-terms-category"
-                        name="category"
-                        class="input"
-                        type="text"
-                        placeholder="platform, data"
-                        v-model="form.category"
-                    >
-                </p>
-                <input type="hidden" name="honeypot-field">
             </div>
-            <div class="sgds-card-footer">
-                <div class="sgds-card-footer-item">
-                    <span>
-                        <button class="sgds-button default" type="submit">Submit</button>
-                    </span>
-                </div>
+            <input
+                id="link"
+                name="link"
+                class="input"
+                type="text"
+                placeholder="https://tech.gov.sg"
+                v-model="form.link"
+            >
+            <button
+                class="sgds-button"
+                type="button"
+                @click.prevent="form.links.push(form.link)"
+            >Add</button>
+        </div>
+
+        <div>
+            <label for="categories">Categories</label>
+            <div>
+                <p v-for="(category, index) of form.categories" :key="index + category">
+                    {{ category }}
+                    <span
+                        class="sgds-icon sgds-icon-cross"
+                        @click="form.categories.splice(index, 1)"
+                        :style="{cursor: 'pointer'}"
+                    ></span>
+                </p>
             </div>
-        </form>
-    </div>
+            <input
+                id="category"
+                name="category"
+                class="input"
+                type="text"
+                placeholder="platform"
+                v-model="form.category"
+            >
+            <button
+                class="sgds-button"
+                type="button"
+                @click.prevent="form.categories.push(form.category);"
+            >Add</button>
+        </div>
+
+        <VerifyAndSubmit @submit="submit"/>
+    </form>
 </template>
 
 <script>
 import axios from "axios";
 import Noty from "noty";
 import { urlEncode } from "./lib";
+import VerifyAndSubmit from "./VerifyAndSubmit.vue";
 
 export default {
+    components: { VerifyAndSubmit },
+    props: {
+        type: {
+            type: String,
+            required: true,
+            validator(value) {
+                return ["add", "edit"].indexOf(value) !== -1;
+            }
+        },
+        termId: {
+            type: Number
+        },
+        term: {
+            type: String
+        },
+        full_term: {
+            type: String
+        },
+        description: {
+            type: String
+        },
+        links: {
+            type: Array
+        },
+        categories: {
+            type: Array
+        }
+    },
     data: function() {
         return {
-            form: {} // See template for all fields
+            processingSubmission: false,
+            form: {
+                term: null,
+                full_term: null,
+                description: null,
+                link: null,
+                links: [],
+                category: null,
+                categories: []
+            },
+            errors: {
+                term: null,
+                full_term: null,
+                description: null
+            }
         };
     },
     methods: {
-        handleSubmit() {
-            const axiosConfig = {
-                header: { "Content-Type": "application/x-www-form-urlencoded" }
+        submit({ email, otp }) {
+            let hasErrors = this.detectFormErrors();
+            if (hasErrors) {
+                return;
+            }
+            this.processingSubmission = true;
+            let submission = {
+                email,
+                otp,
+                term: this.form.term,
+                full_term: this.form.full_term,
+                description: this.form.description,
+                links: this.form.links,
+                categories: this.form.categories
             };
-            const dataToEncode = this.form;
-            dataToEncode["form-name"] = "contribute-terms-form"; // check template
-            axios
-                .post("/", urlEncode(dataToEncode), axiosConfig)
+            if (this.type === "edit") {
+                submission = Object.assign({ id: this.termId }, submission);
+            }
+
+            let axiosConfig = {
+                url: "/.netlify/functions/api/terms",
+                data: submission
+            };
+            if (this.type === "add") {
+                axiosConfig.method = "post";
+            }
+            if (this.type === "edit") {
+                axiosConfig.method = "put";
+            }
+            axios(axiosConfig)
                 .then(response => {
                     new Noty({
                         type: "success",
-                        text:
-                            "Your contribution has been submitted! <a href>View its progress here</a>"
+                        text: `Submission successful! You can view its approval progress <a href='${
+                            response.data.pr
+                        }'>here.</a>`
                     }).show();
-                    this.$emit("form-submit-success");
                 })
-                .catch(error => {
+                .catch(err => {
+                    let message = err.message || err;
+                    if (err.response && err.response.data) {
+                        message = err.response.data.error
+                    }
                     new Noty({
                         type: "error",
-                        text:
-                            "There was an error processing your request. Please try again."
+                        text: `An error has occurred: ${message}`
                     }).show();
+                })
+                .finally(() => {
+                    this.processingSubmission = false;
+                    this.$emit("close");
                 });
+        },
+        detectFormErrors() {
+            let hasErrors = false;
+            ["term", "full_term", "description"].forEach(field => {
+                if (!this.form[field]) {
+                    hasErrors = true;
+                    this.errors[field] = "Please enter a valid value.";
+                }
+            });
+            return hasErrors;
+        },
+        populateFormFromProps() {
+            ["term", "full_term", "description", "link", "categories"].forEach(
+                field => {
+                    if (this[field]) {
+                        this.form[field] = this[field];
+                    }
+                }
+            );
+        }
+    },
+    created() {
+        if (this.type === "edit") {
+            this.populateFormFromProps();
+        }
+        if (this.links) {
+            this.form.links = [...this.links];
+        }
+        if (this.categories) {
+            this.form.categories = [...this.categories];
         }
     }
 };
 </script>
+
+<style scoped>
+.submit {
+    display: flex;
+    justify-content: center;
+}
+</style>

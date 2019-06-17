@@ -6,7 +6,7 @@
                 class="sgds-button default"
                 v-on:click="showContributionForm = !showContributionForm"
             >
-                Contribute with your own term
+                Contribute an acronym
                 <span
                     class="sgds-icon sgds-icon-chevron-down"
                     v-if="!showContributionForm"
@@ -14,8 +14,11 @@
                 <span class="sgds-icon sgds-icon-chevron-up" v-if="showContributionForm"></span>
             </button>
         </div>
-        <div v-if="showContributionForm" :style="contributionFormStyle">
-            <ContributionForm v-on:form-submit-success="showContributionForm = false"></ContributionForm>
+        <div v-if="showContributionForm" :style="contributionFormStyle" class="sgds-card">
+            <div class="sgds-card-content">
+                <p>Have an initialism/acronym to contribute? Suggest them to us here!</p>
+                <ContributionForm type="add" @close="showContributionForm = false"/>
+            </div>
         </div>
         <label for="search-input" class="has-text-centered">
             <h5 class="has-text-weight-semibold margin--bottom">Tech Acronyms used in Government</h5>
@@ -34,11 +37,10 @@
         </div>
         <br>
         <div
-            v-for="term in filteredTerms"
+            v-for="term of filteredTerms"
             v-cloak
-            class="sgds-card"
-            :key="term.term"
-            :style="{marginTop: '5px'}"
+            class="sgds-card term-card"
+            :key="term.id + term.term"
         >
             <div class="sgds-card-content">
                 <div class="row">
@@ -48,6 +50,55 @@
                     <div class="col is-9">
                         <p class="has-text-weight-bold">{{term.full_term}}</p>
                         <p>{{term.description}}</p>
+
+                        <div v-if="term.links.length > 0">
+                            <p class="has-text-weight-bold">Links</p>
+                            <ul>
+                                <li v-for="link of term.links" :key="term.term + link">
+                                    <a :href="link">{{link}}</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div v-if="term.categories.length > 0">
+                            <p class="has-text-weight-bold">Categories</p>
+                            <ul>
+                                <li
+                                    v-for="category of term.categories"
+                                    :key="term.term + category"
+                                >{{category}}</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sgds-card-footer">
+                <div class="sgds-card-footer-item">
+                    <div class="row edit-term">
+                        <div class="col">
+                            <span class="center-row-content">
+                                <a href @click.prevent="editTerm(term.id)">
+                                    Suggest an edit for {{ term.term }}
+                                    <span
+                                        class="sgds-icon sgds-icon-chevron-down"
+                                        v-if="!editing[term.id]"
+                                    ></span>
+                                    <span class="sgds-icon sgds-icon-chevron-up" v-else></span>
+                                </a>
+                            </span>
+                            <div v-if="editing[term.id]">
+                                <ContributionForm
+                                    type="edit"
+                                    @close="editing[term.id] = false"
+                                    :termId="term.id"
+                                    :term="term.term"
+                                    :full_term="term.full_term"
+                                    :description="term.description"
+                                    :links="term.links"
+                                    :categories="term.categories"
+                                />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -67,17 +118,20 @@ export default {
             search: "",
             displaySearchResults: false,
             showContributionForm: false,
-            searchBarStyle: {
-                display: "flex"
-            },
             contributeButtonContainerStyle: {
                 display: "flex",
                 flexDirection: "row-reverse"
             },
             contributionFormStyle: {
                 padding: "1rem 0"
-            }
+            },
+            editing: {}
         };
+    },
+    methods: {
+        editTerm(index) {
+            this.$set(this.editing, index, !this.editing[index]);
+        }
     },
     computed: {
         filteredTerms() {
@@ -87,13 +141,14 @@ export default {
                     const termName = term.term.toLowerCase();
                     const fullTerm = term.full_term.toLowerCase();
                     const description = term.description.toLowerCase();
-                    const link = term.link.toLowerCase();
+                    const links = term.links.join("\n");
+                    const categories = term.categories.join("\n")
                     return (
                         termName.indexOf(searchLowercase) !== -1 ||
                         fullTerm.indexOf(searchLowercase) !== -1 ||
                         description.indexOf(searchLowercase) !== -1 ||
-                        link.indexOf(searchLowercase) !== -1 ||
-                        term.category.indexOf(searchLowercase) !== -1
+                        links.indexOf(searchLowercase) !== -1 ||
+                        categories.indexOf(searchLowercase) !== -1
                     );
                 });
             } else {
@@ -107,12 +162,33 @@ export default {
                 console.error(err);
                 return;
             }
-            sortLoadedTerms(data);
-            this.terms = data;
+            this.terms = data.map((termInfo, index) =>
+                Object.assign(
+                    {
+                        id: index
+                    },
+                    termInfo
+                )
+            );
         });
     }
 };
 </script>
 
 <style scoped>
+.term-card {
+    margin-top: 10px;
+}
+.edit-term {
+    flex: 1 1 auto;
+}
+.edit-term > .col {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.center-row-content {
+    display: flex;
+    justify-content: center;
+}
 </style>
