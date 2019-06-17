@@ -1,13 +1,10 @@
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const webpack = require("webpack");
-const {
-    VueLoaderPlugin
-} = require("vue-loader");
+const { VueLoaderPlugin } = require("vue-loader");
 module.exports = {
     mode: process.env.NODE_ENV || "development",
     entry: {
-        "vue-edit-category-app": "./src/vue-edit-category-app.js",
         "vue-edit-product-app": "./src/vue-edit-product-app.js",
         "vue-terms-app": "./src/vue-terms-app.js",
         "sgds/sgds": "./src/importSgds.js" // output to sgds/sgds.bundle.js
@@ -50,14 +47,14 @@ module.exports = {
             },
             {
                 test: /(?<!sgds)\.css$/,
-                use: ["style-loader", "css-loader"],
+                use: ["style-loader", "css-loader"]
             },
             {
                 test: /(?<!sgds-icons)\.(png|jpe?g|gif|svg|eot|ttf|woff|woff2)$/,
                 loader: "url-loader",
                 options: {
-                    limit: 8192,
-                },
+                    limit: 8192
+                }
             },
             {
                 test: /\.vue$/,
@@ -68,11 +65,14 @@ module.exports = {
     plugins: [
         new VueLoaderPlugin(),
         new MiniCssExtractPlugin({
-            filename: "[name].css",
+            filename: "[name].css"
         }),
         new webpack.ProvidePlugin({
             $: "jquery",
             jQuery: "jquery"
+        }),
+        new webpack.DefinePlugin({
+            "process.env.NODE_ENV": JSON.stringify(process.env.NODE_ENV)
         })
     ]
 };
