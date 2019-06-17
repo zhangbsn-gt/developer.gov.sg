@@ -182,6 +182,5 @@ export default {
 .original-content {
     border: 1px solid #d6d6d6;
     overflow: scroll;
-    max-height: 60vh;
 }
 </style>
