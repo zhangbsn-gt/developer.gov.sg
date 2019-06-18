@@ -43,7 +43,7 @@ router.post("/request-otp", async (req, res) => {
     }
 });
 
-router.post("/submit-product-changes", async (req, res) => {
+router.post("/submit-article-changes", async (req, res) => {
     let submission = req.body;
 
     let missingParams = lib.utils.getMissingParams(
@@ -85,7 +85,7 @@ router.post("/submit-product-changes", async (req, res) => {
     let pageContent = submission.page_content;
     let pageLayout = submission.page_layout;
 
-    let pullRequestLabels = ["product", utils.toLowerCaseSlug(pageTitle)];
+    let pullRequestLabels = [pageCategory.toLowerCase(), utils.toLowerCaseSlug(pageTitle)];
     try {
         const conflictingPr = await lib.github.checkForConflictingPr(
             pullRequestLabels
@@ -124,7 +124,7 @@ router.post("/submit-product-changes", async (req, res) => {
             filePath: path.join("contents", pagePath, "index.html"),
             fileContent: newPage,
             baseBranchName: githubBaseRef,
-            newBranchName: `product-edit-${new Date()
+            newBranchName: `${pageCategory.toLowerCase()}-edit-${new Date()
                 .toISOString()
                 .substring(0, 10)}-${newBranchId}`,
             commitMessage: `New edits for ${pageTitle} page by ${email}`,
@@ -142,7 +142,7 @@ router.post("/submit-product-changes", async (req, res) => {
         });
     } catch (err) {
         res.status(500).json({
-            error: err.message || "Error submitting product changes."
+            error: err.message || `Error submitting ${pageCategory.toLowerCase()} changes.`
         });
     }
 });
