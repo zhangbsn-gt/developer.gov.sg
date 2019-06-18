@@ -1,6 +1,8 @@
 # developer.gov.sg
 [![Netlify Status](https://api.Netlify.com/api/v1/badges/58da9e57-3aea-469b-ad2a-1fab2f168ac5/deploy-status)](https://app.Netlify.com/sites/developer-gov-sg/deploys)
-[![Known Vulnerabilities](https://snyk.io/test/github/GovTechSG/developer.gov.sg/badge.svg?targetFile=sgds-govtech%2Fpackage.json)](https://snyk.io/test/github/GovTechSG/developer.gov.sg?targetFile=sgds-govtech%2Fpackage.json)
+
+[![Known Vulnerabilities](https://snyk.io//test/github/GovTechSG/developer.gov.sg/badge.svg?targetFile=package.json)](https://snyk.io//test/github/GovTechSG/developer.gov.sg?targetFile=package.json)
+
 [![GuardRails badge](https://badges.guardrails.io/GovTechSG/developer.gov.sg.svg)](https://dashboard.guardrails.io/default/gh/GovTechSG/developer.gov.sg)
 
 
