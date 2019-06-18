@@ -12,4 +12,8 @@ We are currently in beta mode!
 
 Please kindly send an email to gds_security@tech.gov.sg to start a conversation about any bugs you find. We welcome any reporting with open arms.
 
+## Fixing a Vulnerabilty
+
+You are also very welcome to go ahead and create a pull request to help us fix any security vulnerabilies! :)
+
 Thanks! :heart:
