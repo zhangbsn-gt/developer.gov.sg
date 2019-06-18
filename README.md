@@ -35,6 +35,6 @@ npm install netlify-cli -g # Install Netlify cli globally
 
 netlify link # Follow instructions to link to Netlify project
 
-netlify dev -c "npm run devserver"
+netlify dev # See netlify.toml's [dev] section
 ```
 The frontend will be available at localhost:8888. Netlify CLI will sync build settings such as environment variables for functions from the linked Netlify project, so they will be fully functional.
