@@ -2,10 +2,12 @@
     <div class="verify-and-submit">
         <div class="row">
             <div class="col">
-                <h6>Submit your contributions</h6>
+                <h5>Submit for Review</h5>
+                <!--
                 <span :class="{bold: stage === stages.verify}">verify government email</span>
                 &bull;
                 <span :class="{bold: stage === stages.submit}">make submission</span>
+                -->
             </div>
         </div>
 
@@ -13,11 +15,11 @@
             <div class="col">
                 <div v-if="stage === stages.verify">
                     <form>
-                        <label for="contributor-email">Verify your government email*</label>
+                        <label for="contributor-email">Please enter your Government Email for us to verify</label>
                         <input
                             id="contributor-email"
                             name="email"
-                            class="input"
+                            class="input margin--top--sm"
                             :class="{'is-danger': errors.email}"
                             type="email"
                             placeholder="me@.gov.sg"
@@ -28,17 +30,17 @@
                         <p>
                             <button
                                 type="submit"
-                                class="sgds-button is-primary"
+                                class="sgds-button is-primary is-rounded margin--top"
                                 @click.prevent="requestOtp"
                                 :disabled="!emailRegex.test(email)"
-                            >Send email OTP</button>
+                            >Send OTP</button>
                         </p>
                     </form>
                 </div>
 
                 <div v-if="stage === stages.submit">
                     <form>
-                        <label for="otp">Enter the 6-digit OTP sent to your email at {{ email }}</label>
+                        <label for="otp">Please enter the OTP sent to your email at {{ email }}</label>
                         <input
                             type="number"
                             name="otp"
@@ -52,12 +54,12 @@
                         <p class="modal-footer-buttons">
                             <button
                                 type="button"
-                                class="sgds-button"
+                                class="sgds-button is-rounded margin--top"
                                 @click.prevent="stage = stages.verify"
                             >Back</button>
                             <button
                                 type="submit"
-                                class="sgds-button is-primary"
+                                class="sgds-button is-primary is-rounded margin--top"
                                 :disabled="!this.otp || this.otp.length !== 6"
                                 @click.prevent="submit"
                             >Submit Changes</button>
