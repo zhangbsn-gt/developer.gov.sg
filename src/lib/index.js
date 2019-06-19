@@ -51,5 +51,5 @@ function createStateChangeListener(xhr, callback) {
 
 export const emailRegex =
     process.env.NODE_ENV === "production"
-        ? /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@(?:[a-zA-Z0-9-]{1,62}\.)*gov\.sg$/
+        ? /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[\w\.]*gov\.sg$/
         : /.*/;

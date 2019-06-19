@@ -18,7 +18,7 @@
     "netlifydev": "BRANCH=dev netlify dev",
     "servelambda": "netlify-lambda serve lambda",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "testlambda": "mocha --recursive './lambda/test/*.js'",
+    "testlambda": "NODE_ENV=production mocha --recursive './lambda/test/*.js'",
     "testsite": "exit 0"
   },
   "dependencies": {
