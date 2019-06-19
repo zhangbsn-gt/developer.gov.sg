@@ -3,12 +3,12 @@
     display: none;
 }
 
-.ql-editor {
+.ql-container {
     font-family: "Source Sans Pro", BlinkMacSystemFont, -apple-system, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
     min-height: 60vh;
 }
 
-.ql-editor h5,
+.modal-container h5,
 .article h5,
 .content h5 {
     font-size: 2rem !important;
@@ -16,7 +16,7 @@
     margin-bottom: 1rem !important;
 }
 
-.ql-editor h6,
+.modal-container h6,
 .article h6,
 .content h6 {
     font-size: 1.5rem !important;
@@ -24,7 +24,7 @@
     margin-bottom: 1rem !important;
 }
 
-.ql-editor h5:nth-child(n+2),
+.modal-container h5:nth-child(n+2),
 .article h5:nth-child(n+2),
 .content h5:nth-child(n+2) {
     border-top: 1px solid #d6d6d6;
@@ -32,7 +32,7 @@
     margin-top: 2rem !important;
 }
 
-.ql-editor p,
+.modal-container p,
 .article p,
 .content p {
     display: block;

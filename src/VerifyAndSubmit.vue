@@ -1,18 +1,19 @@
 <template>
     <div class="verify-and-submit">
+        <!--
         <div class="row">
             <div class="col">
-                <h5>Submit for Review</h5>
-                <!--
                 <span :class="{bold: stage === stages.verify}">verify government email</span>
                 &bull;
                 <span :class="{bold: stage === stages.submit}">make submission</span>
-                -->
             </div>
         </div>
+        -->
 
         <div class="row">
             <div class="col">
+                <hr>
+                <h6>Submit for Review</h6>
                 <div v-if="stage === stages.verify">
                     <form>
                         <label for="contributor-email">Please enter your Government Email for us to verify</label>
