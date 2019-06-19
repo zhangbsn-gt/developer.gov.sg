@@ -5,7 +5,11 @@ module.exports = {
     getMissingParams,
     sortTerms,
     firstArrayContainsSecondArray,
-    toLowerCaseSlug
+    toLowerCaseSlug,
+    emailRegex:
+        process.env.NODE_ENV === "production"
+            ? /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[\w\.]*gov\.sg$/
+            : /.*/
 };
 
 async function generateId(bytes = 4, encoding = "hex") {
