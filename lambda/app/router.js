@@ -74,7 +74,7 @@ router.post("/submit-article-changes", async (req, res) => {
         await lib.otp.verifyOtp(email, otp);
     } catch (err) {
         res.status(403).json({
-            error: "OTP validation failed."
+            error: `OTP validation failed. ${err.message}`
         });
         return;
     }
