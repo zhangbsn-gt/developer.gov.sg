@@ -223,8 +223,8 @@ router.post("/terms", async (req, res) => {
             full_term: submission.full_term,
             description: submission.description,
             links: submission.links.length > 0 ? submission.links : [],
-            categories:
-                submission.categories.length > 0 ? submission.categories : []
+            tags:
+                submission.tags.length > 0 ? submission.tags : []
         };
 
         existingTerms.push(newTerm);
@@ -311,8 +311,8 @@ router.put("/terms", async (req, res) => {
         full_term: submission.full_term,
         description: submission.description,
         links: submission.links.length > 0 ? submission.links : [],
-        categories:
-            submission.categories.length > 0 ? submission.categories : []
+        tags:
+            submission.tags.length > 0 ? submission.tags : []
     };
 
     let termsFileContent = await octokit.repos.getContents({

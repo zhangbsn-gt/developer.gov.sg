@@ -3,7 +3,7 @@
         <div class="row has-text-centered">
             <div class="col">
                 <label for="search-input">
-                    <h5>Tech Acronyms used in Singapore Government</h5>
+                    <h5>Singapore Government Technology Acronyms</h5>
                 </label>
             </div>
         </div>
@@ -12,7 +12,7 @@
                 <div class="sgds-accordion">
                     <div class="sgds-accordion-set">
                         <a class="sgds-accordion-header" v-on:click="showContributionForm = !showContributionForm">
-                            Suggest a New Acronym and Definition <i class="sgds-icon sgds-icon-chevron-down"></i>
+                            Suggest a new acronym <i class="sgds-icon sgds-icon-chevron-down"></i>
                         </a>
                         <div class="sgds-accordion-body has-background-light">
                             <div v-if="showContributionForm" :style="contributionFormStyle">
@@ -61,7 +61,6 @@
                         </div>
 
                         <div v-if="term.links.length > 0" class="margin--top">
-                            URLs:
                             <a :href="link" target="_blank" v-for="link of term.links" :key="term.term + link">
                                 Link <span class="sgds-icon sgds-icon-external"></span>
                             </a>
@@ -87,7 +86,7 @@
                             :full_term="term.full_term"
                             :description="term.description"
                             :links="term.links"
-                            :categories="term.categories"
+                            :tags="term.categories"
                     />
                 </div>
             </div>
