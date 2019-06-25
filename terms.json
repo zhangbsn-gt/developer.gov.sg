@@ -3,9 +3,12 @@
         "id": "3c2c7e9e-a8b2-45db-ae98-3f2fe002c7fe",
         "term": "CWP",
         "full_term": "Content Website Platform",
-        "description": "Description of CWP",
+        "description": "CWP allows agencies to write and publish content-based websites.",
         "links": [],
-        "tags": []
+        "tags": [
+            "platform",
+            "hosting"
+        ]
     },
     {
         "id": "97e41068-a1f5-4bd7-b516-684a41920507",
