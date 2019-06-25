@@ -134,7 +134,10 @@ export default {
                     // [{ color: [] }, { background: [] }], // dropdown with defaults from theme
                     // [{ font: [] }],
                     // [{ align: [] }],
-                ]
+                ],
+                clipboard: {
+                    matchVisual: false // Stop quill from auto-adding <br> blocks before headers
+                }
             }
         });
         this.quill.clipboard.dangerouslyPasteHTML(this.page_content);
