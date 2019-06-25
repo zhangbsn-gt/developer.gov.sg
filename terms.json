@@ -42,8 +42,8 @@
     {
         "id": "a7803578-0e9e-4239-8729-a746851a7f80",
         "term": "NECTAR",
-        "full_term": "Next-generation Container Architecture ",
-        "description": "GovTech's Next-generation Container Architecture for the whole of government",
+        "full_term": "Nectar",
+        "description": "GovTech's container-based platform-as-a-service which brings stable infrastructure and rapid deployment for hosting applications within the government.",
         "links": [
             "https://blog.gds-gov.tech/nectar-10e0eb1581cf"
         ],
