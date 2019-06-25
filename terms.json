@@ -55,7 +55,7 @@
         "id": "a009178d-501b-4a78-b6a1-3c6eab4b662d",
         "term": "SGDS",
         "full_term": "Singapore Government Design System",
-        "description": "SGDS is a series of frontend components (consisting of HTML, CSS and JavaScript) that enables government agencies to have a common design language.",
+        "description": "SGDS is a series of frontend components (consisting of HTML, CSS and JavaScript) that enables government agencies to build websites with a common design language.",
         "links": [
             "https://designsystem.gov.sg"
         ],
