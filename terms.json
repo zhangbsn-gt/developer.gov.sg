@@ -3,9 +3,12 @@
         "id": "3c2c7e9e-a8b2-45db-ae98-3f2fe002c7fe",
         "term": "CWP",
         "full_term": "Content Website Platform",
-        "description": "Description of CWP",
+        "description": "CWP allows agencies to write and publish content-based websites.",
         "links": [],
-        "tags": []
+        "tags": [
+            "platform",
+            "hosting"
+        ]
     },
     {
         "id": "97e41068-a1f5-4bd7-b516-684a41920507",
@@ -42,8 +45,8 @@
     {
         "id": "a7803578-0e9e-4239-8729-a746851a7f80",
         "term": "NECTAR",
-        "full_term": "Next-generation Container Architecture ",
-        "description": "GovTech's Next-generation Container Architecture for the whole of government",
+        "full_term": "Nectar",
+        "description": "GovTech's container-based platform-as-a-service which brings stable infrastructure and rapid deployment for hosting applications within the government.",
         "links": [
             "https://blog.gds-gov.tech/nectar-10e0eb1581cf"
         ],
@@ -55,7 +58,7 @@
         "id": "a009178d-501b-4a78-b6a1-3c6eab4b662d",
         "term": "SGDS",
         "full_term": "Singapore Government Design System",
-        "description": "SGDS is a series of frontend components (consisting of HTML, CSS and JavaScript) that enables government agencies to have a common design language.",
+        "description": "SGDS is a series of frontend components (consisting of HTML, CSS and JavaScript) that enables government agencies to build websites with a common design language.",
         "links": [
             "https://designsystem.gov.sg"
         ],
@@ -69,11 +72,10 @@
         "term": "SGTS",
         "full_term": "Singapore Government Tech Stack",
         "description": "Description of SGTS",
-        "links": [
-            "https://tech.gov.sg"
-        ],
+        "links": [],
         "tags": [
-            "platform"
+            "platform",
+            "data"
         ]
     }
 ]
