@@ -15,7 +15,7 @@
         "buildstatic": "NODE_ENV=production webpack",
         "deploynetlify": "npm run testlambda && npm run buildlambda && npm run testsite && npm run buildsite",
         "devserver": "webpack --watch & bundle exec jekyll serve",
-        "netlifydev": "BRANCH=dev NODE_ENV=development netlify dev",
+        "netlifydev": "NODE_ENV=development netlify dev",
         "servelambda": "netlify-lambda serve lambda",
         "test": "echo \"Error: no test specified\" && exit 1",
         "testlambda": "NODE_ENV=production mocha --recursive './lambda/test/*.js'",
