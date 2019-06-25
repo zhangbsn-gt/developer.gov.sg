@@ -69,11 +69,10 @@
         "term": "SGTS",
         "full_term": "Singapore Government Tech Stack",
         "description": "Description of SGTS",
-        "links": [
-            "https://tech.gov.sg"
-        ],
+        "links": [],
         "tags": [
-            "platform"
+            "platform",
+            "data"
         ]
     }
 ]
