@@ -10,7 +10,8 @@ layout: layout-sidenav
         data-title="{{ page.title }}" 
         data-permalink="{{ page.permalink }}"
         data-category="{{ page.category }}" 
-        data-layout="{{ page.layout }}">
+        data-layout="{{ page.layout }}"
+        data-content="{{ content | xml_escape }}"> <!-- escape because html content's special characters (",' etc) may break this -->
     </div>
     <script src="/assets/bundles/vue-article-editor-app.bundle.js" type="text/javascript"></script>
 </div>
