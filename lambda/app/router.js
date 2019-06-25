@@ -3,6 +3,7 @@ const express = require("express");
 const beautifyHtml = require("js-beautify").html;
 const yaml = require("js-yaml");
 const Octokit = require("@octokit/rest");
+const uuidv4 = require("uuid/v4");
 const utils = require("../lib/utils");
 const packageInfo = require("../../package.json");
 const {
@@ -85,7 +86,10 @@ router.post("/submit-article-changes", async (req, res) => {
     let pageContent = submission.page_content;
     let pageLayout = submission.page_layout;
 
-    let pullRequestLabels = [pageCategory.toLowerCase(), utils.toLowerCaseSlug(pageTitle)];
+    let pullRequestLabels = [
+        pageCategory.toLowerCase(),
+        utils.toLowerCaseSlug(pageTitle)
+    ];
     try {
         const conflictingPr = await lib.github.checkForConflictingPr(
             pullRequestLabels
@@ -142,7 +146,9 @@ router.post("/submit-article-changes", async (req, res) => {
         });
     } catch (err) {
         res.status(500).json({
-            error: err.message || `Error submitting ${pageCategory.toLowerCase()} changes.`
+            error:
+                err.message ||
+                `Error submitting ${pageCategory.toLowerCase()} changes.`
         });
     }
 });
@@ -173,25 +179,6 @@ router.post("/terms", async (req, res) => {
         return;
     }
 
-    let pullRequestLabels = ["term", utils.toLowerCaseSlug(submission.term)];
-    try {
-        const conflictingPr = await lib.github.checkForConflictingPr(
-            pullRequestLabels
-        );
-        if (conflictingPr) {
-            res.status(400).json({
-                error: `Can't make submission; pending changes at ${
-                    conflictingPr.url
-                }`
-            });
-            return;
-        }
-    } catch (err) {
-        res.status(500).json({
-            error: "Couldn't check for conflicting pull requests"
-        });
-    }
-
     try {
         let termsFileContents = await octokit.repos.getContents({
             owner: githubRepoOwner,
@@ -207,24 +194,13 @@ router.post("/terms", async (req, res) => {
 
         let existingTerms = JSON.parse(termsFileRaw);
 
-        if (
-            existingTerms.find(term => {
-                submission.term === term.term;
-            })
-        ) {
-            res.status(403).json({
-                error: "Cannot add term since one already exists."
-            });
-            return;
-        }
-
         let newTerm = {
+            id: uuidv4(),
             term: submission.term,
             full_term: submission.full_term,
             description: submission.description,
             links: submission.links.length > 0 ? submission.links : [],
-            tags:
-                submission.tags.length > 0 ? submission.tags : []
+            tags: submission.tags.length > 0 ? submission.tags : []
         };
 
         existingTerms.push(newTerm);
@@ -244,6 +220,11 @@ router.post("/terms", async (req, res) => {
             prTitle: `New term suggestion from ${submission.email}`,
             prBody: yaml.safeDump(newTerm)
         });
+
+        let pullRequestLabels = [
+            "term",
+            utils.toLowerCaseSlug(submission.term)
+        ];
 
         await lib.github.addLabelsToPullRequest({
             labels: pullRequestLabels,
@@ -287,32 +268,13 @@ router.put("/terms", async (req, res) => {
         return;
     }
 
-    let pullRequestLabels = ["term", utils.toLowerCaseSlug(submission.term)];
-    try {
-        const conflictingPr = await lib.github.checkForConflictingPr(
-            pullRequestLabels
-        );
-        if (conflictingPr) {
-            res.status(400).json({
-                error: `Can't make submission; pending changes at ${
-                    conflictingPr.url
-                }`
-            });
-            return;
-        }
-    } catch (err) {
-        res.status(500).json({
-            error: "Couldn't check for conflicting pull requests"
-        });
-    }
-
     const updatedTerm = {
+        id: submission.id,
         term: submission.term,
         full_term: submission.full_term,
         description: submission.description,
         links: submission.links.length > 0 ? submission.links : [],
-        tags:
-            submission.tags.length > 0 ? submission.tags : []
+        tags: submission.tags.length > 0 ? submission.tags : []
     };
 
     let termsFileContent = await octokit.repos.getContents({
@@ -329,18 +291,10 @@ router.put("/terms", async (req, res) => {
 
     let existingTerms = JSON.parse(termsFileRaw);
 
-    // If changing term name to one that already exists
-    if (
-        existingTerms[submission.id].term !== submission.term &&
-        existingTerms.find(termEntry => termEntry.term === submission.term)
-    ) {
-        res.status(403).json({
-            error: "Cannot add term since one already exists."
-        });
-        return;
-    }
-
-    existingTerms.splice(submission.id, 1, updatedTerm);
+    let updatedTermIndex = existingTerms.findIndex(
+        term => term.id === submission.id
+    );
+    existingTerms.splice(updatedTermIndex, 1, updatedTerm);
 
     let newContent = JSON.stringify(existingTerms, null, 4);
 
@@ -356,7 +310,7 @@ router.put("/terms", async (req, res) => {
         prTitle: `New term edits from ${submission.email}`,
         prBody: yaml.safeDump(updatedTerm)
     });
-
+    let pullRequestLabels = ["term", utils.toLowerCaseSlug(submission.term)];
     await lib.github.addLabelsToPullRequest({
         labels: pullRequestLabels,
         prNumber: pr.data.number

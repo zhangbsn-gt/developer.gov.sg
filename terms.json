@@ -5,7 +5,7 @@
         "full_term": "Content Website Platform",
         "description": "Description of CWP",
         "links": [],
-        "categories": []
+        "tags": []
     },
     {
         "id": "97e41068-a1f5-4bd7-b516-684a41920507",
@@ -16,7 +16,7 @@
             "https://play.google.com/store/apps/details?id=sg.gov.digitalworkplace&hl=en_SG",
             "https://apps.apple.com/sg/app/dwp-mobile/id1329488106"
         ],
-        "categories": []
+        "tags": []
     },
     {
         "id": "4e5094a5-2b07-4615-a759-f6dbde618bc5",
@@ -24,7 +24,7 @@
         "full_term": "Government Commercial Cloud",
         "description": "Description of GCC",
         "links": [],
-        "categories": [
+        "tags": [
             "platform"
         ]
     },
@@ -34,7 +34,7 @@
         "full_term": "National Digital Identity",
         "description": "Description of NDI",
         "links": [],
-        "categories": [
+        "tags": [
             "authentication",
             "data"
         ]
@@ -47,7 +47,7 @@
         "links": [
             "https://blog.gds-gov.tech/nectar-10e0eb1581cf"
         ],
-        "categories": [
+        "tags": [
             "platform"
         ]
     },
@@ -59,7 +59,7 @@
         "links": [
             "https://designsystem.gov.sg"
         ],
-        "categories": [
+        "tags": [
             "design",
             "frontend"
         ]
@@ -72,7 +72,7 @@
         "links": [
             "https://tech.gov.sg"
         ],
-        "categories": [
+        "tags": [
             "platform"
         ]
     }
