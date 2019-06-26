@@ -1,8 +1,7 @@
 <template>
     <div class="verify-and-submit">
-        <div class="row">
+        <div class="row margin--top--lg margin--bottom">
             <div class="col">
-                <hr>
                 <h6>Submit for Review</h6>
                 <div v-if="stage === stages.verify">
                     <form>
