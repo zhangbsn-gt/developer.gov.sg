@@ -1,22 +1,13 @@
 <template>
     <div class="verify-and-submit">
-        <!--
-        <div class="row">
+        <div class="row margin--top--lg margin--bottom">
             <div class="col">
-                <span :class="{bold: stage === stages.verify}">verify government email</span>
-                &bull;
-                <span :class="{bold: stage === stages.submit}">make submission</span>
-            </div>
-        </div>
-        -->
-
-        <div class="row">
-            <div class="col">
-                <hr>
                 <h6>Submit for Review</h6>
                 <div v-if="stage === stages.verify">
                     <form>
-                        <label for="contributor-email">Please enter your Government Email for us to verify</label>
+                        <label
+                            for="contributor-email"
+                        >Please enter your government email for us to verify</label>
                         <input
                             id="contributor-email"
                             name="email"
@@ -25,6 +16,7 @@
                             type="email"
                             placeholder="me@.gov.sg"
                             v-model="email"
+                            @blur="validateEmail"
                             required
                         >
                         <p class="help is-danger" v-if="errors.email">{{errors.email}}</p>
@@ -97,9 +89,17 @@ export default {
         };
     },
     methods: {
-        requestOtp() {
+        validateEmail() {
             if (!this.email || !emailRegex.test(this.email)) {
                 this.errors.email = "Please enter a valid government email";
+                return false;
+            }
+            this.errors.email = null;
+            return true;
+        },
+        requestOtp() {
+            this.$emit("validate"); // Inform outer form to perform validation
+            if (!this.validateEmail()) {
                 return;
             }
             axios
@@ -137,7 +137,4 @@ export default {
 </script>
 
 <style scoped>
-.bold {
-    font-weight: bold;
-}
 </style>

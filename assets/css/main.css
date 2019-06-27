@@ -1,48 +1,91 @@
 /*Custom styling for editable page*/
+
 [v-cloak] {
     display: none;
 }
 
-.ql-container {
-    font-family: "Source Sans Pro", BlinkMacSystemFont, -apple-system, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-    min-height: 60vh;
-}
-
-.modal-container h5,
-.article h5,
-.content h5 {
-    font-size: 2rem !important;
+h5, h6{
     font-weight: 600 !important;
+}
+
+h5, h6, p{
     margin-bottom: 1rem !important;
-}
-
-.modal-container h6,
-.article h6,
-.content h6 {
-    font-size: 1.5rem !important;
-    font-weight: 600 !important;
-    margin-bottom: 1rem !important;
-}
-
-.modal-container h5:nth-child(n+2),
-.article h5:nth-child(n+2),
-.content h5:nth-child(n+2) {
-    border-top: 1px solid #d6d6d6;
-    padding-top: 2rem !important;
-    margin-top: 2rem !important;
-}
-
-.modal-container p,
-.article p,
-.content p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
 }
 
 hr {
     margin-bottom: 2rem !important;
     margin-top: 2rem !important;
+}
+
+/*Custom styling for Quill Editor*/
+
+.ql-editor {
+    font-family: "Source Sans Pro", BlinkMacSystemFont, -apple-system, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    font-size: 1rem !important;
+    line-height: calc(1rem + .5rem) !important;
+    height: 30vh !important;
+}
+
+.ql-editor h5 {
+    font-size: 2rem !important;
+}
+
+.ql-editor h6 {
+    font-size: 1.5rem !important;
+}
+
+.ql-editor ul > li {
+    list-style-type: disc !important;
+}
+
+.ql-editor ul > li::before {
+    content: none !important;
+}
+
+.ql-editor ul,
+.article ul {
+    padding: 0px !important;
+    list-style: disc outside !important;
+    margin-left: 1rem !important;
+    margin-top: 1em !important;
+}
+
+.ql-editor li,
+.article li  {
+    display: list-item !important;
+    text-align: -webkit-match-parent !important;
+    padding: 0px !important;
+    margin-top: 1em !important;
+}
+
+.ql-editor p {
+    margin-bottom: 1em !important;
+}
+
+.ql-editor a {
+    cursor: pointer !important;
+    text-decoration: none !important;
+}
+
+.original-content {
+    height: 30vh !important;
+    border: 1px solid #ccc;
+    overflow-y: auto;
+    padding: 12px 15px;
+}
+
+/*Custom styling for Modal*/
+
+.v--modal-overlay{
+    overflow-y: hidden !important;
+}
+
+.modal-container {
+    padding: 15px 30px;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
 }
