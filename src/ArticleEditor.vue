@@ -8,7 +8,7 @@
         </div>
 
         <div class="modal-body">
-            <div class="sgds-tabs">
+            <div class="sgds-tabs is-boxed">
                 <ul>
                     <li :class="{'is-active': !showOriginal}">
                         <a @click.prevent="showOriginal = false" :style="{cursor: 'pointer'}">Editor</a>
@@ -37,8 +37,10 @@
                     <button class="ql-code-block"></button>
                     <button class="ql-list" value="ordered"></button>
                     <button class="ql-list" value="bullet"></button>
-                    <button class="ql-clean"></button>
-                    <button class="ql-hr">--</button>
+                    <!-- <button class="ql-clean"></button> -->
+                    <button class="ql-hr">
+                        <span class="sgds-icon sgds-icon-minus"></span>
+                    </button>
                 </div>
                 <div id="editor"></div>
             </div>
@@ -140,11 +142,7 @@ export default {
                         hr() {
                             let range = this.quill.getSelection();
                             if (range) {
-                                this.quill.insertEmbed(
-                                    range.index,
-                                    "hr",
-                                    true
-                                );
+                                this.quill.insertEmbed(range.index, "hr", true);
                                 this.quill.setSelection(range.index + 1);
                             }
                         }
@@ -159,46 +157,3 @@ export default {
     }
 };
 </script>
-
-<style scoped>
-.modal-container {
-    padding: 15px 30px;
-}
-
-.modal-header {
-    display: flex;
-    justify-content: space-between;
-}
-
-.modal-body,
-.modal-footer {
-    margin: 20px 0;
-}
-
-.modal-footer-buttons {
-    margin-top: 12px;
-}
-
-.modal-default-button {
-    float: right;
-}
-
-.bold {
-    font-weight: bold;
-}
-
-.justified {
-    display: flex;
-    justify-content: space-between;
-}
-
-.align-children-right {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.original-content {
-    border: 1px solid #d6d6d6;
-    overflow: scroll;
-}
-</style>
