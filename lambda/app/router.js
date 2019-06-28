@@ -24,6 +24,13 @@ router.get("/", (req, res) =>
     })
 );
 
+router.get('/auth/github', passport.authenticate('github', { scope: ['public_repo'] }), function (req, res) { });
+
+router.get('/auth/github/callback', passport.authenticate('github', { failureRedirect: '/review' }), function (req, res) {
+    res.redirect('/review');
+});
+
+
 router.post("/request-otp", async (req, res) => {
     const requestBody = req.body;
     if (!requestBody.email) {
@@ -94,7 +101,7 @@ router.post("/submit-article-changes", async (req, res) => {
             res.status(400).json({
                 error: `Can't make submission; pending changes at ${
                     conflictingPr.url
-                }`
+                    }`
             });
             return;
         }
@@ -182,7 +189,7 @@ router.post("/terms", async (req, res) => {
             res.status(400).json({
                 error: `Can't make submission; pending changes at ${
                     conflictingPr.url
-                }`
+                    }`
             });
             return;
         }
@@ -296,7 +303,7 @@ router.put("/terms", async (req, res) => {
             res.status(400).json({
                 error: `Can't make submission; pending changes at ${
                     conflictingPr.url
-                }`
+                    }`
             });
             return;
         }
