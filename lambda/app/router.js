@@ -25,6 +25,13 @@ router.get("/", (req, res) =>
     })
 );
 
+router.get('/auth/github', passport.authenticate('github', { scope: ['public_repo'] }), function (req, res) { });
+
+router.get('/auth/github/callback', passport.authenticate('github', { failureRedirect: '/review' }), function (req, res) {
+    res.redirect('/review');
+});
+
+
 router.post("/request-otp", async (req, res) => {
     const requestBody = req.body;
     if (!requestBody.email) {
@@ -98,7 +105,7 @@ router.post("/submit-article-changes", async (req, res) => {
             res.status(400).json({
                 error: `Can't make submission; pending changes at ${
                     conflictingPr.url
-                }`
+                    }`
             });
             return;
         }
@@ -218,7 +225,9 @@ router.post("/terms", async (req, res) => {
                 .substring(0, 10)}-${newBranchId}`,
             commitMessage: `New term suggestion from ${submission.email}`,
             prTitle: `New term suggestion from ${submission.email}`,
-            prBody: yaml.safeDump(newTerm)
+            prBody: yaml.safeDump(newTerm, {
+                lineWidth: 120
+            })
         });
 
         let pullRequestLabels = [
@@ -308,7 +317,9 @@ router.put("/terms", async (req, res) => {
             .substring(0, 10)}-${newBranchId}`,
         commitMessage: `New term edits from ${submission.email}`,
         prTitle: `New term edits from ${submission.email}`,
-        prBody: yaml.safeDump(updatedTerm)
+        prBody: yaml.safeDump(updatedTerm, {
+            lineWidth: 120
+        })
     });
     let pullRequestLabels = ["term", utils.toLowerCaseSlug(submission.term)];
     await lib.github.addLabelsToPullRequest({
