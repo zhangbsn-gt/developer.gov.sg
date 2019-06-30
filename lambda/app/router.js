@@ -2,6 +2,7 @@ const path = require("path");
 const express = require("express");
 const beautifyHtml = require("js-beautify").html;
 const yaml = require("js-yaml");
+const passport = require("passport");
 const Octokit = require("@octokit/rest");
 const uuidv4 = require("uuid/v4");
 const utils = require("../lib/utils");
@@ -25,12 +26,19 @@ router.get("/", (req, res) =>
     })
 );
 
-router.get('/auth/github', passport.authenticate('github', { scope: ['public_repo'] }), function (req, res) { });
+router.get(
+    "/auth/github",
+    passport.authenticate("github", { scope: ["public_repo"] }),
+    function(req, res) {}
+);
 
-router.get('/auth/github/callback', passport.authenticate('github', { failureRedirect: '/review' }), function (req, res) {
-    res.redirect('/review');
-});
-
+router.get(
+    "/auth/github/callback",
+    passport.authenticate("github", { failureRedirect: "/review" }),
+    function(req, res) {
+        res.redirect("/review");
+    }
+);
 
 router.post("/request-otp", async (req, res) => {
     const requestBody = req.body;
@@ -105,7 +113,7 @@ router.post("/submit-article-changes", async (req, res) => {
             res.status(400).json({
                 error: `Can't make submission; pending changes at ${
                     conflictingPr.url
-                    }`
+                }`
             });
             return;
         }
