@@ -27,7 +27,7 @@
                     <select class="ql-header">
                         <option value="5"></option>
                         <option value="6"></option>
-                        <option value="false"></option>
+                        <option></option>
                     </select>
                     <button class="ql-bold"></button>
                     <button class="ql-italic"></button>
