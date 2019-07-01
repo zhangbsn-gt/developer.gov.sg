@@ -25,4 +25,5 @@ module.exports = {
     otpServiceUrl,
     clientID: loadEnvVar("GITHUB_SSO_ID"),
     clientSecret: loadEnvVar("GITHUB_SSO_SECRET"),
+    tokenHash: loadEnvVar("GITHUB_SSO_TOKEN_HASH")
 };
