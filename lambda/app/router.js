@@ -35,7 +35,8 @@ router.get("/", (req, res) =>
 
 router.get("/oauth", (req, res) => {
     res.redirect(oauthLoginUrl({
-        clientId: clientID
+        clientId: clientID,
+        scopes: ['public_repo']
     }).url);
 });
 
