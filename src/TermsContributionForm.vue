@@ -70,23 +70,25 @@
                 >
                 <p class="help is-danger" v-if="errors.tag">{{errors.tag}}</p>
                 <button
-                    class="sgds-button is-rounded margin--top--sm"
+                    class="sgds-button margin--top--sm"
                     type="button"
                     @click.prevent="addTag"
                 >Add a tag</button>
                 <div>
-                    <p
+                    <button
+                        type="button"
+                        disabled
+                        class="sgds-button is-rounded"
                         v-for="(tag, index) of form.tags"
                         :key="index + tag"
-                        class="form-list"
                     >
-                        <input type="text" disabled :value="tag" class="input">
+                        {{tag}}
                         <span
                             class="sgds-icon sgds-icon-cross"
                             @click="form.tags.splice(index, 1)"
                             :style="{cursor: 'pointer'}"
                         ></span>
-                    </p>
+                    </button>
                 </div>
             </div>
         </div>
@@ -107,19 +109,25 @@
                 >
                 <p class="help is-danger" v-if="errors.link">{{errors.link}}</p>
                 <button
-                    class="sgds-button is-rounded margin--top--sm"
+                    class="sgds-button margin--top--sm"
                     type="button"
                     @click.prevent="addLink"
                 >Add a link</button>
                 <div>
-                    <p v-for="(link, index) of form.links" :key="index + link" class="form-list">
-                        <input type="text" disabled :value="link" class="input">
+                    <button
+                        type="button"
+                        disabled
+                        class="sgds-button is-rounded"
+                        v-for="(link, index) of form.links"
+                        :key="index + link"
+                    >
+                        {{link}}
                         <span
                             class="sgds-icon sgds-icon-cross"
                             @click="form.links.splice(index, 1)"
                             :style="{cursor: 'pointer'}"
                         ></span>
-                    </p>
+                    </button>
                 </div>
             </div>
         </div>
@@ -131,7 +139,7 @@
 <script>
 import axios from "axios";
 import Noty from "noty";
-import { urlEncode, urlRegex } from "./lib";
+import { urlRegex } from "./lib";
 import VerifyAndSubmit from "./VerifyAndSubmit.vue";
 
 export default {
@@ -145,7 +153,7 @@ export default {
             }
         },
         termId: {
-            type: Number
+            type: String
         },
         term: {
             type: String

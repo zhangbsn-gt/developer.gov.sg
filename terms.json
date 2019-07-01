@@ -1,12 +1,17 @@
 [
     {
+        "id": "3c2c7e9e-a8b2-45db-ae98-3f2fe002c7fe",
         "term": "CWP",
         "full_term": "Content Website Platform",
-        "description": "Description of CWP",
+        "description": "CWP allows agencies to write and publish content-based websites.",
         "links": [],
-        "categories": []
+        "tags": [
+            "platform",
+            "hosting"
+        ]
     },
     {
+        "id": "97e41068-a1f5-4bd7-b516-684a41920507",
         "term": "DWP",
         "full_term": "Digital Workplace",
         "description": "DWP is a programme that aims to improve the day-to-day experience and productivity of public officers through a series of digital tools",
@@ -14,59 +19,63 @@
             "https://play.google.com/store/apps/details?id=sg.gov.digitalworkplace&hl=en_SG",
             "https://apps.apple.com/sg/app/dwp-mobile/id1329488106"
         ],
-        "categories": []
+        "tags": []
     },
     {
+        "id": "4e5094a5-2b07-4615-a759-f6dbde618bc5",
         "term": "GCC",
         "full_term": "Government Commercial Cloud",
         "description": "Description of GCC",
         "links": [],
-        "categories": [
+        "tags": [
             "platform"
         ]
     },
     {
+        "id": "70b2925f-dc6f-4c1d-93b2-687c6229b559",
         "term": "NDI",
         "full_term": "National Digital Identity",
         "description": "Description of NDI",
         "links": [],
-        "categories": [
+        "tags": [
             "authentication",
             "data"
         ]
     },
     {
+        "id": "a7803578-0e9e-4239-8729-a746851a7f80",
         "term": "NECTAR",
-        "full_term": "Next-generation Container Architecture ",
-        "description": "GovTech's Next-generation Container Architecture for the whole of government",
+        "full_term": "Nectar",
+        "description": "GovTech's container-based platform-as-a-service which brings stable infrastructure and rapid deployment for hosting applications within the government.",
         "links": [
             "https://blog.gds-gov.tech/nectar-10e0eb1581cf"
         ],
-        "categories": [
+        "tags": [
             "platform"
         ]
     },
     {
+        "id": "a009178d-501b-4a78-b6a1-3c6eab4b662d",
         "term": "SGDS",
         "full_term": "Singapore Government Design System",
-        "description": "SGDS is a series of frontend components (consisting of HTML, CSS and JavaScript) that enables government agencies to have a common design language.",
+        "description": "SGDS is a series of frontend components (consisting of HTML, CSS and JavaScript) that enables government agencies to build websites with a common design language.",
         "links": [
             "https://designsystem.gov.sg"
         ],
-        "categories": [
+        "tags": [
             "design",
             "frontend"
         ]
     },
     {
+        "id": "62d310c8-bb4f-4268-836f-2db9a29497fb",
         "term": "SGTS",
         "full_term": "Singapore Government Tech Stack",
         "description": "Description of SGTS",
-        "links": [
-            "https://tech.gov.sg"
-        ],
-        "categories": [
-            "platform"
+        "links": [],
+        "tags": [
+            "platform",
+            "data"
         ]
     }
 ]

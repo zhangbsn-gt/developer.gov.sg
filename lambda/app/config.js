@@ -22,5 +22,7 @@ module.exports = {
     githubSvcUser,
     githubRepoOwner,
     githubRepoName: "developer.gov.sg",
-    otpServiceUrl
+    otpServiceUrl,
+    clientID: loadEnvVar("GITHUB_SSO_ID"),
+    clientSecret: loadEnvVar("GITHUB_SSO_SECRET"),
 };
