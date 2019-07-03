@@ -2,9 +2,8 @@ const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
 const serverless = require("serverless-http");
-const cookieParser = require('cookie-parser');
+const cookieParser = require("cookie-parser");
 const router = require("./app/router");
-const config = require("./app/config");
 
 app.use(bodyParser.json());
 app.use(cookieParser());
