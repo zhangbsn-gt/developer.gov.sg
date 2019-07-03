@@ -1,18 +1,31 @@
 const Octokit = require("@octokit/rest");
+const { App } = require("@octokit/app");
 const utils = require("./utils");
 
 const {
-    githubToken,
+    githubAppId,
+    githubAppKey,
+    githubAppInstallationId,
     githubBaseRef,
-    githubSvcUser,
     githubRepoOwner,
     githubRepoName
 } = require("../app/config");
+
+const app = new App({ id: githubAppId, privateKey: githubAppKey });
+
 const octokit = new Octokit({
-    auth: githubToken
+    async auth() {
+        const installationAccessToken = await app.getInstallationAccessToken(
+            {
+                installationId: githubAppInstallationId
+            }
+        );
+        return `token ${installationAccessToken}`;
+    }
 });
 
 module.exports = {
+    octokit,
     createNewBranchAndPullRequest,
     addLabelsToPullRequest,
     checkForConflictingPr
@@ -135,8 +148,7 @@ async function checkForConflictingPr(labelsToCheck) {
                 utils.firstArrayContainsSecondArray(
                     pr.labels.map(label => label.name),
                     labelsToCheck
-                ) &&
-                pr.user.id === githubSvcUser
+                )
             ) {
                 return pr;
             }
