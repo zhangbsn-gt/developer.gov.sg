@@ -29,6 +29,7 @@
         "body-parser": "^1.19.0",
         "cookie-parser": "^1.4.4",
         "cryptr": "^4.0.2",
+        "encoding": "^0.1.12",
         "express": "^4.17.1",
         "js-beautify": "^1.10.0",
         "js-yaml": "^3.13.1",
