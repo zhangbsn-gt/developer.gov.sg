@@ -17,6 +17,10 @@ hr {
     margin-top: 2rem !important;
 }
 
+img{
+    margin-bottom: 1rem;
+}
+
 /*Custom styling for Quill Editor*/
 
 .ql-editor {
