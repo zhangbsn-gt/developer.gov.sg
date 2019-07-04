@@ -2,16 +2,15 @@ const path = require("path");
 const express = require("express");
 const beautifyHtml = require("js-beautify").html;
 const yaml = require("js-yaml");
-const passport = require("passport");
 const Octokit = require("@octokit/rest");
-const axios = require('axios');
-const Cryptr = require('cryptr');
-const { oauthLoginUrl } = require('@octokit/oauth-login-url');
+const axios = require("axios");
+const Cryptr = require("cryptr");
+const { oauthLoginUrl } = require("@octokit/oauth-login-url");
 const uuidv4 = require("uuid/v4");
 const utils = require("../lib/utils");
+const github = require("../lib/github");
 const packageInfo = require("../../package.json");
 const {
-    githubToken,
     githubBaseRef,
     githubRepoOwner,
     githubRepoName,
@@ -19,12 +18,12 @@ const {
     clientSecret,
     tokenHash
 } = require("./config");
-const cryptr = new Cryptr(tokenHash);
 const lib = require("../lib");
 
-const octokit = new Octokit({
-    auth: githubToken
-});
+const cryptr = new Cryptr(tokenHash);
+
+const octokit = github.octokit;
+
 const router = express.Router();
 
 router.get("/", (req, res) =>
@@ -34,33 +33,37 @@ router.get("/", (req, res) =>
 );
 
 router.get("/oauth", (req, res) => {
-    res.redirect(oauthLoginUrl({
-        clientId: clientID,
-        scopes: ['public_repo']
-    }).url);
+    res.redirect(
+        oauthLoginUrl({
+            clientId: clientID,
+            scopes: ["public_repo"]
+        }).url
+    );
 });
 
 router.get("/oauth/github/callback", (req, res) => {
     const requestToken = req.query.code;
     axios({
-        method: 'post',
+        method: "post",
         url: `https://github.com/login/oauth/access_token?client_id=${clientID}&client_secret=${clientSecret}&code=${requestToken}`,
         headers: {
-            accept: 'application/json'
+            accept: "application/json"
         }
-    }).then((response) => {
-        const accessToken = cryptr.encrypt(response.data.access_token);
-        // during local test
-        if (req.hostname === 'localhost') {
-            res.cookie("_devpo", accessToken, { httpOnly: true });
-            res.redirect(`http://localhost:8888/review`);
-        } else {
-            res.cookie("_devpo", accessToken, { secure: true });
-            res.redirect(`${req.protocol}://${req.hostname}.com/review`);
-        }
-    }).catch((err) => {
-        // TODO something went wrong
-    });
+    })
+        .then(response => {
+            const accessToken = cryptr.encrypt(response.data.access_token);
+            // during local test
+            if (req.hostname === "localhost") {
+                res.cookie("_devpo", accessToken, { httpOnly: true });
+                res.redirect(`http://localhost:8888/review`);
+            } else {
+                res.cookie("_devpo", accessToken, { secure: true });
+                res.redirect(`${req.protocol}://${req.hostname}.com/review`);
+            }
+        })
+        .catch(err => {
+            // TODO something went wrong
+        });
 });
 
 router.get("/reviews", async (req, res) => {
@@ -81,7 +84,6 @@ router.get("/reviews", async (req, res) => {
             error: err.message || "Error fetching pull requests."
         });
     }
-
 });
 
 router.post("/request-otp", async (req, res) => {
@@ -157,7 +159,7 @@ router.post("/submit-article-changes", async (req, res) => {
             res.status(400).json({
                 error: `Can't make submission; pending changes at ${
                     conflictingPr.url
-                    }`
+                }`
             });
             return;
         }
@@ -165,6 +167,7 @@ router.post("/submit-article-changes", async (req, res) => {
         res.status(500).json({
             error: "Couldn't check for conflicting pull requests"
         });
+        return;
     }
 
     let newPage =
