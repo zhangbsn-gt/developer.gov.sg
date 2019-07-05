@@ -332,58 +332,67 @@ router.put("/terms", async (req, res) => {
         return;
     }
 
-    const updatedTerm = {
-        id: submission.id,
-        term: submission.term,
-        full_term: submission.full_term,
-        description: submission.description,
-        links: submission.links.length > 0 ? submission.links : [],
-        tags: submission.tags.length > 0 ? submission.tags : []
-    };
+    try {
+        const updatedTerm = {
+            id: submission.id,
+            term: submission.term,
+            full_term: submission.full_term,
+            description: submission.description,
+            links: submission.links.length > 0 ? submission.links : [],
+            tags: submission.tags.length > 0 ? submission.tags : []
+        };
 
-    let termsFileContent = await octokit.repos.getContents({
-        owner: githubRepoOwner,
-        repo: githubRepoName,
-        path: "terms.json",
-        ref: githubBaseRef
-    });
+        let termsFileContent = await octokit.repos.getContents({
+            owner: githubRepoOwner,
+            repo: githubRepoName,
+            path: "terms.json",
+            ref: githubBaseRef
+        });
 
-    let termsFileRaw = Buffer.from(
-        termsFileContent.data.content,
-        "base64"
-    ).toString();
+        let termsFileRaw = Buffer.from(
+            termsFileContent.data.content,
+            "base64"
+        ).toString();
 
-    let existingTerms = JSON.parse(termsFileRaw);
+        let existingTerms = JSON.parse(termsFileRaw);
 
-    let updatedTermIndex = existingTerms.findIndex(
-        term => term.id === submission.id
-    );
-    existingTerms.splice(updatedTermIndex, 1, updatedTerm);
+        let updatedTermIndex = existingTerms.findIndex(
+            term => term.id === submission.id
+        );
+        existingTerms.splice(updatedTermIndex, 1, updatedTerm);
 
-    let newContent = JSON.stringify(existingTerms, null, 4);
+        let newContent = JSON.stringify(existingTerms, null, 4);
 
-    const newBranchId = await lib.utils.generateId();
-    let pr = await lib.github.createNewBranchAndPullRequest({
-        filePath: "terms.json",
-        fileContent: newContent,
-        baseBranchName: githubBaseRef,
-        newBranchName: `term-edit-${new Date()
-            .toISOString()
-            .substring(0, 10)}-${newBranchId}`,
-        commitMessage: `New term edits from ${submission.email}`,
-        prTitle: `New term edits from ${submission.email}`,
-        prBody: yaml.safeDump(updatedTerm, {
-            lineWidth: 120
-        })
-    });
-    let pullRequestLabels = ["term", utils.toLowerCaseSlug(submission.term)];
-    await lib.github.addLabelsToPullRequest({
-        labels: pullRequestLabels,
-        prNumber: pr.data.number
-    });
+        const newBranchId = await lib.utils.generateId();
+        let pr = await lib.github.createNewBranchAndPullRequest({
+            filePath: "terms.json",
+            fileContent: newContent,
+            baseBranchName: githubBaseRef,
+            newBranchName: `term-edit-${new Date()
+                .toISOString()
+                .substring(0, 10)}-${newBranchId}`,
+            commitMessage: `New term edits from ${submission.email}`,
+            prTitle: `New term edits from ${submission.email}`,
+            prBody: yaml.safeDump(updatedTerm, {
+                lineWidth: 120
+            })
+        });
+        let pullRequestLabels = [
+            "term",
+            utils.toLowerCaseSlug(submission.term)
+        ];
+        await lib.github.addLabelsToPullRequest({
+            labels: pullRequestLabels,
+            prNumber: pr.data.number
+        });
 
-    res.json({
-        pr: pr.data.html_url
-    });
+        res.json({
+            pr: pr.data.html_url
+        });
+    } catch (err) {
+        res.status(500).json({
+            error: err
+        });
+    }
 });
 module.exports = router;

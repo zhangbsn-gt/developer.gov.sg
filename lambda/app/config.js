@@ -7,14 +7,14 @@ function loadEnvVar(envVarName) {
 }
 
 module.exports = {
-    githubBaseRef: loadEnvVar("GITHUB_BASE_REF"),
     githubAppId: Number.parseInt(loadEnvVar("GITHUB_APP_ID")),
-    githubAppKey: loadEnvVar("GITHUB_APP_KEY").split("\\n").join("\n"), // To format newlines properly
     githubAppInstallationId: Number.parseInt(loadEnvVar("GITHUB_APP_INSTALLATION_ID")),
+    githubAppKey: loadEnvVar("GITHUB_APP_KEY").split("\\n").join("\n"), // To format newlines properly
+    githubBaseRef: loadEnvVar("GITHUB_BASE_REF"),
     githubRepoOwner: loadEnvVar("GITHUB_OWNER"),
-    githubRepoName: "developer.gov.sg",
-    otpServiceUrl: loadEnvVar("OTP_SERVICE_URL"),
     clientID: loadEnvVar("GITHUB_SSO_ID"),
     clientSecret: loadEnvVar("GITHUB_SSO_SECRET"),
-    tokenHash: loadEnvVar("GITHUB_SSO_TOKEN_HASH")
+    tokenHash: loadEnvVar("GITHUB_SSO_TOKEN_HASH"),
+    otpServiceUrl: loadEnvVar("OTP_SERVICE_URL"),
+    githubRepoName: "developer.gov.sg",
 };
