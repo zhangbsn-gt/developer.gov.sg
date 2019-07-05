@@ -23,7 +23,7 @@
                         <p>
                             <button
                                 type="submit"
-                                class="sgds-button is-primary is-rounded margin--top"
+                                class="sgds-button is-primary margin--top"
                                 @click.prevent="requestOtp"
                                 :disabled="!emailRegex.test(email)"
                             >Send OTP</button>
@@ -47,12 +47,12 @@
                         <p class="modal-footer-buttons">
                             <button
                                 type="button"
-                                class="sgds-button is-rounded margin--top"
+                                class="sgds-button margin--top"
                                 @click.prevent="stage = stages.verify"
                             >Back</button>
                             <button
                                 type="submit"
-                                class="sgds-button is-primary is-rounded margin--top"
+                                class="sgds-button is-primary margin--top"
                                 :disabled="!this.otp || this.otp.length !== 6"
                                 @click.prevent="submit"
                             >Submit Changes</button>

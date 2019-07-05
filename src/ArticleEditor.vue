@@ -27,7 +27,7 @@
                     <select class="ql-header">
                         <option value="5"></option>
                         <option value="6"></option>
-                        <option value="false"></option>
+                        <option></option>
                     </select>
                     <button class="ql-bold"></button>
                     <button class="ql-italic"></button>
@@ -37,8 +37,10 @@
                     <button class="ql-code-block"></button>
                     <button class="ql-list" value="ordered"></button>
                     <button class="ql-list" value="bullet"></button>
-                    <!--<button class="ql-clean"></button>-->
-                    <button class="ql-divider"><span class="sgds-icon sgds-icon-minus"></span></button>
+                    <!-- <button class="ql-clean"></button> -->
+                    <button class="ql-hr">
+                        <span class="sgds-icon sgds-icon-minus"></span>
+                    </button>
                 </div>
                 <div id="editor"></div>
             </div>
@@ -59,10 +61,12 @@ import Quill from "quill";
 import VerifyAndSubmit from "./VerifyAndSubmit.vue";
 
 let BlockEmbed = Quill.import("blots/block/embed");
-class DividerBlot extends BlockEmbed {}
-DividerBlot.blotName = "divider";
-DividerBlot.tagName = "hr";
-Quill.register(DividerBlot);
+class HrBlot extends BlockEmbed {}
+HrBlot.blotName = "hr";
+HrBlot.tagName = "hr";
+Quill.register({
+    "formats/hr": HrBlot
+});
 
 export default {
     components: { VerifyAndSubmit },
@@ -133,23 +137,20 @@ export default {
             theme: "snow",
             modules: {
                 toolbar: {
-                    container: "#toolbar"
+                    container: "#toolbar",
+                    handlers: {
+                        hr() {
+                            let range = this.quill.getSelection();
+                            if (range) {
+                                this.quill.insertEmbed(range.index, "hr", true);
+                                this.quill.setSelection(range.index + 1);
+                            }
+                        }
+                    }
                 },
                 clipboard: {
                     matchVisual: false // Stop quill from auto-adding <br> blocks before headers
                 }
-            }
-        });
-        this.quill.getModule("toolbar").addHandler("divider", value => {
-            let range = this.quill.getSelection();
-            if (range) {
-                this.quill.insertEmbed(
-                    range.index,
-                    "divider",
-                    true,
-                    Quill.sources.USER
-                );
-                this.quill.setSelection(range.index + 1, Quill.sources.SILENT);
             }
         });
         this.quill.clipboard.dangerouslyPasteHTML(this.page_content);

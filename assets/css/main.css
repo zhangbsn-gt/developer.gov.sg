@@ -17,13 +17,17 @@ hr {
     margin-top: 2rem !important;
 }
 
+img{
+    margin-bottom: 1rem;
+}
+
 /*Custom styling for Quill Editor*/
 
 .ql-editor {
     font-family: "Source Sans Pro", BlinkMacSystemFont, -apple-system, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
     font-size: 1rem !important;
     line-height: calc(1rem + .5rem) !important;
-    height: 30vh !important;
+    height: 60vh !important;
 }
 
 .ql-editor h5 {

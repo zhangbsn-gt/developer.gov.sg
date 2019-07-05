@@ -1,13 +1,3 @@
-const githubToken = loadEnvVar("GITHUB_TOKEN");
-
-const githubRepoOwner = loadEnvVar("GITHUB_OWNER");
-
-const githubBaseRef = loadEnvVar("GITHUB_BASE_REF"); // https://www.netlify.com/docs/continuous-deployment/#environment-variables
-
-const otpServiceUrl = loadEnvVar("OTP_SERVICE_URL");
-
-const githubSvcUser = Number.parseInt(loadEnvVar("GITHUB_SVC_USER"));
-
 function loadEnvVar(envVarName) {
     if (process.env[envVarName]) {
         return process.env[envVarName];
@@ -17,10 +7,14 @@ function loadEnvVar(envVarName) {
 }
 
 module.exports = {
-    githubToken,
-    githubBaseRef,
-    githubSvcUser,
-    githubRepoOwner,
+    githubAppId: Number.parseInt(loadEnvVar("GITHUB_APP_ID")),
+    githubAppInstallationId: Number.parseInt(loadEnvVar("GITHUB_APP_INSTALLATION_ID")),
+    githubAppKey: loadEnvVar("GITHUB_APP_KEY").split("\\n").join("\n"), // To format newlines properly
+    githubBaseRef: loadEnvVar("GITHUB_BASE_REF"),
+    githubRepoOwner: loadEnvVar("GITHUB_OWNER"),
+    clientID: loadEnvVar("GITHUB_SSO_ID"),
+    clientSecret: loadEnvVar("GITHUB_SSO_SECRET"),
+    tokenHash: loadEnvVar("GITHUB_SSO_TOKEN_HASH"),
+    otpServiceUrl: loadEnvVar("OTP_SERVICE_URL"),
     githubRepoName: "developer.gov.sg",
-    otpServiceUrl
 };
