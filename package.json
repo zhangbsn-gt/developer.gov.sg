@@ -4,11 +4,9 @@
     "description": "developer.gov.sg",
     "repository": {
         "type": "git",
-        "url": ""
+        "url": "https://github.com/govtechsg/developer.gov.sg.git"
     },
     "license": "ISC",
-    "author": "",
-    "main": "",
     "scripts": {
         "buildlambda": "netlify-lambda build lambda",
         "buildsite": "npm run buildstatic && jekyll build",
