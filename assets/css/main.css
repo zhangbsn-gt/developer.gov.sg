@@ -27,7 +27,6 @@ img{
     font-family: "Source Sans Pro", BlinkMacSystemFont, -apple-system, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
     font-size: 1rem !important;
     line-height: calc(1rem + .5rem) !important;
-    height: 60vh !important;
 }
 
 .ql-editor h5 {
@@ -72,17 +71,12 @@ img{
 }
 
 .original-content {
-    height: 30vh !important;
     border: 1px solid #ccc;
     overflow-y: auto;
     padding: 12px 15px;
 }
 
 /*Custom styling for Modal*/
-
-.v--modal-overlay{
-    overflow-y: hidden !important;
-}
 
 .modal-container {
     padding: 15px 30px;
