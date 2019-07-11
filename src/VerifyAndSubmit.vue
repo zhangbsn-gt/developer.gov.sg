@@ -18,7 +18,7 @@
                             v-model="email"
                             @blur="validateEmail"
                             required
-                        >
+                        />
                         <p class="help is-danger" v-if="errors.email">{{errors.email}}</p>
                         <p>
                             <button
@@ -42,7 +42,7 @@
                             :class="{'is-danger': errors.otp}"
                             v-model="otp"
                             required
-                        >
+                        />
                         <p class="help is-danger" v-if="errors.otp">{{errors.otp}}</p>
                         <p class="modal-footer-buttons">
                             <button
@@ -106,13 +106,13 @@ export default {
                 .post("/.netlify/functions/api/request-otp", {
                     email: this.email
                 })
-                .then(() => {
+                .then(response => {
                     new Noty({
                         type: "success",
-                        text: `An OTP has been sent to ${
-                            this.email
-                        }. Please enter it before submitting your edits.`
+                        text: `An OTP has been sent to ${this.email}. Please enter it before submitting your edits.`
                     }).show();
+                    let otpRequestId = response.data.id;
+                    localStorage.setItem("otpRequestId", otpRequestId);
                     this.stage = stages.submit;
                 })
                 .catch(error => {
@@ -127,9 +127,18 @@ export default {
                 this.errors.otp = "Please a valid 6-digit OTP.";
                 return;
             }
+            let otpRequestId = localStorage.getItem("otpRequestId");
+            if (!otpRequestId) {
+                new Noty({
+                    type: "error",
+                    text: `Could not send submission; have you requested for your OTP?`
+                }).show();
+                return;
+            }
             this.$emit("submit", {
                 email: this.email,
-                otp: this.otp
+                otp: this.otp,
+                otpRequestId
             });
         }
     }

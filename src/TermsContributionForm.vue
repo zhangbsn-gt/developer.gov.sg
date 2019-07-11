@@ -13,7 +13,7 @@
                     v-model="form.term"
                     required
                     @blur="validateInput('term')"
-                >
+                />
                 <p class="help is-danger" v-if="errors.term">{{errors.term}}</p>
             </div>
         </div>
@@ -31,7 +31,7 @@
                     v-model="form.full_term"
                     required
                     @blur="validateInput('full_term')"
-                >
+                />
                 <p class="help is-danger" v-if="errors.full_term">{{errors.full_term}}</p>
             </div>
         </div>
@@ -49,7 +49,7 @@
                     v-model="form.description"
                     required
                     @blur="validateInput('description')"
-                >
+                />
                 <p class="help is-danger" v-if="errors.description">{{errors.description}}</p>
             </div>
         </div>
@@ -67,7 +67,7 @@
                     v-model="form.tag"
                     ref="tagInput"
                     @blur="validateInput('tag')"
-                >
+                />
                 <p class="help is-danger" v-if="errors.tag">{{errors.tag}}</p>
                 <button
                     class="sgds-button margin--top--sm"
@@ -106,7 +106,7 @@
                     v-model="form.link"
                     ref="linkInput"
                     @blur="validateInput('link')"
-                >
+                />
                 <p class="help is-danger" v-if="errors.link">{{errors.link}}</p>
                 <button
                     class="sgds-button margin--top--sm"
@@ -132,7 +132,7 @@
             </div>
         </div>
 
-        <VerifyAndSubmit @validate="detectFormErrors" @submit="submit"/>
+        <VerifyAndSubmit @validate="detectFormErrors" @submit="submit" />
     </form>
 </template>
 
@@ -193,20 +193,21 @@ export default {
         };
     },
     methods: {
-        submit({ email, otp }) {
+        submit({ email, otp, otpRequestId }) {
             let hasErrors = this.detectFormErrors();
             if (hasErrors) {
                 return;
             }
             this.processingSubmission = true;
             let submission = {
-                email,
-                otp,
                 term: this.form.term,
                 full_term: this.form.full_term,
                 description: this.form.description,
                 links: this.form.links,
-                tags: this.form.tags
+                tags: this.form.tags,
+                email,
+                otp,
+                otpRequestId
             };
             if (this.type === "edit") {
                 submission = Object.assign({ id: this.termId }, submission);
@@ -226,9 +227,7 @@ export default {
                 .then(response => {
                     new Noty({
                         type: "success",
-                        text: `Submission successful! You can view its approval progress <a href='${
-                            response.data.pr
-                        }'>here.</a>`
+                        text: `Submission successful! You can view its approval progress <a href='${response.data.pr}'>here.</a>`
                     }).show();
                     this.$emit("close");
                 })

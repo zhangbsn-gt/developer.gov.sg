@@ -25,6 +25,10 @@
                 <!-- Mount Quill Here -->
                 <div id="toolbar">
                     <select class="ql-header">
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
                         <option value="5"></option>
                         <option value="6"></option>
                         <option></option>
@@ -49,7 +53,7 @@
         </div>
 
         <div class="modal-footer">
-            <VerifyAndSubmit @submit="submitChanges"/>
+            <VerifyAndSubmit @submit="submitChanges" />
         </div>
     </div>
 </template>
@@ -99,7 +103,7 @@ export default {
         };
     },
     methods: {
-        submitChanges({ email, otp }) {
+        submitChanges({ email, otp, otpRequestId }) {
             const updatedContent = document.querySelector(".ql-editor")
                 .innerHTML;
             axios
@@ -110,7 +114,8 @@ export default {
                     page_content: updatedContent,
                     page_layout: this.page_layout,
                     email,
-                    otp
+                    otp,
+                    otpRequestId
                 })
                 .then(response => {
                     let prLink = response.data.pr;
