@@ -24,12 +24,20 @@
     - title: Construction and Iteration
       url: /workflows/construction-iteration/
       lvl3:
-        - title: Use Design System
-          url: /workflows/construction-iteration/design-system/
         - title: Design for Accessibility
           url: /workflows/construction-iteration/design-accessibility/
-        - title: Create a Website
-          url: /workflows/construction-iteration/create-website/
+        - title: UI and Visual Design
+          url: /workflows/construction-iteration/ui-visual-design/
+        - title: Markup and Coding
+          url: /workflows/construction-iteration/markup-coding/
+        - title: Writing and Presenting Content
+          url: /workflows/construction-iteration/writing-presenting-content/
+        - title: Create a Static Website
+          url: /workflows/construction-iteration/create-static-website/
+        - title: Create a Dynamic Website
+          url: /workflows/construction-iteration/create-dynamic-website/
+        - title: Create a Transactional Website
+          url: /workflows/construction-iteration/create-transactional-website/
         - title: Create a Microservice
           url: /workflows/construction-iteration/create-microservice/
 
@@ -202,3 +210,6 @@
           url: /guidelines/strategy/ministry-family-digitalisation-plans/
         - title: Smart Nation
           url: /guidelines/strategy/smart-nation/
+
+- title: Events
+  url: /events/

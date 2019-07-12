@@ -112,6 +112,7 @@ router.post("/submit-article-changes", async (req, res) => {
         [
             "email",
             "otp",
+            "otpRequestId",
             "page_path",
             "page_title",
             "page_category",
@@ -131,9 +132,10 @@ router.post("/submit-article-changes", async (req, res) => {
 
     let email = submission.email;
     let otp = submission.otp;
+    let otpRequestId = submission.otpRequestId;
 
     try {
-        await lib.otp.verifyOtp(email, otp);
+        await lib.otp.verifyOtp(email, otp, otpRequestId);
     } catch (err) {
         res.status(403).json({
             error: `OTP validation failed. ${err.message}`
@@ -218,7 +220,7 @@ router.post("/submit-article-changes", async (req, res) => {
 router.post("/terms", async (req, res) => {
     let submission = req.body;
     let missingParams = lib.utils.getMissingParams(
-        ["email", "otp", "term", "full_term", "description"],
+        ["email", "otp", "otpRequestId", "term", "full_term", "description"],
         submission
     );
     if (missingParams.length > 0) {
@@ -232,8 +234,10 @@ router.post("/terms", async (req, res) => {
 
     const email = submission.email;
     const otp = submission.otp;
+    const otpRequestId = submission.otpRequestId;
+
     try {
-        await lib.otp.verifyOtp(email, otp);
+        await lib.otp.verifyOtp(email, otp, otpRequestId);
     } catch (err) {
         res.status(403).json({
             error: "OTP validation failed."
@@ -308,7 +312,7 @@ router.post("/terms", async (req, res) => {
 router.put("/terms", async (req, res) => {
     let submission = req.body;
     let missingParams = lib.utils.getMissingParams(
-        ["email", "otp", "id", "term", "full_term", "description"],
+        ["email", "otp", "otpRequestId", "id", "term", "full_term", "description"],
         submission
     );
     if (missingParams.length > 0) {
@@ -322,9 +326,10 @@ router.put("/terms", async (req, res) => {
 
     const email = submission.email;
     const otp = submission.otp;
+    const otpRequestId = submission.otpRequestId;
 
     try {
-        await lib.otp.verifyOtp(email, otp);
+        await lib.otp.verifyOtp(email, otp, otpRequestId);
     } catch (err) {
         res.status(403).json({
             error: "OTP validation failed."
