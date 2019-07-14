@@ -1,5 +1,4 @@
 const path = require("path");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const webpack = require("webpack");
 const { VueLoaderPlugin } = require("vue-loader");
 module.exports = {
@@ -7,7 +6,6 @@ module.exports = {
     entry: {
         "vue-article-editor-app": "./src/vue-article-editor-app.js",
         "vue-terms-app": "./src/vue-terms-app.js",
-        "sgds/sgds": "./src/importSgds.js", // output to sgds/sgds.bundle.js
         "vue-review-app": "./src/vue-review-app.js"
     },
     output: {
@@ -25,33 +23,11 @@ module.exports = {
                 }
             },
             {
-                test: /sgds\.css$/,
-                use: [
-                    {
-                        loader: MiniCssExtractPlugin.loader
-                    },
-                    "css-loader"
-                ]
-            },
-            {
-                test: /sgds-icons\.(svg|ttf|woff)$/,
-                use: [
-                    {
-                        loader: "file-loader",
-                        options: {
-                            name: "[name].[ext]",
-                            outputPath: "sgds/fonts",
-                            publicPath: "fonts"
-                        }
-                    }
-                ]
-            },
-            {
-                test: /(?<!sgds)\.css$/,
+                test: /\.css$/,
                 use: ["style-loader", "css-loader"]
             },
             {
-                test: /(?<!sgds-icons)\.(png|jpe?g|gif|svg|eot|ttf|woff|woff2)$/,
+                test: /\.(png|jpe?g|gif|svg|eot|ttf|woff|woff2)$/,
                 loader: "url-loader",
                 options: {
                     limit: 8192
@@ -65,13 +41,6 @@ module.exports = {
     },
     plugins: [
         new VueLoaderPlugin(),
-        new MiniCssExtractPlugin({
-            filename: "[name].css"
-        }),
-        new webpack.ProvidePlugin({
-            $: "jquery",
-            jQuery: "jquery"
-        }),
         new webpack.DefinePlugin({
             "process.env.NODE_ENV": JSON.stringify(process.env.NODE_ENV)
         })

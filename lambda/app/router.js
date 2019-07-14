@@ -5,6 +5,7 @@ const yaml = require("js-yaml");
 const Octokit = require("@octokit/rest");
 const axios = require("axios");
 const Cryptr = require("cryptr");
+const rp = require('request-promise');
 const { oauthLoginUrl } = require("@octokit/oauth-login-url");
 const uuidv4 = require("uuid/v4");
 const utils = require("../lib/utils");
@@ -54,7 +55,7 @@ router.get("/oauth/github/callback", (req, res) => {
             const accessToken = cryptr.encrypt(response.data.access_token);
             // during local test
             if (req.hostname === "localhost") {
-                res.cookie("_devpo", accessToken, { httpOnly: true });
+                res.cookie("_devpo", accessToken, { httpOnly: false });
                 res.redirect(`http://localhost:8888/review`);
             } else {
                 res.cookie("_devpo", accessToken, { secure: true });
@@ -72,16 +73,13 @@ router.get("/reviews", async (req, res) => {
     });
 
     try {
-        const result = await octokit.pulls.list({
+        const user = await octokit.users.getAuthenticated();
+        const username = user.data.login;
+        const pulls = await octokit.pulls.list({
             owner: githubRepoOwner,
             repo: githubRepoName
         });
-        try {
-            const pullRequests = lib.utils.getUsersPullRequests('ronaldxkan', result.data);
-            console.log(pullRequests);
-        } catch (error) {
-            console.log(error);
-        }
+        const pullRequests = lib.utils.getUsersPullRequests(username, pulls.data);
         res.json(pullRequests);
     } catch (err) {
         // delete cookie and force user to resign in if token fails to make an api call
@@ -90,6 +88,13 @@ router.get("/reviews", async (req, res) => {
             error: err.message || "Error fetching pull requests."
         });
     }
+});
+
+router.get("/reviews-diff", async(req, res) => {
+    rp("https://github.com/GovTechSG/developer.gov.sg/pull/71.diff").then(response => {
+        console.log(response);
+        res.json(response);
+    });
 });
 
 router.post("/request-otp", async (req, res) => {
@@ -118,6 +123,7 @@ router.post("/submit-article-changes", async (req, res) => {
         [
             "email",
             "otp",
+            "otpRequestId",
             "page_path",
             "page_title",
             "page_category",
@@ -137,9 +143,10 @@ router.post("/submit-article-changes", async (req, res) => {
 
     let email = submission.email;
     let otp = submission.otp;
+    let otpRequestId = submission.otpRequestId;
 
     try {
-        await lib.otp.verifyOtp(email, otp);
+        await lib.otp.verifyOtp(email, otp, otpRequestId);
     } catch (err) {
         res.status(403).json({
             error: `OTP validation failed. ${err.message}`
@@ -224,7 +231,7 @@ router.post("/submit-article-changes", async (req, res) => {
 router.post("/terms", async (req, res) => {
     let submission = req.body;
     let missingParams = lib.utils.getMissingParams(
-        ["email", "otp", "term", "full_term", "description"],
+        ["email", "otp", "otpRequestId", "term", "full_term", "description"],
         submission
     );
     if (missingParams.length > 0) {
@@ -238,8 +245,10 @@ router.post("/terms", async (req, res) => {
 
     const email = submission.email;
     const otp = submission.otp;
+    const otpRequestId = submission.otpRequestId;
+
     try {
-        await lib.otp.verifyOtp(email, otp);
+        await lib.otp.verifyOtp(email, otp, otpRequestId);
     } catch (err) {
         res.status(403).json({
             error: "OTP validation failed."
@@ -314,7 +323,7 @@ router.post("/terms", async (req, res) => {
 router.put("/terms", async (req, res) => {
     let submission = req.body;
     let missingParams = lib.utils.getMissingParams(
-        ["email", "otp", "id", "term", "full_term", "description"],
+        ["email", "otp", "otpRequestId", "id", "term", "full_term", "description"],
         submission
     );
     if (missingParams.length > 0) {
@@ -328,9 +337,10 @@ router.put("/terms", async (req, res) => {
 
     const email = submission.email;
     const otp = submission.otp;
+    const otpRequestId = submission.otpRequestId;
 
     try {
-        await lib.otp.verifyOtp(email, otp);
+        await lib.otp.verifyOtp(email, otp, otpRequestId);
     } catch (err) {
         res.status(403).json({
             error: "OTP validation failed."

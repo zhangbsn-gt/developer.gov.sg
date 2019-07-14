@@ -1,27 +1,5 @@
 <template>
     <div id="terms">
-        <div class="row has-text-centered">
-            <div class="col">
-                <label for="search-input">
-                    <h5>Singapore Government Technology Acronyms</h5>
-                </label>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col suggest-new-container">
-                <a class="sgds-button is-primary" v-on:click="showContributionForm = !showContributionForm">
-                    Suggest a new acronym
-                    <i
-                        class="sgds-icon sgds-icon-chevron-down"
-                        v-if="!showContributionForm"
-                    ></i>
-                    <i class="sgds-icon sgds-icon-chevron-up" v-else></i>
-                </a>
-                <div class="has-background-light padding" v-if="showContributionForm">
-                    <ContributionForm type="add" @close="showContributionForm = false"/>
-                </div>
-            </div>
-        </div>
         <div class="row">
             <div class="col">
                 <div class="control has-icons-left">
@@ -31,13 +9,32 @@
                         class="input"
                         placeholder="Search Acronym"
                         v-model="search"
-                    >
+                    />
                     <span class="icon">
                         <i class="sgds-icon sgds-icon-search is-size-6 search-bar"></i>
                     </span>
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col suggest-new-container">
+                <a
+                    class="sgds-button is-primary"
+                    v-on:click="showContributionForm = !showContributionForm"
+                >
+                    Suggest a new acronym
+                    <i
+                        class="sgds-icon sgds-icon-chevron-down"
+                        v-if="!showContributionForm"
+                    ></i>
+                    <i class="sgds-icon sgds-icon-chevron-up" v-else></i>
+                </a>
+                <div class="has-background-light padding" v-if="showContributionForm">
+                    <ContributionForm type="add" @close="showContributionForm = false" />
+                </div>
+            </div>
+        </div>
+
         <div
             v-for="term of filteredTerms"
             v-cloak
