@@ -76,7 +76,13 @@ router.get("/reviews", async (req, res) => {
             owner: githubRepoOwner,
             repo: githubRepoName
         });
-        res.json(result.data);
+        try {
+            const pullRequests = lib.utils.getUsersPullRequests('ronaldxkan', result.data);
+            console.log(pullRequests);
+        } catch (error) {
+            console.log(error);
+        }
+        res.json(pullRequests);
     } catch (err) {
         // delete cookie and force user to resign in if token fails to make an api call
         res.clearCookie("_devpo");

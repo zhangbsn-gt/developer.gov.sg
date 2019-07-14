@@ -1,11 +1,14 @@
 const crypto = require("crypto");
 const slugify = require("slugify");
+const request = require('request');
+const _ = require('lodash');
 module.exports = {
     generateId,
     getMissingParams,
     sortTerms,
     firstArrayContainsSecondArray,
     toLowerCaseSlug,
+    getUsersPullRequests,
     emailRegex:
         process.env.NODE_ENV === "production"
             ? /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[\w\.]*gov\.sg$/
@@ -14,7 +17,7 @@ module.exports = {
 
 async function generateId(bytes = 4, encoding = "hex") {
     return new Promise((resolve, reject) => {
-        crypto.randomBytes(bytes, function(err, buffer) {
+        crypto.randomBytes(bytes, function (err, buffer) {
             if (err) {
                 reject(err);
             }
@@ -53,5 +56,18 @@ function toLowerCaseSlug(thing) {
     return slugify(thing, {
         lower: true,
         remove: /[*+~.()'"!:@]/g
+    });
+}
+
+function getUsersPullRequests(username, pullRequests) {
+    let userPullRequests = [];
+    _.forEach(pullRequests, (pullRequest) => {
+        let assignees = pullRequest.assignees;
+        _.forEach(assignees, (value) => {
+            if (value.login === username) {
+                userPullRequests.push(pullRequest);
+            }
+        });
+        return userPullRequests;
     });
 }
