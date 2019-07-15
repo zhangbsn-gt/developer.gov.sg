@@ -17,7 +17,8 @@ const {
     githubRepoName,
     clientID,
     clientSecret,
-    tokenHash
+    tokenHash,
+    netlifyUrl
 } = require("./config");
 const lib = require("../lib");
 
@@ -61,7 +62,7 @@ router.get("/oauth/github/callback", (req, res) => {
                 res.redirect(`http://localhost:8888/review`);
             } else {
                 res.cookie("_devpo", accessToken, { secure: true });
-                res.redirect(`${req.protocol}://${req.hostname}.com/review`);
+                res.redirect(`${netlifyUrl}/review`);
             }
         })
         .catch(err => {
@@ -69,7 +70,7 @@ router.get("/oauth/github/callback", (req, res) => {
             if (req.hostname === "localhost") {
                 res.redirect(`http://localhost:8888/review`);
             } else {
-                res.redirect(`${req.protocol}://${req.hostname}.com/review`);
+                res.redirect(`${netlifyUrl}/review`);
             }
         });
 });
