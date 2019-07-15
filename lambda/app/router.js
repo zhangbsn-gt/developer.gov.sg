@@ -75,11 +75,6 @@ router.get("/oauth/github/callback", (req, res) => {
         });
 });
 
-router.get("/oauth/signout", (req, res) => {
-    res.clearCookie("_devpo");
-    res.json("success");
-});
-
 router.get("/review", async (req, res) => {
     try {
         const octokit = new Octokit({
@@ -91,7 +86,6 @@ router.get("/review", async (req, res) => {
 
         // Ensure logged in user is one of our product owners
         if (owners.fetchProductOwners().indexOf(username) === -1) {
-            res.clearCookie("_devpo");
             res.status(500).json({
                 error: "Please make sure you are authorised to review changes."
             });
@@ -104,7 +98,6 @@ router.get("/review", async (req, res) => {
         const pullRequests = utils.getUsersPullRequests(username, pulls.data);
         res.json(pullRequests);
     } catch (err) {
-        res.clearCookie("_devpo");
         res.status(500).json(err);
     }
 });

@@ -119,6 +119,7 @@ export default {
                     .catch(err => {
                         // Authenticated user is not suppose to be reviewing contents or token is invalid
                         // Forcing a relogin to grab a new token
+                        $cookies.remove("_devpo")
                         new Noty({
                             type: "error",
                             text:
@@ -216,15 +217,12 @@ export default {
                 });
         },
         performSignOut: function() {
-            axios
-                .get("/.netlify/functions/api/oauth/signout")
-                .then(response => {
-                    new Noty({
-                        type: "success",
-                        text: "Successfully signed out"
-                    }).show();
-                    this.refreshPageState();
-                });
+            $cookies.remove("_devpo");
+            new Noty({
+                type: "success",
+                text: "Successfully signed out"
+            }).show();
+            this.refreshPageState();
         }
     },
     beforeMount() {
