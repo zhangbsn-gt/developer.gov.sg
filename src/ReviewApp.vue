@@ -4,12 +4,15 @@
         <div class="row has-text-centered" v-if="!isLoading">
             <div class="col">
                 <h5>{{ title }}</h5>
-                <hr></hr>
+                <hr />
             </div>
         </div>
         <div class="row" v-if="isAuthenticated && !isViewing">
             <div class="col is-12 is-paddingless has-text-right">
-                <a class="sgds-button is-rounded margin--top has-text-right" @click.prevent="performSignOut">Sign Out</a>
+                <a
+                    class="sgds-button is-rounded margin--top has-text-right"
+                    @click.prevent="performSignOut"
+                >Sign Out</a>
             </div>
         </div>
         <div class="row" style="min-height: 50vh" v-if="isAuthenticated">
@@ -17,16 +20,25 @@
                 <div v-html="prettyHtml" />
                 <div class="row">
                     <div class="col is-3 is-paddingless">
-                        <a class="sgds-button is-rounded margin--top" @click.prevent="mergePullRequest">Accept</a>
-                        <a class="sgds-button is-rounded margin--top" @click.prevent="rejectPullRequest">Reject</a>
+                        <a
+                            class="sgds-button is-rounded margin--top"
+                            @click.prevent="mergePullRequest"
+                        >Accept</a>
+                        <a
+                            class="sgds-button is-rounded margin--top"
+                            @click.prevent="rejectPullRequest"
+                        >Reject</a>
                     </div>
                     <div class="col is-9 has-text-right is-paddingless">
-                        <a class="sgds-button is-rounded margin--top has-text-right" @click.prevent="refreshPageState">Back</a>
+                        <a
+                            class="sgds-button is-rounded margin--top has-text-right"
+                            @click.prevent="refreshPageState"
+                        >Back</a>
                     </div>
                 </div>
             </div>
             <div class="col" v-else>
-                <div v-for="pr of pullRequests" v-cloak class="sgds-card margin--bottom--sm">
+                <div v-for="pr of pullRequests" v-cloak class="sgds-card margin--bottom--sm" :key="pr.id">
                     <div class="sgds-card-content">
                         <div class="row">
                             <div class="col is-3 is-paddingless">
@@ -39,7 +51,9 @@
                         </div>
                         <div class="row">
                             <div class="col has-text-right is-paddingless">
-                                <a @click.prevent="viewPullRequest(pr.product, pr.number, pr.diff_url)">View</a>
+                                <a
+                                    @click.prevent="viewPullRequest(pr.product, pr.number, pr.diff_url)"
+                                >View</a>
                             </div>
                         </div>
                     </div>
@@ -59,7 +73,10 @@
         </div>
         <div class="row" style="min-height: 50vh" v-else>
             <div class="col">
-                <a class="sgds-button is-rounded is-fullwidth" href="/.netlify/functions/api/oauth">Login with Github</a>
+                <a
+                    class="sgds-button is-rounded is-fullwidth"
+                    href="/.netlify/functions/api/oauth"
+                >Login with Github</a>
             </div>
         </div>
     </div>
@@ -68,12 +85,10 @@
 <script>
 import Noty from "noty";
 import axios from "axios";
-import Loading from 'vue-loading-overlay';
-import 'vue-loading-overlay/dist/vue-loading.css';
+import Loading from "vue-loading-overlay";
+import "vue-loading-overlay/dist/vue-loading.css";
 import { Diff2Html } from "diff2html";
 import "diff2html/dist/diff2html.min.css";
-
-
 
 export default {
     data() {
@@ -93,9 +108,11 @@ export default {
     },
     methods: {
         checkPageStatus: function() {
-            if ($cookies.isKey('_devpo')) {
+            if ($cookies.isKey("_devpo")) {
                 this.isAuthenticated = true;
-                axios.get("/.netlify/functions/api/review").then(response => {
+                axios
+                    .get("/.netlify/functions/api/review")
+                    .then(response => {
                         this.pullRequests = response.data;
                         this.isLoading = false;
                     })
@@ -104,7 +121,8 @@ export default {
                         // Forcing a relogin to grab a new token
                         new Noty({
                             type: "error",
-                            text: "Error fetching product contents. Please login and try again."
+                            text:
+                                "Error fetching product contents. Please login and try again."
                         }).show();
                         this.refreshPageState();
                     });
@@ -117,20 +135,24 @@ export default {
             this.isViewing = true;
             this.currentPullNumber = number;
             this.title = `Review changes for ${product}`;
-            axios.get("/.netlify/functions/api/review-diff", {
-                params: {
-                    diff_url: diff_url
-                }
-            }).then(response => {
-                this.diffs = response.data;
-                this.isLoading = false;
-            }).catch(err => {
-                new Noty({
-                    type: "error",
-                    text: "Error fetching product contents changes. Please try again."
-                }).show();
-                this.refreshPageState();
-            });
+            axios
+                .get("/.netlify/functions/api/review-diff", {
+                    params: {
+                        diff_url: diff_url
+                    }
+                })
+                .then(response => {
+                    this.diffs = response.data;
+                    this.isLoading = false;
+                })
+                .catch(err => {
+                    new Noty({
+                        type: "error",
+                        text:
+                            "Error fetching product contents changes. Please try again."
+                    }).show();
+                    this.refreshPageState();
+                });
         },
         refreshPageState: function() {
             // reset state to perform refresh
@@ -145,56 +167,68 @@ export default {
         },
         mergePullRequest: function() {
             this.isLoading = true;
-            axios.get("/.netlify/functions/api/review-merge", {
-                params: {
-                    number: this.currentPullNumber
-                }
-            }).then(response => {
-                new Noty({
-                    type: "success",
-                    text: "Content has been merged successfully."
-                }).show();
-            }).catch(err => {
-                new Noty({
-                    type: "error",
-                    text: "Error accepting content changes. Please try again."
-                }).show();
-            }).finally(() => {
-                this.refreshPageState();
-            });
+            axios
+                .get("/.netlify/functions/api/review-merge", {
+                    params: {
+                        number: this.currentPullNumber
+                    }
+                })
+                .then(response => {
+                    new Noty({
+                        type: "success",
+                        text: "Content has been merged successfully."
+                    }).show();
+                })
+                .catch(err => {
+                    new Noty({
+                        type: "error",
+                        text:
+                            "Error accepting content changes. Please try again."
+                    }).show();
+                })
+                .finally(() => {
+                    this.refreshPageState();
+                });
         },
         rejectPullRequest: function() {
             this.isLoading = true;
-            axios.get("/.netlify/functions/api/review-reject", {
-                params: {
-                    number: this.currentPullNumber
-                }
-            }).then(response => {
-                new Noty({
-                    type: "success",
-                    text: "Content has been rejected successfully."
-                }).show();
-            }).catch(err => {
-                new Noty({
-                    type: "error",
-                    text: "Error rejecting content changes. Please try again."
-                }).show();
-            }).finally(() => {
-                this.refreshPageState();
-            });
+            axios
+                .get("/.netlify/functions/api/review-reject", {
+                    params: {
+                        number: this.currentPullNumber
+                    }
+                })
+                .then(response => {
+                    new Noty({
+                        type: "success",
+                        text: "Content has been rejected successfully."
+                    }).show();
+                })
+                .catch(err => {
+                    new Noty({
+                        type: "error",
+                        text:
+                            "Error rejecting content changes. Please try again."
+                    }).show();
+                })
+                .finally(() => {
+                    this.refreshPageState();
+                });
         },
         performSignOut: function() {
-            axios.get("/.netlify/functions/api/oauth/signout").then(response => {
-                new Noty({
-                    type: "success",
-                    text: 'Successfully signed out'
-                }).show();
-                this.refreshPageState();
-            });
+            axios
+                .get("/.netlify/functions/api/oauth/signout")
+                .then(response => {
+                    new Noty({
+                        type: "success",
+                        text: "Successfully signed out"
+                    }).show();
+                    this.refreshPageState();
+                });
         }
     },
     beforeMount() {
-        this.checkPageStatus()
+        this.checkPageStatus();
     },
     computed: {
         prettyHtml() {

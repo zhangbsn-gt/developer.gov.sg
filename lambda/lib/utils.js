@@ -1,6 +1,6 @@
 const crypto = require("crypto");
 const slugify = require("slugify");
-const _ = require('lodash');
+const _ = require("lodash");
 module.exports = {
     generateId,
     getMissingParams,
@@ -16,7 +16,7 @@ module.exports = {
 
 async function generateId(bytes = 4, encoding = "hex") {
     return new Promise((resolve, reject) => {
-        crypto.randomBytes(bytes, function (err, buffer) {
+        crypto.randomBytes(bytes, function(err, buffer) {
             if (err) {
                 reject(err);
             }
@@ -60,17 +60,17 @@ function toLowerCaseSlug(thing) {
 
 function getUsersPullRequests(username, pullRequests) {
     let userPullRequests = [];
-    _.forEach(pullRequests, (pullRequest) => {
+    _.forEach(pullRequests, pullRequest => {
         let assignees = pullRequest.assignees;
-        _.forEach(assignees, (value) => {
+        _.forEach(assignees, value => {
             if (value.login === username) {
                 let product = "";
-                _.forEach(pullRequest.labels, (label) => {
-                    if (label['name'] !== "products") {
-                        product = label['name'];
+                _.forEach(pullRequest.labels, label => {
+                    if (label["name"] !== "products") {
+                        product = label["name"];
                     }
                 });
-                pullRequest['product'] = product;
+                pullRequest["product"] = product;
                 userPullRequests.push(pullRequest);
             }
         });

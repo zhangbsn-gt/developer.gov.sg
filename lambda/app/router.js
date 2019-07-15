@@ -4,12 +4,12 @@ const beautifyHtml = require("js-beautify").html;
 const yaml = require("js-yaml");
 const Octokit = require("@octokit/rest");
 const axios = require("axios");
-const Cryptr = require("cryptr");
 const { oauthLoginUrl } = require("@octokit/oauth-login-url");
 const uuidv4 = require("uuid/v4");
-const owners = require('../lib/owners');
+const owners = require("../lib/owners");
 const utils = require("../lib/utils");
 const github = require("../lib/github");
+const Cryptography = require("../lib/cryptography");
 const packageInfo = require("../../package.json");
 const {
     githubBaseRef,
@@ -21,7 +21,7 @@ const {
 } = require("./config");
 const lib = require("../lib");
 
-const cryptr = new Cryptr(tokenHash);
+let cryptography = new Cryptography(tokenHash);
 
 const octokit = github.octokit;
 
@@ -52,7 +52,9 @@ router.get("/oauth/github/callback", (req, res) => {
         }
     })
         .then(response => {
-            const accessToken = cryptr.encrypt(response.data.access_token);
+            const accessToken = cryptography.encrypt(
+                response.data.access_token
+            );
             // during local test
             if (req.hostname === "localhost") {
                 res.cookie("_devpo", accessToken, { httpOnly: false });
@@ -64,7 +66,11 @@ router.get("/oauth/github/callback", (req, res) => {
         })
         .catch(err => {
             // redirect to review page for relogin
-            res.redirect(`http://localhost:8888/review`);
+            if (req.hostname === "localhost") {
+                res.redirect(`http://localhost:8888/review`);
+            } else {
+                res.redirect(`${req.protocol}://${req.hostname}.com/review`);
+            }
         });
 });
 
@@ -76,7 +82,7 @@ router.get("/oauth/signout", (req, res) => {
 router.get("/review", async (req, res) => {
     try {
         const octokit = new Octokit({
-            auth: cryptr.decrypt(req.cookies._devpo)
+            auth: cryptography.decrypt(req.cookies._devpo)
         });
 
         const user = await octokit.users.getAuthenticated();
@@ -85,7 +91,9 @@ router.get("/review", async (req, res) => {
         // Ensure logged in user is one of our product owners
         if (owners.fetchProductOwners().indexOf(username) === -1) {
             res.clearCookie("_devpo");
-            res.status(500).json(err);
+            res.status(500).json({
+                error: "Please make sure you are authorised to review changes."
+            });
         }
 
         const pulls = await octokit.pulls.list({
@@ -110,16 +118,16 @@ router.get("/review-diff", async (req, res) => {
     }
 });
 
-router.get('/review-merge', async (req, res) => {
+router.get("/review-merge", async (req, res) => {
     try {
         const octokit = new Octokit({
-            auth: cryptr.decrypt(req.cookies._devpo)
+            auth: cryptography.decrypt(req.cookies._devpo)
         });
 
         const result = await octokit.pulls.merge({
             owner: githubRepoOwner,
             repo: githubRepoName,
-            pull_number: req.query.number,
+            pull_number: req.query.number
         });
         res.json(result);
     } catch (err) {
@@ -127,17 +135,17 @@ router.get('/review-merge', async (req, res) => {
     }
 });
 
-router.get('/review-reject', async (req, res) => {
+router.get("/review-reject", async (req, res) => {
     try {
         const octokit = new Octokit({
-            auth: cryptr.decrypt(req.cookies._devpo)
+            auth: cryptography.decrypt(req.cookies._devpo)
         });
-        
+
         const result = await octokit.pulls.update({
             owner: githubRepoOwner,
             repo: githubRepoName,
             pull_number: req.query.number,
-            state: 'closed'
+            state: "closed"
         });
         res.json(result);
     } catch (err) {
@@ -219,7 +227,7 @@ router.post("/submit-article-changes", async (req, res) => {
             res.status(400).json({
                 error: `Can't make submission; pending changes at ${
                     conflictingPr.url
-                    }`
+                }`
             });
             return;
         }
@@ -260,7 +268,7 @@ router.post("/submit-article-changes", async (req, res) => {
 
         let issueAssignees = [];
         if (owners.fetchProductDetails().hasOwnProperty(pageTitle)) {
-            issueAssignee = owners.fetchProductDetails()[pageTitle];
+            issueAssignees = owners.fetchProductDetails()[pageTitle];
         }
 
         await lib.github.addLabelsToPullRequest({
@@ -360,8 +368,7 @@ router.post("/terms", async (req, res) => {
 
         await lib.github.addLabelsToPullRequest({
             labels: pullRequestLabels,
-            prNumber: pr.data.number,
-            assignees: []
+            prNumber: pr.data.number
         });
 
         res.json({
@@ -377,7 +384,15 @@ router.post("/terms", async (req, res) => {
 router.put("/terms", async (req, res) => {
     let submission = req.body;
     let missingParams = lib.utils.getMissingParams(
-        ["email", "otp", "otpRequestId", "id", "term", "full_term", "description"],
+        [
+            "email",
+            "otp",
+            "otpRequestId",
+            "id",
+            "term",
+            "full_term",
+            "description"
+        ],
         submission
     );
     if (missingParams.length > 0) {
