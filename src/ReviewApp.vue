@@ -3,11 +3,29 @@
         <loading :active.sync="isLoading" :is-full-page="fullPage"></loading>
         <div class="row has-text-centered" v-if="!isLoading">
             <div class="col">
-                <label for="search-input"><h5>Review Product Contents</h5></label>
+                <h5>{{ title }}</h5>
+                <hr></hr>
+            </div>
+        </div>
+        <div class="row" v-if="isAuthenticated && !isViewing">
+            <div class="col is-12 is-paddingless has-text-right">
+                <a class="sgds-button is-rounded margin--top has-text-right" @click.prevent="performSignOut">Sign Out</a>
             </div>
         </div>
         <div class="row" style="min-height: 50vh" v-if="isAuthenticated">
-            <div class="col">
+            <div class="col" v-if="isViewing">
+                <div v-html="prettyHtml" />
+                <div class="row">
+                    <div class="col is-3 is-paddingless">
+                        <a class="sgds-button is-rounded margin--top" @click.prevent="mergePullRequest">Accept</a>
+                        <a class="sgds-button is-rounded margin--top" @click.prevent="rejectPullRequest">Reject</a>
+                    </div>
+                    <div class="col is-9 has-text-right is-paddingless">
+                        <a class="sgds-button is-rounded margin--top has-text-right" @click.prevent="refreshPageState">Back</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col" v-else>
                 <div v-for="pr of pullRequests" v-cloak class="sgds-card margin--bottom--sm">
                     <div class="sgds-card-content">
                         <div class="row">
@@ -21,15 +39,19 @@
                         </div>
                         <div class="row">
                             <div class="col has-text-right is-paddingless">
-                                <a href @click.prevent="viewPullRequest(pr.number, pr.diff_url)">View</a>
+                                <a @click.prevent="viewPullRequest(pr.product, pr.number, pr.diff_url)">View</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="sgds-card-content" v-if="pullRequests">
-                    <div class="row">
-                        <div class="col is-12 is-paddingless has-text-centered">
-                            <h6 class="margin--top is-uppercase">You have no pull requests :)</h6>
+                <div v-if="pullRequests.length === 0">
+                    <div class="sgds-card margin--bottom--sm">
+                        <div class="sgds-card-content">
+                            <div class="row">
+                                <div class="col is-12 is-paddingless has-text-centered">
+                                    <p class="has-text-weight-bold">You have no content changes.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -44,9 +66,13 @@
 </template>
 
 <script>
+import Noty from "noty";
 import axios from "axios";
 import Loading from 'vue-loading-overlay';
 import 'vue-loading-overlay/dist/vue-loading.css';
+import { Diff2Html } from "diff2html";
+import "diff2html/dist/diff2html.min.css";
+
 
 
 export default {
@@ -55,7 +81,11 @@ export default {
             isLoading: true,
             fullPage: false,
             isAuthenticated: false,
-            pullRequests: []
+            pullRequests: [],
+            diffs: "",
+            isViewing: false,
+            currentPullNumber: null,
+            title: "Product Contents Changes"
         };
     },
     components: {
@@ -65,25 +95,129 @@ export default {
         checkPageStatus: function() {
             if ($cookies.isKey('_devpo')) {
                 this.isAuthenticated = true;
-                axios.get("/.netlify/functions/api/reviews").then(response => {
-                    console.log(response.data);
-                    this.pullRequests = response.data;
-                    this.isLoading = false;
-                });
+                axios.get("/.netlify/functions/api/review").then(response => {
+                        this.pullRequests = response.data;
+                        this.isLoading = false;
+                    })
+                    .catch(err => {
+                        // Authenticated user is not suppose to be reviewing contents or token is invalid
+                        // Forcing a relogin to grab a new token
+                        new Noty({
+                            type: "error",
+                            text: "Error fetching product contents. Please login and try again."
+                        }).show();
+                        this.refreshPageState();
+                    });
             } else {
                 this.isLoading = false;
             }
         },
-        viewPullRequest(number, diff_url) {
-            axios.get("/.netlify/functions/api/reviews-diff").then(response => {
-                console.log(response);
+        viewPullRequest(product, number, diff_url) {
+            this.isLoading = true;
+            this.isViewing = true;
+            this.currentPullNumber = number;
+            this.title = `Review changes for ${product}`;
+            axios.get("/.netlify/functions/api/review-diff", {
+                params: {
+                    diff_url: diff_url
+                }
+            }).then(response => {
+                this.diffs = response.data;
+                this.isLoading = false;
+            }).catch(err => {
+                new Noty({
+                    type: "error",
+                    text: "Error fetching product contents changes. Please try again."
+                }).show();
+                this.refreshPageState();
             });
-            // console.log(number);
-            // console.log(diff_url);
         },
+        refreshPageState: function() {
+            // reset state to perform refresh
+            this.isViewing = false;
+            this.currentPullNumber = null;
+            this.isLoading = true;
+            this.isAuthenticated = false;
+            this.pullRequests = [];
+            this.title = "Product Contents Changes";
+            this.diffs = "";
+            this.checkPageStatus();
+        },
+        mergePullRequest: function() {
+            axios.get("/.netlify/functions/api/review-merge", {
+                params: {
+                    number: this.currentPullNumber
+                }
+            }).then(response => {
+                this.refreshPageState();
+            }).catch(err => {
+                new Noty({
+                    type: "error",
+                    text: "Error accepting content changes. Please try again."
+                }).show();
+                this.refreshPageState();
+            });
+        },
+        rejectPullRequest: function() {
+            axios.get("/.netlify/functions/api/review-reject", {
+                params: {
+                    number: this.currentPullNumber
+                }
+            }).then(response => {
+                this.refreshPageState();
+            }).catch(err => {
+                new Noty({
+                    type: "error",
+                    text: "Error rejecting content changes. Please try again."
+                }).show();
+                this.refreshPageState();
+            });
+        },
+        performSignOut: function() {
+            axios.get("/.netlify/functions/api/oauth/signout").then(response => {
+                new Noty({
+                    type: "success",
+                    text: 'Successfully signed out'
+                }).show();
+                this.refreshPageState();
+            });
+        }
     },
     beforeMount() {
         this.checkPageStatus()
     },
+    computed: {
+        prettyHtml() {
+            return Diff2Html.getPrettyHtml(this.diffs, {
+                inputFormat: "diff",
+                showFiles: false,
+                matching: "lines",
+                outputFormat: "side-by-side"
+            });
+        }
+    }
 };
 </script>
+
+<!-- Custom style for the code diff viewer -->
+<style>
+.content table td,
+.content table th {
+    border: none;
+    border-width: none;
+    padding: 0px;
+    vertical-align: none;
+}
+
+.d2h-file-header {
+    display: none;
+}
+
+.vld-overlay .vld-background {
+    opacity: 1 !important;
+}
+
+.vld-overlay:focus {
+    outline: none;
+}
+</style>

@@ -8,6 +8,7 @@ const Cryptr = require("cryptr");
 const rp = require('request-promise');
 const { oauthLoginUrl } = require("@octokit/oauth-login-url");
 const uuidv4 = require("uuid/v4");
+const owners = require('../lib/owners');
 const utils = require("../lib/utils");
 const github = require("../lib/github");
 const packageInfo = require("../../package.json");
@@ -63,38 +64,86 @@ router.get("/oauth/github/callback", (req, res) => {
             }
         })
         .catch(err => {
-            // TODO something went wrong
+            // redirect to review page for relogin
+            res.redirect(`http://localhost:8888/review`);
         });
 });
 
-router.get("/reviews", async (req, res) => {
-    const octokit = new Octokit({
-        auth: cryptr.decrypt(req.cookies._devpo)
-    });
+router.get("/oauth/signout", (req, res) => {
+    res.clearCookie("_devpo");
+    res.json("success");
+});
 
+router.get("/review", async (req, res) => {
     try {
+        const octokit = new Octokit({
+            auth: cryptr.decrypt(req.cookies._devpo)
+        });
+
         const user = await octokit.users.getAuthenticated();
         const username = user.data.login;
+
+        // Ensure logged in user is one of our product owners
+        if (owners.fetchProductOwners().indexOf(username) === -1) {
+            res.clearCookie("_devpo");
+            res.status(500).json(err);
+        }
+
         const pulls = await octokit.pulls.list({
             owner: githubRepoOwner,
             repo: githubRepoName
         });
-        const pullRequests = lib.utils.getUsersPullRequests(username, pulls.data);
+        const pullRequests = utils.getUsersPullRequests(username, pulls.data);
         res.json(pullRequests);
     } catch (err) {
-        // delete cookie and force user to resign in if token fails to make an api call
         res.clearCookie("_devpo");
-        res.status(500).json({
-            error: err.message || "Error fetching pull requests."
-        });
+        res.status(500).json(err);
     }
 });
 
-router.get("/reviews-diff", async(req, res) => {
-    rp("https://github.com/GovTechSG/developer.gov.sg/pull/71.diff").then(response => {
-        console.log(response);
-        res.json(response);
-    });
+router.get("/review-diff", async (req, res) => {
+    try {
+        rp(req.query.diff_url).then(response => {
+            res.json(response);
+        });
+    } catch (err) {
+        res.status(500).json(err);
+    }
+});
+
+router.get('/review-merge', async (req, res) => {
+    try {
+        const octokit = new Octokit({
+            auth: cryptr.decrypt(req.cookies._devpo)
+        });
+
+        const result = await octokit.pulls.merge({
+            owner: githubRepoOwner,
+            repo: githubRepoName,
+            pull_number: req.query.number,
+        });
+        res.json(result);
+    } catch (err) {
+        res.status(500).json(err);
+    }
+});
+
+router.get('/review-reject', async (req, res) => {
+    try {
+        const octokit = new Octokit({
+            auth: cryptr.decrypt(req.cookies._devpo)
+        });
+        
+        const result = await octokit.pulls.update({
+            owner: githubRepoOwner,
+            repo: githubRepoName,
+            pull_number: req.query.number,
+            state: 'closed'
+        });
+        res.json(result);
+    } catch (err) {
+        res.status(500).json(err);
+    }
 });
 
 router.post("/request-otp", async (req, res) => {
@@ -105,7 +154,6 @@ router.post("/request-otp", async (req, res) => {
         });
         return;
     }
-
     try {
         let otpResponse = await lib.otp.requestOtp(requestBody.email);
         res.json(otpResponse.data);
@@ -172,7 +220,7 @@ router.post("/submit-article-changes", async (req, res) => {
             res.status(400).json({
                 error: `Can't make submission; pending changes at ${
                     conflictingPr.url
-                }`
+                    }`
             });
             return;
         }
@@ -211,9 +259,15 @@ router.post("/submit-article-changes", async (req, res) => {
             prBody: newPage
         });
 
+        let issueAssignees = [];
+        if (owners.fetchProductDetails().hasOwnProperty(pageTitle)) {
+            issueAssignee = owners.fetchProductDetails()[pageTitle];
+        }
+
         await lib.github.addLabelsToPullRequest({
             labels: pullRequestLabels,
-            prNumber: pr.data.number
+            prNumber: pr.data.number,
+            assignees: issueAssignees
         });
 
         res.json({
@@ -307,7 +361,8 @@ router.post("/terms", async (req, res) => {
 
         await lib.github.addLabelsToPullRequest({
             labels: pullRequestLabels,
-            prNumber: pr.data.number
+            prNumber: pr.data.number,
+            assignees: []
         });
 
         res.json({
