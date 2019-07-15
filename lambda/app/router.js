@@ -4,11 +4,12 @@ const beautifyHtml = require("js-beautify").html;
 const yaml = require("js-yaml");
 const Octokit = require("@octokit/rest");
 const axios = require("axios");
-const Cryptr = require("cryptr");
 const { oauthLoginUrl } = require("@octokit/oauth-login-url");
 const uuidv4 = require("uuid/v4");
+const owners = require("../lib/owners");
 const utils = require("../lib/utils");
 const github = require("../lib/github");
+const Cryptography = require("../lib/cryptography");
 const packageInfo = require("../../package.json");
 const {
     githubBaseRef,
@@ -20,7 +21,7 @@ const {
 } = require("./config");
 const lib = require("../lib");
 
-const cryptr = new Cryptr(tokenHash);
+let cryptography = new Cryptography(tokenHash);
 
 const octokit = github.octokit;
 
@@ -51,10 +52,12 @@ router.get("/oauth/github/callback", (req, res) => {
         }
     })
         .then(response => {
-            const accessToken = cryptr.encrypt(response.data.access_token);
+            const accessToken = cryptography.encrypt(
+                response.data.access_token
+            );
             // during local test
             if (req.hostname === "localhost") {
-                res.cookie("_devpo", accessToken, { httpOnly: true });
+                res.cookie("_devpo", accessToken, { httpOnly: false });
                 res.redirect(`http://localhost:8888/review`);
             } else {
                 res.cookie("_devpo", accessToken, { secure: true });
@@ -62,27 +65,91 @@ router.get("/oauth/github/callback", (req, res) => {
             }
         })
         .catch(err => {
-            // TODO something went wrong
+            // redirect to review page for relogin
+            if (req.hostname === "localhost") {
+                res.redirect(`http://localhost:8888/review`);
+            } else {
+                res.redirect(`${req.protocol}://${req.hostname}.com/review`);
+            }
         });
 });
 
-router.get("/reviews", async (req, res) => {
-    const octokit = new Octokit({
-        auth: cryptr.decrypt(req.cookies._devpo)
-    });
+router.get("/oauth/signout", (req, res) => {
+    res.clearCookie("_devpo");
+    res.json("success");
+});
 
+router.get("/review", async (req, res) => {
     try {
-        const result = await octokit.pulls.list({
+        const octokit = new Octokit({
+            auth: cryptography.decrypt(req.cookies._devpo)
+        });
+
+        const user = await octokit.users.getAuthenticated();
+        const username = user.data.login;
+
+        // Ensure logged in user is one of our product owners
+        if (owners.fetchProductOwners().indexOf(username) === -1) {
+            res.clearCookie("_devpo");
+            res.status(500).json({
+                error: "Please make sure you are authorised to review changes."
+            });
+        }
+
+        const pulls = await octokit.pulls.list({
             owner: githubRepoOwner,
             repo: githubRepoName
         });
-        res.json(result.data);
+        const pullRequests = utils.getUsersPullRequests(username, pulls.data);
+        res.json(pullRequests);
     } catch (err) {
-        // delete cookie and force user to resign in if token fails to make an api call
         res.clearCookie("_devpo");
-        res.status(500).json({
-            error: err.message || "Error fetching pull requests."
+        res.status(500).json(err);
+    }
+});
+
+router.get("/review-diff", async (req, res) => {
+    try {
+        axios.get(req.query.diff_url).then(response => {
+            res.json(response.data);
         });
+    } catch (err) {
+        res.status(500).json(err);
+    }
+});
+
+router.get("/review-merge", async (req, res) => {
+    try {
+        const octokit = new Octokit({
+            auth: cryptography.decrypt(req.cookies._devpo)
+        });
+
+        const result = await octokit.pulls.merge({
+            owner: githubRepoOwner,
+            repo: githubRepoName,
+            pull_number: req.query.number
+        });
+        res.json(result);
+    } catch (err) {
+        res.status(500).json(err);
+    }
+});
+
+router.get("/review-reject", async (req, res) => {
+    try {
+        const octokit = new Octokit({
+            auth: cryptography.decrypt(req.cookies._devpo)
+        });
+
+        const result = await octokit.pulls.update({
+            owner: githubRepoOwner,
+            repo: githubRepoName,
+            pull_number: req.query.number,
+            state: "closed"
+        });
+        res.json(result);
+    } catch (err) {
+        res.status(500).json(err);
     }
 });
 
@@ -94,7 +161,6 @@ router.post("/request-otp", async (req, res) => {
         });
         return;
     }
-
     try {
         let otpResponse = await lib.otp.requestOtp(requestBody.email);
         res.json(otpResponse.data);
@@ -200,9 +266,15 @@ router.post("/submit-article-changes", async (req, res) => {
             prBody: newPage
         });
 
+        let issueAssignees = [];
+        if (owners.fetchProductDetails().hasOwnProperty(pageTitle)) {
+            issueAssignees = owners.fetchProductDetails()[pageTitle];
+        }
+
         await lib.github.addLabelsToPullRequest({
             labels: pullRequestLabels,
-            prNumber: pr.data.number
+            prNumber: pr.data.number,
+            assignees: issueAssignees
         });
 
         res.json({
@@ -312,7 +384,15 @@ router.post("/terms", async (req, res) => {
 router.put("/terms", async (req, res) => {
     let submission = req.body;
     let missingParams = lib.utils.getMissingParams(
-        ["email", "otp", "otpRequestId", "id", "term", "full_term", "description"],
+        [
+            "email",
+            "otp",
+            "otpRequestId",
+            "id",
+            "term",
+            "full_term",
+            "description"
+        ],
         submission
     );
     if (missingParams.length > 0) {

@@ -121,12 +121,13 @@ async function createNewBranchAndPullRequest({
     return prResults;
 }
 
-async function addLabelsToPullRequest({ labels, prNumber }) {
+async function addLabelsToPullRequest({ labels, prNumber, assignees = [] }) {
     return octokit.issues.update({
         owner: githubRepoOwner,
         repo: githubRepoName,
         issue_number: prNumber,
-        labels
+        labels,
+        assignees
     });
 }
 /**
