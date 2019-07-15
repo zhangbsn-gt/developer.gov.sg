@@ -144,32 +144,42 @@ export default {
             this.checkPageStatus();
         },
         mergePullRequest: function() {
+            this.isLoading = true;
             axios.get("/.netlify/functions/api/review-merge", {
                 params: {
                     number: this.currentPullNumber
                 }
             }).then(response => {
-                this.refreshPageState();
+                new Noty({
+                    type: "success",
+                    text: "Content has been merged successfully."
+                }).show();
             }).catch(err => {
                 new Noty({
                     type: "error",
                     text: "Error accepting content changes. Please try again."
                 }).show();
+            }).finally(() => {
                 this.refreshPageState();
             });
         },
         rejectPullRequest: function() {
+            this.isLoading = true;
             axios.get("/.netlify/functions/api/review-reject", {
                 params: {
                     number: this.currentPullNumber
                 }
             }).then(response => {
-                this.refreshPageState();
+                new Noty({
+                    type: "success",
+                    text: "Content has been rejected successfully."
+                }).show();
             }).catch(err => {
                 new Noty({
                     type: "error",
                     text: "Error rejecting content changes. Please try again."
                 }).show();
+            }).finally(() => {
                 this.refreshPageState();
             });
         },
