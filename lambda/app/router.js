@@ -5,7 +5,6 @@ const yaml = require("js-yaml");
 const Octokit = require("@octokit/rest");
 const axios = require("axios");
 const Cryptr = require("cryptr");
-const rp = require('request-promise');
 const { oauthLoginUrl } = require("@octokit/oauth-login-url");
 const uuidv4 = require("uuid/v4");
 const owners = require('../lib/owners');
@@ -103,8 +102,8 @@ router.get("/review", async (req, res) => {
 
 router.get("/review-diff", async (req, res) => {
     try {
-        rp(req.query.diff_url).then(response => {
-            res.json(response);
+        axios.get(req.query.diff_url).then(response => {
+            res.json(response.data);
         });
     } catch (err) {
         res.status(500).json(err);

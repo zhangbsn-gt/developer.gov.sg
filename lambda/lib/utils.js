@@ -64,13 +64,12 @@ function getUsersPullRequests(username, pullRequests) {
         let assignees = pullRequest.assignees;
         _.forEach(assignees, (value) => {
             if (value.login === username) {
-                // Set product name and person who submitted the PR
-                let title = pullRequest.title;
-                let titleComponents = title.split(" ");
-                let indexOfProduct = titleComponents.indexOf("page");
-                const submitee = titleComponents[titleComponents.length - 1];
-                const product = titleComponents[indexOfProduct - 1];
-                pullRequest['submitee'] = submitee;
+                let product = "";
+                _.forEach(pullRequest.labels, (label) => {
+                    if (label['name'] !== "products") {
+                        product = label['name'];
+                    }
+                });
                 pullRequest['product'] = product;
                 userPullRequests.push(pullRequest);
             }
