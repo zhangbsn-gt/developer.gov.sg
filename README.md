@@ -21,7 +21,7 @@ The dev branch will be manually promoted to master for deployment periodically.
 -   Node.js v10 / npm v6
 -   Ruby 2.5
 
-### Local development
+### Local development - frontend only
 
 ```sh
 # Jekyll only
