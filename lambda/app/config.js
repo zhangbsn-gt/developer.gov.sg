@@ -23,5 +23,6 @@ module.exports = {
     otpServiceUrl: loadEnvVar("OTP_SERVICE_URL"),
     otpServiceAppId: loadEnvVar("OTP_SERVICE_APP_ID"),
     otpServiceAppSecret: loadEnvVar("OTP_SERVICE_APP_SECRET"),
-    githubRepoName: "developer.gov.sg"
+    githubRepoName: "developer.gov.sg",
+    netlifyUrl: loadEnvVar("NETLIFY_URL")
 };

@@ -21,17 +21,25 @@
         - title: Identify Product Features
           url: /workflows/inception/product-backlog/
 
+    - title: UX Design
+      url: /workflows/ux-design/
+      lvl3:
+        - title: Design Phases
+          url: /workflows/ux-design/design-phases/
+        - title: Types of Designer
+          url: /workflows/ux-design/types-of-designer/
+        - title: Accessibility Design
+          url: /workflows/ux-design/accessibility-design/
+        - title: UI and Visual Design
+          url: /workflows/ux-design/ui-visual-design/
+        - title: Markup and Coding
+          url: /workflows/ux-design/markup-coding/
+        - title: Writing and Presenting Content
+          url: /workflows/ux-design/writing-presenting-content/
+
     - title: Construction and Iteration
       url: /workflows/construction-iteration/
       lvl3:
-        - title: Design for Accessibility
-          url: /workflows/construction-iteration/design-accessibility/
-        - title: UI and Visual Design
-          url: /workflows/construction-iteration/ui-visual-design/
-        - title: Markup and Coding
-          url: /workflows/construction-iteration/markup-coding/
-        - title: Writing and Presenting Content
-          url: /workflows/construction-iteration/writing-presenting-content/
         - title: Create a Static Website
           url: /workflows/construction-iteration/create-static-website/
         - title: Create a Dynamic Website
@@ -213,3 +221,15 @@
 
 - title: Events
   url: /events/
+  lvl2:
+    - title: Conferences
+      url: /events/conferences/
+      lvl3:
+        - title: Stack-X
+          url: /events/conferences/stack-x/
+
+    - title: Meetups
+      url: /events/meetups/
+      lvl3:
+        - title: Brown Bags
+          url: /events/meetups/brown-bags/

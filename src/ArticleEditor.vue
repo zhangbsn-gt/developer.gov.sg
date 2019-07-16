@@ -41,6 +41,7 @@
                     <button class="ql-code-block"></button>
                     <button class="ql-list" value="ordered"></button>
                     <button class="ql-list" value="bullet"></button>
+                    <button class="ql-image"></button>
                     <!-- <button class="ql-clean"></button> -->
                     <button class="ql-hr">
                         <span class="sgds-icon sgds-icon-minus"></span>
