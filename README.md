@@ -8,9 +8,9 @@
 
 ## Contribution and approval flow
 
-Contribution suggestions made from developer.gov.sg are pull requests from automatically generated branches into the dev branch.
+Contribution suggestions made from https://developer.gov.sg are transformed into pull requests from automatically generated branches into the `dev` branch.
 
-Reviewers should approve and merge or reject these pull requests into the dev branch.
+Reviewers should approve and merge or reject these pull requests.
 
 The dev branch will be manually promoted to master for deployment periodically.
 
