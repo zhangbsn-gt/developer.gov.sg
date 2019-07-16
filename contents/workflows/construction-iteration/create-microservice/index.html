@@ -5,7 +5,7 @@ permalink: /workflows/construction-iteration/create-microservice/
 category: Workflows
 breadcrumb: Create a Microservice
 ---
-<h5>Overview</h5>
+<h4>Overview</h4>
 <p>A microservice (a.k.a. service-oriented application) is self-contained piece of business function, that is loosely coupled, independently deployable, highly maintainable and testable. It usually has an interface (API) to interact with other microservices.</p>
 <p>A microservice in itself does not complete nor fulfil an entire business workflow but plays an integral part which can be a supporting or even a critical component of the business. In a microservice architecture, microservices interface with other microservices to achieve a business outcome - an example of such will be a microservice that receives data from a web form, transforms the data into some useful, and then passes the transformed data to another microservice to generate a report, insert this data into the database, and finally another to send a reply email automatically etc.</p>
 <p>A microservice can be written in many languages to interact with other microservices as long as they conform to a standard way of interfacing with each other in a consistent manner. The current industry standard for this interface is to use RESTful APIs to do so. Some other methods include SOAP APIs. You will need servers and/or a hosting platform that provides all the essential tools for a build pipeline.</p>
@@ -13,7 +13,7 @@ breadcrumb: Create a Microservice
 <p>The use of microservices is not a magical formula that can be applied to existing monolithic systems, such as SAP or ERP. A “lift and shift” method is not possible as it requires a re-design of the entire architecture of the monolithic system into multiple microservices. Before embarking on a journey to build applications using microservices, first understand the steps needed to take to undergo this transformation.</p>
 <p>The easiest way to get started is to start small, work on non-critical applications using microservices. Then, eventually, move on to building larger applications.</p>
 <hr>
-<h5>Choose Build Pipeline</h5>
+<h4>Choose Build Pipeline</h4>
 <p>Building applications would minimally require these in the build pipeline:</p>
 <ul>
     <li>A source code repository system to store and version control source code (such as Github, Bitbucket or similar)</li>
@@ -25,7 +25,7 @@ breadcrumb: Create a Microservice
 </blockquote>
 <p>Teams can also create and customise their own build pipeline using other means such as hosting their own servers and purchasing licenses to meet their own needs.</p>
 <hr>
-<h5>Choose Hosting Platform</h5>
+<h4>Choose Hosting Platform</h4>
 <p>After deciding on the build pipeline, the application will require a hosting platform to host the application.</p>
 <blockquote>
     <p><a href="" target="_blank">NECTAR</a> is a managed container hosting platform that helps to build (and host) applications using containers (Docker). Applications that are designed and use microservices can leverage on NECTAR to enable rapid building of container images to complement its design as containers can be independently tested, replaced, auto-scaled throughout the lifetime of the entire application. Project teams will not have to worry about operations and maintenance of the infrastructure of NECTAR as it is managed by the NECTAR team.</p>
@@ -36,7 +36,7 @@ breadcrumb: Create a Microservice
 </blockquote>
 <p>In addition, APEX can be used to interface between the Government Intranet and the Internet, if the application needs to bridge this network.</p>
 <hr>
-<h5>Read more on</h5>
+<h4>Read more on</h4>
 <p><a href="" target="_blank">SHIP (Secure Hybrid Integrated Pipeline)</a></p>
 <p><a href="" target="_blank">NECTAR (Next-Generation Container Architecture)</a></p>
 <p><a href="" target="_blank">APEX (API Exchange)</a></p>

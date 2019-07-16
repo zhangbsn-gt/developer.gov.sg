@@ -4,11 +4,11 @@
     display: none;
 }
 
-h5, h6{
+h4, h5, h6{
     font-weight: 600 !important;
 }
 
-h5, h6, p{
+h4, h5, h6, p{
     margin-bottom: 1rem !important;
 }
 
