@@ -61,14 +61,14 @@ router.get("/oauth/github/callback", (req, res) => {
                 res.redirect(`http://localhost:8888/review/`);
             } else {
                 res.cookie("_devpo", accessToken, { secure: true });
-                res.redirect(`https://${req.hostname}/review/`);
+                res.redirect(`https://${netlifyUrl}/review/`);
             }
         })
         .catch(err => {
             if (req.hostname === "localhost") {
                 res.redirect(`http://localhost:8888/review/`);
             } else {
-                res.redirect(`https://${req.hostname}/review/`);
+                res.redirect(`https://${netlifyUrl}/review/`);
             }
         });
 });
