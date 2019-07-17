@@ -218,7 +218,7 @@ router.post("/submit-article-changes", async (req, res) => {
         if (conflictingPr) {
             res.status(400).json({
                 error: `Can't make submission; pending changes at ${
-                    conflictingPr.url
+                    conflictingPr.html_url
                 }`
             });
             return;
@@ -261,13 +261,62 @@ router.post("/submit-article-changes", async (req, res) => {
         let issueAssignees = [];
         if (owners.fetchProductDetails().hasOwnProperty(pageTitle)) {
             issueAssignees = owners.fetchProductDetails()[pageTitle];
+        } else {
+            let admins = await lib.github.getRepoAdmins();
+            issueAssignees = admins;
         }
 
-        await lib.github.addLabelsToPullRequest({
-            labels: pullRequestLabels,
-            prNumber: pr.data.number,
-            assignees: issueAssignees
-        });
+        try {
+            await Promise.all([
+                lib.github.addLabelsToPullRequest({
+                    prNumber: pr.data.number,
+                    labels: pullRequestLabels
+                }),
+                ...issueAssignees.map(githubLogin => {
+                    lib.github.addAssigneesToPullRequest({
+                        prNumber: pr.data.number,
+                        assignees: githubLogin
+                    });
+                }),
+                lib.github.addAssigneesToPullRequest({
+                    prNumber: pr.data.number,
+                    assignees: issueAssignees
+                })
+            ]);
+        } catch (err) {
+            console.error("ERROR!");
+            console.error(err);
+            console.error(JSON.stringify(err.errors));
+            if (
+                err.errors &&
+                err.errors.find(errorItem => errorItem.field === "assignees")
+            ) {
+                if (err.errors.length === issueAssignees.length) {
+                    console.log("all assignees invalid. assigning to admins.");
+                    // All assignees invalid, assign to admins
+                    let admins = await lib.github.getRepoAdmins();
+                    await lib.github.addAssigneesToPullRequest({
+                        prNumber: pr.data.number,
+                        assignees: admins
+                    });
+                } else {
+                    console.log("filtering out invalid assignees");
+                    // Filter out invalid assignees and re-assign
+                    let newAssignees = issueAssignees.filter(
+                        originalAssignee =>
+                            !err.errors.find(
+                                invalidAssignee =>
+                                    invalidAssignee.value === originalAssignee
+                            )
+                    );
+                    console.log(newAssignees);
+                    await lib.github.addAssigneesToPullRequest({
+                        prNumber: pr.data.number,
+                        assignees: newAssignees
+                    });
+                }
+            }
+        }
 
         res.json({
             pr: pr.data.html_url
