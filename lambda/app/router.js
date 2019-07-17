@@ -157,7 +157,11 @@ router.post("/request-otp", async (req, res) => {
         let otpResponse = await lib.otp.requestOtp(requestBody.email);
         res.json(otpResponse.data);
     } catch (err) {
-        res.status(500).json({
+        let statusCode = 500;
+        if (err.response) {
+            statusCode = err.response.status;
+        }
+        res.status(statusCode).json({
             error: err.message || "Error requesting for email verification OTP."
         });
     }
@@ -266,56 +270,36 @@ router.post("/submit-article-changes", async (req, res) => {
             issueAssignees = admins;
         }
 
-        try {
-            await Promise.all([
-                lib.github.addLabelsToPullRequest({
-                    prNumber: pr.data.number,
-                    labels: pullRequestLabels
-                }),
-                ...issueAssignees.map(githubLogin => {
-                    lib.github.addAssigneesToPullRequest({
+        let invalidAssignees = [];
+
+        await Promise.all([
+            lib.github.addLabelsToPullRequest({
+                prNumber: pr.data.number,
+                labels: pullRequestLabels
+            }),
+            ...issueAssignees.map(githubLogin => {
+                lib.github
+                    .addAssigneesToPullRequest({
                         prNumber: pr.data.number,
-                        assignees: githubLogin
+                        assignees: [githubLogin]
+                    })
+                    .catch(err => {
+                        // If assignee invalid, err.errors = 
+                        // [{value: "<github_login>", resource: "Issue", field: "assignees", code: "invalid"}]
+                        if (err.errors && err.errors[0].field === "assignees") {
+                            invalidAssignees.push(err.errors[0].value);
+                        }
                     });
-                }),
-                lib.github.addAssigneesToPullRequest({
-                    prNumber: pr.data.number,
-                    assignees: issueAssignees
-                })
-            ]);
-        } catch (err) {
-            console.error("ERROR!");
-            console.error(err);
-            console.error(JSON.stringify(err.errors));
-            if (
-                err.errors &&
-                err.errors.find(errorItem => errorItem.field === "assignees")
-            ) {
-                if (err.errors.length === issueAssignees.length) {
-                    console.log("all assignees invalid. assigning to admins.");
-                    // All assignees invalid, assign to admins
-                    let admins = await lib.github.getRepoAdmins();
-                    await lib.github.addAssigneesToPullRequest({
-                        prNumber: pr.data.number,
-                        assignees: admins
-                    });
-                } else {
-                    console.log("filtering out invalid assignees");
-                    // Filter out invalid assignees and re-assign
-                    let newAssignees = issueAssignees.filter(
-                        originalAssignee =>
-                            !err.errors.find(
-                                invalidAssignee =>
-                                    invalidAssignee.value === originalAssignee
-                            )
-                    );
-                    console.log(newAssignees);
-                    await lib.github.addAssigneesToPullRequest({
-                        prNumber: pr.data.number,
-                        assignees: newAssignees
-                    });
-                }
-            }
+            })
+        ]);
+
+        if (invalidAssignees.length === issueAssignees.length) {
+            // All assignees invalid, assign to admins
+            let admins = await lib.github.getRepoAdmins();
+            await lib.github.addAssigneesToPullRequest({
+                prNumber: pr.data.number,
+                assignees: admins
+            });
         }
 
         res.json({
