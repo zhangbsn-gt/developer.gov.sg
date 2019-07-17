@@ -56,21 +56,19 @@ router.get("/oauth/github/callback", (req, res) => {
             const accessToken = cryptography.encrypt(
                 response.data.access_token
             );
-            // during local test
             if (req.hostname === "localhost") {
                 res.cookie("_devpo", accessToken, { httpOnly: false });
-                res.redirect(`http://localhost:8888/review`);
+                res.redirect(`http://localhost:8888/review/`);
             } else {
                 res.cookie("_devpo", accessToken, { secure: true });
-                res.redirect(`${netlifyUrl}/review`);
+                res.redirect(`https://${req.hostname}/review/`);
             }
         })
         .catch(err => {
-            // redirect to review page for relogin
             if (req.hostname === "localhost") {
-                res.redirect(`http://localhost:8888/review`);
+                res.redirect(`http://localhost:8888/review/`);
             } else {
-                res.redirect(`${netlifyUrl}/review`);
+                res.redirect(`https://${req.hostname}/review/`);
             }
         });
 });
