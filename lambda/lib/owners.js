@@ -4,15 +4,11 @@ module.exports = {
 };
 
 function fetchProductOwners() {
-    const owners = ["ronaldxkan", "weijunyu", "JohnsonKoh1110"];
-
-    return owners;
+    return ["ronaldxkan", "weijunyu", "JohnsonKoh1110"];
 }
 
 function fetchProductDetails() {
-    const details = {
+    return {
         Sentimeter: ["ronaldxkan", "weijunyu", "JohnsonKoh1110"]
     };
-
-    return details;
 }
