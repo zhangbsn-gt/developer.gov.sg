@@ -37,3 +37,17 @@ exclude:
   - node_modules
   - scripts
   - src
+  - contents/products/*
+
+collections_dir: components
+
+collections:
+  general:
+    permalink: /products/
+    output: true
+  sections:
+    permalink: /products/:path/
+    output: true
+  analytics:
+    permalink: /products/analytics/:path/
+    output: true

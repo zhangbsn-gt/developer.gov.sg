@@ -195,7 +195,7 @@ router.post("/submit-article-changes", async (req, res) => {
     let email = submission.email;
     let otp = submission.otp;
     let otpRequestId = submission.otpRequestId;
-
+    
     try {
         await lib.otp.verifyOtp(email, otp, otpRequestId);
     } catch (err) {
@@ -210,7 +210,7 @@ router.post("/submit-article-changes", async (req, res) => {
     let pageCategory = submission.page_category;
     let pageContent = submission.page_content;
     let pageLayout = submission.page_layout;
-
+    let pagePathSplit = pagePath.split("/").filter(value => value !== "");
     let pullRequestLabels = [
         pageCategory.toLowerCase(),
         utils.toLowerCaseSlug(pageTitle)
@@ -251,7 +251,7 @@ router.post("/submit-article-changes", async (req, res) => {
     try {
         const newBranchId = await lib.utils.generateId();
         const pr = await lib.github.createNewBranchAndPullRequest({
-            filePath: path.join("contents", pagePath, "index.html"),
+            filePath: path.join("components", `/_${pagePathSplit[1]}`, `/${pagePathSplit[2]}.html`),
             fileContent: newPage,
             baseBranchName: githubBaseRef,
             newBranchName: `${pageCategory.toLowerCase()}-edit-${new Date()
