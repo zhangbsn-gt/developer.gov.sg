@@ -1,5 +1,6 @@
 <template>
-    <div class="modal-container">
+    <div class="modal-container vld-parent">
+        <Loading :active.sync="isLoading" :is-full-page="false"></Loading>
         <div class="modal-header">
             <h5>Editing {{ page_title }}</h5>
             <button class="sgds-button is-rounded" type="button" @click="$emit('close')">
@@ -54,7 +55,7 @@
         </div>
 
         <div class="modal-footer">
-            <VerifyAndSubmit @submit="submitChanges" />
+            <VerifyAndSubmit @submit="submitChanges" @loading="updateLoadingState" />
         </div>
     </div>
 </template>
@@ -63,6 +64,8 @@
 import axios from "axios";
 import Noty from "noty";
 import Quill from "quill";
+import Loading from "vue-loading-overlay";
+import "vue-loading-overlay/dist/vue-loading.css";
 import VerifyAndSubmit from "./VerifyAndSubmit.vue";
 
 let BlockEmbed = Quill.import("blots/block/embed");
@@ -74,7 +77,7 @@ Quill.register({
 });
 
 export default {
-    components: { VerifyAndSubmit },
+    components: { VerifyAndSubmit, Loading },
     props: {
         page_path: {
             type: String,
@@ -100,13 +103,15 @@ export default {
     data() {
         return {
             quill: null,
-            showOriginal: false
+            showOriginal: false,
+            isLoading: false
         };
     },
     methods: {
         submitChanges({ email, otp, otpRequestId }) {
             const updatedContent = document.querySelector(".ql-editor")
                 .innerHTML;
+            this.isLoading = true;
             axios
                 .post("/.netlify/functions/api/submit-article-changes", {
                     page_path: this.page_path,
@@ -135,7 +140,13 @@ export default {
                         type: "error",
                         text: `There was an error submitting your changes. ${message}`
                     }).show();
-                });
+                })
+                .finally(() => {
+                    this.isLoading = false;
+                })
+        },
+        updateLoadingState(isLoading) {
+            this.isLoading = isLoading;
         }
     },
     mounted() {
