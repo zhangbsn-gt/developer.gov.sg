@@ -56,21 +56,19 @@ router.get("/oauth/github/callback", (req, res) => {
             const accessToken = cryptography.encrypt(
                 response.data.access_token
             );
-            // during local test
             if (req.hostname === "localhost") {
                 res.cookie("_devpo", accessToken, { httpOnly: false });
-                res.redirect(`http://localhost:8888/review`);
+                res.redirect(`http://localhost:8888/review/`);
             } else {
                 res.cookie("_devpo", accessToken, { secure: true });
-                res.redirect(`${netlifyUrl}/review`);
+                res.redirect(`${netlifyUrl}/review/`);
             }
         })
         .catch(err => {
-            // redirect to review page for relogin
             if (req.hostname === "localhost") {
-                res.redirect(`http://localhost:8888/review`);
+                res.redirect(`http://localhost:8888/review/`);
             } else {
-                res.redirect(`${netlifyUrl}/review`);
+                res.redirect(`${netlifyUrl}/review/`);
             }
         });
 });
@@ -159,7 +157,11 @@ router.post("/request-otp", async (req, res) => {
         let otpResponse = await lib.otp.requestOtp(requestBody.email);
         res.json(otpResponse.data);
     } catch (err) {
-        res.status(500).json({
+        let statusCode = 500;
+        if (err.response) {
+            statusCode = err.response.status;
+        }
+        res.status(statusCode).json({
             error: err.message || "Error requesting for email verification OTP."
         });
     }
@@ -220,7 +222,7 @@ router.post("/submit-article-changes", async (req, res) => {
         if (conflictingPr) {
             res.status(400).json({
                 error: `Can't make submission; pending changes at ${
-                    conflictingPr.url
+                    conflictingPr.html_url
                 }`
             });
             return;
@@ -263,13 +265,42 @@ router.post("/submit-article-changes", async (req, res) => {
         let issueAssignees = [];
         if (owners.fetchProductDetails().hasOwnProperty(pageTitle)) {
             issueAssignees = owners.fetchProductDetails()[pageTitle];
+        } else {
+            let admins = await lib.github.getRepoAdmins();
+            issueAssignees = admins;
         }
 
-        await lib.github.addLabelsToPullRequest({
-            labels: pullRequestLabels,
-            prNumber: pr.data.number,
-            assignees: issueAssignees
-        });
+        let invalidAssignees = [];
+
+        await Promise.all([
+            lib.github.addLabelsToPullRequest({
+                prNumber: pr.data.number,
+                labels: pullRequestLabels
+            }),
+            ...issueAssignees.map(githubLogin => {
+                lib.github
+                    .addAssigneesToPullRequest({
+                        prNumber: pr.data.number,
+                        assignees: [githubLogin]
+                    })
+                    .catch(err => {
+                        // If assignee invalid, err.errors = 
+                        // [{value: "<github_login>", resource: "Issue", field: "assignees", code: "invalid"}]
+                        if (err.errors && err.errors[0].field === "assignees") {
+                            invalidAssignees.push(err.errors[0].value);
+                        }
+                    });
+            })
+        ]);
+
+        if (invalidAssignees.length === issueAssignees.length) {
+            // All assignees invalid, assign to admins
+            let admins = await lib.github.getRepoAdmins();
+            await lib.github.addAssigneesToPullRequest({
+                prNumber: pr.data.number,
+                assignees: admins
+            });
+        }
 
         res.json({
             pr: pr.data.html_url

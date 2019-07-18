@@ -15,11 +15,9 @@ const app = new App({ id: githubAppId, privateKey: githubAppKey });
 
 const octokit = new Octokit({
     async auth() {
-        const installationAccessToken = await app.getInstallationAccessToken(
-            {
-                installationId: githubAppInstallationId
-            }
-        );
+        const installationAccessToken = await app.getInstallationAccessToken({
+            installationId: githubAppInstallationId
+        });
         return `token ${installationAccessToken}`;
     }
 });
@@ -28,8 +26,24 @@ module.exports = {
     octokit,
     createNewBranchAndPullRequest,
     addLabelsToPullRequest,
-    checkForConflictingPr
+    checkForConflictingPr,
+    addAssigneesToPullRequest,
+    getRepoAdmins
 };
+
+async function getRepoAdmins() {
+    let collaborators = await octokit.repos.listCollaborators({
+        owner: githubRepoOwner,
+        repo: githubRepoName
+    });
+    return collaborators.data
+        .reduce((admins, currentCollaborator) => {
+            if (currentCollaborator.permissions.admin) {
+                admins.push(currentCollaborator.login);
+            }
+            return admins;
+        }, []);
+}
 
 /**
  * @param {string} options.filePath
@@ -121,15 +135,24 @@ async function createNewBranchAndPullRequest({
     return prResults;
 }
 
-async function addLabelsToPullRequest({ labels, prNumber, assignees = [] }) {
+async function addLabelsToPullRequest({ prNumber, labels }) {
     return octokit.issues.update({
         owner: githubRepoOwner,
         repo: githubRepoName,
         issue_number: prNumber,
-        labels,
+        labels
+    });
+}
+
+async function addAssigneesToPullRequest({ prNumber, assignees = [] }) {
+    return octokit.issues.update({
+        owner: githubRepoOwner,
+        repo: githubRepoName,
+        issue_number: prNumber,
         assignees
     });
 }
+
 /**
  *
  * @param {*} labelsToCheck

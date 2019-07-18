@@ -140,6 +140,7 @@ export default {
                 otp: this.otp,
                 otpRequestId
             });
+            this.otp = null;
         }
     }
 };
