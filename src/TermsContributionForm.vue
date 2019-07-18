@@ -1,5 +1,7 @@
 <template>
-    <form @submit.prevent="handleSubmit">
+    <form @submit.prevent="handleSubmit" class="vld-parent">
+        <Loading :active.sync="isLoading" :is-full-page="false"></Loading>
+
         <div class="row">
             <div class="col">
                 <label for="term" class="has-text-weight-semibold">Acronym*</label>
@@ -132,18 +134,24 @@
             </div>
         </div>
 
-        <VerifyAndSubmit @validate="detectFormErrors" @submit="submit" />
+        <VerifyAndSubmit
+            @validate="detectFormErrors"
+            @submit="submit"
+            @loading="changeLoadingState"
+        />
     </form>
 </template>
 
 <script>
 import axios from "axios";
 import Noty from "noty";
+import Loading from "vue-loading-overlay";
+import "vue-loading-overlay/dist/vue-loading.css";
 import { urlRegex } from "./lib";
 import VerifyAndSubmit from "./VerifyAndSubmit.vue";
 
 export default {
-    components: { VerifyAndSubmit },
+    components: { VerifyAndSubmit, Loading },
     props: {
         type: {
             type: String,
@@ -173,7 +181,7 @@ export default {
     },
     data: function() {
         return {
-            processingSubmission: false,
+            isLoading: false,
             form: {
                 term: null,
                 full_term: null,
@@ -198,7 +206,6 @@ export default {
             if (hasErrors) {
                 return;
             }
-            this.processingSubmission = true;
             let submission = {
                 term: this.form.term,
                 full_term: this.form.full_term,
@@ -223,6 +230,7 @@ export default {
             if (this.type === "edit") {
                 axiosConfig.method = "put";
             }
+            this.isLoading = true;
             axios(axiosConfig)
                 .then(response => {
                     new Noty({
@@ -242,7 +250,7 @@ export default {
                     }).show();
                 })
                 .finally(() => {
-                    this.processingSubmission = false;
+                    this.isLoading = false;
                 });
         },
         detectFormErrors() {
@@ -255,29 +263,14 @@ export default {
             });
             return hasErrors;
         },
-        /**
-         * Removes error message on input if validation passes
-         */
         validateInput(field) {
+            // Removes error message on input if validation passes
             if (
                 (this.form[field] && this.errors[field]) ||
                 field === "link" ||
                 field === "tag"
             ) {
                 this.errors[field] = null;
-            }
-        },
-        populateFormFromProps() {
-            ["term", "full_term", "description"].forEach(field => {
-                if (this[field]) {
-                    this.form[field] = this[field];
-                }
-            });
-            if (this.links) {
-                this.form.links = [...this.links];
-            }
-            if (this.tags) {
-                this.form.tags = [...this.tags];
             }
         },
         addTag() {
@@ -319,11 +312,24 @@ export default {
 
             this.form.links.push(link);
             this.form.link = null;
+        },
+        changeLoadingState(isLoading) {
+            this.isLoading = isLoading;
         }
     },
     created() {
         if (this.type === "edit") {
-            this.populateFormFromProps();
+            ["term", "full_term", "description"].forEach(field => {
+                if (this[field]) {
+                    this.form[field] = this[field];
+                }
+            });
+            if (this.links) {
+                this.form.links = [...this.links];
+            }
+            if (this.tags) {
+                this.form.tags = [...this.tags];
+            }
         }
     }
 };
