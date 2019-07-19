@@ -33,13 +33,13 @@ exclude:
   - node_modules
   - scripts
   - src
+  - contents/products/*
   - Dockerfile
   - Gemfile*
   - Gruntfile.js
   - netlify.toml
   - package*.json
   - webpack.config.js
-  - contents/products/*
 
 collections_dir: components
 
