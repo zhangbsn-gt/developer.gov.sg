@@ -102,6 +102,7 @@ export default {
             if (!this.validateEmail()) {
                 return;
             }
+            this.$emit("loading", true);
             axios
                 .post("/.netlify/functions/api/request-otp", {
                     email: this.email
@@ -120,7 +121,10 @@ export default {
                         type: "error",
                         text: `An error has occurred: ${error.message || error}`
                     }).show();
-                });
+                })
+                .finally(() => {
+                    this.$emit("loading", false);
+                })
         },
         submit() {
             if (!this.otp || this.otp.length !== 6) {
