@@ -26,17 +26,19 @@ assets:
     - fonts
 
 include:
-  - assets
-  - contents
-  - sgds-govtech
 
 exclude:
-  - discourse
   - functions
   - lambda
   - node_modules
   - scripts
   - src
+  - Dockerfile
+  - Gemfile*
+  - Gruntfile.js
+  - netlify.toml
+  - package*.json
+  - webpack.config.js
   - contents/products/*
 
 collections_dir: components
