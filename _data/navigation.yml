@@ -1,9 +1,14 @@
 - title: Workflows
   url: /workflows/
   lvl2:
+    - title: Introduction
+      url: /workflows/introduction/
+
     - title: Concept
       url: /workflows/concept/
       lvl3:
+        - title: Intro to Agile
+          url: /workflows/concept/intro-to-agile/
         - title: Digital Government Blueprint
           url: /workflows/concept/digital-government-blueprint/
         - title: Ministry Family Digitalisation Plan
@@ -70,6 +75,12 @@
       lvl3:
         - title: Migrate Users to New Product
           url: /workflows/retirement/migrate-users/
+
+- title: Chapters
+  url: /chapters/
+  lvl2:
+    - title: UX Design
+      url: /chapters/ux-design/
 
 - title: Products
   url: /products/
