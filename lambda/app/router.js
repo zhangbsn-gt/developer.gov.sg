@@ -250,8 +250,9 @@ router.post("/submit-article-changes", async (req, res) => {
 
     try {
         const newBranchId = await lib.utils.generateId();
+        let filePath = pagePath.startsWith("/") ? `_${pagePath.substring(1)}` : `_${pagePath}`;
         const pr = await lib.github.createNewBranchAndPullRequest({
-            filePath: path.join("collections", `/_${pagePath}`),
+            filePath: path.join("collections", filePath),
             fileContent: newPage,
             baseBranchName: githubBaseRef,
             newBranchName: `${pageCategory.toLowerCase()}-edit-${new Date()
