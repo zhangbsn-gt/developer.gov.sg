@@ -32,7 +32,7 @@ exclude:
   - lambda
   - node_modules
   - scripts
-  - src
+  - apps/src
   - Dockerfile
   - Gemfile*
   - Gruntfile.js
@@ -43,7 +43,15 @@ exclude:
 collections_dir: collections
 
 collections:
+  workflows:
+    output: yes
+  chapters:
+    output: yes
   products:
     output: yes
-  workflows:
+  guidelines:
+    output: yes
+  events:
+    output: yes
+  general:
     output: yes
