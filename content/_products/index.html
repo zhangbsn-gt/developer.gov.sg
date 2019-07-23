@@ -1,0 +1,37 @@
+---
+title: Products
+layout: layout-sidenav
+---
+<h5>Products and Services</h5>
+<p>In this section, you will see the collections of products and services that the Singapore Government has to support your software development. By using these products and services, you are complying to the usage as well as security policies.</p>
+<div class="row has-background-light margin--top">
+    <div class="col is-8">
+        <p class="margin--top--sm margin--bottom--sm has-text-weight-semibold">Join us to help everyone discover what the Singapore Government has.</p>
+    </div>
+    <div class="col is-4 has-text-right">
+        <a class="sgds-button is-rounded is-fullwidth" href="https://form.gov.sg/5cfa00b06e831d0010034a61" target="_blank">Add New Product</a>
+    </div>
+</div>
+
+<hr>
+
+{% assign productCategories = site.products | group_by: "category" %}
+{% for category in productCategories %}
+    {% if category.name != '' %}
+        <h5>{{ category.name | capitalize }}</h5>
+        {% assign products = category.items %}
+        <div class="row is-multiline">
+            {% for product in products %}
+            <div class="col is-4 is-flex">
+                <a class="sgds-card sgds-card-button" href="{{ product.url }}">
+                    <div class="sgds-card-content">
+                        <h6>{{ product.title }}</h6>
+                        <p>{{ product.description }}</p>
+                    </div>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+        {% if forloop.last != true %}<hr>{% endif %}
+    {% endif %}
+{% endfor %}
