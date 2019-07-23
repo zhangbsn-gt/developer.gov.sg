@@ -175,11 +175,11 @@ router.post("/submit-article-changes", async (req, res) => {
             "email",
             "otp",
             "otpRequestId",
-            "page_path",
             "page_title",
+            "page_layout",
             "page_category",
+            "page_path",
             "page_content",
-            "page_layout"
         ],
         submission
     );
@@ -205,12 +205,12 @@ router.post("/submit-article-changes", async (req, res) => {
         return;
     }
 
-    let pagePath = submission.page_path;
     let pageTitle = submission.page_title;
-    let pageCategory = submission.page_category;
-    let pageContent = submission.page_content;
     let pageLayout = submission.page_layout;
-    let pagePathSplit = pagePath.split("/").filter(value => value !== "");
+    let pageCategory = submission.page_category;
+    let pageDescription = submission.page_description;
+    let pagePath = submission.page_path;
+    let pageContent = submission.page_content;
     let pullRequestLabels = [
         pageCategory.toLowerCase(),
         utils.toLowerCaseSlug(pageTitle)
@@ -228,8 +228,9 @@ router.post("/submit-article-changes", async (req, res) => {
             return;
         }
     } catch (err) {
-        res.status(500).json({
-            error: "Couldn't check for conflicting pull requests"
+        let statusCode = err.status || 500;
+        res.status(statusCode).json({
+            error: `Couldn't check for conflicting pull requests.`
         });
         return;
     }
@@ -238,9 +239,8 @@ router.post("/submit-article-changes", async (req, res) => {
         `---\n` +
         `title: ${pageTitle}\n` +
         `layout: ${pageLayout}\n` +
-        `permalink: ${pagePath}\n` +
-        `category: ${pageCategory}\n` +
-        `breadcrumb: ${pageTitle.toUpperCase()}\n` +
+        `category: ${pageCategory}\n` + 
+        `${pageDescription ? `description: ${pageDescription}\n` : ""}` +
         `---\n`;
 
     const formattedContent = beautifyHtml(pageContent, {
@@ -251,7 +251,7 @@ router.post("/submit-article-changes", async (req, res) => {
     try {
         const newBranchId = await lib.utils.generateId();
         const pr = await lib.github.createNewBranchAndPullRequest({
-            filePath: path.join("collections", `/_${pagePathSplit[1]}`, `/${pagePathSplit[2]}.html`),
+            filePath: path.join("collections", `/_${pagePath}`),
             fileContent: newPage,
             baseBranchName: githubBaseRef,
             newBranchName: `${pageCategory.toLowerCase()}-edit-${new Date()

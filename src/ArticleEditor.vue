@@ -92,8 +92,7 @@ export default {
             required: true
         },
         page_description: {
-            type: String,
-            required: true
+            type: String
         },
         page_path: {
             type: String,
@@ -118,11 +117,12 @@ export default {
             this.isLoading = true;
             axios
                 .post("/.netlify/functions/api/submit-article-changes", {
-                    page_path: this.page_path,
                     page_title: this.page_title,
-                    page_category: this.page_category,
-                    page_content: updatedContent,
                     page_layout: this.page_layout,
+                    page_category: this.page_category,
+                    page_description: this.page_description,
+                    page_path: this.page_path,
+                    page_content: updatedContent,
                     email,
                     otp,
                     otpRequestId
