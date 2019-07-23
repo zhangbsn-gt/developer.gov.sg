@@ -2,7 +2,7 @@
     <div class="modal-container vld-parent">
         <Loading :active.sync="isLoading" :is-full-page="false"></Loading>
         <div class="modal-header">
-            <h5>Editing {{ page_title }}</h5>
+            <h5>Editing {{ page_title }} page at {{ page_path }}</h5>
             <button class="sgds-button is-rounded" type="button" @click="$emit('close')">
                 <span class="sgds-icon sgds-icon-cross"></span>
             </button>
@@ -43,10 +43,10 @@
                     <button class="ql-list" value="ordered"></button>
                     <button class="ql-list" value="bullet"></button>
                     <button class="ql-image"></button>
-                    <!-- <button class="ql-clean"></button> -->
                     <button class="ql-hr">
                         <span class="sgds-icon sgds-icon-minus"></span>
                     </button>
+                    <button class="ql-clean"></button>
                 </div>
                 <div id="editor"></div>
             </div>
@@ -79,11 +79,11 @@ Quill.register({
 export default {
     components: { VerifyAndSubmit, Loading },
     props: {
-        page_path: {
+        page_title: {
             type: String,
             required: true
         },
-        page_title: {
+        page_layout: {
             type: String,
             required: true
         },
@@ -91,11 +91,15 @@ export default {
             type: String,
             required: true
         },
-        page_content: {
+        page_description: {
             type: String,
             required: true
         },
-        page_layout: {
+        page_path: {
+            type: String,
+            required: true
+        },
+        page_content: {
             type: String,
             required: true
         }
@@ -143,7 +147,7 @@ export default {
                 })
                 .finally(() => {
                     this.isLoading = false;
-                })
+                });
         },
         updateLoadingState(isLoading) {
             this.isLoading = isLoading;

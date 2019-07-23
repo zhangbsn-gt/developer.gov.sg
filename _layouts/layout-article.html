@@ -10,9 +10,10 @@ layout: layout-sidenav
     <div
         id="article-editor-app"
         data-title="{{ page.title }}"
-        data-permalink="{{ page.permalink }}"
-        data-category="{{ page.category }}"
         data-layout="{{ page.layout }}"
+        data-category="{{ page.category }}"
+        data-description="{{ page.description }}"
+        data-url="{{ page.url }}"
         data-content="{{ content | xml_escape }}"
     >
         <!-- xml_escape because html content's special characters (",' etc) may break this -->

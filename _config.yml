@@ -40,9 +40,10 @@ exclude:
   - package*.json
   - webpack.config.js
 
-collections_dir: content
+collections_dir: collections
 
 collections:
-  products: 
+  products:
     output: yes
-    permalink: /:collection/:name
+  workflows:
+    output: yes

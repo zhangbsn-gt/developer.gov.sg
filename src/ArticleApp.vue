@@ -15,7 +15,7 @@ export default {
             type: String,
             requred: true
         },
-        permalink: {
+        layout: {
             // From front matter
             type: String,
             required: true
@@ -24,10 +24,12 @@ export default {
             // From front matter
             type: String
         },
-        layout: {
+        description: {
             // From front matter
             type: String,
-            required: true
+        },
+        url: {
+            type: String,
         },
         content: {
             // From Jekyll render. HTML.
@@ -45,11 +47,12 @@ export default {
             this.$modal.show(
                 ArticleEditor,
                 {
-                    page_path: this.permalink,
                     page_title: this.title,
+                    page_layout: this.layout,
                     page_category: this.category,
+                    page_description: this.description,
+                    page_path: this.url,
                     page_content: sanitizeHtml(this.content),
-                    page_layout: this.layout
                 },
                 {
                     clickToClose: false,
