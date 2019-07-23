@@ -209,25 +209,5 @@
         - title: Accessibility Design
           url: /guidelines/design/accessibility-design/
 
-    - title: Strategy
-      url: /guidelines/strategy/
-      lvl3:
-        - title: Digital Government Blueprint
-          url: /guidelines/strategy/digital-government-blueprint/
-        - title: Ministry Family Digitalisation Plans
-          url: /guidelines/strategy/ministry-family-digitalisation-plans/
-
 - title: Events
   url: /events/
-  lvl2:
-    - title: Conferences
-      url: /events/conferences/
-      lvl3:
-        - title: Stack-X
-          url: /events/conferences/stack-x/
-
-    - title: Meetups
-      url: /events/meetups/
-      lvl3:
-        - title: Brown Bags
-          url: /events/meetups/brown-bags/
