@@ -3,84 +3,73 @@
   lvl2:
     - title: Introduction
       url: /workflows/introduction/
-
-    - title: Concept
-      url: /workflows/concept/
-      lvl3:
-        - title: Intro to Agile
-          url: /workflows/concept/intro-to-agile/
-        - title: Digital Government Blueprint
-          url: /workflows/concept/digital-government-blueprint/
-        - title: Ministry Family Digitalisation Plan
-          url: /workflows/concept/ministry-family-digitalisation-plan/
-        - title: Smart Nation
-          url: /workflows/concept/smart-nation/
-
-    - title: Inception
-      url: /workflows/inception/
-      lvl3:
-        - title: Form Cross-Functional Team
-          url: /workflows/inception/form-team/
-        - title: Identify What You Will Need
-          url: /workflows/inception/what-you-need/
-        - title: Identify Product Features
-          url: /workflows/inception/product-backlog/
-
-    - title: UX Design
-      url: /workflows/ux-design/
-      lvl3:
-        - title: Design Phases
-          url: /workflows/ux-design/design-phases/
-        - title: Types of Designer
-          url: /workflows/ux-design/types-of-designer/
-        - title: Accessibility Design
-          url: /workflows/ux-design/accessibility-design/
-        - title: UI and Visual Design
-          url: /workflows/ux-design/ui-visual-design/
-        - title: Markup and Coding
-          url: /workflows/ux-design/markup-coding/
-        - title: Writing and Presenting Content
-          url: /workflows/ux-design/writing-presenting-content/
-
-    - title: Construction and Iteration
-      url: /workflows/construction-iteration/
-      lvl3:
-        - title: Create a Static Website
-          url: /workflows/construction-iteration/create-static-website/
-        - title: Create a Dynamic Website
-          url: /workflows/construction-iteration/create-dynamic-website/
-        - title: Create a Transactional Website
-          url: /workflows/construction-iteration/create-transactional-website/
-        - title: Create a Microservice
-          url: /workflows/construction-iteration/create-microservice/
-
-    - title: Release
-      url: /workflows/release/
-      lvl3:
-        - title: Ensure Production Readiness
-          url: /workflows/release/production-readiness/
-        - title: Deploy the Solution
-          url: /workflows/release/deploy-solution/
-
-    - title: Production
-      url: /workflows/production/
-      lvl3:
-        - title: Monitor System Performance
-          url: /workflows/production/monitor-system-performance/
-        - title: Prepare for Disaster
-          url: /workflows/production/prepare-for-disaster/
-
-    - title: Retirement
-      url: /workflows/retirement/
-      lvl3:
-        - title: Migrate Users to New Product
-          url: /workflows/retirement/migrate-users/
+    - title: Digital Government Blueprint
+      url: /workflows/digital-government-blueprint/
+    - title: Ministry Family Digitalisation Plan
+      url: /workflows/ministry-family-digitalisation-plan/
+    - title: Form Cross-Functional Team
+      url: /workflows/form-team/
+    - title: Identify What You Will Need
+      url: /workflows/what-you-need/
+    - title: Identify Product Features
+      url: /workflows/product-backlog/
+    - title: Create a Static Website
+      url: /workflows/create-static-website/
+    - title: Create a Dynamic Website
+      url: /workflows/create-dynamic-website/
+    - title: Create a Transactional Website
+      url: /workflows/create-transactional-website/
+    - title: Create a Microservice
+      url: /workflows/create-microservice/
+    - title: Ensure Production Readiness
+      url: /workflows/production-readiness/
+    - title: Deploy the Solution
+      url: /workflows/deploy-solution/
+    - title: Monitor System Performance
+      url: /workflows/monitor-system-performance/
+    - title: Prepare for Disaster
+      url: /workflows/prepare-for-disaster/
+    - title: Migrate Users to New Product
+      url: /workflows/migrate-users/
 
 - title: Chapters
   url: /chapters/
   lvl2:
     - title: UX Design
       url: /chapters/ux-design/
+      lvl3:
+        - title: Types of Designer
+          url: /chapters/ux-design/types-of-designer/
+        - title: Accessibility Design
+          url: /chapters/ux-design/accessibility-design/
+        - title: UI and Visual Design
+          url: /chapters/ux-design/ui-visual-design/
+        - title: Writing and Presenting Content
+          url: /chapters/ux-design/writing-presenting-content/
+
+    - title: Software Engineering
+      url: /chapters/software-engineering/
+
+    - title: DevOps
+      url: /chapters/devops/
+
+    - title: Quality Engineering
+      url: /chapters/quality-engineering/
+
+    - title: Delivery Management
+      url: /chapters/delivery-management/
+
+    - title: Data Science
+      url: /chapters/data-science/
+
+    - title: SIOT
+      url: /chapters/siot/
+
+    - title: Project Management
+      url: /chapters/project-management/
+
+    - title: Cyber Security
+      url: /chapters/cyber-security/
 
 - title: Products
   url: /products/
@@ -227,8 +216,6 @@
           url: /guidelines/strategy/digital-government-blueprint/
         - title: Ministry Family Digitalisation Plans
           url: /guidelines/strategy/ministry-family-digitalisation-plans/
-        - title: Smart Nation
-          url: /guidelines/strategy/smart-nation/
 
 - title: Events
   url: /events/
