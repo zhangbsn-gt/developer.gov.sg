@@ -31,7 +31,7 @@ class Cryptography {
     decrypt(text) {
         let textParts = text.split(":");
         let iv = Buffer.from(textParts.shift(), "hex");
-        let encryptedText = Buffer.from(textParts.join(":"), "hex");
+        let encryptedText = Buffer.from(textParts[0], "hex");
         let decipher = crypto.createDecipheriv(
             algorithm,
             Buffer.from(this.encryptionKey),

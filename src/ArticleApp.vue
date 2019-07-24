@@ -1,6 +1,6 @@
 <template>
     <div id="article-editor-app">
-        <a class="sgds-button is-rounded" @click="openEditor">Edit This Page</a>
+        <a class="sgds-button is-rounded is-small" @click="openEditor">Edit This Page</a>
     </div>
 </template>
 

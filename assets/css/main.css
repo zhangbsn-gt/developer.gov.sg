@@ -4,11 +4,16 @@
     display: none;
 }
 
-h4, h5, h6{
+h4,
+h5,
+h6 {
     font-weight: 600 !important;
 }
 
-h4, h5, h6, p{
+h4,
+h5,
+h6,
+p {
     margin-bottom: 1rem !important;
 }
 
@@ -17,24 +22,51 @@ hr {
     margin-top: 2rem !important;
 }
 
-img{
+img {
     margin-bottom: 1rem;
 }
 
 /*Custom styling for Quill Editor*/
 
 .ql-editor {
-    font-family: "Source Sans Pro", BlinkMacSystemFont, -apple-system, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    font-family: "Source Sans Pro", BlinkMacSystemFont, -apple-system,
+        "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
     font-size: 1rem !important;
-    line-height: calc(1rem + .5rem) !important;
+    line-height: calc(1rem + 0.5rem) !important;
+}
+
+.ql-editor h1 {
+    font-size: 3.375rem !important;
+    line-height: 3.75rem !important;
+    letter-spacing: -1.5px !important;
+}
+
+.ql-editor h2 {
+    font-size: 2.75rem !important;
+    line-height: 3.75rem !important;
+}
+
+.ql-editor h3 {
+    font-size: 2rem !important;
+    line-height: 2.8125rem !important;
+}
+
+.ql-editor h4 {
+    font-size: 1.625rem !important;
+    line-height: 2.25rem !important;
+    font-weight: 600 !important;
 }
 
 .ql-editor h5 {
-    font-size: 2rem !important;
+    font-size: 1.375rem !important;
+    line-height: 1.875rem !important;
+    font-weight: 600 !important;
 }
 
 .ql-editor h6 {
-    font-size: 1.5rem !important;
+    font-size: 1.3rem !important;
+    line-height: 1.5rem !important;
+    font-weight: 600 !important;
 }
 
 .ql-editor ul > li {
@@ -54,7 +86,7 @@ img{
 }
 
 .ql-editor li,
-.article li  {
+.article li {
     display: list-item !important;
     text-align: -webkit-match-parent !important;
     padding: 0px !important;
@@ -86,4 +118,66 @@ img{
     display: flex;
     justify-content: space-between;
     margin-bottom: 1rem;
+}
+
+/* Renders a spinner on Vue apps before they are loaded into the DOM */
+.spinner {
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    font-size: 10px;
+}
+
+.spinner > div {
+    background-color: #333;
+    height: 100%;
+    width: 6px;
+    display: inline-block;
+
+    -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+    animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .rect2 {
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+    -webkit-animation-delay: -1s;
+    animation-delay: -1s;
+}
+
+.spinner .rect4 {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s;
+}
+
+@-webkit-keyframes sk-stretchdelay {
+    0%,
+    40%,
+    100% {
+        -webkit-transform: scaleY(0.4);
+    }
+    20% {
+        -webkit-transform: scaleY(1);
+    }
+}
+
+@keyframes sk-stretchdelay {
+    0%,
+    40%,
+    100% {
+        transform: scaleY(0.4);
+        -webkit-transform: scaleY(0.4);
+    }
+    20% {
+        transform: scaleY(1);
+        -webkit-transform: scaleY(1);
+    }
 }

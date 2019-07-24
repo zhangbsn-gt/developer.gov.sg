@@ -5,7 +5,7 @@ layout: layout-default
 <section class="sgds-section has-background-black padding--bottom--lg padding--top--lg" style="background: url('/assets/img/bg_splash.jpg') fixed top center; background-size: 100% 100%;">
   <div class="sgds-container">
     {% include sgds-breadcrumb.html %}
-    <h3 class="has-text-white has-text-weight-bold">{{page.title}}</h3>
+    <h2 class="has-text-white has-text-weight-bold">{{page.title}}</h2>
   </div>
 </section>
 
@@ -14,5 +14,32 @@ layout: layout-default
     <div class="content article">
       {{content}}
     </div>
+  </div>
+  <div class="has-background-light padding margin--top--lg">
+    <div
+            id="article-editor-app"
+            data-title="{{ page.title }}"
+            data-permalink="{{ page.permalink }}"
+            data-category="{{ page.category }}"
+            data-layout="{{ page.layout }}"
+            data-content="{{ content | xml_escape }}"
+    >
+      <!-- xml_escape because html content's special characters (",' etc) may break this -->
+
+      <!-- This spinner will show when the Vue app is loading -->
+      <div class="spinner">
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+      </div>
+    </div>
+
+    <script
+            src="/assets/bundles/vue-article-editor-app.bundle.js"
+            type="text/javascript"
+            async
+    ></script>
   </div>
 </section>

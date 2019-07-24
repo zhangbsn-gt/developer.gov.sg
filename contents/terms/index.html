@@ -5,6 +5,7 @@ permalink: /terms/
 category: Tech Acronyms
 breadcrumb: Tech Acronyms
 ---
+
 <section class="sgds-section">
     <div class="sgds-container">
         <div class="content">
@@ -13,16 +14,39 @@ breadcrumb: Tech Acronyms
                     <div class="row has-text-centered">
                         <div class="col">
                             <h4>Singapore Government Technology Acronyms</h4>
-                            <hr>
-                            <p>Heard too many government technology-specific terms today? Find out what it means here.</p>
-                            <p>If you are a government officer, you can also help make this page more useful for others! Just use the "Suggest a new acronym" button below.</p>
+                            <hr />
+                            <p>
+                                Heard too many government technology-specific
+                                terms today? Find out what it means here.
+                            </p>
+                            <p>
+                                If you are a government officer, you can also
+                                help make this page more useful for others! Just
+                                use the "Suggest a new acronym" button below.
+                            </p>
                         </div>
                     </div>
-                    <div id="terms"></div>
+                    <div
+                        id="terms"
+                        style="display: flex; justify-content: center"
+                    >
+                        <!-- This spinner will show when the Vue app is loading -->
+                        <div class="spinner">
+                            <div class="rect1"></div>
+                            <div class="rect2"></div>
+                            <div class="rect3"></div>
+                            <div class="rect4"></div>
+                            <div class="rect5"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<script src="/assets/bundles/vue-terms-app.bundle.js" type="text/javascript"></script>
+<script
+    src="/assets/bundles/vue-terms-app.bundle.js"
+    type="text/javascript"
+    async
+></script>
