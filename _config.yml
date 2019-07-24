@@ -32,7 +32,7 @@ exclude:
   - lambda
   - node_modules
   - scripts
-  - src
+  - apps/src
   - Dockerfile
   - Gemfile*
   - Gruntfile.js
@@ -40,51 +40,18 @@ exclude:
   - package*.json
   - webpack.config.js
 
-collections_dir: components
+collections_dir: collections
 
 collections:
+  workflows:
+    output: yes
+  chapters:
+    output: yes
+  products:
+    output: yes
+  guidelines:
+    output: yes
+  events:
+    output: yes
   general:
-    permalink: /products/
-    output: true
-  sections:
-    permalink: /products/:path/
-    output: true
-  analytics:
-    permalink: /products/analytics/:path/
-    output: true
-  blockchain:
-    permalink: /products/blockchain/:path/
-    output: true
-  business-application:
-    permalink: /products/business-application/:path/
-    output: true
-  chatbot:
-    permalink: /products/chatbot/:path/
-    output: true
-  ci-cd-ct:
-    permalink: /products/ci-cd-ct/:path/
-    output: true
-  content-management:
-    permalink: /products/content-management/:path/
-    output: true
-  data-sharing:
-    permalink: /products/data-sharing/:path/
-    output: true
-  design:
-    permalink: /products/design/:path/
-    output: true
-  grants:
-    permalink: /products/grants/:path/
-    output: true
-  hosting:
-    permalink: /products/hosting/:path/
-    output: true
-  identity-management:
-    permalink: /products/identity-management/:path/
-    output: true
-  marketplaces:
-    permalink: /products/marketplaces/:path/
-    output: true
-  security:
-    permalink: /products/security/:path/
-    output: true
+    output: yes
