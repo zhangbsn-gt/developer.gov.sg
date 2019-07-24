@@ -1,9 +1,8 @@
 ---
 title: Events
-layout: layout-article
-permalink: /events/
-category: Events
-breadcrumb: Events
+layout: layout-editable
+category: events
 ---
-<h4>Overview</h4>
-<p>To fill in content</p>
+{% for event in site.events %}
+<p><a href="{{event.url}}">{{event.title}}</a></p>
+{% endfor %}

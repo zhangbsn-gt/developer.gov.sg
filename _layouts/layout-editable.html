@@ -1,0 +1,36 @@
+---
+layout: layout-page
+---
+
+<div class="article">
+    {{ content }}
+</div>
+
+<div class="has-background-light padding margin--top--lg">
+    <div
+        id="article-editor-app"
+        data-title="{{ page.title }}"
+        data-layout="{{ page.layout }}"
+        data-category="{{ page.category }}"
+        data-description="{{ page.description }}"
+        data-url="{{ page.url }}"
+        data-content="{{ content | xml_escape }}"
+    >
+        <!-- xml_escape because html content's special characters (",' etc) may break this -->
+
+        <!-- This spinner will show when the Vue app is loading -->
+        <div class="spinner">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
+        </div>
+    </div>
+
+    <script
+        src="/assets/bundles/vue-article-editor-app.bundle.js"
+        type="text/javascript"
+        async
+    ></script>
+</div>

@@ -1,96 +1,76 @@
 ---
-layout: layout-default
+layout: layout-page
 ---
-<section class="sgds-section has-background-black padding--bottom--lg padding--top--lg" style="background: url('/assets/img/bg_splash.jpg') fixed top center; background-size: 100% 100%;">
-    <div class="sgds-container">
-        {%- include sgds-breadcrumb.html -%}
-        <h3 class="has-text-white has-text-weight-bold">{{page.title}}</h3>
-    </div>
-</section>
 
-<section class="sgds-section">
-    <div class="sgds-container">
-        <div class="row">
-            <div class="col is-3 is-hidden-touch sidenav-container">
-                <div class="sidenav" data-topspacing="140" data-bottomspacing="40">
-                    <aside class="sgds-menu sidebar__inner">
-                        <ul class="sgds-menu-list">
-                            {%- if page.url contains '/products/' -%}
-                            <!-- Sidenav for products page, which iterates over products collection -->
-                                {%- assign productCategories = site.products | sort: "category" | group_by: "category" -%}
-                                {%- for category in productCategories -%}
-                                    {%- if category.name != '' -%}
-                                        <li class="second-level-nav">
-                                            {%- assign class = nil -%}
-                                            {%- if page.url contains category.name -%} {%- assign class='is-active' -%} {%- endif -%}
-                                            <a class="second-level-nav-header has-text-weight-bold {{ class }}">
-                                                {{ category.name | capitalize }} <i class="sgds-icon sgds-icon-chevron-up" aria-hidden="true"></i>
-                                            </a>
-                                        </li>
-                                        {%- assign products = category.items -%}
-                                        <div class="second-level-nav-div" >
-                                            {%- for product in products -%}
-                                                {%- assign class = nil -%}
-                                                {%- if page.url contains product.url -%} {%- assign class = 'is-active' -%} {%- endif -%}
-                                                <li>
-                                                    <a 
-                                                        class="second-level-nav-item padding--top--none {{class}}"
-                                                        href="{{ site.baseurl }}{{ product.url }}">
-                                                        {{ product.title }}
-                                                    </a>
-                                                </li>
-                                            {%- endfor -%}
-                                        </div>
-                                    {%- endif -%}
-                                {%- endfor -%}
-                            {%- else -%}
-                                {%- assign links = site.data.navigation -%}
-                                {%- for lvl1item in links -%}
-                                    {%- if page.url contains lvl1item.url -%}
-                                        {%- for lvl2item in lvl1item.lvl2 -%}
-                                            {%- assign class = nil -%}
-                                            {%- if page.url contains lvl2item.url -%}
-                                                {%- assign class = 'is-active' -%}
-                                            {%- endif -%}
-                                            <li class="second-level-nav">
-                                                <a class="second-level-nav-header has-text-weight-bold {{class}}">
-                                                    {{ lvl2item.title }}
-                                                    {%- if lvl2item.lvl3 -%}
-                                                        <i class="sgds-icon sgds-icon-chevron-up" aria-hidden="true"></i>
-                                                    {%- endif -%}
-                                                </a>
-                                            </li>
-
-                                            {%- if lvl2item.lvl3 -%}
-                                                <div class="second-level-nav-div"  id="component-list{{forloop.index}}">
-                                                    {%- for lvl3item in lvl2item.lvl3 -%}
-                                                        {%- assign class = nil -%}
-                                                        {%- if page.url contains lvl3item.url -%}
-                                                            {%- assign class = 'is-active' -%}
-                                                        {%- endif -%}
-                                                        <li>
-                                                            <a 
-                                                                class="second-level-nav-item padding--top--none {{class}}"
-                                                                href="{{ site.baseurl }}{{ lvl3item.url }}">
-                                                                {{ lvl3item.title }}
-                                                            </a>
-                                                        </li>
-                                                    {%- endfor -%}
-                                                </div>
-                                            {%- endif -%}
-                                        {%- endfor -%}
-                                    {%- endif -%}
-                                {%- endfor -%}
+<div class="row">
+    <div class="col is-3 is-hidden-touch sidenav-container">
+        <div class="sidenav" data-topspacing="140" data-bottomspacing="40">
+            <aside class="sgds-menu sidebar__inner">
+                <ul class="sgds-menu-list">
+                    {%- if page.url contains '/products/' -%}
+                    <!-- Sidenav for products page, which iterates over products collection -->
+                    {%- assign productCategories = site.products | sort: "category" | group_by:
+                    "category" -%} {%- for category in productCategories -%} {%- if category.name !=
+                    '' -%}
+                    <li class="second-level-nav">
+                        {%- assign class = nil -%} {%- if page.url contains category.name -%} {%-
+                        assign class='is-active' -%} {%- endif -%}
+                        <a class="second-level-nav-header has-text-weight-bold {{ class }}">
+                            {{ category.name | capitalize }}
+                            <i class="sgds-icon sgds-icon-chevron-up" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    {%- assign products = category.items -%}
+                    <div class="second-level-nav-div">
+                        {%- for product in products -%} {%- assign class = nil -%} {%- if page.url
+                        contains product.url -%} {%- assign class = 'is-active' -%} {%- endif -%}
+                        <li>
+                            <a
+                                class="second-level-nav-item padding--top--none {{ class }}"
+                                href="{{ site.baseurl }}{{ product.url }}"
+                            >
+                                {{ product.title }}
+                            </a>
+                        </li>
+                        {%- endfor -%}
+                    </div>
+                    {%- endif -%} {%- endfor -%} {%- else -%} {%- assign links =
+                    site.data.navigation -%} {%- for lvl1item in links -%} {%- if page.url contains
+                    lvl1item.url -%} {%- for lvl2item in lvl1item.lvl2 -%} {%- assign class = nil
+                    -%} {%- if page.url contains lvl2item.url -%} {%- assign class = 'is-active' -%}
+                    {%- endif -%}
+                    <li class="second-level-nav">
+                        <a class="second-level-nav-header has-text-weight-bold {{ class }}">
+                            {{ lvl2item.title }}
+                            {%- if lvl2item.lvl3 -%}
+                            <i class="sgds-icon sgds-icon-chevron-up" aria-hidden="true"></i>
                             {%- endif -%}
-                        </ul>
-                    </aside>
-                </div>
-            </div>
-            <div class="col is-8 is-12-touch">
-                <div class="content">
-                    {{content}}
-                </div>
-            </div>
+                        </a>
+                    </li>
+
+                    {%- if lvl2item.lvl3 -%}
+                    <div class="second-level-nav-div" id="component-list{{ forloop.index }}">
+                        {%- for lvl3item in lvl2item.lvl3 -%} {%- assign class = nil -%} {%- if
+                        page.url contains lvl3item.url -%} {%- assign class = 'is-active' -%} {%-
+                        endif -%}
+                        <li>
+                            <a
+                                class="second-level-nav-item padding--top--none {{ class }}"
+                                href="{{ site.baseurl }}{{ lvl3item.url }}"
+                            >
+                                {{ lvl3item.title }}
+                            </a>
+                        </li>
+                        {%- endfor -%}
+                    </div>
+                    {%- endif -%} {%- endfor -%} {%- endif -%} {%- endfor -%} {%- endif -%}
+                </ul>
+            </aside>
         </div>
     </div>
-</section>
+    <div class="col is-8 is-12-touch">
+        <div class="content">
+            {{ content }}
+        </div>
+    </div>
+</div>
