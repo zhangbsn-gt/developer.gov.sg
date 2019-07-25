@@ -1,122 +1,17 @@
 - title: Workflows
   url: /workflows/
-  lvl2:
-    - title: Introduction
-      url: /workflows/introduction/
-    - title: Digital Government Blueprint
-      url: /workflows/digital-government-blueprint/
-    - title: Ministry Family Digitalisation Plan
-      url: /workflows/ministry-family-digitalisation-plan/
-    - title: Form Cross-Functional Team
-      url: /workflows/form-team/
-    - title: Identify What You Will Need
-      url: /workflows/what-you-need/
-    - title: Identify Product Features
-      url: /workflows/product-backlog/
-    - title: Create a Static Website
-      url: /workflows/create-static-website/
-    - title: Create a Dynamic Website
-      url: /workflows/create-dynamic-website/
-    - title: Create a Transactional Website
-      url: /workflows/create-transactional-website/
-    - title: Create a Microservice
-      url: /workflows/create-microservice/
-    - title: Ensure Production Readiness
-      url: /workflows/production-readiness/
-    - title: Deploy the Solution
-      url: /workflows/deploy-solution/
-    - title: Monitor System Performance
-      url: /workflows/monitor-system-performance/
-    - title: Prepare for Disaster
-      url: /workflows/prepare-for-disaster/
-    - title: Migrate Users to New Product
-      url: /workflows/migrate-users/
-
-
-    - title: Concept
-      url: /workflows/concept/
-      lvl3:
-        - title: Conceptualisation and Design
-          url: /workflows/concept/conceptualisation-and-design
-        - title: Intro to Agile
-          url: /workflows/concept/intro-to-agile/
-        - title: Digital Government Blueprint
-          url: /workflows/concept/digital-government-blueprint/
-        - title: Ministry Family Digitalisation Plan
-          url: /workflows/concept/ministry-family-digitalisation-plan/
-        - title: Smart Nation
-          url: /workflows/concept/smart-nation/
-
-    - title: Inception
-      url: /workflows/inception/
-      lvl3:
-        - title: Form Cross-Functional Team
-          url: /workflows/inception/form-team/
-        - title: Identify What You Will Need
-          url: /workflows/inception/what-you-need/
-        - title: Identify Product Features
-          url: /workflows/inception/product-backlog/
 
 - title: Chapters
   url: /chapters/
-  lvl2:
-    - title: UX Design
-      url: /chapters/ux-design/
-      lvl3:
-        - title: Design Phases
-          url: /workflows/ux-design/design-phases/
-        - title: Types of Designers
-          url: /workflows/ux-design/types-of-designers/
-        - title: Accessibility Design
-          url: /chapters/ux-design/accessibility-design/
-        - title: UI and Visual Design
-          url: /chapters/ux-design/ui-visual-design/
-        - title: Writing and Presenting Content
-          url: /chapters/ux-design/writing-presenting-content/
-
-    - title: Software Engineering
-      url: /chapters/software-engineering/
-
-    - title: DevOps
-      url: /chapters/devops/
-
-    - title: Quality Engineering
-      url: /chapters/quality-engineering/
-
-    - title: Delivery Management
-      url: /chapters/delivery-management/
-
-    - title: Data Science
-      url: /chapters/data-science/
-
-    - title: SIOT
-      url: /chapters/siot/
-
-    - title: Project Management
-      url: /chapters/project-management/
-
-    - title: Cyber Security
-      url: /chapters/cyber-security/
 
 - title: Products
   url: /products/
 
 - title: Guidelines
   url: /guidelines/
-  lvl2:
-    - title: Data Sharing
-      url: /guidelines/data-sharing/
-      lvl3:
-        - title: API Playbook
-          url: /guidelines/data-sharing/api-playbook/
-
-    - title: Design
-      url: /guidelines/design/
-      lvl3:
-        - title: Digital Service Standards
-          url: /guidelines/design/digital-service-standards/
-        - title: Accessibility Design
-          url: /guidelines/design/accessibility-design/
 
 - title: Events
   url: /events/
+
+- title: Discussions
+  url: "http://community.developer.gov.sg"
