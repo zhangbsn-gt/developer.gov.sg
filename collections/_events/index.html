@@ -1,8 +1,25 @@
 ---
 title: Events
 layout: layout-editable
-category: events
 ---
-{% for event in site.events %}
-<p><a href="{{event.url}}">{{event.title}}</a></p>
-{% endfor %}
+
+{%- assign categories = site.events | sort: "category" | group_by: "category" -%}
+{%- for category in categories -%}
+    {%- if category.name != '' -%}
+        <h5>{{ category.name | capitalize }}</h5>
+        {%- assign items = category.items -%}
+        <div class="row is-multiline">
+            {%- for item in items -%}
+            <div class="col is-4 is-flex">
+                <a class="sgds-card sgds-card-button" href="{{ item.url }}">
+                    <div class="sgds-card-content">
+                        <h6>{{ item.title }}</h6>
+                        <p>{{ item.description }}</p>
+                    </div>
+                </a>
+            </div>
+            {%- endfor -%}
+        </div>
+        {%- if forloop.last != true -%}<hr>{%- endif -%}
+    {%- endif -%}
+{%- endfor -%}
