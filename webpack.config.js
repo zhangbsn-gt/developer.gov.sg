@@ -6,7 +6,8 @@ module.exports = {
     entry: {
         "vue-article-editor-app": "./apps/src/vue-article-editor-app.js",
         "vue-terms-app": "./apps/src/vue-terms-app.js",
-        "vue-review-app": "./apps/src/vue-review-app.js"
+        "vue-review-app": "./apps/src/vue-review-app.js",
+        "vue-workflow-app": "./apps/src/vue-workflow-app.js"
     },
     output: {
         filename: "[name].bundle.js",
