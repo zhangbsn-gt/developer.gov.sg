@@ -1,0 +1,13 @@
+{
+    "data" : 
+        {%- assign keys = include.keys | split:"," -%}
+        [ 
+            {%- for item in include.data -%} 
+            { 
+                {%- for k in keys -%} 
+                    {{ k | jsonify }}: {{ item[k] | jsonify }} {%- unless forloop.last -%}, {%- endunless -%} 
+                {%- endfor -%} } 
+            {%- unless forloop.last -%}, {%- endunless -%} 
+            {%- endfor -%} 
+        ]
+}
