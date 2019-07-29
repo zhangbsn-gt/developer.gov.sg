@@ -37,11 +37,11 @@
             </div>
         </h3>
         <hr>
-        <template v-for="category in CATEGORY" v-if="filterWorkflow(category).length>0">
+        <template v-for="category in CATEGORY" v-if="category.filteredWorkflows.length>0">
             <h5>{{ category.title }}</h5>
             <p>{{ category.description }}</p>
             <div class="row is-multiline">
-                <div class="col is-4 is-flex" v-for="(workflow, index) in filterWorkflow(category)" :key="index">
+                <div class="col is-4 is-flex" v-for="(workflow, index) in category.filteredWorkflows" :key="index">
                     <a class="sgds-card sgds-card-button" :href="workflow.url">
                         <div class="sgds-card-header">
                             <p class="sgds-card-header-title">{{ workflow.title }}</p>
