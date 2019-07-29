@@ -2,11 +2,11 @@
 title: Products
 layout: layout-sidenav
 ---
-<h5>Products and Services</h5>
+<h4>Products and Services</h4>
 <p>Here are collections of products and services that the Singapore Government has to support your software development. By using these products and services, you are complying to the usage as well as security policies.</p>
 <div class="row has-background-light margin--top">
     <div class="col is-8">
-        <p class="margin--top--sm margin--bottom--sm has-text-weight-semibold">Join us to help everyone discover what the Singapore Government offers.</p>
+        <p class="margin--top--sm margin--bottom--sm has-text-weight-semibold">Help everyone discover what the Singapore Government offers.</p>
     </div>
     <div class="col is-4 has-text-right">
         <a class="sgds-button is-rounded is-fullwidth" href="https://form.gov.sg/5cfa00b06e831d0010034a61" target="_blank">Add New Product</a>
@@ -18,15 +18,17 @@ layout: layout-sidenav
 {% assign categories = site.products | sort: "category" | group_by: "category" %}
 {% for category in categories %}
     {% if category.name != '' %}
-        <h5>{{ category.name | capitalize }}</h5>
+        <h4>{{ category.name | capitalize }}</h4>
         {% assign items = category.items %}
         <div class="row is-multiline">
             {% for item in items %}
             <div class="col is-4 is-flex">
                 <a class="sgds-card sgds-card-button" href="{{ item.url }}">
+                    <div class="sgds-card-header">
+                        <p class="sgds-card-header-title">{{ item.title }}</p>
+                    </div>
                     <div class="sgds-card-content">
-                        <h6>{{ item.title }}</h6>
-                        <p>{{ item.description }}</p>
+                        <small>{{ item.description }}</small>
                     </div>
                 </a>
             </div>

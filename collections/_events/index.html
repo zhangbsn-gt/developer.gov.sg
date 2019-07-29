@@ -23,3 +23,20 @@ layout: layout-editable
         {%- if forloop.last != true -%}<hr>{%- endif -%}
     {%- endif -%}
 {%- endfor -%}
+
+<section class="sgds-section">
+    <div class="sgds-container">
+        <div id="events-app">
+            <!-- This spinner will show when the Vue app is loading -->
+            <div class="spinner">
+                <div class="rect1"></div>
+                <div class="rect2"></div>
+                <div class="rect3"></div>
+                <div class="rect4"></div>
+                <div class="rect5"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script async src="/assets/bundles/vue-events-app.bundle.js"></script>
