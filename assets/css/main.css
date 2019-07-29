@@ -10,10 +10,13 @@ h6 {
     font-weight: 600 !important;
 }
 
+h4 {
+    color: #e79529;
+}
+
 h4,
 h5,
-h6,
-p {
+h6{
     margin-bottom: 1rem !important;
 }
 
@@ -24,6 +27,19 @@ hr {
 
 img {
     margin-bottom: 1rem;
+}
+
+.sgds-card-header{
+    background-color: #043775;
+}
+
+.sgds-card-header-title{
+    color: #fff !important;
+}
+
+.sgds-card:hover{
+    color: #6037b3 !important;
+    background-color: #efefef;
 }
 
 /*Custom styling for Quill Editor*/
