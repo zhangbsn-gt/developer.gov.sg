@@ -19,7 +19,7 @@ const APPLICATION = {
 
 const CATEGORY = {
     INTRODUCTION: {
-        tag:'introduciton',
+        tag:'introduction',
         title: 'Introduction',
         description: 'You will understand Agile Software Development Life Cycle, within the context of our efforts on the delivery of transformative digital projects in Singapore Government.'
     },

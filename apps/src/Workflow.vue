@@ -37,11 +37,11 @@
             </div>
         </h3>
         <hr>
-        <template v-for="category in CATEGORY">
+        <template v-for="category in CATEGORY" v-if="filterWorkflow(category).length>0">
             <h5>{{ category.title }}</h5>
             <p>{{ category.description }}</p>
             <div class="row is-multiline">
-                <div class="col is-4 is-flex" v-for="(workflow, index) in getWorkflow(category)" :key="index">
+                <div class="col is-4 is-flex" v-for="(workflow, index) in filterWorkflow(category)" :key="index">
                     <a class="sgds-card sgds-card-button" :href="workflow.url">
                         <div class="sgds-card-header">
                             <p class="sgds-card-header-title">{{ workflow.title }}</p>
@@ -72,18 +72,45 @@
                 CATEGORY: CATEGORY
             };
         },
-        methods: {
-            getWorkflow(category) {
-                var parent = this;
-                return this.workflows.filter(function (workflow) {
-                    if (parent.selectedStage && parent.selectedApp){
-                        return workflow.category == category.tag
-                                && ((workflow.stage && workflow.stage.split(',').includes(parent.selectedStage.tag))
-                                && (workflow.application && workflow.application.split(',').includes(parent.selectedApp)));
-                    }else{
-                        return workflow.category == category.tag;
-                    }
+        beforeMount() {
+            var parent = this;
+            for (var key in this.CATEGORY){
+                this.CATEGORY[key].workflows = this.workflows.filter(function (workflow) {
+                    return workflow.category && workflow.category.trim() == parent.CATEGORY[key].tag;
                 });
+                this.filterWorkflow(this.CATEGORY[key]);
+            }
+
+        },
+        watch: {
+            selectedStage: function () {
+                for (var key in this.CATEGORY) {
+                    this.filterWorkflow(this.CATEGORY[key]);
+                }
+            },
+            selectedApp: function () {
+                for (var key in this.CATEGORY) {
+                    this.filterWorkflow(this.CATEGORY[key]);
+                }
+            }
+        },
+        methods: {
+            filterWorkflow(category) {
+                var parent = this;
+                if(category.workflows) {
+                    category.filteredWorkflows = category.workflows.filter(function (workflow) {
+                        if (parent.selectedStage && parent.selectedApp) {
+                            var stages = workflow.stage ? workflow.stage.split(',').map(s => s.trim()) : [];
+                            var applications = workflow.application ? workflow.application.split(',').map(s => s.trim()) : [];
+                            return workflow.category == category.tag
+                                && ((workflow.stage && stages.includes(parent.selectedStage.tag))
+                                    && (workflow.application && applications.includes(parent.selectedApp)));
+                        }
+                        return true;
+                    });
+                }else{
+                    category.filteredWorkflows = [];
+                }
             },
         }
     };
