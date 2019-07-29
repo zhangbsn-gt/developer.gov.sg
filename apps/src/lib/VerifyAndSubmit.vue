@@ -67,7 +67,7 @@
 <script>
 import axios from "axios";
 import Noty from "noty";
-import { emailRegex } from "./lib";
+import { emailRegex } from "./index";
 
 const stages = {
     verify: "verify",

@@ -66,7 +66,7 @@ import Noty from "noty";
 import Quill from "quill";
 import Loading from "vue-loading-overlay";
 import "vue-loading-overlay/dist/vue-loading.css";
-import VerifyAndSubmit from "./VerifyAndSubmit.vue";
+import VerifyAndSubmit from "../lib/VerifyAndSubmit.vue";
 
 let BlockEmbed = Quill.import("blots/block/embed");
 class HrBlot extends BlockEmbed {}
