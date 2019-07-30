@@ -5,92 +5,23 @@ layout: layout-page
 <h4>Introduction</h4>
 <p>Here are the different specialisms we can find within development teams, wherever necessary.</p>
 <br>
-<div class="row">
+
+<div class="row is-multiline">
+{% assign chapterIntros = site.chapters | where: "title", "Introduction" %}
+{% for chapter in chapterIntros %}
     <div class="col is-4 is-flex">
-        <a class="sgds-card sgds-card-button" href="/chapters/cyber-security/">
+        <a href="{{chapter.url}}" class="sgds-card sgds-card-button">
             <div class="sgds-card-header">
-                <p class="sgds-card-header-title">Cyber Security</p>
+                <p class="sgds-card-header-title">{{ chapter.category }}</p>
             </div>
             <div class="sgds-card-content">
-                <small>It is the protection of computer systems from the theft of or damage to their hardware, software, or electronic data, as well as from the disruption or misdirection of the services they provide.</small>
+                <small>{{ chapter.description }}</small>
             </div>
         </a>
     </div>
-    <div class="col is-4 is-flex">
-        <a class="sgds-card sgds-card-button" href="/chapters/data-science/">
-            <div class="sgds-card-header">
-                <p class="sgds-card-header-title">Data Science</p>
-            </div>
-            <div class="sgds-card-content">
-                <small>Data science uses scientific methods, processes, algorithms and systems to extract knowledge and insights from structured and unstructured data.</small>
-            </div>
-        </a>
-    </div>
-    <div class="col is-4 is-flex">
-        <a class="sgds-card sgds-card-button" href="/chapters/delivery-management/">
-            <div class="sgds-card-header">
-                <p class="sgds-card-header-title">Delivery Management</p>
-            </div>
-            <div class="sgds-card-content">
-                <small>It is the organization, administration, and supervision of the people, processes, and technologies to successfully achieve what a client expects to receive.</small>
-            </div>
-        </a>
-    </div>
+{% endfor %}
 </div>
-<div class="row">
-    <div class="col is-4 is-flex">
-        <a class="sgds-card sgds-card-button" href="/chapters/devops/">
-            <div class="sgds-card-header">
-                <p class="sgds-card-header-title">DevOps</p>
-            </div>
-            <div class="sgds-card-content">
-                <small>DevOps is a set of practices that combine software development and IT operations to shorten the development life cycle while delivering features, fixes, and updates frequently in close alignment with business objectives.</small>
-            </div>
-        </a>
-    </div>
-    <div class="col is-4 is-flex">
-        <a class="sgds-card sgds-card-button" href="/chapters/quality-engineering/">
-            <div class="sgds-card-header">
-                <p class="sgds-card-header-title">Quality Engineering</p>
-            </div>
-            <div class="sgds-card-content">
-                <small>Quality engineering is the management, development, operation and maintenance of IT systems and enterprise architectures with a high quality standard.</small>
-            </div>
-        </a>
-    </div>
-    <div class="col is-4 is-flex">
-        <a class="sgds-card sgds-card-button" href="/chapters/siot/">
-            <div class="sgds-card-header">
-                <p class="sgds-card-header-title">SIoT</p>
-            </div>
-            <div class="sgds-card-content">
-                <small>Social Internet-of-Things has the potential to support novel applications and networking services for the IoT in more effective and efficient ways.</small>
-            </div>
-        </a>
-    </div>
-</div>
-<div class="row">
-    <div class="col is-4 is-flex">
-        <a class="sgds-card sgds-card-button" href="/chapters/software-engineering/">
-            <div class="sgds-card-header">
-                <p class="sgds-card-header-title">Software Engineering</p>
-            </div>
-            <div class="sgds-card-content">
-                <small>Software engineering is the process of analyzing user needs and designing, constructing, and testing end user applications that will satisfy these needs through the use of software programming languages.</small>
-            </div>
-        </a>
-    </div>
-    <div class="col is-4 is-flex">
-        <a class="sgds-card sgds-card-button" href="/chapters/ux-design/accessibility-design/">
-            <div class="sgds-card-header">
-                <p class="sgds-card-header-title">UX Design</p>
-            </div>
-            <div class="sgds-card-content">
-                <small>UX design is the process of enhancing user satisfaction with a product by improving the usability, accessibility, and desirability provided in the interaction with a product.</small>
-            </div>
-        </a>
-    </div>
-</div>
+
 <hr>
 <h4>Join GovTech as Developers</h4>
 <p>We need people who share the same excitement and passion – individuals who are excited about building the Government Tech Stack, and developing meaningful products, platforms, and solutions for the public good.</p>
