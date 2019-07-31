@@ -3,54 +3,20 @@
         <h4>How can we help you?</h4>
         <h3>
             I need a
-            <div class="sgds-dropdown">
-                <div class="sgds-dropdown-trigger">
-                    <button
-                        class="sgds-button"
-                        aria-haspopup="true"
-                        aria-controls="sgds-dropdown-menu"
-                    >
-                        <span>{{ selectedApp }}</span>
-                        <span class="icon">
-                            <span class="sgds-icon sgds-icon-chevron-down"></span>
-                        </span>
-                    </button>
-                </div>
-                <div class="sgds-dropdown-menu" id="sgds-dropdown-menu" role="menu">
-                    <div class="sgds-dropdown-content">
-                        <a
-                            v-on:click="selectedApp = application"
-                            v-for="application in APPLICATIONS"
-                            class="sgds-dropdown-item"
-                            :key="application"
-                        >{{ application }}</a>
-                    </div>
-                </div>
-            </div>and
-            <div class="sgds-dropdown">
-                <div class="sgds-dropdown-trigger">
-                    <button
-                        class="sgds-button"
-                        aria-haspopup="true"
-                        aria-controls="sgds-dropdown-menu"
-                    >
-                        <span>{{ selectedStage.title }}</span>
-                        <span class="icon">
-                            <span class="sgds-icon sgds-icon-chevron-down"></span>
-                        </span>
-                    </button>
-                </div>
-                <div class="sgds-dropdown-menu" id="sgds-dropdown-menu" role="menu">
-                    <div class="sgds-dropdown-content">
-                        <a
-                            v-on:click="selectedStage = stage"
-                            v-for="stage in STAGES"
-                            class="sgds-dropdown-item"
-                            :key="stage.tag"
-                        >{{ stage.title }}</a>
-                    </div>
-                </div>
-            </div>
+            <SgdsDropdown :text="selectedApp">
+                <SgdsDropdownItem
+                    v-for="application of APPLICATIONS"
+                    :key="application"
+                    v-on:click="selectedApp = application"
+                >{{ application }}</SgdsDropdownItem>
+            </SgdsDropdown>and
+            <SgdsDropdown :text="selectedStage.title">
+                <SgdsDropdownItem
+                    v-for="stage in STAGES"
+                    :key="stage.tag"
+                    v-on:click="selectedStage = stage"
+                >{{ stage.title }}</SgdsDropdownItem>
+            </SgdsDropdown>
         </h3>
         <hr />
         <template v-for="(category, categoryIndex) of highlightedCategories">
@@ -80,9 +46,14 @@
 </template>
 
 <script>
+import { SgdsDropdown, SgdsDropdownItem } from "sgds-govtech-vue";
 import { STAGES, APPLICATIONS, CATEGORIES } from "./WorkflowData";
 
 export default {
+    components: {
+        SgdsDropdown,
+        SgdsDropdownItem
+    },
     data() {
         return {
             workflows: window.workflows,
