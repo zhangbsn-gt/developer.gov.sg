@@ -21,9 +21,13 @@
 </head>
 
 <body class="has-navbar-fixed-top">
-    {%- include sgds-agencyhead.html -%}
-    {{content}}
-    {%- include sgds-footer.html -%}
+    <div class="main">
+        {%- include sgds-agencyhead.html -%}
+        {{content}}
+    </div>
+    <div class="footer">
+        {%- include sgds-footer.html -%}
+    </div>
     {%- include import-scripts.html -%}
 </body>
 
