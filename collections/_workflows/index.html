@@ -2,223 +2,28 @@
 title: Workflows
 layout: layout-page
 ---
-<h4>How can we help you?</h4>
-<h3>I need a
-    <div class="sgds-dropdown">
-        <div class="sgds-dropdown-trigger">
-            <button class="sgds-button" aria-haspopup="true" aria-controls="sgds-dropdown-menu">
-                <span>static website</span>
-                <span class="icon">
-                    <span class="sgds-icon sgds-icon-chevron-down"></span>
-                </span>
-            </button>
-        </div>
-        <div class="sgds-dropdown-menu" id="sgds-dropdown-menu" role="menu">
-            <div class="sgds-dropdown-content">
-                <a href="#" class="sgds-dropdown-item">static website</a>
-                <a class="sgds-dropdown-item">dynamic website</a>
-                <a class="sgds-dropdown-item">transactional website</a>
+<script>
+    window.workflows = {% include json_from_keys.json data=site.workflows keys="title,category,stage,application,description,url" %}.data
+</script>
+<section class="sgds-section">
+    <div class="sgds-container">
+        <div class="content">
+            <div class="row">
+                <div class="col is-10 is-offset-1">
+                    <div id="workflow" style="display: flex; justify-content: center">
+                        <!-- This spinner will show when the Vue app is loading -->
+                        <div class="spinner">
+                            <div class="rect1"></div>
+                            <div class="rect2"></div>
+                            <div class="rect3"></div>
+                            <div class="rect4"></div>
+                            <div class="rect5"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    and
-    <div class="sgds-dropdown">
-        <div class="sgds-dropdown-trigger">
-            <button class="sgds-button" aria-haspopup="true" aria-controls="sgds-dropdown-menu">
-                <span>I'm just getting started</span>
-                <span class="icon">
-                    <span class="sgds-icon sgds-icon-chevron-down"></span>
-                </span>
-            </button>
-        </div>
-        <div class="sgds-dropdown-menu" id="sgds-dropdown-menu" role="menu">
-            <div class="sgds-dropdown-content">
-                <a href="#" class="sgds-dropdown-item">I'm just getting started</a>
-                <a class="sgds-dropdown-item">I've done this before</a>
-            </div>
-        </div>
-    </div>
-</h3>
-<hr>
-<h4>Introduction</h4>
-<p>You will understand Agile Software Development Life Cycle, within the context of our efforts on the delivery of transformative digital projects in Singapore Government.</p>
-<br>
-<div class="row is-multiline">
-    <div class="col is-4 is-flex">
-        <a class="sgds-card sgds-card-button" href="/workflows/intro-to-agile/">
-            <div class="sgds-card-header">
-                <p class="sgds-card-header-title">Introduction</p>
-            </div>
-            <div class="sgds-card-content">
-                <small>The agile software development lifecycle is dominated by the iterative process. Each iteration results in the next piece of the software development puzzle.</small>
-            </div>
-        </a>
-    </div>
-</div>
-<hr>
-<h4>Concept Phase</h4>
-<p>You collaborate with stakeholders to consider this potential project and invest in enough effort to decide whether to consider funding the effort further.</p>
-<br>
-<div class="row is-multiline">
-    <div class="col is-4 is-flex">
-        <a class="sgds-card sgds-card-button" href="/workflows/product-conceptualisation">
-            <div class="sgds-card-header">
-                <p class="sgds-card-header-title">Product Conceptualisation</p>
-            </div>
-            <div class="sgds-card-content">
-                <small>The purpose of discovery is to identify and understand the problem that needs to be solved, before committing to building a digital product or service.</small>
-            </div>
-        </a>
-    </div>
-    <div class="col is-4 is-flex">
-        <a class="sgds-card sgds-card-button" href="/workflows/digital-government-blueprint/">
-            <div class="sgds-card-header">
-                <p class="sgds-card-header-title">Digital Government Blueprint</p>
-            </div>
-            <div class="sgds-card-content">
-                <small>DGB is a statement of the Government’s ambition to better leverage data and harness new technologies, and to drive broader efforts to build a digital economy and digital society, in support of Smart Nation.</small>
-            </div>
-        </a>
-    </div>
-    <div class="col is-4 is-flex">
-        <a class="sgds-card sgds-card-button" href="/workflows/ministry-family-digitalisation-plan/">
-            <div class="sgds-card-header">
-                <p class="sgds-card-header-title">Minstry Family Digitalisation Plan</p>
-            </div>
-            <div class="sgds-card-content">
-                <small>MFDP comprises suggested approach, key principles and other reference resources that will serve as a guide to relevant officers involved in developing digitalisation plans for their agencies.</small>
-            </div>
-        </a>
-    </div>
-</div>
-<hr>
-<h4>Inception Phase</h4>
-<p>You identify with your team the complexity of the problem space, technical complexity and ability of stakeholders to come to agreement as to the scope.</p>
-<br>
-<div class="row is-multiline">
-    <div class="col is-4 is-flex">
-        <a class="sgds-card sgds-card-button" href="/workflows/form-team/">
-            <div class="sgds-card-header">
-                <p class="sgds-card-header-title">Form Cross-Functional Team</p>
-            </div>
-            <div class="sgds-card-content">
-                <small>A scrum team consists of a product owner, a scrum master and the development team. The scrum team is self-organising and self-managing, which means they decide how best to deliver their work.</small>
-            </div>
-        </a>
-    </div>
-    <div class="col is-4 is-flex">
-        <a class="sgds-card sgds-card-button" href="/workflows/what-you-need/">
-            <div class="sgds-card-header">
-                <p class="sgds-card-header-title">Identify What You Will Need</p>
-            </div>
-            <div class="sgds-card-content">
-                <small>The decisions we make must enable the team to work efficiently and allow deployed services to scale easily and cost-effectively.</small>
-            </div>
-        </a>
-    </div>
-    <div class="col is-4 is-flex">
-        <a class="sgds-card sgds-card-button" href="/workflows/product-backlog/">
-            <div class="sgds-card-header">
-                <p class="sgds-card-header-title">Identify Product Features</p>
-            </div>
-            <div class="sgds-card-content">
-                <small>The product backlog is a prioritised list of all the work a development team needs to deliver in future releases of the product.</small>
-            </div>
-        </a>
-    </div>
-</div>
-<hr>
-<h4>Construction and Iteration</h4>
-<p>You incrementally deliver high-quality working software which meets the changing needs of our stakeholders.</p>
-<br>
-<div class="row is-multiline is-multiline">
-    <div class="col is-4 is-flex">
-        <a class="sgds-card sgds-card-button" href="/workflows/create-static-website/">
-            <div class="sgds-card-header">
-                <p class="sgds-card-header-title">Create a Static Website</p>
-            </div>
-            <div class="sgds-card-content">
-                <small>A static information website is the most basic kind of website, and the easiest to create. It requires no server-side processing, only client-side.</small>
-            </div>
-        </a>
-    </div>
-    <div class="col is-4 is-flex">
-        <a class="sgds-card sgds-card-button" href="/workflows/create-dynamic-website/">
-            <div class="sgds-card-header">
-                <p class="sgds-card-header-title">Create a Dynamic Website</p>
-            </div>
-            <div class="sgds-card-content">
-                <small>Dynamic sites are blogs, e-commerce sites, calendar or to-do sites, or any site that needs to updated often.</small>
-            </div>
-        </a>
-    </div>
-    <div class="col is-4 is-flex">
-        <a class="sgds-card sgds-card-button" href="/workflows/create-transactional-website/">
-            <div class="sgds-card-header">
-                <p class="sgds-card-header-title">Create a Transactional Website</p>
-            </div>
-            <div class="sgds-card-content">
-                <small>Transactional websites provide users with the ability to conduct transactions through the financial institution's website by initiating banking transactions or buying products and services.</small>
-            </div>
-        </a>
-    </div>
-</div>
-<hr>
-<h4>Release Phase</h4>
-<p>You will need to adopt a continuous deployment strategy to automate many of the technical aspects to transit your system into production.</p>
-<br>
-<div class="row is-multiline">
-    <div class="col is-4 is-flex">
-        <a class="sgds-card sgds-card-button" href="/workflows/production-readiness/">
-            <div class="sgds-card-header">
-                <p class="sgds-card-header-title">Ensure Production Readiness</p>
-            </div>
-            <div class="sgds-card-content">
-                <small>Production readiness is the practice of ensuring that your software is continuously in a state where it could be shipped at a moment’s notice.</small>
-            </div>
-        </a>
-    </div>
-    <div class="col is-4 is-flex">
-        <a class="sgds-card sgds-card-button" href="/workflows/deploy-solution/">
-            <div class="sgds-card-header">
-                <p class="sgds-card-header-title">Deploy the Solution</p>
-            </div>
-            <div class="sgds-card-content">
-                <small>In software deployment an environment or tier is a system in which a software or component is deployed and executed.</small>
-            </div>
-        </a>
-    </div>
-</div>
-<hr>
-<h4>Production Phase</h4>
-<p>You need to keep the system running and help users to use it.</p>
-<br>
-<div class="row is-multiline">
-    <div class="col is-4 is-flex">
-        <a class="sgds-card sgds-card-button" href="/workflows/monitor-system-performance/">
-            <div class="sgds-card-header">
-                <p class="sgds-card-header-title">Monitor System Performance</p>
-            </div>
-            <div class="sgds-card-content">
-                <small>Descriptions</small>
-            </div>
-        </a>
-    </div>
-</div>
-<hr>
-<h4>Retirement</h4>
-<p>You must strive to complete the removal of a system release, or the complete system itself from production with minimal impact to business operations.</p>
-<br>
-<div class="row is-multiline">
-    <div class="col is-4 is-flex">
-        <a class="sgds-card sgds-card-button" href="/workflows/migrate-users/">
-            <div class="sgds-card-header">
-                <p class="sgds-card-header-title">Monitor System Performance</p>
-            </div>
-            <div class="sgds-card-content">
-                <h6></h6>
-                <small>Descriptions</small>
-            </div>
-        </a>
-    </div>
-</div>
+</section>
+
+<script async src="/assets/bundles/vue-workflow-app.bundle.js" type="text/javascript"></script>

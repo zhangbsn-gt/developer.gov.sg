@@ -506,4 +506,10 @@ router.put("/terms", async (req, res) => {
         });
     }
 });
+
+router.get("/events", async (req, res) => {
+    const response = await axios.get("https://api.meetup.com/STACK-X-by-GovTech-Singapore/events");
+    res.send(response.data);
+});
+
 module.exports = router;
