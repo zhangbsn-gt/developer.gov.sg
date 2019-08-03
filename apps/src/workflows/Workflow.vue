@@ -3,26 +3,43 @@
         <h4>How can we help you?</h4>
         <h3>
             I need a
-            <SgdsDropdown :text="selectedApp">
-                <SgdsDropdownItem
-                    v-for="application of APPLICATIONS"
-                    :key="application"
-                    v-on:click="selectedApp = application"
-                >{{ application }}</SgdsDropdownItem>
-            </SgdsDropdown>and
-            <SgdsDropdown :text="selectedStage.title">
-                <SgdsDropdownItem
-                    v-for="stage in STAGES"
-                    :key="stage.tag"
-                    v-on:click="selectedStage = stage"
-                >{{ stage.title }}</SgdsDropdownItem>
-            </SgdsDropdown>
+            <div class="field">
+                <div class="control">
+                    <div class="select">
+                        <select v-model="selectedApp">
+                            <option
+                                v-for="application of APPLICATIONS"
+                                :key="application"
+                                :value="application"
+                            >{{ application }}</option>
+                        </select>
+                    </div>
+                </div>
+            </div>and
+            <div class="field">
+                <div class="control">
+                    <div class="select">
+                        <select v-model="selectedStage">
+                            <option
+                                v-for="stage in STAGES"
+                                :key="stage.tag"
+                                :value="stage"
+                            >{{ stage.title }}</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
         </h3>
         <hr />
         <template v-for="(category, categoryIndex) of highlightedCategories">
             <div :key="category.tag">
-                <h5>{{ category.title }}</h5>
-                <p>{{ category.description }}</p>
+                <div class="row">
+                    <div class="col">
+                        <h5>{{ category.title }}</h5>
+                        <p>{{ category.description }}</p>
+                    </div>
+                </div>
+
                 <div class="row is-multiline">
                     <div
                         class="col is-4 is-flex"
@@ -46,14 +63,9 @@
 </template>
 
 <script>
-import { SgdsDropdown, SgdsDropdownItem } from "sgds-govtech-vue";
 import { STAGES, APPLICATIONS, CATEGORIES } from "./WorkflowData";
 
 export default {
-    components: {
-        SgdsDropdown,
-        SgdsDropdownItem
-    },
     data() {
         return {
             workflows: window.workflows,
@@ -97,3 +109,14 @@ export default {
     }
 };
 </script>
+
+<style scoped>
+.field,
+.control {
+    display: inline-block;
+}
+
+.select:not(.is-multiple):not(.is-loading):after {
+    margin-top: -1em;
+}
+</style>
