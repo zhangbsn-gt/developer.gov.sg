@@ -12,7 +12,7 @@
         "buildsite": "npm run buildstatic && jekyll build",
         "buildstatic": "NODE_ENV=production webpack",
         "deploynetlify": "npm run testlambda && npm run buildlambda && npm run testsite && npm run buildsite",
-        "devserver": "webpack --watch & bundle exec jekyll serve",
+        "devserver": "webpack --watch & $HOME/.rbenv/shims/bundle exec jekyll serve",
         "netlifydev": "NODE_ENV=development netlify dev",
         "servelambda": "netlify-lambda serve lambda",
         "test": "echo \"Error: no test specified\" && exit 1",
