@@ -35,7 +35,7 @@
             <div :key="category.tag">
                 <div class="row">
                     <div class="col">
-                        <h5>{{ category.title }}</h5>
+                        <h4>{{ category.title }}</h4>
                         <p>{{ category.description }}</p>
                     </div>
                 </div>
