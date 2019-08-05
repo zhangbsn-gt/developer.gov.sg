@@ -9,7 +9,7 @@
     "license": "ISC",
     "scripts": {
         "buildlambda": "netlify-lambda build lambda",
-        "buildsite": "npm run buildstatic && jekyll build",
+        "buildsite": "npm run buildstatic && bundle exec jekyll build",
         "buildstatic": "NODE_ENV=production webpack",
         "deploynetlify": "npm run testlambda && npm run buildlambda && npm run testsite && npm run buildsite",
         "devserver": "webpack --watch & $HOME/.rbenv/shims/bundle exec jekyll serve",
