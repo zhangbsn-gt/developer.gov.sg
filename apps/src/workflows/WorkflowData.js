@@ -12,9 +12,9 @@ const STAGES = {
 const APPLICATIONS = {
     STATIC_WEBSITE: "static website",
     DYNAMIC_WEBSITE: "dynamic website",
-    TRANSACTIONAL_WEBSITE: "transactional website",
-    MOBILE_APP: "mobile app",
-    DESIGNER_TEMPLATAE: "designer template"
+    TRANSACTIONAL_WEBSITE: "transactional website"
+    //MOBILE_APP: "mobile app",
+    //DESIGNER_TEMPLATE: "designer template"
 };
 
 const CATEGORIES = [
