@@ -2,13 +2,13 @@
     <div class="modal-container vld-parent">
         <Loading :active.sync="isLoading" :is-full-page="false"></Loading>
         <div class="modal-header">
-            <h5>Editing {{ page_title }} page at {{ page_path }}</h5>
+            <h6>Editing {{ page_title }}</h6>
             <button class="sgds-button is-rounded" type="button" @click="$emit('close')">
                 <span class="sgds-icon sgds-icon-cross"></span>
             </button>
         </div>
-
         <div class="modal-body">
+            <small>URL: {{ page_path }}</small>
             <div class="sgds-tabs is-boxed">
                 <ul>
                     <li :class="{'is-active': !showOriginal}">
@@ -50,7 +50,6 @@
                 </div>
                 <div id="editor"></div>
             </div>
-
             <div class="article original-content" v-show="showOriginal" v-html="page_content"></div>
         </div>
 

@@ -1,6 +1,8 @@
 <template>
     <div id="events-app">
         <h4>Meetups</h4>
+        <p>Watch this space for upcoming Meetups organised by GovTech.</p>
+        <br>
         <div class="spinner" v-if="loading">
             <div class="rect1"></div>
             <div class="rect2"></div>

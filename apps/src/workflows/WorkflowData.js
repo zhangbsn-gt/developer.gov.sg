@@ -1,18 +1,27 @@
 const STAGES = {
     BEGINNER: {
         tag: "beginner",
-        title: "I'm just getting started"
+        title: "and I'm just getting started"
     },
     ADVANCED: {
         tag: "advanced",
-        title: "I've done this before"
+        title: "and I've done this before"
     }
 };
 
 const APPLICATIONS = {
-    STATIC_WEBSITE: "static website",
-    DYNAMIC_WEBSITE: "dynamic website",
-    TRANSACTIONAL_WEBSITE: "transactional website"
+    STATIC_WEBSITE: {
+        tag: "static website",
+        title: "I need to build a static website"
+    },
+    DYNAMIC_WEBSITE: {
+        tag: "dynamic website",
+        title: "I need to build a dynamic website"
+    },
+    TRANSACTIONAL_WEBSITE: {
+        tag: "transactional website",
+        title: "I need to build a transactional website"
+    }
     //MOBILE_APP: "mobile app",
     //DESIGNER_TEMPLATE: "designer template"
 };
