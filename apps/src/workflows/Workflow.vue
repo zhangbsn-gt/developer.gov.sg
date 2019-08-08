@@ -1,36 +1,31 @@
 <template>
     <div id="workflow">
         <h4>How can we help you?</h4>
-        <h3>
-            I need a
-            <div class="field">
-                <div class="control">
-                    <div class="select">
-                        <select v-model="selectedApp">
-                            <option
+        <div class="field is-horizontal">
+            <div class="control">
+                <div class="select">
+                    <select v-model="selectedApp">
+                        <option
                                 v-for="application of APPLICATIONS"
-                                :key="application"
+                                :key="application.tag"
                                 :value="application"
-                            >{{ application }}</option>
-                        </select>
-                    </div>
+                        >{{ application.title }}</option>
+                    </select>
                 </div>
-            </div>and
-            <div class="field">
-                <div class="control">
-                    <div class="select">
-                        <select v-model="selectedStage">
-                            <option
+            </div>
+            <div class="control">
+                <div class="select">
+                    <select v-model="selectedStage">
+                        <option
                                 v-for="stage in STAGES"
                                 :key="stage.tag"
                                 :value="stage"
-                            >{{ stage.title }}</option>
-                        </select>
-                    </div>
+                        >{{ stage.title }}</option>
+                    </select>
                 </div>
             </div>
-        </h3>
-        <hr />
+        </div>
+        <hr>
         <template v-for="(category, categoryIndex) of highlightedCategories">
             <div :key="category.tag">
                 <div class="row">
@@ -102,21 +97,10 @@ export default {
 
                 return (
                     stages.includes(this.selectedStage.tag) &&
-                    applications.includes(this.selectedApp)
+                    applications.includes(this.selectedApp.tag)
                 );
             });
         }
     }
 };
 </script>
-
-<style scoped>
-.field,
-.control {
-    display: inline-block;
-}
-
-.select:not(.is-multiple):not(.is-loading):after {
-    margin-top: -1em;
-}
-</style>
