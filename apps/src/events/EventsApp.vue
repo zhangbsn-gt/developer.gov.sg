@@ -12,6 +12,9 @@
         </div>
         <div v-if="!loading">
             <div class="row is-multiline">
+                <div class="col is-flex" v-if="events.length === 0">
+                    <p>There are no upcoming meetups.</p>
+                </div>
                 <div class="col is-flex" v-for="event of events" :key="event.id">
                     <a class="sgds-card sgds-card-button" :href="event.link" target="_blank">
                         <div class="sgds-card-header">
@@ -45,7 +48,7 @@ import axios from "axios";
 export default {
     data() {
         return {
-            events: null,
+            events: [],
             loading: false
         };
     },
