@@ -2,18 +2,14 @@
 layout: layout-default
 ---
 
-<section
-    class="sgds-section has-background-black padding--bottom--lg padding--top--lg"
-    style="background: url('/assets/img/bg_splash.jpg') fixed top center; background-size: 100% 100%;"
->
-    <div class="sgds-container">
-        {% include sgds-breadcrumb.html %}
-        <h2 class="has-text-white has-text-weight-bold">{{ page.title }}</h2>
-    </div>
-</section>
+{% include page-header.html %}
 
 <section class="sgds-section">
     <div class="sgds-container">
-        {{ content }}
+        <div class="row">
+            <div class="col is-8 is-offset-2">
+                {{ content }}
+            </div>
+        </div>
     </div>
 </section>
