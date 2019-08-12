@@ -13,6 +13,11 @@ body {
     flex-shrink: 0;
 }
 
+.sgds-footer img {
+    margin: 0;
+    max-height: 1rem;
+}
+
 /*Custom styling for editable page*/
 
 [v-cloak] {
