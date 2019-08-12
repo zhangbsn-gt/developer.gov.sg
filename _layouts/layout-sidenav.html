@@ -1,55 +1,60 @@
 ---
-layout: layout-page
+layout: layout-default
 ---
 
-<div class="row">
-    <div class="col is-3 is-hidden-touch sidenav-container">
-        <div class="sidenav" data-topspacing="140" data-bottomspacing="40">
-            <aside class="sgds-menu sidebar__inner">
-                <ul class="sgds-menu-list">
-                    {%- assign collectionName = page.collection -%}
-                    {%- assign filteredCollections = site.collections | where: "label", collectionName -%}
-                    {%- assign currentCollection = filteredCollections[0] -%}
-                    {%- assign collectionCategories = currentCollection.docs | sort: "category" | group_by: "category" -%}
-                    {%- for category in collectionCategories -%}
-                        {%- if category.name != '' -%}
-                            <li class="second-level-nav">
-                                {%- assign class = nil -%} 
-                                {%- assign categorySlug = category.name | slugify -%}
-                                {%- if page.url contains categorySlug -%} 
-                                {%- assign class='is-active' -%}
-                                {%- endif -%}
-                                <a class="second-level-nav-header has-text-weight-bold {{ class }}">
-                                    {{ category.name | capitalize }}
-                                    <i class="sgds-icon sgds-icon-chevron-up" aria-hidden="true"></i>
-                                </a>
-                            </li>
-                            <ul class="second-level-nav-div">
-                                {%- assign items = category.items | sort: "title" -%}
-                                {%- for item in items -%}
-                                    {%- assign class = nil -%}
-                                    {%- if page.url contains item.url -%}
-                                    {%- assign class = 'is-active' -%}
-                                    {%- endif -%}
-                                    <li>
-                                        <a
-                                            class="second-level-nav-item padding--top--none {{ class }}"
-                                            href="{{ site.baseurl }}{{ item.url }}"
-                                        >
-                                            {{ item.title }}
+{% include page-header.html %}
+<section class="sgds-section">
+    <div class="sgds-container">
+        <div class="row">
+            <div class="col is-3 is-hidden-touch sidenav-container">
+                <div class="sidenav" data-topspacing="140" data-bottomspacing="40">
+                    <aside class="sgds-menu sidebar__inner">
+                        <ul class="sgds-menu-list">
+                            {%- assign collectionName = page.collection -%}
+                            {%- assign filteredCollections = site.collections | where: "label", collectionName -%}
+                            {%- assign currentCollection = filteredCollections[0] -%}
+                            {%- assign collectionCategories = currentCollection.docs | sort: "category" | group_by: "category" -%}
+                            {%- for category in collectionCategories -%}
+                                {%- if category.name != '' -%}
+                                    <li class="second-level-nav">
+                                        {%- assign class = nil -%} 
+                                        {%- assign categorySlug = category.name | slugify -%}
+                                        {%- if page.url contains categorySlug -%} 
+                                        {%- assign class='is-active' -%}
+                                        {%- endif -%}
+                                        <a class="second-level-nav-header has-text-weight-bold {{ class }}">
+                                            {{ category.name | capitalize }}
+                                            <i class="sgds-icon sgds-icon-chevron-up" aria-hidden="true"></i>
                                         </a>
                                     </li>
-                                {%- endfor -%}
-                            </ul>
-                        {%- endif -%}
-                    {%- endfor -%}
-                </ul>
-            </aside>
+                                    <ul class="second-level-nav-div">
+                                        {%- assign items = category.items | sort: "title" -%}
+                                        {%- for item in items -%}
+                                            {%- assign class = nil -%}
+                                            {%- if page.url contains item.url -%}
+                                            {%- assign class = 'is-active' -%}
+                                            {%- endif -%}
+                                            <li>
+                                                <a
+                                                    class="second-level-nav-item padding--top--none {{ class }}"
+                                                    href="{{ site.baseurl }}{{ item.url }}"
+                                                >
+                                                    {{ item.title }}
+                                                </a>
+                                            </li>
+                                        {%- endfor -%}
+                                    </ul>
+                                {%- endif -%}
+                            {%- endfor -%}
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+            <div class="col is-8 is-12-touch">
+                <div class="content">
+                    {{ content }}
+                </div>
+            </div>
         </div>
     </div>
-    <div class="col is-8 is-12-touch">
-        <div class="content">
-            {{ content }}
-        </div>
-    </div>
-</div>
+</section>
