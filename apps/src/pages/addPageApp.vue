@@ -5,7 +5,7 @@
                 <p class="margin--top--sm margin--bottom--sm has-text-weight-semibold">Help everyone discover what the Singapore Government offers.</p>
             </div>
             <div class="col is-4 has-text-right">
-                <a class="sgds-button is-rounded is-fullwidth" v-on:click="showAddPageForm = !showAddPageForm">Add New Product 
+                <a class="sgds-button is-rounded is-fullwidth is-primary" v-on:click="showAddPageForm = !showAddPageForm">Add New Product 
                     <i class="sgds-icon sgds-icon-chevron-down" v-if="!showAddPageForm"></i>
                     <i class="sgds-icon sgds-icon-chevron-up" v-else></i></a>
             </div>

@@ -34,7 +34,6 @@
                 </div>
             </div>
         </div>
-
         <div
             v-for="term of filteredTerms"
             v-cloak
@@ -44,21 +43,19 @@
             <div class="sgds-card-content">
                 <div class="row">
                     <div class="col is-3 is-paddingless">
-                        <h6 class="margin--top is-uppercase">{{term.term}}</h6>
+                        <h5 class="margin--top is-uppercase">{{term.term}}</h5>
                     </div>
                     <div class="col is-9 is-paddingless">
-                        <p class="has-text-weight-bold">{{term.full_term}}</p>
-                        <p>{{term.description}}</p>
-
+                        <h6>{{term.full_term}}</h6>
+                        <small>
+                            {{term.description}}
+                        </small>
                         <div v-if="term.tags.length > 0">
-                            Tags:
-                            <span
-                                class="sgds-tag is-rounded margin--right--sm"
-                                v-for="tag of term.tags"
-                                :key="term.term + tag"
-                            >{{tag}}</span>
+                            <p class="sgds-tag is-rounded margin--right--sm margin--top"
+                               v-for="tag of term.tags"
+                               :key="term.term + tag"
+                            >{{tag}}</p>
                         </div>
-
                         <div v-if="term.links.length > 0" class="margin--top">
                             <a
                                 :href="link"

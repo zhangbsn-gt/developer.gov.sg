@@ -2,21 +2,33 @@
 title: Deploy the Solution
 layout: layout-editable-sidenav
 category: release
-stage: advanced
+stage: beginner, advanced
 application: static website, transactional website, mobile app
 description: In software deployment an environment or tier is a system in which a software or component is deployed and executed.
 ---
 <h4>Overview</h4>
-<p></p>
+<p>Software deployment is all of the activities that make a software system available for use. The general deployment process consists of several interrelated activities with possible transitions between them. These activities can occur at the producer side or at the consumer side or both.</p>
 <hr>
-<h4>Development</h4>
-<p>The development environment (dev) is the environment in which changes to software are developed, most simply an individual developer's workstation. This differs from the ultimate target environment in various ways - the target may not be a desktop computer, and even if otherwise similar, the developer's environment will include development tools like a compiler, integrated development environment, different or additional versions of libraries and support software,, which are not present in a user's environment.</p>
+<h4>Deployment Automation</h4>
+<p>Deployment automation allows applications to be deployed across the various environments used in the development process, as well as the final production environments. This results in more efficient, reliable, and predictable deployments. Solutions that automate your deployment processes improve the productivity of both the Dev and Ops teams and enable them and the business to develop faster, accomplish more, and ultimately build better software that is deployed more frequently and functions more reliably for the end-user.</p>
+<blockquote>
+    SHIP (Secure Hybrid Integrated Pipeline) is a product that provides services of a build pipeline for the whole of government. It provides managed services like Atlassian Bitbucket, Bamboo, Confluence, Jira to enable teams to build applications rapidly without having to worry about hardware costs and operations overheads of maintaining these services.
+</blockquote>
+<p>Benefits of Deployment Automation:</p>
+<ul>
+    <li><b>Repeatability –</b> Every deployment deploys the same</li>
+    <li><b>Fewer errors –</b> Removing manual steps reduces human error</li>
+    <li><b>Anyone can deploy –</b> eliminate bottlenecks by removing the need for experts to do the work</li>
+    <li><b>Work on what matters –</b> developers can spend time working on new features, not on fixes for manual deployments</li>
+    <li><b>Customer satisfaction –</b> frequent updates with new features addresses customer needs sooner and keeps organizations competitive</li>
+    <li><b>Lower costs –</b> fewer errors, fewer human hours needed for deployments means lower costs</li>
+</ul>
 <hr>
-<h4>Testing</h4>
-<p></p>
-<hr>
-<h4>Staging</h4>
-<p></p>
-<hr>
-<h4>Production</h4>
-<p></p>
+<h4>Deployment Environment</h4>
+<p>In software deployment, an environment is which a software component is deployed and executed.</p>
+<ul>
+    <li><b>Development Environment -</b> The development environment (dev) is the environment in which changes to software are developed, most simply an individual developer's workstation.</li>
+    <li><b>Testing Environment -</b> The purpose of the test environment is to allow human testers to exercise new and changed code via either automated checks or non-automated techniques.</li>
+    <li><b>Staging Environment -</b> A stage or staging environment is an environment for testing that exactly resembles a production environment. It seeks to mirror an actual production environment as closely as possible and may connect to other production services and data, such as databases.</li>
+    <li><b>Production Environment -</b> Deploying to production is the most sensitive step; it may be done by deploying new code directly (overwriting old code, so only one copy is present at a time), or by deploying a configuration change.</li>
+</ul>

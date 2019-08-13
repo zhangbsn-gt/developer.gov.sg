@@ -1,11 +1,14 @@
 import Vue from "vue";
+import VModal from "vue-js-modal";
+import VTooltip from "v-tooltip";
+
 import ArticleApp from "./ArticleApp.vue";
 
 import "noty/lib/noty.css";
 import "noty/lib/themes/mint.css";
 import "quill/dist/quill.snow.css";
 
-import VModal from "vue-js-modal";
+Vue.use(VTooltip);
 
 Vue.use(VModal, { dynamic: true, injectModalsContainer: true });
 

@@ -23,7 +23,7 @@
                         <p>
                             <button
                                 type="submit"
-                                class="sgds-button is-primary margin--top"
+                                class="sgds-button is-primary margin--top is-rounded"
                                 @click.prevent="requestOtp"
                                 :disabled="!emailRegex.test(email)"
                             >Send OTP</button>

@@ -1,20 +1,29 @@
 const STAGES = {
     BEGINNER: {
         tag: "beginner",
-        title: "I'm just getting started"
+        title: "and I'm just getting started"
     },
     ADVANCED: {
         tag: "advanced",
-        title: "I've done this before"
+        title: "and I've done this before"
     }
 };
 
 const APPLICATIONS = {
-    STATIC_WEBSITE: "static website",
-    DYNAMIC_WEBSITE: "dynamic website",
-    TRANSACTIONAL_WEBSITE: "transactional website",
-    MOBILE_APP: "mobile app",
-    DESIGNER_TEMPLATAE: "designer template"
+    STATIC_WEBSITE: {
+        tag: "static website",
+        title: "I need to build a static website"
+    },
+    DYNAMIC_WEBSITE: {
+        tag: "dynamic website",
+        title: "I need to build a dynamic website"
+    },
+    TRANSACTIONAL_WEBSITE: {
+        tag: "transactional website",
+        title: "I need to build a transactional website"
+    }
+    //MOBILE_APP: "mobile app",
+    //DESIGNER_TEMPLATE: "designer template"
 };
 
 const CATEGORIES = [
@@ -22,42 +31,42 @@ const CATEGORIES = [
         tag: "introduction",
         title: "Introduction",
         description:
-            "You will understand Agile Software Development Life Cycle, within the context of our efforts on the delivery of transformative digital projects in Singapore Government."
+            "Understand the Agile Software Development lifecycle and our efforts in delivering transformative digital projects for Singapore."
     },
     {
         tag: "concept",
         title: "Concept Phase",
         description:
-            "You collaborate with stakeholders to consider this potential project and invest in enough effort to decide whether to consider funding the effort further."
+            "Collaborate with stakeholders to map out your problem space, strengthen your value proposition and plan out your requirements, be it in terms of funding or manpower."
     },
     {
         tag: "inception",
         title: "Inception Phase",
         description:
-            "You identify with your team the complexity of the problem space, technical complexity and ability of stakeholders to come to agreement as to the scope."
+            "Identify with your team the technical complexity of the solution space and ensure stakeholders are in agreement on the scope of your project."
     },
     {
         tag: "construction",
         title: "Construction and Iteration",
         description:
-            "You incrementally deliver high-quality working software which meets the changing needs of our stakeholders."
+            "Incrementally deliver high-quality working software while meeting the changing needs of your stakeholders."
     },
     {
         tag: "release",
         title: "Release",
         description:
-            "You will need to adopt a continuous deployment strategy to automate many of the technical aspects to transit your system into production."
+            "Bring development and operations closer by automating your entire development workflow up to release in order to deliver features, changes and fixes with more speed and reliability."
     },
     {
         tag: "production",
         title: "Production",
-        description: "You need to keep the system running and help users to use it."
+        description: "Make sure your system is reliable and always in line with the needs of your users."
     },
     {
         tag: "retirement",
         title: "Retirement",
         description:
-            "You must strive to complete the removal of a system release, or the complete system itself from production with minimal impact to business operations."
+            "Ensure that your users face minimal impact to business operations while you complete the termination of your product."
     }
 ];
 

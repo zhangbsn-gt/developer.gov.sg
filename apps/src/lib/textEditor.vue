@@ -1,31 +1,46 @@
 <template>
 <div id="editor-wrapper">
-    <!-- Mount Quill Here -->
-    <div id="toolbar">
-        <select class="ql-header">
-            <option value="1"></option>
-            <option value="2"></option>
-            <option value="3"></option>
-            <option value="4"></option>
-            <option value="5"></option>
-            <option value="6"></option>
-            <option></option>
-        </select>
-        <button class="ql-bold"></button>
-        <button class="ql-italic"></button>
-        <button class="ql-underline"></button>
-        <button class="ql-link"></button>
-        <button class="ql-blockquote"></button>
-        <button class="ql-code-block"></button>
-        <button class="ql-list" value="ordered"></button>
-        <button class="ql-list" value="bullet"></button>
-        <button class="ql-image"></button>
-        <button class="ql-hr">
-            <span class="sgds-icon sgds-icon-minus"></span>
-        </button>
-        <button class="ql-clean"></button>
-    </div>
-    <div id="editor"></div>
+<!-- Mount Quill Here -->
+<div id="toolbar">
+    <select class="ql-header">
+        <option value="1"></option>
+        <option value="2"></option>
+        <option value="3"></option>
+        <option value="4"></option>
+        <option value="5"></option>
+        <option value="6"></option>
+        <option></option>
+    </select>
+    <button class="ql-bold"></button>
+    <button class="ql-italic"></button>
+    <button class="ql-underline"></button>
+    <button class="ql-link"></button>
+    <button class="ql-blockquote"></button>
+    <button class="ql-code-block"></button>
+    <button class="ql-list" value="ordered"></button>
+    <button class="ql-list" value="bullet"></button>
+    <button class="ql-hr">
+        <span class="sgds-icon sgds-icon-minus"></span>
+    </button>
+    <button class="ql-clean"></button>
+    <!-- Always keep image as the last element! Will mess up toolbar layout -->
+    <v-popover trigger="click">
+        <button class="ql-image tooltip-target"></button>
+        <template slot="popover">
+            <form @submit.prevent="onInsertImage">
+                <label for="image-src">Enter your image's URL</label>
+                <input type="text" id="image-src" v-model="imageSrc" />
+                <button type="submit" v-close-popover>OK</button>
+            </form>
+            <div :style="{textAlign: 'center'}">
+                <small
+                    :style="{fontSize: '0.8rem'}"
+                >(Image will be inserted at your current cursor location)</small>
+            </div>
+        </template>
+    </v-popover>
+</div>
+<div id="editor"></div>
 </div>
 </template>
 
