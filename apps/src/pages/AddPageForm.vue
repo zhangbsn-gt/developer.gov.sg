@@ -69,7 +69,7 @@ import Loading from "vue-loading-overlay";
 import "vue-loading-overlay/dist/vue-loading.css";
 import { urlRegex } from "../lib";
 import VerifyAndSubmit from "../lib/VerifyAndSubmit.vue";
-import TextEditor from '../lib/textEditor.vue';
+import TextEditor from '../lib/TextEditor.vue';
 
 export default {
     props: {
