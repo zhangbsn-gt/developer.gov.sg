@@ -3,7 +3,7 @@ title: Guidelines
 layout: layout-sidenav
 ---
 
-{% assign category_array =  site.guidelines | map: "category" | uniq | inspect %}
+{% assign category_array =  site.guidelines | map: "category" | uniq | jsonify %}
 <h4>Standards and Best Practices</h4>
 <p>As the Singapore government rolls out more digital services, we need to provide standards and guides to ensure a complete and consistent user experience for users.</p>
 {% include add-pages.html type='guidelines' categories=category_array %}

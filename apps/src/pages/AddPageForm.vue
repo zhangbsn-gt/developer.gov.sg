@@ -4,15 +4,13 @@
 
         <div class="row">
             <div class="col">
-                <label for="title" class="has-text-weight-semibold">title</label>
+                <label for="title" class="has-text-weight-semibold">Title</label>
                 <input
                     id="title"
                     name="title"
                     class="input"
                     type="text"
-                    placeholder="Product title..."
                     v-model="form.title"
-                    ref="titleInput"
                 />
                 <p class="help is-danger" v-if="errors.title">{{errors.title}}</p>
             </div>
@@ -25,10 +23,9 @@
                     id="description"
                     name="description"
                     class="input"
-                    type="description"
+                    type="text"
                     placeholder="This product is..."
                     v-model="form.description"
-                    ref="descriptionInput"
                 />
                 <p class="help is-danger" v-if="errors.description">{{errors.description}}</p>
             </div>
@@ -43,7 +40,6 @@
                     class="input"
                     type="text"
                     v-model="form.category"
-                    ref="categoryInput"
                     list="categorynames"
                 />
                 <datalist id="categorynames">

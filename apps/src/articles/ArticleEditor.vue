@@ -66,6 +66,10 @@ export default {
         page_content: {
             type: String,
             required: true
+        },
+        page_type: {
+            type: String,
+            required: true
         }
     },
     data() {
@@ -89,6 +93,7 @@ export default {
                     page_description: this.page_description,
                     page_path: this.page_path,
                     page_content: updatedContent,
+                    page_type: this.page_type,
                     email,
                     otp,
                     otpRequestId

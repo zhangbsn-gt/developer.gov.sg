@@ -38,6 +38,10 @@ export default {
             // From Jekyll render. HTML.
             type: String,
             required: true
+        },
+        type: {
+            type: String,
+            required: true
         }
     },
     data() {
@@ -55,7 +59,8 @@ export default {
                     page_category: this.category,
                     page_description: this.description,
                     page_path: this.url,
-                    page_content: sanitizeHtml(this.content)
+                    page_content: sanitizeHtml(this.content),
+                    page_type: this.type
                 },
                 {
                     clickToClose: false,

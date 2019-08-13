@@ -7,17 +7,17 @@
                 >Help everyone discover what the Singapore Government offers.</p>
             </div>
             <div class="col is-4 has-text-right">
-                <a
+                <button
                     class="sgds-button is-rounded is-fullwidth is-primary"
                     v-on:click="showAddPageForm = !showAddPageForm"
                 >
-                    Add New Product
+                    Suggest new {{ this.type.toLowerCase() }}
                     <i
                         class="sgds-icon sgds-icon-chevron-down"
                         v-if="!showAddPageForm"
                     ></i>
                     <i class="sgds-icon sgds-icon-chevron-up" v-else></i>
-                </a>
+                </button>
             </div>
         </div>
         <div class="row" v-if="showAddPageForm">
@@ -56,9 +56,8 @@ export default {
     methods: {
         checkPageType: function() {
             this.page_type = this.type;
-            // need to strip off nil in the array string if not the json parse will fail
-            this.page_categories = JSON.parse(
-                this.categories.replace("nil, ", "").replace(", nil", "")
+            this.page_categories = JSON.parse(this.categories).filter(
+                category => category != null
             );
         }
     },

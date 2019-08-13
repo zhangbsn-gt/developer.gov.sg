@@ -3,11 +3,17 @@
         <div class="row margin--top--lg margin--bottom">
             <div class="col">
                 <h6>Submit for Review</h6>
+                <small>
+                    You will be able to track submission status at our GitHub repository's
+                    <a
+                        href="https://github.com/govtechsg/developer.gov.sg/pulls"
+                    >pull requests</a>
+                </small>
                 <div v-if="stage === stages.verify">
                     <form>
                         <label
                             for="contributor-email"
-                        >Please enter your government email for us to verify</label>
+                        >Please enter your government email for verification</label>
                         <input
                             id="contributor-email"
                             name="email"
@@ -149,6 +155,3 @@ export default {
     }
 };
 </script>
-
-<style scoped>
-</style>
