@@ -145,6 +145,103 @@ router.get("/review-reject", async (req, res) => {
     }
 });
 
+router.post("/request-new-page", async(req, res) => {
+    let submission = req.body;
+
+    let missingParams = lib.utils.getMissingParams(
+        [
+            "email",
+            "otp",
+            "otpRequestId",
+            "page_type",
+            "page_title",
+            "page_category",
+            "page_description",
+            "page_content"
+        ],
+        submission
+    );
+    if (missingParams.length > 0) {
+        res.status(400).json({
+            error: `The following parameters are missing: ${missingParams.join(
+                ", "
+            )}`
+        });
+        return;
+    }
+
+    let email = submission.email;
+    let otp = submission.otp;
+    let otpRequestId = submission.otpRequestId;
+    
+    try {
+        await lib.otp.verifyOtp(email, otp, otpRequestId);
+    } catch (err) {
+        res.status(403).json({
+            error: `OTP validation failed. ${err.message}`
+        });
+        return;
+    }
+    
+    let pageType = submission.page_type;
+    let pageTitle = submission.page_title;
+    let pageCategory =  utils.toLowerCaseSlug(submission.page_category);
+    let pageDescription = submission.page_description;
+    let pageContent = submission.page_content;
+    let pathFriendlyTitle = utils.toLowerCaseSlug(pageTitle.replace(" ", "-"));
+    let pagePath = path.join(`collections", "/_${pageType}/${pathFriendlyTitle}.html`);
+
+    let newPage =
+        `---\n` +
+        `title: ${pageTitle}\n` +
+        `layout: layout-editable-sidenav\n` +
+        `category: ${pageCategory}\n` + 
+        `description: ${pageDescription}\n` +
+        `---\n`;
+
+    const formattedContent = beautifyHtml(pageContent, {
+        wrap_line_length: 120
+    });
+    newPage += formattedContent;
+
+    try {
+        const pr = await lib.github.createNewBranchAndPullRequest({
+            filePath: pagePath,
+            fileContent: newPage,
+            baseBranchName: githubBaseRef,
+            newBranchName: `New-page-${pathFriendlyTitle}-${new Date()
+                .toISOString()
+                .substring(0, 10)}`,
+            commitMessage: `New page for ${pageTitle} under ${pageCategory} by ${email}`,
+            prTitle: `New page for ${pageTitle} under ${pageCategory} by ${email}`,
+            prBody: newPage
+        });
+
+        await lib.github
+            .addAssigneesToPullRequest({
+                prNumber: pr.data.number,
+                assignees: owners.fetchProductOwners()
+            })
+            .catch(err => {
+                res.status(500).json({
+                    error:
+                        err.message ||
+                        `Error submitting new page for ${pageTitle}`
+                });
+            });
+
+        res.json({
+            pr: pr.data.number
+        });
+    } catch (err) {
+        res.status(500).json({
+            error:
+                err.message ||
+                `Error submitting new page for ${pageTitle}`
+        });
+    }
+});
+
 router.post("/request-otp", async (req, res) => {
     const requestBody = req.body;
     if (!requestBody.email) {
