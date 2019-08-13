@@ -135,7 +135,7 @@ export default {
                 .then(response => {
                     new Noty({
                         type: "success",
-                        text: `Your new page request ${this.page_title} has been submitted. The page will be created upon the approval by the reviewers.`
+                        text: `Your new page request ${this.form.title} has been submitted. The page will be created upon the approval by the reviewers.`
                     }).show();
                 })
                 .catch(err => {

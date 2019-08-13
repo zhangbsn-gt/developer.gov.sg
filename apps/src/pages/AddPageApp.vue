@@ -12,7 +12,7 @@
         </div>
         <div class="row" v-if="showAddPageForm">
             <div class="col is-12">
-                <AddPageForm type="add" :type="page_type" :categories="page_categories" @close="showAddPageForm = false" />
+                <AddPageForm :type="page_type" :categories="page_categories" @close="showAddPageForm = false" />
             </div>
         </div>
     </div>
