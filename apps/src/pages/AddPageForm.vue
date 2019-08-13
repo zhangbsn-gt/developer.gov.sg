@@ -58,7 +58,7 @@
             </div>
         </div>
         
-        <VerifyAndSubmit @submit="submitChanges" /> 
+        <VerifyAndSubmit @submit="submitChanges" @loading="updateLoadingState" /> 
     </form>
 </template>
 
@@ -157,6 +157,9 @@ export default {
             this.page_type = this.type;
             this.page_categories = this.categories;
         },
+        updateLoadingState(isLoading) {
+            this.isLoading = isLoading;
+        }
     },
     beforeMount() {
         this.checkPageType();
