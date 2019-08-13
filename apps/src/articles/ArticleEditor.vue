@@ -175,11 +175,7 @@ export default {
             }
         },
         quillImageHandler() {
-            let range = this.quill.getSelection();
-            // var value = prompt("What is the image URL");
-            // if (value) {
-            //     this.quill.insertEmbed(range.index, "image", value, Quill.sources.USER);
-            // }
+            // This needs to exist as a blank method, if not by default Quill will open the file dialog.
         },
         onInsertImage() {
             let range = this.quill.getSelection(true); // true to focus the editor first
