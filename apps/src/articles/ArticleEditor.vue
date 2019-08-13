@@ -22,34 +22,7 @@
                     </li>
                 </ul>
             </div>
-            <div id="editor-wrapper" v-show="!showOriginal">
-                <!-- Mount Quill Here -->
-                <div id="toolbar">
-                    <select class="ql-header">
-                        <option value="1"></option>
-                        <option value="2"></option>
-                        <option value="3"></option>
-                        <option value="4"></option>
-                        <option value="5"></option>
-                        <option value="6"></option>
-                        <option></option>
-                    </select>
-                    <button class="ql-bold"></button>
-                    <button class="ql-italic"></button>
-                    <button class="ql-underline"></button>
-                    <button class="ql-link"></button>
-                    <button class="ql-blockquote"></button>
-                    <button class="ql-code-block"></button>
-                    <button class="ql-list" value="ordered"></button>
-                    <button class="ql-list" value="bullet"></button>
-                    <button class="ql-image"></button>
-                    <button class="ql-hr">
-                        <span class="sgds-icon sgds-icon-minus"></span>
-                    </button>
-                    <button class="ql-clean"></button>
-                </div>
-                <div id="editor"></div>
-            </div>
+            <TextEditor :page_content="page_content" />
 
             <div class="article original-content" v-show="showOriginal" v-html="page_content"></div>
         </div>
@@ -63,21 +36,13 @@
 <script>
 import axios from "axios";
 import Noty from "noty";
-import Quill from "quill";
 import Loading from "vue-loading-overlay";
 import "vue-loading-overlay/dist/vue-loading.css";
 import VerifyAndSubmit from "../lib/VerifyAndSubmit.vue";
-
-let BlockEmbed = Quill.import("blots/block/embed");
-class HrBlot extends BlockEmbed {}
-HrBlot.blotName = "hr";
-HrBlot.tagName = "hr";
-Quill.register({
-    "formats/hr": HrBlot
-});
+import TextEditor from '../lib/textEditor.vue';
 
 export default {
-    components: { VerifyAndSubmit, Loading },
+    components: { VerifyAndSubmit, Loading, TextEditor },
     props: {
         page_title: {
             type: String,
@@ -153,28 +118,5 @@ export default {
             this.isLoading = isLoading;
         }
     },
-    mounted() {
-        this.quill = new Quill("#editor", {
-            theme: "snow",
-            modules: {
-                toolbar: {
-                    container: "#toolbar",
-                    handlers: {
-                        hr() {
-                            let range = this.quill.getSelection();
-                            if (range) {
-                                this.quill.insertEmbed(range.index, "hr", true);
-                                this.quill.setSelection(range.index + 1);
-                            }
-                        }
-                    }
-                },
-                clipboard: {
-                    matchVisual: false // Stop quill from auto-adding <br> blocks before headers
-                }
-            }
-        });
-        this.quill.clipboard.dangerouslyPasteHTML(this.page_content);
-    }
 };
 </script>
