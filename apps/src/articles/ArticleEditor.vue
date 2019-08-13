@@ -50,7 +50,7 @@
                 </div>
                 <div id="editor"></div>
             </div>
-            <div class="article original-content" v-show="showOriginal" v-html="page_content"></div>
+            <div class="original-content" v-show="showOriginal" v-html="page_content"></div>
         </div>
 
         <div class="modal-footer">
@@ -177,3 +177,102 @@ export default {
     }
 };
 </script>
+
+<style>
+.ql-editor {
+    font-size: 1rem !important;
+    line-height: calc(1rem + 0.5rem) !important;
+}
+
+.ql-editor h1,
+.original-content h1 {
+    font-size: 3.375rem !important;
+    line-height: 3.75rem !important;
+    letter-spacing: -1.5px !important;
+    margin-bottom: 1rem !important;
+}
+
+.ql-editor h2,
+.original-content h2 {
+    font-size: 2.75rem !important;
+    line-height: 3.75rem !important;
+    margin-bottom: 1rem !important;
+}
+
+.ql-editor h3,
+.original-content h3 {
+    font-size: 2rem !important;
+    line-height: 2.8125rem !important;
+    margin-bottom: 1rem !important;
+}
+
+.ql-editor h4,
+.original-content h4 {
+    font-size: 1.625rem !important;
+    line-height: 2.25rem !important;
+    font-weight: 600 !important;
+    color: #e79529;
+    margin-bottom: 1rem !important;
+}
+
+.ql-editor h5,
+.original-content h5 {
+    font-size: 1.375rem !important;
+    line-height: 1.875rem !important;
+    font-weight: 600 !important;
+    margin-bottom: 1rem !important;
+}
+
+.ql-editor h6,
+.original-content h6 {
+    font-size: 1.3rem !important;
+    line-height: 1.5rem !important;
+    font-weight: 600 !important;
+    margin-bottom: 1rem !important;
+}
+
+.ql-editor ul > li {
+    list-style-type: disc !important;
+}
+
+.ql-editor ul > li::before {
+    content: none !important;
+}
+
+.ql-editor ul {
+    padding: 0px !important;
+    list-style: disc outside !important;
+    margin-left: 1rem !important;
+    margin-top: 1em !important;
+}
+
+.ql-editor li {
+    display: list-item !important;
+    text-align: -webkit-match-parent !important;
+    padding: 0px !important;
+    margin-top: 1em !important;
+}
+
+.ql-editor p,
+.original-content p {
+    margin-bottom: 1em !important;
+}
+
+.ql-editor a,
+.original-content a {
+    cursor: pointer !important;
+    text-decoration: none !important;
+}
+
+.original-content {
+    border: 1px solid #ccc;
+    overflow-y: auto;
+    padding: 12px 15px;
+}
+
+.ql-editor hr,
+.original-content hr {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+</style>
