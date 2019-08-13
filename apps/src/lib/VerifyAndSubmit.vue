@@ -124,7 +124,7 @@ export default {
                 })
                 .finally(() => {
                     this.$emit("loading", false);
-                })
+                });
         },
         submit() {
             if (!this.otp || this.otp.length !== 6) {

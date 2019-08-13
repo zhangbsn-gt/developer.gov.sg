@@ -37,16 +37,17 @@
         <div class="row">
             <div class="col">
                 <label for="category" class="has-text-weight-semibold">Category</label>
-                <input 
+                <input
                     id="category"
                     name="category"
                     class="input"
                     type="text"
                     v-model="form.category"
                     ref="categoryInput"
-                    list="categorynames">
+                    list="categorynames"
+                />
                 <datalist id="categorynames">
-                    <option v-for="category in page_categories">{{ category }}</option>
+                    <option v-for="category in page_categories" :key="category">{{ category }}</option>
                 </datalist>
                 <p class="help is-danger" v-if="errors.category">{{errors.category}}</p>
             </div>
@@ -57,8 +58,8 @@
                 <TextEditor style="height: 500px;" />
             </div>
         </div>
-        
-        <VerifyAndSubmit @submit="submitChanges" @loading="updateLoadingState" /> 
+
+        <VerifyAndSubmit @submit="submitChanges" @loading="updateLoadingState" />
     </form>
 </template>
 
@@ -69,7 +70,7 @@ import Loading from "vue-loading-overlay";
 import "vue-loading-overlay/dist/vue-loading.css";
 import { urlRegex } from "../lib";
 import VerifyAndSubmit from "../lib/VerifyAndSubmit.vue";
-import TextEditor from '../lib/TextEditor.vue';
+import TextEditor from "../lib/TextEditor.vue";
 
 export default {
     props: {
@@ -117,8 +118,7 @@ export default {
             if (hasErrors) {
                 return;
             }
-            const pageContent = document.querySelector(".ql-editor")
-                .innerHTML;
+            const pageContent = document.querySelector(".ql-editor").innerHTML;
             this.isLoading = true;
 
             axios

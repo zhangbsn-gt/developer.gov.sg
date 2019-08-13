@@ -39,7 +39,7 @@ import Noty from "noty";
 import Loading from "vue-loading-overlay";
 import "vue-loading-overlay/dist/vue-loading.css";
 import VerifyAndSubmit from "../lib/VerifyAndSubmit.vue";
-import TextEditor from '../lib/TextEditor.vue';
+import TextEditor from "../lib/TextEditor.vue";
 
 export default {
     components: { VerifyAndSubmit, Loading, TextEditor },
@@ -118,6 +118,6 @@ export default {
         updateLoadingState(isLoading) {
             this.isLoading = isLoading;
         }
-    },
+    }
 };
 </script>
