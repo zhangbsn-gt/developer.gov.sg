@@ -42,11 +42,26 @@
                     <button class="ql-code-block"></button>
                     <button class="ql-list" value="ordered"></button>
                     <button class="ql-list" value="bullet"></button>
-                    <button class="ql-image"></button>
                     <button class="ql-hr">
                         <span class="sgds-icon sgds-icon-minus"></span>
                     </button>
                     <button class="ql-clean"></button>
+                    <!-- Always keep image as the last element! Will mess up toolbar layout -->
+                    <v-popover trigger="click">
+                        <button class="ql-image tooltip-target"></button>
+                        <template slot="popover">
+                            <form @submit.prevent="onInsertImage">
+                                <label for="image-src">Enter your image's URL</label>
+                                <input type="text" id="image-src" v-model="imageSrc" />
+                                <button type="submit" v-close-popover>OK</button>
+                            </form>
+                            <div :style="{textAlign: 'center'}">
+                                <small
+                                    :style="{fontSize: '0.8rem'}"
+                                >(Image will be inserted at your current cursor location)</small>
+                            </div>
+                        </template>
+                    </v-popover>
                 </div>
                 <div id="editor"></div>
             </div>
@@ -106,7 +121,8 @@ export default {
         return {
             quill: null,
             showOriginal: false,
-            isLoading: false
+            isLoading: false,
+            imageSrc: ""
         };
     },
     methods: {
@@ -150,6 +166,32 @@ export default {
         },
         updateLoadingState(isLoading) {
             this.isLoading = isLoading;
+        },
+        quillHrHandler() {
+            let range = this.quill.getSelection();
+            if (range) {
+                this.quill.insertEmbed(range.index, "hr", true);
+                this.quill.setSelection(range.index + 1);
+            }
+        },
+        quillImageHandler() {
+            let range = this.quill.getSelection();
+            // var value = prompt("What is the image URL");
+            // if (value) {
+            //     this.quill.insertEmbed(range.index, "image", value, Quill.sources.USER);
+            // }
+        },
+        onInsertImage() {
+            let range = this.quill.getSelection(true); // true to focus the editor first
+            if (this.imageSrc) {
+                this.quill.insertEmbed(
+                    range.index,
+                    "image",
+                    this.imageSrc,
+                    Quill.sources.USER
+                );
+                this.imageSrc = "";
+            }
         }
     },
     mounted() {
@@ -159,13 +201,8 @@ export default {
                 toolbar: {
                     container: "#toolbar",
                     handlers: {
-                        hr() {
-                            let range = this.quill.getSelection();
-                            if (range) {
-                                this.quill.insertEmbed(range.index, "hr", true);
-                                this.quill.setSelection(range.index + 1);
-                            }
-                        }
+                        hr: this.quillHrHandler,
+                        image: this.quillImageHandler
                     }
                 },
                 clipboard: {
@@ -274,5 +311,99 @@ export default {
 .original-content hr {
     margin-bottom: 2rem;
     margin-top: 2rem;
+}
+
+.tooltip {
+    display: block;
+    z-index: 1000;
+}
+.tooltip.popover .popover-inner {
+    background: #272727;
+    color: white;
+    padding: 12px;
+    border-radius: 5px;
+    box-shadow: 0 5px 30px rgba(black, 0.1);
+}
+
+.tooltip .tooltip-arrow {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    position: absolute;
+    margin: 5px;
+    border-color: #272727;
+    z-index: 1;
+}
+
+.tooltip[x-placement^="top"] {
+    margin-bottom: 5px;
+}
+
+.tooltip[x-placement^="top"] .tooltip-arrow {
+    border-width: 5px 5px 0 5px;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    bottom: -5px;
+    left: calc(50% - 5px);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.tooltip[x-placement^="bottom"] {
+    margin-top: 5px;
+}
+
+.tooltip[x-placement^="bottom"] .tooltip-arrow {
+    border-width: 0 5px 5px 5px;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    top: -5px;
+    left: calc(50% - 5px);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.tooltip[x-placement^="right"] {
+    margin-left: 5px;
+}
+
+.tooltip[x-placement^="right"] .tooltip-arrow {
+    border-width: 5px 5px 5px 0;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    left: -5px;
+    top: calc(50% - 5px);
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.tooltip[x-placement^="left"] {
+    margin-right: 5px;
+}
+
+.tooltip[x-placement^="left"] .tooltip-arrow {
+    border-width: 5px 0 5px 5px;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    right: -5px;
+    top: calc(50% - 5px);
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.tooltip[aria-hidden="true"] {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.15s, visibility 0.15s;
+}
+
+.tooltip[aria-hidden="false"] {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.15s;
 }
 </style>
