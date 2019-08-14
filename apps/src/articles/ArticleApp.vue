@@ -5,7 +5,6 @@
 </template>
 
 <script>
-import sanitizeHtml from "sanitize-html";
 import ArticleEditor from "./ArticleEditor.vue";
 
 export default {
@@ -59,7 +58,7 @@ export default {
                     page_category: this.category,
                     page_description: this.description,
                     page_path: this.url,
-                    page_content: sanitizeHtml(this.content),
+                    page_content: this.content,
                     page_type: this.type
                 },
                 {
