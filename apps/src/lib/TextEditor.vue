@@ -43,7 +43,7 @@
                 </template>
             </v-popover>
         </div>
-        <div id="editor"></div>
+        <div id="editor" class="article"></div>
     </div>
 </template>
 
@@ -51,6 +51,7 @@
 import Quill from "quill";
 import sanitizeHtml from "sanitize-html";
 import { VTooltip, VPopover, VClosePopover } from "v-tooltip";
+import { sanitize } from "./index";
 
 import "noty/lib/noty.css";
 import "noty/lib/themes/mint.css";
@@ -86,20 +87,7 @@ export default {
         };
     },
     created() {
-        this.sanitizedPageContent = sanitizeHtml(this.page_content, {
-            allowedTags: [
-                ...sanitizeHtml.defaults.allowedTags,
-                "u", // Allow underlined content
-                "img", // Allow img tags
-                "span" // Allow span tags
-            ],
-            allowedAttributes: {
-                ...sanitizeHtml.defaults.allowedAttributes,
-                iframe: ["src"], // Allow videos
-                span: ["style"] // Allow text/background color
-            },
-            allowedIframeHostnames: ["www.youtube.com", "player.vimeo.com"]
-        });
+        this.sanitizedPageContent = sanitize(this.page_content);
     },
     mounted() {
         this.quill = new Quill("#editor", {
@@ -150,102 +138,6 @@ export default {
 
 
 <style>
-.ql-editor {
-    font-size: 1rem !important;
-    line-height: calc(1rem + 0.5rem) !important;
-}
-
-.ql-editor h1,
-.original-content h1 {
-    font-size: 3.375rem !important;
-    line-height: 3.75rem !important;
-    letter-spacing: -1.5px !important;
-    margin-bottom: 1rem !important;
-}
-
-.ql-editor h2,
-.original-content h2 {
-    font-size: 2.75rem !important;
-    line-height: 3.75rem !important;
-    margin-bottom: 1rem !important;
-}
-
-.ql-editor h3,
-.original-content h3 {
-    font-size: 2rem !important;
-    line-height: 2.8125rem !important;
-    margin-bottom: 1rem !important;
-}
-
-.ql-editor h4,
-.original-content h4 {
-    font-size: 1.625rem !important;
-    line-height: 2.25rem !important;
-    font-weight: 600 !important;
-    color: #e79529;
-    margin-bottom: 1rem !important;
-}
-
-.ql-editor h5,
-.original-content h5 {
-    font-size: 1.375rem !important;
-    line-height: 1.875rem !important;
-    font-weight: 600 !important;
-    margin-bottom: 1rem !important;
-}
-
-.ql-editor h6,
-.original-content h6 {
-    font-size: 1.3rem !important;
-    line-height: 1.5rem !important;
-    font-weight: 600 !important;
-    margin-bottom: 1rem !important;
-}
-
-.ql-editor ul > li {
-    list-style-type: disc !important;
-}
-
-.ql-editor ul > li::before {
-    content: none !important;
-}
-
-.ql-editor ul {
-    padding: 0px !important;
-    list-style: disc outside !important;
-    margin-left: 1rem !important;
-    margin-top: 1em !important;
-}
-
-.ql-editor li {
-    display: list-item !important;
-    text-align: -webkit-match-parent !important;
-    padding: 0px !important;
-    margin-top: 1em !important;
-}
-
-.ql-editor p,
-.original-content p {
-    margin-bottom: 1em !important;
-}
-
-.ql-editor a,
-.original-content a {
-    cursor: pointer !important;
-    text-decoration: none !important;
-}
-
-.original-content {
-    border: 1px solid #ccc;
-    overflow-y: auto;
-    padding: 12px 15px;
-}
-
-.ql-editor hr,
-.original-content hr {
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-}
 
 .tooltip {
     display: block;

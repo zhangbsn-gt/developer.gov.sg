@@ -24,7 +24,11 @@
             </div>
             <TextEditor :page_content="page_content" v-show="!showOriginal" />
 
-            <div class="article original-content" v-show="showOriginal" v-html="page_content"></div>
+            <div
+                class="article original-content"
+                v-show="showOriginal"
+                v-html="sanitizedOriginalContent"
+            ></div>
         </div>
 
         <div class="modal-footer">
@@ -40,6 +44,7 @@ import Loading from "vue-loading-overlay";
 import "vue-loading-overlay/dist/vue-loading.css";
 import VerifyAndSubmit from "../lib/VerifyAndSubmit.vue";
 import TextEditor from "../lib/TextEditor.vue";
+import { sanitize } from "../lib";
 
 export default {
     components: { VerifyAndSubmit, Loading, TextEditor },
@@ -79,6 +84,9 @@ export default {
             isLoading: false,
             imageSrc: ""
         };
+    },
+    created() {
+        this.sanitizedOriginalContent = sanitize(this.page_content);
     },
     methods: {
         submitChanges({ email, otp, otpRequestId }) {
@@ -126,3 +134,11 @@ export default {
     }
 };
 </script>
+
+<style scoped>
+.original-content {
+    border: 1px solid #ccc;
+    overflow-y: auto;
+    padding: 12px 15px;
+}
+</style>
