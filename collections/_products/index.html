@@ -1,18 +1,12 @@
 ---
 title: Products
-layout: layout-sidenav
+layout: layout-page-sidenav
 ---
+
+{% assign category_array =  site.products | map: "category" | uniq | jsonify %}
 <h4>Products and Services</h4>
 <p>Here are collections of products and services that the Singapore Government has to support your software development. By using these products and services, you are complying to the usage as well as security policies.</p>
-<div class="row has-background-light margin--top">
-    <div class="col is-8">
-        <p class="margin--top--sm margin--bottom--sm has-text-weight-semibold">Help everyone discover what the Singapore Government offers.</p>
-    </div>
-    <div class="col is-4 has-text-right">
-        <a class="sgds-button is-rounded is-fullwidth is-primary" href="https://form.gov.sg/5cfa00b06e831d0010034a61" target="_blank">Add New Product</a>
-    </div>
-</div>
-
+{% include add-pages.html type='products' categories=category_array %}
 <hr>
 
 {% assign categories = site.products | sort: "category" | group_by: "category" %}

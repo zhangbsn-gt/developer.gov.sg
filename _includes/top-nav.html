@@ -19,14 +19,14 @@
                     {%- if page.url contains lvl1item.url -%}
                     {%- assign class = 'is-active' -%}
                     {%- endif -%}
-                    <a class="navbar-item is-uppercase {{class}} is-tab" href="{{ lvl1item.url }}">
+                    <a class="navbar-item is-uppercase {{class}} is-tab has-text-weight-semibold" href="{{ lvl1item.url }}">
                         {{ lvl1item.title }}
                     </a>
                 {%- endfor -%}
             </div>
             <div class="navbar-end is-hidden-touch">
                 <div class="navbar-item">
-                    <a class="navbar-item is-uppercase is-small sgds-button is-rounded" href="/terms/">
+                    <a class="navbar-item is-uppercase is-small sgds-button is-rounded has-text-weight-semibold" href="/terms/">
                         Tech Acronyms
                     </a>
                 </div>

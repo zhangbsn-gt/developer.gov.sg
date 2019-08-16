@@ -1,11 +1,7 @@
 import Vue from "vue";
-import ArticleApp from "./ArticleApp.vue";
-
-import "noty/lib/noty.css";
-import "noty/lib/themes/mint.css";
-import "quill/dist/quill.snow.css";
-
 import VModal from "vue-js-modal";
+
+import ArticleApp from "./ArticleApp.vue";
 
 Vue.use(VModal, { dynamic: true, injectModalsContainer: true });
 

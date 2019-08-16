@@ -1,17 +1,12 @@
 ---
 title: Guidelines
-layout: layout-sidenav
+layout: layout-page-sidenav
 ---
+
+{% assign category_array =  site.guidelines | map: "category" | uniq | jsonify %}
 <h4>Standards and Best Practices</h4>
 <p>As the Singapore government rolls out more digital services, we need to provide standards and guides to ensure a complete and consistent user experience for users.</p>
-<div class="row has-background-light margin--top">
-    <div class="col is-8">
-        <p class="margin--top--sm margin--bottom--sm has-text-weight-semibold">Help everyone discover what the Singapore Government has.</p>
-    </div>
-    <div class="col is-4">
-        <a class="sgds-button is-rounded is-fullwidth is-primary" href="https://form.gov.sg/5cfa00b06e831d0010034a61" target="_blank">Add New Guideline</a>
-    </div>
-</div>
+{% include add-pages.html type='guidelines' categories=category_array %}
 <hr>
 
 {% assign categories = site.guidelines | sort: "category" | group_by: "category" %}

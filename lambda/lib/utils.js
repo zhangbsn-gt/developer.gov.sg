@@ -1,6 +1,9 @@
 const crypto = require("crypto");
 const slugify = require("slugify");
 const _ = require("lodash");
+const sanitizeHtml = require("sanitize-html");
+const beautifyHtml = require("js-beautify").html;
+
 module.exports = {
     generateId,
     getMissingParams,
@@ -8,11 +11,34 @@ module.exports = {
     firstArrayContainsSecondArray,
     toLowerCaseSlug,
     getUsersPullRequests,
+    sanitizeAndBeautifyHtml,
     emailRegex:
         process.env.NODE_ENV === "production"
             ? /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[\w\.]*gov\.sg$/
             : /.*/
 };
+
+function sanitizeAndBeautifyHtml(htmlString) {
+    return beautifyHtml(
+        sanitizeHtml(htmlString, {
+            allowedTags: [
+                ...sanitizeHtml.defaults.allowedTags,
+                "u", // Allow underlined content
+                "img", // Allow img tags
+                "span" // Allow span tags
+            ],
+            allowedAttributes: {
+                ...sanitizeHtml.defaults.allowedAttributes,
+                iframe: ["src"], // Allow videos
+                span: ["style"] // Allow text/background color
+            },
+            allowedIframeHostnames: ["www.youtube.com", "player.vimeo.com"]
+        }),
+        {
+            wrap_line_length: 120
+        }
+    );
+}
 
 async function generateId(bytes = 4, encoding = "hex") {
     return new Promise((resolve, reject) => {

@@ -8,7 +8,8 @@ module.exports = {
         "vue-terms-app": "./apps/src/terms/vue-terms-app.js",
         "vue-review-app": "./apps/src/reviews/vue-review-app.js",
         "vue-events-app": "./apps/src/events/vue-events-app.js",
-        "vue-workflow-app": "./apps/src/workflows/vue-workflow-app.js"
+        "vue-workflow-app": "./apps/src/workflows/vue-workflow-app.js",
+        "vue-addpage-app": "./apps/src/pages/vue-addpage-app.js"
     },
     output: {
         filename: "[name].bundle.js",
@@ -21,7 +22,8 @@ module.exports = {
                 exclude: /node_modules/,
                 loader: "babel-loader",
                 options: {
-                    presets: ["@babel/preset-env"]
+                    presets: ["@babel/preset-env"],
+                    plugins: ["@babel/plugin-proposal-object-rest-spread"]
                 }
             },
             {

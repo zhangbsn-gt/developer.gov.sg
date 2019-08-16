@@ -2,13 +2,16 @@ html,
 body {
     height: 100%;
 }
+
 body {
     display: flex;
     flex-direction: column;
 }
+
 .main {
     flex: 1 0 auto;
 }
+
 .footer {
     flex-shrink: 0;
 }
@@ -18,102 +21,80 @@ body {
     max-height: 1rem;
 }
 
-/*Custom styling for editable page*/
+.sgds-card-header {
+    background-color: #043775;
+}
+
+.sgds-card-header-title {
+    color: #fff;
+}
+
+.sgds-card:hover {
+    color: #6037b3;
+    background-color: #f3f3f3;
+}
 
 [v-cloak] {
     display: none;
 }
 
-h4,
-h5,
-h6 {
-    font-weight: 600 !important;
-}
-
-h4 {
-    color: #e79529;
-}
-
-h4,
-h5,
-h6{
-    margin-bottom: 1rem !important;
-}
-
-hr {
-    margin-bottom: 2rem !important;
-    margin-top: 2rem !important;
-}
-
-img {
-    margin-bottom: 1rem;
-}
-
-.sgds-card-header{
-    background-color: #043775;
-}
-
-.sgds-card-header-title{
-    color: #fff !important;
-}
-
-.sgds-card:hover{
-    color: #6037b3 !important;
-    background-color: #efefef;
-}
-
-/*Custom styling for Quill Editor*/
-
-.ql-editor {
-    font-family: "Source Sans Pro", BlinkMacSystemFont, -apple-system,
-        "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+/* Common styling for displaying/editing articles */
+.article {
     font-size: 1rem !important;
+    font-family: Lato, BlinkMacSystemFont, -apple-system, Segoe UI, Helvetica Neue, Helvetica, Arial,
+        sans-serif !important;
     line-height: calc(1rem + 0.5rem) !important;
 }
 
-.ql-editor h1 {
+.article h1 {
     font-size: 3.375rem !important;
     line-height: 3.75rem !important;
     letter-spacing: -1.5px !important;
+    margin-bottom: 1rem !important;
 }
 
-.ql-editor h2 {
+.article h2 {
     font-size: 2.75rem !important;
     line-height: 3.75rem !important;
+    margin-bottom: 1rem !important;
 }
 
-.ql-editor h3 {
+.article h3 {
     font-size: 2rem !important;
     line-height: 2.8125rem !important;
+    margin-bottom: 1rem !important;
 }
 
-.ql-editor h4 {
+.article h4 {
     font-size: 1.625rem !important;
     line-height: 2.25rem !important;
     font-weight: 600 !important;
+    color: #e79529;
+    margin-bottom: 1rem !important;
 }
 
-.ql-editor h5 {
+.article h5 {
     font-size: 1.375rem !important;
     line-height: 1.875rem !important;
     font-weight: 600 !important;
+    margin-bottom: 1rem !important;
 }
 
-.ql-editor h6 {
+.article h6 {
     font-size: 1.3rem !important;
     line-height: 1.5rem !important;
     font-weight: 600 !important;
+    margin-bottom: 1rem !important;
 }
 
-.ql-editor ul > li {
+.article ul > li {
     list-style-type: disc !important;
 }
 
-.ql-editor ul > li::before {
+.article ul > li::before {
     content: none !important;
 }
 
-.ql-editor ul,
 .article ul {
     padding: 0px !important;
     list-style: disc outside !important;
@@ -121,7 +102,6 @@ img {
     margin-top: 1em !important;
 }
 
-.ql-editor li,
 .article li {
     display: list-item !important;
     text-align: -webkit-match-parent !important;
@@ -129,23 +109,25 @@ img {
     margin-top: 1em !important;
 }
 
-.ql-editor p {
+.article p {
     margin-bottom: 1em !important;
 }
 
-.ql-editor a {
+.article a {
     cursor: pointer !important;
     text-decoration: none !important;
 }
 
-.original-content {
-    border: 1px solid #ccc;
-    overflow-y: auto;
-    padding: 12px 15px;
+.article hr {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.article img {
+    margin-bottom: 1rem;
 }
 
 /*Custom styling for Modal*/
-
 .modal-container {
     padding: 15px 30px;
 }
@@ -154,6 +136,7 @@ img {
     display: flex;
     justify-content: space-between;
     margin-bottom: 1rem;
+    align-items: center;
 }
 
 /* Renders a spinner on Vue apps before they are loaded into the DOM */
