@@ -5,13 +5,7 @@
         <div class="row">
             <div class="col">
                 <label for="title" class="has-text-weight-semibold">Title</label>
-                <input
-                    id="title"
-                    name="title"
-                    class="input"
-                    type="text"
-                    v-model="form.title"
-                />
+                <input id="title" name="title" class="input" type="text" v-model="form.title" />
                 <p class="help is-danger" v-if="errors.title">{{errors.title}}</p>
             </div>
         </div>
@@ -33,7 +27,12 @@
 
         <div class="row">
             <div class="col">
-                <label for="category" class="has-text-weight-semibold">Category</label>
+                <label for="category" class="has-text-weight-semibold">
+                    Category
+                    <br />
+                    <small>Choose from a list of existing categories, or enter the name of a new one.</small>
+                </label>
+
                 <input
                     id="category"
                     name="category"
@@ -43,7 +42,7 @@
                     list="categorynames"
                 />
                 <datalist id="categorynames">
-                    <option v-for="category in page_categories" :key="category">{{ category }}</option>
+                    <option v-for="category in page_categories" :key="category" :value="category"></option>
                 </datalist>
                 <p class="help is-danger" v-if="errors.category">{{errors.category}}</p>
             </div>
@@ -51,6 +50,7 @@
 
         <div class="row">
             <div class="col is-12">
+                <label class="has-text-weight-semibold">Page Content</label>
                 <TextEditor style="height: 500px;" />
             </div>
         </div>

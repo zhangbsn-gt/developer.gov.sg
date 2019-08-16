@@ -9,23 +9,26 @@
                 <option value="4"></option>
                 <option value="5"></option>
                 <option value="6"></option>
-                <option></option>
+                <option selected></option>
             </select>
-            <button class="ql-bold"></button>
-            <button class="ql-italic"></button>
-            <button class="ql-underline"></button>
-            <button class="ql-link"></button>
-            <button class="ql-blockquote"></button>
-            <button class="ql-code-block"></button>
+            <button class="ql-bold" v-tooltip.bottom="'Bold'"></button>
+            <button class="ql-italic" v-tooltip.bottom="'Italic'"></button>
+            <button class="ql-underline" v-tooltip.bottom="'Underline'"></button>
+            <select class="ql-color"></select>
+            <select class="ql-background"></select>
+            <button class="ql-link" v-tooltip.bottom="'Add link'"></button>
+            <button class="ql-blockquote" v-tooltip.bottom="'Block Quote'"></button>
+            <button class="ql-code-block" v-tooltip.bottom="'Code Block'"></button>
             <button class="ql-list" value="ordered"></button>
             <button class="ql-list" value="bullet"></button>
-            <button class="ql-hr">
+            <button class="ql-hr" v-tooltip.bottom="'Horizontal Line'">
                 <span class="sgds-icon sgds-icon-minus"></span>
             </button>
-            <button class="ql-clean"></button>
+            <button class="ql-clean" v-tooltip.bottom="'Clear formatting'"></button>
+            <button class="ql-video" v-tooltip.bottom="'Insert video from URL'"></button>
             <!-- Always keep image as the last element! Will mess up toolbar layout -->
             <v-popover trigger="click">
-                <button class="ql-image tooltip-target"></button>
+                <button class="ql-image tooltip-target" v-tooltip.bottom="'Insert image from URL'"></button>
                 <template slot="popover">
                     <form @submit.prevent="onInsertImage">
                         <label for="image-src">Enter your image's URL</label>
@@ -40,13 +43,15 @@
                 </template>
             </v-popover>
         </div>
-        <div id="editor"></div>
+        <div id="editor" class="article"></div>
     </div>
 </template>
 
 <script>
 import Quill from "quill";
+import sanitizeHtml from "sanitize-html";
 import { VTooltip, VPopover, VClosePopover } from "v-tooltip";
+import { sanitize } from "./index";
 
 import "noty/lib/noty.css";
 import "noty/lib/themes/mint.css";
@@ -76,9 +81,33 @@ export default {
     },
     data() {
         return {
+            sanitizedPageContent: "",
             quill: null,
             imageSrc: ""
         };
+    },
+    created() {
+        this.sanitizedPageContent = sanitize(this.page_content);
+    },
+    mounted() {
+        this.quill = new Quill("#editor", {
+            bounds: "#editor-wrapper",
+            theme: "snow",
+            placeholder: "",
+            modules: {
+                toolbar: {
+                    container: "#toolbar",
+                    handlers: {
+                        hr: this.quillHrHandler,
+                        image: this.quillImageHandler
+                    }
+                },
+                clipboard: {
+                    matchVisual: false // Stop quill from auto-adding <br> blocks before headers
+                }
+            }
+        });
+        this.quill.clipboard.dangerouslyPasteHTML(this.sanitizedPageContent);
     },
     methods: {
         quillHrHandler() {
@@ -103,136 +132,30 @@ export default {
                 this.imageSrc = "";
             }
         }
-    },
-    mounted() {
-        this.quill = new Quill("#editor", {
-            theme: "snow",
-            modules: {
-                toolbar: {
-                    container: "#toolbar",
-                    handlers: {
-                        hr: this.quillHrHandler,
-                        image: this.quillImageHandler
-                    }
-                },
-                clipboard: {
-                    matchVisual: false // Stop quill from auto-adding <br> blocks before headers
-                }
-            }
-        });
-        this.quill.clipboard.dangerouslyPasteHTML(this.page_content);
     }
 };
 </script>
 
 
 <style>
-.ql-editor {
-    font-size: 1rem !important;
-    line-height: calc(1rem + 0.5rem) !important;
-}
-
-.ql-editor h1,
-.original-content h1 {
-    font-size: 3.375rem !important;
-    line-height: 3.75rem !important;
-    letter-spacing: -1.5px !important;
-    margin-bottom: 1rem !important;
-}
-
-.ql-editor h2,
-.original-content h2 {
-    font-size: 2.75rem !important;
-    line-height: 3.75rem !important;
-    margin-bottom: 1rem !important;
-}
-
-.ql-editor h3,
-.original-content h3 {
-    font-size: 2rem !important;
-    line-height: 2.8125rem !important;
-    margin-bottom: 1rem !important;
-}
-
-.ql-editor h4,
-.original-content h4 {
-    font-size: 1.625rem !important;
-    line-height: 2.25rem !important;
-    font-weight: 600 !important;
-    color: #e79529;
-    margin-bottom: 1rem !important;
-}
-
-.ql-editor h5,
-.original-content h5 {
-    font-size: 1.375rem !important;
-    line-height: 1.875rem !important;
-    font-weight: 600 !important;
-    margin-bottom: 1rem !important;
-}
-
-.ql-editor h6,
-.original-content h6 {
-    font-size: 1.3rem !important;
-    line-height: 1.5rem !important;
-    font-weight: 600 !important;
-    margin-bottom: 1rem !important;
-}
-
-.ql-editor ul > li {
-    list-style-type: disc !important;
-}
-
-.ql-editor ul > li::before {
-    content: none !important;
-}
-
-.ql-editor ul {
-    padding: 0px !important;
-    list-style: disc outside !important;
-    margin-left: 1rem !important;
-    margin-top: 1em !important;
-}
-
-.ql-editor li {
-    display: list-item !important;
-    text-align: -webkit-match-parent !important;
-    padding: 0px !important;
-    margin-top: 1em !important;
-}
-
-.ql-editor p,
-.original-content p {
-    margin-bottom: 1em !important;
-}
-
-.ql-editor a,
-.original-content a {
-    cursor: pointer !important;
-    text-decoration: none !important;
-}
-
-.original-content {
-    border: 1px solid #ccc;
-    overflow-y: auto;
-    padding: 12px 15px;
-}
-
-.ql-editor hr,
-.original-content hr {
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-}
 
 .tooltip {
     display: block;
     z-index: 1000;
 }
+
+.tooltip .tooltip-inner {
+    background: #272727;
+    color: white;
+    border-radius: 4px;
+    padding: 4px 8px 4px;
+}
+
 .tooltip.popover .popover-inner {
     background: #272727;
     color: white;
     padding: 12px;
-    border-radius: 5px;
+    border-radius: 4px;
     box-shadow: 0 5px 30px rgba(black, 0.1);
 }
 

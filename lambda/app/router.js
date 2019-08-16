@@ -1,11 +1,11 @@
 const path = require("path");
 const express = require("express");
-const beautifyHtml = require("js-beautify").html;
 const yaml = require("js-yaml");
 const Octokit = require("@octokit/rest");
 const axios = require("axios");
 const { oauthLoginUrl } = require("@octokit/oauth-login-url");
 const uuidv4 = require("uuid/v4");
+const otpLib = require("../lib/otp");
 const owners = require("../lib/owners");
 const utils = require("../lib/utils");
 const github = require("../lib/github");
@@ -20,7 +20,6 @@ const {
     tokenHash,
     netlifyUrl
 } = require("./config");
-const lib = require("../lib");
 
 let cryptography = new Cryptography(tokenHash);
 
@@ -62,7 +61,7 @@ router.get("/oauth/github/callback", (req, res) => {
                 res.redirect(`${netlifyUrl}/review/`);
             }
         })
-        .catch(err => {
+        .catch(() => {
             if (req.hostname === "localhost") {
                 res.redirect(`http://localhost:8888/review/`);
             } else {
@@ -152,7 +151,7 @@ router.post("/request-otp", async (req, res) => {
         return;
     }
     try {
-        let otpResponse = await lib.otp.requestOtp(requestBody.email);
+        let otpResponse = await otpLib.requestOtp(requestBody.email);
         res.json(otpResponse.data);
     } catch (err) {
         let statusCode = 500;
@@ -168,7 +167,7 @@ router.post("/request-otp", async (req, res) => {
 router.post("/request-new-page", async (req, res) => {
     let submission = req.body;
 
-    let missingParams = lib.utils.getMissingParams(
+    let missingParams = utils.getMissingParams(
         [
             "email",
             "otp",
@@ -193,7 +192,7 @@ router.post("/request-new-page", async (req, res) => {
     let otpRequestId = submission.otpRequestId;
 
     try {
-        await lib.otp.verifyOtp(email, otp, otpRequestId);
+        await otpLib.verifyOtp(email, otp, otpRequestId);
     } catch (err) {
         res.status(403).json({
             error: `OTP validation failed. ${err.message}`
@@ -217,14 +216,12 @@ router.post("/request-new-page", async (req, res) => {
         `description: ${pageDescription}\n` +
         `---\n`;
 
-    const formattedContent = beautifyHtml(pageContent, {
-        wrap_line_length: 120
-    });
+    const formattedContent = utils.sanitizeAndBeautifyHtml(pageContent);
     newPage += formattedContent;
 
     try {
-        const newBranchId = await lib.utils.generateId();
-        const pr = await lib.github.createNewBranchAndPullRequest({
+        const newBranchId = await utils.generateId();
+        const pr = await github.createNewBranchAndPullRequest({
             filePath: pagePath,
             fileContent: newPage,
             baseBranchName: githubBaseRef,
@@ -236,8 +233,8 @@ router.post("/request-new-page", async (req, res) => {
             prBody: newPage
         });
 
-        let repoAdmins = await lib.github.getRepoAdmins();
-        await lib.github.addAssigneesToPullRequest({
+        let repoAdmins = await github.getRepoAdmins();
+        await github.addAssigneesToPullRequest({
             prNumber: pr.data.number,
             assignees: repoAdmins
         });
@@ -255,7 +252,7 @@ router.post("/request-new-page", async (req, res) => {
 router.post("/submit-article-changes", async (req, res) => {
     let submission = req.body;
 
-    let missingParams = lib.utils.getMissingParams(
+    let missingParams = utils.getMissingParams(
         [
             "email",
             "otp",
@@ -281,7 +278,7 @@ router.post("/submit-article-changes", async (req, res) => {
     let otpRequestId = submission.otpRequestId;
 
     try {
-        await lib.otp.verifyOtp(email, otp, otpRequestId);
+        await otpLib.verifyOtp(email, otp, otpRequestId);
     } catch (err) {
         res.status(403).json({
             error: `OTP validation failed. ${err.message}`
@@ -297,8 +294,9 @@ router.post("/submit-article-changes", async (req, res) => {
     let pageContent = submission.page_content;
     let pageType = submission.page_type;
     let pullRequestLabels = [pageType.toLowerCase(), utils.toLowerCaseSlug(pageTitle)];
+
     try {
-        const conflictingPr = await lib.github.checkForConflictingPr(pullRequestLabels);
+        const conflictingPr = await github.checkForConflictingPr(pullRequestLabels);
         if (conflictingPr) {
             res.status(400).json({
                 error: `Can't make submission; pending changes at ${conflictingPr.html_url}`
@@ -321,15 +319,13 @@ router.post("/submit-article-changes", async (req, res) => {
         `${pageDescription ? `description: ${pageDescription}\n` : ""}` +
         `---\n`;
 
-    const formattedContent = beautifyHtml(pageContent, {
-        wrap_line_length: 120
-    });
+    const formattedContent = utils.sanitizeAndBeautifyHtml(pageContent);
     newPage += formattedContent;
 
     try {
-        const newBranchId = await lib.utils.generateId();
+        const newBranchId = await utils.generateId();
         let filePath = pagePath.startsWith("/") ? `_${pagePath.substring(1)}` : `_${pagePath}`;
-        const pr = await lib.github.createNewBranchAndPullRequest({
+        const pr = await github.createNewBranchAndPullRequest({
             filePath: path.join("collections", filePath),
             fileContent: newPage,
             baseBranchName: githubBaseRef,
@@ -342,22 +338,22 @@ router.post("/submit-article-changes", async (req, res) => {
         });
 
         let issueAssignees = [];
-        if (owners.fetchProductDetails().hasOwnProperty(pageTitle)) {
+        if (Object.prototype.hasOwnProperty.call(owners.fetchProductDetails(), pageTitle)) {
             issueAssignees = owners.fetchProductDetails()[pageTitle];
         } else {
-            let admins = await lib.github.getRepoAdmins();
+            let admins = await github.getRepoAdmins();
             issueAssignees = admins;
         }
 
         let invalidAssignees = [];
 
         await Promise.all([
-            lib.github.addLabelsToPullRequest({
+            github.addLabelsToPullRequest({
                 prNumber: pr.data.number,
                 labels: pullRequestLabels
             }),
             ...issueAssignees.map(githubLogin => {
-                lib.github
+                github
                     .addAssigneesToPullRequest({
                         prNumber: pr.data.number,
                         assignees: [githubLogin]
@@ -374,8 +370,8 @@ router.post("/submit-article-changes", async (req, res) => {
 
         if (invalidAssignees.length === issueAssignees.length) {
             // All assignees invalid, assign to admins
-            let admins = await lib.github.getRepoAdmins();
-            await lib.github.addAssigneesToPullRequest({
+            let admins = await github.getRepoAdmins();
+            await github.addAssigneesToPullRequest({
                 prNumber: pr.data.number,
                 assignees: admins
             });
@@ -393,7 +389,7 @@ router.post("/submit-article-changes", async (req, res) => {
 
 router.post("/terms", async (req, res) => {
     let submission = req.body;
-    let missingParams = lib.utils.getMissingParams(
+    let missingParams = utils.getMissingParams(
         ["email", "otp", "otpRequestId", "term", "full_term", "description"],
         submission
     );
@@ -409,7 +405,7 @@ router.post("/terms", async (req, res) => {
     const otpRequestId = submission.otpRequestId;
 
     try {
-        await lib.otp.verifyOtp(email, otp, otpRequestId);
+        await otpLib.verifyOtp(email, otp, otpRequestId);
     } catch (err) {
         res.status(403).json({
             error: "OTP validation failed."
@@ -439,12 +435,12 @@ router.post("/terms", async (req, res) => {
         };
 
         existingTerms.push(newTerm);
-        lib.utils.sortTerms(existingTerms);
+        utils.sortTerms(existingTerms);
 
         const updatedTerms = JSON.stringify(existingTerms, null, 4);
 
-        const newBranchId = await lib.utils.generateId();
-        const pr = await lib.github.createNewBranchAndPullRequest({
+        const newBranchId = await utils.generateId();
+        const pr = await github.createNewBranchAndPullRequest({
             filePath: "terms.json",
             fileContent: updatedTerms,
             baseBranchName: githubBaseRef,
@@ -458,7 +454,7 @@ router.post("/terms", async (req, res) => {
 
         let pullRequestLabels = ["term", utils.toLowerCaseSlug(submission.term)];
 
-        await lib.github.addLabelsToPullRequest({
+        await github.addLabelsToPullRequest({
             labels: pullRequestLabels,
             prNumber: pr.data.number
         });
@@ -475,7 +471,7 @@ router.post("/terms", async (req, res) => {
 
 router.put("/terms", async (req, res) => {
     let submission = req.body;
-    let missingParams = lib.utils.getMissingParams(
+    let missingParams = utils.getMissingParams(
         ["email", "otp", "otpRequestId", "id", "term", "full_term", "description"],
         submission
     );
@@ -491,7 +487,7 @@ router.put("/terms", async (req, res) => {
     const otpRequestId = submission.otpRequestId;
 
     try {
-        await lib.otp.verifyOtp(email, otp, otpRequestId);
+        await otpLib.verifyOtp(email, otp, otpRequestId);
     } catch (err) {
         res.status(403).json({
             error: "OTP validation failed."
@@ -525,8 +521,8 @@ router.put("/terms", async (req, res) => {
 
         let newContent = JSON.stringify(existingTerms, null, 4);
 
-        const newBranchId = await lib.utils.generateId();
-        let pr = await lib.github.createNewBranchAndPullRequest({
+        const newBranchId = await utils.generateId();
+        let pr = await github.createNewBranchAndPullRequest({
             filePath: "terms.json",
             fileContent: newContent,
             baseBranchName: githubBaseRef,
@@ -538,7 +534,7 @@ router.put("/terms", async (req, res) => {
             })
         });
         let pullRequestLabels = ["term", utils.toLowerCaseSlug(submission.term)];
-        await lib.github.addLabelsToPullRequest({
+        await github.addLabelsToPullRequest({
             labels: pullRequestLabels,
             prNumber: pr.data.number
         });
