@@ -64,7 +64,7 @@ import axios from "axios";
 import Noty from "noty";
 import Loading from "vue-loading-overlay";
 import "vue-loading-overlay/dist/vue-loading.css";
-import { urlRegex } from "../lib";
+import { urlRegex, sanitize } from "../lib";
 import VerifyAndSubmit from "../lib/VerifyAndSubmit.vue";
 import TextEditor from "../lib/TextEditor.vue";
 
@@ -123,7 +123,7 @@ export default {
                     page_title: this.form.title,
                     page_category: this.form.category,
                     page_description: this.form.description,
-                    page_content: pageContent,
+                    page_content: sanitize(pageContent),
                     email,
                     otp,
                     otpRequestId
