@@ -1,3 +1,12 @@
-<div id="addpage" data-type='{{ include.type }}' data-categories='{{ include.categories }}' ></div>
+<div id="addpage" data-type='{{ include.type }}' data-categories='{{ include.categories }}'>
+    <!-- This spinner will show when the Vue app is loading -->
+    <div class="spinner">
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+    </div>
+</div>
 
-<script src="/assets/bundles/vue-addpage-app.bundle.js" type="text/javascript"></script>
+<script async src="/assets/bundles/vue-addpage-app.bundle.js" type="text/javascript"></script>

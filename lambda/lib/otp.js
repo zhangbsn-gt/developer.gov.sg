@@ -9,7 +9,7 @@ module.exports = {
 };
 
 async function requestOtp(email) {
-    let endpoint = new URL(`${config.otpServiceUrl}/pin`);
+    let endpoint = new URL(`${config.otpServiceUrl}/otp`);
     let authToken = generateOtpApiSignature();
 
     return await axios.post(
@@ -29,7 +29,7 @@ async function verifyOtp(email, otp, otpRequestId) {
     if (!utils.emailRegex.test(email)) {
         throw new Error("Only valid gov.sg emails are accepted.");
     }
-    let endpoint = new URL(`${config.otpServiceUrl}/pin/${otpRequestId}`);
+    let endpoint = new URL(`${config.otpServiceUrl}/otp/${otpRequestId}`);
     let authToken = generateOtpApiSignature();
 
     return await axios.put(

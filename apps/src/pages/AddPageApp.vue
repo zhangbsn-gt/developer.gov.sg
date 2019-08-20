@@ -8,7 +8,7 @@
             </div>
             <div class="col is-4 has-text-right">
                 <button
-                    class="sgds-button is-rounded is-fullwidth is-primary"
+                    class="sgds-button is-outlined is-primary margin--top--sm margin--bottom--sm has-text-weight-semibold"
                     v-on:click="showAddPageForm = !showAddPageForm"
                 >
                     Suggest new {{ this.type.toLowerCase() }}
@@ -20,7 +20,7 @@
                 </button>
             </div>
         </div>
-        <div class="row" v-if="showAddPageForm">
+        <div class="row" v-show="showAddPageForm">
             <div class="col is-12">
                 <AddPageForm
                     :type="page_type"

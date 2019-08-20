@@ -129,9 +129,10 @@ export default {
                     otpRequestId
                 })
                 .then(response => {
+                    let prLink = response.data.pr;
                     new Noty({
                         type: "success",
-                        text: `Your new page request ${this.form.title} has been submitted. The page will be created upon the approval by the reviewers.`
+                        text: `Your new page request ${this.form.title} has been submitted! <a href='${prLink}'>View its approval progress here</a>`
                     }).show();
                 })
                 .catch(err => {
@@ -149,16 +150,13 @@ export default {
                     this.$emit("close");
                 });
         },
-        checkPageType: function() {
-            this.page_type = this.type;
-            this.page_categories = this.categories;
-        },
         updateLoadingState(isLoading) {
             this.isLoading = isLoading;
         }
     },
-    beforeMount() {
-        this.checkPageType();
+    created() {
+        this.page_type = this.type;
+        this.page_categories = this.categories;
     }
 };
 </script>

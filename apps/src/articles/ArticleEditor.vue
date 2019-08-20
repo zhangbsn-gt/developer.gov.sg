@@ -110,7 +110,7 @@ export default {
                     let prLink = response.data.pr;
                     new Noty({
                         type: "success",
-                        text: `Your contribution has been submitted! <a href='${prLink}'>View its progress here</a>`
+                        text: `Your contribution has been submitted! <a href='${prLink}'>View its approval progress here</a>`
                     }).show();
                     this.$emit("close");
                 })
