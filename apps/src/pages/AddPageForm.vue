@@ -51,7 +51,7 @@
         <div class="row">
             <div class="col is-12">
                 <label class="has-text-weight-semibold">Page Content</label>
-                <TextEditor style="height: 500px;" />
+                <TextEditor style="height: 500px" />
             </div>
         </div>
 

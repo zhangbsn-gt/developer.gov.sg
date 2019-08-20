@@ -138,6 +138,9 @@ export default {
 
 
 <style>
+#editor {
+    background-color: white;
+}
 
 .tooltip {
     display: block;

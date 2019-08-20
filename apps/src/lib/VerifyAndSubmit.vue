@@ -3,68 +3,78 @@
         <div class="row margin--top--lg margin--bottom">
             <div class="col">
                 <h6>Submit for Review</h6>
-                <small>
-                    You will be able to track submission status at our GitHub repository's
-                    <a
-                        href="https://github.com/govtechsg/developer.gov.sg/pulls"
-                    >pull requests</a>
-                </small>
+
                 <div v-if="stage === stages.verify">
                     <form>
                         <label
                             for="contributor-email"
                         >Please enter your government email for verification</label>
-                        <input
-                            id="contributor-email"
-                            name="email"
-                            class="input margin--top--sm"
-                            :class="{'is-danger': errors.email}"
-                            type="email"
-                            placeholder="me@.gov.sg"
-                            v-model="email"
-                            @blur="validateEmail"
-                            required
-                        />
+                        <div class="field has-addons">
+                            <div class="control expanded">
+                                <input
+                                    id="contributor-email"
+                                    name="email"
+                                    class="input"
+                                    :class="{'is-danger': errors.email}"
+                                    type="email"
+                                    placeholder="me@.gov.sg"
+                                    v-model="email"
+                                    @blur="validateEmail"
+                                    required
+                                />
+                            </div>
+                            <div class="control">
+                                <button
+                                    type="submit"
+                                    class="sgds-button is-primary"
+                                    @click.prevent="requestOtp"
+                                    :disabled="!emailRegex.test(email)"
+                                >Send OTP</button>
+                            </div>
+                        </div>
                         <p class="help is-danger" v-if="errors.email">{{errors.email}}</p>
-                        <p>
-                            <button
-                                type="submit"
-                                class="sgds-button is-primary margin--top is-rounded"
-                                @click.prevent="requestOtp"
-                                :disabled="!emailRegex.test(email)"
-                            >Send OTP</button>
-                        </p>
                     </form>
                 </div>
 
                 <div v-if="stage === stages.submit">
                     <form>
                         <label for="otp">Please enter the OTP sent to your email at {{ email }}</label>
-                        <input
-                            type="number"
-                            name="otp"
-                            id="otp"
-                            class="input"
-                            :class="{'is-danger': errors.otp}"
-                            v-model="otp"
-                            required
-                        />
+                        <div class="field has-addons">
+                            <div class="control expanded">
+                                <input
+                                    type="number"
+                                    name="otp"
+                                    id="otp"
+                                    class="input"
+                                    :class="{'is-danger': errors.otp}"
+                                    v-model="otp"
+                                    required
+                                />
+                            </div>
+                            <div class="control is-flex">
+                                <button
+                                    type="button"
+                                    class="sgds-button"
+                                    @click.prevent="stage = stages.verify"
+                                ><i class="fas fa-undo"></i></button>
+                                <button
+                                    type="submit"
+                                    class="sgds-button is-primary"
+                                    :disabled="!this.otp || this.otp.length !== 6"
+                                    @click.prevent="submit"
+                                >Submit Changes</button>
+                            </div>
+                        </div>
                         <p class="help is-danger" v-if="errors.otp">{{errors.otp}}</p>
-                        <p class="modal-footer-buttons">
-                            <button
-                                type="button"
-                                class="sgds-button margin--top"
-                                @click.prevent="stage = stages.verify"
-                            >Back</button>
-                            <button
-                                type="submit"
-                                class="sgds-button is-primary margin--top"
-                                :disabled="!this.otp || this.otp.length !== 6"
-                                @click.prevent="submit"
-                            >Submit Changes</button>
-                        </p>
                     </form>
                 </div>
+
+                <small>
+                    You will be able to track submission status at our GitHub repository's
+                    <a
+                        href="https://github.com/govtechsg/developer.gov.sg/pulls"
+                    >pull requests</a>
+                </small>
             </div>
         </div>
     </div>
@@ -155,3 +165,9 @@ export default {
     }
 };
 </script>
+
+<style scoped>
+.expanded {
+    flex: 1 1 auto;
+}
+</style>

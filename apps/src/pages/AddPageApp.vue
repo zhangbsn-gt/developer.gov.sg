@@ -1,14 +1,13 @@
 <template>
     <div>
-        <div class="row has-background-light margin--top">
-            <div class="col is-8">
+        <div class="row margin--top is-multiline background-light">
+            <div class="col is-12">
                 <p
                     class="margin--top--sm margin--bottom--sm has-text-weight-semibold"
                 >Help everyone discover what the Singapore Government offers.</p>
-            </div>
-            <div class="col is-4 has-text-right">
                 <button
-                    class="sgds-button is-outlined is-primary margin--top--sm margin--bottom--sm has-text-weight-semibold"
+                    style="width: 100%"
+                    class="sgds-button is-primary has-text-weight-semibold"
                     v-on:click="showAddPageForm = !showAddPageForm"
                 >
                     Suggest new {{ this.type.toLowerCase() }}
@@ -19,9 +18,7 @@
                     <i class="sgds-icon sgds-icon-chevron-up" v-else></i>
                 </button>
             </div>
-        </div>
-        <div class="row" v-show="showAddPageForm">
-            <div class="col is-12">
+            <div class="col is-12" v-show="showAddPageForm">
                 <AddPageForm
                     :type="page_type"
                     :categories="page_categories"
@@ -66,3 +63,9 @@ export default {
     }
 };
 </script>
+
+<style scoped>
+.background-light {
+    background-color: #f5f5f5;
+}
+</style>
