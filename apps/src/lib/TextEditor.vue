@@ -1,6 +1,5 @@
 <template>
     <div id="editor-wrapper">
-        <!-- Mount Quill Here -->
         <div id="toolbar">
             <select class="ql-header">
                 <option value="1"></option>
@@ -14,13 +13,11 @@
             <button class="ql-bold" v-tooltip.bottom="'Bold'"></button>
             <button class="ql-italic" v-tooltip.bottom="'Italic'"></button>
             <button class="ql-underline" v-tooltip.bottom="'Underline'"></button>
-            <select class="ql-color"></select>
-            <select class="ql-background"></select>
             <button class="ql-link" v-tooltip.bottom="'Add link'"></button>
             <button class="ql-blockquote" v-tooltip.bottom="'Block Quote'"></button>
             <button class="ql-code-block" v-tooltip.bottom="'Code Block'"></button>
-            <button class="ql-list" value="ordered"></button>
-            <button class="ql-list" value="bullet"></button>
+            <button class="ql-list" value="ordered" v-tooltip.bottom="'Ordered List'"></button>
+            <button class="ql-list" value="bullet" v-tooltip.bottom="'Unordered List'"></button>
             <button class="ql-hr" v-tooltip.bottom="'Horizontal Line'">
                 <span class="sgds-icon sgds-icon-minus"></span>
             </button>
