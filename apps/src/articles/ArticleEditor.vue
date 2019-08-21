@@ -81,6 +81,7 @@ export default {
         return {
             quill: null,
             showOriginal: false,
+            sanitizedOriginalContent: "",
             isLoading: false,
             imageSrc: ""
         };
@@ -100,7 +101,7 @@ export default {
                     page_category: this.page_category,
                     page_description: this.page_description,
                     page_path: this.page_path,
-                    page_content: updatedContent,
+                    page_content: sanitize(updatedContent),
                     page_type: this.page_type,
                     email,
                     otp,
@@ -110,7 +111,7 @@ export default {
                     let prLink = response.data.pr;
                     new Noty({
                         type: "success",
-                        text: `Your contribution has been submitted! <a href='${prLink}'>View its progress here</a>`
+                        text: `Your contribution has been submitted! <a href='${prLink}'>View its approval progress here</a>`
                     }).show();
                     this.$emit("close");
                 })

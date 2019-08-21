@@ -1,3 +1,4 @@
+# All config variables accessible in 'site' object, e.g. site.timezone
 timezone: Asia/Singapore
 
 # SEO; see https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md

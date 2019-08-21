@@ -206,7 +206,7 @@ router.post("/request-new-page", async (req, res) => {
     let pageDescription = submission.page_description;
     let pageContent = submission.page_content;
     let pathFriendlyTitle = utils.toLowerCaseSlug(pageTitle);
-    let pagePath = path.join(`collections", "/_${pageType}/${pathFriendlyTitle}.html`);
+    let pagePath = path.join(`collections`, `_${pageType}/${pathFriendlyTitle}.html`);
 
     let newPage =
         `---\n` +
@@ -240,7 +240,7 @@ router.post("/request-new-page", async (req, res) => {
         });
 
         return res.json({
-            pr: pr.data.number
+            pr: pr.data.html_url
         });
     } catch (err) {
         res.status(500).json({

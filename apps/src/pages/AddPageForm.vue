@@ -51,7 +51,7 @@
         <div class="row">
             <div class="col is-12">
                 <label class="has-text-weight-semibold">Page Content</label>
-                <TextEditor style="height: 500px;" />
+                <TextEditor style="height: 500px" />
             </div>
         </div>
 
@@ -64,7 +64,7 @@ import axios from "axios";
 import Noty from "noty";
 import Loading from "vue-loading-overlay";
 import "vue-loading-overlay/dist/vue-loading.css";
-import { urlRegex } from "../lib";
+import { urlRegex, sanitize } from "../lib";
 import VerifyAndSubmit from "../lib/VerifyAndSubmit.vue";
 import TextEditor from "../lib/TextEditor.vue";
 
@@ -123,15 +123,16 @@ export default {
                     page_title: this.form.title,
                     page_category: this.form.category,
                     page_description: this.form.description,
-                    page_content: pageContent,
+                    page_content: sanitize(pageContent),
                     email,
                     otp,
                     otpRequestId
                 })
                 .then(response => {
+                    let prLink = response.data.pr;
                     new Noty({
                         type: "success",
-                        text: `Your new page request ${this.form.title} has been submitted. The page will be created upon the approval by the reviewers.`
+                        text: `Your new page request ${this.form.title} has been submitted! <a href='${prLink}'>View its approval progress here</a>`
                     }).show();
                 })
                 .catch(err => {
@@ -149,16 +150,13 @@ export default {
                     this.$emit("close");
                 });
         },
-        checkPageType: function() {
-            this.page_type = this.type;
-            this.page_categories = this.categories;
-        },
         updateLoadingState(isLoading) {
             this.isLoading = isLoading;
         }
     },
-    beforeMount() {
-        this.checkPageType();
+    created() {
+        this.page_type = this.type;
+        this.page_categories = this.categories;
     }
 };
 </script>
