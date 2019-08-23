@@ -1,38 +1,44 @@
 <template>
     <div class="modal-container vld-parent">
-        <Loading :active.sync="isLoading" :is-full-page="false"></Loading>
-        <div class="modal-header">
-            <h6>Editing {{ page_title }}</h6>
-            <button class="sgds-button is-rounded" type="button" @click="$emit('close')">
-                <span class="sgds-icon sgds-icon-cross"></span>
-            </button>
-        </div>
-        <div class="modal-body">
-            <small>URL: {{ page_path }}</small>
-            <div class="sgds-tabs is-boxed">
-                <ul>
-                    <li :class="{'is-active': !showOriginal}">
-                        <a @click.prevent="showOriginal = false" :style="{cursor: 'pointer'}">Editor</a>
-                    </li>
-                    <li :class="{'is-active': showOriginal}">
-                        <a
-                            @click.prevent="showOriginal = true"
-                            :style="{cursor: 'pointer'}"
-                        >Original</a>
-                    </li>
-                </ul>
+        <div class="container">
+            <Loading :active.sync="isLoading" :is-full-page="false"></Loading>
+            <div class="modal-header">
+                <h6>Editing {{ page_title }}</h6>
+                <button class="sgds-button is-rounded" type="button" @click="$emit('close')">
+                    <span class="sgds-icon sgds-icon-cross"></span>
+                </button>
             </div>
-            <TextEditor :page_content="page_content" v-show="!showOriginal" />
+            <div class="modal-body">
+                <small>URL: {{ page_path }}</small>
+                <div class="sgds-tabs">
+                    <ul>
+                        <li :class="{'is-active': !showOriginal}">
+                            <a
+                                @click.prevent="showOriginal = false"
+                                :style="{cursor: 'pointer'}"
+                            >Editor</a>
+                        </li>
+                        <li :class="{'is-active': showOriginal}">
+                            <a
+                                @click.prevent="showOriginal = true"
+                                :style="{cursor: 'pointer'}"
+                            >Original</a>
+                        </li>
+                    </ul>
+                </div>
 
-            <div
-                class="article original-content"
-                v-show="showOriginal"
-                v-html="sanitizedOriginalContent"
-            ></div>
-        </div>
+                <TextEditor :page_content="page_content" v-show="!showOriginal" />
 
-        <div class="modal-footer">
-            <VerifyAndSubmit @submit="submitChanges" @loading="updateLoadingState" />
+                <div
+                    class="article original-content"
+                    v-show="showOriginal"
+                    v-html="sanitizedOriginalContent"
+                ></div>
+            </div>
+
+            <div class="modal-footer">
+                <VerifyAndSubmit @submit="submitChanges" @loading="updateLoadingState" />
+            </div>
         </div>
     </div>
 </template>
@@ -137,6 +143,25 @@ export default {
 </script>
 
 <style scoped>
+@media screen and (min-width: 1152px) {
+    .container {
+        max-width: 960px;
+        width: 960px;
+    }
+}
+.modal-container {
+    display: flex;
+    justify-content: center;
+}
+.sgds-tabs {
+    margin-bottom: 0;
+}
+.sgds-tabs li {
+    flex: 1 1 auto;
+}
+.sgds-tabs li a {
+    cursor: pointer;
+}
 .original-content {
     border: 1px solid #ccc;
     overflow-y: auto;

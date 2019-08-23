@@ -63,7 +63,7 @@ export default {
                 },
                 {
                     clickToClose: false,
-                    width: "70%",
+                    width: "90%",
                     height: "auto",
                     minWidth: 250,
                     minHeight: 400,
