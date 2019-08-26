@@ -1,7 +1,7 @@
 import Vue from "vue";
 import AddPageApp from "./AddPageApp.vue";
 
-const mountElement = document.querySelector("#addpage");
+const mountElement = document.querySelector("#add-page");
 
 new Vue({
     render: createElement => {
@@ -11,4 +11,4 @@ new Vue({
             }
         });
     }
-}).$mount("#addpage");
+}).$mount("#add-page");
