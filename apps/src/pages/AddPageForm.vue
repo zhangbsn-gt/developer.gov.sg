@@ -134,6 +134,7 @@ export default {
                         type: "success",
                         text: `Your new page request ${this.form.title} has been submitted! <a href='${prLink}'>View its approval progress here</a>`
                     }).show();
+                    this.$emit("close");
                 })
                 .catch(err => {
                     let message = "";
@@ -147,7 +148,6 @@ export default {
                 })
                 .finally(() => {
                     this.isLoading = false;
-                    this.$emit("close");
                 });
         },
         updateLoadingState(isLoading) {
