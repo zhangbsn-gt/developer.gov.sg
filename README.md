@@ -1,9 +1,7 @@
 # developer.gov.sg
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/780ed541-5952-4726-9aa1-f3d1a58f36c0/deploy-status)](https://app.netlify.com/sites/developer-gov-sg/deploys)
-
 [![Known Vulnerabilities](https://snyk.io//test/github/GovTechSG/developer.gov.sg/badge.svg?targetFile=package.json)](https://snyk.io//test/github/GovTechSG/developer.gov.sg?targetFile=package.json)
-
 [![GuardRails badge](https://badges.guardrails.io/GovTechSG/developer.gov.sg.svg)](https://dashboard.guardrails.io/default/gh/GovTechSG/developer.gov.sg)
 
 ## Contribution and approval flow
