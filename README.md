@@ -68,7 +68,7 @@ As before, it is recommended to run netlify dev and webpack in separate terminal
 
 ```sh
 # Terminal 1
-# This runs netlify dev, which runs a proxy to jekyll's dev server and lambda functions locally
+# This runs netlify dev, runs jekyll's development server and local lambda functions
 npm run dev:netlify
 ```
 
@@ -77,4 +77,4 @@ npm run dev:netlify
 npm run dev:static
 ```
 
-The frontend will be available at localhost:8888. Netlify CLI will sync build settings such as environment variables for functions from the linked Netlify project, so they will be fully functional.
+The frontend will be available at **localhost:8888**. Netlify CLI will sync build settings such as environment variables for functions from the linked Netlify project, so they will be fully functional.
