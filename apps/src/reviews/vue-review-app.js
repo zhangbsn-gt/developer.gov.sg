@@ -7,7 +7,7 @@ Vue.use(VueCookies);
 Vue.use(require("vue-moment"));
 
 new Vue({
-    render: createElement => {
-        return createElement(ReviewApp);
-    }
+  render: createElement => {
+    return createElement(ReviewApp);
+  }
 }).$mount("#review");
