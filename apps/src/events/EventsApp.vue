@@ -12,15 +12,12 @@
     </div>
     <div v-if="!loading">
       <div class="row is-multiline">
-        <div class="col is-flex" v-if="events.length === 0">
+        <div class="col is-12" v-if="events.length === 0">
           <p>There are no upcoming meetups.</p>
         </div>
-        <div class="col is-flex" v-for="event of events" :key="event.id">
-          <a
-            class="sgds-card sgds-card-button"
-            :href="event.link"
-            target="_blank"
-          >
+        <div class="col is-12" v-for="event of events" :key="event.id">
+          <a :href="event.link" target="_blank">
+          <div class="sgds-card sgds-card-button">
             <div class="sgds-card-header">
               <p class="sgds-card-header-title">{{ event.name }}</p>
             </div>
@@ -40,6 +37,7 @@
                 </div>
               </div>
             </div>
+          </div>
           </a>
         </div>
       </div>
