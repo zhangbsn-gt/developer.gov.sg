@@ -20,7 +20,7 @@ const APPLICATIONS = {
     },
     TRANSACTIONAL_WEBSITE: {
         tag: "transactional website",
-        title: "I need to build a transactional website"
+        title: "I need to build a transactional digital service"
     }
     //MOBILE_APP: "mobile app",
     //DESIGNER_TEMPLATE: "designer template"
