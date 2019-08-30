@@ -1,6 +1,5 @@
 const crypto = require("crypto");
 const slugify = require("slugify");
-const _ = require("lodash");
 const sanitizeHtml = require("sanitize-html");
 const beautifyHtml = require("js-beautify").html;
 
