@@ -1,6 +1,6 @@
 [build]
-  command = "npm run deploynetlify"
+  command = "npm run deploy"
   publish = "_site/"
   functions = "functions"
 [dev]
-  command = "npm run devserver"
+  command = "npm run dev:jekyll"

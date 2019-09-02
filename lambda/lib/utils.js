@@ -1,6 +1,5 @@
 const crypto = require("crypto");
 const slugify = require("slugify");
-const _ = require("lodash");
 const sanitizeHtml = require("sanitize-html");
 const beautifyHtml = require("js-beautify").html;
 
@@ -10,7 +9,6 @@ module.exports = {
     sortTerms,
     firstArrayContainsSecondArray,
     toLowerCaseSlug,
-    getUsersPullRequests,
     sanitizeAndBeautifyHtml,
     emailRegex:
         process.env.NODE_ENV === "production"
@@ -35,7 +33,7 @@ function sanitizeAndBeautifyHtml(htmlString) {
             allowedIframeHostnames: ["www.youtube.com", "player.vimeo.com"]
         }),
         {
-            wrap_line_length: 120
+            wrap_line_length: 80
         }
     );
 }
@@ -82,24 +80,4 @@ function toLowerCaseSlug(thing) {
         lower: true,
         remove: /[*+~.()'"!:@]/g
     });
-}
-
-function getUsersPullRequests(username, pullRequests) {
-    let userPullRequests = [];
-    _.forEach(pullRequests, pullRequest => {
-        let assignees = pullRequest.assignees;
-        _.forEach(assignees, value => {
-            if (value.login === username) {
-                let product = "";
-                _.forEach(pullRequest.labels, label => {
-                    if (label["name"] !== "products") {
-                        product = label["name"];
-                    }
-                });
-                pullRequest["product"] = product;
-                userPullRequests.push(pullRequest);
-            }
-        });
-    });
-    return userPullRequests;
 }

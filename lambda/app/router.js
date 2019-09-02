@@ -80,7 +80,7 @@ router.get("/review", async (req, res) => {
         const username = user.data.login;
 
         // Ensure logged in user is one of our product owners
-        if (owners.fetchProductOwners().indexOf(username) === -1) {
+        if (owners.getAllOwners().indexOf(username) === -1) {
             res.status(500).json({
                 error: "Please make sure you are authorised to review changes."
             });
@@ -90,8 +90,14 @@ router.get("/review", async (req, res) => {
             owner: githubRepoOwner,
             repo: githubRepoName
         });
-        const pullRequests = utils.getUsersPullRequests(username, pulls.data);
-        res.json(pullRequests);
+        const userPullRequests = [];
+        for (let pullRequest of pulls.data) {
+            let userAssignee = pullRequest.assignees.find(assignee => assignee.login === username);
+            if (userAssignee) {
+                userPullRequests.push(pullRequest);
+            }
+        }
+        res.json({ githubUser: username, pullRequests: userPullRequests});
     } catch (err) {
         res.status(500).json(err);
     }
@@ -233,11 +239,24 @@ router.post("/request-new-page", async (req, res) => {
             prBody: newPage
         });
 
-        let repoAdmins = await github.getRepoAdmins();
-        await github.addAssigneesToPullRequest({
+        await github.addLabelsToPullRequest({
             prNumber: pr.data.number,
-            assignees: repoAdmins
+            labels: [pageType, pathFriendlyTitle]
         });
+
+        await Promise.all(
+            owners.admins.map(admin =>
+                github
+                    .addAssigneesToPullRequest({
+                        prNumber: pr.data.number,
+                        assignees: [admin]
+                    })
+                    .catch(err => {
+                        // Swallow any errors in adding admins as assignees
+                        console.error(err);
+                    })
+            )
+        );
 
         return res.json({
             pr: pr.data.html_url
@@ -293,7 +312,8 @@ router.post("/submit-article-changes", async (req, res) => {
     let pagePath = submission.page_path;
     let pageContent = submission.page_content;
     let pageType = submission.page_type;
-    let pullRequestLabels = [pageType.toLowerCase(), utils.toLowerCaseSlug(pageTitle)];
+    let pageTitleSlug = utils.toLowerCaseSlug(pageTitle);
+    let pullRequestLabels = [pageType.toLowerCase(), pageTitleSlug];
 
     try {
         const conflictingPr = await github.checkForConflictingPr(pullRequestLabels);
@@ -338,14 +358,14 @@ router.post("/submit-article-changes", async (req, res) => {
         });
 
         let issueAssignees = [];
-        if (Object.prototype.hasOwnProperty.call(owners.fetchProductDetails(), pageTitle)) {
-            issueAssignees = owners.fetchProductDetails()[pageTitle];
+        if (
+            Array.isArray(owners.productOwners[pageTitleSlug]) &&
+            owners.productOwners[pageTitleSlug].length > 0
+        ) {
+            issueAssignees = owners.productOwners[pageTitleSlug];
         } else {
-            let admins = await github.getRepoAdmins();
-            issueAssignees = admins;
+            issueAssignees = owners.admins;
         }
-
-        let invalidAssignees = [];
 
         await Promise.all([
             github.addLabelsToPullRequest({
@@ -361,21 +381,14 @@ router.post("/submit-article-changes", async (req, res) => {
                     .catch(err => {
                         // If assignee invalid, err.errors =
                         // [{value: "<github_login>", resource: "Issue", field: "assignees", code: "invalid"}]
-                        if (err.errors && err.errors[0].field === "assignees") {
-                            invalidAssignees.push(err.errors[0].value);
-                        }
+                        // if (err.errors && err.errors[0].field === "assignees") {
+                        //     invalidAssignees.push(err.errors[0].value);
+                        // }
+                        // Swallow errors
+                        console.error(err);
                     });
             })
         ]);
-
-        if (invalidAssignees.length === issueAssignees.length) {
-            // All assignees invalid, assign to admins
-            let admins = await github.getRepoAdmins();
-            await github.addAssigneesToPullRequest({
-                prNumber: pr.data.number,
-                assignees: admins
-            });
-        }
 
         res.json({
             pr: pr.data.html_url

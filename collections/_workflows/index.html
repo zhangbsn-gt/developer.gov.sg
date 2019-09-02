@@ -2,19 +2,24 @@
 title: Workflows
 layout: layout-page
 ---
+
 <script>
-    window.workflows = {% include json_from_keys.json data=site.workflows keys="title,category,stage,application,description,url" %}.data
+  window.workflows = {% include json_from_keys.json data=site.workflows keys="title,category,stage,application,description,url" %}.data
 </script>
 
 <div id="workflow" style="display: flex; justify-content: center">
-    <!-- This spinner will show when the Vue app is loading -->
-    <div class="spinner">
-        <div class="rect1"></div>
-        <div class="rect2"></div>
-        <div class="rect3"></div>
-        <div class="rect4"></div>
-        <div class="rect5"></div>
-    </div>
+  <!-- This spinner will show when the Vue app is loading -->
+  <div class="spinner">
+    <div class="rect1"></div>
+    <div class="rect2"></div>
+    <div class="rect3"></div>
+    <div class="rect4"></div>
+    <div class="rect5"></div>
+  </div>
 </div>
 
-<script async src="/assets/bundles/vue-workflow-app.bundle.js" type="text/javascript"></script>
+<script
+  async
+  src="/assets/bundles/vue-workflow-app.bundle.js"
+  type="text/javascript"
+></script>
