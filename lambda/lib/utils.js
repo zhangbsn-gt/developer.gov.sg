@@ -12,7 +12,7 @@ module.exports = {
   sanitizeAndBeautifyHtml,
   emailRegex:
     process.env.NODE_ENV === "production"
-      ? /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[\w\.]*gov\.sg$/
+      ? /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[\w.]*gov\.sg$/
       : /.*/
 };
 
