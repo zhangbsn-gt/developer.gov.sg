@@ -22,3 +22,7 @@ export function sanitize(html) {
     allowedIframeHostnames: ["www.youtube.com", "player.vimeo.com"]
   });
 }
+
+export function escapeRegExp(string) {
+  return string.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); // $& means the whole matched string
+}

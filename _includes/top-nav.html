@@ -1,4 +1,4 @@
-<div class="masthead-container is-fixed" id="navbar">
+<div class="masthead-container is-fixed has-background-white" id="navbar">
     {% include sgds-masthead.html %}
     <nav class="navbar">
         <div class="sgds-container">
@@ -6,31 +6,52 @@
                 <a class="navbar-item" href="/">
                     <img src="/assets/img/logo_developer.gov.sg.png" alt="Home">
                 </a>
-                <div class="navbar-burger burger" data-target="mainnav-1">
+                <div class="navbar-burger burger" data-target="navbar-main">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
             </div>
-            <div id="mainnav-1" class="navbar-menu">
-                {%- assign links = site.data.navigation -%}
-                {%- for lvl1item in links -%}
-                    {%- assign class = nil -%}
-                    {%- if page.url contains lvl1item.url -%}
-                    {%- assign class = 'is-active' -%}
-                    {%- endif -%}
-                    <a class="navbar-item is-uppercase {{class}} is-tab has-text-weight-semibold" href="{{ lvl1item.url }}">
-                        {{ lvl1item.title }}
-                    </a>
-                {%- endfor -%}
-            </div>
-            <div class="navbar-end is-hidden-touch">
-                <div class="navbar-item">
-                    <a class="navbar-item is-uppercase is-small sgds-button is-rounded has-text-weight-semibold" href="/terms/">
-                        Tech Acronyms
-                    </a>
+            <div id="navbar-main" class="navbar-menu">
+                <div class="navbar-start">
+                    <form action="/search/" method="get" class="is-hidden-desktop">
+                        {% include search-box.html %}
+                    </form>
+                    {%- assign links = site.data.navigation -%}
+                    {%- for lvl1item in links -%}
+                        {%- assign class = nil -%}
+                        {%- if page.url contains lvl1item.url -%}
+                        {%- assign class = 'is-active' -%}
+                        {%- endif -%}
+                        <a class="navbar-item is-uppercase {{class}} is-tab has-text-weight-semibold" href="{{ lvl1item.url }}">
+                            {{ lvl1item.title }}
+                        </a>
+                    {%- endfor -%}
+                </div>
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <a class="is-uppercase is-small sgds-button is-rounded has-text-weight-semibold" href="/terms/">
+                            Tech Acronyms
+                        </a>
+                    </div>
+                    {% if page.layout != 'search' %}
+                    <div class="navbar-item">
+                        <button id="main-search" class="sgds-button is-white is-large is-hidden-touch search-toggle" data-target="searchbar-main">
+                            <span class="sgds-icon sgds-icon-search"></span>
+                        </button>
+                    </div>
+                    {% endif %}
                 </div>
             </div>
         </div>
     </nav>
+    <div class="sgds-container is-hidden-touch hide" id="searchbar-main">
+        <div class="row">
+            <div class="col">
+                <form action="/search/" method="get">
+                    {% include search-box.html %}
+                </form>
+            </div>
+        </div>
+    </div>
 </div>

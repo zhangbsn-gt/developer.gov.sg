@@ -1,0 +1,47 @@
+---
+title: Search
+layout: layout-default
+permalink: /search/
+---
+
+<section class="sgds-section has-background-primary">
+    <div class="sgds-container">
+        <h2 class="has-text-white ">{{ page.title }}</h2>
+    </div>
+    <div class="sgds-container">
+        <form action="/search/" method="get">
+            <div class="row padding--bottom--lg padding--top--lg">
+                <div class="col">
+                    <div class="field has-addons">
+                        <div class="control is-expanded">
+                            <input
+                                class="input"
+                                type="text"
+                                placeholder="{{ site.search_placeholder }}"
+                                name="query"
+                            />
+                        </div>
+                        <div class="control">
+                            <button class="sgds-button">
+                                Search
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+<section class="sgds-section" id="search-app">
+    <div style="display: flex; justify-content: center">
+        <div class="spinner">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
+        </div>
+    </div>
+</section>
+
+<script async src="/assets/bundles/vue-search-app.bundle.js"></script>
