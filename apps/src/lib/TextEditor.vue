@@ -16,30 +16,16 @@
       <button class="ql-link" v-tooltip.bottom="'Add link'"></button>
       <button class="ql-blockquote" v-tooltip.bottom="'Block Quote'"></button>
       <button class="ql-code-block" v-tooltip.bottom="'Code Block'"></button>
-      <button
-        class="ql-list"
-        value="ordered"
-        v-tooltip.bottom="'Ordered List'"
-      ></button>
-      <button
-        class="ql-list"
-        value="bullet"
-        v-tooltip.bottom="'Unordered List'"
-      ></button>
+      <button class="ql-list" value="ordered" v-tooltip.bottom="'Ordered List'"></button>
+      <button class="ql-list" value="bullet" v-tooltip.bottom="'Unordered List'"></button>
       <button class="ql-hr" v-tooltip.bottom="'Horizontal Line'">
         <span class="sgds-icon sgds-icon-minus"></span>
       </button>
       <button class="ql-clean" v-tooltip.bottom="'Clear formatting'"></button>
-      <button
-        class="ql-video"
-        v-tooltip.bottom="'Insert video from URL'"
-      ></button>
+      <button class="ql-video" v-tooltip.bottom="'Insert video from URL'"></button>
       <!-- Always keep image as the last element! Will mess up toolbar layout -->
       <v-popover trigger="click">
-        <button
-          class="ql-image tooltip-target"
-          v-tooltip.bottom="'Insert image from URL'"
-        ></button>
+        <button class="ql-image tooltip-target" v-tooltip.bottom="'Insert image from URL'"></button>
         <template slot="popover">
           <form @submit.prevent="onInsertImage">
             <label for="image-src">Enter your image's URL</label>
@@ -47,9 +33,9 @@
             <button type="submit" v-close-popover>OK</button>
           </form>
           <div :style="{ textAlign: 'center' }">
-            <small :style="{ fontSize: '0.8rem' }"
-              >(Image will be inserted at your current cursor location)</small
-            >
+            <small
+              :style="{ fontSize: '0.8rem' }"
+            >(Image will be inserted at your current cursor location)</small>
           </div>
         </template>
       </v-popover>
@@ -105,6 +91,22 @@ export default {
       bounds: "#editor-wrapper",
       theme: "snow",
       placeholder: "",
+      formats: [
+        "bold",
+        "font",
+        "code",
+        "italic",
+        "link",
+        "size",
+        "underline",
+        "blockquote",
+        "header",
+        "indent",
+        "list",
+        "code-block",
+        "image",
+        "video"
+      ],
       modules: {
         toolbar: {
           container: "#toolbar",

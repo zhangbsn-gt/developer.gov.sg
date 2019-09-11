@@ -1,7 +1,7 @@
 import sanitizeHtml from "sanitize-html";
 export const emailRegex =
   process.env.NODE_ENV === "production"
-    ? /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[\w\.]*gov\.sg$/
+    ? /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[\w.]*gov\.sg$/
     : /.*/;
 
 export const urlRegex = /^https?:\/\/[^\s/$.?#].[^\s]*$/;
@@ -21,4 +21,8 @@ export function sanitize(html) {
     },
     allowedIframeHostnames: ["www.youtube.com", "player.vimeo.com"]
   });
+}
+
+export function escapeRegExp(string) {
+  return string.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); // $& means the whole matched string
 }
