@@ -349,7 +349,8 @@ router.post("/submit-article-changes", async (req, res) => {
 
   try {
     const newBranchId = await utils.generateId();
-    let filePath = pagePath.startsWith("/")
+    // todo: use page title as file path, and if changed, rename file
+    let filePath = pagePath.startsWith("/") 
       ? `_${pagePath.substring(1)}`
       : `_${pagePath}`;
     const pr = await github.createNewBranchAndPullRequest({
