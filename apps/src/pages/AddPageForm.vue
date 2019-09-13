@@ -5,22 +5,14 @@
     <div class="row">
       <div class="col">
         <label for="title" class="has-text-weight-semibold">Title</label>
-        <input
-          id="title"
-          name="title"
-          class="input"
-          type="text"
-          v-model="form.title"
-        />
+        <input id="title" name="title" class="input" type="text" v-model="form.title" />
         <p class="help is-danger" v-if="errors.title">{{ errors.title }}</p>
       </div>
     </div>
 
     <div class="row">
       <div class="col">
-        <label for="description" class="has-text-weight-semibold"
-          >Description</label
-        >
+        <label for="description" class="has-text-weight-semibold">Description</label>
         <input
           id="description"
           name="description"
@@ -29,9 +21,7 @@
           placeholder="This product is..."
           v-model="form.description"
         />
-        <p class="help is-danger" v-if="errors.description">
-          {{ errors.description }}
-        </p>
+        <p class="help is-danger" v-if="errors.description">{{ errors.description }}</p>
       </div>
     </div>
 
@@ -40,10 +30,10 @@
         <label for="category" class="has-text-weight-semibold">
           Category
           <br />
-          <small
-            >Choose from a list of existing categories, or enter the name of a
-            new one.</small
-          >
+          <small>
+            Choose from a list of existing categories, or enter the name of a
+            new one.
+          </small>
         </label>
 
         <input
@@ -55,15 +45,9 @@
           list="categorynames"
         />
         <datalist id="categorynames">
-          <option
-            v-for="category in page_categories"
-            :key="category"
-            :value="category"
-          ></option>
+          <option v-for="category in page_categories" :key="category" :value="category"></option>
         </datalist>
-        <p class="help is-danger" v-if="errors.category">
-          {{ errors.category }}
-        </p>
+        <p class="help is-danger" v-if="errors.category">{{ errors.category }}</p>
       </div>
     </div>
 
@@ -89,7 +73,7 @@ import TextEditor from "../lib/TextEditor.vue";
 
 export default {
   props: {
-    type: {
+    collection: {
       type: String,
       required: true
     },
@@ -99,11 +83,15 @@ export default {
     }
   },
   components: { VerifyAndSubmit, Loading, TextEditor },
+  created() {
+    this.page_collection = this.collection;
+    this.page_categories = this.categories;
+  },
   data() {
     return {
       quill: null,
       isLoading: false,
-      page_type: "",
+      page_collection: "",
       page_categories: "",
       form: {
         title: "",
@@ -138,10 +126,10 @@ export default {
 
       axios
         .post("/.netlify/functions/api/request-new-page", {
-          page_type: this.page_type,
           page_title: this.form.title,
           page_category: this.form.category,
           page_description: this.form.description,
+          page_collection: this.page_collection,
           page_content: sanitize(pageContent),
           email,
           otp,
@@ -172,10 +160,6 @@ export default {
     updateLoadingState(isLoading) {
       this.isLoading = isLoading;
     }
-  },
-  created() {
-    this.page_type = this.type;
-    this.page_categories = this.categories;
   }
 };
 </script>

@@ -10,27 +10,28 @@ layout: layout-page-sidenav
   has to support your software development. By using these products and
   services, you are complying to the usage as well as security policies.
 </p>
-{% include add-pages-app.html type='products' categories=category_array %}
+{% include add-pages-app.html collection='products' categories=category_array %}
 <hr />
 
-{% assign categories = site.products | sort: "category" | group_by: "category"
-%} {% for category in categories %} {% if category.name != '' %}
-<h4>{{ category.name | capitalize }}</h4>
-{% assign items = category.items %}
-<div class="row is-multiline">
-  {% for item in items %}
-  <div class="col is-4 is-flex">
-    <a class="sgds-card sgds-card-button" href="{{ item.url }}">
-      <div class="sgds-card-header">
-        <p class="sgds-card-header-title">{{ item.title }}</p>
-      </div>
-      <div class="sgds-card-content">
-        <small>{{ item.description }}</small>
-      </div>
-    </a>
-  </div>
-  {% endfor %}
-</div>
-{% if forloop.last != true %}
-<hr />
-{% endif %} {% endif %} {% endfor %}
+{% assign categories = site.products | sort: "category" | group_by: "category" %}
+{% for category in categories %} 
+  {% if category.name != '' %}
+    <h4>{{ category.name | capitalize }}</h4>
+    {% assign items = category.items %}
+    <div class="row is-multiline">
+      {% for item in items %}
+        <div class="col is-4 is-flex">
+          <a class="sgds-card sgds-card-button" href="{{ item.url }}">
+            <div class="sgds-card-header">
+              <p class="sgds-card-header-title">{{ item.title }}</p>
+            </div>
+            <div class="sgds-card-content">
+              <small>{{ item.description }}</small>
+            </div>
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+    {% if forloop.last != true %}<hr />{% endif %} 
+  {% endif %}
+{% endfor %}

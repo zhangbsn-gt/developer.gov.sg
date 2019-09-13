@@ -127,18 +127,6 @@ body {
     margin-bottom: 1rem;
 }
 
-/*Custom styling for Modal*/
-.modal-container {
-    padding: 15px 30px;
-}
-
-.modal-header {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1rem;
-    align-items: center;
-}
-
 /* Renders a spinner on Vue apps before they are loaded into the DOM */
 /* <div class="spinner">
     <div class="rect1"></div>

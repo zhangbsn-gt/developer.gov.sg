@@ -105,7 +105,8 @@ export default {
         "list",
         "code-block",
         "image",
-        "video"
+        "video",
+        "hr"
       ],
       modules: {
         toolbar: {
