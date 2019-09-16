@@ -1,8 +1,6 @@
 <template>
   <div id="article-editor-app">
-    <a class="sgds-button is-rounded is-small" @click="openEditor"
-      >Edit This Page</a
-    >
+    <a class="sgds-button is-rounded is-small" @click="openEditor">Edit This Page</a>
   </div>
 </template>
 
@@ -40,9 +38,12 @@ export default {
       type: String,
       required: true
     },
-    type: {
+    collection: {
       type: String,
       required: true
+    },
+    categories: {
+      type: String // JSON array string
     }
   },
   data() {
@@ -61,7 +62,10 @@ export default {
           page_description: this.description,
           page_path: this.url,
           page_content: this.content,
-          page_type: this.type
+          page_collection: this.collection,
+          page_categories: this.categories
+            ? JSON.parse(this.categories).filter(category => category) // Non-null
+            : null
         },
         {
           clickToClose: false,

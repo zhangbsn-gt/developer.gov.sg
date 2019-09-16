@@ -1,3 +1,9 @@
+{% comment %} Get array of categories across all pages within collection {% endcomment %}
+{% assign collection = page.collection %}
+{% if collection and collection != "" %}
+    {% assign currentCollection = site.collections | where: "label", collection | first %}
+    {% assign category_array = currentCollection.docs | map: "category" | uniq | jsonify %}
+{% endif %}
 <div class="has-background-light padding margin--top--lg" style="display: flex; justify-content: flex-end">
     <div
         id="article-editor-app"
@@ -6,8 +12,9 @@
         data-category="{{ page.category }}"
         data-description="{{ page.description }}"
         data-url="{{ page.url }}"
+        data-collection="{{ page.collection }}"
+        data-categories='{{ category_array }}'
         data-content="{{ content | xml_escape }}"
-        data-type="{{ page.collection }}"
     >
         <!-- xml_escape because html content's special characters (",' etc) may break this -->
 

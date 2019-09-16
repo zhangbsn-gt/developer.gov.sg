@@ -2,15 +2,15 @@
   <div>
     <div class="row margin--top is-multiline background-light">
       <div class="col is-12">
-        <p class="margin--top--sm margin--bottom--sm has-text-weight-semibold">
-          Help everyone discover what the Singapore Government offers.
-        </p>
+        <p
+          class="margin--top--sm margin--bottom--sm has-text-weight-semibold"
+        >Help everyone discover what the Singapore Government offers.</p>
         <button
           style="width: 100%"
           class="sgds-button is-primary has-text-weight-semibold"
           v-on:click="showAddPageForm = !showAddPageForm"
         >
-          Suggest new {{ this.type.toLowerCase() }}
+          Suggest new {{ this.collection.toLowerCase() }}
           <i
             class="sgds-icon sgds-icon-chevron-down"
             v-if="!showAddPageForm"
@@ -20,8 +20,8 @@
       </div>
       <div class="col is-12" v-show="showAddPageForm">
         <AddPageForm
-          :type="page_type"
-          :categories="page_categories"
+          :collection="collection"
+          :categories="categoryList"
           @close="showAddPageForm = false"
         />
       </div>
@@ -33,7 +33,7 @@
 import AddPageForm from "./AddPageForm.vue";
 export default {
   props: {
-    type: {
+    collection: {
       type: String,
       required: true
     },
@@ -46,20 +46,12 @@ export default {
   data() {
     return {
       showAddPageForm: false,
-      page_type: "",
-      page_categories: ""
     };
   },
-  methods: {
-    checkPageType: function() {
-      this.page_type = this.type;
-      this.page_categories = JSON.parse(this.categories).filter(
-        category => category != null
-      );
+  computed: {
+    categoryList() {
+      return JSON.parse(this.categories).filter(category => category);
     }
-  },
-  beforeMount() {
-    this.checkPageType();
   }
 };
 </script>

@@ -180,7 +180,7 @@ router.post("/request-new-page", async (req, res) => {
       "email",
       "otp",
       "otpRequestId",
-      "page_type",
+      "page_collection",
       "page_title",
       "page_category",
       "page_description",
@@ -208,7 +208,7 @@ router.post("/request-new-page", async (req, res) => {
     return;
   }
 
-  let pageType = submission.page_type;
+  let pageCollection = submission.page_collection;
   let pageTitle = submission.page_title;
   let pageCategory = submission.page_category;
   let pageDescription = submission.page_description;
@@ -216,7 +216,7 @@ router.post("/request-new-page", async (req, res) => {
   let pathFriendlyTitle = utils.toLowerCaseSlug(pageTitle);
   let pagePath = path.join(
     `collections`,
-    `_${pageType}/${pathFriendlyTitle}.html`
+    `_${pageCollection}/${pathFriendlyTitle}.html`
   );
 
   let newPage =
@@ -236,17 +236,17 @@ router.post("/request-new-page", async (req, res) => {
       filePath: pagePath,
       fileContent: newPage,
       baseBranchName: githubBaseRef,
-      newBranchName: `${pageType}-new-${new Date()
+      newBranchName: `${pageCollection}-new-${new Date()
         .toISOString()
         .substring(0, 10)}-${newBranchId}`,
-      commitMessage: `New ${pageType} page: "${pageTitle}" by ${email}`,
-      prTitle: `New ${pageType} page: "${pageTitle}" by ${email}`,
+      commitMessage: `New ${pageCollection} page: "${pageTitle}" by ${email}`,
+      prTitle: `New ${pageCollection} page: "${pageTitle}" by ${email}`,
       prBody: newPage
     });
 
     await github.addLabelsToPullRequest({
       prNumber: pr.data.number,
-      labels: [pageType, pathFriendlyTitle]
+      labels: [pageCollection, pathFriendlyTitle]
     });
 
     await Promise.all(
@@ -286,7 +286,7 @@ router.post("/submit-article-changes", async (req, res) => {
       "page_category",
       "page_path",
       "page_content",
-      "page_type"
+      "page_collection"
     ],
     submission
   );
@@ -316,9 +316,9 @@ router.post("/submit-article-changes", async (req, res) => {
   let pageDescription = submission.page_description;
   let pagePath = submission.page_path;
   let pageContent = submission.page_content;
-  let pageType = submission.page_type;
+  let pageCollection = submission.page_collection;
   let pageTitleSlug = utils.toLowerCaseSlug(pageTitle);
-  let pullRequestLabels = [pageType.toLowerCase(), pageTitleSlug];
+  let pullRequestLabels = [pageCollection.toLowerCase(), pageTitleSlug];
 
   try {
     const conflictingPr = await github.checkForConflictingPr(pullRequestLabels);
@@ -349,14 +349,15 @@ router.post("/submit-article-changes", async (req, res) => {
 
   try {
     const newBranchId = await utils.generateId();
-    let filePath = pagePath.startsWith("/")
+    // todo: use page title as file path, and if changed, rename file
+    let filePath = pagePath.startsWith("/") 
       ? `_${pagePath.substring(1)}`
       : `_${pagePath}`;
     const pr = await github.createNewBranchAndPullRequest({
       filePath: path.join("collections", filePath),
       fileContent: newPage,
       baseBranchName: githubBaseRef,
-      newBranchName: `${pageType.toLowerCase()}-edit-${new Date()
+      newBranchName: `${pageCollection.toLowerCase()}-edit-${new Date()
         .toISOString()
         .substring(0, 10)}-${newBranchId}`,
       commitMessage: `New edits for ${pageTitle} page by ${email}`,
@@ -403,7 +404,7 @@ router.post("/submit-article-changes", async (req, res) => {
   } catch (err) {
     res.status(500).json({
       error:
-        err.message || `Error submitting ${pageType.toLowerCase()} changes.`
+        err.message || `Error submitting ${pageCollection.toLowerCase()} changes.`
     });
   }
 });
