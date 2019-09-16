@@ -80,7 +80,7 @@
         </div>
 
         <hr class="margin--bottom" />
-        <label class="label text-centered">Page Content</label>
+        <label class="label">Page Content</label>
         <div class="sgds-tabs">
           <ul>
             <li :class="{ 'is-active': !showOriginal }">
