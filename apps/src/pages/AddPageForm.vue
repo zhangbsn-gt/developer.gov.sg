@@ -4,57 +4,59 @@
 
     <div class="row">
       <div class="col">
-        <label for="title" class="has-text-weight-semibold">Title</label>
-        <input id="title" name="title" class="input" type="text" v-model="form.title" />
-        <p class="help is-danger" v-if="errors.title">{{ errors.title }}</p>
+        <div class="field">
+          <label for="title" class="label">Title</label>
+          <div class="control">
+            <input id="title" name="title" class="input" type="text" v-model="form.title" />
+          </div>
+          <p class="help is-danger" v-if="errors.title">{{ errors.title }}</p>
+        </div>
+        <div class="field">
+          <label for="description" class="label">Description</label>
+          <div class="control">
+            <input
+              id="description"
+              name="description"
+              class="input"
+              type="text"
+              placeholder="This product is..."
+              v-model="form.description"
+            />
+          </div>
+          <p class="help is-danger" v-if="errors.description">{{ errors.description }}</p>
+        </div>
+        <div class="field">
+          <label for="category" class="label">
+            Category
+            <br />
+            <small>
+              Choose from a list of existing categories, or enter the name of a
+              new one.
+            </small>
+          </label>
+
+          <input
+            id="category"
+            name="category"
+            class="input"
+            type="text"
+            v-model="form.category"
+            list="categorynames"
+          />
+          <datalist id="categorynames">
+            <option v-for="category in page_categories" :key="category" :value="category"></option>
+          </datalist>
+          <p class="help is-danger" v-if="errors.category">{{ errors.category }}</p>
+        </div>
       </div>
     </div>
 
     <div class="row">
       <div class="col">
-        <label for="description" class="has-text-weight-semibold">Description</label>
-        <input
-          id="description"
-          name="description"
-          class="input"
-          type="text"
-          placeholder="This product is..."
-          v-model="form.description"
-        />
-        <p class="help is-danger" v-if="errors.description">{{ errors.description }}</p>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col">
-        <label for="category" class="has-text-weight-semibold">
-          Category
-          <br />
-          <small>
-            Choose from a list of existing categories, or enter the name of a
-            new one.
-          </small>
-        </label>
-
-        <input
-          id="category"
-          name="category"
-          class="input"
-          type="text"
-          v-model="form.category"
-          list="categorynames"
-        />
-        <datalist id="categorynames">
-          <option v-for="category in page_categories" :key="category" :value="category"></option>
-        </datalist>
-        <p class="help is-danger" v-if="errors.category">{{ errors.category }}</p>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col is-12">
-        <label class="has-text-weight-semibold">Page Content</label>
-        <TextEditor style="height: 500px" />
+        <label class="label">Page Content</label>
+        <div class="control">
+          <TextEditor style="height: 500px" />
+        </div>
       </div>
     </div>
 
