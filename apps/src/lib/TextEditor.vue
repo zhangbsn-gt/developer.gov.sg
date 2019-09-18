@@ -1,13 +1,9 @@
 <template>
   <div id="editor-wrapper">
     <div id="toolbar">
-      <select class="ql-header">
-        <option value="1"></option>
-        <option value="2"></option>
-        <option value="3"></option>
-        <option value="4"></option>
-        <option value="5"></option>
-        <option value="6"></option>
+      <select class="ql-header" :style="{ width: '115px' }">
+        <option value="4">Heading</option>
+        <option value="5">Sub-heading</option>
         <option selected></option>
       </select>
       <button class="ql-bold" v-tooltip.bottom="'Bold'"></button>
