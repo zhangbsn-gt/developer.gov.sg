@@ -6,11 +6,9 @@
 
         <div v-if="stage === stages.verify">
           <form>
-            <label for="contributor-email"
-              >Please enter your government email for verification</label
-            >
+            <label for="contributor-email">Please enter your government email for verification</label>
             <div class="field has-addons">
-              <div class="control expanded">
+              <div class="control is-expanded">
                 <input
                   id="contributor-email"
                   name="email"
@@ -29,9 +27,7 @@
                   class="sgds-button is-primary"
                   @click.prevent="requestOtp"
                   :disabled="!emailRegex.test(email)"
-                >
-                  Send OTP
-                </button>
+                >Send OTP</button>
               </div>
             </div>
             <p class="help is-danger" v-if="errors.email">{{ errors.email }}</p>
@@ -40,13 +36,14 @@
 
         <div v-if="stage === stages.submit">
           <form>
-            <label for="otp"
-              >Please enter the OTP sent to your email at {{ email }}</label
-            >
+            <label for="otp">Please enter the OTP sent to your email at {{ email }}</label>
             <div class="field has-addons">
-              <div class="control expanded">
+              <div class="control">
+                <button class="sgds-button" disabled>{{ otpRequestId }}-</button>
+              </div>
+              <div class="control is-expanded">
                 <input
-                  type="number"
+                  type="text"
                   name="otp"
                   id="otp"
                   class="input"
@@ -56,21 +53,15 @@
                 />
               </div>
               <div class="control is-flex">
-                <button
-                  type="button"
-                  class="sgds-button"
-                  @click.prevent="stage = stages.verify"
-                >
+                <button type="button" class="sgds-button" @click.prevent="stage = stages.verify">
                   <i class="fas fa-undo"></i>
                 </button>
                 <button
                   type="submit"
                   class="sgds-button is-primary"
-                  :disabled="!this.otp || this.otp.length !== 6"
+                  :disabled="!otpIsValid"
                   @click.prevent="submit"
-                >
-                  Submit Changes
-                </button>
+                >Submit Changes</button>
               </div>
             </div>
             <p class="help is-danger" v-if="errors.otp">{{ errors.otp }}</p>
@@ -79,9 +70,9 @@
 
         <small>
           You will be able to track submission status at our GitHub repository's
-          <a href="https://github.com/govtechsg/developer.gov.sg/pulls"
-            >pull requests</a
-          >
+          <a
+            href="https://github.com/govtechsg/developer.gov.sg/pulls"
+          >pull requests</a>
         </small>
       </div>
     </div>
@@ -91,7 +82,7 @@
 <script>
 import axios from "axios";
 import Noty from "noty";
-import { emailRegex } from "./index";
+import { emailRegex, otpRegex } from "./index";
 
 const stages = {
   verify: "verify",
@@ -105,7 +96,8 @@ export default {
       stages,
       stage: stages.verify,
       email: null,
-      otp: null,
+      otp: "",
+      otpRequestId: "",
       errors: {
         email: null,
         otp: null
@@ -137,7 +129,7 @@ export default {
             text: `An OTP has been sent to ${this.email}. Please enter it before submitting your edits.`
           }).show();
           let otpRequestId = response.data.id;
-          localStorage.setItem("otpRequestId", otpRequestId);
+          this.otpRequestId = otpRequestId;
           this.stage = stages.submit;
         })
         .catch(error => {
@@ -151,12 +143,11 @@ export default {
         });
     },
     submit() {
-      if (!this.otp || this.otp.length !== 6) {
+      if (!this.otpIsValid) {
         this.errors.otp = "Please a valid 6-digit OTP.";
         return;
       }
-      let otpRequestId = localStorage.getItem("otpRequestId");
-      if (!otpRequestId) {
+      if (!this.otpRequestId) {
         new Noty({
           type: "error",
           text: `Could not send submission; have you requested for your OTP?`
@@ -166,16 +157,20 @@ export default {
       this.$emit("submit", {
         email: this.email,
         otp: this.otp,
-        otpRequestId
+        otpRequestId: this.otpRequestId
       });
-      this.otp = null;
+      this.otp = "";
+      this.otpRequestId = "";
+      this.stage = stages.verify;
+    }
+  },
+  computed: {
+    otpIsValid() {
+      return this.otp.search(otpRegex) !== -1;
     }
   }
 };
 </script>
 
 <style scoped>
-.expanded {
-  flex: 1 1 auto;
-}
 </style>
