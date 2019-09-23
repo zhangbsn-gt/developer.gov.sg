@@ -5,6 +5,7 @@ export const emailRegex =
     : /.*/;
 
 export const urlRegex = /^https?:\/\/[^\s/$.?#].[^\s]*$/;
+export const otpRegex = /^\d{6}$/;
 
 export function sanitize(html) {
   return sanitizeHtml(html, {
