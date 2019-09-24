@@ -35,8 +35,10 @@
         "id": "70b2925f-dc6f-4c1d-93b2-687c6229b559",
         "term": "NDI",
         "full_term": "National Digital Identity",
-        "description": "Description of NDI",
-        "links": [],
+        "description": "NDI consists of a series of technologies that allows citizens and businesses to leverage on a common digital identity when transacting online.",
+        "links": [
+            "https://www.ndi-api.gov.sg"
+        ],
         "tags": [
             "authentication",
             "data"
