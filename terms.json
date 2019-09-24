@@ -25,7 +25,7 @@
         "id": "4e5094a5-2b07-4615-a759-f6dbde618bc5",
         "term": "GCC",
         "full_term": "Government Commercial Cloud",
-        "description": "Description of GCC",
+        "description": "GCC allows developers to host and build their applications on world-class technologies used by leading technology firms in the industry today.",
         "links": [],
         "tags": [
             "platform"
@@ -35,8 +35,10 @@
         "id": "70b2925f-dc6f-4c1d-93b2-687c6229b559",
         "term": "NDI",
         "full_term": "National Digital Identity",
-        "description": "Description of NDI",
-        "links": [],
+        "description": "NDI consists of a series of technologies that allows citizens and businesses to leverage on a common digital identity when transacting online.",
+        "links": [
+            "https://www.ndi-api.gov.sg"
+        ],
         "tags": [
             "authentication",
             "data"
@@ -71,7 +73,7 @@
         "id": "62d310c8-bb4f-4268-836f-2db9a29497fb",
         "term": "SGTS",
         "full_term": "Singapore Government Tech Stack",
-        "description": "Description of SGTS",
+        "description": "SGTS consists of a series of common applications and platforms built by the Government that helps agencies build compliant applications easily.",
         "links": [],
         "tags": [
             "platform",
