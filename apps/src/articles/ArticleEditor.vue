@@ -1,108 +1,88 @@
 <template>
-  <div class="modal-container vld-parent">
-    <div class="container">
-      <Loading :active.sync="isLoading" :is-full-page="false"></Loading>
-      <div class="modal-header">
-        <button class="sgds-button is-rounded" type="button" @click="$emit('close')">
-          <span class="sgds-icon sgds-icon-cross"></span>
-        </button>
+  <div class="article-editor-container vld-parent">
+    <Loading :active.sync="isLoading" :is-full-page="false"></Loading>
+    <div class="article-editor-body">
+      <div class="field">
+        <div class="field-header">
+          <label class="label" for="title">Title</label>
+          <label class="checkbox">
+            edit
+            <input type="checkbox" v-model="edit.title" />
+          </label>
+        </div>
+        <div class="control">
+          <input class="input" type="text" id="title" v-model="page.title" :disabled="!edit.title" />
+        </div>
       </div>
-      <div class="modal-body">
-        <div class="field">
-          <div class="field-header">
-            <label class="label" for="title">Title</label>
-            <label class="checkbox">
-              edit
-              <input type="checkbox" v-model="edit.title" />
-            </label>
-          </div>
-          <div class="control">
-            <input
-              class="input"
-              type="text"
-              id="title"
-              v-model="page.title"
-              :disabled="!edit.title"
-            />
-          </div>
+      <div class="field">
+        <div class="field-header">
+          <label class="label" for="category">
+            Category
+            <br />
+            <small>Choose a category for this page, or enter a new one</small>
+          </label>
+          <label class="checkbox">
+            edit
+            <input type="checkbox" v-model="edit.category" />
+          </label>
         </div>
-        <div class="field">
-          <div class="field-header">
-            <label class="label" for="category">
-              Category
-              <br />
-              <small>Choose a category for this page, or enter a new one</small>
-            </label>
-            <label class="checkbox">
-              edit
-              <input type="checkbox" v-model="edit.category" />
-            </label>
-          </div>
-          <div class="control">
-            <input
-              class="input"
-              list="categories"
-              id="category"
-              name="category"
-              v-model="page.category"
-              :disabled="!edit.category"
-            />
-          </div>
-          <datalist id="categories">
-            <option
-              v-for="pageCategory of page_categories"
-              :key="pageCategory"
-              :value="pageCategory"
-            ></option>
-          </datalist>
+        <div class="control">
+          <input
+            class="input"
+            list="categories"
+            id="category"
+            name="category"
+            v-model="page.category"
+            :disabled="!edit.category"
+          />
         </div>
-        <div class="field">
-          <div class="field-header">
-            <label class="label" for="description">
-              Description
-              <br />
-              <small>This text appears on links to your page</small>
-            </label>
-            <label class="checkbox">
-              edit
-              <input type="checkbox" v-model="edit.description" />
-            </label>
-          </div>
-          <div class="control">
-            <input
-              class="input"
-              type="text"
-              id="title"
-              v-model="page.description"
-              :disabled="!edit.description"
-            />
-          </div>
+        <datalist id="categories">
+          <option v-for="pageCategory of page_categories" :key="pageCategory" :value="pageCategory"></option>
+        </datalist>
+      </div>
+      <div class="field">
+        <div class="field-header">
+          <label class="label" for="description">
+            Description
+            <br />
+            <small>This text appears on links to your page</small>
+          </label>
+          <label class="checkbox">
+            edit
+            <input type="checkbox" v-model="edit.description" />
+          </label>
         </div>
-
-        <hr class="margin--bottom" />
-        <label class="label">Page Content</label>
-        <div class="sgds-tabs">
-          <ul>
-            <li :class="{ 'is-active': !showOriginal }">
-              <a @click.prevent="showOriginal = false" :style="{ cursor: 'pointer' }">Editor</a>
-            </li>
-            <li :class="{ 'is-active': showOriginal }">
-              <a @click.prevent="showOriginal = true" :style="{ cursor: 'pointer' }">Original</a>
-            </li>
-          </ul>
+        <div class="control">
+          <input
+            class="input"
+            type="text"
+            id="title"
+            v-model="page.description"
+            :disabled="!edit.description"
+          />
         </div>
-        <TextEditor :page_content="page_content" v-show="!showOriginal" />
-
-        <div
-          class="article original-content"
-          v-show="showOriginal"
-          v-html="sanitizedOriginalContent"
-        ></div>
       </div>
 
-      <div class="modal-footer">
-        <VerifyAndSubmit @submit="submitChanges" @loading="updateLoadingState" />
+      <hr class="margin--top margin--bottom" />
+
+      <label class="label">Page Content</label>
+      <div class="sgds-tabs">
+        <ul>
+          <li :class="{ 'is-active': !showOriginal }">
+            <a @click.prevent="showOriginal = false" :style="{ cursor: 'pointer' }">Editor</a>
+          </li>
+          <li :class="{ 'is-active': showOriginal }">
+            <a @click.prevent="showOriginal = true" :style="{ cursor: 'pointer' }">Original</a>
+          </li>
+        </ul>
       </div>
+      <TextEditor :page_content="page_content" v-show="!showOriginal" />
+
+      <div class="article original-content" v-show="showOriginal" v-html="sanitizedOriginalContent"></div>
+    </div>
+
+    <div class="article-editor-footer">
+      <VerifyAndSubmit @submit="submitChanges" @loading="updateLoadingState" />
     </div>
   </div>
 </template>
@@ -233,45 +213,33 @@ export default {
 </script>
 
 <style scoped>
-@media screen and (min-width: 1152px) {
-  .container {
-    max-width: 960px;
-    width: 960px;
-  }
-}
-.modal-container {
+.article-editor-container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  padding: 12px;
 }
+
 .sgds-tabs {
   margin-bottom: 0;
 }
+
+.sgds-tabs ul {
+  margin: 0;
+}
+
 .sgds-tabs li {
   flex: 1 1 auto;
+  margin: 0;
 }
+
 .sgds-tabs li a {
   cursor: pointer;
 }
+
 .original-content {
   border: 1px solid #ccc;
   overflow-y: auto;
   padding: 12px 15px;
-}
-
-.text-centered {
-  text-align: center;
-}
-
-/*Custom styling for Modal*/
-.modal-container {
-  padding: 15px 30px;
-}
-
-.modal-header {
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 1rem;
-  align-items: center;
 }
 
 .field-header {
