@@ -13,6 +13,8 @@
   GITHUB_SSO_TOKEN_HASH="hidden"
   OTP_SERVICE_APP_ID="hidden"
   OTP_SERVICE_APP_SECRET="hidden"
+  GA_ID="dummy"
+  HJ_ID="dummy"
 
 [context.branch-deploy.environment]
   GITHUB_APP_KEY="hidden"
@@ -21,3 +23,5 @@
   GITHUB_SSO_TOKEN_HASH="hidden"
   OTP_SERVICE_APP_ID="hidden"
   OTP_SERVICE_APP_SECRET="hidden"
+  GA_ID="dummy"
+  HJ_ID="dummy"
