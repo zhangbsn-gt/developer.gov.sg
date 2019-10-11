@@ -155,11 +155,10 @@
 </template>
 
 <script>
-import axios from "axios";
 import Noty from "noty";
 import Loading from "vue-loading-overlay";
 import "vue-loading-overlay/dist/vue-loading.css";
-import { urlRegex } from "../lib";
+import { urlRegex, apiClient } from "../lib";
 import VerifyAndSubmit from "../lib/VerifyAndSubmit.vue";
 
 export default {
@@ -233,7 +232,6 @@ export default {
       }
 
       let axiosConfig = {
-        url: "/.netlify/functions/api/terms",
         data: submission
       };
       if (this.type === "add") {
@@ -243,7 +241,7 @@ export default {
         axiosConfig.method = "put";
       }
       this.isLoading = true;
-      axios(axiosConfig)
+      apiClient("/terms", axiosConfig)
         .then(response => {
           new Noty({
             type: "success",

@@ -88,13 +88,12 @@
 </template>
 
 <script>
-import axios from "axios";
 import Noty from "noty";
 import Loading from "vue-loading-overlay";
 import "vue-loading-overlay/dist/vue-loading.css";
 import VerifyAndSubmit from "../lib/VerifyAndSubmit.vue";
 import TextEditor from "../lib/TextEditor.vue";
-import { sanitize } from "../lib";
+import { sanitize, apiClient } from "../lib";
 
 export default {
   components: { VerifyAndSubmit, Loading, TextEditor },
@@ -157,8 +156,8 @@ export default {
     submitChanges({ email, otp, otpRequestId }) {
       const submission = this.getSubmission();
       this.isLoading = true;
-      axios
-        .post("/.netlify/functions/api/submit-article-changes", {
+      apiClient
+        .post("/submit-article-changes", {
           ...submission,
           email,
           otp,

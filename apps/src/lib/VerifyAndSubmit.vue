@@ -80,9 +80,8 @@
 </template>
 
 <script>
-import axios from "axios";
 import Noty from "noty";
-import { emailRegex, otpRegex } from "./index";
+import { emailRegex, otpRegex, apiClient } from "./index";
 
 const stages = {
   verify: "verify",
@@ -119,8 +118,8 @@ export default {
         return;
       }
       this.$emit("loading", true);
-      axios
-        .post("/.netlify/functions/api/request-otp", {
+      apiClient
+        .post("/request-otp", {
           email: this.email
         })
         .then(response => {

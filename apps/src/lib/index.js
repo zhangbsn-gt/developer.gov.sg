@@ -1,4 +1,5 @@
 import sanitizeHtml from "sanitize-html";
+import axios from "axios";
 export const emailRegex =
   process.env.NODE_ENV === "production"
     ? /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[\w.]*gov\.sg$/
@@ -27,3 +28,7 @@ export function sanitize(html) {
 export function escapeRegExp(string) {
   return string.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); // $& means the whole matched string
 }
+
+export const apiClient = axios.create({
+  baseURL: "https://api.developer.gov.sg/v1/api"
+});

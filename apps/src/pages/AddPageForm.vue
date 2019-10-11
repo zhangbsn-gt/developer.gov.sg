@@ -65,11 +65,10 @@
 </template>
 
 <script>
-import axios from "axios";
 import Noty from "noty";
 import Loading from "vue-loading-overlay";
 import "vue-loading-overlay/dist/vue-loading.css";
-import { urlRegex, sanitize } from "../lib";
+import { urlRegex, sanitize, apiClient } from "../lib";
 import VerifyAndSubmit from "../lib/VerifyAndSubmit.vue";
 import TextEditor from "../lib/TextEditor.vue";
 
@@ -126,8 +125,8 @@ export default {
       const pageContent = document.querySelector(".ql-editor").innerHTML;
       this.isLoading = true;
 
-      axios
-        .post("/.netlify/functions/api/request-new-page", {
+      apiClient
+        .post("/request-new-page", {
           page_title: this.form.title,
           page_category: this.form.category,
           page_description: this.form.description,
