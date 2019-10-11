@@ -30,5 +30,6 @@ export function escapeRegExp(string) {
 }
 
 export const apiClient = axios.create({
-  baseURL: "https://api.developer.gov.sg/v1/api"
+  baseURL: "https://api.developer.gov.sg/v1/api",
+  withCredentials: true
 });
