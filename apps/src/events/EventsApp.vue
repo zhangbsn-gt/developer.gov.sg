@@ -46,7 +46,7 @@
 </template>
 
 <script>
-import axios from "axios";
+import { apiClient } from '../lib';
 export default {
   data() {
     return {
@@ -56,8 +56,8 @@ export default {
   },
   created() {
     this.loading = true;
-    axios
-      .get("/.netlify/functions/api/events")
+    apiClient
+      .get("/events")
       .then(response => {
         this.events = response.data;
       })

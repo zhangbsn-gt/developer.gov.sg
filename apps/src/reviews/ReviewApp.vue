@@ -94,7 +94,7 @@
       <div class="col">
         <a
           class="sgds-button is-rounded is-fullwidth"
-          href="/.netlify/functions/api/oauth"
+          href="https://api.developer.gov.sg/v1/api/oauth"
           >Login with Github</a
         >
       </div>
@@ -104,11 +104,11 @@
 
 <script>
 import Noty from "noty";
-import axios from "axios";
 import Loading from "vue-loading-overlay";
 import "vue-loading-overlay/dist/vue-loading.css";
 import { Diff2Html } from "diff2html";
 import "diff2html/dist/diff2html.min.css";
+import { apiClient } from '../lib';
 
 export default {
   data() {
@@ -130,8 +130,8 @@ export default {
     checkPageStatus() {
       if ($cookies.isKey("_devpo")) {
         this.isAuthenticated = true;
-        axios
-          .get("/.netlify/functions/api/review")
+        apiClient
+          .get("/review")
           .then(response => {
             this.githubUser = response.data.githubUser;
             this.pullRequests = response.data.pullRequests;
@@ -157,8 +157,8 @@ export default {
       this.isViewing = true;
       this.currentPullNumber = number;
       this.title = `Review changes for ${product}`;
-      axios
-        .get("/.netlify/functions/api/review-diff", {
+      apiClient
+        .get("/review-diff", {
           params: {
             diff_url: diff_url
           }
@@ -188,8 +188,8 @@ export default {
     },
     mergePullRequest: function() {
       this.isLoading = true;
-      axios
-        .get("/.netlify/functions/api/review-merge", {
+      apiClient
+        .get("/review-merge", {
           params: {
             number: this.currentPullNumber
           }
@@ -212,8 +212,8 @@ export default {
     },
     rejectPullRequest: function() {
       this.isLoading = true;
-      axios
-        .get("/.netlify/functions/api/review-reject", {
+      apiClient
+        .get("/review-reject", {
           params: {
             number: this.currentPullNumber
           }
