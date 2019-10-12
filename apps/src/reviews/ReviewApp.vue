@@ -120,7 +120,7 @@ export default {
       diffs: "",
       isViewing: false,
       currentPullNumber: null,
-      title: "Product Contents Changes"
+      title: "Content Changes"
     };
   },
   components: {
@@ -235,12 +235,16 @@ export default {
         });
     },
     performSignOut: function() {
-      this.$cookies.remove("_devpo");
-      new Noty({
-        type: "success",
-        text: "Successfully signed out"
-      }).show();
-      this.refreshPageState();
+      apiClient.get("logout")
+        .then(() => {
+          new Noty({
+            type: "success",
+            text: "Successfully signed out"
+          }).show();
+        })
+        .finally(() => {
+          this.refreshPageState();
+        })
     }
   },
   created() {
