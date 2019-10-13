@@ -129,7 +129,6 @@ export default {
   methods: {
     checkPageStatus() {
       const cookie = this.$cookies.get("_devpo");
-      console.log(cookie);
       if (cookie && cookie.length > 0) {
         this.isAuthenticated = true;
         apiClient
@@ -140,7 +139,8 @@ export default {
             this.isLoading = false;
           })
           .catch(err => {
-            return apiClient.get("logout") // Clear cookie
+            // Token invalid, clear cookie. User will relogin for another one.
+            return apiClient.get("logout")
               .then(() => {
                 new Noty({
                   type: "error",
@@ -149,7 +149,6 @@ export default {
                 }).show();
                 this.refreshPageState();
               })
-            
           })
       } else {
         this.isLoading = false;
