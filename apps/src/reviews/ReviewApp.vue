@@ -128,7 +128,9 @@ export default {
   },
   methods: {
     checkPageStatus() {
-      if (this.$cookies.isKey("_devpo")) {
+      const cookie = this.$cookies.get("_devpo");
+      console.log(cookie);
+      if (cookie && cookie.length > 0) {
         this.isAuthenticated = true;
         apiClient
           .get("/review")
@@ -138,16 +140,17 @@ export default {
             this.isLoading = false;
           })
           .catch(err => {
-            // Authenticated user is not suppose to be reviewing contents or token is invalid
-            // Forcing a relogin to grab a new token
-            this.$cookies.remove("_devpo");
-            new Noty({
-              type: "error",
-              text:
-                "Error fetching product contents. Please login and try again."
-            }).show();
-            this.refreshPageState();
-          });
+            return apiClient.get("logout") // Clear cookie
+              .then(() => {
+                new Noty({
+                  type: "error",
+                  text:
+                    "Error fetching product contents. Please login and try again."
+                }).show();
+                this.refreshPageState();
+              })
+            
+          })
       } else {
         this.isLoading = false;
       }
