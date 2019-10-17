@@ -44,6 +44,8 @@ body {
     font-family: Lato, BlinkMacSystemFont, -apple-system, Segoe UI, Helvetica Neue, Helvetica, Arial,
         sans-serif !important;
     line-height: calc(1rem + 0.5rem) !important;
+    display: flex;
+    flex-direction: column;
 }
 
 .article h1 {
