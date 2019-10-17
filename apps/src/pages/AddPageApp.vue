@@ -7,7 +7,7 @@
         >Help everyone discover what the Singapore Government offers.</p>
         <button
           style="width: 100%"
-          class="sgds-button is-primary has-text-weight-semibold"
+          class="sgds-button is-secondary has-text-weight-semibold"
           v-on:click="showAddPageForm = !showAddPageForm"
         >
           Suggest new {{ this.collection.toLowerCase() }}

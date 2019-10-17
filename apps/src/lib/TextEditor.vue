@@ -151,11 +151,6 @@ export default {
   background-color: white;
 }
 
-.ql-editor {
-  display: flex;
-  flex-direction: column;
-}
-
 .tooltip {
   display: block;
   z-index: 1000;

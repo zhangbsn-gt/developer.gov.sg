@@ -6,9 +6,7 @@ layout: layout-article-sidenav
 {% assign category_array = site.products | map: "category" | uniq | jsonify %}
 <h4>Products and Services</h4>
 <p>
-  Here are collections of products and services that the Singapore Government
-  has to support your software development. By using these products and
-  services, you are complying to the usage as well as security policies.
+  Products to help you build digital services for the Government more quickly and securely.
 </p>
 {% include add-pages-app.html collection='products' categories=category_array %}
 <hr />
