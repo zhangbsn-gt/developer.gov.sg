@@ -11,6 +11,19 @@
         ]
     },
     {
+        "id": "1d3bccf3-9b90-4fc4-83f5-38562d34f573",
+        "term": "DSS",
+        "full_term": "Digital Service Standards",
+        "description": "DSS is a set of standards that helps public agencies deliver digital services that are easy to use, seamless and relevant to users",
+        "links": [
+            "https://www.tech.gov.sg/digital-service-standards/"
+        ],
+        "tags": [
+            "policy",
+            "design"
+        ]
+    },
+    {
         "id": "97e41068-a1f5-4bd7-b516-684a41920507",
         "term": "DWP",
         "full_term": "Digital Workplace",
