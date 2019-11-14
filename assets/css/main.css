@@ -187,9 +187,6 @@ body {
 .sgds-tabs.has-product ul {
     align-items: flex-start;
     display: flex;
-    flex-grow: 1;
-    flex-shrink: 0;
-    justify-content: flex-start;
     flex-direction: column;
     border: 0;
 }
@@ -218,7 +215,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
 
 #curve{
     position: relative;

@@ -1,8 +1,5 @@
 <template>
   <div id="events-app">
-    <h4>Meetups</h4>
-    <p>Watch this space for upcoming Meetups organised by GovTech.</p>
-    <br />
     <div class="spinner" v-if="loading">
       <div class="rect1"></div>
       <div class="rect2"></div>
@@ -13,7 +10,7 @@
     <div v-if="!loading">
       <div class="row is-multiline">
         <div class="col is-12" v-if="events.length === 0">
-          <p>There are no upcoming meetups.</p>
+          <p>There are no upcoming events.</p>
         </div>
         <div class="col is-12" v-for="event of events" :key="event.id">
           <a :href="event.link" target="_blank">
