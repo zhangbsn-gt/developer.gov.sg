@@ -12,7 +12,8 @@
           :class="{ 'is-danger': errors.term }"
           type="text"
           placeholder="SGTS"
-          v-model="form.term"
+          :value="form.term"
+          @input="form.term = $event.target.value.toUpperCase()"
           required
           @blur="validateInput('term')"
         />
