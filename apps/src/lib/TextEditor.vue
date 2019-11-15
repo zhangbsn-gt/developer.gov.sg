@@ -1,6 +1,6 @@
 <template>
   <div id="editor-wrapper">
-    <div id="toolbar">
+    <div id="toolbar" style="display: flex">
       <select class="ql-header" :style="{ width: '115px' }">
         <option value="4">Heading</option>
         <option value="5">Sub-heading</option>
@@ -12,16 +12,44 @@
       <button class="ql-link" v-tooltip.bottom="'Add link'"></button>
       <button class="ql-blockquote" v-tooltip.bottom="'Block Quote'"></button>
       <button class="ql-code-block" v-tooltip.bottom="'Code Block'"></button>
-      <button class="ql-list" value="ordered" v-tooltip.bottom="'Ordered List'"></button>
-      <button class="ql-list" value="bullet" v-tooltip.bottom="'Unordered List'"></button>
+      <button
+        class="ql-list"
+        value="ordered"
+        v-tooltip.bottom="'Ordered List'"
+      ></button>
+      <button
+        class="ql-list"
+        value="bullet"
+        v-tooltip.bottom="'Unordered List'"
+      ></button>
       <button class="ql-hr" v-tooltip.bottom="'Horizontal Line'">
         <span class="sgds-icon sgds-icon-minus"></span>
       </button>
       <button class="ql-clean" v-tooltip.bottom="'Clear formatting'"></button>
-      <button class="ql-video" v-tooltip.bottom="'Insert video from URL'"></button>
+      <v-popover trigger="click">
+        <button
+          class="ql-video tooltip-target"
+          v-tooltip.bottom="'Insert video from URL'"
+        ></button>
+        <template slot="popover">
+          <form @submit.prevent="onInsertVideo">
+            <label for="video-src">Enter your video's URL</label>
+            <input type="text" id="video-src" v-model="videoSrc" />
+            <button type="submit" v-close-popover>OK</button>
+          </form>
+          <div :style="{ textAlign: 'center' }">
+            <small :style="{ fontSize: '0.8rem' }"
+              >(Video will be inserted at your current cursor location)</small
+            >
+          </div>
+        </template>
+      </v-popover>
       <!-- Always keep image as the last element! Will mess up toolbar layout -->
       <v-popover trigger="click">
-        <button class="ql-image tooltip-target" v-tooltip.bottom="'Insert image from URL'"></button>
+        <button
+          class="ql-image tooltip-target"
+          v-tooltip.bottom="'Insert image from URL'"
+        ></button>
         <template slot="popover">
           <form @submit.prevent="onInsertImage">
             <label for="image-src">Enter your image's URL</label>
@@ -29,9 +57,9 @@
             <button type="submit" v-close-popover>OK</button>
           </form>
           <div :style="{ textAlign: 'center' }">
-            <small
-              :style="{ fontSize: '0.8rem' }"
-            >(Image will be inserted at your current cursor location)</small>
+            <small :style="{ fontSize: '0.8rem' }"
+              >(Image will be inserted at your current cursor location)</small
+            >
           </div>
         </template>
       </v-popover>
@@ -51,12 +79,57 @@ import "noty/lib/themes/mint.css";
 import "quill/dist/quill.snow.css";
 
 let BlockEmbed = Quill.import("blots/block/embed");
+
 class HrBlot extends BlockEmbed {}
 HrBlot.blotName = "hr";
 HrBlot.tagName = "hr";
-Quill.register({
-  "formats/hr": HrBlot
-});
+Quill.register(HrBlot);
+
+class VideoBlot extends BlockEmbed {
+  static create(url) {
+    let node = super.create();
+    node.setAttribute("src", url);
+    // Set non-format related attributes with static values
+    node.setAttribute("frameborder", "0");
+    node.setAttribute("allowfullscreen", true);
+    node.setAttribute("style", "width: 100%; min-height: 300px");
+    return node;
+  }
+
+  static formats(node) {
+    // We still need to report unregistered embed formats
+    let format = {};
+    if (node.hasAttribute("height")) {
+      format.height = node.getAttribute("height");
+    }
+    if (node.hasAttribute("width")) {
+      format.width = node.getAttribute("width");
+    }
+    return format;
+  }
+
+  static value(node) {
+    return node.getAttribute("src");
+  }
+
+  format(name, value) {
+    // Handle unregistered embed formats
+    if (name === "height" || name === "width") {
+      if (value) {
+        this.domNode.setAttribute(name, value);
+      } else {
+        this.domNode.removeAttribute(name, value);
+      }
+    } else {
+      super.format(name, value);
+    }
+  }
+}
+
+VideoBlot.blotName = "video";
+VideoBlot.tagName = "iframe";
+
+Quill.register(VideoBlot);
 
 export default {
   directives: {
@@ -76,7 +149,8 @@ export default {
     return {
       sanitizedPageContent: "",
       quill: null,
-      imageSrc: ""
+      imageSrc: "",
+      videoSrc: ""
     };
   },
   created() {
@@ -109,7 +183,8 @@ export default {
           container: "#toolbar",
           handlers: {
             hr: this.quillHrHandler,
-            image: this.quillImageHandler
+            video: () => {}, // This needs to exist as a noop, if not by default Quill will open the file dialog.
+            image: () => {}
           }
         },
         clipboard: {
@@ -127,8 +202,17 @@ export default {
         this.quill.setSelection(range.index + 1);
       }
     },
-    quillImageHandler() {
-      // This needs to exist as a blank method, if not by default Quill will open the file dialog.
+    onInsertVideo() {
+      let range = this.quill.getSelection(true); // true to focus the editor first
+      if (this.videoSrc) {
+        this.quill.insertEmbed(
+          range.index,
+          "video",
+          this.videoSrc,
+          Quill.sources.USER
+        );
+        this.videoSrc = "";
+      }
     },
     onInsertImage() {
       let range = this.quill.getSelection(true); // true to focus the editor first

@@ -11,6 +11,9 @@ plugins:
   - jekyll-assets
   - jekyll-seo-tag
 
+include:
+  - _redirects
+
 exclude:
   - functions
   - lambda

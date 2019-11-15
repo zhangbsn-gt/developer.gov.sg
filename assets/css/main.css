@@ -172,6 +172,83 @@ body {
     animation-delay: -0.8s;
 }
 
+.herobg {
+    background: url("/assets/img/bg-blob-yellow.png") top left no-repeat;
+}
+
+
+.card-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 150px;
+}
+
+.sgds-tabs.has-product ul {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    border: 0;
+}
+
+.sgds-tabs.is-toggle-product a {
+    border: 1px solid #d6d6d6;
+    margin-bottom: 0;
+    position: relative;
+    margin-left: 2px;
+    width: 300px;
+}
+
+.sgds-tabs.is-toggle-product li.is-active a {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+    z-index: 1;
+}
+
+.sgds-section.no-margin{
+    margin: -6px !important;
+    padding: 0;
+}
+
+.section.no-margin{
+    margin: 0;
+    padding: 0;
+}
+
+#curve{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+#curve path{
+    fill:rgb(68, 78, 121);
+}
+
+#bgcurve{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+#bgcurve path{
+    fill:rgba(255, 248, 220);
+    
+}
+
+.sgds-card-button.bgblue{
+    background-color: #0076D6;
+    box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
+    color: #484848;
+}
+
+.row.is-padding-large .col{
+    padding: 1.5rem;
+}
+
+
 @-webkit-keyframes sk-stretchdelay {
     0%,
     40%,

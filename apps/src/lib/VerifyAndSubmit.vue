@@ -2,7 +2,7 @@
   <div class="verify-and-submit">
     <div class="row margin--top--lg margin--bottom">
       <div class="col">
-        <h6>Submit for Review</h6>
+        <h6>Submit</h6>
 
         <div v-if="stage === stages.verify">
           <form>

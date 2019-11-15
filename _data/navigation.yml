@@ -1,14 +1,13 @@
-- title: Workflows
-  url: /workflows/
+# - title: Workflows
+#   url: /workflows/
+- title: Guidelines
+  url: /guidelines/
 
 - title: Products
   url: /products/
 
-- title: Guidelines
-  url: /guidelines/
-
 # - title: Chapters
 #   url: /chapters/
 
-- title: Events
-  url: /events/
+# - title: Events
+#   url: /events/

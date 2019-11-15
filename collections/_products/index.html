@@ -1,6 +1,6 @@
 ---
 title: Products
-layout: layout-article-sidenav
+layout: layout-page
 ---
 
 {% assign category_array = site.products | map: "category" | uniq | jsonify %}
@@ -9,27 +9,29 @@ layout: layout-article-sidenav
   Products to help you build digital services for the Government more quickly and securely.
 </p>
 {% include add-pages-app.html collection='products' categories=category_array %}
-<hr />
 
-{% assign categories = site.products | sort: "category" | group_by: "category" %}
-{% for category in categories %} 
-  {% if category.name != '' %}
-    <h4>{{ category.name | capitalize }}</h4>
-    {% assign items = category.items %}
-    <div class="row is-multiline">
-      {% for item in items %}
-        <div class="col is-4 is-flex">
-          <a class="sgds-card sgds-card-button" href="{{ item.url }}">
-            <div class="sgds-card-header">
-              <p class="sgds-card-header-title">{{ item.title }}</p>
+<div class="sgds-section">
+  <div class="sgds-container">
+    <div class="content">
+      {% assign categories = site.products | sort: "category" | group_by: "category" %}
+      {% for category in categories %} 
+        {% if category.name != '' %}
+          <div class="row">
+            <div class="col">
+                <h4 class="has-text-weight-black">{{ category.name | capitalize }}</h4>
             </div>
-            <div class="sgds-card-content">
-              <small>{{ item.description }}</small>
-            </div>
-          </a>
-        </div>
+          </div>
+          {% assign items = category.items %}
+          <div class="row is-multiline is-padding-large">
+            {% for item in items %}
+              <div class="col is-4">
+                <h6><a href="{{ item.url }}">{{ item.title }}</a></h6>
+                <p class="is-size-8">{{ item.description }}</p>
+              </div>
+            {% endfor %}
+          </div>
+          {% endif %}
       {% endfor %}
     </div>
-    {% if forloop.last != true %}<hr />{% endif %} 
-  {% endif %}
-{% endfor %}
+  </div>
+</div>
