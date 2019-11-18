@@ -4,3 +4,9 @@
 
 [dev]
   command = "npm run dev:jekyll"
+
+[[redirects]]
+  from = "https://developer-gov-sg.netlify.com/*"
+  to = "https://www.developer.gov.sg/:splat"
+  status = 301
+  force = true
