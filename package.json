@@ -9,7 +9,7 @@
     "license": "ISC",
     "scripts": {
         "build:site": "npm run build:static && bundle exec jekyll build",
-        "build:static": "webpack --mode production",
+        "build:static": "webpack --mode=production",
         "deploy": "npm run test:site && npm run build:site",
         "dev:jekyll": "$HOME/.rbenv/shims/bundle exec jekyll serve",
         "dev:netlify": "NODE_ENV=development netlify dev",

@@ -1,8 +1,7 @@
 const path = require("path");
-const webpack = require("webpack");
 const { VueLoaderPlugin } = require("vue-loader");
 module.exports = {
-  mode: process.env.NODE_ENV || "development",
+  mode: "development",
   entry: {
     "vue-article-editor-app": "./apps/src/articles/vue-article-editor-app.js",
     "vue-terms-app": "./apps/src/terms/vue-terms-app.js",
@@ -11,7 +10,7 @@ module.exports = {
     "vue-workflow-app": "./apps/src/workflows/vue-workflow-app.js",
     "vue-add-page-app": "./apps/src/pages/vue-add-page-app.js",
     "vue-search-app": "./apps/src/search/vue-search-app.js",
-    "main": "./apps/src/main.js"
+    main: "./apps/src/main.js"
   },
   output: {
     filename: "[name].bundle.js",
@@ -45,10 +44,5 @@ module.exports = {
       }
     ]
   },
-  plugins: [
-    new VueLoaderPlugin(),
-    new webpack.DefinePlugin({
-      "process.env.NODE_ENV": JSON.stringify(process.env.NODE_ENV)
-    })
-  ]
+  plugins: [new VueLoaderPlugin()]
 };
