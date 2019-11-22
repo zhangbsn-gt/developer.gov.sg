@@ -128,6 +128,9 @@ body {
 
 .article img {
   margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 /* Renders a spinner on Vue apps before they are loaded into the DOM */
@@ -199,6 +202,11 @@ body {
   position: relative;
   margin-left: 2px;
   width: 300px;
+  transition: all 0.2s;
+}
+
+.sgds-tabs.is-toggle-product a:hover {
+  background-color: #f0f0f0;
 }
 
 .sgds-tabs.is-toggle-product li.is-active a {
