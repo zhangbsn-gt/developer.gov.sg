@@ -21,7 +21,7 @@ gem "minima", "~> 2.0"
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.6"
   gem "ffi", "~> 1.9"
-  gem "jekyll-assets", ">= 3.0.11"
+  gem "jekyll-assets", ">= 3.0.12"
   gem "jekyll-seo-tag"
 end
 
