@@ -1,133 +1,136 @@
 html,
 body {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .main {
-    flex: 1 0 auto;
+  flex: 1 0 auto;
 }
 
 .footer {
-    flex-shrink: 0;
+  flex-shrink: 0;
 }
 
 .sgds-footer img {
-    margin: 0;
-    max-height: 1rem;
+  margin: 0;
+  max-height: 1rem;
 }
 
 .sgds-card-header {
-    background-color: #0076D6;
+  background-color: #0076d6;
 }
 
 .sgds-card-header-title {
-    color: #fff;
+  color: #fff;
 }
 
 .sgds-card:hover {
-    background-color: #f7f7f7;
+  background-color: #f7f7f7;
 }
 
 .sgds-card-button:hover {
-    color: #484848;
+  color: #484848;
 }
 
 [v-cloak] {
-    display: none;
+  display: none;
 }
 
 /* Common styling for displaying/editing articles */
 .article {
-    font-size: 1rem !important;
-    font-family: Lato, BlinkMacSystemFont, -apple-system, Segoe UI, Helvetica Neue, Helvetica, Arial,
-        sans-serif !important;
-    line-height: calc(1rem + 0.5rem) !important;
+  font-size: 1rem !important;
+  font-family: Lato, BlinkMacSystemFont, -apple-system, Segoe UI, Helvetica Neue,
+    Helvetica, Arial, sans-serif !important;
+  line-height: calc(1rem + 0.5rem) !important;
 }
 
 .article h1 {
-    font-size: 3.375rem !important;
-    line-height: 3.75rem !important;
-    letter-spacing: -1.5px !important;
-    margin-bottom: 1rem !important;
+  font-size: 3.375rem !important;
+  line-height: 3.75rem !important;
+  letter-spacing: -1.5px !important;
+  margin-bottom: 1rem !important;
 }
 
 .article h2 {
-    font-size: 2.75rem !important;
-    line-height: 3.75rem !important;
-    margin-bottom: 1rem !important;
+  font-size: 2.75rem !important;
+  line-height: 3.75rem !important;
+  margin-bottom: 1rem !important;
 }
 
 .article h3 {
-    font-size: 2rem !important;
-    line-height: 2.8125rem !important;
-    margin-bottom: 1rem !important;
+  font-size: 2rem !important;
+  line-height: 2.8125rem !important;
+  margin-bottom: 1rem !important;
 }
 
 .article h4 {
-    font-size: 1.625rem !important;
-    line-height: 2.25rem !important;
-    font-weight: 600 !important;
-    /* color: #e79529; */
-    margin-bottom: 1rem !important;
+  font-size: 1.625rem !important;
+  line-height: 2.25rem !important;
+  font-weight: 600 !important;
+  /* color: #e79529; */
+  margin-bottom: 1rem !important;
 }
 
 .article h5 {
-    font-size: 1.375rem !important;
-    line-height: 1.875rem !important;
-    font-weight: 600 !important;
-    margin-bottom: 1rem !important;
+  font-size: 1.375rem !important;
+  line-height: 1.875rem !important;
+  font-weight: 600 !important;
+  margin-bottom: 1rem !important;
 }
 
 .article h6 {
-    font-size: 1.3rem !important;
-    line-height: 1.5rem !important;
-    font-weight: 600 !important;
-    margin-bottom: 1rem !important;
+  font-size: 1.3rem !important;
+  line-height: 1.5rem !important;
+  font-weight: 600 !important;
+  margin-bottom: 1rem !important;
 }
 
 .article ul > li {
-    list-style-type: disc !important;
+  list-style-type: disc !important;
 }
 
 .article ul > li::before {
-    content: none !important;
+  content: none !important;
 }
 
 .article ul {
-    padding: 0px !important;
-    list-style: disc outside !important;
-    margin-left: 1rem !important;
-    margin-top: 1em !important;
+  padding: 0px !important;
+  list-style: disc outside !important;
+  margin-left: 1rem !important;
+  margin-top: 1em !important;
 }
 
 .article li {
-    display: list-item !important;
-    text-align: -webkit-match-parent !important;
-    padding: 0px !important;
-    margin-top: 1em !important;
+  display: list-item !important;
+  text-align: -webkit-match-parent !important;
+  padding: 0px !important;
+  margin-top: 1em !important;
 }
 
 .article p {
-    margin-bottom: 1em !important;
+  margin-bottom: 1em !important;
 }
 
 .article a {
-    cursor: pointer !important;
-    text-decoration: none !important;
+  cursor: pointer !important;
+  text-decoration: none !important;
 }
 
 .article hr {
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 .article img {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 /* Renders a spinner on Vue apps before they are loaded into the DOM */
@@ -139,139 +142,149 @@ body {
     <div class="rect5"></div>
 </div> */
 .spinner {
-    width: 50px;
-    height: 40px;
-    text-align: center;
-    font-size: 10px;
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  font-size: 10px;
 }
 
 .spinner > div {
-    background-color: #333;
-    height: 100%;
-    width: 6px;
-    display: inline-block;
+  background-color: #333;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
 
-    -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
-    animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  animation: sk-stretchdelay 1.2s infinite ease-in-out;
 }
 
 .spinner .rect2 {
-    -webkit-animation-delay: -1.1s;
-    animation-delay: -1.1s;
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
 }
 
 .spinner .rect3 {
-    -webkit-animation-delay: -1s;
-    animation-delay: -1s;
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
 }
 
 .spinner .rect4 {
-    -webkit-animation-delay: -0.9s;
-    animation-delay: -0.9s;
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
 }
 
 .spinner .rect5 {
-    -webkit-animation-delay: -0.8s;
-    animation-delay: -0.8s;
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
 }
 
 .herobg {
-    background: url("/assets/img/bg-blob-yellow.png") top left no-repeat;
+  background: url("/assets/img/bg-blob-yellow.png") top left no-repeat;
 }
 
-
-.card-icon{
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    height: 150px;
+.card-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
 }
 
 .sgds-tabs.has-product ul {
-    align-items: flex-start;
-    display: flex;
-    flex-direction: column;
-    border: 0;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  border: 0;
 }
 
 .sgds-tabs.is-toggle-product a {
-    border: 1px solid #d6d6d6;
-    margin-bottom: 0;
-    position: relative;
-    margin-left: 2px;
-    width: 300px;
+  border: 1px solid #d6d6d6;
+  margin-bottom: 0;
+  position: relative;
+  margin-left: 2px;
+  width: 300px;
+  transition: all 0.2s;
+}
+
+.sgds-tabs.is-toggle-product a:hover {
+  background-color: #f0f0f0;
 }
 
 .sgds-tabs.is-toggle-product li.is-active a {
-    background-color: #007bff;
-    border-color: #007bff;
-    color: #fff;
-    z-index: 1;
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff;
+  z-index: 1;
 }
 
-.sgds-section.no-margin{
-    margin: -6px !important;
-    padding: 0;
+.sgds-section.no-margin {
+  margin: -6px !important;
+  padding: 0;
 }
 
-.section.no-margin{
-    margin: 0;
-    padding: 0;
+.section.no-margin {
+  margin: 0;
+  padding: 0;
 }
 
-#curve{
-    position: relative;
-    bottom: 0;
-    width: 100%;
+#curve {
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 
-#curve path{
-    fill:rgb(68, 78, 121);
+#curve path {
+  fill: rgb(68, 78, 121);
 }
 
-#bgcurve{
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    
+#bgcurve {
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 
-#bgcurve path{
-    fill:rgba(255, 248, 220);
-    
+#bgcurve path {
+  fill: rgba(255, 248, 220);
 }
 
-.sgds-card-button.bgblue{
-    background-color: #0076D6;
-    box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
-    color: #484848;
+.sgds-card-button.bgblue {
+  background-color: #0076d6;
+  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+  color: #484848;
+  transition: all 0.3s;
 }
 
-.row.is-padding-large .col{
-    padding: 1.5rem;
+.sgds-card-button.home-actions:hover {
+  background-color: #208de6;
 }
 
+.sgds-card-button.home-actions:active {
+  background-color: #0076d6;
+}
+
+.row.is-padding-large .col {
+  padding: 1.5rem;
+}
 
 @-webkit-keyframes sk-stretchdelay {
-    0%,
-    40%,
-    100% {
-        -webkit-transform: scaleY(0.4);
-    }
-    20% {
-        -webkit-transform: scaleY(1);
-    }
+  0%,
+  40%,
+  100% {
+    -webkit-transform: scaleY(0.4);
+  }
+  20% {
+    -webkit-transform: scaleY(1);
+  }
 }
 
 @keyframes sk-stretchdelay {
-    0%,
-    40%,
-    100% {
-        transform: scaleY(0.4);
-        -webkit-transform: scaleY(0.4);
-    }
-    20% {
-        transform: scaleY(1);
-        -webkit-transform: scaleY(1);
-    }
+  0%,
+  40%,
+  100% {
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }
+  20% {
+    transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+  }
 }

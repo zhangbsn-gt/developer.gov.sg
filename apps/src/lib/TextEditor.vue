@@ -1,6 +1,6 @@
 <template>
   <div id="editor-wrapper">
-    <div id="toolbar" style="display: flex">
+    <div id="toolbar">
       <select class="ql-header" :style="{ width: '115px' }">
         <option value="4">Heading</option>
         <option value="5">Sub-heading</option>
@@ -44,7 +44,6 @@
           </div>
         </template>
       </v-popover>
-      <!-- Always keep image as the last element! Will mess up toolbar layout -->
       <v-popover trigger="click">
         <button
           class="ql-image tooltip-target"
@@ -233,6 +232,15 @@ export default {
 <style>
 #editor {
   background-color: white;
+}
+
+#toolbar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 .tooltip {
