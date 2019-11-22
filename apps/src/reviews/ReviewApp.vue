@@ -92,9 +92,7 @@
     </div>
     <div class="row" style="min-height: 50vh" v-else>
       <div class="col">
-        <a
-          class="sgds-button is-rounded is-fullwidth"
-          href="https://api.developer.gov.sg/v1/api/oauth"
+        <a class="sgds-button is-rounded is-fullwidth" :href="`${apiUrl}/oauth`"
           >Login with Github</a
         >
       </div>
@@ -108,7 +106,8 @@ import Loading from "vue-loading-overlay";
 import "vue-loading-overlay/dist/vue-loading.css";
 import { Diff2Html } from "diff2html";
 import "diff2html/dist/diff2html.min.css";
-import { apiClient } from '../lib';
+import { apiClient } from "../lib";
+import config from "../lib/config";
 
 export default {
   data() {
@@ -120,7 +119,8 @@ export default {
       diffs: "",
       isViewing: false,
       currentPullNumber: null,
-      title: "Content Changes"
+      title: "Content Changes",
+      apiUrl: config.apiUrl
     };
   },
   components: {
@@ -140,16 +140,15 @@ export default {
           })
           .catch(err => {
             // Token invalid, clear cookie. User will relogin for another one.
-            return apiClient.get("logout")
-              .then(() => {
-                new Noty({
-                  type: "error",
-                  text:
-                    "Error fetching product contents. Please login and try again."
-                }).show();
-                this.refreshPageState();
-              })
-          })
+            return apiClient.get("logout").then(() => {
+              new Noty({
+                type: "error",
+                text:
+                  "Error fetching product contents. Please login and try again."
+              }).show();
+              this.refreshPageState();
+            });
+          });
       } else {
         this.isLoading = false;
       }
@@ -237,7 +236,8 @@ export default {
         });
     },
     performSignOut: function() {
-      apiClient.get("logout")
+      apiClient
+        .get("logout")
         .then(() => {
           new Noty({
             type: "success",
@@ -246,7 +246,7 @@ export default {
         })
         .finally(() => {
           this.refreshPageState();
-        })
+        });
     }
   },
   created() {

@@ -1,7 +1,9 @@
 import sanitizeHtml from "sanitize-html";
 import axios from "axios";
+import config from "./config";
+
 export const emailRegex =
-  process.env.NODE_ENV === "production"
+  config.nodeEnv === "production"
     ? /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[\w.]*gov\.sg$/
     : /.*/;
 
@@ -30,6 +32,6 @@ export function escapeRegExp(string) {
 }
 
 export const apiClient = axios.create({
-  baseURL: "https://api.developer.gov.sg/v1/api",
+  baseURL: config.apiUrl,
   withCredentials: true
 });

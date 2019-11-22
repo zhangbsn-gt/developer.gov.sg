@@ -24,6 +24,7 @@
         "babel-loader": "^8.0.6",
         "css-loader": "^3.0.0",
         "diff2html": "^2.11.2",
+        "dotenv-webpack": "^1.7.0",
         "file-loader": "^4.0.0",
         "lunr": "^2.3.6",
         "mocha": "^6.1.4",
