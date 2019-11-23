@@ -1,7 +1,5 @@
 const path = require("path");
 const { VueLoaderPlugin } = require("vue-loader");
-const Dotenv = require("dotenv-webpack");
-const webpack = require("webpack");
 module.exports = {
   mode: "development", // Use cli args for prod
   entry: {
@@ -46,9 +44,5 @@ module.exports = {
       }
     ]
   },
-  plugins: [
-    new VueLoaderPlugin(),
-    new Dotenv(), // Takes precedence over EnvironmentPlugin
-    new webpack.EnvironmentPlugin(["API_URL"]) // Used in apps/lib/config.js
-  ]
+  plugins: [new VueLoaderPlugin()]
 };
