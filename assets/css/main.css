@@ -126,7 +126,7 @@ body {
   margin-top: 2rem;
 }
 
-.article img {
+.article img, .article iframe {
   margin-bottom: 1rem;
   margin-left: auto;
   margin-right: auto;
