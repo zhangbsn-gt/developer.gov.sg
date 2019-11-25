@@ -55,7 +55,7 @@
       <div class="col">
         <label class="label">Page Content</label>
         <div class="control">
-          <TextEditor style="height: 500px" />
+          <TextEditor />
         </div>
       </div>
     </div>
