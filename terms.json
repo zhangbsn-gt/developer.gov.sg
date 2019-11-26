@@ -45,6 +45,16 @@
         ]
     },
     {
+        "id": "c10e2c91-c392-47c5-8b2d-6c2ba7488c5b",
+        "term": "MVP",
+        "full_term": "Minimum Viable Product",
+        "description": "An early-stage product used primarily for testing with end users in order to learn about its business viability",
+        "links": [],
+        "tags": [
+            "agile"
+        ]
+    },
+    {
         "id": "70b2925f-dc6f-4c1d-93b2-687c6229b559",
         "term": "NDI",
         "full_term": "National Digital Identity",
