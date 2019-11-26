@@ -115,6 +115,20 @@
         ]
     },
     {
+        "id": "b2489621-5fbe-4442-9c0d-8382acda27d1",
+        "term": "SRE",
+        "full_term": "Site Reliability Engineering",
+        "description": "Site Reliability Engineering is a discipline that incorporates aspects of software engineering and applies them to infrastructure and operations problems in order to create scalable and highly reliable software systems",
+        "links": [
+            "https://landing.google.com/sre/"
+        ],
+        "tags": [
+            "devops",
+            "software engineering",
+            "infrastructure"
+        ]
+    },
+    {
         "id": "86a53a5b-b327-42c4-8dec-9da2342ec25d",
         "term": "UX",
         "full_term": "User Experience",
