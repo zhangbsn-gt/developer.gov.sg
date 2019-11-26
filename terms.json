@@ -115,6 +115,16 @@
         ]
     },
     {
+        "id": "7337308a-e280-4b80-aba5-4b9d9a213bc0",
+        "term": "TDD",
+        "full_term": "Test-driven development",
+        "description": "TDD is a software development process that relies on the repetition of a very short development cycle: requirements are turned into very specific test cases, then the software is improved so that the tests pass",
+        "links": [],
+        "tags": [
+            "software engineering"
+        ]
+    },
+    {
         "id": "86a53a5b-b327-42c4-8dec-9da2342ec25d",
         "term": "UX",
         "full_term": "User Experience",
