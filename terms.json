@@ -129,6 +129,19 @@
         ]
     },
     {
+        "id": "c5d66379-1c81-4da4-98ec-8ae6f8278888",
+        "term": "SHIP",
+        "full_term": "Secure Hybrid Integration Pipeline",
+        "description": "SHIP offers a continuous integration and continuous deployment (CI/CD) platform that automates the delivery of applications and simplifies policy clearance",
+        "links": [
+            "https://www.developer.gov.sg/products/ship"
+        ],
+        "tags": [
+            "devops",
+            "testing"
+        ]
+    },
+    {
         "id": "b2489621-5fbe-4442-9c0d-8382acda27d1",
         "term": "SRE",
         "full_term": "Site Reliability Engineering",
