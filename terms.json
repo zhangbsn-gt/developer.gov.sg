@@ -1,5 +1,16 @@
 [
     {
+        "id": "3fa69d4b-fa57-4b15-80ae-6a9fe104ae55",
+        "term": "CI/CD",
+        "full_term": "Continuous Integration/Continuous Delivery",
+        "description": "CI/CD are development practices focused on the automated building, testing and deployment of software in order to improve reliability and speed",
+        "links": [],
+        "tags": [
+            "agile",
+            "devops"
+        ]
+    },
+    {
         "id": "3c2c7e9e-a8b2-45db-ae98-3f2fe002c7fe",
         "term": "CWP",
         "full_term": "Content Website Platform",
