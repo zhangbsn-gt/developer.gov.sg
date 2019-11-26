@@ -56,6 +56,20 @@
         ]
     },
     {
+        "id": "4ad7c806-62db-40d7-9f36-586000c21726",
+        "term": "HATS",
+        "full_term": "Hive Agile Testing Solution",
+        "description": "Hive Agile Testing Solutions (HATS) is a functional test automation tool for web and mobile applications",
+        "links": [
+            "https://www.developer.gov.sg/products/hats"
+        ],
+        "tags": [
+            "devops",
+            "security",
+            "testing"
+        ]
+    },
+    {
         "id": "c10e2c91-c392-47c5-8b2d-6c2ba7488c5b",
         "term": "MVP",
         "full_term": "Minimum Viable Product",
