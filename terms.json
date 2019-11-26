@@ -1,5 +1,18 @@
 [
     {
+        "id": "1f99911e-3c4f-497d-8b5e-20cc507be6cc",
+        "term": "APEX",
+        "full_term": "Apex API Exchange",
+        "description": "Apex is a self-service API platform that acts as a centralised and secure API gateway for the Government. On Apex, users can easily publish, secure, monitor, and discovery APIs.",
+        "links": [
+            "https://www.developer.gov.sg/products/apex.html"
+        ],
+        "tags": [
+            "api",
+            "data"
+        ]
+    },
+    {
         "id": "3fa69d4b-fa57-4b15-80ae-6a9fe104ae55",
         "term": "CI/CD",
         "full_term": "Continuous Integration/Continuous Delivery",
@@ -53,6 +66,32 @@
         "links": [],
         "tags": [
             "platform"
+        ]
+    },
+    {
+        "id": "42ef8211-d8fc-42dc-8d61-29711a77e8e6",
+        "term": "GITSIR",
+        "full_term": "Government IT Security Incident Response",
+        "description": "GITSIR helps the Government respond to cybersecurity threats. It performs incident investigations and coordinates responses with relevant parties during security incidents",
+        "links": [
+            "https://www.developer.gov.sg/products/gitsir"
+        ],
+        "tags": [
+            "security"
+        ]
+    },
+    {
+        "id": "4ad7c806-62db-40d7-9f36-586000c21726",
+        "term": "HATS",
+        "full_term": "Hive Agile Testing Solution",
+        "description": "Hive Agile Testing Solutions (HATS) is a functional test automation tool for web and mobile applications",
+        "links": [
+            "https://www.developer.gov.sg/products/hats"
+        ],
+        "tags": [
+            "devops",
+            "security",
+            "testing"
         ]
     },
     {
@@ -115,6 +154,19 @@
         ]
     },
     {
+        "id": "c5d66379-1c81-4da4-98ec-8ae6f8278888",
+        "term": "SHIP",
+        "full_term": "Secure Hybrid Integration Pipeline",
+        "description": "SHIP offers a continuous integration and continuous deployment (CI/CD) platform that automates the delivery of applications and simplifies policy clearance",
+        "links": [
+            "https://www.developer.gov.sg/products/ship"
+        ],
+        "tags": [
+            "devops",
+            "testing"
+        ]
+    },
+    {
         "id": "b2489621-5fbe-4442-9c0d-8382acda27d1",
         "term": "SRE",
         "full_term": "Site Reliability Engineering",
@@ -156,6 +208,19 @@
         "links": [],
         "tags": [
             "security"
+        ]
+    },
+    {
+        "id": "66c7f593-f566-43dd-a398-bfc62facf25d",
+        "term": "WOGAA",
+        "full_term": "Whole of Government Application Analytics",
+        "description": "WOGAA enables real-time, automatic monitoring of all government websites and digital services",
+        "links": [
+            "https://wogaa.sg"
+        ],
+        "tags": [
+            "monitoring",
+            "analytics"
         ]
     }
 ]
