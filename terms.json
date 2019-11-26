@@ -1,5 +1,18 @@
 [
     {
+        "id": "1f99911e-3c4f-497d-8b5e-20cc507be6cc",
+        "term": "APEX",
+        "full_term": "Apex API Exchange",
+        "description": "Apex is a self-service API platform that acts as a centralised and secure API gateway for the Government. On Apex, users can easily publish, secure, monitor, and discovery APIs.",
+        "links": [
+            "https://www.developer.gov.sg/products/apex.html"
+        ],
+        "tags": [
+            "api",
+            "data"
+        ]
+    },
+    {
         "id": "3fa69d4b-fa57-4b15-80ae-6a9fe104ae55",
         "term": "CI/CD",
         "full_term": "Continuous Integration/Continuous Delivery",
