@@ -6,7 +6,9 @@
 
         <div v-if="stage === stages.verify">
           <form>
-            <label for="contributor-email">Please enter your government email for verification</label>
+            <label for="contributor-email"
+              >Please enter your government email for verification</label
+            >
             <div class="field has-addons">
               <div class="control is-expanded">
                 <input
@@ -27,7 +29,9 @@
                   class="sgds-button is-primary"
                   @click.prevent="requestOtp"
                   :disabled="!emailRegex.test(email)"
-                >Send OTP</button>
+                >
+                  Send OTP
+                </button>
               </div>
             </div>
             <p class="help is-danger" v-if="errors.email">{{ errors.email }}</p>
@@ -36,10 +40,14 @@
 
         <div v-if="stage === stages.submit">
           <form>
-            <label for="otp">Please enter the OTP sent to your email at {{ email }}</label>
+            <label for="otp"
+              >Please enter the OTP sent to your email at {{ email }}</label
+            >
             <div class="field has-addons">
               <div class="control">
-                <button class="sgds-button" disabled>{{ otpRequestId }}-</button>
+                <button class="sgds-button" disabled>
+                  {{ otpRequestId }}-
+                </button>
               </div>
               <div class="control is-expanded">
                 <input
@@ -53,7 +61,11 @@
                 />
               </div>
               <div class="control is-flex">
-                <button type="button" class="sgds-button" @click.prevent="stage = stages.verify">
+                <button
+                  type="button"
+                  class="sgds-button"
+                  @click.prevent="stage = stages.verify"
+                >
                   <i class="fas fa-undo"></i>
                 </button>
                 <button
@@ -61,7 +73,9 @@
                   class="sgds-button is-primary"
                   :disabled="!otpIsValid"
                   @click.prevent="submit"
-                >Submit Changes</button>
+                >
+                  Submit Changes
+                </button>
               </div>
             </div>
             <p class="help is-danger" v-if="errors.otp">{{ errors.otp }}</p>
@@ -70,9 +84,9 @@
 
         <small>
           You will be able to track submission status at our GitHub repository's
-          <a
-            href="https://github.com/govtechsg/developer.gov.sg/pulls"
-          >pull requests</a>
+          <a href="https://github.com/govtechsg/developer.gov.sg/pulls"
+            >pull requests</a
+          >
         </small>
       </div>
     </div>
@@ -89,6 +103,9 @@ const stages = {
 };
 
 export default {
+  props: {
+    validateForm: Function
+  },
   data() {
     return {
       emailRegex,
@@ -113,6 +130,9 @@ export default {
       return true;
     },
     requestOtp() {
+      if (this.validateForm && !this.validateForm()) {
+        return;
+      }
       this.$emit("validate"); // Inform outer form to perform validation
       if (!this.validateEmail()) {
         return;
@@ -170,6 +190,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-</style>

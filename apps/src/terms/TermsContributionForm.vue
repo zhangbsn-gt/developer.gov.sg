@@ -148,7 +148,7 @@
     </div>
 
     <VerifyAndSubmit
-      @validate="detectFormErrors"
+      :validateForm="validateForm"
       @submit="submit"
       @loading="changeLoadingState"
     />
@@ -158,9 +158,9 @@
 <script>
 import Noty from "noty";
 import Loading from "vue-loading-overlay";
-import "vue-loading-overlay/dist/vue-loading.css";
-import { urlRegex, apiClient } from "../lib";
+import { urlRegex, apiClient, detectFormErrors, hasErrors } from "../lib";
 import VerifyAndSubmit from "../lib/VerifyAndSubmit.vue";
+import "vue-loading-overlay/dist/vue-loading.css";
 
 export default {
   components: { VerifyAndSubmit, Loading },
@@ -204,18 +204,18 @@ export default {
         tags: []
       },
       errors: {
-        term: null,
-        full_term: null,
-        description: null,
-        tag: null,
-        link: null
+        term: "",
+        full_term: "",
+        description: "",
+        tag: "",
+        link: ""
       }
     };
   },
   methods: {
     submit({ email, otp, otpRequestId }) {
-      let hasErrors = this.detectFormErrors();
-      if (hasErrors) {
+      let formValid = this.validateForm();
+      if (!formValid) {
         return;
       }
       let submission = {
@@ -264,15 +264,13 @@ export default {
           this.isLoading = false;
         });
     },
-    detectFormErrors() {
-      let hasErrors = false;
-      ["term", "full_term", "description"].forEach(field => {
-        if (!this.form[field]) {
-          hasErrors = true;
-          this.errors[field] = "Please enter a valid value.";
-        }
+    validateForm() {
+      let errors = detectFormErrors({
+        form: { ...this.form },
+        fields: ["term", "full_term", "description"]
       });
-      return hasErrors;
+      Object.assign(this.errors, errors);
+      return !hasErrors(errors);
     },
     validateInput(field) {
       // Removes error message on input if validation passes

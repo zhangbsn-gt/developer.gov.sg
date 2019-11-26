@@ -7,7 +7,14 @@
         <div class="field">
           <label for="title" class="label">Title</label>
           <div class="control">
-            <input id="title" name="title" class="input" type="text" v-model="form.title" />
+            <input
+              id="title"
+              name="title"
+              class="input"
+              type="text"
+              v-model="form.title"
+              @blur="validateForm"
+            />
           </div>
           <p class="help is-danger" v-if="errors.title">{{ errors.title }}</p>
         </div>
@@ -21,9 +28,12 @@
               type="text"
               placeholder="This product is..."
               v-model="form.description"
+              @blur="validateForm"
             />
           </div>
-          <p class="help is-danger" v-if="errors.description">{{ errors.description }}</p>
+          <p class="help is-danger" v-if="errors.description">
+            {{ errors.description }}
+          </p>
         </div>
         <div class="field">
           <label for="category" class="label">
@@ -42,11 +52,18 @@
             type="text"
             v-model="form.category"
             list="categorynames"
+            @blur="validateForm"
           />
           <datalist id="categorynames">
-            <option v-for="category in page_categories" :key="category" :value="category"></option>
+            <option
+              v-for="category in page_categories"
+              :key="category"
+              :value="category"
+            ></option>
           </datalist>
-          <p class="help is-danger" v-if="errors.category">{{ errors.category }}</p>
+          <p class="help is-danger" v-if="errors.category">
+            {{ errors.category }}
+          </p>
         </div>
       </div>
     </div>
@@ -60,7 +77,11 @@
       </div>
     </div>
 
-    <VerifyAndSubmit @submit="submitChanges" @loading="updateLoadingState" />
+    <VerifyAndSubmit
+      :validateForm="validateForm"
+      @submit="submitChanges"
+      @loading="updateLoadingState"
+    />
   </form>
 </template>
 
@@ -68,7 +89,13 @@
 import Noty from "noty";
 import Loading from "vue-loading-overlay";
 import "vue-loading-overlay/dist/vue-loading.css";
-import { urlRegex, sanitize, apiClient } from "../lib";
+import {
+  urlRegex,
+  sanitize,
+  apiClient,
+  detectFormErrors,
+  hasErrors
+} from "../lib";
 import VerifyAndSubmit from "../lib/VerifyAndSubmit.vue";
 import TextEditor from "../lib/TextEditor.vue";
 
@@ -107,19 +134,16 @@ export default {
     };
   },
   methods: {
-    detectFormErrors() {
-      let hasErrors = false;
-      Object.keys(this.form).forEach(field => {
-        if (!this.form[field]) {
-          hasErrors = true;
-          this.errors[field] = "Please enter a valid value.";
-        }
+    validateForm() {
+      let errors = detectFormErrors({
+        form: { ...this.form }
       });
-      return hasErrors;
+      Object.assign(this.errors, errors);
+      return !hasErrors(errors);
     },
     submitChanges({ email, otp, otpRequestId }) {
-      let hasErrors = this.detectFormErrors();
-      if (hasErrors) {
+      let formValid = this.validateForm();
+      if (!formValid) {
         return;
       }
       const pageContent = document.querySelector(".ql-editor").innerHTML;

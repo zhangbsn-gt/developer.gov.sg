@@ -35,3 +35,22 @@ export const apiClient = axios.create({
   baseURL: config.apiUrl,
   withCredentials: true
 });
+
+export function detectFormErrors({ form, fields = [] }) {
+  let formFields = fields.length === 0 ? Object.keys(form) : fields;
+  let errors = {};
+  formFields.forEach(field => {
+    if (!form[field] || form[field] === "") {
+      errors[field] = "Please enter a valid value.";
+    } else {
+      errors[field] = "";
+    }
+  });
+  return errors;
+}
+
+export function hasErrors(errors) {
+  return Object.values(errors).reduce((prev, curr) => {
+    return (curr != null && curr !== "") || prev;
+  }, false);
+}

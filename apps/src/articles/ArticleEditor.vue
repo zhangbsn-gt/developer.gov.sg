@@ -11,7 +11,13 @@
           </label>
         </div>
         <div class="control">
-          <input class="input" type="text" id="title" v-model="page.title" :disabled="!edit.title" />
+          <input
+            class="input"
+            type="text"
+            id="title"
+            v-model="page.title"
+            :disabled="!edit.title"
+          />
         </div>
       </div>
       <div class="field">
@@ -37,7 +43,11 @@
           />
         </div>
         <datalist id="categories">
-          <option v-for="pageCategory of page_categories" :key="pageCategory" :value="pageCategory"></option>
+          <option
+            v-for="pageCategory of page_categories"
+            :key="pageCategory"
+            :value="pageCategory"
+          ></option>
         </datalist>
       </div>
       <div class="field">
@@ -69,20 +79,36 @@
       <div class="sgds-tabs">
         <ul>
           <li :class="{ 'is-active': !showOriginal }">
-            <a @click.prevent="showOriginal = false" :style="{ cursor: 'pointer' }">Editor</a>
+            <a
+              @click.prevent="showOriginal = false"
+              :style="{ cursor: 'pointer' }"
+              >Editor</a
+            >
           </li>
           <li :class="{ 'is-active': showOriginal }">
-            <a @click.prevent="showOriginal = true" :style="{ cursor: 'pointer' }">Original</a>
+            <a
+              @click.prevent="showOriginal = true"
+              :style="{ cursor: 'pointer' }"
+              >Original</a
+            >
           </li>
         </ul>
       </div>
       <TextEditor :page_content="page_content" v-show="!showOriginal" />
 
-      <div class="article original-content" v-show="showOriginal" v-html="sanitizedOriginalContent"></div>
+      <div
+        class="article original-content"
+        v-show="showOriginal"
+        v-html="sanitizedOriginalContent"
+      ></div>
     </div>
 
     <div class="article-editor-footer">
-      <VerifyAndSubmit @submit="submitChanges" @loading="updateLoadingState" />
+      <VerifyAndSubmit
+        :validateForm="validateForm"
+        @submit="submitChanges"
+        @loading="updateLoadingState"
+      />
     </div>
   </div>
 </template>
@@ -93,7 +119,7 @@ import Loading from "vue-loading-overlay";
 import "vue-loading-overlay/dist/vue-loading.css";
 import VerifyAndSubmit from "../lib/VerifyAndSubmit.vue";
 import TextEditor from "../lib/TextEditor.vue";
-import { sanitize, apiClient } from "../lib";
+import { sanitize, apiClient, detectFormErrors, hasErrors } from "../lib";
 
 export default {
   components: { VerifyAndSubmit, Loading, TextEditor },
@@ -146,6 +172,11 @@ export default {
         title: false,
         category: false,
         description: false
+      },
+      errors: {
+        title: "",
+        category: "",
+        description: ""
       }
     };
   },
@@ -154,6 +185,10 @@ export default {
   },
   methods: {
     submitChanges({ email, otp, otpRequestId }) {
+      let formValid = this.validateForm();
+      if (!formValid) {
+        return;
+      }
       const submission = this.getSubmission();
       this.isLoading = true;
       apiClient
@@ -206,6 +241,13 @@ export default {
         }
       }
       return submissions;
+    },
+    validateForm() {
+      let errors = detectFormErrors({
+        form: { ...this.page }
+      });
+      Object.assign(this.errors, errors);
+      return !hasErrors(errors);
     }
   }
 };

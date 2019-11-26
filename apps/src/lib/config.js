@@ -3,5 +3,5 @@ export default {
   apiUrl:
     process.env.NODE_ENV === "production"
       ? "https://api.developer.gov.sg/v1/api"
-      : "http://localhost:4321"
+      : "http://localhost:4321/api"
 };
