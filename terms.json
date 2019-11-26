@@ -157,5 +157,18 @@
         "tags": [
             "security"
         ]
+    },
+    {
+        "id": "66c7f593-f566-43dd-a398-bfc62facf25d",
+        "term": "WOGAA",
+        "full_term": "Whole of Government Application Analytics",
+        "description": "WOGAA enables real-time, automatic monitoring of all government websites and digital services",
+        "links": [
+            "https://wogaa.sg"
+        ],
+        "tags": [
+            "monitoring",
+            "analytics"
+        ]
     }
 ]
