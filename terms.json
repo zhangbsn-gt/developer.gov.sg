@@ -115,6 +115,20 @@
         ]
     },
     {
+        "id": "b2489621-5fbe-4442-9c0d-8382acda27d1",
+        "term": "SRE",
+        "full_term": "Site Reliability Engineering",
+        "description": "Site Reliability Engineering is a discipline that incorporates aspects of software engineering and applies them to infrastructure and operations problems in order to create scalable and highly reliable software systems",
+        "links": [
+            "https://landing.google.com/sre/"
+        ],
+        "tags": [
+            "devops",
+            "software engineering",
+            "infrastructure"
+        ]
+    },
+    {
         "id": "7337308a-e280-4b80-aba5-4b9d9a213bc0",
         "term": "TDD",
         "full_term": "Test-driven development",
