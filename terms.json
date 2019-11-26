@@ -128,7 +128,7 @@
         "id": "7d56e9b0-4c96-4ba0-a3ed-0a6a03791aa2",
         "term": "VAPT",
         "full_term": "Vulnerability Assessment & Penetration Testing",
-        "description": "Vulnerability testing involves the discovery of known vulnerabilities and potential risks while penetration testing refers to the actual attempt to exploit vulnerabilities in order to expose risks in a system",
+        "description": "Vulnerability testing is the process to discover and assess known vulnerabilities in systems while penetration testing is the process to validate vulnerabilities in systems. They work hand-in-hand to surface potential security risks that the system might have to support a technical security risk assessment.",
         "links": [],
         "tags": [
             "security"
