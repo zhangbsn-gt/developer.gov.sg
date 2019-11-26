@@ -102,5 +102,15 @@
             "platform",
             "data"
         ]
+    },
+    {
+        "id": "86a53a5b-b327-42c4-8dec-9da2342ec25d",
+        "term": "UX",
+        "full_term": "User Experience",
+        "description": "User Experience Design is a user-focused process that covers all interactions between a product and its users, including aspects of branding, design, usability and function",
+        "links": [],
+        "tags": [
+            "design"
+        ]
     }
 ]
