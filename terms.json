@@ -56,6 +56,18 @@
         ]
     },
     {
+        "id": "42ef8211-d8fc-42dc-8d61-29711a77e8e6",
+        "term": "GITSIR",
+        "full_term": "Government IT Security Incident Response",
+        "description": "GITSIR helps the Government respond to cybersecurity threats. It performs incident investigations and coordinates responses with relevant parties during security incidents",
+        "links": [
+            "https://www.developer.gov.sg/products/gitsir"
+        ],
+        "tags": [
+            "security"
+        ]
+    },
+    {
         "id": "4ad7c806-62db-40d7-9f36-586000c21726",
         "term": "HATS",
         "full_term": "Hive Agile Testing Solution",
