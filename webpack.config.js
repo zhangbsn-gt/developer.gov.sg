@@ -1,5 +1,6 @@
 const path = require("path");
 const { VueLoaderPlugin } = require("vue-loader");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
   mode: "development", // Use cli args for prod
   entry: {
@@ -32,6 +33,16 @@ module.exports = {
         use: ["style-loader", "css-loader"]
       },
       {
+        test: /\.s[ac]ss$/i,
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader
+          },
+          "css-loader",
+          "sass-loader"
+        ]
+      },
+      {
         test: /\.(png|jpe?g|gif|svg|eot|ttf|woff|woff2)$/,
         loader: "url-loader",
         options: {
@@ -44,5 +55,5 @@ module.exports = {
       }
     ]
   },
-  plugins: [new VueLoaderPlugin()]
+  plugins: [new VueLoaderPlugin(), new MiniCssExtractPlugin()]
 };
