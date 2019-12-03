@@ -47,7 +47,10 @@
           <label class="label" for="category">
             Category
             <br />
-            <small>Choose a category for this page, or enter a new one</small>
+            <small>
+              Choose from a list of existing categories, or enter the name of a
+              new one.
+            </small>
           </label>
           <label class="checkbox">
             edit

@@ -19,7 +19,11 @@
       </p>
     </div>
     <div class="field">
-      <label for="description" class="label">Description</label>
+      <label for="description" class="label">
+        Description
+        <br />
+        <small>This text appears on links to your page</small>
+      </label>
       <div class="control">
         <input
           id="description"
