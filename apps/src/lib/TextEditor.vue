@@ -1,347 +1,370 @@
 <template>
-  <div id="editor-wrapper">
-    <div id="toolbar">
-      <select class="ql-header" :style="{ width: '115px' }">
-        <option value="4">Heading</option>
-        <option value="5">Sub-heading</option>
-        <option selected></option>
-      </select>
-      <button class="ql-bold" v-tooltip.bottom="'Bold'"></button>
-      <button class="ql-italic" v-tooltip.bottom="'Italic'"></button>
-      <button class="ql-underline" v-tooltip.bottom="'Underline'"></button>
-      <button class="ql-link" v-tooltip.bottom="'Add link'"></button>
-      <button class="ql-blockquote" v-tooltip.bottom="'Block Quote'"></button>
-      <button class="ql-code-block" v-tooltip.bottom="'Code Block'"></button>
-      <button
-        class="ql-list"
-        value="ordered"
-        v-tooltip.bottom="'Ordered List'"
-      ></button>
-      <button
-        class="ql-list"
-        value="bullet"
-        v-tooltip.bottom="'Unordered List'"
-      ></button>
-      <button class="ql-hr" v-tooltip.bottom="'Horizontal Line'">
-        <span class="sgds-icon sgds-icon-minus"></span>
-      </button>
-      <button class="ql-clean" v-tooltip.bottom="'Clear formatting'"></button>
-      <v-popover trigger="click">
+  <div class="editor">
+    <editor-menu-bar :editor="editor" v-slot="{ commands, isActive }">
+      <div class="menubar">
         <button
-          class="ql-video tooltip-target"
-          v-tooltip.bottom="'Insert video from URL'"
-        ></button>
-        <template slot="popover">
-          <form @submit.prevent="onInsertVideo">
-            <label for="video-src">Enter your video's URL</label>
-            <input type="text" id="video-src" v-model="videoSrc" />
-            <button type="submit" v-close-popover>OK</button>
-          </form>
-          <div :style="{ textAlign: 'center' }">
-            <small :style="{ fontSize: '0.8rem' }"
-              >(Video will be inserted at your current cursor location)</small
-            >
-          </div>
-        </template>
-      </v-popover>
-      <v-popover trigger="click">
+          type="button"
+          class="menubar__button"
+          :class="{ 'is-active': isActive.bold() }"
+          @click="commands.bold"
+        >
+          <i class="material-icons">format_bold</i>
+        </button>
+
         <button
-          class="ql-image tooltip-target"
-          v-tooltip.bottom="'Insert image from URL'"
-        ></button>
-        <template slot="popover">
-          <form @submit.prevent="onInsertImage">
-            <label for="image-src">Enter your image's URL</label>
-            <input type="text" id="image-src" v-model="imageSrc" />
-            <button type="submit" v-close-popover>OK</button>
-          </form>
-          <div :style="{ textAlign: 'center' }">
-            <small :style="{ fontSize: '0.8rem' }"
-              >(Image will be inserted at your current cursor location)</small
-            >
-          </div>
+          type="button"
+          class="menubar__button"
+          :class="{ 'is-active': isActive.italic() }"
+          @click="commands.italic"
+        >
+          <i class="material-icons">format_italic</i>
+        </button>
+
+        <button
+          type="button"
+          class="menubar__button"
+          :class="{ 'is-active': isActive.strike() }"
+          @click="commands.strike"
+        >
+          <i class="material-icons">format_strikethrough</i>
+        </button>
+
+        <button
+          type="button"
+          class="menubar__button"
+          :class="{ 'is-active': isActive.underline() }"
+          @click="commands.underline"
+        >
+          <i class="material-icons">format_underline</i>
+        </button>
+
+        <!-- todo: use select instead of button row for P, H1, ... -->
+        <button
+          type="button"
+          class="menubar__button"
+          :class="{ 'is-active': isActive.paragraph() }"
+          @click="commands.paragraph"
+        >
+          P
+        </button>
+
+        <button
+          type="button"
+          v-for="headingLevel of [1, 2, 3, 4, 5, 6]"
+          :key="headingLevel"
+          class="menubar__button"
+          :class="{
+            'is-active': isActive.heading({ level: headingLevel })
+          }"
+          @click="commands.heading({ level: headingLevel })"
+        >
+          H{{ headingLevel }}
+        </button>
+
+        <button
+          type="button"
+          class="menubar__button"
+          :class="{ 'is-active': isActive.bullet_list() }"
+          @click="commands.bullet_list"
+        >
+          <i class="material-icons">format_list_bulleted</i>
+        </button>
+
+        <button
+          type="button"
+          class="menubar__button"
+          :class="{ 'is-active': isActive.ordered_list() }"
+          @click="commands.ordered_list"
+        >
+          <i class="material-icons">format_list_numbered</i>
+        </button>
+
+        <button
+          type="button"
+          class="menubar__button"
+          :class="{ 'is-active': isActive.blockquote() }"
+          @click="commands.blockquote"
+        >
+          <i class="material-icons">format_quote</i>
+        </button>
+        <button
+          type="button"
+          class="menubar__button"
+          :class="{ 'is-active': isActive.code() }"
+          @click="commands.code"
+        >
+          <i class="material-icons">code</i>
+          (selection)
+        </button>
+
+        <button
+          type="button"
+          class="menubar__button"
+          :class="{ 'is-active': isActive.code_block() }"
+          @click="commands.code_block"
+        >
+          <i class="material-icons">code</i>
+          (block)
+        </button>
+
+        <button
+          type="button"
+          class="menubar__button"
+          @click="commands.horizontal_rule"
+        >
+          <i class="material-icons">
+            remove
+          </i>
+        </button>
+
+        <button
+          type="button"
+          class="menubar__button"
+          @click="showImagePrompt(commands.image)"
+        >
+          <i class="material-icons">
+            image
+          </i>
+        </button>
+
+        <button type="button" class="menubar__button" @click="commands.undo">
+          <i class="material-icons">
+            undo
+          </i>
+        </button>
+
+        <button type="button" class="menubar__button" @click="commands.redo">
+          <i class="material-icons">
+            redo
+          </i>
+        </button>
+      </div>
+    </editor-menu-bar>
+    <editor-menu-bubble
+      class="menububble"
+      :editor="editor"
+      @hide="hideLinkMenu"
+      v-slot="{ commands, isActive, getMarkAttrs, menu }"
+    >
+      <div
+        class="menububble"
+        :class="{ 'is-active': menu.isActive }"
+        :style="`left: ${menu.left}px; bottom: ${menu.bottom}px;`"
+      >
+        <form
+          class="menububble__form"
+          v-if="linkMenuIsActive"
+          @submit.prevent="setLinkUrl(commands.link, linkUrl)"
+        >
+          <input
+            class="menububble__input"
+            type="text"
+            v-model="linkUrl"
+            placeholder="https://"
+            ref="linkInput"
+            @keydown.esc="hideLinkMenu"
+          />
+          <button
+            class="menububble__button"
+            @click="setLinkUrl(commands.link, null)"
+            type="button"
+          >
+            remove
+          </button>
+        </form>
+
+        <template v-else>
+          <button
+            type="button"
+            class="menububble__button"
+            @click="showLinkMenu(getMarkAttrs('link'))"
+            :class="{ 'is-active': isActive.link() }"
+          >
+            <span>{{ isActive.link() ? "Update Link" : "Add Link" }}</span>
+            <i class="material-icons" :style="{ marginLeft: '2px' }">link</i>
+          </button>
         </template>
-      </v-popover>
-    </div>
-    <div id="editor" class="article"></div>
+      </div>
+    </editor-menu-bubble>
+    <editor-content class="editor__content" :editor="editor" />
+    <slot v-bind:editor="editor" name="editor-footer"></slot>
   </div>
 </template>
 
 <script>
-import Quill from "quill";
-import sanitizeHtml from "sanitize-html";
-import { VTooltip, VPopover, VClosePopover } from "v-tooltip";
-import { sanitize } from "./index";
-
-import "noty/lib/noty.css";
-import "noty/lib/themes/mint.css";
-import "quill/dist/quill.snow.css";
-
-let BlockEmbed = Quill.import("blots/block/embed");
-
-class HrBlot extends BlockEmbed {}
-HrBlot.blotName = "hr";
-HrBlot.tagName = "hr";
-Quill.register(HrBlot);
-
-class VideoBlot extends BlockEmbed {
-  static create(url) {
-    let node = super.create();
-    node.setAttribute("src", url);
-    // Set non-format related attributes with static values
-    node.setAttribute("frameborder", "0");
-    node.setAttribute("allowfullscreen", true);
-    node.setAttribute("style", "width: 100%; min-height: 300px");
-    return node;
-  }
-
-  static formats(node) {
-    // We still need to report unregistered embed formats
-    let format = {};
-    if (node.hasAttribute("height")) {
-      format.height = node.getAttribute("height");
-    }
-    if (node.hasAttribute("width")) {
-      format.width = node.getAttribute("width");
-    }
-    return format;
-  }
-
-  static value(node) {
-    return node.getAttribute("src");
-  }
-
-  format(name, value) {
-    // Handle unregistered embed formats
-    if (name === "height" || name === "width") {
-      if (value) {
-        this.domNode.setAttribute(name, value);
-      } else {
-        this.domNode.removeAttribute(name, value);
-      }
-    } else {
-      super.format(name, value);
-    }
-  }
-}
-
-VideoBlot.blotName = "video";
-VideoBlot.tagName = "iframe";
-
-Quill.register(VideoBlot);
+import { Editor, EditorContent, EditorMenuBar, EditorMenuBubble } from "tiptap";
+import {
+  Blockquote,
+  CodeBlock,
+  HardBreak,
+  Heading,
+  HorizontalRule,
+  OrderedList,
+  BulletList,
+  ListItem,
+  TodoItem,
+  TodoList,
+  Bold,
+  Code,
+  Italic,
+  Link,
+  Strike,
+  Underline,
+  History,
+  Image
+} from "tiptap-extensions";
 
 export default {
-  directives: {
-    tooltip: VTooltip,
-    "close-popover": VClosePopover
-  },
+  name: "app",
   components: {
-    "v-popover": VPopover
+    EditorContent,
+    EditorMenuBar,
+    EditorMenuBubble
   },
   props: {
     page_content: {
-      type: String,
-      default: ""
+      type: String
     }
   },
   data() {
     return {
-      sanitizedPageContent: "",
-      quill: null,
-      imageSrc: "",
-      videoSrc: ""
+      editor: new Editor({
+        extensions: [
+          new Blockquote(),
+          new BulletList(),
+          new CodeBlock(),
+          new HardBreak(),
+          new Heading({ levels: [1, 2, 3, 4, 5, 6] }),
+          new HorizontalRule(),
+          new ListItem(),
+          new OrderedList(),
+          new TodoItem(),
+          new TodoList(),
+          new Link(),
+          new Bold(),
+          new Code(),
+          new Italic(),
+          new Strike(),
+          new Underline(),
+          new History(),
+          new Image()
+        ],
+        content: this.page_content || ""
+      }),
+      linkUrl: null,
+      linkMenuIsActive: false
     };
   },
-  created() {
-    this.sanitizedPageContent = sanitize(this.page_content);
-  },
-  mounted() {
-    this.quill = new Quill("#editor", {
-      bounds: "#editor-wrapper",
-      theme: "snow",
-      placeholder: "",
-      formats: [
-        "bold",
-        "font",
-        "code",
-        "italic",
-        "link",
-        "size",
-        "underline",
-        "blockquote",
-        "header",
-        "indent",
-        "list",
-        "code-block",
-        "image",
-        "video",
-        "hr"
-      ],
-      modules: {
-        toolbar: {
-          container: "#toolbar",
-          handlers: {
-            hr: this.quillHrHandler,
-            video: () => {}, // This needs to exist as a noop, if not by default Quill will open the file dialog.
-            image: () => {}
-          }
-        },
-        clipboard: {
-          matchVisual: false // Stop quill from auto-adding <br> blocks before headers
-        }
-      }
-    });
-    this.quill.clipboard.dangerouslyPasteHTML(this.sanitizedPageContent);
-  },
   methods: {
-    quillHrHandler() {
-      let range = this.quill.getSelection();
-      if (range) {
-        this.quill.insertEmbed(range.index, "hr", true);
-        this.quill.setSelection(range.index + 1);
-      }
+    showLinkMenu(attrs) {
+      this.linkUrl = attrs.href;
+      this.linkMenuIsActive = true;
+      this.$nextTick(() => {
+        this.$refs.linkInput.focus();
+      });
     },
-    onInsertVideo() {
-      let range = this.quill.getSelection(true); // true to focus the editor first
-      if (this.videoSrc) {
-        this.quill.insertEmbed(
-          range.index,
-          "video",
-          this.videoSrc,
-          Quill.sources.USER
-        );
-        this.videoSrc = "";
-      }
+    hideLinkMenu() {
+      this.linkUrl = null;
+      this.linkMenuIsActive = false;
     },
-    onInsertImage() {
-      let range = this.quill.getSelection(true); // true to focus the editor first
-      if (this.imageSrc) {
-        this.quill.insertEmbed(
-          range.index,
-          "image",
-          this.imageSrc,
-          Quill.sources.USER
-        );
-        this.imageSrc = "";
+    setLinkUrl(command, url) {
+      command({ href: url });
+      this.hideLinkMenu();
+    },
+    showImagePrompt(command) {
+      const src = prompt("Enter the url of your image here");
+      if (src !== null) {
+        command({ src });
       }
     }
+  },
+  beforeDestroy() {
+    this.editor.destroy();
   }
 };
 </script>
 
-<style>
-#editor {
-  background-color: white;
+<style scoped>
+.editor {
+  position: relative;
 }
 
-#toolbar {
-  display: flex;
+.menubar {
   position: sticky;
-  top: 0;
+  top: -1rem;
   z-index: 50;
-  background-color: white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  padding: 1rem 0.5rem;
+
+  flex-wrap: wrap;
+  background-color: #fff;
+  border: 1px solid #c3c3c3;
+
+  display: flex;
+}
+.menubar__button {
+  background: #fff;
+  border: 1px solid #e3e3e3;
+  border-radius: 6px;
+  margin: 0 1px;
+
+  display: flex;
+  align-items: center;
+
+  transition: all 0.2s;
+}
+.menubar__button:hover {
+  cursor: pointer;
+  background: #e7e7e7;
+}
+.menubar__button.is-active {
+  color: #1379ff;
+  background-color: #e7e7e7;
+  font-weight: bolder;
 }
 
-.tooltip {
-  display: block;
-  z-index: 1000;
-}
-
-.tooltip .tooltip-inner {
-  background: #272727;
-  color: white;
-  border-radius: 4px;
-  padding: 4px 8px 4px;
-}
-
-.tooltip.popover .popover-inner {
-  background: #272727;
-  color: white;
-  padding: 12px;
-  border-radius: 4px;
-  box-shadow: 0 5px 30px rgba(black, 0.1);
-}
-
-.tooltip .tooltip-arrow {
-  width: 0;
-  height: 0;
-  border-style: solid;
+.menububble {
   position: absolute;
-  margin: 5px;
-  border-color: #272727;
-  z-index: 1;
-}
-
-.tooltip[x-placement^="top"] {
-  margin-bottom: 5px;
-}
-
-.tooltip[x-placement^="top"] .tooltip-arrow {
-  border-width: 5px 5px 0 5px;
-  border-left-color: transparent;
-  border-right-color: transparent;
-  border-bottom-color: transparent;
-  bottom: -5px;
-  left: calc(50% - 5px);
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.tooltip[x-placement^="bottom"] {
-  margin-top: 5px;
-}
-
-.tooltip[x-placement^="bottom"] .tooltip-arrow {
-  border-width: 0 5px 5px 5px;
-  border-left-color: transparent;
-  border-right-color: transparent;
-  border-top-color: transparent;
-  top: -5px;
-  left: calc(50% - 5px);
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.tooltip[x-placement^="right"] {
-  margin-left: 5px;
-}
-
-.tooltip[x-placement^="right"] .tooltip-arrow {
-  border-width: 5px 5px 5px 0;
-  border-left-color: transparent;
-  border-top-color: transparent;
-  border-bottom-color: transparent;
-  left: -5px;
-  top: calc(50% - 5px);
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.tooltip[x-placement^="left"] {
-  margin-right: 5px;
-}
-
-.tooltip[x-placement^="left"] .tooltip-arrow {
-  border-width: 5px 0 5px 5px;
-  border-top-color: transparent;
-  border-right-color: transparent;
-  border-bottom-color: transparent;
-  right: -5px;
-  top: calc(50% - 5px);
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.tooltip[aria-hidden="true"] {
-  visibility: hidden;
+  display: flex;
+  transform: translateX(-50%);
   opacity: 0;
-  transition: opacity 0.15s, visibility 0.15s;
+  visibility: hidden;
+  transition: opacity 0.2s, visibility 0.2s;
+
+  z-index: 20;
+  background: #000;
+  border-radius: 5px;
+  padding: 0.3rem;
+  margin-bottom: 0.5rem;
 }
 
-.tooltip[aria-hidden="false"] {
-  visibility: visible;
+.menububble.is-active {
   opacity: 1;
-  transition: opacity 0.15s;
+  visibility: visible;
+}
+.menububble__input {
+  border-radius: 3px;
+}
+.menububble__button {
+  display: inline-flex;
+  align-items: center;
+  background: transparent;
+  border: none;
+  color: #fff;
+  padding: 0.2rem 0.5rem;
+  margin-right: 0.2rem;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.menububble__button:active {
+  color: #000;
+  background-color: #fff;
+}
+
+.editor__content {
+  border: 1px solid #e6e6e6;
+}
+.editor__content img {
+  display: block;
+  margin: 0 auto;
 }
 </style>

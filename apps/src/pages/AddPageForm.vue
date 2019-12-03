@@ -1,7 +1,6 @@
 <template>
-  <form @submit.prevent="handleSubmit" class="vld-parent">
+  <form class="vld-parent">
     <Loading :active.sync="isLoading" :is-full-page="false"></Loading>
-
     <div class="row">
       <div class="col">
         <div class="field">
@@ -16,7 +15,9 @@
               @blur="validateForm"
             />
           </div>
-          <p class="help is-danger" v-if="errors.title">{{ errors.title }}</p>
+          <p class="help is-danger" v-if="errors.title">
+            {{ errors.title }}
+          </p>
         </div>
         <div class="field">
           <label for="description" class="label">Description</label>
@@ -72,16 +73,20 @@
       <div class="col">
         <label class="label">Page Content</label>
         <div class="control">
-          <TextEditor />
+          <TextEditor>
+            <template v-slot:editor-footer="{ editor }">
+              <div class="article-editor-footer">
+                <VerifyAndSubmit
+                  :validateForm="validateForm"
+                  @submit="submitChanges($event, editor.getHTML())"
+                  @loading="updateLoadingState"
+                />
+              </div>
+            </template>
+          </TextEditor>
         </div>
       </div>
     </div>
-
-    <VerifyAndSubmit
-      :validateForm="validateForm"
-      @submit="submitChanges"
-      @loading="updateLoadingState"
-    />
   </form>
 </template>
 
@@ -141,12 +146,11 @@ export default {
       Object.assign(this.errors, errors);
       return !hasErrors(errors);
     },
-    submitChanges({ email, otp, otpRequestId }) {
+    submitChanges({ email, otp, otpRequestId }, pageContent) {
       let formValid = this.validateForm();
       if (!formValid) {
         return;
       }
-      const pageContent = document.querySelector(".ql-editor").innerHTML;
       this.isLoading = true;
 
       apiClient

@@ -3,9 +3,9 @@ title: Products
 layout: layout-page
 ---
 
-<h4>
+<h2>
   Products and services to help you build digital services for the Government quickly and securely.
-</h4>
+</h2>
 
 {% assign category_array = site.products | map: "category" | uniq | jsonify %}
 {% include add-pages-app.html collection='products' categories=category_array %}
@@ -18,14 +18,14 @@ layout: layout-page
         {% if category.name != '' %}
           <div class="row">
             <div class="col">
-              <h4 class="has-text-weight-black">{{ category.name }}</h4>
+              <h3 class="has-text-weight-black">{{ category.name }}</h3>
             </div>
           </div>
           {% assign items = category.items %}
           <div class="row is-multiline is-padding-large">
             {% for item in items %}
               <div class="col is-4">
-                <h6><a href="{{ item.url }}">{{ item.title }}</a></h6>
+                <h4><a href="{{ item.url }}">{{ item.title }}</a></h4>
                 <p class="is-size-8">{{ item.description }}</p>
               </div>
             {% endfor %}

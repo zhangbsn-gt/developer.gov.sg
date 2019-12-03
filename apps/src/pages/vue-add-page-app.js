@@ -1,5 +1,7 @@
 import Vue from "vue";
 import AddPageApp from "./AddPageApp.vue";
+import "noty/lib/noty.css";
+import "noty/lib/themes/mint.css";
 
 const mountElement = document.querySelector("#add-page");
 

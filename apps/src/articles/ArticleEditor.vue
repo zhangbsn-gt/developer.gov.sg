@@ -94,21 +94,23 @@
           </li>
         </ul>
       </div>
-      <TextEditor :page_content="page_content" v-show="!showOriginal" />
+      <TextEditor :page_content="page_content" v-show="!showOriginal">
+        <template v-slot:editor-footer="{ editor }">
+          <div class="article-editor-footer">
+            <VerifyAndSubmit
+              :validateForm="validateForm"
+              @submit="submitChanges($event, editor.getHTML())"
+              @loading="updateLoadingState"
+            />
+          </div>
+        </template>
+      </TextEditor>
 
       <div
-        class="article original-content"
+        class="original-content content has-default-header-styles"
         v-show="showOriginal"
         v-html="sanitizedOriginalContent"
       ></div>
-    </div>
-
-    <div class="article-editor-footer">
-      <VerifyAndSubmit
-        :validateForm="validateForm"
-        @submit="submitChanges"
-        @loading="updateLoadingState"
-      />
     </div>
   </div>
 </template>
@@ -184,12 +186,12 @@ export default {
     this.sanitizedOriginalContent = sanitize(this.page_content);
   },
   methods: {
-    submitChanges({ email, otp, otpRequestId }) {
+    submitChanges({ email, otp, otpRequestId }, updatedContent) {
       let formValid = this.validateForm();
       if (!formValid) {
         return;
       }
-      const submission = this.getSubmission();
+      const submission = this.collectSubmission(updatedContent);
       this.isLoading = true;
       apiClient
         .post("/submit-article-changes", {
@@ -223,8 +225,7 @@ export default {
     updateLoadingState(isLoading) {
       this.isLoading = isLoading;
     },
-    getSubmission() {
-      const updatedContent = document.querySelector(".ql-editor").innerHTML;
+    collectSubmission(updatedContent) {
       let submissions = {
         page_title: this.page_title,
         page_layout: this.page_layout,

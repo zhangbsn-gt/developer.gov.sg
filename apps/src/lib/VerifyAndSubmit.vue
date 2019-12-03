@@ -66,7 +66,9 @@
                   class="sgds-button"
                   @click.prevent="stage = stages.verify"
                 >
-                  <i class="fas fa-undo"></i>
+                  <i class="material-icons">
+                    undo
+                  </i>
                 </button>
                 <button
                   type="submit"

@@ -13,7 +13,8 @@ export const otpRegex = /^\d{6}$/;
 export function sanitize(html) {
   return sanitizeHtml(html, {
     allowedTags: [
-      ...sanitizeHtml.defaults.allowedTags,
+      ...sanitizeHtml.defaults.allowedTags, // Check https://www.npmjs.com/package/sanitize-html
+      "h1","h2",
       "u", // Allow underlined content
       "img", // Allow img tags
       "span" // Allow span tags

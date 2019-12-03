@@ -3,10 +3,10 @@ title: Guidelines
 layout: layout-page
 ---
 
-<h4>
+<h2>
     Read about the best practices, standards and conventions learned by
     Singapore Government development teams from building digital services
-</h4>
+</h2>
 
 {% assign category_array =  site.guidelines | map: "category" | uniq | jsonify %}
 {% include add-pages-app.html collection='guidelines' categories=category_array %}
@@ -19,14 +19,14 @@ layout: layout-page
             {% if category.name != '' %}
                 <div class="row">
                     <div class="col">
-                        <h4 class="has-text-weight-black">{{ category.name }}</h4>
+                        <h3 class="has-text-weight-black">{{ category.name }}</h3>
                     </div>
                 </div>
                 {% assign items = category.items | sort: "order" %}
                 <div class="row is-multiline is-padding-large">
                     {% for item in items %}
                     <div class="col is-4">
-                        <h6><a href="{{ item.url }}">{{ item.title }}</a></h6>
+                        <h4><a href="{{ item.url }}">{{ item.title }}</a></h4>
                         <p class="is-size-8">{{ item.description }}</p>
                         </div>
                     {% endfor %}

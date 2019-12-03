@@ -1,5 +1,7 @@
 import Vue from "vue";
 import VModal from "vue-js-modal";
+import "noty/lib/noty.css";
+import "noty/lib/themes/mint.css";
 
 import ArticleApp from "./ArticleApp.vue";
 
