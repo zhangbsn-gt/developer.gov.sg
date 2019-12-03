@@ -1,97 +1,90 @@
 <template>
   <div class="verify-and-submit">
-    <div class="row margin--top--lg margin--bottom">
-      <div class="col">
-        <h6>Submit</h6>
-
-        <div v-if="stage === stages.verify">
-          <form>
-            <label for="contributor-email"
-              >Please enter your government email for verification</label
+    <h6>Submit</h6>
+    <div v-if="stage === stages.verify">
+      <form>
+        <label for="contributor-email"
+          >Please enter your government email for verification</label
+        >
+        <div class="field has-addons">
+          <div class="control is-expanded">
+            <input
+              id="contributor-email"
+              name="email"
+              class="input"
+              :class="{ 'is-danger': errors.email }"
+              type="email"
+              placeholder="me@.gov.sg"
+              v-model="email"
+              @blur="validateEmail"
+              required
+            />
+          </div>
+          <div class="control">
+            <button
+              type="submit"
+              class="sgds-button is-primary"
+              @click.prevent="requestOtp"
+              :disabled="!emailRegex.test(email)"
             >
-            <div class="field has-addons">
-              <div class="control is-expanded">
-                <input
-                  id="contributor-email"
-                  name="email"
-                  class="input"
-                  :class="{ 'is-danger': errors.email }"
-                  type="email"
-                  placeholder="me@.gov.sg"
-                  v-model="email"
-                  @blur="validateEmail"
-                  required
-                />
-              </div>
-              <div class="control">
-                <button
-                  type="submit"
-                  class="sgds-button is-primary"
-                  @click.prevent="requestOtp"
-                  :disabled="!emailRegex.test(email)"
-                >
-                  Send OTP
-                </button>
-              </div>
-            </div>
-            <p class="help is-danger" v-if="errors.email">{{ errors.email }}</p>
-          </form>
+              Send OTP
+            </button>
+          </div>
         </div>
-
-        <div v-if="stage === stages.submit">
-          <form>
-            <label for="otp"
-              >Please enter the OTP sent to your email at {{ email }}</label
-            >
-            <div class="field has-addons">
-              <div class="control">
-                <button class="sgds-button" disabled>
-                  {{ otpRequestId }}-
-                </button>
-              </div>
-              <div class="control is-expanded">
-                <input
-                  type="text"
-                  name="otp"
-                  id="otp"
-                  class="input"
-                  :class="{ 'is-danger': errors.otp }"
-                  v-model="otp"
-                  required
-                />
-              </div>
-              <div class="control is-flex">
-                <button
-                  type="button"
-                  class="sgds-button"
-                  @click.prevent="stage = stages.verify"
-                >
-                  <i class="material-icons">
-                    undo
-                  </i>
-                </button>
-                <button
-                  type="submit"
-                  class="sgds-button is-primary"
-                  :disabled="!otpIsValid"
-                  @click.prevent="submit"
-                >
-                  Submit Changes
-                </button>
-              </div>
-            </div>
-            <p class="help is-danger" v-if="errors.otp">{{ errors.otp }}</p>
-          </form>
-        </div>
-
-        <small>
-          You will be able to track submission status at our GitHub repository's
-          <a href="https://github.com/govtechsg/developer.gov.sg/pulls"
-            >pull requests</a
-          >
-        </small>
-      </div>
+        <p class="help is-danger" v-if="errors.email">{{ errors.email }}</p>
+      </form>
     </div>
+
+    <div v-if="stage === stages.submit">
+      <form>
+        <label for="otp"
+          >Please enter the OTP sent to your email at {{ email }}</label
+        >
+        <div class="field has-addons">
+          <div class="control">
+            <button class="sgds-button" disabled>{{ otpRequestId }}-</button>
+          </div>
+          <div class="control is-expanded">
+            <input
+              type="text"
+              name="otp"
+              id="otp"
+              class="input"
+              :class="{ 'is-danger': errors.otp }"
+              v-model="otp"
+              required
+            />
+          </div>
+          <div class="control is-flex">
+            <button
+              type="button"
+              class="sgds-button"
+              @click.prevent="stage = stages.verify"
+            >
+              <i class="material-icons">
+                undo
+              </i>
+            </button>
+            <button
+              type="submit"
+              class="sgds-button is-primary"
+              :disabled="!otpIsValid"
+              @click.prevent="submit"
+            >
+              Submit Changes
+            </button>
+          </div>
+        </div>
+        <p class="help is-danger" v-if="errors.otp">{{ errors.otp }}</p>
+      </form>
+    </div>
+
+    <small>
+      You will be able to track submission status at our GitHub repository's
+      <a href="https://github.com/govtechsg/developer.gov.sg/pulls"
+        >pull requests</a
+      >
+    </small>
   </div>
 </template>
 
@@ -192,3 +185,9 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.verify-and-submit {
+  margin-top: 1rem;
+}
+</style>

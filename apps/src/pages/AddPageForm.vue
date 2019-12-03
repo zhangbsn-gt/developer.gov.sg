@@ -71,19 +71,17 @@
     </div>
 
     <label class="label">Page Content</label>
-    <div class="control">
-      <TextEditor>
-        <template v-slot:editor-footer="{ editor }">
-          <div class="article-editor-footer">
-            <VerifyAndSubmit
-              :validateForm="validateForm"
-              @submit="submitChanges($event, editor.getHTML())"
-              @loading="updateLoadingState"
-            />
-          </div>
-        </template>
-      </TextEditor>
-    </div>
+    <TextEditor>
+      <template v-slot:editor-footer="{ editor }">
+        <div class="article-editor-footer">
+          <VerifyAndSubmit
+            :validateForm="validateForm"
+            @submit="submitChanges($event, editor.getHTML())"
+            @loading="updateLoadingState"
+          />
+        </div>
+      </template>
+    </TextEditor>
   </form>
 </template>
 
