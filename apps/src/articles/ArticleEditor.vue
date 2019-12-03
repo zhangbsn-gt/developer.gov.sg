@@ -22,6 +22,28 @@
       </div>
       <div class="field">
         <div class="field-header">
+          <label class="label" for="description">
+            Description
+            <br />
+            <small>This text appears on links to your page</small>
+          </label>
+          <label class="checkbox">
+            edit
+            <input type="checkbox" v-model="edit.description" />
+          </label>
+        </div>
+        <div class="control">
+          <input
+            class="input"
+            type="text"
+            id="title"
+            v-model="page.description"
+            :disabled="!edit.description"
+          />
+        </div>
+      </div>
+      <div class="field">
+        <div class="field-header">
           <label class="label" for="category">
             Category
             <br />
@@ -49,28 +71,6 @@
             :value="pageCategory"
           ></option>
         </datalist>
-      </div>
-      <div class="field">
-        <div class="field-header">
-          <label class="label" for="description">
-            Description
-            <br />
-            <small>This text appears on links to your page</small>
-          </label>
-          <label class="checkbox">
-            edit
-            <input type="checkbox" v-model="edit.description" />
-          </label>
-        </div>
-        <div class="control">
-          <input
-            class="input"
-            type="text"
-            id="title"
-            v-model="page.description"
-            :disabled="!edit.description"
-          />
-        </div>
       </div>
 
       <hr class="margin--top margin--bottom" />

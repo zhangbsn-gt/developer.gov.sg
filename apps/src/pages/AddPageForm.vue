@@ -1,91 +1,84 @@
 <template>
   <form class="vld-parent">
     <Loading :active.sync="isLoading" :is-full-page="false"></Loading>
-    <div class="row">
-      <div class="col">
-        <div class="field">
-          <label for="title" class="label">Title</label>
-          <div class="control">
-            <input
-              id="title"
-              name="title"
-              class="input"
-              type="text"
-              v-model="form.title"
-              @blur="validateForm"
-            />
-          </div>
-          <p class="help is-danger" v-if="errors.title">
-            {{ errors.title }}
-          </p>
-        </div>
-        <div class="field">
-          <label for="description" class="label">Description</label>
-          <div class="control">
-            <input
-              id="description"
-              name="description"
-              class="input"
-              type="text"
-              placeholder="This product is..."
-              v-model="form.description"
-              @blur="validateForm"
-            />
-          </div>
-          <p class="help is-danger" v-if="errors.description">
-            {{ errors.description }}
-          </p>
-        </div>
-        <div class="field">
-          <label for="category" class="label">
-            Category
-            <br />
-            <small>
-              Choose from a list of existing categories, or enter the name of a
-              new one.
-            </small>
-          </label>
 
-          <input
-            id="category"
-            name="category"
-            class="input"
-            type="text"
-            v-model="form.category"
-            list="categorynames"
-            @blur="validateForm"
-          />
-          <datalist id="categorynames">
-            <option
-              v-for="category in page_categories"
-              :key="category"
-              :value="category"
-            ></option>
-          </datalist>
-          <p class="help is-danger" v-if="errors.category">
-            {{ errors.category }}
-          </p>
-        </div>
+    <div class="field">
+      <label for="title" class="label">Title</label>
+      <div class="control">
+        <input
+          id="title"
+          name="title"
+          class="input"
+          type="text"
+          v-model="form.title"
+          @blur="validateForm"
+        />
       </div>
+      <p class="help is-danger" v-if="errors.title">
+        {{ errors.title }}
+      </p>
+    </div>
+    <div class="field">
+      <label for="description" class="label">Description</label>
+      <div class="control">
+        <input
+          id="description"
+          name="description"
+          class="input"
+          type="text"
+          placeholder="This product is..."
+          v-model="form.description"
+          @blur="validateForm"
+        />
+      </div>
+      <p class="help is-danger" v-if="errors.description">
+        {{ errors.description }}
+      </p>
+    </div>
+    <div class="field">
+      <label for="category" class="label">
+        Category
+        <br />
+        <small>
+          Choose from a list of existing categories, or enter the name of a new
+          one.
+        </small>
+      </label>
+
+      <input
+        id="category"
+        name="category"
+        class="input"
+        type="text"
+        v-model="form.category"
+        list="categorynames"
+        @blur="validateForm"
+      />
+      <datalist id="categorynames">
+        <option
+          v-for="category in page_categories"
+          :key="category"
+          :value="category"
+        ></option>
+      </datalist>
+      <p class="help is-danger" v-if="errors.category">
+        {{ errors.category }}
+      </p>
     </div>
 
-    <div class="row">
-      <div class="col">
-        <label class="label">Page Content</label>
-        <div class="control">
-          <TextEditor>
-            <template v-slot:editor-footer="{ editor }">
-              <div class="article-editor-footer">
-                <VerifyAndSubmit
-                  :validateForm="validateForm"
-                  @submit="submitChanges($event, editor.getHTML())"
-                  @loading="updateLoadingState"
-                />
-              </div>
-            </template>
-          </TextEditor>
-        </div>
-      </div>
+    <label class="label">Page Content</label>
+    <div class="control">
+      <TextEditor>
+        <template v-slot:editor-footer="{ editor }">
+          <div class="article-editor-footer">
+            <VerifyAndSubmit
+              :validateForm="validateForm"
+              @submit="submitChanges($event, editor.getHTML())"
+              @loading="updateLoadingState"
+            />
+          </div>
+        </template>
+      </TextEditor>
     </div>
   </form>
 </template>
