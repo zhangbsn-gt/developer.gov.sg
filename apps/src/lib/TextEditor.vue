@@ -215,7 +215,7 @@ import {
 } from "tiptap-extensions";
 
 export default {
-  name: "app",
+  name: "text-editor",
   components: {
     EditorContent,
     EditorMenuBar,
