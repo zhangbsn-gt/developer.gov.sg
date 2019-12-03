@@ -1,14 +1,13 @@
 import Vue from "vue";
-import VModal from "vue-js-modal";
+import store from "../lib/pageEditorStore";
 import "noty/lib/noty.css";
 import "noty/lib/themes/mint.css";
 
 import ArticleApp from "./ArticleApp.vue";
 
-Vue.use(VModal, { dynamic: true, injectModalsContainer: true });
-
 const mountElement = document.querySelector("#article-editor-app");
 new Vue({
+  store,
   render: createElement => {
     return createElement(ArticleApp, {
       props: {

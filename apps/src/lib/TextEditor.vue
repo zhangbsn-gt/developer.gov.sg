@@ -192,27 +192,8 @@
 </template>
 
 <script>
-import { Editor, EditorContent, EditorMenuBar, EditorMenuBubble } from "tiptap";
-import {
-  Blockquote,
-  CodeBlock,
-  HardBreak,
-  Heading,
-  HorizontalRule,
-  OrderedList,
-  BulletList,
-  ListItem,
-  TodoItem,
-  TodoList,
-  Bold,
-  Code,
-  Italic,
-  Link,
-  Strike,
-  Underline,
-  History,
-  Image
-} from "tiptap-extensions";
+import { EditorContent, EditorMenuBar, EditorMenuBubble } from "tiptap";
+import { mapState, mapActions } from "vuex";
 
 export default {
   name: "text-editor",
@@ -228,34 +209,15 @@ export default {
   },
   data() {
     return {
-      editor: new Editor({
-        extensions: [
-          new Blockquote(),
-          new BulletList(),
-          new CodeBlock(),
-          new HardBreak(),
-          new Heading({ levels: [1, 2, 3, 4, 5, 6] }),
-          new HorizontalRule(),
-          new ListItem(),
-          new OrderedList(),
-          new TodoItem(),
-          new TodoList(),
-          new Link(),
-          new Bold(),
-          new Code(),
-          new Italic(),
-          new Strike(),
-          new Underline(),
-          new History(),
-          new Image()
-        ],
-        content: this.page_content || ""
-      }),
       linkUrl: null,
       linkMenuIsActive: false
     };
   },
+  computed: {
+    ...mapState("pageEditor", ["editor"])
+  },
   methods: {
+    ...mapActions("pageEditor", ["setEditorContent"]),
     showLinkMenu(attrs) {
       this.linkUrl = attrs.href;
       this.linkMenuIsActive = true;
@@ -276,6 +238,11 @@ export default {
       if (src !== null) {
         command({ src });
       }
+    }
+  },
+  created() {
+    if (this.page_content && this.page_content.length > 0) {
+      this.setEditorContent(this.page_content);
     }
   },
   beforeDestroy() {
