@@ -93,28 +93,28 @@
         </li>
       </ul>
     </div>
-    <TextEditor :page_content="page_content" v-show="!showOriginal">
-      <template v-slot:editor-footer="{ editor }">
-        <div class="article-editor-footer">
-          <VerifyAndSubmit
-            :validateForm="validateForm"
-            @submit="submitChanges($event, editor.getHTML())"
-            @loading="updateLoadingState"
-          />
-        </div>
-      </template>
-    </TextEditor>
+    <TextEditor
+      :page_content="page_content"
+      v-show="!showOriginal"
+    ></TextEditor>
 
     <div
       class="original-content content has-default-header-styles"
       v-show="showOriginal"
       v-html="sanitizedOriginalContent"
     ></div>
+
+    <VerifyAndSubmit
+      :validateForm="validateForm"
+      @submit="submitChanges"
+      @loading="updateLoadingState"
+    />
   </div>
 </template>
 
 <script>
 import Noty from "noty";
+import { mapState } from "vuex";
 import Loading from "vue-loading-overlay";
 import "vue-loading-overlay/dist/vue-loading.css";
 import VerifyAndSubmit from "../lib/VerifyAndSubmit.vue";
@@ -183,13 +183,16 @@ export default {
   created() {
     this.sanitizedOriginalContent = sanitize(this.page_content);
   },
+  computed: {
+    ...mapState("pageEditor", ["editor"])
+  },
   methods: {
-    submitChanges({ email, otp, otpRequestId }, updatedContent) {
+    submitChanges({ email, otp, otpRequestId }) {
       let formValid = this.validateForm();
       if (!formValid) {
         return;
       }
-      const submission = this.collectSubmission(updatedContent);
+      const submission = this.collectSubmission(this.editor.getHTML());
       this.isLoading = true;
       apiClient
         .post("/submit-article-changes", {

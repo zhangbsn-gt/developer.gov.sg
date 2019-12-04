@@ -71,23 +71,19 @@
     </div>
 
     <label class="label">Page Content</label>
-    <TextEditor>
-      <template v-slot:editor-footer="{ editor }">
-        <div class="article-editor-footer">
-          <VerifyAndSubmit
-            :validateForm="validateForm"
-            @submit="submitChanges($event, editor.getHTML())"
-            @loading="updateLoadingState"
-          />
-        </div>
-      </template>
-    </TextEditor>
+    <TextEditor></TextEditor>
+    <VerifyAndSubmit
+      :validateForm="validateForm"
+      @submit="submitChanges"
+      @loading="updateLoadingState"
+    />
   </form>
 </template>
 
 <script>
 import Noty from "noty";
 import Loading from "vue-loading-overlay";
+import { mapState } from "vuex";
 import "vue-loading-overlay/dist/vue-loading.css";
 import {
   urlRegex,
@@ -133,6 +129,9 @@ export default {
       }
     };
   },
+  computed: {
+    ...mapState("pageEditor", ["editor"])
+  },
   methods: {
     validateForm() {
       let errors = detectFormErrors({
@@ -141,11 +140,12 @@ export default {
       Object.assign(this.errors, errors);
       return !hasErrors(errors);
     },
-    submitChanges({ email, otp, otpRequestId }, pageContent) {
+    submitChanges({ email, otp, otpRequestId }) {
       let formValid = this.validateForm();
       if (!formValid) {
         return;
       }
+      let pageContent = this.editor.getHTML();
       this.isLoading = true;
 
       apiClient

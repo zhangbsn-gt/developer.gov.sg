@@ -217,7 +217,7 @@ export default {
     ...mapState("pageEditor", ["editor"])
   },
   methods: {
-    ...mapActions("pageEditor", ["setEditorContent"]),
+    ...mapActions("pageEditor", ["setEditorContent", "destroyEditor"]),
     showLinkMenu(attrs) {
       this.linkUrl = attrs.href;
       this.linkMenuIsActive = true;
@@ -246,10 +246,16 @@ export default {
     }
   },
   beforeDestroy() {
-    this.editor.destroy();
+    this.destroyEditor();
   }
 };
 </script>
+
+<style>
+.ProseMirror {
+  margin: 1rem 0;
+}
+</style>
 
 <style scoped>
 .editor {

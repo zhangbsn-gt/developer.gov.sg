@@ -47,17 +47,27 @@ const pageEditor = {
         new Underline(),
         new History(),
         new Image()
-      ]
+      ],
+      content: `
+      <h2>Compose page</h2>
+      <p>You can compose <em>rich</em> <strong>content</strong> here.</p>
+      <blockquote><p>Use the menu bar above to customise the look of your page!</p></blockquote>`
     })
   },
   mutations: {
     setContent({ editor }, content) {
       editor.setContent(content);
+    },
+    destroyEditor({ editor }) {
+      editor.destroy();
     }
   },
   actions: {
     setEditorContent({ commit }, content) {
       commit("setContent", content);
+    },
+    destroyEditor({ commit }) {
+      commit("destroyEditor");
     }
   },
   getters: {}
