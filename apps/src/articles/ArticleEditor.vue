@@ -1,5 +1,5 @@
 <template>
-  <div class="vld-parent">
+  <form class="vld-parent">
     <Loading :active.sync="isLoading" :is-full-page="false"></Loading>
 
     <div class="field">
@@ -109,7 +109,7 @@
       @submit="submitChanges"
       @loading="updateLoadingState"
     />
-  </div>
+  </form>
 </template>
 
 <script>
