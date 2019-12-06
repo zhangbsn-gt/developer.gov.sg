@@ -6,7 +6,7 @@
       class="sgds-button is-primary dropdown-button"
       type="button"
       @click="showPageEditor = !showPageEditor"
-      :class="{active: showPageEditor}"
+      :class="{ active: showPageEditor }"
     >
       Page content
       <i class="material-icons" v-if="showPageEditor">
@@ -51,7 +51,7 @@
       class="sgds-button is-primary dropdown-button"
       type="button"
       @click="showPageFields = !showPageFields"
-      :class="{active: showPageFields}"
+      :class="{ active: showPageFields }"
       style="margin-top: 4rem"
     >
       Page details
@@ -242,7 +242,17 @@ export default {
     };
   },
   computed: {
-    ...mapState("pageEditor", ["editor"])
+    ...mapState("pageEditor", ["editor"]),
+    apiPath() {
+      let path;
+      if (this.editorType === "edit") {
+        path = "/submit-article-changes";
+      }
+      if (this.editorType === "add") {
+        path = "/request-new-page";
+      }
+      return path;
+    }
   },
   methods: {
     validateForm() {
@@ -260,16 +270,8 @@ export default {
       const submission = this.collectSubmission(this.editor.getHTML());
       this.isLoading = true;
 
-      let apiPath;
-      if (this.editorType === "edit") {
-        apiPath = "/submit-article-changes";
-      }
-      if (this.editorType === "add") {
-        apiPath = "/request-new-page";
-      }
-
       apiClient
-        .post("/request-new-page", {
+        .post(this.apiPath, {
           ...submission,
           email,
           otp,
