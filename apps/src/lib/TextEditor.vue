@@ -284,11 +284,11 @@ export default {
 }
 .menubar__button:hover {
   cursor: pointer;
-  background: #e7e7e7;
+  background: #efefef;
 }
 .menubar__button.is-active {
   color: #1379ff;
-  background-color: #e7e7e7;
+  background-color: #efefef;
   font-weight: bolder;
 }
 
@@ -331,7 +331,7 @@ export default {
 }
 
 .editor__content {
-  border: 1px solid #e6e6e6;
+  border: 1px solid #e3e3e3;
 }
 .editor__content img {
   display: block;

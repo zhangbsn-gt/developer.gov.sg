@@ -3,13 +3,17 @@
     <Loading :active.sync="isLoading" :is-full-page="false"></Loading>
 
     <button
-      class="sgds-button is-dark dropdown-button"
+      class="sgds-button is-primary dropdown-button"
       type="button"
       @click="showPageEditor = !showPageEditor"
+      :class="{active: showPageEditor}"
     >
       Page content
-      <i class="material-icons">
+      <i class="material-icons" v-if="showPageEditor">
         expand_less
+      </i>
+      <i class="material-icons" v-else>
+        expand_more
       </i>
     </button>
 
@@ -44,13 +48,18 @@
     </div>
 
     <button
-      class="sgds-button is-dark dropdown-button"
+      class="sgds-button is-primary dropdown-button"
       type="button"
       @click="showPageFields = !showPageFields"
+      :class="{active: showPageFields}"
+      style="margin-top: 4rem"
     >
       Page details
-      <i class="material-icons">
+      <i class="material-icons" v-if="showPageFields">
         expand_less
+      </i>
+      <i class="material-icons" v-else>
+        expand_more
       </i>
     </button>
     <div class="meta-fields" v-show="showPageFields">
@@ -147,6 +156,7 @@
       :validateForm="validateForm"
       @submit="submitChanges"
       @loading="updateLoadingState"
+      style="margin-top: 4rem"
     />
   </form>
 </template>
@@ -330,6 +340,10 @@ export default {
   cursor: pointer;
 }
 
+.sgds-tabs li.is-active {
+  background-color: #efefef;
+}
+
 .original-content {
   border: 1px solid #ccc;
   overflow-y: auto;
@@ -344,8 +358,8 @@ export default {
 
 .dropdown-button {
   width: 100%;
+  justify-content: space-between;
   align-items: center;
-  margin-top: 1rem;
 }
 
 .meta-fields {
