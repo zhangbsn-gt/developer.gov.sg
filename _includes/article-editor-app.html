@@ -4,7 +4,7 @@
     {% assign currentCollection = site.collections | where: "label", collection | first %}
     {% assign category_array = currentCollection.docs | map: "category" | uniq | jsonify %}
 {% endif %}
-<div class="has-background-light padding margin--top--lg" style="display: flex; justify-content: flex-end">
+<div class="has-background-light padding margin--top--lg">
     <div
         id="article-editor-app"
         data-title="{{ page.title }}"
@@ -12,6 +12,7 @@
         data-category="{{ page.category }}"
         data-description="{{ page.description }}"
         data-url="{{ page.url }}"
+        data-path="{{ page.path }}"
         data-collection="{{ page.collection }}"
         data-categories='{{ category_array }}'
         data-content="{{ content | xml_escape }}"
