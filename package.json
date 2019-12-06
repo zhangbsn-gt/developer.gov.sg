@@ -14,7 +14,7 @@
         "dev:jekyll": "$HOME/.rbenv/shims/bundle exec jekyll serve",
         "dev:netlify": "NODE_ENV=development netlify dev",
         "dev:static": "webpack --watch",
-        "test:site": "mocha --require @babel/register --recursive ./apps/src/tests/**/*.js"
+        "test:site": "NODE_ENV=production mocha --require @babel/register --recursive ./apps/src/tests/**/*.js"
     },
     "devDependencies": {
         "@babel/core": "^7.5.5",
