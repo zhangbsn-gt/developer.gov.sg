@@ -13,7 +13,7 @@
         </p>
       </div>
 
-      <Modal :showModal="showAddPageForm">
+      <Modal v-if="showAddPageForm">
         <template v-slot:header>
           <button
             class="sgds-button is-rounded"
@@ -23,9 +23,10 @@
             <span class="sgds-icon sgds-icon-cross"></span>
           </button>
         </template>
-        <AddPageForm
-          :collection="collection"
-          :categories="categoryList"
+        <ArticleEditor
+          editorType="add"
+          :page_collection="collection"
+          :page_categories="categoryList"
           @close="showAddPageForm = false"
         />
       </Modal>
@@ -34,7 +35,7 @@
 </template>
 
 <script>
-import AddPageForm from "./AddPageForm.vue";
+import ArticleEditor from "../lib/ArticleEditor.vue";
 import Modal from "../lib/Modal.vue";
 export default {
   props: {
@@ -47,16 +48,12 @@ export default {
       required: true
     }
   },
-  components: { AddPageForm, Modal },
+  components: { ArticleEditor, Modal },
   data() {
     return {
-      showAddPageForm: false
+      showAddPageForm: false,
+      categoryList: JSON.parse(this.categories).filter(category => category)
     };
-  },
-  computed: {
-    categoryList() {
-      return JSON.parse(this.categories).filter(category => category);
-    }
   }
 };
 </script>

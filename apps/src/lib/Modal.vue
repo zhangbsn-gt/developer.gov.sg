@@ -1,6 +1,6 @@
 <template>
   <transition name="modal">
-    <div class="modal" v-if="showModal">
+    <div class="modal">
       <div class="sgds-container modal-wrapper">
         <div class="modal-header">
           <slot name="header"></slot>
@@ -12,17 +12,6 @@
     </div>
   </transition>
 </template>
-
-<script>
-export default {
-  props: {
-    showModal: {
-      type: Boolean,
-      required: true
-    }
-  }
-};
-</script>
 
 <style scoped>
 .modal {

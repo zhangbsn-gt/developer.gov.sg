@@ -187,7 +187,6 @@
       </div>
     </editor-menu-bubble>
     <editor-content class="editor__content" :editor="editor" />
-    <slot v-bind:editor="editor" name="editor-footer"></slot>
   </div>
 </template>
 
@@ -203,7 +202,7 @@ export default {
     EditorMenuBubble
   },
   props: {
-    page_content: {
+    initialContent: {
       type: String
     }
   },
@@ -217,7 +216,7 @@ export default {
     ...mapState("pageEditor", ["editor"])
   },
   methods: {
-    ...mapActions("pageEditor", ["setEditorContent", "destroyEditor"]),
+    ...mapActions("pageEditor", ["initializeEditor", "destroyEditor"]),
     showLinkMenu(attrs) {
       this.linkUrl = attrs.href;
       this.linkMenuIsActive = true;
@@ -241,9 +240,7 @@ export default {
     }
   },
   created() {
-    if (this.page_content && this.page_content.length > 0) {
-      this.setEditorContent(this.page_content);
-    }
+    this.initializeEditor(this.initialContent);
   },
   beforeDestroy() {
     this.destroyEditor();

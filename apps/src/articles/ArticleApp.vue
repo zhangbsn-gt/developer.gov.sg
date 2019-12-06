@@ -1,13 +1,20 @@
 <template>
   <div id="article-editor-app">
-    <a class="sgds-button is-rounded is-small" @click="showEditorModal = true">Edit This Page</a>
-    <Modal :showModal="showEditorModal">
+    <a class="sgds-button is-rounded is-small" @click="showEditorModal = true"
+      >Edit This Page</a
+    >
+    <Modal v-if="showEditorModal">
       <template v-slot:header>
-        <button class="sgds-button is-rounded" type="button" @click="showEditorModal = false">
+        <button
+          class="sgds-button is-rounded"
+          type="button"
+          @click="showEditorModal = false"
+        >
           <span class="sgds-icon sgds-icon-cross"></span>
         </button>
       </template>
       <ArticleEditor
+        editorType="edit"
         :page_title="title"
         :page_layout="layout"
         :page_category="category"
@@ -15,14 +22,19 @@
         :page_path="url"
         :page_content="content"
         :page_collection="collection"
-        :page_categories="categories ? JSON.parse(this.categories).filter(category => category) : null"
+        :page_categories="
+          categories
+            ? JSON.parse(this.categories).filter(category => category)
+            : null
+        "
+        @close="showEditorModal = false"
       />
     </Modal>
   </div>
 </template>
 
 <script>
-import ArticleEditor from "./ArticleEditor.vue";
+import ArticleEditor from "../lib/ArticleEditor.vue";
 import Modal from "../lib/Modal.vue";
 
 export default {
@@ -70,34 +82,6 @@ export default {
       page_content: null,
       showEditorModal: false
     };
-  },
-  methods: {
-    openEditor() {
-      this.showEditorModal = true;
-      //   this.$modal.show(
-      //     ArticleEditor,
-      //     {
-      //       page_title: this.title,
-      //       page_layout: this.layout,
-      //       page_category: this.category,
-      //       page_description: this.description,
-      //       page_path: this.url,
-      //       page_content: this.content,
-      //       page_collection: this.collection,
-      //       page_categories: this.categories
-      //         ? JSON.parse(this.categories).filter(category => category) // Non-null
-      //         : null
-      //     },
-      //     {
-      //       clickToClose: false,
-      //       width: "90%",
-      //       height: "auto",
-      //       minWidth: 250,
-      //       minHeight: 400,
-      //       scrollable: true
-      //     }
-      //   );
-    }
   }
 };
 </script>
