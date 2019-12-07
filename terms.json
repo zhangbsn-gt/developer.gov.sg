@@ -5,7 +5,7 @@
         "full_term": "Apex API Exchange",
         "description": "Apex is a self-service API platform that acts as a centralised and secure API gateway for the Government. On Apex, users can easily publish, secure, monitor, and discovery APIs.",
         "links": [
-            "https://www.developer.gov.sg/products/apex.html"
+            "https://www.developer.gov.sg/technologies/apex.html"
         ],
         "tags": [
             "api",
@@ -74,7 +74,7 @@
         "full_term": "Government IT Security Incident Response",
         "description": "GITSIR helps the Government respond to cybersecurity threats. It performs incident investigations and coordinates responses with relevant parties during security incidents",
         "links": [
-            "https://www.developer.gov.sg/products/gitsir"
+            "https://www.developer.gov.sg/technologies/gitsir"
         ],
         "tags": [
             "security"
@@ -86,7 +86,7 @@
         "full_term": "Hive Agile Testing Solution",
         "description": "Hive Agile Testing Solutions (HATS) is a functional test automation tool for web and mobile applications",
         "links": [
-            "https://www.developer.gov.sg/products/hats"
+            "https://www.developer.gov.sg/technologies/hats"
         ],
         "tags": [
             "devops",
@@ -159,7 +159,7 @@
         "full_term": "Secure Hybrid Integration Pipeline",
         "description": "SHIP offers a continuous integration and continuous deployment (CI/CD) platform that automates the delivery of applications and simplifies policy clearance",
         "links": [
-            "https://www.developer.gov.sg/products/ship"
+            "https://www.developer.gov.sg/technologies/ship"
         ],
         "tags": [
             "devops",

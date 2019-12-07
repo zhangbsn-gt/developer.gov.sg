@@ -31,7 +31,7 @@ collections:
     output: yes
   chapters:
     output: yes
-  products:
+  technologies:
     output: yes
   guidelines:
     output: yes
