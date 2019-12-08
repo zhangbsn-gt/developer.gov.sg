@@ -4,7 +4,7 @@ import config from "./config";
 
 export const emailRegex =
   config.nodeEnv === "production"
-    ? /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[\w.]*gov\.sg$/
+    ? /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@(\w+.)*gov\.sg$/
     : /.*/;
 
 export const urlRegex = /^https?:\/\/[^\s/$.?#].[^\s]*$/;

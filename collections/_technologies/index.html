@@ -1,19 +1,20 @@
 ---
-title: Products
+title: Technologies
 layout: layout-page
 ---
 
 <h2>
-  Products and services to help you build digital services for the Government quickly and securely.
+  Products and services to help you build digital services for the Government 
+  quickly and securely.
 </h2>
 
-{% assign category_array = site.products | map: "category" | uniq | jsonify %}
-{% include add-pages-app.html collection='products' categories=category_array %}
+{% assign category_array = site.technologies | map: "category" | uniq | jsonify %}
+{% include add-pages-app.html collection='technologies' categories=category_array %}
 
 <div class="sgds-section">
   <div class="sgds-container">
     <div class="content">
-      {% assign categories = site.products | sort: "category" | group_by: "category" %}
+      {% assign categories = site.technologies | sort: "category" | group_by: "category" %}
       {% for category in categories %}
         {% if category.name != '' %}
           <div class="row">

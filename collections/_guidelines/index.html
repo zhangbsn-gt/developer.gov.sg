@@ -4,35 +4,35 @@ layout: layout-page
 ---
 
 <h2>
-    Read about the best practices, standards and conventions learned by
-    Singapore Government development teams from building digital services
+  Read about the best practices, standards and conventions learned by Singapore
+  Government development teams from building digital services
 </h2>
 
-{% assign category_array =  site.guidelines | map: "category" | uniq | jsonify %}
-{% include add-pages-app.html collection='guidelines' categories=category_array %}
+{% assign category_array = site.guidelines | map: "category" | uniq | jsonify %}
+{% include add-pages-app.html collection='guidelines' categories=category_array%}
 
 <section class="sgds-section">
-    <div class="sgds-container">
-        <div class="content">
-        {% assign categories = site.guidelines | sort: "category" | group_by: "category" %}
-        {% for category in categories %}
-            {% if category.name != '' %}
-                <div class="row">
-                    <div class="col">
-                        <h3 class="has-text-weight-black">{{ category.name }}</h3>
-                    </div>
-                </div>
-                {% assign items = category.items | sort: "order" %}
-                <div class="row is-multiline is-padding-large">
-                    {% for item in items %}
-                    <div class="col is-4">
-                        <h4><a href="{{ item.url }}">{{ item.title }}</a></h4>
-                        <p class="is-size-8">{{ item.description }}</p>
-                        </div>
-                    {% endfor %}
-                </div>{% unless forloop.last %}<hr class="margin--top margin--bottom--lg">{% endunless %}
-            {% endif %}
-        {% endfor %}
+  <div class="sgds-container">
+    <div class="content">
+      {% assign categories = site.guidelines | sort: "category" | group_by: "category" %} 
+      {% for category in categories %} {% if category.name != '' %}
+      <div class="row">
+        <div class="col">
+          <h3 class="has-text-weight-black">{{ category.name }}</h3>
         </div>
+      </div>
+      {% assign items = category.items | sort: "order" %}
+      <div class="row is-multiline is-padding-large">
+        {% for item in items %}
+        <div class="col is-4">
+          <h4><a href="{{ item.url }}">{{ item.title }}</a></h4>
+          <p class="is-size-8">{{ item.description }}</p>
+        </div>
+        {% endfor %}
+      </div>
+      {% unless forloop.last %}
+      <hr class="margin--top margin--bottom--lg" />
+      {% endunless %} {% endif %} {% endfor %}
     </div>
+  </div>
 </section>
