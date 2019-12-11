@@ -1,0 +1,27 @@
+- name: Standards & Best Practices
+  description: Learn and understand the fundamentals of any digital government website.   
+  imagePath: /assets/img/guidelines_categories/cards-images-trophy.png
+  
+- name: Agile in the Government
+  description: Learn about Agile Development in the Government.
+  imagePath: /assets/img/guidelines_categories/cards-images-rocket.png
+
+- name: Problem Conceptualisation
+  description: Problem identification & stakeholder collaboration.
+  imagePath: /assets/img/guidelines_categories/cards-images-abstract.png
+
+- name: Product Planning
+  description: Identify technical complexity and scope of the solution space.
+  imagePath: /assets/img/guidelines_categories/cards-images-pages.png
+
+- name: Development & Iteration
+  description: Incrementally deliver high quality software while meeting changing needs.
+  imagePath: /assets/img/guidelines_categories/cards-images-trolley.png
+
+- name: Release & Production
+  description: Maintain development speed and system reliability while keeping the solution in line with user needs.
+  imagePath: /assets/img/guidelines_categories/cards-images-giftbox.png
+
+- name: Retirement
+  description: Ensure minimal impact to business operations when terminating your product.
+  imagePath: /assets/img/guidelines_categories/cards-images-graduation.png
