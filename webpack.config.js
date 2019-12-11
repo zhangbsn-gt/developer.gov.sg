@@ -46,12 +46,17 @@ module.exports = {
         test: /\.(png|jpe?g|gif|svg|eot|ttf|woff|woff2)$/,
         loader: "url-loader",
         options: {
-          limit: 8192
+          limit: 8192,
+          fallback: "file-loader"
         }
       },
       {
         test: /\.vue$/,
         use: "vue-loader"
+      },
+      {
+        test: /\.md$/,
+        use: ["html-loader", "markdown-loader"]
       }
     ]
   },

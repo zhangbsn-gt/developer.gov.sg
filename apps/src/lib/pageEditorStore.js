@@ -21,6 +21,7 @@ import {
   History,
   Image
 } from "tiptap-extensions";
+import initialContent from "./contributionTemplate.md";
 
 Vue.use(Vuex);
 
@@ -45,9 +46,9 @@ const extensions = [
   new Image()
 ];
 
-const initialContent = `<h2>Compose page</h2>
-<p>You can compose <em>rich</em> <strong>content</strong> here.</p>
-<blockquote><p>Use the menu bar above to customise the look of your page!</p></blockquote>`;
+// const initialContent = `<h2>Compose page</h2>
+// <p>You can compose <em>rich</em> <strong>content</strong> here.</p>
+// <blockquote><p>Use the menu bar above to customise the look of your page!</p></blockquote>`;
 
 const pageEditor = {
   namespaced: true,
