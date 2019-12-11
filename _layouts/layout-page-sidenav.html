@@ -23,12 +23,12 @@ layout: layout-default
                                         {%- if page.url contains categorySlug -%} 
                                         {%- assign class='is-active' -%}
                                         {%- endif -%}
-                                        <a class="second-level-nav-header has-text-weight-bold {{ class }}">
+                                        <a class="second-level-nav-header has-text-weight-bold {{ class }} is-capitalized">
                                             {{ category.name | capitalize }}
-                                            <i class="sgds-icon sgds-icon-chevron-up" aria-hidden="true"></i>
+                                            <i class="sgds-icon sgds-icon-chevron-down" aria-hidden="true"></i>
                                         </a>
                                     </li>
-                                    <ul class="second-level-nav-div">
+                                    <ul class="second-level-nav-div is-hidden">
                                         {%- assign items = category.items | sort: "order" -%}
                                         {%- for item in items -%}
                                             {%- assign class = nil -%}

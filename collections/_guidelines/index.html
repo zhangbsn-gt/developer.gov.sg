@@ -1,38 +1,55 @@
 ---
 title: Guidelines
-layout: layout-page
+layout: layout-page-sidenav
 ---
 
-<h2>
-  Read about the best practices, standards and conventions learned by Singapore
-  Government development teams from building digital services
-</h2>
-
-{% assign category_array = site.guidelines | map: "category" | uniq | jsonify %}
-{% include add-pages-app.html collection='guidelines' categories=category_array%}
-
-<section class="sgds-section">
+<section class="sgds-section" style="padding-top: 0;">
   <div class="sgds-container">
     <div class="content">
-      {% assign categories = site.guidelines | sort: "category" | group_by: "category" %} 
-      {% for category in categories %} {% if category.name != '' %}
       <div class="row">
         <div class="col">
-          <h3 class="has-text-weight-black">{{ category.name }}</h3>
+          <h2>
+            Overview
+          </h2>
+          <p>
+            Read about the guidelines that help to streamline Government digital processes.
+          </p>
+          <hr>
+          <h2>
+            List of Guidelines
+          </h2>
         </div>
       </div>
-      {% assign items = category.items | sort: "order" %}
-      <div class="row is-multiline is-padding-large">
-        {% for item in items %}
-        <div class="col is-4">
-          <h4><a href="{{ item.url }}">{{ item.title }}</a></h4>
-          <p class="is-size-8">{{ item.description }}</p>
+      <div class="row">
+        <div class="col">
+          {% for guideline in site.data.guidelines %}
+          {% assign categories = site.guidelines | sort: "category" | group_by: "category" %}
+          {% for category in categories %} {% if category.name == guideline.name %}
+          {% assign items = category.items | sort: "order"%}
+          <h4>
+            <b>{{ guideline.name }}</b>
+          </h4>
+          <p>{{ guideline.description }}</p>
+          <ul>
+            {% for item in items %}
+            <li>
+              <p><a href="{{ item.url }}">{{ item.title }}</a></b></p>
+              <!-- <p>{{ item.description }}</p> -->
+            </li>
+            {% endfor %}
+          </ul>
+          {% endif %} {% endfor %}
+          <hr>
+          {% endfor %}
         </div>
-        {% endfor %}
       </div>
-      {% unless forloop.last %}
-      <hr class="margin--top margin--bottom--lg" />
-      {% endunless %} {% endif %} {% endfor %}
     </div>
   </div>
+</section>
+
+<hr>
+
+<section class="padding--bottom--xl">
+  {% assign category_array = site.guidelines | map: "category" | uniq | jsonify %}
+  {% include add-pages-app.html collection='guidelines' categories=category_array%}
 </section>
