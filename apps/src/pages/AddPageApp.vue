@@ -3,16 +3,18 @@
     <div class="row margin--top is-multiline background-light">
       <div class="col is-12">
         <h5 class="has-text-weight-semibold description">
-          Don’t see what you’re looking for?
+          Have something to contribute?
         </h5>
         <p>
-          As much as we try to be informative, we’re always looking for ways to
-          improve the Developer Portal. If you’re interested in contributing or
-          improving the site let us know how!
+          Submit your content below, or
+          <a href="https://form.gov.sg/5df99bf67459d7001233d0b8"
+            >let us know your suggestions</a
+          >.
         </p>
         <button
           class="sgds-button is-secondary has-text-weight-semibold"
-          v-on:click="showAddPageForm = !showAddPageForm">
+          v-on:click="showAddPageForm = !showAddPageForm"
+        >
           Contribute new {{ this.collection.toLowerCase() }}
         </button>
       </div>
