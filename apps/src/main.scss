@@ -152,3 +152,11 @@ body {
 .row.is-padding-large .col {
   padding: 1.5rem;
 }
+
+a.external-link::after {
+  display: inline-block;
+  font-family: sgds-icons;
+  content: "\e95c";
+  padding-left: 0.25rem;
+  font-weight: 400;
+}

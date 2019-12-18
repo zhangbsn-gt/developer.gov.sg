@@ -2,15 +2,19 @@
   <div>
     <div class="row margin--top is-multiline background-light">
       <div class="col is-12">
-        <p class="has-text-weight-semibold description">
-          Help everyone discover what the Singapore Government offers.
-          <button
-            class="sgds-button is-secondary has-text-weight-semibold"
-            v-on:click="showAddPageForm = !showAddPageForm"
-          >
-            Suggest new {{ this.collection.toLowerCase() }}
-          </button>
+        <h5 class="has-text-weight-semibold description">
+          Don’t see what you’re looking for?
+        </h5>
+        <p>
+          As much as we try to be informative, we’re always looking for ways to
+          improve the Developer Portal. If you’re interested in contributing or
+          improving the site let us know how!
         </p>
+        <button
+          class="sgds-button is-secondary has-text-weight-semibold"
+          v-on:click="showAddPageForm = !showAddPageForm">
+          Contribute new {{ this.collection.toLowerCase() }}
+        </button>
       </div>
 
       <Modal v-if="showAddPageForm">

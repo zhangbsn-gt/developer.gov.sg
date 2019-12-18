@@ -1,0 +1,20 @@
+- name: Standards & Best Practices
+  description: Learn and understand the fundamentals of any digital government website.
+
+- name: Agile in the Government
+  description: Learn about Agile Development in the Government.
+
+- name: Problem Conceptualisation
+  description: Problem identification & stakeholder collaboration.
+
+- name: Product Planning
+  description: Identify technical complexity and scope of the solution space.
+
+- name: Development & Iteration
+  description: Incrementally deliver high quality software while meeting changing needs.
+
+- name: Release & Production
+  description: Maintain development speed and system reliability while keeping the solution in line with user needs.
+
+- name: Retirement
+  description: Ensure minimal impact to business operations when terminating your product.

@@ -8,9 +8,6 @@ layout: layout-page
   quickly and securely.
 </h2>
 
-{% assign category_array = site.technologies | map: "category" | uniq | jsonify %}
-{% include add-pages-app.html collection='technologies' categories=category_array %}
-
 <div class="sgds-section">
   <div class="sgds-container">
     <div class="content">
@@ -35,4 +32,10 @@ layout: layout-page
       {% endfor %}
     </div>
   </div>
+</div>
+
+<div class="padding--bottom--xl">
+  <hr>
+    {% assign category_array = site.technologies | map: "category" | uniq | jsonify %}
+    {% include add-pages-app.html collection='technologies' categories=category_array %}
 </div>
