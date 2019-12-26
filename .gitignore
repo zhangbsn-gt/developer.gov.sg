@@ -2,11 +2,12 @@ _site
 .sass-cache
 .idea
 .vscode
+.jekyll-cache
+.netlify
+.env
 node_modules
 functions
 assets/bundles
 assets/**/*.bundle.js
-.netlify
 scripts
 *.log
-.env

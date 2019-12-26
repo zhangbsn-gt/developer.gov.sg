@@ -8,7 +8,6 @@ url: "https://www.developer.gov.sg"
 logo: /assets/img/logo_developer.gov.sg.png
 
 plugins:
-  - jekyll-assets
   - jekyll-seo-tag
 
 exclude:
