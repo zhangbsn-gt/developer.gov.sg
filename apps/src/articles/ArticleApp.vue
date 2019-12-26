@@ -6,12 +6,6 @@
     >
       Edit on this Page
     </button>
-    <a
-      :href="
-        `https://github.com/govtechsg/developer.gov.sg/blob/master/collections/${this.path}`
-      "
-      >Edit on GitHub</a
-    >
     <Modal v-if="showEditorModal">
       <template v-slot:header>
         <button
