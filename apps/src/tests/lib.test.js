@@ -24,7 +24,7 @@ describe("lib tests", function() {
     it("does not allow abc@.gov.sg", function() {
       assert.strictEqual("abc@.gov.sg".search(emailRegex), -1);
     });
-    it("does not allow abc@.gov.sg", function() {
+    it("does not allow abc@1gov.sg", function() {
       assert.strictEqual("abc@1gov.sg".search(emailRegex), -1);
     });
     it("does not allow abc@def.123.sg", function() {
