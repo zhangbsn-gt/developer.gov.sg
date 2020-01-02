@@ -13,8 +13,8 @@
 - name: Development & Iteration
   description: Incrementally deliver high quality software while meeting changing needs.
 
-- name: Release & Production
-  description: Maintain development speed and system reliability while keeping the solution in line with user needs.
+# - name: Release & Production
+#   description: Maintain development speed and system reliability while keeping the solution in line with user needs.
 
 - name: Retirement
   description: Ensure minimal impact to business operations when terminating your product.
