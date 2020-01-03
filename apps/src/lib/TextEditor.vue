@@ -138,6 +138,46 @@
             redo
           </i>
         </button>
+
+        <button
+          class="menubar__button"
+          @click.prevent="
+            commands.createTable({
+              rowsCount: 3,
+              colsCount: 3,
+              withHeaderRow: false
+            })
+          "
+        >
+          <img :src="TableIcons.Table" alt="create-table" />
+        </button>
+        <div :style="{flexBasis: '100%', height: 0}"></div> <!-- flex break -->
+        <div class="table-controls" v-if="isActive.table()" >
+          <button class="menubar__button" @click.prevent="commands.deleteTable">
+            <img :src="TableIcons.DeleteTable" alt="" />
+          </button>
+          <button class="menubar__button" @click.prevent="commands.addColumnBefore">
+            <img :src="TableIcons.AddColBefore" alt="" />
+          </button>
+          <button class="menubar__button" @click.prevent="commands.addColumnAfter">
+            <img :src="TableIcons.AddColAfter" alt="" />
+          </button>
+          <button class="menubar__button" @click.prevent="commands.deleteColumn">
+            <img :src="TableIcons.DeleteCol" alt="" />
+          </button>
+          <button class="menubar__button" @click.prevent="commands.addRowBefore">
+            <img :src="TableIcons.AddRowBefore" alt="" />
+          </button>
+          <button class="menubar__button" @click.prevent="commands.addRowAfter">
+            <img :src="TableIcons.AddRowAfter" alt="" />
+          </button>
+          <button class="menubar__button" @click.prevent="commands.deleteRow">
+            <img :src="TableIcons.DeleteRow" alt="" />
+          </button>
+          <button class="menubar__button" @click.prevent="commands.toggleCellMerge">
+            <img :src="TableIcons.CombineCells" alt="" />
+          </button>
+        </div>
       </div>
     </editor-menu-bar>
     <editor-menu-bubble
@@ -193,6 +233,7 @@
 <script>
 import { EditorContent, EditorMenuBar, EditorMenuBubble } from "tiptap";
 import { mapState, mapActions } from "vuex";
+import TableIcons from "./TableIcons";
 
 export default {
   name: "text-editor",
@@ -209,7 +250,8 @@ export default {
   data() {
     return {
       linkUrl: null,
-      linkMenuIsActive: false
+      linkMenuIsActive: false,
+      TableIcons
     };
   },
   computed: {
@@ -252,6 +294,9 @@ export default {
 .ProseMirror {
   margin: 1rem 0;
 }
+.editor__content .tableWrapper table tbody tr td {
+  border-width: 1px;
+}
 </style>
 
 <style scoped>
@@ -265,20 +310,23 @@ export default {
   z-index: 50;
   padding: 1rem 0.5rem;
 
+  display: flex;
   flex-wrap: wrap;
   background-color: #fff;
   border: 1px solid #c3c3c3;
-
-  display: flex;
 }
 .menubar__button {
   background: #fff;
-  border: 1px solid #e3e3e3;
-  border-radius: 6px;
+  border: 1px solid #e3e3e300;
+  /* border-radius: 6px; */
   margin: 0 1px;
 
   display: flex;
   align-items: center;
+  min-width: 2.6rem;
+
+  display: flex;
+  justify-content: center;
 
   transition: all 0.2s;
 }
@@ -290,6 +338,11 @@ export default {
   color: #1379ff;
   background-color: #efefef;
   font-weight: bolder;
+}
+
+.table-controls {
+  display: flex;
+  margin-top: 1rem;
 }
 
 .menububble {
@@ -322,7 +375,7 @@ export default {
   color: #fff;
   padding: 0.2rem 0.5rem;
   margin-right: 0.2rem;
-  border-radius: 3px;
+  /* border-radius: 3px; */
   cursor: pointer;
 }
 .menububble__button:active {

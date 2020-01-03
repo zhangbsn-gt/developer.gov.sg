@@ -19,7 +19,11 @@ import {
   Strike,
   Underline,
   History,
-  Image
+  Image,
+  Table,
+  TableHeader,
+  TableCell,
+  TableRow
 } from "tiptap-extensions";
 import initialContent from "./contributionTemplate.md";
 
@@ -43,12 +47,14 @@ const extensions = [
   new Strike(),
   new Underline(),
   new History(),
-  new Image()
+  new Image(),
+  new Table({
+    resizable: true
+  }),
+  new TableHeader(),
+  new TableCell(),
+  new TableRow()
 ];
-
-// const initialContent = `<h2>Compose page</h2>
-// <p>You can compose <em>rich</em> <strong>content</strong> here.</p>
-// <blockquote><p>Use the menu bar above to customise the look of your page!</p></blockquote>`;
 
 const pageEditor = {
   namespaced: true,
