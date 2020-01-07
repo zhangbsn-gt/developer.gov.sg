@@ -57,6 +57,14 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+.hero-sub {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    max-width: 83%;
+  }
+}
 
 .article img,
 .article iframe {
