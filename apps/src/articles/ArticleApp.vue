@@ -1,11 +1,15 @@
 <template>
   <div id="article-editor-app" class="article-editor-app">
     <button
-      class="sgds-button is-rounded is-small edit-button"
+      class="sgds-button is-rounded is-small"
       @click="showEditorModal = true"
     >
-      Edit on this Page
+      Edit this page
     </button>
+    <a
+      href="https://form.gov.sg/5e158a8b8967b800114d5a89"
+      >Give feedback for this page</a
+    >
     <Modal v-if="showEditorModal">
       <template v-slot:header>
         <button
@@ -95,7 +99,7 @@ export default {
 </script>
 
 <style scoped>
-.edit-button {
+.article-editor-app > button {
   margin-right: 1rem;
 }
 .article-editor-app {

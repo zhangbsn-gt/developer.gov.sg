@@ -168,3 +168,7 @@ a.external-link::after {
   padding-left: 0.25rem;
   font-weight: 400;
 }
+
+a:focus {
+  text-decoration: underline;
+}
