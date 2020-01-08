@@ -7,7 +7,7 @@
         </h5>
         <p>
           Submit your content below, or
-          <a href="https://form.gov.sg/5df99bf67459d7001233d0b8"
+          <a href="https://form.gov.sg/5e158a8b8967b800114d5a89"
             >let us know your suggestions</a
           >.
         </p>
