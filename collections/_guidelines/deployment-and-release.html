@@ -1,83 +1,97 @@
 ---
 title: Deployment and Release
-category: Development & Iteration
 layout: layout-editable-sidenav
-order: 4
+category: Development & Iteration
+description: Constantly improve the reliability and quality of your digital service through automation and continuous delivery
 ---
-
 <h2>Overview</h2>
-<p>
-  Software deployment is all of the activities that make a software system
-  available for use. The general deployment process consists of several
-  interrelated activities with possible transitions between them. These
-  activities can occur at the producer side or at the consumer side or both.
-</p>
+<p>Software deployment is all of the activities that make a software system
+    available for use. </p>
 <hr />
-<h3>Deployment Automation</h3>
-<p>
-  Deployment automation allows applications to be deployed across the various
-  environments used in the development process, as well as the final production
-  environments. This results in more efficient, reliable, and predictable
-  deployments. Solutions that automate your deployment processes improve the
-  productivity of both the Dev and Ops teams and enable them and the business to
-  develop faster, accomplish more, and ultimately build better software that is
-  deployed more frequently and functions more reliably for the end-user.
-</p>
+<h3>Continuous Integrations, Testings and Deployments</h3>
+<p>Deployment automation allows applications to be deployed across the various
+    environments used in the development process, as well as the final
+    production environments. This results in more efficient, reliable, and
+    predictable deployments. Solutions that automate your deployment processes
+    improve the productivity of both the Dev and Ops teams and enable them and
+    the business to develop faster, accomplish more, and ultimately build better
+    software that is deployed more frequently and functions more reliably for
+    the end-user.</p>
+<p>CI/T/D helps to achieve this by automating the process of creating new
+    builds, running tests and deploying them. It reduces the reliance on manual
+    testing and frees up the team to concentrate on other tasks. Over time,
+    CI/T/D can also highlight problematic areas and paint an overall picture of
+    quality and stability.</p>
+<p>The chosen CI/T/D system should be capable of linking together the source
+    control, build and testing tools employed by the team. A dashboard to
+    display build progress and test results is also highly desirable. Lastly,
+    the system should be configurable to target the desired deployment
+    environment(s).</p>
 <blockquote>
-  SHIP (Secure Hybrid Integrated Pipeline) is a product that provides services
-  of a build pipeline for the whole of government. It provides managed services
-  like Atlassian Bitbucket, Bamboo, Confluence, Jira to enable teams to build
-  applications rapidly without having to worry about hardware costs and
-  operations overheads of maintaining these services.
+    <p><a
+            href="https://www.developer.gov.sg/guidelines/identify-required-technologies.html">SHIP
+            (Secure Hybrid Integrated Pipeline)</a> is a product that provides
+        services of a build pipeline for the whole of government. It provides
+        managed services like Atlassian Bitbucket, Bamboo, Confluence, Jira to
+        enable teams to build applications rapidly without having to worry about
+        hardware costs and operations overheads of maintaining these services.
+    </p>
 </blockquote>
 <p>Benefits of Deployment Automation:</p>
 <ul>
-  <li><b>Repeatability –</b> Every deployment deploys the same</li>
-  <li><b>Fewer errors –</b> Removing manual steps reduces human error</li>
-  <li>
-    <b>Anyone can deploy –</b> eliminate bottlenecks by removing the need for
-    experts to do the work
-  </li>
-  <li>
-    <b>Work on what matters –</b> developers can spend time working on new
-    features, not on fixes for manual deployments
-  </li>
-  <li>
-    <b>Customer satisfaction –</b> frequent updates with new features addresses
-    customer needs sooner and keeps organizations competitive
-  </li>
-  <li>
-    <b>Lower costs –</b> fewer errors, fewer human hours needed for deployments
-    means lower costs
-  </li>
+    <li>
+        <p><strong>Repeatability –</strong> Every deployment deploys the same
+        </p>
+    </li>
+    <li>
+        <p><strong>Fewer errors –</strong> Removing manual steps reduces human
+            error</p>
+    </li>
+    <li>
+        <p><strong>Anyone can deploy –</strong> eliminate bottlenecks by
+            removing the need for experts to do the work</p>
+    </li>
+    <li>
+        <p><strong>Work on what matters –</strong> developers can spend time
+            working on new features, not on fixes for manual deployments</p>
+    </li>
+    <li>
+        <p><strong>Customer satisfaction –</strong> frequent updates with new
+            features addresses customer needs sooner and keeps organizations
+            competitive</p>
+    </li>
+    <li>
+        <p><strong>Lower costs –</strong> fewer errors, fewer human hours needed
+            for deployments means lower costs</p>
+    </li>
 </ul>
 <hr />
 <h3>Deployment Environment</h3>
-<p>
-  In software deployment, an environment is which a software component is
-  deployed and executed.
-</p>
+<p>In software deployment, an environment is which a software component is
+    deployed and executed.</p>
 <ul>
-  <li>
-    <b>Development Environment -</b> The development environment (dev) is the
-    environment in which changes to software are developed, most simply an
-    individual developer's workstation.
-  </li>
-  <li>
-    <b>Testing Environment -</b> The purpose of the test environment is to allow
-    human testers to exercise new and changed code via either automated checks
-    or non-automated techniques.
-  </li>
-  <li>
-    <b>Staging Environment -</b> A stage or staging environment is an
-    environment for testing that exactly resembles a production environment. It
-    seeks to mirror an actual production environment as closely as possible and
-    may connect to other production services and data, such as databases.
-  </li>
-  <li>
-    <b>Production Environment -</b> Deploying to production is the most
-    sensitive step; it may be done by deploying new code directly (overwriting
-    old code, so only one copy is present at a time), or by deploying a
-    configuration change.
-  </li>
+    <li>
+        <p><strong>Development Environment -</strong> The development
+            environment (dev) is the environment in which changes to software
+            are developed, most simply an individual developer's workstation.
+        </p>
+    </li>
+    <li>
+        <p><strong>Testing Environment -</strong> The purpose of the test
+            environment is to allow human testers to exercise new and changed
+            code via either automated checks or non-automated techniques.</p>
+    </li>
+    <li>
+        <p><strong>Staging Environment -</strong> A stage or staging environment
+            is an environment for testing that exactly resembles a production
+            environment. It seeks to mirror an actual production environment as
+            closely as possible and may connect to other production services and
+            data, such as databases.</p>
+    </li>
+    <li>
+        <p><strong>Production Environment -</strong> Deploying to production is
+            the most sensitive step; it may be done by deploying new code
+            directly (overwriting old code, so only one copy is present at a
+            time), or by deploying a configuration change.</p>
+    </li>
 </ul>
