@@ -1,0 +1,47 @@
+- name: Analytics
+  items:
+    - WOGAA
+- name: Blockchain
+  items:
+    - OpenCerts
+- name: Content Management
+  items:
+    - Content Website Platform
+    - Isomer
+- name: Data and APIs
+  items:
+    - Apex
+    - data.gov.sg
+    - IRAS API Marketplace
+    - Land Transport Data Mall
+    - MAS APIs
+    - OneMap APIs
+    - SingStat APIs
+    - Tourism Information and Services Hub APIs
+    - URA APIs
+- name: Design
+  items:
+    - Singapore Government Design System
+- name: DevOps
+  items:
+    - Ship
+    - Hats
+- name: Digital Identity
+  items:
+    - National Digital Identity
+    - MyInfo
+    - SG Authorise
+    - SG Face
+    - SG Login
+    - SG Sign
+    - SG Verify
+- name: Documentation
+  items:
+    - OpenDoc
+- name: Infrastructure and Hosting
+  items: 
+    - Government Commercial Cloud
+    - Nectar
+- name: Sensors and IOT
+  items:
+    - SIOT Tech Stack
