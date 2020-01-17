@@ -1,5 +1,5 @@
-{% assign list_type = include.list_type %}
-{% assign category = site.data[list_type] | where: "name", page.title %}
+{% assign listType = include.listType %}
+{% assign category = site.data[listType] | where: "name", page.title %}
 <ul>
   {% for item in category[0].items %}
     <li><a href="{{ item | slugify }}">{{ item }}</a></li>
