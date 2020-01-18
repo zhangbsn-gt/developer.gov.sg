@@ -4,35 +4,27 @@ layout: layout-page
 ---
 
 <h2>
-  Best practices, standards and conventions development teams observe when building digital services
+  Guidelines and principles for working with digital projects
 </h2>
 
-<div class="sgds-section">
-  <div class="sgds-container">
-    {% for guideline in site.data.guidelines %}
-    {% assign categories = site.guidelines | sort: "category" | group_by: "category" %}
-    {% for category in categories %}
-      {% if category.name == guideline.name %}
-      {% assign items = category.items | sort: "order"%}
-      <h3>
-        <b>{{ guideline.name }}</b>
+<div class="row is-multiline">
+  {% for category in site.data.guidelines %}
+  <div class="col is-4 padding--lg">
+    <a href="{{ category.name | slugify }}">
+      {% assign guideline_count = category.items | size %}
+      <h3 style="margin-bottom: 0">
+        {{ category.name }}
       </h3>
-      <p>{{ guideline.description }}</p>
-      <ul>
-        {% for item in items %}
-        <li>
-          <p><a href="{{ item.url }}">{{ item.title }}</a></b></p>
-        </li>
-        {% endfor %}
-      </ul>
-      {% endif %}
-    {% endfor %}
-    {% unless forloop.last %}<hr>{% endunless %}
-    {% endfor %}
+      <small>
+        ({{ guideline_count }}&nbsp;
+        {%- if guideline_count == 1 -%}
+          guideline
+        {%- else -%} 
+          guidelines
+        {%- endif -%})
+      </small>
+    </a>
+    <p>{{ category.description }}</p>
   </div>
+  {% endfor %}
 </div>
-
-<section class="padding--bottom">
-  {% assign category_array = site.guidelines | map: "category" | uniq | jsonify %}
-  {% include add-pages-app.html collection='guidelines' categories=category_array %}
-</section>
