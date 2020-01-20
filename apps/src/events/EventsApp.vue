@@ -8,34 +8,29 @@
       <div class="rect5"></div>
     </div>
     <div v-if="!loading">
-      <div class="row is-multiline">
-        <div class="col is-12" v-if="events.length === 0">
-          <p>There are no upcoming events.</p>
+      <div class="row event-container" v-for="event of events" :key="event.id">
+        <div
+          class="col is-4"
+          style="display: flex; justify-content: center; align-items: center; margin-right: 2rem;"
+        >
+          <img
+            :src="event.featured_photo.photo_link"
+            :alt="`featured photo for ${event.name}`"
+          />
         </div>
-        <div class="col is-12" v-for="event of events" :key="event.id">
-          <a :href="event.link" target="_blank">
-          <div class="sgds-card sgds-card-button">
-            <div class="sgds-card-header">
-              <p class="sgds-card-header-title">{{ event.name }}</p>
-            </div>
-            <div class="sgds-card-content">
-              <div class="row">
-                <div class="col is-2 has-text-centered">
-                  <p>{{ event.time | moment("MMM") }}</p>
-                  <h2>{{ event.time | moment("D") }}</h2>
-                </div>
-                <div class="col is-10">
-                  <p class="summary">{{ event.plain_text_description }}</p>
-                  <br />
-                  <small>
-                    <span class="sgds-icon sgds-icon-my-location"></span>
-                    {{ event.venue.name }}
-                  </small>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="col">
+          <h3 class="event-name">
+            {{ event.name }}
+          </h3>
+          <p>{{ event.time | moment("ddd, MMM D YYYY, h A") }}</p>
+          <p class="event-description">{{ event.plain_text_description }}</p>
+          <a :href="`https://maps.google.com/?q=${event.venue.name}`">
+            <small>
+              <span class="sgds-icon sgds-icon-my-location"></span>
+              {{ event.venue.name }}
+            </small>
           </a>
+          <p><a :href="event.link">Find out more</a></p>
         </div>
       </div>
     </div>
@@ -43,7 +38,7 @@
 </template>
 
 <script>
-import { apiClient } from '../lib';
+import { apiClient } from "../lib";
 export default {
   data() {
     return {
@@ -66,12 +61,21 @@ export default {
 </script>
 
 <style scoped>
-.summary {
+.event-description {
   max-height: 100px;
   overflow: hidden;
   text-overflow: ellipsis;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   display: -webkit-box;
+}
+.event-container {
+  margin-bottom: 4rem;
+}
+.event-container img {
+  margin-bottom: 0;
+}
+.event-container .event-name {
+  font-weight: bold;
 }
 </style>
