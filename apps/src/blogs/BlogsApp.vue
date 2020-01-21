@@ -19,8 +19,8 @@
           <div class="row">
             <div class="col is-4" v-for="blog in this.gdsBlogs.slice(0, 3)">
               <a :href="blog.url" target="_blank">
-                <div class="sgds-card sgds-card-button" style="height: 100%;">
-                  <div class="sgds-card-content" style="height: 100%;">
+                <div class="sgds-card">
+                  <div class="sgds-card-content">
                     <h5>{{ blog.title }}</h5>
                     <p class="is-size-8 has-text-weight-light has-text-left">
                       Published on
@@ -37,7 +37,7 @@
             <a
               href="https://blog.gds-gov.tech/"
               target="_blank"
-            >Government Digital Services Blog</a>!
+            >Government Digital Services Blog</a>
           </p>
         </div>
       </div>
@@ -48,8 +48,8 @@
           <div class="row">
             <div class="col is-4" v-for="blog in this.datagovBlogs.slice(0, 3)">
               <a :href="blog.url" target="_blank">
-                <div class="sgds-card sgds-card-button" style="height: 100%;">
-                  <div class="sgds-card-content" style="height: 100%;">
+                <div class="sgds-card sgds-card-button">
+                  <div class="sgds-card-content">
                     <h5>{{ blog.title }}</h5>
                     <p class="is-size-8 has-text-weight-light has-text-left">
                       Published on
@@ -63,10 +63,7 @@
           </div>
           <p class="has-text-weight-semibold has-text-right is-size-8">
             Read more at the
-            <a
-              href="https://blog.data.gov.sg/"
-              target="_blank"
-            >Government Open Data Blog</a>!
+            <a href="https://blog.data.gov.sg/" target="_blank">Data.gov.sg Blog</a>
           </p>
         </div>
       </div>
@@ -77,8 +74,8 @@
           <div class="row">
             <div class="col is-4" v-for="blog in this.ndiBlogs.slice(0, 3)">
               <a :href="blog.url" target="_blank">
-                <div class="sgds-card sgds-card-button" style="height: 100%;">
-                  <div class="sgds-card-content" style="height: 100%;">
+                <div class="sgds-card sgds-card-button">
+                  <div class="sgds-card-content">
                     <h5>{{ blog.title }}</h5>
                     <p class="is-size-8 has-text-weight-light has-text-left">
                       Published on
@@ -95,7 +92,7 @@
             <a
               href="https://medium.com/ndi-sg/"
               target="_blank"
-            >National Digital Identity Blog</a>!
+            >National Digital Identity Blog</a>
           </p>
         </div>
       </div>
@@ -140,6 +137,7 @@ export default {
 .sgds-card {
   background-image: url("/assets/img/bg-memphispattern.png");
   color: #ffffff;
+  height: 100%;
 }
 
 .sgds-card:hover {
