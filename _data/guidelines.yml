@@ -8,9 +8,9 @@
   description: Deliver software early and iterate while aligning constantly to user and business needs
   items:
     - Agile development
-    - Engineering practices
     - UX design
     - DevOps
+    - Engineering practices
 
 - name: Measuring success
   description: Measure fulfilment of project objectives and act on them
@@ -22,12 +22,11 @@
   items:
     - Use open-source software
     - Use managed services
-    - Understand the greater environment
+    - Understand the broader environment
 
 - name: Building the right team
   description: A conducive team culture ensures better attitudes and team effectiveness
   items:
-    - Hiring
     - Team culture
 
 - name: Standards and best practices
