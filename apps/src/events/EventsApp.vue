@@ -20,7 +20,7 @@
         </div>
         <div class="col">
           <h3 class="event-name">
-            {{ event.name }}
+            <a :href="event.link" target="_blank">{{ event.name }}</a>
           </h3>
           <p>{{ event.time | moment("ddd, MMM D YYYY, h A") }}</p>
           <p class="event-description">{{ event.plain_text_description }}</p>
@@ -74,8 +74,5 @@ export default {
 }
 .event-container img {
   margin-bottom: 0;
-}
-.event-container .event-name {
-  font-weight: bold;
 }
 </style>

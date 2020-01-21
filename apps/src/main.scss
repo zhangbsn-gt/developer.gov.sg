@@ -1,5 +1,4 @@
-$primary: #0076d6;
-$sgds-font-path: "../../node_modules/sgds-govtech/fonts";
+@import "variables";
 @import "~sgds-govtech/sgds/sass/sgds";
 @import "spinner";
 
@@ -11,6 +10,12 @@ body {
 body {
   display: flex;
   flex-direction: column;
+}
+
+.sgds-navbar {
+  a:hover {
+    text-decoration: none;
+  }
 }
 
 .main {
@@ -66,8 +71,8 @@ body {
   }
 }
 
-.article img,
-.article iframe {
+.content img,
+.content iframe {
   margin-bottom: 1rem;
   margin-left: auto;
   margin-right: auto;
@@ -99,10 +104,10 @@ body {
   margin-left: 2px;
   width: 300px;
   transition: all 0.2s;
-}
-
-.sgds-tabs.is-toggle-product a:hover {
-  background-color: #f0f0f0;
+  &:hover {
+    background-color: #f0f0f0;
+    text-decoration: none;
+  }
 }
 
 .sgds-tabs.is-toggle-product li.is-active a {
@@ -169,6 +174,12 @@ a.external-link::after {
   font-weight: 400;
 }
 
-a:focus {
+a:hover {
   text-decoration: underline;
+}
+
+.final-cta {
+  a {
+    color: white;
+  }
 }

@@ -1,0 +1,6 @@
+---
+layout: layout-page-sidenav
+---
+{% assign category = site.data[page.type] | where: "name", page.title %}
+<h3>{{ category[0].description }}</h3>
+{% include technology-list.html listType=page.type %}

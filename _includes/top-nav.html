@@ -1,19 +1,19 @@
-<div class="masthead-container is-fixed has-background-white" id="navbar">
+<div class="masthead-container is-fixed has-background-white" id="sgds-navbar">
     {% include sgds-masthead.html %}
-    <nav class="navbar">
+    <nav class="sgds-navbar">
         <div class="sgds-container">
-            <div class="navbar-brand">
-                <a class="navbar-item" href="/">
+            <div class="sgds-navbar-brand">
+                <a class="sgds-navbar-item" href="/">
                     <img src="/assets/img/logo_developer.gov.sg.png" alt="Home">
                 </a>
-                <div class="navbar-burger" data-target="navbar-main">
+                <div class="sgds-navbar-burger" data-target="sgds-navbar-main">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
             </div>
-            <div id="navbar-main" class="navbar-menu">
-                <div class="navbar-start">
+            <div id="sgds-navbar-main" class="sgds-navbar-menu">
+                <div class="sgds-navbar-start">
                     <form action="/search/" method="get" class="is-hidden-desktop">
                         {% include search-box.html id='query-mobile' %}
                     </form>
@@ -23,19 +23,19 @@
                         {%- if page.url contains lvl1item.url -%}
                         {%- assign class = 'is-active' -%}
                         {%- endif -%}
-                        <a class="navbar-item is-uppercase {{class}} is-tab has-text-weight-semibold" href="{{ lvl1item.url }}">
+                        <a class="sgds-navbar-item is-uppercase {{class}} is-tab has-text-weight-semibold" href="{{ lvl1item.url }}">
                             {{ lvl1item.title }}
                         </a>
                     {%- endfor -%}
                 </div>
-                <div class="navbar-end">
-                    <div class="navbar-item">
+                <div class="sgds-navbar-end">
+                    <div class="sgds-navbar-item">
                         <a class="is-uppercase is-small sgds-button is-rounded has-text-weight-semibold" href="/terms/">
                             Tech Acronyms
                         </a>
                     </div>
                     {% if page.layout != 'search' %}
-                    <div class="navbar-item">
+                    <div class="sgds-navbar-item">
                         <button id="main-search" class="sgds-button is-white is-large is-hidden-touch search-toggle" data-target="searchbar-main">
                             <span class="sgds-icon sgds-icon-search"></span>
                         </button>
