@@ -11,6 +11,7 @@ module.exports = {
     "vue-workflow-app": "./apps/src/workflows/vue-workflow-app.js",
     "vue-add-page-app": "./apps/src/pages/vue-add-page-app.js",
     "vue-search-app": "./apps/src/search/vue-search-app.js",
+    "vue-blogs-app": "./apps/src/blogs/vue-blogs-app.js",
     main: "./apps/src/main.js"
   },
   output: {
