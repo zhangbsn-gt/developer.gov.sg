@@ -2,7 +2,7 @@
   <div id="blogs-app">
     <div
       class="row"
-      v-if="this.gdsBlogs.length===0 && this.datagovBlogs.length===0 && this.ndiBlogs.length===0"
+      v-if="this.gdsBlogs.length===0 && this.datagovBlogs.length===0 && this.ndiBlogs.length===0 && !loading"
     >
       <div class="col">
         <h3
@@ -17,7 +17,7 @@
         <div class="col">
           <h3 class="has-text-weight-bold">Government Digital Services</h3>
           <div class="row">
-            <div class="col is-4" v-for="blog in this.gdsBlogs.slice(0, 3)">
+            <div class="col is-4" v-for="blog in this.gdsBlogs.slice(0, 3)" :key="blog.feedId">
               <a :href="blog.url" target="_blank">
                 <div class="sgds-card">
                   <div class="sgds-card-content">
@@ -44,9 +44,9 @@
 
       <div class="row">
         <div class="col">
-          <h3 class="has-text-weight-bold">Government Open Data</h3>
+          <h3 class="has-text-weight-bold">Data.gov.sg</h3>
           <div class="row">
-            <div class="col is-4" v-for="blog in this.datagovBlogs.slice(0, 3)">
+            <div class="col is-4" v-for="blog in this.datagovBlogs.slice(0, 3)" :key="blog.feedId">
               <a :href="blog.url" target="_blank">
                 <div class="sgds-card sgds-card-button">
                   <div class="sgds-card-content">
@@ -72,7 +72,7 @@
         <div class="col">
           <h3 class="has-text-weight-bold">National Digital Identity</h3>
           <div class="row">
-            <div class="col is-4" v-for="blog in this.ndiBlogs.slice(0, 3)">
+            <div class="col is-4" v-for="blog in this.ndiBlogs.slice(0, 3)" :key="blog.feedId">
               <a :href="blog.url" target="_blank">
                 <div class="sgds-card sgds-card-button">
                   <div class="sgds-card-content">
