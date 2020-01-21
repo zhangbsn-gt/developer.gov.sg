@@ -5,7 +5,7 @@
     - Requirements gathering
 
 - name: Development and iteration
-  description:
+  description: Deliver software early and iterate while aligning constantly to user and business needs
   items:
     - Agile development
     - Engineering practices
@@ -13,25 +13,25 @@
     - DevOps
 
 - name: Measuring success
-  description:
+  description: Measure fulfilment of project objectives and act on them
   items:
     - Use metrics
 
 - name: Technology choice
-  description:
+  description: Leverage existing technologies for greater velocity and reliability
   items:
     - Use open-source software
     - Use managed services
     - Understand the greater environment
 
 - name: Building the right team
-  description:
+  description: A conducive team culture ensures better attitudes and team effectiveness
   items:
     - Hiring
     - Team culture
 
 - name: Standards and best practices
-  description:
+  description: Conventions to help deliver a better digital service
   items:
     - API Playbook
     - Digital Service Standards
