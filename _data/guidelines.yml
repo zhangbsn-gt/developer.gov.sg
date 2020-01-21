@@ -1,20 +1,36 @@
-- name: Standards & Best Practices
-  description: Learn and understand the fundamentals of any digital government website.
+- name: Project inception
+  description: Thoroughly investigate problems and ideas before identifying the need for a feasible technical solution
+  items: 
+    - Problem validation
+    - Requirements gathering
 
-- name: Agile in the Government
-  description: Learn about Agile Development in the Government.
+- name: Development and iteration
+  description: Deliver software early and iterate while aligning constantly to user and business needs
+  items:
+    - Agile development
+    - UX design
+    - DevOps
+    - Engineering practices
 
-- name: Problem Conceptualisation
-  description: Problem identification & stakeholder collaboration.
+- name: Measuring success
+  description: Measure fulfilment of project objectives and act on them
+  items:
+    - Use metrics
 
-- name: Product Planning
-  description: Identify technical complexity and scope of the solution space.
+- name: Technology choice
+  description: Leverage existing technologies for greater velocity and reliability
+  items:
+    - Use open-source software
+    - Use managed services
+    - Understand the broader environment
 
-- name: Development & Iteration
-  description: Incrementally deliver high quality software while meeting changing needs.
+- name: Building the right team
+  description: A conducive team culture ensures better attitudes and team effectiveness
+  items:
+    - Team culture
 
-# - name: Release & Production
-#   description: Maintain development speed and system reliability while keeping the solution in line with user needs.
-
-- name: Retirement
-  description: Ensure minimal impact to business operations when terminating your product.
+- name: Standards and best practices
+  description: Conventions to help deliver a better digital service
+  items:
+    - API Playbook
+    - Digital Service Standards

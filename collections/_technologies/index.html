@@ -4,38 +4,28 @@ layout: layout-page
 ---
 
 <h2>
-  Products and services to help you build digital services for the Government 
-  quickly and securely.
+  Products and services that help to build digital services for the Government quickly and
+  securely
 </h2>
 
-<div class="sgds-section">
-  <div class="sgds-container">
-    <div class="content">
-      {% assign categories = site.technologies | sort: "category" | group_by: "category" %}
-      {% for category in categories %}
-        {% if category.name != '' %}
-          <div class="row">
-            <div class="col">
-              <h3 class="has-text-weight-black">{{ category.name }}</h3>
-            </div>
-          </div>
-          {% assign items = category.items %}
-          <div class="row is-multiline is-padding-large">
-            {% for item in items %}
-              <div class="col is-4">
-                <h4><a href="{{ item.url }}">{{ item.title }}</a></h4>
-                <p class="is-size-8">{{ item.description }}</p>
-              </div>
-            {% endfor %}
-          </div>{% unless forloop.last %}<hr class="margin--top margin--bottom--lg">{% endunless %}
-          {% endif %}
-      {% endfor %}
-    </div>
+<div class="row is-multiline">
+  {% for category in site.data.technologies %}
+  <div class="col is-4 padding--lg">
+    <a href="{{ category.name | slugify }}">
+      {% assign technology_count = category.items | size %}
+      <h3 style="margin-bottom: 0">
+        {{ category.name }}
+      </h3>
+      <small>
+        ({{ technology_count }}&nbsp;
+        {%- if technology_count == 1 -%}
+          technology
+        {%- else -%} 
+          technologies
+        {%- endif -%})
+      </small>
+    </a>
+    <p>{{ category.description }}</p>
   </div>
-</div>
-
-<div class="padding--bottom--xl">
-  <hr>
-    {% assign category_array = site.technologies | map: "category" | uniq | jsonify %}
-    {% include add-pages-app.html collection='technologies' categories=category_array %}
+  {% endfor %}
 </div>
