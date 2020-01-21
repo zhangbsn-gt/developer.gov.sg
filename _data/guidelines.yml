@@ -1,32 +1,33 @@
-
-- name: Conceptualisation and inception
-  description:
+- name: Project inception
+  description: Thoroughly investigate problems and ideas before identifying the need for a feasible technical solution
   items: 
-    - Determine product features
-    - Product conceptualisation
+    - Problem validation
     - Requirements gathering
 
 - name: Development and iteration
   description:
   items:
-    - Introduction to Agile Development
-    - Deployment and release
+    - Agile development
+    - Engineering practices
+    - UX design
+    - DevOps
 
 - name: Measuring success
   description:
   items:
-    - Retiring products
+    - Use metrics
 
 - name: Technology choice
   description:
   items:
-    - Understand technology options
-    - Understand the broader environment
-    - Identifying required technologies
+    - Use open-source software
+    - Use managed services
+    - Understand the greater environment
 
 - name: Building the right team
   description:
   items:
+    - Hiring
     - Team culture
 
 - name: Standards and best practices
