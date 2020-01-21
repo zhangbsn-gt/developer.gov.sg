@@ -11,7 +11,7 @@
         "build:site": "npm run build:static && bundle exec jekyll build",
         "build:static": "webpack --mode=production",
         "deploy": "npm run test:site && npm run build:site",
-        "dev:jekyll": "$HOME/.rbenv/shims/bundle exec jekyll serve",
+        "dev:jekyll": "bundle exec jekyll serve",
         "dev:netlify": "NODE_ENV=development netlify dev",
         "dev:static": "webpack --watch",
         "test:site": "NODE_ENV=production mocha --require @babel/register --recursive ./apps/src/tests/**/*.js"
