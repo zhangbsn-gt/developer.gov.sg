@@ -3,94 +3,123 @@ title: DevOps
 layout: layout-page-sidenav
 description: Constantly improve the reliability and quality of your digital service through automation and continuous delivery
 ---
-<h2>Overview</h2>
-<p>Software deployment is all of the activities that make a software system
-    available for use. </p>
+
+<p>
+  DevOps primarily involves a change in culture for teams, stressing the removal
+  of barriers between the development and operations teams as well as high
+  levels of communication.
+</p>
+<p>Do:</p>
+<ul>
+  <li>
+    <p>
+      Select tools that can measure the productivity of DevOps processes for
+      continuous improvement. Relevant metrics has to be identified first,
+      before automated processes to correct errors without human involvement can
+      be defined.
+    </p>
+  </li>
+  <li>
+    <p>
+      Establish automated testing procedures to ensure that solutions are tested
+      as early and frequently as possible. Part of the testing process should
+      include the development of acceptable levels of the infrastructure,
+      applications and data. It is important to make sure that the tests meet
+      the acceptance criteria.
+    </p>
+  </li>
+  <li>
+    <p>
+      Ensure constant application monitoring by using appropriate monitoring
+      tools and instrumentation.
+    </p>
+  </li>
+  <li>
+    <p>
+      Use Infrastructure-as-Code, where the cloud’s API-driven model allows
+      developers and IT personnel to interact with the infrastructure at scale
+      instead of manually booting up and configuring resources.
+    </p>
+  </li>
+</ul>
 
 <h3>Continuous Integrations, Testings and Deployments</h3>
-<p>Deployment automation allows applications to be deployed across the various
-    environments used in the development process, as well as the final
-    production environments. This results in more efficient, reliable, and
-    predictable deployments. Solutions that automate your deployment processes
-    improve the productivity of both the Dev and Ops teams and enable them and
-    the business to develop faster, accomplish more, and ultimately build better
-    software that is deployed more frequently and functions more reliably for
-    the end-user.</p>
-<p>CI/T/D helps to achieve this by automating the process of creating new
-    builds, running tests and deploying them. It reduces the reliance on manual
-    testing and frees up the team to concentrate on other tasks. Over time,
-    CI/T/D can also highlight problematic areas and paint an overall picture of
-    quality and stability.</p>
-<p>The chosen CI/T/D system should be capable of linking together the source
-    control, build and testing tools employed by the team. A dashboard to
-    display build progress and test results is also highly desirable. Lastly,
-    the system should be configurable to target the desired deployment
-    environment(s).</p>
+<p>
+  Continuous integration is an essential element in effective DevOps practice.
+  Committing all code in a single repository is a useful foundation that can
+  extend to other, more advanced practices. Moreover, the longer the development
+  proceeds without merging back to the mainline, the higher the risk of multiple
+  integration conflicts and failures of the eventual merger.
+</p>
+<p>
+  Deployment automation allows applications to be deployed across the various
+  environments used in the development process, as well as the final production
+  environments. This results in
+  <strong>faster, more frequent and more reliable deployments</strong>.
+  Solutions that automate your deployment processes improve the productivity of
+  both the Dev and Ops teams and enable them and the business to develop faster,
+  accomplish more, and ultimately build better software that is deployed more
+  frequently and functions more reliably for the end-user.
+</p>
+<p>
+  CI/T/D helps to achieve this by automating the process of creating new builds,
+  running tests and deploying them. It reduces the reliance on manual testing
+  and frees up the team to concentrate on other tasks. Over time, CI/T/D can
+  also highlight problematic areas and paint an overall picture of quality and
+  stability.
+</p>
+<p>
+  The chosen CI/T/D system should be capable of linking together the source
+  control, build and testing tools employed by the team. A dashboard to display
+  build progress and test results is also highly desirable. Lastly, the system
+  should be configurable to target the desired deployment environment(s).
+</p>
 <blockquote>
-    <p><a
-            href="https://www.developer.gov.sg/guidelines/identify-required-technologies.html">SHIP
-            (Secure Hybrid Integrated Pipeline)</a> is a product that provides
-        services of a build pipeline for the whole of government. It provides
-        managed services like Atlassian Bitbucket, Bamboo, Confluence, Jira to
-        enable teams to build applications rapidly without having to worry about
-        hardware costs and operations overheads of maintaining these services.
-    </p>
+  <p>
+    <a
+      href="https://www.developer.gov.sg/guidelines/identify-required-technologies.html"
+      >SHIP (Secure Hybrid Integrated Pipeline)</a
+    >
+    is a product that provides services of a build pipeline for the whole of
+    government. It provides managed services like Atlassian Bitbucket, Bamboo,
+    Confluence, Jira to enable teams to build applications rapidly without
+    having to worry about hardware costs and operations overheads of maintaining
+    these services.
+  </p>
 </blockquote>
 <p>Benefits of Deployment Automation:</p>
 <ul>
-    <li>
-        <p><strong>Repeatability –</strong> Every deployment deploys the same
-        </p>
-    </li>
-    <li>
-        <p><strong>Fewer errors –</strong> Removing manual steps reduces human
-            error</p>
-    </li>
-    <li>
-        <p><strong>Anyone can deploy –</strong> eliminate bottlenecks by
-            removing the need for experts to do the work</p>
-    </li>
-    <li>
-        <p><strong>Work on what matters –</strong> developers can spend time
-            working on new features, not on fixes for manual deployments</p>
-    </li>
-    <li>
-        <p><strong>Customer satisfaction –</strong> frequent updates with new
-            features addresses customer needs sooner and keeps organizations
-            competitive</p>
-    </li>
-    <li>
-        <p><strong>Lower costs –</strong> fewer errors, fewer human hours needed
-            for deployments means lower costs</p>
-    </li>
-</ul>
-
-<h3>Deployment Environment</h3>
-<p>In software deployment, an environment is which a software component is
-    deployed and executed.</p>
-<ul>
-    <li>
-        <p><strong>Development Environment -</strong> The development
-            environment (dev) is the environment in which changes to software
-            are developed, most simply an individual developer's workstation.
-        </p>
-    </li>
-    <li>
-        <p><strong>Testing Environment -</strong> The purpose of the test
-            environment is to allow human testers to exercise new and changed
-            code via either automated checks or non-automated techniques.</p>
-    </li>
-    <li>
-        <p><strong>Staging Environment -</strong> A stage or staging environment
-            is an environment for testing that exactly resembles a production
-            environment. It seeks to mirror an actual production environment as
-            closely as possible and may connect to other production services and
-            data, such as databases.</p>
-    </li>
-    <li>
-        <p><strong>Production Environment -</strong> Deploying to production is
-            the most sensitive step; it may be done by deploying new code
-            directly (overwriting old code, so only one copy is present at a
-            time), or by deploying a configuration change.</p>
-    </li>
+  <li>
+    <p><strong>Repeatability –</strong> Every deployment deploys the same</p>
+  </li>
+  <li>
+    <p>
+      <strong>Fewer errors –</strong> Removing manual steps reduces human error
+    </p>
+  </li>
+  <li>
+    <p>
+      <strong>Anyone can deploy –</strong> eliminate bottlenecks by removing the
+      need for experts to do the work
+    </p>
+  </li>
+  <li>
+    <p>
+      <strong>Work on what matters –</strong> developers can spend time working
+      on new features, not on fixes for manual deployments
+    </p>
+  </li>
+  <li>
+    <p>
+      <strong>Customer satisfaction –</strong> frequent updates with new
+      features addresses customer needs sooner and keeps organizations
+      competitive
+    </p>
+  </li>
+  <li>
+    <p>
+      <strong>Lower costs –</strong> fewer errors, fewer human hours needed for
+      deployments means lower costs
+    </p>
+  </li>
 </ul>
