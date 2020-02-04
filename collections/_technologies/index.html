@@ -16,6 +16,7 @@ layout: layout-page
       <h3 style="margin-bottom: 0">
         {{ category.name }}
       </h3>
+      {% unless category.name == 'Open source' %}
       <small>
         ({{ technology_count }}&nbsp;
         {%- if technology_count == 1 -%}
@@ -24,6 +25,7 @@ layout: layout-page
           technologies
         {%- endif -%})
       </small>
+      {% endunless %}
     </a>
     <p>{{ category.description }}</p>
   </div>

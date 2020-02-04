@@ -155,10 +155,13 @@ body {
 }
 
 .sgds-card-button.home-actions:hover {
+  transform: translateY(-2px);
+  box-shadow: 2px 3px 5px gray;
   background-color: #208de6;
 }
 
 .sgds-card-button.home-actions:active {
+  transform: translateY(0);
   background-color: #0076d6;
 }
 
@@ -174,12 +177,22 @@ a.external-link::after {
   font-weight: 400;
 }
 
-a:hover {
-  text-decoration: underline;
+a {
+  &:hover {
+    text-decoration: underline;
+  }
+  &.sgds-button {
+    text-decoration: none;
+  }
 }
 
 .final-cta {
   a {
     color: white;
+    text-decoration: underline;
   }
+}
+
+.open-source .col {
+  display: flex;
 }
