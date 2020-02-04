@@ -87,10 +87,10 @@ export default {
     apiClient
       .get("/blogs")
       .then(response => {
-        this.allBlogs[0].blogEntries = response.data[0].gdsBlogs;
-        this.allBlogs[1].blogEntries = response.data[0].datagovBlogs;
-        this.allBlogs[2].blogEntries = response.data[0].ndiBlogs;
-        this.allBlogs[3].blogEntries = response.data[0].dsaidBlogs;
+        this.allBlogs[0].blogEntries = response.data.gdsBlogs;
+        this.allBlogs[1].blogEntries = response.data.datagovBlogs;
+        this.allBlogs[2].blogEntries = response.data.ndiBlogs;
+        this.allBlogs[3].blogEntries = response.data.dsaidBlogs;
       })
       .finally(() => {
         this.loading = false;
