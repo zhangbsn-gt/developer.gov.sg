@@ -1,39 +1,48 @@
 <template>
   <div id="blogs-app">
-    <div class="row" v-if="noBlogsFetched && !loading">
+    <div v-if="loading" class="spinner">
+      <div class="rect1"></div>
+      <div class="rect2"></div>
+      <div class="rect3"></div>
+      <div class="rect4"></div>
+      <div class="rect5"></div>
+    </div>
+
+    <div class="row" v-else-if="noBlogsFetched && !loading">
       <div class="col">
-        <h3
-          class="has-text-centered is-size-5"
-          style="color: #bdbdbd;"
-        >There are no recent blog posts.</h3>
+        <h3 class="has-text-centered is-size-5" style="color: #bdbdbd;">
+          There are no recent blog posts.
+        </h3>
       </div>
     </div>
 
-    <div v-else>
-      <div class="row" v-for="agency in allBlogs">
-        <div class="col">
-          <h3 class="has-text-weight-bold">{{ agency.name }}</h3>
-          <div class="row">
-            <div class="col is-4" v-for="blog in agency.blogEntries.slice(0, 3)" :key="blog.feedId">
-              <a :href="blog.url" target="_blank">
-                <div class="sgds-card">
-                  <div class="sgds-card-content">
-                    <h5>{{ blog.title }}</h5>
-                    <p class="is-size-8 has-text-weight-light has-text-left">
-                      Published on
-                      {{ blog.pubDate | moment("ddd, D MMM YYYY") }} by
-                      {{ blog.creator }}
-                    </p>
-                  </div>
+    <div v-else class="row" v-for="agency in allBlogs" :key="agency.name">
+      <div class="col">
+        <h3 class="has-text-weight-bold">{{ agency.name }}</h3>
+        <div class="row">
+          <div
+            class="col is-4"
+            v-for="blog in agency.blogEntries.slice(0, 3)"
+            :key="blog.feedId"
+          >
+            <a :href="blog.url" target="_blank">
+              <div class="sgds-card">
+                <div class="sgds-card-content">
+                  <h5>{{ blog.title }}</h5>
+                  <p class="is-size-8 has-text-weight-light has-text-left">
+                    Published on
+                    {{ blog.pubDate | moment("ddd, D MMM YYYY") }} by
+                    {{ blog.creator }}
+                  </p>
                 </div>
-              </a>
-            </div>
+              </div>
+            </a>
           </div>
-          <p class="has-text-weight-semibold has-text-right is-size-8">
-            Read more at the
-            <a :href="agency.link.url" target="_blank">{{ agency.link.name }}</a>
-          </p>
         </div>
+        <p class="has-text-weight-semibold has-text-right is-size-8">
+          Read more at the
+          <a :href="agency.link.url" target="_blank">{{ agency.link.name }}</a>
+        </p>
       </div>
     </div>
   </div>
