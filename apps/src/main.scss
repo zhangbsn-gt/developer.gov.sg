@@ -181,7 +181,9 @@ a {
   &:hover {
     text-decoration: underline;
   }
-  &.sgds-button {
+  &.sgds-button,
+  &.second-level-nav-header,
+  & .sgds-card-button {
     text-decoration: none;
   }
 }
