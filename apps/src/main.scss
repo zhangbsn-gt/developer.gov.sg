@@ -26,9 +26,14 @@ body {
   flex-shrink: 0;
 }
 
-.sgds-footer img {
-  margin: 0;
-  max-height: 1rem;
+.sgds-footer {
+  .footer-link-title strong {
+    color: white;
+  }
+  img {
+    margin: 0;
+    max-height: 1rem;
+  }
 }
 
 .sgds-card-header {
@@ -183,7 +188,7 @@ a {
   }
   &.sgds-button,
   &.second-level-nav-header,
-  & .sgds-card-button {
+  .sgds-card-button {
     text-decoration: none;
   }
 }
