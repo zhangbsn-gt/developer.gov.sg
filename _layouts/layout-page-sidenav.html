@@ -16,39 +16,44 @@ layout: layout-default
                             {%- assign currentCollection = filteredCollections[0] -%}
                             {%- assign categories = site.data[currentCollection.label] -%}
                             {%- for category in categories -%}
-                                <li class="second-level-nav">
-                                    {%- assign class = nil -%} 
-                                    {%- assign category_slug = category.name | slugify -%}
-                                    {%- if page.url contains category_slug -%}
+                                {%- assign class = nil -%} 
+                                {%- assign category_slug = category.name | slugify -%}
+                                {%- if page.url contains category_slug -%}
                                     {%- assign class='is-active' -%}
-                                    {%- endif -%}
-                                    <a class="second-level-nav-header has-text-weight-bold {{ class }} is-capitalized">
-                                        {{ category.name | capitalize }}
-                                        <i class="sgds-icon sgds-icon-chevron-down" aria-hidden="true"></i>
-                                    </a>
-                                </li>
-                                {% assign hide_nav_section = 'is-hidden' %}
-                                {% if page.url contains category_slug %}
-                                    {% assign hide_nav_section = nil %}
-                                {% endif %}
-                                <ul class="second-level-nav-div {{ hide_nav_section }}">
-                                    {%- assign items = category.items -%}
-                                    {%- for item in items -%}
-                                        {%- assign item_slug = item | slugify -%}
-                                        {%- assign class = nil -%}
-                                        {%- if page.url contains item_slug -%}
-                                        {%- assign class = 'is-active' -%}
-                                        {%- endif -%}
-                                        <li>
-                                            <a
-                                                class="second-level-nav-item padding--top--none {{ class }}"
-                                                href="{{ '/' | append: currentCollection.label | append: '/' | append: category_slug | append: '/' | append: item_slug }}"
-                                            >
-                                                {{ item }}
-                                            </a>
-                                        </li>
-                                    {%- endfor -%}
-                                </ul>
+                                {%- endif -%}
+                                {%- if category.items -%}
+                                    <li class="second-level-nav">
+                                        <a class="second-level-nav-header has-text-weight-bold {{ class }} is-capitalized">
+                                            {{ category.name | capitalize }}
+                                            <i class="sgds-icon sgds-icon-chevron-down" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    {% assign hide_nav_section = 'is-hidden' %}
+                                    {% if page.url contains category_slug %}
+                                        {% assign hide_nav_section = nil %}
+                                    {% endif %}
+                                    <ul class="second-level-nav-div {{ hide_nav_section }}">
+                                        {%- assign items = category.items -%}
+                                        {%- for item in items -%}
+                                            {%- assign item_slug = item | slugify -%}
+                                            {%- assign class = nil -%}
+                                            {%- if page.url contains item_slug -%}
+                                            {%- assign class = 'is-active' -%}
+                                            {%- endif -%}
+                                            <li>
+                                                <a
+                                                    class="second-level-nav-item padding--top--none {{ class }}"
+                                                    href="{{ '/' | append: currentCollection.label | append: '/' | append: category_slug | append: '/' | append: item_slug }}"
+                                                >
+                                                    {{ item }}
+                                                </a>
+                                            </li>
+                                        {%- endfor -%}
+                                    </ul>
+                                {%- else -%}
+                                    {% assign link_slug = category.name | slugify %}
+                                    <li><a href="{{ '/' | append: currentCollection.label | append: '/' | append: link_slug }}" class="has-text-weight-bold {{ class }}">{{ category.name }}</a></li>
+                                {%- endif -%}
                             {%- endfor -%}
                         </ul>
                     </aside>
