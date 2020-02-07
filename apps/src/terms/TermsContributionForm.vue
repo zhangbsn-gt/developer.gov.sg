@@ -4,7 +4,7 @@
 
     <div class="row">
       <div class="col">
-        <label for="term" class="has-text-weight-semibold">Acronym*</label>
+        <label for="term" class="has-text-weight-semibold">Acronym</label>
         <input
           id="term"
           name="term"
@@ -24,7 +24,7 @@
     <div class="row">
       <div class="col">
         <label for="full-term" class="has-text-weight-semibold"
-          >What it stands for*</label
+          >What it stands for</label
         >
         <input
           id="full-term"
@@ -46,7 +46,7 @@
     <div class="row">
       <div class="col">
         <label for="description" class="has-text-weight-semibold"
-          >Short description*</label
+          >Short description</label
         >
         <input
           id="description"
@@ -67,7 +67,9 @@
 
     <div class="row">
       <div class="col">
-        <label for="tag" class="has-text-weight-semibold">Tags</label>
+        <label for="tag" class="has-text-weight-semibold"
+          >Tags <em>(optional)</em></label
+        >
         <input
           id="tag"
           name="tag"
@@ -108,7 +110,9 @@
 
     <div class="row">
       <div class="col">
-        <label for="link" class="has-text-weight-semibold">Links</label>
+        <label for="link" class="has-text-weight-semibold"
+          >Links <em>(optional)</em></label
+        >
         <input
           id="link"
           name="link"
@@ -147,11 +151,14 @@
       </div>
     </div>
 
-    <VerifyAndSubmit
-      :validateForm="validateForm"
-      @submit="submit"
-      @loading="changeLoadingState"
-    />
+    <button
+      type="submit"
+      class="sgds-button is-primary submit"
+      :disabled="false"
+      @click.prevent="submit"
+    >
+      Submit
+    </button>
   </form>
 </template>
 
@@ -213,7 +220,7 @@ export default {
     };
   },
   methods: {
-    submit({ email, otp, otpRequestId }) {
+    submit() {
       let formValid = this.validateForm();
       if (!formValid) {
         return;
@@ -223,10 +230,7 @@ export default {
         full_term: this.form.full_term,
         description: this.form.description,
         links: this.form.links,
-        tags: this.form.tags,
-        email,
-        otp,
-        otpRequestId
+        tags: this.form.tags
       };
       if (this.type === "edit") {
         submission = Object.assign({ id: this.termId }, submission);
@@ -348,5 +352,8 @@ export default {
 .form-list {
   display: flex;
   justify-content: space-between;
+}
+label em {
+  color: #7b7b7b;
 }
 </style>
