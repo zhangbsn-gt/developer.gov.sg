@@ -23,14 +23,14 @@
                         {%- if page.url contains lvl1item.url -%}
                         {%- assign class = 'is-active' -%}
                         {%- endif -%}
-                        <a class="sgds-navbar-item is-uppercase {{class}} is-tab has-text-weight-semibold" href="{{ lvl1item.url }}">
+                        <a class="sgds-navbar-item {{class}} is-tab has-text-weight-semibold" href="{{ lvl1item.url }}">
                             {{ lvl1item.title }}
                         </a>
                     {%- endfor -%}
                 </div>
                 <div class="sgds-navbar-end">
                     <div class="sgds-navbar-item">
-                        <a class="is-uppercase is-small sgds-button is-rounded has-text-weight-semibold" href="/terms/">
+                        <a class="is-small sgds-button is-rounded has-text-weight-semibold" href="/terms/">
                             Tech Acronyms
                         </a>
                     </div>

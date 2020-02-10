@@ -26,15 +26,9 @@ exclude:
 collections_dir: collections
 
 collections:
-  workflows:
-    output: yes
-  chapters:
-    output: yes
   technologies:
     output: yes
   guidelines:
     output: yes
-  events:
-    output: yes
-  general:
+  gigs:
     output: yes

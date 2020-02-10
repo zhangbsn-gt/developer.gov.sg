@@ -1,10 +1,13 @@
 # - title: Workflows
 #   url: /workflows/
 - title: Guidelines
-  url: /guidelines/
+  url: /guidelines
 
 - title: Technologies
-  url: /technologies/
+  url: /technologies
+
+# - title: Gigs
+#   url: /gigs
 
 # - title: Chapters
 #   url: /chapters/
