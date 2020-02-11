@@ -19,6 +19,10 @@ body {
   }
 }
 
+.row.is-padding-large .col {
+  padding: 1.5rem;
+}
+
 .main {
   flex: 1 0 auto;
 }
@@ -153,26 +157,28 @@ body {
   fill: rgb(255, 248, 220);
 }
 
-.sgds-card-button.bgblue {
+.home-cta .sgds-card-button {
   background-color: #0076d6;
   box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
   color: #484848;
   transition: all 0.3s;
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 2px 3px 5px gray;
+    background-color: #208de6;
+  }
+  &:active {
+    transform: translateY(0);
+    background-color: #0076d6;
+  }
 }
 
-.sgds-card-button.home-actions:hover {
-  transform: translateY(-2px);
-  box-shadow: 2px 3px 5px gray;
-  background-color: #208de6;
-}
-
-.sgds-card-button.home-actions:active {
-  transform: translateY(0);
-  background-color: #0076d6;
-}
-
-.row.is-padding-large .col {
-  padding: 1.5rem;
+// Keep main CTA buttons same height
+.home-cta .col {
+  display: flex;
+  & a {
+    display: flex;
+  }
 }
 
 a.external-link::after {
