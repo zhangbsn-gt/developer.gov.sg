@@ -1,0 +1,10 @@
+.sgds-card {
+  display: flex;
+  flex-direction: column;
+  .sgds-card-content:first-child {
+    flex: 1 1 auto;
+  }
+  .sgds-card-content:last-child {
+    border-top: 1px solid #d6d6d6;
+  }
+}
