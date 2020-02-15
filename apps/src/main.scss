@@ -16,6 +16,9 @@ body {
   a:hover {
     text-decoration: none;
   }
+  a.sgds-navbar-item.is-active, .sgds-navbar-link.is-active {
+    margin-top: 0;
+  }
 }
 
 .row.is-padding-large .col {
