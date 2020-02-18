@@ -1,6 +1,13 @@
 ---
 layout: layout-page-sidenav
 ---
-{% assign category = site.data[page.type] | where: "name", page.title %}
+
+{% assign category = site.data[page.collection] | where: "name", page.title %}
 <h3>{{ category[0].description }}</h3>
-{% include technology-list.html listType=page.type %}
+<ul>
+  {% for item in category[0].items %}
+  <li>
+    <a href="{{ item | slugify }}">{{ item }}</a>
+  </li>
+  {% endfor %}
+</ul>

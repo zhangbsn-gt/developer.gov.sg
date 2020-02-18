@@ -17,6 +17,9 @@ body {
   a:hover {
     text-decoration: none;
   }
+  a.sgds-navbar-item.is-active, .sgds-navbar-link.is-active {
+    margin-top: 0;
+  }
 }
 
 .row.is-padding-large .col {
@@ -55,6 +58,22 @@ body {
 
 .sgds-card-button:hover {
   color: #484848;
+}
+
+.sgds-card.patterned {
+  background-image: url("/assets/img/bg-memphispattern.png");
+  color: #ffffff;
+  a {
+    color: #fff;
+  }
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 2px 3px 5px gray;
+    transition: all 0.3s;
+  }
+  &:active {
+    transform: translateY(0);
+  }
 }
 
 [v-cloak] {
