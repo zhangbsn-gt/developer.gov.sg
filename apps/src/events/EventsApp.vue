@@ -13,7 +13,10 @@
         class="has-text-centered is-size-5"
         style="color: #bdbdbd;"
       >
-        There are no upcoming events.
+        There are
+        <a href="https://www.meetup.com/STACK-X-by-GovTech-Singapore/"
+          >no upcoming events.</a
+        >
       </h3>
       <div class="row event-container" v-for="event of events" :key="event.id">
         <div
