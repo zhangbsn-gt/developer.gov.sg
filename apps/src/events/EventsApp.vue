@@ -8,11 +8,13 @@
       <div class="rect5"></div>
     </div>
     <div v-if="!loading">
-      <template v-if="events.length === 0">
-        <h3 class="has-text-centered is-size-5" style="color: #bdbdbd;">
-          There are no upcoming events.
-        </h3>
-      </template>
+      <h3
+        v-if="events.length === 0"
+        class="has-text-centered is-size-5"
+        style="color: #bdbdbd;"
+      >
+        There are no upcoming events.
+      </h3>
       <div class="row event-container" v-for="event of events" :key="event.id">
         <div
           class="col is-4"
