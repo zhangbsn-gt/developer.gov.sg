@@ -1,5 +1,5 @@
 <template>
-  <div id="events-app">
+  <div id="events-app" class="content has-default-header-styles">
     <div class="spinner" v-if="loading">
       <div class="rect1"></div>
       <div class="rect2"></div>
@@ -8,6 +8,11 @@
       <div class="rect5"></div>
     </div>
     <div v-if="!loading">
+      <template v-if="events.length === 0">
+        <h3 class="has-text-centered is-size-5" style="color: #bdbdbd;">
+          There are no upcoming events.
+        </h3>
+      </template>
       <div class="row event-container" v-for="event of events" :key="event.id">
         <div
           class="col is-4"
