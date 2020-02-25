@@ -1,0 +1,34 @@
+
+<div class="sgds-card">
+  <div class="sgds-card-content">
+    <h3>{{ include.title }}</h3>
+    <h4>Skills required</h4>
+    <ul>
+      {% for skill in include.skills %}
+      <li>{{ skill }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="sgds-card-content">
+    <p><a href="{{ include.link }}">Read more about this task</a></p>
+  </div>
+  <div class="sgds-card-content">
+    <div class="row">
+      <div class="col">
+        <strong>Posted</strong>
+        <p>{{ include.posted }}</p>
+        <strong>Closing on</strong>
+        <p>{{ include.closing }}</p>
+        <strong>Duration</strong>
+        <p>{{ include.duration }}</p>
+      </div>
+      <div
+        class="col"
+        style="display: flex; flex-direction: column; align-items: center; justify-content: center;"
+      >
+        <strong>Offer</strong>
+        <h3 style="margin: 0">${{ include.offer }}</h3>
+      </div>
+    </div>
+  </div>
+</div>

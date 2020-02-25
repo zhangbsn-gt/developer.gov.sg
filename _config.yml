@@ -31,4 +31,4 @@ collections:
   guidelines:
     output: yes
   gigs:
-    output: no
+    output: yes
