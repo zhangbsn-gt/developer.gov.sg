@@ -8,13 +8,13 @@
       <div class="rect5"></div>
     </div>
 
-    <div class="row" v-else-if="noBlogsFetched && !loading">
-      <div class="col">
-        <h3 class="has-text-centered is-size-5" style="color: #bdbdbd;">
-          There are no recent blog posts.
-        </h3>
-      </div>
-    </div>
+    <h3
+      class="has-text-centered is-size-5"
+      style="color: #bdbdbd;"
+      v-else-if="noBlogsFetched && !loading"
+    >
+      There are no recent blog posts.
+    </h3>
 
     <div v-else class="row" v-for="agency in allBlogs" :key="agency.name">
       <div class="col">
