@@ -90,6 +90,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  .cta {
+    a {
+      width: 100%;
+    }
+  }
 }
 .hero-sub {
   display: flex;
