@@ -235,11 +235,8 @@ a {
   display: flex;
 }
 
-.content.has-default-header-styles .gigs-actions {
-  display: flex;
-  justify-content: space-evenly;
-  h2 {
-    margin-top: 0;
-    margin-bottom: 0;
+.gigs-actions {
+  h2 a {
+    width: 100%;
   }
 }
