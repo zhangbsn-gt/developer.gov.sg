@@ -9,6 +9,7 @@ logo: /assets/img/logo_developer.gov.sg.png
 
 plugins:
   - jekyll-seo-tag
+  - jekyll-redirect-from
 
 exclude:
   - functions

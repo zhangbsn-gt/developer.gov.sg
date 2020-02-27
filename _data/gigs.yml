@@ -5,30 +5,30 @@
   posted: 99 Dec 2999
   closing: 1 Jan 3000
   duration: 2 weeks
-  offer: 10
+  offer: 500
   link: 3d-architecture-modelling
 
-- title: C# Plugin for Unity
-  skills:
-    - C#
-    - Unity Engine
-    - CityGML Standards
-  posted: 99 Dec 2999
-  closing: 1 Jan 3000
-  offer: 100
-  duration: 2 weeks
-  link: c-sharp-plugin-for-unity
+# - title: C# Plugin for Unity
+#   skills:
+#     - C#
+#     - Unity Engine
+#     - CityGML Standards
+#   posted: 99 Dec 2999
+#   closing: 1 Jan 3000
+#   offer: 100
+#   duration: 2 weeks
+#   link: c-sharp-plugin-for-unity
 
-- title: Video for product demonstration
-  skills:
-    - Video editing
-    - Script writing
-    - Audio recording
-  posted: 99 Dec 2999
-  closing: 1 Jan 3000
-  duration: 2 weeks
-  offer: 1000
-  link: video-for-product-demonstration
+# - title: Video for product demonstration
+#   skills:
+#     - Video editing
+#     - Script writing
+#     - Audio recording
+#   posted: 99 Dec 2999
+#   closing: 1 Jan 3000
+#   duration: 2 weeks
+#   offer: 1000
+#   link: video-for-product-demonstration
 
 - title: 3D Architecture Modelling
   skills:
@@ -37,5 +37,5 @@
   posted: 99 Dec 2999
   closing: 1 Jan 3000
   duration: 2 weeks
-  offer: 10
+  offer: 500
   link: 3d-architecture-modelling

@@ -234,3 +234,12 @@ a {
 .open-source .col {
   display: flex;
 }
+
+.content.has-default-header-styles .gigs-actions {
+  display: flex;
+  justify-content: space-evenly;
+  h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}

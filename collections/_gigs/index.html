@@ -3,13 +3,56 @@ title: Gigs
 layout: layout-page
 ---
 
+<div class="gigs-actions">
+  <h2><a href="#about">About GovBuy gigs</a></h2>
+  <h2><a href="#how-it-works">How it works</a></h2>
+</div>
+
+<h2>Available gigs</h2>
 <div class="row is-multiline">
   {% for gig in site.data.gigs %}
   <div class="col is-4-desktop is-6-tablet is-flex">
-    {% include gig.html 
-      title=gig.title skills=gig.skills posted=gig.posted
-      closing=gig.closing duration=gig.duration offer=gig.offer
-      link=gig.link %}
+    {% include gig.html title=gig.title skills=gig.skills posted=gig.posted
+    closing=gig.closing duration=gig.duration offer=gig.offer link=gig.link %}
   </div>
   {% endfor %}
 </div>
+
+<h3 id="about">About GovBuy Gigs</h3>
+<p>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam laoreet enim
+  et tortor dapibus, nec feugiat turpis ullamcorper. Donec nec elementum quam.
+  Duis sagittis, lorem condimentum porttitor interdum, quam quam porta nunc, nec
+  semper tortor augue eu metus. Mauris non interdum turpis, ac convallis lectus.
+  Quisque sed placerat massa. Duis ante quam, eleifend et viverra nec, malesuada
+  convallis mauris. Vestibulum nunc nunc, cursus id vehicula in, sagittis quis
+  turpis. Quisque consequat pretium sapien dictum finibus.
+</p>
+<p>
+  Fusce venenatis risus semper, feugiat elit eu, pretium quam. Quisque erat
+  libero, imperdiet vel tellus ac, suscipit congue quam. Suspendisse nisi
+  ligula, vestibulum eu est nec, ullamcorper cursus nibh. Curabitur quis nunc
+  porta, consectetur purus lobortis, convallis ipsum. Phasellus bibendum enim eu
+  malesuada molestie. Vestibulum commodo at mi in posuere. In et elementum elit.
+  Curabitur rhoncus pellentesque est. Ut vitae commodo mauris. Sed eget
+  facilisis massa, et molestie nisi.
+</p>
+<h3 id="how-it-works">How it works</h3>
+<p>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam laoreet enim
+  et tortor dapibus, nec feugiat turpis ullamcorper. Donec nec elementum quam.
+  Duis sagittis, lorem condimentum porttitor interdum, quam quam porta nunc, nec
+  semper tortor augue eu metus. Mauris non interdum turpis, ac convallis lectus.
+  Quisque sed placerat massa. Duis ante quam, eleifend et viverra nec, malesuada
+  convallis mauris. Vestibulum nunc nunc, cursus id vehicula in, sagittis quis
+  turpis. Quisque consequat pretium sapien dictum finibus.
+</p>
+<p>
+  Fusce venenatis risus semper, feugiat elit eu, pretium quam. Quisque erat
+  libero, imperdiet vel tellus ac, suscipit congue quam. Suspendisse nisi
+  ligula, vestibulum eu est nec, ullamcorper cursus nibh. Curabitur quis nunc
+  porta, consectetur purus lobortis, convallis ipsum. Phasellus bibendum enim eu
+  malesuada molestie. Vestibulum commodo at mi in posuere. In et elementum elit.
+  Curabitur rhoncus pellentesque est. Ut vitae commodo mauris. Sed eget
+  facilisis massa, et molestie nisi.
+</p>
