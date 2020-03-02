@@ -6,6 +6,7 @@ module Jekyll
       # Add environment variables to `site.config` here...
       site.config['ga_id'] = ENV['GA_ID'] # Access through site.ga_id
       site.config['hj_id'] = ENV['HJ_ID'] # Access through site.hj_id
+      site.config['git_branch'] = ENV['BRANCH']
     end
   end
 end
