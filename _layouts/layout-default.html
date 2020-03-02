@@ -18,8 +18,8 @@
       rel="stylesheet"
     />
 
-    {% if site.git_branch != nil %}
-    <meta name="branch" content="{{ site.git_branch }}" />
+    {% if site.git_branch != nil and site.git_branch == 'dev' %}
+      <script src="https://assets.dcube.cloud/scripts/wogaa.js"></script>
     {% endif %}
 
     {% if site.ga_id != nil %}
