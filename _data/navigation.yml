@@ -2,9 +2,17 @@
 #   url: /workflows/
 - title: Guidelines
   url: /guidelines
+  description:
+    heading: Run and deliver great digital services
+    content: Guidelines and best practices based on the experiences of Government development teams
 
 - title: Technologies
   url: /technologies
+  description:
+    heading: Build on existing technologies
+    content: >
+      Discover technologies to leverage on to build the next digital
+      service for Singapore
 
 # - title: Gigs
 #   url: /gigs
