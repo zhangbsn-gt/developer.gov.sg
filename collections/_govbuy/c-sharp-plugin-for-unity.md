@@ -5,6 +5,14 @@ layout: layout-page
 
 ## 3D Architecture Modelling
 
+### The task
+
+An import tool for populating 3D models of buildings on a 3D map of Singapore
+
+### Deliverables
+
+Plugin script file(s) + test script(s) for demonstrating that the tool is able to work with CityGML format and Unity
+
 ### Skills
 
 - knowledge of C# programming
@@ -16,14 +24,6 @@ layout: layout-page
 | Offer amount | Work duration | Date posted | Date offer closes |
 | ------------ | ------------- | ----------- | ----------------- |
 | \$1000       | 1 Week        | 99 Dec 2999 | 1 Jan 3000        |
-
-### Deliverables
-
-Plugin script file(s) + test script(s) for demonstrating that the tool is able to work with CityGML format and Unity
-
-### The task
-
-An import tool for populating 3D models of buildings on a 3D map of Singapore
 
 ### Evaluation methods
 

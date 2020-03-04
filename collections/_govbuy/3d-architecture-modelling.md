@@ -5,6 +5,14 @@ layout: layout-page
 
 ## 3D Architecture Modelling
 
+### The task
+
+3D architectural modelling of 10 towers in PDD, including hard systems (plumbing, ACMV etc) and sensor locations; texturing; moving and static 3D models (fixtures/furniture; AGV).
+
+### Deliverables
+
+3D model files and texture files.
+
 ### Skills
 
 - 3D modelling software
@@ -15,14 +23,6 @@ layout: layout-page
 | Offer amount | Work duration | Date posted | Date offer closes |
 | ------------ | ------------- | ----------- | ----------------- |
 | \$500        | 1 Week        | 99 Dec 2999 | 1 Jan 3000        |
-
-### Deliverables
-
-3D model files and texture files.
-
-### The task
-
-3D architectural modelling of 10 towers in PDD, including hard systems (plumbing, ACMV etc) and sensor locations; texturing; moving and static 3D models (fixtures/furniture; AGV).
 
 ### Evaluation methods
 
