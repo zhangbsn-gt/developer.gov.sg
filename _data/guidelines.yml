@@ -34,3 +34,6 @@
   items:
     - API Playbook
     - Digital Service Standards
+
+- name: Technology Acronyms
+  description: Search and understand common technology-related acronyms and terms

@@ -1,6 +1,7 @@
 @import "variables";
 @import "~sgds-govtech/sgds/sass/sgds";
 @import "spinner";
+@import "sidenav";
 
 html,
 body {
@@ -16,8 +17,14 @@ body {
   a:hover {
     text-decoration: none;
   }
-  a.sgds-navbar-item.is-active, .sgds-navbar-link.is-active {
+  a.sgds-navbar-item.is-active,
+  .sgds-navbar-link.is-active {
     margin-top: 0;
+  }
+  .sgds-navbar-dropdown {
+    .section-heading {
+      margin-bottom: 0.5rem;
+    }
   }
 }
 

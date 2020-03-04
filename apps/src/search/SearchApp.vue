@@ -1,6 +1,9 @@
 <template>
   <section class="sgds-section">
-    <div :style="{display: 'flex', justifyContent: 'center'}" v-if="searching">
+    <div
+      :style="{ display: 'flex', justifyContent: 'center' }"
+      v-if="searching"
+    >
       <div class="spinner">
         <div class="rect1"></div>
         <div class="rect2"></div>
@@ -11,12 +14,18 @@
     </div>
 
     <div class="sgds-container search-content" v-if="!searching">
-      <h2>{{ searchQuery ? `Search results for: "${searchQuery}"`: `Search for anything here!`}}</h2>
+      <h2>
+        {{
+          searchQuery
+            ? `Search results for: "${searchQuery}"`
+            : `Search for anything here!`
+        }}
+      </h2>
       <div class="row is-multiline">
         <div
           class="col is-12"
-          v-for="(result, index) of searchResults"
-          :key="`${index}:${result.ref}`"
+          v-for="result of searchResults"
+          :key="`${result.ref}`"
         >
           <div class="sgds-card">
             <div class="sgds-card-content">
