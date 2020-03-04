@@ -7,24 +7,5 @@ layout: layout-page
   Guidelines and principles for working with digital projects
 </h2>
 
-<div class="row is-multiline">
-  {% for category in site.data.guidelines %}
-  <div class="col is-4 padding--lg">
-    <a href="{{ category.name | slugify }}">
-      {% assign guideline_count = category.items | size %}
-      <h3 style="margin-bottom: 0">
-        {{ category.name }}
-      </h3>
-      <small>
-        ({{ guideline_count }}&nbsp;
-        {%- if guideline_count == 1 -%}
-          guideline
-        {%- else -%} 
-          guidelines
-        {%- endif -%})
-      </small>
-    </a>
-    <p>{{ category.description }}</p>
-  </div>
-  {% endfor %}
-</div>
+{% assign sectionName = page.title | downcase %}
+{% include site-section-listing.html sectionName=sectionName %}

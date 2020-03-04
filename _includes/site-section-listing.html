@@ -1,0 +1,23 @@
+<div class="row is-multiline">
+  {% for category in site.data[include.sectionName] %}
+  <div class="col is-4 padding--lg">
+    <a href="{{ category.name | slugify }}">
+      {% assign guideline_count = category.items | size %}
+      <h3 style="margin-bottom: 0">
+        {{ category.name }}
+      </h3>
+      <small>
+        {% if guideline_count > 0 %}
+          ({{ guideline_count }}&nbsp;
+          {%- if guideline_count == 1 -%}
+            guideline
+          {%- elsif guideline_count > 1 -%} 
+            guidelines
+          {%- endif -%})
+        {% endif %}
+      </small>
+    </a>
+    <p>{{ category.description }}</p>
+  </div>
+  {% endfor %}
+</div>
