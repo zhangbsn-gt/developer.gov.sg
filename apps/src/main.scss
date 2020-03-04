@@ -3,6 +3,7 @@
 @import "spinner";
 @import "cards";
 @import "sidenav";
+@import "buy";
 
 html,
 body {
@@ -240,10 +241,4 @@ a {
 
 .open-source .col {
   display: flex;
-}
-
-.gigs-actions {
-  h2 a {
-    width: 100%;
-  }
 }
