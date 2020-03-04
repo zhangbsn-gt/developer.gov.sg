@@ -3,6 +3,7 @@ frontend:
   phases:
     preBuild:
       commands:
+        - bundle update --bundler
         - bundle install
         - npm ci
     build:
