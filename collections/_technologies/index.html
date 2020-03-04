@@ -8,26 +8,5 @@ layout: layout-page
   securely
 </h2>
 
-<div class="row is-multiline">
-  {% for category in site.data.technologies %}
-  <div class="col is-4 padding--lg">
-    <a href="{{ category.name | slugify }}">
-      {% assign technology_count = category.items | size %}
-      <h3 style="margin-bottom: 0">
-        {{ category.name }}
-      </h3>
-      {% unless category.name == 'Open source' %}
-      <small>
-        ({{ technology_count }}&nbsp;
-        {%- if technology_count == 1 -%}
-          technology
-        {%- else -%} 
-          technologies
-        {%- endif -%})
-      </small>
-      {% endunless %}
-    </a>
-    <p>{{ category.description }}</p>
-  </div>
-  {% endfor %}
-</div>
+{% assign sectionName = page.title | downcase %}
+{% include site-section-listing.html sectionName=sectionName %}
