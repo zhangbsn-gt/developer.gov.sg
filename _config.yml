@@ -8,6 +8,8 @@ url: "https://www.developer.gov.sg"
 logo: /assets/img/logo_developer.gov.sg.png
 
 plugins:
+  # SEO Usage:
+  # Page front matter: title, description, image, author, lang
   - jekyll-seo-tag
   - jekyll-redirect-from
 
