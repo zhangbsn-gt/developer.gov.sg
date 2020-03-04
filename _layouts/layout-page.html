@@ -4,14 +4,12 @@ layout: layout-default
 
 {% include page-header.html %}
 
-<section class="sgds-section">
+{% assign pageTitleSlug = page.title | slugify %}
+
+<section class="sgds-section page-{{ pageTitleSlug }}">
     <div class="sgds-container">
-        <div class="row">
-            <div class="col">
-                <div class="content has-default-header-styles">
-                    {{ content }}
-                </div>
-            </div>
+        <div class="content has-default-header-styles">
+            {{ content }}
         </div>
     </div>
 </section>
