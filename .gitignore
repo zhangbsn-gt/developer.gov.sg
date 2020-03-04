@@ -11,3 +11,4 @@ assets/bundles
 assets/**/*.bundle.js
 scripts
 *.log
+_compress_images_cache.yml

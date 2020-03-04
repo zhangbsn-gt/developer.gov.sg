@@ -8,7 +8,7 @@
     },
     "license": "ISC",
     "scripts": {
-        "build:site": "npm run build:static && bundle exec jekyll build",
+        "build:site": "npm run build:static && JEKYLL_ENV=production bundle exec jekyll build",
         "build:static": "webpack --mode=production",
         "deploy": "npm run test:site && npm run build:site",
         "dev:jekyll": "bundle exec jekyll serve",
