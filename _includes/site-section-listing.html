@@ -2,20 +2,20 @@
   {% for category in site.data[include.sectionName] %}
   <div class="col is-4 padding--lg">
     <a href="{{ category.name | slugify }}">
-      {% assign guideline_count = category.items | size %}
+      {% assign item_count = category.items | size %}
       <h3 style="margin-bottom: 0">
         {{ category.name }}
       </h3>
-      <small>
-        {% if guideline_count > 0 %}
-          ({{ guideline_count }}&nbsp;
-          {%- if guideline_count == 1 -%}
-            guideline
-          {%- elsif guideline_count > 1 -%} 
-            guidelines
-          {%- endif -%})
-        {% endif %}
-      </small>
+      {% if item_count > 0 %}
+        <small>
+            ({{ item_count }}&nbsp;
+            {%- if item_count == 1 -%}
+              item
+            {%- elsif item_count > 1 -%} 
+              items
+            {%- endif -%})
+        </small>
+      {% endif %}
     </a>
     <p>{{ category.description }}</p>
   </div>
