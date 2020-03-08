@@ -1,33 +1,12 @@
-- title: 3D Architecture Modelling (furniture)
+- title: 3D Underwater Terrain Modelling
   skills:
-    - 3D Modelling
-    - Texturing and rigging
-  posted: 99 Dec 2999
-  closing: 1 Jan 3000
-  duration: 2 weeks
-  offer: 500
-  link: 3d-architecture-modelling
-
-- title: 3D Architecture Modelling (buildings)
-  skills:
-    - 3D Modelling
-    - Texturing and rigging
-  posted: 99 Dec 2999
-  closing: 1 Jan 3000
-  duration: 2 weeks
-  offer: 500
-  link: 3d-architecture-modelling
-
-# - title: C# Plugin for Unity
-#   skills:
-#     - C#
-#     - Unity Engine
-#     - CityGML Standards
-#   posted: 99 Dec 2999
-#   closing: 1 Jan 3000
-#   offer: 100
-#   duration: 2 weeks
-#   link: c-sharp-plugin-for-unity
+    - 3D terrain modelling
+    - Interpretation of hydrographic charts for creating 3D terrain models
+  posted: Mon, 9 Mar 2020
+  closing: Sun, 16 Mar 2020
+  duration: 1 - 2 weeks (bidder to propose)
+  offer: 1000
+  open: yes
 
 # - title: Video for product demonstration
 #   skills:
@@ -37,15 +16,5 @@
 #   posted: 99 Dec 2999
 #   closing: 1 Jan 3000
 #   duration: 2 weeks
-#   offer: 1000
-#   link: video-for-product-demonstration
-
-- title: 3D Architecture Modelling
-  skills:
-    - 3D Modelling
-    - Texturing and rigging
-  posted: 99 Dec 2999
-  closing: 1 Jan 3000
-  duration: 2 weeks
-  offer: 500
-  link: 3d-architecture-modelling
+#   offer: 100
+#   open: no

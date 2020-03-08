@@ -3,7 +3,7 @@ title: GovBuy
 layout: layout-page
 description: |
   GovBuy is an initiative from the Government to offer engineering, design or
-  writing gigs to Singapore citizens and permanent residents.
+  writing gigs to Singapore citizens and Permanent Residents.
 ---
 
 <h2>What is GovBuy?</h2>
@@ -29,8 +29,11 @@ description: |
 <div class="row is-multiline">
   {% for gig in site.data.gigs %}
   <div class="col is-4-desktop is-6-tablet is-flex">
-    {% include gig.html title=gig.title skills=gig.skills posted=gig.posted
-    closing=gig.closing duration=gig.duration offer=gig.offer link=gig.link %}
+    {% if gig.open %}
+      {% include
+        gig.html title=gig.title skills=gig.skills posted=gig.posted
+        closing=gig.closing duration=gig.duration offer=gig.offer %}
+    {% endif %}
   </div>
   {% endfor %}
 </div>

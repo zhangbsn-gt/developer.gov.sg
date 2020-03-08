@@ -1,4 +1,3 @@
-
 <div class="sgds-card">
   <div class="sgds-card-content">
     <h3>{{ include.title }}</h3>
@@ -10,7 +9,7 @@
     </ul>
   </div>
   <div class="sgds-card-content">
-    <p><a href="{{ include.link }}">Read more about this task</a></p>
+    <p><a href="{{ include.title | slugify }}">Read more about this task</a></p>
   </div>
   <div class="sgds-card-content">
     <div class="row">
