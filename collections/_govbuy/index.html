@@ -1,6 +1,6 @@
 ---
 title: GovBuy
-layout: layout-page
+layout: layout-govbuy
 description: |
   GovBuy is an initiative from the Government to offer engineering, design or
   writing gigs to Singapore citizens and Permanent Residents.
@@ -9,7 +9,7 @@ description: |
 <h2>What is GovBuy?</h2>
 <p>
   GovBuy is an initiative from the Government to offer engineering, design or
-  writing gigs to Singapore citizens and permanent residents.
+  writing gigs to Singapore citizens and Permanent Residents.
 </p>
 
 <div class="gigs-actions row">
@@ -23,16 +23,21 @@ description: |
       <a class="sgds-button is-primary" href="#how-it-works">How it works</a>
     </h2>
   </div>
+  <div class="col">
+    <h2>
+      <a class="sgds-button is-primary" href="#enquiries">Enquiries</a>
+    </h2>
+  </div>
 </div>
 
 <h2>Available gigs</h2>
 <div class="row is-multiline">
   {% for gig in site.data.gigs %}
   <div class="col is-4-desktop is-6-tablet is-flex">
-    {% if gig.open %}
-      {% include
-        gig.html title=gig.title skills=gig.skills posted=gig.posted
-        closing=gig.closing duration=gig.duration offer=gig.offer %}
+    {% if gig.open %} 
+      {% include gig.html
+          title=gig.title skills=gig.skills posted=gig.posted
+          closing=gig.closing duration=gig.duration offer=gig.offer %}
     {% endif %}
   </div>
   {% endfor %}

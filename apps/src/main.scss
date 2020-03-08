@@ -5,6 +5,10 @@
 @import "sidenav";
 @import "buy";
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   height: 100%;

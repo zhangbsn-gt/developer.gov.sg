@@ -1,6 +1,6 @@
 ---
 title: 3D Underwater Terrain Modelling
-layout: layout-page
+layout: layout-govbuy
 ---
 
 {% assign jobDetails = site.data.gigs | where: "title", page.title | first %}
