@@ -8,14 +8,14 @@ description: |
 
 <h2>What is GovBuy?</h2>
 <p>
-  GovBuy is an initiative from the Government to offer engineering, design or
-  writing gigs to Singapore citizens and Permanent Residents.
+  GovBuy is a government-run gig platform that leverages the marketplace model
+  to make it easy for freelance specialists to connect to government projects.
 </p>
 
 <div class="gigs-actions row">
   <div class="col">
     <h2>
-      <a class="sgds-button is-primary" href="#about">About GovBuy gigs</a>
+      <a class="sgds-button is-primary" href="#about">About GovBuy</a>
     </h2>
   </div>
   <div class="col">
@@ -34,50 +34,30 @@ description: |
 <div class="row is-multiline">
   {% for gig in site.data.gigs %}
   <div class="col is-4-desktop is-6-tablet is-flex">
-    {% if gig.open %} 
+    {% if gig.open %}
       {% include gig.html
-          title=gig.title skills=gig.skills posted=gig.posted
-          closing=gig.closing duration=gig.duration offer=gig.offer %}
+        title=gig.title skills=gig.skills
+        posted=gig.posted closing=gig.closing duration=gig.duration offer=gig.offer
+      %}
     {% endif %}
   </div>
   {% endfor %}
 </div>
 
-<h3 id="about">About GovBuy Gigs</h3>
+<h3 id="about">About GovBuy</h3>
 <p>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam laoreet enim
-  et tortor dapibus, nec feugiat turpis ullamcorper. Donec nec elementum quam.
-  Duis sagittis, lorem condimentum porttitor interdum, quam quam porta nunc, nec
-  semper tortor augue eu metus. Mauris non interdum turpis, ac convallis lectus.
-  Quisque sed placerat massa. Duis ante quam, eleifend et viverra nec, malesuada
-  convallis mauris. Vestibulum nunc nunc, cursus id vehicula in, sagittis quis
-  turpis. Quisque consequat pretium sapien dictum finibus.
-</p>
-<p>
-  Fusce venenatis risus semper, feugiat elit eu, pretium quam. Quisque erat
-  libero, imperdiet vel tellus ac, suscipit congue quam. Suspendisse nisi
-  ligula, vestibulum eu est nec, ullamcorper cursus nibh. Curabitur quis nunc
-  porta, consectetur purus lobortis, convallis ipsum. Phasellus bibendum enim eu
-  malesuada molestie. Vestibulum commodo at mi in posuere. In et elementum elit.
-  Curabitur rhoncus pellentesque est. Ut vitae commodo mauris. Sed eget
-  facilisis massa, et molestie nisi.
+  This is a pilot of the platform and we welcome all who are interested
+  to co-create citizen-centric products and services for citizens and businesses
+  with government agencies
 </p>
 <h3 id="how-it-works">How it works</h3>
 <p>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam laoreet enim
-  et tortor dapibus, nec feugiat turpis ullamcorper. Donec nec elementum quam.
-  Duis sagittis, lorem condimentum porttitor interdum, quam quam porta nunc, nec
-  semper tortor augue eu metus. Mauris non interdum turpis, ac convallis lectus.
-  Quisque sed placerat massa. Duis ante quam, eleifend et viverra nec, malesuada
-  convallis mauris. Vestibulum nunc nunc, cursus id vehicula in, sagittis quis
-  turpis. Quisque consequat pretium sapien dictum finibus.
-</p>
-<p>
-  Fusce venenatis risus semper, feugiat elit eu, pretium quam. Quisque erat
-  libero, imperdiet vel tellus ac, suscipit congue quam. Suspendisse nisi
-  ligula, vestibulum eu est nec, ullamcorper cursus nibh. Curabitur quis nunc
-  porta, consectetur purus lobortis, convallis ipsum. Phasellus bibendum enim eu
-  malesuada molestie. Vestibulum commodo at mi in posuere. In et elementum elit.
-  Curabitur rhoncus pellentesque est. Ut vitae commodo mauris. Sed eget
-  facilisis massa, et molestie nisi.
+  <ol>
+    <li>View jobs on GovBuy</li>
+    <li>Submit bid before the job's closing date</li>
+    <li>Get notified via email when your bid is accepted</li>
+    <li>Accept terms of contract in email</li>
+    <li>Submit your work before the deadline</li>
+    <li>Receive payment after completion</li>
+  </ol>
 </p>
