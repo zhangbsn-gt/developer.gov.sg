@@ -33,11 +33,43 @@ Generation of 3D underwater terrain model from hydrographic chart to be connecte
 
 ### Evaluation methods
 
-Milestone 1: Briefing session to kickstart the task ($250 payout)
+#### Milestone 1:
 
-Milestone 2: Mid-point review, upon 50% completion of task ($250 payout)
+Briefing session to kickstart the task, including:
 
-Milestone 3: Completion of task ($500 payout)
+- Bidder to provide signed contract, NDA and bank account information
+- GovTech to provide reference maps, files and detailed job information
+
+**Deposit upon milestone completion: S$250**
+
+#### Milestone 2:
+
+Mid-point review, upon 50% completion of task:
+
+- Evaluation committee to conduct a review at 50% completion of terrain modelling, or after 50% of timeline has elapsed, whichever is earlier
+- Evaluation committee to ascertain at least 50% progress achieved according to requirements, ie:
+  1. 3D model is submitted in the file format stated or mutually agreed upon
+  2. GovTech is able to import 3D model with no issues and 
+  3. 3D model functions as expected
+
+Milestone 3: Completion of task ($500 deposit)
+
+**Deposit upon milestone completion: S$250**
+
+#### Milestone 3:
+
+Completion:
+
+- Evaluation committee to ascertain 100% progress achieved according to requirements, ie:
+  1. 3d model is submitted in the file format stated or mutually agreed upon
+  2. GovTech is able to import 3d model with no issues and
+  3. 3d model functions as expected
+- Bidder to complete correction of any outstanding issues and ensure 3d model is submitted in the file format stated
+- 3D mesh is clean of stray vertices
+- Normals, scale and proportion are correct
+- If stated, polygon count falls within acceptable range stated
+
+**Deposit upon milestone completion: S$500**
 
 ### The project
 
