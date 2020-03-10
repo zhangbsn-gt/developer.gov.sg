@@ -40,7 +40,7 @@ Briefing session to kickstart the task, including:
 - Bidder to provide signed contract, NDA and bank account information
 - GovTech to provide reference maps, files and detailed job information
 
-**Deposit upon acceptance of bid and milestone completion: S$250**
+**Payment upon acceptance of bid and milestone completion: S$250**
 
 #### Milestone 2:
 
@@ -52,9 +52,7 @@ Mid-point review, upon 50% completion of task:
   2. GovTech is able to import 3D model with no issues and 
   3. 3D model functions as expected
 
-Milestone 3: Completion of task ($500 deposit)
-
-**Deposit upon satisfactory milestone completion: S$250**
+**Payment upon satisfactory milestone completion: S$250**
 
 #### Milestone 3:
 
@@ -69,7 +67,7 @@ Completion:
 - Normals, scale and proportion are correct
 - If stated, polygon count falls within acceptable range stated
 
-**Deposit upon satisfactory completion of all tasks: S$500**
+**Payment upon satisfactory completion of all tasks: S$500**
 
 ### The project
 
