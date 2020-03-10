@@ -47,4 +47,4 @@ ODP: An [Open Digital Platform](https://www.tech.gov.sg/media/technews/building-
 
 [The Punggol Digital District Team](https://www.tech.gov.sg/media/technews/building-an-operating-system-for-punggol-digital-district)
 
-### [Submit your bid here](https://example.com){:target="_blank"}
+### [Submit your bid here](https://form.gov.sg/5e4a11a856e8230011d594bb){:target="_blank"}
