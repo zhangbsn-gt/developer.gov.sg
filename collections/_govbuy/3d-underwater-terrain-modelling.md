@@ -40,7 +40,7 @@ Briefing session to kickstart the task, including:
 - Bidder to provide signed contract, NDA and bank account information
 - GovTech to provide reference maps, files and detailed job information
 
-**Deposit upon milestone completion: S$250**
+**Deposit upon acceptance of bid and milestone completion: S$250**
 
 #### Milestone 2:
 
@@ -54,7 +54,7 @@ Mid-point review, upon 50% completion of task:
 
 Milestone 3: Completion of task ($500 deposit)
 
-**Deposit upon milestone completion: S$250**
+**Deposit upon satisfactory milestone completion: S$250**
 
 #### Milestone 3:
 
@@ -69,7 +69,7 @@ Completion:
 - Normals, scale and proportion are correct
 - If stated, polygon count falls within acceptable range stated
 
-**Deposit upon milestone completion: S$500**
+**Deposit upon satisfactory completion of all tasks: S$500**
 
 ### The project
 
