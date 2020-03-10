@@ -33,11 +33,11 @@ Generation of 3D underwater terrain model from hydrographic chart to be connecte
 
 ### Evaluation methods
 
-Milestone 1: Briefing session to kickstart the task
+Milestone 1: Briefing session to kickstart the task ($250 payout)
 
-Milestone 2: Mid-point review, upon 50% completion of task
+Milestone 2: Mid-point review, upon 50% completion of task ($250 payout)
 
-Milestone 3: Completion of task
+Milestone 3: Completion of task ($500 payout)
 
 ### The project
 
