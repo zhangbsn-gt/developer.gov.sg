@@ -4,6 +4,7 @@
 @import "cards";
 @import "sidenav";
 @import "buy";
+@import "technologies";
 
 html {
   scroll-behavior: smooth;
@@ -92,12 +93,6 @@ body {
   display: none;
 }
 
-.content {
-  h2 {
-    font-size: 2.375rem;
-  }
-}
-
 .hero-main {
   display: flex;
   flex-direction: column;
@@ -163,14 +158,8 @@ body {
   z-index: 1;
 }
 
-.sgds-section.no-margin {
-  margin: -6px !important;
-  padding: 0;
-}
-
-.section.no-margin {
-  margin: 0;
-  padding: 0;
+.bg-edge {
+  margin: -7px 0;
 }
 
 #curve {
@@ -241,8 +230,4 @@ a {
     color: white;
     text-decoration: underline;
   }
-}
-
-.open-source .col {
-  display: flex;
 }
