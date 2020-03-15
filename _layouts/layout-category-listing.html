@@ -3,11 +3,23 @@ layout: layout-page-sidenav
 ---
 
 {% assign category = site.data[page.collection] | where: "name", page.title %}
-<h3>{{ category[0].description }}</h3>
-<ul>
+<p>
+  <strong>
+    {{ category[0].description }}
+  </strong>
+</p>
+<div class="row is-multiline">
   {% for item in category[0].items %}
-  <li>
-    <a href="{{ item | slugify }}">{{ item }}</a>
-  </li>
+  <div class="col is-4 is-flex" style="min-height: 8rem;">
+    <a href="{{ item | slugify }}" style="width: 100%; height: 100%;">
+      <div class="sgds-card patterned" style="height:100%;">
+        <div class="sgds-card-content">
+          <strong>
+            {{ item }}
+          </strong>
+        </div>
+      </div>
+    </a>
+  </div>
   {% endfor %}
-</ul>
+</div>

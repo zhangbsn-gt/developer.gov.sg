@@ -20,6 +20,25 @@ body {
   flex-direction: column;
 }
 
+a.external-link::after {
+  display: inline-block;
+  font-family: sgds-icons;
+  content: "\e95c";
+  padding-left: 0.25rem;
+  font-weight: 400;
+}
+
+a {
+  &:hover {
+    text-decoration: underline;
+  }
+  &.sgds-button,
+  &.second-level-nav-header,
+  .sgds-card-button {
+    text-decoration: none;
+  }
+}
+
 .sgds-navbar {
   a:hover {
     text-decoration: none;
@@ -54,38 +73,6 @@ body {
   img {
     margin: 0;
     max-height: 1rem;
-  }
-}
-
-.sgds-card-header {
-  background-color: #0076d6;
-}
-
-.sgds-card-header-title {
-  color: #fff;
-}
-
-.sgds-card:hover {
-  background-color: #f7f7f7;
-}
-
-.sgds-card-button:hover {
-  color: #484848;
-}
-
-.sgds-card.patterned {
-  background-image: url("/assets/img/bg-memphispattern.png");
-  color: #ffffff;
-  a {
-    color: #fff;
-  }
-  &:hover {
-    transform: translateY(-2px);
-    box-shadow: 2px 3px 5px gray;
-    transition: all 0.3s;
-  }
-  &:active {
-    transform: translateY(0);
   }
 }
 
@@ -210,25 +197,6 @@ body {
   display: flex;
   & a {
     display: flex;
-  }
-}
-
-a.external-link::after {
-  display: inline-block;
-  font-family: sgds-icons;
-  content: "\e95c";
-  padding-left: 0.25rem;
-  font-weight: 400;
-}
-
-a {
-  &:hover {
-    text-decoration: underline;
-  }
-  &.sgds-button,
-  &.second-level-nav-header,
-  .sgds-card-button {
-    text-decoration: none;
   }
 }
 

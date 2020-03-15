@@ -14,31 +14,39 @@ description: |
 
 <div class="gigs-actions row">
   <div class="col">
-    <h2>
-      <a class="sgds-button is-primary" href="#about">About GovBuy</a>
-    </h2>
+    <p>
+      <strong>
+        <a class="sgds-button is-primary" href="#about">About GovBuy</a>
+      </strong>
+    </p>
   </div>
   <div class="col">
-    <h2>
-      <a class="sgds-button is-primary" href="#how-it-works">How it works</a>
-    </h2>
+    <p>
+      <strong>
+        <a class="sgds-button is-primary" href="#how-it-works">How it works</a>
+      </strong>
+    </p>
   </div>
   <div class="col">
-    <h2>
-      <a class="sgds-button is-primary" href="#enquiries">Enquiries</a>
-    </h2>
+    <p>
+      <strong>
+        <a class="sgds-button is-primary" href="#enquiries">Enquiries</a>
+      </strong>
+    </p>
   </div>
   <div class="col">
-    <h2>
-      <a class="sgds-button is-primary" href="/govbuy/terms-of-use">Terms of Use</a>
-    </h2>
+    <p>
+      <strong>
+        <a class="sgds-button is-primary" href="/govbuy/terms-of-use">Terms of Use</a>
+      </strong>
+    </p>
   </div>
 </div>
 
 <h2>Available gigs</h2>
 <div class="row is-multiline">
   {% for gig in site.data.gigs %}
-  <div class="col is-4-desktop is-6-tablet is-flex">
+  <div class="col is-6 is-flex">
     {% if gig.open %}
       {% include gig.html
         title=gig.title skills=gig.skills
@@ -51,9 +59,9 @@ description: |
 
 <h3 id="about">About GovBuy</h3>
 <p>
-  This is a pilot of the platform and we welcome all who are interested
-  to co-create citizen-centric products and services for citizens and businesses
-  with government agencies
+  This is a pilot of the GovBuy platform and we welcome bids from anyone
+  who is interested in co-creating products and services for citizens and businesses
+  with government agencies.
 </p>
 <h3 id="how-it-works">How it works</h3>
 <p>
