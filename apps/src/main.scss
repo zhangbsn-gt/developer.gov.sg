@@ -136,6 +136,13 @@ body {
   display: flex;
   flex-direction: column;
   border: 0;
+  width: 100%;
+  li {
+    width: 97%;
+    a {
+      width: 100%;
+    }
+  }
 }
 
 .sgds-tabs.is-toggle-product a {
