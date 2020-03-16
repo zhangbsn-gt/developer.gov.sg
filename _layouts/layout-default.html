@@ -18,8 +18,12 @@
       rel="stylesheet"
     />
 
-    {% if site.git_branch == 'dev' or site.git_branch == 'master' %}
+    {% if site.git_branch == 'dev' %}
       <script src="https://assets.dcube.cloud/scripts/wogaa.js"></script>
+    {% endif %}
+
+    {% if site.git_branch == 'master' %}
+      <script src="https://assets.wogaa.sg/scripts/wogaa.js"></script>
     {% endif %}
 
     {% if site.ga_id != nil and site.git_branch == 'master' %}
