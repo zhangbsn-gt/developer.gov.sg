@@ -47,12 +47,11 @@ description: |
 <div class="row is-multiline">
   {% for gig in site.data.gigs %}
   <div class="col is-6 is-flex">
-    {% if gig.open %}
-      {% include gig.html
-        title=gig.title skills=gig.skills
-        posted=gig.posted closing=gig.closing duration=gig.duration offer=gig.offer
-      %}
-    {% endif %}
+    {% include gig.html
+      title=gig.title skills=gig.skills
+      posted=gig.posted closing=gig.closing duration=gig.duration offer=gig.offer
+      open=gig.open
+    %}
   </div>
   {% endfor %}
 </div>

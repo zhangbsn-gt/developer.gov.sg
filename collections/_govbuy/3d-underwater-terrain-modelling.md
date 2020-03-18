@@ -7,7 +7,7 @@ layout: layout-govbuy
 
 ## 3D Underwater Terrain Modelling
 
-### [Submit your bid here](https://form.gov.sg/5e4a11a856e8230011d594bb){:target="_blank"}
+**The bidding period for this job is over**
 
 ### The task
 
@@ -78,5 +78,3 @@ ODP: An [Open Digital Platform](https://www.tech.gov.sg/media/technews/building-
 ### The team
 
 [The Punggol Digital District Team](https://www.tech.gov.sg/media/technews/building-an-operating-system-for-punggol-digital-district)
-
-### [Submit your bid here](https://form.gov.sg/5e4a11a856e8230011d594bb){:target="_blank"}
