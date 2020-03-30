@@ -33,7 +33,7 @@ Continuous deployment and delivery to multiple target hosts and zones. SHIP woul
 
 Note: SHIP only provides the tools to support a CI/CD pipeline. Users would still have to set up these pipelines themselves or through a vendor.
 
-![ship project overview](http://d3uzjhjcl6zsbz.cloudfront.net/ship-1.png)
+![ship project overview](https://d3uzjhjcl6zsbz.cloudfront.net/ship-1.png)
 
 ### Benefits
 

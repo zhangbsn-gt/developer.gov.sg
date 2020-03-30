@@ -13,7 +13,7 @@ Hive Agile Testing Solutions (HATS) is a functional test automation tool for web
 
 At the end of the automated tests, an HTML report is generated that allows you to determine the total execution time, pass/fail test cases and the step at which the failure happens, if any. HATS leverages the technical know-how of the Agile experts at Hive, as well as our experience with Agile testing, to help the Singapore Government deliver more robust and stable digital services.
 
-![](http://d3uzjhjcl6zsbz.cloudfront.net/hats.png)
+![](https://d3uzjhjcl6zsbz.cloudfront.net/hats.png)
 
 ## Features
 
