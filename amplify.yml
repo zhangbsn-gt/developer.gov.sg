@@ -13,6 +13,5 @@ frontend:
     baseDirectory: _site
     files:
       - '**/*'
-    discard-paths: no
   cache:
     paths: []
