@@ -1,4 +1,9 @@
 version: 1.0
+env:
+  variables:
+    BRANCH: ${AWS_BRANCH}
+    GA_ID: ${GA_ID}
+    HJ_ID: ${HJ_ID}
 frontend:
   phases:
     preBuild:
