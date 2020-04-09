@@ -28,21 +28,7 @@ a.external-link::after {
   font-weight: 400;
 }
 
-a {
-  &:hover {
-    text-decoration: underline;
-  }
-  &.sgds-button,
-  &.second-level-nav-header,
-  .sgds-card-button {
-    text-decoration: none;
-  }
-}
-
 .sgds-navbar {
-  a:hover {
-    text-decoration: none;
-  }
   a.sgds-navbar-item.is-active,
   .sgds-navbar-link.is-active {
     margin-top: 0;
@@ -141,7 +127,6 @@ a {
   transition: all 0.2s;
   &:hover {
     background-color: #f0f0f0;
-    text-decoration: none;
   }
 }
 
