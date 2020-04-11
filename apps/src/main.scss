@@ -5,6 +5,7 @@
 @import "sidenav";
 @import "buy";
 @import "technologies";
+@import "footer";
 
 html {
   scroll-behavior: smooth;
@@ -46,20 +47,6 @@ a.external-link::after {
 
 .main {
   flex: 1 0 auto;
-}
-
-.footer {
-  flex-shrink: 0;
-}
-
-.sgds-footer {
-  .footer-link-title strong {
-    color: white;
-  }
-  img {
-    margin: 0;
-    max-height: 1rem;
-  }
 }
 
 [v-cloak] {

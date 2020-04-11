@@ -1,8 +1,8 @@
 source "https://rubygems.org"
 gem "jekyll", "~> 4.0.0"
-gem "html-proofer"
-gem 'jekyll-redirect-from'
+
 group :jekyll_plugins do
+  gem 'jekyll-redirect-from'
   gem "jekyll-seo-tag"
 end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

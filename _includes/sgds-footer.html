@@ -3,14 +3,21 @@
     <div class="sgds-container">
       <div class="row">
         <div class="col">
-          <h5 class="footer-link-title">
+          <h5>
             <strong>Singapore Government Developer Portal</strong>
           </h5>
         </div>
       </div>
       <div class="row">
+        <div class="col is-3 contribute">
+          <p><strong>Contribute content</strong></p>
+          <p>
+            Have a project or technology to share?
+            <a href="mailto:gds_developer_portal@tech.gov.sg">Let us know.</a>
+          </p>
+        </div>
         <div class="col is-3">
-          <p class="footer-link-title"><strong>Blogs and Forums</strong></p>
+          <p><strong>Blogs and Forums</strong></p>
           <p>
             <a
               href="https://blog.data.gov.sg/"
@@ -21,14 +28,11 @@
           </p>
           <p>
             <a
-              href="https://blog.data.gov.sg/"
+              href="https://medium.com/dsaid-govtech"
               target="_blank"
               class="external-link"
               >Data Science & Artificial Intelligence Division</a
             >
-          </p>
-          <p>
-            <a href="https://medium.com/dsaid-govtech"></a>
           </p>
           <p>
             <a
@@ -49,7 +53,7 @@
           </p>
         </div>
         <div class="col is-3">
-          <p class="footer-link-title"><strong>Open Source</strong></p>
+          <p><strong>Open Source</strong></p>
           <p>
             <a
               href="https://github.com/datagovsg"
@@ -142,7 +146,8 @@
           class="col is-12 has-text-right-desktop has-text-right-tablet has-text-left-mobile"
         >
           <p class="is-hidden-touch">
-            &copy; {{ site.time | date: "%Y"}} Government of Singapore. Last Updated {{ site.time | date_to_string }}
+            &copy; {{ site.time | date: "%Y"}} Government of Singapore. Last
+            Updated {{ site.time | date_to_string }}
           </p>
           <p class="is-hidden-desktop">
             &copy; {{ site.time | date: "%Y"}} Government of Singapore
