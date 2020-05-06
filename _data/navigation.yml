@@ -1,10 +1,12 @@
 # - title: Workflows
 #   url: /workflows/
+
 - title: Guidelines
   url: /guidelines
   description:
     heading: Run and deliver great digital services
     content: Guidelines and best practices based on the experiences of Government development teams
+  dropdown: true
 
 - title: Technologies
   url: /technologies
@@ -13,6 +15,10 @@
     content: >
       Discover technologies to leverage on to build the next digital
       service for Singapore
+  dropdown: true
+
+- title: COVID Projects
+  url: /covid-volunteering
 
 # - title: Gigs
 #   url: /gigs

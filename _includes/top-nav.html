@@ -28,6 +28,7 @@
                         {%- if page.url contains lvl1item.url -%}
                         {%- assign class = 'is-active' -%}
                         {%- endif -%}
+                        {%- if lvl1item.dropdown -%}
                         <div class="sgds-navbar-item has-dropdown is-hoverable is-mega">
                             <a class="sgds-navbar-link {{class}} is-tab has-text-weight-semibold" href="{{ lvl1item.url }}">
                                 {{ lvl1item.title }}
@@ -59,6 +60,13 @@
                                 </div>
                             </div>
                         </div>
+                        {%- else -%}
+                        <a 
+                            href="{{ lvl1item.url }}" 
+                            class="sgds-navbar-item has-text-weight-semibold {{class}}">
+                            {{ lvl1item.title }}
+                        </a>
+                        {%- endif -%}
                     {%- endfor -%}
                 </div>
                 <div class="sgds-navbar-end">
