@@ -26,46 +26,16 @@
                     {%- for lvl1item in links -%}
                         {%- assign class = nil -%}
                         {%- if page.url contains lvl1item.url -%}
-                        {%- assign class = 'is-active' -%}
+                            {%- assign class = 'is-active' -%}
                         {%- endif -%}
                         {%- if lvl1item.dropdown -%}
-                        <div class="sgds-navbar-item has-dropdown is-hoverable is-mega">
-                            <a class="sgds-navbar-link {{class}} is-tab has-text-weight-semibold" href="{{ lvl1item.url }}">
+                            {% include top-nav-mega-dropdown.html navItem=lvl1item isActive=class %}
+                        {%- else -%}
+                            <a
+                                href="{{ lvl1item.url }}" 
+                                class="sgds-navbar-item has-text-weight-semibold {{class}}">
                                 {{ lvl1item.title }}
                             </a>
-                            <div class="sgds-navbar-dropdown">
-                                <div class="sgds-container is-fluid">
-                                    <div class="row">
-                                        <div class="col is-4">
-                                            <p class="section-heading"><strong>{{ lvl1item.description.heading }}</strong></p>
-                                            <p>{{ lvl1item.description.content }}</p>
-                                        </div>
-                                        <div class="col is-8">
-                                            <div class="row is-multiline">
-                                                {% assign siteSection = lvl1item.title | downcase %}
-                                                {% assign siteSectionDetails = site.data[siteSection] %}
-                                                {% for siteSectionItem in siteSectionDetails %}
-                                                    <div class="col is-6">
-                                                        {% assign sectionNameSlug = siteSectionItem.name | slugify %}
-                                                        <p>
-                                                            <a href="{{'/' | append: siteSection | append: '/' | append: sectionNameSlug }}">
-                                                                {{ siteSectionItem.name }}
-                                                            </a>
-                                                        </p>
-                                                    </div>
-                                                {% endfor %}
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        {%- else -%}
-                        <a 
-                            href="{{ lvl1item.url }}" 
-                            class="sgds-navbar-item has-text-weight-semibold {{class}}">
-                            {{ lvl1item.title }}
-                        </a>
                         {%- endif -%}
                     {%- endfor -%}
                 </div>
