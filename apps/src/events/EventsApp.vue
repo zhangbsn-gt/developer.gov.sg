@@ -59,7 +59,7 @@ export default {
   created() {
     this.loading = true;
     apiClient
-      .get("/events")
+      .get("/events?eventStatus=upcoming")
       .then(response => {
         this.events = response.data;
       })
