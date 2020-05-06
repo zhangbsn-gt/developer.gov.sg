@@ -1,0 +1,30 @@
+.sgds-navbar {
+  a.sgds-navbar-item.is-active,
+  .sgds-navbar-link.is-active {
+    margin-top: 0;
+  }
+  .sgds-navbar-dropdown {
+    .section-heading {
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+.sgds-navbar-item img {
+  max-height: 3rem;
+}
+
+.sgds-navbar-brand a.sgds-navbar-item:hover{
+  text-decoration: none;
+  color: #484848;
+}
+
+// text for logo
+.logo-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 1em;
+  display: block;
+  padding-left: 8px;
+}

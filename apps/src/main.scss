@@ -1,5 +1,6 @@
 @import "variables";
 @import "~sgds-govtech/sgds/sass/sgds";
+@import "navbar";
 @import "spinner";
 @import "cards";
 @import "sidenav";
@@ -27,18 +28,6 @@ a.external-link::after {
   content: "\e95c";
   padding-left: 0.25rem;
   font-weight: 400;
-}
-
-.sgds-navbar {
-  a.sgds-navbar-item.is-active,
-  .sgds-navbar-link.is-active {
-    margin-top: 0;
-  }
-  .sgds-navbar-dropdown {
-    .section-heading {
-      margin-bottom: 0.5rem;
-    }
-  }
 }
 
 .row.is-padding-large .col {
@@ -177,24 +166,4 @@ a.external-link::after {
     color: white;
     text-decoration: underline;
   }
-}
-
-// text for logo
-.logo-text {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 22px;
-  font-weight: 800;
-  line-height: 1em;
-  display: block;
-  padding-left: 8px;
-}
-
-
-.sgds-navbar-item img {
-  max-height: 3rem;
-}
-
-.sgds-navbar-brand a.sgds-navbar-item:hover{
-  text-decoration: none;
-  color: #484848;
 }
