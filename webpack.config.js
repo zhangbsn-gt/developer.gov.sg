@@ -67,7 +67,7 @@ module.exports = (env, argv) => {
     plugins: [
       new VueLoaderPlugin(),
       new MiniCssExtractPlugin(),
-      new webpack.EnvironmentPlugin(["API_URL"]),
+      new webpack.EnvironmentPlugin(["BRANCH", "API_URL"]),
     ],
   };
 
