@@ -67,13 +67,13 @@ module.exports = (env, argv) => {
     plugins: [
       new VueLoaderPlugin(),
       new MiniCssExtractPlugin(),
-      new webpack.EnvironmentPlugin(["BRANCH", "API_URL"]),
+      new Dotenv(), // Dotenv must come before EnvironmentPlugin
+      new webpack.EnvironmentPlugin({
+        BRANCH: null,
+        API_URL: null,
+      }),
     ],
   };
-
-  if (argv.mode !== "production") {
-    config.plugins.push(new Dotenv());
-  }
 
   return config;
 };

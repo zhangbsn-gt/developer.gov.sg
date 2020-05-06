@@ -1,0 +1,23 @@
+- name: SafeEntry
+  short_description: >
+    SafeEntry is a national digital check-in system that is 
+    used to augment existing contact tracing efforts.
+- name: Clinical Case Reporting (MOH)
+  short_description: >
+    Compile confirmed case updates from all hospitals, 
+    update master list and generate figures for reporting.
+- name: Thermal Sensing
+  short_description:
+- name: Contact Tracing App development
+  short_description:
+- name: VICA (Virtual Intelligent Citizen Assistant)
+  short_description: >
+    VICA is GovTech's next-generation Chatbot/Virtual Assistant/Conversation AI platform.
+- name: OpenCerts
+  short_description: >
+    A portal to verify government-issued documents and credentials 
+    that are compatible with OpenCerts format.
+- name: LTE CAT M1 Development and VoLTE over LTE CAT-M1
+  short_description: >
+    To create a device that allows for Voice over LTE using LTE CAT-M1 technology, 
+    for seniors to make phone calls.
