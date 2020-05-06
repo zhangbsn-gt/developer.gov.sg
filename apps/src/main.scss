@@ -22,6 +22,10 @@ body {
   flex-direction: column;
 }
 
+.sgds-breadcrumb li + li::before {
+  color: white;
+}
+
 a.external-link::after {
   display: inline-block;
   font-family: sgds-icons;
