@@ -1,4 +1,5 @@
 const path = require("path");
+const webpack = require("webpack");
 const { VueLoaderPlugin } = require("vue-loader");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const Dotenv = require("dotenv-webpack");
@@ -63,7 +64,11 @@ module.exports = (env, argv) => {
         },
       ],
     },
-    plugins: [new VueLoaderPlugin(), new MiniCssExtractPlugin()],
+    plugins: [
+      new VueLoaderPlugin(),
+      new MiniCssExtractPlugin(),
+      new webpack.EnvironmentPlugin(["API_URL"]),
+    ],
   };
 
   if (argv.mode !== "production") {
