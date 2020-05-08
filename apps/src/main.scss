@@ -171,3 +171,17 @@ a.external-link::after {
     text-decoration: underline;
   }
 }
+
+.idea-sprint-poster {
+  max-width: 45%;
+}
+@media screen and (max-width: 1215px) {
+  .idea-sprint-poster {
+    max-width: 50%
+  }
+}
+@media screen and (max-width: 768px) {
+  .idea-sprint-poster {
+    min-width: 100%;
+  }
+}
