@@ -2,6 +2,7 @@
 title: Thermal Sensing
 layout: layout-page
 short_description:
+published: no
 ---
 
 - **Skillsets needed**
