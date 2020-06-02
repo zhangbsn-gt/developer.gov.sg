@@ -1,0 +1,148 @@
+{% assign categoryData = site.data.technologies | where: "name", "Open source" %}
+<h3>{{ categoryData[0].description }}</h3>
+
+<div class="row is-multiline open-source">
+  <div class="col is-6-desktop is-12-tablet">
+    <div class="sgds-card">
+      <div class="sgds-card-content">
+        <h4>Apex API Gateway</h4>
+        <p>
+          <a href="/technologies/data-and-apis/apex">Apex</a> is a Government API gateway
+          that allows development teams to manage and share their application
+          APIs securely. Apex is available on both internet and intranet
+          environments.
+        </p>
+        <ul>
+          <li>
+            <a href="https://github.com/GovTechSG/node-apex-api-security"
+              >Node.js API signature library</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/GovTechSG/java-apex-api-security"
+              >Java API signature library</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/GovTechSG/apex-proxy-node"
+              >Node.js HTTP Proxy Server for attaching Apex authentication
+              headers</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/GovTechSG/apex-signature-validator"
+              >Apex API signature validator</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col is-6-desktop is-12-tablet">
+    <div class="sgds-card">
+      <div class="sgds-card-content">
+        <h4>Infrastructure as code</h4>
+        <p>
+          Infrastructure as code technologies allow development teams to define
+          their application infrastructure through declarative configuration
+          files. This allows teams to deploy their infrastructure more quickly
+          and consistently.
+        </p>
+        <ul>
+          <li>
+            GovTech <a href="https://medium.com/dsaid-govtech">DSAID's</a>
+            <a href="https://github.com/dsaidgovsg/terraform-modules"
+              >AWS Terraform modules</a
+            >
+          </li>
+          <li>
+            GovTech
+            <a href="https://blog.gds-gov.tech">GDS's</a>
+            <a href="https://github.com/GovTechSG/terraform-aws-vpc">
+              AWS Terraform modules
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col is-6-desktop is-12-tablet">
+    <div class="sgds-card">
+      <div class="sgds-card-content">
+        <h4>Design and UI</h4>
+        <p>
+          UI component libraries to help web development teams build quickly
+          with confidence
+        </p>
+        <ul>
+          <li>
+            <a href="https://www.designsystem.gov.sg"
+              >Singapore Government Design System</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col is-6-desktop is-12-tablet">
+    <div class="sgds-card">
+      <div class="sgds-card-content">
+        <h4>National Digital Identity</h4>
+        <p>
+          Libraries for integrating applications with the
+          <a href="/technologies/digital-identity/national-digital-identity.html"
+            >National Digital Identity</a
+          >
+          platform.
+        </p>
+        <ul>
+          <li>
+            <a href="https://github.com/GovTechSG/singpass-myinfo-oidc-helper"
+              >Node.js library for SingPass and Myinfo's OpenID Connect APIs</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/opengovsg/spcp-auth-client"
+              >Node.js library for SingPass and Myinfo's SAML APIs</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/gdsace/libcorppass"
+              >A wrapper around libsaml to perform authentication with CorpPass
+              for Rack and Warden applications.</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col is-6-desktop is-12-tablet">
+    <div class="sgds-card">
+      <div class="sgds-card-content">
+        <h4>Sensors & IOT</h4>
+        <p>Software to support sensor and internet-of-things platforms</p>
+        <ul>
+          <li>
+            <a href="https://github.com/GovTechSIOT/stack-manuca-os"
+              >MANUCA OS, a functional real-time operating system for sensor
+              node developers</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col is-6-desktop is-12-tablet">
+    <div class="sgds-card">
+      <div class="sgds-card-content">
+        <h4>OpenCerts</h4>
+        <p>Issue and verify education certificates on the blockchain</p>
+        <ul>
+          <li>
+            <a href="https://github.com/OpenCerts">OpenCerts</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

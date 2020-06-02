@@ -1,0 +1,112 @@
+---
+title: Responding to COVID-19 with Tech
+layout: layout-page-sidenav
+---
+
+<p>
+  Here's how you can help the Singapore Government in its digital efforts to
+  combat the COVID-19 pandemic.
+</p>
+
+<hr />
+
+<h2>Be a volunteer</h2>
+
+<p>
+  The Government has progressively built up the digital infrastructure and
+  engineering capabilities as the foundation of our Smart Nation. This has
+  enabled us to respond decisively and swiftly to the COVID-19 outbreak with a
+  suite of digital tools to help disseminate timely and accurate information to
+  Singaporeans and to enable our public agencies to better manage the crisis.
+</p>
+<p>
+  Refer below for more details about some products we’ve developed thus far, and
+  the volunteering opportunities in which you can lend a helping hand.
+</p>
+
+<div class="row is-multiline">
+  {% for project in site.communities %}
+    {% assign id = project.id | split: "/" | last %}
+    {% if id != "index" and project.path contains "volunteering-opportunities" %}
+    <div class="col is-6-tablet is-4-desktop is-flex">
+      <div class="sgds-card">
+        <div class="sgds-card-content">
+          <h3>{{ project.title }}</h3>
+          <p>{{ project.short_description | markdownify }}</p>
+        </div>
+        <div class="sgds-card-footer">
+          {% unless project.details_link == false %}
+          <a href="{{ project.url }}" class="sgds-card-footer-item"
+            >Find out more</a
+          >
+          {% endunless %}
+        </div>
+      </div>
+    </div>
+    {% endif %}
+  {% endfor %}
+</div>
+
+<h2>Other volunteering opportunities</h2>
+<p>
+  If you would like to volunteer outside of the projects listed above, please
+  fill in this form <a href="https://go.gov.sg/govtech-volunteers">here.</a>
+</p>
+
+<h2>Stay up to date</h2>
+<p>
+  STACK-X: Meetup is a platform for the tech community to join GovTech to
+  discuss trending topics such as Cloud Architecture, Agile and Machine Learning
+  and now, using tech to fight COVID-19. Join our meetup.com page to stay
+  updated on upcoming STACK-X: Meetups:
+  <a href="https://go.gov.sg/meetup" rel="noopener noreferrer nofollow"
+    ><u>https://go.gov.sg/meetup</u></a
+  >.
+</p>
+
+<h2>
+  <a
+    href="https://govsg.devpost.com"
+    rel="noopener noreferrer nofollow"
+    ><u>COVID-19 Idea Sprint</u></a
+  >
+</h2>
+
+<p>
+  Thank you to all who participated in the COVID-19 Idea Sprint to build and
+  ideate solutions for COVID-19 challenges across Singapore. While the Idea
+  Sprint has now concluded, you can check out the recording of Demo Day
+  (Saturday, 23 May)
+  <a href="http://go.gov.sg/demodayvideo" rel="noopener noreferrer nofollow"
+    ><u>here</u></a
+  >
+  and all the submissions on the
+  <a href="https://govsg.devpost.com/" rel="noopener noreferrer nofollow"
+    ><u>COVID-19 Idea Sprint page</u></a
+  >.
+</p>
+
+<h2>Past webinars</h2>
+
+<div class="row is-multiline">
+  <div class="col is-6-tablet is-4-desktop is-flex">
+    <div class="sgds-card">
+      <div class="sgds-card-content">
+        <h4>
+          <a href="https://www.youtube.com/watch?v=hRYGpTEVlIs">
+            Contact Tracing & Re-opening the Economy
+          </a>
+        </h4>
+        <p>
+          Speakers from GovTech, SNDGG and MOH discuss two problem statements
+          together with webinar participants.
+        </p>
+      </div>
+      <div class="sgds-card-footer">
+        <a href="https://www.youtube.com/watch?v=hRYGpTEVlIs" class="sgds-card-footer-item">
+          Watch webinar
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

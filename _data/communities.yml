@@ -1,9 +1,9 @@
-- name: Events
+- name: STACK X Meetups
   description: >
     View upcoming and past events. Sign up and join us in learning and exchanging ideas
   items:
-    - Upcoming Events
-    - Past Events
+    - Upcoming Meetups
+    - Past Meetups
 - name: Open Source Technologies
   description: Discover and collaborate on the Government's open source technologies
 - name: Developer blogs
