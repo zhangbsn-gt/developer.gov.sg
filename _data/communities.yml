@@ -1,0 +1,17 @@
+- name: Events
+  description: >
+    View upcoming and past events. Sign up and join us in learning and exchanging ideas
+  items:
+    - Upcoming Events
+    - Past Events
+- name: Open Source Technologies
+  description: Discover and collaborate on the Government's open source technologies
+- name: Developer blogs
+  description: Read developer blogs
+- name: COVID
+  description: >
+    Find out about concurrent efforts in engaging communities during COVID-19
+  items:
+    - Tech Hunt
+    - GovBuy
+    - Volunteering Opportunities

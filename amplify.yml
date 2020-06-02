@@ -13,7 +13,8 @@ frontend:
         - npm ci
     build:
       commands:
-        - npm run deploy
+        - if [ "${AWS_BRANCH}" = "master" ]; then npm run deploy; fi
+        - if [ "${AWS_BRANCH}" != 'master' ]; then npm run build:dev; fi
   artifacts:
     baseDirectory: _site
     files:
