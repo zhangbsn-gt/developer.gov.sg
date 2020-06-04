@@ -59,6 +59,16 @@ export default {
       loading: false,
       allBlogs: [
         {
+          name: "Cyber Security Group",
+          description: `<strong>CSG</strong> is the cybersecurity arm of GovTech and 
+is committed to creating a safe and secure digital government.`,
+          blogEntries: [],
+          link: {
+            url: "https://medium.com/csg-govtech",
+            name: "Cyber Security Group Blog",
+          },
+        },
+        {
           name: "Data.gov.sg",
           description: `<strong>Data.gov.sg</strong> is a one-stop portal for access to the
   government’s publicly available data. It aims to make government data relevant
@@ -115,6 +125,7 @@ export default {
         this.allBlogs[1].blogEntries = response.data.datagovBlogs;
         this.allBlogs[2].blogEntries = response.data.ndiBlogs;
         this.allBlogs[3].blogEntries = response.data.dsaidBlogs;
+        this.allBlogs[4].blogEntries = response.data.csgBlogs;
       })
       .finally(() => {
         this.loading = false;
