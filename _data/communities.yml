@@ -1,17 +1,22 @@
-- name: STACK X Meetups
+- name: STACK-X Meetups
   description: >
-    View upcoming and past events. Sign up and join us in learning and exchanging ideas
+    The STACK-X Meetups community warmly welcomes anyone who is 
+    passionate about using technology to improve the lives of Singaporeans. 
   items:
+    - Overview
     - Upcoming Meetups
     - Past Meetups
 - name: Open Source Technologies
-  description: Discover and collaborate on the Government's open source technologies
+  description: >
+    Developers and businesses can access and leverage on the 
+    various technologies and tools that Government agencies have open-sourced.  
 - name: Developer blogs
-  description: Read developer blogs
+  description: Read about the innovations of GovTech’s teams!
 - name: COVID
   description: >
-    Find out about concurrent efforts in engaging communities during COVID-19
+    Engaging communities during COVID
   items:
+    - Overview
     - Tech Hunt
     - GovBuy
     - Volunteering Opportunities

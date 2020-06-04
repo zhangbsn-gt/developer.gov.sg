@@ -28,7 +28,7 @@
             :alt="`featured photo for ${event.name}`"
           />
         </div>
-        <div class="col">
+        <div class="col is-8">
           <h3 class="event-name">
             <a :href="event.link" target="_blank">{{ event.name }}</a>
           </h3>
