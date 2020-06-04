@@ -18,6 +18,7 @@
 
     <div v-else class="row" v-for="agency in allBlogs" :key="agency.name">
       <div class="col">
+        <hr />
         <h3 class="has-text-weight-bold">{{ agency.name }}</h3>
         <p v-html="agency.description" />
         <div class="row">

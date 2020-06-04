@@ -33,9 +33,5 @@ collections:
     output: yes
   guidelines:
     output: yes
-  govbuy:
-    output: yes
-  covid-volunteering:
-    output: yes
   communities:
     output: yes
