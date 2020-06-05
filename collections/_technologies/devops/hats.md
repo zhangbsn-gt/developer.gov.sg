@@ -37,11 +37,9 @@ With its fast feedback cycle, White Hats helps to drive and lower the effort nee
 
 Continuous testing can be achieved by integrating hats into the Continuous Integration (CI) process, which is a very important Agile Continuous Delivery (CD) component.
 
-## Future of HATS
+## Roadmap
 
-Upcoming product features will focus on usability, ease of script development and configurations.
-
-We also plan to add on security assessment, and load and performance capabilities. This will make HATS a comprehensive product that government agencies can rely on to deliver high quality digital services for our citizens and businesses.
+![ship and hats roadmap](https://d3uzjhjcl6zsbz.cloudfront.net/ship-hats-high-level-roadmap-3.jpg)
 
 ## Get started
 
