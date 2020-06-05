@@ -121,11 +121,11 @@ is committed to creating a safe and secure digital government.`,
     apiClient
       .get("/blogs")
       .then((response) => {
-        this.allBlogs[0].blogEntries = response.data.gdsBlogs;
+        this.allBlogs[0].blogEntries = response.data.csgBlogs;
         this.allBlogs[1].blogEntries = response.data.datagovBlogs;
-        this.allBlogs[2].blogEntries = response.data.ndiBlogs;
-        this.allBlogs[3].blogEntries = response.data.dsaidBlogs;
-        this.allBlogs[4].blogEntries = response.data.csgBlogs;
+        this.allBlogs[2].blogEntries = response.data.dsaidBlogs;
+        this.allBlogs[3].blogEntries = response.data.gdsBlogs;
+        this.allBlogs[4].blogEntries = response.data.ndiBlogs;
       })
       .finally(() => {
         this.loading = false;
