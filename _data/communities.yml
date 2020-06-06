@@ -13,7 +13,9 @@
 - name: Developer blogs
   description: Read about the innovations of GovTech’s teams!
 - name: More Collaboration Opportunities
-  description: ""
+  description: >
+    Collaborate with GovTech to innovate and build better
+    products for the public good
   items:
     - Overview
     - Tech Hunt
