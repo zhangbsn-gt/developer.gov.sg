@@ -60,8 +60,8 @@ export default {
       allBlogs: [
         {
           name: "Cyber Security Group",
-          description: `<strong>CSG</strong> is the cybersecurity arm of GovTech and 
-is committed to creating a safe and secure digital government.`,
+          description: `<strong>Cyber Security Group (CSG)</strong> is the cybersecurity arm of GovTech
+  and is committed to creating a safe and secure digital government.`,
           blogEntries: [],
           link: {
             url: "https://medium.com/csg-govtech",
@@ -93,7 +93,7 @@ is committed to creating a safe and secure digital government.`,
         },
         {
           name: "Government Digital Services",
-          description: `The <strong>Government Digital Service (GDS)</strong> delivers high-quality
+          description: `The <strong>Government Digital Service (GDS)</strong> team delivers high-quality
   digital services to citizens and businesses in Singapore. They developed
   products such as Moments-of-Life and Business Grants Portal to name a few.`,
           blogEntries: [],

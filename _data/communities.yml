@@ -12,11 +12,10 @@
     various technologies and tools that Government agencies have open-sourced.  
 - name: Developer blogs
   description: Read about the innovations of GovTech’s teams!
-- name: COVID
-  description: >
-    Engaging communities during COVID
+- name: More Collaboration Opportunities
+  description: ""
   items:
     - Overview
     - Tech Hunt
     - GovBuy
-    - Volunteering Opportunities
+    - COVID-19 Volunteering Opportunities
