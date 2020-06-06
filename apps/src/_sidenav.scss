@@ -9,6 +9,10 @@
 }
 
 .mobile-sidenav {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1;
   a {
     font-size: 1rem;
     color: inherit;

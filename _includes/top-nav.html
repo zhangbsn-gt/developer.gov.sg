@@ -60,15 +60,4 @@
             </div>
         </div>
     </div>
-    {% if page.layout == "layout-page-sidenav" %}
-    <div class="mobile-sidenav is-hidden-desktop">
-        <button class="sgds-button is-small mobile-sidenav-toggle" type="button">
-            <span>{{ collectionName | capitalize }}</span>
-            <span class="sgds-icon sgds-icon-chevron-down"></span>
-        </button>
-        <ul class="mobile-sidenav-menu is-hidden">
-            {% include sidenav.html %}
-        </ul>
-    </div>
-    {% endif %}
 </div>
