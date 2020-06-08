@@ -94,7 +94,7 @@ export default {
         {
           name: "Government Digital Services",
           description: `The <strong>Government Digital Service (GDS)</strong> team delivers high-quality
-  digital services to citizens and businesses in Singapore. They developed
+  digital services to citizens and businesses in Singapore. They have developed
   products such as Moments-of-Life and Business Grants Portal to name a few.`,
           blogEntries: [],
           link: {
@@ -105,7 +105,7 @@ export default {
         {
           name: "National Digital Identity",
           description: `The <strong>National Digital Identity (NDI)</strong> team develops and
-  integrates solutions such as SingPass and MyInfo into a single platform. It is
+  integrates solutions such as SingPass and MyInfo into a single platform. NDI is
   also a trusted digital platform for authentication, authorisation and consent.`,
           blogEntries: [],
           link: {
