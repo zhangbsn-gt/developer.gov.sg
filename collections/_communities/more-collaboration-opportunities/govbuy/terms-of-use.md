@@ -1,6 +1,6 @@
 ---
 title: GovBuy Terms of Use
-layout: layout-govbuy
+layout: layout-page-sidenav
 ---
 
 ## Terms of Use

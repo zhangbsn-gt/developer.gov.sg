@@ -21,14 +21,14 @@
       <div class="row event-container" v-for="event of events" :key="event.id">
         <div
           class="col is-4"
-          style="display: flex; justify-content: center; align-items: center; margin-right: 2rem;"
+          style="display: flex; justify-content: center; align-items: center;"
         >
           <img
             :src="event.featured_photo.photo_link"
             :alt="`featured photo for ${event.name}`"
           />
         </div>
-        <div class="col">
+        <div class="col is-8">
           <h3 class="event-name">
             <a :href="event.link" target="_blank">{{ event.name }}</a>
           </h3>
@@ -50,23 +50,28 @@
 <script>
 import { apiClient } from "../lib";
 export default {
+  props: {
+    eventType: {
+      type: String,
+    },
+  },
   data() {
     return {
       events: [],
-      loading: false
+      loading: false,
     };
   },
   created() {
     this.loading = true;
     apiClient
-      .get("/events?eventStatus=upcoming")
-      .then(response => {
+      .get("/events?eventStatus=" + this.eventType)
+      .then((response) => {
         this.events = response.data;
       })
       .finally(() => {
         this.loading = false;
       });
-  }
+  },
 };
 </script>
 

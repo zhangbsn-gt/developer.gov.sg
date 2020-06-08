@@ -1,3 +1,8 @@
+{% if include.disabledItemCount %}
+{% assign disabledItemCount = true %}
+{% else %}
+{% assign disabledItemCount = false %}
+{% endif %}
 <div class="row is-multiline">
   {% for category in site.data[include.sectionName] %}
   <div class="col is-4 padding--lg">
@@ -6,7 +11,7 @@
       <h3 style="margin-bottom: 0">
         {{ category.name }}
       </h3>
-      {% if item_count > 0 %}
+      {% if item_count > 0 and disabledItemCount == false %}
         <small>
             ({{ item_count }}&nbsp;
             {%- if item_count == 1 -%}

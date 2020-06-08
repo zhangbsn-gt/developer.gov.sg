@@ -1,6 +1,6 @@
 ---
 title: Thermal Sensing
-layout: layout-page
+layout: layout-page-sidenav
 short_description:
 published: no
 ---

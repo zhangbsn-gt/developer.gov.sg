@@ -1,6 +1,6 @@
 ---
 title: Clinical Case Reporting (MOH)
-layout: layout-page
+layout: layout-page-sidenav
 short_description: >
   Compile confirmed case updates from all hospitals, 
   update master list and generate figures for reporting.

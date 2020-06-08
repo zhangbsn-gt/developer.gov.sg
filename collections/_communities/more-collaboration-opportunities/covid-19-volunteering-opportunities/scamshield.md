@@ -1,6 +1,6 @@
 ---
 title: ScamShield
-layout: layout-page
+layout: layout-page-sidenav
 short_description: >
   System for people to report scams/spam/fake news.
 ---

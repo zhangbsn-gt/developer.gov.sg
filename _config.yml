@@ -2,9 +2,9 @@
 timezone: Asia/Singapore
 
 # SEO; see https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
-title: developer.gov.sg
+title: Singapore Government Developer Portal
 description: Resources for building Singapore Government digital products
-url: "https://www.developer.gov.sg"
+# url: "https://www.developer.gov.sg" # Disabling to have jekyll-redirect-from not obey site.url
 logo: /assets/img/logo_developer.gov.sg.png
 
 plugins:
@@ -33,7 +33,5 @@ collections:
     output: yes
   guidelines:
     output: yes
-  govbuy:
-    output: yes
-  covid-volunteering:
+  communities:
     output: yes

@@ -17,8 +17,8 @@
       service for Singapore
   dropdown: true
 
-- title: COVID Projects
-  url: /covid-volunteering
+- title: Communities
+  url: /communities
 
 # - title: Gigs
 #   url: /gigs
