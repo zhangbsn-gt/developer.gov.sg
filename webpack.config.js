@@ -70,7 +70,10 @@ module.exports = (env, argv) => {
       new Dotenv(), // Dotenv must come before EnvironmentPlugin
       new webpack.EnvironmentPlugin({
         BRANCH: null,
-        API_URL: null,
+        API_URL:
+          argv.mode === "production"
+            ? "https://api.developer.gov.sg/v1/api"
+            : process.env.API_URL,
       }),
     ],
   };

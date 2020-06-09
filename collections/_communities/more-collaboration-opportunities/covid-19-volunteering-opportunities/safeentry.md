@@ -1,6 +1,6 @@
 ---
 title: SafeEntry
-layout: layout-page
+layout: layout-page-sidenav
 short_description: >
   SafeEntry is a national digital check-in system that is 
   used to augment existing contact tracing efforts.

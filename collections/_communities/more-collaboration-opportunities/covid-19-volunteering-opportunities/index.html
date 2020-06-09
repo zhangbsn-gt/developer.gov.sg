@@ -1,6 +1,6 @@
 ---
 title: Responding to COVID-19 with Tech
-layout: layout-page
+layout: layout-page-sidenav
 ---
 
 <p>
@@ -25,10 +25,10 @@ layout: layout-page
 </p>
 
 <div class="row is-multiline">
-  {% for project in site.covid-volunteering %}
+  {% for project in site.communities %}
     {% assign id = project.id | split: "/" | last %}
-    {% if id != "index" %}
-    <div class="col is-6-tablet is-4-desktop is-flex">
+    {% if id != "index" and project.path contains "volunteering-opportunities" %}
+    <div class="col is-6-tablet is-4-widescreen is-flex">
       <div class="sgds-card">
         <div class="sgds-card-content">
           <h3>{{ project.title }}</h3>

@@ -1,6 +1,6 @@
 ---
 title: sgID
-layout: layout-page
+layout: layout-page-sidenav
 short_description: >
   Official government ID in a mobile app that lets you
   quickly check into your visited locations and verify your travel history 

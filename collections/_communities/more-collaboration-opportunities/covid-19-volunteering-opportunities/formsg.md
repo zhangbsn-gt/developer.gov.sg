@@ -1,6 +1,6 @@
 ---
 title: FormSG
-layout: layout-page
+layout: layout-page-sidenav
 short_description: >
   Form builder for government officials to build secure digital forms in minutes.
 ---

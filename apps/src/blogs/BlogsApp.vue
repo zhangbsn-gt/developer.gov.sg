@@ -18,7 +18,9 @@
 
     <div v-else class="row" v-for="agency in allBlogs" :key="agency.name">
       <div class="col">
+        <hr />
         <h3 class="has-text-weight-bold">{{ agency.name }}</h3>
+        <p v-html="agency.description" />
         <div class="row">
           <div
             class="col is-4"
@@ -39,7 +41,7 @@
             </a>
           </div>
         </div>
-        <p class="has-text-weight-semibold has-text-right is-size-8">
+        <p class="has-text-weight-semibold is-size-8">
           Read more at the
           <a :href="agency.link.url" target="_blank">{{ agency.link.name }}</a>
         </p>
@@ -57,49 +59,73 @@ export default {
       loading: false,
       allBlogs: [
         {
-          name: "Government Digital Services",
+          name: "Cyber Security Group",
+          description: `<strong>Cyber Security Group (CSG)</strong> is the cybersecurity arm of GovTech
+  and is committed to creating a safe and secure digital government.`,
           blogEntries: [],
           link: {
-            url: "https://blog.gds-gov.tech/",
-            name: "Government Digital Services Blog"
-          }
+            url: "https://medium.com/csg-govtech",
+            name: "Cyber Security Group Blog",
+          },
         },
         {
           name: "Data.gov.sg",
+          description: `<strong>Data.gov.sg</strong> is a one-stop portal for access to the
+  government’s publicly available data. It aims to make government data relevant
+  and understandable using charts and articles.`,
           blogEntries: [],
           link: {
             url: "https://blog.data.gov.sg/",
-            name: "Data.gov.sg Blog"
-          }
-        },
-        {
-          name: "National Digital Identity",
-          blogEntries: [],
-          link: {
-            url: "https://medium.com/ndi-sg/",
-            name: "National Digital Identity Blog"
-          }
+            name: "Data.gov.sg Blog",
+          },
         },
         {
           name: "Data Science & Artificial Intelligence Division",
+          description: `The
+  <strong>Data Science and Artificial Intelligence Division (DSAID) </strong
+  >works with public agencies in using data science and AI to improve service
+  delivery and policy outcomes.`,
           blogEntries: [],
           link: {
             url: "https://medium.com/dsaid-govtech",
-            name: "DSAID Blog"
-          }
-        }
-      ]
+            name: "DSAID Blog",
+          },
+        },
+        {
+          name: "Government Digital Services",
+          description: `The <strong>Government Digital Service (GDS)</strong> team delivers high-quality
+  digital services to citizens and businesses in Singapore. They have developed
+  products such as Moments-of-Life and Business Grants Portal to name a few.`,
+          blogEntries: [],
+          link: {
+            url: "https://blog.gds-gov.tech/",
+            name: "Government Digital Services Blog",
+          },
+        },
+        {
+          name: "National Digital Identity",
+          description: `The <strong>National Digital Identity (NDI)</strong> team develops and
+  integrates solutions such as SingPass and MyInfo into a single platform. NDI is
+  also a trusted digital platform for authentication, authorisation and consent.`,
+          blogEntries: [],
+          link: {
+            url: "https://medium.com/ndi-sg/",
+            name: "National Digital Identity Blog",
+          },
+        },
+      ],
     };
   },
   created() {
     this.loading = true;
     apiClient
       .get("/blogs")
-      .then(response => {
-        this.allBlogs[0].blogEntries = response.data.gdsBlogs;
+      .then((response) => {
+        this.allBlogs[0].blogEntries = response.data.csgBlogs;
         this.allBlogs[1].blogEntries = response.data.datagovBlogs;
-        this.allBlogs[2].blogEntries = response.data.ndiBlogs;
-        this.allBlogs[3].blogEntries = response.data.dsaidBlogs;
+        this.allBlogs[2].blogEntries = response.data.dsaidBlogs;
+        this.allBlogs[3].blogEntries = response.data.gdsBlogs;
+        this.allBlogs[4].blogEntries = response.data.ndiBlogs;
       })
       .finally(() => {
         this.loading = false;
@@ -113,8 +139,8 @@ export default {
         this.allBlogs[2].blogEntries.length === 0 &&
         this.allBlogs[3].blogEntries.length === 0
       );
-    }
-  }
+    },
+  },
 };
 </script>
 

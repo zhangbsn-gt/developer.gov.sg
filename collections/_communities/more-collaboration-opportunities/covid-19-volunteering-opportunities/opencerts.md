@@ -1,6 +1,6 @@
 ---
 title: OpenCerts
-layout: layout-page
+layout: layout-page-sidenav
 short_description: >
   A portal to verify government-issued documents and credentials that 
   are compatible with OpenCerts format.

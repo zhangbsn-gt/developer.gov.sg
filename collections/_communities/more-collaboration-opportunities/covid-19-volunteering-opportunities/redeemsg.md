@@ -1,6 +1,6 @@
 ---
 title: RedeemSG
-layout: layout-page
+layout: layout-page-sidenav
 short_description: >
   Simple electronic voucher/ticket creation and redemption system.
 ---
