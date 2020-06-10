@@ -15,7 +15,7 @@
       >
         There are
         <a href="https://www.meetup.com/STACK-X-by-GovTech-Singapore/"
-          >no upcoming events.</a
+          >no {{ eventType }} events.</a
         >
       </h3>
       <div
