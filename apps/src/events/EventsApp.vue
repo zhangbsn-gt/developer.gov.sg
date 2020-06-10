@@ -18,7 +18,11 @@
           >no upcoming events.</a
         >
       </h3>
-      <div class="row event-container" v-for="event of events" :key="event.id">
+      <div
+        class="row event-container"
+        v-for="event of sortedEvents"
+        :key="event.id"
+      >
         <div
           class="col is-4"
           style="display: flex; justify-content: center; align-items: center;"
@@ -71,6 +75,11 @@ export default {
       .finally(() => {
         this.loading = false;
       });
+  },
+  computed: {
+    sortedEvents() {
+      return this.events.sort((a, b) => b.time - a.time);
+    },
   },
 };
 </script>
