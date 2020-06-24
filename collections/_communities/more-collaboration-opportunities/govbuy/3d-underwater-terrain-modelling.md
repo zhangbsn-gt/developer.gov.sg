@@ -5,9 +5,9 @@ layout: layout-page-sidenav
 
 {% assign jobDetails = site.data.gigs | where: "title", page.title | first %}
 
-## 3D Underwater Terrain Modelling
-
+{% unless jobDetails.open %}
 **The bidding period for this job is over**
+{% endunless %}
 
 ### The task
 
@@ -20,18 +20,17 @@ Generation of 3D underwater terrain model from hydrographic chart to be connecte
   - Contour lines (closed planar 2D lines with elevation)
   - Underwater 3D terrain (3D mesh)
 
-### Skills
+### Skills required
 
 {% for skill in jobDetails.skills %}
-
 - {{ skill }}
-  {% endfor %}
+{% endfor %}
 
 ### Offer
 
-| Offer amount              | Work duration             | Date posted             | Date offer closes        |
-| ------------------------- | ------------------------- | ----------------------- | ------------------------ |
-| S\${{ jobDetails.offer }} | {{ jobDetails.duration }} | {{ jobDetails.posted }} | {{ jobDetails.closing }} |
+{% include govbuy-offer-table.md 
+  offer=jobDetails.offer duration=jobDetails.duration
+  posted=jobDetails.posted closing=jobDetails.closing %}
 
 ### Evaluation methods
 
@@ -42,7 +41,7 @@ Briefing session to kickstart the task, including:
 - Bidder to provide signed contract, NDA and bank account information
 - GovTech to provide reference maps, files and detailed job information
 
-**Payment upon acceptance of bid and milestone completion: S$250**
+**Payment upon acceptance of bid and milestone completion: S\$250**
 
 #### Milestone 2:
 
@@ -51,10 +50,10 @@ Mid-point review, upon 50% completion of task:
 - Evaluation committee to conduct a review at 50% completion of terrain modelling, or after 50% of timeline has elapsed, whichever is earlier
 - Evaluation committee to ascertain at least 50% progress achieved according to requirements, ie:
   1. 3D model is submitted in the file format stated or mutually agreed upon
-  2. GovTech is able to import 3D model with no issues and 
+  2. GovTech is able to import 3D model with no issues and
   3. 3D model functions as expected
 
-**Payment upon satisfactory milestone completion: S$250**
+**Payment upon satisfactory milestone completion: S\$250**
 
 #### Milestone 3:
 
@@ -69,7 +68,7 @@ Completion:
 - Normals, scale and proportion are correct
 - If stated, polygon count falls within acceptable range stated
 
-**Payment upon satisfactory completion of all tasks: S$500**
+**Payment upon satisfactory completion of all tasks: S\$500**
 
 ### The project
 
