@@ -1,5 +1,5 @@
 ---
-title: Updating dependencies for GoGovSG code repository
+title: Updating dependencies for GoGovSG
 layout: layout-page-sidenav
 ---
 
