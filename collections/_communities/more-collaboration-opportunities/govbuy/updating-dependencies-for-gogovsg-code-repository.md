@@ -14,6 +14,8 @@ layout: layout-page-sidenav
 
 As part of efforts to enable automatic updates to our dependencies, we need to first do a manual one-off update and verify that GoGovSG still works. This will be done in phases, starting with all dependencies relating to linting.
 
+[View the issue on GitHub](https://github.com/opengovsg/GoGovSG/issues/208)
+
 #### [Submit your bid here](https://form.gov.sg/5ef30b442109490011d7f348){:target="_blank"}
 
 ### The project
