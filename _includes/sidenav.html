@@ -24,10 +24,21 @@
     <ul class="second-level-nav-div {{ hide_nav_section }}">
       {%- assign items = category.items -%}
       {%- for item in items -%}
+
+        {% comment %}
+        Compare page's id (file path without .html extension) to each link to see if page is active.
+        {% endcomment %}
         {%- assign item_slug = item | slugify -%}
+        {%- assign page_id_terms = page.id | split: "/" -%}
+        {% assign page_id_last = page_id_terms | last %}
+        {% if page_id_last == "index" %}
+          {%- assign page_id_terms = page_id_terms | pop -%}
+          {% assign page_id_last = page_id_terms | last %}
+        {% endif %}
+
         {%- assign class = nil -%}
-        {%- if page.url contains item_slug -%}
-        {%- assign class = 'is-active' -%}
+        {%- if page_id_last == item_slug -%}
+          {%- assign class = 'is-active' -%}
         {%- endif -%}
         <li>
           <a
