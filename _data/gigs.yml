@@ -1,13 +1,23 @@
+- title: Updating dependencies for GoGovSG
+  skills:
+    - GitHub
+    - JavaScript
+    - NodeJS
+  posted: 2020-06-26
+  closing: 2020-07-06
+  duration: 2 days
+  offer: 180
+  open: true
+
 - title: 3D Underwater Terrain Modelling
   skills:
     - 3D terrain modelling
     - Interpretation of hydrographic charts for creating 3D terrain models
-  posted: Tue, 10 Mar 2020
-  closing: Mon, 17 Mar 2020
+  posted: 2020-03-10
+  closing: 2020-03-17
   duration: 1 - 2 weeks (bidder to propose)
   offer: 1000
-  open: no
-
+  open: false
 # - title: Video for product demonstration
 #   skills:
 #     - Video editing
