@@ -1,7 +1,7 @@
 {% assign navItem = include.navItem %}
 {% assign isActive = include.isActive %}
 <div class="sgds-navbar-item has-dropdown is-hoverable is-mega">
-  <a class="sgds-navbar-link is-tab has-text-weight-semibold" id="{{ navItem.title }}">
+  <a class="sgds-navbar-link is-tab has-text-weight-semibold" id="{{ navItem.title }}" href="{{ navItem.url }}">
       {{ navItem.title }}
   </a>
   <div class="sgds-navbar-dropdown {{ navItem.title }}">
