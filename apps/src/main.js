@@ -22,14 +22,19 @@ $(function(){
   function bindNavbarLinkIfMobile() {
     if(window.matchMedia("(max-width: 767px)").matches){
       // The viewport is less than 768 pixels wide
+      
+      $(".sgds-navbar-dropdown").addClass("is-hidden");
+      
       $(".sgds-navbar-link").click(function() {
-        $(`.${this.id}`).toggle();
+        $(`.${this.id}`).toggleClass("is-hidden");
       });
+    } else {
+      $(".sgds-navbar-dropdown").removeClass("is-hidden");
     }
   }
 
   // Attaching the event listener function to window's resize event
-  window.addEventListener("resize", bindNavbarLinkIfMobile, true);
+  window.addEventListener("resize", bindNavbarLinkIfMobile, false);
 
   // Calling the function for the first time
   bindNavbarLinkIfMobile();

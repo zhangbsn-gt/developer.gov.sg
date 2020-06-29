@@ -32,6 +32,14 @@
   padding-left: 8px;
 }
 
+@media only screen and (max-width: 1024px) {
+  .sgds-navbar {
+    .sgds-navbar-dropdown {
+      display: block;
+    }
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .sgds-navbar {
     .desktop {
@@ -39,9 +47,6 @@
     }
     .mobile {
       display: block;
-    }
-    .sgds-navbar-dropdown {
-      display: none;
     }
   }
 }
