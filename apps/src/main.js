@@ -19,11 +19,18 @@ $(function(){
     $(".mobile-sidenav-menu").toggleClass("is-hidden");
   });
 
-  if(window.matchMedia("(max-width: 767px)").matches){
+  function bindNavbarLinkIfMobile() {
+    if(window.matchMedia("(max-width: 767px)").matches){
       // The viewport is less than 768 pixels wide
-      
       $(".sgds-navbar-link").click(function() {
         $(`.${this.id}`).toggle();
       });
+    }
   }
+
+  // Attaching the event listener function to window's resize event
+  window.addEventListener("resize", bindNavbarLinkIfMobile);
+
+  // Calling the function for the first time
+  bindNavbarLinkIfMobile();
 });
