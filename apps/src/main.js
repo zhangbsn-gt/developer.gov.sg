@@ -21,11 +21,10 @@ $(function(){
 
   if(window.matchMedia("(max-width: 767px)").matches){
       // The viewport is less than 768 pixels wide
-      alert("This is a mobile device.");
       $(".sgds-navbar-dropdown").toggleClass("is-hidden");
 
-      $("[class^=sgds-navbar-link]").click(function() {
-        $(`#${this.id} dropdown`).toggleClass("is-hidden");
+      $(".sgds-navbar-link").click(function() {
+        $(`[class^="sgds-navbar-dropdown-${this.id}"]`).toggleClass("is-hidden");
       });
   }
 });
