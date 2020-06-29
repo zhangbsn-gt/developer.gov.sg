@@ -21,13 +21,9 @@ $(function(){
 
   if(window.matchMedia("(max-width: 767px)").matches){
       // The viewport is less than 768 pixels wide
-
-      // Hide dropdown menu and disable links
-      $(".sgds-navbar-dropdown").toggleClass("is-hidden");
-      $(".sgds-navbar-link").removeAttr('href'); 
-
+      
       $(".sgds-navbar-link").click(function() {
-        $(`.${this.id}`).toggleClass("is-hidden");
+        $(`.${this.id}`).toggle();
       });
   }
 });

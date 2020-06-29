@@ -8,6 +8,9 @@
       margin-bottom: 0.5rem;
     }
   }
+  .mobile {
+    display: none;
+  }  
 }
 
 .sgds-navbar-item img {
@@ -27,4 +30,18 @@
   line-height: 1em;
   display: block;
   padding-left: 8px;
+}
+
+@media only screen and (max-width: 768px) {
+  .sgds-navbar {
+    .desktop {
+      display: none;
+    }
+    .mobile {
+      display: block;
+    }
+    .sgds-navbar-dropdown {
+      display: none;
+    }
+  }
 }
