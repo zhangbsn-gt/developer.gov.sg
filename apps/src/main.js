@@ -24,7 +24,7 @@ $(function(){
       $(".sgds-navbar-dropdown").toggleClass("is-hidden");
 
       $(".sgds-navbar-link").click(function() {
-        $(`[class^="sgds-navbar-dropdown-${this.id}"]`).toggleClass("is-hidden");
+        $(`.${this.id}`).toggleClass("is-hidden");
       });
   }
 });
