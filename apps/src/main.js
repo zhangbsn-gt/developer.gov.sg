@@ -29,7 +29,7 @@ $(function(){
   }
 
   // Attaching the event listener function to window's resize event
-  window.addEventListener("resize", bindNavbarLinkIfMobile);
+  window.addEventListener("resize", bindNavbarLinkIfMobile, true);
 
   // Calling the function for the first time
   bindNavbarLinkIfMobile();
