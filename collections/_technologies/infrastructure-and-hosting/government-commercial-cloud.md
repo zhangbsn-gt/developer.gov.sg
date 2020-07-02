@@ -15,4 +15,4 @@ Government agencies can tap on commercial cloud software to incorporate advanced
 
 ### Get started
 
-To find out more about the GCC, contact ask_gig@tech.gov.sg.
+To find out more about the GCC, contact [info@tech.gov.sg](mailto:info@tech.gov.sg).
