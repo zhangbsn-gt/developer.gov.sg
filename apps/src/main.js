@@ -20,7 +20,10 @@ $(function(){
   });
 
   $(".sgds-navbar-link.mobile").click(function() {
-    $(`.${this.id}`).toggleClass("is-hidden-mobile");
+    $(this)
+      .next()
+      .toggleClass("is-hidden-touch");
   });
-
 });
+
+

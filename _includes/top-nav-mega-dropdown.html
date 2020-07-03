@@ -1,13 +1,13 @@
 {% assign navItem = include.navItem %}
 {% assign isActive = include.isActive %}
 <div class="sgds-navbar-item has-dropdown is-hoverable is-mega">
-  <a class="sgds-navbar-link is-tab has-text-weight-semibold desktop" id="{{ navItem.title }}" href="{{ navItem.url }}">
+  <a class="sgds-navbar-link is-tab has-text-weight-semibold desktop" href="{{ navItem.url }}">
       {{ navItem.title }}
   </a>
-  <a class="sgds-navbar-link is-tab has-text-weight-semibold mobile" id="{{ navItem.title }}">
+  <a class="sgds-navbar-link is-tab has-text-weight-semibold mobile">
     {{ navItem.title }}
   </a>
-  <div class="sgds-navbar-dropdown {{ navItem.title }} is-hidden-mobile">
+  <div class="sgds-navbar-dropdown {{ navItem.title }} is-hidden-touch">
       <div class="sgds-container is-fluid">
           <div class="row">
               <div class="col is-4">

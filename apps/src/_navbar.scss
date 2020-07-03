@@ -32,16 +32,11 @@
   padding-left: 8px;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1023px) {
   .sgds-navbar {
     .sgds-navbar-dropdown {
       display: block;
     }
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .sgds-navbar {
     .desktop {
       display: none;
     }
