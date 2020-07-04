@@ -10,10 +10,20 @@ if (document.querySelector(".sidenav")) {
   });
 }
 
-$(".mobile-sidenav-toggle").click(function() {
-  $(this)
-    .children(".sgds-icon")
-    .toggleClass("sgds-icon-chevron-down")
-    .toggleClass("sgds-icon-chevron-up");
-  $(".mobile-sidenav-menu").toggleClass("is-hidden");
+$(function(){
+  $(".mobile-sidenav-toggle").click(function() {
+    $(this)
+      .children(".sgds-icon")
+      .toggleClass("sgds-icon-chevron-down")
+      .toggleClass("sgds-icon-chevron-up");
+    $(".mobile-sidenav-menu").toggleClass("is-hidden");
+  });
+
+  $(".sgds-navbar-link.mobile").click(function() {
+    $(this)
+      .next()
+      .toggleClass("is-hidden-touch");
+  });
 });
+
+
