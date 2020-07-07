@@ -1,5 +1,5 @@
 <template>
-  <div id="events-app" class="content has-default-header-styles">
+  <div id="events-app">
     <div class="spinner" v-if="loading">
       <div class="rect1"></div>
       <div class="rect2"></div>

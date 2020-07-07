@@ -19,11 +19,11 @@
     <div
       v-else
       class="row"
-      v-for="feed of blogsGroupedByFeedSortedFiltered"
+      v-for="(feed, index) of blogsGroupedByFeedSortedFiltered"
       :key="feed.FeedTitle"
     >
       <div class="col">
-        <hr />
+        <hr v-if="index !== 0" />
         <h3 class="has-text-weight-bold">{{ feed.FeedTitle }}</h3>
         <p v-html="feed.FeedDescription" />
         <div class="row">

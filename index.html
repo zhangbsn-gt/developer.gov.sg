@@ -271,36 +271,18 @@ layout: layout-default
 <!-- Blogs -->
 <section class="sgds-section">
   <div class="sgds-container">
-    <div class="content">
-      <div class="row">
-        <div class="col">
-          <h2 class="has-text-weight-black">Blogs</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <div class="content has-default-header-styles">
-            {% include blogs-app.html %}
-          </div>
-        </div>
-      </div>
+    <div class="content has-default-header-styles">
+      <h2 class="has-text-weight-bold">Developer Blogs</h2>
+      {% include blogs-app.html %}
     </div>
   </div>
 </section>
 
 <section class="sgds-section">
   <div class="sgds-container">
-    <div class="content">
-      <div class="row">
-        <div class="col is-8">
-          <h2 class="has-text-weight-bold">Upcoming Events</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          {% include events-app.html %}
-        </div>
-      </div>
+    <div class="content has-default-header-styles">
+      <h2 class="has-text-weight-bold">Upcoming Events</h2>
+      {% include events-app.html eventType='upcoming' %}
     </div>
   </div>
 </section>
