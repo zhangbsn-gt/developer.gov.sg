@@ -57,3 +57,9 @@
     - Sensors.gov.sg
     - SPOT
     - SPOTON
+- name: Digital Solutions to Address COVID-19
+  description: Digital Solutions for a 21st Century Pandemic
+  items:
+    - Overview
+    - SafeEntry
+    - TraceTogether
