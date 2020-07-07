@@ -7,6 +7,10 @@ layout: layout-page-sidenav
 
 {% unless jobDetails.open %}
 **The bidding period for this job is over**
+{% else %}
+<a href="{{ jobDetails.bid_link }}" class="sgds-button is-primary">
+  Submit your bid here
+</a>
 {% endunless %}
 
 
@@ -15,8 +19,6 @@ layout: layout-page-sidenav
 As part of efforts to enable automatic updates to our dependencies, we need to first do a manual one-off update and verify that GoGovSG still works. This will be done in phases, starting with all dependencies relating to linting.
 
 [View the issue on GitHub](https://github.com/opengovsg/GoGovSG/issues/208)
-
-#### [Submit your bid here](https://form.gov.sg/5ef30b442109490011d7f348){:target="_blank"}
 
 ### The project
 
@@ -47,5 +49,3 @@ The PR should also resolve GitHub issue [#161](https://github.com/opengovsg/GoGo
 ### Evaluation methods
 
 PR passes all checks and review on the [GoGovSG GitHub repo](https://github.com/opengovsg/GoGovSG)
-
-### [Submit your bid here](https://form.gov.sg/5ef30b442109490011d7f348){:target="_blank"}

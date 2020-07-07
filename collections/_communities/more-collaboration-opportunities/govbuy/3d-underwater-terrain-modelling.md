@@ -7,6 +7,10 @@ layout: layout-page-sidenav
 
 {% unless jobDetails.open %}
 **The bidding period for this job is over**
+{% else %}
+<a href="{{ jobDetails.bid_link }}" class="sgds-button is-primary">
+  Submit your bid here
+</a>
 {% endunless %}
 
 ### The task
