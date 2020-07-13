@@ -1,3 +1,10 @@
+- name: Digital Solutions to Address COVID-19
+  description: Digital Solutions for a 21st Century Pandemic
+  items:
+    - Overview
+    - SafeEntry
+    - TraceTogether
+
 - name: Open source
   description: Government-built open source technologies and tools
 
