@@ -3,14 +3,14 @@
 {%- assign currentCollection = filteredCollections[0] -%}
 {%- assign categories = site.data[currentCollection.label] -%}
 {%- for category in categories -%}
-  {%- assign class = nil -%} 
+  {%- assign class = nil -%}
   {%- assign category_slug = category.name | slugify -%}
   {%- if page.url contains category_slug -%}
     {%- assign class='is-active' -%}
   {%- endif -%}
   {%- if category.items -%}
     <li class="second-level-nav">
-      <a 
+      <a
         href="#!"
         class="{{ class }} second-level-nav-header has-text-weight-bold">
         {{ category.name }}
@@ -37,7 +37,7 @@
         {% endif %}
 
         {%- assign class = nil -%}
-        {%- if page_id_last == item_slug -%}
+        {%- if (page_id_last == item_slug and page.url contains category_slug) -%}
           {%- assign class = 'is-active' -%}
         {%- endif -%}
         <li>
