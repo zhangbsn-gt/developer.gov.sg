@@ -38,9 +38,15 @@
           </h3>
           <p>{{ event.time | moment("ddd, MMM D YYYY, h A") }}</p>
           <p class="event-description">{{ event.plain_text_description }}</p>
-          <a :href="`https://maps.google.com/?q=${event.venue.name}`">
+          <small
+            v-if="
+              event.venue.name === 'Online event' && event.venue.country == null
+            "
+            >This is an online event.</small
+          >
+          <a v-else :href="`https://maps.google.com/?q=${event.venue.name}`">
             <small>
-              <span class="sgds-icon sgds-icon-my-location"></span>
+              Location:
               {{ event.venue.name }}
             </small>
           </a>
