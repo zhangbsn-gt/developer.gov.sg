@@ -5,7 +5,9 @@
   url: /guidelines
   description:
     heading: Run and deliver great digital services
-    content: Guidelines and best practices based on the experiences of Government development teams
+    content: >
+      Guidelines and best practices based on the experiences
+      of Government development teams
   dropdown: true
 
 - title: Technologies
@@ -19,6 +21,12 @@
 
 - title: Communities
   url: /communities
+  description:
+    heading: Co-create innovative digital solutions with the Government
+    content: >
+      Discover events, blogs, open-source technologies and other
+      collaboration opportunities
+  dropdown: true
 
 # - title: Gigs
 #   url: /gigs
