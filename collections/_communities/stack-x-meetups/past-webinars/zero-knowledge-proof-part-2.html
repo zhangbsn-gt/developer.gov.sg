@@ -2,23 +2,23 @@
 title: Zero-knowledge Proof Part 2
 layout: layout-page-sidenav
 ---
+
+<h2>STACK-X Webinar — Introduction to Zero-knowledge Proof (Part 2)</h2>
+
 <p>
-  <strong
-    >STACK-X Webinar — Introduction to Zero-knowledge Proof (Part 2)</strong
-  >
+  <em>The following article was adapted from a STACK-X Webinar conducted by
+    Raymond Yeh, a software engineer at GovTech, on June 25, 2020.</em>
 </p>
 <p>
-  <em
-    >The following article was adapted from a STACK-X Webinar conducted by
-    Raymond Yeh, a software engineer at GovTech, on June 25, 2020.</em
-  >
+  <em>This is the second post of a two-part series on Zero-knowledge Proofs.</em>
 </p>
+
 <p>
-  <em
-    >This is the second post of a two-part series on Zero-knowledge Proofs.</em
-  >
+  &nbsp;
 </p>
-<p><strong>Building your Zero-knowledge Proof (ZKP) circuit</strong></p>
+
+<h3>Building your Zero-knowledge Proof (ZKP) circuit</h3>
+
 <p>
   In this post, we’ll be showing you how to build your own ZKP circuit from
   scratch. But before that, we have to decide which language we want to use.
@@ -72,7 +72,9 @@ layout: layout-page-sidenav
   for an introductory tutorial.
 </p>
 <p>Now, let’s get to visualising our circuit…</p>
-<p><strong>The task at hand</strong></p>
+
+<h3>The task at hand</h3>
+
 <p>Let’s first recall the aim of our circuit.</p>
 <p>
   We were previously trying to show that ZKPs could help a shopper to prove that
@@ -177,7 +179,9 @@ layout: layout-page-sidenav
 </p>
 <p>And that’s what our circuit should roughly look like.</p>
 <p>Now we can finally get to coding.</p>
-<p><strong>Building our application — age check circuit</strong></p>
+
+<h3>Building our application — age check circuit</h3>
+
 <p>
   You can get started with
   <a
@@ -338,7 +342,8 @@ DARKGRAY;">&nbsp;&nbsp;&nbsp; <strong>return</strong> result</p>
 </p>
 <p>With that, we’ve finished our first circuit!</p>
 
-<p><strong>Building our application — birth year check circuit</strong></p>
+<h3>Building our application — birth year check circuit</h3>
+
 <p>
   Moving on, we’ll now try to build the next portion of our circuit, which
   verifies that the prover knows of both the secret salt and birth year inputs
@@ -427,7 +432,9 @@ DARKGRAY;">&nbsp;&nbsp;&nbsp; <strong>return</strong> 1</p>
   to abstract the process further so a user would not have to deal with any of
   this.
 </p>
-<p><strong>Building our application — the complete circuit</strong></p>
+
+<h3>Building our application — the complete circuit</h3>
+
 <p>
   Finally, let’s finish our circuit by bringing our two component circuits
   together. Again, this is what it will end up looking like:
