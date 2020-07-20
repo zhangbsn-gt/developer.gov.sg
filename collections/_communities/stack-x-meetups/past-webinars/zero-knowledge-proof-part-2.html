@@ -7,7 +7,6 @@ layout: layout-page-sidenav
     >STACK-X Webinar — Introduction to Zero-knowledge Proof (Part 2)</strong
   >
 </p>
-<p><strong>&nbsp;</strong></p>
 <p>
   <em
     >The following article was adapted from a STACK-X Webinar conducted by
@@ -19,7 +18,6 @@ layout: layout-page-sidenav
     >This is the second post of a two-part series on Zero-knowledge Proofs.</em
   >
 </p>
-<p><strong>&nbsp;</strong></p>
 <p><strong>Building your Zero-knowledge Proof (ZKP) circuit</strong></p>
 <p>
   In this post, we’ll be showing you how to build your own ZKP circuit from
@@ -74,7 +72,6 @@ layout: layout-page-sidenav
   for an introductory tutorial.
 </p>
 <p>Now, let’s get to visualising our circuit…</p>
-<p>&nbsp;</p>
 <p><strong>The task at hand</strong></p>
 <p>Let’s first recall the aim of our circuit.</p>
 <p>
@@ -93,13 +90,11 @@ layout: layout-page-sidenav
   <strong>21</strong>, but I won’t tell you what <strong>X</strong> is.’
 </p>
 <p>Here’s how that circuit would look like:</p>
-<p>&nbsp;</p>
 
 <figure style="text-align: center">
 	  <img src="/assets/img/2%20ZKP%20Circuit%201.png" alt="A basic age verification circuit">
 </figure>
 
-<p>&nbsp;</p>
 <p>
   Our circuit simply calculates if <strong>X </strong>is <strong>≥ 21</strong>.
   If it is, we get <strong>T</strong> and we’re granted permission to buy our
@@ -119,13 +114,11 @@ layout: layout-page-sidenav
   <strong>Y</strong> and <strong>Z </strong>are public knowledge.’
 </p>
 <p>Again, here’s what that would look like:</p>
-<p>&nbsp;</p>
 
 <figure style="text-align: center">
 	  <img src="/assets/img/2%20ZKP%20Circuit%202.png" alt="Age check circuit">
 </figure>
 
-<p>&nbsp;</p>
 <p>
   The circuit deducts our birth year from the current year to derive our age.
   From there, we compare our age with the legal age restriction,
@@ -149,13 +142,11 @@ layout: layout-page-sidenav
   but you can verify<strong> a</strong>.’
 </p>
 <p>Let’s have a look.</p>
-<p>&nbsp;</p>
 
 <figure style="text-align: center">
 	  <img src="/assets/img/2%20ZKP%20Circuit%203.png" alt="Full ZKP circuit">
 </figure>
 
-<p>&nbsp;</p>
 <p>
   Remember hashing? When we talk about <strong>F(X)</strong> here, we’re really
   referring to the hashed output of <strong>X</strong>, or
@@ -186,7 +177,6 @@ layout: layout-page-sidenav
 </p>
 <p>And that’s what our circuit should roughly look like.</p>
 <p>Now we can finally get to coding.</p>
-<p>&nbsp;</p>
 <p><strong>Building our application — age check circuit</strong></p>
 <p>
   You can get started with
@@ -203,13 +193,11 @@ layout: layout-page-sidenav
   component of our ZKP circuit: the age check circuit. To refresh your memory,
   this is what it looks like:
 </p>
-<p>&nbsp;</p>
 
 <figure style="text-align: center">
 	  <img src="/assets/img/2%20ZKP%20Circuit%204.png" alt="Age check circuit">
 </figure>
 
-<p>&nbsp;</p>
 <p>
   Using whichever code editor you’re familiar with, create a new directory and
   make a new file called <strong>ageCheck.zok</strong>. Copy and paste the
@@ -273,13 +261,11 @@ DARKGRAY;">&nbsp;&nbsp;&nbsp; <strong>return</strong> result</p>
   Finally, our verifier. Running this should have created a verifier.sol file.
   Your screen should now (hopefully) look something like this:
 </p>
-<p>&nbsp;</p>
 
 <figure style="text-align: center">
 	  <img src="/assets/img/2%20Code%20Snap.png" alt="A screenshot of the code editor">
 </figure>
 
-<p>&nbsp;</p>
 <p>
   That’s it for this portion of the circuit, but it might be helpful to take a
   look at how this would work in action and ensure that everything is working
@@ -292,13 +278,11 @@ DARKGRAY;">&nbsp;&nbsp;&nbsp; <strong>return</strong> result</p>
   >. You’ll want to click on Solidity under Environments, as that’s what we’ll
   be using:
 </p>
-<p>&nbsp;</p>
 
 <figure style="text-align: center">
 	  <img src="/assets/img/2%20Site%20Snap%201.png" alt="A screenshot of remix.etherium.org.">
 </figure>
 
-<p>&nbsp;</p>
 <p>
   First, you’ll want to create a new file—let’s call it AgeVerifier.sol—and
   paste the lines of code into this. Now, you’ll want find the Solidity Compiler
@@ -306,25 +290,21 @@ DARKGRAY;">&nbsp;&nbsp;&nbsp; <strong>return</strong> result</p>
   appropriate compiler version (you can find the pragma of the generated .sol on
   the first line of your file).
 </p>
-<p>&nbsp;</p>
 
 <figure style="text-align: center">
 	  <img src="/assets/img/2%20Site%20Snap%202.png" alt="A screenshot of solidity compiler">
 </figure>
 
-<p>&nbsp;</p>
 <p>
   Next, head to your Deploy and Run Transactions plugin and deploy this
   verification contract onto your browser. If you’ve done this right, you should
   now see that our verifier has boxes labelled a, b, c and Input.
 </p>
-<p>&nbsp;</p>
 
 <figure style="text-align: center">
 	  <img src="/assets/img/2%20Site%20Snap%203.png" alt="A screenshot of solidity compiler's verifier boxes">
 </figure>
 
-<p>&nbsp;</p>
 <p>
   Heading back into your code editor and going into the proof we previously
   generated (proof.json), you’ll find each of these lines of code there. Copy
@@ -336,13 +316,11 @@ DARKGRAY;">&nbsp;&nbsp;&nbsp; <strong>return</strong> result</p>
   So, what just happened here? If you take a closer look at the inputs box,
   you’ll notice these last few digits:
 </p>
-<p>&nbsp;</p>
 
 <figure style="text-align: center">
 	  <img src="/assets/img/2%20Site%20Snap%204.png" alt="A screenshot of age check circuit's inputs">
 </figure>
 
-<p>&nbsp;</p>
 <p>
   If you run them through a hexadecimal to decimal converter, you’ll realise
   that they actually correspond to 2020, 21 and 1 (this last one is just a bias
@@ -359,7 +337,7 @@ DARKGRAY;">&nbsp;&nbsp;&nbsp; <strong>return</strong> result</p>
   21.
 </p>
 <p>With that, we’ve finished our first circuit!</p>
-<p>&nbsp;</p>
+
 <p><strong>Building our application — birth year check circuit</strong></p>
 <p>
   Moving on, we’ll now try to build the next portion of our circuit, which
@@ -449,19 +427,16 @@ DARKGRAY;">&nbsp;&nbsp;&nbsp; <strong>return</strong> 1</p>
   to abstract the process further so a user would not have to deal with any of
   this.
 </p>
-<p>&nbsp;</p>
 <p><strong>Building our application — the complete circuit</strong></p>
 <p>
   Finally, let’s finish our circuit by bringing our two component circuits
   together. Again, this is what it will end up looking like:
 </p>
-<p>&nbsp;</p>
 
 <figure style="text-align: center">
 	  <img src="/assets/img/2%20ZKP%20Circuit%205.png" alt="Full ZKP circuit">
 </figure>
 
-<p>&nbsp;</p>
 <p>
   Let’s make a new file in our code editor and call this complete.zok. Copy the
   following into your editor:
@@ -566,13 +541,11 @@ DARKGRAY;">&nbsp;&nbsp;&nbsp; <strong>return</strong> 1</p>
   Deployed Contracts.
 </p>
 <p>If you’d like, you can take a closer look at our inputs on Remix:</p>
-<p>&nbsp;</p>
 
 <figure style="text-align: center">
 	  <img src="/assets/img/2%20Site%20Snap%205.png" alt="A screenshot of the inputs for the full ZKP circuit">
 </figure>
 
-<p>&nbsp;</p>
 <p>
   Again, each line can be run through a hexadecimal to decimal converter if you
   want to find out what they correspond to. The first two lines are the hash
