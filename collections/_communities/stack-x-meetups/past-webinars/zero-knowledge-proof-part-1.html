@@ -8,7 +8,6 @@ layout: layout-page-sidenav
 	    >STACK-X Webinar — Introduction to Zero-knowledge Proof (Part 1)</strong
 	  >
 	</p>
-	<p>&nbsp;</p>
 	<p>
 	  <em
 	    >The following article was adapted from a STACK-X Webinar conducted by
@@ -18,7 +17,6 @@ layout: layout-page-sidenav
 	<p>
 	  <em>This is the first post of a two-part series on Zero-knowledge Proofs.</em>
 	</p>
-	<p>&nbsp;</p>
 	<p><strong>What’s a Zero-knowledge Proof (ZKP)?</strong></p>
 	<p>
 	  You may or may not have heard the term before, but a ZKP is essentially a
@@ -37,7 +35,6 @@ layout: layout-page-sidenav
 	    >The Startup’s article</a
 	  >):
 	</p>
-	<p>&nbsp;</p>
 	<p><strong>A Simple Game of Where’s Waldo</strong></p>
 	<p>
 	  Both you and a friend have been asked to solve a Where’s Waldo puzzle. In
@@ -71,7 +68,6 @@ layout: layout-page-sidenav
 	  part of the picture Waldo is in, but he’ll be able to see that you really
 	  <em>do</em> know where Waldo is.
 	</p>
-	<p>&nbsp;</p>
 
 
 	<figure style="text-align: center">
@@ -82,12 +78,10 @@ layout: layout-page-sidenav
 		</figure>
 
 
-	<p>&nbsp;</p>
 	<p>
 	  With that, you’ve proven to your friend that you know the solution to this
 	  puzzle without ever revealing said solution—you’ve created a ZKP!
 	</p>
-	<p>&nbsp;</p>
 	<p><strong>What are some real-world applications of ZKP?</strong></p>
 	<p>
 	  So, now you know what a ZKP is. But let’s be honest—how often are we going to
@@ -136,7 +130,6 @@ layout: layout-page-sidenav
 	  in your spare time.
 	</p>
 	<p>But moving on to the overview of the ZKP landscape today…</p>
-	<p>&nbsp;</p>
 	<p><strong>&nbsp;The world of ZKPs</strong></p>
 	<p></p>
 
@@ -148,7 +141,6 @@ layout: layout-page-sidenav
 	</figure>
 
 
-	<p>&nbsp;</p>
 	<p>
 	  This overview of the current ZKP landscape may seem intimidating, but fret
 	  not! We’ll walk you through the important bits.
@@ -196,7 +188,6 @@ layout: layout-page-sidenav
 	  In <u>Part 2 of this series</u>, we’ll be focusing on zk-SNARKs and writing a
 	  ZKP using ZoKrates.&nbsp; &nbsp;
 	</p>
-	<p>&nbsp;</p>
 
 
 	<figure style="text-align: center">
@@ -204,9 +195,6 @@ layout: layout-page-sidenav
 	</figure>
 
 
-	<p>&nbsp;</p>
-	<p>
-	<p><strong>&nbsp;</strong></p>
 	<p>
 	  Following this snippet of the larger chart above, you’ll see that the code
 	  we’ll be writing (using ZoKrates) will be automatically compiled to R1CS, and
@@ -227,7 +215,6 @@ layout: layout-page-sidenav
 	  talked about, because next we’ll be looking at a demo application of this
 	  age-restriction ZKP.
 	</p>
-	<p><strong>&nbsp;</strong></p>
 	<p><strong>Demo time!</strong></p>
 	<p>
 	  The goal is to construct a ZKP that will prove to our check-out cashier that
@@ -240,7 +227,6 @@ layout: layout-page-sidenav
 	  Now, when we talk about building a ZKP here, what we’re really talking about
 	  is building a <strong>ZKP Circuit </strong>(i.e. the grey box below).
 	</p>
-	<p>&nbsp;</p>
 
 
 	<figure style="text-align: center">
@@ -248,7 +234,6 @@ layout: layout-page-sidenav
 	</figure>
 
 
-	<p>&nbsp;</p>
 	<p>
 	  We’ll crack open this box and see how it works in a short while, but for now,
 	  let’s examine the inputs that go into this circuit.
@@ -329,14 +314,12 @@ layout: layout-page-sidenav
 	  Now that we understand our inputs, it’s time to take a look inside our grey
 	  box:
 	</p>
-	<p>&nbsp;</p>
 
 	<figure style="text-align: center">
 		  <img src="/assets/img/ZKP%20Circuit%202.png" alt="A diagram of the ZKP circuit">
 	</figure>
 
 
-	<p>&nbsp;</p>
 	<p>
 	  You can see that our various inputs are in this circuit, with red and green
 	  corresponding to our private and public inputs as per the previous chart. Our
@@ -368,7 +351,6 @@ layout: layout-page-sidenav
 	  is extremely computationally light—all the computation is done client-side and
 	  no central server is required for verifying the proof!
 	</p>
-	<p><strong>&nbsp;</strong></p>
 	<p><strong>Some final remarks</strong></p>
 	<ul>
 	  <li>
