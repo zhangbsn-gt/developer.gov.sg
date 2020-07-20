@@ -52,7 +52,7 @@
   description: Host applications in secure environments at scale
   items:
     - Government Commercial Cloud
-    - Nectar
+
 - name: Sensor Platforms and Internet of Things
   description: Build on sensors and IOT technologies and leverage on their data
   items:
