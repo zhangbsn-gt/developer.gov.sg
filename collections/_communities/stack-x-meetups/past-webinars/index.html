@@ -4,7 +4,7 @@ layout: layout-page-sidenav
 webinars:
   - name: >
       STACK-X: Meetup - Building secure mobile applications with OWASP MASVS and MSTG
-    description: >
+    description: |
       The mobile application penetration testing team from GovTech’s Cyber Security
       Group (CSG) discussed how common security vulnerabilities can be avoided
       by following mobile application security best practices.
@@ -26,7 +26,7 @@ webinars:
 
   - name: >
       STACK-X: Meetup x DataScience SG - Enriching Lives through AI Solutions
-    description: >
+    description: |
       In this webinar, explore how artificial intelligence (AI) enriches
       citizens’ day-to-day interactions with government services.
     video_id: h9m0BIDIzBA
@@ -34,7 +34,7 @@ webinars:
 
   - name: >
       STACK-X: Meetup - Tech for Public Good: Designing Community Platforms
-    description: >
+    description: |
       The teams behind MaskGoWhere / FluGoWhere, and the popular Community Circuit Breaker
       (iamaccb.sg) website discuss how they built these key platforms in a matter of days without
       compromising on design and usability.
@@ -43,7 +43,7 @@ webinars:
 
   - name: >
       STACK-X: Meetup - Data-driven solutions for a post-circuit breaker world
-    description: >
+    description: |
       Speakers from GovTech and URA discuss the development of SPOT,
       VigilantGantry and SpaceOut, three data-driven solutions that will
       play an important part in physical distancing and temperature scanning
@@ -52,7 +52,7 @@ webinars:
     date: 2020-05-28
 
   - name: Contact Tracing & Re-opening the Economy
-    description: >
+    description: |
       Speakers from GovTech, SNDGG and MOH discuss two problem statements
       together with webinar participants.
     video_id: hRYGpTEVlIs
@@ -60,7 +60,7 @@ webinars:
 
   - name: >
       Stack x Tech +65: Facing A Pandemic - Tech In The Time Of Covid-19
-    description: >
+    description: |
       Find out more about how companies and government outfits
       are pivoting and innovating to meet the COVID-19 challenges head-on
     video_id: ltsAlBM6Gvs
@@ -89,7 +89,7 @@ webinars:
           </figure>
         </div>
         <p>
-          <strong>{{ webinar.date | date_to_string }}</strong>&nbsp;{{ webinar.description }}
+          <strong>{{ webinar.date | date_to_string }}</strong>&nbsp;{{ webinar.description | markdownify }}
         </p>
       </div>
       <div class="sgds-card-footer">
