@@ -201,7 +201,7 @@ layout: layout-page-sidenav
   >
   by using the following Command Line Input for Linux, MacOS or FreeBSD:
 </p>
-<p style="background-color:GAINSBORO;">curl -LSfs get.zokrat.es | sh</p>
+<pre><code>curl -LSfs get.zokrat.es | sh</code></pre>
 <p>
   Now that you have everything set up, we can begin by working on the simplest
   component of our ZKP circuit: the age check circuit. To refresh your memory,
@@ -217,21 +217,9 @@ layout: layout-page-sidenav
   make a new file called <strong>ageCheck.zok</strong>. Copy and paste the
   following into your code editor:
 </p>
-<p style="background-color:
-DARKGRAY;">
-          def main(<strong>private</strong> <strong>field</strong> birthYear,
-          <strong>field</strong> comparisonYear,
-          <strong>field</strong> minimumDifference) -&gt;
-          (<strong>field</strong>):
-        </p>
-        <p style="background-color:
-DARKGRAY;">
-          &nbsp;&nbsp;&nbsp; <strong>field</strong> result =
-          <strong>if</strong> comparisonYear - birthYear &gt;= minimumDifference
-          <strong>then</strong> 1 <strong>else</strong> 0 fi
-        </p>
-        <p style="background-color:
-DARKGRAY;">&nbsp;&nbsp;&nbsp; <strong>return</strong> result</p>
+<pre><code>def main(private&nbsp;field&nbsp;birthYear,&nbsp;field&nbsp;comparisonYear,&nbsp;field&nbsp;minimumDifference) -&gt; (field):
+  &nbsp;&nbsp;&nbsp;&nbsp;field&nbsp;result =&nbsp;if&nbsp;comparisonYear - birthYear &gt;= minimumDifference&nbsp;then&nbsp;1&nbsp;else&nbsp;0 fi
+  &nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;result</code></pre>
 <p>
   Let’s break this down a little. What we’re doing here is
   <strong>defining</strong> a function called <strong>main</strong>.
@@ -248,9 +236,9 @@ DARKGRAY;">&nbsp;&nbsp;&nbsp; <strong>return</strong> result</p>
   Now, we need to run this circuit. Assuming you already have ZoKrates up, run
   the following CLI in your terminal:
 </p>
-<p style="background-color:GAINSBORO;">zokrates compile -i ageCheck.zok</p>
+<pre><code>zokrates compile -i ageCheck.zok</code></pre>
 <p>After compiling, run the setup.</p>
-<p style="background-color:GAINSBORO;">zokrates setup</p>
+<pre><code>zokrates setup</code></pre>
 <p>
   You should now notice two new keys: the <strong>proving</strong> and
   <strong>verification keys</strong>. The former is used by the prover (i.e. us,
@@ -258,7 +246,7 @@ DARKGRAY;">&nbsp;&nbsp;&nbsp; <strong>return</strong> result</p>
   cashier makes use of the latter key to verify this proof. Both keys are
   public—no sensitive data here.
 </p>
-<p style="background-color:GAINSBORO;">zokrates compute-witness -a 1990 2020 21</p>
+<pre><code>zokrates compute-witness -a 1990 2020 21</code></pre>
 <p>
   What we’ve just done is compute our witness. A witness is, quite simply, one
   possible solution to our circuit. You’ll notice that each value stated here
@@ -268,9 +256,9 @@ DARKGRAY;">&nbsp;&nbsp;&nbsp; <strong>return</strong> result</p>
   >. If our inputs match these values, our circuit verifies this and produces a
   <strong>1</strong>.&nbsp;
 </p>
-<p style="background-color:GAINSBORO;">zokrates generate-proof</p>
+<pre><code>zokrates generate-proof</code></pre>
 <p>We’ve just generated our proof for this circuit.</p>
-<p style="background-color:GAINSBORO;">zokrates export-verifier</p>
+<pre><code>zokrates export-verifier</code></pre>
 <p>
   Finally, our verifier. Running this should have created a verifier.sol file.
   Your screen should now (hopefully) look something like this:
@@ -367,28 +355,14 @@ DARKGRAY;">&nbsp;&nbsp;&nbsp; <strong>return</strong> result</p>
   into your code editor:
 </p>
 <p></p>
-<p style="background-color:
-DARKGRAY;">
-          <strong>import</strong> "hashes/sha256/512bitPacked" as sha256packed
-        </p>
-        <p style="background-color:
-DARKGRAY;">&nbsp;</p>
-        <p style="background-color:
-DARKGRAY;">
-          def main(<strong>private</strong> <strong>field</strong> birthYear,
-          <strong>private</strong> <strong>field</strong> rand1,
-          <strong>private</strong> <strong>field</strong> rand2,
-          <strong>field</strong> hash1, <strong>field</strong> hash2) -&gt;
-          (<strong>field</strong>):
-        </p>
-        <p style="background-color:
-DARKGRAY;">&nbsp;&nbsp;&nbsp; h = sha256packed([0, birthYear, rand1, rand2])</p>
-        <p style="background-color:
-DARKGRAY;">&nbsp;&nbsp;&nbsp; h[0] == hash1</p>
-       <p style="background-color:
-DARKGRAY;">&nbsp;&nbsp;&nbsp; h[1] == hash2</p>
-        <p style="background-color:
-DARKGRAY;">&nbsp;&nbsp;&nbsp; <strong>return</strong> 1</p>
+<pre><code>import "hashes/sha256/512bitPacked" as sha256packed
+
+
+  def main(private field birthYear, private field rand1, private field rand2, field hash1, field hash2) -&gt; (field):
+      h = sha256packed([0, birthYear, rand1, rand2])
+      h[0] == hash1
+      h[1] == hash2
+      return 1</code></pre>
 <p>
   You may have noticed that we imported a package. This package is a hash
   function—specifically, the function SHA 256, which converts our birth year
@@ -404,13 +378,9 @@ DARKGRAY;">&nbsp;&nbsp;&nbsp; <strong>return</strong> 1</p>
   correspond, it returns <strong>1</strong>.
 </p>
 <p>We now need to run several commands as per the previous circuit.</p>
-<p style="background-color:GAINSBORO;">zokrates compile -i birthYearCheck.zok</p>
-<p style="background-color:GAINSBORO;">zokrates setup</p>
-<p style="background-color:GAINSBORO;">
-  zokrates compute-witness -a 1990 123 123
-  233770742581153321658241226707865859106
-  161843013006795803511295431198461913882
-</p>
+<pre><code>zokrates compile -i birthYearCheck.zok
+zokrates setup
+zokrates compute-witness -a 1990 123 123 233770742581153321658241226707865859106 161843013006795803511295431198461913882</code></pre>
 <p>
   If you look at the values in our witness, you can see that 1990 refers to the
   birth year, while 123 123 refer to our secret salt. The last string of digits
@@ -418,8 +388,8 @@ DARKGRAY;">&nbsp;&nbsp;&nbsp; <strong>return</strong> 1</p>
   verifies the birth year we provide. This witness, like before, serves as a
   sample solution for our circuit.
 </p>
-<p style="background-color:GAINSBORO;">zokrates generate-proof</p>
-<p style="background-color:GAINSBORO;">zokrates export-verifier</p>
+<pre><code>zokrates generate-proof</code></pre>
+<pre><code>zokrates export-verifier</code></pre>
 <p>
   Now that this is done, we can repeat what we did for the age check circuit and
   see how this looks on Remix. You can just copy the verifier.sol that was
@@ -458,74 +428,25 @@ DARKGRAY;">&nbsp;&nbsp;&nbsp; <strong>return</strong> 1</p>
   Let’s make a new file in our code editor and call this complete.zok. Copy the
   following into your editor:
 </p>
-<p style="background-color:
-DARKGRAY;">
-          <strong>import</strong> "hashes/sha256/512bitPacked" as sha256packed
-        </p>
-        <p style="background-color:
-DARKGRAY;">&nbsp;</p>
-        <p style="background-color:
-DARKGRAY;">
-          def birthYearCheck(<strong>private</strong>
-          <strong>field</strong> birthYear, <strong>private</strong>
-          <strong>field</strong> rand1, <strong>private</strong>
-          <strong>field</strong> rand2, <strong>field</strong> hash1,
-          <strong>field</strong> hash2) -&gt; (<strong>field</strong>):
-        </p>
-        <p style="background-color:
-DARKGRAY;">&nbsp;&nbsp;&nbsp; h = sha256packed([0, birthYear, rand1, rand2])</p>
-        <p style="background-color:
-DARKGRAY;">&nbsp;&nbsp;&nbsp; h[0] == hash1</p>
-        <p style="background-color:
-DARKGRAY;">&nbsp;&nbsp;&nbsp; h[1] == hash2</p>
-        <p style="background-color:
-DARKGRAY;">&nbsp;&nbsp;&nbsp; <strong>return</strong> 1</p>
-        <p style="background-color:
-DARKGRAY;">&nbsp;</p>
-        <p style="background-color:
-DARKGRAY;">
-          def ageCheck(<strong>private</strong>
-          <strong>field</strong> birthYear,
-          <strong>field</strong> comparisonYear,
-          <strong>field</strong> minimumDifference) -&gt;
-          (<strong>field</strong>):
-        </p>
-        <p style="background-color:
-DARKGRAY;">
-          &nbsp;&nbsp;&nbsp; <strong>field</strong> result =
-          <strong>if</strong> comparisonYear - birthYear &gt;= minimumDifference
-          <strong>then</strong> 1 <strong>else</strong> 0 fi
-        </p>
-        <p style="background-color:
-DARKGRAY;">&nbsp;&nbsp;&nbsp; <strong>return</strong> result</p>
-        <p style="background-color:
-DARKGRAY;">&nbsp;</p>
-        <p style="background-color:
-DARKGRAY;">
-          def main(<strong>private</strong> <strong>field</strong> birthYear,
-          <strong>private</strong> <strong>field</strong> rand1,
-          <strong>private</strong> <strong>field</strong> rand2,
-          <strong>field</strong> hash1, <strong>field</strong> hash2,
-          <strong>field</strong> comparisonYear,
-          <strong>field</strong> minimumDifference) -&gt;
-          (<strong>field</strong>):
-        </p>
-        <p style="background-color:
-DARKGRAY;">
-          &nbsp;&nbsp;&nbsp; birthYearTest = birthYearCheck(birthYear, rand1,
-          rand2, hash1, hash2)
-        </p>
-        <p style="background-color:
-DARKGRAY;">&nbsp;&nbsp;&nbsp; birthYearTest == 1</p>
-        <p style="background-color:
-DARKGRAY;">
-          &nbsp;&nbsp;&nbsp; ageTest = ageCheck(birthYear, comparisonYear,
-          minimumDifference)
-        </p>
-        <p style="background-color:
-DARKGRAY;">&nbsp;&nbsp;&nbsp; ageTest == 1</p>
-        <p style="background-color:
-DARKGRAY;">&nbsp;&nbsp;&nbsp; <strong>return</strong> 1</p>
+<pre><code>import "hashes/sha256/512bitPacked" as sha256packed
+
+
+  def birthYearCheck(private field birthYear, private field rand1, private field rand2, field hash1, field hash2) -&gt; (field):
+      h = sha256packed([0, birthYear, rand1, rand2])
+      h[0] == hash1
+      h[1] == hash2
+      return 1
+  
+  def ageCheck(private field birthYear, field comparisonYear, field minimumDifference) -&gt; (field):
+      field result = if comparisonYear - birthYear &gt;= minimumDifference then 1 else 0 fi
+      return result
+  
+  def main(private field birthYear, private field rand1, private field rand2, field hash1, field hash2, field comparisonYear, field minimumDifference) -&gt; (field):
+      birthYearTest = birthYearCheck(birthYear, rand1, rand2, hash1, hash2)
+      birthYearTest == 1
+      ageTest = ageCheck(birthYear, comparisonYear, minimumDifference)
+      ageTest == 1
+      return 1</code></pre>
 <p>
   As you can see, we’ve incorporated our birthyear and age checks into the code.
   The first two portions are exactly the same as the previous two circuits we’ve
@@ -533,13 +454,9 @@ DARKGRAY;">&nbsp;&nbsp;&nbsp; <strong>return</strong> 1</p>
   our circuit returns a 1, or true.
 </p>
 <p>Now, let’s run our commands:</p>
-<p style="background-color:GAINSBORO;">zokrates compile -i complete.zok</p>
-<p style="background-color:GAINSBORO;">zokrates setup</p>
-<p style="background-color:GAINSBORO;">
-  zokrates compute-witness -a 1990 123 123
-  233770742581153321658241226707865859106
-  161843013006795803511295431198461913882 2020 21
-</p>
+<pre><code>zokrates compile -i complete.zok
+zokrates setup
+zokrates compute-witness -a 1990 123 123 233770742581153321658241226707865859106 161843013006795803511295431198461913882 2020 21</code></pre>
 <p>
   Again, let’s look through our values. We have, in order, our
   <strong>birth year</strong>, our <strong>secret salt</strong>, our
@@ -548,8 +465,8 @@ DARKGRAY;">&nbsp;&nbsp;&nbsp; <strong>return</strong> 1</p>
   <strong>minimum difference)</strong>. These are all the inputs we need for
   this circuit. Finally:
 </p>
-<p style="background-color:GAINSBORO;">zokrates generate-proof</p>
-<p style="background-color:GAINSBORO;">zokrates export-verifier</p>
+<pre><code>zokrates generate-proof
+zokrates export-verifier</code></pre>
 <p>
   We can finally take a look at how this will work back on Remix. Head back
   over, copy and paste the contents of your verifier.sol into your browser and
