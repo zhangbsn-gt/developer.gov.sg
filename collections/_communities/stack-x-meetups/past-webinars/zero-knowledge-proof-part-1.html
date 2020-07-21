@@ -1,0 +1,384 @@
+---
+title: Zero-knowledge Proof Part 1
+layout: layout-page-sidenav
+---
+
+<h2>STACK-X Webinar — Introduction to Zero-knowledge Proof (Part 1)<h2>
+
+	<p>
+	  <em
+	    >The following article was adapted from a STACK-X Webinar conducted by
+	    Raymond Yeh, a software engineer at GovTech, on June 25, 2020.</em
+	  >
+	</p>
+	<p>
+	  <em>This is the first post of a two-part series on Zero-knowledge Proofs.</em>
+	</p>
+	 <p>&nbsp;</p>
+	<p><h3><strong>What’s a Zero-knowledge Proof (ZKP)?</strong></h3></p>
+	<p>
+	  You may or may not have heard the term before, but a ZKP is essentially a
+	  method of proving that one has knowledge of something without sharing the
+	  contents of one’s knowledge. The possible applications of such a proof have,
+	  in more recent years, garnered much attention, especially with regards to
+	  solving privacy-related issues.
+	</p>
+	<p>But maybe that’s all a little abstract.</p>
+	<p>
+	  To help you better understand what ZKPs are and what they would even look
+	  like, here’s a scenario for you to think about (adapted from
+	  <a
+	    href="https://medium.com/swlh/a-zero-knowledge-proof-for-wheres-wally-930c21e55399"
+	    rel="noopener noreferrer nofollow"
+	    >The Startup’s article</a
+	  >):
+	</p>
+	<p><h3><strong>A Simple Game of Where’s Waldo</strong></h3></p>
+	<p>
+	  Both you and a friend have been asked to solve a Where’s Waldo puzzle. In
+	  front of you is a printout of an illustration filled with hundreds of people
+	  (including Waldo, of course).
+	</p>
+	<p>
+	  Being keen-eyed, it’s not long before you locate Waldo. Your friend, however,
+	  is having a far harder time with this. When you tell him that you’ve already
+	  found Waldo, he naturally doesn’t believe you—not only that, he even asks you
+	  to <em>prove</em> it.
+	</p>
+	<p>
+	  Herein lies the problem: you want to
+	  <strong>show him that you know where Waldo</strong> <strong>is</strong>
+	  <strong><em>without</em> showing him Waldo’s location</strong> so that he can
+	  continue to try and solve the puzzle on his own (or maybe you just want to
+	  watch him struggle a bit more).
+	</p>
+	<p>
+	  The proof we’re describing here is—you guessed it—a ZKP. So, what would that
+	  look like for this problem?
+	</p>
+	<p>Here’s a possible answer:</p>
+	<p>
+	  To begin with, get a <em>very</em> large piece of cardboard (say, four times
+	  the size of the puzzle) and choose a place to cut out the outline of Waldo.
+	  Then, place it over the Where’s Waldo illustration so that your friend can see
+	  <em>only </em>Waldo and nothing else. Without being able to see the rest of
+	  the illustration behind the cardboard, your friend won’t be able to tell which
+	  part of the picture Waldo is in, but he’ll be able to see that you really
+	  <em>do</em> know where Waldo is.
+	</p>
+
+
+	<figure style="text-align: center">
+		  <img src="/assets/img/Waldo.png" alt="An illustration of the Waldo cutout">
+		  <figcaption>Image credit: <a href="https://medium.com/swlh/a-zero-knowledge-proof-for-wheres-wally-930c21e55399"
+		    rel="noopener noreferrer nofollow">https://medium.com/swlh/a-zero-knowledge-proof-for-wheres-wally-930c21e55399</a>
+	 </figcaption>
+		</figure>
+
+
+	<p>
+	  With that, you’ve proven to your friend that you know the solution to this
+	  puzzle without ever revealing said solution—you’ve created a ZKP!
+	</p>
+	<p><h3><strong>What are some real-world applications of ZKP?</strong></h3></p>
+	<p>
+	  So, now you know what a ZKP is. But let’s be honest—how often are we going to
+	  find ourselves in a Where’s Waldo scenario like the one we just saw? For that
+	  matter, are there really many situations where a ZKP can come in handy?
+	</p>
+	<p>…Definitely!</p>
+	<p>
+	  Here’s just one example (that we’ll actually be creating a ZKP for if you read
+	  on): imagine that you want to prove that you’re over the legal age limit when
+	  buying alcohol at a grocery store. However, your age is a very sensitive piece
+	  of information that you’d really rather not reveal. Creating a ZKP would allow
+	  you to prove to the cashier that you’re over the legal age without ever
+	  specifying your exact age.
+	</p>
+	<p>There are, of course, many other useful applications for ZKPs, such as:</p>
+	<p>
+	  <strong
+	    ><a
+	      href="http://www0.cs.ucl.ac.uk/staff/J.Groth/ACNS05VoteProofFull.pdf"
+	      rel="noopener noreferrer nofollow"
+	      >Anonymous Verifiable Voting</a
+	    ></strong
+	  >
+	  – proving that one has the right to cast a vote (they have citizenship, for
+	  instance), that the vote has been included and also that the vote tally is
+	  correct—all without revealing anything about the identity of voters.
+	</p>
+	<p>
+	  <strong>Accountancy </strong>– proving that the computation of a balance sheet
+	  is correct without showing the actual items on the sheet.
+	</p>
+	<p>
+	  <strong>Solvency</strong> – proving that a financial institute has sufficient
+	  reserves to settle at least x% of accounts without revealing the sum of their
+	  reserves.
+	</p>
+	<p>
+	  If you’re interested in the full range of potential applications for ZKPs, you
+	  can check out
+	  <a
+	    href="https://arxiv.org/pdf/1907.06381.pdf"
+	    rel="noopener noreferrer nofollow"
+	    >this research paper</a
+	  >
+	  in your spare time.
+	</p>
+	<p>But moving on to the overview of the ZKP landscape today…</p>
+	<p><h3><strong>&nbsp;The world of ZKPs</strong></h3></p>
+	<p></p>
+
+
+	<figure style="text-align: center">
+		  <img src="/assets/img/ZKP%20Diagram%20Full.png" alt="An overview diagram of the ZKP landscape">
+		  <figcaption>Image credit: <a href="https://harryr.github.io/zklangs/" rel="noopener noreferrer nofollow"
+	    >https://harryr.github.io/zklangs/</a></figcaption>
+	</figure>
+
+
+	<p>
+	  This overview of the current ZKP landscape may seem intimidating, but fret
+	  not! We’ll walk you through the important bits.
+	</p>
+	<p>
+	  The yellow boxes (C, SFDL, etc.) represent the various programming languages
+	  you can write ZKP circuits in.
+	</p>
+	<p>
+	  In the grey boxes, you can see two widely known technologies that make use of
+	  ZKPs:
+	  <a
+	    href="https://z.cash/technology/zksnarks/#:~:text=The%20acronym%20zk%2DSNARK%20stands,between%20the%20prover%20and%20verifier."
+	    rel="noopener noreferrer nofollow"
+	    >zk-SNARKs</a
+	  >
+	  and Bulletproofs.
+	</p>
+	<p>The term zkSNARK is actually an acronym that stands for:</p>
+	<p><strong>Zero-knowledge</strong> – does not reveal contents of knowledge.</p>
+	<p>
+	  <strong>Succinct</strong> – the proof can be verified within a few
+	  milliseconds and the proof length is only a few hundred bytes.
+	</p>
+	<p>
+	  <strong>Non-interactive</strong> – a single message is sent from the prover to
+	  the verifier rather than a series of communications.
+	</p>
+	<p>
+	  <strong
+	    ><a
+	      href="https://crypto.stackexchange.com/questions/34757/what-is-the-difference-between-proofs-and-arguments-of-knowledge"
+	      rel="noopener noreferrer nofollow"
+	      >Argument of knowledge</a
+	    ></strong
+	  >
+	  – a computationally sound proof.
+	</p>
+	<p>
+	  In <a
+	      href="/communities/stack-x-meetups/past-webinars/zero-knowledge-proof-part-2"
+	      rel="noopener noreferrer nofollow">
+	      Part 2 of this series</a>, we’ll be focusing on zk-SNARKs and writing a
+	  ZKP using ZoKrates.&nbsp; &nbsp;
+	</p>
+
+
+	<figure style="text-align: center">
+		  <img src="/assets/img/ZKP%20Graph%20Mini.png" alt="A chart of the ZKP SoKrates route">
+	</figure>
+
+
+	<p>
+	  Following this snippet of the larger chart above, you’ll see that the code
+	  we’ll be writing (using ZoKrates) will be automatically compiled to R1CS, and
+	  then libsnark, Gro16, QAP and finally zk-SNARKs.
+	</p>
+	<p>
+	  (If you’re well-versed in RSA maths and want a deeper dive into the
+	  construction of zk-SNARKs, check out
+	  <a
+	    href="https://medium.com/@VitalikButerin/quadratic-arithmetic-programs-from-zero-to-hero-f6d558cea649"
+	    rel="noopener noreferrer nofollow"
+	    >this Medium article</a
+	  >
+	  after you’re done here.)
+	</p>
+	<p>
+	  Now, hopefully you’ve remembered the legal age restriction scenario we briefly
+	  talked about, because next we’ll be looking at a demo application of this
+	  age-restriction ZKP.
+	</p>
+	<p><h3><strong>Demo time!</strong></h3></p>
+	<p>
+	  The goal is to construct a ZKP that will prove to our check-out cashier that
+	  we are indeed above the age limit (let’s take this to be 21 here). This could
+	  take the simple form of an application on their screen—the cashier would input
+	  the relevant values into several boxes and the application would return a true
+	  or false verification.
+	</p>
+	<p>
+	  Now, when we talk about building a ZKP here, what we’re really talking about
+	  is building a <strong>ZKP Circuit </strong>(i.e. the grey box below).
+	</p>
+
+
+	<figure style="text-align: center">
+		  <img src="/assets/img/ZKP%20Circuit%201.png" alt="A diagram of the inputs for the ZKP circuit">
+	</figure>
+
+
+	<p>
+	  We’ll crack open this box and see how it works in a short while, but for now,
+	  let’s examine the inputs that go into this circuit.
+	</p>
+	<p>
+	  Firstly, our <strong>public inputs</strong>. These are pieces of information
+	  that allow our cashier to verify that the business constraint ‘above 21 years
+	  old’ holds even though they don’t have knowledge of our
+	  <strong>private</strong> <strong>inputs</strong>—secret information that is
+	  <em>never</em> presented to the cashier.
+	</p>
+	<p>Public<strong> </strong>inputs<strong>:</strong></p>
+	<p>
+	  <strong>Evidence of age</strong> – Official documentation that verifies our
+	  birth year. For our purposes, let’s take it that this evidence comes in the
+	  form of a
+	  <a
+	    href="https://www.educative.io/edpresso/what-is-hashing#:~:text=Hashing%20is%20the%20process%20of,value%20or%20simply%2C%20a%20hash."
+	    rel="noopener noreferrer nofollow"
+	    >hash</a
+	  >. This hash is created from our birth year and a
+	  <strong>secret salt</strong> (more on this in a bit).
+	</p>
+	<ul>
+	  <li>
+	    <p>
+	      Side note: If you’re not familiar with hashing, it’s a one-way function
+	      that converts a key (this could be anything, including a word or, in our
+	      case, a number) into a random string of characters (the hash). This
+	      process cannot be reversed, so the original value will be difficult to
+	      uncover. Think of it like baking a cake—you can take a variety of
+	      ingredients and bake them into a cake, but you can’t reverse the process
+	      and un-bake the cake to retrieve the ingredients.
+	    </p>
+	  </li>
+	</ul>
+	<p>
+	  <strong>Current year </strong>– Our cashier needs to compare this with the
+	  evidence of our age and the legal drinking age to determine if we’re over the
+	  age limit.
+	</p>
+	<p>
+	  <strong>Legal drinking age </strong>– Likewise, this is needed to confirm that
+	  we’re of age.
+	</p>
+	<p>Next, our private<strong> </strong>inputs:</p>
+	<p>
+	  <strong>Birth year</strong> – We need this to prove that we’re over 21!
+	</p>
+	<p>
+	  <strong>Secret salt</strong>&nbsp;– In hashing, adding a salt means adding an
+	  additional input. In this case, instead of just inputting the year 1990 (for
+	  example) to be hashed, we might add the string of characters ‘fla19297dnag54’
+	  alongside it to derive a stronger hash. This is necessary because without it:
+	</p>
+	<ul>
+	  <li>
+	    <p>
+	      Attackers can attempt to enumerate a series of possible birth years
+	      (running years like 1980-2000 through a hash function) and compare the
+	      resultant hashes with the hash created from only our birth year. The
+	      moment they notice that one of the hashes is identical with our hash,
+	      they’ll know what our age is.
+	    </p>
+	  </li>
+	</ul>
+	<ul>
+	  <li>
+	    <p>
+	      It is possible for two individuals to have the same official hash if their
+	      birth years are the same. If you saw someone else with the same hash,
+	      you’d immediately know their age.
+	    </p>
+	  </li>
+	</ul>
+	<p>
+	  Now that we understand our inputs, it’s time to take a look inside our grey
+	  box:
+	</p>
+
+	<figure style="text-align: center">
+		  <img src="/assets/img/ZKP%20Circuit%202.png" alt="A diagram of the ZKP circuit">
+	</figure>
+
+
+	<p>
+	  You can see that our various inputs are in this circuit, with red and green
+	  corresponding to our private and public inputs as per the previous chart. Our
+	  <strong>birth year (x)</strong> is inputted along with a secret
+	  <strong>salt (s)</strong> to form our <strong>hash (H)</strong>. This is then
+	  cross-checked with our <strong>evidence of age (a)</strong>. If
+	  <strong>H’s</strong> value matches<strong> a’s</strong>, we get a true<strong
+	  > </strong>signal (<strong>T)</strong>.
+	</p>
+	<p>
+	  At the same time, the <strong>current year (y)</strong> is subtracted from
+	  <strong>x</strong>. The resulting number is then compared with the
+	  <strong>legal drinking age (z)</strong>. If it is greater than or equal to
+	  <strong>z</strong>, we get <strong>T</strong>.
+	</p>
+	<p>
+	  If both constraints hold, it is determined that we are indeed of legal age,
+	  which results in the system verifying this as true.
+	</p>
+	<p>And there you have it!</p>
+	<p>
+	  You can see how this might look from the perspective of our cashier with this
+	  <a href="https://geek.sg/tools/zkp-demo" rel="noopener noreferrer nofollow"
+	    >demo application</a
+	  >
+	  that has been put together. Note that all the cashier would need is our public
+	  inputs and a unique proof (generated from the inputs we discussed), none of
+	  which reveal our age. It’s also interesting to note that this entire process
+	  is extremely computationally light—all the computation is done client-side and
+	  no central server is required for verifying the proof!
+	</p>
+	<p><h3><strong>Some final remarks</strong></h3></p>
+	<ul>
+	  <li>
+	    <p>
+	      ZKPs are proofs of knowledge that can be useful in keeping sensitive
+	      information private.
+	    </p>
+	  </li>
+	  <li>
+	    <p>
+	      A circuit is useless without external data or constraints, as it’s simply
+	      a proof of knowledge. A ZKP circuit needs business constraints in order to
+	      form an application.
+	    </p>
+	  </li>
+	  <li>
+	    <p>
+	      Take note—ZKPs are <strong>not</strong> blockchains! ZKPs are heavily used
+	      in the blockchains, but they’re not one and the same.
+	    </p>
+	  </li>
+	  <li>
+	    <p>
+	      ZKPs are great, but they’re not a panacea for every privacy-related
+	      problem. As with most things, it depends on the situation.
+	    </p>
+	  </li>
+	</ul>
+	<p>
+	  That’s all for Part 1 of our STACK-X Introduction to Zero-knowledge Proofs,
+	  but now that we’ve gotten you up to speed on what ZKPs are, you’re ready to
+	  try your hand at writing a ZKP application!&nbsp; For that, you can head over
+	  to <a
+		href="/communities/stack-x-meetups/past-webinars/zero-knowledge-proof-part-2"
+	  rel="noopener noreferrer nofollow">Part 2</a>.
+	</p>
