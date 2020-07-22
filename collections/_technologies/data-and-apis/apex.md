@@ -15,7 +15,7 @@ APEX contains an API catalogue which provides a searchable library of APIs publi
 
 ## Features
 
-<iframe src="https://www.youtube.com/embed/A_moVt-r4OA?showinfo=0"></iframe>
+<iframe src="https://www.youtube.com/embed/A_moVt-r4OA?showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 - Centralised Data Sharing Platform for Government
 
