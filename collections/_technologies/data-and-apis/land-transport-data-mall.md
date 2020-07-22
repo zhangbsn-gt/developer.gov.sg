@@ -7,7 +7,7 @@ description: LTA publishes a wide variety of land transport-related datasets (st
 
 ## Overview
 
-LTA publishes a wide variety of land transport-related datasets (static and dynamic / real-time) on DataMall for enterprises, third-party developers, researchers, and other members of the public to promote collaboration and co-creation of innovative and inclusive transport solutions.
+LTA publishes a wide variety of land transport-related datasets (static and dynamic / real-time) on DataMall for enterprises, third-party developers, researchers and other members of the public to promote collaboration and co-creation of innovative and inclusive transport solutions.
 
 ### Get Started
 
