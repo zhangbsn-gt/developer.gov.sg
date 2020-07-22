@@ -34,7 +34,7 @@ Moreover, the longer the development proceeds without merging back to the mainli
 
 Deployment automation deploys applications across environments used in the development process and the final production environments. This results in faster, frequent and reliable deployments.
 
-Solutions that automate your deployment processes improve the productivity of both the Dev and Ops teams. Enabling your team to develop faster, accomplish more, and ultimately build reliable software for the end-user.
+Solutions that automate your deployment processes improve the productivity of both the Dev and Ops teams, enabling your team to develop faster, accomplish more, and ultimately build reliable software for the end-user.
 
 #### Testings
 
