@@ -28,7 +28,7 @@ Continuous integration is an essential component in effective DevOps practice.
 
 Committing all code in a single repository is a useful foundation that can extend to more advanced practices.
 
-Moreover, the longer the development proceeds without merging back to the mainline, the higher the risk of integration conflicts and failures in the eventual merge.
+Moreover, if development proceeds without merging back to the mainline frequently enough, there is an increased risk of integration conflicts and failures during the eventual merge.
 
 #### Deployments
 
