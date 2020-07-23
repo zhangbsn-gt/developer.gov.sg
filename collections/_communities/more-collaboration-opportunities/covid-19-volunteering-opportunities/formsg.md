@@ -7,11 +7,11 @@ short_description: >
 
 **What it is**
 
-- Form builder for government officials to build secure digital forms in minutes. Easy to use as Google Forms, but uses end-to-end encryption so that only officials creating the form can access the data.
+- Form builder for government officials to build secure digital forms in minutes. Easy to use like Google Forms, but uses end-to-end encryption so that only officials creating the form can access the data.
 
 **Why it’s useful**
 
-- Allows officials to set up digital services super quickly. Thousands of services were deployed in days to help COVID, such as temperature taking forms, visitor declarations, contact tracing interviews, traveller approvals, assistance for returning Singaporeans and more. These services have collected data from more than a million people.
+- Allows officials to set up digital services super quickly. Thousands of services were deployed in days to aid the fight against COVID-19, such as temperature taking forms, visitor declarations, contact tracing interviews, traveller approvals, assistance for returning Singaporeans and more. These services have collected data from more than a million people.
 
 **How you can help**
 

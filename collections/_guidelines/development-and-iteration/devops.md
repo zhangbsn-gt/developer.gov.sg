@@ -6,7 +6,7 @@ description: Constantly improve the reliability and quality of your digital serv
 
 ## What is DevOps?
 
-DevOps emphasizes the removal of barriers to maintain high levels of communication between your development and operations teams. This usually results in a change of work culture within teams.
+DevOps emphasises the removal of barriers to maintain high levels of communication between your development and operations teams. This usually results in a change of work culture within teams.
 
 ### How can I ensure the effectiveness of my DevOps?
 
