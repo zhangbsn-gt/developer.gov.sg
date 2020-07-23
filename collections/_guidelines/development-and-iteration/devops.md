@@ -28,13 +28,13 @@ Continuous integration is an essential component in effective DevOps practice.
 
 Committing all code in a single repository is a useful foundation that can extend to more advanced practices.
 
-Moreover, the longer the development proceeds without merging back to the mainline, the higher the risk of integration conflicts and failures in the eventual merge.
+Moreover, if development proceeds without merging back to the mainline frequently enough, there is an increased risk of integration conflicts and failures during the eventual merge.
 
 #### Deployments
 
 Deployment automation deploys applications across environments used in the development process and the final production environments. This results in faster, frequent and reliable deployments.
 
-Solutions that automate your deployment processes improve the productivity of both the Dev and Ops teams. Enabling your team to develop faster, accomplish more, and ultimately build reliable software for the end-user.
+Solutions that automate your deployment processes improve the productivity of both the Dev and Ops teams, enabling your team to develop faster, accomplish more, and ultimately build reliable software for the end-user.
 
 #### Testings
 

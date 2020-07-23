@@ -23,7 +23,7 @@ Data.Gov.Sg aims to include:
 
 ### Data Sharing Principles
 
-The following data sharing principles aim to guide the Government agencies' Open Data efforts.
+The following data sharing principles help guide the Government agencies' Open Data efforts.
 
 - Data shall be made easily accessible
 

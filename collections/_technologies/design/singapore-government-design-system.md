@@ -13,7 +13,7 @@ The Singapore Government Design System (SGDS) aims to unite the Government's dig
 
 **UI Components**
 
-SGDS consists of open-source frontend components that are easily reused across any Singapore government websites. These components allow developers to achieve usability and accessibility standards easily, while not compromising on individual style.
+SGDS consists of open-source frontend components that are easily reused across any Singapore government website. These components allow developers to achieve usability and accessibility standards easily, while not compromising on individual style.
 
 **Layouts and Templates**
 
