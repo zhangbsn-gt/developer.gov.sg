@@ -7,11 +7,11 @@ description: The government's one-stop portal to its publicly-available datasets
 
 ## Overview
 
-[data.gov.sg](https://data.gov.sg/) was first launched in 2011 as the government's one-stop portal to its publicly-available datasets from 70 public agencies. To date, more than 100 apps have been created using the government’s open data.
+[data.gov.sg](https://data.gov.sg/) was first launched in 2011 as the Government's one-stop portal to its publicly-available datasets from 70 public agencies. To date, more than 100 apps have been created using the government’s open data.
 
 ### Self-Service Portal
 
-Data.Gov.Sg aims to include:
+data.gov.sg aims to include:
 
 - Provide one-stop access to the government’s publicly-available data
 
@@ -23,7 +23,7 @@ Data.Gov.Sg aims to include:
 
 ### Data Sharing Principles
 
-The following data sharing principles aim to guide the Government agencies' Open Data efforts.
+The following data sharing principles help guide the Government agencies' Open Data efforts.
 
 - Data shall be made easily accessible
 
@@ -35,4 +35,4 @@ The following data sharing principles aim to guide the Government agencies' Open
 
 - Data shall be as raw as possible
 
-[Discover open data and APIs on Data.Gov.Sg](https://data.gov.sg/)
+[Discover open data and APIs on data.gov.sg](https://data.gov.sg/)

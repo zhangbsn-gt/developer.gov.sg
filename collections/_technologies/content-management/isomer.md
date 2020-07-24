@@ -9,11 +9,11 @@ description: Provides template for website with hosting and is compliant to appl
 
 [Isomer](https://www.isomer.gov.sg/) is an informational website generator created by the Government Technology Agency of Singapore (GovTech).
 
-It provides template for website with hosting and is compliant to applicable clauses in the Instruction Manual 8 (IM8), Design Service Standard (DSS) and Usability Checklist (UC).
+It provides templates for websites with hosting and is compliant to applicable clauses in Instruction Manual 8 (IM8), Design Service Standard (DSS) and Usability Checklist (UC).
 
-GovTech builds, provides training and maintains Isomer as a service to all Singapore Government Agencies.
+GovTech built, provides training for and maintains Isomer as a service to all Singapore Government Agencies.
 
-Isomer is free of charge. The service will cover website hosting, maintenance, support and training for the system.
+Isomer is free of charge. The service covers website hosting, maintenance, support and training for the system.
 
 ### IM Compliance
 
@@ -21,7 +21,7 @@ Isomer users do not need to worry about applicable clauses in IM8 for websites t
 
 ### Responsibilities of Isomer users
 
-Your agency will be responsible for maintaining and ensuring that your website content meets content-related standards in DSS. Isomer will be responsible for website hosting, maintenance, support and ensuring compliance to relevant clauses of the IM8, DSS and UC.
+Your agency will be responsible for maintaining and ensuring that your website content meets content-related standards in DSS. Isomer will be responsible for website hosting, maintenance, support and ensuring compliance to relevant clauses of IM8, DSS and UC.
 
 ### Migrating existing content
 

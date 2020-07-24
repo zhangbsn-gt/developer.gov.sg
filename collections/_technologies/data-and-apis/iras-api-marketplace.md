@@ -24,6 +24,6 @@ APIs available include:
 
 Have a clear and amazing idea of how a new API could be useful for your organisation and taxpayers in general? What is in your API wish list or what new features do you wish to see?
 
-Submit your use case at [https://go.gov.sg/apiusecase](https://go.gov.sg/apiusecase) and the IRAS Digital Partnerships team will study the details for a potential collaboration together.
+Submit your use case at [https://go.gov.sg/iras-apiusecase](https://go.gov.sg/iras-apiusecase) and the IRAS Digital Partnerships team will study the details for a potential collaboration together.
 
 [Get started with IRAS APIs](https://apiservices.iras.gov.sg/iras/devportal/)

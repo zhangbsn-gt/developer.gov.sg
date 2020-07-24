@@ -1,0 +1,516 @@
+---
+title: Zero-knowledge Proof Part 2
+layout: layout-page-sidenav
+---
+
+<h2>STACK-X Webinar — Introduction to Zero-knowledge Proof (Part 2)</h2>
+
+<p>
+  <em>The following article was adapted from a STACK-X Webinar conducted by
+    Raymond Yeh, a software engineer at GovTech, on June 25, 2020.</em>
+</p>
+<p>
+  <em>This is the second post of a two-part series on Zero-knowledge Proofs.
+    You can read the first part
+    <a
+      href="/communities/stack-x-meetups/past-webinars/zero-knowledge-proof-part-1"
+      rel="noopener noreferrer nofollow"
+      >here</a
+    >.</em>
+</p>
+
+<p>
+  &nbsp;
+</p>
+
+<h3>Building your Zero-knowledge Proof (ZKP) circuit</h3>
+
+<p>
+  In this post, we’ll be showing you how to build your own ZKP circuit from
+  scratch. But before that, we have to decide which language we want to use.
+</p>
+<p>
+  If you ask around right now, you’ll find that your two main options are
+  ZoKrates and Circom. We’ll be focusing on using ZoKrates today, but for your
+  knowledge, here’s a quick breakdown of each language and their features:
+</p>
+<p>ZoKrates:</p>
+<p>
+  <strong>High level ZKP library</strong> – you don’t need to know too much
+  about the inner workings of a circuit to use it
+</p>
+<p>
+  <strong>Gentler learning curve</strong> – this is the easier language to pick
+  up of the two if you’re a newcomer
+</p>
+<p>
+  <strong>Better tutorial</strong> – more user-friendly and understandable, with
+  working examples within the tutorial
+</p>
+<p>
+  <strong>Tailored for blockchain use</strong> – ZoKrates was made to be used
+  with blockchains and doesn’t have a web sdk yet
+</p>
+<p>Circom:</p>
+<p>
+  <strong>Low level ZKP library</strong> – you’ll get to dive into the inner
+  workings of circuits and write code similar to Verilog (if you’re familiar
+  with this)
+</p>
+<p>
+  <strong>Steeper learning curve</strong> – this is definitely the harder
+  language to pick up, since it’s more declarative than functional
+</p>
+<p>
+  <strong>Absence of tutorial</strong> –&nbsp;you have to learn via the various
+  implementations and tests within the code
+</p>
+<p>
+  <strong>Not tied to blockchains</strong> – unlike ZoKrates, you’ll be able to
+  use this for a wider variety of purposes
+</p>
+<p>
+  <strong>JavaScript</strong> – you can run tests in JavaScript, and Circom has
+  a JavaScript Library for the development of web applications
+</p>
+<p>
+  From this breakdown, you can probably see why we’re opting to go with ZoKrates
+  for an introductory tutorial.
+</p>
+<p>Now, let’s get to visualising our circuit…</p>
+
+<h3>The task at hand</h3>
+
+<p>Let’s first recall the aim of our circuit.</p>
+<p>
+  We were previously trying to show that ZKPs could help a shopper to prove that
+  they’re above the legal age limit for purchasing alcohol
+  <em>without </em>revealing their actual age.&nbsp;
+</p>
+<p>
+  Let’s start simple. What exactly am I trying to prove with age restrictions?
+  Let’s take the legal age to be 21 and let’s take <strong>X</strong> to be our
+  age.
+</p>
+<p>You might therefore say that we’re trying to prove something like this:</p>
+<p>
+  ‘I know of a number, <strong>X</strong>, that is greater than
+  <strong>21</strong>, but I won’t tell you what <strong>X</strong> is.’
+</p>
+<p>Here’s how that circuit would look like:</p>
+
+<figure style="text-align: center">
+	  <img src="/assets/img/2%20ZKP%20Circuit%201.png" alt="A basic age verification circuit">
+</figure>
+
+<p>
+  Our circuit simply calculates if <strong>X </strong>is <strong>≥ 21</strong>.
+  If it is, we get <strong>T</strong> and we’re granted permission to buy our
+  beverage. This is, however, a little unsophisticated for our purposes. For
+  instance, what if we want to apply this to a variety of products that might
+  have different age restrictions?
+</p>
+<p>
+  Let’s take a second pass at this without specifying the precise age limit.
+  This time let’s take <strong>X</strong> to be our birth year.
+</p>
+<p>We could say we’re trying to prove that:</p>
+<p>
+  ‘I know of a number, <strong>X</strong>, such that <strong>Y - X ≥ Z</strong>,
+  where <strong>Y</strong> is the current year and <strong>Z</strong> is the age
+  restriction. I won’t tell you what <strong>X </strong>is, but
+  <strong>Y</strong> and <strong>Z </strong>are public knowledge.’
+</p>
+<p>Again, here’s what that would look like:</p>
+
+<figure style="text-align: center">
+	  <img src="/assets/img/2%20ZKP%20Circuit%202.png" alt="Age check circuit">
+</figure>
+
+<p>
+  The circuit deducts our birth year from the current year to derive our age.
+  From there, we compare our age with the legal age restriction,
+  <strong>Z</strong>—if it’s <strong>≥ Z</strong>, we get <strong>T</strong>.
+</p>
+<p>
+  This is a little better, but if you remember from <a
+    href="/communities/stack-x-meetups/past-webinars/zero-knowledge-proof-part-1"
+    rel="noopener noreferrer nofollow"
+    >Part 1</a
+  >, we wanted our
+  circuit to include three <strong>public</strong> <strong>inputs</strong>.
+  <strong>Y </strong>and <strong>X </strong>are public inputs, but we’re also
+  missing something else: we’ll want to include information from an external
+  source (say, a public national database, a smartcard, etc.) that can verify
+  the claim that we are indeed born in the year <strong>X</strong>.
+</p>
+<p>
+  This brings us to attempt three. We’ll say that we’re trying to prove that:
+</p>
+<p>
+  ‘I know of a number, <strong>X</strong>, such that <strong>F(X) = a</strong>,
+  where <strong>a</strong> has been attested by the Government to be a valid
+  piece of evidence about my age. I won’t tell you what <strong>X</strong> is,
+  but you can verify<strong> a</strong>.’
+</p>
+<p>Let’s have a look.</p>
+
+<figure style="text-align: center">
+	  <img src="/assets/img/2%20ZKP%20Circuit%203.png" alt="Full ZKP circuit">
+</figure>
+
+<p>
+  Remember hashing? When we talk about <strong>F(X)</strong> here, we’re really
+  referring to the hashed output of <strong>X</strong>, or
+  <strong>H(X +S)</strong> in the diagram. Our hashed <strong>X</strong> should
+  match our hashed birth year, <strong>a</strong>, which uses the same inputs.
+  This is how the cashier verifies that the birth year we provided is real.
+</p>
+<p>
+  <strong>Side</strong>
+  <strong>note (for how this would work in practice)</strong>: The hash we have,
+  <strong>H(X + S)</strong>, could perhaps be a string of values printed onto
+  our identity card. We never have to show the cashier our birth year, only this
+  hash. Being an officially-issued card, the hash here would match the hash used
+  for our evidence of age, <strong>a</strong>, the government-attested piece of
+  evidence.
+</p>
+<p>
+  Several things are happening in this circuit. Firstly, the same process as the
+  previous circuit is taking place. Our age is derived from the subtraction of
+  <strong>X</strong> from <strong>Y</strong> and it’s compared with
+  <strong>Z</strong>. If it’s <strong>≥ Z</strong>, we get our first
+  <strong>T</strong>. However, <strong>X</strong> is also hashed along with a
+  secret salt, <strong>S</strong>, so that we get <strong>H(X + S)</strong>,
+  which is then compared with <strong>a</strong>. If the value of
+  <strong>X</strong> is determined to be equal to the evidence of our age,
+  <strong>a</strong>, we get another <strong>T</strong>. If we get two
+  <strong>T</strong>s, it’s determined that we’re of legal age!
+</p>
+<p>And that’s what our circuit should roughly look like.</p>
+<p>Now we can finally get to coding.</p>
+
+<h3>Building our application — age check circuit</h3>
+
+<p>
+  You can get started with
+  <a
+    href="https://github.com/Zokrates/ZoKrates"
+    rel="noopener noreferrer nofollow"
+    >ZoKrates</a
+  >
+  by using the following Command Line Input for Linux, MacOS or FreeBSD:
+</p>
+<pre><code>curl -LSfs get.zokrat.es | sh</code></pre>
+<p>
+  Now that you have everything set up, we can begin by working on the simplest
+  component of our ZKP circuit: the age check circuit. To refresh your memory,
+  this is what it looks like:
+</p>
+
+<figure style="text-align: center">
+	  <img src="/assets/img/2%20ZKP%20Circuit%204.png" alt="Age check circuit">
+</figure>
+
+<p>
+  Using whichever code editor you’re familiar with, create a new directory and
+  make a new file called <strong>ageCheck.zok</strong>. Copy and paste the
+  following into your code editor:
+</p>
+<pre><code>def main(private&nbsp;field&nbsp;birthYear,&nbsp;field&nbsp;comparisonYear,&nbsp;field&nbsp;minimumDifference) -&gt; (field):
+  &nbsp;&nbsp;&nbsp;&nbsp;field&nbsp;result =&nbsp;if&nbsp;comparisonYear - birthYear &gt;= minimumDifference&nbsp;then&nbsp;1&nbsp;else&nbsp;0 fi
+  &nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;result</code></pre>
+<p>
+  Let’s break this down a little. What we’re doing here is
+  <strong>defining</strong> a function called <strong>main</strong>.
+</p>
+<p>
+  All this is doing is subtracting our <strong>birth year</strong> (which you’ll
+  notice is a private field) from the <strong>comparison year</strong> (our
+  current year). If the result is <strong>≥ </strong>the<strong>
+    minimum difference </strong
+  >(21 in this case), then we get <strong>1</strong> (<strong>true</strong>). If
+  not, we get a <strong>0</strong>.
+</p>
+<p>
+  Now, we need to run this circuit. Assuming you already have ZoKrates up, run
+  the following CLI in your terminal:
+</p>
+<pre><code>zokrates compile -i ageCheck.zok</code></pre>
+<p>After compiling, run the setup.</p>
+<pre><code>zokrates setup</code></pre>
+<p>
+  You should now notice two new keys: the <strong>proving</strong> and
+  <strong>verification keys</strong>. The former is used by the prover (i.e. us,
+  the shopper), to generate the proof that they will share with the cashier. The
+  cashier makes use of the latter key to verify this proof. Both keys are
+  public—no sensitive data here.
+</p>
+<pre><code>zokrates compute-witness -a 1990 2020 21</code></pre>
+<p>
+  What we’ve just done is compute our witness. A witness is, quite simply, one
+  possible solution to our circuit. You’ll notice that each value stated here
+  corresponds to the fields in our code:
+  <strong
+    >birth year (1990), comparison year (2020), minimum difference (21)</strong
+  >. If our inputs match these values, our circuit verifies this and produces a
+  <strong>1</strong>.&nbsp;
+</p>
+<pre><code>zokrates generate-proof</code></pre>
+<p>We’ve just generated our proof for this circuit.</p>
+<pre><code>zokrates export-verifier</code></pre>
+<p>
+  Finally, our verifier. Running this should have created a verifier.sol file.
+  Your screen should now (hopefully) look something like this:
+</p>
+
+<figure style="text-align: center">
+	  <img src="/assets/img/2%20Code%20Snap.png" alt="A screenshot of the code editor">
+</figure>
+
+<p>
+  That’s it for this portion of the circuit, but it might be helpful to take a
+  look at how this would work in action and ensure that everything is working
+  fine.
+</p>
+<p>
+  Copy the contents of our newly made verifier.sol file and head over to
+  <a href="https://remix.ethereum.org/" rel="noopener noreferrer nofollow"
+    >https://remix.ethereum.org/</a
+  >. You’ll want to click on Solidity under Environments, as that’s what we’ll
+  be using:
+</p>
+
+<figure style="text-align: center">
+	  <img src="/assets/img/2%20Site%20Snap%201.png" alt="A screenshot of remix.etherium.org.">
+</figure>
+
+<p>
+  First, you’ll want to create a new file—let’s call it AgeVerifier.sol—and
+  paste the lines of code into this. Now, you’ll want find the Solidity Compiler
+  icon, click it and and select the AgeVerifier.sol file. Compile this with the
+  appropriate compiler version (you can find the pragma of the generated .sol on
+  the first line of your file).
+</p>
+
+<figure style="text-align: center">
+	  <img src="/assets/img/2%20Site%20Snap%202.png" alt="A screenshot of solidity compiler">
+</figure>
+
+<p>
+  Next, head to your Deploy and Run Transactions plugin and deploy this
+  verification contract onto your browser. If you’ve done this right, you should
+  now see that our verifier has boxes labelled a, b, c and Input.
+</p>
+
+<figure style="text-align: center">
+	  <img src="/assets/img/2%20Site%20Snap%203.png" alt="A screenshot of solidity compiler's verifier boxes">
+</figure>
+
+<p>
+  Heading back into your code editor and going into the proof we previously
+  generated (proof.json), you’ll find each of these lines of code there. Copy
+  and paste them into their respective boxes on Remix. Click on transact. You’ll
+  see that our transaction has succeeded; based on the inputs, our circuit
+  arrived at a <strong>T</strong> and our legal age status was verified.
+</p>
+<p>
+  So, what just happened here? If you take a closer look at the inputs box,
+  you’ll notice these last few digits:
+</p>
+
+<figure style="text-align: center">
+	  <img src="/assets/img/2%20Site%20Snap%204.png" alt="A screenshot of age check circuit's inputs">
+</figure>
+
+<p>
+  If you run them through a hexadecimal to decimal converter, you’ll realise
+  that they actually correspond to 2020, 21 and 1 (this last one is just a bias
+  signal that allows the circuit to run properly).
+</p>
+<p>
+  Also, remember a, b and c? Our private input, the birth year, was also run
+  through this verifier via these lines of code. You’ll not be able to work
+  backwards to derive the year from them, so don’t even bother trying!&nbsp;
+</p>
+<p>
+  What we just did was run all these inputs, public and private, through our
+  verifier, which then checked them and ensured that our minimum age was indeed
+  21.
+</p>
+<p>With that, we’ve finished our first circuit!</p>
+
+<h3>Building our application — birth year check circuit</h3>
+
+<p>
+  Moving on, we’ll now try to build the next portion of our circuit, which
+  verifies that the prover knows of both the secret salt and birth year inputs
+  only made available to him. This establishes that the prover is indeed the
+  owner of the evidence of age published by the government. This needs to exist
+  because without it, our shopper could simply lie about his birth year in order
+  to get the alcohol.
+</p>
+<p>
+  Let’s create a new file and name this birthYearCheck.zok. Copy the following
+  into your code editor:
+</p>
+<p></p>
+<pre><code>import "hashes/sha256/512bitPacked" as sha256packed
+
+
+  def main(private field birthYear, private field rand1, private field rand2, field hash1, field hash2) -&gt; (field):
+      h = sha256packed([0, birthYear, rand1, rand2])
+      h[0] == hash1
+      h[1] == hash2
+      return 1</code></pre>
+<p>
+  You may have noticed that we imported a package. This package is a hash
+  function—specifically, the function SHA 256, which converts our birth year
+  into a hash. You’ll actually see <strong>birth</strong>
+  <strong>year</strong> listed as one of the private inputs, along with our
+  <strong>secret</strong> <strong>salt</strong> (listed as
+  <strong>rand1</strong> and <strong>rand2</strong>). The government-published
+  <strong>evidence of age</strong>, which is also hashed, is listed here as a
+  public input (<strong>hash1</strong> and <strong>hash2</strong>).
+</p>
+<p>
+  This runs a check to verify that the values are right. If the hashes
+  correspond, it returns <strong>1</strong>.
+</p>
+<p>We now need to run several commands as per the previous circuit.</p>
+<pre><code>zokrates compile -i birthYearCheck.zok
+zokrates setup
+zokrates compute-witness -a 1990 123 123 233770742581153321658241226707865859106 161843013006795803511295431198461913882</code></pre>
+<p>
+  If you look at the values in our witness, you can see that 1990 refers to the
+  birth year, while 123 123 refer to our secret salt. The last string of digits
+  refers to the hash that’s published online in our national database that
+  verifies the birth year we provide. This witness, like before, serves as a
+  sample solution for our circuit.
+</p>
+<pre><code>zokrates generate-proof
+zokrates export-verifier</code></pre>
+<p>
+  Now that this is done, we can repeat what we did for the age check circuit and
+  see how this looks on Remix. You can just copy the verifier.sol that was
+  generated and paste it over the existing ageverifier.sol on Remix. Repeat what
+  we did before and compile this before deploying it to your browser.
+</p>
+<p>
+  Going into proof.json, we can copy a, b, c and inputs and paste them into the
+  boxes on Remix. Hit transact and it should be verified.
+</p>
+<p>
+  As with the previous circuit, you’ll realise that our inputs actually
+  correspond to our <strong>public inputs</strong>, namely the hashed
+  <strong>evidence of age</strong> provided by our national database. Likewise,
+  the contents of a, b and c correspond to our <strong>private inputs</strong>.
+</p>
+<p>
+  Remember that everything that we’re currently doing is on the protocol level.
+  If we were building a real, user-friendly application, we would naturally need
+  to abstract the process further so a user would not have to deal with any of
+  this.
+</p>
+
+<h3>Building our application — the complete circuit</h3>
+
+<p>
+  Finally, let’s finish our circuit by bringing our two component circuits
+  together. Again, this is what it will end up looking like:
+</p>
+
+<figure style="text-align: center">
+	  <img src="/assets/img/2%20ZKP%20Circuit%205.png" alt="Full ZKP circuit">
+</figure>
+
+<p>
+  Let’s make a new file in our code editor and call this complete.zok. Copy the
+  following into your editor:
+</p>
+<pre><code>import "hashes/sha256/512bitPacked" as sha256packed
+
+
+  def birthYearCheck(private field birthYear, private field rand1, private field rand2, field hash1, field hash2) -&gt; (field):
+      h = sha256packed([0, birthYear, rand1, rand2])
+      h[0] == hash1
+      h[1] == hash2
+      return 1
+  
+  def ageCheck(private field birthYear, field comparisonYear, field minimumDifference) -&gt; (field):
+      field result = if comparisonYear - birthYear &gt;= minimumDifference then 1 else 0 fi
+      return result
+  
+  def main(private field birthYear, private field rand1, private field rand2, field hash1, field hash2, field comparisonYear, field minimumDifference) -&gt; (field):
+      birthYearTest = birthYearCheck(birthYear, rand1, rand2, hash1, hash2)
+      birthYearTest == 1
+      ageTest = ageCheck(birthYear, comparisonYear, minimumDifference)
+      ageTest == 1
+      return 1</code></pre>
+<p>
+  As you can see, we’ve incorporated our birthyear and age checks into the code.
+  The first two portions are exactly the same as the previous two circuits we’ve
+  worked on. Finally, at the bottom, if both of the previous functions are true,
+  our circuit returns a 1, or true.
+</p>
+<p>Now, let’s run our commands:</p>
+<pre><code>zokrates compile -i complete.zok
+zokrates setup
+zokrates compute-witness -a 1990 123 123 233770742581153321658241226707865859106 161843013006795803511295431198461913882 2020 21</code></pre>
+<p>
+  Again, let’s look through our values. We have, in order, our
+  <strong>birth year</strong>, our <strong>secret salt</strong>, our
+  government-provided hash (or <strong>evidence of age</strong>), the
+  <strong>current year</strong>, and finally our legal age (or
+  <strong>minimum difference)</strong>. These are all the inputs we need for
+  this circuit. Finally:
+</p>
+<pre><code>zokrates generate-proof
+zokrates export-verifier</code></pre>
+<p>
+  We can finally take a look at how this will work back on Remix. Head back
+  over, copy and paste the contents of your verifier.sol into your browser and
+  compile it. Deploy this into your browser as usual, and then copy and paste a,
+  b, c and your inputs from your proof.json file into the boxes under your
+  Deployed Contracts.
+</p>
+<p>If you’d like, you can take a closer look at our inputs on Remix:</p>
+
+<figure style="text-align: center">
+	  <img src="/assets/img/2%20Site%20Snap%205.png" alt="A screenshot of the inputs for the full ZKP circuit">
+</figure>
+
+<p>
+  Again, each line can be run through a hexadecimal to decimal converter if you
+  want to find out what they correspond to. The first two lines are the hash
+  provided by the government, while the subsequent lines refer to the same
+  public inputs as before: 2020, 21 and 1, our bias signal.
+</p>
+<p>
+  In any case, if everything has been done correctly to this point, our circuit
+  should have been verified…
+</p>
+<p>
+  …and that’s it! You can pat yourself on the back because you’ve successfully
+  created a legal age ZKP circuit.
+</p>
+<p>
+  If you would like to have a look at the full library of code samples used in
+  this exercise, you can head over to
+  <a
+    href="https://github.com/yehjxraymond/ZoKrates-experiment"
+    rel="noopener noreferrer nofollow"
+    >https://github.com/yehjxraymond/ZoKrates-experiment</a
+  >.
+</p>
+<p>
+  If you want to trying following along with the a video version of this
+  workshop instead, or if you’d like to see this done with Circom instead of
+  ZoKrates, you find all the
+  <a
+    href="https://www.developer.gov.sg/communities/stack-x-meetups/past-webinars"
+    rel="noopener noreferrer nofollow"
+    >recorded webinar here</a
+  >.
+</p>
+<p>Thanks for reading!</p>

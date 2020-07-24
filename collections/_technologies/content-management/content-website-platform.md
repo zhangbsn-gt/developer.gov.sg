@@ -15,7 +15,7 @@ With the CWP, agencies only have to manage their own websites and they can focus
 
 CWP is hosted in the Public Cloud, Amazon Web Services (AWS), and G-Cloud, IM8 Compliant Hosting Environment, for the ‘unclassified’ front-end website and ‘restricted’ form services respectively.
 
-CWP offers two categories of services, Base Services and Catalogue Buy Services. Base Services include virtual hosting environment services (AWS) and Form services (G-Cloud or Government Cloud), bundled security infrastructure services and security management services.
+CWP offers two categories of services: Base Services and Catalogue Buy Services. Base Services include virtual hosting environment services (AWS) and Form services (G-Cloud or Government Cloud), bundled security infrastructure services and security management services.
 
 Agencies can choose from 3 website tiers for the virtual hosting environment services: Small (Website page views of 50,000 per day and website data transfer of 5GB), Medium (Website page views of 200,000 per day and website data transfer of 20GB), and Large (Website page views of 800,000 per day and website data transfer of 5GB).
 
@@ -23,7 +23,7 @@ There are similar categories for Form Services with small, medium and large for 
 
 ### Integrated, Centrally-Managed Security
 
-CWP centrally manages the security protection of all hosted websites, through a range of integrated security infrastructure and management services.
+CWP centrally manages the security protection of all hosted websites through a range of integrated security infrastructure and management services.
 
 ### Content Publishing Services
 

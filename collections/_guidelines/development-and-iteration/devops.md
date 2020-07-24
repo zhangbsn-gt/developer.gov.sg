@@ -6,7 +6,7 @@ description: Constantly improve the reliability and quality of your digital serv
 
 ## What is DevOps?
 
-DevOps emphasizes the removal of barriers to maintain high levels of communication between your development and operations teams. This usually results in a change of work culture within teams.
+DevOps emphasises the removal of barriers to maintain high levels of communication between your development and operations teams. This usually results in a change of work culture within teams.
 
 ### How can I ensure the effectiveness of my DevOps?
 
@@ -28,13 +28,13 @@ Continuous integration is an essential component in effective DevOps practice.
 
 Committing all code in a single repository is a useful foundation that can extend to more advanced practices.
 
-Moreover, the longer the development proceeds without merging back to the mainline, the higher the risk of integration conflicts and failures in the eventual merge.
+Moreover, if development proceeds without merging back to the mainline frequently enough, there is an increased risk of integration conflicts and failures during the eventual merge.
 
 #### Deployments
 
 Deployment automation deploys applications across environments used in the development process and the final production environments. This results in faster, frequent and reliable deployments.
 
-Solutions that automate your deployment processes improve the productivity of both the Dev and Ops teams. Enabling your team to develop faster, accomplish more, and ultimately build reliable software for the end-user.
+Solutions that automate your deployment processes improve the productivity of both the Dev and Ops teams, enabling your team to develop faster, accomplish more, and ultimately build reliable software for the end-user.
 
 #### Testings
 

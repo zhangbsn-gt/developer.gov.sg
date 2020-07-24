@@ -5,7 +5,7 @@ short_description: >
   VICA is GovTech's next-generation Chatbot/Virtual Assistant/Conversation AI platform.
 ---
 
-VICA is GovTech's next-generation Chatbot/Virtual Assistant/Conversation AI platform. It will serve as the platform to enable the tech refresh of all 90+ existing Ask Jamie govt agency chatbots. VICA will also leverage Machine Learning/AI technologies to perform advanced analytics on chatbot content, so as to improve the citizen experience when interacting with govt chatbots.
+VICA is GovTech's next-generation Chatbot/Virtual Assistant/Conversation AI platform. It will serve as the platform to enable the tech refresh of all 90+ existing Ask Jamie Government agency chatbots. VICA will also leverage Machine Learning/AI technologies to perform advanced analytics on chatbot content, so as to improve the citizen experience when interacting with Government chatbots.
 
 - **Skillsets needed**
 
