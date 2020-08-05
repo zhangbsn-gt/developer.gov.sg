@@ -6,7 +6,7 @@
     - TraceTogether
     - SPOTON
     - SupplyAlly
-    - VigilantGantry 
+    - VigilantGantry
 
 - name: Open source
   description: Government-built open source technologies and tools
@@ -42,7 +42,7 @@
   items:
     - Singapore Government Design System
 - name: DevOps
-  description: Tools that enable the delivery software quickly, securely and reliably in the spirit of DevOps
+  description: Tools that enable the delivery of software quickly, securely and reliably in the spirit of DevOps
   items:
     - Ship
     - Hats
@@ -56,7 +56,7 @@
     - Government Commercial Cloud
 
 - name: Sensor Platforms and Internet of Things
-  description: Build on sensors and IOT technologies and leverage on their data
+  description: Build on sensors and IOT technologies and leverage their data
   items:
     - Digital Operations Smart Services
     - Lamppost-as-a-Platform

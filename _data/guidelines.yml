@@ -1,6 +1,6 @@
 - name: Project inception
   description: Thoroughly investigate problems and ideas before identifying and planning for a feasible technical solution
-  items: 
+  items:
     - Problem validation
     - Requirements gathering
 
@@ -35,5 +35,5 @@
     - API Playbook
     - Digital Service Standards
 
-- name: Technology Acronyms
+- name: Technology acronyms
   description: Search and understand common technology-related acronyms and terms
