@@ -14,6 +14,7 @@
 - name: Analytics
   description: Web analytics tools to help you better understand your users and make data-driven decisions
   items:
+    - Overview
     - WOGAA
 - name: Blockchain
   description: Distributed ledger technologies that enable the usage of decentralised, tamper-proof records
