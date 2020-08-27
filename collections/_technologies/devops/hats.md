@@ -39,7 +39,7 @@ Continuous testing can be achieved by integrating hats into the Continuous Integ
 
 ## Roadmap
 
-![ship and hats roadmap](https://d3uzjhjcl6zsbz.cloudfront.net/ship-hats-high-level-roadmap-4.jpg)
+![ship and hats roadmap](/assets/img/SHIP-HATS-Product-Roadmap-12-8-2020.jpg)
 
 ## Get started
 
