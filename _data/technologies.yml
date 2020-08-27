@@ -9,8 +9,8 @@
     - VigilantGantry
     - GoBusiness COVID Portal
 
-- name: Open source
-  description: Government-built open source technologies and tools
+- name: Open-source
+  description: Government-built open-source technologies and tools
 
 - name: Analytics
   description: Web analytics tools to help you better understand your users and make data-driven decisions

@@ -31,7 +31,7 @@ This falls under the ‘Catalogue Buy Services’. (Catalogue Buy also includes 
 
 CWP provides improved manageability and operational efficiency with five Content Management Systems (CMS) standardised software. Customer may bring their own CMS licenses over to CWP provided the licensing scheme is supported in CWP. Alternatively, customer may procure the CMS licenses in CWP. They can choose to deploy HTML websites where CMSes are not required.
 
-The five supported CMSes are WordPress which is Open Source (with commercial support for plug-ins) and four proprietary CMSes, namely SharePoint, SiteCore, Swiit and Sitefinity.
+The five supported CMSes are WordPress, which is open-source (with commercial support for plug-ins), and four proprietary CMSes, namely SharePoint, SiteCore, Swiit and Sitefinity.
 
 ### Simple Process for Agencies
 
