@@ -3,7 +3,11 @@ timezone: Asia/Singapore
 
 # SEO; see https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 title: Singapore Government Developer Portal
-description: Resources for building Singapore Government digital products
+description: > 
+  Resources to help engineers and managers 
+  run and deliver great digital services,
+  build on existing technologies and
+  co-create innovative digital solutions with the Government
 # url: "https://www.developer.gov.sg" # Disabling to have jekyll-redirect-from not obey site.url
 logo: /assets/img/logo_developer.gov.sg.png
 
