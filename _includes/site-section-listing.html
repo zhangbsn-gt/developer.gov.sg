@@ -7,7 +7,7 @@
   {% for category in site.data[include.sectionName] %}
   <div class="col is-4 padding--lg">
     <a href="{{ category.name | slugify }}">
-      {% assign item_count = category.items | size %}
+      {% assign item_count = category.items | size | minus: 1 %}
       <h3 style="margin-bottom: 0">
         {{ category.name }}
       </h3>
@@ -16,7 +16,7 @@
             ({{ item_count }}&nbsp;
             {%- if item_count == 1 -%}
               item
-            {%- elsif item_count > 1 -%} 
+            {%- elsif item_count > 1 -%}
               items
             {%- endif -%})
         </small>

@@ -19,6 +19,6 @@ short_description: >
 
 - Frontend framework refactoring and cleanup (Angular1 specifically).
 
-- Security reviewing our codebase as we’re working towards open sourcing this.
+- Security reviewing our codebase as we’re working towards open-sourcing this.
 
 If you are interested, please indicate the project name in the survey [here](https://go.gov.sg/govtech-volunteers).
