@@ -1,39 +1,44 @@
-- name: Project inception
+- name: Project Inception
   description: Thoroughly investigate problems and ideas before identifying and planning for a feasible technical solution
   items:
-    - Problem validation
-    - Requirements gathering
+    - Overview
+    - Problem Validation
+    - Requirements Gathering
 
-- name: Development and iteration
+- name: Development and Iteration
   description: Deliver software early and iterate while aligning constantly to user and business needs
   items:
-    - Agile development
-    - UX design
+    - Overview
+    - Agile Development
+    - UX Design
     - DevOps
-    - Engineering practices
+    - Engineering Practices
 
-- name: Measuring success
+- name: Measuring Success
   description: Measure fulfilment of project objectives and act on them
   items:
-    - Use metrics
+    - Overview
+    - Use Metrics
 
-- name: Technology choice
+- name: Technology Choice
   description: Leverage existing technologies for greater velocity and reliability
   items:
-    - Use open-source software
-    - Use managed services
-    - Understand the broader environment
+    - Overview
+    - Open-source Software
+    - Managed Services
+    - Understand the Broader Environment
 
-- name: Building the right team
+- name: Building the Right Team
   description: A conducive team culture ensures better attitudes and team effectiveness
   items:
-    - Team culture
+    - Overview
+    - Team Culture
 
-- name: Standards and best practices
+- name: Standards and Best Practices
   description: Conventions to help deliver a better digital service
   items:
-    - API Playbook
+    - Overview
     - Digital Service Standards
 
-- name: Technology acronyms
+- name: Technology Acronyms
   description: Search and understand common technology-related acronyms and terms

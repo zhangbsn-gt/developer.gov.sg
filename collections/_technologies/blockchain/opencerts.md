@@ -11,7 +11,7 @@ GovTech Singapore developed OpenCerts in cooperation with the OpenCerts Consorti
 
 OpenCerts is the umbrella trademark under which we have released a few key components:
 
-- An open source schema for publishing educational credentials
+- An open-source schema for publishing educational credentials
 - A set of tools for generating cryptographic protections for educational credentials
 - This online website for verifying the authenticity of OpenCerts files
 
