@@ -1,0 +1,281 @@
+---
+title: Supporting the Community - SupplyAlly (Part 1)
+layout: layout-page-sidenav
+---
+
+<h2>STACK-X Webinar – Tech for Public Good: Supporting the Community (Part
+    1)</h2>
+</p>
+<p>
+  <em
+    >The following article was adapted from a STACK-X Webinar conducted by
+    Patricia Zhao, Lead UX Designer, GovTech.</em>
+</p>
+<p>
+  <em
+    >This first part of a two-part series focuses on the development journey of
+    SupplyAlly.</em>
+</p>
+<p><strong>How SupplyAlly was born</strong></p>
+<p>
+  SupplyAlly, or Sally for short, is a mobile app that facilitates the process
+  of logistics distribution, especially in times of need during COVID-19 and the
+  post-COVID era. While STACK-X Meetup participants might know of it, and even
+  make use of Sally in their own distribution campaigns, not many know of the
+  circumstances behind Sally’s development.
+</p>
+<p>It started with a phone call on April 1st.</p>
+<p>
+  Steven Koh, Director of Government Digital Services at GovTech, received a
+  call from the Ministry of Trade and Industry (MTI) and the People’s
+  Association (PA). They wanted to know if GovTech could develop an app that
+  would digitalise the nationwide reusable mask distribution exercise.
+</p>
+<p>
+  When was the distribution exercise going to start? <em>April 5th, </em>came
+  the reply.
+</p>
+<p>
+  In the span of four days, our engineers repurposed and refined an existing
+  application into SupplyAlly, a Minimum Viable Product (MVP) for mask
+  distribution. When we were notified of this request, we only knew that
+  SupplyAlly was meant for a nationwide distribution campaign, and that masks
+  were to be issued. With just this information, we had to develop an app that
+  was designed with a low barrier to entry for users without much tech knowledge
+  and training. As we did not know how many people were involved in distributing
+  masks, we had to develop a form of authorisation and authentication that was
+  scalable with the size of the volunteer efforts. A core feature of Sally was
+  to allow campaign operators to learn how to use the app with basic guidance;
+  for collection, Sally had to recognise identifiers such as the barcodes on
+  individuals’ physical NRIC in case they lacked digital forms of
+  identities.&nbsp;
+</p>
+<p>
+  Given the time constraints, speed was a major consideration – what are the
+  essential steps for using this app, and what is the most basic way of
+  verifying identities? These were key concerns for the team as we worked round
+  the clock to meet the deadline.
+</p>
+<p><strong>A helping hand for the community</strong></p>
+<p>
+  Once we set Sally up, it helped MTI and the PA to distribute reusable masks
+  across Singapore through the various Community Centres. To date, 4.2 million
+  masks have been issued through this campaign.
+</p>
+<p>
+  <img
+    src="https://lh5.googleusercontent.com/wofOQQ-ILJnUmazYZQS3PhSsdf3B5-W1TjRHxNMW1OnRAqme62QVWiYBe6bb6V-gel5cLXmqSyHZQ09MkB9NKhY22Cwcxh4ntYmOhTmsynvoxY8fW1Ks2cz4zmyjuYbpsw"
+  />
+</p>
+<p>
+  Moving ahead, we also saw great potential for Sally to support charitable
+  efforts in Singapore. During the Circuit Breaker period, home-based learning
+  was implemented but some children could not participate as they lacked access
+  to internet laptops. That’s why we decided to partner Engineering Good to
+  distribute refurbished laptops to underprivileged students for home-based
+  learning.&nbsp;
+</p>
+<p>
+  From June onwards, we worked with the Community Development Council (CDC) and
+  PA to distribute voucher booklets to families in need. Currently, our partners
+  have used Sally to distribute vouchers to more than 250,000 households out of
+  400,000 eligible households. Sally also directly contributes to the national
+  contact tracing effort against COVID-19. In partnership with our parent
+  organisation, the Smart Nation and Digital Government Group (SNDGG) and the
+  Agency for Integrated Care’s (AIC)’s Silver Generation Office, more than
+  10,000 TraceTogether Tokens were issued to the elderly who do not own
+  smartphones and other digitally-excluded members of the population. Most
+  recently, we engaged Food from the Heart, a charitable organisation, to give
+  out hot meals to the elderly and other service users around the Mountbatten
+  area. Sally vastly simplified the process of tracking and recording items
+  distributed, ensuring equitable distribution of essentials for individuals and
+  households.
+</p>
+<p>
+  <img
+    src="https://lh5.googleusercontent.com/OYD5erkuUMhE44dENn2Z2QfRPIdHi3PcaX6QivN376CbHfe7fcy2HFY9xOwVTHDSTBHUkbDlhxMMioOPgVqprnS1Ziq-w1-z8dtcYIxUXzMpor-3kZEhr0JV21U_tlglng"
+  />
+</p>
+<p><br /></p>
+<p><strong>SupplyAlly and Cloud</strong></p>
+<p>
+  The campaigns that we’ve supported since May are actively running and
+  supporting the community. Yet, when you visit Google Play or the iOS App
+  Store, you don’t see multiple versions of Sally for each individual campaign.
+  How do we support multiple distribution campaigns within a single app?
+</p>
+<p>
+  The answer lies with the use of Cloud technologies that allow Sally to run
+  multiple development campaigns concurrently. Individuals can then access their
+  specific campaigns by logging in with a unique QR code provided for them.
+</p>
+<p>
+  The cost of using public Cloud services was a consideration from the start of
+  Sally’s development. Since campaigns run for an extended period of time, we
+  needed to calculate and determine how much memory was used against the costs
+  charged by the provider. Using serverless solutions (where one only pays for
+  the computing power they use) also helped us scale rapidly when needed, since
+  we saved costs by consuming less resources when certain campaigns were not
+  activated.
+</p>
+<p>
+  <em
+    >Is it safe to use public cloud services, considering the government’s need
+    for security?</em
+  >
+</p>
+<p>
+  On our Government Commercial Cloud (GCC), we follow leading data management
+  practices and further protect data by using secure services. Sally also does
+  not store any personal identifiable information such as service users’ NRIC
+  information. Instead, the app merely takes a fingerprint of the information in
+  accordance with data management guidelines.
+</p>
+<p><strong>Developing one app for multiple partners</strong></p>
+<p>
+  The next question that arose during Sally’s development was: can we cater for
+  our partners’ varying needs and wants, even as their campaigns are running
+  under one app?
+</p>
+<p>
+  Recognising that both present and future partners are going to differ on this
+  aspect, our team stayed true to our DNA and focused on establishing consistent
+  fundamentals.
+</p>
+<p>
+  &nbsp;<img
+    src="https://lh3.googleusercontent.com/LJFT7ruGSlQ-CTFUmKU-FtHqfT_1lkrzSln6_iCeqr0z6POAIvq9oGjc10MwxxQLcQ8XMlCr-ICXEf20KAPiiwJPAyNoMZzCDK3-73tfIbM-OMLcZ7wU4QQ1R_uC_RdYBQ"
+  />
+</p>
+<p>Three things remain the same throughout all the distribution campaigns:</p>
+<ul>
+  <li>
+    <p>
+      Our partner organisations or agencies will tell us how to identify
+      legitimate beneficiaries and Sally will use the criteria accordingly. NRIC
+      scanning is enabled, as is QR code scanning, which Food from the Heart
+      uses.
+    </p>
+  </li>
+  <li>
+    <p>
+      Service users’ collections are recorded within a given time period. For
+      example, if an individual is eligible for one ice cream weekly, the
+      collection count for this person will be reset every week. Depending on
+      the campaign’s requirements, the time period can be adjusted accordingly –
+      some use cases include determining how long an individual is assigned an
+      item or how many times an item can be distributed to the individual.
+    </p>
+  </li>
+  <li>
+    <p>
+      The operator of the app is also notified on individuals’ eligibility and
+      past transactions.
+    </p>
+  </li>
+</ul>
+<p><strong>The customer journey for different stakeholders</strong></p>
+<p>
+  <em
+    >As a service user, I know that the Government is giving me some resources
+    that I’m entitled to. What do I do next?</em
+  >
+</p>
+<p>
+  You only need to bring your means of identification as specified by the
+  distribution campaign. For some partner agencies, it could be your NRIC, or
+  even a QR code (as with Food from the Heart’s campaign).
+</p>
+<p>
+  <em>I’m a distribution agent. What is the process like when using Sally?</em>
+</p>
+<p>
+  Firstly, you need to scan the barcode on the physical NRIC of the service
+  user. If the person is eligible to collect, the next screen will display the
+  assigned quota and inform you that Sally will be capturing the details of the
+  item being given out. When you proceed, the item will be redeemed, recorded
+  and tracked within the system.
+</p>
+<p>
+  If the entitlement is exceeded, there will be an error notification that
+  indicates when the person last collected the item.
+</p>
+<p>
+  <strong
+    >What’s next for Sally, and what have we learnt throughout the
+    journey?</strong
+  >
+</p>
+<p>
+  When we reach out to our many partners of varying digital literacy levels, we
+  seek to learn about their experiences with Sally. Has it been working for
+  them? How difficult is it to use?
+</p>
+<p>
+  From our development journey and the feedback we’ve received, we’ve identified
+  some new features that Sally can benefit from.
+</p>
+<ul>
+  <li>
+    <p>
+      <strong
+        >Empowering users to allow appeals when individuals’ entitlement limits
+        are reached. </strong>We want to give campaign distributors the option to allow individuals to
+      collect again, and have these extra collections tracked in the
+      system.&nbsp; We’re also pleased to announce that this feature has been
+      developed and tested – it will be ready for release in September.
+    </p>
+  </li>
+</ul>
+<ul>
+  <li>
+    <p>
+      <strong
+        >Some of the error messages and feedback displayed to app users are not
+        intuitive.</strong> Since the messages are more technically-driven than user-driven, they can
+      be a little hard to understand sometimes. That’s why we revamped these
+      messages to help users overcome simple issues while using Sally. These
+      changes will also be released in September.
+    </p>
+  </li>
+</ul>
+<ul>
+  <li>
+    <p>
+      <strong>Improving the login process for Sally.</strong> The login code is
+      key for allowing people to log into various environments so that multiple
+      campaigns can be run concurrently. But the code can be lost, and the
+      administrative side of the campaign has the heavy responsibility of
+      managing thousands of QR login codes for the distributors. That’s why
+      we’re exploring ways to improve this login process through rethinking and
+      redesigning the status quo.
+    </p>
+  </li>
+</ul>
+<ul>
+  <li>
+    <p>
+      <strong>Displaying statistics on the app. </strong>Users from PA and other
+      partner organisations have asked us about this option, and it’s something
+      we’re looking into implementing down the road.
+    </p>
+  </li>
+</ul>
+<ul>
+  <li>
+    <p>
+      <strong>Including non-English users of Sally. </strong>Another
+      consideration that the team is working toward is the inclusion of Chinese
+      translations to Sally, for a start. We believe that this would aid users
+      even more, increasing Sally’s user-friendliness.
+    </p>
+  </li>
+</ul>
+<p>
+  Developing Sally feels like rock climbing. There’s always one more step to
+  take, and sometimes it gets really difficult depending on the terrain you’re
+  on. While passion has led us here, there’s still much more work ahead. But
+  more work also means more opportunities, and it’s a sign that the team needs
+  to work harder to take advantage of them.
+</p>
+<p><em>Read about SupportGoWhere’s development journey in Part 2 here.</em></p>
