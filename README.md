@@ -33,13 +33,5 @@ npm install
 Recommended: run webpack and jekyll in separate terminal sessions, the access the site through localhost:4000. This is to allow for easy termination of both processes.
 
 ```sh
-# Terminal 1
-# jekyll dev server on localhost:4000; watches and builds site at _site/
-npm run dev:jekyll
-```
-
-```sh
-# Terminal 2
-# webpack in watch mode; runs tasks like vue app compilation and image compression
-npm run dev:static
+npm run dev:concurrent
 ```
