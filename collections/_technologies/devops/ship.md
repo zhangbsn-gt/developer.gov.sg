@@ -45,7 +45,7 @@ Note: SHIP only provides the tools to support a CI/CD pipeline. Users would stil
 
 ## Roadmap
 
-![ship and hats roadmap](/assets/img/SHIP-HATS-Product-Roadmap-12-8-2020.jpg)
+![ship and hats roadmap](/assets/img/SHIP-HATS-Product-Roadmap-18-9-2020.jpg)
 
 ## Get started
 
