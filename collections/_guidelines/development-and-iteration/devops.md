@@ -18,7 +18,7 @@ DevOps emphasises the removal of barriers to maintain high levels of communicati
 
 - Ensure constant application monitoring by using appropriate monitoring tools and instrumentation
 
-- Use Infrastructure-as-Code, where the cloud’s API-driven model allows developers and IT personnel to interact with the infrastructure at scale instead of manually booting up and configuring resources
+- Use [Infrastructure-as-Code](https://en.wikipedia.org/wiki/Infrastructure_as_code), where the cloud’s API-driven model allows developers and IT personnel to interact with the infrastructure at scale instead of manually booting up and configuring resources
 
 ### What are the key components of DevOps?
 
