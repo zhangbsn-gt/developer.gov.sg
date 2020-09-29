@@ -13,7 +13,7 @@ With the CWP, agencies only have to manage their own websites and they can focus
 
 ### Hosting Environment
 
-CWP is hosted in the Public Cloud, Amazon Web Services (AWS), and G-Cloud, IM8 Compliant Hosting Environment, for the ‘unclassified’ front-end website and ‘restricted’ form services respectively.
+CWP hosts unclassified websites on the public cloud (AWS) and restricted form services on GCloud, an IM8-compliant hosting environment.
 
 CWP offers two categories of services: Base Services and Catalogue Buy Services. Base Services include virtual hosting environment services (AWS) and Form services (G-Cloud or Government Cloud), bundled security infrastructure services and security management services.
 
