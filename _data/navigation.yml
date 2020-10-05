@@ -28,6 +28,14 @@
       collaboration opportunities
   dropdown: true
 
+- title: Singapore Government Tech Stack
+  url: /_singapore-government-tech-stack
+  description:
+    heading: A better, smarter and faster platform for building digital applications
+    content: >
+      Placeholder Text
+  dropdown: true
+
 # - title: Gigs
 #   url: /gigs
 

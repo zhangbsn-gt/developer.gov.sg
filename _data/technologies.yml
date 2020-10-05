@@ -9,11 +9,6 @@
     - VigilantGantry
     - GoBusiness COVID Portal
 
-- name: Singapore Government Tech Stack
-  description: A better, smarter and faster platform for building digital applications
-  items:
-    - Overview
-
 - name: Open-source
   description: Government-built open-source technologies and tools
 
