@@ -1,4 +1,5 @@
-- name: Singapore Government Tech Stack
+- name: Overview
   description: A better, smarter and faster platform for building digital applications
-  items:
-    - Overview
+  
+# - name: Tech stack component 1
+#   description: add more pages by adding to the list here

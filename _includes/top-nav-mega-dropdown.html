@@ -17,7 +17,7 @@
               </div>
               <div class="col is-8">
                   <div class="row is-multiline">
-                      {% assign siteSection = navItem.title | downcase %}
+                      {% assign siteSection = navItem.title | slugify %}
                       {% assign siteSectionDetails = site.data[siteSection] %}
                       {% for siteSectionItem in siteSectionDetails %}
                           <div class="col is-6">
