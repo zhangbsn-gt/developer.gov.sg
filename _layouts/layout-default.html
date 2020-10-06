@@ -84,7 +84,7 @@
       <div class="mobile-sidenav is-hidden-desktop">
           <button class="sgds-button is-small mobile-sidenav-toggle" type="button">
               {%- assign collectionName = page.collection -%}
-              <span>{{ collectionName | capitalize }}</span>
+              <span>{{ collectionName | split: "-" | join: " " | capitalize }}</span>
               <span class="sgds-icon sgds-icon-chevron-down"></span>
           </button>
           <ul class="mobile-sidenav-menu is-hidden">
