@@ -19,22 +19,22 @@
       service for Singapore
   dropdown: true
 
-- title: Communities
-  url: /communities
-  description:
-    heading: Co-create innovative digital solutions with the Government
-    content: >
-      Discover events, blogs, open-source technologies and other
-      collaboration opportunities
-  dropdown: true
-
 - title: Singapore Government Tech Stack
   url: /singapore-government-tech-stack
   description:
-    heading: Helping Government agencies build less and deliver more
+    heading: Reimagine Government with code
     content: >
-      A better, smarter and faster platform for building digital applications
+      Enhance developer experience for agile system delivery
   dropdown: true
+
+  - title: Communities
+    url: /communities
+    description:
+      heading: Co-create innovative digital solutions with the Government
+      content: >
+        Discover events, blogs, open-source technologies and other
+        collaboration opportunities
+    dropdown: true
 
 # - title: Gigs
 #   url: /gigs
