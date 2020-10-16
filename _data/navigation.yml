@@ -27,14 +27,14 @@
       Enhance developer experience for agile system delivery
   dropdown: true
 
-  - title: Communities
-    url: /communities
-    description:
-      heading: Co-create innovative digital solutions with the Government
-      content: >
-        Discover events, blogs, open-source technologies and other
-        collaboration opportunities
-    dropdown: true
+- title: Communities
+  url: /communities
+  description:
+    heading: Co-create innovative digital solutions with the Government
+    content: >
+      Discover events, blogs, open-source technologies and other
+      collaboration opportunities
+  dropdown: true
 
 # - title: Gigs
 #   url: /gigs
