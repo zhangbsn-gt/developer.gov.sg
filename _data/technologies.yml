@@ -8,6 +8,7 @@
     - SupplyAlly
     - VigilantGantry
     - GoBusiness COVID Portal
+    - GoWhere Suite
 
 - name: Open-source
   description: Government-built open-source technologies and tools
@@ -74,6 +75,7 @@
     - Sensesurround
     - SENSEOPS
     - Sensor Asset Management
+    - Sensor Data Exchange
     - Sensors.gov.sg
     - SPOT
     - SPOTON
