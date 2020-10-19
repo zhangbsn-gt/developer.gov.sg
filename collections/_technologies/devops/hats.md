@@ -2,8 +2,9 @@
 title: HATS
 layout: layout-page-sidenav
 category: Devops
+redirect_from: /singapore-government-tech-stack/hats
 description: >
-  Hive Agile Testing Solutions (HATS) is a functional test automation tool for 
+  Hive Agile Testing Solutions (HATS) is a functional test automation tool for
   web and mobile applications
 ---
 
