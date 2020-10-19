@@ -3,8 +3,8 @@ timezone: Asia/Singapore
 
 # SEO; see https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 title: Singapore Government Developer Portal
-description: > 
-  Resources to help engineers and managers 
+description: >
+  Resources to help engineers and managers
   run and deliver great digital services,
   build on existing technologies and
   co-create innovative digital solutions with the Government
@@ -38,6 +38,8 @@ collections:
   guidelines:
     output: yes
   communities:
+    output: yes
+  singapore-government-tech-stack:
     output: yes
 
 feedback_form: https://form.gov.sg/5e158a8b8967b800114d5a89

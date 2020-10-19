@@ -19,6 +19,14 @@
       service for Singapore
   dropdown: true
 
+- title: Singapore Government Tech Stack
+  url: /singapore-government-tech-stack
+  description:
+    heading: Reimagine Government with code
+    content: >
+      Enhance developer experience for agile system delivery
+  dropdown: true
+
 - title: Communities
   url: /communities
   description:
