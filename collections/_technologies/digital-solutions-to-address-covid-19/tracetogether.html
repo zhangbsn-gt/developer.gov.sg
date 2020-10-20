@@ -8,20 +8,51 @@ description: TraceTogether
 <h2>TraceTogether - Community-driven Contact Tracing</h2>
 
 <p>
+  The
+  <a href="https://www.tracetogether.gov.sg/" rel="noopener noreferrer nofollow"
+    >TraceTogether</a
+  >
+  mobile application is built on the
+  <a href="https://bluetrace.io/" rel="noopener noreferrer nofollow"
+    ><u>BlueTrace</u></a
+  >
+  protocol. The open source code has been published on
+  <a
+    href="https://github.com/OpenTrace-Community"
+    rel="noopener noreferrer nofollow"
+    >GitHub</a
+  >
+  to provide transparency on data usage.
+</p>
+<p><em>You may access the TraceTogether Token Technical Write-up <a
+  href="/assets/files/TT_Token_Technical_Writeup.pdf"
+  rel="noopener noreferrer nofollow"
+  >here</a
+>.</em></p>
+<p>
   Manual contact tracing often requires infected persons to recall the places
-  they have been to and the people they have been in close and extended contact with.
-  A hurdle that contact tracers face in this process is the inability of individuals
-  to recall these details with precision.
+  they have been to and the people they have been in close and extended contact
+  with. A hurdle that contact tracers face in this process is the inability of
+  individuals to recall these details with precision.
 </p>
 <p>
-  <a href="https://www.tracetogether.gov.sg/">TraceTogether</a> is a mobile application
-  (available on Android and iOS devices) that was developed by GovTech’s
-  <a href="https://www.hive.gov.sg/">Government Digital Services</a> team and
-  the <a href="https://www.moh.gov.sg/">Ministry of Health</a>
-  to complement manual contact tracing efforts.
-  The app uses Bluetooth technology to facilitate community-driven contact tracing
-  through the collection and logging of encounters between users of the mobile app.
+  The <a href="https://www.tracetogether.gov.sg/" rel="noopener noreferrer nofollow"
+    >TraceTogether</a
+  >
+  mobile application (available on Android and iOS devices) was developed by
+  GovTech’s
+  <a href="https://www.hive.gov.sg/" rel="noopener noreferrer nofollow"
+    >Government Digital Services</a
+  >
+  team and the
+  <a href="https://www.moh.gov.sg/" rel="noopener noreferrer nofollow"
+    >Ministry of Health</a
+  >
+  to complement manual contact tracing efforts. The app uses Bluetooth
+  technology to facilitate community-driven contact tracing through the
+  collection and logging of encounters between users of the mobile app.
 </p>
+<p>
 
 <figure style="text-align: center">
   <img src="/assets/img/tech-covid-tracetogether.png" alt="A screenshot of the TraceTogether app">
@@ -31,65 +62,81 @@ description: TraceTogether
 <h3>How does TraceTogether work?</h3>
 
 <p>
-  <b>It relies on Bluetooth technology</b> - The app relies on the communication
-  between Bluetooth-enabled devices to arrive at estimates of the
+  <b>It relies on Bluetooth technology </b>- The app relies on the
+  communication between Bluetooth-enabled devices to arrive at estimates of the
   proximity and duration of a user’s contact with other users.
-  <ul>
-    <li>
-      TraceTogether approximates the distance between users by measuring
-      the strength of the signals received from other Bluetooth devices
-      (as a general rule, the stronger the signal received, the closer the transmitting device).
-    </li>
-    <li>
-      It also approximates the duration of contact by interpolating successive communications
-      between devices.  The more often two devices communicate with each other,
-      the longer they have likely been in the vicinity of each other.
-    </li>
-  </ul>
 </p>
-
+<ul>
+  <li>
+    <p>
+      TraceTogether approximates the distance between users by measuring the
+      strength of the signals received from other Bluetooth devices (as a
+      general rule, the stronger the signal received, the closer the
+      transmitting device).
+    </p>
+  </li>
+  <li>
+    <p>
+      It also approximates the duration of contact by interpolating successive
+      communications between devices. The more often two devices communicate
+      with each other, the longer they have likely been in the vicinity of each
+      other.
+    </p>
+  </li>
+</ul>
 <p>
-  <b>Data is secure and private</b> - The data exchanged is anonymised, encrypted and
-  stored only on users’ devices, and only shared with the Ministry of Health
-  if they test positive for COVID-19 . To further protect data privacy,
-  locally stored information is automatically deleted after 25 days.
-  The app will also cease functionality at the end of the outbreak.
-</p>
-
-<p>
-  <b>Its use is voluntary for the general public</b> - The choice to download
-  TraceTogether is entirely voluntary.
-  Users can give consent through the app to upload the data to a secure government server.
-</p>
-
-<p>
-  <b>Consent can be withdrawn at any time</b> - Users can also withdraw their consent
-  to data sharing at any time. This is done by requesting for any identification details
-  to be deleted from government servers, making it impossible for any data exchanged
-  with other users’ phones to be linked to them.
-</p>
-
-<p>
-  <b>Open-sourced</b> - TraceTogether is built on the BlueTrace protocol, which has been
-  published on <a href="https://github.com/OpenTrace-Community">GitHub</a> to
-  provide transparency on data usage.
-</p>
-
-<p>At present, TraceTogether has been downloaded over 2 million times by Singapore residents.</p>
-<p>
-  For more information on BlueTrace and other open-source projects by GovTech, click
-  <a href="/technologies/open-source/index.html">here</a>.
+  <b>Data is secure and private</b> - The data exchanged is
+  anonymised, encrypted and stored only on users’ devices, and only shared with
+  the Ministry of Health if they test positive for COVID-19 . To further protect
+  data privacy, locally stored information is automatically deleted after 25
+  days. The app will also cease functionality at the end of the outbreak.
 </p>
 <p>
-  Click <a href="https://www.tracetogether.gov.sg/">here</a> to learn more about the TraceTogether app.
+  <b>Its use is voluntary for the general public</b> - The choice to
+  download TraceTogether is entirely voluntary. Users can give consent through
+  the app to upload the data to a secure government server.
+</p>
+<p>
+  <b>Consent can be withdrawn at any time</b> - Users can also
+  withdraw their consent to data sharing at any time. This is done by requesting
+  for any identification details to be deleted from government servers, making
+  it impossible for any data exchanged with other users’ phones to be linked to
+  them.
+</p>
+<p>
+  At present, TraceTogether has been downloaded over 2.6 million times by
+  Singapore residents.
+</p>
+<p>
+  For more information on BlueTrace and other open-source projects by GovTech,
+  click
+  <a
+    href="https://pr-245.d2ox9xl4t2suu6.amplifyapp.com/technologies/open-source/index.html"
+    rel="noopener noreferrer nofollow"
+    >here</a
+  >.
+</p>
+<p>
+  Click
+  <a href="https://www.tracetogether.gov.sg/" rel="noopener noreferrer nofollow"
+    >here</a
+  >
+  to learn more about the TraceTogether app.
 </p>
 
 <h3>TraceTogether Tokens</h3>
+
 <p>
   Not everyone has access to mobile devices. While this may only apply to a small percentage
-  of the population, it is crucial that every member of the community could be protected
+  of the population, it is crucial that every member of the community can be protected
   against this pandemic.
 </p>
+
+<figure style="text-align: center">
+  <img src="/assets/img/TT_Token.jpg" alt="An illustration of the TT Token">
+  <figcaption>The TraceTogether Token</figcaption>
+</figure>
+
 <p>
   TraceTogether Tokens are physical alternatives to the TraceTogether mobile app,
   and function in a similar manner. These tokens are being progressively distributed
@@ -98,37 +145,53 @@ description: TraceTogether
 </p>
 
 <h3>What’s in the token?</h3>
+
 <ul>
   <li>
-    <b>Bluetooth contact tracing</b> - Much like the app, TraceTogether Tokens send and
-    detect Bluetooth signals in order to estimate a user’s contact proximity and
-    duration with other users. Naturally, the app and tokens are able to communicate with each other.
+    <p>
+      <b>Bluetooth contact tracing</b> - Much like the app,
+      TraceTogether Tokens send and detect Bluetooth signals in order to
+      estimate a user’s contact proximity and duration with other users.
+      Naturally, the app and tokens are able to communicate with each other.
+    </p>
   </li>
   <li>
-    <b>Lasting battery life</b> - The battery for the TraceTogether Tokens are designed to run
-    for six to nine months without needing to be charged.
+    <p>
+      <b>Lasting battery life</b> - The battery for the TraceTogether
+      Tokens are designed to run for six to nine months without needing to be
+      charged.
+    </p>
   </li>
   <li>
-    <b>No GPS receiver or Internet connectivity</b> - As with the app, no location data
-    is kept by the device in any manner. The token is also incapable of uploading
-    any data automatically since it will not be able to access the Internet.
-    The data will only be extracted for contact tracing  when a user is confirmed with COVID-19.
+    <p>
+      <b>No GPS receiver or Internet connectivity </b>- As with the
+      app, no location data is kept by the device in any manner. The token is
+      also incapable of uploading any data automatically since it will not be
+      able to access the Internet. The data will only be extracted for contact
+      tracing when a user is confirmed with COVID-19.
+    </p>
   </li>
   <li>
-    <b>Data is encrypted</b> - Proximity logs collected by the token will be encrypted.
-    Furthermore, data is only stored on the device for 25 days before being automatically erased.
+    <p>
+      <b>Data is encrypted</b> - Proximity logs collected by the token
+      will be encrypted. Furthermore, data is only stored on the device for 25
+      days before being automatically erased.
+    </p>
   </li>
 </ul>
-
 <p>
-  On 28 June 2020, the first batch of TraceTogether Tokens were distributed to nearly
-  10,000 vulnerable seniors, i.e. those who are physically frail, living alone or without family support.
-  The Government will progressively distribute TraceTogether Tokens to the rest of
-  the population over the coming months.
+  Since 28 June 2020, GovTech has been progressively distributing TraceTogether
+  Tokens to the population. As of 5 October 2020, more than 100,000 tokens have
+  been collected by citizens.
 </p>
-
-<p>For more information on GovTech’s Government Digital Services, visit
-  <a href="https://www.hive.gov.sg/">https://hive.gov.sg</a>.</p>
-  <p>&nbsp;</p>
-  <p><em>Last updated 13 July 2020.</em>
-  </p>
+<p>
+  For more information on GovTech’s Government Digital Services, visit
+  <a href="https://hive.gov.sg" rel="noopener noreferrer nofollow"
+    >https://hive.gov.sg</a
+  >
+  and
+  <a href="http://token.gowhere.gov.sg" rel="noopener noreferrer nofollow"
+    ><u>http://token.gowhere.gov.sg</u></a>
+</p>
+<p>&nbsp;</p>
+<p><em>Last updated 20 October 2020.</em><br /></p>
