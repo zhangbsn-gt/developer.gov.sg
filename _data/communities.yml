@@ -5,12 +5,24 @@
   items:
     - Overview
     - Past Webinars
+
+- name: Events
+  description: >
+    Explore upcoming events for developers and technologists to learn from each
+    other and share their experiences as well as upcoming opporunities.
+  items:
+    - Overview
+    - STACK 2020
+    - STACK the flags 2020
+
 - name: Open-source Technologies
   description: >
     Developers and businesses can access and leverage on the
     various technologies and tools that Government agencies have open-sourced.
+
 - name: Developer Blogs
   description: Read about the innovations of GovTech’s teams!
+
 - name: More Collaboration Opportunities
   description: >
     Collaborate with GovTech to innovate and build better
