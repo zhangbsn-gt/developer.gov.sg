@@ -189,3 +189,15 @@ a.external-link::after {
     min-width: 100%;
   }
 }
+
+#stack-2020-banner {
+  transition: all 0.3s;
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 2px 4px 7px rgba(0, 0, 0, 0.5);
+  }
+  &:active {
+    transform: translateY(0);
+    box-shadow: none;
+  }
+}
