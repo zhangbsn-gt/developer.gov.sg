@@ -4,18 +4,13 @@
 - name: Toolchains
   description:
   items:
-    - SHIP-HATS
+    - SHIP
+    - HATS
 
 - name: Communications
   description:
   items:
-    - Cloud File Transfer
     - APEX
-
-- name: Runtime
-  description:
-  items:
-    - Container Stack
 
 - name: Service Management
   description:
