@@ -2,6 +2,7 @@
 title: Government Commercial Cloud
 layout: layout-page-sidenav
 category: Hosting
+redirect_from: /singapore-government-tech-stack/government-commercial-cloud
 description: Designed to manage all the resources hosted on the commercial service providers, in the likes of Amazon Web Services (AWS), Microsoft Azure and Google Cloud Platform
 ---
 

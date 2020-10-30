@@ -1,0 +1,20 @@
+- name: Overview
+  description: A better, smarter and faster platform for building digital applications
+
+- name: SHIP
+  description: A CI/CD platform that automates the delivery of applications and simplifies policy clearance
+
+- name: HATS
+  description: A functional test automation tool for web and mobile applications
+
+- name: APEX
+  description: A self-service, centralised and secure API gateway
+
+- name: Government Commercial Cloud
+  description: Government on the cloud
+
+- name: Contact Us
+  description: Send the SGTS team a message
+
+# - name: Tech stack component 1
+#   description: add more pages by adding to the list here

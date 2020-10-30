@@ -1,5 +1,5 @@
 ---
-title: Sensors Data Exchange
+title: Sensor Data Exchange
 layout: layout-page-sidenav
 category: Sensors and IOT
 description: >
@@ -7,7 +7,7 @@ description: >
   static and mobile sensor platforms, including robotics.
 ---
 
-## Sensors Data Exchange (SDX)
+## Sensor Data Exchange (SDX)
 
 ### Overview
 
