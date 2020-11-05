@@ -4,17 +4,20 @@
 - name: Toolchain
   description:
   items:
+    - Overview
     - SHIP
     - HATS
 
 - name: Communications
   description:
   items:
+    - Overview
     - APEX
 
 - name: Service Management
   description:
   items:
+    - Overview
     - Engineering Suite
     - TechPass
 
