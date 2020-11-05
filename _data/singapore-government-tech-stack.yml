@@ -1,7 +1,7 @@
 - name: Overview
   description: A better, smarter and faster platform for building digital applications
 
-- name: Toolchains
+- name: Toolchain
   description:
   items:
     - SHIP
