@@ -5,6 +5,8 @@
   description:
   items:
     - Overview
+    - SHIP
+    - HATS
     - SHIP-HATS Subscription
 
 - name: Communications
