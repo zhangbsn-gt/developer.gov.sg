@@ -1,0 +1,159 @@
+---
+title: Space Out
+layout: layout-page-sidenav
+category: Digital Solutions to Address COVID-19
+description: Space Out
+---
+  <h2>Space Out – Crowd Analysis for Safe Distancing</h2>
+<p>
+  Space Out is a map-based website that provides the public with regular updates
+  on the crowd levels in malls, supermarkets, and other public facilities across
+  Singapore. The
+  <a href="https://www.ura.gov.sg" rel="noopener noreferrer nofollow"
+    >Urban Redevelopment Authority</a
+  >’s (URA’s) Digital Planning Lab partnered with mall operators and other
+  stakeholders to create
+  <a href="https://www.spaceout.gov.sg/" rel="noopener noreferrer nofollow"
+    >Space Out</a
+  >.
+</p>
+<h3>Why Space Out?</h3>
+<p>
+  Space Out seeks to provide timely information and past trends on crowd levels
+  to assist people in choosing where to go for a variety of retail and
+  recreation purposes, so as to promote safe distancing amidst the Covid-19
+  situation. This was also to support operators in better managing the crowd
+  levels at their premises, as well as facilitate more evenly-distributed crowds
+  across different facilities. Space Out was launched during the early stage of
+  the country’s circuit breaker in April, and we are adding more places and
+  facilities to the website as Singapore gradually reopens.
+</p>
+<img src="/assets/img/SpaceOutMap.png" >
+<h3>What does Space Out do?</h3>
+<p>
+  Using an interactive map, each participating facility is represented by a
+  coloured icon on Space Out, as seen in the diagram above. A search function
+  has also been implemented as an alternative method for pin-pointing location
+  information.
+</p>
+<p>
+  Clicking on an icon reveals more information about crowd levels at the
+  facility, including time of the last update, a recent trends chart tracking
+  weekly average crowd levels and a display of nearest and less crowded
+  alternative venues. With these details, users can better plan and optimise
+  their trips to retail malls, supermarkets, markets, postal services, sports
+  facilities and Sentosa.
+<img src="/assets/img/SpaceOutInterface.png" >
+</p>
+<h3>How does Space Out work?</h3>
+<ol>
+<li><strong>Implementation of Space Out</strong>
+<p>
+  The Space Out team implemented a CI/CD (continuous integration/continuous
+  deployment) pipeline to review and push code to user acceptance testing (UAT)
+  and production. It functions alongside a data pipeline, which takes in data
+  from various sources that will be cleaned and transformed before being
+  displayed on the front-end. The data pipeline is scheduled to run on specified
+  time periods for consistent data flow.
+</p>
+<p>Data processes in Space Out are scalable, flexible, and safe:</p>
+<ul>
+  <li><strong>Commercial Cloud Infrastructure Application Services</strong> were
+  used, as they can quickly scale up or down when needed.</li>
+  <li><strong>By separating the web front-end from data pipelines</strong>, the team was able to
+  prevent exposing endpoints of source systems.</li>
+  <li><strong>Stored and fused data is collected in the database</strong> to support
+  data assembly and trend analysis. Conversion is also applied to mask raw data.</li>
+  <li><strong>A variety of innovative data engineering solutions</strong> were
+  adopted, as the team had to adapt to the different technologies that each mall
+  operator has, can put in place, or is willing to use. Application Programming
+  Interfaces (APIs) provided by GovTech and other partners were also used, where
+  data is then cleaned and formatted before it is piped into the database.</li>
+  </ul>
+  </li>
+  <li><strong
+    >Data Collection and Fusion</strong
+  >
+<p>
+  We maintain a map layer with all the facilities’ locations and names, as well
+  as details such as opening hours. Data on crowd levels are provided by the
+  respective malls, retail outlet operators and facility owners. The crowd data
+  that originate in a variety of formats from multiple sources are channelled
+  securely into our data pipeline, cleaned and fused into a single unified
+  dataset, and then transformed into formats for display in the Space Out
+  portal.
+</p>
+</li>
+<li>
+  <strong
+    >Key Design Principles of Space
+    Out</strong
+  >
+<p>
+  The Space Out team set key design principles for efficient product delivery
+  and management, and to ensure that the portal is easy to use and inclusive to
+  users.
+</p>
+<ul>
+  <li>
+  <strong>Creating an easy-to-use, flexible and scalable product</strong> –
+  Developers opted for a web-map application, as it could be accessed from any
+  device with an internet browser, without any installation needed. The user
+  interface (UI) components were designed to be modular, in order to update
+  Space Out with more outlets and activity types in a seamless manner. In
+  addition, the interface and information on Space Out had to be user-friendly
+  and easily accessible.
+</li>
+<li>
+  <strong>Fast and dynamic improvements </strong>– In response to post-launch
+  feedback, URA’s Digital Planning Lab enhanced map symbols to be more distinct
+  for users with colour vision deficiency (CVD). While the original colour
+  scheme was retained, each level of crowd occupancy was now represented by a
+  different icon. Multi-lingual support (English, Chinese, Malay, and Tamil) was
+  implemented for greater inclusivity, and suggestions for less crowded
+  alternatives were added to guide users’ decision-making.
+</li>
+<li>
+  <strong>Designing with code for faster and smoother implementation</strong> –
+  Material UI’s React components were used for faster and easier web
+  development, while the Space Out prototype was designed in CodeSandbox for
+  seamless collaboration between engineers and UI designers.
+</li>
+</ul>
+</li>
+</ol>
+<h3>Challenges and Lessons Learnt</h3>
+<p>
+  Bringing together crowd data from multiple stakeholders meant we had to work
+  with data in a variety of formats. For example, some mall operators were using
+  automated people counting systems, while others were doing counts and
+  tabulation manually. There were some who could provide API services, but many
+  were unable to do so. Hence, we developed a range of innovative solutions that
+  enabled stakeholders to provide us the information in a pragmatic, secure, and
+  timely manner. One such solution included the use of custom-built telegram
+  chat bots.
+</p>
+<p>
+  We also needed to coordinate, iterate and work out cost-effective methods with
+  vendors supporting respective retailers, each with varying arrangements due to
+  differences in systems and contract scope. In some situations, we had to work
+  with the stakeholders and their vendors to translate what they were measuring
+  into a meaningful crowd level indicator.
+</p>
+<p>
+  We worked closely with every stakeholder to understand how they monitor their
+  crowd levels and manage crowd information. We also frequently touched base
+  with them to address any concerns and doubts they had, and walked them through
+  every step of the onboarding process. We included new information services
+  that stakeholders requested, and worked with them to update the opening
+  day/times at their premises as the Covid-19 situation evolved.
+  Post-deployment, we continue to keep regular contact with partners to look at
+  how we can make processes more efficient for both parties, and have
+  collaborated with them to implement multiple improvements over time.
+</p>
+<p>
+  Having an integrated design and development process front-and-centre enabled
+  us to not only implement changes quickly without disrupting the user
+  experience, but also be more responsive to the needs of our partners and
+  users.
+</p>
