@@ -2,7 +2,7 @@
 title: Apex
 layout: layout-page-sidenav
 category: Data and APIs
-redirect_from: /singapore-government-tech-stack/apex
+redirect_from: /singapore-government-tech-stack/communications/apex
 description: Centrally manage and monitor the security of all the APIs used across agencies
 ---
 
