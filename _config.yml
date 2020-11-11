@@ -16,6 +16,7 @@ plugins:
   # Page front matter: title, description, image, author, lang
   - jekyll-seo-tag
   - jekyll-redirect-from
+  - jekyll-last-modified-at
 
 exclude:
   - functions

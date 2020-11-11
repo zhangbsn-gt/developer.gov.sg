@@ -12,5 +12,10 @@ layout: layout-page
   </div>
   <div class="col is-9 is-12-touch">
     {{ content }}
+    <p>
+      <em>
+        Last updated {{ page.last_modified_at | date: '%d %B %Y' }}
+      </em>
+    </p>
   </div>
 </div>

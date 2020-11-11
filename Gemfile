@@ -4,6 +4,7 @@ gem "jekyll", "~> 4.1"
 group :jekyll_plugins do
   gem 'jekyll-redirect-from', '>= 0.16.0'
   gem "jekyll-seo-tag", ">= 2.6.1"
+  gem "jekyll-last-modified-at"
 end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
