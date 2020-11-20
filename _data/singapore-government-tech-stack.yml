@@ -14,6 +14,13 @@
   items:
     - Overview
     - APEX
+    - Cloud File Transfer
+
+- name: Runtime
+  description:
+  items:
+    - Overview
+    - Container Stack
 
 - name: Service Management
   description:
