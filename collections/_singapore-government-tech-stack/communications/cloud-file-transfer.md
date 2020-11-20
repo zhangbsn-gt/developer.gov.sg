@@ -8,7 +8,7 @@ layout: layout-page-sidenav
 
 Cloud File Transfer (CFT) is a lightweight, fully managed, API-driven service that allows agencies or businesses to **transfer files easily, securely and efficiently at scale**, whether you are transferring files across internet and intranet zones or within the same internet or intranet zones. This product is currently in private beta version.
 
-### A Singapore Government Tech Stack (SGTS) Product
+### A [Singapore Government Tech Stack (SGTS)](/singapore-government-tech-stack/overview) Product
 
 CFT is one of the **Communications** components within the Base Layer of the SGTS.
 
