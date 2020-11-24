@@ -56,10 +56,7 @@ import { compareDesc, parseISO, format } from "date-fns";
 import { apiClient } from "../lib";
 
 function removeMediumSuffix(str) {
-  if (str.endsWith("- Medium")) {
-    return str.slice(0, -9);
-  }
-  return str;
+  return str.endsWith("- Medium") ? str.slice(0, -9) : str;
 }
 
 export default {
@@ -90,9 +87,9 @@ export default {
         let feedTitle = removeMediumSuffix(blog.FeedTitle);
         let feedDescription = removeMediumSuffix(blog.FeedDescription);
         if (groupedBlogs[feedTitle]) {
-          groupedBlogs[feedTitle].Blogs = groupedBlogs[
-            feedTitle
-          ].Blogs.concat([blog]);
+          groupedBlogs[feedTitle].Blogs = groupedBlogs[feedTitle].Blogs.concat([
+            blog,
+          ]);
           return groupedBlogs;
         }
         return {
