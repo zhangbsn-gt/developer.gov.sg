@@ -55,6 +55,13 @@
 import { compareDesc, parseISO, format } from "date-fns";
 import { apiClient } from "../lib";
 
+function removeMediumSuffix(str) {
+  if (str.endsWith("- Medium")) {
+    return str.slice(0, -9);
+  }
+  return str;
+}
+
 export default {
   data() {
     return {
@@ -80,18 +87,20 @@ export default {
           ...blog,
           PubDate: parseISO(blog.PubDate),
         };
-        if (groupedBlogs[blog.FeedTitle]) {
-          groupedBlogs[blog.FeedTitle].Blogs = groupedBlogs[
-            blog.FeedTitle
+        let feedTitle = removeMediumSuffix(blog.FeedTitle);
+        let feedDescription = removeMediumSuffix(blog.FeedDescription);
+        if (groupedBlogs[feedTitle]) {
+          groupedBlogs[feedTitle].Blogs = groupedBlogs[
+            feedTitle
           ].Blogs.concat([blog]);
           return groupedBlogs;
         }
         return {
           ...groupedBlogs,
-          [blog.FeedTitle]: {
-            FeedTitle: blog.FeedTitle,
+          [feedTitle]: {
+            FeedTitle: feedTitle,
             FeedUrl: blog.FeedUrl,
-            FeedDescription: blog.FeedDescription,
+            FeedDescription: feedDescription,
             Blogs: [blog],
           },
         };
