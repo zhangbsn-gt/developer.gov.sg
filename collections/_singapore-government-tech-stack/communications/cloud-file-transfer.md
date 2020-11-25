@@ -57,4 +57,4 @@ CFT transfers up to 1GB in a single file. Larger files can be split into smaller
 
 ### Get Started
 
-CFT is currently in private beta version. Contact us for an invitation.
+CFT is currently in private beta version. [Contact us](mailto:info@tech.gov.sg) for an invitation.
