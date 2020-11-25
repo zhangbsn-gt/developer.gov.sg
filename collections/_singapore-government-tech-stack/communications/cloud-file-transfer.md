@@ -4,13 +4,11 @@ layout: layout-page-sidenav
 ---
 ## Cloud File Transfer
 
-### Defining Cloud File Transfer
-
 Cloud File Transfer (CFT) is a lightweight, fully managed, API-driven service that allows agencies or businesses to **transfer files easily, securely and efficiently at scale**, whether you are transferring files across internet and intranet zones or within the same internet or intranet zones. This product is currently in private beta version.
 
-### A [Singapore Government Tech Stack (SGTS)](/singapore-government-tech-stack/overview) Product
+### A Singapore Government Tech Stack (SGTS) Product
 
-CFT is one of the **Communications** components within the Base Layer of the SGTS.
+CFT is one of the **Communications** components within [the Base Layer of the SGTS](/singapore-government-tech-stack/overview).
 
 ### APEX vs CFT
 
@@ -29,7 +27,7 @@ Intranet zone | Internet zone
 Intranet zone | Internet zone
 Intranet zone | Internet zone
 
-### Benefits*
+### Benefits
 
 ##### Plug and play
 
@@ -43,7 +41,7 @@ Eliminates the need to manage your own infrastructure or worry about over or und
 
 Compliance is hard. Staying compliant is harder. CFT complies to IM8's AIAS policy and will ensure compliance with future policy updates.
 
-### Key Features*
+### Key Features
 
 ##### Keep tabs on your files
 
@@ -51,7 +49,7 @@ Register your webhooks to respond to events for advanced workflows or register y
 
 ##### Vulnerabilities Scanning
 
-CFT safeguards recipients from malicious content by automatically scanning files for malware, phishing, spam, NSFW images, and profanity.
+CFT safeguards recipients from malicious file upload attacks by scanning files automatically for malware threats.
 
 ##### Large files transfer
 
