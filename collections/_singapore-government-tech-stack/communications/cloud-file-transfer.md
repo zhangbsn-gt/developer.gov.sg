@@ -22,10 +22,10 @@ With CFT, agencies and businesses can easily and securely transfer files.
 
 From an application in | To an application in
 -----------------------|---------------------
+Internet zone | Intranet zone
 Intranet zone | Internet zone
-Intranet zone | Internet zone
-Intranet zone | Internet zone
-Intranet zone | Internet zone
+Internet zone | Internet zone
+Intranet zone | Intranet zone
 
 ### Benefits
 
