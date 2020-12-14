@@ -26,6 +26,10 @@ body {
   color: white;
 }
 
+a.feedback-banner-link {
+  text-decoration: underline;
+}
+
 a.external-link::after {
   display: inline-block;
   font-family: sgds-icons;
