@@ -4,42 +4,65 @@ layout: layout-page-sidenav
 description: >
   STACK is GovTech’s flagship conference and the largest government-led developers
   event in Singapore that connects government, industry and the tech community.
+video_list_layout: 'stack-2020-video-list.html'
 ---
 
-<h2>
-  Join us at
-  <a href="https://www.stack.gov.sg" target="_blank" rel="noopener noreferrer"
-    >STACK 2020</a
-  >
-</h2>
-<a href="https://www.stack.gov.sg" target="_blank" rel="noopener noreferrer">
-  <img
-    src="/assets/img/stack-2020-banner.png"
-    alt="stack 2020 banner"
-    style="width: 100%"
-    id="stack-2020-banner"
-  />
-</a>
+<h2>STACK 2020</h2>
 <p>
-  STACK has levelled up to bring you an immersive digital experience from 1 - 3
-  December 2020!
-  <strong>If you missed any sessions, you can still </strong
-  ><a href="https://go.gov.sg/stack2020liveregister" target="_blank"
-    ><strong>register here</strong></a
-  ><strong> to watch replays for a limited time.</strong>
+  Thank you for joining us at STACK 2020. Missed any sessions? You can watch the video replays below
 </p>
-<p>
-  The STACK virtual conference is dedicated to inspire developers and
-  technologists to tackle the challenge of building a new future. Engage in
-  discussions with industry leaders on key technology trends: AI, UX/UI, Cloud
-  and more! Find out how our developers have emerged stronger amidst the
-  pandemic by adapting to this new norm of working.
-</p>
-<p>
-  For more information, head on to
-  <a href="https://www.stack.gov.sg" target="_blank" ref="noopener noreferrer"
-    >www.stack.gov.sg</a
-  >. To register and watch replays of the conference for a limited time, please
-  do so
-  <a href="https://go.gov.sg/stack2020liveregister" target="_blank">here</a>.
-</p>
+
+<div class="sgds-tabs">
+  <ul class="no-margin" role="tablist">
+    <li class="is-active">
+        <a data-tab="#tab1" role="tab" aria-selected="true" aria-controls="tab1">
+          Opening & Keynotes
+        </a>
+    </li>
+    <li>
+        <a data-tab="#tab2" role="tab" aria-selected="false" aria-controls="tab2">
+          Cloud
+        </a>
+    </li>
+    <li>
+        <a data-tab="#tab3" role="tab" aria-selected="false" aria-controls="tab3">
+          App
+        </a>
+    </li>
+    <li>
+      <a data-tab="#tab4" role="tab" aria-selected="false" aria-controls="tab4">
+        Tech Culture
+      </a>
+    </li>
+    <li>
+      <a data-tab="#tab5" role="tab" aria-selected="false" aria-controls="tab5">
+        Covid-19 Tech
+      </a>
+    </li>
+  </ul>
+</div>
+<div class="row" id="tab1">
+  {% if page.video_list_layout %}
+    {% include_relative {{ page.video_list_layout }} type="Opening, Keynote, Panel - Tech Culture" %}
+  {% endif %}
+</div>
+<div class="row" id="tab2">
+  {% if page.video_list_layout %}
+    {% include_relative {{ page.video_list_layout }} type="Cloud - Preamble, Cloud - Talk, Cloud - VOD" %}
+  {% endif %}
+</div>
+<div class="row" id="tab3">
+  {% if page.video_list_layout %}
+  {% include_relative {{ page.video_list_layout }} type="App - Preamble, App - Talk, App - Live Chat, App - VOD" %}
+{% endif %}
+</div>
+<div class="row" id="tab4">
+  {% if page.video_list_layout %}
+  {% include_relative {{ page.video_list_layout }} type="Tech Culture - Preamble, Tech Culture - Talk, Tech Culture - VOD" %}
+{% endif %}
+</div>
+<div class="row" id="tab5">
+  {% if page.video_list_layout %}
+  {% include_relative {{ page.video_list_layout }} type="COVID-19 Tech -  Preamble, COVID-19 Tech - Talk, COVID-19 Tech - Live Chat" %}
+{% endif %}
+</div>
