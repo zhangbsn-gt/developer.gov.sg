@@ -15,7 +15,7 @@
         <div class="sgds-card-content">
           <h4><a href="{{ document.url }}">{{ document.title }}</a></h4>
           <p>
-            {{ document.description }}
+            {{ document.description | markdownify }}
           </p>
         </div>
       </div>
