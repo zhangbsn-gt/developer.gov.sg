@@ -2,31 +2,64 @@
 title: COVID-19 Chatbot
 layout: layout-page-sidenav
 category: Digital Solutions to Address COVID-19
-description: Virtual chatbot for businesses
-published: false
+description: >
+  The COVID-19 Chatbots for Citizens were created by the GovTech (Government Technology Agency)
+  VICA (Virtual Intelligent Chat Assistant) team in collaboration with MCI
+  (Ministry of Communications and Information) to help the Singapore public to
+  stay updated on the news for COVID-19 virus.
 ---
 
 <h2>
-COVID-19 Chatbot for businesses
+COVID-19 ChatBot for Citizens
 </h2>
 <p>
-This chatbot was created to aid employers to stay updated on the news following
-the COVID-19 virus.
+These online ChatBots provide timely and accurate answers based on their programmed
+knowledge based. The knowledge base is collected from past user enquiries as well
+as frequently asked questions prescribed by MCI. The ChatBots also help to
+disseminate relevant policy guidelines when needed.
 </p>
 <p>
-It aims to provide answers based on the programmed questions on the existing
-situation and employers are able to find out more information such as the help
-that is currently available for them and how to ensure that their business
-continue in this trying times.
+There are 2 citizen-facing chatbots developed for COVID-19. The first is the
+Web version <a href ="https://www.gov.sg/infobot">here.</a>
+</p>
+<figure style="text-align: center">
+  <img
+    src="/assets/img/infobot.png"
+    alt="Web infobot screenshot"
+  />
+  <figcaption>The homepage of the Web version of the Info Bot</figcaption>
+</figure>
+<p>
+This allows the public to select the relevant content from a list of topics on a
+dropdown menu. From there, the ChatBot will redirect the user to the relevant
+website where necessary. This ChatBot is available in English only.
+<p>
+The second is the WhatsApp version which pushes daily notification out to the
+public who subscribed at <a href="https://www.gov.sg/article/govsg-on-whatsapp">go.gov.sg/whatsapp</a>
+This chatbot provides a list of latest fact checks, tips to fight misinformation and even
+find fact-checkers near you. It is also available in the 4 official langauges - Chinese,
+English, Malay and Tamil.
+</p>
+<figure style="text-align: center">
+  <img
+    src="/assets/img/whatsapp chatbot screenshot.png"
+    alt="WhatsApp chat screenshot"
+  />
+  <figcaption>Examples of screenshot for GovTech's COVID-19 WhatsApp ChatBot</figcaption>
+</figure>
+<p>
+The WhatsApp-based COVID-19 ChatBot is developed using GCP (Google Cloud Platform)
+with Serverless Computing System using the MERN (MongoDB, Express, React, Node.js)
+stack. The connection to WhatsApp is done through an API (Application Programming Interface)
+provided from Facebook. The ChatBot also includes a spam filter to handle subscribers
+who have an Auto-reply function enabled.
 </p>
 <p>
-This bot was created by the Ministy of Trade and Industry (MTI) and the
-Government Technology Agency (GovTech). Chatbots are seen as a common feature
-used by most government agencies in Singapore. An example is the Ask Jamie
-Chatbot which is also developed by GovTech which is a virtual assistant designed
-to answer queries within specific domains on Government agency websites.
-<p>
-  Businesses can access the chatbot here
-  <a href="https://www.mti.gov.sg/Chatbot/chat">
-    https://www.go.gov.sg/businessconnect</a>.
-</p>
+  A simple view on the structure of the WhatsApp-based chatbot is shown below:
+  <figure style="text-align: center">
+    <img
+      src="/assets/img/structure of whatsapp chatbot.png"
+      alt="WhatsApp structure"
+    />
+    <figcaption>An overview of GovTech's COVID-19 ChatBot for Web</figcaption>
+  </figure>
