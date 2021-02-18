@@ -2,14 +2,16 @@
   description: Digital Solutions for a 21st Century Pandemic
   items:
     - Overview
-    - SafeEntry
-    - TraceTogether
-    - SPOTON
-    - SupplyAlly
-    - VigilantGantry
     - GoBusiness COVID Portal
     - GoWhere Suite
+    - SafeEntry
     - Space Out
+    - SPOT
+    - SPOTON
+    - SupplyAlly
+    - TraceTogether
+    - VigilantGantry
+
 
 - name: Open-source
   description: Government-built open-source technologies and tools
