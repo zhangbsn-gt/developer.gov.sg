@@ -45,4 +45,4 @@ Continuous testing can be achieved by integrating hats into the Continuous Integ
 
 ## Get started
 
-To learn more about HATS and how to get onboard, please email us at enquiries_hats@tech.gov.sg.
+To learn more about HATS and how to get onboard, please email us at enquiries_enp@tech.gov.sg.
