@@ -52,4 +52,4 @@ Note: SHIP only provides the tools to support a CI/CD pipeline. Users would stil
 
 ## Get started
 
-To find out more and get started with SHIP, please email enquiries_ship@tech.gov.sg.
+To find out more and get started with SHIP, please email enquiries_enp@tech.gov.sg.
