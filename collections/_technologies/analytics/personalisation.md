@@ -3,7 +3,6 @@ title: Personalisation
 layout: layout-page-sidenav
 category: Analytics 
 description: > 
- This is a document purely for demonstration purposes. 
 --- 
 **What is Personalisation?**
 ============================
