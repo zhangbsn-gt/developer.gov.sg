@@ -23,6 +23,7 @@
   items:
     - Overview
     - WOGAA
+    - Personalisation
 - name: Blockchain
   description: Distributed ledger technologies that enable the usage of decentralised, tamper-proof records
   items:
