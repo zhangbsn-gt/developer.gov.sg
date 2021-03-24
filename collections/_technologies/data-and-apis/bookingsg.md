@@ -41,4 +41,4 @@ We can leverage on BookingSG’s various service options to help improve user jo
 
 ### Get started
 
-Get a conversation with us. Email to: Kuah Zi Yang, <KUAH_Zi_Yang@tech.gov.sg> and Frankie Chew, <Frankie_CHEW@tech.gov.sg>.
+Get a [conversation](https://form.gov.sg/#!/605a9d2e7b204500129b33c7) with us. 
