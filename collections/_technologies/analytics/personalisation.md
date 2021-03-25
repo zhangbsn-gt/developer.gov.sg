@@ -3,6 +3,7 @@ title: Personalisation
 layout: layout-page-sidenav
 category: Analytics 
 description: > 
+  Personalisation is the act of dynamically interpreting an individual's intent and curating tailored experiences that help the individual achieve that intent seamlessly across channels.
 --- 
 **What is Personalisation?**
 ============================
@@ -29,18 +30,19 @@ In general, the value of personalisation lies in how it enables people to make q
 
   
 
-Value to citizens
+**_Value to citizens_**
 
   
 
 There are broadly two types of activities that people perform on government touchpoints –  
-1) look for information and 2) complete transactions. 
+1) Look for information 
+2) Complete transactions
 
   
 
 People value personalisation when it leads to greater time savings and / or help them make better and more informed decisions as they perform the above-mentioned activities.   
 
-Value to agencies
+**_Value to agencies_**
 
   
 
@@ -97,12 +99,12 @@ The **_Personalise_** team offers the following to help you achieve your persona
 
   
 
-1.  **Personalisation Workshop**
+**Personalisation Workshop**
     
 
 This workshop is a good starting point for teams who are still learning about personalisation as well as need more help developing and scoping their personalisation strategy and goals. We will help you and your team deepen your understanding of personalisation, set personalisation goals based on user needs and challenges, brainstorm ideas as well as scope the effort. Once your strategy and goals are established, we will work with you to achieve them using our email and web personalisation tools.
 
-2.  **Email Personalisation Tool**
+**Email Personalisation Tool**
     
 
 Our web-based email product allows you to personalise email campaigns in a variety of ways. Some examples include:
@@ -114,7 +116,7 @@ Our web-based email product allows you to personalise email campaigns in a varie
 *   Reaching out to less active citizens to inform them about a new service that is relevant to them 
     
 
-3.  **Web Personalisation Tool**
+**Web Personalisation Tool**
     
 
 To improve the citizen experience, this tool helps bring relevant content to your citizens through your websites. There are 3 phases to this implementation:
