@@ -35,8 +35,8 @@ In general, the value of personalisation lies in how it enables people to make q
   
 
 There are broadly two types of activities that people perform on government touchpoints –  
-1) Look for information 
-2) Complete transactions
+1. Look for information 
+2. Complete transactions
 
   
 
