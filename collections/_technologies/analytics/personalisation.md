@@ -131,4 +131,4 @@ To improve the citizen experience, this tool helps bring relevant content to you
 **How can you start?**
 
   
-We make it easy for any team to kick start their personalisation journey. To get started, email us at hello@personalise.gov.sg with your ideas and questions.
+We make it easy for any team to kick start their personalisation journey. To get started, email us at [hello@personalise.gov.sg](mailto:hello@personalise.gov.sg) with your ideas and questions.
