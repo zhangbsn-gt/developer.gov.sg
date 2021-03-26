@@ -6,7 +6,7 @@ description: >
   Personalisation consists of workshops and tools that help agencies better analyse user behaviours and provide tailored experiences to individuals.
 --- 
 ## **What is Personalisation**
-============================
+
 
   
 Personalisation is the act of dynamically **_interpreting an individual’s intent_** and **_curating tailored experiences_** that help the individual to **_achieve that intent seamlessly_** across channels.  
