@@ -1,9 +1,9 @@
 --- 
-title: Personalisation 
+title: Personalise 
 layout: layout-page-sidenav
 category: Analytics 
 description: > 
-  Personalisation consists of workshops and tools that help agencies better analyse user behaviours and provide tailored experiences to individuals.
+  Personalise consists of workshops and tools that help agencies better analyse user behaviours and provide tailored experiences to individuals.
 --- 
 ## **What is Personalisation**
 
