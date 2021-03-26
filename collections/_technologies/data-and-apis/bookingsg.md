@@ -28,7 +28,7 @@ We can leverage on BookingSG’s various service options to help improve user jo
 
 - **As an engine:** Use BookingSG as an engine to serve highly complicated use cases and integrate BookingSG using API to leverage on common CARB logics. Agencies have full autonomy on how calendars and bookings are presented to users.
 
-- **As all the above:** DIY based on your needs. Form using admin portal as a SAAS, adding additional business logic before redirecting to BookingSG for slot selection and building a search query page for all availabilities supported by API integration. Leverage power of various approaches at the same time to supercharge your offering.
+- **As a combination:** Depending on your needs, you can combine the various service offerings - from using the admin portal as a SAAS, to additional business logic defined on your web/app before redirecting BookingSG for slot selection supported by API integration. Leverage the various approaches to provide the desired user experience for your services. 
 
 *All approaches mentioned above are available for both citizen and agency portals.*
 
