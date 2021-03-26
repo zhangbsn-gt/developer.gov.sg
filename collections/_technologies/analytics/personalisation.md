@@ -3,9 +3,9 @@ title: Personalisation
 layout: layout-page-sidenav
 category: Analytics 
 description: > 
-  Personalisation is the act of dynamically interpreting an individual's intent and curating tailored experiences that help the individual achieve that intent seamlessly across channels.
+  Personalisation consists of workshops and tools that help agencies better analyse user behaviours and provide tailored experiences to individuals.
 --- 
-**What is Personalisation?**
+## **What is Personalisation**
 ============================
 
   
@@ -22,7 +22,7 @@ Once you have built an understanding of the user, you are now better able to rec
 
 Through multiple interactions, you start to develop a **_Relationship_** with your users. This involves seeking their feedback to create more individualised experiences for each user. As the relationship deepens, the likelihood of repeat engagements increases and users will expect a more seamless and personalised experience across all touchpoints.
 
-**Why is it important to you and your citizens?**
+## **Why is it important to you and your citizens**
 
   
 
@@ -30,19 +30,19 @@ In general, the value of personalisation lies in how it enables people to make q
 
   
 
-**_Value to citizens_**
+### Value to citizens
 
   
 
-There are broadly two types of activities that people perform on government touchpoints –  
-1. Look for information 
-2. Complete transactions
+There are broadly two types of activities that people perform on government touchpoints: 
+1. Look for information;and
+2. Complete transactions.
 
   
 
 People value personalisation when it leads to greater time savings and / or help them make better and more informed decisions as they perform the above-mentioned activities.   
 
-**_Value to agencies_**
+### Value to agencies
 
   
 
@@ -54,7 +54,7 @@ Furthermore, when done right, personalisation can make citizens feel valued and 
 
   
 
-**Personalisation principles**
+## **Personalisation principles**
 
   
 
@@ -91,7 +91,7 @@ Help people to discover relevant information more easily
 
 **_Personalisation protects privacy_** - Agencies should only collect data that is required to deliver personalised experiences that users value, as well as be transparent on what data is collected and how it is being used. They should ensure that appropriate steps are taken to prevent data breaches or mishandling. 
 
-**What do we offer?**
+## **What do we offer**
 
   
 
@@ -99,12 +99,12 @@ The **_Personalise_** team offers the following to help you achieve your persona
 
   
 
-**Personalisation Workshop**
+### Personalisation Workshop
     
 
 This workshop is a good starting point for teams who are still learning about personalisation as well as need more help developing and scoping their personalisation strategy and goals. We will help you and your team deepen your understanding of personalisation, set personalisation goals based on user needs and challenges, brainstorm ideas as well as scope the effort. Once your strategy and goals are established, we will work with you to achieve them using our email and web personalisation tools.
 
-**Email Personalisation Tool**
+### Email Personalisation Tool
     
 
 Our web-based email product allows you to personalise email campaigns in a variety of ways. Some examples include:
@@ -116,7 +116,7 @@ Our web-based email product allows you to personalise email campaigns in a varie
 *   Reaching out to less active citizens to inform them about a new service that is relevant to them 
     
 
-**Web Personalisation Tool**
+### Web Personalisation Tool
     
 
 To improve the citizen experience, this tool helps bring relevant content to your citizens through your websites. There are 3 phases to this implementation:
@@ -128,7 +128,7 @@ To improve the citizen experience, this tool helps bring relevant content to you
 3.  Optimisation phase - our system will help you to track and monitor key metrics to ensure that we are serving the best content for your users as well as recommend improvements to increase accuracy.  
     
 
-**How can you start?**
+## **How can you start**
 
   
 We make it easy for any team to kick start their personalisation journey. To get started, email us at [hello@personalise.gov.sg](mailto:hello@personalise.gov.sg) with your ideas and questions.
