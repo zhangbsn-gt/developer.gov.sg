@@ -5,7 +5,7 @@ category: Analytics
 description: Personalise consists of workshops and tools that help agencies better analyse user behaviours and provide tailored experiences to individuals.
 --- 
 
-## What is Personalisation
+## What is Personalisation?
 
 Personalisation is the act of dynamically **_interpreting an individual’s intent_** and **_curating tailored experiences_** that help the individual to **_achieve that intent seamlessly_** across channels.  
 
@@ -20,7 +20,7 @@ Once you have built an understanding of the user, you are now better able to rec
 
 Through multiple interactions, you start to develop a **_Relationship_** with your users. This involves seeking their feedback to create more individualised experiences for each user. As the relationship deepens, the likelihood of repeat engagements increases and users will expect a more seamless and personalised experience across all touchpoints.
 
-## Why is it important to you and your citizens  
+## Why is it important to you and your citizens?  
 
 In general, the value of personalisation lies in how it enables people to make quicker and more satisfying decisions that lead to more enjoyable or beneficial outcomes. This in turn leads to increased usage of a product / service and greater engagement with a brand or organisation.
 
@@ -64,7 +64,7 @@ As such, it is important to take into account the following considerations in an
 
 **_Personalisation protects privacy_**: Agencies should only collect data that is required to deliver personalised experiences that users value, as well as be transparent on what data is collected and how it is being used. They should ensure that appropriate steps are taken to prevent data breaches or mishandling. 
 
-## What do we offer
+## What do we offer?
 
 The **_Personalise_** team offers the following to help you achieve your personalisation journey.
 
@@ -92,6 +92,6 @@ To improve the citizen experience, this tool helps bring relevant content to you
     
 3. Optimisation phase - our system will help you to track and monitor key metrics to ensure that we are serving the best content for your users as well as recommend improvements to increase accuracy.  
 
-## **How can you start**
+## How can you start?
   
 We make it easy for any team to kick start their personalisation journey. To get started, email us at [hello@personalise.gov.sg](mailto:hello@personalise.gov.sg) with your ideas and questions.
