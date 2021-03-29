@@ -34,33 +34,8 @@ description: >
     </li>
     <li>
       <a data-tab="#tab5" role="tab" aria-selected="false" aria-controls="tab5">
-        Tab 4
+        Tab 5
       </a>
     </li>
   </ul>
-</div>
-<div class="row" id="tab1">
-  {% if page.video_list_layout %}
-    {% include_relative {{ page.video_list_layout }} type="Opening, Keynote, Panel - Tech Culture" %}
-  {% endif %}
-</div>
-<div class="row" id="tab2">
-  {% if page.video_list_layout %}
-    {% include_relative {{ page.video_list_layout }} type="Cloud - Preamble, Cloud - Talk, Cloud - VOD" %}
-  {% endif %}
-</div>
-<div class="row" id="tab3">
-  {% if page.video_list_layout %}
-  {% include_relative {{ page.video_list_layout }} type="App - Preamble, App - Talk, App - Live Chat, App - VOD" %}
-{% endif %}
-</div>
-<div class="row" id="tab4">
-  {% if page.video_list_layout %}
-  {% include_relative {{ page.video_list_layout }} type="Tech Culture - Preamble, Tech Culture - Talk, Tech Culture - VOD" %}
-{% endif %}
-</div>
-<div class="row" id="tab5">
-  {% if page.video_list_layout %}
-  {% include_relative {{ page.video_list_layout }} type="COVID-19 Tech -  Preamble, COVID-19 Tech - Talk, COVID-19 Tech - Live Chat" %}
-{% endif %}
 </div>
