@@ -8,12 +8,59 @@ description: >
 <h2>STACK-X Conference</h2>
 <p>
   STACK-X Conference lorem ipsum
-  </p>
-  <p>
-    <a href="https://go.gov.sg/meetup"><u>Join us</u></a>
-    to participate in discussions with experts and fellow techies, or get in touch
-    at
-    <a href="mailto:tmo@tech.gov.sg"><u>tmo@tech.gov.sg</u></a>
-    if you have something to share!
-  </p>
-  <p>
+</p>
+
+<div class="sgds-tabs">
+  <ul class="no-margin" role="tablist">
+    <li class="is-active">
+        <a data-tab="#tab1" role="tab" aria-selected="true" aria-controls="tab1">
+          Tab 1
+        </a>
+    </li>
+    <li>
+        <a data-tab="#tab2" role="tab" aria-selected="false" aria-controls="tab2">
+          Tab 2
+        </a>
+    </li>
+    <li>
+        <a data-tab="#tab3" role="tab" aria-selected="false" aria-controls="tab3">
+          Tab 3
+        </a>
+    </li>
+    <li>
+      <a data-tab="#tab4" role="tab" aria-selected="false" aria-controls="tab4">
+        Tab 4
+      </a>
+    </li>
+    <li>
+      <a data-tab="#tab5" role="tab" aria-selected="false" aria-controls="tab5">
+        Tab 4
+      </a>
+    </li>
+  </ul>
+</div>
+<div class="row" id="tab1">
+  {% if page.video_list_layout %}
+    {% include_relative {{ page.video_list_layout }} type="Opening, Keynote, Panel - Tech Culture" %}
+  {% endif %}
+</div>
+<div class="row" id="tab2">
+  {% if page.video_list_layout %}
+    {% include_relative {{ page.video_list_layout }} type="Cloud - Preamble, Cloud - Talk, Cloud - VOD" %}
+  {% endif %}
+</div>
+<div class="row" id="tab3">
+  {% if page.video_list_layout %}
+  {% include_relative {{ page.video_list_layout }} type="App - Preamble, App - Talk, App - Live Chat, App - VOD" %}
+{% endif %}
+</div>
+<div class="row" id="tab4">
+  {% if page.video_list_layout %}
+  {% include_relative {{ page.video_list_layout }} type="Tech Culture - Preamble, Tech Culture - Talk, Tech Culture - VOD" %}
+{% endif %}
+</div>
+<div class="row" id="tab5">
+  {% if page.video_list_layout %}
+  {% include_relative {{ page.video_list_layout }} type="COVID-19 Tech -  Preamble, COVID-19 Tech - Talk, COVID-19 Tech - Live Chat" %}
+{% endif %}
+</div>
