@@ -9,7 +9,7 @@ description: Personalise consists of workshops and tools that help agencies bett
 
 Personalisation is the act of dynamically **_interpreting an individual’s intent_** and **_curating tailored experiences_** that help the individual to **_achieve that intent seamlessly_** across channels.  
 
-![](https://lh3.googleusercontent.com/zb71LqBS-xKoLHO4o0jNVb0ti3xXTIznqys3ZshDtY6U30q15RriG-lUhygecxeGjkAso1yx1nLVXWDYLpuD0pMLZreZLQ8ehT278_51hLUGsAOwoQlt5K0b_M8NQySGC9cQf1Q)  
+![Percy Framework](/assets/img/PERCY Flowchart.jpg)  
 _Source: Framework on Personalised Service Delivery for Public Sector - (SNDGO, 2021 - adapted from Accenture 4R Personalisation Framework)_
 
 When creating personalised experiences, you first need to understand who you are serving. To **_Recognise_** is the ability to identify both known and unknown users when they interact with your products / services.   
