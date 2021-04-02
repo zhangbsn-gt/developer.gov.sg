@@ -71,13 +71,21 @@ description: >
     <li>
         <a data-tab="#tab3" role="tab" aria-selected="false" aria-controls="tab3">
           For Practitioners
-      </a>
+        </a>
     </li>
   </ul>
 </div>
-<div class=”row” id=”tab1”>
-  This is to test the row tab and why it is being squeeze into columns
+<div class="row" id="tab1">
+  <p>Quick test on row in tabs qwerqwerqwerqwerqwerqwerqwerqwerqwerqwerqwerqwerqwerqwerqwerqwerqwerqwerqewrqwerqwerqwerqwer</p>
 </div>
-<div class=”row” id=”tab2”>
-  This is to test the row tab and why it is being squeeze into columns tab 2
+<div class="row" id="tab2">
+  {% if page.video_list_layout %}
+    {% include_relative {{ page.video_list_layout }} type="Cloud - Preamble, Cloud - Talk, Cloud - VOD" %}
+  {% endif %}
 </div>
+<div class="row" id="tab3">
+  {% if page.video_list_layout %}
+  {% include_relative {{ page.video_list_layout }} type="App - Preamble, App - Talk, App - Live Chat, App - VOD" %}
+{% endif %}
+</div>
+
