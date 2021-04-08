@@ -1,0 +1,21 @@
+---
+title: Newsletter
+layout: layout-page-sidenav
+---
+
+<h1>
+  SG Tech Stack Newsletter
+</h1>
+
+{% for post in site.posts %}
+<div class="sgds-card" style="margin-bottom: 1rem">
+  <div class="sgds-card-content">
+    <h3>
+      <a href="{{ post.url }}"><strong>{{ post.title }}</strong></a>
+    </h3>
+
+    <p><em>{{ post.date | date_to_string }}</em></p>
+    <p>{{ post.excerpt }}</p>
+  </div>
+</div>
+{% endfor %}
