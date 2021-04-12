@@ -5,41 +5,39 @@ author: Seet Yu Fei
 description: >
 Secure Data Migration
 ---
-## ENSURING SECURE MIGRATION OF DATA TO THE CLOUD
+ **ENSURING SECURE MIGRATION OF DATA TO THE CLOUD**
 
 Secure Data Migration is an essential step in cloud adoption, which involves **transferring data from an on-premise environment to a cloud environment**. This migration can be broadly classified into two categories:
 
-Online Migration
+**Online Migration**
 
 Data moves across the Internet or a private connection (e.g. site-site VPN)
 
-Offline Migration
+**Offline Migration**
 
 Data is transferred via a storage appliance (e.g. hard disk drive)
 
-  
-
-USING THE APPROPRIATE MIGRATION APPROACH
+**USING THE APPROPRIATE MIGRATION APPROACH**
 
 The table below highlights several considerations for project teams when deciding which migration approach to use. 
 
-FACTORS
+**FACTORS**
 
-CONSIDERATIONS
+**CONSIDERATIONS**
 
-Security and Governance
+**Security and Governance**
 
 The level of control and responsibility for the security controls to be implemented during migration.
 
 For example, project teams are unable to conduct media sanitisation themselves when using Cloud Service Provider (CSP)-provisioned media for an offline migration. Hence, an online migration is recommended.
 
-Amount of Data, Time and Speed
+**Amount of Data, Time and Speed**
 
 The feasibility of the timeline required to transfer certain amount of data.
 
 For example, transfer of 1PB of data over a dedicated 500Mbps connection requires approximately 8 months to complete. This may not be feasible for a project with a short timeline to complete the migration. Hence, an offline migration is more viable.
 
-Availability of CSP
+**Availability of CSP**
 
 The availability of the CSP service as not all migration services will be available.
 
