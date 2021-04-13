@@ -5,7 +5,7 @@
   closing: 2021-04-13
   duration: 1 week per article
   offer: 350 per article
-  open: true
+  open: false
   bid_link: ""
 
 - title: Updating dependencies for GoGovSG
