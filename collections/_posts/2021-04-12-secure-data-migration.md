@@ -5,11 +5,11 @@ author: Seet Yu Fei
 description: >
 Secure Data Migration
 ---
- **ENSURING SECURE MIGRATION OF DATA TO THE CLOUD**
+ ## ENSURING SECURE MIGRATION OF DATA TO THE CLOUD
 
 Secure Data Migration is an essential step in cloud adoption, which involves **transferring data from an on-premise environment to a cloud environment**. This migration can be broadly classified into two categories:
 
-**Online Migration**
+### Online Migration
 
 Data moves across the Internet or a private connection (e.g. site-site VPN)
 
