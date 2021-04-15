@@ -4,6 +4,9 @@ layout: layout-blog
 author: Seet Yu Fei
 description: >
   Secure Data Migration
+tags:
+  - security
+  - migration
 ---
  ## ENSURING SECURE MIGRATION OF DATA TO THE CLOUD
 
