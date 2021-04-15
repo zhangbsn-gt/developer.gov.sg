@@ -3,7 +3,7 @@ title: Ensuring Secure Migration of Data to the Cloud
 layout: layout-blog
 author: Seet Yu Fei
 description: >
-Secure Data Migration
+  Secure Data Migration
 ---
  ## ENSURING SECURE MIGRATION OF DATA TO THE CLOUD
 
