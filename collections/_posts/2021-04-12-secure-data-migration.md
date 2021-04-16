@@ -6,10 +6,9 @@ description: >
   Secure Data Migration
 tags:
   - security
-  - migration
+  - data migration
   - cloud
 ---
-## ENSURING SECURE MIGRATION OF DATA TO THE CLOUD
 
 Secure Data Migration is an essential step in cloud adoption, which involves **transferring data from an on-premise environment to a cloud environment**. This migration can be broadly classified into two categories:
 
