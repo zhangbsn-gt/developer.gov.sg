@@ -12,47 +12,15 @@ tags:
 
 Secure Data Migration is an essential step in cloud adoption, which involves **transferring data from an on-premise environment to a cloud environment**. This migration can be broadly classified into two categories:
 
-![Online Offline table image] (assets/img/secure_data_mig_off_online_img01.png)
+[!assets/img/secure_data_mig_off_online_img01.png]
 
 ### USING THE APPROPRIATE MIGRATION APPROACH
 
 The table below highlights several considerations for project teams when deciding which migration approach to use. 
 
-**FACTORS**
 
-**CONSIDERATIONS**
 
-**Security and Governance**
-
-The level of control and responsibility for the security controls to be implemented during migration.
-
-For example, project teams are unable to conduct media sanitisation themselves when using Cloud Service Provider (CSP)-provisioned media for an offline migration. Hence, an online migration is recommended.
-
-**Amount of Data, Time and Speed**
-
-The feasibility of the timeline required to transfer certain amount of data.
-
-For example, transfer of 1PB of data over a dedicated 500Mbps connection requires approximately 8 months to complete. This may not be feasible for a project with a short timeline to complete the migration. Hence, an offline migration is more viable.
-
-**Availability of CSP**
-
-The availability of the CSP service as not all migration services will be available.
-
-For example, Google Cloud Transfer Appliance is an offline migration service that is only available in selected locations: Canada, United States, European Union, Norway and Switzerland. Hence, an online migration is preferred in this case.
-
-**Cost**
-
-All costs involved in the migration.
-
-For example, shipping fees for an offline migration may cost much more than the cost of setting up a dedicated connection. Hence, an online migration is preferable.
-
-**Use Case and Data Type**
-
-The context of the migration.
-
-For example, a one-time massive data migration of data stored on storage disks is conducted more efficiently via an offline service (e.g. AWS Snowball), whereas re-hosting a database system from an on-premise environment to the cloud is conducted better via online migration.
-
-**MANAGING SECURITY RISKS OF MIGRATING DATA TO THE CLOUD**
+**MANAGING SECURITY RISKS OF MIGRATING DATA TO THE CLOUD
 
 Before migration, a risk assessment for the chosen approach should be completed with mitigation in place. This is to reduce undesirable impacts such as loss of data confidentiality and/or integrity. The table below describes key security risk areas associated with data migration and the recommended mitigation measures.
 
