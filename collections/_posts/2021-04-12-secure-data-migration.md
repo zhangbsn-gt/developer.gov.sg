@@ -7,6 +7,7 @@ description: >
 tags:
   - security
   - migration
+  - cloud
 ---
  ## ENSURING SECURE MIGRATION OF DATA TO THE CLOUD
 
