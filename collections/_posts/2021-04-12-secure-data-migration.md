@@ -12,15 +12,9 @@ tags:
 
 Secure Data Migration is an essential step in cloud adoption, which involves **transferring data from an on-premise environment to a cloud environment**. This migration can be broadly classified into two categories:
 
-### Online Migration
+assets/img/secure_data_mig_off_online_img01.png
 
-Data moves across the Internet or a private connection (e.g. site-site VPN)
-
-**Offline Migration**
-
-Data is transferred via a storage appliance (e.g. hard disk drive)
-
-**USING THE APPROPRIATE MIGRATION APPROACH**
+### USING THE APPROPRIATE MIGRATION APPROACH
 
 The table below highlights several considerations for project teams when deciding which migration approach to use. 
 
