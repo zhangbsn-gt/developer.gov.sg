@@ -14,7 +14,7 @@ Secure Data Migration is an essential step in cloud adoption, which involves **t
 
 ![Online offline table](/assets/img/secure_data_mig_off_online_img01.png)
 
-### ** USING THE APPROPRIATE MIGRATION APPROACH
+### **USING THE APPROPRIATE MIGRATION APPROACH
 
 The table below highlights several considerations for project teams when deciding which migration approach to use. 
 
