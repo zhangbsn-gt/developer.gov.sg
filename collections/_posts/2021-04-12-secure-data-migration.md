@@ -10,7 +10,6 @@ tags:
   - cloud
   - online migration
   - offline migration
-  - 
 ---
 
 Secure Data Migration is an essential step in cloud adoption, which involves **transferring data from an on-premise environment to a cloud environment**. This migration can be broadly classified into two categories:
@@ -31,6 +30,6 @@ Before migration, a risk assessment for the chosen approach should be completed 
 
 ### KEY TAKEAWAYS FOR PROJECT TEAMS
 
-·       Always  identify the security risks first when planning  for data migration to cloud environments.
+·       Always identify the security risks first when planning for data migration to cloud environments.
 
 ·       Be mindful of the security objectives, and adopt measures to protect the confidentiality and integrity of data throughout the entire migration process.
