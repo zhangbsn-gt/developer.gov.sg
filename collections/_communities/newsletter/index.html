@@ -2,6 +2,7 @@
 title: Newsletter
 layout: layout-page-sidenav
 ---
+
 <!-- <h1>
   Newsletter
 </h1> -->
@@ -9,19 +10,22 @@ layout: layout-page-sidenav
 {% if site.posts %}
 <div class="row is-multiline">
   {% for post in site.posts %}
-  <div class="col is-6 is-flex">
-    <a href="{{ post.url }}">
+  <div class="col is-4 is-flex">
     <div class="sgds-card patterned">
-      <div class="sgds-card-content">
-        <h3>
-          {{ post.title }}
-        </h3>
+      <a href="{{ post.url }}" style="height: 100%">
+        <div
+          class="sgds-card-content"
+          style="height: 100%; flex-direction: column; display: flex; justify-content: space-between;"
+        >
+          <h4>
+            {{ post.title }}
+          </h4>
 
-        <p><strong>{{ post.date | date_to_string }}</strong></p>
-        <!-- <p>{{ post.description }}</p> -->
-      </div>
+          <p><strong>{{ post.date | date_to_string }}</strong></p>
+          <!-- <p>{{ post.description }}</p> -->
+        </div>
+      </a>
     </div>
-    </a>
   </div>
   {% endfor %}
 </div>
