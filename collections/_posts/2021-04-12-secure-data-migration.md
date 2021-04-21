@@ -30,6 +30,6 @@ Before migration, a risk assessment for the chosen approach should be completed 
 
 ### KEY TAKEAWAYS FOR PROJECT TEAMS
 
-·       Always identify the security risks first when planning for data migration to cloud environments.
+- Always identify the security risks first when planning for data migration to cloud environments.
 
-·       Be mindful of the security objectives, and adopt measures to protect the confidentiality and integrity of data throughout the entire migration process.
+- Be mindful of the security objectives, and adopt measures to protect the confidentiality and integrity of data throughout the entire migration process.

@@ -2,25 +2,26 @@
 title: Newsletter
 layout: layout-page-sidenav
 ---
-
-<h1>
-  SG Tech Stack Newsletter
-</h1>
+<!-- <h1>
+  Newsletter
+</h1> -->
 
 {% if site.posts %}
 <div class="row is-multiline">
   {% for post in site.posts %}
   <div class="col is-6 is-flex">
-    <div class="sgds-card">
+    <a href="{{ post.url }}">
+    <div class="sgds-card patterned">
       <div class="sgds-card-content">
         <h3>
-          <a href="{{ post.url }}"><strong>{{ post.title }}</strong></a>
+          {{ post.title }}
         </h3>
 
         <p><strong>{{ post.date | date_to_string }}</strong></p>
-        <p>{{ post.description }}</p>
+        <!-- <p>{{ post.description }}</p> -->
       </div>
     </div>
+    </a>
   </div>
   {% endfor %}
 </div>
