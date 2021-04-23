@@ -71,6 +71,8 @@ You can now integrate your registration systems with SafeEntry APIs to perform a
 
 This ensures a fuss-free and seamless experience for individuals as well as the business.
 
+For more information on SafeEntry API, please read the [documentation](https://api.singpass.gov.sg/library/safeentry-api/business/introduction).
+
 ### Authorise (Coming Soon)
 
 Authorise enables businesses to notify and seek authorisation for transactions from customers without being physically present. Businesses will be able to make use of Singpass to obtain trusted authorisations/instructions from citizens.
