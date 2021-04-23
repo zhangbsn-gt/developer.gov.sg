@@ -11,7 +11,9 @@ description: >
 
 ### MyInfo
 
-Designed by the Government, MyInfo is a "Tell Us Once" service that eliminates the need for citizens to repeatedly provide and verify the same personal information when transacting online. Businesses can use MyInfo APIs to obtain information about individuals upon their consent. For example, [banks and financial institutions used this for eKYC](https://www.ndi-api.gov.sg/case/dbs) for online application and instant approvals for bank account opening, credit card applications, and loan applications.
+All Singpass users are automatically provisioned with a Myinfo profile. Users are able to view their personal data and access records of past usage via the Singpass Mobile app.
+
+By integrating with Myinfo API, Singpass users can share their data by providing consent via Singpass and organisations no longer have to deal with manual data management. With data from participating government sources, this allows the provisioning of products instantly, where applicable.
 
 MyInfo allows citizens and businesses to benefit from:
 
@@ -19,38 +21,70 @@ MyInfo allows citizens and businesses to benefit from:
 - Reduced incidence of mistakes due to human error; and
 - No more need for physical documents as verification to complete transactions.
 
+For more information on Myinfo API, please read the [documentation](https://api.singpass.gov.sg/library/myinfo/business/introduction).
+
 ### MyInfo Business
 
-As an extension of MyInfo, MyInfo Business is available for businesses to consent and share their corporate data for simpler online transactions. With less administrative requirements, it simplifies the credit assessment facilitation of small and medium enterprises (SMEs) using data from government sources.
+Myinfo business extends the rollout of Myinfo, a service that enables businesses to manage the use of its corporate and applicant's personal data for simpler online transactions.
+
+Business users can control and consent to share their data securely with participating businesses for more seamless digital transactions. They can enjoy less form-filling and a reduced need for providing supporting documentation for verifications.
+
+While Myinfo allows businesses to acquire individual customers in a more seamless way, Myinfo business supports Business-to-business (B2B) use cases such as SME loan application, merchant acquistion and KYC.
+
+For more information on Myinfo business API, please read the [documentation](https://api.singpass.gov.sg/library/myinfobiz/business/introduction).
 
 ### Login
 
-Login allows businesses to authenticate users of their online services with high assurance, without the need to implement and operate additional infrastructure and systems. In return, businesses can get access to some 4 million SingPass users, who are already familiar with the login platform and the SingPass Mobile application.
+Singpass Login, used by over 300 government digital services to authenticate users, is now available for private sector use via an API integration. Businesses will be able to authenticate and onboard existing Singpass users with higher assurance.
+
+With Singpass Login, businesses will be able to :
+-	authenticate users without the need to implement and operate additional infrastructure and systems;
+-	offer users the Singpass password-less login experience, and a fast, convenient and secure means of authentication; and
+-	provide access to their online services to over 4 million Singpass users. 
+
+For more information, refer to Singpass Login API [here](https://api.singpass.gov.sg/library/login/developers/overview-at-a-glance).
 
 ### Verify
 
-Verify is an in-person identity verification service that helps businesses verify the identities of individuals and obtain their information in a physical setting.
+Verify enables residents to perform secure in-person identity verification and data sharing through scanning QR codes. This service provides businesses a digital alternative for visitor registration and access, customer acquisition at roadshows, or other use cases that require user identification.
 
-Verify helps businesses align with PDPC's NRIC Advisory Guidelines, by verifying users digitally without collecting or retaining physical NRICs, FIN cards, and NRIC/FIN numbers. Please refer to the PDPC's Technical Guide [here](https://www.pdpc.gov.sg/-/media/Files/PDPC/PDF-Files/Other-Guides/Technical-Guide-to-Advisory-Guidelines-on-NRIC-Numbers---260819.pdf).
+Verify helps businesses:
+- align with PDPC's NRIC Advisory Guidelines, by verifying users digitally without collecting or retaining physical NRICs, FIN cards, and NRIC/FIN numbers. Please refer to the PDPC's Technical Guide [here](https://www.pdpc.gov.sg/-/media/Files/PDPC/PDF-Files/Other-Guides/Technical-Guide-to-Advisory-Guidelines-on-NRIC-Numbers---260819.pdf).
+- enable self service and contactless verification (e.g. kiosks for registration, or age-verification stations).
+
+For more information on Verify API, please read the [documentation](https://api.singpass.gov.sg/library/verify/business/introduction).
+
+### Sign
+
+Sign enables users to digitally sign documents using their Singpass App by scanning the QR code displayed on the screen before authenticating themselves. Sign employs technology to ensure the integrity of the signed document and to counter repudiation.
+Businesses and services such as document signing applications can integrate and provide trusted signatures directly with Singpass, increasing trust and assurance with their existing document signing products. Signing with Singpass provides convenience, productivity and efficiency - citizens no longer need to be physically present to sign documents and agreements, and businesses can digitalise document verification and filing.
+
+Sign with Singpass uses signing certificates issued by the National Certification Authority. Upon the National Certification Authority's accreditation, signatures made using the Sign with Singpass will be regarded as secure electronic signatures under Singapore's Electronic Transactions Act.
+
+For more information on Digital Signing API and Digital Signing Application Partners, please read the [documentation](https://api.singpass.gov.sg/library/sign/business/introduction).
+
+### SafeEntry API
+
+[SafeEntry](https://www.safeentry.gov.sg) is a national digital check-in system that logs the NRIC/FINs and mobile numbers of individuals visiting hotspots , workplaces of essential services, as well as selected public venues to prevent and control the transmission of COVID-19 through contact tracing and identification of COVID-19 clusters.
+
+You can now integrate your registration systems with SafeEntry APIs to perform automated check-in or check-out, in addition to the default mode where individuals scan a location’s SafeEntry QR code.
+
+This ensures a fuss-free and seamless experience for individuals as well as the business.
 
 ### Authorise (Coming Soon)
 
-Authorise enables businesses to notify and seek authorisation for transactions from customers who are not physically present.
+Authorise enables businesses to notify and seek authorisation for transactions from customers without being physically present. Businesses will be able to make use of Singpass to obtain trusted authorisations/instructions from citizens.
 
-For example, a hospital can send a request to a user to authorise the deduction of his Medisave savings to pay for his parent’s hospitalisation bills. The user will receive a notification on SingPass Mobile informing him that there is a pending request for authorisation. He can consent to this request by using his fingerprint as a second form factor (2FA). After which, this transaction will be securely captured and logged in the user’s SingPass Mobile inbox, doing away with the need for him to show up at the hospital for further form filling.
-
-### Sign (Coming Soon)
-
-Sign empowers businesses and their customers to digitally sign agreements, benefitting from legal presumptions under the Electronics Transaction Act in Singapore.
-
-Unlike current electronic signatures which hold limited legal effect, documents signed digitally with the Sign api will take on legal weight as the signature will be irrefutably tied to a user.
-
-For example, a bank or insurance company can present a contract to a user, who then scans the unique QR code on the document, verify his identity and successfully signs it digitally on his SingPass Mobile app. There will be no need to manually match signatures to ascertain that a person has indeed signed on a contract.
+For example, businesses can request authorisation from users to share information/instruction from another public or private body. Users will receive notifications on Singpass app, informing them that there are pending requests for authorisation. Users can consent to this request, and the authorisation will be share with the requesting party, doing away with the need for him to be physically present and without the need to approach two different parties to pass the information/instruction around them.
 
 ### Identiface (Coming Soon)
 
-Identiface affords businesses an additional or alternative way of verifying a person's identity, with consent, without the need to collect biometrics data. This means that the business only has to match a person’s presented facial image with the government-verified biometrics data source. There is no need to enrol biometrics data or maintain a database, thus reducing concerns with privacy and data security.
+Identiface is a secure authentication method by simply having your user scan their face - With a valid NRIC/FIN number and upon obtaining consent, users can simply scan their face to be authenticated. 
 
-The Identiface API can be integrated at service kiosks for visitor registration at a building.
+You do not have to build, secure and maintain a biometric database and biometric system implementation. Integration is achieved easily though bundled SDKs and APIs.
 
-For more information, please read the [NDI API documentation](https://www.ndi-api.gov.sg/) or [contact the NDI team](https://go.gov.sg/engage-ndi).
+This service is ideal for use cases that require step-up authentication or to ascertain the user's presence.
+
+### For more information
+
+Please read the [Singpass-API documentation](https://api.singpass.gov.sg/) or [contact the Singpass Engagement team](https://go.gov.sg/engage-ndi).
