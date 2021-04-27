@@ -1,0 +1,24 @@
+.content{
+    &.has-default-header-styles{
+        h1{
+            line-height: $size-1-lh;
+            &.display{
+                line-height: $size-0-lh;
+            }
+        }
+        h2{
+            line-height: $size-2-lh;
+        }
+        h3{
+            line-height: $size-3-lh;
+        }
+        h4{
+            line-height: $size-4-lh;
+            margin-bottom: 0;
+        }
+
+        p{
+            line-height: $size-7-lh;
+        }
+    }
+}

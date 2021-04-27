@@ -1,13 +1,15 @@
 @import "variables";
 @import "~sgds-govtech/sgds/sass/sgds";
-@import "navbar";
-@import "spinner";
-@import "cards";
-@import "sidenav";
+@import "sass/base/typography";
+@import "sass/components/navbar";
+@import "sass/components/spinner";
+@import "sass/components/cards";
+@import "sass/components/sidenav";
+@import "sass/pages/home";
 @import "buy";
 @import "technologies";
 @import "blog";
-@import "footer";
+@import "sass/components/footer";
 
 html {
   scroll-behavior: smooth;
@@ -206,3 +208,6 @@ a.external-link::after {
     box-shadow: none;
   }
 }
+
+  
+  
