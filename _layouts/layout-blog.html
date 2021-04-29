@@ -1,0 +1,40 @@
+---
+layout: layout-default
+---
+
+<section
+  class="sgds-section has-background-black padding--bottom--lg padding--top--lg"
+  style="background: url('/assets/img/bg-memphispattern.png') fixed top center;"
+>
+  <div class="sgds-container">
+    <h1>
+      <a class="has-text-white" href="/communities/newsletter">
+        Newsletter
+      </a>
+    </h1>
+  </div>
+</section>
+
+<section class="sgds-section page-{{ pageTitleSlug }}">
+  <div class="sgds-container content has-default-header-styles">
+    <h1>{{ page.title }}</h1>
+    <p style="text-align: end;">{{ page.date | date_to_string }}</p>
+
+    {{ content }}
+
+    <nav>
+      {% if page.previous or page.next %}
+      <hr />
+      {% endif %}
+
+      <div class="blog-prev-next-links">
+        {% if page.previous %}
+        <a class="prev" href="{{ page.previous.url }}">Previous</a>
+        {% endif %}
+        {% if page.next %}
+        <a class="next" href="{{ page.next.url }}">Next</a>
+        {% endif %}
+      </div>
+    </nav>
+  </div>
+</section>

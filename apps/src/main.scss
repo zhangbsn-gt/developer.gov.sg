@@ -6,6 +6,7 @@
 @import "sidenav";
 @import "buy";
 @import "technologies";
+@import "blog";
 @import "footer";
 
 html {
@@ -80,10 +81,6 @@ a.external-link::after {
 .content iframe {
   width: 100%;
   height: 25rem;
-}
-
-.herobg {
-  background: url("/assets/img/bg-blob-yellow.png") top left no-repeat;
 }
 
 .card-icon {

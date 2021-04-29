@@ -12,7 +12,7 @@ description: >
   .speaker-list > .row {
     margin-bottom: 2rem;
   }
-  .tab-content figure img {
+  .tab-content figure {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -20,6 +20,11 @@ description: >
     height: 200px;
     object-fit: cover; */
     /* border-radius: 50%; */
+  }
+  @media (max-width: 768px) {
+    .tab-content figure {
+      max-width: 33%;
+    }
   }
 </style>
 
@@ -92,7 +97,7 @@ description: >
 
       <p>Sessions: SHIP-HATS Developer Workshops</p>
       <p>AM Option 9:30 AM - 12:00 PM</p>
-      <p>PM Option 1:30 PM - 3:30 PM</p>
+      <p>PM Option 1:00 PM - 3:30 PM</p>
       <p>In-person workshops at Suntec Convention Centre.</p>
     </div>
   </div>
