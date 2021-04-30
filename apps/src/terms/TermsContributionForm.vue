@@ -93,7 +93,7 @@
           <button
             type="button"
             disabled
-            class="sgds-button is-rounded"
+            class="sgds-button "
             v-for="(tag, index) of form.tags"
             :key="index + tag"
           >
@@ -136,7 +136,7 @@
           <button
             type="button"
             disabled
-            class="sgds-button is-rounded"
+            class="sgds-button "
             v-for="(link, index) of form.links"
             :key="index + link"
           >

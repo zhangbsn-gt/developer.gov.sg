@@ -4,7 +4,7 @@
     <div class="row" v-if="isAuthenticated && !isViewing">
       <div class="col is-12 review-header">
         <small class="margin--right--sm">signed in as {{ githubUser }}</small>
-        <button class="sgds-button is-rounded" @click.prevent="performSignOut">
+        <button class="sgds-button " @click.prevent="performSignOut">
           Sign Out
         </button>
       </div>
@@ -15,19 +15,19 @@
         <div class="row">
           <div class="col is-3 is-paddingless">
             <a
-              class="sgds-button is-rounded margin--top"
+              class="sgds-button  margin--top"
               @click.prevent="mergePullRequest"
               >Accept</a
             >
             <a
-              class="sgds-button is-rounded margin--top"
+              class="sgds-button  margin--top"
               @click.prevent="rejectPullRequest"
               >Reject</a
             >
           </div>
           <div class="col is-9 has-text-right is-paddingless">
             <a
-              class="sgds-button is-rounded margin--top has-text-right"
+              class="sgds-button  margin--top has-text-right"
               @click.prevent="refreshPageState"
               >Back</a
             >
@@ -92,7 +92,7 @@
     </div>
     <div class="row" style="min-height: 50vh" v-else>
       <div class="col">
-        <a class="sgds-button is-rounded is-fullwidth" :href="`${apiUrl}/oauth`"
+        <a class="sgds-button  is-fullwidth" :href="`${apiUrl}/oauth`"
           >Login with Github</a
         >
       </div>

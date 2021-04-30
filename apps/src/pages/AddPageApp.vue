@@ -22,7 +22,7 @@
       <Modal v-if="showAddPageForm">
         <template v-slot:header>
           <button
-            class="sgds-button is-rounded"
+            class="sgds-button "
             type="button"
             @click="showAddPageForm = false"
           >
