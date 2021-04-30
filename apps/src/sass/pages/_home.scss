@@ -10,11 +10,11 @@
         }
     }
     &.sgds-card{
-        margin-top: 105px;
+        margin-top: 78px;
         .sgds-card-image{
-            margin-top: -105px;
-            &.is-2by1{
-                height: 90%;
+            margin-top: -78px;
+            img{
+                margin-bottom: 0;
             }
         }
         .sgds-card-content{
@@ -25,5 +25,4 @@
         }
         
     }
-
 }
