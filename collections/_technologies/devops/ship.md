@@ -48,8 +48,8 @@ Note: SHIP only provides the tools to support a CI/CD pipeline. Users would stil
 
 ## Roadmap
 
-![ship and hats roadmap](/assets/img/SHIP-HATS-roadmap-2020-11.jpg)
+![ship and hats roadmap](/assets/img/ship-hats-roadmap.jpg)
 
 ## Get started
 
-To find out more and get started with SHIP, please visit [https://www.ship.gov.sg](https://www.ship.gov.sg) or email enquiries_enp@tech.gov.sg.
+To find out more and get started with SHIP, please visit <https://www.ship.gov.sg> or email <enquiries_enp@tech.gov.sg>.
