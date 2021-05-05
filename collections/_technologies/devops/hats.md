@@ -41,8 +41,8 @@ Continuous testing can be achieved by integrating hats into the Continuous Integ
 
 ## Roadmap
 
-![ship and hats roadmap](/assets/img/SHIP-HATS-roadmap-2020-11.jpg)
+![ship and hats roadmap](/assets/img/ship-hats-roadmap.jpg)
 
 ## Get started
 
-To learn more about HATS and how to get onboard, please email us at enquiries_enp@tech.gov.sg.
+To learn more about HATS and how to get onboard, please visit <https://www.ship.gov.sg> or email <enquiries_enp@tech.gov.sg>.
