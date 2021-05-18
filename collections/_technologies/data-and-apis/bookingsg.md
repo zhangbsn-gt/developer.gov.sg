@@ -24,8 +24,6 @@ We can leverage on BookingSG’s various service options to help improve user jo
 
 - **As part of a journey:** Include BookingSG into the user journey by redirecting requests to BookingSG or embed BookingSG components for specific tasks to be performed on top of pre-existing features.
 
-![User Journey](/assets/img/BookingSG-UserJourney.png)
-
 - **As an engine:** Use BookingSG as an engine to serve highly complicated use cases and integrate BookingSG using API to leverage on common CARB logics. Agencies have full autonomy on how calendars and bookings are presented to users.
 
 - **As a combination:** Depending on your needs, you can combine the various service offerings - from using the admin portal as a SAAS, to additional business logic defined on your web/app before redirecting to BookingSG for slot selection supported by API integration. Leverage the various approaches to provide the desired user experience for your services. 
@@ -35,9 +33,6 @@ We can leverage on BookingSG’s various service options to help improve user jo
 ### Benefits
 ![Benefits](/assets/img/BookingSG-Benefits.png)
 
-### BookingSG in action
-
-![In Action](/assets/img/BookingSG-InAction.png)
 
 ### Get started
 
