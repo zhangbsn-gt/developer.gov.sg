@@ -11,6 +11,6 @@ tags:
 
 The STACK X — Continuous Integration/Continuous Development (CI/CD) with Secure Hybrid Integrated Pipeline-Hive Agile Testing Solutions (SHIP-HATS) Conference was a resounding success. Held on 6 May 2021, the online conference engaged participants in discovering how the public sector is planning to leverage CI/CD to build agile, secure and compliant applications. 
 
-# CONFERENCE STATISTICS AT A GLANCE #
+### CONFERENCE STATISTICS AT A GLANCE ###
 
-# HIGHLIGHTS FROM THE CONFERENCE #
+### HIGHLIGHTS FROM THE CONFERENCE ###
