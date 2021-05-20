@@ -76,13 +76,13 @@
   description: Build on sensors and IOT technologies and leverage their data
   items:
     - Overview
+    - Asynchronous Data Exchange
     - Digital Operations Smart Services
     - Lamppost-as-a-Platform
     - SIOT Tech Stack
     - Sensesurround
     - SenseOps
     - Sensor Asset Management
-    - Sensor Data Exchange
     - Sensors.gov.sg
     - SPOT
     - SPOTON
