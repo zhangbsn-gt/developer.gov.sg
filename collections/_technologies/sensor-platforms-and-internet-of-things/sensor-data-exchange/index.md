@@ -22,32 +22,34 @@ This diagram shows the components of ADEX and its ability to distribute real-tim
 
 ![How ADEX works](HowADEXWorks.jpg)
 
-Here is a short introductory video about ADEX. 
+[Here's a short introductory video about ADEX](https://d3uzjhjcl6zsbz.cloudfront.net/ADEX-overview.mp4)
 
-![ADEX Overview](ADEX Overview.mp4)
+[How to get started on ADEX](https://d3uzjhjcl6zsbz.cloudfront.net/how-to-get-started-on-ADEX.mp4)
 
-How to get started on ADEX.
-
-![How to get started on ADEX](How to get started on ADEX.mp4)
-
-How to set up MQTT connections on ADEX.
-
-![How to set up MQTT connections on ADEX](How to set up MQTT connections on ADEX.mp4)
+[How to set up MQTT connections on ADEX](https://d3uzjhjcl6zsbz.cloudfront.net/how-to-set-up-mqtt-connections-on-ADEX.mp4)
 
 
 ### What is ADEX for?
 
-- **ASYNCHRONOUS DATA EXCHANGE (ADEX) FOR WOG** ADEX is a platform for real-time, asynchronous fire-and-forget data transfer. 
+- **ASYNCHRONOUS DATA EXCHANGE (ADEX) FOR WOG** 
 
-- **PROVIDES DATA SHARING MARKETPLACE** With ADEX's data marketplace, agencies can browse all datasets across the whole-of-government for sharing. 
+  ADEX is a platform for real-time, asynchronous fire-and-forget data transfer. 
 
-- **OFFERS CENTRAL EXCHANGE SERVICE TO FACILITATE SHARING** ADEX enables agencies to publish and subscribe to real-time data using a self-service portal along with workflow engine. It helps to secure data across network zones eliminating diverse protocols and interfaces.  
+- **PROVIDES DATA SHARING MARKETPLACE** 
 
-- **CREATES CATALYST FOR DISCOVERY AND INNOVATION** ADEX creates a culture of sharing for collaboration and innovation across the public service with potential use cases discovery for new services.
+  With ADEX's data marketplace, agencies can browse all datasets across the whole-of-government for sharing. 
+
+- **OFFERS CENTRAL EXCHANGE SERVICE TO FACILITATE SHARING** 
+
+   ADEX enables agencies to publish and subscribe to real-time data using a self-service portal along with workflow engine. It helps to secure data across network zones eliminating diverse protocols and interfaces.  
+
+- **CREATES CATALYST FOR DISCOVERY AND INNOVATION** 
+
+  ADEX creates a culture of sharing for collaboration and innovation across the public service with potential use cases discovery for new services.
 
 
 ### Get Started
 
 Administrative access ADEX is available [here](https://sdx.sensors.gov.sg/sdx/home).
 
-To find out more about SDX or the onboarding process, contact [sense@tech.gov.sg](mailto:sense@tech.gov.sg).
+To find out more about ADEX or the onboarding process, contact [sense@tech.gov.sg](mailto:sense@tech.gov.sg).
