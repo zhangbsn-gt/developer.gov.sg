@@ -1,73 +1,53 @@
 ---
-title: Sensor Data Exchange
+title: Asynchronous Data Exchange
 layout: layout-page-sidenav
 category: Sensors and IOT
 description: >
-  Sensor Data Exchange is a centralised platform that distributes sensor data 
+  Asynchronous Data Exchange is a centralised platform that distributes real-time data 
   across Whole-of-Government. It provides seamless and secure data sharing and 
   management, and encompasses public, private, and industrial internet-of-things.
 ---
 
-## Sensor Data Exchange (SDX)
+## Asynchronous Data Exchange (ADEX)
 
 ### Overview
 
-SDX is part of Smart Nation Sensor Platform (SNSP), a Strategic National Project. It is a centralised platform that distributes sensor data across Whole-of-Government (WOG). It provides seamless and secure data sharing and management, and encompasses public, private, and industrial internet-of-things.
+**Asynchronous Data Exchange (ADEX)** platform is the solution to unlock the universe of whole-of-government (WOG) real-time data, asynchronous fire-and-forget data transfer. With ADEX’s data marketplace, agencies can browse all datasets across WOG for sharing. ADEX will work not only with sensor, but also non-sensor and streaming data.
 
-SDX enables government agencies to:
+ADEX enables government agencies to publish and subscribe to real-time data using a self-service portal that will run in Government Commercial Cloud (GCC) both internet and intranet.
 
-- Publish and subscribe (near) real-time sensor data using a self-service portal both government intranet and government commercial cloud.
+Agencies can either connect via intranet through the SGWAN interface or via MPLS from their private network. Agencies can use ADEX to discover and share event data such as status updates or event streams in real-time, across internet and intranet. Subscribers will receive updates as soon as the events are published. Publishers can choose who will be able to subscribe.
 
-- Share unclassified (potentially up to restricted) sensor data with government sector organisations
+This diagram shows the components of ADEX and its ability to distribute real-time data across networks. 
 
-An illustration of the components of SDX and its ability to distribute sensor data across networks:
+![How ADEX works](HowADEXWorks.jpg)
 
-![How SDX works](how-sdx-works.png)
+Here is a short introductory video about ADEX. 
 
-### Features
+![ADEX Overview](ADEX Overview.mp4)
 
-- **Sensor marketplace:** Publish and subscribe to data across government agencies for comprehensive insights
+How to get started on ADEX.
 
-- **Support multiple protocols:** MQTT, AMQP, REST, and so on
+![How to get started on ADEX](How to get started on ADEX.mp4)
 
-- **Data transfer in real-time:** Enable sensor data to be distributed across government agencies in real-time for timely responses and predictive analytics
+How to set up MQTT connections on ADEX.
 
-- **Data sharing across network zones:** Secure cross-zone data exchange across internet, intranet, and private networks
+![How to set up MQTT connections on ADEX](How to set up MQTT connections on ADEX.mp4)
 
-- **Self-service portal:** Along with workflow engine
 
-- **Data sharing and ingestion on internet**
+### What is ADEX for?
 
-### Key benefits
+- **ASYNCHRONOUS DATA EXCHANGE (ADEX) FOR WOG** ADEX is a platform for real-time, asynchronous fire-and-forget data transfer. 
 
-- Exchange as a service
+- **PROVIDES DATA SHARING MARKETPLACE** With ADEX's data marketplace, agencies can browse all datasets across the whole-of-government for sharing. 
 
-  - Subscription based
+- **OFFERS CENTRAL EXCHANGE SERVICE TO FACILITATE SHARING** ADEX enables agencies to publish and subscribe to real-time data using a self-service portal along with workflow engine. It helps to secure data across network zones eliminating diverse protocols and interfaces.  
 
-  - No heavy investment in infrastructure
+- **CREATES CATALYST FOR DISCOVERY AND INNOVATION** ADEX creates a culture of sharing for collaboration and innovation across the public service with potential use cases discovery for new services.
 
-  - Manage core infrastructure and MPLS circuit to the perimeter of agency network
-
-- Robust architecture for smart systems
-
-  - Versatile in supporting event-driven distributed data and unpredictable workload
-
-  - Ability to abstract and distribute data
-
-  - Manage technical complexity of cross zone integration and protocol translation
-
-* Spur innovation
-
-  - Ease to equip data scientist with data that is not readily available in their agency
-
-  - Create a culture of sharing for innovation to flourish
-
-### Upcoming plans
-
-![upcoming plans](sdx-roadmap.png)
 
 ### Get Started
 
-Administrative access to SDX is available [here](https://sdx.sensors.gov.sg/sdx/home).
+Administrative access ADEX is available [here](https://sdx.sensors.gov.sg/sdx/home).
 
 To find out more about SDX or the onboarding process, contact [sense@tech.gov.sg](mailto:sense@tech.gov.sg).
