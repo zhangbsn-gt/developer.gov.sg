@@ -16,8 +16,10 @@ The STACK X — Continuous Integration/Continuous Development (CI/CD) with Secur
 
 ![Stats_table](/assets/img/STACK-X-stats.jpg)
 
-
+## HIGHLIGHTS FROM THE CONFERENCE 
 ![Highlights](/assets/img/STACK-X-highlights.jpg)
 
+![SpeakersPhoto01](/assets/img/stackx-speakers01.png)
+![SpeakersPhoto01](/assets/img/stackx-speakers02.png)
 
 [![Video_recording](/assets/img/video-record-img.png)](https://www.developer.tech.gov.sg/communities/events/stack-x-conference)
