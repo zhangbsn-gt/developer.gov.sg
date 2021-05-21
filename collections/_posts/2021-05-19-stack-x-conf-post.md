@@ -18,3 +18,6 @@ The STACK X — Continuous Integration/Continuous Development (CI/CD) with Secur
 
 
 ![Highlights](/assets/img/STACK-X-highlights.jpg)
+
+
+![Highlights](/assets/img/video-record-img.png)
