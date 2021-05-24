@@ -17,7 +17,8 @@ The STACK X — Continuous Integration/Continuous Development (CI/CD) with Secur
 ![Stats_table](/assets/img/STACK-X-stats.jpg)
 
 ## HIGHLIGHTS FROM THE CONFERENCE 
-![Highlights](/assets/img/STACK-X-highlights.jpg)
+
+Participants gained valuable insights about how to modernise securely using CI/CD with SHIP-HATS and access end-to-end support resources provided by GovTech to facilitate the adoption of SHIP-HATS. These were delivered through the Product and Government tracks that catered to participants’ varied needs, from showing how SHIP-HATS enables early identification of critical vulnerabilities in the development cycle to providing practical steps for them to adopt SHIP-HATS. Chief Information Officers (CIOs) and senior IT leaders also got to better understand considerations in implementing CI/CD, and how to manage vendors and security through CI/CD. 
 
 ![SpeakersPhoto01](/assets/img/stackx-speakers01.png)
 ![SpeakersPhoto01](/assets/img/stackx-speakers02.png)
