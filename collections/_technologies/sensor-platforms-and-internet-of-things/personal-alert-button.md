@@ -18,7 +18,7 @@ There are currently 10,000 seniors onboarded on GALE, as of 1st April 2021.
 - Case Management System to handle senior cases on the ground ([CMS](https://www.developer.tech.gov.sg/technologies/digital-solutions-to-address-covid-19/gale))
 - Crowd sourcing responder mobile application (ResponderSG)
 
-**insert picture**
+![Workflow of PAB when activated, showcasing the process of activation, triaging and response to a senior’s distress call](/assets/img/pab-features.png)
 
 ## Key Benefits
 - **Safety net for seniors:** Provide round the clock monitoring and assistance for seniors.
@@ -26,7 +26,7 @@ There are currently 10,000 seniors onboarded on GALE, as of 1st April 2021.
 and for all alerts to be routed to a team that can triage the situation.
 
 ## Upcoming Plans
-Roadmap of GLAE (FY21 - FY23)
+Roadmap of GALE (FY21 - FY23)
 - Passive monitoring system for fall detection, heart/breathing rate, sleep apnea using non-camera solution
 - Migration of CMS to GatherSG
 - Tele-health solutions for seniors to gain easier access to medical doctors.
