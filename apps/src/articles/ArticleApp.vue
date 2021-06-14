@@ -1,7 +1,7 @@
 <template>
   <div id="article-editor-app" class="article-editor-app">
     <button
-      class="sgds-button is-rounded is-small"
+      class="sgds-button  is-small"
       @click="showEditorModal = true"
     >
       Edit this page
@@ -13,7 +13,7 @@
     <Modal v-if="showEditorModal">
       <template v-slot:header>
         <button
-          class="sgds-button is-rounded"
+          class="sgds-button "
           type="button"
           @click="showEditorModal = false"
         >

@@ -1,11 +1,20 @@
 .sgds-card {
   display: flex;
   flex-direction: column;
+  border-radius: $card-radius;
+  border: 1px solid #d6d6d6;
   .sgds-card-content:first-child {
     flex: 1 1 auto;
   }
   .sgds-card-content:last-child {
     border-top: 1px solid #d6d6d6;
+  }
+}
+
+// if card-content is the first child, remove border-top
+.sgds-card{
+  > .sgds-card-content:first-child{
+    border-top: 0;
   }
 }
 
@@ -18,7 +27,7 @@
 }
 
 .sgds-card:hover {
-  background-color: #f7f7f7;
+  background-color: $card-hover;
 }
 
 .sgds-card-button:hover {
