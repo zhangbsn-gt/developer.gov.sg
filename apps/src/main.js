@@ -1,6 +1,15 @@
 import "./main.scss";
 import "sgds-govtech/js/sgds.js";
 
+// import Swiper JS
+import Swiper from 'swiper';
+ // core version + navigation, pagination modules:
+import SwiperCore, { Navigation } from 'swiper/core';
+
+ // configure Swiper to use modules
+SwiperCore.use([Navigation]);
+  // import Swiper styles
+
 $(function() {
   $(".mobile-sidenav-toggle").click(function() {
     $(this)
@@ -15,4 +24,34 @@ $(function() {
       .next()
       .toggleClass("is-hidden-touch");
   });
+});
+
+const swiper = new Swiper('.swiper-container', {
+  // Optional parameters
+
+  loop: false,
+  slidesPerView: 1.1,
+  spaceBetween: 4,
+  watchSlidesProgress: true,
+  watchSlidesVisibility: true,
+  centeredSlides: true,
+  // If we need pagination
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 16,
+      loop: true,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 32,
+      loop: true,
+    },
+  },
 });

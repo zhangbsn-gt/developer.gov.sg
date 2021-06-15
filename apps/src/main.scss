@@ -12,6 +12,7 @@
 @import "sass/components/footer";
 @import "sass/pages/home";
 @import "sass/pages/govbuy";
+@import "sass/vendor/swiper";
 
 
 a.feedback-banner-link {
@@ -40,14 +41,7 @@ a.external-link::after {
     }
   }
 }
-.hero-sub {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  img {
-    max-width: 83%;
-  }
-}
+
 
 .content img,
 .content iframe {
