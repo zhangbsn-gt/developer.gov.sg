@@ -3,8 +3,15 @@ title: Sign Up for the Container Stack Pilot
 layout: layout-blog
 author: CODEX
 description: >
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.   
----
+  Container Stack sign up
 
-This is useful!
+  tags:
+  - Container stack
+  - CStack
+  - MVP
+  - Minimum Viable Product
+  - kubernetes
+  - scalability
+  - resilience
+---
+In the January 2021 issue of Government on Commercial Cloud (GCC) newsletter, we introduced the Container Stack (CStack), its key features and benefits. CStack, a cloud-based container hosting platform, is one of the Runtime components within the Base Layer of the Singapore Government Tech Stack (SGTS). The CStack platform launched Minimum Viable Product (MVP)* in May 2021 and can now be used to build and deploy containerised applications, from a development environment to a running production setup. With CStack, Agencies can:
