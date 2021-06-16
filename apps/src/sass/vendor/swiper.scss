@@ -11,15 +11,18 @@
         }
     }
     &-slide{
+        height: 100% !important;
         box-sizing: content-box;
-        > div{
+        .sgds-card{
             box-sizing:border-box;
+            height: 100% !important;
+            &-content{
+                flex-grow:1;
+            }
         } 
     }
 
     &-wrapper{
         box-sizing: content-box;
     }
-    
-    
 }

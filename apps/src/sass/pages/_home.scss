@@ -1,17 +1,11 @@
 .section-hero{
-    color: white;
+    color: $white;
     &-gradient{
         background: linear-gradient(268.19deg, #00C0F3 -0.09%, $primary 98.08%);
     }
     height: 28.75rem;
-
-    .hero-sub {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        img {
-          max-width: 33.75rem;
-        }
+    @include until($tablet){
+        height: auto;
     }
 }
 
@@ -32,6 +26,20 @@ $section-highlights-image-size: 120px;
             flex-grow: 1;
             h3{
                 margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.section-newsletter{
+    .grid-container{
+        padding:1.25rem;
+        border-radius: $radius;
+        background-color: hsl(222, 52%, 95%);
+        .grid-item{
+            img {
+                object-fit: contain;
+                width: 144px;
             }
         }
     }

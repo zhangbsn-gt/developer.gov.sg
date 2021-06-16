@@ -32,9 +32,9 @@ const swiper = new Swiper('.swiper-container', {
   loop: false,
   slidesPerView: 1.1,
   spaceBetween: 4,
-  watchSlidesProgress: true,
-  watchSlidesVisibility: true,
   centeredSlides: true,
+  loop: true,
+  autoHeight: true ,
   // If we need pagination
 
   // Navigation arrows
