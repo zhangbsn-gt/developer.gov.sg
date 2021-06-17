@@ -3,6 +3,7 @@
   items:
     - Overview
     - COVID-19 ChatBots
+    - Government Assisted Living Ecosystem
     - GoBusiness COVID Portal
     - GoWhere Suite
     - HealthCerts
@@ -24,11 +25,13 @@
     - Overview
     - WOGAA
     - Personalise
+    
 - name: Blockchain
   description: Distributed ledger technologies that enable the usage of decentralised, tamper-proof records
   items:
     - Overview
     - OpenCerts
+    
 - name: Content Management
   description: Platforms that enable easy and reliable hosting and publishing of content on the web
   items:
@@ -36,6 +39,7 @@
     - Content Website Platform
     - Isomer
     - OpenDoc
+    
 - name: Data and APIs
   description: Open APIs and platforms allowing developers to connect with data and services from the Government
   items:
@@ -50,22 +54,26 @@
     - SingStat APIs
     - Tourism Information and Services Hub APIs
     - URA APIs
+    
 - name: Design
   description: Design guidelines and libraries
   items:
     - Overview
     - Singapore Government Design System
+    
 - name: DevOps
   description: Tools that enable the delivery of software quickly, securely and reliably in the spirit of DevOps
   items:
     - Overview
     - SHIP
     - HATS
+    
 - name: Digital Identity
   description: Make use of Government-backed digital identities to identify and transact with individuals and businesses
   items:
     - Overview
     - National Digital Identity
+    
 - name: Infrastructure and Hosting
   description: Host applications in secure environments at scale
   items:
@@ -79,6 +87,7 @@
     - Asynchronous Data Exchange
     - Digital Operations Smart Services
     - Lamppost-as-a-Platform
+    - Personal Alert Button
     - SIOT Tech Stack
     - Sensesurround
     - SenseOps
