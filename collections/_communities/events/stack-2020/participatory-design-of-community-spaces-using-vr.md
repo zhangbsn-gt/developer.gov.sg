@@ -5,6 +5,7 @@ category: STACK 2020
 description: Enhancing residents' experience and satisfaction in co-designing community spaces with Virtual Reality.
 ---
 
+### Overview
 At the STACK2020 Conference, Senior Systems Analyst of the Housing Development Board (HDB) Mr. Lee Chen Tong shared how the use of Virtual Reality (VR) had 
 enhanced residents’ experience and satisfaction in co-designing community spaces with HDB. He explained that during the VR co-design workshops, the ability 
 for residents’ intent to be directly and readily translated into 3D site plans in VR allowed for better alignment to be achieved between residents’ 
