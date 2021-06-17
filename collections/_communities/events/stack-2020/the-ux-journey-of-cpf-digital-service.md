@@ -5,6 +5,7 @@ category: STACK 2020
 description: Leading the growth of CPFB with digitalisation.
 ---
 
+### Overview
 At the STACK 2020 Conference, Deputy Chief Executive (ICT & Digital Services) of the Singapore Central Provident Fund Board (CPFB) Mr. Ng Hock Keong 
 spoke about how Digitalisation has led to the growth of the board and the rationale behind CPFB’s commitment to diversify and enhance its service offerings 
 for citizens.
