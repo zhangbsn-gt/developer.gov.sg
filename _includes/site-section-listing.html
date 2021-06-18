@@ -3,26 +3,30 @@
 {% else %}
 {% assign disabledItemCount = false %}
 {% endif %}
-<div class="row is-multiline">
+<div class="card-grid-container technologies">
   {% for category in site.data[include.sectionName] %}
-  <div class="col is-4 padding--lg">
-    <a href="{{ category.name | slugify }}">
+    <a href="{{ category.name | slugify }}" class="grid-item">
       {% assign item_count = category.items | size | minus: 1 %}
-      <h3 style="margin-bottom: 0">
-        {{ category.name }}
-      </h3>
-      {% if item_count > 0 and disabledItemCount == false %}
-        <small>
-            ({{ item_count }}&nbsp;
-            {%- if item_count == 1 -%}
-              item
-            {%- elsif item_count > 1 -%}
-              items
-            {%- endif -%})
-        </small>
-      {% endif %}
+      <div class="sgds-card variant-category-info">
+        <div class="sgds-card-content">
+          {% assign name = category.name | downcase | replace:" ","-" %}
+          <img src="/assets/img/{{page.title | downcase}}/{{name}}.svg" alt="">
+          <header>
+            <h4>{{ category.name }}</h4>
+            {% if item_count > 0 and disabledItemCount == false %}
+              <small>
+                  ({{ item_count }}&nbsp;
+                  {%- if item_count == 1 -%}
+                    item
+                  {%- elsif item_count > 1 -%}
+                    items
+                  {%- endif -%})
+              </small>
+            {% endif %}
+          </header>
+          <p>{{ category.description }}</p>
+        </div>
+      </div>
     </a>
-    <p>{{ category.description }}</p>
-  </div>
   {% endfor %}
 </div>

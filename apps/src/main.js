@@ -28,16 +28,12 @@ $(function() {
 
 const swiper = new Swiper('.swiper-container', {
   // Optional parameters
-
-  loop: false,
   slidesPerView: 1.1,
-  spaceBetween: 4,
+  spaceBetween: 8,
   centeredSlides: true,
   loop: true,
-  autoHeight: true ,
-  // If we need pagination
+  autoHeight: true,
 
-  // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',

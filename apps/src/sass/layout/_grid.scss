@@ -1,16 +1,13 @@
-.grid-container{
+.card-grid-container{
     display:grid;
-    grid-auto-rows: 1fr; 
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 2rem;
     align-items: center;
-}
-.grid-item{
-    .banner-img{
-        object-fit: contain;
-        height: 300px;
+    padding: 1rem 0;
+    @include until($tablet){
+        grid-gap: 1rem;
     }
 }
+
 
 .row.is-padding-large .col {
     padding: 1.5rem;
