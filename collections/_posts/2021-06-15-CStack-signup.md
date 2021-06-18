@@ -20,6 +20,7 @@ tags:
 ![CStack benefits](/assets/img/CStack-3benefits.png)
 
 *CStack is available for trial/pilot and not generally available (GA) yet.
+
 ^CStack is a project endorsed as a building block of the Government "Zero Trust" implementation apporach.
 
 ![CStack_signup](/assets/img/CStack-signup.png)
