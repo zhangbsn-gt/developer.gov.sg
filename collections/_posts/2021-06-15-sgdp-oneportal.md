@@ -20,4 +20,4 @@ and houses technical content aimed at helping technical specialists drive digita
 
 For interested individuals, Public Officers and vendors involved in digital transformation, we strongly encourage you to:
 
-[![visit the portal](assets/img/visit_sgdp.png)](https://www.developer.tech.gov.sg)
+[![visit the portal](/assets/img/visit_sgdp.png)](https://www.developer.tech.gov.sg)
