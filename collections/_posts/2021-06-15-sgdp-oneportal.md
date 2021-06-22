@@ -1,5 +1,5 @@
 ---
-title: Singapore Government Developer Portal - One Portal: Endless Possibilities
+title: 'Singapore Government Developer Portal - One Portal: Endless Possibilities'
 layout: layout-blog
 author: TMO
 description: >
