@@ -18,4 +18,6 @@ resources for the public at large.
 In June 2021, the [Documentation Portal](https://docs.developer.gov.sg) was launched. It is one of three products offered by the Singapore Government Developer Portal
 and houses technical content aimed at helping technical specialists drive digital transformation in their organisations.
 
-For interested individuals, Public Officers and vendors involved in digital transformation, we strongly encourage you to [visit the portal](https://www.developer.tech.gov.sg/)
+For interested individuals, Public Officers and vendors involved in digital transformation, we strongly encourage you to:
+
+[![visit the portal](assets/img/visit_sgdp.png)](https://www.developer.tech.gov.sg)
