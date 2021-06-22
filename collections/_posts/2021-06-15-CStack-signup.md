@@ -19,9 +19,9 @@ tags:
 
 ![CStack benefits](/assets/img/CStack-3benefits.png)
 
-*CStack is available for trial/pilot and not generally available (GA) yet.
+ * *CStack is currently not generally available (GA) yet, but it is available for trial / pilots.
 
-^CStack is a project endorsed as a building block of the Government "Zero Trust" implementation apporach.
+*^CStack is a project endorsed as a building block of the Government "Zero Trust" implementation approach.
 
 ![CStack_signup](/assets/img/CStack-signup.png)
 
@@ -31,3 +31,7 @@ CStack uses Kubernetes, an open-source container orchestration engine. In large 
 
 ![CStack](/assets/img/CStack-CK.png)
 
+
+
+For enquiries, contact CStack at enquiries_cstack@tech.gov.sg.
+For more information, visit the CStack website at https://go.gov.sg/cstack.
