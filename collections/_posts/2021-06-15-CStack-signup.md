@@ -23,7 +23,7 @@ tags:
 
 ^CStack is a project endorsed as a building block of the Government "Zero Trust" implementation approach.
 
-![CStack_signup](/assets/img/CStack-signup.png)
+![CStack_signup (/assets/img/CStack-signup.png)https://go.gov.sg/cstack-signup]
 
 ### HARNESSING CONTAINER AND KUBERNETES TECHNOLOGIES IN APPLICATION-BUILDING
 
