@@ -41,17 +41,17 @@
           <strong>{{ speaker }}</strong>, {{speakers_title[speaker_index]}}<br><br>
           {% endfor %}
         </p>
-        {% if article_link != '' %}
+        {% if article_link != nil %}
         You can read the article <a href="{{article_link}}">here</a>.
         {% endif %}
       </div>
       <div class="sgds-card-footer">
-        {% if video_id != '' %}
+        {% if video_id != nil %}
         <a href="{{ video_url }}" class="sgds-card-footer-item">
           Watch video
         </a>
         {% endif %}
-        {% if slide_link != '' %}
+        {% if slide_link != nil %}
         <a href="{{ '/assets/files/' | append: video.additional_link }}" class="sgds-card-footer-item">
           View Slides
         </a>
