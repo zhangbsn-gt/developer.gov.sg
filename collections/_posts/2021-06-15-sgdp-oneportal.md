@@ -23,4 +23,4 @@ For interested individuals, Public Officers and vendors involved in digital tran
 [![visit the portal](/assets/img/visit_sgdp.png)](https://www.developer.tech.gov.sg)
 [![feedback portal](/assets/img/feedback_sgdp.png)](https://t.me/sgGovDeveloperPortal)
 
-Visit our [portal](https://www.developer.tech.gov.sg) for your digital transformation needs. 
+You can provide your feedback by emailing gds_developer_portal@tech.gov.sg or join the [Developer Portal telegram group](https://t.me/sgGovDeveloperPortal).
