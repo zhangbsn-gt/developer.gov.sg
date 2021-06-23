@@ -25,7 +25,7 @@ The app consolidates services and information across Government agencies, and pe
 To date, the app has been downloaded more than 290,000 times and facilitated a range of services such as the birth registration; an eligibility checker for more than 30 types of COVID-19 grants and assistance; as well as access to Merdeka or Pioneer Generation e-card and information on personalised benefits.
 
 <p align="center">
-<img src="/assets/img/lifesg-dashboard.png" alt="Fig 1: Overview of LifeSG’s dashboard which allows citizens to access digital government services">
+<img src="/assets/img/lifesg-dashboard.png" alt="Fig 1: Overview of LifeSG’s dashboard which allows citizens to access digital government services" width="75%" height="75%"><br>
 Fig 1: Overview of LifeSG’s dashboard which allows citizens to access digital government services</p>
 
 ### Why Should LifeSG be Adopted?
