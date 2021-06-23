@@ -27,11 +27,14 @@ tags:
 
 ### HARNESSING CONTAINER AND KUBERNETES TECHNOLOGIES IN APPLICATION-BUILDING
 
-CStack uses Kubernetes, an open-source container orchestration engine. In large tech companies, containers and Kubernetes are considered the de-facto standard for building applications. They work hand in hand to tackle modern-day application development challenges. 
+CStack uses Kubernetes, an open-source container orchestration engine. In large tech companies, containers and Kubernetes are considered the de-facto standard for building applications. They work hand-in-hand to tackle modern-day application development challenges. 
 
 ![CStack](/assets/img/CStack-CK.png)
 
+### WHAT CONTAINER TECHNOLOGY IS
 
+- Container technology **packs the underlying system configurations into a container** for applications to operate within, helping to address the “this-application-runs-on-my-machine-but-does-not-run-well-on-the-server” problem.
+- Containers can be likened to lightweight virtual machines (VMs). They **allow applications to be spun up or destroyed very quickly**. This is beneficial when dealing with larger engineering problems that involve scalability and resilience.
 
 For enquiries, contact CStack at enquiries_cstack@tech.gov.sg.
 
