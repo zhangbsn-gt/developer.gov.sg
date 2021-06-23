@@ -15,7 +15,7 @@ tags:
   - resilience
 ---
 
-[Container Stack (CStack)](https://www.developer.tech.gov.sg/singapore-government-tech-stack/runtime/container-stack) is a cloud-based container hosting platform. It is also one of the Runtime components within the Base Layer of the Singapore Government Tech Stack (SGTS). The CStack platform launched Minimum Viable Product (MVP)* in May 2021 and can now be used to build and deploy containerised applications, from a development environment to a running production setup.
+[Container Stack (CStack)](https://www.developer.tech.gov.sg/singapore-government-tech-stack/runtime/container-stack) is a cloud-based container hosting platform. It is also one of the Runtime components within the Base Layer of the Singapore Government Tech Stack (SGTS). The CStack platform launched its Minimum Viable Product (MVP)* in May 2021 and can now be used to build and deploy containerised applications, from a development environment to a running production setup.
 
 ![CStack benefits](/assets/img/CStack-3benefits.png)
 
