@@ -53,8 +53,67 @@ To begin using APEX, user have to identify their usage model as shown below.
 1. API Provider: The back-end resource provider that exposes or serves the respective function(s).
 2. API Consumer : The agencies that consumes the APIs.
 
-## Get Started
+**For API Providers:**
 
-Administrative access to APEX is only available on the Government Intranet.
+As a provider, a project must be created first. The steps below detail the project creation process.
 
-[Find out more about APEX](https://www.tech.gov.sg/media/technews/getting-to-know-nectar-and-apex), or email us at enquiries_apex@tech.gov.sg.
+**Step 1 - Getting Onboarded**
+
+Potential users can request and fill in the onboarding form from the APEX team by writing to  enquiries_apex@tech.gov.sg and submitting the completed form it accordingly. The APEX team will perform the necessary evaluation tasks to determine how many units (Apex Units) of subscription is required for the user’s system case. After which, a kickoff session will be arranged with the APEX onboarding team to go through the briefing list of items that agencies are required to follow up on. This includes a training session for creating APIs and APPs in APEX.
+
+**Step 2 - Opening of Firewalls**
+
+After the kickoff session, users are required to identify and request for opening of firewalls to allow APEX to communicate with the relevant systems.
+
+**Step 3 - Perform Certificate Exchanges, if Required**
+
+Tenants may need to perform the exchange of certificates based a needs basis.
+The APEX team will setup the requested project and cover the following:
+
+- Set up the subscribed environment, if required.
+- Link the user’s account to the subscribed environment.
+
+**Step 4 - Verify the Subscribed Environment**
+
+Tenants will be notified via email when the environment setup is completed, this allows tenants to perform a check on the environment set up, if required.
+
+**Step 5 – Access the Portal and start API Creation**
+
+Tenants can start to create APIs that would be taught in the APEX training session. If there are any exceptions in this stage, the tenant can approach the support team for assistance.
+
+**For API Consumers:**
+
+As a consumer, users can follow the steps below to begin their APEX onboarding.
+
+**Step 1 - Getting Access from the Provider**
+
+Consumers visit this site (only accessible through Intranet) to identify the required APIs before requesting access from the Provider.  Consumers can also sign up for the training session provided by the APEX team to understand how APPs can be created in APEX.
+
+**Step 2 - Opening of Firewalls**
+
+After the kickoff session, users are required to identify and request for opening of firewalls to allow APEX to communicate with the relevant systems.
+
+**Step 3 - Perform Certificate Exchanges, if Required**
+
+Tenants may need to perform the exchange of certificates based a needs basis.
+
+**Step 4 – Access the Portal and start API Creation**
+
+Tenants can start to create APIs that would be taught in the APEX training session. If there are any exceptions in this stage, the tenant can approach the support team for assistance.
+
+### Success Stories
+
+- MyInfo is a government service in which users only have to provide their personal data to the government once before they can tap on their government-verified data to pre-fill online forms for subsequent government and private sector digital services. Thus, making digital transactions to quicker and simpler. Currently, APEX has enabled over 220 government digital services and more than 2,400 commercial services to be linked to the MyInfo service. This helps citizens to access services more efficiently and quickly by retrieving their data from various government sources through one platform, eventually doing away with the need for physical documents as verifications to complete transactions. 
+- Ideas! is the government portal for crowdsourcing activities. It is where the government can reach out to and receive feedback and suggestions from the public through challenges or contests. Currently, Ideas! relies on APEX to securely exchange content such as public information, idea submissions, documents and other hosted materials, between the public-facing Internet portal and an administrative Intranet portal of the platform.
+
+### What's Next?
+
+We had a plan of upgrade the API gateway versioning in Quarter 1 of FY 22. There will be some feature enhancement such as simplify feature access, 2FA soft token and Organization level view.
+
+### Getting Started
+
+Administrative access to APEX is only available on the government intranet. Register for APEX through this [link](https://portal.apex.gov.sg/register) or email us at <enquiries_apex@tech.gov.sg>.
+
+### Contact Information
+
+You can email us at <enquiries_apex@tech.gov.sg>.
