@@ -26,18 +26,18 @@ _^CStack is a project endorsed as a building block of the Government "Zero Trust
 
 [![CStack_signup](/assets/img/CStack-signup.png)](https://go.gov.sg/cstack-signup)
 
-## HARNESSING CONTAINER AND KUBERNETES TECHNOLOGIES IN APPLICATION-BUILDING
+### HARNESSING CONTAINER AND KUBERNETES TECHNOLOGIES IN APPLICATION-BUILDING
 
 CStack uses Kubernetes, an open-source container orchestration engine. In large tech companies, containers and Kubernetes are considered the de-facto standard for building applications. They work hand-in-hand to tackle modern-day application development challenges. 
 
 ![CStack](/assets/img/CStack-CK.png)
 
-## WHAT CONTAINER TECHNOLOGY IS
+### WHAT CONTAINER TECHNOLOGY IS
 
 - Container technology **packs the underlying system configurations into a container** for applications to operate within, helping to address the “this-application-runs-on-my-machine-but-does-not-run-well-on-the-server” problem.
 - Containers can be likened to lightweight virtual machines (VMs). They **allow applications to be spun up or destroyed very quickly**. This is beneficial when dealing with larger engineering problems that involve scalability and resilience.
 
-## WHAT KUBERNETES IS
+### WHAT KUBERNETES IS
 
 - Kubernetes enables Agencies to manage numerous containers that make up an application. This provides resilience to the applications, central management of security, and distributes the application workload over a cluster of shared resources.
 - Kubernetes encourages stateless implementation for immutability. However, as not everything is stateless, Agencies should consider all relevant factors when dealing with states.
