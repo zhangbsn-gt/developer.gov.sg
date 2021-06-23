@@ -45,7 +45,7 @@ The key benefits of LifeSG are as shown below.
 - **Government Services that are Clear and Simple:** LifeSG connects you to the right services and information. It is the easiest way to keep up with your to-do list: schemes, benefits, applications, events and more.
 - **Set Up Your Account in Minutes:** Your profile can be set up instantly with Myinfo . Customise it to your liking to receive personalised information on what is interesting and important to you. Myinfo enables ease of filling up government forms as users only have to provide their personal data to the government once before they can tap on their government-verified data to pre-fill online forms for subsequent government and private sector digital services.
 
-### How Do You Use LifeSG
+### How do You Use LifeSG
 
 Users can connect with the government using following features in LifeSG.
 
