@@ -37,7 +37,7 @@ As of May 2019, there were some 170 affiliated government apps available. With L
 The key benefits of LifeSG are as shown below.
 - **Convenience at Your Fingertips:** It is no longer necessary to search multiple websites to get one thing done. LifeSG gives you convenient access to government services that are important to you – even when you are on the go.
 - **Government Services that are Clear and Simple:** LifeSG connects you to the right services and information. It is the easiest way to keep up with your to-do list: schemes, benefits, applications, events and more.
-- **•	Set Up Your Account in Minutes:** Your profile can be set up instantly with Myinfo . Customise it to your liking to receive personalised information on what is interesting and important to you. Myinfo enables ease of filling up government forms as users only have to provide their personal data to the government once before they can tap on their government-verified data to pre-fill online forms for subsequent government and private sector digital services.
+- **Set Up Your Account in Minutes:** Your profile can be set up instantly with Myinfo . Customise it to your liking to receive personalised information on what is interesting and important to you. Myinfo enables ease of filling up government forms as users only have to provide their personal data to the government once before they can tap on their government-verified data to pre-fill online forms for subsequent government and private sector digital services.
 
 ### How Do You Use LifeSG?
 Users can connect with the government using following features in LifeSG.
