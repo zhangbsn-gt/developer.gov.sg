@@ -34,7 +34,24 @@ The central administration dashboard of APEX serves as a monitoring tool for sys
 
 Other key features of APEX include its self-service model, provision of professional services, ability to support multi-tenanted Environments and modern RESTful and SOAP APIs.
 
+### Why Should APEX be Adopted?
 
+APEX serves over 100 million API calls in a month and supports around 2,400 API functions published by government agencies. Currently, 31 agencies have been onboarded alongside 44 projects. The key benefits of APEX are as shown below.
+
+- **Real-time management of data APIs and data consumption:** Government agencies can garner an overview of the popularity and usage of their shared datasets. This allows agencies to constantly improve their datasets according to popularity and demand. Less popular data sets can also be deprioritised to allow for more time and resources to be allocated to impactful datasets that will be more beneficial for inter-agency sharing and use.
+- **Safe and secure transfer of data between public-facing front-end (Internet) and back-end (Intranet) platforms:** APEX allows public information such as idea submissions, documents and other hosted materials to be securely exchanged between public-facing Internet portals and an administrative Intranet portal within a platform.
+- **Saves manpower hours:** When a government agency requires data from multiple agencies, APEX can facilitate the data sharing process more conveniently and quickly without the need to submit a request to and await approval from the data source agency. This is because APEX’s self-service model allows the requesting agency to pull data sets from various agencies directly due to pre-configured access controls set by the data source agency.
+- **Data Governance:** APEX provides a central point to manage, monitor and harden security for APIs. 
+- **Data Sharing:** An easy and reusable data exchange channel using data transformation. The automated workflow reduces the effort required for both the provider and the consumer, thus encouraging the creation of innovative digital services that will be published through an API catalogue.
+- **Rapid Development for Service Delivery:** Rapid development is possible without affecting the backend. Using the API catalogue, agencies can discover and reuse existing APIs that can be integrated into their existing technology stack. This reduces an agency’s development, integration and troubleshooting timespan, thereby speeding up service delivery.
+- **Co-creation:** Applications and backend can be developed together. 
+
+### How do You Use APEX?
+
+To begin using APEX, user have to identify their usage model as shown below.
+
+1. API Provider: The back-end resource provider that exposes or serves the respective function(s).
+2. API Consumer : The agencies that consumes the APIs.
 
 ## Get Started
 
