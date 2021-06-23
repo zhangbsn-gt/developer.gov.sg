@@ -21,4 +21,5 @@ and houses technical content aimed at helping technical specialists drive digita
 For interested individuals, Public Officers and vendors involved in digital transformation, we strongly encourage you to:
 
 [![visit the portal](/assets/img/DevPortal_visit.png)](https://www.developer.tech.gov.sg) Visit our [portal](https://www.developer.tech.gov.sg) for your digital transformation needs. 
-[![feedback portal](/assets/img/DevPortal_feedback.png)] Provide feedback by sharing what you would like to see featured on the portal and how existing resources can be enhanced. You can do so by emailing gds_developer_portal@tech.gov.sg or join the [Developer Portal telegram group](https://t.me/sgGovDeveloperPortal).
+
+![feedback portal](/assets/img/DevPortal_feedback.png) Provide feedback by sharing what you would like to see featured on the portal and how existing resources can be enhanced. You can do so by emailing gds_developer_portal@tech.gov.sg or join the [Developer Portal telegram group](https://t.me/sgGovDeveloperPortal).
