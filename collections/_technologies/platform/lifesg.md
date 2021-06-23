@@ -25,8 +25,8 @@ The app consolidates services and information across Government agencies, and pe
 To date, the app has been downloaded more than 290,000 times and facilitated a range of services such as the birth registration; an eligibility checker for more than 30 types of COVID-19 grants and assistance; as well as access to Merdeka or Pioneer Generation e-card and information on personalised benefits.
 
 <p align="center">
-<img src="/assets/img/lifesg-dashboard.png" alt="Fig 1: Overview of LifeSG’s dashboard which allows citizens to access digital government services" width="75%" height="75%"><br>
-Fig 1: Overview of LifeSG’s dashboard which allows citizens to access digital government services</p>
+<img src="/assets/img/lifesg-dashboard.png" alt="Fig 1: Overview of LifeSG’s dashboard which allows citizens to access digital government services" width="75%" height="75%"></p>
+<p align="center">Fig 1: Overview of LifeSG’s dashboard which allows citizens to access digital government services</p>
 
 ### Why Should LifeSG be Adopted?
 As of May 2019, there were some 170 affiliated government apps available. With LifeSG, an all-encompassing app, you now have a one-stop personalised access to more than 70 government services. On top of discovering government benefits through features like the Family Support Calculator, you can also use LifeSG to:
@@ -49,8 +49,8 @@ Users can connect with the government using following features in LifeSG.
 - **Integrated Services:** For selected, more complex transactions, LifeSG integrates multiple government touchpoints to provide a more seamless process. This includes the birth registration service, which enables new parents to also register for Baby Bonus, create a Child Development Account, and even sign up for a child library card, all at the same time. This has reduced the time spent on birth registration and Baby Bonus application from 60 minutes to just 15 minutes, and without having to show up at the registration counter in-person. Most newborns in Singapore are now registered through the app.
 
 <p align="center">
-<img src="/assets/img/lifesg-services.png" alt="Fig 2: LifeSG groups government services in terms of topics of interests">
-Fig 2: LifeSG groups government services in terms of topics of interests</p>
+<img src="/assets/img/lifesg-services.png" alt="Fig 2: LifeSG groups government services in terms of topics of interests"></p>
+<p align="center">Fig 2: LifeSG groups government services in terms of topics of interests</p>
 
 ### Success Stories
 - With LifeSG, Chien Koh Wei, a second-time dad, was able to swiftly register the birth of his second child and saved himself a trip to the Immigration and Checkpoints Authority (ICA) building. The app enabled Koh Wei to complete the birth registration process as well as apply for the baby bonus while staying by his wife’s side. When the time comes for Koh Wei to plan for his children’s future, he can also easily search and narrow down childcare centres and preschools with LifeSG.
