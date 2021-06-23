@@ -42,8 +42,8 @@ CStack uses Kubernetes, an open-source container orchestration engine. In large 
 - Kubernetes encourages stateless implementation for immutability. However, as not everything is stateless, Agencies should consider all relevant factors when dealing with states.
 
 Note:
-• Kubernetes clusters require a lot of effort to design, maintain and operate. There are many available solution providers and all major cloud providers have their own version of Kubernetes. This makes it challenging for Agencies who are new to this platform to build up their capabilities with such technologies.
-• Although Kubernetes is described as platform agnostic, service dependencies need to be considered, and Agencies must recognise that Kubernetes is not universal.
+- Kubernetes clusters require a lot of effort to design, maintain and operate. There are many available solution providers and all major cloud providers have their own version of Kubernetes. This makes it challenging for Agencies who are new to this platform to build up their capabilities with such technologies.
+- Although Kubernetes is described as platform agnostic, service dependencies need to be considered, and Agencies must recognise that Kubernetes is not universal.
 
 
 For enquiries, contact CStack at enquiries_cstack@tech.gov.sg.
