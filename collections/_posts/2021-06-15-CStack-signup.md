@@ -19,11 +19,11 @@ tags:
 
 ![CStack benefits](/assets/img/CStack-3benefits.png)
 
-*CStack is currently not generally available (GA) yet, but it is available for trial / pilots.
+#_*CStack is currently not generally available (GA) yet, but it is available for trial / pilots._
 
-^CStack is a project endorsed as a building block of the Government "Zero Trust" implementation approach.
+#_^CStack is a project endorsed as a building block of the Government "Zero Trust" implementation approach._
 
-<img align="left"src="/assets/img/CStack-signup.png">
+
 [![CStack_signup](/assets/img/CStack-signup.png)](https://go.gov.sg/cstack-signup)
 
 ### HARNESSING CONTAINER AND KUBERNETES TECHNOLOGIES IN APPLICATION-BUILDING
