@@ -36,6 +36,16 @@ CStack uses Kubernetes, an open-source container orchestration engine. In large 
 - Container technology **packs the underlying system configurations into a container** for applications to operate within, helping to address the “this-application-runs-on-my-machine-but-does-not-run-well-on-the-server” problem.
 - Containers can be likened to lightweight virtual machines (VMs). They **allow applications to be spun up or destroyed very quickly**. This is beneficial when dealing with larger engineering problems that involve scalability and resilience.
 
+### WHAT KUBERNETES IS
+
+- Kubernetes enables Agencies to manage numerous containers that make up an application. This provides resilience to the applications, central management of security, and distributes the application workload over a cluster of shared resources.
+- Kubernetes encourages stateless implementation for immutability. However, as not everything is stateless, Agencies should consider all relevant factors when dealing with states.
+
+Note:
+• Kubernetes clusters require a lot of effort to design, maintain and operate. There are many available solution providers and all major cloud providers have their own version of Kubernetes. This makes it challenging for Agencies who are new to this platform to build up their capabilities with such technologies.
+• Although Kubernetes is described as platform agnostic, service dependencies need to be considered, and Agencies must recognise that Kubernetes is not universal.
+
+
 For enquiries, contact CStack at enquiries_cstack@tech.gov.sg.
 
 For more information, visit the CStack website at https://go.gov.sg/cstack.
