@@ -19,9 +19,9 @@ tags:
 
 ![CStack benefits](/assets/img/CStack-3benefits.png)
 
-### _*CStack is currently not generally available (GA) yet, but it is available for trial / pilots._
+_*CStack is currently not generally available (GA) yet, but it is available for trial / pilots._
 
-### _^CStack is a project endorsed as a building block of the Government "Zero Trust" implementation approach._
+_^CStack is a project endorsed as a building block of the Government "Zero Trust" implementation approach._
 
 
 [![CStack_signup](/assets/img/CStack-signup.png)](https://go.gov.sg/cstack-signup)
