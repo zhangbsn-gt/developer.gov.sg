@@ -95,3 +95,10 @@
     - Sensors.gov.sg
     - SPOT
     - SPOTON
+
+- name: Platform
+  description: List of products
+  items:
+    - Overview
+    - LifeSG
+    - GatherSG
