@@ -108,7 +108,7 @@ Tenants can start to create APIs that would be taught in the APEX training sessi
 
 ### What's Next?
 
-We had a plan of upgrade the API gateway versioning in Quarter 1 of FY 22. There will be some feature enhancement such as simplify feature access, 2FA soft token and Organization level view.
+A later version of APEX 2.0 running on containers is planned in Q1 FY22, which will come with a slew of features enhancement such as 2FA soft token.
 
 ### Getting Started
 
