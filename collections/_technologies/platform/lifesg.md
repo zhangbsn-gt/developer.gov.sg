@@ -7,15 +7,7 @@ description: LifeSG, an app that offers users simpler access to digital governme
 
 ### Overview
 
-The Smart Nation initiative aims to make Singapore citizens lives more convenient and the economy more productive, through more efficient government and business process. To ensure that Singapore does not fall behind in emerging areas, the government is taking a more integrated approach to lay the foundation infrastructure and drive increased adoption of digital and smart technologies throughout the economy and society.
-
-As such, the following projects have been identified as Strategic National Projects, which are key enablers in Singapore Smart Nation drive.
-
-1. Nation Digital Identity Framework
-2. e-Payments drive
-3. Smart Nation Sensor Platform
-4. Smart Urban Mobility
-5. LifeSG (previously Moments of Life)
+LifeSG is a one-stop resource hub for over 70 government services. It consolidates and simplifies access to government services and fulfils the vision of allowing citizens to spend less time browsing multiple websites or apps so that our users can focus more on the things that matter. This transforms citizen interactions with the government and promises a citizen-centric experience that is focused on helping users easily navigate across government services, by personalising their experience, anticipating their needs and providing meaningful solutions.
 
 ### What is LifeSG?
 
