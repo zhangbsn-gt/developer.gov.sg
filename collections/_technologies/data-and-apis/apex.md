@@ -8,16 +8,16 @@ description: GovTech’s APEX platform enables Singapore’s public sector to sh
 
 ### Overview
 
-Singapore’s Smart Nation vision places an emphasis on digital innovation as a driver of economic progress. Following this, the public sector has consistently driven growth in digital technologies in order to better serve our citizens. Data being a central pillar of digital technologies and transformation, has since increased in importance as it helps to inform policy changes and reviews, decision making, and facilitate the development of citizen-centric digital products and services.
-
-The increasing role of data driven decision making has in turn increased the need for a centralised and secure data sharing platform for the government. Thus, leading to the development of GovTech’s APEX, a self-service API platform that acts as a centralised and secure API gateway for the government. On APEX, users can easily publish, monitor, and discover APIs across government agencies securely.
+APEX is a self-service API platform that acts as a centralised and secure API gateway for the government. Through APEX, users can easily publish, monitor, and
+discover APIs across government agencies securely. The increasing role of data driven decision making has increased the need for a centralised and secure data 
+sharing platform for the government through APEX.
 
 ### What is APEX?
 
 APEX can be thought of as a centralised data sharing platform within the government. It enables convenient and secure data sharing through the use of APIs which contain coded rules that manages who has access to the data and how data gets transferred.
 
-<p align="center"><img src="/assets/img/apex_api_catalogue.png" alt="Fig 1: APEX’s API Library allows inter-agency knowledge sharing."></p>
-<p align="center">Fig 1: APEX’s API Library allows inter-agency knowledge sharing.</p>
+<p align="center"><img src="/assets/img/apex_api_catalogue.png" alt="Fig 1: APEX’s API Library allows inter-agency sharing of use case."></p>
+<p align="center">Fig 1: APEX’s API Library allows inter-agency sharing of use case.</p>
 
 In addition to secure data sharing, APEX’s API catalogue provides government agencies with a searchable library of government APIs. This promotes knowledge sharing within the government, while reducing digital silos and the duplication of efforts.
 
