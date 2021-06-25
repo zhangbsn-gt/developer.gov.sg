@@ -322,7 +322,7 @@
     Board
   title: 'The UX Journey of CPF Digital Service '
   video_id: 'rUSXyCKxMUM'
-  article_link: 'the-ux-journey-of-cpf-digital-service.md'
+  article_link: 'the-ux-journey-of-cpf-digital-service'
 - type: Tech Culture - Talk
   speakers: 'Sean Jalleh, Barbara Natali-Sherman'
   speakers_title: 'Principal Designer, DesignMap| Director of Design, DesignMap'
@@ -392,7 +392,7 @@
   speakers_title: 'Senior Systems Analyst, Housing & Development Board'
   title: 'Participatory Design of Community Spaces using Virtual Reality '
   video_id: 'mmiMfYL-rNk'
-  article_link: 'participatory-design-of-community-spaces-using-vr.md'
+  article_link: 'participatory-design-of-community-spaces-using-vr'
   slide_link: >-
     LeeChenTong_ParticipatoryDesignOfCommunitySpacesUsingVirtualReality_Slides.pdf
 - type: Tech Culture - VOD
@@ -439,7 +439,7 @@
   speakers_title: 'Director, Communicable Diseases Division, Ministry of Health'
   title: 'Digital Solutions in the COVID-19 Response: The Singapore Experience '
   video_id: 'h-qz6KEteH0'
-  article_link: digital-solutions-in-the-covid-19-response-singapore.md
+  article_link: 'digital-solutions-in-the-covid-19-response-singapore'
 - type: COVID-19 Tech - Talk
   speakers: Joycelyn Chua
   speakers_title: 'UX Designer, Government Digital Services, GovTech'
