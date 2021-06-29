@@ -27,7 +27,7 @@ This provides an end to end toolbox for users to maintain government digital ser
 Implementing WOGAA is simple as users just need to integrate two lines of JavaScript code and they are good to go.
 
 <p align="center">
-<img src="fig1.png" alt="Fig 1: WOGAA’s Four Key Features"></p>
+<img src="/assets/img/wogaa-features.PNG" width="75%" height="75%" alt="Fig 1: WOGAA’s Four Key Features"></p>
 <p align="center">Fig 1: WOGAA’s Four Key Features</p>
 
 The four key features of WOGAA are as shown below.
@@ -44,13 +44,13 @@ Key metrics such as the total number of visitors, average time spent by visitors
 audience preferences and behaviours.
 - **WOGAA Sentiments:** This feature allows users to collect user feedback and ratings on their websites and digital services through a customisable widget. This qualitative voice-of-the-customer feedback complements the quantitative data users have, providing a more holistic view of the health of their services. This feature is also powered with analytics which provides additional parameters such as platform, device, country, and other related audience metrics for more advanced Sentiments analysis. For more information on Sentiments, you can visit this [link](https://www.tech.gov.sg/media/technews/your-sentiments-matter-in-the-design-of-government-digital-services). 
 
-<p align="center"><img src="fig2.png" alt="Fig 2: WOGAA’s Sentiments Widget on GovTech Website"></p>
+<p align="center"><img src="/assets/img/wogaa-widget.PNG" width="75%" height="75%" alt="Fig 2: WOGAA’s Sentiments Widget on GovTech Website"></p>
 <p align="center">Fig 2: WOGAA’s Sentiments Widget on GovTech Website</p>
 
-<p align="center"><img src="fig3.png" alt="Fig 3: WOGAA’s Sentiments Rating Scale on GovTech website"></p>
+<p align="center"><img src="/assets/img/wogaa-ratingscale.PNG" alt="Fig 3: WOGAA’s Sentiments Rating Scale on GovTech website"></p>
 <p align="center">Fig 3: WOGAA’s Sentiments Rating Scale on GovTech website</p>
 
-<p align="center"><img src="fig4.png" alt="Fig 4: WOGAA’s Sentiments Questions on GovTech Website"></p>
+<p align="center"><img src="/assets/img/wogaa-questions.PNG" alt="Fig 4: WOGAA’s Sentiments Questions on GovTech Website"></p>
 <p align="center">Fig 4: WOGAA’s Sentiments Questions on GovTech Website</p>
 
 ### Why should WOGAA be Adopted?
