@@ -19,9 +19,8 @@ This is a multi-tenanted Software-as-a-Service (SaaS) hosted on Government Comme
 
 ## Tools in SHIP-HATS 
 
----
 
----
+
 |     category  |                  Tools                     |
 |     --------  | ------------------------------------------ |
 |  Development  |        Jira, Confluence, Bitbucket         |
@@ -31,20 +30,21 @@ This is a multi-tenanted Software-as-a-Service (SaaS) hosted on Government Comme
 
 
  
-Check out : Training 01: Basics to know more about CI/CD and the tools available within SHIP-HATS 
+Check out : **Training: Tools on SHIP-HATS** to know more about the tools available within SHIP-HATS. 
 ## Subscribing to SHIP-HATS 
-Interested to get started? Checkout the Subscription FAQs and email us at enquiries_ENP@tech.gov.sg with the details of the primary contact 
+Interested to get started? Check out how to start a trial. 
 
+### Roadmap
 
-Next: 
-Training 01: Basics 
-
-Relevant Links: 
-Technical Documentation 
-Subscription FAQs  
-Executive Insights  
- 
+---
+|          Next:       |                  Relevant links                    |
+|       --------       | -------------------------------------------------- |
+|   Training Resources |                       Whats New                    |
+|                      |                Subscription FAQs                   |
+|                      |                  Executive Insights                |
 Got feedback on SHIP-HATS? Submit your feedback in SHIP-HATS Enquiry and we respond within 5 business days. 
+
+
  
 
  
