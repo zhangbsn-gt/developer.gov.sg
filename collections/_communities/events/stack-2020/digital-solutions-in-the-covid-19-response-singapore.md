@@ -7,7 +7,7 @@ description: Containing the spread of COVID-19 with digital solutions.
 
 ### Overview
 “Every second or every minute of delay means an additional second or additional minute where the virus can transmit to someone else,” 
-said Associate Professor Vernon Lee, Director at the Ministry of Health, at the STACK2020 Conference. He stressed the importance of utilising digital 
+said Associate Professor Vernon Lee, Director at the Ministry of Health, at the STACK 2020 Conference. He stressed the importance of utilising digital 
 solutions to contain the spread of COVID-19 in Singapore.
 
 Singapore’s COVID-19 strategy was premised on four different building blocks; prevention, detection, care and containment. Digital tools were implemented 
