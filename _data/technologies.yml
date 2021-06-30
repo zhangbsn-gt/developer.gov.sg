@@ -9,13 +9,11 @@
     - HealthCerts
     - SafeEntry
     - Space Out
-    - SPOT
     - SPOTON
     - SupplyAlly
     - TraceTogether
     - VigilantGantry
-
-
+    
 - name: Open-source
   description: Government-built open-source technologies and tools
 
@@ -89,11 +87,9 @@
     - Lamppost-as-a-Platform
     - Personal Alert Button
     - SIOT Tech Stack
-    - Sensesurround
     - SenseOps
     - Sensor Asset Management
     - Sensors.gov.sg
-    - SPOT
     - SPOTON
 
 - name: Platform
