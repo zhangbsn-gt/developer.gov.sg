@@ -46,10 +46,10 @@ audience preferences and behaviours.
 
 <p align="center"><img src="/assets/img/wogaa-widget.jpg" width="30%" height="30%" alt="Fig 2: WOGAA’s Sentiments Widget on GovTech Website"></p>
 <p align="center">Fig 2: WOGAA’s Sentiments Widget on GovTech Website</p>
-
+<br>
 <p align="center"><img src="/assets/img/wogaa-ratingscale.jpg" width="30%" height="30%" alt="Fig 3: WOGAA’s Sentiments Rating Scale on GovTech website"></p>
 <p align="center">Fig 3: WOGAA’s Sentiments Rating Scale on GovTech website</p>
-
+<br>
 <p align="center"><img src="/assets/img/wogaa-questions.png" width="60%" height="60%" alt="Fig 4: WOGAA’s Sentiments Questions on GovTech Website"></p>
 <p align="center">Fig 4: WOGAA’s Sentiments Questions on GovTech Website</p>
 
