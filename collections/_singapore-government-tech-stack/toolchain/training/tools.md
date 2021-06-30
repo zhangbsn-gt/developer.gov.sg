@@ -1,6 +1,6 @@
 # Tools in SHIP-HATS 
  
-**COTS (Commercially Off the Shelf)** tools are available on SHIP-HATS with right security and compliance settings. Here are curated links to documentation and tutorials to first learn the tools offered under SHIP-HATS. Note this is not specific to SHIP-HATS but a pre-cursor so you can use these tools within SHIP-HATS effectively.  
+**COTS (Commercially Off the Shelf)** tools are available on SHIP-HATS with right security and compliance settings. Here are curated links to documentation and tutorials to first learn the tools offered under **SHIP-HATS**. Note this is not specific to SHIP-HATS but a pre-cursor so you can use these tools within SHIP-HATS effectively.  
 
 ### Development tools 
 
