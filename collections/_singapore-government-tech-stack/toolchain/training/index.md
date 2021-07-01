@@ -10,13 +10,13 @@
 
 |Developers | Project Managers, Business Analysts|
 |---------- | ------------------|
-| <ul><li><a href="https://www.youtube.com/watch?v=yiD4--KSdTI">SHIP-HATS Architectural Approach Roadmap</a></li><li>Roadmap</li><li><a href="https://www.youtube.com/watch?v=SVomPCqKGM4">Security Testing 101</a></li><li><a href="https://www.youtube.com/watch?v=DMMhqLKHLx0">Continuous Delivery</a></li></ul> | <ul><li>Understanding Subscription</li><li>Procurement Templates (For Public Officers)</li><li>Request trial (for Public Officers)</li></ul> |
+| <ul><li><a href="https://www.youtube.com/watch?v=yiD4--KSdTI">SHIP-HATS Architectural Approach Roadmap</a></li><li><a href= "/overview">Roadmap</a></li><li><a href="https://www.youtube.com/watch?v=SVomPCqKGM4">Security Testing 101</a></li><li><a href="https://www.youtube.com/watch?v=DMMhqLKHLx0">Continuous Delivery</a></li></ul> | <ul><li><a href="/subscriptions">Understanding Subscription</a></li><li>Procurement Templates (For Public Officers)</li><li>Request trial (for Public Officers)</li></ul> |
  
 **Coming soon!: Getting Started, Best Practices, Support & Troubleshooting **
 
  
  
-| Next:<ul><li>DevOps Concepts </li></ul> | Relevant Links: <ul><li>What’s New </li><li>Subscription FAQs</li><li>Tools in SHIP-HATS </li></ul>
+| Next:<ul><li><a href="/training/training-concepts">DevOps Concepts</a> </li></ul> | Relevant Links: <ul><li><a href="/whats-new">What’s New</a></li><li><a href="/subscriptions">Subscription FAQs</a></li><li><a href="/training/tools">Tools in SHIP-HATS</a></li></ul>
 |------|----|
 
 Got feedback on SHIP-HATS? Submit your feedback in [SHIP-HATS Enquiry](https://www.developer.tech.gov.sg/singapore-government-tech-stack/toolchain/ship-hats-enquiries) and we respond within 5 business days. 
