@@ -42,7 +42,7 @@ of improvement. This gives users immediate next steps to readily improve the usa
 This gives users the option of assessing digital service performances across WOG or viewing a specific agency's performance for more granular data analysis. 
 Key metrics such as the total number of visitors, average time spent by visitors, trending pages etc are displayed to provide a deeper understanding of 
 audience preferences and behaviours.
-- **WOGAA Sentiments:** This feature allows users to collect user feedback and ratings on their websites and digital services through a customisable widget. This qualitative voice-of-the-customer feedback complements the quantitative data users have, providing a more holistic view of the health of their services. This feature is also powered with analytics which provides additional parameters such as platform, device, country, and other related audience metrics for more advanced Sentiments analysis. For more information on Sentiments, you can visit this [link](https://www.tech.gov.sg/media/technews/your-sentiments-matter-in-the-design-of-government-digital-services). 
+- **WOGAA Sentiments:** This feature allows users to collect user feedback and ratings on their websites and digital services through a customisable widget. This qualitative voice-of-the-customer feedback complements the quantitative data users have, providing a more holistic view of the health of their services. This feature is also powered with analytics which provides additional parameters such as platform, device, country, and other related audience metrics for more advanced Sentiments analysis. For more information on Sentiments, you can visit this [link](https://www.tech.gov.sg/media/technews/your-sentiments-matter-in-the-design-of-government-digital-services){:target="_blank"}. 
 
 <p align="center"><img src="/assets/img/wogaa-widget.jpg" width="30%" height="30%" alt="Fig 2: WOGAA’s Sentiments Widget on GovTech Website"></p>
 <p align="center">Fig 2: WOGAA’s Sentiments Widget on GovTech Website</p>
@@ -81,8 +81,8 @@ In 2021, the WOGAA team combined policy and tech for digital services improvemen
 
 ### Getting Started
 
-WOGAA is only available for Singapore public officers with a government-issued email. Register for your account through this [link](https://go.gov.sg/wogaadp).
+WOGAA is only available for Singapore public officers with a government-issued email. Register for your account through this [link](https://go.gov.sg/wogaadp){:target="_blank"}.
 
 ### Contact Information
 
-Once you have created a WOGAA account, you may access WOGAA and reach out to the WOGAA team through the "Contact us" form from the WOGAA platform.
+For enquiries on WOGAA, email [info@tech.gov.sg](info@tech.gov.sg){:target="_blank"}.
