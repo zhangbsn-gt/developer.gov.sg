@@ -14,7 +14,7 @@ Agencies that offer services which require pre-booking can use BookingSG to perf
 ### Features
 ![How to Use](/assets/img/BookingSG-HowtoUse.png)
 
-BookingSG’s fluid integration principles offer the highest form of flexibility, and it can cater for any degree of journey experience for various use cases. BookingSG adopts one of the most popular cloud computing models -- ‘Software-as-a-Service’ (Saas). The SaaS model of software delivery is easy to access and it has become common for many types of business applications. The SaaS model can help MVP launches get their businesses running for a start, while we work with agencies on their product evolution journey.
+BookingSG’s fluid integration principles offer the highest form of flexibility, and it can cater for any degree of journey experience for various use cases. BookingSG adopts one of the most popular cloud computing models -- ‘Software-as-a-Service’ (Saas). The SaaS model of software delivery is easy to access and it has become common for many types of business applications. The SaaS model can help agencies with their MVP launch, while continuously iterating with agencies on their product evolution journey.
 
 We can leverage on BookingSG’s various service options to help improve user journeys.
 
