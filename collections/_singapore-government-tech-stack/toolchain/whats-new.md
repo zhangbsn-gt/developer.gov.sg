@@ -5,8 +5,7 @@ Need a documentation that you can’t find here? [Submit a ticket](https://www.d
  
  Date of update | What’s New? | Coming Soon 
  -------------- |  ---------  | ------------
-|   July 1st    | Subscription FAQs [For PM, BA]  | All user roles & permissions [All]
-|               | Training Resources [ For PM, BA, DevOps Newbies]|
+|   July 1st    | <ul><li>Subscription FAQs [For PM, BA]</li><li>Training Resources [ For PM, BA, DevOps Newbies]</ul>| User roles & permissions[All]
                 
 
  
@@ -16,7 +15,7 @@ Need a documentation that you can’t find here? [Submit a ticket](https://www.d
  
 Next: | Relevant Links: 
 ----- | ---------------
-[Subscriptions FAQ](subscriptions.md) |  Technical Documentation 
+[Subscriptions FAQ](subscriptions) |  Technical Documentation 
  
 Got feedback on SHIP-HATS? Submit your feedback in [SHIP-HATS Enquiry](https://www.developer.tech.gov.sg/singapore-government-tech-stack/toolchain/ship-hats-enquiries) and we respond within 5 business days. 
  
