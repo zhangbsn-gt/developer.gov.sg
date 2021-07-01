@@ -31,7 +31,10 @@ Learn importance of velocity of delivery, when and how of automated testing, ops
 *3 days | Developers, Project Managers with an experience of at least one software development cycle 
 
  
-Got feedback on SHIP-HATS? Submit your feedback in SHIP-HATS Enquiry and we respond within 5 business days. 
  
+| Next:<ul><li><a href="/training/tools">Tools in SHIP-HATS</a> </li></ul> | Relevant Links: <ul><li><a href="/whats-new">What’s New</a></li><li><a href="/subscriptions">Subscription FAQs</a></li><li><a href="/training/index">Training Resources</a></li></ul>
+|------|----|
 
+Got feedback on SHIP-HATS? Submit your feedback in [SHIP-HATS Enquiry](https://www.developer.tech.gov.sg/singapore-government-tech-stack/toolchain/ship-hats-enquiries) and we respond within 5 business days. 
+ 
  
