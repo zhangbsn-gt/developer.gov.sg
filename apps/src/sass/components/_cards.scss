@@ -11,6 +11,22 @@
   }
 }
 
+.sgds-card-footer {
+  border-top: 0;
+  padding-top:0;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+.sgds-card-footer-item {
+  padding-top: 0;
+  padding-bottom: 1rem;
+  .swiper-card & {
+    justify-content: left;
+    padding-left: 1.5rem;
+  }
+}
+
 // if card-content is the first child, remove border-top
 .sgds-card{
   > .sgds-card-content:first-child{
