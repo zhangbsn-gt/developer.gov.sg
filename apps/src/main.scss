@@ -182,6 +182,11 @@ a.external-link::after {
   }
 }
 
+@media screen and (min-width: 1023px) {
+  .small-viewport-social-media-buttons {
+    display: none;
+  }
+}
 .bp-button{
   border-color: transparent;
   background-color: transparent;
@@ -192,7 +197,7 @@ a.external-link::after {
   color:#0076d6
 }
 
-.float-buttons{
+.floating-social-media-buttons{
   position: fixed;
   top: 40px;
   width: 85px;

@@ -20,14 +20,11 @@ $(function () {
   let floater = $("#floater");
   let offsetTop = floaterContainer.offset().top;
   window.onscroll = function () {
-    // console.log(floaterContainer.offset());
-    floater.addClass("float-buttons");
-    // console.log(`innerheight ${window.innerHeight}`);
-    // console.log(`page y offset ${window.pageYOffset}`);
+    floater.addClass("floating-social-media-buttons");
     
     if (window.pageYOffset < offsetTop) {
       console.log("here");
-      floater.removeClass("float-buttons");
+      floater.removeClass("floating-social-media-buttons");
     }
   };
 });
