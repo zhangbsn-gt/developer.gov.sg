@@ -10,23 +10,14 @@ layout: layout-page
       </ul>
     </aside>
   </div>
-  <div class="col is-9 is-12-touch">
+  <div class="col is-8 is-12-touch">
     {{ content }}
-    <span> {% include social-media.html %}</span>
     <p>
       <em>
         Last updated {{ page.last_modified_at | date: '%d %B %Y' }}
       </em>
-      
+
     </p>
   </div>
+  {% include social-media.html %}
 </div>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/fontawesome.min.css"
-    integrity="sha512-9NyfC2Lx+faLve4B168pWgTEHH3T50NBfVLF1aldvQxvwxjYdNNu7HQQKOehQW6r5v1r9QWDUe1BSFQPMbB5fw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/brands.min.css"
-    integrity="sha512-LrBiPZ3DqJbvWrRvdLOkbgPAPCpwwK7aMoNKrnyhvpfAvUT3g53O7cdvW0up2aIuAjad0BS9mEiUQMnCz9b6EQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />

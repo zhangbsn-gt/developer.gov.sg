@@ -182,5 +182,18 @@ a.external-link::after {
   }
 }
 
-  
-  
+.bp-button{
+  border-color: transparent;
+  background-color: transparent;
+  cursor: pointer;
+  margin-bottom: 1em;
+}
+.bp-button:hover{
+  color:#0076d6
+}
+
+.float-buttons{
+  position: fixed;
+  top: 40px;
+  width: 85px;
+}
