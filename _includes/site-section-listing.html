@@ -7,7 +7,7 @@
   {% for category in site.data[include.sectionName] %}
     <a href="{{ category.name | slugify }}" class="grid-item">
       {% assign item_count = category.items | size | minus: 1 %}
-      <div class="sgds-card variant-category-info">
+      <div class="sgds-card card-variant-category-info">
         <div class="sgds-card-content">
           {% assign name = category.name | downcase | replace:" ","-" %}
           <img src="/assets/img/{{page.title | downcase}}/{{name}}.svg" alt="">

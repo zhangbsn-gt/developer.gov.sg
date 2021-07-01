@@ -11,7 +11,7 @@
     {% assign document_sub_collection = document.id | split: "/" | shift | shift | first %}
     {% if document_sub_collection == sub_collection and page.title != document.title %}
     <a href="{{ document.url }}" class="grid-item">
-      <div class="sgds-card variant-category-info">
+      <div class="sgds-card card-variant-category-info">
         <div class="sgds-card-content">
           <header>
             <h4>{{ document.title }}</h4>
