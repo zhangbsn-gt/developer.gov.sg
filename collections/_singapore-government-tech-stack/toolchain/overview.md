@@ -2,7 +2,7 @@
 
 # What is SHIP-HATS? 
 
-**SHIP (Secure Hybrid Integration Pipeline)-HATS (Hive Agile Testing Solutions)** is the Continuous integration/continuous delivery [CI/CD](https://en.wikipedia.org/wiki/CI/CD) component within SG Tech Stack (SGTS) with security and governance guardrails that enables developers to plan, build, test and deploy code to production.  
+**SHIP (Secure Hybrid Integration Pipeline)-HATS (Hive Agile Testing Solutions)** is the Continuous Integration/Continuous Delivery [CI/CD](https://en.wikipedia.org/wiki/CI/CD) component within SG Tech Stack (SGTS) with security and governance guardrails that enables developers to plan, build, test and deploy code to production.  
 
 This is a multi-tenanted Software-as-a-Service (SaaS) hosted on Government Commercial Cloud(GCC) for all applications that is classified as restricted and below. 
 
@@ -37,12 +37,10 @@ Interested to get started? Check out how to start a trial.
 ### Roadmap
 <img width="526" alt="ship hats roadmap" src="https://user-images.githubusercontent.com/85614716/123921126-44b7b780-d9b9-11eb-9daf-61b3c587fc21.png">
 
----
-|          Next:       |                  Relevant links                    |
+
+|          Next:       |                  Relevant links:<ul><li><a href="/training/index">Training Resources</a></li><li><a href="/subscriptions">Subscriptions FAQ</a></li><li>Executive insights</li></ul>|
 |       --------       | -------------------------------------------------- |
-|   [Training Resources](training-resources)|                     [What's New](whats-new)                      |
-|                      |                  [Subscription FAQs](subscriptions)                 |
-|                      |                 Executive Insights                 |
+            
 
 
 Got feedback on SHIP-HATS? Submit your feedback in [SHIP-HATS Enquiry](https://www.developer.tech.gov.sg/singapore-government-tech-stack/toolchain/ship-hats-enquiries) and we will respond within 5 business days. 
