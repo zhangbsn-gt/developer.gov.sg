@@ -5,28 +5,26 @@
 {% endif %}
 <div class="card-grid-container technologies">
   {% for category in site.data[include.sectionName] %}
-    <a href="{{ category.name | slugify }}" class="grid-item">
-      {% assign item_count = category.items | size | minus: 1 %}
-      <div class="sgds-card card-variant-category-info">
-        <div class="sgds-card-content">
-          {% assign name = category.name | downcase | replace:" ","-" %}
-          <img src="/assets/img/{{page.title | downcase}}/{{name}}.svg" alt="">
-          <header>
-            <h4>{{ category.name }}</h4>
-            {% if item_count > 0 and disabledItemCount == false %}
-              <small>
-                  ({{ item_count }}&nbsp;
-                  {%- if item_count == 1 -%}
-                    item
-                  {%- elsif item_count > 1 -%}
-                    items
-                  {%- endif -%})
-              </small>
-            {% endif %}
-          </header>
-          <p>{{ category.description }}</p>
-        </div>
+    {% assign item_count = category.items | size | minus: 1 %}
+    <div class="sgds-card card-variant-category-info">
+      <div class="sgds-card-content">
+        {% assign name = category.name | downcase | replace:" ","-" %}
+        <img src="/assets/img/{{page.title | downcase}}/{{name}}.svg" alt="">
+        <header>
+          <a href="{{ category.name | slugify }}"><h4>{{ category.name }}</h4></a>
+          {% if item_count > 0 and disabledItemCount == false %}
+            <small>
+                ({{ item_count }}&nbsp;
+                {%- if item_count == 1 -%}
+                  item
+                {%- elsif item_count > 1 -%}
+                  items
+                {%- endif -%})
+            </small>
+          {% endif %}
+        </header>
+        <p>{{ category.description }}</p>
       </div>
-    </a>
+    </div>
   {% endfor %}
 </div>

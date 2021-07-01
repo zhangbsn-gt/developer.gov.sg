@@ -66,9 +66,11 @@
     transform: translateY(0);
   }
 }
+
 //dev portal variants - use for products and services
 .sgds-card{
   &.card-variant-category-info{
+    height: 100%;
     img{
       margin-left: 0;
     }
