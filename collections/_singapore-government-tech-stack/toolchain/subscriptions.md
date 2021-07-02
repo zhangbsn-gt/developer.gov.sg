@@ -17,8 +17,7 @@ The table below summarises the resources and services allotted for each tier and
 <p align="center"><img src="https://user-images.githubusercontent.com/85614716/124046838-6d858e80-da45-11eb-8e48-b4bbd4a299df.png" alt="Fig 1: SHIP-HATS resources and services"></p>
 <p align="center">Fig 1: SHIP-HATS resources and services</p>
 
-Public officers can visit the [intranet website for pricing](https://sgdcs.sgnet.gov.sg/sites/IDA-GoSync/gdspdd-ai/ship/_layouts/15/start.aspx#/SitePages/Pricing.aspx)
-{:target="_blank"}. For further queries on pricing, please drop us an email at <enquiries_ENP@tech.gov.sg>.  
+Public officers can visit the [intranet website for pricing](https://sgdcs.sgnet.gov.sg/sites/IDA-GoSync/gdspdd-ai/ship/_layouts/15/start.aspx#/SitePages/Pricing.aspx){:target="_blank"}. For further queries on pricing, please drop us an email at <enquiries_ENP@tech.gov.sg>.  
     
 ### Frequently Asked Questions
 
