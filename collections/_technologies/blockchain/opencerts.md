@@ -2,7 +2,6 @@
 title: OpenCerts
 layout: layout-page-sidenav
 category: Blockchain
-sharable: true
 description: OpenCerts is an open-source platform which education institutions can adopt for issuing certificates.
 ---
 

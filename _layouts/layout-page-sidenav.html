@@ -10,7 +10,7 @@ layout: layout-page
       </ul>
     </aside>
   </div>
-  {% if page.sharable == true %}
+  {% if page.sharable == true or page.sharable == nil  %}
   <div class="col is-8 is-12-touch">
     {{ content }}
     <div class="small-viewport-social-media-buttons">
@@ -33,7 +33,7 @@ layout: layout-page
   </div>
   {% endif %}
 
-  {% if page.sharable == true %}
+  {% if page.sharable == true or page.sharable == nil %}
   {% include social-media.html display="wide" %}
   {% endif %}
 </div>

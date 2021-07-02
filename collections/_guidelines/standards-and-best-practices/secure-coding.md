@@ -2,7 +2,6 @@
 title: Secure Coding 
 layout: layout-page-sidenav
 category: Standards and Best Practices 
-sharable: true
 description: > 
   This page will introduce secure coding, highlight best practices, discuss security aspects of popular frameworks and finally, share some resources that developers can use to improve their secure coding skills.
 --- 

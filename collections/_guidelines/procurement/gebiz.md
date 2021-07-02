@@ -1,7 +1,6 @@
 ---
 title: GeBIZ
 layout: layout-page-sidenav
-sharable: true
 description: GeBIZ is the Singapore Government's one-stop e-procurement portal for any supplier to access the public sector business opportunities.
 ---
 

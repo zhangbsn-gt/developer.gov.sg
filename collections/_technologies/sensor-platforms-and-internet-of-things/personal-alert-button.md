@@ -2,7 +2,6 @@
 title: Personal Alert Button (PAB) on Government Assisted Living Ecosystem (GALE)
 layout: layout-page-sidenav
 category: Sensors and IOT
-sharable: true
 description: PAB is an alert device for seniors in distress to reach out to senior activity centres or senior telecare call centres for help.
 ---
 

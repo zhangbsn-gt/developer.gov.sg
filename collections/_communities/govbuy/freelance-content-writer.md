@@ -1,7 +1,6 @@
 ---
 title: Freelance Content Writer
 layout: layout-page-sidenav
-sharable: true
 ---
 
 {% assign jobDetails = site.data.gigs | where: "title", page.title | first %}

@@ -1,7 +1,6 @@
 ---
 title: Go.gov.sg
 layout: layout-page-sidenav
-sharable: true
 short_description: >
   An official link shortener that adds legitimacy to content shared by government officials.
 ---

@@ -1,7 +1,6 @@
 ---
 title: Homer
 layout: layout-page-sidenav
-sharable: true
 short_description: >
   A location reporting system for those on stay home notice or home quarantine.
 ---

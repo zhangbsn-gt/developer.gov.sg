@@ -1,7 +1,6 @@
 ---
 title: VICA (Virtual Intelligent Citizen Assistant)
 layout: layout-page-sidenav
-sharable: true
 short_description: >
   VICA is GovTech's next-generation Chatbot/Virtual Assistant/Conversation AI platform.
 ---

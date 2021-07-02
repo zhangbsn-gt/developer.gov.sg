@@ -1,7 +1,6 @@
 ---
 title: Managed Services
 layout: layout-page-sidenav
-sharable: true
 description: Improve efficiency and reduce the costs of your business by offloading complex operations to a dedicated service provider.
 ---
 

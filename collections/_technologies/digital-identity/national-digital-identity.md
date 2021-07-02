@@ -1,7 +1,6 @@
 ---
 title: National Digital Identity
 layout: layout-page-sidenav
-sharable: true
 description: >
   National Digital Identity
   allows citizens to conduct transactions with both the public and private sectors 

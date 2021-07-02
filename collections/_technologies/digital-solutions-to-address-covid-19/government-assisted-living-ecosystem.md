@@ -2,7 +2,6 @@
 title: GALE - An ecosystem built to support the assisted living infrastructure in Singapore
 layout: layout-page-sidenav
 category: Digital Solutions to Address COVID-19
-sharable: true
 description: Find out how the Government Assisted Living Ecosystem (GALE) supports seniors, rental tenants and lower income families amidst the COVID-19 pandemic.
 ---
 

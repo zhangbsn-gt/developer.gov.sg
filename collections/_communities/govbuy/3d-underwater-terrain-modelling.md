@@ -1,7 +1,6 @@
 ---
 title: 3D Underwater Terrain Modelling
 layout: layout-page-sidenav
-sharable: true
 ---
 
 {% assign jobDetails = site.data.gigs | where: "title", page.title | first %}

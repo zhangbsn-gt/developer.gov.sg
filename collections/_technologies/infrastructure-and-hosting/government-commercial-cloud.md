@@ -3,7 +3,6 @@ title: Government Commercial Cloud
 layout: layout-page-sidenav
 category: Hosting
 redirect_from: /singapore-government-tech-stack/government-commercial-cloud
-sharable: true
 description: >
   The Government Commercial Cloud Service brings the modern innovations and 
   capabilities of commercial cloud computing platforms to Government systems.

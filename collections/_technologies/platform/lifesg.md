@@ -2,7 +2,6 @@
 title: LifeSG - Simpler Services, Better Lives
 layout: layout-page-sidenav
 category: 
-sharable: true
 description: LifeSG, an app that offers users simpler access to digital government service through the consolidation of personalised content.
 ---
 

@@ -2,7 +2,6 @@
 title: Land Transport Data Mall
 layout: layout-page-sidenav
 category: Data and APIs
-sharable: true
 description: > 
   The LTA Data Mall publishes a wide variety of land transport-related 
   datasets (static and dynamic / real-time) to encourage co-creation of 
