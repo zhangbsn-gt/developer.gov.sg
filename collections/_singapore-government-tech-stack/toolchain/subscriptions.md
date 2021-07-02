@@ -43,19 +43,19 @@ Yes. Note that users with read-only access are also counted as one of the users 
 
 **Can I upgrade or downgrade to a different tier and how do I do this?**
 
-Yes. Subscription Administrator may upgrade or downgrade to a different tier by raising a [service request](https://jira.ship.gov.sg/servicedesk/customer/portal/11) <sup>ii</sup>. While you may upgrade to an upper tier anytime, you can downgrade to a lower tier after the Minimum Commitment Period<sup>iii</sup>. 
+Yes. Subscription Administrator may upgrade or downgrade to a different tier by raising a [service request](https://jira.ship.gov.sg/servicedesk/customer/portal/11){:target="_blank"}<sup>ii</sup>. While you may upgrade to an upper tier anytime, you can downgrade to a lower tier after the Minimum Commitment Period<sup>iii</sup>. 
  
 For example, if TEAM tier was provisioned on 1 February 2021, the Subscription Administrator may raise a service request to upgrade to TRIBE tier anytime. If needed, you may request to downgrade to SQUAD or STARTER tiers after 1 August 2021.
 
 **Can I add-on or scale-down tools or resources bundled along with my subscription?**
 
-Yes. Subscription Administrator may add-on additional tools or resources any time and scale-down newly added tools after the Minimum Commitment Period<sup>iii</sup>. To add on or scale-down the newly added tools, Subscription Administrator can raise a [service request](https://jira.ship.gov.sg/servicedesk/customer/portal/11) <sup>ii</sup>. 
+Yes. Subscription Administrator may add-on additional tools or resources any time and scale-down newly added tools after the Minimum Commitment Period<sup>iii</sup>. To add on or scale-down the newly added tools, Subscription Administrator can raise a [service request](https://jira.ship.gov.sg/servicedesk/customer/portal/11){:target="_blank"}<sup>ii</sup>. 
  
 For example, if TEAM tier was provisioned on 1 February 2021 and later you identify a need to have a total of 40 users, 400 shared agent hours and six applications to be scanned for vulnerabilities. In this case, you may add on 2 sets of eight users, 100 shared agent hours and two more apps to your subscription anytime. To remove these add-ons, Subscription Administrator can raise a service request after 1 August 2021.
 
 **How do I cancel my subscription?**
 
-Subscription Administrator can raise a [service request](https://jira.ship.gov.sg/servicedesk/customer/portal/11) <sup>ii</sup> to cancel after the Minimum Commitment Period<sup>iii</sup>.  Please note that we do not pro-rate our billings.
+Subscription Administrator can raise a [service request](https://jira.ship.gov.sg/servicedesk/customer/portal/11){:target="_blank"}<sup>ii</sup> to cancel after the Minimum Commitment Period<sup>iii</sup>.  Please note that we do not pro-rate our billings.
 
 **Can I monitor resource utilisation at subscription and project levels?**
 Yes, as a Subscription Administrator or a Project Administrator, you can monitor resource utilisation from your SHIP-HATS account.
@@ -71,12 +71,13 @@ Based on Total Cost of Ownership which includes set up and operating costs (incl
 
 **Can I subscribe to individual tools like Jira or Confluence only?**
 
-We are not offering tools individually now; our bundles have been carefully designed to enable agencies adopt good DevSecOps practices. However, if you are keen and have valid reasons, please let us know using [SHIP-HATS Enquiries](https://www.go.gov.sg/she)  form so that we may assess the possibility based on the demand.
+We are not offering tools individually now; our bundles have been carefully designed to enable agencies adopt good DevSecOps practices. However, if you are keen and have valid reasons, please let us know using [SHIP-HATS Enquiries](./subscriptions) form so that we may assess the possibility based on the demand.
 
 **Can I request for a trial subscription?**
 
-Yes, we offer a 1-month trial account subject to availability. Agencies can reach enquiries_ENP@tech.gov.sg to request for trial accounts.
+Yes, we offer a 1-month trial account subject to availability. Agencies can reach <enquiries_ENP@tech.gov.sg> to request for trial accounts.
 
 **What security classification is supported by SHIP-HATS?**
+
 SHIP-HATS supports applications and content that are “Restricted” or below.
 
