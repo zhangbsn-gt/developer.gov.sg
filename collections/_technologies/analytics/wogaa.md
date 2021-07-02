@@ -85,4 +85,4 @@ WOGAA is only available for Singapore public officers with a government-issued e
 
 ### Contact Information
 
-For enquiries on WOGAA, email [info@tech.gov.sg](info@tech.gov.sg){:target="_blank"}.
+For enquiries on WOGAA, email <info@tech.gov.sg>.
