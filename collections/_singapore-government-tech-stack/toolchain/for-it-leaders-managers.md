@@ -17,4 +17,4 @@ As you think through IT strategy and plan new systems, learn how CI/CD with SHIP
 | :------------------------------------------- | :--------------------------- |
 | •	[Training Resources](./training-resources) | •	[What's new](./what-s-new) |
 
-Got feedback on SHIP-HATS? Submit your feedback in [SHIP-HATS Enquiry](https://www.developer.tech.gov.sg/singapore-government-tech-stack/toolchain/ship-hats-enquiries) and we will respond within 5 business days. 
+Got feedback on SHIP-HATS? Submit your feedback in [SHIP-HATS Enquiry](./ship-hats-enquiries) and we will respond within 5 business days. 
