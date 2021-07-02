@@ -1,6 +1,7 @@
 ---
 title: Team Culture
 layout: layout-page-sidenav
+sharable: true
 description: Learn about the factors that contribute to a robust and effective team culture.
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: DigiMC
 layout: layout-page-sidenav
+sharable: true
 short_description: >
   System for digital medical certificates to replace paper MCs.
 ---

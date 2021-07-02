@@ -3,6 +3,7 @@ title: SHIP
 layout: layout-page-sidenav
 category: Devops
 redirect_from: /singapore-government-tech-stack/toolchain/ship
+sharable: true
 description: >
   SHIP is a continuous integration and continuous deployment
   (CI/CD) platform that automates the delivery of applications and simplifies policy clearance.

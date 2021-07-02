@@ -1,6 +1,7 @@
 ---
 title: Understand the Broader Environment
 layout: layout-page-sidenav
+sharable: true
 description: External factors can disrupt your project if not well understood.
 ---
 

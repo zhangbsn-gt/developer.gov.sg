@@ -1,6 +1,7 @@
 ---
 title: Open-source Software
 layout: layout-page-sidenav
+sharable: true
 description: Understand the potential benefits of using open-source software in developing your product.
 ---
 

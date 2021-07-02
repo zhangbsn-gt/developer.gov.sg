@@ -1,6 +1,7 @@
 ---
 title: Cloud File Transfer
 layout: layout-page-sidenav
+sharable: true
 ---
 ## Cloud File Transfer
 

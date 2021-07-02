@@ -2,6 +2,7 @@
 title: Asynchronous Data Exchange
 layout: layout-page-sidenav
 category: Sensors and IOT
+sharable: true
 description: >
   Asynchronous Data Exchange is a centralised platform that distributes real-time data 
   across Whole-of-Government. It provides seamless and secure data sharing and 

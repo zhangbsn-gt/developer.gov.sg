@@ -2,6 +2,7 @@
 title: Digital Service Standards
 layout: layout-page-sidenav
 category: Standards & Best Practices
+sharable: true
 description: The DSS guides agencies to deliver digital services that are easy, seamless and relevant for citizens and businesses
 ---
 

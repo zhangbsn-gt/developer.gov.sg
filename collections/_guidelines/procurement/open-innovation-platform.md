@@ -1,6 +1,7 @@
 ---
 title: Open Innovation Platform (OIP)
 layout: layout-page-sidenav
+sharable: true
 description: Open Innovation Platform (OIP) by IMDA seeks to accelerate digital innovation by matching real business challenges of Problem Owners to Tech Solution providers.
 ---
 Overview

@@ -1,6 +1,7 @@
 ---
 title: Updating dependencies for GoGovSG
 layout: layout-page-sidenav
+sharable: true
 ---
 
 {% assign jobDetails = site.data.gigs | where: "title", page.title | first %}

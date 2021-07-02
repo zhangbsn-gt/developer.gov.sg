@@ -2,6 +2,7 @@
 title: Personalise 
 layout: layout-page-sidenav
 category: Analytics 
+sharable: true
 description: Personalise consists of workshops and tools that help agencies better analyse user behaviours and provide tailored experiences to individuals.
 --- 
 

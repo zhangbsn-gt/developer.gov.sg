@@ -2,6 +2,7 @@
 title: IM8
 layout: layout-page-sidenav
 category: Standards & Best Practices
+sharable: true
 description: >
   The IM8 is a management tool used in the Government to safeguard 
   ICT & SS (Infocomm Technology and Smart Systems) assets.

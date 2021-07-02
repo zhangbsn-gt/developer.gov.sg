@@ -1,6 +1,7 @@
 ---
 title: Postman
 layout: layout-page-sidenav
+sharable: true
 short_description: >
   A simple mass messaging system for a government officer to send messages
   to a large list of recipients at once.

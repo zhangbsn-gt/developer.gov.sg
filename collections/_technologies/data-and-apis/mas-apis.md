@@ -2,6 +2,7 @@
 title: MAS API
 layout: layout-page-sidenav
 category: Data and APIs
+sharable: true
 description: >
   The Monetary Authority of Singapore provides APIs for developers to access relevant data from MAS.
 ---

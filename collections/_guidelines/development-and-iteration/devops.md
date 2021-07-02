@@ -1,6 +1,7 @@
 ---
 title: DevOps
 layout: layout-page-sidenav
+sharable: true
 description: Maintain a culture with an emphasis on automation of software deployment, metric-based feedback and monitoring and high levels of communications.
 ---
 

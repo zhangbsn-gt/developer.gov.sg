@@ -10,13 +10,30 @@ layout: layout-page
       </ul>
     </aside>
   </div>
+  {% if page.sharable == true %}
+  <div class="col is-8 is-12-touch">
+    {{ content }}
+    <div class="small-viewport-social-media-buttons">
+      {% include social-media.html display="mobile" %}
+    </div>
+    <p>
+      <em>
+        Last updated {{ page.last_modified_at | date: '%d %B %Y' }}
+      </em>
+    </p>
+  </div>
+  {% else %}
   <div class="col is-9 is-12-touch">
     {{ content }}
     <p>
       <em>
         Last updated {{ page.last_modified_at | date: '%d %B %Y' }}
       </em>
-
     </p>
   </div>
+  {% endif %}
+
+  {% if page.sharable == true %}
+  {% include social-media.html display="wide" %}
+  {% endif %}
 </div>

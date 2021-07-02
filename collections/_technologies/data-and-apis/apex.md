@@ -2,6 +2,7 @@
 title: API Exchange (APEX) - A Centralised Data Sharing Platform for the Public Sector
 layout: layout-page-sidenav
 category: Data and APIs
+sharable: true
 redirect_from: /singapore-government-tech-stack/communications/apex
 description: GovTech’s APEX platform enables Singapore’s public sector to share data conveniently and securely through the use of APIs. Find out here.
 ---

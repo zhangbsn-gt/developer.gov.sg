@@ -2,6 +2,7 @@
 title: BookingSG
 layout: layout-page-sidenav
 category: Data and APIs
+sharable: true
 description: BookingSG is a Calendaring, Availability, Rostering and Booking (CARB) management tool for agencies that offer services which require pre-booking.
 ---
 

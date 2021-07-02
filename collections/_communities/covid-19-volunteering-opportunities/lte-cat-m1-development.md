@@ -1,6 +1,7 @@
 ---
 title: LTE CAT M1 Development and VoLTE over LTE CAT-M1
 layout: layout-page-sidenav
+sharable: true
 short_description: >
   To create a device that allows for Voice over LTE using LTE CAT-M1 technology, for seniors to make phone calls.
 ---
