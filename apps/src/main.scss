@@ -13,7 +13,6 @@
 @import "sass/pages/home";
 @import "sass/pages/govbuy";
 
-
 a.feedback-banner-link {
   text-decoration: underline;
 }
@@ -187,18 +186,17 @@ a.external-link::after {
     display: none;
   }
 }
-.bp-button{
+.social-button {
   border-color: transparent;
   background-color: transparent;
   cursor: pointer;
   margin-bottom: 1em;
 }
-.bp-button:hover{
-  color:#0076d6
+.social-button:hover {
+  color: #0076d6;
 }
 
-.floating-social-media-buttons{
-  position: fixed;
-  top: 40px;
-  width: 85px;
+#social-media-btns-container {
+  position: sticky;
+  top: 0;
 }
