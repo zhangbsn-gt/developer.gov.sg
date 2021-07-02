@@ -15,7 +15,7 @@ Need a documentation that you can’t find here? [Submit a ticket](https://www.d
                 
 | Next                                   | Relevant Links          | 
 | :------------------------------------- | :---------------------- |
-| •	[Subscriptions FAQ](./subscriptions")| Technical Documentation |
+| [Subscriptions FAQ](./subscriptions")| Technical Documentation |
  
 Got feedback on SHIP-HATS? Submit your feedback in [SHIP-HATS Enquiry](./ship-hats-enquiries) and we respond within 5 business days. 
  
