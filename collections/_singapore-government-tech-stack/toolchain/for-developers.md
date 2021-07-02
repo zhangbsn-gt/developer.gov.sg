@@ -1,3 +1,8 @@
+---
+title: For developers
+layout: layout-page-sidenav
+---
+
 # Developer Resources 
  
 We will be rolling out technical documentations, code samples and how-to guides.  
