@@ -7,7 +7,7 @@ description: insert desecription.
 ### Pre-requisites for Developers, Project Managers, Business Analysts
 - Concepts
 - [Preparing your team for DevOps](https://www.youtube.com/watch?v=wgW-8vvK5sMte){:target="_blank"}
-- [Tools in SHIP-HATS](/training/tools)
+- [Tools in SHIP-HATS](./training/tools)
 
 ### SHIP-HATS 
 
@@ -24,7 +24,7 @@ SHIP-HATS Overview for Newbies
 
 | Next                                             | Relevant Links            | 
 | :----------------------------------------------- | :------------------------ |
-| •	[DevOps Concepts](/training/training-concepts) | •	[What's New](./what-s-new)<br />•	[Subscription FAQs](./subscriptions)<br /> •	[Tools in SHIP-HATS](/training/tools) |
+| •	[DevOps Concepts](./training/training-concepts) | •	[What's New](./what-s-new)<br />•	[Subscription FAQs](./subscriptions)<br /> •	[Tools in SHIP-HATS](./training/tools) |
                 
 Got feedback on SHIP-HATS? Submit your feedback in [SHIP-HATS Enquiry](./ship-hats-enquiries) and we respond within 5 business days. 
 
