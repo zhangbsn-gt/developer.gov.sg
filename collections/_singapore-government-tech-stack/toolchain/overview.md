@@ -70,4 +70,4 @@ Interested to get started? Check out how to start a trial.
 | :--------------------------------------------------------------------------------------------------------- |
 | •	[Training Resources](./training-resources)<br />•	[Subscriptions FAQ](./subscriptions)<br />•	Executive insights |
 
-Got feedback on SHIP-HATS? Submit your feedback in [SHIP-HATS Enquiry](https://www.developer.tech.gov.sg/singapore-government-tech-stack/toolchain/ship-hats-enquiries) and we will respond within 5 business days. 
+Got feedback on SHIP-HATS? Submit your feedback in [SHIP-HATS Enquiry](./ship-hats-enquiries) and we will respond within 5 business days. 
