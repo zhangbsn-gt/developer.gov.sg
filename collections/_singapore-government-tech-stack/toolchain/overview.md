@@ -19,7 +19,7 @@ This is a multi-tenanted Software-as-a-Service (SaaS) hosted on Government Comme
 
 *provide short description here*
 
-[Find out what's new](./trainingresource).
+[Find out what's new](./what-s-new).
 
 ### Why is CI/CD important? 
 
