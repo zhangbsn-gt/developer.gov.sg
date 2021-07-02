@@ -47,6 +47,11 @@
 	</div>
 </div>
 {% elsif include.display=="mobile" %}
+<button class="bp-button" id="copy-link">
+	<i class="sgds-icon sgds-icon-link is-size-4">
+	</i>
+</button>
+<input id="page-url" type="text" class="hide" value="{{site.domain}}{{page.url}}">
 <a href="mailto:?Subject={{page.title}}&amp;Body= {{page.url|absolute_url}}">
 	<button class="bp-button">
 		<i class="sgds-icon sgds-icon-mail is-size-4">

@@ -1,7 +1,11 @@
 function setupFloatingSocialMediaIcons() {
-  let floaterContainer = $("#floater-container");
-  let floater = $("#floater");
-  let offsetTop = floaterContainer.offset().top;
+  const floaterContainer = $("#floater-container");
+  if(floaterContainer.children().length == 0){
+    //if floaterContainer is an empty element
+    return;
+  }
+  const floater = $("#floater");
+  const offsetTop = floaterContainer.offset().top;
   window.onscroll = function () {
     floater.addClass("floating-social-media-buttons");
     if (window.pageYOffset < offsetTop) {
