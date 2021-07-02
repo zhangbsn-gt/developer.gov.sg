@@ -17,8 +17,6 @@ function setupFloatingSocialMediaIcons() {
   document.getElementById("copy-link").addEventListener("click", function () { copyInputToClipboard(inputBox); });
   document.getElementById("copy-link-mobile").addEventListener("click", function () { copyInputToClipboard(inputBoxMobile); });
   function copyInputToClipboard(inputBox) {
-    console.log(inputBox);
-    console.log(inputBox);
     if (inputBox.classList.contains("hide")) {
       inputBox.classList.remove("hide");
     }
