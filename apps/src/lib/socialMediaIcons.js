@@ -4,8 +4,6 @@ function setupFloatingSocialMediaIcons() {
   let offsetTop = floaterContainer.offset().top;
   window.onscroll = function () {
     floater.addClass("floating-social-media-buttons");
-    // console.log(`window pageyoffset = ${window.pageYOffset}`);
-    // console.log(offsetTop);
     if (window.pageYOffset < offsetTop) {
       floater.removeClass("floating-social-media-buttons");
     }
