@@ -1,18 +1,19 @@
 ---
 title: For developers
 layout: layout-page-sidenav
+description: insert desecription.
 ---
 
-# Developer Resources 
+### Developer Resources 
  
 We will be rolling out technical documentations, code samples and how-to guides.  
 
-### Technical Documentation 
+**Technical Documentation** 
 
-- User roles & Permissions  
+- User roles & permissions  
 
+| Next                                    | Relevant Links                                                                 | 
+| :-------------------------------------- | :----------------------------------------------------------------------------- |
+| •	[Tools in SHIP-HATS](/training/tools) | •	[What's new](./what-s-new)<br />•	[Training Resources](/training/index.html) |
 
-|          Next: <ul><li><a href="/training/tools">Tools in SHIP-HATS</li></ul>|                  Relevant links:<ul><li><a href="/whats-new">What's New</li><li><a href="/training/index">Training Resources</li></ul>|
-|       --------       | -------------------------------------------------- |
-
-Got feedback on SHIP-HATS? Submit your feedback in [SHIP-HATS Enquiry](https://www.developer.tech.gov.sg/singapore-government-tech-stack/toolchain/ship-hats-enquiries) and we will respond within 5 business days. 
+Got feedback on SHIP-HATS? Submit your feedback in [SHIP-HATS Enquiry](./ship-hats-enquiries) and we will respond within 5 business days. 
