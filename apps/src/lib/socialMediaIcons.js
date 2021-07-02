@@ -1,6 +1,6 @@
 function setupFloatingSocialMediaIcons() {
   const floaterContainer = $("#floater-container");
-  if(floaterContainer.children().length == 0){
+  if (floaterContainer.children().length == 0) {
     //if floaterContainer is an empty element
     return;
   }
@@ -12,15 +12,19 @@ function setupFloatingSocialMediaIcons() {
       floater.removeClass("floating-social-media-buttons");
     }
   };
-  document.getElementById("copy-link").addEventListener("click", function () {
-    var inputBox = document.getElementById("page-url");
+  let inputBox = document.getElementById("page-url");
+  let inputBoxMobile = document.getElementById("page-url-mobile");
+  document.getElementById("copy-link").addEventListener("click", function () { copyInputToClipboard(inputBox); });
+  document.getElementById("copy-link-mobile").addEventListener("click", function () { copyInputToClipboard(inputBoxMobile); });
+  function copyInputToClipboard(inputBox) {
+    console.log(inputBox);
+    console.log(inputBox);
     if (inputBox.classList.contains("hide")) {
       inputBox.classList.remove("hide");
     }
     inputBox.select();
     document.execCommand("copy");
     inputBox.classList.add("hide");
-  });
-
+  }
 }
 export { setupFloatingSocialMediaIcons };
