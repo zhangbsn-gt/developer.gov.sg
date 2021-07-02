@@ -14,6 +14,6 @@ We will be rolling out technical documentations, code samples and how-to guides.
 
 | Next                                    | Relevant Links                                                                 | 
 | :-------------------------------------- | :----------------------------------------------------------------------------- |
-| •	[Tools in SHIP-HATS](/training/tools) | •	[What's new](./what-s-new)<br />•	[Training Resources](/training/index.html) |
+| •	[Tools in SHIP-HATS](/training/tools) | •	[What's new](./what-s-new)<br />•	[Training Resources](./training-resources) |
 
 Got feedback on SHIP-HATS? Submit your feedback in [SHIP-HATS Enquiry](./ship-hats-enquiries) and we will respond within 5 business days. 
