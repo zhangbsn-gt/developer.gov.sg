@@ -1,5 +1,5 @@
 ---
-title: SHIP-HATS Subscription
+title: Subscription
 layout: layout-page-sidenav
 description: insert desecription.
 ---
