@@ -13,8 +13,7 @@ description: insert desecription.
 
 **For all (Developers, Project Managers, Business Analysts)**
 
-SHIP-HATS Overview for Newbies
-<iframe src="https://www.youtube.com/embed/oqqM1Q25b-0?showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[SHIP-HATS Overview for Newbies](https://www.youtube.com/watch?v=SVomPCqKGM4){:target="_blank"}
 
 | Developers |  Project Managers, Business Analysts  |
 | :------------- | ----------------------------------------------------------------------------------------- |
