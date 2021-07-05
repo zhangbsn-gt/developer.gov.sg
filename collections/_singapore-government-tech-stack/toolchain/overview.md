@@ -15,13 +15,7 @@ Toolchain is a suite of services in SGTS with security and governance guardrails
 
 This is a multi-tenanted Software-as-a-Service (SaaS) hosted on Government Commercial Cloud (GCC) for all applications that is classified as restricted and below. 
 
-### What’s New? 
-
-*provide short description here*
-
-[Find out what's new](./what-s-new).
-
-### Why is CI/CD important? 
+[Why is CI/CD important?](https://youtu.be/RlZCyexsJBc?t=260){:Target="_blank"}
 
 #### Benefits of SHIP-HATS 
 
@@ -42,6 +36,12 @@ This is a multi-tenanted Software-as-a-Service (SaaS) hosted on Government Comme
 
  
 Check out : **Training: Tools on SHIP-HATS** to know more about the tools available on SHIP-HATS.
+
+### What’s New? 
+
+*provide short description here*
+
+[Find out what's new](./what-s-new).
 
 ### Subscribing to SHIP-HATS
 
