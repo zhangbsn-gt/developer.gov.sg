@@ -6,7 +6,8 @@ description: insert desecription.
 
 ### Overview
 
-**SHIP-HATS** is a multi-tenant SaaS product hosted on Government Commercial Cloud (GCC). This is a centralised CI/CD platform of the Singapore Government Tech Stack.  
+**SHIP-HATS** is a multi-tenant SaaS product hosted on Government Commercial Cloud (GCC). This is a centralised CI/CD platform of the Singapore Government Tech Stack.
+
 SHIP-HATS manages its tenants through subscriptions and only agencies can subscribe to SHIP-HATS. Agencies can extend subscriptions to non-agency users such as Vendors. **There are 4 subscription tiers: Starter, Squad, Team, and Tribe.**
 
 <iframe src="https://www.youtube.com/embed/ksUEnR78m4w?showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
