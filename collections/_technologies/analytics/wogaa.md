@@ -54,7 +54,7 @@ Key metrics such as the total number of visitors, average time spent by visitors
 audience preferences and behaviours.
 
 <p align="center">
-<img src="/assets/img/analytics.png" width="80%" height="80%" alt="Fig 4: WOGAA’s analytics dashboard"></p>
+<img src="/assets/img/wogaa-analytics.png" width="80%" height="80%" alt="Fig 4: WOGAA’s analytics dashboard"></p>
 <p align="center">Fig 4: WOGAA’s analytics dashboard</p>
 
 - **WOGAA Sentiments:** This feature allows users to collect user feedback and ratings on their websites and digital services through a customisable widget. This qualitative voice-of-the-customer feedback complements the quantitative data users have, providing a more holistic view of the health of their services. This feature is also powered with analytics which provides additional parameters such as platform, device, country, and other related audience metrics for more advanced Sentiments analysis. For more information on Sentiments, you can visit this [link](https://www.tech.gov.sg/media/technews/your-sentiments-matter-in-the-design-of-government-digital-services){:target="_blank"}. 
