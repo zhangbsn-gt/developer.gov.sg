@@ -57,4 +57,4 @@ Interested to get started? Check out the [subscriptions](./subscriptions) detail
 
 ### Contact Us
 
-Got feedback on SHIP-HATS? Submit your feedback in [SHIP-HATS Enquiry](./ship-hats-enquiry) and we will respond within 5 business days. 
+Got feedback on SHIP-HATS? Submit your feedback in [SHIP-HATS Enquiry](./ship-hats-enquiries) and we will respond within 5 business days. 
