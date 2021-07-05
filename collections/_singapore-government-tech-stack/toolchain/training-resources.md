@@ -6,7 +6,7 @@ description: insert desecription.
 ### Overview 
 Check out the technical documentation, how-to guides and videos to understand SHIP-HATS. We will be adding more content regularly. Check out [What's New](./what-s-new) for the latest updates. 
 
-Need a specific training? Submit your [feedback](./ship-hats-enquiry) and we will include it in our prioritisation.
+Need a specific training? Submit your [feedback](./ship-hats-enquiries) and we will include it in our prioritisation.
 
 ### Basics
 [DevOps Concepts](./training/training-concepts) <br />[Preparing your team for DevOps](https://www.youtube.com/watch?v=wgW-8vvK5sMte){:target="_blank"}<br />[Tools in SHIP-HATS](./training/tools)<br />
