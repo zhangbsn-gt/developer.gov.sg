@@ -4,7 +4,8 @@ layout: layout-page-sidenav
 description: insert desecription.
 ---
 
-# What’s New? 
+### We hear you!
+
 We heard your feedback on Annual Developer Satisfaction Survey 2021 and we're doubling down on providing solid documentation on our products. The table below shows the content release plan.
 
  
