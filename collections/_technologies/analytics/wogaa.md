@@ -34,24 +34,39 @@ The four key features of WOGAA are as shown below.
 
 - **WOGAA Uptime:** This feature tracks daily uptime and downtime of digital services and notifies users via email and/or SMS instantaneously when their 
 website becomes unavailable. This allows agencies and their vendors to rectify the issue promptly and ensure that their digital services remain available 
-to the public. 
+to the public.
+
+<p align="center">
+<img src="/assets/img/uptime.png" width="80%" height="80%" alt="Fig 2: WOGAA’s uptime dashboard"></p>
+<p align="center">Fig 2: WOGAA’s uptime dashboard</p>
+
 - **WOGAA Inspect:** This feature generates technical scores in the areas of Performance, Accessibility, Best Practices and Searchability/Search Engine 
 Optimisation (SEO). To increase these scores, WOGAA Inspect also provides users with actionable technical recommendations that directly tackles the areas 
 of improvement. This gives users immediate next steps to readily improve the usability of their digital services.
+
+<p align="center">
+<img src="/assets/img/inspect.png" width="80%" height="80%" alt="Fig 3: WOGAA’s inspect dashboard"></p>
+<p align="center">Fig 3: WOGAA’s inspect dashboard</p>
+
 - **WOGAA Analytics:** This feature provides an overview of how a user's digital services are performing in a user-centric dashboard. 
 This gives users the option of assessing digital service performances across WOG or viewing a specific agency's performance for more granular data analysis. 
 Key metrics such as the total number of visitors, average time spent by visitors, trending pages etc are displayed to provide a deeper understanding of 
 audience preferences and behaviours.
+
+<p align="center">
+<img src="/assets/img/analytics.png" width="80%" height="80%" alt="Fig 4: WOGAA’s analytics dashboard"></p>
+<p align="center">Fig 4: WOGAA’s analytics dashboard</p>
+
 - **WOGAA Sentiments:** This feature allows users to collect user feedback and ratings on their websites and digital services through a customisable widget. This qualitative voice-of-the-customer feedback complements the quantitative data users have, providing a more holistic view of the health of their services. This feature is also powered with analytics which provides additional parameters such as platform, device, country, and other related audience metrics for more advanced Sentiments analysis. For more information on Sentiments, you can visit this [link](https://www.tech.gov.sg/media/technews/your-sentiments-matter-in-the-design-of-government-digital-services){:target="_blank"}. 
 
-<p align="center"><img src="/assets/img/wogaa-widget.jpg" width="30%" height="30%" alt="Fig 2: WOGAA’s Sentiments Widget on GovTech Website"></p>
-<p align="center">Fig 2: WOGAA’s Sentiments Widget on GovTech Website</p>
+<p align="center"><img src="/assets/img/wogaa-widget.jpg" width="30%" height="30%" alt="Fig 5: WOGAA’s sentiments widget on GovTech Website"></p>
+<p align="center">Fig 5: WOGAA’s sentiments widget on GovTech Website</p>
 <br>
-<p align="center"><img src="/assets/img/wogaa-ratingscale.jpg" width="30%" height="30%" alt="Fig 3: WOGAA’s Sentiments Rating Scale on GovTech website"></p>
-<p align="center">Fig 3: WOGAA’s Sentiments Rating Scale on GovTech website</p>
+<p align="center"><img src="/assets/img/wogaa-ratingscale.jpg" width="30%" height="30%" alt="Fig 6: WOGAA’s sentiments rating scale on GovTech website"></p>
+<p align="center">Fig 6: WOGAA’s sentiments rating scale on GovTech website</p>
 <br>
-<p align="center"><img src="/assets/img/wogaa-questions.png" width="60%" height="60%" alt="Fig 4: WOGAA’s Sentiments Questions on GovTech Website"></p>
-<p align="center">Fig 4: WOGAA’s Sentiments Questions on GovTech Website</p>
+<p align="center"><img src="/assets/img/wogaa-questions.png" width="60%" height="60%" alt="Fig 7: WOGAA’s sentiments questions on GovTech Website"></p>
+<p align="center">Fig 7: WOGAA’s sentiments questions on GovTech Website</p>
 
 ### Why should WOGAA be Adopted?
 
