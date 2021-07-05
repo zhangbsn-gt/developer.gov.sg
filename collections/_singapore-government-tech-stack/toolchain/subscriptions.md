@@ -82,7 +82,7 @@ Based on Total Cost of Ownership which includes set up and operating costs (incl
 
 #### 10. Can I subscribe to individual tools like Jira or Confluence only?
 
-We are not offering tools individually now; our bundles have been carefully designed to enable agencies adopt good DevSecOps practices. However, if you are keen and have valid reasons, please let us know using [SHIP-HATS Enquiries](./ship-hats-enquiry) form so that we may assess the possibility based on the demand.
+We are not offering tools individually now; our bundles have been carefully designed to enable agencies adopt good DevSecOps practices. However, if you are keen and have valid reasons, please let us know using [SHIP-HATS Enquiries](./ship-hats-enquiries) form so that we may assess the possibility based on the demand.
 
 #### 11. Can I request for a trial subscription?
 
