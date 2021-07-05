@@ -5,15 +5,13 @@ description: insert desecription.
 ---
 
 # What’s New? 
-We heard your feedback on Annual Developer Satisfaction Survey 2021 and we are doubling down on providing solid documentation on our products. On this page, you can what we have recently updated and what is coming up soon! 
+We heard your feedback on Annual Developer Satisfaction Survey 2021 and we're doubling down on providing solid documentation on our products. The table below shows the content release plan.
 
-Need a documentation that you can’t find here? [Submit a ticket](https://www.developer.tech.gov.sg/singapore-government-tech-stack/toolchain/ship-hats-enquiries) and we will prioritise accordingly in our documentation backlog.  
  
 | Date of update |                                         What’s New?                                       |           Coming Soon          |
 | :------------- | ----------------------------------------------------------------------------------------- | ------------------------------ |
 | July 5th       | Subscription FAQs [For PM, BA]<br /> Training Resources | User roles & permissions |
                 
- 
-Got feedback on SHIP-HATS? Submit your feedback in [SHIP-HATS Enquiry](./ship-hats-enquiries) and we respond within 5 business days. 
- 
+
+Need a documentation that you can’t find here? [Submit a ticket](https://www.developer.tech.gov.sg/singapore-government-tech-stack/toolchain/ship-hats-enquiries) and we'll prioritise in our documentation backlog.   
 
