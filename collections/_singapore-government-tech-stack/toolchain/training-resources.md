@@ -3,7 +3,6 @@ title: Training resources
 layout: layout-page-sidenav
 description: insert desecription.
 ---
-Pre-requisites
 | Pre-Requisites | •	Concepts<br />•	[Preparing your team for DevOps](https://www.youtube.com/watch?v=wgW-8vvK5sMte){:target="_blank"}<br />•	[[Tools in SHIP-HATS](./training/tools)<br />|
 | :------------- | ----------------------------------------------------------------------------------------- |
 ### SHIP-HATS 
