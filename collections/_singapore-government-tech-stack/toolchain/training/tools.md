@@ -1,14 +1,14 @@
 ---
 title: Tools in SHIP-HATS
 layout: layout-page-sidenav
-description: insert desecription.
+description: insert description.
 ---
 
-# Tools
+### Tools
  
 **COTS (Commercially Off the Shelf)** tools are available on SHIP-HATS with right security and compliance settings. Here are curated links to documentation and tutorials to first learn the tools offered under **SHIP-HATS**. Note this is not specific to SHIP-HATS but a pre-cursor so you can use these tools within SHIP-HATS effectively.  
 
-## Development tools 
+### Development tools 
 
 **Jira:** Project management tool that is used to view, track and manage projects and the progress of your team's tasks or bugs for a sprint displayed in an agile board. 
 [Overview](https://www.atlassian.com/software/jira/guides/getting-started/overview){:target="_blank"} | [Tutorials](https://www.atlassian.com/software/jira/guides/getting-started/basics#step-2-pick-a-template){:target="_blank"}
@@ -19,11 +19,11 @@ description: insert desecription.
 **Bitbucket:** Version control tool for software engineering team to collaborate on source code and integrate with software development tools to automate the release pipeline. 
 [Overview](https://www.atlassian.com/software/bitbucket/guides/getting-started/overview){:target="_blank"} | [Tutorials](https://www.atlassian.com/software/bitbucket/guides/basics/bitbucket-interface#your-work){:target="_blank"}
 
-## Build tool 
+### Build tool 
 
 **Bamboo:** Tool for Continuous Integration that allows constant merging and testing of code, which leads to early defect detection and saves time on fixing merge issues. Development teams also able receive rapid feedback on their work. [Overview](https://www.atlassian.com/software/bamboo){:target="_blank"}
 
-## QA & Security tools 
+### QA & Security tools 
 
 **Nexus Repository Manager:** Tool for artifact management to ensure that the development, build and production environments deploy consistent artifacts; Reduce errors due to differences in build artifacts. Version control for the release artifacts for better control and easier rollback. [Overview](https://www.sonatype.com/product-nexus-repository){:target="_blank"}
 
@@ -39,7 +39,7 @@ description: insert desecription.
 
 **Prisma Cloud Compute Edition (formerly TwistLock):** A cloud native container vulnerability scanner that protects custom container images, configured by subscribers. [Tutorials](https://docs.paloaltonetworks.com/prisma/prisma-cloud.html){:target="_blank"}
 
-## Release tools 
+### Release tools 
 
 **Digital.ai Release:** Tool for release orchestration for continuous delivery. It enables teams across an organization to model and monitor releases, automate tasks within IT infrastructure, and cut release times by optimising release processes. [Overview](https://digital.ai/resources/release){:target="_blank"}
 
