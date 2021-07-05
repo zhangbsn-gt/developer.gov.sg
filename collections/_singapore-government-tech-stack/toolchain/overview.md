@@ -45,7 +45,7 @@ Check out [Training: Tools on SHIP-HATS](./tools) to know more about the tools a
 
 ### What’s New? 
 
-We heard your feedback on Annual Developer Satisfaction Survey 2021 and we are doubling down on providing solid documentation on our products.[Find out what's new](./what-s-new)
+We heard your feedback on Annual Developer Satisfaction Survey 2021 and we are doubling down on providing solid documentation on our products. [Find out what's new](./what-s-new)
 
 ### Training Resources
 
