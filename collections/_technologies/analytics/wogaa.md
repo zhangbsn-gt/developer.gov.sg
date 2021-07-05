@@ -37,7 +37,7 @@ website becomes unavailable. This allows agencies and their vendors to rectify t
 to the public.
 
 <p align="center">
-<img src="/assets/img/uptime.png" width="80%" height="80%" alt="Fig 2: WOGAA’s uptime dashboard"></p>
+<img src="/assets/img/uptime.png" alt="Fig 2: WOGAA’s uptime dashboard"></p>
 <p align="center">Fig 2: WOGAA’s uptime dashboard</p>
 
 - **WOGAA Inspect:** This feature generates technical scores in the areas of Performance, Accessibility, Best Practices and Searchability/Search Engine 
@@ -45,7 +45,7 @@ Optimisation (SEO). To increase these scores, WOGAA Inspect also provides users 
 of improvement. This gives users immediate next steps to readily improve the usability of their digital services.
 
 <p align="center">
-<img src="/assets/img/inspect.png" width="80%" height="80%" alt="Fig 3: WOGAA’s inspect dashboard"></p>
+<img src="/assets/img/inspect.png" alt="Fig 3: WOGAA’s inspect dashboard"></p>
 <p align="center">Fig 3: WOGAA’s inspect dashboard</p>
 
 - **WOGAA Analytics:** This feature provides an overview of how a user's digital services are performing in a user-centric dashboard. 
@@ -54,7 +54,7 @@ Key metrics such as the total number of visitors, average time spent by visitors
 audience preferences and behaviours.
 
 <p align="center">
-<img src="/assets/img/wogaa-analytics.png" width="80%" height="80%" alt="Fig 4: WOGAA’s analytics dashboard"></p>
+<img src="/assets/img/wogaa-analytics.png" alt="Fig 4: WOGAA’s analytics dashboard"></p>
 <p align="center">Fig 4: WOGAA’s analytics dashboard</p>
 
 - **WOGAA Sentiments:** This feature allows users to collect user feedback and ratings on their websites and digital services through a customisable widget. This qualitative voice-of-the-customer feedback complements the quantitative data users have, providing a more holistic view of the health of their services. This feature is also powered with analytics which provides additional parameters such as platform, device, country, and other related audience metrics for more advanced Sentiments analysis. For more information on Sentiments, you can visit this [link](https://www.tech.gov.sg/media/technews/your-sentiments-matter-in-the-design-of-government-digital-services){:target="_blank"}. 
