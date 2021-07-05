@@ -13,8 +13,8 @@ Need a documentation that you can’t find here? [Submit a ticket](https://www.d
 | :------------- | ----------------------------------------------------------------------------------------- | ------------------------------ |
 | July 1st       | •	Subscription FAQs [For PM, BA]<br />•	Training Resources [ For PM, BA, DevOps Newbies] | User roles & permissions [All] |
                 
-| Next                                  | Relevant Links            | 
-| :------------------------------------ | :------------------------ |
+| Next                      | Relevant Links            | 
+| :------------------------ | :------------------------ |
 | •	[Subscriptions FAQ](./subscriptions)| •	Technical Documentation |
  
 Got feedback on SHIP-HATS? Submit your feedback in [SHIP-HATS Enquiry](./ship-hats-enquiries) and we respond within 5 business days. 
