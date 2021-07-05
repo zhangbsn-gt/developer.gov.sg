@@ -1,5 +1,5 @@
 ---
-title: Training resources
+title: Training Resources
 layout: layout-page-sidenav
 description: insert desecription.
 ---
