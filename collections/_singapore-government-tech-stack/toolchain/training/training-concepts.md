@@ -4,11 +4,11 @@ layout: layout-page-sidenav
 description: insert desecription.
 ---
 
-# DevOps Concepts 
+### DevOps Concepts 
  
 New to DevOps and looking to get started on [SHIP-HATS](../overview)? Here are some resources for you.
 
-## Concepts 
+### Concepts 
 
 **DevOps** is a practice involving the software developers and IT operations team to automate software development processes with a common goal to deliver high-quality features to the end user, faster. There are frequent releases ensuring regular user feedback while baking in security in early in the life cycle.    
 
@@ -19,13 +19,13 @@ New to DevOps and looking to get started on [SHIP-HATS](../overview)? Here are s
 
 **Continuous Delivery** is a software engineering approach to automate the release process. The production worthy changes are kept in a releasable state but may or may not deployed into production automatically. 
 
-## Training Resources 
+### Training Resources 
 **[Continuous Delivery & DevOps](https://www.coursera.org/learn/uva-darden-continous-delivery-devops#about){:target="_blank"}:**  Learn importance of velocity of delivery, when and how of automated testing, ops and key components for continuous delivery. [Source: Coursera, University of Virginia | 9 hours | Free On-demand video | Beginner – Developers, Project Managers, Business Analysts]
 
 ### The Digital Academy Courses for Public Officers 
-[Business Analysis for Agile Practitioners](https://thedigitalacademy.tech.gov.sg/course/detail/business-analysis-for--agile--practitioners){:target="_blank"}[2 days Paid | Project Managers, Business Analyst]
+[Business Analysis for Agile Practitioners](https://thedigitalacademy.tech.gov.sg/course/detail/business-analysis-for--agile--practitioners){:target="_blank"} (2 days Paid | Project Managers, Business Analyst)
 
-[Essential Practices for Agile Teams](https://thedigitalacademy.tech.gov.sg/course/detail/essential-practices-for--agile--teams){:target="_blank"} [3 days | Developers, Project Managers with an experience of at least one software development cycle]
+[Essential Practices for Agile Teams](https://thedigitalacademy.tech.gov.sg/course/detail/essential-practices-for--agile--teams){:target="_blank"} (3 days | Developers, Project Managers with an experience of at least one software development cycle)
 
 
  
