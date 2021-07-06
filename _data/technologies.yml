@@ -58,14 +58,10 @@
   items:
     - Overview
     - Singapore Government Design System
-    
+
 - name: DevOps
   description: Tools that enable the delivery of software quickly, securely and reliably in the spirit of DevOps
-  items:
-    - Overview
-    - SHIP
-    - HATS
-    
+
 - name: Digital Identity
   description: Make use of Government-backed digital identities to identify and transact with individuals and businesses
   items:
