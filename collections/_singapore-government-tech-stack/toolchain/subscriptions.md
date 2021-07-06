@@ -92,3 +92,7 @@ Yes, we offer a 1-month trial account subject to availability. Agencies can reac
 
 SHIP-HATS supports applications and content that are “Restricted” or below.
 
+<hr>
+<sup>[i]</sup> Depending on the agency’s response time to answer any follow-up queries raised by us, it may take 1-3 business days to provision the Subscription Administrator accounts.<br />
+<sup>[ii]</sup> We take 1-3 business days to process a service request.<br />
+<sup>[iii]</sup> Six consecutive months from the date of account provisioning. 
