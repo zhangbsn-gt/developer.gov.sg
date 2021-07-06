@@ -1,7 +1,11 @@
 ---
 title: Toolchain
 layout: layout-page-sidenav
-redirect_from: /singapore-government-tech-stack/toolchain/
+redirect_from: 
+  - /singapore-government-tech-stack/toolchain/
+  - /technologies/devops
+  - /technologies/devops/ship
+  - /technologies/devops/hats
 description: insert desecription.
 ---
 
