@@ -1,5 +1,5 @@
 --- 
-title: Whole-of-Government Analytics Application (WOGAA) - Improve Government Services with Data 
+title: Whole-of-Government Application Analytics (WOGAA) - Improve Government Services with Data 
 layout: layout-page-sidenav
 category: Analytics 
 description: >
