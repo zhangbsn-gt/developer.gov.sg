@@ -31,7 +31,7 @@ This is a multi-tenanted Software-as-a-Service (SaaS) hosted on Government Comme
 |     --------  | ------------------------------------------ |
 |  Development  |        Jira, Confluence, Bitbucket         |
 |     Build     |         Bamboo, Nexus IQ, Next Repo        |
-| QA & Security | pCloudy, SonarQubem WebInspect Fortify SCA |
+| QA & Security | pCloudy, SonarQube, Fortify SCA & WebInspect, Prisma Cloud Container Image Scanner, Accessibility |
 |    Release    |                Digital.ai                  |
 
  
