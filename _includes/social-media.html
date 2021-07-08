@@ -78,3 +78,27 @@
 	</button>
 </a>
 {% endif %}
+
+<script>
+	(function () {
+	  let inputBox = document.getElementById("page-url");
+	  let inputBoxMobile = document.getElementById("page-url-mobile");
+	  const copyLinkElement = document.getElementById("copy-link")
+	  const copyLinkElementMobile = document.getElementById("copy-link-mobile")
+	  if(copyLinkElement){
+		copyLinkElement.addEventListener("click", function () { copyInputToClipboard(inputBox); });
+	  }
+	  if(copyLinkElementMobile){
+		copyLinkElementMobile.addEventListener("click", function () { copyInputToClipboard(inputBoxMobile); });
+	  }
+	  function copyInputToClipboard(inputBox) {
+		if (inputBox.classList.contains("hide")) {
+		  inputBox.classList.remove("hide");
+		}
+		inputBox.select();
+		document.execCommand("copy");
+		inputBox.classList.add("hide");
+	  }
+	})();
+  
+  </script>
