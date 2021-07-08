@@ -9,13 +9,11 @@
     - HealthCerts
     - SafeEntry
     - Space Out
-    - SPOT
     - SPOTON
     - SupplyAlly
     - TraceTogether
     - VigilantGantry
-
-
+    
 - name: Open-source
   description: Government-built open-source technologies and tools
 
@@ -23,8 +21,8 @@
   description: Web analytics tools to help you better understand your users and make data-driven decisions
   items:
     - Overview
-    - WOGAA
     - Personalise
+    - WOGAA
     
 - name: Blockchain
   description: Distributed ledger technologies that enable the usage of decentralised, tamper-proof records
@@ -60,14 +58,10 @@
   items:
     - Overview
     - Singapore Government Design System
-    
+
 - name: DevOps
   description: Tools that enable the delivery of software quickly, securely and reliably in the spirit of DevOps
-  items:
-    - Overview
-    - SHIP
-    - HATS
-    
+
 - name: Digital Identity
   description: Make use of Government-backed digital identities to identify and transact with individuals and businesses
   items:
@@ -89,11 +83,9 @@
     - Lamppost-as-a-Platform
     - Personal Alert Button
     - SIOT Tech Stack
-    - Sensesurround
     - SenseOps
     - Sensor Asset Management
     - Sensors.gov.sg
-    - SPOT
     - SPOTON
 
 - name: Platform

@@ -28,7 +28,7 @@ In addition to secure data sharing, APEX’s API catalogue provides government a
 The central logging system of APEX also provides an overview of all API call logs, this allows agencies to troubleshoot issues when necessary.
 
 <p align="center"><img src="/assets/img/apex_admin.png" alt="Fig 4: APEX’s Central administration Dashboard"></p>
-<p align="center">Fig 4: APEX’s Central administration Dashboard</p>
+<p align="center">Fig 4: APEX’s Central administration dashboard</p>
 
 The central administration dashboard of APEX serves as a monitoring tool for system health checks and provides analytics.  
 
