@@ -40,8 +40,27 @@ and then react to what they “see.”
 and efficiency. GovTech has been developing autonomous navigation in both indoor, controlled environments, and large, unstructured, outdoor ones like parks.
 - **Real-time analytics:** DOSS’s analytics features include:
   - **Thermal sensing:** This is used in SPOTON, a smart thermal scanner with face detection that screens up to 10 people at once.
-·	Safe distance measurements: Detects the distance between two people. When the safe distance limit is breached, the robot can automatically broadcast a reminder to keep a safe distance.
-·	People counting: Counts the number of people in a frame to help operators estimate crowd density.
-·	Face mask detection: Detects whether a person is wearing a face mask.
-·	Follow-me: Using a single camera, tracks a person from a real-time video stream – allowing robots to follow operators for delivery, logistics and critical operations.
+  - **Safe distance measurements:** Detects the distance between two people. When the safe distance limit is breached, the robot can automatically broadcast a reminder to keep a safe distance.
+  - **People counting:** Counts the number of people in a frame to help operators estimate crowd density.
+  - **Face mask detection:** Detects whether a person is wearing a face mask.
+  - **Follow-me:** Using a single camera, tracks a person from a real-time video stream – allowing robots to follow operators for delivery, logistics and critical operations.
 
+### How Do You Use DOSS?
+
+There are multiple uses for DOSS. The examples below illustrate two benefits for adopting DOSS.
+
+- **Robotics C2 platform:** DOSS is used in the development of key software capabilities under a command and control (C2) platform for autonomous mobile robots (AMRs). This lightweight and flexible platform works with any robotic system to operate AMRs over land, air, and sea – usually for monotonous, high-risk, or unsuitable tasks for humans to perform.
+- **Smart Systems and Sensor Payloads:** DOSS was also used to develop smart sensor systems (e.g. SPOTON smart thermal scanner) that can be used as standalone static sensors or as payloads mounted on robots.
+
+### Success Stories
+
+<p align="center"><img src="/assets/img/doss-fig1.png" alt="Fig 1: Medical staff learning to navigate robots remotely using DOSS’s remote-control platform at Changi Exhibition Centre (CEC) community isolation facility." /></p>
+<p align="center">Fig 1: Medical staff learning to navigate robots remotely using DOSS’s remote-control platform at Changi Exhibition Centre (CEC) community isolation facility.</p>
+
+- **COVID operations with AMRs:** SPOT is a four-legged robot built by [Boston Dynamics](https://www.bostondynamics.com/ ':target=_blank') and the first robot that DOSS software capabilities have been used on. In April 2020, medical staff piloted SPOT remotely to deliver medicine and other essential supplies to patients in the CEC community isolation facility. In May 2020, SPOT assisted safe distancing operations at Bishan-Ang Mo Kio Park, using DOSS’s analytics to ensure parkgoers were practising safe distancing and wearing masks.
+
+- **SPOTON (v1.0):** SPOTON is a smart thermal scanner and the first smart sensor payload that was developed using the DOSS platform.
+
+### Contact Information
+
+For enquiries relating to DOSS, contact <sensors@tech.gov.sg>.
