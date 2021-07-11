@@ -22,14 +22,14 @@ Instead of developing APIs from scratch, [MAS' APIs](https://secure.mas.gov.sg/a
 
 Developers can search for the relevant APIs on MAS’ website and input the API into the appropriate code to begin adoption.
 
-### Get Started
-
-If you wish to make use of MAS’ APIs to advance your business solutions, click [here](https://secure.mas.gov.sg/api/Search.aspx ':target=_blank') to start using the available datasets.
-
 ### What's Next
 
 MAS will progressively release more datasets as APIs. If you are interested in a particular dataset which has not yet been made available, 
 you may [contact MAS](https://www.mas.gov.sg/feedback/ ':target=_blank').
+
+### Getting Started
+
+If you wish to make use of MAS’ APIs to advance your business solutions, click [here](https://secure.mas.gov.sg/api/Search.aspx ':target=_blank') to start using the available datasets.
 
 ### Contact Information
 
