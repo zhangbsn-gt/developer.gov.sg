@@ -1,7 +1,7 @@
 ---
 title: Digital Operations Smart Services (DOSS) – An Operations Management Platform for Internet of Things (IoT) and Robotics
 layout: layout-page-sidenav
-category: 
+category: Sensors and IOT 
 description: DOSS is an operations management platform that can integrate into different systems to enable next-generation digital operations.
 ---
 
