@@ -8,9 +8,13 @@ description: insert desecription.
 
 [SHIP-HATS](./overview) manages its tenants through subscriptions and only agencies can subscribe to SHIP-HATS. Agencies can extend subscriptions to non-agency users such as vendors. **There are 4 subscription tiers: Starter, Squad, Team, and Tribe.**
 
-<p align="center"><img src="/assets/img/ship-hats-subscription-table.jpg" width="80%" height="80%" alt="Fig 1: SHIP-HATS resources and services"></p>
-<p align="center">Table 1: SHIP-HATS Resources and Services For Subscription Tiers & Add-Ons
-</p>
+<figure style="text-align: center">
+  <img
+    src="/assets/img/ship-hats-subscription-table.jpg" width="80%" height="80%" 
+    alt="Table 1: SHIP-HATS Resources and Services For Subscription Tiers & Add-Ons"
+  />
+  <figcaption>Table 1: SHIP-HATS Resources and Services For Subscription Tiers & Add-Ons</figcaption>
+</figure>
 
 Public officers can visit the [intranet website for pricing](https://sgdcs.sgnet.gov.sg/sites/IDA-GoSync/gdspdd-ai/ship/_layouts/15/start.aspx#/SitePages/Pricing.aspx){:target="_blank"}. For further queries on pricing, please drop us an email at <enquiries_ENP@tech.gov.sg>.  
  
