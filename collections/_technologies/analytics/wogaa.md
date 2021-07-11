@@ -26,9 +26,13 @@ This provides an end to end toolbox for users to maintain government digital ser
 
 Implementing WOGAA is simple as users just need to integrate two lines of JavaScript code and they are good to go.
 
-<p align="center">
-<img src="/assets/img/wogaa-features.png" width="70%" height="70%" alt="Fig 1: WOGAA’s Four Key Features"></p>
-<p align="center">Fig 1: WOGAA’s Four Key Features</p>
+<figure style="text-align: center">
+  <img
+    src="/assets/img/wogaa-features.png" width="70%" height="70%" 
+    alt="Fig 1: WOGAA’s Four Key Features"
+  />
+  <figcaption>Fig 1: WOGAA’s Four Key Features</figcaption>
+</figure>
 
 The four key features of WOGAA are as shown below.
 
@@ -36,17 +40,22 @@ The four key features of WOGAA are as shown below.
 website becomes unavailable. This allows agencies and their vendors to rectify the issue promptly and ensure that their digital services remain available 
 to the public.
 
-<p align="center">p
-<img src="/assets/img/uptime.png" width="80%" height="80%" alt="Fig 2: WOGAA Uptime Dashboard (For illustration purposes only)"></p>
-<p align="center">Fig 2: WOGAA Uptime Dashboard (For illustration purposes only)</p>
+<figure style="text-align: center">
+  <img
+    src="/assets/img/uptime.png" width="80%" height="80%" 
+    alt="Fig 2: WOGAA Uptime Dashboard (For illustration purposes only)"
+  />
+  <figcaption>Fig 2: WOGAA Uptime Dashboard (For illustration purposes only)</figcaption>
+</figure>
 
 - **WOGAA Inspect:** This feature generates technical scores in the areas of Performance, Accessibility, Best Practices and Searchability/Search Engine 
 Optimisation (SEO). To increase these scores, WOGAA Inspect also provides users with actionable technical recommendations that directly tackles the areas 
 of improvement. This gives users immediate next steps to readily improve the usability of their digital services.
 
-<p align="center">
-<img src="/assets/img/inspect.png" width="80%" height="80%" alt="Fig 3: WOGAA Inspect Score Overview (For illustration purposes only)"></p>
-<p align="center">Fig 3: WOGAA Inspect Score Overview (For illustration purposes only)</p>
+<figure style="text-align: center">
+  ![Fig 3: WOGAA Inspect Score Overview (For illustration purposes only)](/assets/img/inspect.png 'size=80%')
+  <figcaption>Fig 3: WOGAA Inspect Score Overview (For illustration purposes only)</figcaption>
+</figure>
 
 - **WOGAA Analytics:** This feature provides an overview of how a user's digital services are performing in a user-centric dashboard. 
 This gives users the option of assessing digital service performances across WOG or viewing a specific agency's performance for more granular data analysis. 
