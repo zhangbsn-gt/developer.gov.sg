@@ -46,7 +46,7 @@ APEX serves over 100 million API calls in a month and supports around 2,400 API 
 - **Rapid Development for Service Delivery:** Rapid development is possible without affecting the backend. Using the API catalogue, agencies can discover and reuse existing APIs that can be integrated into their existing technology stack. This reduces an agency’s development, integration and troubleshooting timespan, thereby speeding up service delivery.
 - **Co-creation:** Applications and backend can be developed together. 
 
-### How do You Use APEX?
+### How Do You Use APEX?
 
 To begin using APEX, user have to identify their usage model as shown below.
 
