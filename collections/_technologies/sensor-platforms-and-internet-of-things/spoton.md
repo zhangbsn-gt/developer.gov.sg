@@ -75,17 +75,11 @@ Set up the alerts to ensure that whenever a high temperature is detected, the al
 
 ### Success Stories
 
-**Nomination Day**
+- **Nomination Day:** GovTech successfully deployed SPOTON across nine nomination centres on Nomination Day of Singapore’s 2020 General Election. The Election Department (ELD) selected SPOTON because of its ability to be deployed in both indoor and outdoor conditions.
 
-GovTech successfully deployed SPOTON across nine nomination centres on Nomination Day of Singapore’s 2020 General Election. The Election Department (ELD) selected SPOTON because of its ability to be deployed in both indoor and outdoor conditions.
+- **Changi Exhibition Centre (CEC) community isolation facility:** SPOTON was deployed in the CEC community isolation facility during the COVID-19 pandemic in 2020, for mass staff thermal scanning at the guard house area. SPOTON was selected as it is quick to detect fever cases in shaded outdoor environments like CEC’s.
 
-**Changi Exhibition Centre (CEC) community isolation facility**
-
-SPOTON was deployed in the CEC community isolation facility during the COVID-19 pandemic in 2020, for mass staff thermal scanning at the guard house area. SPOTON was selected as it is quick to detect fever cases in shaded outdoor environments like CEC’s.
-
-**OECD OPSI Global Trends 2020 report on “Embracing Innovation in Government”**
-
-In recognition of SPOTON’s innovation, OECD featured SPOTON in its [2020 report](https://trends.oecd-opsi.org/trend-reports/innovative-covid-19-solutions/#rapid-acceleration-of-digital-innovation-and-transformation ':target=_blank') on Embracing Innovation in Government.
+- **OECD OPSI Global Trends 2020 report on “Embracing Innovation in Government”:** In recognition of SPOTON’s innovation, OECD featured SPOTON in its [2020 report](https://trends.oecd-opsi.org/trend-reports/innovative-covid-19-solutions/#rapid-acceleration-of-digital-innovation-and-transformation ':target=_blank') on Embracing Innovation in Government.
 
 ### Getting Started
 
