@@ -19,9 +19,13 @@ The app consolidates services and information across Government agencies, and pe
 
 To date, the app has been downloaded more than 290,000 times and facilitated a range of services such as the birth registration; an eligibility checker for more than 30 types of COVID-19 grants and assistance; as well as access to Merdeka or Pioneer Generation e-card and information on personalised benefits.
 
-<p align="center">
-<img src="/assets/img/lifesg-dashboard.png" alt="Fig 1: Overview of LifeSG’s dashboard which allows citizens to access digital government services." width="75%" height="75%"></p>
-<p align="center">Fig 1: Overview of LifeSG’s dashboard which allows citizens to access digital government services.</p>
+<figure style="text-align: center">
+  <img
+    src="/assets/img/lifesg-dashboard.png" width="75%" height="75%" 
+    alt="Fig 1: Overview of LifeSG’s dashboard which allows citizens to access digital government services."
+  />
+  <figcaption>Fig 1: Overview of LifeSG’s dashboard which allows citizens to access digital government services.</figcaption>
+</figure>
 
 ### Why Should LifeSG be Adopted?
 
@@ -48,9 +52,13 @@ Users can connect with the government using following features in LifeSG.
 - **Explore Services:** Citizens can explore and easily access 70 Government services. Information is grouped according to topics of interest, such as family and parenting, work and employment, healthcare, housing and property, and not according to agencies. About 10,000 users access this feature each month.
 - **Integrated Services:** For selected, more complex transactions, LifeSG integrates multiple government touchpoints to provide a more seamless process. This includes the birth registration service, which enables new parents to also register for Baby Bonus, create a Child Development Account, and even sign up for a child library card, all at the same time. This has reduced the time spent on birth registration and Baby Bonus application from 60 minutes to just 15 minutes, and without having to show up at the registration counter in-person. Most newborns in Singapore are now registered through the app.
 
-<p align="center">
-<img src="/assets/img/lifesg-services.png" alt="Fig 2: LifeSG groups government services in terms of topics of interests."></p>
-<p align="center">Fig 2: LifeSG groups government services in terms of topics of interests.</p>
+<figure style="text-align: center">
+  <img
+    src="/assets/img/lifesg-services.png"  
+    alt="Fig 2: LifeSG groups government services in terms of topics of interests."
+  />
+  <figcaption>Fig 2: LifeSG groups government services in terms of topics of interests.</figcaption>
+</figure>
 
 ### Success Stories
 
@@ -69,4 +77,4 @@ For more details on LifeSG, including links to download the app, please visit <h
 
 ### Contact Information
 
-Questions, technical report or feedback – we’d love to hear from you. Let us know how we can improve your experience by clicking [here](https://www.life.gov.sg/get-in-touch).
+Questions, technical report or feedback – we’d love to hear from you. Let us know how we can improve your experience by clicking [here](https://www.life.gov.sg/get-in-touch){:target="_blank"}.
