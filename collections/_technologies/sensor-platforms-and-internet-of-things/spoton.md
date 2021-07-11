@@ -52,3 +52,55 @@ and outdoors through a simple calibration process.
 accessories such as masks, hats, headdresses, or by temperature fluctuations in the form of hot and cold objects such as drinks. It has a ±0.3-0.5°C 
 accuracy within a 1.5-2m range and can also detect if an individual is not wearing a mask with up to 80% accuracy at optimal lighting conditions without 
 back lightings. 
+
+### How Do You Use SPOTON?
+
+**Step 1- Set Up Hardware**
+
+Mount SPOTON securely onto a laptop or tripod at a height of 1.6 to 1.8 meters from the ground. 
+
+Place the thermal scanner at desired location. Face the laptop or tripod mounted with SPOTON at a passageway leading towards the thermal scanner. Direct visitors towards SPOTON by cordoning off open areas. After which connect the RGB-Depth camera and infrared camera to the laptop with their respective cables.
+
+**Step 2 – Software Installation**
+
+Download the SPOTON file on the laptop for installation.
+
+**Step 3 – Temperature Calibration**
+
+Ensure that the temperature calibration is accurate through the SPOTON software. 
+
+**Step 4 – Set Up Alerts**
+
+Set up the alerts to ensure that whenever a high temperature is detected, the alarm will sound. Users can also set up email alerts through the software. 
+
+### Success Stories
+
+**Nomination Day**
+
+GovTech successfully deployed SPOTON across nine nomination centres on Nomination Day of Singapore’s 2020 General Election. The Election Department (ELD) selected SPOTON because of its ability to be deployed in both indoor and outdoor conditions.
+
+**Changi Exhibition Centre (CEC) community isolation facility**
+
+SPOTON was deployed in the CEC community isolation facility during the COVID-19 pandemic in 2020, for mass staff thermal scanning at the guard house area. SPOTON was selected as it is quick to detect fever cases in shaded outdoor environments like CEC’s.
+
+**OECD OPSI Global Trends 2020 report on “Embracing Innovation in Government”**
+
+In recognition of SPOTON’s innovation, OECD featured SPOTON in its [2020 report](https://trends.oecd-opsi.org/trend-reports/innovative-covid-19-solutions/#rapid-acceleration-of-digital-innovation-and-transformation ':target=_blank') on Embracing Innovation in Government.
+
+### Getting Started
+
+GovTech has licensed the SPOTON software to four Singapore-based distributors. The approved distributors are:
+
+- Extraordinary People Ltd
+- ADERA Global Pte Ltd
+- Scanmed Technology (S) Pte Ltd
+- SmartScan Machine Pte Ltd
+
+For more information, you can refer to our press release. If you have purchased the SPOTON thermal scanner from the above distributers, download a copy of the [Terms of Use (TOU)](https://www.developer.tech.gov.sg/assets/files/SPOTON%20Licence%20(v8)(clean)_7%20Aug%202020.pdf ':target=_blank') and 
+[Privacy Policy (PP)](https://www.developer.tech.gov.sg/assets/files/Privacy%20Policy%20v%202.9_EPL%20(Final).pdf ':target=_blank') before proceeding to use the SPOTON 1.0 software.
+
+For technical support and queries, you may contact the distributor(s) directly.
+
+### Contact Information
+
+For more information on SPOTON, you may contact <sensors@tech.gov.sg>.
