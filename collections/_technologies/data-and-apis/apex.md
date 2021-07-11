@@ -16,19 +16,36 @@ sharing platform for the government through APEX.
 
 APEX can be thought of as a centralised data sharing platform within the government. It enables convenient and secure data sharing through the use of APIs which contain coded rules that manages who has access to the data and how data gets transferred.
 
-<p align="center"><img src="/assets/img/apex_api_catalogue.png" alt="Fig 1: APEX’s API Library allows inter-agency sharing of use case."></p>
-<p align="center">Fig 1: APEX’s API Library allows inter-agency sharing of use case.</p>
+<figure style="text-align: center">
+  <img
+    src="/assets/img/apex_api_catalogue.png"  
+    alt="Fig 1: APEX’s API Library allows inter-agency sharing of use case."
+  />
+  <figcaption>Fig 1: APEX’s API Library allows inter-agency sharing of use case.</figcaption>
+</figure>
 
 In addition to secure data sharing, APEX’s API catalogue provides government agencies with a searchable library of government APIs. This promotes knowledge sharing within the government, while reducing digital silos and the duplication of efforts.
 
-<p align="center"><img src="/assets/img/apex_logging_1.png"></p>
-<p align="center"><img src="/assets/img/apex_logging_2.png" alt="Fig 2 & 3: APEX’s central logging system enables agencies to view the logs of all API calls."></p>
-<p align="center">Fig 2 & 3: APEX’s central logging system enables agencies to view the logs of all API calls.</p>
+<figure style="text-align: center">
+  <img
+    src="/assets/img/apex_logging_1.png"  
+  />
+  <img
+    src="/assets/img/apex_logging_2.png"  
+    alt="Fig 2 & 3: APEX’s central logging system enables agencies to view the logs of all API calls."
+  />
+  <figcaption>Fig 2 & 3: APEX’s central logging system enables agencies to view the logs of all API calls.</figcaption>
+</figure>
 
 The central logging system of APEX also provides an overview of all API call logs, this allows agencies to troubleshoot issues when necessary.
 
-<p align="center"><img src="/assets/img/apex_admin.png" alt="Fig 4: APEX’s Central administration Dashboard"></p>
-<p align="center">Fig 4: APEX’s Central administration dashboard</p>
+<figure style="text-align: center">
+  <img
+    src="/assets/img/apex_admin.png"  
+    alt="Fig 4: APEX’s Central Administration Dashboard"
+  />
+  <figcaption>Fig 4: APEX’s Central Administration Dashboard</figcaption>
+</figure>
 
 The central administration dashboard of APEX serves as a monitoring tool for system health checks and provides analytics.  
 
@@ -112,7 +129,7 @@ A later version of APEX 2.0 running on containers is planned in Q1 FY22, which w
 
 ### Getting Started
 
-Administrative access to APEX is only available on the government intranet. Register for APEX through this [link](https://portal.apex.gov.sg/register) or email us at <enquiries_apex@tech.gov.sg>.
+Administrative access to APEX is only available on the government intranet. Register for APEX through this [link](https://portal.apex.gov.sg/register){:target="_blank"} or email us at <enquiries_apex@tech.gov.sg>.
 
 ### Contact Information
 
