@@ -9,7 +9,7 @@ Check out the technical documentation, how-to guides and videos to understand SH
 Need a specific training? Submit your [feedback](./ship-hats-enquiries) and we will include it in our prioritisation.
 
 ### Basics
-[DevOps Concepts](./training/training-concepts) <br />[Preparing your team for DevOps](https://www.youtube.com/watch?v=wgW-8vvK5sMte){:target="_blank"}<br />[Tools in SHIP-HATS](./training/tools)<br />
+[DevOps Concepts](./training/training-concepts)<br />[Preparing your team for DevOps](https://www.youtube.com/watch?v=wgW-8vvK5sMte){:target="_blank"}<br />[Tools in SHIP-HATS](./training/tools)<br />
 
 ### SHIP-HATS 
 

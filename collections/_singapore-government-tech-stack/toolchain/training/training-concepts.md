@@ -12,8 +12,13 @@ New to DevOps and looking to get started on [SHIP-HATS](../overview)? Here are s
 
 **DevOps** is a practice involving the software developers and IT operations team to automate software development processes with a common goal to deliver high-quality features to the end user, faster. There are frequent releases ensuring regular user feedback while baking in security in early in the life cycle.    
 
-<p align="center"><img src="https://user-images.githubusercontent.com/85614716/124014776-83c82600-da16-11eb-9639-203bb0121745.png" alt="Fig 1: DevOps life cycle"></p>
-<p align="center">Fig 1: DevOps life cycle</p>
+<figure style="text-align: center">
+  <img
+    src="https://user-images.githubusercontent.com/85614716/124014776-83c82600-da16-11eb-9639-203bb0121745.png" 
+    alt="Fig 1: DevOps Life Cycle"
+  />
+  <figcaption>Fig 1: DevOps Life Cycle</figcaption>
+</figure>
 
 **Continuous Integration** is a software engineering approach where the code developed are merged into a shared code repository frequently and then verified by automated build and testing.
 
