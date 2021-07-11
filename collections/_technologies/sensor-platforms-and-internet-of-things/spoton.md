@@ -32,7 +32,7 @@ checks.
 
 SPOTON has been featured in the Organisation for Economic Co-operation and Development (OECD)'s Observatory of Public Sector Innovation (OPSI)'s Global Trends 
 2020 report on Embracing Innovation in Government. Read more about SPOTON under OPSI's section on Innovative COVID-19 Responses 
-[here](https://trends.oecd-opsi.org/trend-reports/innovative-covid-19-solutions/ ':target=_blank').
+[here](https://trends.oecd-opsi.org/trend-reports/innovative-covid-19-solutions/){:target="_blank"}.
 
 ### Why Should SPOTON be Adopted?
 
@@ -79,7 +79,7 @@ Set up the alerts to ensure that whenever a high temperature is detected, the al
 
 - **Changi Exhibition Centre (CEC) community isolation facility:** SPOTON was deployed in the CEC community isolation facility during the COVID-19 pandemic in 2020, for mass staff thermal scanning at the guard house area. SPOTON was selected as it is quick to detect fever cases in shaded outdoor environments like CEC’s.
 
-- **OECD OPSI Global Trends 2020 report on “Embracing Innovation in Government”:** In recognition of SPOTON’s innovation, OECD featured SPOTON in its [2020 report](https://trends.oecd-opsi.org/trend-reports/innovative-covid-19-solutions/#rapid-acceleration-of-digital-innovation-and-transformation ':target=_blank') on Embracing Innovation in Government.
+- **OECD OPSI Global Trends 2020 report on “Embracing Innovation in Government”:** In recognition of SPOTON’s innovation, OECD featured SPOTON in its [2020 report](https://trends.oecd-opsi.org/trend-reports/innovative-covid-19-solutions/#rapid-acceleration-of-digital-innovation-and-transformation){:target="_blank"} on Embracing Innovation in Government.
 
 ### Getting Started
 
@@ -90,8 +90,8 @@ GovTech has licensed the SPOTON software to four Singapore-based distributors. T
 - Scanmed Technology (S) Pte Ltd
 - SmartScan Machine Pte Ltd
 
-For more information, you can refer to our press release. If you have purchased the SPOTON thermal scanner from the above distributers, download a copy of the [Terms of Use (TOU)](https://www.developer.tech.gov.sg/assets/files/SPOTON%20Licence%20(v8)(clean)_7%20Aug%202020.pdf ':target=_blank') and 
-[Privacy Policy (PP)](https://www.developer.tech.gov.sg/assets/files/Privacy%20Policy%20v%202.9_EPL%20(Final).pdf ':target=_blank') before proceeding to use the SPOTON 1.0 software.
+For more information, you can refer to our press release. If you have purchased the SPOTON thermal scanner from the above distributers, download a copy of the [Terms of Use](https://www.developer.tech.gov.sg/assets/files/SPOTON%20Licence%20(v8)(clean)_7%20Aug%202020.pdf){:target="_blank"} and 
+[Privacy Policy](https://www.developer.tech.gov.sg/assets/files/Privacy%20Policy%20v%202.9_EPL%20(Final).pdf){:target="_blank"} before proceeding to use the SPOTON 1.0 software.
 
 For technical support and queries, you may contact the distributor(s) directly.
 
