@@ -78,7 +78,7 @@ The key benefits of WOGAA from a policy and WOG perspective are as shown below.
 - **Automated Reporting of Key Metrics:** WOGAA automates the reporting of key metrics into daily, weekly, and monthly reports that can be exported as files directly or sent to users' emails. This allows public officers who are not WOGAA users to access insights on the performance of their agency's digital services at their convenience.
 - **WOG Data Sharing:** WOGAA is accessible to all government agencies, hence it enables WOG data sharing. This encourages agencies to learn from each other and improve together. 
 
-### How to Use WOGAA?
+### How Do You Use WOGAA?
 
 - **WOGAA Uptime:** To use WOGAA Uptime, users can subscribe for email and/or SMS notifications via WOGAA. This allows users to be notified via their preferred platform once downtime occurs. 
 - **WOGAA Inspect:** WOGAA Inspect provides a dashboard for viewing the Performance, Accessibility, Best Practice and Searchability/Search Engine Optimisation (SEO) scores of an agencies' digital service. Users can also view actionable recommendations to improve the scores of each component as well or generate a report for further analysis. 
