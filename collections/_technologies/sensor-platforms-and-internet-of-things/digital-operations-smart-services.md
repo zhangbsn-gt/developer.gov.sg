@@ -54,10 +54,14 @@ There are multiple uses for DOSS. The examples below illustrate two benefits for
 
 ### Success Stories
 
-<p align="center"><img src="/assets/img/doss-fig1.png" alt="Fig 1: Medical staff learning to navigate robots remotely using DOSS’s remote-control platform at Changi Exhibition Centre (CEC) community isolation facility." /></p>
-<p align="center">Fig 1: Medical staff learning to navigate robots remotely using DOSS’s remote-control platform at Changi Exhibition Centre (CEC) community isolation facility.</p>
+<figure style="text-align: center">
+  <img src="/assets/img/doss-fig1.png" width="60%" height="60%"
+    alt="Fig 1: Medical staff learning to navigate robots remotely using DOSS’s remote-control platform at Changi Exhibition Centre (CEC) community isolation   facility."
+  />
+  <figcaption>Fig 1: Medical staff learning to navigate robots remotely using DOSS’s remote-control platform at Changi Exhibition Centre (CEC) community isolation facility.</figcaption>
+</figure>
 
-- **COVID operations with AMRs:** SPOT is a four-legged robot built by [Boston Dynamics](https://www.bostondynamics.com/ ':target=_blank') and the first robot that DOSS software capabilities have been used on. In April 2020, medical staff piloted SPOT remotely to deliver medicine and other essential supplies to patients in the CEC community isolation facility. In May 2020, SPOT assisted safe distancing operations at Bishan-Ang Mo Kio Park, using DOSS’s analytics to ensure parkgoers were practising safe distancing and wearing masks.
+- **COVID operations with AMRs:** SPOT is a four-legged robot built by [Boston Dynamics](https://www.bostondynamics.com/){:target="_blank"} and the first robot that DOSS software capabilities have been used on. In April 2020, medical staff piloted SPOT remotely to deliver medicine and other essential supplies to patients in the CEC community isolation facility. In May 2020, SPOT assisted safe distancing operations at Bishan-Ang Mo Kio Park, using DOSS’s analytics to ensure parkgoers were practising safe distancing and wearing masks.
 
 - **SPOTON (v1.0):** SPOTON is a smart thermal scanner and the first smart sensor payload that was developed using the DOSS platform.
 
