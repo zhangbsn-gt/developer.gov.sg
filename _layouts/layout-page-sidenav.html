@@ -25,6 +25,7 @@ layout: layout-page
   {% else %}
   <div class="col is-9 is-12-touch">
     {{ content }}
+    {%- include feedback.html -%}
     <p>
       <em>
         Last updated {{ page.last_modified_at | date: '%d %B %Y' }}
