@@ -2,6 +2,9 @@
     &.technologies{
         grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
         padding: 1rem 0;
+        @include until($tablet){
+            grid-template-columns: 1fr;
+        }
         .grid-item{
             height: 100%;
             .sgds-card{
