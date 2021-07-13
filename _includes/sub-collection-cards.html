@@ -10,18 +10,19 @@
   {% for document in full_collection %}
     {% assign document_sub_collection = document.id | split: "/" | shift | shift | first %}
     {% if document_sub_collection == sub_collection and page.title != document.title %}
-    <a href="{{ document.url }}" class="grid-item">
-      <div class="sgds-card card-variant-category-info">
-        <div class="sgds-card-content">
-          <header>
-            <h4>{{ document.title }}</h4>
-          </header>
-          <p>
-            {{ document.description | markdownify }}
-          </p>
-        </div>
+
+    <div class="sgds-card card-variant-category-info grid-item">
+      <div class="sgds-card-content">
+        <header>
+          <a href="{{ category.name | slugify }}"><h4>{{ document.title }}</h4></a>
+        </header>
+        <p>
+          <!-- TODO: [issue] markdownify create blank <p> tag at the top and bottom of description -->
+          {{ document.description | markdownify }}
+        </p>
       </div>
-    </a>
+    </div>
+
     {% endif %}
   {% endfor %}
 </div>
