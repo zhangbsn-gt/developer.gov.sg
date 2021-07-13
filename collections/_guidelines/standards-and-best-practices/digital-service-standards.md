@@ -1,8 +1,8 @@
 ---
-title: Digital Service Standards
+title: Digital Service Standards (DSS)
 layout: layout-page-sidenav
 category: Standards & Best Practices
-description: The DSS guides agencies to deliver digital services that are easy, seamless and relevant for citizens and businesses
+description: The DSS guides government agencies with the implementation of their digital services. Government digital services are often streamlined to meet the relevant needs of citizens and businesses.
 ---
 
 ## Overview

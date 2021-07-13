@@ -44,8 +44,13 @@ Check out [Training: Tools in SHIP-HATS](./training/tools) to know more about th
 
 ### Roadmap
 
-<p align="center"><img src="https://user-images.githubusercontent.com/85614716/123921126-44b7b780-d9b9-11eb-9daf-61b3c587fc21.png" alt="Fig 1: SHIP-HATS Roadmap"></p>
-<p align="center">Fig 1: SHIP-HATS Roadmap</p>
+<figure style="text-align: center">
+  <img
+    src="https://user-images.githubusercontent.com/85614716/123921126-44b7b780-d9b9-11eb-9daf-61b3c587fc21.png" 
+    alt="Fig 1: SHIP-HATS Roadmap"
+  />
+  <figcaption>Fig 1: SHIP-HATS Roadmap</figcaption>
+</figure>
 
 ### What’s New? 
 
