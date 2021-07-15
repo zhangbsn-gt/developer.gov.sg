@@ -21,11 +21,6 @@ $(function () {
   const gaId = config.gaId.replace(/-/g, '_');
   const eventCategory = 'feedback_rating';
 
-  // Enable feedback feature
-  if (localStorage.getItem('enableFeedback') === '1') {
-    $('#feedback').removeClass('is-hidden');
-  }
-
   /**
    * Read more here about sending Google Analytics Event
    * https://developers.google.com/analytics/devguides/collection/gtagjs/events
