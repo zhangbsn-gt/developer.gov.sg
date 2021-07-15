@@ -19,7 +19,7 @@ $(function () {
 
   // GA-12345 -> GA_12345 for consistency with GAID set by GA on startup
   const gaId = config.gaId.replace(/-/g, '_');
-  const eventCategory = 'Test Feedback';
+  const eventCategory = 'feedback_rating';
 
   // Enable feedback feature
   if (localStorage.getItem('enableFeedback') === '1') {
@@ -33,19 +33,46 @@ $(function () {
    * Try to use the default Google Analytics Event as much as possible
    */
 
-  $(".js-thumbs-up").click(function() {
-    gtag('event',  'thumbs-up', {
+  // Create a timeout function to show the success message regardless whether
+  // the submission is successful
+  function createFunctionWithTimeout(callback, opt_timeout) {
+    var called = false;
+    function fn() {
+      if (!called) {
+        called = true;
+        callback();
+      }
+    }
+    setTimeout(fn, opt_timeout || 1000);
+    return fn;
+  }
+
+  function showSuccessMessage() {
+    let feedbackThumbs = $('#feedback .feedback__thumb');
+    let feedbackSuccess = $('#feedback .feedback__success');
+    $(feedbackThumbs).addClass('is-hidden');
+    $(feedbackSuccess).removeClass('is-hidden');
+  }
+  // Event Listeners
+  $(".js-thumbs-up").click(function () {
+    gtag('event', 'thumbs_up', {
       event_category: eventCategory,
-      event_label: 'thumbs-up-icon',
-      value: 1
+      event_label: 'thumbs_up_icon',
+      value: 1,
+      event_callback: function() {
+        createFunctionWithTimeout(showSuccessMessage, 300)
+      }
     });
   });
 
-  $("js-thumbs-down").click(function() {
-    gtag('event',  'thumbs-down', {
+  $(".js-thumbs-down").click(function () {
+    gtag('event', 'thumbs_down', {
       event_category: eventCategory,
-      event_label: 'thumbs-up-icon',
-      value: 1
+      event_label: 'thumbs_down_icon',
+      value: 0,
+      event_callback: function() {
+        createFunctionWithTimeout(showSuccessMessage, 300)
+      }
     });
   });
 });

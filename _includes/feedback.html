@@ -1,13 +1,40 @@
-<div id="feedback" class="row is-hidden">
+<section id="feedback" class="sgds-section">
+  <div class="row is-multiline">
     <div class="col is-12">
-        <div class="is-size-4">Was this article useful?</div>
-        <button class="sgds-button js-thumbs-up">
-            <span class="sgds-icon sgds-icon-thumbs-up is-size-4" title="thumbs-up" alt="thumbs-up" role="img" aria-label="thumbs-up"></span>
-            Yes
-        </button>
-        <button class="sgds-button js-thumbs-down">
-            <span class="sgds-icon sgds-icon-thumbs-down is-size-4" title="thumbs-down" alt="thumbs-down" role="img" aria-label="thumbs-down"></span>
-            No
-        </button>
+      <div class="is-size-4">Was this article useful?</div>
     </div>
-</div>
+    <div class="col is-12 feedback__thumb">
+      <button class="sgds-button js-thumbs-up">
+        <span
+          class="sgds-icon sgds-icon-thumbs-up is-size-4"
+          title="thumbs-up"
+          alt="thumbs-up"
+          role="img"
+          aria-label="thumbs-up"
+        ></span>
+        Yes
+      </button>
+      <button class="sgds-button js-thumbs-down">
+        <span
+          class="sgds-icon sgds-icon-thumbs-down is-size-4"
+          title="thumbs-down"
+          alt="thumbs-down"
+          role="img"
+          aria-label="thumbs-down"
+        ></span>
+        No
+      </button>
+    </div>
+    <div class="col is-12 feedback__success is-hidden">
+      <span
+        class="sgds-icon sgds-icon-check is-size-4 has-text-success"
+        title="check"
+        alt="check"
+        role="img"
+        aria-label="check"
+      >
+      </span>
+      <span class="has-text-success">Sent. Thank you for the feedback!</span>
+    </div>
+  </div>
+</section>
