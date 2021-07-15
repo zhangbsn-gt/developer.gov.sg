@@ -28,4 +28,6 @@ compliance baselines.
 
 • Agility to accommodate change requests throughout the DevSecOps process. Key security components to securing IaC require its integration with a trusted CI/CD pipeline that checks for misconfigurations, non-compliance and security risks before code runtime.
 
+![Security_benefits_img02](/assets/img/securitybenefits_iac02.png)
+
 
