@@ -13,6 +13,7 @@ layout: layout-page
   {% if page.sharable == true or page.sharable == nil %}
   <div class="col is-8 is-12-touch">
     {{ content }}
+    {%- include feedback.html -%}
     <div class="small-viewport-social-media-buttons">
       {% include social-media.html display="mobile" %}
     </div>

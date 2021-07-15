@@ -26,23 +26,26 @@ $(function () {
     $('#feedback').removeClass('is-hidden');
   }
 
-  $(".js-thumbs-up").click(function () {
-    ga(`gtag_${gaId}.send`, {
-      hitType: 'event',
-      eventCategory: eventCategory,
-      eventAction: 'thumbs-up',
-      eventLabel: 'thumbs-up-icon',
-      eventValue: 1
+  /**
+   * Read more here about sending Google Analytics Event
+   * https://developers.google.com/analytics/devguides/collection/gtagjs/events
+   * 
+   * Try to use the default Google Analytics Event as much as possible
+   */
+
+  $(".js-thumbs-up").click(function() {
+    gtag('event',  'thumbs-up', {
+      event_category: eventCategory,
+      event_label: 'thumbs-up-icon',
+      value: 1
     });
   });
 
-  $("js-thumbs-down").click(function () {
-    ga(`gtag_${gaId}.send`, {
-      hitType: 'event',
-      eventCategory: eventCategory,
-      eventAction: 'thumbs-down',
-      eventLabel: 'thumbs-down-icon',
-      eventValue: 0
+  $("js-thumbs-down").click(function() {
+    gtag('event',  'thumbs-down', {
+      event_category: eventCategory,
+      event_label: 'thumbs-up-icon',
+      value: 1
     });
   });
 });
