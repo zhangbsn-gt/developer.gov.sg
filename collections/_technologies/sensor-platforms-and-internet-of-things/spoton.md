@@ -16,7 +16,7 @@ temperature scanner. SPOTON allows efficient and quick crowd temperature screeni
 individuals with high temperatures are detected. 
 
 SPOTON is part of the Smart Nation Sensor Platform (SNSP), a whole-of-government (WOG) technology platform that translates data from sensors and IoT devices 
-into a 360° awareness of what is happening in urban spaces in Singapore.
+into a 360° awareness of what is happening in smart city spaces in Singapore.
 
 ### What is SPOTON?
 
