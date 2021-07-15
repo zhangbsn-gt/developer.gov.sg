@@ -1,5 +1,5 @@
 ---
-title: Security Benefits of using IaC
+title: Security Benefits of using Infrastructure-as-Code
 layout: layout-blog
 author: Edmund Yeo
 description: >
@@ -20,3 +20,12 @@ Infrastructure-as-Code (IaC) is the **process of provisioning and managing resou
 This article explains the importance of IaC by discussing its benefits and how it augments defence against risks.
 
 ![Security_benefits_img01](/assets/img/securitybenefits_iac01.png)
+
+IaC is part of the Government Trust-based Architecture Framework, and its implementation fulfils the framework’s principle, Optimise with Automation & Orchestration, which aims to achieve the following:
+
+• Fully automated process workflows which provide Continuous Integration and Continuous Delivery (CI/CD) of services built on repeatable
+compliance baselines.
+
+• Agility to accommodate change requests throughout the DevSecOps process. Key security components to securing IaC require its integration with a trusted CI/CD pipeline that checks for misconfigurations, non-compliance and security risks before code runtime.
+
+
