@@ -6,7 +6,7 @@
 <div class="card-grid-container technologies">
   {% for category in site.data[include.sectionName] %}
     {% assign item_count = category.items | size | minus: 1 %}
-    <div class="sgds-card card-variant-category-info">
+    <div class="sgds-card sgds-card-variant-category-info">
       <div class="sgds-card-content">
         {% assign name = category.name | downcase | replace:" ","-" %}
         <img src="/assets/img/{{page.title | downcase}}/{{name}}.svg" alt="">

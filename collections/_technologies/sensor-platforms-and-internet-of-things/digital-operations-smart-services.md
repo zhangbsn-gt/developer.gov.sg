@@ -16,7 +16,7 @@ counting the number of people a robot “sees”.
 DOSS’s AI capabilities and hardware-neutral approach make it a powerful platform for augmenting human operations in a diverse range of operational environments.
 
 DOSS is part of the Smart Nation Sensor Platform (SNSP), a whole-of-government (WOG) technology platform that translates data from sensors and IoT devices 
-into a 360° awareness of what is happening in urban spaces in Singapore.
+into a 360° situational awareness of what is happening in smart city spaces in Singapore.
 
 DOSS is a product within the Operations layer of the SNSP Framework (i.e. SNSP’s tech stack). Operations technologies such as DOSS allow users to interact 
 with the physical world through a digital platform, including conveying instructions back to the physical world.

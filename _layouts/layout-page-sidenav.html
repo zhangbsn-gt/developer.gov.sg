@@ -10,6 +10,20 @@ layout: layout-page
       </ul>
     </aside>
   </div>
+  {% if page.sharable == true or page.sharable == nil %}
+  <div class="col is-9 is-offset-1-desktop is-12-touch">
+    {{ content }}
+    {%- include feedback.html -%}
+    <div class="small-viewport-social-media-buttons">
+      {% include social-media.html display="mobile" %}
+    </div>
+    <p>
+      <em>
+        Last updated {{ page.last_modified_at | date: '%d %B %Y' }}
+      </em>
+    </p>
+  </div>
+  {% else %}
   <div class="col is-9 is-offset-1-desktop is-12-touch">
     {{ content }}
     {%- include feedback.html -%}
@@ -19,4 +33,9 @@ layout: layout-page
       </em>
     </p>
   </div>
+  {% endif %}
+
+  {% if page.sharable == true or page.sharable == nil %}
+  {% include social-media.html display="wide" %}
+  {% endif %}
 </div>
