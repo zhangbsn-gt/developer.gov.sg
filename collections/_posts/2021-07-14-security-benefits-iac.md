@@ -30,4 +30,14 @@ compliance baselines.
 
 ![Security_benefits_img02](/assets/img/securitybenefits_iac02.png)
 
+## HOW IaC AUGMENTS DEFENCE AGAINST RISKS
+
+These are some examples of how implementing IaC can mitigate risks associated with the application development process.
+
+![Security_benefits_img03](/assets/img/securitybenefits_iac03.png)
+![Security_benefits_img04](/assets/img/securitybenefits_iac04.png)
+![Security_benefits_img05](/assets/img/securitybenefits_iac05.png)
+
+In summary, IaC helps improve developer productivity and prevents misconfigurations and other cloud-related risks. It is recommended to use IaC templates to bake in security controls and automate the consistent configuration baselines for hosting of workloads on cloud platforms.
+
 
