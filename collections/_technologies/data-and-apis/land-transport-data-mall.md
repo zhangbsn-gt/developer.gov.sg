@@ -2,8 +2,7 @@
 title: Land Transport DataMall - Collaboration and Co-creation of Innovative and Inclusive Transport Solutions
 layout: layout-page-sidenav
 category: Data and APIs
-description: > 
-Land Transport DataMall contains land-transport-related datasets and APIs by LTA to promote public-private collaborations. 
+description: Land Transport DataMall contains land-transport-related datasets and APIs by LTA to promote public-private collaborations.
 ---
 
 ### Overview
@@ -19,8 +18,8 @@ Thus, the Land Transport Authority (LTA) has launched the [Land Transport DataMa
 DataMall contains dynamic and static datasets. Dynamic datasets are updated in real time and served out via APIs which are accessible with an Account Key that are issued only to registered DataMall subscribers. Both dynamic and static datasets are collated from multiple sources. To view the full list of static datasets click here, and to view the full list of dynamic datasets click here.
 
 Examples of available datasets include:
-- 	Geospatial datasets: These provide Geographical Information System (GIS) information which are available in the ESRI Shape file format
--   Facts & figures datasets: These provide land transport statistical reports which are available in both PDF and XLS format and updated on a monthly/annual basis.
+- Geospatial datasets: These provide Geographical Information System (GIS) information which are available in the ESRI Shape file format
+- Facts & figures datasets: These provide land transport statistical reports which are available in both PDF and XLS format and updated on a monthly/annual basis.
 
 In addition to datasets, DataMall also contains an App Zone. This is a marketplace of land transport applications developed by third parties and LTA for transport related services that cover bus arrival times, live traffic conditions, parking availability around the central business district (CBD) and taxi booking services among others. To view the available apps, click [here.](https://datamall.lta.gov.sg/content/datamall/en/app-zone.html){:target="_blank"}
 
