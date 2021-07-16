@@ -11,9 +11,9 @@ Based on the Smart Nation initiative, digital technologies and innovation will b
 
 Thus, the Land Transport Authority (LTA) has launched the [Land Transport DataMall](https://datamall.lta.gov.sg/content/datamall/en.html){:target="_blank"}, a platform that contains land transport-related datasets and APIs for enterprises, third-party developers, researchers and other members of the public to utilise. This is aimed at promoting collaboration and co-creation of innovative and inclusive transport solutions between the public and Government.
 
-### What is Land Transport DataMall? 
+### What is Land Transport DataMall?
 
-<iframe src="https://youtu.be/33hWfDKSC20" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/33hWfDKSC20?showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 DataMall contains dynamic and static datasets. Dynamic datasets are updated in real time and served out via APIs which are accessible with an Account Key that are issued only to registered DataMall subscribers. Both dynamic and static datasets are collated from multiple sources. To view the full list of static datasets click here, and to view the full list of dynamic datasets click here.
 
