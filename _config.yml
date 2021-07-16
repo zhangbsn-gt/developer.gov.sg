@@ -17,6 +17,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-redirect-from
   - jekyll-last-modified-at
+  - jekyll-dotenv
 
 exclude:
   - functions

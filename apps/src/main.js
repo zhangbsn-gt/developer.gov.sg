@@ -17,8 +17,6 @@ $(function () {
       .toggleClass("is-hidden-touch");
   });
 
-  // GA-12345 -> GA_12345 for consistency with GAID set by GA on startup
-  const gaId = config.gaId.replace(/-/g, '_');
   const eventCategory = 'feedback_rating';
 
   /**
