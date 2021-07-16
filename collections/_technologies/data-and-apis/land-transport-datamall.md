@@ -29,7 +29,7 @@ DataMall is the only land transport services focused data and API platform by th
 
 ### How Do You Use Land Transport DataMall? 
 
-Users can refer to the [API user guide](https://datamall.lta.gov.sg/content/dam/datamall/datasets/LTA_DataMall_API_User_Guide1.pdf){:target="_blank"} on how to utilise DataMall’s APIs.
+Users can refer to the [API user guide](https://datamall.lta.gov.sg/content/dam/datamall/datasets/LTA_DataMall_API_User_Guide.pdf){:target="_blank"} on how to utilise DataMall’s APIs.
 
 ### Contact Information 
 
