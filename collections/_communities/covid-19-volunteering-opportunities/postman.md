@@ -27,7 +27,23 @@ The benefits to adopting Postman are as shown below.
 
 ### How Do You Use Postman?
 
+<figure style="text-align: center">
+  <img
+    src="/assets/img/postman-msg-creation.png" width="70%" height="70%" 
+    alt="Fig 1: Postman message creation"
+  />
+  <figcaption>Fig 1: Postman message creation (For illustration purposes only)</figcaption>
+</figure>
+
 **Step 1:** Messages can be crafted using the template shown above. Customisation of the template is also possible and templates can be adapted in various styles including for generic messages sent to the public, appointment reminders and unique messages for specific individuals.
+
+<figure style="text-align: center">
+  <img
+    src="/assets/img/postman-msg-creation.png" width="70%" height="70%" 
+    alt="Fig 2: Postman recipient list"
+  />
+  <figcaption>Fig 2: Postman recipient list (For illustration purposes only)</figcaption>
+</figure>
 
 **Step 2:** Uploading of recipient lists in CSV format is done next. A sample .csv file can also be downloaded on the page itself for reference.
 
