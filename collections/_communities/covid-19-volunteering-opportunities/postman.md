@@ -39,7 +39,7 @@ The benefits to adopting Postman are as shown below.
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/postman-msg-creation.png" width="70%" height="70%" 
+    src="/assets/img/postman-recipient-list.png" width="70%" height="70%" 
     alt="Fig 2: Postman recipient list"
   />
   <figcaption>Fig 2: Postman recipient list (For illustration purposes only)</figcaption>
