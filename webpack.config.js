@@ -69,6 +69,7 @@ module.exports = (env, argv) => {
           argv.mode === "production"
             ? "https://api.developer.gov.sg/v1/api"
             : process.env.API_URL,
+        GA_ID: process.env.GA_ID || null
       }),
     ],
   };
