@@ -1,5 +1,5 @@
 ---
-title: Security Benefits of using Infrastructure-as-Code
+title: Security Benefits of Using Infrastructure-as-Code
 layout: layout-blog
 author: Edmund Yeo
 description: >
@@ -30,7 +30,7 @@ compliance baselines.
 
 ![Security_benefits_img02](/assets/img/securitybenefits_iac02.png)
 
-## HOW IaC AUGMENTS DEFENCE AGAINST RISKS
+### HOW IaC AUGMENTS DEFENCE AGAINST RISKS
 
 These are some examples of how implementing IaC can mitigate risks associated with the application development process.
 
