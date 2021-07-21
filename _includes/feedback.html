@@ -1,3 +1,4 @@
+<!-- Refer to main.js for interactivity -->
 <section id="feedback" class="sgds-section">
   <div class="row is-multiline">
     <div class="col is-12">
@@ -25,6 +26,79 @@
         No
       </button>
     </div>
+    <!-- Modal that shows page is useful -->
+    <div
+      class="sgds-modal js-feedback-useful-modal"
+      id="feedback-modal-useful-yes"
+      aria-labelledby="developer portal feedback"
+      role="dialog"
+    >
+      <div class="sgds-modal-background"></div>
+
+      <div class="sgds-modal-card">
+        <header class="sgds-modal-card-head">
+          <p class="sgds-modal-card-title" id="sgds-modal-title">
+            Did this page help you? Yes
+          </p>
+          <button class="delete js-close-feedback-modal" aria-label="close"></button>
+        </header>
+        <section class="sgds-modal-card-body">
+          <p>Thanks for letting us know that this page is useful for you!</p>
+          <p>
+            If you've got a moment, please tell us what we did right so that we
+            can do more of it.
+          </p>
+        </section>
+        <footer class="sgds-modal-card-foot is-flex-justify-fs">
+          <a
+            class="sgds-button is-outlined is-primary js-send-feedback-modal"
+            target="_blank"
+            href="{{ site.feedback_form }}?60efdac78c8a4a0011f25c69={{ page.url | uri_escape }}"
+          >
+            Feedback</a
+          >
+        </footer>
+      </div>
+    </div>
+
+    <!-- Modal that shows page needs improvement -->
+    <div
+      class="sgds-modal js-feedback-useful-modal"
+      id="feedback-modal-useful-no"
+      aria-labelledby="developer portal feedback"
+      role="dialog"
+    >
+      <div class="sgds-modal-background"></div>
+
+      <div class="sgds-modal-card">
+        <header class="sgds-modal-card-head">
+          <p class="sgds-modal-card-title" id="sgds-modal-title">
+            Did this page help you? - No
+          </p>
+          <button class="delete js-close-feedback-modal" aria-label="close"></button>
+        </header>
+        <section class="sgds-modal-card-body">
+          <p>
+            Thanks for letting us know that this page still needs work to be
+            done.
+          </p>
+          <p>
+            If you've got a moment, please tell us how we can make this page
+            better.
+          </p>
+        </section>
+        <footer class="sgds-modal-card-foot is-flex-justify-fs">
+          <a
+            class="sgds-button is-outlined is-primary js-send-feedback-modal"
+            target="_blank"
+            href="{{ site.feedback_form }}?{{ site.feedback_form_url_field }}={{ page.url | uri_escape }}"
+          >
+            Feedback</a
+          >
+        </footer>
+      </div>
+    </div>
+
     <div class="col is-12 feedback__success is-hidden">
       <span
         class="sgds-icon sgds-icon-check is-size-4 has-text-success"
@@ -36,5 +110,16 @@
       </span>
       <span class="has-text-success">Sent. Thank you for the feedback!</span>
     </div>
+    
+    <div class="col is-12">
+      <a
+        target="_blank"
+        href="{{ site.feedback_form }}?60efdac78c8a4a0011f25c69={{ page.url | uri_escape }}"
+      >
+        Provide Feedback</a
+      >
+    </div>
+
+
   </div>
 </section>
