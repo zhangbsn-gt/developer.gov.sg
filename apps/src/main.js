@@ -85,7 +85,7 @@ $(function () {
       event_category: eventCategory,
       event_label: 'thumbs_down_icon',
       value: 0,
-      event_callback: function() {
+      event_callback: () => {
         createFunctionWithTimeout(showSuccessMessageAndFeedbackModal.bind(null, false), 200)
       }
     });
