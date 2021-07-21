@@ -96,7 +96,7 @@ $(function () {
       event_category: eventCategory,
       event_label: 'send_feedback',
       event_callback: () => {
-        createFunctionWithTimeout(hideFeedbackModal.bind(null, true), 200)
+        createFunctionWithTimeout(hideFeedbackModal, 200)
       }
     });
   })
@@ -106,7 +106,7 @@ $(function () {
       event_category: eventCategory,
       event_label: 'close_feedback_modal',
       event_callback: () => {
-        createFunctionWithTimeout(hideFeedbackModal.bind(null, true), 200)
+        createFunctionWithTimeout(hideFeedbackModal, 200)
       }
     });
   })
