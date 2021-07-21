@@ -112,4 +112,3 @@ $(function () {
   })
   // END: Thumbs up/down and feedback modal
 });
-
