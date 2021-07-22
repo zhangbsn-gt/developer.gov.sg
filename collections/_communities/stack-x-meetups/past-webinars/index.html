@@ -154,7 +154,7 @@ webinars:
 <div class="card-grid-container webinar">
   {% for webinar in page.webinars %}
   {% assign video_url = "https://www.youtube.com/watch?v=" | append: webinar.video_id %}
-    <div class="sgds-card variant-video-info">
+    <div class="sgds-card sgds-card-variant-video-info">
       <div class="sgds-card-content">
         <div class="content-grid">
           <a href="{{ video_url }}">
