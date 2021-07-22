@@ -26,9 +26,25 @@ allowfullscreen></iframe>
 SPOTON is a smart thermal scanner developed under the Digital Operations Smart Services (DOSS) platform — a lightweight, flexible operations management platform 
 that works with different sensor hardware and robot systems to enable next-generation digital operations.
 
+<figure style="text-align: center">
+  <img
+    src="/assets/img/spoton.png" width="70%" height="70%" 
+    alt="Fig 1: SPOTON"
+  />
+  <figcaption>Fig 1: SPOTON</figcaption>
+</figure>
+
 SPOTON can screen up to 10 people at one go, with a temperature indicator that is able to detect each face and automated alarms and email alerts to operators 
 when high temperatures are recorded. This enables faster crowd temperature screening. It also minimises physical contact and time spent on manual temperature 
 checks.
+
+<figure style="text-align: center">
+  <img
+    src="/assets/img/spoton-thermal-scan.png" width="70%" height="70%" 
+    alt="Fig 2: SPOTON’s thermal scanner scan screen up to 10 individuals at once."
+  />
+  <figcaption>Fig 2: SPOTON’s thermal scanner scan screen up to 10 individuals at once.</figcaption>
+</figure>
 
 SPOTON has been featured in the Organisation for Economic Co-operation and Development (OECD)'s Observatory of Public Sector Innovation (OPSI)'s Global Trends 
 2020 report on Embracing Innovation in Government. Read more about SPOTON under OPSI's section on Innovative COVID-19 Responses 

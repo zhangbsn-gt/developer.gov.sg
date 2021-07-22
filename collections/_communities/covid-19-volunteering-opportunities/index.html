@@ -28,7 +28,7 @@ layout: layout-page-sidenav
   {% for project in site.communities %}
     {% assign id = project.id | split: "/" | last %}
     {% if id != "index" and project.path contains "volunteering-opportunities" %}
-    <div class="col is-6-tablet is-4-widescreen is-flex">
+    <div class="col is-6-desktop is-12-tablet">
       <div class="sgds-card">
         <div class="sgds-card-content">
           <h3>{{ project.title }}</h3>

@@ -4,7 +4,7 @@
       <small
         >Have feedback? Please
         <a
-          href="{{ site.feedback_form }}"
+          href="{{ site.feedback_form }}?{{ site.feedback_form_url_field }}={{ page.url | uri_escape }}"
           target="_blank"
           class="feedback-banner-link has-text-white"
           >let us know.</a
