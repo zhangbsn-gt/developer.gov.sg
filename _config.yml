@@ -43,5 +43,6 @@ collections:
   singapore-government-tech-stack:
     output: yes
 
-feedback_form: https://form.gov.sg/5e158a8b8967b800114d5a89
+feedback_form: https://form.gov.sg/60f7b3df8c8a4a00115c2e49
+feedback_form_url_field: 60efdac78c8a4a0011f25c69
 domain: https://developer.tech.gov.sg
