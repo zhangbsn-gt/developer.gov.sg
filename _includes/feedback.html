@@ -53,7 +53,7 @@
           <a
             class="sgds-button is-outlined is-primary js-send-feedback-modal"
             target="_blank"
-            href="{{ site.feedback_form }}?60efdac78c8a4a0011f25c69={{ page.url | uri_escape }}"
+            href="{{ site.feedback_form }}?{{ site.feedback_form_url_field }}={{ page.url | uri_escape }}"
           >
             Feedback</a
           >
@@ -114,7 +114,7 @@
     <div class="col is-12">
       <a
         target="_blank"
-        href="{{ site.feedback_form }}?60efdac78c8a4a0011f25c69={{ page.url | uri_escape }}"
+        href="{{ site.feedback_form }}?{{ site.feedback_form_url_field }}={{ page.url | uri_escape }}"
       >
         Provide Feedback</a
       >
