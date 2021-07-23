@@ -149,6 +149,15 @@ a.external-link::after {
 .idea-sprint-poster {
   max-width: 45%;
 }
+
+.sgds-modal .sgds-modal-card-title {
+  flex-shrink: 1;
+}
+
+.sgds-modal.is-maxmediumwidth .sgds-modal-card {
+  max-width: 600px;
+}
+
 @media screen and (max-width: 1215px) {
   .idea-sprint-poster {
     max-width: 60%;
