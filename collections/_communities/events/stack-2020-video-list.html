@@ -1,4 +1,4 @@
-<div class="row is-multiline">
+<div class="card-grid-container is-fullwidth">
   {% comment %}
   {% assign videos = site.data.stack2020-videos | where: include.type %}
   {% endcomment %}
@@ -13,15 +13,11 @@
   {% assign article_link = video.article_link %}
   {% assign slide_link = video.slide_link %}
   {% assign video_image = "https://img.youtube.com/vi/$video_id/hqdefault.jpg" | replace: "$video_id", video_id %}
-  <div class="col is-6 is-flex">
-    <div class="sgds-card">
-      <div class="sgds-card-content">
+
+  <div class="sgds-card sgds-card-variant-video-info">
+    <div class="sgds-card-content">
+      <div class="content-grid">
         {% if video_id != nil %}
-        <h4>
-          <a href="{{ video_url }}">
-            {{ video_title }}
-          </a>
-        </h4>
         <div class="sgds-card-image">
           <figure class="sgds-image">
             <a href="{{ video_url }}">
@@ -30,34 +26,83 @@
           </figure>
         </div>
         {% else %}
-        <h4>
-          {{ video_title }}
-        </h4>
+          <small>No image found</small>
         {% endif %}
-        <p>
-          <strong>Speaker(s)</strong> <br>
-          {% for speaker in speakers %}
-          {% assign speaker_index = forloop.index| minus: 1 %}
-          <strong>{{ speaker }}</strong>, {{speakers_title[speaker_index]}}<br><br>
-          {% endfor %}
-        </p>
-        {% if article_link != nil %}
-        You can read the article <a href="{{ 'stack-2020/' | append: video.article_link}}">here</a>.
-        {% endif %}
-      </div>
-      <div class="sgds-card-footer">
-        {% if video_id != nil %}
-        <a href="{{ video_url }}" class="sgds-card-footer-item">
-          Watch video
-        </a>
-        {% endif %}
-        {% if slide_link != nil %}
-        <a href="{{ '/assets/files/' | append: video.slide_link }}" class="sgds-card-footer-item">
-          View Slides
-        </a>
-        {% endif %}
+        <div class="info">
+          {% if video_id != nil %}
+          <h4>
+            <a href="{{ video_url }}">
+              {{ video_title }}
+            </a>
+          </h4>
+          {% endif %}
+          <p>
+            <strong>Speaker(s)</strong> <br>
+            {% for speaker in speakers %}
+            {% assign speaker_index = forloop.index| minus: 1 %}
+            <strong>{{ speaker }}</strong>, {{speakers_title[speaker_index]}}<br><br>
+            {% endfor %}
+          </p>
+          {% if article_link != nil %}
+          You can read the article <a href="{{ 'stack-2020/' | append: video.article_link}}">here</a>.
+          {% endif %}
+
+          {% if slide_link != nil %}
+            <a href="{{ '/assets/files/' | append: video.slide_link }}">
+              View Slides
+            </a>
+          {% endif %}
+        </div>
       </div>
     </div>
   </div>
+
+
+  {% comment %}
+  <div class="sgds-card">
+    <div class="sgds-card-content">
+      {% if video_id != nil %}
+      <h4>
+        <a href="{{ video_url }}">
+          {{ video_title }}
+        </a>
+      </h4>
+      <div class="sgds-card-image">
+        <figure class="sgds-image">
+          <a href="{{ video_url }}">
+            <img alt="stack 2020 video thumbnail" src="{{ video_image }}" />
+          </a>
+        </figure>
+      </div>
+      {% else %}
+      <h4>
+        {{ video_title }}
+      </h4>
+      {% endif %}
+      <p>
+        <strong>Speaker(s)</strong> <br>
+        {% for speaker in speakers %}
+        {% assign speaker_index = forloop.index| minus: 1 %}
+        <strong>{{ speaker }}</strong>, {{speakers_title[speaker_index]}}<br><br>
+        {% endfor %}
+      </p>
+      {% if article_link != nil %}
+      You can read the article <a href="{{ 'stack-2020/' | append: video.article_link}}">here</a>.
+      {% endif %}
+    </div>
+    <div class="sgds-card-footer">
+      {% if video_id != nil %}
+      <a href="{{ video_url }}" class="sgds-card-footer-item">
+        Watch video
+      </a>
+      {% endif %}
+      {% if slide_link != nil %}
+      <a href="{{ '/assets/files/' | append: video.slide_link }}" class="sgds-card-footer-item">
+        View Slides
+      </a>
+      {% endif %}
+    </div>
+  </div>
+  {% endcomment %}
   {% endfor %}
 </div>
