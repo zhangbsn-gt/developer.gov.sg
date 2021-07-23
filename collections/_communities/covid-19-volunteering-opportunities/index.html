@@ -24,11 +24,11 @@ layout: layout-page-sidenav
   the volunteering opportunities in which you can lend a helping hand.
 </p>
 
-<div class="row is-multiline">
+<div class="card-grid-container grid-25rem">
   {% for project in site.communities %}
     {% assign id = project.id | split: "/" | last %}
     {% if id != "index" and project.path contains "volunteering-opportunities" %}
-    <div class="col is-6-desktop is-12-tablet">
+    <div class="grid-item">
       <div class="sgds-card">
         <div class="sgds-card-content">
           <h3>{{ project.title }}</h3>

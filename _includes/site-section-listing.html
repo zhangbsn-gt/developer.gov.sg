@@ -3,7 +3,7 @@
 {% else %}
 {% assign disabledItemCount = false %}
 {% endif %}
-<div class="card-grid-container technologies">
+<div class="card-grid-container grid-25rem">
   {% for category in site.data[include.sectionName] %}
     {% assign item_count = category.items | size | minus: 1 %}
     <div class="sgds-card sgds-card-variant-category-info">

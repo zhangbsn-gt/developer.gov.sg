@@ -6,8 +6,34 @@
     @include until($tablet){
         grid-gap: 1rem;
     }
+
+    &.grid-25rem{
+        grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+        padding: 1rem 0;
+        @include until($tablet){
+            grid-template-columns: 1fr;
+        }
+        .grid-item{
+            height: 100%;
+            .sgds-card{
+                height: 100%;
+            }
+        }
+    }
+
+    &.is-fullwidth{
+        width: 100%;
+    }
 }
 
+.layout-grid-container{
+    display:grid;
+    grid-gap: 2rem;
+    &.layout-sidenav{
+        grid-template-areas:
+        "area-sidenav area-content area-social-media"
+    }
+}
 
 .row.is-padding-large .col {
     padding: 1.5rem;
