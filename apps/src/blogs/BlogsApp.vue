@@ -22,30 +22,25 @@
       v-for="(feed, index) of blogsGroupedByFeedSortedFiltered"
       :key="feed.FeedTitle"
     >
-      <div class="col">
+      <div class="col blog-group">
         <hr v-if="index !== 0" />
-        <h3 class="has-text-weight-bold">{{ feed.FeedTitle }}</h3>
+        <header>
+          <h3 class="has-text-weight-bold">{{ feed.FeedTitle }}</h3>
+          <a :href="feed.FeedUrl" class="sgds-button is-outlined is-black" target="_blank">More stories</a>
+        </header>
         <p v-html="feed.FeedDescription" />
-        <div class="row">
-          <div class="col is-4" v-for="blog in feed.Blogs" :key="blog.ID">
-            <a :href="blog.Url" target="_blank">
-              <div class="sgds-card patterned">
-                <div class="sgds-card-content">
-                  <h5>{{ blog.Title }}</h5>
-                  <p class="is-size-8 has-text-weight-light has-text-left">
-                    Published on
-                    {{ format(blog.PubDate, "ccc, dd MMM yyyy") }} by
-                    {{ blog.Creator }}
-                  </p>
-                </div>
-              </div>
-            </a>
+        <div class="card-grid-container grid-25rem">
+          <div class="sgds-card" v-for="blog in feed.Blogs" :key="blog.ID">
+            <div class="sgds-card-content sgds-card-variant-blog-info">
+              <a :href="blog.Url" target="_blank"><h5>{{ blog.Title }}</h5></a>
+              <p class="is-size-8 has-text-weight-light has-text-left">
+                Published on
+                {{ format(blog.PubDate, "ccc, dd MMM yyyy") }} by
+                {{ blog.Creator }}
+              </p>
+            </div>
           </div>
         </div>
-        <p class="has-text-weight-semibold is-size-8">
-          Read more at
-          <a :href="feed.FeedUrl" target="_blank">{{ feed.FeedTitle }}</a>
-        </p>
       </div>
     </div>
   </div>

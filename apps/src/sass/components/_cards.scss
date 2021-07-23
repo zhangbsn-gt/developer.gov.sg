@@ -114,4 +114,13 @@
       margin-top: 1rem;
     }
   }
+
+  //use for blog card
+  &.sgds-card-variant-blog-info{
+    .sgds-card-content{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
 }
