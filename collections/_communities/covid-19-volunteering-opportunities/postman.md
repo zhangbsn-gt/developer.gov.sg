@@ -1,5 +1,5 @@
 ---
-title: Postman - Receive official announcements and news from Singapore Government
+title: Postman - Receive Official Announcements and News from the Singapore Government
 layout: layout-page-sidenav
 short_description: >
   Postman is a mass communication platform for the Government to communicate with citizens. Find out more here.
