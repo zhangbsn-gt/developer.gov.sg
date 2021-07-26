@@ -26,7 +26,7 @@
           </figure>
         </div>
         {% else %}
-          <small>No image found</small>
+          <img alt="stack 2020 video thumbnail" src="/assets/img/stack-2020/stack-2020-video.png" />
         {% endif %}
         <div class="info">
           {% if video_id != nil %}
@@ -35,6 +35,8 @@
               {{ video_title }}
             </a>
           </h4>
+          {% else %}
+            <h4>{{ video_title }}</h4>
           {% endif %}
           <p>
             <strong>Speaker(s)</strong> <br>
