@@ -119,7 +119,6 @@ export default {
 
 <style scoped>
 .sgds-card {
-  color: #ffffff;
   height: 100%;
 }
 
