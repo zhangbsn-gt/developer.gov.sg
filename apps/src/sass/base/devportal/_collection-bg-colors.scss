@@ -6,6 +6,9 @@
 
 
 .has-background{
+    &-general{
+        background: linear-gradient(241.84deg, #FF7920 0%, #00C0F3 100%);
+    }
     &-technologies{
         background: linear-gradient(269.14deg, #00C0F3 0%, #0061AF 100%);
     }

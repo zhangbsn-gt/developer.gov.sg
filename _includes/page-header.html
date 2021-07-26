@@ -3,10 +3,15 @@
 {% if collection and collection != "" %}
     {% assign currentCollection = site.collections | where: "label", collection | first %}
 {% endif %}
-
+{% if currentCollection.label == nil %}
+<section
+class="sgds-section breadcrumb-title-section has-background-general padding--bottom--lg padding--top--lg"
+>
+{% else %}
 <section
   class="sgds-section breadcrumb-title-section has-background-{{currentCollection.label}} padding--bottom--lg padding--top--lg"
 >
+{% endif %}
   <div class="wave-gfx">
   </div>
   <div class="sgds-container">
