@@ -13,6 +13,14 @@ DigiMC is part of the Singapore government’s digital efforts in combating the 
 
 DigiMC is a digital MC system that allows patients to receive a unique, online link to an official MC hosted at [mc.gov.sg](https://www.mc.gov.sg/){:target="_blank"} in place of physical paper MCs. This eases the process of having to submit physical MCs as well as addresses the various inconveniences that physical documents bring about such as the risk of misplacing it.
 
+<figure style="text-align: center">
+  <img
+    src="/assets/img/digimc.png" width="70%" height="70%" 
+    alt="Fig 1: Overview of a DigiMC"
+  />
+  <figcaption>Fig 1: Overview of a DigiMC</figcaption>
+</figure>
+
 ### Why Should DigiMC be Adopted?
 
 Apart from the convenience that a paperless MC can bring about, DigiMC has additional benefits as well.
