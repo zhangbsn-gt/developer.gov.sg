@@ -33,7 +33,7 @@
           <div class="sgds-card" v-for="blog in feed.Blogs" :key="blog.ID">
             <div class="sgds-card-content sgds-card-variant-blog-info">
               <a :href="blog.Url" target="_blank"><h5>{{ blog.Title }}</h5></a>
-              <p class="is-size-8 has-text-weight-light has-text-left">
+              <p class="is-size-8 has-text-left">
                 Published on
                 {{ format(blog.PubDate, "ccc, dd MMM yyyy") }} by
                 {{ blog.Creator }}
@@ -125,7 +125,7 @@ export default {
 
 .sgds-card:hover {
   transform: translateY(-2px);
-  box-shadow: 2px 3px 5px gray;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   transition: all 0.3s;
 }
 
