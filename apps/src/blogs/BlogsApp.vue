@@ -25,7 +25,7 @@
       <div class="col blog-group">
         <hr v-if="index !== 0" />
         <header>
-          <h3 class="has-text-weight-bold">{{ feed.FeedTitle }}</h3>
+          <h3 class="has-text-weight-bold margin--bottom--none">{{ feed.FeedTitle }}</h3>
           <a :href="feed.FeedUrl" class="sgds-button is-outlined is-black" target="_blank">More stories</a>
         </header>
         <p v-html="feed.FeedDescription" />
