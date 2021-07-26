@@ -5,11 +5,8 @@
         justify-content: space-between;
         margin-bottom: 1rem;
     }
-}
-
-.card-grid-container{
-    .grid-25rem{
-        @at-root .blog-group {
+    .card-grid-container{
+        .grid-25rem{
             padding-bottom: 0;
         }
     }
