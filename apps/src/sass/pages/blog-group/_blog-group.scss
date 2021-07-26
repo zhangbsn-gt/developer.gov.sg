@@ -6,3 +6,11 @@
         margin-bottom: 1rem;
     }
 }
+
+.card-grid-container{
+    .grid-25rem{
+        @at-root .blog-group {
+            padding-bottom: 0;
+        }
+    }
+}

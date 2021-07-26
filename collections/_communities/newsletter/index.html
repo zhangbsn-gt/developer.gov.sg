@@ -8,25 +8,22 @@ layout: layout-page-sidenav
 </h1> -->
 
 {% if site.posts %}
-<div class="row is-multiline">
+<div class="card-grid-container grid-25rem">
   {% for post in site.posts %}
-  <div class="col is-4 is-flex">
-    <div class="sgds-card patterned">
-      <a href="{{ post.url }}" style="height: 100%">
+    <div class="sgds-card">
         <div
           class="sgds-card-content"
           style="height: 100%; flex-direction: column; display: flex; justify-content: space-between;"
         >
-          <h4>
+        <a href="{{ post.url }}" style="height: 100%"><h4>
             {{ post.title }}
           </h4>
-
-          <p><strong>{{ post.date | date_to_string }}</strong></p>
+        </a>
+          <p>{{ post.date | date_to_string }}</p>
           <!-- <p>{{ post.description }}</p> -->
         </div>
       </a>
     </div>
-  </div>
   {% endfor %}
 </div>
 {% endif %}
