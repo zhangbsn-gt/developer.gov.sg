@@ -1,7 +1,8 @@
 .sgds-navbar {
-  a.sgds-navbar-item.is-active,
-  .sgds-navbar-link.is-active {
-    // margin-top: 0;
+  color: $body-color;
+  .sgds-navbar-item,
+  .sgds-navbar-link {
+    color: $body-color;
   }
   .sgds-navbar-dropdown {
     .section-heading {

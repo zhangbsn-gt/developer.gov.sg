@@ -3,6 +3,7 @@
   flex-direction: column;
   border-radius: $card-radius;
   border: 1px solid #d6d6d6;
+  color: $body-color;
   .sgds-card-content:first-child {
     flex: 1 1 auto;
   }
