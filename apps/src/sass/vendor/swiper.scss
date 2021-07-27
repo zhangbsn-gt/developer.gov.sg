@@ -25,4 +25,12 @@
     &-wrapper{
         box-sizing: content-box;
     }
+
+    &-pagination{
+        position: inherit!important;
+        margin-top: 1rem;
+        .swiper-pagination-bullet:not(:last-child){
+            margin-right: 0.5rem;
+        }
+    }
 }

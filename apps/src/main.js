@@ -4,10 +4,10 @@ import "sgds-govtech/js/sgds.js";
 // import Swiper JS
 import Swiper from 'swiper';
  // core version + navigation, pagination modules:
-import SwiperCore, { Navigation } from 'swiper/core';
+import SwiperCore, { Pagination, Navigation } from 'swiper/core';
 
  // configure Swiper to use modules
-SwiperCore.use([Navigation]);
+SwiperCore.use([Pagination, Navigation]);
   // import Swiper styles
 
 $(function() {
@@ -130,16 +130,24 @@ const swiper = new Swiper('.swiper-container', {
   loop: true,
   autoHeight: true,
 
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+  },
+
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+  
   breakpoints: {
+    // when window width is >= 768
     768: {
       slidesPerView: 2,
       spaceBetween: 16,
       loop: true,
     },
+    // when window width is >= 1024
     1024: {
       slidesPerView: 3,
       spaceBetween: 32,
