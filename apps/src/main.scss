@@ -9,7 +9,7 @@
 @import "sass/pages/home";
 @import "sass/pages/blog-group/blog-group";
 @import "sass/pages/feedback/feedback";
-@import "sass/pages/communities/open-source";
+@import "sass/pages/communities/all";
 @import "sass/pages/govbuy/all";
 @import "sass/vendor/swiper";
 
@@ -192,7 +192,6 @@ a.external-link::after {
   border-color: transparent;
   background-color: transparent;
   cursor: pointer;
-  margin-bottom: 1em;
   color: $body-color;
 }
 .social-button:hover {
