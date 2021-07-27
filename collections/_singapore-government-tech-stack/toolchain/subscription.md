@@ -2,6 +2,7 @@
 title: Subscription
 layout: layout-page-sidenav
 description: insert desecription.
+redirect_from: /singapore-government-tech-stack/toolchain/subscriptions
 ---
 
 ### Overview
