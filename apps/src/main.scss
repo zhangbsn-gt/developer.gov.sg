@@ -4,7 +4,7 @@
 @import "sass/base/typography";
 @import "sass/base/devportal/all";
 @import "sass/base/anchor";
-@import "sass/layout/grid";
+@import "sass/layout/all";
 @import "sass/components/all";
 @import "sass/pages/home";
 @import "sass/pages/blog-group/blog-group";
@@ -192,6 +192,7 @@ a.external-link::after {
   background-color: transparent;
   cursor: pointer;
   margin-bottom: 1em;
+  color: $body-color;
 }
 .social-button:hover {
   color: #0076d6;

@@ -3,8 +3,7 @@
 	<div id="floater">
 		<div class="padding--top--sm">
 			<button class="social-button" id="copy-link">
-				<i class="sgds-icon sgds-icon-link is-size-4">
-				</i>
+				<i class="sgds-icon sgds-icon-link is-size-4" aria-label="Copy link"></i>
 			</button>
 			<input id="page-url" type="text" class="hide" value="{{site.domain}}{{page.url}}">
 			{%- comment -%} The only cross-browser compatible way to copy the current page
@@ -14,16 +13,14 @@
 		<div class="padding--top--sm">
 			<a href="mailto:?Subject={{page.title}}&amp;Body= {{site.domain}}{{page.url}}">
 				<button class="social-button">
-					<i class="sgds-icon sgds-icon-mail is-size-4">
-					</i>
+					<i class="sgds-icon sgds-icon-mail is-size-4" aria-label="Send this page via email"></i>
 				</button>
 			</a>
 		</div>
 		<div class="padding--top--sm">
 			<a href="http://www.facebook.com/sharer.php?u={{site.domain}}{{page.url}}" target="_blank">
 				<button class="social-button">
-					<i class="sgds-icon sgds-icon-facebook-alt is-size-4">
-					</i>
+					<i class="sgds-icon sgds-icon-facebook-alt is-size-4" aria-label="Share on Facebook"></i>
 				</button>
 			</a>
 		</div>
@@ -31,16 +28,14 @@
 			<a href="https://www.linkedin.com/sharing/share-offsite/?url={{site.domain}}{{page.url}}&title={{page.title}}"
 				target="_blank">
 				<button class="social-button">
-					<i class="sgds-icon sgds-icon-linkedin-alt is-size-4">
-					</i>
+					<i class="sgds-icon sgds-icon-linkedin-alt is-size-4" aria-label="Share on Linkedin"></i>
 				</button>
 			</a>
 		</div>
 		<div class="padding--top--sm">
 			<a href="https://twitter.com/intent/tweet?url={{site.domain}}{{page.url}}" target="_blank">
 				<button class="social-button">
-					<i class="sgds-icon sgds-icon-twitter is-size-4">
-					</i>
+					<i class="sgds-icon sgds-icon-twitter is-size-4" aria-label="Tweet this page"></i>
 				</button>
 			</a>
 		</div>
@@ -48,33 +43,28 @@
 </div>
 {% elsif include.display=="mobile" %}
 <button class="social-button" id="copy-link-mobile">
-	<i class="sgds-icon sgds-icon-link is-size-4">
-	</i>
+	<i class="sgds-icon sgds-icon-link is-size-4" aria-label="Copy link"></i>
 </button>
 <input id="page-url-mobile" type="text" class="hide" value="{{site.domain}}{{page.url}}">
 <a href="mailto:?Subject={{page.title}}&amp;Body= {{site.domain}}{{page.url}}">
 	<button class="social-button">
-		<i class="sgds-icon sgds-icon-mail is-size-4">
-		</i>
+		<i class="sgds-icon sgds-icon-mail is-size-4" aria-label="Send this page via email"></i>
 	</button>
 </a>
 <a href="http://www.facebook.com/sharer.php?u={{site.domain}}{{page.url}}" target="_blank">
 	<button class="social-button">
-		<i class="sgds-icon sgds-icon-facebook-alt is-size-4">
-		</i>
-	</button>
-</a>
-<a href="https://twitter.com/intent/tweet?url={{site.domain}}{{page.url}}" target="_blank">
-	<button class="social-button">
-		<i class="sgds-icon sgds-icon-twitter is-size-4">
-		</i>
+		<i class="sgds-icon sgds-icon-facebook-alt is-size-4" aria-label="Share on Facebook"></i>
 	</button>
 </a>
 <a href="https://www.linkedin.com/sharing/share-offsite/?url={{site.domain}}{{page.url}}&title={{page.title}}"
 	target="_blank">
 	<button class="social-button">
-		<i class="sgds-icon sgds-icon-linkedin-alt is-size-4">
-		</i>
+		<i class="sgds-icon sgds-icon-linkedin-alt is-size-4" aria-label="Share on Linkedin"></i>
+	</button>
+</a>
+<a href="https://twitter.com/intent/tweet?url={{site.domain}}{{page.url}}" target="_blank">
+	<button class="social-button">
+		<i class="sgds-icon sgds-icon-twitter is-size-4" aria-label="Tweet this page"></i>
 	</button>
 </a>
 {% endif %}
