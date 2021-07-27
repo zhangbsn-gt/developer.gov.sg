@@ -10,6 +10,9 @@ import SwiperCore, { Pagination, Navigation } from 'swiper/core';
 SwiperCore.use([Pagination, Navigation]);
   // import Swiper styles
 
+import tippy from 'tippy.js';
+import 'tippy.js/dist/tippy.css'; // optional for styling
+
 $(function() {
   $(".mobile-sidenav-toggle").click(function() {
     $(this)
@@ -154,4 +157,17 @@ const swiper = new Swiper('.swiper-container', {
       loop: true,
     },
   },
+});
+
+//tippy
+
+tippy('[data-tooltip]', {
+  duration: [0, 300],
+  placement: 'left',
+  content(reference) {
+    const id = reference.getAttribute('data-tooltip');
+    const template = document.getElementById(id);
+    return template.innerHTML;
+  },
+  allowHTML: true,
 });
