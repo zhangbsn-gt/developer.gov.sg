@@ -162,7 +162,7 @@ const swiper = new Swiper('.swiper-container', {
 //tippy
 
 tippy('[data-tooltip]', {
-  duration: [0, 300],
+  duration: [300, 250],
   placement: 'left',
   content(reference) {
     const id = reference.getAttribute('data-tooltip');
@@ -170,4 +170,16 @@ tippy('[data-tooltip]', {
     return template.innerHTML;
   },
   allowHTML: true,
+});
+
+tippy('#copy-link', {
+  trigger: 'click',
+  content: 'Link copied',
+  placement: 'left',
+  hideOnClick: false,
+  onShow(instance) {
+    setTimeout(() => {
+      instance.hide();
+    }, 2000);
+  }
 });
