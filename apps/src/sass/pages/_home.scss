@@ -2,6 +2,12 @@
     &.home{
         grid-template-columns: repeat(auto-fit,minmax(240px, 1fr));
         grid-auto-rows: 1fr;
+        @media screen and (max-width: 1215px){
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include until($tablet){
+            grid-template-columns: 1fr;
+        }
     }
 
     .grid-item{
@@ -28,6 +34,10 @@ $section-highlights-image-size: 120px;
     margin-top:-150px;
     .sgds-card{
         margin-top: calc(#{$section-highlights-image-size} / 2);
+        height: calc(100% - (#{$section-highlights-image-size} / 2));
+        @include until($tablet){
+            height: auto;
+        }
         .sgds-card-image{
             margin-top: calc(#{-$section-highlights-image-size} / 2);;
             text-align: center;
