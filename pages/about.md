@@ -1,5 +1,6 @@
 --- 
 title: About us
+layout: layout-page-sidenav
 permalink: /about-us
 description: >
   We are a one-stop resource hub for the tech community to access government products, guidelines, policies, and documentation services. 
