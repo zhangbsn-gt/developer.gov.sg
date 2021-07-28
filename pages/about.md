@@ -33,3 +33,6 @@ We have published information on over 50 products and are continuing to publish 
 To engage the community, we introduced a [community tab](/communities){:target="_blank"} that provides information about our 
 [open-sourced technologies](/communities/open-source-technologies){:target="_blank"}, [STACK-X meetup](/communities/stack-x-meetups/overview.html){:target="_blank"}, past webinar recordings](/communities/stack-x-meetups/past-webinars/){:target="_blank"} and developer blogs](/communities/developer-blogs/){:target="_blank"}.
 
+We have also recently launched our [Documentation Service](https://docs.developer.gov.sg){:target="_blank"}. This service allows product teams to share and contribute their technical content such as API specifications, user and onboarding guides, and product roadmaps. You can visit the Documentation Service if you are looking to integrate with government digital services and need information to help you get started. Technical contents are already available in the Documentation Service. We aim to consistently update and provide new technical content at regular intervals so... visit this page regularly for our updates!
+
+### What's Next?
