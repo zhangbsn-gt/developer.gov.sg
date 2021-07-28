@@ -40,9 +40,18 @@
         p + :is(h1, h2, h3, h4){
             margin-top: 2rem!important;
         }
+
+        :is(h1,h2,h3,h4,h5,h6,strong,b, .sgds-menu-list a){
+            color: $body-color;
+        }
+
+        li:not(.sgds-menu-list li ){
+            line-height: inherit;
+        }
     }
 }
 
 p.text-last-updated{
     color: hsl(0,0%,46%);
 }
+
