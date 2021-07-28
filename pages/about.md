@@ -39,5 +39,67 @@ We have also recently launched our [Documentation Service](https://docs.develope
 
 Alongside the Documentation Service, we’re planning to implement a console that brings together all the various APIs and services of different Government products. The console will be a one-stop platform for Government officers and our partners to subscribe to these services. With features like seamless logins across services and onboarding/subscription of services, the console will provide a smooth and convenient experience to government officers and our partners.
 
+### Meet the Fantastic 10 Behind Singapore Government Developer Portal!
+
+<div class="card-grid-container grid-25rem open-source">
+  <div class="sgds-card">
+    <div class="sgds-card-content">
+      <h4>TraceTogether</h4>
+      <p>
+        <a href="https://www.tracetogether.gov.sg" target="_blank" rel="noopener noreferrer nofollow">TraceTogether</a>
+        is a mobile application developed to support existing nationwide efforts to combat COVID-19 by enabling
+        community-driven contact tracing using
+        Bluetooth technology. TraceTogether is built on the <a href="https://bluetrace.io" target="_blank"
+          rel="noopener noreferrer nofollow">
+          BlueTrace protocol</a>; more information can be found <a href="https://github.com/opentrace-community"
+          target="_blank" rel="noopener noreferrer nofollow">
+          here</a>.
+      </p>
+    </div>
+  </div>
+
+  <div class="sgds-card">
+    <div class="sgds-card-content">
+      <h4>VigilantGantry</h4>
+      <p>
+        <a href="/technologies/digital-solutions-to-address-covid-19/vigilantgantry" target="_blank">VigilantGantry</a>
+        is an
+        AI-driven automated temperature screening gantry that augments existing thermal systems to enhance the rate of
+        contactless scanning.
+        Find out more <a href="https://github.com/dsaidgovsg/vigilantgantry" target="_blank"
+          rel="noopener noreferrer nofollow">here</a>.
+      </p>
+    </div>
+  </div>
+  
+    <div class="sgds-card">
+    <div class="sgds-card-content">
+      <h4>VigilantGantry</h4>
+      <p>
+        <a href="/technologies/digital-solutions-to-address-covid-19/vigilantgantry" target="_blank">VigilantGantry</a>
+        is an
+        AI-driven automated temperature screening gantry that augments existing thermal systems to enhance the rate of
+        contactless scanning.
+        Find out more <a href="https://github.com/dsaidgovsg/vigilantgantry" target="_blank"
+          rel="noopener noreferrer nofollow">here</a>.
+      </p>
+    </div>
+  </div>
+  
+    <div class="sgds-card">
+    <div class="sgds-card-content">
+      <h4>VigilantGantry</h4>
+      <p>
+        <a href="/technologies/digital-solutions-to-address-covid-19/vigilantgantry" target="_blank">VigilantGantry</a>
+        is an
+        AI-driven automated temperature screening gantry that augments existing thermal systems to enhance the rate of
+        contactless scanning.
+        Find out more <a href="https://github.com/dsaidgovsg/vigilantgantry" target="_blank"
+          rel="noopener noreferrer nofollow">here</a>.
+      </p>
+    </div>
+  </div>
+</div>
+
 [Meet the fantastic 10 behind Singapore Government Developer Portal!]()
 
