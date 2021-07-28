@@ -41,7 +41,9 @@ Alongside the Documentation Service, we’re planning to implement a console tha
 
 ### Meet the Fantastic 10 Behind Singapore Government Developer Portal!
 
-<table style="width:100#">
+**Product Management Team**
+
+<table style="width:100%">
   <tr>
     <th>
       <figure style="text-align: center">
@@ -49,11 +51,73 @@ Alongside the Documentation Service, we’re planning to implement a console tha
         <figcaption>Karen Kee<br>aka<br>the "Shield"</figcaption>
       </figure>
     </th>
-    <th>Candy Yap
+    <th>
+      <figure style="text-align: center">
+        <img src="../assets/img/aboutus-candy.png" width="215px" height="286px" />
+        <figcaption>Candy Yap<br>aka<br>the "Bottomless Pit"</figcaption>
+      </figure>
     </th>
-    <th>Hazel Koh
+    <th>
+      <figure style="text-align: center">
+        <img src="../assets/img/aboutus-hazel.png" width="215px" height="286px" />
+        <figcaption>Hazel Koh<br>aka<br>the "FOMO"</figcaption>
+      </figure>
     </th>
-    <th>Rachel Woo
+    <th>
+      <figure style="text-align: center">
+        <img src="../assets/img/aboutus-rachel.png" width="215px" height="286px" />
+        <figcaption>Rachel Woo<br>aka<br>the "BBT Addict"</figcaption>
+      </figure>
+    </th>
+  </tr>
+</table>
+
+**Development Team**
+
+<table style="width:75%">
+  <tr>
+    <th>
+      <figure style="text-align: center">
+        <img src="../assets/img/aboutus-junyu.png" width="215px" height="286px" />
+        <figcaption>Wei Junyu<br>aka<br>the "Unfunny Comedian"</figcaption>
+      </figure>
+    </th>
+    <th>
+      <figure style="text-align: center">
+        <img src="../assets/img/aboutus-chengyong.png" width="215px" height="286px" />
+        <figcaption>Teo Cheng Yong<br>aka<br>the "Amateur Chef"</figcaption>
+      </figure>
+    </th>
+    <th>
+      <figure style="text-align: center">
+        <img src="../assets/img/aboutus-kunsheng.png" width="215px" height="286px" />
+        <figcaption>Tan Kun Sheng<br>aka<br>the "Bathroom Vocalist"</figcaption>
+      </figure>
+    </th>
+  </tr>
+</table>
+
+**UX Design Team**
+
+<table style="width:75%">
+  <tr>
+    <th>
+      <figure style="text-align: center">
+        <img src="../assets/img/aboutus-daren.png" width="215px" height="286px" />
+        <figcaption>Daren Ng<br>aka<br>the "Cyclist Wannabe"</figcaption>
+      </figure>
+    </th>
+    <th>
+      <figure style="text-align: center">
+        <img src="../assets/img/aboutus-royce.png" width="225px" height="286px" />
+        <figcaption>Royce Cheng<br>aka<br>the "Try-hard Minimalist"</figcaption>
+      </figure>
+    </th>
+    <th>
+      <figure style="text-align: center">
+        <img src="../assets/img/aboutus-zikai.png" width="215px" height="286px" />
+        <figcaption>Ong Zi Kai<br>aka<br>the "First-time Adult"</figcaption>
+      </figure>
     </th>
   </tr>
 </table>
