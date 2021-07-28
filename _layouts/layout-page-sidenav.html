@@ -13,16 +13,15 @@ layout: layout-page
   {% if page.sharable == true or page.sharable == nil %}
   <div class="col is-8 is-offset-1 is-12-touch">
     {{ content }}
-    
-    <div class="small-viewport-social-media-buttons">
-      {% include social-media.html display="mobile" %}
-    </div>
     <p class="text-last-updated">
       <em>
         Last updated {{ page.last_modified_at | date: '%d %B %Y' }}
       </em>
     </p>
     {%- include feedback.html -%}
+    <div class="small-viewport-social-media-buttons">
+      {% include social-media.html display="mobile" %}
+    </div>
   </div>
   {% else %}
   <div class="col is-9 is-offset-1 is-12-touch">
