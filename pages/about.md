@@ -44,17 +44,10 @@ Alongside the Documentation Service, we’re planning to implement a console tha
 <div class="card-grid-container grid-25rem open-source">
   <div class="sgds-card">
     <div class="sgds-card-content">
-      <h4>TraceTogether</h4>
-      <p>
-        <a href="https://www.tracetogether.gov.sg" target="_blank" rel="noopener noreferrer nofollow">TraceTogether</a>
-        is a mobile application developed to support existing nationwide efforts to combat COVID-19 by enabling
-        community-driven contact tracing using
-        Bluetooth technology. TraceTogether is built on the <a href="https://bluetrace.io" target="_blank"
-          rel="noopener noreferrer nofollow">
-          BlueTrace protocol</a>; more information can be found <a href="https://github.com/opentrace-community"
-          target="_blank" rel="noopener noreferrer nofollow">
-          here</a>.
-      </p>
+      <p align="center"><img src="../assets/img/aboutus-karen.png width="215px" height="286px" /></p>
+      <p algin="center">Karen Kee</p>
+      <p algin="center">aka</p>
+      <p algin="center">the "Shield"</p>
     </div>
   </div>
 
