@@ -45,7 +45,7 @@ Alongside the Documentation Service, we’re planning to implement a console tha
   <tr>
     <th>
       <figure style="text-align: center">
-        <img src="assets/img/aboutus-karen.png" width="215px" height="286px" />
+        <img src="/assets/img/aboutus-karen.png" width="215px" height="286px" />
         <figcaption>Karen Kee<br>aka<br>the "Shield"</figcaption>
       </figure>
     </th>
