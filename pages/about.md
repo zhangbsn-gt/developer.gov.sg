@@ -36,3 +36,8 @@ To engage the community, we introduced a [community tab](/communities){:target="
 We have also recently launched our [Documentation Service](https://docs.developer.gov.sg){:target="_blank"}. This service allows product teams to share and contribute their technical content such as API specifications, user and onboarding guides, and product roadmaps. You can visit the Documentation Service if you are looking to integrate with government digital services and need information to help you get started. Technical contents are already available in the Documentation Service. We aim to consistently update and provide new technical content at regular intervals so... visit this page regularly for our updates!
 
 ### What's Next?
+
+Alongside the Documentation Service, we’re planning to implement a console that brings together all the various APIs and services of different Government products. The console will be a one-stop platform for Government officers and our partners to subscribe to these services. With features like seamless logins across services and onboarding/subscription of services, the console will provide a smooth and convenient experience to government officers and our partners.
+
+[Meet the fantastic 10 behind Singapore Government Developer Portal!]()
+
