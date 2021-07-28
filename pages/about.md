@@ -1,5 +1,5 @@
 --- 
-title: Singapore Government Developer Portal - One Portal":" Endless Possibilities
+title: About us
 layout: layout-page-sidenav
 description: >
   We are an one-stop resource hub for the tech community to access government products, guidelines, policies, and documentation services. 
