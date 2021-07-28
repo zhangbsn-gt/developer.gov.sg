@@ -41,10 +41,10 @@ Alongside the Documentation Service, we’re planning to implement a console tha
 
 ### Meet the Fantastic 10 Behind Singapore Government Developer Portal!
 
-<div class="card-grid-container grid-15rem open-source">
+<div class="card-grid-container grid-35rem open-source">
   <div class="sgds-card">
     <div class="sgds-card-content">
-      <p align="center"><img src="/assets/img/aboutus-karen.png" width="215px" height="286px"></p>
+      <p align="center"><img src="./assets/img/aboutus-karen.png" width="215px" height="286px"></p>
       <p align="center">Karen Kee<br>aka<br>the "Shield"</p>
     </div>
   </div>
