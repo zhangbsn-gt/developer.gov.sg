@@ -41,56 +41,22 @@ Alongside the Documentation Service, we’re planning to implement a console tha
 
 ### Meet the Fantastic 10 Behind Singapore Government Developer Portal!
 
-<div class="card-grid-container grid-35rem open-source">
-  <div class="sgds-card">
-    <div class="sgds-card-content">
-      <p align="center"><img src="./assets/img/aboutus-karen.png" width="215px" height="286px"></p>
-      <p align="center">Karen Kee<br>aka<br>the "Shield"</p>
-    </div>
-  </div>
-
-  <div class="sgds-card">
-    <div class="sgds-card-content">
-      <h4>VigilantGantry</h4>
-      <p>
-        <a href="/technologies/digital-solutions-to-address-covid-19/vigilantgantry" target="_blank">VigilantGantry</a>
-        is an
-        AI-driven automated temperature screening gantry that augments existing thermal systems to enhance the rate of
-        contactless scanning.
-        Find out more <a href="https://github.com/dsaidgovsg/vigilantgantry" target="_blank"
-          rel="noopener noreferrer nofollow">here</a>.
-      </p>
-    </div>
-  </div>
-  
-    <div class="sgds-card">
-    <div class="sgds-card-content">
-      <h4>VigilantGantry</h4>
-      <p>
-        <a href="/technologies/digital-solutions-to-address-covid-19/vigilantgantry" target="_blank">VigilantGantry</a>
-        is an
-        AI-driven automated temperature screening gantry that augments existing thermal systems to enhance the rate of
-        contactless scanning.
-        Find out more <a href="https://github.com/dsaidgovsg/vigilantgantry" target="_blank"
-          rel="noopener noreferrer nofollow">here</a>.
-      </p>
-    </div>
-  </div>
-  
-    <div class="sgds-card">
-    <div class="sgds-card-content">
-      <h4>VigilantGantry</h4>
-      <p>
-        <a href="/technologies/digital-solutions-to-address-covid-19/vigilantgantry" target="_blank">VigilantGantry</a>
-        is an
-        AI-driven automated temperature screening gantry that augments existing thermal systems to enhance the rate of
-        contactless scanning.
-        Find out more <a href="https://github.com/dsaidgovsg/vigilantgantry" target="_blank"
-          rel="noopener noreferrer nofollow">here</a>.
-      </p>
-    </div>
-  </div>
-</div>
+<table style="width:100#">
+  <tr>
+    <th>
+      <figure style="text-align: center">
+        <img src="assets/img/aboutus-karen.png" width="215px" height="286px" />
+        <figcaption>Karen Kee<br>aka<br>the "Shield"</figcaption>
+      </figure>
+    </th>
+    <th>Candy Yap
+    </th>
+    <th>Hazel Koh
+    </th>
+    <th>Rachel Woo
+    </th>
+  </tr>
+</table>
 
 [Meet the fantastic 10 behind Singapore Government Developer Portal!]()
 
