@@ -116,11 +116,11 @@ To find out more about SmartGym, please email <SmartGym_Support@tech.gov.sg>.
 
 ### Meet the Team!
 
-<div class="row is-multiline">
+<div class="row">
   <div class="col is-3">
     <div class="sgds-card-content">
       <figure style="text-align: center">
-        <img src="/assets/img/smartgym-tan-chin-hiong.png" alt="Tan Chin Hiong, Team Lead, System Architecture for SmartGym" />
+        <img src="/assets/img/smartgym-tan-chin-hiong.png" alt="Tan Chin Hiong, Team Lead, System Architecture for SmartGym" width="70%" heigh="70%"/>
       </figure>
     </div>
     <div class="col is-9">
@@ -130,12 +130,15 @@ To find out more about SmartGym, please email <SmartGym_Support@tech.gov.sg>.
       vision and evolutionary algorithms. Chin Hiong is passionate about harnessing technology to improve people's lives and inspiring the next generation of engineers.</p>
     </div>
   </div>
-
+</div>
+<div class="row">
   <div class="col is-3">
     <div class="sgds-card-content">
       <figure style="text-align: center">
-        <img src="/assets/img/smartgym-joaquin-sanchez.png" alt="Joaquin Sanchez, Systems and Sensors Engineer for SmartGym" />
+        <img src="/assets/img/smartgym-joaquin-sanchez.png" alt="Joaquin Sanchez, Systems and Sensors Engineer for SmartGym" width="70%" heigh="70%"/>
       </figure>
+    </div>
+    <div class="col is-9">
       <p>
         <strong>Joaquin Sanchez, Systems and Sensors Engineer</strong><br>
         Joaquin Sanchez is a systems and sensors engineer at GovTech and he is from Columbia and the UK. He is an electronics engineer with a specialisation in Biomedical
@@ -144,7 +147,7 @@ To find out more about SmartGym, please email <SmartGym_Support@tech.gov.sg>.
       </p>          
     </div>
   </div>
-
+</div>
   <div class="col is-4 is-flex">
     <div class="sgds-card-content" style="height: 100%; flex-direction: column; display: flex; justify-content: space-between;">
       <figure style="text-align: center">
