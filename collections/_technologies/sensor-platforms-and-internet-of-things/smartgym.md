@@ -166,6 +166,22 @@ To find out more about SmartGym, please email <SmartGym_Support@tech.gov.sg>.
   </div>
 </div>
 
+<div class="row">
+  <div class="col is-3">
+    <figure style="text-align: center">
+      <img src="/assets/img/smartgym-caleb-lee.png" alt="Caleb Lee, Software Engineer - Backend Developer for SmartGym" width="90%" height="90%"/>
+    </figure>
+  </div>
+  <div class="col is-9">
+    <section>
+      <p><strong>Caleb Lee, Software Engineer - Backend Developer</strong><br>
+      Caleb Lee graduated from Singapore Univerity of Technology and Design with a degree in Computer Science. He specialises in Artificial Intelligence and
+        web development. Caleb is highly curious about most things and is passionate about connecting the dots across different disciplines.
+      </p>
+    </section>
+  </div>
+</div>
+
 Interns:
 
 -	Alphonsus Ho, National University of Singapore (NUS), Double Major in Mechanical Engineering and Innovation & Design
