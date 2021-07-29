@@ -25,7 +25,7 @@ the number of repetitions done.
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/.png" width="75%" height="75%" 
+    src="/assets/img/smartgym-shoulder-press.png" width="75%" height="75%" 
     alt="Fig 1: SmartGym Console for Shoulder Press"
   />
   <figcaption>Fig 1: SmartGym Console for Shoulder Press</figcaption>
@@ -41,7 +41,7 @@ calculate the number of calories burnt.
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/.png" width="75%" height="75%" 
+    src="/assets/img/smartgym-threadmill.png" width="75%" height="75%" 
     alt="Fig 2: SmartGym Console for Treadmill"
   />
   <figcaption>Fig 2: SmartGym Console for Treadmill</figcaption>
@@ -55,7 +55,7 @@ muscle mass. This data can be accessed via the Kiosk Console at ActiveSG gyms fo
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/.png" width="75%" height="75%" 
+    src="/assets/img/smartgym-weighing-scale.png" width="75%" height="75%" 
     alt="Fig 3: Console for SmartGym Weighing Scale"
   />
   <figcaption>Fig 3: Console for SmartGym Weighing Scale</figcaption>
@@ -69,7 +69,7 @@ information that can be viewed at any time at any of the three SmartGym kiosks.
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/.png" width="75%" height="75%" 
+    src="/assets/img/smartgym-console.png" width="75%" height="75%" 
     alt="Fig 4: Workout Information Console for SmartGym"
   />
   <figcaption>Fig 4: Workout Information Console for SmartGym</figcaption>
@@ -104,7 +104,7 @@ such as through the implementation of an upcoming app that allows users to acces
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/.png" width="75%" height="75%" 
+    src="/assets/img/smartgym-roadmap.png" width="75%" height="75%" 
     alt="Fig 5: SmartGym Roadmap"
   />
   <figcaption>Fig 5: SmartGym Roadmap</figcaption>
