@@ -117,21 +117,21 @@ To find out more about SmartGym, please email <SmartGym_Support@tech.gov.sg>.
 ### Meet the Team!
 
 <div class="row is-multiline">
-  <div class="col is-6-desktop is-12-tablet">
+  <div class="col is-3">
     <div class="sgds-card-content">
       <figure style="text-align: center">
         <img src="/assets/img/smartgym-tan-chin-hiong.png" alt="Tan Chin Hiong, Team Lead, System Architecture for SmartGym" />
       </figure>
-      <p>
-        <strong>Tan Chin Hiong, Team Lead, System Architect</strong><br>
-        Tan Chin Hiong is a team lead and systems architect at GovTech. Ching Hiong graduated from the National University of Singapore with a PhD in Electrical
-        Engineering. He has over 15 years of experience in systems engineering and Research and Development (R&D), including the fields of neural networks, computer
-        vision and evolutionary algorithms. Chin Hiong is passionate about harnessing technology to improve people's lives and inspiring the next generation of engineers.
-      </p>
+    </div>
+    <div class="col is-9">
+      <p><strong>Tan Chin Hiong, Team Lead, System Architect</strong></p>
+      <p>Tan Chin Hiong is a team lead and systems architect at GovTech. Ching Hiong graduated from the National University of Singapore with a PhD in Electrical
+      Engineering. He has over 15 years of experience in systems engineering and Research and Development (R&D), including the fields of neural networks, computer
+      vision and evolutionary algorithms. Chin Hiong is passionate about harnessing technology to improve people's lives and inspiring the next generation of engineers.</p>
     </div>
   </div>
 
-  <div class="col is-6-desktop is-12-tablet">
+  <div class="col is-3">
     <div class="sgds-card-content">
       <figure style="text-align: center">
         <img src="/assets/img/smartgym-joaquin-sanchez.png" alt="Joaquin Sanchez, Systems and Sensors Engineer for SmartGym" />
