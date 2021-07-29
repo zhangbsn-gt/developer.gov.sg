@@ -118,7 +118,7 @@ To find out more about SmartGym, please email <SmartGym_Support@tech.gov.sg>.
 
 <div class="row is-multiline">
   <div class="col is-6-desktop is-12-tablet">
-    <div class="sgds-card-content" style="height: 100%; flex-direction: column; display: flex; justify-content: space-between;">
+    <div class="sgds-card-content">
       <figure style="text-align: center">
         <img src="/assets/img/smartgym-tan-chin-hiong.png" alt="Tan Chin Hiong, Team Lead, System Architecture for SmartGym" />
       </figure>
@@ -131,8 +131,8 @@ To find out more about SmartGym, please email <SmartGym_Support@tech.gov.sg>.
     </div>
   </div>
 
-  <div class="col is-4 is-flex">
-    <div class="sgds-card-content" style="height: 100%; flex-direction: column; display: flex; justify-content: space-between;">
+  <div class="col is-6-desktop is-12-tablet">
+    <div class="sgds-card-content">
       <figure style="text-align: center">
         <img src="/assets/img/smartgym-joaquin-sanchez.png" alt="Joaquin Sanchez, Systems and Sensors Engineer for SmartGym" />
       </figure>
