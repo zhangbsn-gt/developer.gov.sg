@@ -182,6 +182,38 @@ To find out more about SmartGym, please email <SmartGym_Support@tech.gov.sg>.
   </div>
 </div>
 
+<div class="row">
+  <div class="col is-3">
+    <figure style="text-align: center">
+      <img src="/assets/img/smartgym-kelvin-ang.png" alt="Kelvin Ang, Software Engineer for SmartGym" width="90%" height="90%"/>
+    </figure>
+  </div>
+  <div class="col is-9">
+    <section>
+      <p><strong>Kelvin Ang, Software Engineer</strong><br>
+      Kelvin Ang graduated from Singapore Institute of Technology with a degree in Software Engineering. Kelvin has an interest in the impact technology brings
+        into our lives and creating applications that can ease our day-to-day tasks.
+      </p>
+    </section>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col is-3">
+    <figure style="text-align: center">
+      <img src="/assets/img/smartgym-tony-varghese.png" alt="Tony Varghese, Product Manager for SmartGym" width="90%" height="90%"/>
+    </figure>
+  </div>
+  <div class="col is-9">
+    <section>
+      <p><strong>Tony Varghese, Product Manager</strong><br>
+      Tony joined GovTech in Nov 2018 with the ambition of being part of the team that builds Singapore's Smart Nation efforts. Aside from his work commitments,
+        Tony enjoys playing cricket.
+      </p>
+    </section>
+  </div>
+</div>
+
 Interns:
 
 -	Alphonsus Ho, National University of Singapore (NUS), Double Major in Mechanical Engineering and Innovation & Design
