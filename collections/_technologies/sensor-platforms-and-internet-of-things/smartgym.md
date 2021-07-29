@@ -116,6 +116,43 @@ To find out more about SmartGym, please email <SmartGym_Support@tech.gov.sg>.
 
 ### Meet the Team!
 
+<div class="row is-multiline">
+  <div class="col is-4 is-flex">
+    <div class="sgds-card-content" style="height: 100%; flex-direction: column; display: flex; justify-content: space-between;">
+      <figure style="text-align: center">
+        <img src="/assets/img/aboutus-rachel.png" width="140px" height="182px" />
+        <figcaption>Rachel Woo<br>aka<br>the "BBT Addict"</figcaption>
+      </figure>          
+    </div>
+  </div>
+
+  <div class="col is-4 is-flex">
+    <div class="sgds-card-content" style="height: 100%; flex-direction: column; display: flex; justify-content: space-between;">
+      <figure style="text-align: center">
+        <img src="/assets/img/aboutus-rachel.png" width="140px" height="182px" />
+        <figcaption>Rachel Woo<br>aka<br>the "BBT Addict"</figcaption>
+      </figure>          
+    </div>
+  </div>
+
+  <div class="col is-4 is-flex">
+    <div class="sgds-card-content" style="height: 100%; flex-direction: column; display: flex; justify-content: space-between;">
+      <figure style="text-align: center">
+        <img src="/assets/img/aboutus-rachel.png" width="140px" height="182px" />
+        <figcaption>Rachel Woo<br>aka<br>the "BBT Addict"</figcaption>
+      </figure>          
+    </div>
+  </div>
+
+  <div class="col is-4 is-flex">
+    <div class="sgds-card-content" style="height: 100%; flex-direction: column; display: flex; justify-content: space-between;">
+      <figure style="text-align: center">
+        <img src="/assets/img/aboutus-rachel.png" width="140px" height="182px" />
+        <figcaption>Rachel Woo<br>aka<br>the "BBT Addict"</figcaption>
+      </figure>          
+    </div>
+  </div>
+</div>
 
 Interns:
 
