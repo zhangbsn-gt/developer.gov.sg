@@ -119,7 +119,7 @@ To find out more about SmartGym, please email <SmartGym_Support@tech.gov.sg>.
 <div class="row">
   <div class="col is-3">
     <figure style="text-align: center">
-      <img src="/assets/img/smartgym-tan-chin-hiong.png" alt="Tan Chin Hiong, Team Lead, System Architecture for SmartGym"/>
+      <img src="/assets/img/smartgym-tan-chin-hiong.png" alt="Tan Chin Hiong, Team Lead, System Architecture for SmartGym" width="90%" height="90%"/>
     </figure>
   </div>
   <div class="col is-9">
@@ -135,7 +135,7 @@ To find out more about SmartGym, please email <SmartGym_Support@tech.gov.sg>.
 <div class="row">
   <div class="col is-3">
     <figure style="text-align: center">
-      <img src="/assets/img/smartgym-joaquin-sanchez.png" alt="Joaquin Sanchez, Systems and Sensors Engineer for SmartGym"/>
+      <img src="/assets/img/smartgym-joaquin-sanchez.png" alt="Joaquin Sanchez, Systems and Sensors Engineer for SmartGym" width="90%" height="90%"/>
     </figure>
   </div>
   <div class="col is-9">
@@ -149,22 +149,20 @@ To find out more about SmartGym, please email <SmartGym_Support@tech.gov.sg>.
   </div>
 </div>
 
-  <div class="col is-4 is-flex">
-    <div class="sgds-card-content" style="height: 100%; flex-direction: column; display: flex; justify-content: space-between;">
-      <figure style="text-align: center">
-        <img src="/assets/img/aboutus-rachel.png" width="140px" height="182px" />
-        <figcaption>Rachel Woo<br>aka<br>the "BBT Addict"</figcaption>
-      </figure>          
-    </div>
+<div class="row">
+  <div class="col is-3">
+    <figure style="text-align: center">
+      <img src="/assets/img/smartgym-syafiah-khairy.png" alt="Siti Syafi'ah Binte Khairy, Mechanical Design Engineer for SmartGym" width="90%" height="90%"/>
+    </figure>
   </div>
-
-  <div class="col is-4 is-flex">
-    <div class="sgds-card-content" style="height: 100%; flex-direction: column; display: flex; justify-content: space-between;">
-      <figure style="text-align: center">
-        <img src="/assets/img/aboutus-rachel.png" width="140px" height="182px" />
-        <figcaption>Rachel Woo<br>aka<br>the "BBT Addict"</figcaption>
-      </figure>          
-    </div>
+  <div class="col is-9">
+    <section>
+      <p><strong>Siti Syafi'ah Binte Khairy, Mechanical Design Engineer</strong><br>
+      Siti Syafi'ah Binte Khairy is a mechanical design engineer who worked on the web dashboard development for SmartGym. Syafi'ah graduated from Singapore Institute of
+        Technology with a degree in Mechanical Design Engineering. She previously worked as a Process Engineer, before making the switch to the technology sector in hopes
+        of contributing towards Smart Nation Building.
+      </p>
+    </section>
   </div>
 </div>
 
