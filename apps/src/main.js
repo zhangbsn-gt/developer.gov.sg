@@ -127,12 +127,11 @@ $(function() {
 
 const swiper = new Swiper('.swiper-container', {
   // Optional parameters
-  slidesPerView: 1.1,
-  spaceBetween: 8,
-  centeredSlides: true,
+  observer: true,  
+  observeParents: true,
   loop: true,
   autoHeight: true,
-
+  roundLengths: true,
   pagination: {
     el: '.swiper-pagination',
     type: 'bullets',
@@ -145,16 +144,25 @@ const swiper = new Swiper('.swiper-container', {
   
   breakpoints: {
     // when window width is >= 768
+    320:{
+      slidesPerView: 1.1,
+      spaceBetween: 8,
+      centeredSlides: true,
+    },
     768: {
       slidesPerView: 2,
       spaceBetween: 16,
       loop: true,
+      centeredSlides: false,
     },
     // when window width is >= 1024
     1024: {
       slidesPerView: 3,
       spaceBetween: 32,
+      slidesPerGroup: 3,
       loop: true,
+      centeredSlides: false,
+      
     },
   },
 });
