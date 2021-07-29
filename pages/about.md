@@ -48,25 +48,25 @@ Alongside the Documentation Service, we’re planning to implement a console tha
     <th>
       <figure style="text-align: center">
         <img src="/assets/img/aboutus-karen.png" width="140px" height="182px" />
-        <figcaption>Karen Kee<br>aka<br>the "Shield"</figcaption>
+        <div class="is-size-8">Karen Kee aka<br>the "Shield"</div>
       </figure>
     </th>
     <th>
       <figure style="text-align: center">
         <img src="/assets/img/aboutus-candy.png" width="140px" height="182px" />
-        <figcaption>Candy Yap<br>aka<br>the "Bottomless Pit"</figcaption>
+        <div class="is-size-8">Candy Yap aka<br>the "Bottomless Pit"</div>
       </figure>
     </th>
     <th>
       <figure style="text-align: center">
         <img src="/assets/img/aboutus-hazel.png" width="140px" height="182px" />
-        <figcaption>Hazel Koh<br>aka<br>the "FOMO"</figcaption>
+        <div class="is-size-8">Hazel Koh aka<br>the "FOMO"</div>
       </figure>
     </th>
     <th>
       <figure style="text-align: center">
         <img src="/assets/img/aboutus-rachel.png" width="140px" height="182px" />
-        <figcaption>Rachel Woo<br>aka<br>the "BBT Addict"</figcaption>
+        <div class="is-size-8">Rachel Woo aka<br>the "BBT Addict"</div>
       </figure>
     </th>
   </tr>
@@ -79,19 +79,19 @@ Alongside the Documentation Service, we’re planning to implement a console tha
     <th>
       <figure style="text-align: center">
         <img src="/assets/img/aboutus-junyu.png" width="140px" height="182px" />
-        <figcaption>Wei Junyu<br>aka<br>the "Unfunny Comedian"</figcaption>
+        <div class="is-size-8">Wei Junyu<br>aka<br>the "Unfunny Comedian"</div>
       </figure>
     </th>
     <th>
       <figure style="text-align: center">
         <img src="/assets/img/aboutus-chengyong.png" width="140px" height="182px" />
-        <figcaption>Teo Cheng Yong<br>aka<br>the "Amateur Chef"</figcaption>
+        <div class="is-size-8">Teo Cheng Yong<br>aka<br>the "Amateur Chef"</div>
       </figure>
     </th>
     <th>
       <figure style="text-align: center">
         <img src="/assets/img/aboutus-kunsheng.png" width="140px" height="182px" />
-        <figcaption>Tan Kun Sheng<br>aka<br>the "Bathroom Vocalist"</figcaption>
+        <div class="is-size-8">Tan Kun Sheng<br>aka<br>the "Bathroom Vocalist"</div>
       </figure>
     </th>
   </tr>
