@@ -120,7 +120,7 @@ To find out more about SmartGym, please email <SmartGym_Support@tech.gov.sg>.
   <div class="col is-4 is-flex">
     <div class="sgds-card-content" style="height: 100%; flex-direction: column; display: flex; justify-content: space-between;">
       <figure style="text-align: center">
-        <img src="/assets/img/smartgym-tan-chin-hiong.png" alt="Tan Chin Hiong, Team Lead, System Architecture for SmartGym" width="70%" height="70%"/>
+        <img src="/assets/img/smartgym-tan-chin-hiong.png" alt="Tan Chin Hiong, Team Lead, System Architecture for SmartGym" />
       </figure>
       <p>
         <strong>Tan Chin Hiong, Team Lead, System Architect</strong><br>
@@ -134,9 +134,14 @@ To find out more about SmartGym, please email <SmartGym_Support@tech.gov.sg>.
   <div class="col is-4 is-flex">
     <div class="sgds-card-content" style="height: 100%; flex-direction: column; display: flex; justify-content: space-between;">
       <figure style="text-align: center">
-        <img src="/assets/img/aboutus-rachel.png" width="140px" height="182px" />
-        <figcaption>Rachel Woo<br>aka<br>the "BBT Addict"</figcaption>
-      </figure>          
+        <img src="/assets/img/smartgym-joaquin-sanchez.png" alt="Joaquin Sanchez, Systems and Sensors Engineer for SmartGym" />
+      </figure>
+      <p>
+        <strong>Joaquin Sanchez, Systems and Sensors Engineer</strong><br>
+        Joaquin Sanchez is a systems and sensors engineer at GovTech and he is from Columbia and the UK. He is an electronics engineer with a specialisation in Biomedical
+        Engineering. Prior to working in GovTech, Joaquin developed embedded systems specifically for physiological signal sensing application in wearables for Samsung
+        Electronics in South Korea.
+      </p>          
     </div>
   </div>
 
