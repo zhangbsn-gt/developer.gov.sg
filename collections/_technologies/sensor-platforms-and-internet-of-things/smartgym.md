@@ -214,7 +214,7 @@ To find out more about SmartGym, please email <SmartGym_Support@tech.gov.sg>.
   </div>
 </div>
 
-Interns:
+Interns: 123
 
 -	Alphonsus Ho, National University of Singapore (NUS), Double Major in Mechanical Engineering and Innovation & Design
 -	Aveek Goswami, Imperial College London, Bachelor’s in Biomedical Engineering
