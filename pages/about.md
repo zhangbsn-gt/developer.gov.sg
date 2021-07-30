@@ -39,85 +39,150 @@ We have also recently launched our [Documentation Service](https://docs.develope
 
 Alongside the Documentation Service, we’re planning to implement a console that brings together all the various APIs and services of different Government products. The console will be a one-stop platform for Government officers and our partners to subscribe to these services. With features like seamless logins across services and onboarding/subscription of services, the console will provide a smooth and convenient experience to government officers and our partners.
 
-### Meet the Fantastic 10 Behind Singapore Government Developer Portal!
+### Meet the Fab 10!
 
 **Product Management Team**
 
-<table style="width:100%">
-  <tr>
-    <th>
-      <figure style="text-align: center">
-        <img src="/assets/img/aboutus-karen.png" width="140px" height="182px" />
-        <div class="is-size-8">Karen Kee aka<br>the "Shield"</div>
-      </figure>
-    </th>
-    <th>
-      <figure style="text-align: center">
-        <img src="/assets/img/aboutus-candy.png" width="140px" height="182px" />
-        <div class="is-size-8">Candy Yap aka<br>the "Bottomless Pit"</div>
-      </figure>
-    </th>
-    <th>
-      <figure style="text-align: center">
-        <img src="/assets/img/aboutus-hazel.png" width="140px" height="182px" />
-        <div class="is-size-8">Hazel Koh aka<br>the "FOMO"</div>
-      </figure>
-    </th>
-    <th>
-      <figure style="text-align: center">
-        <img src="/assets/img/aboutus-rachel.png" width="140px" height="182px" />
-        <div class="is-size-8">Rachel Woo aka<br>the "BBT Addict"</div>
-      </figure>
-    </th>
-  </tr>
-</table>
+<section class="sgds-section">
+</section>
+
+<section class="sgds-section section-highlights">
+  <div class="sgds-container">
+    <div class="card-grid-container home grid-25rem-autofit">
+      <div class="sgds-card-no-border grid-item">
+        <div class="sgds-card-image">
+          <img src="/assets/img/aboutus-karen.png" alt="Karen Kee" />
+        </div>
+        <div class="sgds-card-content has-text-centered" style="border-top:0;">
+          <h4><b>"The Shield"</b></h4>
+          <p>
+            Karen Kee
+          </p>
+        </div>
+      </div>
+       <div class="sgds-card-no-border grid-item">
+        <div class="sgds-card-image">
+          <img src="/assets/img/aboutus-candy.png" alt="Candy Yap" />
+        </div>
+        <div class="sgds-card-content has-text-centered" style="border-top:0;">
+          <h4><b>"The Bottomless Pit</b></h4>
+          <p>
+            Candy Yap
+          </p>
+        </div>
+      </div>
+      <div class="sgds-card-no-border grid-item">
+        <div class="sgds-card-image">
+          <img src="/assets/img/aboutus-hazel.png" alt="Hazel Koh" />
+        </div>
+        <div class="sgds-card-content has-text-centered" style="border-top:0;">
+          <h4><b>"The FOMO"</b></h4>
+          <p>
+            Hazel Koh
+          </p>
+        </div>
+      </div>
+      <div class="sgds-card-no-border grid-item">
+        <div class="sgds-card-image">
+          <img src="/assets/img/aboutus-rachel.png" alt="Rachel Woo" />
+        </div>
+        <div class="sgds-card-content has-text-centered" style="border-top:0;">
+          <h4><b>"The BBT Addict"</b></h4>
+          <p>
+            Rachel Woo
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 **Development Team**
 
-<table style="width:75%">
-  <tr>
-    <th>
-      <figure style="text-align: center">
-        <img src="/assets/img/aboutus-junyu.png" width="140px" height="182px" />
-        <div class="is-size-8">Wei Junyu<br>aka<br>the "Unfunny Comedian"</div>
-      </figure>
-    </th>
-    <th>
-      <figure style="text-align: center">
-        <img src="/assets/img/aboutus-chengyong.png" width="140px" height="182px" />
-        <div class="is-size-8">Teo Cheng Yong<br>aka<br>the "Amateur Chef"</div>
-      </figure>
-    </th>
-    <th>
-      <figure style="text-align: center">
-        <img src="/assets/img/aboutus-kunsheng.png" width="140px" height="182px" />
-        <div class="is-size-8">Tan Kun Sheng<br>aka<br>the "Bathroom Vocalist"</div>
-      </figure>
-    </th>
-  </tr>
-</table>
+<section class="sgds-section">
+</section>
 
-**UX Design Team**
+<section class="sgds-section section-highlights grid-25rem-autofit">
+  <div class="sgds-container">
+    <div class="card-grid-container home">
+      <div class="sgds-card-no-border grid-item">
+        <div class="sgds-card-image">
+          <img src="/assets/img/aboutus-junyu.png" alt="Wei Junyu" />
+        </div>
+        <div class="sgds-card-content has-text-centered" style="border-top:0;">
+          <h4><b>"The Unfunny Comedian"</b></h4>
+          <p>
+            Wei Junyu
+          </p>
+        </div>
+      </div>
+       <div class="sgds-card-no-border grid-item">
+        <div class="sgds-card-image">
+          <img src="/assets/img/aboutus-chengyong.png" alt="Teo Cheng Yong" />
+        </div>
+        <div class="sgds-card-content has-text-centered" style="border-top:0;">
+          <h4><b>"The Amateur Chef"</b></h4>
+          <p>
+            Teo Cheng Yong
+          </p>
+        </div>
+      </div>
+      <div class="sgds-card-no-border grid-item">
+        <div class="sgds-card-image">
+          <img src="/assets/img/aboutus-kunsheng.png" alt="Tan Kun Sheng" />
+        </div>
+        <div class="sgds-card-content has-text-centered" style="border-top:0;">
+          <h4><b>"The Bathroom Vocalist"</b></h4>
+          <p>
+            Tan Kun Sheng
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-<table style="width:75%">
-  <tr>
-    <th>
-      <figure style="text-align: center">
-        <img src="/assets/img/aboutus-daren.png" width="140px" height="182px" />
-        <figcaption>Daren Ng<br>aka<br>the "Cyclist Wannabe"</figcaption>
-      </figure>
-    </th>
-    <th>
-      <figure style="text-align: center">
-        <img src="/assets/img/aboutus-royce.png" width="145px" height="182px" />
-        <figcaption>Royce Cheng<br>aka<br>the "Try-hard Minimalist"</figcaption>
-      </figure>
-    </th>
-    <th>
-      <figure style="text-align: center">
-        <img src="/assets/img/aboutus-zikai.png" width="140px" height="182px" />
-        <figcaption>Ong Zi Kai<br>aka<br>the "First-time Adult"</figcaption>
-      </figure>
-    </th>
-  </tr>
-</table>
+**Design Team**
+
+<section class="sgds-section">
+</section>
+
+<section class="sgds-section section-highlights grid-25rem-autofit">
+  <div class="sgds-container">
+    <div class="card-grid-container home">
+      <div class="sgds-card-no-border grid-item">
+        <div class="sgds-card-image">
+          <img src="/assets/img/aboutus-daren.png" alt="Daren Ng" />
+        </div>
+        <div class="sgds-card-content has-text-centered" style="border-top:0;">
+          <h4><b>"The Wannabe Cyclist"</b></h4>
+          <p>
+            Daren Ng
+          </p>
+        </div>
+      </div>
+       <div class="sgds-card-no-border grid-item">
+        <div class="sgds-card-image">
+          <img src="/assets/img/aboutus-royce.png" alt="Royce Cheng" />
+        </div>
+        <div class="sgds-card-content has-text-centered" style="border-top:0;">
+          <h4><b>"The Try-hard Minimalist"</b></h4>
+          <p>
+            Royce Cheng
+          </p>
+        </div>
+      </div>
+      <div class="sgds-card-no-border grid-item">
+        <div class="sgds-card-image">
+          <img src="/assets/img/aboutus-zikai.png" alt="Ong Zi Kai" />
+        </div>
+        <div class="sgds-card-content has-text-centered" style="border-top:0;">
+          <h4><b>"The First-Time Adult"</b></h4>
+          <p>
+            Ong Zi Kai
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
