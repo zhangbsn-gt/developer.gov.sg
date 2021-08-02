@@ -15,7 +15,7 @@ Need a specific training? Submit your [feedback](./ship-hats-enquiries) and we w
 
 | Developers |  Project Managers, Business Analysts  |
 | :------------- | ----------------------------------------------------------------------------------------- |
-| [SHIP-HATS Architectural Approach](https://www.youtube.com/watch?v=yiD4--KSdTI){:target="_blank"}<br />[Roadmap](./overview#roadmap)<br />[Security Testing 101](https://www.youtube.com/watch?v=SVomPCqKGM4){:target="_blank"}<br />[Continuous Delivery](https://www.youtube.com/watch?v=DMMhqLKHLx0){:target="_blank"} | [SHIP-HATS Overview for Newbies](https://www.youtube.com/watch?v=SVomPCqKGM4){:target="_blank"}<br />[Understanding Subscription](./subscriptions)<br />[Request trial (for Public Officers)](./subscriptions#11-can-i-request-for-a-trial-subscription)
+| [SHIP-HATS Architectural Approach](https://www.youtube.com/watch?v=yiD4--KSdTI){:target="_blank"}<br />[Roadmap](./overview#roadmap)<br />[Security Testing 101](https://www.youtube.com/watch?v=SVomPCqKGM4){:target="_blank"}<br />[Continuous Delivery](https://www.youtube.com/watch?v=DMMhqLKHLx0){:target="_blank"} | [SHIP-HATS Overview for Newbies](https://www.youtube.com/watch?v=SVomPCqKGM4){:target="_blank"}<br />[Understanding Subscription](./subscriptions)<br />[Request trial (for Public Officers)](./subscription#11-can-i-request-for-a-trial-subscription)
 
                 
 
