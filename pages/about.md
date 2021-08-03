@@ -43,69 +43,65 @@ Alongside the Documentation Service, we’re planning to implement a console tha
 
 **Product Management Team**
 
-<section class="sgds-section">
-</section>
 
-<section class="sgds-section section-highlights">
-  <div class="sgds-container">
-    <div class="card-grid-container home grid-25rem-autofit">
-      <div class="sgds-card-no-border grid-item">
-        <div class="sgds-card-image">
-          <img src="/assets/img/aboutus-karen.png" alt="Karen Kee" />
-        </div>
-        <div class="sgds-card-content has-text-centered" style="border-top:0;">
-          <h4><b>"The Shield"</b></h4>
-          <p>
-            Karen Kee
-          </p>
-        </div>
+<div class="sgds-container">
+  <div class="card-grid-container team-grid">
+    <div class="sgds-card-no-border">
+      <div class="sgds-card-image">
+        <img src="/assets/img/aboutus-karen.png" alt="Karen Kee" />
       </div>
-       <div class="sgds-card-no-border grid-item">
-        <div class="sgds-card-image">
-          <img src="/assets/img/aboutus-candy.png" alt="Candy Yap" />
-        </div>
-        <div class="sgds-card-content has-text-centered" style="border-top:0;">
-          <h4><b>"The Bottomless Pit</b></h4>
-          <p>
-            Candy Yap
-          </p>
-        </div>
+      <div class="sgds-card-content has-text-centered" style="border-top:0;">
+        <h4><b>"The Shield"</b></h4>
+        <p>
+          Karen Kee
+        </p>
       </div>
-      <div class="sgds-card-no-border grid-item">
-        <div class="sgds-card-image">
-          <img src="/assets/img/aboutus-hazel.png" alt="Hazel Koh" />
-        </div>
-        <div class="sgds-card-content has-text-centered" style="border-top:0;">
-          <h4><b>"The FOMO"</b></h4>
-          <p>
-            Hazel Koh
-          </p>
-        </div>
+    </div>
+      <div class="sgds-card-no-border">
+      <div class="sgds-card-image">
+        <img src="/assets/img/aboutus-candy.png" alt="Candy Yap" />
       </div>
-      <div class="sgds-card-no-border grid-item">
-        <div class="sgds-card-image">
-          <img src="/assets/img/aboutus-rachel.png" alt="Rachel Woo" />
-        </div>
-        <div class="sgds-card-content has-text-centered" style="border-top:0;">
-          <h4><b>"The BBT Addict"</b></h4>
-          <p>
-            Rachel Woo
-          </p>
-        </div>
+      <div class="sgds-card-content has-text-centered" style="border-top:0;">
+        <h4><b>"The Bottomless Pit</b></h4>
+        <p>
+          Candy Yap
+        </p>
+      </div>
+    </div>
+    <div class="sgds-card-no-border">
+      <div class="sgds-card-image">
+        <img src="/assets/img/aboutus-hazel.png" alt="Hazel Koh" />
+      </div>
+      <div class="sgds-card-content has-text-centered" style="border-top:0;">
+        <h4><b>"The FOMO"</b></h4>
+        <p>
+          Hazel Koh
+        </p>
+      </div>
+    </div>
+    <div class="sgds-card-no-border">
+      <div class="sgds-card-image">
+        <img src="/assets/img/aboutus-rachel.png" alt="Rachel Woo" />
+      </div>
+      <div class="sgds-card-content has-text-centered" style="border-top:0;">
+        <h4><b>"The BBT Addict"</b></h4>
+        <p>
+          Rachel Woo
+        </p>
       </div>
     </div>
   </div>
-</section>
+</div>
+
 
 **Development Team**
 
-<section class="sgds-section">
-</section>
 
-<section class="sgds-section section-highlights grid-25rem-autofit">
+
+
   <div class="sgds-container">
-    <div class="card-grid-container home">
-      <div class="sgds-card-no-border grid-item">
+    <div class="card-grid-container team-grid">
+      <div class="sgds-card-no-border">
         <div class="sgds-card-image">
           <img src="/assets/img/aboutus-junyu.png" alt="Wei Junyu" />
         </div>
@@ -116,7 +112,7 @@ Alongside the Documentation Service, we’re planning to implement a console tha
           </p>
         </div>
       </div>
-       <div class="sgds-card-no-border grid-item">
+       <div class="sgds-card-no-border">
         <div class="sgds-card-image">
           <img src="/assets/img/aboutus-chengyong.png" alt="Teo Cheng Yong" />
         </div>
@@ -127,7 +123,7 @@ Alongside the Documentation Service, we’re planning to implement a console tha
           </p>
         </div>
       </div>
-      <div class="sgds-card-no-border grid-item">
+      <div class="sgds-card-no-border">
         <div class="sgds-card-image">
           <img src="/assets/img/aboutus-kunsheng.png" alt="Tan Kun Sheng" />
         </div>
@@ -140,17 +136,16 @@ Alongside the Documentation Service, we’re planning to implement a console tha
       </div>
     </div>
   </div>
-</section>
+
 
 **Design Team**
 
-<section class="sgds-section">
-</section>
 
-<section class="sgds-section section-highlights grid-25rem-autofit">
+
+
   <div class="sgds-container">
-    <div class="card-grid-container home">
-      <div class="sgds-card-no-border grid-item">
+    <div class="card-grid-container team-grid">
+      <div class="sgds-card-no-border">
         <div class="sgds-card-image">
           <img src="/assets/img/aboutus-daren.png" alt="Daren Ng" />
         </div>
@@ -161,7 +156,7 @@ Alongside the Documentation Service, we’re planning to implement a console tha
           </p>
         </div>
       </div>
-       <div class="sgds-card-no-border grid-item">
+       <div class="sgds-card-no-border">
         <div class="sgds-card-image">
           <img src="/assets/img/aboutus-royce.png" alt="Royce Cheng" />
         </div>
@@ -172,7 +167,7 @@ Alongside the Documentation Service, we’re planning to implement a console tha
           </p>
         </div>
       </div>
-      <div class="sgds-card-no-border grid-item">
+      <div class="sgds-card-no-border">
         <div class="sgds-card-image">
           <img src="/assets/img/aboutus-zikai.png" alt="Ong Zi Kai" />
         </div>
@@ -185,4 +180,4 @@ Alongside the Documentation Service, we’re planning to implement a console tha
       </div>
     </div>
   </div>
-</section>
+

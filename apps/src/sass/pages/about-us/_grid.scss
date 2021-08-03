@@ -1,0 +1,14 @@
+.card-grid-container{
+    &.team-grid{
+        grid-template-columns: repeat(4, 1fr);
+        @include until($desktop){
+            grid-template-columns: repeat(3, 1fr);;
+        }
+        @include until($tablet){
+            grid-template-columns: repeat(2, 1fr);;
+        }
+        .sgds-card-no-border{
+            height: 100%;
+        }
+    }
+}
