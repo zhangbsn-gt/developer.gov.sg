@@ -29,15 +29,6 @@
     }
 }
 
-.layout-grid-container{
-    display:grid;
-    grid-gap: 2rem;
-    &.layout-sidenav{
-        grid-template-areas:
-        "area-sidenav area-content area-social-media"
-    }
-}
-
 .row.is-padding-large .col {
     padding: 1.5rem;
 }
