@@ -123,71 +123,70 @@ $(function() {
     });
   })
   // END: Thumbs up/down and feedback modal
-});
-
-const swiper = new Swiper('.swiper-container', {
-  // Optional parameters
-  observer: true,  
-  observeParents: true,
-  loop: true,
-  autoHeight: true,
-  roundLengths: true,
-  pagination: {
-    el: '.swiper-pagination',
-    type: 'bullets',
-  },
-
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+  const swiper = new Swiper('.swiper-container', {
+    // Optional parameters
+    observeSlideChildren: true,
+    loop: true,
+    autoHeight: true,
+    roundLengths: true,
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+    },
   
-  breakpoints: {
-    // when window width is >= 768
-    320:{
-      slidesPerView: 1.1,
-      spaceBetween: 8,
-      centeredSlides: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
     },
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 16,
-      loop: true,
-      centeredSlides: false,
+    
+    breakpoints: {
+      // when window width is >= 768
+      320:{
+        slidesPerView: 1.1,
+        spaceBetween: 8,
+        centeredSlides: true,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 16,
+        loop: true,
+        centeredSlides: false,
+      },
+      // when window width is >= 1024
+      1215: {
+        slidesPerView: 3,
+        spaceBetween: 32,
+        slidesPerGroup: 3,
+        loop: true,
+        centeredSlides: false,
+        
+      },
     },
-    // when window width is >= 1024
-    1024: {
-      slidesPerView: 3,
-      spaceBetween: 32,
-      slidesPerGroup: 3,
-      loop: true,
-      centeredSlides: false,
-      
+  });
+  
+  //tippy
+  
+  tippy('[data-tooltip]', {
+    duration: [300, 250],
+    placement: 'left',
+    content(reference) {
+      const id = reference.getAttribute('data-tooltip');
+      const template = document.getElementById(id);
+      return template.innerHTML;
     },
-  },
+    allowHTML: true,
+  });
+  
+  tippy('#copy-link', {
+    trigger: 'click',
+    content: 'Link copied',
+    placement: 'left',
+    hideOnClick: false,
+    onShow(instance) {
+      setTimeout(() => {
+        instance.hide();
+      }, 2000);
+    }
+  });
 });
 
-//tippy
-
-tippy('[data-tooltip]', {
-  duration: [300, 250],
-  placement: 'left',
-  content(reference) {
-    const id = reference.getAttribute('data-tooltip');
-    const template = document.getElementById(id);
-    return template.innerHTML;
-  },
-  allowHTML: true,
-});
-
-tippy('#copy-link', {
-  trigger: 'click',
-  content: 'Link copied',
-  placement: 'left',
-  hideOnClick: false,
-  onShow(instance) {
-    setTimeout(() => {
-      instance.hide();
-    }, 2000);
-  }
-});
