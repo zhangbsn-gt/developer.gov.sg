@@ -52,6 +52,6 @@
     </ul>
   {%- else -%}
     {% assign link_slug = category.name | slugify %}
-    <li><a href="{{ '/' | append: currentCollection.label | append: '/' | append: link_slug }}" class="has-text-weight-bold {{ class }}">{{ category.name }}</a></li>
+    <li><a href="{{ '/' | append: currentCollection.label | append: '/' | append: link_slug }}" class="{{ class }}">{{ category.name }}</a></li>
   {%- endif -%}
 {%- endfor -%}
