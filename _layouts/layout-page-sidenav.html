@@ -11,7 +11,7 @@ layout: layout-page
     </aside>
   </div>
   {% if page.sharable == true or page.sharable == nil %}
-  <div class="col is-8 is-offset-1 is-12-touch">
+  <div class="col is-8 is-offset-1 is-12-mobile">
     {{ content }}
     <p class="text-last-updated">
       <em>
@@ -24,7 +24,7 @@ layout: layout-page
     {%- include feedback.html -%}
   </div>
   {% else %}
-  <div class="col is-9 is-offset-1 is-12-touch">
+  <div class="col is-9 is-offset-1 is-12-mobile">
     {{ content }}
     <p class="text-last-updated">
       <em>
