@@ -3,6 +3,7 @@ import "sgds-govtech/js/sgds.js";
 
 // import Swiper JS
 import Swiper from 'swiper';
+import 'swiper/swiper-bundle.css';
  // core version + navigation, pagination modules:
 import SwiperCore, { Pagination, Navigation } from 'swiper/core';
 
@@ -127,7 +128,6 @@ $(function() {
     // Optional parameters
     observeSlideChildren: true,
     loop: true,
-    autoHeight: true,
     roundLengths: true,
     pagination: {
       el: '.swiper-pagination',

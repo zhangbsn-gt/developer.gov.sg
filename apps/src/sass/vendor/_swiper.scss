@@ -1,8 +1,10 @@
 .swiper{
     &-container{
         width: 70%;
+        height: 31.25rem;
         @include until($tablet){
             width: 100vw;
+            height: auto;
             @at-root .section-explore{
                 padding-left: 0;
                 padding-right: 0;
