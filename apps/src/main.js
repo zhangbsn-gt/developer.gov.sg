@@ -1,8 +1,20 @@
 import "./main.scss";
 import "sgds-govtech/js/sgds.js";
 
-$(function () {
-  $(".mobile-sidenav-toggle").click(function () {
+// import Swiper JS
+import Swiper from 'swiper';
+ // core version + navigation, pagination modules:
+import SwiperCore, { Pagination, Navigation } from 'swiper/core';
+
+ // configure Swiper to use modules
+SwiperCore.use([Pagination, Navigation]);
+  // import Swiper styles
+
+import tippy from 'tippy.js';
+import 'tippy.js/dist/tippy.css'; // optional for styling
+
+$(function() {
+  $(".mobile-sidenav-toggle").click(function() {
     $(this)
       .children(".sgds-icon")
       .toggleClass("sgds-icon-chevron-down")
@@ -111,4 +123,70 @@ $(function () {
     });
   })
   // END: Thumbs up/down and feedback modal
+  const swiper = new Swiper('.swiper-container', {
+    // Optional parameters
+    observeSlideChildren: true,
+    loop: true,
+    autoHeight: true,
+    roundLengths: true,
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+    },
+  
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    
+    breakpoints: {
+      // when window width is >= 768
+      320:{
+        slidesPerView: 1.1,
+        spaceBetween: 8,
+        centeredSlides: true,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 16,
+        loop: true,
+        centeredSlides: false,
+      },
+      // when window width is >= 1024
+      1215: {
+        slidesPerView: 3,
+        spaceBetween: 32,
+        slidesPerGroup: 3,
+        loop: true,
+        centeredSlides: false,
+        
+      },
+    },
+  });
+  
+  //tippy
+  
+  tippy('[data-tooltip]', {
+    duration: [300, 250],
+    placement: 'left',
+    content(reference) {
+      const id = reference.getAttribute('data-tooltip');
+      const template = document.getElementById(id);
+      return template.innerHTML;
+    },
+    allowHTML: true,
+  });
+  
+  tippy('#copy-link', {
+    trigger: 'click',
+    content: 'Link copied',
+    placement: 'left',
+    hideOnClick: false,
+    onShow(instance) {
+      setTimeout(() => {
+        instance.hide();
+      }, 2000);
+    }
+  });
 });
+

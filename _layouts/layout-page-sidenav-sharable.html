@@ -3,23 +3,22 @@ layout: layout-page
 ---
 
 <div class="row sidenav-container">
-  <div class="col is-3 is-hidden-touch sidenav">
+  <div class="col is-2 is-hidden-touch sidenav">
     <aside class="sgds-menu">
       <ul class="sgds-menu-list">
         {%- include sidenav.html -%}
       </ul>
     </aside>
   </div>
-  <div class="col is-8 is-12-touch">
+  <div class="col is-8 is-offset-1 is-12-mobile">
     {{ content }}
     <div class="small-viewport-social-media-buttons">
       {% include social-media.html display="mobile" %}
     </div>
-    <p>
+    <p class="text-last-updated">
       <em>
         Last updated {{ page.last_modified_at | date: '%d %B %Y' }}
       </em>
-
     </p>
   </div>
   {% include social-media.html display="wide" %}

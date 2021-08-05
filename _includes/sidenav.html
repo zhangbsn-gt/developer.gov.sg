@@ -12,7 +12,7 @@
     <li class="second-level-nav">
       <a
         href="#!"
-        class="{{ class }} second-level-nav-header has-text-weight-bold">
+        class="{{ class }} second-level-nav-header">
         {{ category.name }}
         <i class="sgds-icon sgds-icon-chevron-down" aria-hidden="true"></i>
       </a>
@@ -52,6 +52,6 @@
     </ul>
   {%- else -%}
     {% assign link_slug = category.name | slugify %}
-    <li><a href="{{ '/' | append: currentCollection.label | append: '/' | append: link_slug }}" class="has-text-weight-bold {{ class }}">{{ category.name }}</a></li>
+    <li><a href="{{ '/' | append: currentCollection.label | append: '/' | append: link_slug }}" class="{{ class }}">{{ category.name }}</a></li>
   {%- endif -%}
 {%- endfor -%}

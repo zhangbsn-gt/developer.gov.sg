@@ -1,4 +1,4 @@
-<div class="row is-multiline">
+<div class="card-grid-container is-fullwidth">
     {% comment %} 
     {% assign videos = site.data.stackxconference-videos | where: include.type %}
     {% endcomment %}
@@ -10,6 +10,53 @@
     {% assign speakers = video.speakers | split: ", " %}
     {% assign speakers_title = video.speakers_title | split: "| " %}
     {% assign video_image = "https://img.youtube.com/vi/$video_id/hqdefault.jpg" | replace: "$video_id", video.id %}
+
+    <div class="sgds-card sgds-card-variant-video-info">
+      <div class="sgds-card-content">
+        <div class="content-grid">
+          {% if video.id !=nil %}
+            <div class="sgds-card-image">
+              <figure class="sgds-image">
+                <a href="{{ video_url }}" target="_blank">
+                  <img
+                    alt="stack-x conference video thumbnail"
+                    src="{{ video_image }}"
+                  />
+                </a>
+              </figure>
+            </div>
+          {% else %}
+            <small>No image found</small>
+          {% endif %}
+          <div class="info">
+            {% if video.id !=nil %}
+            <h4>
+              <a href="{{ video_url }}" target="_blank">
+                {{ video_title }}
+              </a>
+            </h4>
+            {% endif %}
+            <p>
+              <strong>Speaker(s)</strong> <br>
+              {% for speaker in speakers %}
+                  {% assign speaker_index = forloop.index| minus: 1 %}
+                  <strong>{{ speaker }}</strong>, {{speakers_title[speaker_index]}}<br><br>
+              {% endfor %}
+            </p>
+            {% if video.additional_link != nil %}
+              <a
+                href="{{ '/assets/files/' | append: video.additional_link }}"
+                class="sgds-card-footer-item"
+              >
+              View Slides
+              </a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% comment %}
     <div class="col is-6 is-flex">
       <div class="sgds-card">
         <div class="sgds-card-content">
@@ -62,5 +109,6 @@
         </div>
       </div>
     </div>
+    {% endcomment %}
     {% endfor %}
   </div>

@@ -2,16 +2,16 @@
 @import "sass/abstract/resets";
 @import "~sgds-govtech/sgds/sass/sgds";
 @import "sass/base/typography";
-@import "sass/layout/grid";
-@import "sass/components/navbar";
-@import "sass/components/breadcrumb";
-@import "sass/components/spinner";
-@import "sass/components/cards";
-@import "sass/components/sidenav";
-@import "sass/components/blog-prev-next-links";
-@import "sass/components/footer";
+@import "sass/base/devportal/all";
+@import "sass/base/anchor";
+@import "sass/layout/all";
+@import "sass/components/all";
 @import "sass/pages/home";
-@import "sass/pages/govbuy";
+@import "sass/pages/about-us/grid";
+@import "sass/pages/blog-group/blog-group";
+@import "sass/pages/feedback/feedback";
+@import "sass/pages/govbuy/all";
+@import "sass/vendor/all";
 
 a.feedback-banner-link {
   text-decoration: underline;
@@ -39,14 +39,7 @@ a.external-link::after {
     }
   }
 }
-.hero-sub {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  img {
-    max-width: 83%;
-  }
-}
+
 
 .content img,
 .content iframe {
@@ -199,7 +192,7 @@ a.external-link::after {
   border-color: transparent;
   background-color: transparent;
   cursor: pointer;
-  margin-bottom: 1em;
+  color: $body-color;
 }
 .social-button:hover {
   color: #0076d6;

@@ -1,30 +1,33 @@
 <!-- Refer to main.js for interactivity -->
-<section id="feedback" class="sgds-section">
+<hr>
+<div id="feedback">
   <div class="row is-multiline">
     <div class="col is-12">
       <div class="is-size-4">Was this article useful?</div>
     </div>
     <div class="col is-12 feedback__thumb">
-      <button class="sgds-button js-thumbs-up">
-        <span
-          class="sgds-icon sgds-icon-thumbs-up is-size-4"
-          title="thumbs-up"
-          alt="thumbs-up"
-          role="img"
-          aria-label="thumbs-up"
-        ></span>
-        Yes
-      </button>
-      <button class="sgds-button js-thumbs-down">
-        <span
-          class="sgds-icon sgds-icon-thumbs-down is-size-4"
-          title="thumbs-down"
-          alt="thumbs-down"
-          role="img"
-          aria-label="thumbs-down"
-        ></span>
-        No
-      </button>
+      <div class="sgds-buttons">
+        <button class="sgds-button is-outlined js-thumbs-up">
+          <span
+            class="sgds-icon sgds-icon-thumbs-up is-size-4"
+            title="thumbs-up"
+            alt="thumbs-up"
+            role="img"
+            aria-label="thumbs-up"
+          ></span>
+          Yes
+        </button>
+        <button class="sgds-button is-outlined js-thumbs-down">
+          <span
+            class="sgds-icon sgds-icon-thumbs-down is-size-4"
+            title="thumbs-down"
+            alt="thumbs-down"
+            role="img"
+            aria-label="thumbs-down"
+          ></span>
+          No
+        </button>
+      </div>
     </div>
     <!-- Modal that shows page is useful -->
     <div
@@ -51,7 +54,7 @@
         </section>
         <footer class="sgds-modal-card-foot is-flex-justify-fs">
           <a
-            class="sgds-button is-outlined is-primary js-send-feedback-modal"
+            class="sgds-button is-outlined is-primary js-send-feedback-modal external-link"
             target="_blank"
             href="{{ site.feedback_form }}?{{ site.feedback_form_url_field }}={{ page.url | uri_escape }}"
           >
@@ -89,7 +92,7 @@
         </section>
         <footer class="sgds-modal-card-foot is-flex-justify-fs">
           <a
-            class="sgds-button is-outlined is-primary js-send-feedback-modal"
+            class="sgds-button is-outlined is-primary js-send-feedback-modal external-link"
             target="_blank"
             href="{{ site.feedback_form }}?{{ site.feedback_form_url_field }}={{ page.url | uri_escape }}"
           >
@@ -114,12 +117,11 @@
     <div class="col is-12">
       <a
         target="_blank"
+        class="external-link"
         href="{{ site.feedback_form }}?{{ site.feedback_form_url_field }}={{ page.url | uri_escape }}"
       >
         Provide Feedback</a
       >
     </div>
-
-
   </div>
-</section>
+</div>

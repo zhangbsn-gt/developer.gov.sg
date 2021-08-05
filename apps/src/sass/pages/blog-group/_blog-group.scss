@@ -1,0 +1,13 @@
+.blog-group{
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+    }
+    .card-grid-container{
+        .grid-25rem{
+            padding-bottom: 0;
+        }
+    }
+}
