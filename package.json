@@ -11,7 +11,7 @@
     "build": "npm run test:site && webpack --mode=production && JEKYLL_ENV=production bundle exec jekyll build",
     "build:dev": "npm run test:site && webpack && bundle exec jekyll build",
     "dev:concurrent": "concurrently \"npm run dev:static\" \"npm run dev:jekyll\"",
-    "dev:jekyll": "jekyll serve --livereload",
+    "dev:jekyll": "bundle exec jekyll serve --livereload",
     "dev:netlify": "NODE_ENV=development netlify dev",
     "dev:static": "webpack --watch",
     "test:site": "NODE_ENV=production mocha --require @babel/register --recursive ./apps/src/tests/**/*.js"
