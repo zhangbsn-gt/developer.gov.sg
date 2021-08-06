@@ -1,5 +1,5 @@
 ---
-title: SmartGym – Every Citizen’s "#"1 Fitness Lifestyle Companion
+title: SmartGym – Every Citizen’s #1 Fitness Lifestyle Companion
 layout: layout-page-sidenav
 category: Sensors and IOT
 description: SmartGym is a holistic fitness platform that uses data to provide users with fitness insights to improve their health journey.
@@ -125,9 +125,7 @@ To find out more about SmartGym, please email <SmartGym_Support@tech.gov.sg>.
   <div class="col is-9">
     <section>
       <p><strong>Tan Chin Hiong, Team Lead, System Architect</strong><br>
-      Tan Chin Hiong is a team lead and systems architect at GovTech. Ching Hiong graduated from the National University of Singapore with a PhD in Electrical
-      Engineering. He has over 15 years of experience in systems engineering and Research and Development (R&D), including the fields of neural networks, computer
-      vision and evolutionary algorithms. Chin Hiong is passionate about harnessing technology to improve people's lives and inspiring the next generation of engineers.</p>
+      Tan Chin Hiong is a team lead and systems architect at GovTech. Chin Hiong graduated from the National University of Singapore with a PhD in Electrical and Computer Engineering. He has over 15 years of experience in systems engineering and Research and Development (R&D), including the fields of neural networks, computer vision and evolutionary algorithms. Chin Hiong is passionate about harnessing technology to improve people's lives and inspiring the next generation of engineers.</p>
     </section>
   </div>
 </div>
