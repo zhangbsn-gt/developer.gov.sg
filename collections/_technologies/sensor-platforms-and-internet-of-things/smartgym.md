@@ -1,5 +1,5 @@
 ---
-title: SmartGym – Every Citizen’s #1 Fitness Lifestyle Companion
+title: SmartGym – Every Citizen’s \#1 Fitness Lifestyle Companion
 layout: layout-page-sidenav
 category: Sensors and IOT
 description: SmartGym is a holistic fitness platform that uses data to provide users with fitness insights to improve their health journey.
