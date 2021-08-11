@@ -139,7 +139,7 @@ To find out more about SmartGym, please email <SmartGym_Support@tech.gov.sg>.
   <div class="col is-9">
     <section>
       <p><strong>Joaquin Sanchez, Systems and Sensors Engineer</strong><br>
-      Joaquin Sanchez is a systems and sensors engineer at GovTech and he is from Columbia and the UK. He is an electronics engineer with a specialisation in Biomedical
+      Joaquin Sanchez is a systems and sensors engineer at GovTech and he is from Colombia and the UK. He is an electronics engineer with a specialisation in Biomedical
         Engineering. Prior to working in GovTech, Joaquin developed embedded systems specifically for physiological signal sensing application in wearables for Samsung
         Electronics in South Korea.
       </p>
