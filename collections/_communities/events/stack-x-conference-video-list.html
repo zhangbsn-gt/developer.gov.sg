@@ -1,6 +1,6 @@
 <div class="card-grid-container is-fullwidth">
     {% comment %} 
-    {% assign videos = site.data.stackx2021conference-videos | where: include.type %}
+    {% assign videos = site.data.stackxconference-videos | where: include.type %}
     {% endcomment %}
     {% assign video_types = include.type | split: ", " %}
     {% assign videos = site.data.stackxconference-videos | where_exp: "video", "video_types contains video.type" %}
