@@ -62,7 +62,7 @@ Alongside the Documentation Service, we’re planning to implement a console tha
         <img src="/assets/img/aboutus-candy.png" alt="Candy Yap" />
       </div>
       <div class="sgds-card-content has-text-centered" style="border-top:0;">
-        <h4><b>"The Bottomless Pit</b></h4>
+        <h4><b>"The Bottomless Pit"</b></h4>
         <p>
           Candy Yap
         </p>
