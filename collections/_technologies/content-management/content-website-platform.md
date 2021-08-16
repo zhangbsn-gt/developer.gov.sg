@@ -5,7 +5,7 @@ category: Content management
 description: Content Website Platform provides a suite of standardised software for hosting content-based websites.
 ---
 
-## Overview
+### Overview
 
 The CWP is a common secured environment based on a resilient, robust and controlled platform which provides a suite of standardised software for hosting content-based websites. It enables unclassified government websites to be centrally managed and operated on public cloud, bringing the benefits of convenience, greater security, optimisation of resources, faster deployment speed and cost savings through economies of scale.
 
@@ -31,7 +31,7 @@ This falls under the ‘Catalogue Buy Services’. (Catalogue Buy also includes 
 
 CWP provides improved manageability and operational efficiency with five Content Management Systems (CMS) standardised software. Customer may bring their own CMS licenses over to CWP provided the licensing scheme is supported in CWP. Alternatively, customer may procure the CMS licenses in CWP. They can choose to deploy HTML websites where CMSes are not required.
 
-The five supported CMSes are WordPress, which is open-source (with commercial support for plug-ins), and four proprietary CMSes, namely SharePoint, SiteCore, Swiit and Sitefinity.
+The five supported CMSes are WordPress, which is open-source (with commercial support for plug-ins), and four proprietary CMSes, namely SharePoint, SiteCore, Swiiit and Sitefinity.
 
 ### Simple Process for Agencies
 
