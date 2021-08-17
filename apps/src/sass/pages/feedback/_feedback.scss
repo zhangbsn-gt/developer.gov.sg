@@ -1,0 +1,13 @@
+#feedback{
+    .sgds-buttons{
+        .sgds-button{
+            border-color: hsl(0, 0%, 84%);
+            &:not(:last-child){
+                margin-right: 1rem;
+            }
+            span{
+                margin-right: 0.2rem;
+            }
+        }
+    }
+}

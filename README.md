@@ -22,6 +22,10 @@ gem install jekyll bundler
 
 bundler install
 
+# For ruby 3.0 and above, as webrick is no longer a bundled gem in Ruby3.0
+bundle add webrick
+
+# Serve the files with jekyll
 bundle exec jekyll serve
 
 # Webpack/static files

@@ -68,7 +68,7 @@ module.exports = (env, argv) => {
         API_URL:
           argv.mode === "production"
             ? "https://api.developer.gov.sg/v1/api"
-            : process.env.API_URL,
+            : process.env.API_URL
       }),
     ],
   };

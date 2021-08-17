@@ -49,7 +49,7 @@
             <small>{{ term.description }}</small>
             <div v-if="term.tags.length > 0">
               <p
-                class="sgds-tag is-rounded margin--right--sm margin--top"
+                class="sgds-tag  margin--right--sm margin--top"
                 v-for="tag of term.tags"
                 :key="term.term + tag"
               >{{ tag }}</p>

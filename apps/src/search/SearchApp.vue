@@ -14,20 +14,18 @@
     </div>
 
     <div class="sgds-container search-content" v-if="!searching">
-      <h2>
+      <h2 class="margin--bottom">
         {{
           searchQuery
             ? `Search results for: "${searchQuery}"`
             : `Search for anything here!`
         }}
       </h2>
-      <div class="row is-multiline">
-        <div
-          class="col is-12"
+      <div class="card-grid-container grid-25rem">
+          <div class="sgds-card" 
           v-for="result of searchResults"
           :key="`${result.ref}`"
-        >
-          <div class="sgds-card">
+          >
             <div class="sgds-card-content">
               <p class="title">
                 <a :href="result.url">{{ result.title }}</a>
@@ -37,7 +35,6 @@
           </div>
         </div>
       </div>
-    </div>
   </section>
 </template>
 

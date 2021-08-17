@@ -1,0 +1,38 @@
+.card-grid-container{
+    display:grid;
+    grid-gap: 2rem;
+    align-items: center;
+    padding: 1rem 0;
+    @include until($tablet){
+        grid-gap: 1rem;
+    }
+
+    &.grid-25rem{
+        grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+        padding: 1rem 0;
+        @include until($tablet){
+            grid-template-columns: 1fr;
+        }
+        .grid-item{
+            height: 100%;
+            .sgds-card{
+                height: 100%;
+            }
+        }
+        .sgds-card{
+            height: 100%;
+        }
+    }
+
+    &.is-fullwidth{
+        width: 100%;
+    }
+}
+
+.row.is-padding-large .col {
+    padding: 1.5rem;
+}
+
+.open-source .col {
+    display: flex;
+}

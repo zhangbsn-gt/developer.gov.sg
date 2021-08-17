@@ -1,0 +1,55 @@
+.sgds-navbar {
+  color: $body-color;
+  .sgds-navbar-item,
+  .sgds-navbar-link {
+    color: $body-color;
+  }
+  .sgds-navbar-dropdown {
+    .section-heading {
+      margin-bottom: 0.5rem;
+    }
+  }
+  .mobile {
+    display: none;
+  }
+
+  .field{
+    padding: 0.5rem;
+  }
+}
+
+.sgds-navbar-item img {
+  max-height: 3rem;
+}
+
+.sgds-navbar-brand a.sgds-navbar-item:hover{
+  text-decoration: none;
+  color: #484848;
+}
+
+// text for logo
+.logo-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 1em;
+  display: block;
+  padding-left: 8px;
+}
+
+@media only screen and (max-width: 1023px) {
+  .sgds-navbar {
+    .sgds-navbar-dropdown {
+      display: block;
+    }
+    .desktop {
+      display: none;
+    }
+    .mobile {
+      display: block;
+    }
+    .sgds-navbar-link.mobile {
+      padding: 0.75rem 1rem;
+    }
+  }
+}

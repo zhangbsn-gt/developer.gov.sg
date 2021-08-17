@@ -1,0 +1,131 @@
+.sgds-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: $card-radius;
+  border: 1px solid #d6d6d6;
+  color: $body-color;
+  .sgds-card-content:first-child {
+    flex: 1 1 auto;
+  }
+  .sgds-card-content:last-child {
+    border-top: 1px solid #d6d6d6;
+  }
+
+  strong,b{
+    color: $body-color;
+  }
+}
+
+.sgds-card-footer {
+  border-top: 0;
+  padding-top:0;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+.sgds-card-footer-item {
+  padding-top: 0;
+  padding-bottom: 1rem;
+  .swiper-card & {
+    justify-content: left;
+    padding-left: 1.5rem;
+  }
+}
+
+// if card-content is the first child, remove border-top
+.sgds-card{
+  > .sgds-card-content:first-child{
+    border-top: 0;
+  }
+}
+
+.sgds-card-header {
+  background-color: #0076d6;
+}
+
+.sgds-card-header-title {
+  color: #fff;
+}
+
+.sgds-card:hover {
+  transition: all 0.3s;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.sgds-card-button:hover {
+  color: #484848;
+}
+
+.sgds-card.patterned {
+  background-image: url("/assets/img/bg-memphispattern.png");
+  color: #ffffff;
+  a, strong {
+    color: #fff;
+  }
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 2px 3px 5px gray;
+    transition: all 0.3s;
+  }
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+//dev portal variants - use for products and services
+.sgds-card{
+  &.sgds-card-variant-category-info{
+    height: 100%;
+    img{
+      margin-left: 0;
+    }
+    header{
+      width: 100%;
+      display:inline-flex;
+      justify-content: space-between;
+      gap: 1rem;
+      :not(small){
+        color: $link;
+        text-decoration: underline;
+      }
+      small{
+        margin-top: 0.3rem;
+      }
+    }
+  }
+  // used for webinars
+  &.sgds-card-variant-video-info {
+    .content-grid {
+      display:grid;
+      grid-template-columns: auto 1fr;
+      @media only screen and (max-width: 1240px){
+        grid-template-columns: 1fr;
+      }
+      grid-gap: 1.5rem;
+      img{
+        object-fit: cover;
+        margin:0;
+      }
+    }
+    header{
+      text-decoration: underline;
+    }
+    .date{
+      font-weight: bold;
+    }
+    h4 + p,
+    p + p
+    {
+      margin-top: 1rem;
+    }
+  }
+
+  //use for blog card
+  &.sgds-card-variant-blog-info{
+    .sgds-card-content{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+}

@@ -17,14 +17,15 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet"> -->
 
-    <link 
+    <!-- <link 
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" 
       rel="stylesheet"
-    />
+    /> -->
 
     {% if site.git_branch == 'dev' %}
       <script src="https://assets.dcube.cloud/scripts/wogaa.js"></script>
@@ -92,7 +93,7 @@
   </head>
 
   <body>
-    <div class="main">
+    <main>
       {%- include top-nav.html -%}
       {% if page.layout == "layout-page-sidenav" or page.layout == "layout-category-listing" %}
       <div class="mobile-sidenav is-hidden-desktop">
@@ -108,7 +109,7 @@
       {% endif %}
       {%- include feedback-banner.html -%}
       {{content}}
-    </div>
+    </main>
     <div class="footer">
       {%- include sgds-footer.html -%}
     </div>

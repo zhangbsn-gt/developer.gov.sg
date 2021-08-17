@@ -2,36 +2,36 @@
 {% assign isActive = include.isActive %}
 
 <div class="sgds-navbar-item has-dropdown is-hoverable is-mega">
-  <a class="sgds-navbar-link is-tab has-text-weight-semibold {{ isActive }} desktop" href="{{ navItem.url }}">
-      {{ navItem.title }}
-  </a>
-  <a class="sgds-navbar-link is-tab has-text-weight-semibold {{ isActive }} mobile">
-    {{ navItem.title }}
-  </a>
-  <div class="sgds-navbar-dropdown {{ navItem.title }} is-hidden-touch">
-      <div class="sgds-container is-fluid">
-          <div class="row">
-              <div class="col is-4">
-                  <p class="section-heading"><strong>{{ navItem.description.heading }}</strong></p>
-                  <p>{{ navItem.description.content }}</p>
-              </div>
-              <div class="col is-8">
-                  <div class="row is-multiline">
-                      {% assign siteSection = navItem.title | slugify %}
-                      {% assign siteSectionDetails = site.data[siteSection] %}
-                      {% for siteSectionItem in siteSectionDetails %}
-                          <div class="col is-6">
-                              {% assign sectionNameSlug = siteSectionItem.name | slugify %}
-                              <p>
-                                  <a href="{{'/' | append: siteSection | append: '/' | append: sectionNameSlug }}">
-                                      {{ siteSectionItem.name }}
-                                  </a>
-                              </p>
-                          </div>
-                      {% endfor %}
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
+    <a class="sgds-navbar-link is-tab has-text-weight-semibold {{ isActive }} desktop" href="{{ navItem.url }}">
+        {{ navItem.title | replace: "Singapore Government", "SG" }}
+    </a>
+    <a class="sgds-navbar-link is-tab has-text-weight-semibold {{ isActive }} mobile">
+        {{ navItem.title | replace: "Singapore Government", "SG" }}
+    </a>
+    <div class="sgds-navbar-dropdown {{ navItem.title }} is-hidden-touch">
+        <div class="sgds-container is-fluid">
+            <div class="row">
+                <div class="col is-4">
+                    <p class="section-heading"><strong>{{ navItem.description.heading }}</strong></p>
+                    <p>{{ navItem.description.content }}</p>
+                </div>
+                <div class="col is-8">
+                    <div class="row is-multiline">
+                        {% assign siteSection = navItem.title | slugify %}
+                        {% assign siteSectionDetails = site.data[siteSection] %}
+                        {% for siteSectionItem in siteSectionDetails %}
+                        <div class="col is-6">
+                            {% assign sectionNameSlug = siteSectionItem.name | slugify %}
+                            <p>
+                                <a href="{{'/' | append: siteSection | append: '/' | append: sectionNameSlug }}">
+                                    {{ siteSectionItem.name }}
+                                </a>
+                            </p>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

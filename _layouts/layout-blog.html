@@ -22,7 +22,7 @@ layout: layout-default
 
     {{ content }}
 
-    <nav>
+    <nav style="margin: 1rem 0">
       {% if page.previous or page.next %}
       <hr />
       {% endif %}
@@ -30,6 +30,9 @@ layout: layout-default
       <div class="blog-prev-next-links">
         {% if page.previous %}
         <a class="prev" href="{{ page.previous.url }}">Previous</a>
+        {% else %}
+        <!-- Need empty element here to push Next button to right side -->
+        <span></span>
         {% endif %}
         {% if page.next %}
         <a class="next" href="{{ page.next.url }}">Next</a>

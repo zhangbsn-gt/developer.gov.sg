@@ -1,31 +1,17 @@
-@import "variables";
+@import "sass/abstract/variables";
+@import "sass/abstract/resets";
 @import "~sgds-govtech/sgds/sass/sgds";
-@import "navbar";
-@import "spinner";
-@import "cards";
-@import "sidenav";
-@import "buy";
-@import "technologies";
-@import "blog";
-@import "footer";
-
-html {
-  scroll-behavior: smooth;
-}
-
-html,
-body {
-  height: 100%;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-}
-
-.sgds-breadcrumb li + li::before {
-  color: white;
-}
+@import "sass/base/typography";
+@import "sass/base/devportal/all";
+@import "sass/base/anchor";
+@import "sass/layout/all";
+@import "sass/components/all";
+@import "sass/pages/home";
+@import "sass/pages/about-us/grid";
+@import "sass/pages/blog-group/blog-group";
+@import "sass/pages/feedback/feedback";
+@import "sass/pages/govbuy/all";
+@import "sass/vendor/all";
 
 a.feedback-banner-link {
   text-decoration: underline;
@@ -37,14 +23,6 @@ a.external-link::after {
   content: "\e95c";
   padding-left: 0.25rem;
   font-weight: 400;
-}
-
-.row.is-padding-large .col {
-  padding: 1.5rem;
-}
-
-.main {
-  flex: 1 0 auto;
 }
 
 [v-cloak] {
@@ -61,14 +39,7 @@ a.external-link::after {
     }
   }
 }
-.hero-sub {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  img {
-    max-width: 83%;
-  }
-}
+
 
 .content img,
 .content iframe {
@@ -180,6 +151,15 @@ a.external-link::after {
 .idea-sprint-poster {
   max-width: 45%;
 }
+
+.sgds-modal .sgds-modal-card-title {
+  flex-shrink: 1;
+}
+
+.sgds-modal.is-maxmediumwidth .sgds-modal-card {
+  max-width: 600px;
+}
+
 @media screen and (max-width: 1215px) {
   .idea-sprint-poster {
     max-width: 60%;
@@ -201,4 +181,24 @@ a.external-link::after {
     transform: translateY(0);
     box-shadow: none;
   }
+}
+
+@media screen and (min-width: 1023px) {
+  .small-viewport-social-media-buttons {
+    display: none;
+  }
+}
+.social-button {
+  border-color: transparent;
+  background-color: transparent;
+  cursor: pointer;
+  color: $body-color;
+}
+.social-button:hover {
+  color: #0076d6;
+}
+
+#social-media-btns-container {
+  position: sticky;
+  top: 0;
 }

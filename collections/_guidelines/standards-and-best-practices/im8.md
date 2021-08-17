@@ -1,13 +1,12 @@
 ---
-title: IM8
+title: Instruction Manual 8 (IM8)
 layout: layout-page-sidenav
 category: Standards & Best Practices
 description: >
-  The IM8 is a management tool used in the Government to safeguard 
-  ICT & SS (Infocomm Technology and Smart Systems) assets.
+  IM8 is a security management tool used by the Government to safeguard Infocomm Technology and Smart Systems (ICT and SS) assets.
 ---
 
-## Instruction Manual for ICT & SS Management (IM8)
+### Instruction Manual for ICT & SS Management
 
 Technological disruptions and evolutions have decisively changed global industries, economies, and our way of life. In this ongoing digital revolution, the Government must act quickly to seize its transformational potential and digitalise to improve service-delivery, operations, and policy-making in a secure and cost-effective manner. Government Agencies are responsible to operationalise requirements stipulated in the IM8. As owners of Government solutions and services, Government Agencies will define and implement the security and data protection requirements when using ICT & SS (Infocomm Technology and Smart Systems) to deliver public services.
 
