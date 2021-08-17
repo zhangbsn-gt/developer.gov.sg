@@ -132,3 +132,59 @@ WOGAA is only available for Singapore public officers with a government-issued e
 ### Contact Information
 
 For enquiries on WOGAA, email <info@tech.gov.sg>.
+
+### Meet the Team!
+
+### Meet the Fab 10!
+
+**Product Management Team**
+
+
+<div class="sgds-container">
+  <div class="card-grid-container team-grid">
+    <div class="sgds-card-no-border">
+      <div class="sgds-card-image">
+        <img src="/assets/img/aboutus-karen.png" alt="Karen Kee" />
+      </div>
+      <div class="sgds-card-content has-text-centered" style="border-top:0;">
+        <h4><b>"The Shield"</b></h4>
+        <p>
+          Karen Kee
+        </p>
+      </div>
+    </div>
+      <div class="sgds-card-no-border">
+      <div class="sgds-card-image">
+        <img src="/assets/img/aboutus-candy.png" alt="Candy Yap" />
+      </div>
+      <div class="sgds-card-content has-text-centered" style="border-top:0;">
+        <h4><b>"The Bottomless Pit"</b></h4>
+        <p>
+          Candy Yap
+        </p>
+      </div>
+    </div>
+    <div class="sgds-card-no-border">
+      <div class="sgds-card-image">
+        <img src="/assets/img/aboutus-hazel.png" alt="Hazel Koh" />
+      </div>
+      <div class="sgds-card-content has-text-centered" style="border-top:0;">
+        <h4><b>"The FOMO"</b></h4>
+        <p>
+          Hazel Koh
+        </p>
+      </div>
+    </div>
+    <div class="sgds-card-no-border">
+      <div class="sgds-card-image">
+        <img src="/assets/img/aboutus-rachel.png" alt="Rachel Woo" />
+      </div>
+      <div class="sgds-card-content has-text-centered" style="border-top:0;">
+        <h4><b>"The BBT Addict"</b></h4>
+        <p>
+          Rachel Woo
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
