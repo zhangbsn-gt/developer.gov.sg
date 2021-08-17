@@ -155,7 +155,7 @@ For enquiries on WOGAA, email <info@tech.gov.sg>.
     </div>
       <div class="sgds-card-no-border">
       <div class="sgds-card-image">
-        <img src="/assets/img/aboutus-candy.png" alt="Candy Yap" />
+        <img src="/assets/img/wogaa-lingesvaran-palanisamy.jpg" alt="Candy Yap" />
       </div>
       <div class="sgds-card-content has-text-centered" style="border-top:0;">
         <h4><b>"The Bottomless Pit"</b></h4>
