@@ -66,6 +66,8 @@
   description: Make use of Government-backed digital identities to identify and transact with individuals and businesses
   items:
     - Overview
+    - Myinfo
+    - Myinfo business
     - National Digital Identity
     
 - name: Infrastructure and Hosting
