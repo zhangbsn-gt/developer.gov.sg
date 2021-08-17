@@ -7,8 +7,7 @@ description: >
 
 ### Overview
 
-<iframe src="https://www.youtube.com/watch?v=OBw8A0GQOIk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+<iframe src="https://www.youtube.com/embed/OBw8A0GQOIk?showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 Myinfo, a key product under the National Digital Identity (NDI) Smart Nation Strategic National Project, helps citizens and residents manage and consent to have their personal data retrieved across participating Government agencies to pre-fill forms for digital transactions. 
 
 Authenticated through [Singpass](https://www.singpass.gov.sg/main){:target="_blank"}, Myinfo functions as a personal data platform. Users will only need to provide personal data once to digital services instead of repeatedly providing data for every online transaction. Data security and personal control over the data shared is also ensured through Myinfo.  
