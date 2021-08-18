@@ -35,10 +35,10 @@ Businesses were also able to create a new category of instant products and servi
 
 ### How do You Use Myinfo?
 
-</b> For end-users:</b> Users must authenticate themselves via Singpass to use Myinfo as an alternative option to complete online forms automatically instead of manual form filling. Upon providing their consent for Myinfo API to retrieve their personal data from the respective datasets of various government agencies, users can tap on Myinfo seamlessly when accessing and transacting with close to 700 digital services offered by government agencies and businesses currently onboarded to Myinfo.
+**For end-users:** Users must authenticate themselves via Singpass to use Myinfo as an alternative option to complete online forms automatically instead of manual form filling. Upon providing their consent for Myinfo API to retrieve their personal data from the respective datasets of various government agencies, users can tap on Myinfo seamlessly when accessing and transacting with close to 700 digital services offered by government agencies and businesses currently onboarded to Myinfo.
 
-<b> For the private and public sectors:</b> The following steps are required to integrate Myinfo into a digital service.
-- Product/ business owners can refer to the guidelines [here.](https://api.singpass.gov.sg/library/myinfo/business/implementation-reference-journey){:target="_blank"}.
+**For the private and public sectors:** The following steps are required to integrate Myinfo into a digital service.
+- Product/ business owners can refer to the guidelines [here](https://api.singpass.gov.sg/library/myinfo/business/implementation-reference-journey){:target="_blank"}.
 - Developers can refer to the resources and technical guidelines [here](https://api.singpass.gov.sg/library/myinfo/developers/implementation-technical-requirements) and follow the steps listed in the tutorials.
 - Once the product owner has crafted the user journey, they can log in to this [link](C:\Users\gt-lleepl\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\H5IAQJPN\api.singpass.gov.sg){:target="_blank"} with their Singpass to submit a linkup request for approval.
 - Once the linkup request is approved, the product owner can follow up with the subsequent steps to agree to the Terms and Agreement and complete the app configuration. 
