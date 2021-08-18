@@ -16,14 +16,14 @@
     - STACK 2020
     - STACK the Flags 2020
 
-- name: Newsletter
+- name: Newsletters
   description: >
     Stay ahead of it all with our updates on GCC (Government Commercial Cloud) and 
     SGTS (Singapore Government Tech Stack) in WOG development and more.
 
 - name: Open-source Technologies
   description: >
-    Developers and businesses can access and leverage on the
+    Developers and businesses can access and leverage the
     various technologies and tools that Government agencies have open-sourced.
 
 - name: Developer Blogs
