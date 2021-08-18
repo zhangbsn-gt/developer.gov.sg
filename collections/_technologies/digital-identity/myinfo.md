@@ -35,7 +35,7 @@ Businesses were also able to create a new category of instant products and servi
 
 ### How do You Use Myinfo?
 
-</b> For end-users:</b> Users must authenticate themselves via Singpass to use Myinfo as an alternative option to complete online forms automatically instead of manual form filling. Upon providing their consent for Myinfo API to retrieve their personal data from the respective datasets of various government agencies, users can tap on Myinfo seamlessly when accessing and transacting with close to 700 digital services offered by government agencies and businesses currently onboarded to Myinfo.
+**For end-users:** Users must authenticate themselves via Singpass to use Myinfo as an alternative option to complete online forms automatically instead of manual form filling. Upon providing their consent for Myinfo API to retrieve their personal data from the respective datasets of various government agencies, users can tap on Myinfo seamlessly when accessing and transacting with close to 700 digital services offered by government agencies and businesses currently onboarded to Myinfo.
 
 **For the private and public sectors:** The following steps are required to integrate Myinfo into a digital service.
 - Product/ business owners can refer to the guidelines [here](https://api.singpass.gov.sg/library/myinfo/business/implementation-reference-journey){:target="_blank"}.
