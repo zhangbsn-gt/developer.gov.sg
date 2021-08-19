@@ -21,7 +21,7 @@ Need a specific training? Submit your [feedback](./ship-hats-enquiries) and we w
 
 Agencies can now request for a one-hour session for the CIO or Business or IT leaders to build the CI/CD strategy. The session will include an overview of Singapore Government Tech Stack (SGTS) and SHIP-HATS roadmap.
 
-[Submit a request] (https://www.developer.tech.gov.sg/singapore-government-tech-stack/toolchain/contact-us) on our enquiry form to schedule. Once submitted, we will reach out in five business days to schedule a session depending on availability of the leaders from the agency and GovTech.
+[Submit a request](https://www.developer.tech.gov.sg/singapore-government-tech-stack/toolchain/contact-us) on our enquiry form to schedule. Once submitted, we will reach out in five business days to schedule a session depending on availability of the leaders from the agency and GovTech.
 
                 
 
