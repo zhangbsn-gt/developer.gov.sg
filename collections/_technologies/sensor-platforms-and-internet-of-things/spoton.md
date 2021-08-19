@@ -114,3 +114,9 @@ For technical support and queries, you may contact the distributor(s) directly.
 ### Contact Information
 
 For more information on SPOTON, you may contact <sensors@tech.gov.sg>.
+
+### Operations Support
+
+For operational or technical support for SNSP products such as SPOTON, Government agencies can contact the Smart Nation Operation Centre (SNOC) at <SNSP_Service_Desk@tech.gov.sg>.
+
+For more information on the SNOC, visit this [page](Developer.gov.sg/pages/snoc){:target="_blank"}.
