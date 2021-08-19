@@ -1,7 +1,7 @@
 --- 
 title: Smart Nation Operation Centre (SNOC) – One-Stop Service for Smart Nation Sensor Platform (SNSP) Services 
-layout: layout-page
-permalink: /snoc
+layout: layout-page-sidenav
+category: SNSP
 description: >
   SNOC is a one-stop service providing 24/7 operational support for Government agencies utilising Smart Nation Sensor Platform (SNSP)’s services. 
 ---
