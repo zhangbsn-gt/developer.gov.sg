@@ -68,3 +68,9 @@ There are multiple uses for DOSS. The examples below illustrate two benefits for
 ### Contact Information
 
 For enquiries relating to DOSS, contact <sensors@tech.gov.sg>.
+
+### Operations Support
+
+For operational or technical support for SNSP products such as DOSS, Government agencies can contact the Smart Nation Operation Centre (SNOC) at <SNSP_Service_Desk@tech.gov.sg>.
+
+For more information on the SNOC, visit this [page](Developer.gov.sg/pages/snoc){:target="_blank"}.
