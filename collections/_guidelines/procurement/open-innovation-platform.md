@@ -10,7 +10,7 @@ OIP is a crowd-sourcing platform for business challenges that matches Problem Ow
 
 ### What is OIP?
 
-<iframe src="https://www.youtube.com/watch?v=ptZUdV8WyfA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embedembed//watch?v=ptZUdV8WyfAshowinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 IMDA launches Innovation Calls on the OIP every few months and each Innovation Call comprises a set of business challenges from different Problem Owners. Each challenge is accompanied by prize monies for wining solutions which will be selected based on the criteria of Problem Owners. The challenge category is proposed by the Problem Owner and published along with a description of each problem statement. The two main categories of challenges are:
 
