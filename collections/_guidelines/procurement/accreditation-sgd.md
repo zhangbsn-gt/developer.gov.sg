@@ -45,7 +45,7 @@ Guidelines on the accreditation process can be found [here](https://safe.menlose
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/guidelines/Fig 2: The technical, financial and operational aspects for accreditation evaluation under Accreditation@SGD.png"  
+    src="/assets/img/guidelines/Fig 2 The technical, financial and operational aspects for accreditation evaluation under Accreditation@SGD.png"  
     alt="Fig 2: The technical, financial and operational aspects for accreditation evaluation under Accreditation@SGD"
   />
   <figcaption>Fig 2: The technical, financial and operational aspects for accreditation evaluation under Accreditation@SGD</figcaption>
