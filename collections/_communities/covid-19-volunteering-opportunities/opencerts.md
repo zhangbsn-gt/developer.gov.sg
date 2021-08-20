@@ -10,7 +10,7 @@ short_description: >
 
 OpenCerts uses blockchain to provide an easy and reliable way to issue and validate tamper-proof certificates. It provides a single place for all individuals, from students to employers, to verify certificates issued from any institution. OpenCerts was first conceptualised in collaboration with Ngee Ann Polytechnic (NP) in Nov 2017 and is now adopted by educational institutes within the OpenCerts consortium. Through OpenCerts, individuals can view their certificates, check that it has not been tampered with.
 
-To find out more about OpenCerts, click [here](/technologies/blockchain/opencerts){:target="_blank"}.
+To find out more about OpenCerts, click [here](https://www.developer.tech.gov.sg/technologies/blockchain/opencerts.html){:target="_blank"}.
 
 ### Volunteer Opportunities
 
