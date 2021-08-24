@@ -39,7 +39,7 @@ This is a multi-tenanted Software-as-a-Service (SaaS) hosted on Government Comme
 |    Release    |                Digital.ai                  |
 
  
-Check out [Training: Tools in SHIP-HATS](./training/tools) to know more about the tools available on SHIP-HATS.
+Check out [Tools in SHIP-HATS](https://docs.developer.gov.sg/docs/ship-hats-documentation/#/archi-diagram?id=tools-in-ship-hats) to learn more, find documentation and tutorials.
 
 
 ### Roadmap
