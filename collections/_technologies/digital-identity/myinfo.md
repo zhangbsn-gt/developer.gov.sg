@@ -70,6 +70,6 @@ Myinfo is expected to integrate into more online services to faciliate seamless 
 
 For enquiries, email <partner@myinfo.gov.sg>.
 
-### Technical Documentation
+<br/><u>Technical Documentation</u>
 
-To access Myinfo’s REST APIs, visit this [link.](https://docs.developer.gov.sg/docs/myinfo-ekyc-interface-specification/){:target="_blank"}
+- [Myinfo’s REST API](https://docs.developer.gov.sg/docs/myinfo-ekyc-interface-specification/){:target="_blank"}
