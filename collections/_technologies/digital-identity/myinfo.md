@@ -39,8 +39,8 @@ Businesses were also able to create a new category of instant products and servi
 
 **For the private and public sectors:** The following steps are required to integrate Myinfo into a digital service.
 - Product/ business owners can refer to the guidelines [here](https://api.singpass.gov.sg/library/myinfo/business/implementation-reference-journey){:target="_blank"}.
-- Developers can refer to the resources and technical guidelines [here](https://api.singpass.gov.sg/library/myinfo/developers/implementation-technical-requirements) and follow the steps listed in the tutorials.
-- Once the product owner has crafted the user journey, they can log in to this [link](C:\Users\gt-lleepl\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\H5IAQJPN\api.singpass.gov.sg){:target="_blank"} with their Singpass to submit a linkup request for approval.
+- Developers can refer to the resources and technical guidelines [here](https://api.singpass.gov.sg/library/myinfo/developers/implementation-technical-requirements){:target="_blank"} and follow the steps listed in the tutorials.
+- Once the product owner has crafted the user journey, they can log in to this [link](https://api.singpass.gov.sg){:target="_blank"} with their Singpass to submit a linkup request for approval.
 - Once the linkup request is approved, the product owner can follow up with the subsequent steps to agree to the Terms and Agreement and complete the app configuration. 
 
 To access Myinfo’s REST APIs, visit the documentation service [here.](https://docs.developer.gov.sg/docs/myinfo-ekyc-interface-specification/){:target="_blank"}
@@ -70,6 +70,9 @@ Myinfo is expected to integrate into more online services to faciliate seamless 
 
 For enquiries, email <partner@myinfo.gov.sg>.
 
-<br/>**Technical Documentation**
+<br/>**Technical Resources**
 
 - [Myinfo’s REST API](https://docs.developer.gov.sg/docs/myinfo-ekyc-interface-specification/){:target="_blank"}
+- [Guidelines for product/ business owners](https://api.singpass.gov.sg/library/myinfo/business/implementation-reference-journey){:target="_blank"}
+- [Resources and technical guidelines for developers](https://api.singpass.gov.sg/library/myinfo/developers/implementation-technical-requirements){:target="_blank"}
+
