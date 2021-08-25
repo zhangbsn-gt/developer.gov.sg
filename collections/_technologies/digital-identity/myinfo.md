@@ -43,6 +43,8 @@ Businesses were also able to create a new category of instant products and servi
 - Once the product owner has crafted the user journey, they can log in to this [link](C:\Users\gt-lleepl\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\H5IAQJPN\api.singpass.gov.sg){:target="_blank"} with their Singpass to submit a linkup request for approval.
 - Once the linkup request is approved, the product owner can follow up with the subsequent steps to agree to the Terms and Agreement and complete the app configuration. 
 
+To access Myinfo’s REST APIs, visit the documentation service [here.](https://docs.developer.gov.sg/docs/myinfo-ekyc-interface-specification/){:target="_blank"}
+
 ### Success Stories
 
 Since releasing Myinfo API to the private sector in 2017, financial institutions and insurance firms have quickly implemented Myinfo to facilitate Know-Your-Customer (KYC) checks. Through Myinfo, major Singapore banks, such as DBS, OCBC and UOB, can offer remote, paperless services, including applications for credit cards and the opening of new bank accounts. 
@@ -68,3 +70,6 @@ Myinfo is expected to integrate into more online services to faciliate seamless 
 
 For enquiries, email <partner@myinfo.gov.sg>.
 
+### Technical Documentation
+
+To access Myinfo’s REST APIs, visit this [link.](https://docs.developer.gov.sg/docs/myinfo-ekyc-interface-specification/){:target="_blank"}
