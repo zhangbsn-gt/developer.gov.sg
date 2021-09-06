@@ -1,1 +1,61 @@
+---
+title: Asset Management System (AMS) - A Single System for Government Asset & Contract Management 
+layout: layout-page-sidenav
+category: Productivity Tools
+description: AMS is a single system for management of all asset and contract types in the Government.
+---
 
+### Overview
+
+AMS was designed to be an officer-centric asset and contract tracking system.
+
+It was conceptualised to address the difficulties Government officers experienced due to low visibility of cross-agencies’ assets across different categories and types (e.g. fixed asset, low value, no financial value but high operational value assets and consumables). In addition, it helps with manpower-intensive asset tracking tasks by employing radio-frequency identification (RFID) technology for asset stocktaking.
+
+As AMS is a Whole of Government (WOG) product, GovTech partnered with the Ministry of Finance’s (MOF) agencies (Accountant General Department and VITAL Shared Services) to build in standard workflows for AMS. This enables agencies to be compliant with Finance & ICT governance frameworks by default.
+
+### What is AMS?
+
+AMS is a single system where agencies can track all types of assets and contracts regardless of financial value and type. It can also track other asset types such as files and evidence that have a lower financial value but high operational value. It also automatically syncs with the financial and HR systems of Government agencies for capitalised assets and user account provisioning. 
+
+AMS can operationalise your agency’s assets by tracking its full lifecycle, including important milestones such as loans and faults/maintenance management. 
+
+AMS is supported by a full-fledge contract registry which allow for contract milestone tracking, granular tracking of consumption of contractual services and time & threshold alerts send to contract managers and asset custodians.
+
+\<insert picture\>
+  
+### Why Should AMS be Adopted?
+
+AMS is guided by six core product principles which translates to its key benefits as shown below.
+
+- Being public officer-centric rather than policy centric allows the platform to serve officers’ needs as a first priority.  
+- By allowing agency specific configurations but not heavy customisation, AMS can be adopted by a wide spectrum of agencies within the Government.
+- The workflows and controls are built into the product allowing agencies to comply with finance & ICT rules.
+- It has a fast onboarding process, which allows agencies to use the product quickly and this maximizes it value.
+- It has a mobile touchpoint, thus features are at every officer’s fingertips.
+- It exposes valuable APIs for agency systems to consume easily.
+  
+\<insert picture\>
+
+### How Do You Use AMS?
+
+Government agencies interested in AMS can first take the [agency readiness survey](https://go.gov.sg/amsreadysurvey){:target="_blank"}. After which the AMS team will reach out to guide you on the pre-requisites and onboarding process.
+
+### Success Stories
+
+In the first two years after its launch, AMS was adopted by 46 public agencies. In the next two years, it is expected to be adopted by up to 75 agencies.
+
+### What's Next?
+
+Upcoming features for AMS include:
+
+- An in-app feedback capability for accurate and timely user experience collection - 2021Q3.
+- Asset self-sighting capability for individual custodians to declare asset conditions – 2021Q4.
+- Cross agency fault reporting capability – 2022Q1.
+- Cross agency asset loan capability – 2022Q1.
+- Selected AMS features in the Workpal mobile app (a Government officer One Mobile App for work) –2022Q2.
+- Seamless API based integration through publishing of service APIs to the Singapore Government Tech Stack SG Tech Stack for Whole of Government (WOG) consumption –2023Q1.
+- Adaptability to new situations with the ability to police changes and add/modify business logic and functionalities immediately –2024Q1.
+
+### Contact Information
+
+For enquires, email <AMS_Engage@digitalworkplace.gov.sg>.
