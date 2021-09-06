@@ -1,7 +1,7 @@
 ---
 title: Subscription
 layout: layout-page-sidenav
-description: insert desecription.
+description: Information related to SHIP-HATS overview, subscription, onboarding, add-ons, cancel and integrated tools.
 redirect_from: /singapore-government-tech-stack/toolchain/subscriptions
 ---
 
@@ -36,6 +36,8 @@ Public officers can visit the [intranet website for pricing](https://sgdcs.sgnet
 10. [Can I subscribe to individual tools like Jira or Confluence only?](#10-can-i-subscribe-to-individual-tools-like-jira-or-confluence-only)
 11. [Can I request for a trial subscription?](#11-can-i-request-for-a-trial-subscription)
 12. [What security classification is supported by SHIP-HATS?](#12-what-security-classification-is-supported-by-ship-hats)
+13. [What are the Basic languages that are available for SonarQube add-on and who can buy them as add-on?](13-what-are-the-basic-languages-that-are-available-for-sonarqube-add-on-and-who-can-buy-them-as-add-on)
+14. [Is there any add-on to support multiple branch analysis in SonarQube?](14-is-there-any-add-on-to-support-multiple-branch-analysis-in-sonarqube)
 
 #### 1. How does an agency subscribe to SHIP-HATS?
 
@@ -96,6 +98,14 @@ Yes, we offer a 1-month trial account subject to availability. Agencies can reac
 #### 12. What security classification is supported by SHIP-HATS?
 
 SHIP-HATS supports applications and content that are “Restricted” or below.
+
+#### 13. What are the Basic languages that are available for SonarQube add-on and who can buy them as add-on?
+
+[Languages](https://docs.sonarqube.org/latest/analysis/languages/overview/) supported by SonarQube's [Community edition](https://www.sonarsource.com/plans-and-pricing/community/) are the basic languages. Note that only tenants who have subscribed to **Starter** tier can buy this add-on as it is available by default for other tiers.
+
+#### 14. Is there any add-on to support multiple branch analysis in SonarQube?
+
+Yes. You can add additional programming languages which extend your SonarQube Community edition capabilities to support the [Developer edition](https://www.sonarqube.org/developer-edition/) features and this includes multiple branch analysis. For more information on the languages supported, please refer to [languages](https://docs.sonarqube.org/latest/analysis/languages/overview/) supported by SonarQube.
 
 <hr>
 <sup>[i]</sup> Depending on the agency’s response time to answer any follow-up queries raised by us, it may take 1-3 business days to provision the Subscription Administrator accounts.<br />
