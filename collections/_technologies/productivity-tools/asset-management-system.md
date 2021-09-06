@@ -21,7 +21,13 @@ AMS can operationalise your agency’s assets by tracking its full lifecycle, in
 
 AMS is supported by a full-fledge contract registry which allow for contract milestone tracking, granular tracking of consumption of contractual services and time & threshold alerts send to contract managers and asset custodians.
 
-\<insert picture\>
+<figure style="text-align: center">
+  <img
+    src="/assets/img/ams-overview.png" width="75%" height="75%" 
+    alt="Fig 1: Functionalities of AMS."
+  />
+  <figcaption>Fig 1: Functionalities of AMS.</figcaption>
+</figure>
   
 ### Why Should AMS be Adopted?
 
@@ -34,7 +40,13 @@ AMS is guided by six core product principles which translates to its key benefit
 - It has a mobile touchpoint, thus features are at every officer’s fingertips.
 - It exposes valuable APIs for agency systems to consume easily.
   
-\<insert picture\>
+<figure style="text-align: center">
+  <img
+    src="/assets/img/ams-principles.png" width="75%" height="75%" 
+    alt="Fig 2: AMSs six product principles."
+  />
+  <figcaption>Fig 2: AMSs six product principles.</figcaption>
+</figure>
 
 ### How Do You Use AMS?
 
@@ -48,13 +60,13 @@ In the first two years after its launch, AMS was adopted by 46 public agencies. 
 
 Upcoming features for AMS include:
 
-- An in-app feedback capability for accurate and timely user experience collection - 2021Q3.
-- Asset self-sighting capability for individual custodians to declare asset conditions – 2021Q4.
-- Cross agency fault reporting capability – 2022Q1.
-- Cross agency asset loan capability – 2022Q1.
-- Selected AMS features in the Workpal mobile app (a Government officer One Mobile App for work) –2022Q2.
-- Seamless API based integration through publishing of service APIs to the Singapore Government Tech Stack SG Tech Stack for Whole of Government (WOG) consumption –2023Q1.
-- Adaptability to new situations with the ability to police changes and add/modify business logic and functionalities immediately –2024Q1.
+<figure style="text-align: center">
+  <img
+    src="/assets/img/ams-roadmap.png" width="75%" height="75%" 
+    alt="Fig 3: AMS Roadmap"
+  />
+  <figcaption>Fig 3: AMS Roadmap</figcaption>
+</figure>
 
 ### Contact Information
 
