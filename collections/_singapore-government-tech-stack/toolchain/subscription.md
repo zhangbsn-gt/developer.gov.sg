@@ -36,8 +36,8 @@ Public officers can visit the [intranet website for pricing](https://sgdcs.sgnet
 10. [Can I subscribe to individual tools like Jira or Confluence only?](#10-can-i-subscribe-to-individual-tools-like-jira-or-confluence-only)
 11. [Can I request for a trial subscription?](#11-can-i-request-for-a-trial-subscription)
 12. [What security classification is supported by SHIP-HATS?](#12-what-security-classification-is-supported-by-ship-hats)
-13. [What are the Basic languages that are available for SonarQube add-on and who can buy them as add-on?](13-what-are-the-basic-languages-that-are-available-for-sonarqube-add-on-and-who-can-buy-them-as-add-on)
-14. [Is there any add-on to support multiple branch analysis in SonarQube?](14-is-there-any-add-on-to-support-multiple-branch-analysis-in-sonarqube)
+13. [What are the Basic languages that are available for SonarQube add-on and who can buy them as add-on?](#13-what-are-the-basic-languages-that-are-available-for-sonarqube-add-on-and-who-can-buy-them-as-add-on)
+14. [Is there any add-on to support multiple branch analysis in SonarQube?](#14-is-there-any-add-on-to-support-multiple-branch-analysis-in-sonarqube)
 
 #### 1. How does an agency subscribe to SHIP-HATS?
 
