@@ -81,7 +81,13 @@ Subscription Administrators can monitor Plan Details, Named Users, Projects and 
 
 #### 8. How many projects can be associated with a subscription?
 
-Every tier can have as many projects as the number of users allowed for it. For example, if you choose SQUAD which provides 8 users, maximum number of projects that can be associated will be 8.
+| Tier name | Maximum no. of projects |
+| ------------- |:-------------:|
+| Starter       |       6             |
+| Squad         |       12            |
+| Team          |       24            |
+| Tribe         |       48            |
+
 
 #### 9. How does SHIP-HATS pricing compare with other commercially available CI/CD tools?
 
