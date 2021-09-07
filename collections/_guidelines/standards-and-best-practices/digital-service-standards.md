@@ -72,7 +72,7 @@ Digital services are designed according to the DSS to help users:
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/guidelines/Fig 1 DSS and its 3 design principles.png" width="70%" height="70%" 
+    src="/assets/img/guidelines/standards-and-best-practices/Fig 1 DSS and its 3 design principles.png" width="70%" height="70%" 
     alt="Fig 1: DSS and its 3 design principles"
   />
   <figcaption>Fig 1: DSS and its 3 design principles</figcaption>
