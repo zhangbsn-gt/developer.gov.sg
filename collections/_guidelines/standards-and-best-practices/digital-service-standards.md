@@ -91,7 +91,7 @@ An example is the “Usability Top 10 Tips for Mobile Apps” which is curated f
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/guidelines/Fig 2 Usability Top 10 tips for mobile apps part 1.png" width="70%" height="70%" 
+    src="/assets/img/guidelines/Fig 2 Usability Top 10 tips for mobile apps part 1.png" width="10%" height="10%" 
     alt="Fig 2: Usability Top 10 tips for mobile apps part 1"
   />
 </figure>
