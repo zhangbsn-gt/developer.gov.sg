@@ -23,7 +23,7 @@ AMS is supported by a full-fledge contract registry which allow for contract mil
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/ams-overview.png" width="75%" height="75%" 
+    src="/assets/img/ams-overview.png" width="85%" height="85%" 
     alt="Fig 1: Functionalities of AMS."
   />
   <figcaption>Fig 1: Functionalities of AMS.</figcaption>
@@ -42,7 +42,7 @@ AMS is guided by six core product principles which translates to its key benefit
   
 <figure style="text-align: center">
   <img
-    src="/assets/img/ams-principles.png" width="75%" height="75%" 
+    src="/assets/img/ams-principles.png" width="85%" height="85%" 
     alt="Fig 2: AMSs six product principles."
   />
   <figcaption>Fig 2: AMSs six product principles.</figcaption>
@@ -62,8 +62,7 @@ Upcoming features for AMS include:
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/ams-roadmap.png" width="75%" height="75%" 
-    alt="Fig 3: AMS Roadmap"
+    src="/assets/img/ams-roadmap.png" alt="Fig 3: AMS Roadmap"
   />
   <figcaption>Fig 3: AMS Roadmap</figcaption>
 </figure>
