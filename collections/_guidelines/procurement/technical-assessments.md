@@ -14,7 +14,7 @@ As a start, the two roles which would have to undergo technical assessments woul
 
 ### Implementation of Technical Assessments
 
-Tenderers may be required to send a few personnel to undertake the technical assessment. Results will contribute to the quality score of the Tenderer. Upon awarding the project, the successful Tenderer would need to send their remaining team members under the specific roles for the assessment. This may vary according to project requirements. Tenderers should refer to the tender documents for the specific requirements including more information on technical assessment details.
+Tenderers will be required to send a few personnel who will be a part of the project when awarded to undertake the technical assessment during the evaluation phase. Results will contribute to the quality score of the Tenderer. Upon awarding the project, the successful Tenderer would need to send their remaining team members under the specific roles for the assessment. These may vary according to project requirements. Tenderers should refer to the tender specififications and attend tender briefings (if any) to understand the specific requirements and details of the technical assessment.
 
 ### Contact Information
 
