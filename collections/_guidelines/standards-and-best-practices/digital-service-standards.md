@@ -22,7 +22,6 @@ Through the DSS, Government agencies can design and deliver digital services tha
 - Usable - Simple to understand and easy to use.
 - Relevant - Meets the needs of users.
 
-
 ### How was the DSS Created?
 
 We obtain insights on user needs from citizens, businesses and the Government. Examples of how we do so are shown below:
@@ -72,7 +71,37 @@ Digital services are designed according to the DSS to help users:
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/guidelines/Fig 1 DSS and its 3 design principles.png" width="70%" height="70%" 
+    src="/assets/img/guidelines/Fig 1 DSS and its 3 design principles.jpg" width="70%" height="70%" 
+    alt="Fig 1 DSS and its 3 design principles"
+  />
+</figure>
+<figure style="text-align: center">
+  <img
+    src="/assets/img/guidelines/Fig 1 DSS and its 3 design principles part 2.jpg" width="70%" height="70%" 
+    alt="Fig 1 DSS and its 3 design principles part 2"
+  />
+</figure>
+<figure style="text-align: center">
+  <img
+    src="/assets/img/guidelines/Fig 1 DSS and its 3 design principles part 3.jpg" width="70%" height="70%" 
+    alt="Fig 1 DSS and its 3 design principles part 3"
+  />
+</figure>
+<figure style="text-align: center">
+  <img
+    src="/assets/img/guidelines/Fig 1 DSS and its 3 design principles part 4.jpg" width="70%" height="70%" 
+    alt="Fig 1 DSS and its 3 design principles part 4"
+  />
+</figure>
+<figure style="text-align: center">
+  <img
+    src="/assets/img/guidelines/Fig 1 DSS and its 3 design principles part 5.jpg" width="70%" height="70%" 
+    alt="Fig 1 DSS and its 3 design principles part 5"
+  />
+</figure>
+<figure style="text-align: center">
+  <img
+    src="/assets/img/guidelines/Fig 1 DSS and its 3 design principles part 6.jpg" width="70%" height="70%" 
     alt="Fig 1 DSS and its 3 design principles"
   />
   <figcaption>Fig 1: DSS and its 3 design principles</figcaption>
@@ -88,23 +117,10 @@ Usability Checks (UC) are conducted periodically by independent citizens and bus
 
 An example is the “Usability Top 10 Tips for Mobile Apps” which is curated from a recently completed UC on mobile applications in Mar 2021:
 
-
 <figure style="text-align: center">
   <img
-    src="/assets/img/guidelines/Fig 2 Usability Top 10 tips for mobile apps part 1.png" width="30%" height="30%" 
-    alt="Fig 2: Usability Top 10 tips for mobile apps part 1"
+    src="/assets/img/guidelines/Fig 2 Usability top 10 tips for mobile apps.jpg" width="70%" height="70%" 
+    alt="Fig 2: Usability top 10 tips for mobile app"
   />
-</figure>
-<figure style="text-align: center">
-  <img
-    src="/assets/img/guidelines/Fig 2 Usability Top 10 tips for mobile apps part 2.png" width="70%" height="70%" 
-    alt="Fig 2: Usability Top 10 tips for mobile apps part 2"
-  />
-</figure>
-<figure style="text-align: center">
-  <img
-    src="/assets/img/guidelines/Fig 2 Usability Top 10 tips for mobile apps part 3.png" width="70%" height="70%" 
-    alt="Fig 2: Usability Top 10 tips for mobile apps part 3s"
-  />
-  <figcaption>Fig 2: Usability Top 10 tips for mobile apps part 3</figcaption>
+  <figcaption>Fig 2: Usability top 10 tips for mobile apps</figcaption>
 </figure>
