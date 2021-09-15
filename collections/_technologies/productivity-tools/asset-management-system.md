@@ -52,6 +52,8 @@ AMS is guided by six core product principles which translates to its key benefit
 
 Government agencies interested in AMS can first take the [agency readiness survey](https://go.gov.sg/amsreadysurvey){:target="_blank"}. After which the AMS team will reach out to guide you on the pre-requisites and onboarding process.
 
+To start using AMS, subscribing government agencies can refer to the [admin user guide](https://docs.developer.gov.sg/docs/admin-user-guide/#/){:target="_blank"} for the step-by-step guide.
+
 ### Success Stories
 
 In the first two years after its launch, AMS was adopted by 46 public agencies. In the next two years, it is expected to be adopted by up to 75 agencies.
@@ -70,3 +72,7 @@ Upcoming features for AMS include:
 ### Contact Information
 
 For enquires, email <AMS_Engage@digitalworkplace.gov.sg>.
+
+<br/>**Other Resources**
+
+- [Admin User Guide](https://docs.developer.gov.sg/docs/admin-user-guide/#/){:target="_blank"}
