@@ -1,5 +1,5 @@
 ---
-title: Updating dependencies for GoGovSG
+title: GovBuy Page Template
 layout: layout-page-sidenav
 published: no # Make sure this is not published!
 ---
