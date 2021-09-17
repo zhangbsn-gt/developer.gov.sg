@@ -27,4 +27,4 @@ The table below shows examples of potential threat scenarios with their correspo
 
 ![API_riskapproach](/assets/img/API-threatscenario03.png)
 
-In addition to these mitigation measures for securing API implementation, developers should adopt secure coding practices during development and keep up-to-date API documentation for all the APIs published. These measures will help to reduce opportunistic attacks on vulnerable codes and provide visibility to the coverage of authorised APIs’ access to sensitive data.
+In addition to these mitigation measures for securing API implementation, developers should **adopt secure coding practices during development and keep up-to-date API documentation for all the APIs published**. These measures will help to reduce opportunistic attacks on vulnerable codes and provide visibility to the coverage of authorised APIs’ access to sensitive data.
