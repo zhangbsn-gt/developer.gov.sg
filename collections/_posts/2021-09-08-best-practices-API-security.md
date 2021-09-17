@@ -20,3 +20,11 @@ APIs are widely adopted, as they are generally built on open standards and are l
 
 ## RISK APPROACH FOR MANAGING API
 The table below shows examples of potential threat scenarios with their corresponding mitigation measures.
+
+![API_riskapproach](/assets/img/API-threatscenario01.png)
+
+![API_riskapproach](/assets/img/API-threatscenario02.png)
+
+![API_riskapproach](/assets/img/API-threatscenario03.png)
+
+In addition to these mitigation measures for securing API implementation, developers should adopt secure coding practices during development and keep up-to-date API documentation for all the APIs published. These measures will help to reduce opportunistic attacks on vulnerable codes and provide visibility to the coverage of authorised APIs’ access to sensitive data.
