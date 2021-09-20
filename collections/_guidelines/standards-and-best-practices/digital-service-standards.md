@@ -9,7 +9,7 @@ description: DSS is a set of policies, standards and guidelines which helps Gove
 
 The Digital Service Standards (DSS) is a set of policies, standards and guidelines which helps Government agencies in implementing digital services to meet the [Digital Government Blueprint (DGB)](https://www.tech.gov.sg/digital-government-blueprint/){:target="_blank"} goal of delivering digital services that are easy to use, seamless and relevant to citizens and businesses.  All Government digital services must meet the DSS. 
 
-An updated version of the DSS was released in July 2020. Click on this [link](/assets/files/dss.pdf){:target="_blank"}.
+An updated version of the DSS was released in July 2020, to access it, click on this [link](/assets/files/dss.pdf){:target="_blank"}.
 
 
 ### Why was the DSS Implemented?
