@@ -115,7 +115,7 @@ An example of the Digital Service that has embraced DSS in its delivery is the L
 
 Usability Checks (UC) are conducted periodically by independent citizens and businesses to ‘mystery-shop’ and check on the usability and accessibility of Government digital services when benchmarked against DSS.  From the UC, key learning points are also curated for our agencies to further improve on their digital services.  
 
-An example is the “Usability Top 10 Tips for Mobile Apps” which is curated from a recently completed UC on mobile applications in Mar 2021:
+An example is the “Usability Top 10 Tips for Mobile Apps” which is curated from a recently completed UC on mobile applications in March 2021:
 
 <figure style="text-align: center">
   <img
