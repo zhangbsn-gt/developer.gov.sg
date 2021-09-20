@@ -11,15 +11,15 @@ tags:
   - API
   - API documentation
 ---
-Application Programming Interface (API) is an interface to facilitate communications between systems and/or services in exchanging data and providing other services. Most modern web and mobile applications make use of APIs. A high-level architecture of an API implementation is shown below.
+Application Programming Interfaces (APIs) facilitate communications between systems and/or services for the exchange of data, as well as providing other services.  Most modern web and mobile applications make use of APIs. A high-level architecture of an API implementation is shown below.
 
 ![API_implementation](/assets/img/API-implementation.png)
 
-## WHY IS API SECURITY IMPORTANT
-APIs are widely adopted, as they are generally built on open standards and are loosely coupled. However, the significance of APIs has attracted the attention of hackers. Gartner predicted that by 2022, API will become the most frequent attack vector, causing data breaches for enterprise web applications. Hence, it is crucial to secure APIs.
+## WHY API SECURITY IS IMPORTANT
+APIs are widely adopted, as they are generally built on open standards and loosely coupled. However, the significance of APIs has attracted the attention of hackers. Gartner predicted that by 2022, APIs will become the most frequent attack vector, causing data breaches for enterprise web applications. Hence, it is crucial to secure APIs.
 
-## RISK APPROACH FOR MANAGING API
-The table below shows examples of potential threat scenarios with their corresponding mitigation measures.
+## RISK APPROACH FOR MANAGING APIs
+The table below shows examples of potential threat scenarios along with their corresponding mitigation measures.
 
 ![API_riskapproach](/assets/img/API-threatscenario01.png)
 
