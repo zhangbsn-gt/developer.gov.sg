@@ -15,10 +15,10 @@ Application Programming Interfaces (APIs) facilitate communications between syst
 
 ![API_implementation](/assets/img/API-implementation.png)
 
-## WHY API SECURITY IS IMPORTANT
+### WHY API SECURITY IS IMPORTANT
 APIs are widely adopted, as they are generally built on open standards and loosely coupled. However, the significance of APIs has attracted the attention of hackers. Gartner predicted that by 2022, APIs will become the most frequent attack vector, causing data breaches for enterprise web applications. Hence, it is crucial to secure APIs.
 
-## RISK APPROACH FOR MANAGING APIs
+### RISK APPROACH FOR MANAGING APIs
 The table below shows examples of potential threat scenarios along with their corresponding mitigation measures.
 
 ![API_riskapproach](/assets/img/API-threatscenario01.png)
