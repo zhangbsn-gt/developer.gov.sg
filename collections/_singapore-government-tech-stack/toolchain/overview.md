@@ -6,7 +6,7 @@ redirect_from:
   - /technologies/devops
   - /technologies/devops/ship
   - /technologies/devops/hats
-description: insert desecription.
+description: Overview of SHIP-HATS.
 ---
 
 ### Overview
