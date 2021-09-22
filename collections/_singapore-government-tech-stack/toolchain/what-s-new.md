@@ -11,9 +11,12 @@ We heard your feedback on Annual Developer Satisfaction Survey 2021 and we're do
  
 | Date of update |                                         What’s New?                                       |           Coming Soon          |
 | :------------- | ----------------------------------------------------------------------------------------- | ------------------------------ |
-| 10 August 2021      | <a href="https://docs.developer.gov.sg/docs/ship-hats-documentation/#/user-roles-permissions">User Roles & Permissions</a><br /> | Portal Admin Guide  |
-| 16 July 2021      | <a href="https://docs.developer.gov.sg/docs/ship-hats-architecture-diagram/#/">SHIP-HATS Architecture Diagram</a><br /> |  | 
-| 5 July 2021      | [Subscription FAQs](./subscriptions)<br /> [Training Resources](./training-resources) |   |
+| 15 September 2021      | <a href="https://docs.developer.tech.gov.sg/docs/ship-hats-documentation/#/get-started/ship-hats-integrated-tools-version">SHIP-HATS Integrated Tool Version</a><br /> |
+| 14 September 2021      | <a href="https://docs.developer.tech.gov.sg/docs/ship-hats-documentation/#/portal-guide/overview-of-ship-hats-portal">Portal Admin Guide</a><br /> | 
+| 10 September 2021      | <a href="https://docs.developer.tech.gov.sg/docs/ship-hats-documentation/#/how-to-setup-and-scan-sample-pipeline">How to set up and scan a simple pipeline</a><br /> |
+| 10 August 2021      | <a href="https://docs.developer.gov.sg/docs/ship-hats-documentation/#/user-roles-permissions">User Roles & Permissions</a><br /> | 
+| 16 July 2021      | <a href="https://docs.developer.gov.sg/docs/ship-hats-documentation/#/architecture-diagram">SHIP-HATS Architecture Diagram</a><br /> |  | 
+| 5 July 2021      | [Subscription FAQs](./subscription)<br /> [Training Resources](./training-resources) |   |
 
                 
 
