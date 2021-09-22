@@ -10,6 +10,8 @@ tags:
   - Application Programming Interface
   - API
   - API documentation
+  - API gateway
+  - secure coding
 ---
 Application Programming Interfaces (APIs) facilitate communications between systems and/or services for the exchange of data, as well as providing other services.  Most modern web and mobile applications make use of APIs. A high-level architecture of an API implementation is shown below.
 
