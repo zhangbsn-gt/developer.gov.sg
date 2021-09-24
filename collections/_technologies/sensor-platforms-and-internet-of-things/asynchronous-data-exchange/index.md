@@ -35,3 +35,95 @@ This diagram shows the components of ADEX and its ability to distribute real-tim
 </figure>
 
 ### Differences between APEX & ADEX
+
+|**APEX**|**ADEX**|
+|:---|:---|
+|**API gateway**<ul><li>REST and SOAP</li><li>Up to Confidential</li></ul>|**Message-queue + stream hub**<ul><li>MQTT and Kafka</li><li>Up to Restricted</li></ul>|
+|**On-Demand**<ul><li>Consumers call API when needed</li><li>Orchestration and transformation supported</li><li>Retry-able</li></ul>|**Event-driven**<ul><li>Consumers get informed when Provider has new data</li><li>Stream processing (upcoming feature in ~Q1 FY22)</li><li>Replay-able</li></ul>|
+|**Synchronous**<ul><li>Request-Response model</li><li>Provider responds to acknowledge request from Consumer</li><li>Immediate feedback of receipt</li></ul>|**Asynchronous**<ul><li>Response is decoupled</li><li>Provider doesn't need response from Consumer</li><li>No immediate feedback of receipt</li></ul>|
+
+### Why Should ADEX be Adopted?
+
+**Asynchronous data exchange (ADEX) for WOG**<br>
+ADEX is a platform for real-time, asynchronous fire-and-forget data transfer.
+
+**Provides data sharing marketplace**<br>
+With ADEX’s data marketplace, Agencies can browse all datasets across WOG for sharing.
+
+**Offers central exchange service to facilitate sharing**<br>
+Agencies can publish and subscribe to real-time data using a self-service portal along with workflow engine. This helps to secure data across network zones, eliminating diverse protocols and interfaces.
+
+**Creates catalyst for discovery and innovation**<br>
+Agencies can enjoy a culture of sharing for collaboration and innovation across the public service, and potentially discover use cases for new services.
+
+### How Do You Use ADEX?
+
+Your Agency can use ADEX (as a mechanism of data transfer instead of direct connect, SFTP or via API) by enrolling as a Publisher to provide data or Subscriber to consume data on this centralised, self-service data exchange and event streaming platform.
+
+ADEX will be particularly beneficial if you need real-time sharing and across agencies, for instance, if your Agency’s data is required by more than one agency, a one-time setup is all that is required for the Publisher. Only the other subscriber will need to connect to ADEX. Thereafter, the Publisher will just need to approve in portal for subscriber to use the topic.
+
+### Getting Started
+
+Getting started with ADEX is simple. All you must do is follow these steps:
+1.	Get in touch with ADEX Team at sense@tech.gov.sg to discuss your agency’s use case, operational requirements, intention to enroll as publisher and/or subscriber on ADEX, and implementation timeline.
+	
+2.	Sign the ADEX Services Sheet (SS), which together with GovTech's Universal Service Terms (UST) for Public Sector Entities, form the Memorandum of Understanding (MOU). (The SS and UST will be shared upon request after the initial discussion.)
+
+3.	Fill the ADEX Service Request Form to submit IP addresses for IP Whitelisting. (The form will be shared upon request after the initial discussion.)
+
+4.	Create an account with ADEX [here](https://sdx.sensors.gov.sg/auth/signup;app=sdx/create-account) via an Internet-enabled PC or laptop. Ensure that you register with a valid government agency’s email address.
+
+5.	Upon creating an account, the system will send a verification email to the email address you provided.
+
+6.	Once you are successfully signed in, create a Team and invite team members to explore the portal together with agency members.
+
+7.	Click on ‘Create’ to start a new Project and add a topic to begin publishing and/or subscribing to data for that topic#.
+
+8.	Set up MQTT connection by using a MQTT client (e.g. MQTTBox can be used but for testing only) to establish the mandatory connection before Publisher can start publishing data or Subscriber can start consuming data for that topic.
+
+To learn how to set up MQTT connections on ADEX, click [here](https://d3uzjhjcl6zsbz.cloudfront.net/how-to-set-up-mqtt-connections-on-ADEX.mp4).
+
+A video guide on how to get started with ADEX can be found [here](https://d3uzjhjcl6zsbz.cloudfront.net/how-to-get-started-on-ADEX.mp4).
+
+### What is a Topic?
+
+1.	A topic is a dataset that is published by a data provider on ADEX. A publisher would publish a topic on ADEX, and a subscriber would subscribe to a topic on ADEX. 
+
+2.	Examples of sensor-related topics are rainfall volume, air temperature, relative humidity, surface wind speed and surface wind direction. 
+
+3.	Examples of non-sensor related topics are traffic congestion, road accident alerts, people density by area/building and bus arrival info.
+
+### What Type of Messages Can I Send Across?
+
+The content inside each MQTT message is known as “payload”.
+
+ADEX is capable of transferring text-based payloads and binary payloads. An example of binary payload is shown below.
+
+Each payload should be lightweight and less than 1 MB.
+
+<figure style="text-align: center">
+  <img
+    src="/assets/img/technologies/adex-payload.png" width="100%" height="100%" 
+    alt="Fig 2: ADEX payload"
+  />
+  <figcaption>Fig 2: ADEX payload</figcaption>
+</figure>
+
+### Success Stories
+
+ADEX is currently live and serving the needs of Government agencies. Some examples include:
+- MOH and HTX to publish enforcement data for COVID-19 social distancing measures to participating agencies.
+- SDC to publish and subscribe to SafeEntry dataset for crowd control at the various recreation nodes in Sentosa.
+- NEA to publish environmental topics like rainfall, temperature, wind speed, wind direction, wind gust speed, wind gust direction, PSI and PM2.5.
+
+### What's Next?
+
+The ADEX team plans to incorporate event streaming service into the platform ~Q1 FY22.
+
+ADEX has extended its fee waiver trial till end of FY21 (31 March 2022) and will commence charging for its subscription service, starting from 1 April 2022.
+
+If your agency has real-time data sharing needs across agencies, ADEX could be a suitable platform for your use case. Alternatively, if you require another agency's data, sensors or non-sensors, we can help to broker.
+
+### Contact Information
+
+For enquiries, email <sense@tech.gov.sg>.
