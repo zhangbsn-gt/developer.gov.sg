@@ -28,7 +28,7 @@ This diagram shows the components of ADEX and its ability to distribute real-tim
 
 <figure style="text-align: center">
   <img
-    src="/collections/_technologies/sensor-platforms-and-internet-of-things/asynchronous-data-exchange/HowADEXWorks.jpg" width="100%" height="100%" 
+    src="/assets/img/technologies/adex-how-it-works.png" width="100%" height="100%" 
     alt="Fig 1: How ADEX works"
   />
   <figcaption>Fig 1: How ADEX works</figcaption>
