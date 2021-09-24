@@ -71,37 +71,7 @@ Digital services are designed according to the DSS to help users:
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/guidelines/Fig 1 DSS and its 3 design principles.jpg" width="70%" height="70%" 
-    alt="Fig 1 DSS and its 3 design principles"
-  />
-</figure>
-<figure style="text-align: center">
-  <img
-    src="/assets/img/guidelines/Fig 1 DSS and its 3 design principles part 2.jpg" width="70%" height="70%" 
-    alt="Fig 1 DSS and its 3 design principles part 2"
-  />
-</figure>
-<figure style="text-align: center">
-  <img
-    src="/assets/img/guidelines/Fig 1 DSS and its 3 design principles part 3.jpg" width="70%" height="70%" 
-    alt="Fig 1 DSS and its 3 design principles part 3"
-  />
-</figure>
-<figure style="text-align: center">
-  <img
-    src="/assets/img/guidelines/Fig 1 DSS and its 3 design principles part 4.jpg" width="70%" height="70%" 
-    alt="Fig 1 DSS and its 3 design principles part 4"
-  />
-</figure>
-<figure style="text-align: center">
-  <img
-    src="/assets/img/guidelines/Fig 1 DSS and its 3 design principles part 5.jpg" width="70%" height="70%" 
-    alt="Fig 1 DSS and its 3 design principles part 5"
-  />
-</figure>
-<figure style="text-align: center">
-  <img
-    src="/assets/img/guidelines/Fig 1 DSS and its 3 design principles part 6.jpg" width="70%" height="70%" 
+    src="/assets/img/guidelines/dss.png" width="25%" height="25%" 
     alt="Fig 1 DSS and its 3 design principles"
   />
   <figcaption>Fig 1: DSS and its 3 design principles</figcaption>
