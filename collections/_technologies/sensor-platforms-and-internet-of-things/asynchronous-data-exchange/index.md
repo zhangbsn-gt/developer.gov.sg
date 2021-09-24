@@ -1,55 +1,37 @@
 ---
-title: Asynchronous Data Exchange
+title: Asynchronous Data Exchange (ADEX) – Empowering a Smart Nation
 layout: layout-page-sidenav
 category: Sensors and IOT
 description: >
-  Asynchronous Data Exchange is a centralised platform that distributes real-time data 
-  across Whole-of-Government. It provides seamless and secure data sharing and 
-  management, and encompasses public, private, and industrial internet-of-things.
+  ADEX is a centralised data exchange platform for the whole of government (WOG) that allows for seamless data sharing and event streaming.
 ---
-
-## Asynchronous Data Exchange (ADEX)
 
 ### Overview
 
-**Asynchronous Data Exchange (ADEX)** platform is the solution to unlock the universe of whole-of-government (WOG) real-time data, asynchronous fire-and-forget data transfer. With ADEX’s data marketplace, agencies can browse all datasets across WOG for sharing. ADEX will work not only with sensor, but also non-sensor and streaming data.
+Asynchronous Data Exchange (ADEX) is a centralised, self-service data exchange and event streaming platform for WOG and local business entities to share and receive lightweight, real-time data securely.
 
-ADEX enables government agencies to publish and subscribe to real-time data using a self-service portal that will run in Government Commercial Cloud (GCC) both internet and intranet.
+ADEX originated as the Sensor Data Exchange (SDX), part of the Smart Nation Sensor Platform (SNSP). Currently, ADEX has broadened its scope to support the exchange of both sensor and non-sensor data. In this context, non-sensor data may also refer to processed sensor data (i.e. raw sensor data after processing/analytics). For example, mall footfalls are considered as raw sensor data (i.e. how many steps counted at Level 1 of a shopping centre). After processing/analytics, the data can be defined as "Level 1 is at 80% capacity", which can be considered as non-sensor data.
 
-Agencies can either connect via intranet through the SGWAN interface or via MPLS from their private network. Agencies can use ADEX to discover and share event data such as status updates or event streams in real-time, across internet and intranet. Subscribers will receive updates as soon as the events are published. Publishers can choose who will be able to subscribe.
+ADEX is part of the [Singapore Government Tech Stack (SGTS)](https://www.developer.tech.gov.sg/singapore-government-tech-stack/overview/index.html). It is positioned as one of the Communications components, along with [API Exchange (APEX)](https://www.developer.tech.gov.sg/technologies/data-and-apis/apex.html) it is part of the Base Layer of SGTS.
 
-This diagram shows the components of ADEX and its ability to distribute real-time data across networks. 
+ADEX is hosted on the [Government Commercial Cloud (GCC)](https://www.developer.tech.gov.sg/technologies/infrastructure-and-hosting/government-commercial-cloud.html). It can support an exchange of data that is up to the RESTRICTED classification and considered NON-SENSITIVE.
 
-![How ADEX works](HowADEXWorks.jpg)
+### What is ADEX?
 
-[Here's a short introductory video about ADEX](https://d3uzjhjcl6zsbz.cloudfront.net/ADEX-overview.mp4)
+ADEX provides WOG with real-time, asynchronous, fire-and-forget data transfer. Agencies can look forward to making better, real-time decisions based on up-to-date information with ADEX.
 
-[How to get started on ADEX](https://d3uzjhjcl6zsbz.cloudfront.net/how-to-get-started-on-ADEX.mp4)
+ADEX enables government agencies to publish and subscribe to real-time data using a self-service portal in GCC, both on the GCC Internet and GCC Intranet.
 
-[How to set up MQTT connections on ADEX](https://d3uzjhjcl6zsbz.cloudfront.net/how-to-set-up-mqtt-connections-on-ADEX.mp4)
+Agencies can either connect via Intranet through the SGWAN interface or via MPLS from their private network. Agencies can use ADEX to discover and share event data such as status updates or event streams in real-time, across Internet and Intranet. Subscribers will receive updates as soon as the events are published. Publishers can choose who will be able to subscribe.
 
+This diagram shows the components of ADEX and its ability to distribute real-time data across networks. More details on ADEX can be found in [this video](https://d3uzjhjcl6zsbz.cloudfront.net/ADEX-overview.mp4).
 
-### What is ADEX for?
+<figure style="text-align: center">
+  <img
+    src="/collections/_technologies/sensor-platforms-and-internet-of-things/asynchronous-data-exchange/HowADEXWorks.jpg" width="100%" height="100%" 
+    alt="Fig 1: How ADEX works"
+  />
+  <figcaption>Fig 1: How ADEX works</figcaption>
+</figure>
 
-- **ASYNCHRONOUS DATA EXCHANGE (ADEX) FOR WOG** 
-
-  ADEX is a platform for real-time, asynchronous fire-and-forget data transfer. 
-
-- **PROVIDES DATA SHARING MARKETPLACE** 
-
-  With ADEX's data marketplace, agencies can browse all datasets across the whole-of-government for sharing. 
-
-- **OFFERS CENTRAL EXCHANGE SERVICE TO FACILITATE SHARING** 
-
-   ADEX enables agencies to publish and subscribe to real-time data using a self-service portal along with workflow engine. It helps to secure data across network zones eliminating diverse protocols and interfaces.  
-
-- **CREATES CATALYST FOR DISCOVERY AND INNOVATION** 
-
-  ADEX creates a culture of sharing for collaboration and innovation across the public service with potential use cases discovery for new services.
-
-
-### Get Started
-
-Administrative access ADEX is available [here](https://sdx.sensors.gov.sg/sdx/home).
-
-To find out more about ADEX or the onboarding process, contact [sense@tech.gov.sg](mailto:sense@tech.gov.sg).
+### Differences between APEX & ADEX
