@@ -116,100 +116,68 @@ To find out more about SmartGym, please email <SmartGym_Support@tech.gov.sg>.
 
 ### Meet the Team!
 
-<div class="row">
-  <div class="col is-3">
-    <figure style="text-align: center">
-      <img src="/assets/img/smartgym-tan-chin-hiong.png" alt="Tan Chin Hiong, Team Lead, System Architecture for SmartGym" width="90%" height="90%"/>
-    </figure>
-  </div>
-  <div class="col is-9">
-    <section>
+<div class="card-grid-container grid-25rem">
+  <div class="sgds-card">
+    <div class="sgds-card-content">
+      <img style="float: left; margin-right: 20px;" src="/assets/img/smartgym-tan-chin-hiong.png" alt="Tan Chin Hiong, Team Lead, System Architecture for SmartGym">
       <p><strong>Tan Chin Hiong, Team Lead, System Architect</strong><br>
-      Tan Chin Hiong is a team lead and systems architect at GovTech. Chin Hiong graduated from the National University of Singapore with a PhD in Electrical and Computer Engineering. He has over 15 years of experience in systems engineering and Research and Development (R&D), including the fields of neural networks, computer vision and evolutionary algorithms. Chin Hiong is passionate about harnessing technology to improve people's lives and inspiring the next generation of engineers.</p>
-    </section>
+        Chin Hiong is a team lead and systems architect at GovTech. Chin Hiong graduated from the National University of Singapore with a PhD in Electrical and Computer Engineering. He has over 15 years of experience in systems engineering and Research and Development (R&D), including the fields of neural networks, computer vision and evolutionary algorithms. Chin Hiong is passionate about harnessing technology to improve people's lives and inspiring the next generation of engineers.
+      </p>
+    </div>
   </div>
-</div>
 
-<div class="row">
-  <div class="col is-3">
-    <figure style="text-align: center">
-      <img src="/assets/img/smartgym-joaquin-sanchez.png" alt="Joaquin Sanchez, Systems and Sensors Engineer for SmartGym" width="90%" height="90%"/>
-    </figure>
-  </div>
-  <div class="col is-9">
-    <section>
+  <div class="sgds-card">
+    <div class="sgds-card-content">
+      <img style="float: left; margin-right: 20px;" src="/assets/img/smartgym-joaquin-sanchez.png" alt="Joaquin Sanchez, Systems and Sensors Engineer for SmartGym">
       <p><strong>Joaquin Sanchez, Systems and Sensors Engineer</strong><br>
-      Joaquin Sanchez is a systems and sensors engineer at GovTech and he is from Colombia and the UK. He is an electronics engineer with a specialisation in Biomedical
+        Joaquin is a systems and sensors engineer at GovTech and he is from Colombia and the UK. He is an electronics engineer with a specialisation in Biomedical
         Engineering. Prior to working in GovTech, Joaquin developed embedded systems specifically for physiological signal sensing application in wearables for Samsung
         Electronics in South Korea.
       </p>
-    </section>
+    </div>
   </div>
-</div>
 
-<div class="row">
-  <div class="col is-3">
-    <figure style="text-align: center">
-      <img src="/assets/img/smartgym-syafiah-khairy.png" alt="Siti Syafi'ah Binte Khairy, Mechanical Design Engineer for SmartGym" width="90%" height="90%"/>
-    </figure>
-  </div>
-  <div class="col is-9">
-    <section>
+  <div class="sgds-card">
+    <div class="sgds-card-content">
+      <img style="float: left; margin-right: 20px;" src="/assets/img/smartgym-syafiah-khairy.png" alt="Siti Syafi'ah Binte Khairy, Mechanical Design Engineer for SmartGym">
       <p><strong>Siti Syafi'ah Binte Khairy, Mechanical Design Engineer</strong><br>
-      Siti Syafi'ah Binte Khairy is a mechanical design engineer who worked on the web dashboard development for SmartGym. Syafi'ah graduated from Singapore Institute of
+        Siti Syafi'ah is a mechanical design engineer who worked on the web dashboard development for SmartGym. Syafi'ah graduated from Singapore Institute of
         Technology with a degree in Mechanical Design Engineering. She previously worked as a Process Engineer, before making the switch to the technology sector in hopes
         of contributing towards Smart Nation Building.
       </p>
-    </section>
+    </div>
   </div>
-</div>
 
-<div class="row">
-  <div class="col is-3">
-    <figure style="text-align: center">
-      <img src="/assets/img/smartgym-caleb-lee.png" alt="Caleb Lee, Software Engineer - Backend Developer for SmartGym" width="90%" height="90%"/>
-    </figure>
-  </div>
-  <div class="col is-9">
-    <section>
+  <div class="sgds-card">
+    <div class="sgds-card-content">
+      <img style="float: left; margin-right: 20px;" src="/assets/img/smartgym-caleb-lee.png" alt="Caleb Lee, Software Engineer - Backend Developer for SmartGym">
       <p><strong>Caleb Lee, Software Engineer - Backend Developer</strong><br>
-      Caleb Lee graduated from Singapore Univerity of Technology and Design with a degree in Computer Science. He specialises in Artificial Intelligence and
+        Caleb Lee graduated from Singapore Univerity of Technology and Design with a degree in Computer Science. He specialises in Artificial Intelligence and
         web development. Caleb is highly curious about most things and is passionate about connecting the dots across different disciplines.
       </p>
-    </section>
+    </div>
   </div>
-</div>
 
-<div class="row">
-  <div class="col is-3">
-    <figure style="text-align: center">
-      <img src="/assets/img/smartgym-kelvin-ang.png" alt="Kelvin Ang, Software Engineer for SmartGym" width="90%" height="90%"/>
-    </figure>
-  </div>
-  <div class="col is-9">
-    <section>
+  <div class="sgds-card">
+    <div class="sgds-card-content">
+      <img style="float: left; margin-right: 20px;" src="/assets/img/smartgym-kelvin-ang.png" alt="Kelvin Ang, Software Engineer for SmartGym">
       <p><strong>Kelvin Ang, Software Engineer</strong><br>
-      Kelvin Ang graduated from Singapore Institute of Technology with a degree in Software Engineering. Kelvin has an interest in the impact technology brings
+        Kelvin Ang graduated from Singapore Institute of Technology with a degree in Software Engineering. Kelvin has an interest in the impact technology brings
         into our lives and creating applications that can ease our day-to-day tasks.
       </p>
-    </section>
+    </div>
   </div>
-</div>
 
-<div class="row">
-  <div class="col is-3">
-    <figure style="text-align: center">
-      <img src="/assets/img/smartgym-tony-varghese.png" alt="Tony Varghese, Product Manager for SmartGym" width="90%" height="90%"/>
-    </figure>
-  </div>
-  <div class="col is-9">
-    <section>
+  <div class="sgds-card">
+    <div class="sgds-card-content">
+      <img style="float: left; margin-right: 20px;" src="/assets/img/smartgym-tony-varghese.png" alt="Tony Varghese, Product Manager for SmartGym">
       <p><strong>Tony Varghese, Product Manager</strong><br>
-      Tony joined GovTech in Nov 2018 with the ambition of being part of the team that builds Singapore's Smart Nation efforts. Aside from his work commitments,
-        Tony enjoys playing cricket.
+        Tony joined GovTech in Nov 2018 with the ambition of being part of the team that builds Singapore's Smart Nation efforts. Aside from his work commitments,
+        Tony enjoys playing cricket. 
       </p>
-    </section>
+    </div>
   </div>
+
 </div>
 
 Interns:
