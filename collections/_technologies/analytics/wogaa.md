@@ -135,83 +135,85 @@ For enquiries on WOGAA, email <info@tech.gov.sg>.
 
 ### Meet the Team!
 
-<div class="sgds-card">
-  <div class="sgds-card-content">
-    <img style="float: left; margin-right: 20px;" src="/assets/img/wogaa-lingesvaran-palanisamy.png" alt="Lingesvaran Palanisamy, , Product Manager for WOGAA">
-    <p><strong>Lingesvaran Palanisamy, Product Manager</strong><br>
-      Lingesvaran is the Product Manager of WOGAA and is also one of the earliest member of the team involved in the Product Inception process. His dynamic, hands-on approach and demonstrated abilities to motivate, organise and lead a product team comes from his experience in managing small to large software development projects that meet demanding time restraints in deadline-driven environments and exceed all expectations. His main responsibilities include managing the product throughout its Product Lifecycle, gathering and prioritising product and user requirements, defining the product vision, and working closely with engineering, design, data and marketing teams to deliver WOGAA and its micro products to Whole-of-Government.
-    </p>
+<div class="card-grid-container grid-15rem">
+  <div class="sgds-card">
+    <div class="sgds-card-content">
+      <img style="float: left; margin-right: 20px;" src="/assets/img/wogaa-lingesvaran-palanisamy.png" alt="Lingesvaran Palanisamy, , Product Manager for WOGAA">
+      <p><strong>Lingesvaran Palanisamy, Product Manager</strong><br>
+        Lingesvaran is the Product Manager of WOGAA and is also one of the earliest member of the team involved in the Product Inception process. His dynamic, hands-on approach and demonstrated abilities to motivate, organise and lead a product team comes from his experience in managing small to large software development projects that meet demanding time restraints in deadline-driven environments and exceed all expectations. His main responsibilities include managing the product throughout its Product Lifecycle, gathering and prioritising product and user requirements, defining the product vision, and working closely with engineering, design, data and marketing teams to deliver WOGAA and its micro products to Whole-of-Government.
+      </p>
+    </div>
   </div>
-</div>
 
-<div class="sgds-card">
-  <div class="sgds-card-content">
-    <img style="float: left; margin-right: 20px;" src="/assets/img/wogaa-lim-kim-yong.png" alt="Lim Kim Yong, Business Analyst for WOGAA">
-    <p><strong>Lim Kim Yong, Business Analyst</strong><br>
-      Kim Yong...
-    </p>
+  <div class="sgds-card">
+    <div class="sgds-card-content">
+      <img style="float: left; margin-right: 20px;" src="/assets/img/wogaa-lim-kim-yong.png" alt="Lim Kim Yong, Business Analyst for WOGAA">
+      <p><strong>Lim Kim Yong, Business Analyst</strong><br>
+        Kim Yong...
+      </p>
+    </div>
   </div>
-</div>
 
-<div class="sgds-card">
-  <div class="sgds-card-content">
-    <img style="float: left; margin-right: 20px;" src="/assets/img/wogaa-clement-foo.png" alt="Clement Foo, Business Operations Manager for WOGAA">
-    <p><strong>Clement Foo, Business Operations Manager</strong><br>
-      Clement...
-    </p>
+  <div class="sgds-card">
+    <div class="sgds-card-content">
+      <img style="float: left; margin-right: 20px;" src="/assets/img/wogaa-clement-foo.png" alt="Clement Foo, Business Operations Manager for WOGAA">
+      <p><strong>Clement Foo, Business Operations Manager</strong><br>
+        Clement...
+      </p>
+    </div>
   </div>
-</div>
 
-<div class="sgds-card">
-  <div class="sgds-card-content">
-    <img style="float: left; margin-right: 20px;" src="/assets/img/wogaa-ryan-tan.png" alt="Ryan Tan, Technical Lead for WOGAA">
-    <p><strong>Ryan Tan, Technical Lead</strong><br>
-      Ryan...
-    </p>
+  <div class="sgds-card">
+    <div class="sgds-card-content">
+      <img style="float: left; margin-right: 20px;" src="/assets/img/wogaa-ryan-tan.png" alt="Ryan Tan, Technical Lead for WOGAA">
+      <p><strong>Ryan Tan, Technical Lead</strong><br>
+        Ryan...
+      </p>
+    </div>
   </div>
-</div>
 
-<div class="sgds-card">
-  <div class="sgds-card-content">
-    <img style="float: left; margin-right: 20px;" src="/assets/img/wogaa-wong-wai-shan.png" alt="Wong Wai Shan, Quality Engineer for WOGAA">
-    <p><strong>Wong Wai Shan, Quality Engineer</strong><br>
-      Wai Shan...
-    </p>
+  <div class="sgds-card">
+    <div class="sgds-card-content">
+      <img style="float: left; margin-right: 20px;" src="/assets/img/wogaa-wong-wai-shan.png" alt="Wong Wai Shan, Quality Engineer for WOGAA">
+      <p><strong>Wong Wai Shan, Quality Engineer</strong><br>
+        Wai Shan...
+      </p>
+    </div>
   </div>
-</div>
 
-<div class="sgds-card">
-  <div class="sgds-card-content">
-    <img style="float: left; margin-right: 20px;" src="/assets/img/wogaa-buddhi-weragoda.png" alt="Buddhi Weragoda, Cloud Specialist & Data Engineer for WOGAA">
-    <p><strong>Buddhi Weragoda, Cloud Specialist & Data Engineer</strong><br>
-      Buddhi Weragoda...
-    </p>
+  <div class="sgds-card">
+    <div class="sgds-card-content">
+      <img style="float: left; margin-right: 20px;" src="/assets/img/wogaa-buddhi-weragoda.png" alt="Buddhi Weragoda, Cloud Specialist & Data Engineer for WOGAA">
+      <p><strong>Buddhi Weragoda, Cloud Specialist & Data Engineer</strong><br>
+        Buddhi Weragoda...
+      </p>
+    </div>
   </div>
-</div>
 
-<div class="sgds-card">
-  <div class="sgds-card-content">
-    <img style="float: left; margin-right: 20px;" src="/assets/img/wogaa-nathanael-ang.png" alt="Nathanael Ang, UX Designer for WOGAA">
-    <p><strong>Nathanael Ang, UX Designer</strong><br>
-      Nathanael...
-    </p>
+  <div class="sgds-card">
+    <div class="sgds-card-content">
+      <img style="float: left; margin-right: 20px;" src="/assets/img/wogaa-nathanael-ang.png" alt="Nathanael Ang, UX Designer for WOGAA">
+      <p><strong>Nathanael Ang, UX Designer</strong><br>
+        Nathanael...
+      </p>
+    </div>
   </div>
-</div>
 
-<div class="sgds-card">
-  <div class="sgds-card-content">
-    <img style="float: left; margin-right: 20px;" src="/assets/img/wogaa-nicholas-yeo.png" alt="Nicholas Yeo, Data Scientist for WOGAA">
-    <p><strong>Nicholas Yeo, Data Scientist</strong><br>
-      Nicholas...
-    </p>
+  <div class="sgds-card">
+    <div class="sgds-card-content">
+      <img style="float: left; margin-right: 20px;" src="/assets/img/wogaa-nicholas-yeo.png" alt="Nicholas Yeo, Data Scientist for WOGAA">
+      <p><strong>Nicholas Yeo, Data Scientist</strong><br>
+        Nicholas...
+      </p>
+    </div>
   </div>
-</div>
 
-<div class="sgds-card">
-  <div class="sgds-card-content">
-    <img style="float: left; margin-right: 20px;" src="/assets/img/wogaa-seah-ming-shu.png" alt="Seah Ming Shu, Data Scientist for WOGAA">
-    <p><strong>Seah Ming Shu, Data Scientist</strong><br>
-      Ming Shu...
-    </p>
+  <div class="sgds-card">
+    <div class="sgds-card-content">
+      <img style="float: left; margin-right: 20px;" src="/assets/img/wogaa-seah-ming-shu.png" alt="Seah Ming Shu, Data Scientist for WOGAA">
+      <p><strong>Seah Ming Shu, Data Scientist</strong><br>
+        Ming Shu...
+      </p>
+    </div>
   </div>
 </div>
