@@ -135,7 +135,7 @@ For enquiries on WOGAA, email <info@tech.gov.sg>.
 
 ### Meet the Team!
 
-<div class="card-grid-container grid-15rem">
+<div class="card-grid-container grid-25rem">
   <div class="sgds-card">
     <div class="sgds-card-content">
       <img style="float: left; margin-right: 20px;" src="/assets/img/wogaa-lingesvaran-palanisamy.png" alt="Lingesvaran Palanisamy, , Product Manager for WOGAA">
@@ -149,7 +149,8 @@ For enquiries on WOGAA, email <info@tech.gov.sg>.
     <div class="sgds-card-content">
       <img style="float: left; margin-right: 20px;" src="/assets/img/wogaa-lim-kim-yong.png" alt="Lim Kim Yong, Business Analyst for WOGAA">
       <p><strong>Lim Kim Yong, Business Analyst</strong><br>
-        Kim Yong...
+        Kim Yong is a Business Analyst at GovTech Singapore working in WOGAA. He is often that patty in between the hamburger where the 2 civilisations challenge one another for the "best" piece of meat - Business & IT Folks. 
+Gathering, analysing, converts unknowns into knowns, and delivering product requirements & solutions using Agile methodologies such as SCRUM is one of his greatest strengths. Kim Yong is certified with CSPO and PMI-ACP.
       </p>
     </div>
   </div>
@@ -158,7 +159,7 @@ For enquiries on WOGAA, email <info@tech.gov.sg>.
     <div class="sgds-card-content">
       <img style="float: left; margin-right: 20px;" src="/assets/img/wogaa-clement-foo.png" alt="Clement Foo, Business Operations Manager for WOGAA">
       <p><strong>Clement Foo, Business Operations Manager</strong><br>
-        Clement...
+        Clement is the Business Operations Manager who oversees the finances and monitors the KPIs for the project. As a firm believer of the product despite joining the team later, he also spends his time sharing about the power of data analytics through WOGAA to the other agencies to speed up digitalisation within the Singapore government.
       </p>
     </div>
   </div>
@@ -167,7 +168,7 @@ For enquiries on WOGAA, email <info@tech.gov.sg>.
     <div class="sgds-card-content">
       <img style="float: left; margin-right: 20px;" src="/assets/img/wogaa-ryan-tan.png" alt="Ryan Tan, Technical Lead for WOGAA">
       <p><strong>Ryan Tan, Technical Lead</strong><br>
-        Ryan...
+        Ryan is the Technical Lead of WOGAA team, who oversees all of the technical decisions made in the product and advises the product owner on the feasibility of upcoming features. His main job is to keep the engineering team happy, be it giving them challenges or just guiding them to their answers. Besides that, he is mostly helping out on backend engineering tasks and also planning for the technical architecture of the product.
       </p>
     </div>
   </div>
@@ -176,7 +177,7 @@ For enquiries on WOGAA, email <info@tech.gov.sg>.
     <div class="sgds-card-content">
       <img style="float: left; margin-right: 20px;" src="/assets/img/wogaa-wong-wai-shan.png" alt="Wong Wai Shan, Quality Engineer for WOGAA">
       <p><strong>Wong Wai Shan, Quality Engineer</strong><br>
-        Wai Shan...
+        Wai Shan is a Quality Engineer in WOGAA. He works closely with the team to ensure all components of WOGAA operate smoothly and remain problem-free. Both Quality Engineers of the team strategise so that all new features are fully tested, with regression, performance and security considerations, before being rolled out to production.
       </p>
     </div>
   </div>
@@ -185,16 +186,25 @@ For enquiries on WOGAA, email <info@tech.gov.sg>.
     <div class="sgds-card-content">
       <img style="float: left; margin-right: 20px;" src="/assets/img/wogaa-buddhi-weragoda.png" alt="Buddhi Weragoda, Cloud Specialist & Data Engineer for WOGAA">
       <p><strong>Buddhi Weragoda, Cloud Specialist & Data Engineer</strong><br>
-        Buddhi Weragoda...
+        Buddhi Weragoda is a Cloud Specialist & Data Engineer at WOGAA. His main responsibilities include Development Operations, Automating processes, improving cloud infrastructure and Data engineering. 
       </p>
     </div>
   </div>
 
   <div class="sgds-card">
     <div class="sgds-card-content">
+      <img style="float: left; margin-right: 20px;" src="/assets/img/wogaa-malindu-warapitiya.png" alt="Malindu Warapitiya, Software Engineer for WOGAA">
+      <p><strong>Malindu Warapitiya, Software Engineer</strong><br>
+        Malindu is a Software Engineer in WOGAA. His main responsibilities include constantly improving Sentiments – WOGAA's user feedback widget, and collaborating with fellow developers and the Design team to ensure all micro products run smoothly. 
+      </p>
+    </div>
+  </div>
+  
+  <div class="sgds-card">
+    <div class="sgds-card-content">
       <img style="float: left; margin-right: 20px;" src="/assets/img/wogaa-nathanael-ang.png" alt="Nathanael Ang, UX Designer for WOGAA">
       <p><strong>Nathanael Ang, UX Designer</strong><br>
-        Nathanael...
+        Nathanael is a UX designer at WOGAA. His responsibilities include on-going improvements and features for Uptime, Inspect, Mobile Analytics, as well as the resources in WOGAA to continuously improve the experience for new and existing users.
       </p>
     </div>
   </div>
@@ -203,7 +213,7 @@ For enquiries on WOGAA, email <info@tech.gov.sg>.
     <div class="sgds-card-content">
       <img style="float: left; margin-right: 20px;" src="/assets/img/wogaa-nicholas-yeo.png" alt="Nicholas Yeo, Data Scientist for WOGAA">
       <p><strong>Nicholas Yeo, Data Scientist</strong><br>
-        Nicholas...
+        Nicholas is a Data Scientist working in WOGAA. As a data-centric product, he works together with the Development team to design the end-to-end data infrastructure - data collection, enrichment, transformation which supports multiple dashboards and reporting needs. To better equip agency users with the skillset and thought processes to use data in their respective fields, he has conducted multiple workshops and lessons to help level users up in their own rights.
       </p>
     </div>
   </div>
@@ -212,7 +222,7 @@ For enquiries on WOGAA, email <info@tech.gov.sg>.
     <div class="sgds-card-content">
       <img style="float: left; margin-right: 20px;" src="/assets/img/wogaa-seah-ming-shu.png" alt="Seah Ming Shu, Data Scientist for WOGAA">
       <p><strong>Seah Ming Shu, Data Scientist</strong><br>
-        Ming Shu...
+        Ming Shu is a Data Scientist in the WOGAA team. He focuses on building data models to perform ETL processes, while also analysing and crunching numbers to derive actionable insights for stakeholders from within GovTech and across the Government. He also has a keen interest in machine learning, and is exploring ways to incorporate it into the WOGAA product.
       </p>
     </div>
   </div>
