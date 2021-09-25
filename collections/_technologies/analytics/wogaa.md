@@ -135,22 +135,47 @@ For enquiries on WOGAA, email <info@tech.gov.sg>.
 
 ### Meet the Team!
 
-### Meet the Fab 10!
+<div class="sgds-card">
+  <div class="sgds-card-content">
+    <img style="float: left;" src="/assets/img/aboutus-karen.png">
+    <h4>Apex API Gateway</h4>
+    <p>
+      <a href="/technologies/data-and-apis/apex">Apex</a> is a Government
+      API gateway that allows development teams to manage and share their
+      application APIs securely. Apex is available on both internet and
+      intranet environments.
+    </p>
+    <ul>
+      <li>
+        <a href="https://github.com/GovTechSG/node-apex-api-security" target="_blank">Node.js API signature
+          library</a>
+      </li>
+      <li>
+        <a href="https://github.com/GovTechSG/java-apex-api-security" target="_blank">Java API signature library</a>
+      </li>
+      <li>
+        <a href="https://github.com/GovTechSG/apex-proxy-node" target="_blank">Node.js HTTP Proxy Server for attaching
+          Apex authentication
+          headers</a>
+      </li>
+      <li>
+        <a href="https://github.com/GovTechSG/apex-signature-validator" target="_blank">Apex API signature
+          validator</a>
+      </li>
+    </ul>
+  </div>
+</div>
 
-**Product Management Team**
 
+
+<div class="card-grid-container grid-25rem">
 
 <div class="sgds-container">
   <div class="card-grid-container team-grid">
     <div class="sgds-card-no-border">
       <div class="sgds-card-image">
         <img src="/assets/img/aboutus-karen.png" alt="Karen Kee" />
-      </div>
-      <div class="sgds-card-content has-text-centered" style="border-top:0;">
-        <h4><b>"The Shield"</b></h4>
-        <p>
-          Karen Kee
-        </p>
+        <h4>test</h4>
       </div>
     </div>
       <div class="sgds-card-no-border">
