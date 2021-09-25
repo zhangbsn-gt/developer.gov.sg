@@ -137,61 +137,12 @@ For enquiries on WOGAA, email <info@tech.gov.sg>.
 
 <div class="sgds-card">
   <div class="sgds-card-content">
-    <img style="float: left; margin-right: 30px;" src="/assets/img/aboutus-karen.png">
-    <h4>Apex API Gateway</h4>
+    <img style="float: left; margin: 20px;" src="/assets/img/wogaa-lingesvaran-palanisamy.png">
+    <strong>Lingesvaran Palanisamy, Product Manager</strong>
     <p>
-      <a href="/technologies/data-and-apis/apex">Apex</a> is a Government
-      API gateway that allows development teams to manage and share their
-      application APIs securely. Apex is available on both internet and
-      intranet environments.
+      Lingesvaran is the Product Manager of WOGAA and is also one of the earliest member of the team involved in the Product Inception process. His dynamic, hands-on approach and demonstrated abilities to motivate, organise and lead a product team comes from his experience in managing small to large software development projects that meet demanding time restraints in deadline-driven environments and exceed all expectations. His main responsibilities include managing the product throughout its Product Lifecycle, gathering and prioritising product and user requirements, defining the product vision, and working closely with engineering, design, data and marketing teams to deliver WOGAA and its micro products to Whole-of-Government.
     </p>
   </div>
 </div>
 
 
-
-<div class="card-grid-container grid-25rem">
-
-<div class="sgds-container">
-  <div class="card-grid-container team-grid">
-    <div class="sgds-card-no-border">
-      <div class="sgds-card-image">
-        <img src="/assets/img/aboutus-karen.png" alt="Karen Kee" />
-        <h4>test</h4>
-      </div>
-    </div>
-      <div class="sgds-card-no-border">
-      <div class="sgds-card-image">
-        <img src="/assets/img/wogaa-lingesvaran-palanisamy.jpg" alt="Candy Yap" />
-      </div>
-      <div class="sgds-card-content has-text-centered" style="border-top:0;">
-        <h4><b>"The Bottomless Pit"</b></h4>
-        <p>
-          Candy Yap
-        </p>
-      </div>
-    </div>
-    <div class="sgds-card-no-border">
-      <div class="sgds-card-image">
-        <img src="/assets/img/aboutus-hazel.png" alt="Hazel Koh" />
-      </div>
-      <div class="sgds-card-content has-text-centered" style="border-top:0;">
-        <h4><b>"The FOMO"</b></h4>
-        <p>
-          Hazel Koh
-        </p>
-      </div>
-    </div>
-    <div class="sgds-card-no-border">
-      <div class="sgds-card-image">
-        <img src="/assets/img/aboutus-rachel.png" alt="Rachel Woo" />
-      </div>
-      <div class="sgds-card-content has-text-centered" style="border-top:0;">
-        <h4><b>"The BBT Addict"</b></h4>
-        <p>
-          Rachel Woo
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
