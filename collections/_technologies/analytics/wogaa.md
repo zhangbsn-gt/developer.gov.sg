@@ -137,7 +137,7 @@ For enquiries on WOGAA, email <info@tech.gov.sg>.
 
 <div class="sgds-card">
   <div class="sgds-card-content">
-    <img style="float: left;" src="/assets/img/aboutus-karen.png">
+    <img style="float: left; margin-right: 30px;" src="/assets/img/aboutus-karen.png">
     <h4>Apex API Gateway</h4>
     <p>
       <a href="/technologies/data-and-apis/apex">Apex</a> is a Government
@@ -145,24 +145,6 @@ For enquiries on WOGAA, email <info@tech.gov.sg>.
       application APIs securely. Apex is available on both internet and
       intranet environments.
     </p>
-    <ul>
-      <li>
-        <a href="https://github.com/GovTechSG/node-apex-api-security" target="_blank">Node.js API signature
-          library</a>
-      </li>
-      <li>
-        <a href="https://github.com/GovTechSG/java-apex-api-security" target="_blank">Java API signature library</a>
-      </li>
-      <li>
-        <a href="https://github.com/GovTechSG/apex-proxy-node" target="_blank">Node.js HTTP Proxy Server for attaching
-          Apex authentication
-          headers</a>
-      </li>
-      <li>
-        <a href="https://github.com/GovTechSG/apex-signature-validator" target="_blank">Apex API signature
-          validator</a>
-      </li>
-    </ul>
   </div>
 </div>
 
