@@ -137,7 +137,7 @@ For enquiries on WOGAA, email <info@tech.gov.sg>.
 
 <div class="sgds-card">
   <div class="sgds-card-content">
-    <img style="float: left; margin: 20px 20px;" src="/assets/img/wogaa-lingesvaran-palanisamy.png">
+    <img style="float: left; padding: 20px;" src="/assets/img/wogaa-lingesvaran-palanisamy.png">
     <p><strong>Lingesvaran Palanisamy, Product Manager</strong><br>
       Lingesvaran is the Product Manager of WOGAA and is also one of the earliest member of the team involved in the Product Inception process. His dynamic, hands-on approach and demonstrated abilities to motivate, organise and lead a product team comes from his experience in managing small to large software development projects that meet demanding time restraints in deadline-driven environments and exceed all expectations. His main responsibilities include managing the product throughout its Product Lifecycle, gathering and prioritising product and user requirements, defining the product vision, and working closely with engineering, design, data and marketing teams to deliver WOGAA and its micro products to Whole-of-Government.
     </p>
