@@ -119,7 +119,7 @@ To find out more about SmartGym, please email <SmartGym_Support@tech.gov.sg>.
 <div class="card-grid-container grid-25rem">
   <div class="sgds-card">
     <div class="sgds-card-content">
-      <img style="float: left; margin-right: 20px;" src="/assets/img/smartgym-tan-chin-hiong.png" width="80%" height="80%" alt="Tan Chin Hiong, Team Lead, System Architecture for SmartGym">
+      <img style="float: left; margin-right: 20px;" src="/assets/img/smartgym-tan-chin-hiong.png" alt="Tan Chin Hiong, Team Lead, System Architecture for SmartGym">
       <p><strong>Tan Chin Hiong, Team Lead, System Architect</strong><br>
         Chin Hiong is a team lead and systems architect at GovTech. Chin Hiong graduated from the National University of Singapore with a PhD in Electrical and Computer Engineering. He has over 15 years of experience in systems engineering and Research and Development (R&D), including the fields of neural networks, computer vision and evolutionary algorithms. Chin Hiong is passionate about harnessing technology to improve people's lives and inspiring the next generation of engineers.
       </p>
@@ -128,7 +128,7 @@ To find out more about SmartGym, please email <SmartGym_Support@tech.gov.sg>.
 
   <div class="sgds-card">
     <div class="sgds-card-content">
-      <img style="float: left; margin-right: 20px;" src="/assets/img/smartgym-joaquin-sanchez.png" width="80%" height="80%" alt="Joaquin Sanchez, Systems and Sensors Engineer for SmartGym">
+      <img style="float: left; margin-right: 20px;" src="/assets/img/smartgym-joaquin-sanchez.png" alt="Joaquin Sanchez, Systems and Sensors Engineer for SmartGym">
       <p><strong>Joaquin Sanchez, Systems and Sensors Engineer</strong><br>
         Joaquin is a systems and sensors engineer at GovTech and he is from Colombia and the UK. He is an electronics engineer with a specialisation in Biomedical
         Engineering. Prior to working in GovTech, Joaquin developed embedded systems specifically for physiological signal sensing application in wearables for Samsung
