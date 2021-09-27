@@ -1,7 +1,7 @@
---- 
-title: Whole-of-Government Application Analytics (WOGAA) - Improve Government Services with Data 
+---
+title: Whole-of-Government Application Analytics (WOGAA) - Improve Government Services with Data
 layout: layout-page-sidenav
-category: Analytics 
+category: Analytics
 description: >
   WOGAA is an analytics & performance platform for public officers to monitor the health of their government websites and optimise the performance of 
   their digital services with data.
@@ -14,9 +14,8 @@ bios:
   - name: Lim Kim Yong, Business Analyst
     img_src: wogaa-lim-kim-yong.png
     desc: |
-      Kim Yong is a Business Analyst at GovTech Singapore working in WOGAA. He is often that patty in between the hamburger where the 2 civilisations challenge one another for the "best" piece of meat - Business & IT Folks. 
-Gathering, analysing, converts unknowns into knowns, and delivering product requirements & solutions using Agile methodologies such as SCRUM is one of his greatest strengths. Kim Yong is certified with CSPO and PMI-ACP.
-
+      Kim Yong is a Business Analyst at GovTech Singapore working in WOGAA. He is often that patty in between the hamburger where the 2 civilisations challenge one another for the "best" piece of meat - Business & IT Folks. Gathering, analysing, converts unknowns into knowns, and delivering product requirements & solutions using Agile methodologies such as SCRUM is one of his greatest strengths. Kim Yong is certified with CSPO and PMI-ACP.
+      
   - name: Clement Foo, Business Operations Manager
     img_src: wogaa-clement-foo.png
     desc: |
@@ -55,7 +54,7 @@ Gathering, analysing, converts unknowns into knowns, and delivering product req
   - name: Seah Ming Shu, Data Scientist
     img_src: wogaa-seah-ming-shu.png
     desc: |
-      Ming Shu is a Data Scientist in the WOGAA team. He focuses on building data models to perform ETL processes, while also analysing and crunching numbers to derive actionable insights for stakeholders from within GovTech and across the Government. He also has a keen interest in machine learning, and is exploring ways to incorporate it into the WOGAA product.     
+      Ming Shu is a Data Scientist in the WOGAA team. He focuses on building data models to perform ETL processes, while also analysing and crunching numbers to derive actionable insights for stakeholders from within GovTech and across the Government. He also has a keen interest in machine learning, and is exploring ways to incorporate it into the WOGAA product.
 --- 
 
 ### Overview
@@ -191,8 +190,8 @@ For enquiries on WOGAA, email <info@tech.gov.sg>.
   {% assign img_url = "/assets/img/" | append: bios.img_src %}
   <div class="sgds-card">
     <div class="sgds-card-content">
-      <img style="float: left; margin-right: 20px;" src="{{ img_url }}" alt="{{ bios.name}}">
-      <p><strong>{{ bios.name}}</strong><br>
+      <img style="float: left; margin-right: 20px;" src="{{ img_url }}" alt="{{ bios.name }}">
+      <p><strong>{{ bios.name }}</strong><br>
         {{ bios.desc }}
       </p>
     </div>
