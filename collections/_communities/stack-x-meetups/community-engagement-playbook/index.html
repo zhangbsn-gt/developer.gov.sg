@@ -4,7 +4,20 @@ layout: layout-page-sidenav
 ---
 
 <p>
-  Off-the-shelf web analytics tools require manpower to maintain and can be expensive. Here are some of the tools that GovTech has developed to help you better understand your users and make data-driven decisions.
+  Insert some overview for the playbook
 </p>
 
-{% include sub-collection-cards.html %}
+<div class="card-grid-container grid-25rem">
+  {% for project in site.communities %}
+    {% assign id = project.id | split: "/" | last %}
+    {% if id != "index" and project.path contains "community-engagement-playbook" %}
+    <div class="grid-item">
+      <div class="sgds-card">
+        <div class="sgds-card-content" style="height: 100%; flex-direction: column; display: flex; justify-content: space-between;">
+          <h3>{{ project.title }}</h3>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+  {% endfor %}
+</div>
