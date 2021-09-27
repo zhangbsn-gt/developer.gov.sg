@@ -1,6 +1,7 @@
 ---
 title: eCanvas – A Voice Controlled Assistive Canvas
 layout: layout-page-sidenav
+category: Sensors and IOT
 description: >
   The eCanvas is a voice-controlled assistive technology that provides greater independence for persons with disabilities.   
 ---
