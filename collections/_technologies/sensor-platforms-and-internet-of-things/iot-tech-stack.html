@@ -3,6 +3,10 @@ title: Internet of Things (IoT) Tech Stack - DECADA
 layout: layout-page-sidenav
 category: Sensors and IOT
 description: The IoT Tech Stack, also known as DECADA, is a set of tools and services for Government agencies to run sensors and IoT applications.
+  - name: Tan Kian Hui, Technical Lead
+    img_src: iot-tan-kian-hui.png
+    desc: |
+      Kian Hui is a senior systems engineer and the team lead for DECADA. He finds joy in implementing software solutions that make a positive impact on people.
 ---
 
 <h2>Overview</h2>
@@ -103,40 +107,19 @@ description: The IoT Tech Stack, also known as DECADA, is a set of tools and ser
 <h2>Meet the Team!</h2>
 
 <div class="card-grid-container grid-25rem">
+  {% for bios in page.bios %}
+  {% assign img_url = "/assets/img/" | append: bios.img_src %}
   <div class="sgds-card">
     <div class="sgds-card-content">
-      <img style="float: left; margin-right: 20px;" src="/assets/img/iot-toh-kian-hui.png" alt="Toh Kian Hui, Technical Lead">
-      <p><strong>Toh Kian Hui, Technical Lead</strong><br>
-        Kian Hui is a senior systems engineer and the team lead for DECADA. He finds joy in implementing software solutions that make a positive impact on people.
+      <img style="float: left; margin-right: 20px;" src="{{ img_url }}" alt="{{ bios.name}}">
+      <p><strong>{{ bios.name}}</strong><br>
+        {{ bios.desc }}
       </p>
     </div>
   </div>
+  {% endfor %}  
+</div>
 
-  <div class="sgds-card">
-    <div class="sgds-card-content">
-      <img style="float: left; margin-right: 20px;" src="/assets/img/iot-tony-varghese.png" alt="Tony Varghese, Product Manager">
-      <p><strong>Tony Varghese, Product Manager</strong><br>
-        Tony is the Product Manager for DECADA. He joined GovTech in Nov 2018 with the ambition of being part of the team that builds Singapore’s Smart Nation efforts. Aside from his work commitments, Tony enjoys playing cricket.
-      </p>
-    </div>
-  </div>
 
-  <div class="sgds-card">
-    <div class="sgds-card-content">
-      <img style="float: left; margin-right: 20px;" src="/assets/img/iot-shawn-ng.png" alt="Shawn Ng, Systems Engineer">
-      <p><strong>Shawn Ng, Systems Engineer</strong><br>
-        Shawn is a DevOps engineer working on DECADA’s infrastructure and development. Shawn enjoys getting swole in his spare time when he's not in front of the terminal.
-      </p>
-    </div>
-  </div>
-  
-  <div class="sgds-card">
-    <div class="sgds-card-content">
-      <img style="float: left; margin-right: 20px;" src="/assets/img/iot-teo-si-yan.png" alt="Teo Si-Yan, Systems Engineer">
-      <p><strong>Teo Si-Yan, Systems Engineer</strong><br>
-        Si-Yan is a full-stack web developer who designs and builds custom applications in DECADA. She enjoys learning new things and has many hobbies including baking, calligraphy and board games.
-      </p>
-    </div>
-  </div> 
   
   
