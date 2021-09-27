@@ -1,10 +1,60 @@
---- 
-title: Whole-of-Government Application Analytics (WOGAA) - Improve Government Services with Data 
+---
+title: Whole-of-Government Application Analytics (WOGAA) - Improve Government Services with Data
 layout: layout-page-sidenav
-category: Analytics 
+category: Analytics
 description: >
   WOGAA is an analytics & performance platform for public officers to monitor the health of their government websites and optimise the performance of 
   their digital services with data.
+bios:
+  - name: Lingesvaran Palanisamy, Product Manager
+    img_src: wogaa-lingesvaran-palanisamy.png
+    desc: |
+      Lingesvaran is the Product Manager of WOGAA and is also one of the earliest member of the team involved in the Product Inception process. His dynamic, hands-on approach and demonstrated abilities to motivate, organise and lead a product team comes from his experience in managing small to large software development projects that meet demanding time restraints in deadline-driven environments and exceed all expectations. His main responsibilities include managing the product throughout its Product Lifecycle, gathering and prioritising product and user requirements, defining the product vision, and working closely with engineering, design, data and marketing teams to deliver WOGAA and its micro products to Whole-of-Government.
+
+  - name: Lim Kim Yong, Business Analyst
+    img_src: wogaa-lim-kim-yong.png
+    desc: |
+      Kim Yong is a Business Analyst at GovTech Singapore working in WOGAA. He is often that patty in between the hamburger where the 2 civilisations challenge one another for the "best" piece of meat - Business & IT Folks. Gathering, analysing, converts unknowns into knowns, and delivering product requirements & solutions using Agile methodologies such as SCRUM is one of his greatest strengths. Kim Yong is certified with CSPO and PMI-ACP.
+      
+  - name: Clement Foo, Business Operations Manager
+    img_src: wogaa-clement-foo.png
+    desc: |
+      Clement is the Business Operations Manager who oversees the finances and monitors the KPIs for the project. As a firm believer of the product despite joining the team later, he also spends his time sharing about the power of data analytics through WOGAA to the other agencies to speed up digitalisation within the Singapore government.
+
+  - name: Ryan Tan, Technical Lead
+    img_src: wogaa-ryan-tan.png
+    desc: |
+      Ryan is the Technical Lead of WOGAA team, who oversees all of the technical decisions made in the product and advises the product owner on the feasibility of upcoming features. His main job is to keep the engineering team happy, be it giving them challenges or just guiding them to their answers. Besides that, he is mostly helping out on backend engineering tasks and also planning for the technical architecture of the product.
+
+  - name: Wong Wai Shan, Quality Engineer
+    img_src: wogaa-wong-wai-shan.png
+    desc: |
+      Wai Shan is a Quality Engineer in WOGAA. He works closely with the team to ensure all components of WOGAA operate smoothly and remain problem-free. Both Quality Engineers of the team strategise so that all new features are fully tested, with regression, performance and security considerations, before being rolled out to production.
+      
+  - name: Buddhi Weragoda, Cloud Specialist & Data Engineer
+    img_src: wogaa-buddhi-weragoda.png
+    desc: |
+      Buddhi Weragoda is a Cloud Specialist & Data Engineer at WOGAA. His main responsibilities include Development Operations, Automating processes, improving cloud infrastructure and Data engineering.
+
+  - name: Malindu Warapitiya, Software Engineer
+    img_src: wogaa-malindu-warapitiya.png
+    desc: |
+      Malindu is a Software Engineer in WOGAA. His main responsibilities include constantly improving Sentiments – WOGAA's user feedback widget, and collaborating with fellow developers and the Design team to ensure all micro products run smoothly.
+      
+  - name: Nathanael Ang, UX Designer
+    img_src: wogaa-nathanael-ang.png
+    desc: |
+      Nathanael is a UX designer at WOGAA. His responsibilities include on-going improvements and features for Uptime, Inspect, Mobile Analytics, as well as the resources in WOGAA to continuously improve the experience for new and existing users.
+      
+  - name: Nicholas Yeo, Data Scientist
+    img_src: wogaa-nicholas-yeo.png
+    desc: |
+      Nicholas is a Data Scientist working in WOGAA. As a data-centric product, he works together with the Development team to design the end-to-end data infrastructure - data collection, enrichment, transformation which supports multiple dashboards and reporting needs. To better equip agency users with the skillset and thought processes to use data in their respective fields, he has conducted multiple workshops and lessons to help level users up in their own rights.
+      
+  - name: Seah Ming Shu, Data Scientist
+    img_src: wogaa-seah-ming-shu.png
+    desc: |
+      Ming Shu is a Data Scientist in the WOGAA team. He focuses on building data models to perform ETL processes, while also analysing and crunching numbers to derive actionable insights for stakeholders from within GovTech and across the Government. He also has a keen interest in machine learning, and is exploring ways to incorporate it into the WOGAA product.
 --- 
 
 ### Overview
@@ -136,94 +186,32 @@ For enquiries on WOGAA, email <info@tech.gov.sg>.
 ### Meet the Team!
 
 <div class="card-grid-container grid-25rem">
+  {% for bios in page.bios %}
+  {% assign img_url = "/assets/img/" | append: bios.img_src %}
   <div class="sgds-card">
     <div class="sgds-card-content">
-      <img style="float: left; margin-right: 20px;" src="/assets/img/wogaa-lingesvaran-palanisamy.png" alt="Lingesvaran Palanisamy, Product Manager for WOGAA">
-      <p><strong>Lingesvaran Palanisamy, Product Manager</strong><br>
-        Lingesvaran is the Product Manager of WOGAA and is also one of the earliest member of the team involved in the Product Inception process. His dynamic, hands-on approach and demonstrated abilities to motivate, organise and lead a product team comes from his experience in managing small to large software development projects that meet demanding time restraints in deadline-driven environments and exceed all expectations. His main responsibilities include managing the product throughout its Product Lifecycle, gathering and prioritising product and user requirements, defining the product vision, and working closely with engineering, design, data and marketing teams to deliver WOGAA and its micro products to Whole-of-Government.
+      <img style="float: left; margin-right: 20px;" src="{{ img_url }}" alt="{{ bios.name }}">
+      <p><strong>{{ bios.name }}</strong><br>
+        {{ bios.desc }}
       </p>
     </div>
   </div>
-
-  <div class="sgds-card">
-    <div class="sgds-card-content">
-      <img style="float: left; margin-right: 20px;" src="/assets/img/wogaa-lim-kim-yong.png" alt="Lim Kim Yong, Business Analyst for WOGAA">
-      <p><strong>Lim Kim Yong, Business Analyst</strong><br>
-        Kim Yong is a Business Analyst at GovTech Singapore working in WOGAA. He is often that patty in between the hamburger where the 2 civilisations challenge one another for the "best" piece of meat - Business & IT Folks. 
-Gathering, analysing, converts unknowns into knowns, and delivering product requirements & solutions using Agile methodologies such as SCRUM is one of his greatest strengths. Kim Yong is certified with CSPO and PMI-ACP.
-      </p>
-    </div>
-  </div>
-
-  <div class="sgds-card">
-    <div class="sgds-card-content">
-      <img style="float: left; margin-right: 20px;" src="/assets/img/wogaa-clement-foo.png" alt="Clement Foo, Business Operations Manager for WOGAA">
-      <p><strong>Clement Foo, Business Operations Manager</strong><br>
-        Clement is the Business Operations Manager who oversees the finances and monitors the KPIs for the project. As a firm believer of the product despite joining the team later, he also spends his time sharing about the power of data analytics through WOGAA to the other agencies to speed up digitalisation within the Singapore government.
-      </p>
-    </div>
-  </div>
-
-  <div class="sgds-card">
-    <div class="sgds-card-content">
-      <img style="float: left; margin-right: 20px;" src="/assets/img/wogaa-ryan-tan.png" alt="Ryan Tan, Technical Lead for WOGAA">
-      <p><strong>Ryan Tan, Technical Lead</strong><br>
-        Ryan is the Technical Lead of WOGAA team, who oversees all of the technical decisions made in the product and advises the product owner on the feasibility of upcoming features. His main job is to keep the engineering team happy, be it giving them challenges or just guiding them to their answers. Besides that, he is mostly helping out on backend engineering tasks and also planning for the technical architecture of the product.
-      </p>
-    </div>
-  </div>
-
-  <div class="sgds-card">
-    <div class="sgds-card-content">
-      <img style="float: left; margin-right: 20px;" src="/assets/img/wogaa-wong-wai-shan.png" alt="Wong Wai Shan, Quality Engineer for WOGAA">
-      <p><strong>Wong Wai Shan, Quality Engineer</strong><br>
-        Wai Shan is a Quality Engineer in WOGAA. He works closely with the team to ensure all components of WOGAA operate smoothly and remain problem-free. Both Quality Engineers of the team strategise so that all new features are fully tested, with regression, performance and security considerations, before being rolled out to production.
-      </p>
-    </div>
-  </div>
-
-  <div class="sgds-card">
-    <div class="sgds-card-content">
-      <img style="float: left; margin-right: 20px;" src="/assets/img/wogaa-buddhi-weragoda.png" alt="Buddhi Weragoda, Cloud Specialist & Data Engineer for WOGAA">
-      <p><strong>Buddhi Weragoda, Cloud Specialist & Data Engineer</strong><br>
-        Buddhi Weragoda is a Cloud Specialist & Data Engineer at WOGAA. His main responsibilities include Development Operations, Automating processes, improving cloud infrastructure and Data engineering. 
-      </p>
-    </div>
-  </div>
-
-  <div class="sgds-card">
-    <div class="sgds-card-content">
-      <img style="float: left; margin-right: 20px;" src="/assets/img/wogaa-malindu-warapitiya.png" alt="Malindu Warapitiya, Software Engineer for WOGAA">
-      <p><strong>Malindu Warapitiya, Software Engineer</strong><br>
-        Malindu is a Software Engineer in WOGAA. His main responsibilities include constantly improving Sentiments – WOGAA's user feedback widget, and collaborating with fellow developers and the Design team to ensure all micro products run smoothly. 
-      </p>
-    </div>
-  </div>
-  
-  <div class="sgds-card">
-    <div class="sgds-card-content">
-      <img style="float: left; margin-right: 20px;" src="/assets/img/wogaa-nathanael-ang.png" alt="Nathanael Ang, UX Designer for WOGAA">
-      <p><strong>Nathanael Ang, UX Designer</strong><br>
-        Nathanael is a UX designer at WOGAA. His responsibilities include on-going improvements and features for Uptime, Inspect, Mobile Analytics, as well as the resources in WOGAA to continuously improve the experience for new and existing users.
-      </p>
-    </div>
-  </div>
-
-  <div class="sgds-card">
-    <div class="sgds-card-content">
-      <img style="float: left; margin-right: 20px;" src="/assets/img/wogaa-nicholas-yeo.png" alt="Nicholas Yeo, Data Scientist for WOGAA">
-      <p><strong>Nicholas Yeo, Data Scientist</strong><br>
-        Nicholas is a Data Scientist working in WOGAA. As a data-centric product, he works together with the Development team to design the end-to-end data infrastructure - data collection, enrichment, transformation which supports multiple dashboards and reporting needs. To better equip agency users with the skillset and thought processes to use data in their respective fields, he has conducted multiple workshops and lessons to help level users up in their own rights.
-      </p>
-    </div>
-  </div>
-
-  <div class="sgds-card">
-    <div class="sgds-card-content">
-      <img style="float: left; margin-right: 20px;" src="/assets/img/wogaa-seah-ming-shu.png" alt="Seah Ming Shu, Data Scientist for WOGAA">
-      <p><strong>Seah Ming Shu, Data Scientist</strong><br>
-        Ming Shu is a Data Scientist in the WOGAA team. He focuses on building data models to perform ETL processes, while also analysing and crunching numbers to derive actionable insights for stakeholders from within GovTech and across the Government. He also has a keen interest in machine learning, and is exploring ways to incorporate it into the WOGAA product.
-      </p>
-    </div>
-  </div>
+  {% endfor %}  
 </div>
+
+- William Afendy, Technical Lead
+- Anju Narayan, Quality Engineer
+- Chin Yong How, Software Engineer
+- Chuk Yih Jou, Software Engineer
+- Lee Yi Sheng, Software Engineer
+- Talia  Ong, UX Designer
+- Tan Yi Long, Software Engineer
+- Yang Shulin, Data Engineer
+- Shawn Kong, Community Manager
+- Seow Yun Rong, Assistant Community Manager
+- Khairul Anuar Bin Sohaimi, Technical Ops Support
+- Farid Ismail, Technical Ops Support
+- Jeff Ong, Business Analyst
+- Angie Ng, Operations Engineer
+
+
