@@ -7,9 +7,9 @@ layout: layout-page-sidenav
   Insert some overview for the playbook
 </p>
 
-{% if site._community-engagement-playbook-articles %}
+{% if site.community-engagement-playbook-articles %}
 <div class="card-grid-container grid-25rem">
-  {% for article in site._community-engagement-playbook-articles %}
+  {% for article in site.community-engagement-playbook-articles %}
     <div class="sgds-card">
         <div class="sgds-card-content" style="height: 100%; flex-direction: column; display: flex; justify-content: space-between;">
         <a href="{{ article.url }}" style="height: 100%"><h4>{{ article.title }}</h4></a>
