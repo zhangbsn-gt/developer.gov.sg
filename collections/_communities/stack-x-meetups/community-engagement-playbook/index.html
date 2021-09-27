@@ -8,13 +8,16 @@ layout: layout-page-sidenav
 </p>
 
 <div class="card-grid-container grid-25rem">
-  {% for project in site.communities %} 
-    {% assign id = project.id | split: "/" | "stack-x-meetups" | split: "/" | last %}
-    {% if id != "index" and project.path contains "community-engagement-playbook" %}
+  {% assign commseng_path = site.communities | split: "/" | "stack-x-meetups" %}
+  {% for project in commseng_path %} 
+    {% assign id = project.id | split: "/" | last %}
+    {% if id != "index" and project.path contains "engagement-playbook" %}
     <div class="grid-item">
       <div class="sgds-card">
         <div class="sgds-card-content" style="height: 100%; flex-direction: column; display: flex; justify-content: space-between;">
-          <h3>{{ project.title }}</h3>
+          <a href="{{ project.url }}" style="height: 100%"><h4>
+            {{ project.title }}
+          </h4>
         </div>
       </div>
     </div>
