@@ -227,3 +227,20 @@ Gathering, analysing, converts unknowns into knowns, and delivering product req
     </div>
   </div>
 </div>
+
+- William Afendy, Technical Lead
+- Anju Narayan, Quality Engineer
+- Chin Yong How, Software Engineer
+- Chuk Yih Jou, Software Engineer
+- Lee Yi Sheng, Software Engineer
+- Talia  Ong, UX Designer
+- Tan Yi Long, Software Engineer
+- Yang Shulin, Data Engineer
+- Shawn Kong, Community Manager
+- Seow Yun Rong, Assistant Community Manager
+- Khairul Anuar Bin Sohaimi, Technical Ops Support
+- Farid Ismail, Technical Ops Support
+- Jeff Ong, Business Analyst
+- Angie Ng, Operations Engineer
+
+
