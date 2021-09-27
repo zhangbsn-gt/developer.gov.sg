@@ -38,9 +38,9 @@ This diagram shows the components of ADEX and its ability to distribute real-tim
 
 |**APEX**|**ADEX**|
 |:---|:---|
-|**API gateway**<ul><li>REST and SOAP</li><li>Up to Confidential</li></ul>|**Message-queue + stream hub**<ul><li>MQTT and Kafka</li><li>Up to Restricted</li></ul>|
-|**On-Demand**<ul><li>Consumers call API when needed</li><li>Orchestration and transformation supported</li><li>Retry-able</li></ul>|**Event-driven**<ul><li>Consumers get informed when Provider has new data</li><li>Stream processing (upcoming feature in ~Q1 FY22)</li><li>Replay-able</li></ul>|
-|**Synchronous**<ul><li>Request-Response model</li><li>Provider responds to acknowledge request from Consumer</li><li>Immediate feedback of receipt</li></ul>|**Asynchronous**<ul><li>Response is decoupled</li><li>Provider doesn't need response from Consumer</li><li>No immediate feedback of receipt</li></ul>|
+|**API gateway**<br><ul><li>REST and SOAP</li><li>Up to Confidential</li></ul>|**Message-queue + stream hub**<br><ul><li>MQTT and Kafka</li><li>Up to Restricted</li></ul>|
+|**On-Demand**<br><ul><li>Consumers call API when needed</li><li>Orchestration and transformation supported</li><li>Retry-able</li></ul>|**Event-driven**<br><ul><li>Consumers get informed when Provider has new data</li><li>Stream processing (upcoming feature in ~Q1 FY22)</li><li>Replay-able</li></ul>|
+|**Synchronous**<br><ul><li>Request-Response model</li><li>Provider responds to acknowledge request from Consumer</li><li>Immediate feedback of receipt</li></ul>|**Asynchronous**<br><ul><li>Response is decoupled</li><li>Provider doesn't need response from Consumer</li><li>No immediate feedback of receipt</li></ul>|
 
 ### Why Should ADEX be Adopted?
 
