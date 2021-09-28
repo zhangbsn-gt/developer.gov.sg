@@ -8,22 +8,16 @@ layout: layout-page-sidenav
 </p>
 
 <div class="card-grid-container grid-25rem">
-  {% assign page_collection = page.stack-x-meetups %}
-  {% assign sub_collection = page.id | split: "/" | shift | shift | first %}
-
-  {% assign full_collection = site[page_collection] %}
-  {% for document in full_collection %}
-    {% assign document_sub_collection = document.id | split: "/" | shift | shift | first %}
-    {% if document_sub_collection == sub_collection and page.title != document.title %}
-
-    <div class="sgds-card sgds-card-variant-category-info grid-item">
-      <div class="sgds-card-content">
-        <header>
-          <h4><a href="{{ document.url }}">{{ document.title }}</a></h4>
-        </header>
+  {% for article in site.communities.stack-x-meetups %}
+    {% assign id = article.id | split: "/" | last %}
+    {% if id != "index" and article.path contains "engagement-playbook" %}
+    <div class="grid-item">
+      <div class="sgds-card">
+        <div class="sgds-card-content">
+          <h4><a href="{{ article.url }}">{{ article.title }}</a></h4>
         <p>
           <!-- TODO: [issue] markdownify create blank <p> tag at the top and bottom of description -->
-          {{ document.description | markdownify }}
+          <!-- {{ document.description | markdownify }} -->
         </p>
       </div>
     </div>
