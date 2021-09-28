@@ -69,7 +69,8 @@ Digital services are designed according to the DSS to help users:
 -	Conducting regular reviews to ensure content and services are up to date.
 -	Provision of clear and relevant content.
 
-[<figure style="text-align: right">
+[
+<figure style="text-align: right">
   <img
     src="/assets/img/guidelines/dss.png" width="5%" height="5%" 
     alt="Fig 1 DSS and its 3 design principles"
