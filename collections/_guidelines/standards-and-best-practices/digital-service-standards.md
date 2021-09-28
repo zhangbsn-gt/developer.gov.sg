@@ -78,6 +78,8 @@ Digital services are designed according to the DSS to help users:
 </figure>
 [Click here for enlarged infographic](/assets/img/guidelines/dss.png){:target="_blank"}
 
+ [![Fig 1: DSS and its 3 design principles](/assets/img/guidelines/dss.png)](/assets/img/guidelines/dss.png)
+
 ### DSS in Government Digital Services
 
 An example of the Digital Service that has embraced DSS in its delivery is the LifeSg app (previously known as Moments of Life).  It was conceptualised in June 2017 to develop a tool that can consolidate citizen-facing services delivered by different Government agencies onto a single platform.  Its first release in June 2018 focused on the very beginning of a citizen's journey, which was childbirth.  It allowed birth registrations, access to baby’s immunisation records, navigation of healthcare and childcare options eligible for benefits, and application of the [Baby Bonus Scheme](https://www.babybonus.msf.gov.sg/){:target="_blank"} (a government programme aimed at alleviating the financial costs of parenthood).  Since then, the app has been enhanced to support other critical moments of life, such as ageing and caregiving.  The overarching goal for LifeSG has evolved to provide a suite of digital solutions for citizens well-being that covers critical moments "from the cradle to grave."
