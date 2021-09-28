@@ -76,9 +76,8 @@ Digital services are designed according to the DSS to help users:
   />
   <figcaption>Fig 1: DSS and its 3 design principles</figcaption>
 </figure>
-[Click here for enlarged infographic](/assets/img/guidelines/dss.png){:target="_blank"}
 
- [![Fig 1: DSS and its 3 design principles](/assets/img/guidelines/dss.png " width="5%" height="5%" )](/assets/img/guidelines/dss.png)
+[Click here for enlarged infographic](/assets/img/guidelines/dss.png){:target="_blank"}
 
 ### DSS in Government Digital Services
 
