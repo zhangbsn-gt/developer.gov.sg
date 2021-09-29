@@ -7,7 +7,6 @@ layout: layout-page-sidenav
   Insert some overview for the playbook
 </p>
 {% assign page_collection = page.collection %}
-{% assign page_dir = page.dir %}
 {% assign page_parent_folder = page.id | split: "/" | pop | last %}
 <div class="card-grid-container grid-25rem">
   {% for article in site[page.collection] %}
