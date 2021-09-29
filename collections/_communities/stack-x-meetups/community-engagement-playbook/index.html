@@ -10,7 +10,6 @@ layout: layout-page-sidenav
 {% assign page_parent_folder = page.id | split: "/" | pop | last %}
 <div class="card-grid-container grid-25rem">
   {% for article in site[page.collection] %}
-    {% assign name = article.name  %}
     {% comment %}
       This will avoid rendering the current overview page
       if the Page title is Community Engagement Playbook, it will skip it
