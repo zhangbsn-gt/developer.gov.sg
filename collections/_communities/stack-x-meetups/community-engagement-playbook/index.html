@@ -8,7 +8,7 @@ layout: layout-page-sidenav
 </p>
 
 <div class="card-grid-container grid-25rem">
-  {% for article in site.communities.stack-x-meetups %}
+  {% for article in site.communities %}
     {% assign id = article.id | split: "/" | last %}
     {% if id != "index" and article.path contains "engagement-playbook" %}
     <div class="grid-item">
