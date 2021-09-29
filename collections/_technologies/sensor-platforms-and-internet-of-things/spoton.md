@@ -7,12 +7,9 @@ description: SPOTON is a smart thermal scanner that enables faster crowd tempera
 
 ### Overview
 
-In response to the COVID-19 pandemic, SPOTON was developed by GovTech’s Smart Nation Platform Solutions (SNPS) team to conduct temperature screening in areas with high traffic. Due to lacking manpower or infrastructure, it can be difficult to conduct temperature screening in high traffic areas, such as malls.
+In response to the COVID-19 pandemic, SPOTON was developed to conduct temperature screenings in high traffic areas which previously experienced barriers due to insufficient manpower or infrastructure resources. SPOTON resolves these problems as it allows efficient and timely crowd temperature readings via multiple, simultaneous screenings. It also alerts operators once individuals with high temperatures are detected.
 
-SPOTON can resolve these problems as it allows efficient and quick crowd temperature screenings via multiple, simultaneous screenings. It also alerts operators once individuals with high temperatures are detected. 
-
-SPOTON is part of the Smart Nation Sensor Platform (SNSP), a whole-of-government (WOG) technology platform that translates data from sensors and IoT devices 
-into a 360° awareness of what is happening in smart city spaces in Singapore.
+SPOTON is part of the Smart Nation Sensor Platform (SNSP), a whole-of-government (WOG) technology platform that translates data from sensors and IoT devices into a 360° awareness of what is happening in smart city spaces in Singapore.
 
 ### What is SPOTON?
 
