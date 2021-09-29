@@ -1,7 +1,6 @@
 ---
 title: Learning with The Digital Academy
-layout: layout-blog
-author: NUS
+layout: layout-page-sidenav
 description: >
   Launch of DA
   

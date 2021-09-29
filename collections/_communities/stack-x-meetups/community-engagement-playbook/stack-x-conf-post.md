@@ -1,7 +1,6 @@
 ---
 title: STACK-X Conference — CI/CD with SHIP-HATS
-layout: layout-blog
-author: Sowmya
+layout: layout-page-sidenav
 description: >
   Post event
 tags:

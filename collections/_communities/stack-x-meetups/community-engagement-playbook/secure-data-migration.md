@@ -1,7 +1,6 @@
 ---
 title: Ensuring Secure Migration of Data to the Cloud
-layout: layout-blog
-author: Seet Yu Fei
+layout:  layout-page-sidenav
 description: >
   Secure Data Migration to the Cloud
 tags:
