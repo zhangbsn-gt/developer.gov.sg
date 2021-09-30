@@ -154,41 +154,13 @@ description: >
   <h6>Morning Keynotes</h6>
   <p><strong>6 May 2021</strong></p>
   <p>Virtual Conference: Zoom Webinar</p>
- 
   <p></p>
   <p>
     Thought leadership sessions for all – agency, industry, leadership and
     practitioners.
   </p>  
-  {% for keynote in keynotes %}
-  <div class="sgds-card">
-    <div class="sgds-card-content">
-      <small>{{ keynote.timeslot }}</small>
-      <h4>{{ keynote.title }}</h4>
-      <p>
-        {{ keynote.desc }}
-      </p>
-      <b style="margin-left:10px; font-size:larger">Speaker(s) </b>
-      {% for speaker in keynote.speakers %}
-      <div class="sgds-accordion is-borderless">
-        <a class="sgds-accordion-header" role="button" aria-expanded="true">
-          <div style="color:black; display:flex;align-items: center">
-              <img src="{{speaker.image}}" alt="Wei Junyu" style="width:56px;margin: 0 10px 0 0"/>
-            <p>{{speaker.name}}<b></b>, {{speaker.title}}</p>
-          </div>
-          <i class="sgds-icon sgds-icon-chevron-down"></i>
-        
-        </a>
-        <div class="sgds-accordion-body" >
-          <p>
-            {{speaker.desc}}
-          </p>    
-        </div>
-        {% endfor%}
-    </div>
-    </div>
-  </div>
-  {% endfor %}
+  {% include_relative includes/stack-x-cloud-2021-itinerary.html itinerary=keynotes %}
+  
 </div>
 
 <div class="tab-content" id="tab2">
@@ -199,36 +171,7 @@ description: >
     This is a closed virtual track curated exclusively for Agency CIOs and IT
     Leaders.
   </p>
-  {% for leader in leaders %}
-  <div class="sgds-card">
-    <div class="sgds-card-content">
-      <small>{{ leader.timeslot }}</small>
-      <h4>{{ leader.title }}</h4>
-      <p>
-        {{ leader.desc }}
-      </p>
-      {% if leader.speakers != nil %}
-      <b style="margin-left:10px; font-size:larger">Speaker(s) </b>
-      {% endif %}
-      {% for speaker in leader.speakers %}
-      <div class="sgds-accordion is-borderless">
-        <a class="sgds-accordion-header" role="button" aria-expanded="true">
-          <div style="color:black; display:flex;align-items: center">
-              <img src="{{speaker.image}}" alt="Wei Junyu" style="width:56px;margin: 0 10px 0 0"/>
-            <p>{{speaker.name}}<b></b>, {{speaker.title}}</p>
-          </div>
-          <i class="sgds-icon sgds-icon-chevron-down"></i>
-        </a>
-        <div class="sgds-accordion-body" >
-          <p>
-            {{speaker.desc}}
-          </p>    
-        </div>
-      </div>
-      {% endfor%}
-    </div>
-  </div>
-  {% endfor %}
+  {% include_relative includes/stack-x-cloud-2021-itinerary.html itinerary=leaders %}
 
 </div>
 
@@ -243,34 +186,7 @@ description: >
     and tools available within SHIP-HATS. There is a live Q&A at the end of each
     session!
   </p>
-  {% for product in products %}
-  <div class="sgds-card">
-    <div class="sgds-card-content">
-      <small>{{ product.timeslot }}</small>
-      <h4>{{ product.title }}</h4>
-      <p>
-        {{ product.desc }}
-      </p>
-      <b style="margin-left:10px; font-size:larger">Speaker(s) </b>
-      {% for speaker in product.speakers %}
-      <div class="sgds-accordion is-borderless">
-        <a class="sgds-accordion-header" role="button" aria-expanded="true">
-          <div style="color:black; display:flex;align-items: center">
-              <img src="{{speaker.image}}" alt="Wei Junyu" style="width:56px;margin: 0 10px 0 0"/>
-            <p>{{speaker.name}}<b></b>, {{speaker.title}}</p>
-          </div>
-          <i class="sgds-icon sgds-icon-chevron-down"></i>
-        </a>
-        <div class="sgds-accordion-body" >
-          <p>
-            {{speaker.desc}}
-          </p>    
-        </div>
-      </div>
-      {% endfor%}
-    </div>
-  </div>
-  {% endfor %}
+  {% include_relative includes/stack-x-cloud-2021-itinerary.html itinerary=products %}
 </div>
 
 <div class="tab-content" id="tab4">
@@ -282,34 +198,8 @@ description: >
     help them achieve compliance with SHIP-HATS and practical tips from
     tendering to onboarding.
   </p>
-  {% for government in governments %}
-  <div class="sgds-card">
-    <div class="sgds-card-content">
-      <small>{{ government.timeslot }}</small>
-      <h4>{{ government.title }}</h4>
-      <p>
-        {{ government.desc }}
-      </p>
-      <b style="margin-left:10px; font-size:larger">Speaker(s) </b>
-      {% for speaker in government.speakers %}
-      <div class="sgds-accordion is-borderless">
-        <a class="sgds-accordion-header" role="button" aria-expanded="true">
-          <div style="color:black; display:flex;align-items: center">
-              <img src="{{speaker.image}}" alt="Wei Junyu" style="width:56px;margin: 0 10px 0 0"/>
-            <p>{{speaker.name}}<b></b>, {{speaker.title}}</p>
-          </div>
-          <i class="sgds-icon sgds-icon-chevron-down"></i>
-        </a>
-        <div class="sgds-accordion-body" >
-          <p>
-            {{speaker.desc}}
-          </p>    
-        </div>
-      </div>
-      {% endfor%}
-    </div>
-  </div>
-  {% endfor %}
+
+  {% include_relative includes/stack-x-cloud-2021-itinerary.html itinerary=governments %}
 
 </div>
 
