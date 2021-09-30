@@ -15,17 +15,17 @@
   title: Welcome Remarks
   desc: Opening address
   speakers: 
-    - name: Kok Ping Soon
+    - name: Placeholder
       image: /assets/img/aboutus-junyu.png
-      title: Chief Executive, GovTech
-      desc: Ping Soon is Chief Executive of the Government Technology Agency of Singapore (GovTech). Prior to this he held various positions in the Ministry of Manpower, National Security Co-ordination Secretariat, Ministry of Trade & Industry, Singapore Tourism Board, Contact Singapore (CS) and Economic Development Board (EDB). He spent six years in the United States working for CS and EDB. He serves on the Board of Infocomm Media Development Authority (IMDA), Defence Science & Technology Agency (DSTA), Institute of System Sciences (ISS) and is a member of the National Institute of Education (NIE) Council.
+      title: Placeholder Title
+      desc: Placeholder Desc
 
 - type: Keynote
   timeslot: 10:10 AM - 10:25 AM
   title: CI/CD Shaping modernisation in Singapore Government
   desc: Vision of how Singapore Public Agencies can power the digitalisation strategy with CI/CD
   speakers: 
-    - name: Chan Cheow Hoe
+    - name: Placeholder
       image: /assets/img/aboutus-chengyong.png
       title: Government Chief Digital Technology Officer
       desc: Cheow Hoe oversees the development of the Government’s digital
