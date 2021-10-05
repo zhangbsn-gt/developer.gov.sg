@@ -4,6 +4,7 @@ layout: layout-page-sidenav
 category: Sensors and IOT
 description: Smart Gardens at Gardens by the Bay deploys digital technologies to better manage park operations, improve visitor safety and enhance park experience.
 ---
+
 ### Overview
 
 Smart Gardens at Gardens by the Bay was launched in November 2020. It is an integrated system of lampposts, sensors, and robots developed as part of the Smart Nation initiative to ensure that Singapore remains an outstanding global city. The Smart Nation initiative aims to create new opportunities in a digital age, and transform the way people live, work and play. The goal of the Smart Gardens is to utilise networked sensors to collect abiotic and biotic information that can be used to improve park operations, ensure visitor safety and improve the overall park experience.
