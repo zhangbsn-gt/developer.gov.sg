@@ -158,7 +158,7 @@ description: >
   <ul class="no-margin" role="tablist">
     <li class="is-active">
       <a data-tab="#tab1" role="tab" aria-selected="true" aria-controls="tab1">
-        Keynote
+        Keynotes
       </a>
     </li>
     <li>
@@ -183,10 +183,10 @@ description: >
     </li> -->
   </ul>
 </div>
-{% assign keynotes = site.data.stackx2021cloud | where_exp: "item", "item.type contains 'Keynotes'" %}
-{% assign leaders = site.data.stackx2021cloud | where_exp: "item", "item.type contains 'Leadership'" %}
-{% assign products = site.data.stackx2021cloud | where_exp: "item", "item.type contains 'Cloud Onboarding'" %}
-{% assign governments = site.data.stackx2021cloud | where_exp: "item", "item.type contains 'Cloud Platform & Tools'" %}
+{% assign keynotes = site.data.stackx2021cloud | where_exp: "item", "item.type contains 'Keynote'" %}
+{% assign leaders = site.data.stackx2021cloud | where_exp: "item", "item.type contains 'Leaders'" %}
+{% assign products = site.data.stackx2021cloud | where_exp: "item", "item.type contains 'Products'" %}
+{% assign governments = site.data.stackx2021cloud | where_exp: "item", "item.type contains 'Governments'" %}
 
 <div class="tab-content" id="tab1">
   <h6>Morning Keynotes</h6>
