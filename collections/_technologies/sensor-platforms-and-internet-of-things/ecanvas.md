@@ -33,18 +33,19 @@ The SIOT team designed the eCanvas with inclusiveness in mind as technology can 
 
 The benefits of the eCanvas include:
 
-– **Assistive touch controls**: For individuals with limited verbal abilities but varying levels of upper body movement control, the assistive touch button of the eCanvas enables them to manoeuvre the equipment easily for painting.
-– **Speech/motor therapy uses**: The eCanvas can serve as a form of speech or motor therapy as it allows PWDs to work on their speech or mobility through art which has therapeutic properties.
+**Assistive touch controls**: For individuals with limited verbal abilities but varying levels of upper body movement control, the assistive touch button of the eCanvas enables them to manoeuvre the equipment easily for painting.
 
-– **Seamless user experience**: With the eCanvas, there is no need to navigate through levels of voice commands like in a phone menu as the options are parallelised onto a single layer. This means that the voice control system interface creates a seamless user experience as only a specific command is required for a desired action to occur.
+**Speech/motor therapy uses**: The eCanvas can serve as a form of speech or motor therapy as it allows PWDs to work on their speech or mobility through art which has therapeutic properties.
+
+**Seamless user experience**: With the eCanvas, there is no need to navigate through levels of voice commands like in a phone menu as the options are parallelised onto a single layer. This means that the voice control system interface creates a seamless user experience as only a specific command is required for a desired action to occur.
 
 ### How do you use eCanvas?
 
-1) **Users with zero upper-body mobility but possess strong verbal capabilities.**
+**Users with zero upper-body mobility but possess strong verbal capabilities.**
 
 The eCanvas adopts a voice-command control where users can use a set of verbal commands to move the eCanvas (Eg., “Up”, “Down”, etc.) and adjust their drawing area independently. Numbered commands are also attached to each paint colour for easy dispensing of paint. For instance, users only need to say “One” and the eCanvas will dispense the corresponding paint colour from the respective dispenser.
 
-2) **Users with some level of upper-body mobility but are unable to verbalise well.**
+**Users with some level of upper-body mobility but are unable to verbalise well.**
 
 Instead of voice commands, users can adopt a sensitive touch button to carry out the same tasks as described in the first scenario. To adjust their drawing area on the canvas, users can move the touch button in the desired direction. For example, to move the canvas downwards, users will toggle the touch button in the downwards direction and vice versa for other directions. The touch button is sensitive enough that users with limited upper body mobility can move the button easily.
 
