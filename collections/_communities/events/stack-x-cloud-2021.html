@@ -97,32 +97,10 @@ description: >
   <!-- <div class="row is-multiline">
     <div class="col is-6"> -->
       <h6>17 November 2021</h6>
-  <!-- <p>Sessions: Keynotes & Tracks - Leadership, Cloud Onboarding, Cloud Platform and Tools</p>
-      <p>09:30 AM - 3:30 PM</p> -->
+  <p>Sessions: Keynotes & Tracks - Leadership, Cloud Onboarding, Cloud Platform and Tools</p>
+      <p>09:30 AM - 3:30 PM</p>
  
-  <table style="width:100%">
-  <tr>
-   <td>
-    09:30 AM - 11:00 AM
-   <td style="width:60%"; text-align: center>
-    Keynotes
-   </td>
-  </tr>
-  <tr>
-   <td>
-    1:00 PM - 3:00 PM
-   </td>
-   <td style="width:25%">
-    Leadership Track
-   </td>
-   <td style="width:25%">
-    Cloud Onboarding Track
-   </td>
-   <td style="width:25%">
-    Cloud Platform and Tools
-   </td>
-  </tr>
- </table>
+
       <p></p>
       <p>
         Virtual sessions on Zoom
@@ -184,9 +162,9 @@ description: >
   </ul>
 </div>
 {% assign keynotes = site.data.stackx2021cloud | where_exp: "item", "item.type contains 'Keynote'" %}
-{% assign leaders = site.data.stackx2021cloud | where_exp: "item", "item.type contains 'Leaders'" %}
-{% assign products = site.data.stackx2021cloud | where_exp: "item", "item.type contains 'Products'" %}
-{% assign governments = site.data.stackx2021cloud | where_exp: "item", "item.type contains 'Governments'" %}
+{% assign leaders = site.data.stackx2021cloud | where_exp: "item", "item.type contains 'Leader'" %}
+{% assign products = site.data.stackx2021cloud | where_exp: "item", "item.type contains 'Product'" %}
+{% assign governments = site.data.stackx2021cloud | where_exp: "item", "item.type contains 'Government'" %}
 
 <div class="tab-content" id="tab1">
   <h6>Morning Keynotes</h6>
