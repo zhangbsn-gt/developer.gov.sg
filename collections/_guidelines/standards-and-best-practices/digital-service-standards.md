@@ -94,6 +94,9 @@ An example is the “Usability Top 10 Tips for Mobile Apps” which is curated f
   <figcaption>Fig 2: Usability top 10 tips for mobile apps</figcaption>
 </figure>
 
+**Relevance and Consistency**
+
+For enquiries on DSS, email <info@tech.gov.sg>.
 
 <br/>**Other Resources**
 
