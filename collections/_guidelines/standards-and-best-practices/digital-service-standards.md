@@ -11,10 +11,17 @@ The Digital Service Standards (DSS) is a set of policies, standards and guidelin
 
 An updated version of the DSS was released in July 2020, to access it, click on this [link](/assets/files/dss.pdf){:target="_blank"}.
 
-
 ### Why was the DSS Implemented?
 
 The core of the Singapore Government digital transformation journey is to identify user needs in order to design and deliver unified and consistent digital services to citizens and businesses. We adopt an outside-in and co-creation approach with benchmarks against international best practices to ensure that our DSS is relevant and can help agencies to uplift their digital services. 
+
+<figure style="text-align: center">
+  <img
+    src="/assets/img/dss-objectives.png" width="70%" height="70%" 
+    alt="Fig 1: Digital Service Standards Objectives"
+  />
+  <figcaption>Fig 1: Digital Service Standards Objectives</figcaption>
+</figure>
 
 Through the DSS, Government agencies can design and deliver digital services that are:
 
@@ -69,16 +76,6 @@ Digital services are designed according to the DSS to help users:
 -	Conducting regular reviews to ensure content and services are up to date.
 -	Provision of clear and relevant content.
 
-<figure style="text-align: right">
-  <img
-    src="/assets/img/guidelines/dss.png" width="5%" height="5%" 
-    alt="Fig 1 DSS and its 3 design principles"
-  />
-  <figcaption>Fig 1: DSS and its 3 design principles</figcaption>
-</figure>
-
-[Click here for enlarged infographic](/assets/img/guidelines/dss.png){:target="_blank"}
-
 ### DSS in Government Digital Services
 
 An example of the Digital Service that has embraced DSS in its delivery is the LifeSg app (previously known as Moments of Life).  It was conceptualised in June 2017 to develop a tool that can consolidate citizen-facing services delivered by different Government agencies onto a single platform.  Its first release in June 2018 focused on the very beginning of a citizen's journey, which was childbirth.  It allowed birth registrations, access to baby’s immunisation records, navigation of healthcare and childcare options eligible for benefits, and application of the [Baby Bonus Scheme](https://www.babybonus.msf.gov.sg/){:target="_blank"} (a government programme aimed at alleviating the financial costs of parenthood).  Since then, the app has been enhanced to support other critical moments of life, such as ageing and caregiving.  The overarching goal for LifeSG has evolved to provide a suite of digital solutions for citizens well-being that covers critical moments "from the cradle to grave."
@@ -96,3 +93,8 @@ An example is the “Usability Top 10 Tips for Mobile Apps” which is curated f
   />
   <figcaption>Fig 2: Usability top 10 tips for mobile apps</figcaption>
 </figure>
+
+
+<br/>**Other Resources**
+
+- [Download](/assets/img/guidelines/dss.png){:target="_blank"} DSS Infographic
