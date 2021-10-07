@@ -17,7 +17,7 @@ The core of the Singapore Government digital transformation journey is to identi
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/dss-objectives.png" width="70%" height="70%" 
+    src="/assets/img/dss-objectives.png" 
     alt="Fig 1: Digital Service Standards Objectives"
   />
   <figcaption>Fig 1: Digital Service Standards Objectives</figcaption>
@@ -94,7 +94,7 @@ An example is the “Usability Top 10 Tips for Mobile Apps” which is curated f
   <figcaption>Fig 2: Usability top 10 tips for mobile apps</figcaption>
 </figure>
 
-**Relevance and Consistency**
+### Contact Information
 
 For enquiries on DSS, email <info@tech.gov.sg>.
 
