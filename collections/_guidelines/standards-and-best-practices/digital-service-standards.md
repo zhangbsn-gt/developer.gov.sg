@@ -97,4 +97,4 @@ An example is the “Usability Top 10 Tips for Mobile Apps” which is curated f
 
 <br/>**Other Resources**
 
-- [Download](/assets/img/guidelines/dss.png){:target="_blank"} DSS Infographic
+- [Download](/assets/img/dss.png){:target="_blank"} DSS Infographic
