@@ -124,6 +124,14 @@ $(function() {
     });
   })
   // END: Thumbs up/down and feedback modal
+
+  // Start: announcement banner
+  $(".js-close-annoucement-banner").click(function(){
+    console.log('click');
+    $("#annoucement-banner").addClass("is-hidden");
+  })
+  // END: annoucement banner
+
   const swiper = new Swiper('.swiper-container', {
     // Optional parameters
     observeSlideChildren: true,
