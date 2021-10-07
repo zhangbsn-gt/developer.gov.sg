@@ -23,12 +23,6 @@ The core of the Singapore Government digital transformation journey is to identi
   <figcaption>Fig 1: Digital Service Standards Objectives</figcaption>
 </figure>
 
-Through the DSS, Government agencies can design and deliver digital services that are:
-
-- Accessible and inclusive: Benefits different users, including seniors and persons with special needs.
-- Usable - Simple to understand and easy to use.
-- Relevant - Meets the needs of users.
-
 ### How was the DSS Created?
 
 We obtain insights on user needs from citizens, businesses and the Government. Examples of how we do so are shown below:
