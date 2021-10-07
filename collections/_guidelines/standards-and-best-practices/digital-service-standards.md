@@ -18,9 +18,9 @@ The core of the Singapore Government digital transformation journey is to identi
 <figure style="text-align: center">
   <img
     src="/assets/img/dss-objectives.png" 
-    alt="Fig 1: Digital Service Standards Objectives"
+    alt="Fig 1: Objectives of Digital Service Standards"
   />
-  <figcaption>Fig 1: Digital Service Standards Objectives</figcaption>
+  <figcaption>Fig 1: Objectives of Digital Service Standards</figcaption>
 </figure>
 
 ### How was the DSS Created?
