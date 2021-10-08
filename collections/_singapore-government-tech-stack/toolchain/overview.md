@@ -24,10 +24,11 @@ This is a multi-tenanted Software-as-a-Service (SaaS) hosted on Government Comme
 ### Benefits of SHIP-HATS 
 
 1. **Policy Compliance:** Standardised development tools and environment that is set up in compliance with **Application Infrastructure Architecture Standard (AIAS)** and **Instruction Manual 8 on Information Technology (IM8)** policies.
-2. **Better Quality:** Automated security testing detects vulnerabilities early in the development cycle helping to deliver high quality applications.
+2. **Better Quality:** Automated security testing detects vulnerabilities early in the development cycle helping to deliver high quality applications. SHIP-HATS allows agencies to follow prescriptive workflow templates and share knowledge among themselves. 
 3. **Visibility & Transparency:** Agencies will always have access to source code and hence a better understanding of how the project is progressing.
-4. **Reduce Procurement:** Access to a whole suite of tools instead of sourcing individually.
-5. **GovTech Managed:** The CI/CD tools are set-up, hosted, maintained and supported by GovTech letting you focus on your core application. 
+4. **Shortened Time-to-market:** Agencies can shorten the time to market by leveraging on SHIP-HATS CI/CD tools with predefined & re-usable configurations into their system and do not have to invest in resources/time to do procurement with different commercial providers. Agencies also do not have to invest resources to re-train staff who were re-deployed across agencies.
+5. **Economies of Scale:** SHIP-HATS purchases licenses in bulk and redistributes them for use in smaller quantities to agencies and is offered as a complete package with no hidden cost. 
+6. **GovTech Managed:** The CI/CD tools are set-up, hosted, maintained and supported by GovTech letting you focus on your core application. 
 
 ### Tools in SHIP-HATS 
 
