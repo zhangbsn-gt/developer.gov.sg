@@ -86,77 +86,57 @@
   title: WoG Cloud Adoption Progress - Overcoming Challenges Ahead
   desc: Demytifying challenges of government cloud adoption
   speakers: 
-    - name: Yap Mia Kai, Chai Chin Loon and Kevin Ng
+    - name: Yap Mia Kai
+      image: /assets/img/aboutus-chengyong.png
+      title: Director, IRAS
+      desc: Mia Kai is currently the Director of 
+    - name: Chai Chin Loon
       image: /assets/img/aboutus-chengyong.png
       title: Senior Director, Cyber Security Group & Government Chief Information Security Officer, GovTech
       desc: Chin Loon is currently the Senior Director of the Cyber Security Group (CSG) and Government Chief Information Security Officer (GCISO) in GovTech. CSG secures Government info-communications technology and smart systems (ICT&SS), develops the public sector’s resilience, and partners the cybersecurity ecosystem against cyber threats to the Government. The group serves as the Centre of Excellence to provide cybersecurity governance supported by consulting practice in addition to resilient monitoring of security events with robust incident response capabilities. He also oversees the Chief Information Security Officers deployed to all Government Ministries of Singapore.
-
-- type: Leader
-  timeslot: 2:10 PM - 2:25 PM
-  title: Q&A with GovTech
-  desc: Join GovTech - Tan Eng Pheng, Chai Chin Loon and Kevin Ng - with your questions about CI/CD with SHIP-HATS
-
-- type: Leader
-  timeslot: 2:25 PM - 2:50 PM
-  title: Closing & Next Steps
-  desc: Learn how you can begin the CI/CD journey with SHIP-HATS
-  speakers: 
     - name: Kevin Ng
       image: /assets/img/aboutus-chengyong.png
       title: Director, CODEX, GovTech
       desc: Kevin is the CODEX product leader for the Government Commercial Cloud and Singapore Government Tech Stack products with the goal of transforming developer experience - both inhouse and outsourced teams - for government-built product & services. Prior to joining GovTech, he was the Senior Director, Product and Technology at Expedia and was based in Singapore and London. Kevin has led global teams involved in search and globalisation, transformed monolithic solutions into microservices on the cloud, created reusable platform components for both customer-facing apps and internal-use pipelines, and re-architected monolithic systems to incorporate artificial intelligence models.
+
+- type: Leader
+  timeslot: 2:10 PM - 2:25 PM
+  title: Cloud Journey of IRAS
+  desc: Join GovTech - Tan Eng Pheng, Chai Chin Loon and Kevin Ng - with your questions about CI/CD with SHIP-HATS
+
+- type: Leader
+  timeslot: 2:25 PM - 2:50 PM
+  title: GCC 2.0 Q&A
+  desc: An in-depth exploration of the new GCC 2.0
+  speakers: 
+    - name: Yap Mia Kai
+      image: /assets/img/aboutus-chengyong.png
+      title: Director, IRAS
+      desc: Mia Kai is currently the Director of   
+    - name: Kevin Ng
+      image: /assets/img/aboutus-chengyong.png
+      title: Director, CODEX, GovTech
+      desc: Kevin is the CODEX product leader for the Government Commercial Cloud and Singapore Government Tech Stack products with the goal of transforming developer experience - both inhouse and outsourced teams - for government-built product & services. Prior to joining GovTech, he was the Senior Director, Product and Technology at Expedia and was based in Singapore and London. Kevin has led global teams involved in search and globalisation, transformed monolithic solutions into microservices on the cloud, created reusable platform components for both customer-facing apps and internal-use pipelines, and re-architected monolithic systems to incorporate artificial intelligence models.
+    - name: Erlina Ke
+      image: /assets/img/aboutus-chengyong.png
+      title: Chief Information Officer, Ministry of Law
+      desc: Erlina is the Chief Information Officer of Ministry of Law
   
 - type: Leader
   timeslot: 2:50 PM - 3:15 PM
   title: Closing & Next Steps
   desc: Learn how you can begin the CI/CD journey with SHIP-HATS
   speakers: 
-    - name: Kevin Ng
+    - name: Dr Sakthivel Thangavel
       image: /assets/img/aboutus-chengyong.png
-      title: Director, CODEX, GovTech
-      desc: Kevin is the CODEX product leader for the Government Commercial Cloud and Singapore Government Tech Stack products with the goal of transforming developer experience - both inhouse and outsourced teams - for government-built product & services. Prior to joining GovTech, he was the Senior Director, Product and Technology at Expedia and was based in Singapore and London. Kevin has led global teams involved in search and globalisation, transformed monolithic solutions into microservices on the cloud, created reusable platform components for both customer-facing apps and internal-use pipelines, and re-architected monolithic systems to incorporate artificial intelligence models.
-  
+      title: Director, SAO, GovTech
+      desc: Dr Sakthivel is currently the Director
+
 # Products
 - type: Product
-  timeslot: 1:00 PM - 1:30 PM
+  timeslot: 1:30 PM - 2:00 PM
   title: SHIP-HATS Overview For Newbies
   desc: This talk introduces SHIP-HATS and covers why and how you can use it to enable CI/CD for agency app projects on Government Commercial Cloud.
-  speakers: 
-    - name: Linda Chang
-      image: /assets/img/aboutus-chengyong.png
-      title: Assistant Director, GovTech
-      desc: Linda Chang is an Assistant Director at GovTech, driving DevSecOps adoption in GovTech's Services Group. She has been building, developing and supporting software for more than 15 years. She finds joy in helping her teams and others transform and improve how they build software and systems.
-- type: Product
-  timeslot: 1:30 PM - 2:00 PM
-  title: Security Testing With SHIP-HATS
-  desc: This talk covers security testing tools - Static Code Analyser, Static & Dynamic App Security Testing - available within SHIP-HATS and how they can be integrated into the CI process.
-  speakers: 
-    - name: Goh Chun Teck
-      image: /assets/img/aboutus-chengyong.png
-      title: Software Engineer, GovTech
-      desc: Chun Teck is a software engineer working in the HATS team, and helps to develop internal services to support SHIP-HATS. He likes web application development, and also enjoys automating stuff with CI/CD to reduce work. In his free time, he enjoys his stay-home hobbies of gaming and reading.
-- type: Product
-  timeslot: 2:00 PM - 2:30 PM
-  title: Continuous Delivery With SHIP-HATS
-  desc: This session covers the CD tools available within SHIP-HATS
-  speakers: 
-    - name: Hudson Lee
-      image: /assets/img/aboutus-chengyong.png
-      title: Lead DevOps Engineer, GovTech
-      desc: Hudson's description here
-- type: Product
-  timeslot: 2:30 PM - 3:00 PM
-  title: Understanding SHIP-HATS Subscription
-  desc: Get a run down on the subscription, roles and permission and use cases for different tiers in this session
-  speakers: 
-    - name: Chew Pei Yi
-      image: /assets/img/aboutus-chengyong.png
-      title: Associate Delivery Manager, GovTech
-      desc: Intrigued by the opportunity to work in the Tech industry, Pei Yi made a career switch from Corporate communication to Business Development in 2019. She helps to drive the adoption of GovTech products such as SHIP-HATS, APEX & Nectar across WOG.
-- type: Product
-  timeslot: 3:00 PM - 3:30 PM
-  title: CI/CD Strategy to Modernisation for PA
-  desc: PA is an early adopter of SHIP-HATS with NCS. This session covers the best practices learnt to improve their apps and processes to make Continuous Testing and Deployment seamless and productive.
   speakers: 
     - name: Abhijeet Menon
       image: /assets/img/aboutus-chengyong.png
@@ -167,54 +147,102 @@
       title: Lead Project Manager, NCS
       desc: Sathappan Subramaniam has more than 20 years of IT experience in both Government and Commercial projects with over 15 years of Project Manager experience. He is currently the Project Manager and Scrum Master for PA GEMS 2 Project.
 
+- type: Product
+  timeslot: 2:00 PM - 2:30 PM
+  title: GCC 2.0 - New Onboarding Experience
+  desc: This talk covers security testing tools - Static Code Analyser, Static & Dynamic App Security Testing - available within SHIP-HATS and how they can be integrated into the CI process.
+  speakers: 
+    - name: Tang Bing Wan
+      image: /assets/img/aboutus-chengyong.png
+      title: Deputy Director, CODEX, GovTech
+      desc: Bing Wan has xx years of experience in      planning, designing and architecting applications. Currently assisting agencies to solution modern applications using CI / CD, Cloud native services and Containers. He is also involved in planning designs to allow productivity and cost optimisation for the Agency.
+    - name: Jessica Tan
+      image: /assets/img/aboutus-chengyong.png
+      title: Programme Manager, CODEX, GovTech
+      desc: Jessica has more than xx years of IT experience in both Government and Commercial projects        with over 15 years of Project Manager experience. He is currently the Project Manager and Scrum Master for PA GEMS 2 Project.
+
+- type: Product
+  timeslot: 2:30 PM - 3:00 PM
+  title: CASCoM
+  desc: This session covers the CD tools available within SHIP-HATS
+  speakers: 
+    - name: Hudson Lee
+      image: /assets/img/aboutus-chengyong.png
+      title: Lead DevOps Engineer, GovTech
+      desc: Hudson's description here
+
+- type: Product
+  timeslot: 3:00 PM - 3:30 PM
+  title: Learnings from Cloud Operations - Streamlining Your Operational Processes
+  desc: Get a run down on the subscription, roles and permission and use cases for different tiers in this session
+  speakers: 
+    - name: Choong Keng Leong
+      image: /assets/img/aboutus-chengyong.png
+      title: Director, GIG, GovTech
+      desc: xx Intrigued by the opportunity to work in the Tech industry, Pei Yi made a career switch from Corporate communication to Business Development in 2019. She helps to drive the adoption of GovTech products such as SHIP-HATS, APEX & Nectar across WOG.
+
+#- type: Product
+#  timeslot: 3:00 PM - 3:30 PM
+#  title: CI/CD Strategy to Modernisation for PA
+#  desc: PA is an early adopter of SHIP-HATS with NCS. This session covers the best practices learnt to improve their apps and processes to make Continuous Testing and Deployment seamless and productive.
+#  speakers: 
+#    - name: Abhijeet Menon
+#      image: /assets/img/aboutus-chengyong.png
+#      title: Senior Solution Architect, GovTech
+#      desc: Abhijeet has 17 years of experience in planning, designing and architecting applications. Currently assisting agencies to solution modern applications using CI / CD, Cloud native services and Containers. He is also involved in planning designs to allow productivity and cost optimisation for the Agency.
+#    - name: Sathappan Subramaniam
+#      image: /assets/img/aboutus-chengyong.png
+#      title: Lead Project Manager, NCS
+#      desc: Sathappan Subramaniam has more than 20 years of IT experience in both Government and Commercial projects with over 15 years of Project Manager experience. He is currently the Project Manager and Scrum Master for PA GEMS 2 Project.
+
 # Government
 - type: Government
-  timeslot: 1:00 PM - 1:05 PM
-  title: Opening Address
+  timeslot: 1:30 PM - 1:50 PM
+  title: GCC 2.0 New Features
   desc: 
   speakers: 
-    - name: Lim Bee Kwan
+    - name: Hunter Nield
       image: /assets/img/aboutus-chengyong.png
-      title: Assistant Chief Executive, GovTech
-      desc: Bee Kwan is the Assistant Chief Executive for Governance and Cybersecurity, Government Technology Agency (GovTech). Her focus is to develop strategies to deepen cybersecurity capabilities and strengthen the governance function for Government digital services and Smart Nation infrastructure and applications. Bee Kwan has over 30 years of experience in the field of infocomm technology and has held leadership roles in public agencies such as Infocomm Development Authority of Singapore (GovTech’s predecessor organisation), Ministry of Health, People’s Association, and Ministry of Education (MOE).
+      title: Distinguished Engineer, GovTech
+      desc: Hunter is the         Assistant Chief Executive for Governance and Cybersecurity, Government Technology Agency (GovTech). Her focus is to develop strategies to deepen cybersecurity capabilities and strengthen the governance function for Government digital services and Smart Nation infrastructure and applications. Bee Kwan has over 30 years of experience in the field of infocomm technology and has held leadership roles in public agencies such as Infocomm Development Authority of Singapore (GovTech’s predecessor organisation), Ministry of Health, People’s Association, and Ministry of Education (MOE).
+
 - type: Government
-  timeslot: 1:05 PM - 1:45 PM
-  title: Applying Security in DevOps Practices
+  timeslot: 1:50 PM - 2:15 PM
+  title: Single Identiy
   desc: This talk covers the threat landscape relevant to DevOps environment, as well as useful tools and tips to aid mitigation against such threats.
   speakers: 
     - name: Chong Rong Hwa
       image: /assets/img/aboutus-chengyong.png
       title: Director, Advanced Cybersecurity Capabilities, GovTech
       desc: As a technical leader in the Cyber Security Group at the GovTech, Rong Hwa leads the cyber strategy, security testing, and cybersecurity research and development functions. Prior to joining GovTech, he was the senior architect and senior manager at FireEye Labs, where he led the research and engineering teams to combat advanced threats like APT malware and exploitation of zero-day vulnerabilities.
+
 - type: Government
-  timeslot: 1:45 PM - 2:15 PM
-  title: Pricing, Budgeting & Contracting For SHIP-HATS
+  timeslot: 2:15 PM - 2:40 PM
+  title: SEED
   desc: To help agencies plan for adopting SHIP-HATS, this session gives an overview of pricing assessment of SHIP-HATS against Commercial-Off-The-Shelf products and a sneak peak into the upcoming changes in Agile tender templates
   speakers: 
-    - name: Aaron Ma
+    - name: Stephanie Quek
       image: /assets/img/aboutus-chengyong.png
-      title: Deputy Director, GovTech
-      desc: Aaron Ma is from the Procurement Division under the Governance Group in GovTech. He is responsible for managing demand aggregation tenders for WOG ICT requirements and drive ICT procurement transformation through introduction of new/enhanced procurement approaches and policies. Prior to joining this role, Aaron has more than 25 years of information communications technology experience including being in leadership roles in implementation and management of Whole-of-Government infrastructure and projects in public and private sector.
+      title: Cyber Security Group, GovTech
+      desc: Stephanie is from the Procurement Division under the Governance Group in GovTech. He is responsible for managing demand aggregation tenders for WOG ICT requirements and drive ICT procurement transformation through introduction of new/enhanced procurement approaches and policies. Prior to joining this role, Aaron has more than 25 years of information communications technology experience including being in leadership roles in implementation and management of Whole-of-Government infrastructure and projects in public and private sector.
     - name: Louis Lim
       image: /assets/img/aboutus-chengyong.png
       title: Assistant General Counsel, GovTech
       desc: Louis regularly advises on and resolves legal issues arising from GovTech’s projects and operations. He also prepares and reviews various technology-related tender documents relating to turnkey systems, application development and maintenance, and public cloud SaaS, amongst others. Prior to joining GovTech, Louis was a legal associate at an international law firm, specializing in commercial litigation and international arbitration. He is a Certified Information Privacy Professional (Asia) with the International Association of Privacy Professionals.
-    - name: Liyana Muhammad Fauzi
-      image: /assets/img/aboutus-chengyong.png
-      title: Senior Product Manager, GovTech
-      desc: Liyana Muhammad Fauzi is a Senior Product Manager with the Government Technology Agency where she works on products relating to the Singapore Government Technology Stack and Government Commercial Cloud. In previous roles, Liyana launched Singapore’s first Open Data Portal, helped create the first Smart City Index and developed Singapore’s first Digital Government Blueprint – a national master plan that outlines the strategy for digital products that impact people living and working in Singapore. Liyana recently graduated with a Technology MBA from New York University's Stern School of Business where she specialised in Tech Product Management, Strategy and Ops Management.
+
 - type: Government
-  timeslot: 2:15 PM - 2:45 PM
-  title: Preparing Your Team to Adopt DevOps
+  timeslot: 2:40 PM - 3:05 PM
+  title: Cloudflare
   desc: Learn how to structure and develop your team to successfully adopt DevOps. The session also gives guidance on relevant training available.
   speakers: 
-    - name: Goh Boon Nam
+    - name: Samuel Loh
       image: /assets/img/aboutus-chengyong.png
-      title: Digital Agility Practice and Deputy Director, Executive Education Programme NUS-ISS
-      desc: Boon Nam has over 25 years of management experience in IT, holding management portfolios in IT application development, operations, quality and process improvement, planning, architecture, governance and outsourcing. Boon Nam had been a Director of Business Information Systems as well as Director of IT Operations in a public agency. Boon Nam is currently the Deputy Director of Executive Education in the Institute of Systems Science in the National University of Singapore (NUS-ISS) overseeing NUS-ISS work as Operations Partner for The Digital Academy by GovTech. He is also a Certified Scaled Agile Framework Program Consultant, ICAgile Certified Professional in Agile Coaching and a TOGAF Certified Enterprise Architect.
+      title: Senior Engineer, GovTech
+      desc: xxx Boon Nam has over 25 years of management experience in IT, holding management portfolios in IT application development, operations, quality and process improvement, planning, architecture, governance and outsourcing. Boon Nam had been a Director of Business Information Systems as well as Director of IT Operations in a public agency. Boon Nam is currently the Deputy Director of Executive Education in the Institute of Systems Science in the National University of Singapore (NUS-ISS) overseeing NUS-ISS work as Operations Partner for The Digital Academy by GovTech. He is also a Certified Scaled Agile Framework Program Consultant, ICAgile Certified Professional in Agile Coaching and a TOGAF Certified Enterprise Architect.
+
 - type: Government
-  timeslot: 2:45 PM - 3:15 PM
-  title: Onboarding SHIP-HATS
+  timeslot: 3:05 PM - 3:30 PM
+  title: Zero Trust
   desc: Steps to get started on SHIP-HATS
   speakers: 
     - name: Denise Collard
