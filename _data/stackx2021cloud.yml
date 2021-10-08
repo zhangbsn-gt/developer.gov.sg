@@ -21,7 +21,7 @@
       desc: Placeholder Desc
 
 - type: Keynote
-  timeslot: 09:40 AM - 10:00 AM
+  timeslot: 09:40 AM - 10:10 AM
   title: Cloud Journey
   desc: Cloud Journey of NASA - Jet Propulsion Laboratory
   speakers:
@@ -31,8 +31,8 @@
       desc: xxx
 
 - type: Keynote
-  timeslot: 09:55 AM - 10:20 AM
-  title: WoG Cloud Adoption Progress - Overcoming Challenges Ahead
+  timeslot: 10:10 AM - 10:35 AM
+  title: Accelerating 
   desc: Demytifying challenges of government cloud adoption
   speakers: 
     - name: Tan Eng Pheng
@@ -41,8 +41,8 @@
       desc: Eng Pheng currently heads the Services Group at the Government Technology Agency, and oversees a workforce of more than 1,500 ICT professional that constitute the CIO teams at 52 Singapore public sector agencies. His portfolio includes digital transformation of public organisations, technology planning and implementation, as well as ICT work force capability enhancement. He oversees the secretariat of the Government’s Ministry Family Digitalisation Programme (MFDP) with the charter to coordinate and support government agencies’ digitalisation. Prior to his current role, Eng Pheng led a number of Sectoral Transformation initiatives spanning sectors such as trade and logistics, finance, tourism, education and healthcare during his stint in the Infocomm Development Authority. He had also led eGovernment planning at the whole-of-government level, and provided consultancy at G-G level. Eng Pheng has more than 30 years of infocomm industry experience. He holds a MSc (Management of Technology) from the National University of Singapore, and attended the Advanced Management Program at the Harvard Business School in 2013.
 
 - type: Keynote
-  timeslot: 10:45 AM - 11:05 AM
-  title: SHIP-HATS Roadmap
+  timeslot: 10:35 AM - 10:55 AM
+  title: GCC Road Ahead
   desc: Learn what is planned for the upcoming year
   speakers: 
     - name: Kevin Ng
@@ -51,24 +51,28 @@
       desc: Kevin is the CODEX product leader for the Government Commercial Cloud and Singapore Government Tech Stack products with the goal of transforming developer experience - both inhouse and outsourced teams - for government-built product & services. Prior to joining GovTech, he was the Senior Director, Product and Technology at Expedia and was based in Singapore and London. Kevin has led global teams involved in search and globalisation, transformed monolithic solutions into microservices on the cloud, created reusable platform components for both customer-facing apps and internal-use pipelines, and re-architected monolithic systems to incorporate artificial intelligence models.
 
 - type: Keynote
-  timeslot: 11:05 AM - 11:25 PM
-  title: SHIP-HATS – Architecture Approach
+  timeslot: 10:55 AM - 11:30 AM
+  title: GCC 2.0 Design Principles and Showcase
   desc: Tune in to listen to the tech strategy behind the product
   speakers: 
+    - name: Hunter Nield
+      image: /assets/img/aboutus-chengyong.png
+      title: Distinguished Engineer, GovTech
+      desc: Hsiao Ming leads Engineering Productivity at Government Digital Services in GovTech. His group focuses on platforms and services to accelerate the development of digital services for the Government. This includes the Application Programming Interface Exchange (APEX) - a centralised government-wide API library and the Next-Generation Container Architecture (NECTAR) a cloud-based platform-as-a-service which streamlines and accelerates the process of application development. As part of the Singapore Government Tech Stack (SGTS), APEX and NECTAR allow the public and private sectors to collaborate effectively and efficiently on digital projects that create value for citizens. A software engineer by trade, Hsiao Ming likes to explore new developments related to cloud, containers and programming. In his spare time, he dabbles with IoT devices and runs a small hydroponics setup on his balcony.
     - name: Chia Hsiao Ming
       image: /assets/img/aboutus-chengyong.png
       title: Director, Engineering Productivity, GovTech
       desc: Hsiao Ming leads Engineering Productivity at Government Digital Services in GovTech. His group focuses on platforms and services to accelerate the development of digital services for the Government. This includes the Application Programming Interface Exchange (APEX) - a centralised government-wide API library and the Next-Generation Container Architecture (NECTAR) a cloud-based platform-as-a-service which streamlines and accelerates the process of application development. As part of the Singapore Government Tech Stack (SGTS), APEX and NECTAR allow the public and private sectors to collaborate effectively and efficiently on digital projects that create value for citizens. A software engineer by trade, Hsiao Ming likes to explore new developments related to cloud, containers and programming. In his spare time, he dabbles with IoT devices and runs a small hydroponics setup on his balcony.
 
-- type: Keynote
-  timeslot: 11:25 AM - 11:45 AM
-  title: Fireside Chat With Agencies
-  desc: A conversation with representatives from agencies on their experience implementing CI/CD with SHIP-HATS, benefits realised, best practices and lessons learnt
-  speakers: 
-    - name: Kevin Ng
-      image: /assets/img/aboutus-chengyong.png
-      title: Director, CODEX, GovTech
-      desc: Kevin is the CODEX product leader for the Government Commercial Cloud and Singapore Government Tech Stack products with the goal of transforming developer experience - both inhouse and outsourced teams - for government-built product & services. Prior to joining GovTech, he was the Senior Director, Product and Technology at Expedia and was based in Singapore and London. Kevin has led global teams involved in search and globalisation, transformed monolithic solutions into microservices on the cloud, created reusable platform components for both customer-facing apps and internal-use pipelines, and re-architected monolithic systems to incorporate artificial intelligence models.
+#- type: Keynote
+#  timeslot: 11:25 AM - 11:45 AM
+#  title: Fireside Chat With Agencies
+#  desc: A conversation with representatives from agencies on their experience implementing CI/CD with SHIP-HATS, benefits realised, best practices and lessons learnt
+#  speakers: 
+#    - name: Kevin Ng
+#      image: /assets/img/aboutus-chengyong.png
+#      title: Director, CODEX, GovTech
+#      desc: Kevin is the CODEX product leader for the Government Commercial Cloud and Singapore Government Tech Stack products with the goal of transforming developer experience - both inhouse and outsourced teams - for government-built product & services. Prior to joining GovTech, he was the Senior Director, Product and Technology at Expedia and was based in Singapore and London. Kevin has led global teams involved in search and globalisation, transformed monolithic solutions into microservices on the cloud, created reusable platform components for both customer-facing apps and internal-use pipelines, and re-architected monolithic systems to incorporate artificial intelligence models.
 
 # Leaders
 - type: Leader
@@ -82,7 +86,7 @@
       desc: Neville Cannon is a Senior Director, Analyst in the Industries Research Group, Government and Education, at Gartner. He focuses on the public sector and government in particular, supporting CIOs and TSP Product Leaders
 
 - type: Leader
-  timeslot: 1:45 PM - 2:10 PM
+  timeslot: 1:45 PM - 2:15 PM
   title: WoG Cloud Adoption Progress - Overcoming Challenges Ahead
   desc: Demytifying challenges of government cloud adoption
   speakers: 
@@ -100,12 +104,12 @@
       desc: Kevin is the CODEX product leader for the Government Commercial Cloud and Singapore Government Tech Stack products with the goal of transforming developer experience - both inhouse and outsourced teams - for government-built product & services. Prior to joining GovTech, he was the Senior Director, Product and Technology at Expedia and was based in Singapore and London. Kevin has led global teams involved in search and globalisation, transformed monolithic solutions into microservices on the cloud, created reusable platform components for both customer-facing apps and internal-use pipelines, and re-architected monolithic systems to incorporate artificial intelligence models.
 
 - type: Leader
-  timeslot: 2:10 PM - 2:25 PM
+  timeslot: 2:15 PM - 2:30 PM
   title: Cloud Journey of IRAS
   desc: Join GovTech - Tan Eng Pheng, Chai Chin Loon and Kevin Ng - with your questions about CI/CD with SHIP-HATS
 
 - type: Leader
-  timeslot: 2:25 PM - 2:50 PM
+  timeslot: 2:30 PM - 3:00 PM
   title: GCC 2.0 Q&A
   desc: An in-depth exploration of the new GCC 2.0
   speakers: 
@@ -123,9 +127,9 @@
       desc: Erlina is the Chief Information Officer of Ministry of Law
   
 - type: Leader
-  timeslot: 2:50 PM - 3:15 PM
-  title: Closing & Next Steps
-  desc: Learn how you can begin the CI/CD journey with SHIP-HATS
+  timeslot: 3:00 PM - 3:30 PM
+  title: Cloud Migration Strategy
+  desc: Learn how you can begin
   speakers: 
     - name: Dr Sakthivel Thangavel
       image: /assets/img/aboutus-chengyong.png
@@ -245,7 +249,7 @@
   title: Zero Trust
   desc: Steps to get started on SHIP-HATS
   speakers: 
-    - name: Denise Collard
+    - name: Marco G
       image: /assets/img/aboutus-chengyong.png
-      title: Product Manager, GovTech
+      title: Google
       desc: Denise is a Business Developer turned Product Manager at GovTech, 5 years and counting! As an ex-business developer, she supported her team with establishing “business operation readiness” which ranged from facilitating administrative tasks to Agencies’ engagement. Today, as Product Manager, she is working closely with development teams to create new products that improve business workflows and automate processes. Denise believes that the only constant in life is change, through which she constantly strives to learn, grow and improve. Outside of work, you’ll usually find Denise rock climbing, chilling with handicrafts, or spending time with her family. If you’re into sports too... she’s always game!
