@@ -24,6 +24,7 @@
   timeslot: 09:40 AM - 10:00 AM
   title: Cloud Journey
   desc: Cloud Journey of NASA - Jet Propulsion Laboratory
+  speakers:
     - name: Tom Soderstrom
       image: /assets/img/aboutus-chengyong.png
       title: Director or Lead Architects, AWS (IT Chief Technology and Innovation Officer at NASA's Jet Propulsion Laboratory, 2006-2020)
@@ -105,7 +106,7 @@
       title: Director, CODEX, GovTech
       desc: Kevin is the CODEX product leader for the Government Commercial Cloud and Singapore Government Tech Stack products with the goal of transforming developer experience - both inhouse and outsourced teams - for government-built product & services. Prior to joining GovTech, he was the Senior Director, Product and Technology at Expedia and was based in Singapore and London. Kevin has led global teams involved in search and globalisation, transformed monolithic solutions into microservices on the cloud, created reusable platform components for both customer-facing apps and internal-use pipelines, and re-architected monolithic systems to incorporate artificial intelligence models.
   
-  - type: Leader
+- type: Leader
   timeslot: 2:50 PM - 3:15 PM
   title: Closing & Next Steps
   desc: Learn how you can begin the CI/CD journey with SHIP-HATS
