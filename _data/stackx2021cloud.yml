@@ -11,43 +11,33 @@
 
 # Keynotes
 - type: Keynote
-  timeslot: 10:00 AM - 10:10 AM
+  timeslot: 09:30 AM - 09:40 AM
   title: Welcome Remarks
   desc: Opening address
   speakers: 
-    - name: Kok Ping Soon
+    - name: Dr Janil Puthucheary
       image: /assets/img/aboutus-junyu.png
-      title: Chief Executive, GovTech
-      desc: Ping Soon is Chief Executive of the Government Technology Agency of Singapore (GovTech). Prior to this he held various positions in the Ministry of Manpower, National Security Co-ordination Secretariat, Ministry of Trade & Industry, Singapore Tourism Board, Contact Singapore (CS) and Economic Development Board (EDB). He spent six years in the United States working for CS and EDB. He serves on the Board of Infocomm Media Development Authority (IMDA), Defence Science & Technology Agency (DSTA), Institute of System Sciences (ISS) and is a member of the National Institute of Education (NIE) Council.
+      title: Senior Minister of State, Ministry of Communications and Information & Ministry of Health
+      desc: Placeholder Desc
 
 - type: Keynote
-  timeslot: 10:10 AM - 10:25 AM
-  title: CI/CD Shaping modernisation in Singapore Government
-  desc: Vision of how Singapore Public Agencies can power the digitalisation strategy with CI/CD
-  speakers: 
-    - name: Chan Cheow Hoe
+  timeslot: 09:40 AM - 10:00 AM
+  title: Cloud Journey
+  desc: Cloud Journey of NASA - Jet Propulsion Laboratory
+    - name: Tom Soderstrom
       image: /assets/img/aboutus-chengyong.png
-      title: Government Chief Digital Technology Officer
-      desc: Cheow Hoe oversees the development of the Government’s digital
-            infrastructure and digital technology capability, as well as talent
-            development in information and communication technology and smart
-            systems (ICT&SS). He also oversees the development of platforms to
-            enable resource sharing and interoperability across the Government to
-            drive the development and delivery of innovative government digital
-            services for citizens and businesses. Cheow Hoe has more than two
-            decades of extensive experience both in the public and private
-            sectors, with a strong track record in leading digital transformation
-            changes in organisations and the Government.
+      title: Director or Lead Architects, AWS (IT Chief Technology and Innovation Officer at NASA's Jet Propulsion Laboratory, 2006-2020)
+      desc: xxx
 
 - type: Keynote
-  timeslot: 10:25 AM - 10:45 AM
-  title: The Journey to Continuous Delivery
-  desc: Agile software development and continuous integration practices are going mainstream. While the tools and policies are available, the actual journey itself is not always obvious and this session demystifies that.
+  timeslot: 09:55 AM - 10:20 AM
+  title: WoG Cloud Adoption Progress - Overcoming Challenges Ahead
+  desc: Demytifying challenges of government cloud adoption
   speakers: 
-    - name: Sriram Narayanan
+    - name: Tan Eng Pheng
       image: /assets/img/aboutus-chengyong.png
-      title: Technology Principal, ThoughtWorks
-      desc: Sriram Narayanan is a Technology Principal with ThoughtWorks Southeast Asia with over 24 years of experience in Agile transformations and architecting solutions for clients in the financial and public sector. He is an accredited IT Auditor and works with IT Operations and Security teams routinely. He presently advises on architecting solutions and prescribes processes which help with smooth delivery and transition from legacy to modern systems.
+      title: Assistant Chief Executive, GovTech
+      desc: Eng Pheng currently heads the Services Group at the Government Technology Agency, and oversees a workforce of more than 1,500 ICT professional that constitute the CIO teams at 52 Singapore public sector agencies. His portfolio includes digital transformation of public organisations, technology planning and implementation, as well as ICT work force capability enhancement. He oversees the secretariat of the Government’s Ministry Family Digitalisation Programme (MFDP) with the charter to coordinate and support government agencies’ digitalisation. Prior to his current role, Eng Pheng led a number of Sectoral Transformation initiatives spanning sectors such as trade and logistics, finance, tourism, education and healthcare during his stint in the Infocomm Development Authority. He had also led eGovernment planning at the whole-of-government level, and provided consultancy at G-G level. Eng Pheng has more than 30 years of infocomm industry experience. He holds a MSc (Management of Technology) from the National University of Singapore, and attended the Advanced Management Program at the Harvard Business School in 2013.
 
 - type: Keynote
   timeslot: 10:45 AM - 11:05 AM
@@ -81,29 +71,42 @@
 
 # Leaders
 - type: Leader
-  timeslot: 1:00 PM - 1:20 PM
-  title: Modernise Application Delivery
-  desc: As an IT leader, what are the considerations when starting a CI/CD journey and how can you achieve operational efficiency and excellence with SHIP-HATS
+  timeslot: 1:30 PM - 1:45 PM
+  title: Is Government Migration of Cloud Successful?
+  desc: While some Government CIOs remain fearful of the unknown and potentially shun, delay or slow the adoption of cloud computing, the short answer is yes. This research highlights that governments are successfully adopting cloud, and offers advice on how to improve the success ratio
   speakers: 
-    - name: Tan Eng Pheng
+    - name: Neville Cannon
       image: /assets/img/aboutus-chengyong.png
       title: Assistant Chief Executive, GovTech
-      desc: Eng Pheng currently heads the Services Group at the Government Technology Agency, and oversees a workforce of more than 1,500 ICT professional that constitute the CIO teams at 52 Singapore public sector agencies. His portfolio includes digital transformation of public organisations, technology planning and implementation, as well as ICT work force capability enhancement. He oversees the secretariat of the Government’s Ministry Family Digitalisation Programme (MFDP) with the charter to coordinate and support government agencies’ digitalisation. Prior to his current role, Eng Pheng led a number of Sectoral Transformation initiatives spanning sectors such as trade and logistics, finance, tourism, education and healthcare during his stint in the Infocomm Development Authority. He had also led eGovernment planning at the whole-of-government level, and provided consultancy at G-G level. Eng Pheng has more than 30 years of infocomm industry experience. He holds a MSc (Management of Technology) from the National University of Singapore, and attended the Advanced Management Program at the Harvard Business School in 2013.
+      desc: Neville Cannon is a Senior Director, Analyst in the Industries Research Group, Government and Education, at Gartner. He focuses on the public sector and government in particular, supporting CIOs and TSP Product Leaders
+
 - type: Leader
-  timeslot: 1:20 PM - 1:40 PM
-  title: The Security Principles in CI/CD
-  desc: What are the security principles to consider while implementing modern CI/CD? How can onerous security checkpoints transform to facilitate the practice of agile pipeline securely? Find out more during the session.
+  timeslot: 1:45 PM - 2:10 PM
+  title: WoG Cloud Adoption Progress - Overcoming Challenges Ahead
+  desc: Demytifying challenges of government cloud adoption
   speakers: 
-    - name: Chai Chin Loon
+    - name: Yap Mia Kai, Chai Chin Loon and Kevin Ng
       image: /assets/img/aboutus-chengyong.png
       title: Senior Director, Cyber Security Group & Government Chief Information Security Officer, GovTech
       desc: Chin Loon is currently the Senior Director of the Cyber Security Group (CSG) and Government Chief Information Security Officer (GCISO) in GovTech. CSG secures Government info-communications technology and smart systems (ICT&SS), develops the public sector’s resilience, and partners the cybersecurity ecosystem against cyber threats to the Government. The group serves as the Centre of Excellence to provide cybersecurity governance supported by consulting practice in addition to resilient monitoring of security events with robust incident response capabilities. He also oversees the Chief Information Security Officers deployed to all Government Ministries of Singapore.
+
 - type: Leader
-  timeslot: 1:40 PM - 2:00 PM
+  timeslot: 2:10 PM - 2:25 PM
   title: Q&A with GovTech
   desc: Join GovTech - Tan Eng Pheng, Chai Chin Loon and Kevin Ng - with your questions about CI/CD with SHIP-HATS
+
 - type: Leader
-  timeslot: 2:00 PM - 2:15 PM
+  timeslot: 2:25 PM - 2:50 PM
+  title: Closing & Next Steps
+  desc: Learn how you can begin the CI/CD journey with SHIP-HATS
+  speakers: 
+    - name: Kevin Ng
+      image: /assets/img/aboutus-chengyong.png
+      title: Director, CODEX, GovTech
+      desc: Kevin is the CODEX product leader for the Government Commercial Cloud and Singapore Government Tech Stack products with the goal of transforming developer experience - both inhouse and outsourced teams - for government-built product & services. Prior to joining GovTech, he was the Senior Director, Product and Technology at Expedia and was based in Singapore and London. Kevin has led global teams involved in search and globalisation, transformed monolithic solutions into microservices on the cloud, created reusable platform components for both customer-facing apps and internal-use pipelines, and re-architected monolithic systems to incorporate artificial intelligence models.
+  
+  - type: Leader
+  timeslot: 2:50 PM - 3:15 PM
   title: Closing & Next Steps
   desc: Learn how you can begin the CI/CD journey with SHIP-HATS
   speakers: 
