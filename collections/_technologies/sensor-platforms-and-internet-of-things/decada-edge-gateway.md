@@ -49,7 +49,7 @@ The full list of DECADA Edge Gateway features are as follows:
 - Data Aggregation
 - Data Analytics
 
-### How Do You Use DECADA Edge Gateway>
+### How Do You Use DECADA Edge Gateway?
 
 Depending on your system’s needs, DECADA Edge Gateway software can be deployed on a variety of hardware, ranging from low-power ARM Single-Board-Computer(SBC)s to full-fledged Intel i7 gateways, with the hardware and the residing operating system environment conforming to the Singapore Government's security guidelines.
 
@@ -80,7 +80,7 @@ Plugins in the following categories are currently available:
 
 ### Success Stories
 
-DECADA Edge has been successfully deployed and is running in various projects including Smart Offices, [Smart Gym](https://www.developer.tech.gov.sg/technologies/sensor-platforms-and-internet-of-things/smartgym) and Smart Lamppost (CETRAN).
+DECADA Edge has been successfully deployed and is running in various projects including Smart Offices, [Smart Gym](https://www.developer.tech.gov.sg/technologies/sensor-platforms-and-internet-of-things/smartgym){:target="_blank"} and Smart Lamppost (CETRAN).
 
 ### Contact Information
 
