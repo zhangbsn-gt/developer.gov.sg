@@ -3,6 +3,17 @@ title: 'DECADA Edge Gateway – Facilitates Easy and Secure Onboarding of Sensor
 layout: layout-page-sidenav
 category: Sensors and IOT
 description: DECADA Edge Gateway is a specially developed edge gateway that improves the performance of DECADA.
+bios:
+  - name: Toh Kian Hui, Technical Lead
+    img_src: iot-toh-kian-hui.png
+    desc: |
+      Kian Hui is a senior systems engineer and the team lead for DECADA. He finds joy in implementing software solutions that make a positive impact on people.
+
+  - name: Tony Varghese, Product Manager
+    img_src: iot-tony-varghese.png
+    desc: |
+      Tony is the Product Manager for DECADA. He joined GovTech in Nov 2018 with the ambition of being part of the team that builds Singapore’s Smart Nation efforts. 
+      Aside from his work commitments, Tony enjoys playing cricket.
 ---
 
 ### Overview
