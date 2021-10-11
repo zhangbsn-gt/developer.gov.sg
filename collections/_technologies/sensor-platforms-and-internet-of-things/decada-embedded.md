@@ -20,7 +20,7 @@ Microcontroller-class devices are prevalent in an IoT network, as they are low i
 
 As part of the Singapore Government Tech Stack, DECADA Embedded provides software reference designs to hasten development time. By extending the reference examples, developers will be able to add their custom application logics for their use cases, while not having to fret over how onboarding and communication are done with DECADA Cloud in the software.
 
-#Why Should DECADA Embedded be Adopted?
+### Why Should DECADA Embedded be Adopted?
 
 Organisations who wish to connect their microcontroller-class devices to GovTech’s IoT Cloud (DECADA Cloud) will be able to cut software development time significantly when they reference our open-sourced examples. We provide the following RTOS reference examples, which can be compiled and run straight out-of-the-box:
 - MbedOS: https://github.com/GovTechSIOT/decada-embedded-example-mbedos
@@ -65,7 +65,7 @@ SafeEntry Gateway prototypes were based off decada-embedded-example-mbedos, whic
 **TraceTogether Upload Station**<br>
 A Decada-embedded device that uploads contact tracing data from the trace together tokens for covid positive patients.  Featuring remote firmware update capability, this device enables nurses to spend less time uploading contact tracing data and focus on what they do best - caring for patients.
 
-[Sport Singapore](https://www.sportsingapore.gov.sg/) and [National Parks Board (NParks)](https://www.nparks.gov.sg/) used IoT devices based on decada-embedded-example-mbedos software for their smart lighting works.
+[Sport Singapore](https://www.sportsingapore.gov.sg/){:target="_blank"} and [National Parks Board (NParks)](https://www.nparks.gov.sg/){:target="_blank"} used IoT devices based on decada-embedded-example-mbedos software for their smart lighting works.
 
 <figure style="text-align: center">
   <img
