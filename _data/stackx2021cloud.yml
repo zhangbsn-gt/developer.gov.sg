@@ -16,7 +16,7 @@
   desc: Opening address
   speakers: 
     - name: Dr Janil Puthucheary
-#      image: /assets/img/aboutus-junyu.png
+      image: /assets/img/placeholder.png
       title: Senior Minister of State, Ministry of Communications and Information & Ministry of Health
 #      desc: Placeholder Desc
 
@@ -33,7 +33,7 @@
 - type: Keynote
   timeslot: 10:10 AM - 10:35 AM
   title: Accelerating Digital Transformation with Government on Commercial Cloud
-  desc: 
+  desc: GCC is the Government platform that streamlines operations and aggregate demands of Commercial Cloud. Our aim is to level the playing field for partners of different sizes to develop on the cloud, which also helps us stay on track with the DGB KPI of system on Cloud.
   speakers: 
     - name: Tan Eng Pheng
       image: /assets/img/tan-eng-pheng.png
@@ -43,7 +43,7 @@
 - type: Keynote
   timeslot: 10:35 AM - 10:55 AM
   title: GCC Road Ahead
-  desc: Learn what is planned for the upcoming year
+  desc: Much can be improved for GCC. The new GCC 2.0 will speed things up even faster with even more native accessibility capability, and be more secure and strong endpoint protection and single sign-on.
   speakers: 
     - name: Kevin Ng
       image: /assets/img/kevin-ng.jpg
@@ -53,7 +53,7 @@
 - type: Keynote
   timeslot: 10:55 AM - 11:30 AM
   title: GCC 2.0 Design Principles and Showcase
-  desc: Tune in to listen to the tech strategy behind the product
+  desc: The new GCC 2.0 will allow continuous compliance monitoring via Policy-as-Code (PaC) and landing zones that allow us to scale multi-tenant quicker, more consistently and more security. There will also be a live demo of the new GCC 2.0!
   speakers: 
     - name: Hunter Nield
       image: /assets/img/hunter-nield.png
@@ -172,7 +172,7 @@
 
 - type: Product
   timeslot: 2:30 PM - 3:00 PM
-  title: CASCoM
+  title: Managing Cloud Application Security and Cost Management through Automatic and Data Centric Approach
   desc: This session covers the CD tools available within SHIP-HATS
   speakers: 
     - name: Hudson Lee
@@ -187,7 +187,7 @@
   speakers: 
     - name: Choong Keng Leong
       image: /assets/img/aboutus-chengyong.png
-      title: Director, GIG, GovTech
+      title: Director, Government Infrastructure Group, GovTech
       desc: xx Intrigued by the opportunity to work in the Tech industry, Pei Yi made a career switch from Corporate communication to Business Development in 2019. She helps to drive the adoption of GovTech products such as SHIP-HATS, APEX & Nectar across WOG.
 
 #- type: Product
