@@ -107,7 +107,7 @@
   timeslot: 2:30 PM - 2:40 PM
   title: Cloud Journey of IRAS
   desc: 
-  speaker:
+  speakers:
     - name: Yap Mia Kai
       image: /assets/img/placeholder.png
       title: Director, IRIN 3 Architecture Office (I3AO), Inland Revenue Authority of Singapore (IRAS)
@@ -117,7 +117,7 @@
   timeslot: 2:40 PM - 2:50 PM
   title: GCC 2.0 Features
   desc: 
-  speaker:
+  speakers:
     - name: Kevin Ng
       image: /assets/img/kevin-ng.jpg
       title: Director, CODEX, GovTech
