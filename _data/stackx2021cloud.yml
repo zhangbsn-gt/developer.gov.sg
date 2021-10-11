@@ -1,4 +1,4 @@
-# - type: Keynote|Leader|Product|Government
+# #- type: Keynote|Leader|Product|Government
 #   timeslot: 
 #   title: 
 #   desc: 
@@ -16,9 +16,9 @@
   desc: Opening address
   speakers: 
     - name: Dr Janil Puthucheary
-      image: /assets/img/aboutus-junyu.png
+#      image: /assets/img/aboutus-junyu.png
       title: Senior Minister of State, Ministry of Communications and Information & Ministry of Health
-      desc: Placeholder Desc
+#      desc: Placeholder Desc
 
 - type: Keynote
   timeslot: 09:40 AM - 10:10 AM
@@ -48,7 +48,7 @@
     - name: Kevin Ng
       image: /assets/img/kevin-ng.jpg
       title: Director, CODEX, GovTech
-      desc: Kevin is the CODEX product leader for the Government Commercial Cloud and Singapore Government Tech Stack products with the goal of transforming developer experience - both inhouse and outsourced teams - for government-built product & services. Prior to joining GovTech, he was the Senior Director, Product and Technology at Expedia and was based in Singapore and London. Kevin has led global teams involved in search and globalisation, transformed monolithic solutions into microservices on the cloud, created reusable platform components for both customer-facing apps and internal-use pipelines, and re-architected monolithic systems to incorporate artificial intelligence models.
+      desc: Kevin is the CODEX product leader for the Government Commercial Cloud and Singapore Government Tech Stack products with the goal of transforming developer experience - both inhouse and outsourced teams - for government-built product & services. Prior to joining GovTech, he was the Senior Director, Product and Technology at Expedia and was based in Singapore and London. Kevin has led global teams involved in search and globalisation, transformed monolithic solutions into microservices on the cloud, created reusable platform components for both customer-facing apps and internal-use pipelines, and re-architected monolithic systems to incorporate artificial intelligence models. With over 100 members, his team spanned across the US, UK, Hungary, Jordan, India, China, Singapore and a few smaller locations, and comprised engineering and product directors, product managers, technical product managers and engineers. Kevin graduated with a B.Sc. (First Class Honours) in Computer Science from the National University of Singapore (NUS) and holds a M.Sc. (by Research) in Computer Science from NUS.
 
 - type: Keynote
   timeslot: 10:55 AM - 11:30 AM
@@ -56,13 +56,13 @@
   desc: Tune in to listen to the tech strategy behind the product
   speakers: 
     - name: Hunter Nield
-      image: /assets/img/aboutus-chengyong.png
+      image: /assets/img/hunter-nield.png
       title: Distinguished Engineer, GovTech
-      desc: Hsiao Ming leads Engineering Productivity at Government Digital Services in GovTech. His group focuses on platforms and services to accelerate the development of digital services for the Government. This includes the Application Programming Interface Exchange (APEX) - a centralised government-wide API library and the Next-Generation Container Architecture (NECTAR) a cloud-based platform-as-a-service which streamlines and accelerates the process of application development. As part of the Singapore Government Tech Stack (SGTS), APEX and NECTAR allow the public and private sectors to collaborate effectively and efficiently on digital projects that create value for citizens. A software engineer by trade, Hsiao Ming likes to explore new developments related to cloud, containers and programming. In his spare time, he dabbles with IoT devices and runs a small hydroponics setup on his balcony.
+      desc: Hunter is a Distinguished Engineer at GovTech who specialises in cloud strategy and engineering. In 2018, he partnered GovTech's Government Digital Services team and shared his technical expertise as a Senior Smart Nation Fellow. Hunter has 20 years of private-sector experience under his belt. Prior to joining the Government, he ran businesses in Asia and Australia focused on Cloud Infrastructure, Digital Transformation and R&D.
     - name: Chia Hsiao Ming
-      image: /assets/img/aboutus-chengyong.png
+      image: /assets/img/hsiao-ming.jpg
       title: Director, Engineering Productivity, GovTech
-      desc: Hsiao Ming leads Engineering Productivity at Government Digital Services in GovTech. His group focuses on platforms and services to accelerate the development of digital services for the Government. This includes the Application Programming Interface Exchange (APEX) - a centralised government-wide API library and the Next-Generation Container Architecture (NECTAR) a cloud-based platform-as-a-service which streamlines and accelerates the process of application development. As part of the Singapore Government Tech Stack (SGTS), APEX and NECTAR allow the public and private sectors to collaborate effectively and efficiently on digital projects that create value for citizens. A software engineer by trade, Hsiao Ming likes to explore new developments related to cloud, containers and programming. In his spare time, he dabbles with IoT devices and runs a small hydroponics setup on his balcony.
+      desc: Hsiao Ming leads Engineering Productivity at Government Digital Services in GovTech. His group focuses on platforms and services to accelerate the development of digital services for the Government. This includes the Application Programming Interface Exchange (APEX) - a centralised government-wide API library and the Next-Generation Container Architecture (NECTAR), a cloud-based platform-as-a-service which streamlines and accelerates the process of application development. As part of the Singapore Government Tech Stack (SGTS), APEX and NECTAR allow the public and private sectors to collaborate effectively and efficiently on digital projects that create value for citizens. A software engineer by trade, Hsiao Ming likes to explore new developments related to cloud, containers and programming. In his spare time, he dabbles with IoT devices and runs a small hydroponics setup on his balcony.
 
 #- type: Keynote
 #  timeslot: 11:25 AM - 11:45 AM
@@ -70,7 +70,7 @@
 #  desc: A conversation with representatives from agencies on their experience implementing CI/CD with SHIP-HATS, benefits realised, best practices and lessons learnt
 #  speakers: 
 #    - name: Kevin Ng
-#      image: /assets/img/hsiao-ming.jpg
+#      image: /assets/img/aboutus-chengyong.png
 #      title: Director, CODEX, GovTech
 #      desc: Kevin is the CODEX product leader for the Government Commercial Cloud and Singapore Government Tech Stack products with the goal of transforming developer experience - both inhouse and outsourced teams - for government-built product & services. Prior to joining GovTech, he was the Senior Director, Product and Technology at Expedia and was based in Singapore and London. Kevin has led global teams involved in search and globalisation, transformed monolithic solutions into microservices on the cloud, created reusable platform components for both customer-facing apps and internal-use pipelines, and re-architected monolithic systems to incorporate artificial intelligence models.
 
@@ -81,8 +81,8 @@
   desc: While some Government CIOs remain fearful of the unknown and potentially shun, delay or slow the adoption of cloud computing, the short answer is yes. This research highlights that governments are successfully adopting cloud, and offers advice on how to improve the success ratio
   speakers: 
     - name: Neville Cannon
-      image: /assets/img/aboutus-chengyong.png
-      title: Assistant Chief Executive, GovTech
+      image: /assets/img/neville-cannon.jpg
+      title: Senior Director, Analyst, Gartner
       desc: Neville Cannon is a Senior Director, Analyst in the Industries Research Group, Government and Education, at Gartner. He focuses on the public sector and government in particular, supporting CIOs and TSP Product Leaders
 
 - type: Leader
@@ -92,7 +92,7 @@
   speakers: 
     - name: Yap Mia Kai
       image: /assets/img/aboutus-chengyong.png
-      title: Director, IRAS
+      title: Director, IRIN 3 Architecture Office (I3AO), Inland Revenue Authority of Singapore (IRAS)
       desc: Mia Kai is currently the Director of 
     - name: Chai Chin Loon
       image: /assets/img/aboutus-chengyong.png
@@ -101,12 +101,17 @@
     - name: Kevin Ng
       image: /assets/img/aboutus-chengyong.png
       title: Director, CODEX, GovTech
-      desc: Kevin is the CODEX product leader for the Government Commercial Cloud and Singapore Government Tech Stack products with the goal of transforming developer experience - both inhouse and outsourced teams - for government-built product & services. Prior to joining GovTech, he was the Senior Director, Product and Technology at Expedia and was based in Singapore and London. Kevin has led global teams involved in search and globalisation, transformed monolithic solutions into microservices on the cloud, created reusable platform components for both customer-facing apps and internal-use pipelines, and re-architected monolithic systems to incorporate artificial intelligence models.
+      desc: Kevin is the CODEX product leader for the Government Commercial Cloud and Singapore Government Tech Stack products with the goal of transforming developer experience - both inhouse and outsourced teams - for government-built product & services. Prior to joining GovTech, he was the Senior Director, Product and Technology at Expedia and was based in Singapore and London. Kevin has led global teams involved in search and globalisation, transformed monolithic solutions into microservices on the cloud, created reusable platform components for both customer-facing apps and internal-use pipelines, and re-architected monolithic systems to incorporate artificial intelligence models. With over 100 members, his team spanned across the US, UK, Hungary, Jordan, India, China, Singapore and a few smaller locations, and comprised engineering and product directors, product managers, technical product managers and engineers. Kevin graduated with a B.Sc. (First Class Honours) in Computer Science from the National University of Singapore (NUS) and holds a M.Sc. (by Research) in Computer Science from NUS.
 
 - type: Leader
   timeslot: 2:15 PM - 2:30 PM
   title: Cloud Journey of IRAS
   desc: Join GovTech - Tan Eng Pheng, Chai Chin Loon and Kevin Ng - with your questions about CI/CD with SHIP-HATS
+  speaker:
+    - name: Yap Mia Kai
+      image: /assets/img/aboutus-chengyong.png
+      title: Director, IRIN 3 Architecture Office (I3AO), Inland Revenue Authority of Singapore (IRAS)
+      desc: 
 
 - type: Leader
   timeslot: 2:30 PM - 3:00 PM
@@ -120,7 +125,7 @@
     - name: Kevin Ng
       image: /assets/img/aboutus-chengyong.png
       title: Director, CODEX, GovTech
-      desc: Kevin is the CODEX product leader for the Government Commercial Cloud and Singapore Government Tech Stack products with the goal of transforming developer experience - both inhouse and outsourced teams - for government-built product & services. Prior to joining GovTech, he was the Senior Director, Product and Technology at Expedia and was based in Singapore and London. Kevin has led global teams involved in search and globalisation, transformed monolithic solutions into microservices on the cloud, created reusable platform components for both customer-facing apps and internal-use pipelines, and re-architected monolithic systems to incorporate artificial intelligence models.
+      desc: Kevin is the CODEX product leader for the Government Commercial Cloud and Singapore Government Tech Stack products with the goal of transforming developer experience - both inhouse and outsourced teams - for government-built product & services. Prior to joining GovTech, he was the Senior Director, Product and Technology at Expedia and was based in Singapore and London. Kevin has led global teams involved in search and globalisation, transformed monolithic solutions into microservices on the cloud, created reusable platform components for both customer-facing apps and internal-use pipelines, and re-architected monolithic systems to incorporate artificial intelligence models. With over 100 members, his team spanned across the US, UK, Hungary, Jordan, India, China, Singapore and a few smaller locations, and comprised engineering and product directors, product managers, technical product managers and engineers. Kevin graduated with a B.Sc. (First Class Honours) in Computer Science from the National University of Singapore (NUS) and holds a M.Sc. (by Research) in Computer Science from NUS.
     - name: Erlina Ke
       image: /assets/img/aboutus-chengyong.png
       title: Chief Information Officer, Ministry of Law
@@ -133,23 +138,23 @@
   speakers: 
     - name: Dr Sakthivel Thangavel
       image: /assets/img/aboutus-chengyong.png
-      title: Director, SAO, GovTech
+      title: Director, Solution Architect Office, GovTech
       desc: Dr Sakthivel is currently the Director
 
 # Products
 - type: Product
   timeslot: 1:30 PM - 2:00 PM
-  title: SHIP-HATS Overview For Newbies
+  title: Building a Successful Cloud Architecture
   desc: This talk introduces SHIP-HATS and covers why and how you can use it to enable CI/CD for agency app projects on Government Commercial Cloud.
   speakers: 
     - name: Abhijeet Menon
       image: /assets/img/aboutus-chengyong.png
       title: Senior Solution Architect, GovTech
       desc: Abhijeet has 17 years of experience in planning, designing and architecting applications. Currently assisting agencies to solution modern applications using CI / CD, Cloud native services and Containers. He is also involved in planning designs to allow productivity and cost optimisation for the Agency.
-    - name: Sathappan Subramaniam
+    - name: x
       image: /assets/img/aboutus-chengyong.png
-      title: Lead Project Manager, NCS
-      desc: Sathappan Subramaniam has more than 20 years of IT experience in both Government and Commercial projects with over 15 years of Project Manager experience. He is currently the Project Manager and Scrum Master for PA GEMS 2 Project.
+      title: Solution Architect
+      desc: x Sathappan Subramaniam has more than 20 years of IT experience in both Government and Commercial projects with over 15 years of Project Manager experience. He is currently the Project Manager and Scrum Master for PA GEMS 2 Project.
 
 - type: Product
   timeslot: 2:00 PM - 2:30 PM
@@ -158,8 +163,8 @@
   speakers: 
     - name: Tang Bing Wan
       image: /assets/img/aboutus-chengyong.png
-      title: Deputy Director, CODEX, GovTech
-      desc: Bing Wan has xx years of experience in      planning, designing and architecting applications. Currently assisting agencies to solution modern applications using CI / CD, Cloud native services and Containers. He is also involved in planning designs to allow productivity and cost optimisation for the Agency.
+      title: Principal Application Infrastructure Architect, CTS, GovTech
+      desc: A passionate architect and technical manager, Bing Wan started his career as a software developer (Informix, Java, C) focusing on both banking and shipping domains. He developed a passion in IT infrastructure, security and operations, which guided his subsequent work as an architect even as the landscape shifted from on-premise/physical, virtualisation to cloud, microservices, and zero-trust security paradigm. His most recent role as one of GovTech's Principal Infrastructure Architect further honed his skills in enabling a team of fellow passionate professionals to re-factor systems, IT operating model and culture to cloud. His current interest and focus area is on cloud automation/software defined infrastructure strategy across Singapore's whole-of-government.
     - name: Jessica Tan
       image: /assets/img/aboutus-chengyong.png
       title: Programme Manager, CODEX, GovTech
@@ -206,33 +211,39 @@
   desc: 
   speakers: 
     - name: Hunter Nield
-      image: /assets/img/aboutus-chengyong.png
+      image: /assets/img/hunter-nield.png
       title: Distinguished Engineer, GovTech
-      desc: Hunter is the         Assistant Chief Executive for Governance and Cybersecurity, Government Technology Agency (GovTech). Her focus is to develop strategies to deepen cybersecurity capabilities and strengthen the governance function for Government digital services and Smart Nation infrastructure and applications. Bee Kwan has over 30 years of experience in the field of infocomm technology and has held leadership roles in public agencies such as Infocomm Development Authority of Singapore (GovTech’s predecessor organisation), Ministry of Health, People’s Association, and Ministry of Education (MOE).
+      desc: Hunter is a Distinguished Engineer at GovTech who specialises in cloud strategy and engineering. In 2018, he partnered GovTech's Government Digital Services team and shared his technical expertise as a Senior Smart Nation Fellow. Hunter has 20 years of private-sector experience under his belt. Prior to joining the Government, he ran businesses in Asia and Australia focused on Cloud Infrastructure, Digital Transformation and R&D.
 
 - type: Government
   timeslot: 1:50 PM - 2:15 PM
-  title: Single Identiy
+  title: Developers' Environment Endpoint Posture (DEEP)
   desc: This talk covers the threat landscape relevant to DevOps environment, as well as useful tools and tips to aid mitigation against such threats.
   speakers: 
-    - name: Chong Rong Hwa
+    - name: Stephanie Quek
       image: /assets/img/aboutus-chengyong.png
-      title: Director, Advanced Cybersecurity Capabilities, GovTech
+      title: Lead Cybersecurity Specialist, Cyber Security Group, GovTech
       desc: As a technical leader in the Cyber Security Group at the GovTech, Rong Hwa leads the cyber strategy, security testing, and cybersecurity research and development functions. Prior to joining GovTech, he was the senior architect and senior manager at FireEye Labs, where he led the research and engineering teams to combat advanced threats like APT malware and exploitation of zero-day vulnerabilities.
 
 - type: Government
   timeslot: 2:15 PM - 2:40 PM
-  title: SEED
+  title: Enabling Applications to Support Authentication with Azure AD and Conditional Access
   desc: To help agencies plan for adopting SHIP-HATS, this session gives an overview of pricing assessment of SHIP-HATS against Commercial-Off-The-Shelf products and a sneak peak into the upcoming changes in Agile tender templates
   speakers: 
-    - name: Stephanie Quek
+    - name: Kyle Marsh
       image: /assets/img/aboutus-chengyong.png
-      title: Cyber Security Group, GovTech
+      title: Principal Programme Manager, Microsoft
       desc: Stephanie is from the Procurement Division under the Governance Group in GovTech. He is responsible for managing demand aggregation tenders for WOG ICT requirements and drive ICT procurement transformation through introduction of new/enhanced procurement approaches and policies. Prior to joining this role, Aaron has more than 25 years of information communications technology experience including being in leadership roles in implementation and management of Whole-of-Government infrastructure and projects in public and private sector.
-    - name: Louis Lim
+
+- type: Government
+  timeslot: 3:05 PM - 3:30 PM
+  title: Zero Trust
+  desc: Steps to get started on SHIP-HATS
+  speakers: 
+    - name: Marco Genovese, Customer Engineer, Google Cloud Security
       image: /assets/img/aboutus-chengyong.png
-      title: Assistant General Counsel, GovTech
-      desc: Louis regularly advises on and resolves legal issues arising from GovTech’s projects and operations. He also prepares and reviews various technology-related tender documents relating to turnkey systems, application development and maintenance, and public cloud SaaS, amongst others. Prior to joining GovTech, Louis was a legal associate at an international law firm, specializing in commercial litigation and international arbitration. He is a Certified Information Privacy Professional (Asia) with the International Association of Privacy Professionals.
+      title: Google
+      desc: Denise is a Business Developer turned Product Manager at GovTech, 5 years and counting! As an ex-business developer, she supported her team with establishing “business operation readiness” which ranged from facilitating administrative tasks to Agencies’ engagement. Today, as Product Manager, she is working closely with development teams to create new products that improve business workflows and automate processes. Denise believes that the only constant in life is change, through which she constantly strives to learn, grow and improve. Outside of work, you’ll usually find Denise rock climbing, chilling with handicrafts, or spending time with her family. If you’re into sports too... she’s always game!
 
 - type: Government
   timeslot: 2:40 PM - 3:05 PM
@@ -240,16 +251,7 @@
   desc: Learn how to structure and develop your team to successfully adopt DevOps. The session also gives guidance on relevant training available.
   speakers: 
     - name: Samuel Loh
-      image: /assets/img/aboutus-chengyong.png
-      title: Senior Engineer, GovTech
+      image: /assets/img/samuel-loh.jpg
+      title: Software Engineer, GovTech
       desc: xxx Boon Nam has over 25 years of management experience in IT, holding management portfolios in IT application development, operations, quality and process improvement, planning, architecture, governance and outsourcing. Boon Nam had been a Director of Business Information Systems as well as Director of IT Operations in a public agency. Boon Nam is currently the Deputy Director of Executive Education in the Institute of Systems Science in the National University of Singapore (NUS-ISS) overseeing NUS-ISS work as Operations Partner for The Digital Academy by GovTech. He is also a Certified Scaled Agile Framework Program Consultant, ICAgile Certified Professional in Agile Coaching and a TOGAF Certified Enterprise Architect.
-
-- type: Government
-  timeslot: 3:05 PM - 3:30 PM
-  title: Zero Trust
-  desc: Steps to get started on SHIP-HATS
-  speakers: 
-    - name: Marco G
-      image: /assets/img/aboutus-chengyong.png
-      title: Google
-      desc: Denise is a Business Developer turned Product Manager at GovTech, 5 years and counting! As an ex-business developer, she supported her team with establishing “business operation readiness” which ranged from facilitating administrative tasks to Agencies’ engagement. Today, as Product Manager, she is working closely with development teams to create new products that improve business workflows and automate processes. Denise believes that the only constant in life is change, through which she constantly strives to learn, grow and improve. Outside of work, you’ll usually find Denise rock climbing, chilling with handicrafts, or spending time with her family. If you’re into sports too... she’s always game!
+      
