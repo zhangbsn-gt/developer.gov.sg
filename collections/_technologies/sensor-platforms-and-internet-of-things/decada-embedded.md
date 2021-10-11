@@ -37,7 +37,7 @@ The team uses DECADA Embedded as a starting point to design and build gateways a
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/decada-embedded-fig1.png" width="70%" height="70%" 
+    src="/assets/img/decada-embedded-fig1.png" width="50%" height="50%" 
     alt="Fig 1: Example of DECADA Embedded gateway"
   />
   <figcaption>Fig 1: Example of DECADA Embedded gateway</figcaption>
@@ -45,7 +45,7 @@ The team uses DECADA Embedded as a starting point to design and build gateways a
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/decada-embedded-fig2.png" width="70%" height="70%" 
+    src="/assets/img/decada-embedded-fig2.png" width="50%" height="50%" 
     alt="Fig 2: Example of DECADA Embedded sensor node"
   />
   <figcaption>Fig 2: Example of DECADA Embedded sensor node</figcaption>
@@ -56,7 +56,7 @@ SafeEntry Gateway prototypes were based off decada-embedded-example-mbedos, whic
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/decada-embedded-fig3.png" width="70%" height="70%" 
+    src="/assets/img/decada-embedded-fig3.png" width="50%" height="50%" 
     alt="Fig 3: Early prototype of SafeEntry Gateway"
   />
   <figcaption>Fig 3: Early prototype of SafeEntry Gateway</figcaption>
@@ -69,7 +69,7 @@ A Decada-embedded device that uploads contact tracing data from the trace togeth
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/decada-embedded-fig4.png" width="70%" height="70%" 
+    src="/assets/img/decada-embedded-fig4.png" width="50%" height="50%" 
     alt="Fig 4: TraceTogether Upload Station"
   />
   <figcaption>Fig 4: TraceTogether Upload Station</figcaption>
@@ -80,7 +80,7 @@ Sport Singapore, Gardens by the Bay, National Parks Board (NParks), and the Cent
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/decada-embedded-fig5.png" width="70%" height="70%" 
+    src="/assets/img/decada-embedded-fig5.png" width="50%" height="50%" 
     alt="Fig 5: Deployment of Mobile Lampposts at Bukit Gombak Stadium"
   />
   <figcaption>Fig 5: Deployment of Mobile Lampposts at Bukit Gombak Stadium</figcaption>
@@ -88,7 +88,7 @@ Sport Singapore, Gardens by the Bay, National Parks Board (NParks), and the Cent
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/decada-embedded-fig6.png" width="70%" height="70%" 
+    src="/assets/img/decada-embedded-fig6.png" width="50%" height="50%" 
     alt="Fig 6: Deployment of DECADA Embedded gateway at Singapore Botanic Gardens"
   />
   <figcaption>Fig 6: Deployment of DECADA Embedded gateway at Singapore Botanic Gardens</figcaption>
@@ -96,10 +96,10 @@ Sport Singapore, Gardens by the Bay, National Parks Board (NParks), and the Cent
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/decada-embedded-fig7.png" width="70%" height="70%" 
+    src="/assets/img/decada-embedded-fig7.png" width="50%" height="50%" 
     alt="Fig 7: Smart Lamppost with weather-station at Singapore Botanic Gardens"
   />
-  <figcaption>Fig 7: DSmart Lamppost with weather-station at Singapore Botanic Gardens</figcaption>
+  <figcaption>Fig 7: Smart Lamppost with weather-station at Singapore Botanic Gardens</figcaption>
 </figure>
 
 ### What's Next?
