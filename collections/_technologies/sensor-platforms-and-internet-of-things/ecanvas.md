@@ -4,6 +4,12 @@ layout: layout-page-sidenav
 category: Sensors and IOT
 description: >
   The eCanvas is a voice-controlled assistive technology that provides greater independence for persons with disabilities.
+bios:
+  - name: Ong Lay Teen, Team Lead, Lead R&D/Systems Engineer
+    img_src: ecanvas-ong-lay-teen.png
+    desc: |
+      Lay Teen is the team leader of the Enabling (Assistive) Tech Team and a Lead R&D/Systems Engineer at GovTech.  She has over 20 years of international research and development experience in the industry and academia. Her specialisation includes advanced algorithm development, signal processing and RF/Microwave Engineering.  She received her Ph.D. in Engineering from Cardiff University, UK, Master of Science from the National University of Singapore (NUS) and Degree in Engineering from Nanyang Technological University (NTU). Lay Teen is passionate about learning, exploring, and sharing advanced technologies from/with research institutions and industry.  Her current focus is on leading the team in the development of Enabling/Assistive Technology that enable people of special needs to live independently and have a more fulfilling life.
+
 ---
 
 ### Overview
