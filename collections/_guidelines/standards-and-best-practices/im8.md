@@ -24,9 +24,7 @@ The IM8 uplifts ICT & SS capabilities across the Government, sets out requiremen
 
 ### Use Cases
 
-The public may find the following IM8 policy domains relevant:
-
-- Government Personal Data Protection Laws and Policies (data management by public agencies and third parties of public agencies) \[[link](https://www.smartnation.gov.sg/why-Smart-Nation/secure-smart-nation/personal-data-protection)\]
+- Government Personal Data Protection Laws and Policies (data management by public agencies and third parties of public agencies) \[[link](https://www.smartnation.gov.sg/about-smart-nation/secure-smart-nation/personal-data-protection){:target="_blank"}\]
 
 - Digital Service Standards \[[link](https://www.tech.gov.sg/digital-service-standards/)\]
 

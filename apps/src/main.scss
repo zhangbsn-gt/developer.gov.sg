@@ -17,6 +17,10 @@ a.feedback-banner-link {
   text-decoration: underline;
 }
 
+.sgds-notification a.announcement-link {
+  color: $blue;
+}
+
 a.external-link::after {
   display: inline-block;
   font-family: sgds-icons;
