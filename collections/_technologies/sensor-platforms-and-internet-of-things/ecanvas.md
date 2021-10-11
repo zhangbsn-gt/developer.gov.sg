@@ -10,6 +10,25 @@ bios:
     desc: |
       Lay Teen is the team leader of the Enabling (Assistive) Tech Team and a Lead R&D/Systems Engineer at GovTech.  She has over 20 years of international research and development experience in the industry and academia. Her specialisation includes advanced algorithm development, signal processing and RF/Microwave Engineering.  She received her Ph.D. in Engineering from Cardiff University, UK, Master of Science from the National University of Singapore (NUS) and Degree in Engineering from Nanyang Technological University (NTU). Lay Teen is passionate about learning, exploring, and sharing advanced technologies from/with research institutions and industry.  Her current focus is on leading the team in the development of Enabling/Assistive Technology that enable people of special needs to live independently and have a more fulfilling life.
 
+  - name: Benjamen Lim, Associate R&D Engineer
+    img_src: ecanvas-benjamen-lim.png
+    desc: |
+      Benjamen is an associate R&D engineer at GovTech. Benjamen graduated from Northwestern University in the United States with a master’s and bachelor’s in mechanical engineering, specialising in robotics. He is passionate about design and prototyping ideas, from embedded programming to mechanical design, and is excited to contribute to our Smart Nation by using these skills to benefit others.
+      
+  - name: Lee Si Min, Associate R&D Engineer
+    img_src: ecanvas-lee-si-min.png
+    desc: |
+      Si Min graduated from NTU with a degree in Computer Science. She enjoys developing assistive technology applications which enable users to live fulfilling and independent lives.
+      
+  - name: Tan Yi Ming, Associate R&D Engineer
+    img_src: ecanvas-tan-yi-ming.png
+    desc: |
+      Yi Ming graduated from NTU with a degree in Electrical and Electronic Engineering. He specialises in Intelligent Systems & Control Engineering. Yi Ming is passionate about developing assistive solutions that can help empower and enable users with special needs to live their lives independently.
+      
+  - name: Esmond Ng, Associate R&D Engineer
+    img_src: ecanvas-esmond-ng.png
+    desc: |
+      Esmond graduated from NTU with a degree in Mechanical Engineering, with a specialisation in Mechatronics and Robotics Systems. Driven by curiosity and passion, Esmond enjoys challenging himself in the field of technology and improving the quality of life of individuals. Apart from work commitments, Esmond enjoys watching movies to be inspired.
 ---
 
 ### Overview
@@ -80,3 +99,28 @@ The eCanvas project also represents the start of GovTech’s assistive technolog
 ### Contact Information
 
 For enquiries, email <info@tech.gov.sg>.
+
+### Meet the Team!
+
+<div class="card-grid-container grid-25rem">
+  {% for bios in page.bios %}
+  {% assign img_url = "/assets/img/" | append: bios.img_src %}
+  <div class="sgds-card">
+    <div class="sgds-card-content">
+      <img style="float: left; margin-right: 20px;" src="{{ img_url }}" alt="{{ bios.name}}">
+      <p><strong>{{ bios.name}}</strong><br>
+        {{ bios.desc }}
+      </p>
+    </div>
+  </div>
+  {% endfor %}  
+</div>
+
+eCanvas Contributors (2018-2019):
+
+-	Quek Yang Boon, Director 
+-	Tony Varghese, Product Manager 
+-	Liew Hua Peng, Lead System Engineer 
+-	Sivaguru Sivagnanam, Associate Systems Engineer (Oct 2019 – Jun 2020); Intern (Jan – Aug 2019)
+-	Kaitlyn Ng, Intern, NUS, Bachelor’s in Computer Science
+ 
