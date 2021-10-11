@@ -53,7 +53,7 @@ Instead of voice commands, users can adopt a sensitive touch button to carry out
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/technologies/ecanvas-user.png" width="100%" height="100%" 
+    src="/assets/img/eCanvas-fig2.png" width="100%" height="100%" 
     alt="Fig 2: An adult mouth-painter painting with the eCanvas"
   />
   <figcaption>Fig 2: An adult mouth-painter painting with the eCanvas</figcaption>
