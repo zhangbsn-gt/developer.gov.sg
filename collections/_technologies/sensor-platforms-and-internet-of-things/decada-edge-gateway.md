@@ -11,7 +11,6 @@ bios:
    - name: Tony Varghese, Product Manager
     img_src: iot-tony-varghese.png
     desc: Tony is the Product Manager for DECADA. He joined GovTech in Nov 2018 with the ambition of being part of the team that builds Singapore’s Smart Nation      efforts. Aside from his work commitments, Tony enjoys playing cricket.
-
 ---
 
 ### Overview
