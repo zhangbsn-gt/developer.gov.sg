@@ -58,9 +58,9 @@ You can use DECADA Cloud in conjunction with DECADA Embedded or Edge, or on its 
 
 DECADA Cloud is used in nearly all of SIOT’s deployments. Some notable use-cases deployed today that exploit the full functionality of DECADA Cloud are the SmartGym and the SafeEntry Gateway projects.  
 
-[SmartGym](https://www.developer.tech.gov.sg/technologies/sensor-platforms-and-internet-of-things/smartgym) uses DECADA Cloud to collect and store user data from sensors located in SportSG gyms. OTA updates are also pushed to deployed Edge devices through the Cloud.
+[SmartGym](https://www.developer.tech.gov.sg/technologies/sensor-platforms-and-internet-of-things/smartgym){:target="_blank"} uses DECADA Cloud to collect and store user data from sensors located in SportSG gyms. OTA updates are also pushed to deployed Edge devices through the Cloud.
 
-The [SafeEntry Gateway](https://www.developer.tech.gov.sg/technologies/digital-solutions-to-address-covid-19/safeentry.html) pushes token data to DECADA Cloud, and relies on integrations within DECADA Cloud with other GovTech services to ensure that up-to-date information is always available to enable smooth contact tracing efforts.
+The [SafeEntry Gateway](https://www.developer.tech.gov.sg/technologies/digital-solutions-to-address-covid-19/safeentry.html){:target="_blank"} pushes token data to DECADA Cloud, and relies on integrations within DECADA Cloud with other GovTech services to ensure that up-to-date information is always available to enable smooth contact tracing efforts.
 
 ### Contact Information
 
