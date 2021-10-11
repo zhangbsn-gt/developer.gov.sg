@@ -4,7 +4,10 @@ layout: layout-page-sidenav
 category: Sensors and IOT
 description: DECADA Embedded (formerly known as MANUCA) are a family of microcontroller-class devices that can communicate directly to DECADA Cloud.
 bios:
-
+  - name: Christopher Tong, Product Manager
+    img_src: XXXXXXXX
+    desc: |
+      Chris is the Product Manager for DECADA Embedded. He graduated with an undergraduate degree in Operations Research and a Master’s of Science in Civil Engineering from UC Berkeley. A former Smart Nation Resident Fellow at GovTech, his current areas of focus include infrastructure, IOT, and lighting systems. Chris is interested in all things to do with cities and urbanisation.
 ---
 
 ### Overview
@@ -59,7 +62,16 @@ For enquiries, contact Christopher Tong (Product Manager) at <christopher_tong@t
 
 ### Meet the Team!
 
-
-
-
-
+<div class="card-grid-container grid-25rem">
+  {% for bios in page.bios %}
+  {% assign img_url = "/assets/img/" | append: bios.img_src %}
+  <div class="sgds-card">
+    <div class="sgds-card-content">
+      <img style="float: left; margin-right: 20px;" src="{{ img_url }}" alt="{{ bios.name}}">
+      <p><strong>{{ bios.name}}</strong><br>
+        {{ bios.desc }}
+      </p>
+    </div>
+  </div>
+  {% endfor %}  
+</div>
