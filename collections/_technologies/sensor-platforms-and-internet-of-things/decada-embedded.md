@@ -32,24 +32,74 @@ Refer to README.md of the respective decada-embedded-example-* repository.
 
 ### Success Stories
 
-SafeEntry Gateway prototypes were based on decada-embedded-example-mbedos, which gave developers the speed to iterate the business logic, instead of handling cloud connection logic.
+**DECADA Embedded Gateway and Sensor Nodes**<br>
+The team uses DECADA Embedded as a starting point to design and build gateways and sensor nodes.
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/decada-embedded-fig1.png" width="40%" height="40%" 
-    alt="Fig 1: Early prototype of SafeEntry Gateway"
+    src="/assets/img/decada-embedded-fig1.png" width="70%" height="70%" 
+    alt="Fig 1: Example of DECADA Embedded gateway"
   />
-  <figcaption>Fig 1: Early prototype of SafeEntry Gateway</figcaption>
+  <figcaption>Fig 1: Example of DECADA Embedded gateway</figcaption>
 </figure>
+
+<figure style="text-align: center">
+  <img
+    src="/assets/img/decada-embedded-fig2.png" width="70%" height="70%" 
+    alt="Fig 2: Example of DECADA Embedded sensor node"
+  />
+  <figcaption>Fig 2: Example of DECADA Embedded sensor node</figcaption>
+</figure>
+
+**SafeEntry Gateway**<br>
+SafeEntry Gateway prototypes were based off decada-embedded-example-mbedos, which gave developers the speed to iterate the business logic, instead of handling cloud connection logic.
+
+<figure style="text-align: center">
+  <img
+    src="/assets/img/decada-embedded-fig3.png" width="70%" height="70%" 
+    alt="Fig 3: Early prototype of SafeEntry Gateway"
+  />
+  <figcaption>Fig 3: Early prototype of SafeEntry Gateway</figcaption>
+</figure>
+
+**TraceTogether Upload Station**<br>
+A Decada-embedded device that uploads contact tracing data from the trace together tokens for covid positive patients.  Featuring remote firmware update capability, this device enables nurses to spend less time uploading contact tracing data and focus on what they do best - caring for patients.
 
 [Sport Singapore](https://www.sportsingapore.gov.sg/) and [National Parks Board (NParks)](https://www.nparks.gov.sg/) used IoT devices based on decada-embedded-example-mbedos software for their smart lighting works.
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/decada-embedded-fig2.png" width="40%" height="40%" 
-    alt="Fig 2: Smart Lamppost at Singapore Botanic Gardens"
+    src="/assets/img/decada-embedded-fig4.png" width="70%" height="70%" 
+    alt="Fig 4: TraceTogether Upload Station"
   />
-  <figcaption>Fig 2: Smart Lamppost at Singapore Botanic Gardens</figcaption>
+  <figcaption>Fig 4: TraceTogether Upload Station</figcaption>
+</figure>
+
+**Smart Street Lighting**<br>
+Sport Singapore, Gardens by the Bay, National Parks Board (NParks), and the Centre of Excellence for Testing & Research of Autonomous Vehicles – NTU (CETRAN) used IoT devices based off DECADA embedded for their smart street lighting works.
+
+<figure style="text-align: center">
+  <img
+    src="/assets/img/decada-embedded-fig5.png" width="70%" height="70%" 
+    alt="Fig 5: Deployment of Mobile Lampposts at Bukit Gombak Stadium"
+  />
+  <figcaption>Fig 5: Deployment of Mobile Lampposts at Bukit Gombak Stadium</figcaption>
+</figure>
+
+<figure style="text-align: center">
+  <img
+    src="/assets/img/decada-embedded-fig6.png" width="70%" height="70%" 
+    alt="Fig 6: Deployment of DECADA Embedded gateway at Singapore Botanic Gardens"
+  />
+  <figcaption>Fig 6: Deployment of DECADA Embedded gateway at Singapore Botanic Gardens</figcaption>
+</figure>
+
+<figure style="text-align: center">
+  <img
+    src="/assets/img/decada-embedded-fig7.png" width="70%" height="70%" 
+    alt="Fig 7: Smart Lamppost with weather-station at Singapore Botanic Gardens"
+  />
+  <figcaption>Fig 7: DSmart Lamppost with weather-station at Singapore Botanic Gardens</figcaption>
 </figure>
 
 ### What's Next?
