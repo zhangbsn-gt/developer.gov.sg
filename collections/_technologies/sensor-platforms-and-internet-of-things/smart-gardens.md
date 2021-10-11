@@ -3,6 +3,26 @@ title: Smart Gardens – Deploying Digital Technologies for Better Park Manageme
 layout: layout-page-sidenav
 category: Sensors and IOT
 description: Smart Gardens at Gardens by the Bay deploys digital technologies to better manage park operations, improve visitor safety and enhance park experience.
+bios:
+  - name: Tan Chin Hiong, Team Lead, System Architect
+    img_src: smart-gardens-tan-chin-hiong.png
+    desc: |
+      Chin Hiong is a team lead and systems architect at GovTech. Chin Hiong graduated from the National University of Singapore with a PhD in Electrical & Computer Engineering. He has over 15 years of experience in systems engineering and Research and Development (R&D), including the fields of neural networks, computer vision and evolutionary algorithms. Chin Hiong is passionate about harnessing technology to improve people’s lives and inspiring the next generation of engineers.
+
+  - name: Christopher Tong, Product Manager
+    img_src: smart-gardens-christopher-tong.png
+    desc: |
+      Christopher is an Engineering Product Manager at GovTech. Chris graduated with an undergraduate degree in Operations Research and a Masters of Science in Civil Engineering from UC Berkeley. A former Smart Nation Resident Fellow at GovTech, his current areas of focus include infrastructure, IOT, and lighting systems. He is interested in all things to do with cities and urbanisation.
+
+  - name: Sufie Luo, Software Engineer - Backend Developer
+    img_src: smart-gardens-sufie-luo.png
+    desc: |
+      Sufie is a software engineer. Sufie worked at Envision Digital and she graduated from the Southeast University of China with a Masters Degree in Computer Science and Technology. Sufie specialises in distributed middleware and software development. She enjoys turning technology into products that make life better.
+      
+  - name: Soong Yi Ning, Frontend Developer
+    img_src: smart-gardens-soong-yi-ning.png
+    desc: |
+      Yi Ning joined GovTech in 2020 after graduating from Singapore Institute of Technology, drawn in by a desire to use technology for public good. She applies her expertise to her personal life by developing and using various applications for leisure.
 ---
 
 ### Overview
@@ -28,3 +48,19 @@ The SIOT team is also working to develop IoT systems for the Whole-Of-Government
 ### Contact Information
 
 For enquiries, email <Christopher_TONG@tech.gov.sg>.
+
+### Meet the Team!
+
+<div class="card-grid-container grid-25rem">
+  {% for bios in page.bios %}
+  {% assign img_url = "/assets/img/" | append: bios.img_src %}
+  <div class="sgds-card">
+    <div class="sgds-card-content">
+      <img style="float: left; margin-right: 20px;" src="{{ img_url }}" alt="{{ bios.name}}">
+      <p><strong>{{ bios.name}}</strong><br>
+        {{ bios.desc }}
+      </p>
+    </div>
+  </div>
+  {% endfor %}  
+</div>
