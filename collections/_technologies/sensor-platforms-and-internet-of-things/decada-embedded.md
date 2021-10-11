@@ -36,7 +36,7 @@ SafeEntry Gateway prototypes were based on decada-embedded-example-mbedos, which
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/decada-embedded-fig1.png" width="75%" height="75%" 
+    src="/assets/img/decada-embedded-fig1.png" width="40%" height="40%" 
     alt="Fig 1: Early prototype of SafeEntry Gateway"
   />
   <figcaption>Fig 1: Early prototype of SafeEntry Gateway</figcaption>
@@ -46,7 +46,7 @@ SafeEntry Gateway prototypes were based on decada-embedded-example-mbedos, which
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/decada-embedded-fig2.png" width="75%" height="75%" 
+    src="/assets/img/decada-embedded-fig2.png" width="40%" height="40%" 
     alt="Fig 2: Smart Lamppost at Singapore Botanic Gardens"
   />
   <figcaption>Fig 2: Smart Lamppost at Singapore Botanic Gardens</figcaption>
