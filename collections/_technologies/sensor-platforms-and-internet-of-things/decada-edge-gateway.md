@@ -22,7 +22,7 @@ Edge gateways are a commonly used architectural component in Internet of Things 
 
 ### What is DECADA Edge Gateway?
 
-DECADA Edge Gateway is a product and software solution to onboard new and existing sensor nodes to DECADA easily and securely. It is both a gateway that communicates with DECADA Cloud, and an edge device that communicates with sensor nodes, and processes and aggregates their data. Agencies can make use of its web user interface to allow for various combinations of sensor nodes connection and data processing. It also relays information to sensors that might be unable to store a X.509 certifcate or sensors that reside in a secure network.
+DECADA Edge Gateway is a product and software solution to onboard new and existing sensor nodes to DECADA easily and securely. It is both a gateway that communicates with DECADA Cloud, and an edge device that communicates with sensor nodes, and processes and aggregates their data. Agencies can make use of its web user interface to allow for various combinations of sensor nodes connection and data processing. It also relays information to sensors that might be unable to store a X.509 certificate or sensors that reside in a secure network.
 
 **Design Overview**
 
