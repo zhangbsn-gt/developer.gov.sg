@@ -102,6 +102,10 @@
       image: /assets/img/kevin-ng.jpg
       title: Director, CODEX, GovTech
       desc: Kevin is the CODEX product leader for the Government Commercial Cloud and Singapore Government Tech Stack products with the goal of transforming developer experience - both inhouse and outsourced teams - for government-built product & services. Prior to joining GovTech, he was the Senior Director, Product and Technology at Expedia and was based in Singapore and London. Kevin has led global teams involved in search and globalisation, transformed monolithic solutions into microservices on the cloud, created reusable platform components for both customer-facing apps and internal-use pipelines, and re-architected monolithic systems to incorporate artificial intelligence models. With over 100 members, his team spanned across the US, UK, Hungary, Jordan, India, China, Singapore and a few smaller locations, and comprised engineering and product directors, product managers, technical product managers and engineers. Kevin graduated with a B.Sc. (First Class Honours) in Computer Science from the National University of Singapore (NUS) and holds a M.Sc. (by Research) in Computer Science from NUS.
+    - name: Erlina Ke
+      image: /assets/img/placeholder.png
+      title: Chief Information Officer, Ministry of Law
+      desc: 
 
 - type: Leader
   timeslot: 2:30 PM - 2:40 PM
@@ -136,10 +140,6 @@
       image: /assets/img/kevin-ng.jpg
       title: Director, CODEX, GovTech
       desc: Kevin is the CODEX product leader for the Government Commercial Cloud and Singapore Government Tech Stack products with the goal of transforming developer experience - both inhouse and outsourced teams - for government-built product & services. Prior to joining GovTech, he was the Senior Director, Product and Technology at Expedia and was based in Singapore and London. Kevin has led global teams involved in search and globalisation, transformed monolithic solutions into microservices on the cloud, created reusable platform components for both customer-facing apps and internal-use pipelines, and re-architected monolithic systems to incorporate artificial intelligence models. With over 100 members, his team spanned across the US, UK, Hungary, Jordan, India, China, Singapore and a few smaller locations, and comprised engineering and product directors, product managers, technical product managers and engineers. Kevin graduated with a B.Sc. (First Class Honours) in Computer Science from the National University of Singapore (NUS) and holds a M.Sc. (by Research) in Computer Science from NUS.
-    - name: Erlina Ke
-      image: /assets/img/placeholder.png
-      title: Chief Information Officer, Ministry of Law
-      desc: 
   
 #- type: Leader
 #  timeslot: 3:00 PM - 3:30 PM
@@ -160,7 +160,7 @@
     - name: Abhijeet Menon
       image: /assets/img/abhijeet-menon.jpg
       title: Senior Solution Architect, GovTech
-      desc: Abhijeet has 17 years of experience in planning, designing and architecting applications. Currently assisting agencies to solution modern applications using CI / CD, Cloud native services and Containers. He is also involved in planning designs to allow productivity and cost optimisation for the Agency.
+      desc: Abhijeet has over 18 years of experience in planning, designing and architecting applications. Currently, he is assisting agencies to solution modernised applications using CI/CD, Cloud native services, containers, SaaS and other areas of cloud adoption. He is also involved in planning designes to allow enterprise level productivity using microservices and cost optimisation for the Agency.
 #    - name: x
 #      image: /assets/img/aboutus-chengyong.png
 #      title: Solution Architect
