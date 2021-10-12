@@ -86,7 +86,7 @@ When a campaign is launched, the performance of the campaign will be tracked and
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/technologies/Fig 2 Email personalisation workflow.jpg"  
+    src="/assets/img/technologies/Fig 2 Email personalisation workflow.png"  
     alt="Fig 2 Email personalisation workflow"
   />
   <figcaption>Fig 2 Email personalisation workflow</figcaption>
@@ -99,7 +99,7 @@ The MyNiceHome team achieves web personalisation simply by integrating it with t
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/technologies/Fig 3 Web personalisation use case (HDB’s MyNiceHome website).jpg"  
+    src="/assets/img/technologies/Fig 3 Web personalisation use case (HDB’s MyNiceHome website).PNG"  
     alt="Fig 3: Web personalisation use case (HDB’s MyNiceHome website)"
   />
   <figcaption>Fig 3: Web personalisation use case (HDB’s MyNiceHome website)</figcaption>
