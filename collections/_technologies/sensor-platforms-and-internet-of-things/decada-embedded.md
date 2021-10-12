@@ -20,7 +20,7 @@ bios:
       Jun Hong leads an agile embedded platform team to design and build the DECADA Embedded platform as an innovative solution to support the development of Smart Nation projects. He has been in embedded system engineering domain for over eighteen years, delivering new and innovative solutions for various companies ranging from tertiary education institutes, research institutes to major engineering corporations. Jun Hong received his Master of Science in Embedded Systems from Nanyang Technological University (NTU) and Bachelors of Engineering in Electronics Engineering from University of Surrey, UK.
 
   - name: Petrus Lai, Senior Embedded Engineer
-    img_src: decada-embedded-petru-lai.png
+    img_src: decada-embedded-petrus-lai.png
     desc: |
       Petrus is a hardware guy whose main role is electronic circuit design; he occasionally works on PCB layout. His main fields of interest are embedded hardware, Avionics, RF & wireless, high-speed serial links analysis and modeling, signal integrity and signal processing. In his spare time, Petrus likes to read and muse over physics and philosophical stuff.
 
