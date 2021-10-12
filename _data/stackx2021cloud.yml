@@ -26,7 +26,7 @@
   desc: Tom Soderstrom, an industry leader in cloud, shares how NASA embarked and excelled in its cloud journey.
   speakers:
     - name: Tom Soderstrom
-      image: /assets/img/Tom-Soderstrom.jpg
+      image: /assets/img/stack-x-cloud-2021-tom-soderstrom.png
       title: Director or Lead Architects, AWS (IT Chief Technology and Innovation Officer at NASA's Jet Propulsion Laboratory, 2006-2020)
       desc: Tom leads a senior team of trusted technology advisors to key public sector customers and to AWS services teams. They identify technology trends that will impact how we will work in the future and help explain, prioritise, and advocate for the current and future needs of the public sector worldwide. They also seek out and help create reusable services to benefit public sector and large customers across global geographies and vertical market segments. Tom served from 2006-2020 as the IT Chief Technology and Innovation Officer at NASA's Jet Propulsion Laboratory. Tom had led remote teams with large scale IT technologies, best practices, tools development, and change efforts in small startups, large commercial companies, in international venues, and in the US Government arena. Tom is defining and actively surfing the next innovations and technology waves that will significantly impact enterprises' future. He consults with researchers, startups, industry, and government leaders on how to benefit from key disrupters including technology disrupters, new organisational structures, and our 21st Century workforce. These include recruiting/retaining/retraining and building innovation labs to benefit from Cloud Computing, advanced networking, Intelligent Digital Assistants, Internet of Things, Artificial Intelligence, Machine Learning, Quantum Computing, Natural User Interfaces, Robotics, Advanced Analytics, Smart Data, Crowd Sourcing, Open Source, Mixed Reality, Agile, and DevOps. In other words:how we will work in the future.
 
@@ -36,7 +36,7 @@
   desc: Following the announcement of the "Cloud First Strategy" in early 2019, Tan Eng Pheng, ACE, shares how we have progressed on this vision and how we are democratising collaboration opportunities.
   speakers: 
     - name: Tan Eng Pheng
-      image: /assets/img/tan-eng-pheng.png
+      image: /assets/img/stack-x-cloud-2021-tan-eng-pheng.png
       title: Assistant Chief Executive, GovTech
       desc: Eng Pheng currently heads the Services Group at the Government Technology Agency, and oversees a workforce of more than 1,500 ICT professional that constitute the CIO teams at 52 Singapore public sector agencies. His portfolio includes digital transformation of public organisations, technology planning and implementation, as well as ICT work force capability enhancement. He oversees the secretariat of the Government’s Ministry Family Digitalisation Programme (MFDP) with the charter to coordinate and support government agencies’ digitalisation. Prior to his current role, Eng Pheng led a number of Sectoral Transformation initiatives spanning sectors such as trade and logistics, finance, tourism, education and healthcare during his stint in the Infocomm Development Authority. He had also led eGovernment planning at the whole-of-government level, and provided consultancy at G-G level. Eng Pheng has more than 30 years of infocomm industry experience. He holds a MSc (Management of Technology) from the National University of Singapore, and attended the Advanced Management Program at the Harvard Business School in 2013.
 
@@ -46,7 +46,7 @@
   desc: We heard you! You've shared your challenges with GCC in the Annual Developer Satisfaction Survey. In this session, Kevin Ng, Director of CODEX, will be sharing the enhancements with GCC 2.0
   speakers: 
     - name: Kevin Ng
-      image: /assets/img/kevin-ng.jpg
+      image: /assets/img/stack-x-cloud-2021-kevin-ng.png
       title: Director, CODEX, GovTech
       desc: Kevin is the CODEX product leader for the Government Commercial Cloud and Singapore Government Tech Stack products with the goal of transforming developer experience - both inhouse and outsourced teams - for government-built product & services. Prior to joining GovTech, he was the Senior Director, Product and Technology at Expedia and was based in Singapore and London. Kevin has led global teams involved in search and globalisation, transformed monolithic solutions into microservices on the cloud, created reusable platform components for both customer-facing apps and internal-use pipelines, and re-architected monolithic systems to incorporate artificial intelligence models. With over 100 members, his team spanned across the US, UK, Hungary, Jordan, India, China, Singapore and a few smaller locations, and comprised engineering and product directors, product managers, technical product managers and engineers. Kevin graduated with a B.Sc. (First Class Honours) in Computer Science from the National University of Singapore (NUS) and holds a M.Sc. (by Research) in Computer Science from NUS.
 
@@ -56,11 +56,11 @@
   desc: The new GCC 2.0 will allow continuous compliance monitoring via Policy-as-Code (PaC) and landing zones that allow us to scale multi-tenant quicker, more consistently and more security. Don't miss the live demo of the new GCC 2.0!
   speakers: 
     - name: Hunter Nield
-      image: /assets/img/hunter-nield.png
+      image: /assets/img/stack-x-cloud-2021-hunter-nield.png
       title: Distinguished Engineer, GovTech
       desc: Hunter is a Distinguished Engineer at GovTech who specialises in cloud strategy and engineering. In 2018, he partnered GovTech's Government Digital Services team and shared his technical expertise as a Senior Smart Nation Fellow. Hunter has 20 years of private-sector experience under his belt. Prior to joining the Government, he ran businesses in Asia and Australia focused on Cloud Infrastructure, Digital Transformation and R&D.
     - name: Chia Hsiao Ming
-      image: /assets/img/hsiao-ming.jpg
+      image: /assets/img/stack-x-cloud-2021-chia-hsiao-ming.png
       title: Director, Engineering Productivity, GovTech
       desc: Hsiao Ming leads Engineering Productivity at Government Digital Services in GovTech. His group focuses on platforms and services to accelerate the development of digital services for the Government. This includes the Application Programming Interface Exchange (APEX) - a centralised government-wide API library and the Next-Generation Container Architecture (NECTAR), a cloud-based platform-as-a-service which streamlines and accelerates the process of application development. As part of the Singapore Government Tech Stack (SGTS), APEX and NECTAR allow the public and private sectors to collaborate effectively and efficiently on digital projects that create value for citizens. A software engineer by trade, Hsiao Ming likes to explore new developments related to cloud, containers and programming. In his spare time, he dabbles with IoT devices and runs a small hydroponics setup on his balcony.
 
@@ -81,7 +81,7 @@
   desc: While some Government CIOs remain fearful of the unknown and potentially shun, delay or slow the adoption of cloud computing, the short answer is yes. This research highlights that governments are successfully adopting cloud, and offers advice on how to improve the success ratio.
   speakers: 
     - name: Neville Cannon
-      image: /assets/img/neville-cannon.jpg
+      image: /assets/img/stack-x-cloud-2021-neville-cannon.png
       title: Senior Director, Analyst, Gartner
       desc: Neville Cannon is a Senior Director, Analyst in the Industries Research Group, Government and Education, at Gartner. He focuses on the public sector and government in particular, supporting CIOs and TSP Product Leaders
 
@@ -95,11 +95,11 @@
       title: Director, IRIN 3 Architecture Office (I3AO), Inland Revenue Authority of Singapore (IRAS)
       desc: 
     - name: Bernard Tan
-      image: /assets/img/bernard-tan.jpg
+      image: /assets/img/stack-x-cloud-2021-bernard-tan.png
       title: Director, Government Cybersecurity Consulting Services, GovTech
       desc: 
     - name: Kevin Ng
-      image: /assets/img/kevin-ng.jpg
+      image: /assets/img/stack-x-cloud-2021-kevin-ng.png
       title: Director, CODEX, GovTech
       desc: Kevin is the CODEX product leader for the Government Commercial Cloud and Singapore Government Tech Stack products with the goal of transforming developer experience - both inhouse and outsourced teams - for government-built product & services. Prior to joining GovTech, he was the Senior Director, Product and Technology at Expedia and was based in Singapore and London. Kevin has led global teams involved in search and globalisation, transformed monolithic solutions into microservices on the cloud, created reusable platform components for both customer-facing apps and internal-use pipelines, and re-architected monolithic systems to incorporate artificial intelligence models. With over 100 members, his team spanned across the US, UK, Hungary, Jordan, India, China, Singapore and a few smaller locations, and comprised engineering and product directors, product managers, technical product managers and engineers. Kevin graduated with a B.Sc. (First Class Honours) in Computer Science from the National University of Singapore (NUS) and holds a M.Sc. (by Research) in Computer Science from NUS.
     - name: Erlina Ke
@@ -123,7 +123,7 @@
   desc: Continuing from the keynote sessions, Kevin will double click further on the enhancements and how leaders can leverage the new and improved GCC 2.0
   speakers:
     - name: Kevin Ng
-      image: /assets/img/kevin-ng.jpg
+      image: /assets/img/stack-x-cloud-2021-kevin-ng.png
       title: Director, CODEX, GovTech
       desc: Kevin is the CODEX product leader for the Government Commercial Cloud and Singapore Government Tech Stack products with the goal of transforming developer experience - both inhouse and outsourced teams - for government-built product & services. Prior to joining GovTech, he was the Senior Director, Product and Technology at Expedia and was based in Singapore and London. Kevin has led global teams involved in search and globalisation, transformed monolithic solutions into microservices on the cloud, created reusable platform components for both customer-facing apps and internal-use pipelines, and re-architected monolithic systems to incorporate artificial intelligence models. With over 100 members, his team spanned across the US, UK, Hungary, Jordan, India, China, Singapore and a few smaller locations, and comprised engineering and product directors, product managers, technical product managers and engineers. Kevin graduated with a B.Sc. (First Class Honours) in Computer Science from the National University of Singapore (NUS) and holds a M.Sc. (by Research) in Computer Science from NUS.
 
@@ -137,7 +137,7 @@
       title: Director, IRIN 3 Architecture Office (I3AO), Inland Revenue Authority of Singapore (IRAS)
       desc:  
     - name: Kevin Ng
-      image: /assets/img/kevin-ng.jpg
+      image: /assets/img/stack-x-cloud-2021-kevin-ng.png
       title: Director, CODEX, GovTech
       desc: Kevin is the CODEX product leader for the Government Commercial Cloud and Singapore Government Tech Stack products with the goal of transforming developer experience - both inhouse and outsourced teams - for government-built product & services. Prior to joining GovTech, he was the Senior Director, Product and Technology at Expedia and was based in Singapore and London. Kevin has led global teams involved in search and globalisation, transformed monolithic solutions into microservices on the cloud, created reusable platform components for both customer-facing apps and internal-use pipelines, and re-architected monolithic systems to incorporate artificial intelligence models. With over 100 members, his team spanned across the US, UK, Hungary, Jordan, India, China, Singapore and a few smaller locations, and comprised engineering and product directors, product managers, technical product managers and engineers. Kevin graduated with a B.Sc. (First Class Honours) in Computer Science from the National University of Singapore (NUS) and holds a M.Sc. (by Research) in Computer Science from NUS.
     - name: Bernard Tan
@@ -162,7 +162,7 @@
   desc: 
   speakers: 
     - name: Abhijeet Menon
-      image: /assets/img/abhijeet-menon.jpg
+      image: /assets/img/stack-x-cloud-2021-abhijeet-menon.png
       title: Senior Solution Architect, GovTech
       desc: Abhijeet has over 18 years of experience in planning, designing and architecting applications. Currently, he is assisting agencies to solution modernised applications using CI/CD, Cloud native services, containers, SaaS and other areas of cloud adoption. He is also involved in planning designes to allow enterprise level productivity using microservices and cost optimisation for the Agency.
 #    - name: x
@@ -176,7 +176,7 @@
   desc: 
   speakers: 
     - name: Tang Bing Wan
-      image: /assets/img/tang-bing-wan.jpg
+      image: /assets/img/stack-x-cloud-2021-tang-bing-wan.png
       title: Principal Application Infrastructure Architect, Central TS, GovTech
       desc: A passionate architect and technical manager, Bing Wan started his career as a software developer (Informix, Java, C) focusing on both banking and shipping domains. He developed a passion in IT infrastructure, security and operations, which guided his subsequent work as an architect even as the landscape shifted from on-premise/physical, virtualisation to cloud, microservices, and zero-trust security paradigm. His most recent role as one of GovTech's Principal Infrastructure Architect further honed his skills in enabling a team of fellow passionate professionals to re-factor systems, IT operating model and culture to cloud. His current interest and focus area is on cloud automation/software defined infrastructure strategy across Singapore's whole-of-government.
     - name: Jessica Tan
@@ -194,7 +194,7 @@
       title: Lead Solution Architect, Solution Architect Office, GovTech
       desc: 
     - name: Mahesh Rajagopal
-      image: /assets/img/Mahesh-Rajagopal.jpg
+      image: /assets/img/stack-x-cloud-2021-mahesh-rajagopal.jpg
       title: Senior Application Infrastructure Engineer, Central TS, GovTech
       desc: 
 
@@ -204,7 +204,7 @@
   desc: 
   speakers: 
     - name: Choong Keng Leong
-      image: /assets/img/keng-leong.jpg
+      image: /assets/img/stack-x-cloud-2021-choong-keng-leong.png
       title: Director, Government Infrastructure Group, GovTech
       desc: 
 
@@ -229,7 +229,7 @@
   desc: 
   speakers: 
     - name: Hunter Nield
-      image: /assets/img/hunter-nield.png
+      image: /assets/img/stack-x-cloud-2021-hunter-nield.png
       title: Distinguished Engineer, GovTech
       desc: Hunter is a Distinguished Engineer at GovTech who specialises in cloud strategy and engineering. In 2018, he partnered GovTech's Government Digital Services team and shared his technical expertise as a Senior Smart Nation Fellow. Hunter has 20 years of private-sector experience under his belt. Prior to joining the Government, he ran businesses in Asia and Australia focused on Cloud Infrastructure, Digital Transformation and R&D.
 
@@ -239,7 +239,7 @@
   desc: An introduction to DEEP and how it benefits Developers 
   speakers: 
     - name: Stephanie Quek
-      image: /assets/img/stephanie-quek.jpg
+      image: /assets/img/stack-x-cloud-2021-stephanie-quek.png
       title: Lead Cybersecurity Specialist, Cyber Security Group, GovTech
 #      desc: As a technical leader in the Cyber Security Group at the GovTech, Rong Hwa leads the cyber strategy, security testing, and cybersecurity research and development functions. Prior to joining GovTech, he was the senior architect and senior manager at FireEye Labs, where he led the research and engineering teams to combat advanced threats like APT malware and exploitation of zero-day vulnerabilities.
 
