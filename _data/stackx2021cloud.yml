@@ -94,10 +94,10 @@
       image: /assets/img/placeholder-image.png
       title: Director, IRIN 3 Architecture Office (I3AO), Inland Revenue Authority of Singapore (IRAS)
       desc: 
-#    - name: Chai Chin Loon
-#      image: /assets/img/chin-loon.jpg
-#      title: Senior Director, Cyber Security Group & Government Chief Information Security Officer, GovTech
-#      desc: Chin Loon is currently the Senior Director of the Cyber Security Group (CSG) and Government Chief Information Security Officer (GCISO) in GovTech. CSG secures Government info-communications technology and smart systems (ICT&SS), develops the public sector’s resilience, and partners the cybersecurity ecosystem against cyber threats to the Government. The group serves as the Centre of Excellence to provide cybersecurity governance supported by consulting practice in addition to resilient monitoring of security events with robust incident response capabilities. He also oversees the Chief Information Security Officers deployed to all Government Ministries of Singapore.
+    - name: Bernard Tan
+      image: /assets/img/bernard-tan.jpg
+      title: Director, Government Cybersecurity Consulting Services, GovTech
+      desc: 
     - name: Kevin Ng
       image: /assets/img/kevin-ng.jpg
       title: Director, CODEX, GovTech
@@ -140,7 +140,11 @@
       image: /assets/img/kevin-ng.jpg
       title: Director, CODEX, GovTech
       desc: Kevin is the CODEX product leader for the Government Commercial Cloud and Singapore Government Tech Stack products with the goal of transforming developer experience - both inhouse and outsourced teams - for government-built product & services. Prior to joining GovTech, he was the Senior Director, Product and Technology at Expedia and was based in Singapore and London. Kevin has led global teams involved in search and globalisation, transformed monolithic solutions into microservices on the cloud, created reusable platform components for both customer-facing apps and internal-use pipelines, and re-architected monolithic systems to incorporate artificial intelligence models. With over 100 members, his team spanned across the US, UK, Hungary, Jordan, India, China, Singapore and a few smaller locations, and comprised engineering and product directors, product managers, technical product managers and engineers. Kevin graduated with a B.Sc. (First Class Honours) in Computer Science from the National University of Singapore (NUS) and holds a M.Sc. (by Research) in Computer Science from NUS.
-  
+    - name: Bernard Tan
+      image: /assets/img/bernard-tan.jpg
+      title: Director, Government Cybersecurity Consulting Services, GovTech
+      desc: 
+      
 #- type: Leader
 #  timeslot: 3:00 PM - 3:30 PM
 #  title: Cloud Migration Strategy
