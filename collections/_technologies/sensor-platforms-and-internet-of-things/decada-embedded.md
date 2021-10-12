@@ -8,7 +8,7 @@ bios:
     img_src: decada-embedded-christopher-tong.png
     desc: |
       Chris is the Product Manager for DECADA Embedded. He graduated with an undergraduate degree in Operations Research and a Master’s of Science in Civil Engineering from UC Berkeley. A former Smart Nation Resident Fellow at GovTech, his current areas of focus include infrastructure, IOT, and lighting systems. Chris is interested in all things to do with cities and urbanisation.
-      
+
   - name: Ho How Hon, Lead Embedded Engineer
     img_src: decada-embedded-ho-how-hon.png
     desc: |
@@ -23,7 +23,7 @@ bios:
     img_src: decada-embedded-petru-lai.png
     desc: |
       Petrus is a hardware guy whose main role is electronic circuit design; he occasionally works on PCB layout. His main fields of interest are embedded hardware, Avionics, RF & wireless, high-speed serial links analysis and modeling, signal integrity and signal processing. In his spare time, Petrus likes to read and muse over physics and philosophical stuff.
-      
+
   - name: Paramod Kumar, Senior Embedded Engineer
     img_src: decada-embedded-paramod-kumar.png
     desc: |
@@ -68,6 +68,7 @@ bios:
     img_src: decada-embedded-stephanie-wong.png
     desc: |
       Steph is a software engineer who used to be a website administrator. After completing a mid-career switch programme from Digipen, she joined GovTech and began working on DECADA Embedded platform. Steph joined GovTech as she is interested in working on projects that can help improve the everyday lives of people in Singapore.
+      
 --- 
 
 ### Overview
