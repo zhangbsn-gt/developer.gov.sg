@@ -91,7 +91,7 @@
   desc: IRAS leads the panel to discuss the common challenges preventing agencies from migrating to the cloud, and some of the strategies to overcome the challenges.
   speakers: 
     - name: Yap Mia Kai
-      image: /assets/img/placeholder.png
+      image: /assets/img/placeholder-image.png
       title: Director, IRIN 3 Architecture Office (I3AO), Inland Revenue Authority of Singapore (IRAS)
       desc: 
 #    - name: Chai Chin Loon
@@ -103,7 +103,7 @@
       title: Director, CODEX, GovTech
       desc: Kevin is the CODEX product leader for the Government Commercial Cloud and Singapore Government Tech Stack products with the goal of transforming developer experience - both inhouse and outsourced teams - for government-built product & services. Prior to joining GovTech, he was the Senior Director, Product and Technology at Expedia and was based in Singapore and London. Kevin has led global teams involved in search and globalisation, transformed monolithic solutions into microservices on the cloud, created reusable platform components for both customer-facing apps and internal-use pipelines, and re-architected monolithic systems to incorporate artificial intelligence models. With over 100 members, his team spanned across the US, UK, Hungary, Jordan, India, China, Singapore and a few smaller locations, and comprised engineering and product directors, product managers, technical product managers and engineers. Kevin graduated with a B.Sc. (First Class Honours) in Computer Science from the National University of Singapore (NUS) and holds a M.Sc. (by Research) in Computer Science from NUS.
     - name: Erlina Ke
-      image: /assets/img/placeholder.png
+      image: /assets/img/placeholder-image.png
       title: Chief Information Officer, Ministry of Law
       desc: 
 
@@ -113,7 +113,7 @@
   desc: 
   speakers:
     - name: Yap Mia Kai
-      image: /assets/img/placeholder.png
+      image: /assets/img/placeholder-image.png
       title: Director, IRIN 3 Architecture Office (I3AO), Inland Revenue Authority of Singapore (IRAS)
       desc: 
       
@@ -133,7 +133,7 @@
   desc: An in-depth exploration of the new GCC 2.0
   speakers: 
     - name: Yap Mia Kai
-      image: /assets/img/placeholder.png
+      image: /assets/img/placeholder-image.png
       title: Director, IRIN 3 Architecture Office (I3AO), Inland Revenue Authority of Singapore (IRAS)
       desc:  
     - name: Kevin Ng
@@ -176,7 +176,7 @@
       title: Principal Application Infrastructure Architect, Central TS, GovTech
       desc: A passionate architect and technical manager, Bing Wan started his career as a software developer (Informix, Java, C) focusing on both banking and shipping domains. He developed a passion in IT infrastructure, security and operations, which guided his subsequent work as an architect even as the landscape shifted from on-premise/physical, virtualisation to cloud, microservices, and zero-trust security paradigm. His most recent role as one of GovTech's Principal Infrastructure Architect further honed his skills in enabling a team of fellow passionate professionals to re-factor systems, IT operating model and culture to cloud. His current interest and focus area is on cloud automation/software defined infrastructure strategy across Singapore's whole-of-government.
     - name: Jessica Tan
-      image: /assets/img/placeholder.png
+      image: /assets/img/placeholder-image.png
       title: Programme Manager, CODEX, GovTech
       desc: 
 
@@ -186,7 +186,7 @@
   desc: 
   speakers: 
     - name: Kent Lai
-      image: /assets/img/placeholder.png
+      image: /assets/img/placeholder-image.png
       title: Lead Solution Architect, Solution Architect Office, GovTech
       desc: 
     - name: Mahesh Rajagopal
@@ -245,7 +245,7 @@
   desc: 
   speakers: 
     - name: Kyle Marsh
-      image: /assets/img/placeholder.png
+      image: /assets/img/placeholder-image.png
       title: Principal Programme Manager, Microsoft
  #     desc: Stephanie is from the Procurement Division under the Governance Group in GovTech. He is responsible for managing demand aggregation tenders for WOG ICT requirements and drive ICT procurement transformation through introduction of new/enhanced procurement approaches and policies. Prior to joining this role, Aaron has more than 25 years of information communications technology experience including being in leadership roles in implementation and management of Whole-of-Government infrastructure and projects in public and private sector.
 
@@ -255,7 +255,7 @@
   desc: 
   speakers: 
     - name: Marco Genovese
-      image: /assets/img/placeholder.png
+      image: /assets/img/placeholder-image.png
       title: Customer Engineer, Google Cloud Security
 #      desc: Denise is a Business Developer turned Product Manager at GovTech, 5 years and counting! As an ex-business developer, she supported her team with establishing “business operation readiness” which ranged from facilitating administrative tasks to Agencies’ engagement. Today, as Product Manager, she is working closely with development teams to create new products that improve business workflows and automate processes. Denise believes that the only constant in life is change, through which she constantly strives to learn, grow and improve. Outside of work, you’ll usually find Denise rock climbing, chilling with handicrafts, or spending time with her family. If you’re into sports too... she’s always game!
 
