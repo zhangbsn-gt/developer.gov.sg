@@ -5,9 +5,46 @@ category: Sensors and IOT
 description: DECADA Embedded (formerly known as MANUCA) are a family of microcontroller-class devices that can communicate directly to DECADA Cloud.
 bios:
   - name: Christopher Tong, Product Manager
-    img_src: XXXXXXXX
+    img_src: decada-embedded-christopher-tong.png
     desc: |
       Chris is the Product Manager for DECADA Embedded. He graduated with an undergraduate degree in Operations Research and a Master’s of Science in Civil Engineering from UC Berkeley. A former Smart Nation Resident Fellow at GovTech, his current areas of focus include infrastructure, IOT, and lighting systems. Chris is interested in all things to do with cities and urbanisation.
+      
+  - name: Ho How Hon, Lead Embedded Engineer
+    img_src: decada-embedded-ho-how-hon.png
+    desc: |
+      How Hon leads a team of embedded engineers to design and build solutions based on DECADA Embedded. He has over 18 years of experience building embedded solutions for industrial applications that are used by millions worldwide to simplify their everyday tasks. His latest solutions include the TraceTogether Token and TraceTogether Upload Station.
+
+  - name: Lee Jun Hong, Lead Embedded Engineer
+    img_src: decada-embedded-lee-jun-hong.png
+    desc: |
+      Jun Hong leads an agile embedded platform team to design and build the DECADA Embedded platform as an innovative solution to support the development of Smart Nation projects. He has been in embedded system engineering domain for over eighteen years, delivering new and innovative solutions for various companies ranging from tertiary education institutes, research institutes to major engineering corporations. Jun Hong received his Master of Science in Embedded Systems from Nanyang Technological University (NTU) and Bachelors of Engineering in Electronics Engineering from University of Surrey, UK.
+
+  - name: Petrus Lai, Senior Embedded Engineer
+    img_src: decada-embedded-petru-lai.png
+    desc: |
+      Petrus is a hardware guy whose main role is electronic circuit design; he occasionally works on PCB layout. His main fields of interest are embedded hardware, Avionics, RF & wireless, high-speed serial links analysis and modeling, signal integrity and signal processing. In his spare time, Petrus likes to read and muse over physics and philosophical stuff.
+      
+  - name: Paramod Kumar, Senior Embedded Engineer
+    img_src: decada-embedded-paramod-kumar.png
+    desc: |
+      Kumar's main interest is in Firmware/Embedded Software. He has experience in a wide range of embedded systems, ranging from simple MCU based embedded systems to more complex embedded Linux and embedded Android based systems. Kumar has broadened his knowledge with native mobile app development and AI-related stuff. He is currently supporting on TraceTogether Tokens and Upload Station. Kumar received his MSc(EE) from National University of Singapore and BE(Electronics) from Yangon Technological University.
+
+  - name: Lau Lee Hong, Software Engineer
+    img_src: decada-embedded-lau-lee-hong.png
+    desc: |
+      Lee Hong leads the development of the Device Software Platform at SIOT. His work involves software that cuts through various stacks of IoT, including device RTOS, Cloud, and Microservices. In addition, Lee Hong is the Co-Author of IM8 for IOT, developing standards and guidelines for the Whole-of-Government (WoG). He brings global software development experience to the team, having been with Dyson (Singapore) and PalleTech (San Francisco, USA) prior to GovTech.
+Lee Hong received his B.Eng (Electrical Engineering) from the National University of Singapore (NUS), and is an alumni of the NUS College in Silicon Valley.
+
+  - name: Renee Loh, Embedded Engineer
+    img_src: decada-embedded-renee-loh.png
+    desc: |
+      Renee is an Embedded Engineer at Govtech. She has many years of experience in product development and manufacturing. Renee specialises in multi-layered Printed Circuit Board design and works with various ECAD tools such as Altium, PADS, Mentor Graphics, Valid Allegro, EE-Designer, GC-PowerStation, CAM350 and Fabmaster/TestExpert for DFT, and Valor Trilogy for DFM.
+
+  - name: Fu Guangwei, Embedded Engineer
+    img_src: decada-embedded-fu-guangwei.png
+    desc: |
+      Guangwei is an Embedded Engineer at Govtech and mainly involved in the development of IoT devices. He has ten years of development experience in robotic field and successfully developed telepresence robot, AGV, intelligent scooter, UAV system, etc. He is also familiar with hardware and software development. Guangwei received his Master of Science in Computer Control & Automation from NTU in 2011. He consistently pursues innovation and new challenges to stretch his abilities. 
+
 ---
 
 ### Overview
