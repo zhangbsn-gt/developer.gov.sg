@@ -32,8 +32,7 @@ bios:
   - name: Lau Lee Hong, Software Engineer
     img_src: decada-embedded-lau-lee-hong.png
     desc: |
-      Lee Hong leads the development of the Device Software Platform at SIOT. His work involves software that cuts through various stacks of IoT, including device RTOS, Cloud, and Microservices. In addition, Lee Hong is the Co-Author of IM8 for IOT, developing standards and guidelines for the Whole-of-Government (WoG). He brings global software development experience to the team, having been with Dyson (Singapore) and PalleTech (San Francisco, USA) prior to GovTech.
-Lee Hong received his B.Eng (Electrical Engineering) from the National University of Singapore (NUS), and is an alumni of the NUS College in Silicon Valley.
+      Lee Hong leads the development of the Device Software Platform at SIOT. His work involves software that cuts through various stacks of IoT, including device RTOS, Cloud, and Microservices. In addition, Lee Hong is the Co-Author of IM8 for IOT, developing standards and guidelines for the Whole-of-Government (WoG). He brings global software development experience to the team, having been with Dyson (Singapore) and PalleTech (San Francisco, USA) prior to GovTech. Lee Hong received his B.Eng (Electrical Engineering) from the National University of Singapore (NUS), and is an alumni of the NUS College in Silicon Valley.
 
   - name: Renee Loh, Embedded Engineer
     img_src: decada-embedded-renee-loh.png
