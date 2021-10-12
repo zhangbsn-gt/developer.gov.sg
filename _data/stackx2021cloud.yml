@@ -115,8 +115,8 @@
       
 - type: Leader
   timeslot: 2:40 PM - 2:50 PM
-  title: GCC 2.0 Features
-  desc: 
+  title: GCC 2.0 At A Glance
+  desc: A brief look at what the new GCC 2.0 is all about
   speakers:
     - name: Kevin Ng
       image: /assets/img/kevin-ng.jpg
