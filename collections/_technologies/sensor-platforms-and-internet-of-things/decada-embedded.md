@@ -68,8 +68,7 @@ bios:
     img_src: decada-embedded-stephanie-wong.png
     desc: |
       Steph is a software engineer who used to be a website administrator. After completing a mid-career switch programme from Digipen, she joined GovTech and began working on DECADA Embedded platform. Steph joined GovTech as she is interested in working on projects that can help improve the everyday lives of people in Singapore.
-      
---- 
+---
 
 ### Overview
 
