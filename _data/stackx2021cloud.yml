@@ -13,7 +13,7 @@
 - type: Keynote
   timeslot: 09:30 AM - 09:40 AM
   title: Welcome Remarks
-  desc: Opening address
+  desc: Senior Minister of State will open the conference showing how the cloud vision is critical for digital governance, providing world-class services to our citizens and businesses.
   speakers: 
     - name: Dr Janil Puthucheary
       image: /assets/img/SMS-DR-JANIL.jpg
@@ -22,8 +22,8 @@
 
 - type: Keynote
   timeslot: 09:40 AM - 10:10 AM
-  title: Cloud Journey
-  desc: Cloud Journey of NASA - Jet Propulsion Laboratory
+  title: Cloud Journey of NASA - Jet Propulsion Laboratory
+  desc: Tom Soderstrom, an industry leader in cloud, shares how NASA embarked and excelled in its cloud journey.
   speakers:
     - name: Tom Soderstrom
       image: /assets/img/Tom-Soderstrom.jpg
@@ -33,7 +33,7 @@
 - type: Keynote
   timeslot: 10:10 AM - 10:35 AM
   title: Accelerating Digital Transformation with Government on Commercial Cloud
-  desc: GCC is the Government platform that streamlines operations and aggregate demands of Commercial Cloud. Our aim is to level the playing field for partners of different sizes to develop on the cloud, which also helps us stay on track with the DGB KPI of system on Cloud.
+  desc: Following the announcement of the "Cloud First Strategy" in early 2019, Tan Eng Pheng, ACE, shares how we have progressed on this vision and how we are democratising collaboration opportunities.
   speakers: 
     - name: Tan Eng Pheng
       image: /assets/img/tan-eng-pheng.png
@@ -43,7 +43,7 @@
 - type: Keynote
   timeslot: 10:35 AM - 10:55 AM
   title: GCC Road Ahead
-  desc: Much can be improved for GCC. The new GCC 2.0 will speed things up even faster with even more native accessibility capability, and be more secure and strong endpoint protection and single sign-on.
+  desc: We heard you! You've shared your challenges with GCC in the Annual Developer Satisfaction Survey. In this session, Kevin Ng, Director of CODEX, will be sharing the enhancements with GCC 2.0
   speakers: 
     - name: Kevin Ng
       image: /assets/img/kevin-ng.jpg
@@ -53,7 +53,7 @@
 - type: Keynote
   timeslot: 10:55 AM - 11:30 AM
   title: GCC 2.0 Design Principles and Showcase
-  desc: The new GCC 2.0 will allow continuous compliance monitoring via Policy-as-Code (PaC) and landing zones that allow us to scale multi-tenant quicker, more consistently and more security. There will also be a live demo of the new GCC 2.0!
+  desc: The new GCC 2.0 will allow continuous compliance monitoring via Policy-as-Code (PaC) and landing zones that allow us to scale multi-tenant quicker, more consistently and more security. Don't miss the live demo of the new GCC 2.0!
   speakers: 
     - name: Hunter Nield
       image: /assets/img/hunter-nield.png
@@ -78,7 +78,7 @@
 - type: Leader
   timeslot: 1:30 PM - 1:50 PM
   title: Is Government Migration of Cloud Successful?
-  desc: While some Government CIOs remain fearful of the unknown and potentially shun, delay or slow the adoption of cloud computing, the short answer is yes. This research highlights that governments are successfully adopting cloud, and offers advice on how to improve the success ratio
+  desc: While some Government CIOs remain fearful of the unknown and potentially shun, delay or slow the adoption of cloud computing, the short answer is yes. This research highlights that governments are successfully adopting cloud, and offers advice on how to improve the success ratio.
   speakers: 
     - name: Neville Cannon
       image: /assets/img/neville-cannon.jpg
@@ -87,8 +87,8 @@
 
 - type: Leader
   timeslot: 1:50 PM - 2:30 PM
-  title: WoG Cloud Adoption Progress - Overcoming Challenges Ahead
-  desc: Demytifying challenges of government cloud adoption
+  title: WoG Cloud Adoption Progress - Overcoming the Challenges
+  desc: IRAS leads the panel to discuss the common challenges preventing agencies from migrating to the cloud, and some of the strategies to overcome the challenges.
   speakers: 
     - name: Yap Mia Kai
       image: /assets/img/placeholder.png
@@ -116,7 +116,7 @@
 - type: Leader
   timeslot: 2:40 PM - 2:50 PM
   title: GCC 2.0 At A Glance
-  desc: A brief look at what the new GCC 2.0 is all about
+  desc: Continuing from the keynote sessions, Kevin will double click further on the enhancements and how leaders can leverage the new and improved GCC 2.0
   speakers:
     - name: Kevin Ng
       image: /assets/img/kevin-ng.jpg
@@ -158,7 +158,7 @@
   desc: 
   speakers: 
     - name: Abhijeet Menon
-      image: /assets/img/placeholder.png
+      image: /assets/img/abhijeet-menon.jpg
       title: Senior Solution Architect, GovTech
       desc: Abhijeet has 17 years of experience in planning, designing and architecting applications. Currently assisting agencies to solution modern applications using CI / CD, Cloud native services and Containers. He is also involved in planning designs to allow productivity and cost optimisation for the Agency.
 #    - name: x
@@ -172,7 +172,7 @@
   desc: 
   speakers: 
     - name: Tang Bing Wan
-      image: /assets/img/placeholder.png
+      image: /assets/img/tang-bing-wan.jpg
       title: Principal Application Infrastructure Architect, Central TS, GovTech
       desc: A passionate architect and technical manager, Bing Wan started his career as a software developer (Informix, Java, C) focusing on both banking and shipping domains. He developed a passion in IT infrastructure, security and operations, which guided his subsequent work as an architect even as the landscape shifted from on-premise/physical, virtualisation to cloud, microservices, and zero-trust security paradigm. His most recent role as one of GovTech's Principal Infrastructure Architect further honed his skills in enabling a team of fellow passionate professionals to re-factor systems, IT operating model and culture to cloud. His current interest and focus area is on cloud automation/software defined infrastructure strategy across Singapore's whole-of-government.
     - name: Jessica Tan
@@ -190,7 +190,7 @@
       title: Lead Solution Architect, Solution Architect Office, GovTech
       desc: 
     - name: Mahesh Rajagopal
-      image: /assets/img/placeholder.png
+      image: /assets/img/Mahesh-Rajagopal.jpg
       title: Senior Application Infrastructure Engineer, Central TS, GovTech
       desc: 
 
@@ -200,7 +200,7 @@
   desc: 
   speakers: 
     - name: Choong Keng Leong
-      image: /assets/img/placeholder.png
+      image: /assets/img/keng-leong.jpg
       title: Director, Government Infrastructure Group, GovTech
       desc: 
 
@@ -232,17 +232,17 @@
 - type: Government
   timeslot: 1:50 PM - 2:15 PM
   title: Developers' Environment Endpoint Posture (DEEP)
-  desc: This talk covers the threat landscape relevant to DevOps environment, as well as useful tools and tips to aid mitigation against such threats.
+  desc: 
   speakers: 
     - name: Stephanie Quek
-      image: /assets/img/placeholder.png
+      image: /assets/img/stephanie-quek.jpg
       title: Lead Cybersecurity Specialist, Cyber Security Group, GovTech
 #      desc: As a technical leader in the Cyber Security Group at the GovTech, Rong Hwa leads the cyber strategy, security testing, and cybersecurity research and development functions. Prior to joining GovTech, he was the senior architect and senior manager at FireEye Labs, where he led the research and engineering teams to combat advanced threats like APT malware and exploitation of zero-day vulnerabilities.
 
 - type: Government
   timeslot: 2:15 PM - 2:40 PM
   title: Enabling Applications to Support Authentication with Azure AD and Conditional Access
-  desc: To help agencies plan for adopting SHIP-HATS, this session gives an overview of pricing assessment of SHIP-HATS against Commercial-Off-The-Shelf products and a sneak peak into the upcoming changes in Agile tender templates
+  desc: 
   speakers: 
     - name: Kyle Marsh
       image: /assets/img/placeholder.png
@@ -252,7 +252,7 @@
 - type: Government
   timeslot: 2:40 PM - 3:05 PM
   title: Zero Trust
-  desc: Steps to get started on SHIP-HATS
+  desc: 
   speakers: 
     - name: Marco Genovese
       image: /assets/img/placeholder.png
@@ -262,7 +262,7 @@
 - type: Government
   timeslot: 3:05 PM - 3:30 PM
   title: Cloudflare
-  desc: Learn how to structure and develop your team to successfully adopt DevOps. The session also gives guidance on relevant training available.
+  desc: 
   speakers: 
     - name: Samuel Loh
       image: /assets/img/samuel-loh.jpg
