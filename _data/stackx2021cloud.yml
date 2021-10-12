@@ -232,7 +232,7 @@
 - type: Government
   timeslot: 1:50 PM - 2:15 PM
   title: Developers' Environment Endpoint Posture (DEEP)
-  desc: 
+  desc: An introduction to DEEP and how it benefits Developers 
   speakers: 
     - name: Stephanie Quek
       image: /assets/img/stephanie-quek.jpg
