@@ -34,7 +34,7 @@ bios:
 ### Overview
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tTio3SsVMvc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-In August 2018, a team led by Dr Ong Lay Teen, a Senior System Engineer at GovTech, visited [Cerebral Palsy Alliance Singapore (CPAS)](http://cpas.org.sg/) to discuss how the Sensor Platforms and Internet of Things (SIOT) team could develop new assistive technologies to aid Persons with Disabilities (PWDs). The team was introduced to Elaine, a 19-year-old who was born with cerebral palsy, a lifelong physical disability that affects both her movement and posture. Elaine is a mouth painter due to limitations in her mobility and requires the assistance of volunteers at CPAS to move her canvas and dispense paint for her. Inspired and moved by Elaine’s passion for painting, the team developed the [eCanvas](https://www.tech.gov.sg/scewc2019/ecanvas) – a voice-controlled device that would allow Elaine to paint seamlessly despite her physical limitations. Leveraging neural network technology, the eCanvas project was specifically designed to be voice-controlled due to Elaine’s strong verbal capabilities.
+In August 2018, a team led by Dr Ong Lay Teen, a Senior System Engineer at GovTech, visited [Cerebral Palsy Alliance Singapore (CPAS)](http://cpas.org.sg/){:target="_blank"} to discuss how the Sensor Platforms and Internet of Things (SIOT) team could develop new assistive technologies to aid Persons with Disabilities (PWDs). The team was introduced to Elaine, a 19-year-old who was born with cerebral palsy, a lifelong physical disability that affects both her movement and posture. Elaine is a mouth painter due to limitations in her mobility and requires the assistance of volunteers at CPAS to move her canvas and dispense paint for her. Inspired and moved by Elaine’s passion for painting, the team developed the eCanvas – a voice-controlled device that would allow Elaine to paint seamlessly despite her physical limitations. Leveraging neural network technology, the eCanvas project was specifically designed to be voice-controlled due to Elaine’s strong verbal capabilities.
 
 ### What is eCanvas?
 
@@ -54,7 +54,7 @@ The eCanvas is one of many SIOT products developed as part of the Smart Nation S
 
 ### Why should eCanvas be adopted?
 
-The SIOT team designed the eCanvas with inclusiveness in mind as technology can be used to empower minority groups in society that are often overlooked, such as PWDs. This empowers PWDs to contribute to society and achieve their dreams. As Singapore digitalises and progresses towards our [Smart Nation](https://www.smartnation.gov.sg/) plans, it is pertinent for all Singaporeans of all abilities to be included through transformative technologies such as the eCanvas.
+The SIOT team designed the eCanvas with inclusiveness in mind as technology can be used to empower minority groups in society that are often overlooked, such as PWDs. This empowers PWDs to contribute to society and achieve their dreams. As Singapore digitalises and progresses towards our [Smart Nation](https://www.smartnation.gov.sg/){:target="_blank"} plans, it is pertinent for all Singaporeans of all abilities to be included through transformative technologies such as the eCanvas.
 
 The benefits of the eCanvas include:
 
@@ -86,7 +86,7 @@ Instead of voice commands, users can adopt a sensitive touch button to carry out
 
 Beyond recreational, social and therapeutic uses, the eCanvas has benefitted PWDs financially as well. PWDs who are professional painters have indicated that with the eCanvas, mouth painting is now more seamless as this has improved their income generating abilities.
 
-eCanvas has also been deployed in the [Rainbow Centre](https://www.rainbowcentre.org.sg/), a social service agency dedicated to helping young PWDs. The eCanvas currently helps lower-primary school students with different forms of physical limitations to carry out therapeutic activities such as arts and craft.
+eCanvas has also been deployed in the [Rainbow Centre](https://www.rainbowcentre.org.sg/){:target="_blank"}, a social service agency dedicated to helping young PWDs. The eCanvas currently helps lower-primary school students with different forms of physical limitations to carry out therapeutic activities such as arts and craft.
 
 ### What’s Next?
 
