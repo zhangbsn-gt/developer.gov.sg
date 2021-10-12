@@ -4,10 +4,10 @@ layout: layout-page-sidenav
 category: Sensors and IOT
 description: Smart Gardens at Gardens by the Bay deploys digital technologies to better manage park operations, improve visitor safety and enhance park experience.
 bios:
-  - name: Tan Chin Hiong, Team Lead, System Architect
+  - name: Tan Chin Hiong, System Architect
     img_src: smart-gardens-tan-chin-hiong.png
     desc: |
-      Chin Hiong is a team lead and systems architect at GovTech. Chin Hiong graduated from the National University of Singapore with a PhD in Electrical & Computer Engineering. He has over 15 years of experience in systems engineering and Research and Development (R&D), including the fields of neural networks, computer vision and evolutionary algorithms. Chin Hiong is passionate about harnessing technology to improve people’s lives and inspiring the next generation of engineers.
+      Chin Hiong is a system architect at GovTech. Chin Hiong graduated from the National University of Singapore with a PhD in Electrical & Computer Engineering. He has over 15 years of experience in systems engineering and Research and Development (R&D), including the fields of neural networks, computer vision and evolutionary algorithms. Chin Hiong is passionate about harnessing technology to improve people’s lives and inspiring the next generation of engineers.
 
   - name: Christopher Tong, Product Manager
     img_src: smart-gardens-christopher-tong.png
