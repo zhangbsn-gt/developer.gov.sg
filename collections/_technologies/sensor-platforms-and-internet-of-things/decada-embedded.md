@@ -45,6 +45,30 @@ Lee Hong received his B.Eng (Electrical Engineering) from the National Universit
     desc: |
       Guangwei is an Embedded Engineer at Govtech and mainly involved in the development of IoT devices. He has ten years of development experience in robotic field and successfully developed telepresence robot, AGV, intelligent scooter, UAV system, etc. He is also familiar with hardware and software development. Guangwei received his Master of Science in Computer Control & Automation from NTU in 2011. He consistently pursues innovation and new challenges to stretch his abilities. 
 
+  - name: Goh Kok Boon, Associate Software Engineer
+    img_src: decada-embedded-goh-kok-boon.png
+    desc: |
+      Kok Boon codes for nation-wide projects that push the frontier of Singapore’s technological landscape in Sensors and Internet of Things. He graduated with a B.Eng Information and Communication Technology (Software Engineering) from the Singapore Institute of Technology.
+
+   - name: Yap Zi Qi, Associate Embedded Engineer
+    img_src: decada-embedded-yap-zi-qi.png
+    desc: |
+      Zi Qi is an associate embedded engineer for DECADA Embedded in SIOT. She is currently focused on building and connecting lightweight IoT modules in localisation and low-power applications. She graduated with a Bachelor of Science (Computer Engineering) from the Singapore University of Technology and Design (SUTD).
+
+   - name: Jamie Cheng, Associate Embedded Engineer
+    img_src: decada-embedded-jamie-cheng.png
+    desc: |
+      Jamie is part of the DECADA embedded team as an embedded engineer and is working on the development and implementation of nationwide projects. Jamie joined GovTech to contribute to the Smart Nation initiative. She was previously a process engineer but took up a mid-career switch program with Digipen to pursue her interest in embedded systems. 
+
+   - name: Yeo Hong Wei, Associate Embedded Engineer
+    img_src: decada-embedded-yeo-hong-wei.png
+    desc: |
+      Hong Wei is part of the DECADA Embedded team and currently works on software development of lightweight, and low power IoT applications for island-wide deployment. He previously played an administrative role in areas of facilities and logistics management, but took up a mid-career conversion program at Digipen Institute of Technology Singapore to join Govtech.
+
+   - name: Stephanie Wong, Associate Embedded Engineer
+    img_src: decada-embedded-stephanie-wong.png
+    desc: |
+      Steph is a software engineer who used to be a website administrator. After completing a mid-career switch programme from Digipen, she joined GovTech and began working on DECADA Embedded platform. Steph joined GovTech as she is interested in working on projects that can help improve the everyday lives of people in Singapore.
 ---
 
 ### Overview
