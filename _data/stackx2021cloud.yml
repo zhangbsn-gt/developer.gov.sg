@@ -93,7 +93,7 @@
     - name: Yap Mia Kai
       image: /assets/img/stack-x-cloud-2021-yap-mia-kai.png
       title: Director, IRIN 3 Architecture Office (I3AO), Inland Revenue Authority of Singapore (IRAS)
-      desc: 
+      desc: Mia Kai leads a 18-strong team that oversees the architecture and design for the Inland Revenue Interactive Network 3 (IRIN 3). IRIN 3 is the core system that runs all tax-related administrative activities at IRAS. From the beginning of his career with IRAS, he has taken on multiple roles — ranging from a developer to tech planner and a project manager — for various projects with varying degree of complexity. The work experience and skills he amassed over the years led him to his current position as the director of the I3AO unit, where he and his team are always actively exploring and leveraging modern technologies to maintain and improve the efficiency of the tax administration process.
     - name: Bernard Tan
       image: /assets/img/stack-x-cloud-2021-bernard-tan.png
       title: Director, Government Cybersecurity Consulting Services, GovTech
@@ -115,7 +115,7 @@
     - name: Yap Mia Kai
       image: /assets/img/stack-x-cloud-2021-yap-mia-kai.png
       title: Director, IRIN 3 Architecture Office (I3AO), Inland Revenue Authority of Singapore (IRAS)
-      desc: 
+      desc: Mia Kai leads a 18-strong team that oversees the architecture and design for the Inland Revenue Interactive Network 3 (IRIN 3). IRIN 3 is the core system that runs all tax-related administrative activities at IRAS. From the beginning of his career with IRAS, he has taken on multiple roles — ranging from a developer to tech planner and a project manager — for various projects with varying degree of complexity. The work experience and skills he amassed over the years led him to his current position as the director of the I3AO unit, where he and his team are always actively exploring and leveraging modern technologies to maintain and improve the efficiency of the tax administration process.
       
 - type: Leader
   timeslot: 2:40 PM - 2:50 PM
@@ -135,7 +135,7 @@
     - name: Yap Mia Kai
       image: /assets/img/stack-x-cloud-2021-yap-mia-kai.png
       title: Director, IRIN 3 Architecture Office (I3AO), Inland Revenue Authority of Singapore (IRAS)
-      desc:  
+      desc: Mia Kai leads a 18-strong team that oversees the architecture and design for the Inland Revenue Interactive Network 3 (IRIN 3). IRIN 3 is the core system that runs all tax-related administrative activities at IRAS. From the beginning of his career with IRAS, he has taken on multiple roles — ranging from a developer to tech planner and a project manager — for various projects with varying degree of complexity. The work experience and skills he amassed over the years led him to his current position as the director of the I3AO unit, where he and his team are always actively exploring and leveraging modern technologies to maintain and improve the efficiency of the tax administration process.
     - name: Kevin Ng
       image: /assets/img/stack-x-cloud-2021-kevin-ng.png
       title: Director, CODEX, GovTech
@@ -206,8 +206,7 @@
     - name: Choong Keng Leong
       image: /assets/img/stack-x-cloud-2021-choong-keng-leong.png
       title: Director, Government Infrastructure Group, GovTech
-      desc: 
-
+      desc: Keng Leong is the head for Managed Hosting Infrastructure (MHI). He is responsible for planning and implementing Whole-of-Government (WOG) initiatives with the aim to facilitate the adoption of cloud computing. MHI is also responsible for the provision of a secure and resilient data centre facility and network to public-sector bodies to host their mission-critical ICT systems. Keng Leong has a broad set of IT knowledge and experience across IT domains such as Cloud, virtualisation, operations and strategic IT management. He has been instrumental in conceptualising and orchestrating the implementation of solutions that transform Enterprise Architectures and Operating Models that meet overall business objectives and goals for many enterprise companies in Asia Pacific. He has an extensive experience in both public and private sector and has worked for high-profile technological multinational companies such as VMware, DELL EMC Corporation, Shinsei Bank Technology Services, Hewlett-Packard before his current role at GovTech. Keng Leong holds a long list of certifications on Cloud, VMWare, Enterprise Storage, TOGAF and ITIL, to name a few.
 #- type: Product
 #  timeslot: 3:00 PM - 3:30 PM
 #  title: CI/CD Strategy to Modernisation for PA
@@ -251,7 +250,7 @@
     - name: Kyle Marsh
       image: /assets/img/stack-x-cloud-2021-kyle-marsh.png
       title: Principal Programme Manager, Microsoft
- #     desc: Stephanie is from the Procurement Division under the Governance Group in GovTech. He is responsible for managing demand aggregation tenders for WOG ICT requirements and drive ICT procurement transformation through introduction of new/enhanced procurement approaches and policies. Prior to joining this role, Aaron has more than 25 years of information communications technology experience including being in leadership roles in implementation and management of Whole-of-Government infrastructure and projects in public and private sector.
+      desc: Kyle is a Principal Program Manager on the Microsoft Identity team. As part of the Identity team Kyle focuses on architecting security and access management for applications and APIs across a wide variety of developer technologies. He has extensive experience developing solutions and working with partners to help them optimize their solutions. In past lives he has been a developer for MSDN, Dr. GUI, and a developer lead on the Access team, and PM on Unified Communications and Windows.
 
 - type: Government
   timeslot: 2:40 PM - 3:05 PM
@@ -261,7 +260,7 @@
     - name: Marco Genovese
       image: /assets/img/stack-x-cloud-2021-marco-genovese.png
       title: Customer Engineer, Google Cloud Security
-#      desc: Denise is a Business Developer turned Product Manager at GovTech, 5 years and counting! As an ex-business developer, she supported her team with establishing “business operation readiness” which ranged from facilitating administrative tasks to Agencies’ engagement. Today, as Product Manager, she is working closely with development teams to create new products that improve business workflows and automate processes. Denise believes that the only constant in life is change, through which she constantly strives to learn, grow and improve. Outside of work, you’ll usually find Denise rock climbing, chilling with handicrafts, or spending time with her family. If you’re into sports too... she’s always game!
+      desc: Marco has spent the past 20 years as a security practitioner on both the customer and vendor side. Originally planting his roots in cryptography at PGP Corporation, he has since gone on to secure large scale organizations while at Symantec, Skyhigh Networks and Palo Alto Networks before joining Google to tackle Cloud Security. Currently his focus is on Security Analytics and Zero Trust within the Google portfolio.
 
 - type: Government
   timeslot: 3:05 PM - 3:30 PM
