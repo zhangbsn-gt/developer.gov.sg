@@ -13,17 +13,17 @@
 - type: Keynote
   timeslot: 09:30 AM - 09:40 AM
   title: Welcome Remarks
-  desc: Senior Minister of State will open the conference showing how the cloud vision is critical for digital governance, providing world-class services to our citizens and businesses.
+  desc: Senior Minister of State Janil Puthucheary will open the conference showing how the cloud vision is critical for digital governance, providing world-class services to our citizens and businesses.
   speakers: 
     - name: Dr Janil Puthucheary
       image: /assets/img/stack-x-cloud-2021-sms-janil.png
       title: Senior Minister of State, Ministry of Communications & Information and Ministry of Health
-      desc: Dr Janil Puthucheary was elected Member of Parliament in 2011. He is currently Senior Minister of State, Ministry of Communications and Information, and Ministry of Health. He is concurrently the Minister-in-charge of the Government Technology Agency (GovTech) where he coordinates GovTech's strategy with industry development efforts as part of the Smart Nation initiative, and is a member of the Ministerial Committee overseeing the Smart Nation and Digital Government Group (SNDGG). He chairs OnePeople.sg, which works to promote racial harmoney in Singapore. His political roles include Chair of Young PAP (the youth wing of the People's Action Party), and the Government Whip.
+      desc: Dr Janil Puthucheary was elected Member of Parliament in 2011. He is currently Senior Minister of State, Ministry of Communications and Information, and Ministry of Health. He is concurrently the Minister-in-charge of the Government Technology Agency (GovTech) where he coordinates GovTech's strategy with industry development efforts as part of the Smart Nation initiative, and is a member of the Ministerial Committee overseeing the Smart Nation and Digital Government Group (SNDGG). He chairs OnePeople.sg, which works to promote racial harmony in Singapore. His political roles include Chair of Young PAP (the youth wing of the People's Action Party), and the Government Whip.
 
 - type: Keynote
   timeslot: 09:40 AM - 10:10 AM
   title: Cloud Journey of NASA - Jet Propulsion Laboratory
-  desc: Tom Soderstrom, an industry leader in cloud, shares how NASA embarked and excelled in its cloud journey.
+  desc: Tom Soderstrom, an industry leader in cloud, shares how NASA embarked on its cloud journey and excelled.
   speakers:
     - name: Tom Soderstrom
       image: /assets/img/stack-x-cloud-2021-tom-soderstrom.png
@@ -33,7 +33,7 @@
 - type: Keynote
   timeslot: 10:10 AM - 10:35 AM
   title: Accelerating Digital Transformation with Government on Commercial Cloud
-  desc: Following the announcement of the "Cloud First Strategy" in early 2019, Tan Eng Pheng, ACE, shares how we have progressed on this vision and how we are democratising collaboration opportunities.
+  desc: The "Cloud First Strategy" was first announced in early 2019. Tan Eng Pheng, GovTech Assistant CE, shares how we have progressed on this vision and how we are democratising collaboration opportunities.
   speakers: 
     - name: Tan Eng Pheng
       image: /assets/img/stack-x-cloud-2021-tan-eng-pheng.png
@@ -53,7 +53,7 @@
 - type: Keynote
   timeslot: 10:55 AM - 11:30 AM
   title: GCC 2.0 Design Principles and Showcase
-  desc: The new GCC 2.0 will allow continuous compliance monitoring via Policy-as-Code (PaC) and landing zones that allow us to scale multi-tenant quicker, more consistently and more security. Don't miss the live demo of the new GCC 2.0!
+  desc: The new GCC 2.0 will allow continuous compliance monitoring via Policy-as-Code (PaC) and landing zones that allow us to scale multi-tenant quicker, more consistently and more securely. Don't miss the live demo of the new GCC 2.0!
   speakers: 
     - name: Hunter Nield
       image: /assets/img/stack-x-cloud-2021-hunter-nield.png
@@ -120,7 +120,7 @@
 - type: Leader
   timeslot: 2:40 PM - 2:50 PM
   title: GCC 2.0 At A Glance
-  desc: Continuing from the keynote sessions, Kevin will double click further on the enhancements and how leaders can leverage the new and improved GCC 2.0
+  desc: Continuing from the keynote sessions, Kevin will "double click" on the enhancements and how leaders can leverage the new and improved GCC 2.0
   speakers:
     - name: Kevin Ng
       image: /assets/img/stack-x-cloud-2021-kevin-ng.png
@@ -180,7 +180,7 @@
       title: Principal Application Infrastructure Architect, Central TS, GovTech
       desc: A passionate architect and technical manager, Bing Wan started his career as a software developer (Informix, Java, C) focusing on both banking and shipping domains. He developed a passion in IT infrastructure, security and operations, which guided his subsequent work as an architect even as the landscape shifted from on-premise/physical, virtualisation to cloud, microservices, and zero-trust security paradigm. His most recent role as one of GovTech's Principal Infrastructure Architect further honed his skills in enabling a team of fellow passionate professionals to re-factor systems, IT operating model and culture to cloud. His current interest and focus area is on cloud automation/software defined infrastructure strategy across Singapore's whole-of-government.
     - name: Jessica Tan
-      image: /assets/img/stack-x-cloud-2021-jessica-tan.png
+      image: /assets/img/stack-x-cloud-2021-jessica-tan2.png
       title: Programme Manager, CODEX, GovTech
       desc: 
 
