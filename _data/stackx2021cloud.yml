@@ -235,7 +235,7 @@
 - type: Government
   timeslot: 1:50 PM - 2:15 PM
   title: Securing Developers' Engineering Devices
-  desc: Secure by developers, for developers! That was our mantra when we developed Developers' Environment Endpoint Posture (DEEP). It helps developers establish a robust security baseline for their engineering devices, and prevents insecure or compromised devices from accessing engineering resources, all while remaining agile and flexible. Learn how DEEP can benefit developers working on applications hosted in GCC 2.0!
+  desc: Secured by developers, for developers! That was our mantra when we developed Developers' Environment Endpoint Posture (DEEP). It helps developers establish a robust security baseline for their engineering devices, and prevents insecure or compromised devices from accessing engineering resources, all while remaining agile and flexible. Learn how DEEP can benefit developers working on applications hosted in GCC 2.0!
   speakers: 
     - name: Stephanie Quek
       image: /assets/img/stack-x-cloud-2021-stephanie-quek.png
