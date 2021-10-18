@@ -22,12 +22,12 @@
 
 - type: Keynote
   timeslot: 09:40 AM - 10:10 AM
-  title: Cloud Journey of NASA - Jet Propulsion Laboratory
+  title: Impacts and Lessons Learned from NASA/Jet Propulsion Laboratory's Cloud Computing Journey
   desc: Tom Soderstrom, an industry leader in cloud, shares how NASA embarked on its cloud journey and excelled.
   speakers:
     - name: Tom Soderstrom
       image: /assets/img/stack-x-cloud-2021-tom-soderstrom.png
-      title: Director or Lead Architects, AWS (IT Chief Technology and Innovation Officer at NASA's Jet Propulsion Laboratory, 2006-2020)
+      title: Director or Chief Technologists, Worldwide Public Sector, Amazon Web Services (IT Chief Technology and Innovation Officer at NASA's Jet Propulsion Laboratory, 2006-2020)
       desc: Tom leads a senior team of trusted technology advisors to key public sector customers and AWS services teams. They identify technology trends that will impact how we will work in the future and help explain, prioritise, and advocate for the current and future needs of the public sector worldwide. They also seek out and help create reusable services to benefit the public sector and large customers across global geographies and vertical market segments. Tom served from 2006-2020 as the IT Chief Technology and Innovation Officer at NASA's Jet Propulsion Laboratory. Tom had led remote teams with large scale IT technologies, best practices, tools development, and change efforts in small startups, large commercial companies, in international venues, and in the US Government arena. Tom is defining and actively surfing the next innovations and technology waves that will significantly impact enterprises' future. He consults with researchers, startups, industry, and government leaders on how to benefit from key disrupters including technology disrupters, new organisational structures, and our 21st Century workforce. These include recruiting/retaining/retraining and building innovation labs to benefit from Cloud Computing, Advanced Networking, Intelligent Digital Assistants, Internet of Things, Artificial Intelligence, Machine Learning, Quantum Computing, Natural User Interfaces, Robotics, Advanced Analytics, Smart Data, Crowd Sourcing, Open Source, Mixed Reality, Agile, and DevOps. In other words:how we will work in the future.
 
 - type: Keynote
