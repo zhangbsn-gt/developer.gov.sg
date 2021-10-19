@@ -15,7 +15,7 @@ There are three groups of BookingSG users: service administrators, service provi
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/bookingsg-fig1.png" width="100%" height="100%" 
+    src="/assets/img/bookingsg-fig1.png" width="80%" height="80%" 
     alt="Fig 1: BookingSG’s services for service administrators, service providers and citizens (left to right)"
   />
   <figcaption>Fig 1: BookingSG’s services for service administrators, service providers and citizens (left to right)</figcaption>
@@ -50,7 +50,7 @@ To start using BookingSG, fill out this [form](https://form.gov.sg/#!/605a9d2e7b
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/bookingsg-fig3.png" width="100%" height="100%" 
+    src="/assets/img/bookingsg-fig3.png" width="80%" height="80%" 
     alt="Fig 3: BookingSG’s dashboard for calendar bookings"
   />
   <figcaption>Fig 3: BookingSG’s dashboard for calendar bookings</figcaption>
