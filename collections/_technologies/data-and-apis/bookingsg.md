@@ -50,7 +50,7 @@ To start using BookingSG, fill out this [form](https://form.gov.sg/#!/605a9d2e7b
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/bookingsg-fig3.png" width="400%" height="500%" 
+    src="/assets/img/bookingsg-fig3.png" width="400%" height="800%" 
     alt="Fig 3: BookingSG’s dashboard for calendar bookings"
   />
   <figcaption>Fig 3: BookingSG’s dashboard for calendar bookings</figcaption>
