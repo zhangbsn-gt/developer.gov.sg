@@ -1,39 +1,65 @@
 ---
-title: BookingSG
+title: BookingSG – A Pre-Booking Tool for Calendaring, Availability, Rostering and Booking (CARB) Management.
 layout: layout-page-sidenav
 category: Data and APIs
 description: BookingSG is a Calendaring, Availability, Rostering and Booking (CARB) management tool for agencies that offer services which require pre-booking.
 ---
 
-## Overview
+### Overview
 
-Agencies that offer services which require pre-booking can use BookingSG to perform Calendaring, Availability, Rostering and Booking (CARB) management. BookingSG can be leveraged as a service on its own: it can be offered as part of a user journey or it can be used as an engine. BookingSG aims to serve these 3 user groups:
-![3 User Groups](/assets/img/BookingSG-3UserGroups.png)
-*Examples of services are: a person’s time, facilities, events or courses and for crowd control purposes.*
+BookingSG helps Government agencies to offer pre-booking services to citizens. Through BookingSG, agencies can perform Calendaring, Availability, Rostering and Booking (CARB) management. BookingSG can be leveraged as a service on its own, it can be offered as part of a user journey or it can be used as an engine. 
 
-### Features
-![How to Use](/assets/img/BookingSG-HowtoUse.png)
+### What is BookingSG?
 
-BookingSG’s fluid integration principles offer the highest form of flexibility, and it can cater for any degree of journey experience for various use cases. BookingSG adopts one of the most popular cloud computing models -- ‘Software-as-a-Service’ (Saas). The SaaS model of software delivery is easy to access and it has become common for many types of business applications. The SaaS model can help agencies with their MVP launch, while continuously iterating with agencies on their product evolution journey.
+There are three groups of BookingSG users: service administrators, service providers and citizens. The functionalities of BookingSG for each user group is as shown in Fig 1 below. 
 
-We can leverage on BookingSG’s various service options to help improve user journeys.
+<figure style="text-align: center">
+  <img
+    src="/assets/img/bookingsg-fig1.png" width="80%" height="80%" 
+    alt="Fig 1: BookingSG’s services for service administrators, service providers and citizens (left to right)"
+  />
+  <figcaption>Fig 1: BookingSG’s services for service administrators, service providers and citizens (left to right)</figcaption>
+</figure>
 
-- **As a Service:** Register an account to start setting up and define a roster to publish calendars for booking with just a URL link.
+### Why Should BookingSG be Adopted?
 
-![As a Service](/assets/img/BookingSG-SaaS.png)
+Fig 2 illustrates the benefits* of BookingSG for Government agencies. This includes its security, multi-agency connectivity, customisation features, plug-and-play model, lower implementation and maintenance costs, fluid integration abilities and future proof features.
 
-- **As part of a journey:** Include BookingSG into the user journey by redirecting requests to BookingSG or embed BookingSG components for specific tasks to be performed on top of pre-existing features.
+<figure style="text-align: center">
+  <img
+    src="/assets/img/bookingsg-fig2.png" width="100%" height="100%" 
+    alt="Fig 2: Benefits of BookingSG for Whole of Government (WOG)"
+  />
+  <figcaption>Fig 2: Benefits of BookingSG for Whole of Government (WOG)</figcaption>
+</figure>
+_*BookingSG is currently working towards these benefits._
 
-- **As an engine:** Use BookingSG as an engine to serve highly complicated use cases and integrate BookingSG using API to leverage on common CARB logics. Agencies have full autonomy on how calendars and bookings are presented to users.
+### How Do You Use BookingSG?
 
-- **As a combination:** Depending on your needs, you can combine the various service offerings - from using the admin portal as a SAAS, to additional business logic defined on your web/app before redirecting to BookingSG for slot selection supported by API integration. Leverage the various approaches to provide the desired user experience for your services. 
+The various ways to utilise BookingSG are as shown below.
 
-*All approaches mentioned above are available for both citizen and agency portals.*
+**As a service**: Government Agencies interested in signing up for BookingSG can reach out to the BookingSG team through this form to allow the team to better understand their needs and determine the corresponding setups required before onboarding them into the staging environment for trials.
 
-### Benefits
-![Benefits](/assets/img/BookingSG-Benefits.png)
+**As part of a journey**: Include BookingSG in user journeys by redirecting requests to BookingSG or embed BookingSG components for specific tasks to be performed on top of pre-existing features.
 
+**As an engine**: Use BookingSG as an engine to serve highly complicated use cases and integrate BookingSG using its API to leverage common CARB logic. Government agencies will have full autonomy on how calendars and bookings are presented to users.
 
-### Get started
+**As a combination**: The various service offerings of BookingSG can be used in different combinations - from using the admin portal as a SAAS, to additional business logic defined on the web/app before redirecting to BookingSG for slot selection supported by API integration. This allows the desired user experiences to be achieved.
 
-Get a [conversation](https://form.gov.sg/#!/605a9d2e7b204500129b33c7) with us. 
+To start using BookingSG, fill out this [form](https://form.gov.sg/#!/605a9d2e7b204500129b33c7){:target="_blank"}.
+
+<figure style="text-align: center">
+  <img
+    src="/assets/img/bookingsg-fig3.png" width="100%" height="100%" 
+    alt="Fig 3: BookingSG’s dashboard for calendar bookings"
+  />
+  <figcaption>Fig 3: BookingSG’s dashboard for calendar bookings</figcaption>
+</figure>
+
+### What's Next?
+
+Currently the BookingSG team is improving the product allow it to be more holistic and comparable to commercial SAAS products. This will facilitate the onboarding of more Government agencies into BookingSG.
+
+### Contact Information
+
+For enquiries, please fill in this [form](https://form.gov.sg/#!/605a9d2e7b204500129b33c7){:target="_blank"}.
