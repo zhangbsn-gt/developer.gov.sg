@@ -50,7 +50,7 @@
     - MAS APIs
     - OneMap APIs
     - SingStat APIs
-    - Tourism Information and Services Hub APIs
+    - Tourism Information and Services Hub 
     - URA APIs
     
 - name: Design
@@ -84,10 +84,15 @@
     - DECADA - IoT Tech Stack
     - Digital Operations Smart Service
     - eCanvas
+    - DECADA Embedded
+    - DECADA Edge Gateway
+    - DECADA Cloud
+    - Digital Operations Smart Services
     - Lamppost-as-a-Platform
     - Personal Alert Button
     - SenseOps
     - Sensor Asset Management
+    - Smart Gardens
     - SmartGym
     - SPOTON
 

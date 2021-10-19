@@ -1,4 +1,4 @@
-# - type: Keynote|Leader|Product|Government
+# #- type: Keynote|Leader|Product|Government
 #   timeslot: 
 #   title: 
 #   desc: 
@@ -11,209 +11,267 @@
 
 # Keynotes
 - type: Keynote
-  timeslot: 10:00 AM - 10:10 AM
+  timeslot: 09:30 AM - 09:40 AM
   title: Welcome Remarks
-  desc: Opening address
+  desc: Senior Minister of State Janil Puthucheary will open the conference showing how the cloud vision is critical for digital governance, providing world-class services to our citizens and businesses.
   speakers: 
-    - name: Kok Ping Soon
-      image: /assets/img/aboutus-junyu.png
-      title: Chief Executive, GovTech
-      desc: Ping Soon is Chief Executive of the Government Technology Agency of Singapore (GovTech). Prior to this he held various positions in the Ministry of Manpower, National Security Co-ordination Secretariat, Ministry of Trade & Industry, Singapore Tourism Board, Contact Singapore (CS) and Economic Development Board (EDB). He spent six years in the United States working for CS and EDB. He serves on the Board of Infocomm Media Development Authority (IMDA), Defence Science & Technology Agency (DSTA), Institute of System Sciences (ISS) and is a member of the National Institute of Education (NIE) Council.
+    - name: Dr Janil Puthucheary
+      image: /assets/img/stack-x-cloud-2021-sms-janil.png
+      title: Senior Minister of State, Ministry of Communications & Information and Ministry of Health
+      desc: Dr Janil Puthucheary was elected Member of Parliament in 2011. He is currently Senior Minister of State, Ministry of Communications and Information, and Ministry of Health. He is concurrently the Minister-in-charge of the Government Technology Agency (GovTech) where he coordinates GovTech's strategy with industry development efforts as part of the Smart Nation initiative, and is a member of the Ministerial Committee overseeing the Smart Nation and Digital Government Group (SNDGG). He chairs OnePeople.sg, which works to promote racial harmony in Singapore. His political roles include Chair of Young PAP (the youth wing of the People's Action Party), and the Government Whip.
 
 - type: Keynote
-  timeslot: 10:10 AM - 10:25 AM
-  title: CI/CD Shaping modernisation in Singapore Government
-  desc: Vision of how Singapore Public Agencies can power the digitalisation strategy with CI/CD
-  speakers: 
-    - name: Chan Cheow Hoe
-      image: /assets/img/aboutus-chengyong.png
-      title: Government Chief Digital Technology Officer
-      desc: Cheow Hoe oversees the development of the Government’s digital
-            infrastructure and digital technology capability, as well as talent
-            development in information and communication technology and smart
-            systems (ICT&SS). He also oversees the development of platforms to
-            enable resource sharing and interoperability across the Government to
-            drive the development and delivery of innovative government digital
-            services for citizens and businesses. Cheow Hoe has more than two
-            decades of extensive experience both in the public and private
-            sectors, with a strong track record in leading digital transformation
-            changes in organisations and the Government.
+  timeslot: 09:40 AM - 10:10 AM
+  title: Impacts and Lessons Learned from NASA/Jet Propulsion Laboratory's Cloud Computing Journey
+  desc: Tom Soderstrom, an industry leader in cloud, shares how NASA embarked on its cloud journey and excelled.
+  speakers:
+    - name: Tom Soderstrom
+      image: /assets/img/stack-x-cloud-2021-tom-soderstrom.png
+      title: Director or Chief Technologists, Worldwide Public Sector, Amazon Web Services (IT Chief Technology and Innovation Officer at NASA's Jet Propulsion Laboratory, 2006-2020)
+      desc: Tom leads a senior team of trusted technology advisors to key public sector customers and AWS services teams. They identify technology trends that will impact how we will work in the future and help explain, prioritise, and advocate for the current and future needs of the public sector worldwide. They also seek out and help create reusable services to benefit the public sector and large customers across global geographies and vertical market segments. Tom served from 2006-2020 as the IT Chief Technology and Innovation Officer at NASA's Jet Propulsion Laboratory. Tom had led remote teams with large scale IT technologies, best practices, tools development, and change efforts in small startups, large commercial companies, in international venues, and in the US Government arena. Tom is defining and actively surfing the next innovations and technology waves that will significantly impact enterprises' future. He consults with researchers, startups, industry, and government leaders on how to benefit from key disrupters including technology disrupters, new organisational structures, and our 21st Century workforce. These include recruiting/retaining/retraining and building innovation labs to benefit from Cloud Computing, Advanced Networking, Intelligent Digital Assistants, Internet of Things, Artificial Intelligence, Machine Learning, Quantum Computing, Natural User Interfaces, Robotics, Advanced Analytics, Smart Data, Crowd Sourcing, Open Source, Mixed Reality, Agile, and DevOps. In other words:how we will work in the future.
 
 - type: Keynote
-  timeslot: 10:25 AM - 10:45 AM
-  title: The Journey to Continuous Delivery
-  desc: Agile software development and continuous integration practices are going mainstream. While the tools and policies are available, the actual journey itself is not always obvious and this session demystifies that.
+  timeslot: 10:10 AM - 10:35 AM
+  title: Accelerating Digital Transformation with Government on Commercial Cloud
+  desc: The "Cloud First Strategy" was first announced in early 2019. Tan Eng Pheng, GovTech Assistant CE, shares how we have progressed on this vision and how we are democratising collaboration opportunities.
   speakers: 
-    - name: Sriram Narayanan
-      image: /assets/img/aboutus-chengyong.png
-      title: Technology Principal, ThoughtWorks
-      desc: Sriram Narayanan is a Technology Principal with ThoughtWorks Southeast Asia with over 24 years of experience in Agile transformations and architecting solutions for clients in the financial and public sector. He is an accredited IT Auditor and works with IT Operations and Security teams routinely. He presently advises on architecting solutions and prescribes processes which help with smooth delivery and transition from legacy to modern systems.
+    - name: Tan Eng Pheng
+      image: /assets/img/stack-x-cloud-2021-tan-eng-pheng.png
+      title: Assistant Chief Executive, GovTech
+      desc: Eng Pheng currently heads the Services Group at the GovTech, and oversees a workforce of more than 1,500 ICT professional that constitutes the CIO teams at 52 Singapore public sector agencies. His portfolio includes digital transformation of public organisations, technology planning and implementation, as well as ICT work force capability enhancement. He oversees the secretariat of the Government’s Ministry Family Digitalisation Programme (MFDP) with the charter to coordinate and support government agencies’ digitalisation. Prior to his current role, Eng Pheng led several Sectoral Transformation initiatives spanning sectors such as trade and logistics, finance, tourism, education and healthcare during his stint in Infocomm Development Authority. He has also led eGovernment planning at the WoG level and provided consultancy at G-to-G level. Eng Pheng has more than 30 years of infocomm industry experience. He holds a MSc (Management of Technology) from the National University of Singapore (NUS) and attended the Advanced Management Program at the Harvard Business School in 2013.
 
 - type: Keynote
-  timeslot: 10:45 AM - 11:05 AM
-  title: SHIP-HATS Roadmap
-  desc: Learn what is planned for the upcoming year
+  timeslot: 10:35 AM - 10:55 AM
+  title: GCC Road Ahead
+  desc: We heard you! You've shared your challenges with GCC in the Annual Developer Satisfaction Survey. In this session, Kevin Ng, Director of CODEX, will be sharing the enhancements with GCC 2.0
   speakers: 
     - name: Kevin Ng
-      image: /assets/img/aboutus-chengyong.png
+      image: /assets/img/stack-x-cloud-2021-kevin-ng.png
       title: Director, CODEX, GovTech
-      desc: Kevin is the CODEX product leader for the Government Commercial Cloud and Singapore Government Tech Stack products with the goal of transforming developer experience - both inhouse and outsourced teams - for government-built product & services. Prior to joining GovTech, he was the Senior Director, Product and Technology at Expedia and was based in Singapore and London. Kevin has led global teams involved in search and globalisation, transformed monolithic solutions into microservices on the cloud, created reusable platform components for both customer-facing apps and internal-use pipelines, and re-architected monolithic systems to incorporate artificial intelligence models.
+      desc: Kevin is the CODEX product leader for GCC and Singapore Government Tech Stack products with the goal of transforming developer experience - both inhouse and outsourced teams - for government-built product & services. Prior to joining GovTech, he was the Senior Director of Product and Technology at Expedia and was based in Singapore and London. Kevin has led global teams involved in globalisation, transformed monolithic solutions into microservices on the cloud, created reusable platform components for both customer-facing apps and internal-use pipelines, and re-architected monolithic systems to incorporate artificial intelligence models. With over 100 members, his team spanned across the US, UK, Hungary, Jordan, India, China, Singapore and a few smaller locations, and comprised of engineering and product directors, product managers, technical product managers and engineers. Kevin graduated with a B.Sc. (First Class Honours) in Computer Science from the National University of Singapore (NUS) and holds a M.Sc. (by Research) in Computer Science from NUS.
 
 - type: Keynote
-  timeslot: 11:05 AM - 11:25 PM
-  title: SHIP-HATS – Architecture Approach
-  desc: Tune in to listen to the tech strategy behind the product
+  timeslot: 10:55 AM - 11:30 AM
+  title: GCC 2.0 Design Principles and Showcase
+  desc: The new GCC 2.0 will allow continuous compliance monitoring via Policy-as-Code (PaC) and landing zones that allow us to scale multi-tenant quicker, more consistently and securely. Don't miss the live demo of the new GCC 2.0!
   speakers: 
+    - name: Hunter Nield
+      image: /assets/img/stack-x-cloud-2021-hunter-nield.png
+      title: Distinguished Engineer, GovTech
+      desc: Hunter is a Distinguished Engineer at GovTech who specialises in cloud strategy and engineering. In 2018, he partnered GovTech's Government Digital Services team and shared his technical expertise as a Senior Smart Nation Fellow. Hunter has 20 years of private-sector experience under his belt. Prior to joining the Government, he ran businesses in Asia and Australia focused on Cloud Infrastructure, Digital Transformation and R&D.
     - name: Chia Hsiao Ming
-      image: /assets/img/aboutus-chengyong.png
+      image: /assets/img/stack-x-cloud-2021-chia-hsiao-ming.png
       title: Director, Engineering Productivity, GovTech
-      desc: Hsiao Ming leads Engineering Productivity at Government Digital Services in GovTech. His group focuses on platforms and services to accelerate the development of digital services for the Government. This includes the Application Programming Interface Exchange (APEX) - a centralised government-wide API library and the Next-Generation Container Architecture (NECTAR) a cloud-based platform-as-a-service which streamlines and accelerates the process of application development. As part of the Singapore Government Tech Stack (SGTS), APEX and NECTAR allow the public and private sectors to collaborate effectively and efficiently on digital projects that create value for citizens. A software engineer by trade, Hsiao Ming likes to explore new developments related to cloud, containers and programming. In his spare time, he dabbles with IoT devices and runs a small hydroponics setup on his balcony.
-
-- type: Keynote
-  timeslot: 11:25 AM - 11:45 AM
-  title: Fireside Chat With Agencies
-  desc: A conversation with representatives from agencies on their experience implementing CI/CD with SHIP-HATS, benefits realised, best practices and lessons learnt
-  speakers: 
-    - name: Kevin Ng
-      image: /assets/img/aboutus-chengyong.png
-      title: Director, CODEX, GovTech
-      desc: Kevin is the CODEX product leader for the Government Commercial Cloud and Singapore Government Tech Stack products with the goal of transforming developer experience - both inhouse and outsourced teams - for government-built product & services. Prior to joining GovTech, he was the Senior Director, Product and Technology at Expedia and was based in Singapore and London. Kevin has led global teams involved in search and globalisation, transformed monolithic solutions into microservices on the cloud, created reusable platform components for both customer-facing apps and internal-use pipelines, and re-architected monolithic systems to incorporate artificial intelligence models.
+      desc: Hsiao Ming is a Director at the Government Digital Services team in GovTech. He builds tools and services for the Singapore Government Technology Stack, a common platform that streamlines and accelerates the development of government digital products. Notable projects include the APEX, a centralised and secure government-wide API gateway, and SHIP-HATS, a suite of Continuous-Integration/Continuous-Delivery tools with incorporated security and governance guardrails. Hsiao Ming is also involved in the development of Government on Commercial Cloud as part of the Government’s cloud adoption plan. A software engineer by trade, Hsiao Ming likes to explore new developments related to cloud technologies, containerisation and programming. Prior to GovTech, Hsiao Ming was part of software development teams at NVIDIA and Autodesk. Hsiao Ming graduated from the National University of Singapore with a Bachelor’s degree (Honours) in Computer Science. He is also a certified scrum master and a lead organiser of GovTech’s STACK Developer conference.
+      
+#- type: Keynote
+#  timeslot: 11:25 AM - 11:45 AM
+#  title: Fireside Chat With Agencies
+#  desc: A conversation with representatives from agencies on their experience implementing CI/CD with SHIP-HATS, benefits realised, best practices and lessons learnt
+#  speakers: 
+#    - name: Kevin Ng
+#      image: /assets/img/aboutus-chengyong.png
+#      title: Director, CODEX, GovTech
+#      desc: Kevin is the CODEX product leader for the Government Commercial Cloud and Singapore Government Tech Stack products with the goal of transforming developer experience - both inhouse and outsourced teams - for government-built product & services. Prior to joining GovTech, he was the Senior Director, Product and Technology at Expedia and was based in Singapore and London. Kevin has led global teams involved in search and globalisation, transformed monolithic solutions into microservices on the cloud, created reusable platform components for both customer-facing apps and internal-use pipelines, and re-architected monolithic systems to incorporate artificial intelligence models.
 
 # Leaders
 - type: Leader
-  timeslot: 1:00 PM - 1:20 PM
-  title: Modernise Application Delivery
-  desc: As an IT leader, what are the considerations when starting a CI/CD journey and how can you achieve operational efficiency and excellence with SHIP-HATS
+  timeslot: 1:30 PM - 1:50 PM
+  title: Is Government Migration of Cloud Successful?
+  desc: While some Government CIOs remain fearful of the unknown and potentially shun, delay or slow the adoption of cloud computing, the short answer is yes. This session highlights that governments are successfully adopting cloud, and offers advice on how to improve the success ratio.
   speakers: 
-    - name: Tan Eng Pheng
-      image: /assets/img/aboutus-chengyong.png
-      title: Assistant Chief Executive, GovTech
-      desc: Eng Pheng currently heads the Services Group at the Government Technology Agency, and oversees a workforce of more than 1,500 ICT professional that constitute the CIO teams at 52 Singapore public sector agencies. His portfolio includes digital transformation of public organisations, technology planning and implementation, as well as ICT work force capability enhancement. He oversees the secretariat of the Government’s Ministry Family Digitalisation Programme (MFDP) with the charter to coordinate and support government agencies’ digitalisation. Prior to his current role, Eng Pheng led a number of Sectoral Transformation initiatives spanning sectors such as trade and logistics, finance, tourism, education and healthcare during his stint in the Infocomm Development Authority. He had also led eGovernment planning at the whole-of-government level, and provided consultancy at G-G level. Eng Pheng has more than 30 years of infocomm industry experience. He holds a MSc (Management of Technology) from the National University of Singapore, and attended the Advanced Management Program at the Harvard Business School in 2013.
+    - name: Neville Cannon
+      image: /assets/img/stack-x-cloud-2021-neville-cannon.png
+      title: Senior Director, Analyst, Gartner
+      desc: Neville Cannon is a Senior Director, Analyst in the Industries Research Group, Government and Education, at Gartner. He focuses on the public sector and government in particular, supporting CIOs and TSP Product Leaders
+
 - type: Leader
-  timeslot: 1:20 PM - 1:40 PM
-  title: The Security Principles in CI/CD
-  desc: What are the security principles to consider while implementing modern CI/CD? How can onerous security checkpoints transform to facilitate the practice of agile pipeline securely? Find out more during the session.
+  timeslot: 1:50 PM - 2:30 PM
+  title: WoG Cloud Adoption Progress - Overcoming the Challenges
+  desc: IRAS leads a panel to discuss the common challenges preventing agencies from migrating to the cloud, and some of the strategies to overcome these challenges.
   speakers: 
-    - name: Chai Chin Loon
-      image: /assets/img/aboutus-chengyong.png
-      title: Senior Director, Cyber Security Group & Government Chief Information Security Officer, GovTech
-      desc: Chin Loon is currently the Senior Director of the Cyber Security Group (CSG) and Government Chief Information Security Officer (GCISO) in GovTech. CSG secures Government info-communications technology and smart systems (ICT&SS), develops the public sector’s resilience, and partners the cybersecurity ecosystem against cyber threats to the Government. The group serves as the Centre of Excellence to provide cybersecurity governance supported by consulting practice in addition to resilient monitoring of security events with robust incident response capabilities. He also oversees the Chief Information Security Officers deployed to all Government Ministries of Singapore.
-- type: Leader
-  timeslot: 1:40 PM - 2:00 PM
-  title: Q&A with GovTech
-  desc: Join GovTech - Tan Eng Pheng, Chai Chin Loon and Kevin Ng - with your questions about CI/CD with SHIP-HATS
-- type: Leader
-  timeslot: 2:00 PM - 2:15 PM
-  title: Closing & Next Steps
-  desc: Learn how you can begin the CI/CD journey with SHIP-HATS
-  speakers: 
+    - name: Yap Mia Kai
+      image: /assets/img/stack-x-cloud-2021-yap-mia-kai.png
+      title: Director, IRIN 3 Architecture Office (I3AO), Inland Revenue Authority of Singapore (IRAS)
+      desc: Mia Kai leads a team that oversees the IT architecture for the Inland Revenue Interactive Network 3 (IRIN 3). IRIN 3 is the core system that runs major tax-administrative activities at IRAS. From the beginning of his career with IRAS, he has taken on multiple roles — ranging from a developer to tech planner and a project manager — for various projects with varying degree of complexity. The work experience and skills he has amassed over the years led him to his current position, where he and his brilliant team are always actively exploring and leveraging modern technologies to maintain and improve the efficiency of the tax administration system.
+    - name: Bernard Tan
+      image: /assets/img/stack-x-cloud-2021-bernard-tan2.png
+      title: Director, Government Cybersecurity Consulting Services, GovTech
+      desc: Bernard is a Director in GovTech leading the GovTech Cybersecurity consultancy team to provide risk based consultancy services to architect the cybersecurity of Nationwide and Governmentwide strategic projects. Throught his 15 years in the public sector, he has undertaken various cybersecurity roles and projects in areas of Homeland security. He held key roles such as Chief Information Security Officer (CISO) and Head of Information security in MHA, (a) overseeing the Cyber Security Monitoring and Response Center system infrastructure, (b) providing Security Consultancy in various Home Teams wide projects, and (c) establishing MHA wide ICT Security Governance and Security Architecture. In his role as CISO, he was also appointed as security advisor in audit and risk committee to provide security guidance to audit steering committee. Prior to joining GovTech, he was in MHA leading a R&D team and co-authored a set of Secure Coding Practices. He was also a Solution Architect in F5 Networks and Security Lead for Government and Defence Sector. he is currently certified CISSP, ISSMP, ISSAP, CCSP, CISA, CDSPE, AWS and Azure Security engineer, and Scrum master.
     - name: Kevin Ng
-      image: /assets/img/aboutus-chengyong.png
+      image: /assets/img/stack-x-cloud-2021-kevin-ng.png
       title: Director, CODEX, GovTech
-      desc: Kevin is the CODEX product leader for the Government Commercial Cloud and Singapore Government Tech Stack products with the goal of transforming developer experience - both inhouse and outsourced teams - for government-built product & services. Prior to joining GovTech, he was the Senior Director, Product and Technology at Expedia and was based in Singapore and London. Kevin has led global teams involved in search and globalisation, transformed monolithic solutions into microservices on the cloud, created reusable platform components for both customer-facing apps and internal-use pipelines, and re-architected monolithic systems to incorporate artificial intelligence models.
-  
+      desc: Kevin is the CODEX product leader for GCC and Singapore Government Tech Stack products with the goal of transforming developer experience - both inhouse and outsourced teams - for government-built product & services. Prior to joining GovTech, he was the Senior Director of Product and Technology at Expedia and was based in Singapore and London. Kevin has led global teams involved in globalisation, transformed monolithic solutions into microservices on the cloud, created reusable platform components for both customer-facing apps and internal-use pipelines, and re-architected monolithic systems to incorporate artificial intelligence models. With over 100 members, his team spanned across the US, UK, Hungary, Jordan, India, China, Singapore and a few smaller locations, and comprised of engineering and product directors, product managers, technical product managers and engineers. Kevin graduated with a B.Sc. (First Class Honours) in Computer Science from the National University of Singapore (NUS) and holds a M.Sc. (by Research) in Computer Science from NUS.
+    - name: Erlina Ke
+      image: /assets/img/stack-x-cloud-2021-erlina-ke.png
+      title: Chief Information Officer, Ministry of Law
+      desc: Erlina has been with the Ministry of Law since 2014 and as CIO from 2019. She leads a dynamic team on the exciting Digitalisation projects within the Ministry with the latest being Legal Industry development initiatives. Diving into Industry development has offered many challenges and opportunities to learn new things, which excites her and her team.
+
+- type: Leader
+  timeslot: 2:30 PM - 2:40 PM
+  title: Cloud Journey of IRAS
+  desc: 
+  speakers:
+    - name: Yap Mia Kai
+      image: /assets/img/stack-x-cloud-2021-yap-mia-kai.png
+      title: Director, IRIN 3 Architecture Office (I3AO), Inland Revenue Authority of Singapore (IRAS)
+      desc: Mia Kai leads a team that oversees the IT architecture for the Inland Revenue Interactive Network 3 (IRIN 3). IRIN 3 is the core system that runs major tax-administrative activities at IRAS. From the beginning of his career with IRAS, he has taken on multiple roles — ranging from a developer to tech planner and a project manager — for various projects with varying degree of complexity. The work experience and skills he has amassed over the years led him to his current position, where he and his brilliant team are always actively exploring and leveraging modern technologies to maintain and improve the efficiency of the tax administration system.
+      
+- type: Leader
+  timeslot: 2:40 PM - 2:50 PM
+  title: GCC 2.0 At A Glance
+  desc: Continuing from the keynote sessions, Kevin will "double click" on the enhancements and how leaders can leverage the new and improved GCC 2.0
+  speakers:
+    - name: Kevin Ng
+      image: /assets/img/stack-x-cloud-2021-kevin-ng.png
+      title: Director, CODEX, GovTech
+      desc: Kevin is the CODEX product leader for GCC and Singapore Government Tech Stack products with the goal of transforming developer experience - both inhouse and outsourced teams - for government-built product & services. Prior to joining GovTech, he was the Senior Director of Product and Technology at Expedia and was based in Singapore and London. Kevin has led global teams involved in globalisation, transformed monolithic solutions into microservices on the cloud, created reusable platform components for both customer-facing apps and internal-use pipelines, and re-architected monolithic systems to incorporate artificial intelligence models. With over 100 members, his team spanned across the US, UK, Hungary, Jordan, India, China, Singapore and a few smaller locations, and comprised of engineering and product directors, product managers, technical product managers and engineers. Kevin graduated with a B.Sc. (First Class Honours) in Computer Science from the National University of Singapore (NUS) and holds a M.Sc. (by Research) in Computer Science from NUS.
+
+- type: Leader
+  timeslot: 2:50 PM - 3:30 PM
+  title: GCC 2.0 Q&A
+  desc: An in-depth exploration of the new GCC 2.0
+  speakers: 
+    - name: Yap Mia Kai
+      image: /assets/img/stack-x-cloud-2021-yap-mia-kai.png
+      title: Director, IRIN 3 Architecture Office (I3AO), Inland Revenue Authority of Singapore (IRAS)
+      desc: Mia Kai leads a team that oversees the IT architecture for the Inland Revenue Interactive Network 3 (IRIN 3). IRIN 3 is the core system that runs major tax-administrative activities at IRAS. From the beginning of his career with IRAS, he has taken on multiple roles — ranging from a developer to tech planner and a project manager — for various projects with varying degree of complexity. The work experience and skills he has amassed over the years led him to his current position, where he and his brilliant team are always actively exploring and leveraging modern technologies to maintain and improve the efficiency of the tax administration system.
+    - name: Kevin Ng
+      image: /assets/img/stack-x-cloud-2021-kevin-ng.png
+      title: Director, CODEX, GovTech
+      desc: Kevin is the CODEX product leader for GCC and Singapore Government Tech Stack products with the goal of transforming developer experience - both inhouse and outsourced teams - for government-built product & services. Prior to joining GovTech, he was the Senior Director of Product and Technology at Expedia and was based in Singapore and London. Kevin has led global teams involved in globalisation, transformed monolithic solutions into microservices on the cloud, created reusable platform components for both customer-facing apps and internal-use pipelines, and re-architected monolithic systems to incorporate artificial intelligence models. With over 100 members, his team spanned across the US, UK, Hungary, Jordan, India, China, Singapore and a few smaller locations, and comprised of engineering and product directors, product managers, technical product managers and engineers. Kevin graduated with a B.Sc. (First Class Honours) in Computer Science from the National University of Singapore (NUS) and holds a M.Sc. (by Research) in Computer Science from NUS.
+    - name: Bernard Tan
+      image: /assets/img/stack-x-cloud-2021-bernard-tan2.png
+      title: Director, Government Cybersecurity Consulting Services, GovTech
+      desc: Bernard is a Director in GovTech leading the GovTech Cybersecurity consultancy team to provide risk based consultancy services to architect the cybersecurity of Nationwide and Governmentwide strategic projects. Throught his 15 years in the public sector, he has undertaken various cybersecurity roles and projects in areas of Homeland security. He held key roles such as Chief Information Security Officer (CISO) and Head of Information security in MHA, (a) overseeing the Cyber Security Monitoring and Response Center system infrastructure, (b) providing Security Consultancy in various Home Teams wide projects, and (c) establishing MHA wide ICT Security Governance and Security Architecture. In his role as CISO, he was also appointed as security advisor in audit and risk committee to provide security guidance to audit steering committee. Prior to joining GovTech, he was in MHA leading a R&D team and co-authored a set of Secure Coding Practices. He was also a Solution Architect in F5 Networks and Security Lead for Government and Defence Sector. he is currently certified CISSP, ISSMP, ISSAP, CCSP, CISA, CDSPE, AWS and Azure Security engineer, and Scrum master.
+      
+#- type: Leader
+#  timeslot: 3:00 PM - 3:30 PM
+#  title: Cloud Migration Strategy
+#  desc: Learn how you can begin
+#  speakers: 
+#    - name: Dr Sakthivel Thangavel
+#      image: /assets/img/aboutus-chengyong.png
+#      title: Director, Solution Architect Office, GovTech
+#      desc: Dr Sakthivel is currently the Director
+
 # Products
 - type: Product
-  timeslot: 1:00 PM - 1:30 PM
-  title: SHIP-HATS Overview For Newbies
-  desc: This talk introduces SHIP-HATS and covers why and how you can use it to enable CI/CD for agency app projects on Government Commercial Cloud.
-  speakers: 
-    - name: Linda Chang
-      image: /assets/img/aboutus-chengyong.png
-      title: Assistant Director, GovTech
-      desc: Linda Chang is an Assistant Director at GovTech, driving DevSecOps adoption in GovTech's Services Group. She has been building, developing and supporting software for more than 15 years. She finds joy in helping her teams and others transform and improve how they build software and systems.
-- type: Product
   timeslot: 1:30 PM - 2:00 PM
-  title: Security Testing With SHIP-HATS
-  desc: This talk covers security testing tools - Static Code Analyser, Static & Dynamic App Security Testing - available within SHIP-HATS and how they can be integrated into the CI process.
-  speakers: 
-    - name: Goh Chun Teck
-      image: /assets/img/aboutus-chengyong.png
-      title: Software Engineer, GovTech
-      desc: Chun Teck is a software engineer working in the HATS team, and helps to develop internal services to support SHIP-HATS. He likes web application development, and also enjoys automating stuff with CI/CD to reduce work. In his free time, he enjoys his stay-home hobbies of gaming and reading.
-- type: Product
-  timeslot: 2:00 PM - 2:30 PM
-  title: Continuous Delivery With SHIP-HATS
-  desc: This session covers the CD tools available within SHIP-HATS
-  speakers: 
-    - name: Hudson Lee
-      image: /assets/img/aboutus-chengyong.png
-      title: Lead DevOps Engineer, GovTech
-      desc: Hudson's description here
-- type: Product
-  timeslot: 2:30 PM - 3:00 PM
-  title: Understanding SHIP-HATS Subscription
-  desc: Get a run down on the subscription, roles and permission and use cases for different tiers in this session
-  speakers: 
-    - name: Chew Pei Yi
-      image: /assets/img/aboutus-chengyong.png
-      title: Associate Delivery Manager, GovTech
-      desc: Intrigued by the opportunity to work in the Tech industry, Pei Yi made a career switch from Corporate communication to Business Development in 2019. She helps to drive the adoption of GovTech products such as SHIP-HATS, APEX & Nectar across WOG.
-- type: Product
-  timeslot: 3:00 PM - 3:30 PM
-  title: CI/CD Strategy to Modernisation for PA
-  desc: PA is an early adopter of SHIP-HATS with NCS. This session covers the best practices learnt to improve their apps and processes to make Continuous Testing and Deployment seamless and productive.
+  title: Building a Successful Cloud Architecture
+  desc: 
   speakers: 
     - name: Abhijeet Menon
-      image: /assets/img/aboutus-chengyong.png
+      image: /assets/img/stack-x-cloud-2021-abhijeet-menon2.png
       title: Senior Solution Architect, GovTech
-      desc: Abhijeet has 17 years of experience in planning, designing and architecting applications. Currently assisting agencies to solution modern applications using CI / CD, Cloud native services and Containers. He is also involved in planning designs to allow productivity and cost optimisation for the Agency.
-    - name: Sathappan Subramaniam
-      image: /assets/img/aboutus-chengyong.png
-      title: Lead Project Manager, NCS
-      desc: Sathappan Subramaniam has more than 20 years of IT experience in both Government and Commercial projects with over 15 years of Project Manager experience. He is currently the Project Manager and Scrum Master for PA GEMS 2 Project.
+      desc: Abhijeet has over 18 years of experience in planning, designing and architecting applications. Currently, he is assisting agencies to solution modernised applications using CI/CD, Cloud native services, containers, SaaS and other areas of cloud adoption. He is also involved in planning designs to allow enterprise level productivity using microservices and cost optimisation for the Agency.
+#    - name: x
+#      image: /assets/img/aboutus-chengyong.png
+#      title: Solution Architect
+#      desc: x Sathappan Subramaniam has more than 20 years of IT experience in both Government and Commercial projects with over 15 years of Project Manager experience. He is currently the Project Manager and Scrum Master for PA GEMS 2 Project.
+
+- type: Product
+  timeslot: 2:00 PM - 2:30 PM
+  title: GCC 2.0 - New Onboarding Experience
+  desc: 
+  speakers: 
+    - name: Tang Bing Wan
+      image: /assets/img/stack-x-cloud-2021-tang-bing-wan.png
+      title: Principal Application Infrastructure Architect, Central TS, GovTech
+      desc: A passionate architect and technical manager, Bing Wan started his career as a software developer (Informix, Java, C) focusing on both banking and shipping domains. He developed a passion in IT infrastructure, security and operations, which guided his subsequent work as an architect even as the landscape shifted from on-premise/physical, virtualisation to cloud, microservices, and trust-based security paradigm. His most recent role as one of GovTech's Principal Infrastructure Architect further honed his skills in enabling a team of fellow passionate professionals to re-factor systems, IT operating model and culture to commercial cloud. His most current interest and focus area is on cloud automation/software defined infrastructure strategy across Singapore's whole-of-government. He is currently an AWS Certified Architect (Professional) and a Certified ScrumMaster.
+    - name: Jessica Tan
+      image: /assets/img/stack-x-cloud-2021-jessica-tan2.png
+      title: Programme Manager, CODEX, GovTech
+      desc: Having worked both the private and public sector, Jessica brings with her a wide range of experience in the IT field, ranging from project management, business analysis, business and IT strategic planning, data analysis, data management, data warehousing solutions, data governance, to ITIL service management. She had been featured in the NUS ISS Community Newsroom in 2020 and Straits Times in 2021 for her continual pursuit of knowledge and skills upgrading. Her current focus is on the programme management of GCC.
+
+- type: Product
+  timeslot: 2:30 PM - 3:00 PM
+  title: Managing Cloud Application Security and Cost Management through Automatic and Data Centric Approach
+  desc: 
+  speakers: 
+    - name: Kent Lai
+      image: /assets/img/stack-x-cloud-2021-kent-lai.png
+      title: Lead Solution Architect, Solution Architect Office, GovTech
+      desc: Kent has over 18 years of experience in planning, designing, delivering and operating high-impact applications in the APAC region. In his most recent role in GovTech, he is working with agencies to accelerate service delivery through the adoption of cloud, api and microservice technologies, as well as transformation of enterprise architecture and operating model to exploit the new technologies in the areas of automation and cloud cost optimisation.
+    - name: Mahesh Rajagopal
+      image: /assets/img/stack-x-cloud-2021-mahesh-rajagopal2.png
+      title: Senior Application Infrastructure Engineer, Central TS, GovTech
+      desc: Mahesh is an enterprise architect with 18 years of experience in various roles including automation, enterprise systems architecture, virtualisation and cloud. In his current role as GovTech's senior technical consultant, working with various government agencies to enable them to modernise and migrate their systems to cloud. Also involved in planning cloud automation/security strategy across Singapore's whole-of-government.
+
+- type: Product
+  timeslot: 3:00 PM - 3:30 PM
+  title: Learnings from Cloud Operations - Streamlining Your Operational Processes
+  desc: 
+  speakers: 
+    - name: Choong Keng Leong
+      image: /assets/img/stack-x-cloud-2021-choong-keng-leong2.png
+      title: Director, Government Infrastructure Group, GovTech
+      desc: Keng Leong is the head for Managed Hosting Infrastructure (MHI). He is responsible for planning and implementing Whole-of-Government (WOG) initiatives with the aim to facilitate the adoption of cloud computing. MHI is also responsible for the provision of a secure and resilient data centre facility and network to public-sector bodies to host their mission-critical ICT systems. Keng Leong has a broad set of IT knowledge and experience across IT domains such as Cloud, virtualisation, operations and strategic IT management. He has been instrumental in conceptualising and orchestrating the implementation of solutions that transform Enterprise Architectures and Operating Models that meet overall business objectives and goals for many enterprise companies in Asia Pacific. He has an extensive experience in both public and private sector and has worked for high-profile technological multinational companies such as VMware, DELL EMC Corporation, Shinsei Bank Technology Services, Hewlett-Packard before his current role at GovTech. Keng Leong holds a long list of certifications on Cloud, VMWare, Enterprise Storage, TOGAF and ITIL, to name a few.
+#- type: Product
+#  timeslot: 3:00 PM - 3:30 PM
+#  title: CI/CD Strategy to Modernisation for PA
+#  desc: PA is an early adopter of SHIP-HATS with NCS. This session covers the best practices learnt to improve their apps and processes to make Continuous Testing and Deployment seamless and productive.
+#  speakers: 
+#    - name: Abhijeet Menon
+#      image: /assets/img/aboutus-chengyong.png
+#      title: Senior Solution Architect, GovTech
+#      desc: Abhijeet has 17 years of experience in planning, designing and architecting applications. Currently assisting agencies to solution modern applications using CI / CD, Cloud native services and Containers. He is also involved in planning designs to allow productivity and cost optimisation for the Agency.
+#    - name: Sathappan Subramaniam
+#      image: /assets/img/aboutus-chengyong.png
+#      title: Lead Project Manager, NCS
+#      desc: Sathappan Subramaniam has more than 20 years of IT experience in both Government and Commercial projects with over 15 years of Project Manager experience. He is currently the Project Manager and Scrum Master for PA GEMS 2 Project.
 
 # Government
 - type: Government
-  timeslot: 1:00 PM - 1:05 PM
-  title: Opening Address
+  timeslot: 1:30 PM - 1:50 PM
+  title: GCC 2.0 New Features
   desc: 
   speakers: 
-    - name: Lim Bee Kwan
-      image: /assets/img/aboutus-chengyong.png
-      title: Assistant Chief Executive, GovTech
-      desc: Bee Kwan is the Assistant Chief Executive for Governance and Cybersecurity, Government Technology Agency (GovTech). Her focus is to develop strategies to deepen cybersecurity capabilities and strengthen the governance function for Government digital services and Smart Nation infrastructure and applications. Bee Kwan has over 30 years of experience in the field of infocomm technology and has held leadership roles in public agencies such as Infocomm Development Authority of Singapore (GovTech’s predecessor organisation), Ministry of Health, People’s Association, and Ministry of Education (MOE).
+    - name: Hunter Nield
+      image: /assets/img/stack-x-cloud-2021-hunter-nield.png
+      title: Distinguished Engineer, GovTech
+      desc: Hunter is a Distinguished Engineer at GovTech who specialises in cloud strategy and engineering. In 2018, he partnered GovTech's Government Digital Services team and shared his technical expertise as a Senior Smart Nation Fellow. Hunter has 20 years of private-sector experience under his belt. Prior to joining the Government, he ran businesses in Asia and Australia focused on Cloud Infrastructure, Digital Transformation and R&D.
+
 - type: Government
-  timeslot: 1:05 PM - 1:45 PM
-  title: Applying Security in DevOps Practices
-  desc: This talk covers the threat landscape relevant to DevOps environment, as well as useful tools and tips to aid mitigation against such threats.
+  timeslot: 1:50 PM - 2:15 PM
+  title: Securing Developers' Engineering Devices
+  desc: Secured by developers, for developers! That was our mantra when we built Developers' Environment Endpoint Posture (DEEP). It helps developers establish a robust security baseline for their engineering devices, and prevents insecure or compromised devices from accessing engineering resources, all while remaining agile and flexible. Learn how DEEP can benefit developers working on applications hosted in GCC 2.0!
   speakers: 
-    - name: Chong Rong Hwa
-      image: /assets/img/aboutus-chengyong.png
-      title: Director, Advanced Cybersecurity Capabilities, GovTech
-      desc: As a technical leader in the Cyber Security Group at the GovTech, Rong Hwa leads the cyber strategy, security testing, and cybersecurity research and development functions. Prior to joining GovTech, he was the senior architect and senior manager at FireEye Labs, where he led the research and engineering teams to combat advanced threats like APT malware and exploitation of zero-day vulnerabilities.
+    - name: Stephanie Quek
+      image: /assets/img/stack-x-cloud-2021-stephanie-quek.png
+      title: Lead Cybersecurity Specialist, Cyber Security Group, GovTech
+      desc: Stephanie leads a team of developers and UX designers in GovTech's Cyber Security Group, focusing on delivering cybersecurity products that support the DevSecOps movement for developers across the public service. Prior to joining GovTech, she had delved into various cybersecurity domains - coding security software, writing security policies and guidelines, spurring international collaboration, and architecting and consulting on security systems.
+    - name: Yin Yide
+      image: /assets/img/stack-x-cloud-2021-yin-yide.png
+      title: Associate Cybersecurity Specialist, Cyber Security Group, GovTech
+      desc: Yide is passionate about leveraging DevSecOps practices to build robust and secure software in the cloud. In particular, he enjoys learning about cloud-native services and how they can be used to deploy and operate reliable systems at scale. In his current role, Yide is one of the core developers and maintainers of DEEP.
+
 - type: Government
-  timeslot: 1:45 PM - 2:15 PM
-  title: Pricing, Budgeting & Contracting For SHIP-HATS
-  desc: To help agencies plan for adopting SHIP-HATS, this session gives an overview of pricing assessment of SHIP-HATS against Commercial-Off-The-Shelf products and a sneak peak into the upcoming changes in Agile tender templates
+  timeslot: 2:15 PM - 2:40 PM
+  title: Enabling Applications to Support Authentication with Azure AD and Conditional Access
+  desc: 
   speakers: 
-    - name: Aaron Ma
-      image: /assets/img/aboutus-chengyong.png
-      title: Deputy Director, GovTech
-      desc: Aaron Ma is from the Procurement Division under the Governance Group in GovTech. He is responsible for managing demand aggregation tenders for WOG ICT requirements and drive ICT procurement transformation through introduction of new/enhanced procurement approaches and policies. Prior to joining this role, Aaron has more than 25 years of information communications technology experience including being in leadership roles in implementation and management of Whole-of-Government infrastructure and projects in public and private sector.
-    - name: Louis Lim
-      image: /assets/img/aboutus-chengyong.png
-      title: Assistant General Counsel, GovTech
-      desc: Louis regularly advises on and resolves legal issues arising from GovTech’s projects and operations. He also prepares and reviews various technology-related tender documents relating to turnkey systems, application development and maintenance, and public cloud SaaS, amongst others. Prior to joining GovTech, Louis was a legal associate at an international law firm, specializing in commercial litigation and international arbitration. He is a Certified Information Privacy Professional (Asia) with the International Association of Privacy Professionals.
-    - name: Liyana Muhammad Fauzi
-      image: /assets/img/aboutus-chengyong.png
-      title: Senior Product Manager, GovTech
-      desc: Liyana Muhammad Fauzi is a Senior Product Manager with the Government Technology Agency where she works on products relating to the Singapore Government Technology Stack and Government Commercial Cloud. In previous roles, Liyana launched Singapore’s first Open Data Portal, helped create the first Smart City Index and developed Singapore’s first Digital Government Blueprint – a national master plan that outlines the strategy for digital products that impact people living and working in Singapore. Liyana recently graduated with a Technology MBA from New York University's Stern School of Business where she specialised in Tech Product Management, Strategy and Ops Management.
+    - name: Kyle Marsh
+      image: /assets/img/stack-x-cloud-2021-kyle-marsh.png
+      title: Principal Programme Manager, Microsoft
+      desc: Kyle is a Principal Program Manager on the Microsoft Identity team. As part of the Identity team Kyle focuses on architecting security and access management for applications and APIs across a wide variety of developer technologies. He has extensive experience developing solutions and working with partners to help them optimize their solutions. In past lives he has been a developer for MSDN, Dr. GUI, and a developer lead on the Access team, and PM on Unified Communications and Windows.
+
 - type: Government
-  timeslot: 2:15 PM - 2:45 PM
-  title: Preparing Your Team to Adopt DevOps
-  desc: Learn how to structure and develop your team to successfully adopt DevOps. The session also gives guidance on relevant training available.
+  timeslot: 2:40 PM - 3:05 PM
+  title: Zero Trust
+  desc: 
   speakers: 
-    - name: Goh Boon Nam
-      image: /assets/img/aboutus-chengyong.png
-      title: Digital Agility Practice and Deputy Director, Executive Education Programme NUS-ISS
-      desc: Boon Nam has over 25 years of management experience in IT, holding management portfolios in IT application development, operations, quality and process improvement, planning, architecture, governance and outsourcing. Boon Nam had been a Director of Business Information Systems as well as Director of IT Operations in a public agency. Boon Nam is currently the Deputy Director of Executive Education in the Institute of Systems Science in the National University of Singapore (NUS-ISS) overseeing NUS-ISS work as Operations Partner for The Digital Academy by GovTech. He is also a Certified Scaled Agile Framework Program Consultant, ICAgile Certified Professional in Agile Coaching and a TOGAF Certified Enterprise Architect.
+    - name: Marco Genovese
+      image: /assets/img/stack-x-cloud-2021-marco-genovese.png
+      title: Customer Engineer, Google Cloud Security
+      desc: Marco has spent the past 20 years as a security practitioner on both the customer and vendor side. Originally planting his roots in cryptography at PGP Corporation, he has since gone on to secure large scale organizations while at Symantec, Skyhigh Networks and Palo Alto Networks before joining Google to tackle Cloud Security. Currently his focus is on Security Analytics and Zero Trust within the Google portfolio.
+
 - type: Government
-  timeslot: 2:45 PM - 3:15 PM
-  title: Onboarding SHIP-HATS
-  desc: Steps to get started on SHIP-HATS
+  timeslot: 3:05 PM - 3:30 PM
+  title: Cloudflare
+  desc: 
   speakers: 
-    - name: Denise Collard
-      image: /assets/img/aboutus-chengyong.png
-      title: Product Manager, GovTech
-      desc: Denise is a Business Developer turned Product Manager at GovTech, 5 years and counting! As an ex-business developer, she supported her team with establishing “business operation readiness” which ranged from facilitating administrative tasks to Agencies’ engagement. Today, as Product Manager, she is working closely with development teams to create new products that improve business workflows and automate processes. Denise believes that the only constant in life is change, through which she constantly strives to learn, grow and improve. Outside of work, you’ll usually find Denise rock climbing, chilling with handicrafts, or spending time with her family. If you’re into sports too... she’s always game!
+    - name: Samuel Loh
+      image: /assets/img/stack-x-cloud-2021-samuel-loh.png
+      title: Senior Software Engineer, GovTech
+      desc: Samuel is a Senior Software Engineer at GovTech. In his 6 years with GovTech, he participated in the design and implementation of Nectar, the first Kubernetes platform for the Singapore Government Tech Stack and has been a staunch developer advocate, encouraging agencies to design their systems with microservices and containers. He is currently a member of the Cloud Engineering Team, a cross-divisional team working to improve GCC and adoption of cloud native solutions and DevOps practices. As a polyglot programmer, he dabbles in a wide range of technologies.      

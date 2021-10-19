@@ -104,7 +104,7 @@ As a consumer, users can follow the steps below to begin their APEX onboarding.
 
 **Step 1 - Getting Access from the Provider**
 
-Consumers visit this [site](https://portal.apex.gov.sg/catalogue/highlights) {:target="_blank"}(only accessible through Intranet) to identify the required APIs before requesting access from the Provider.  Consumers can also sign up for the training session provided by the APEX team to understand how APPs can be created in APEX.
+Consumers can visit this [site](https://portal.apex.gov.sg/catalogue/highlights){:target="_blank"}(only accessible through Intranet) to identify the required APIs before requesting access from the Provider.  Consumers can also sign up for the training session provided by the APEX team to understand how APPs can be created in APEX.
 
 **Step 2 - Opening of Firewalls**
 
