@@ -40,7 +40,7 @@ In August 2018, a team led by Dr Ong Lay Teen, a Senior System Engineer at GovTe
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/eCanvas-fig1.png" width="70%" height="70%" 
+    src="/assets/img/eCanvas-fig1.png" width="80%" height="80%" 
     alt="Fig 1: eCanvas"
   />
   <figcaption>Fig 1: eCanvas</figcaption>
