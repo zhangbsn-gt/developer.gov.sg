@@ -1,0 +1,47 @@
+---
+title: Building a Community
+layout: layout-page-sidenav
+---
+
+<h2>Levelling Up Collectively — Our Community Engagement Journey</h2>
+
+<p>
+  It has been almost 2 years since we started the STACK-X community. Take a look at our journey and how we pivoted our efforts amidst the COVID-19 pandemic.
+</p>
+<p>
+  If you have attended one of our STACK-X Meetups, you are probably quite familiar with <a href="https://www.tech.gov.sg/who-we-are/our-role/" target="_blank">GovTech</a>. Chances are, you are also well acquainted with some products we have developed — for example, <a href="https://www.developer.tech.gov.sg/technologies/digital-solutions-to-address-covid-19/tracetogether" target="_blank">TraceTogether</a> and our <a href="https://www.developer.tech.gov.sg/technologies/analytics/wogaa" target="_blank">Whole-of-Government Application Analytics</a>.
+</p>
+<p>
+  If not, that is fine too! To get you up to speed — GovTech is a statutory board that is part of the <a href="https://www.tech.gov.sg/media/technews/govtech-joins-the-smart-nation-and-digital-government-group" target="_blank">Smart Nation and Digital Government Group</a> (SNDGG), reporting to the Prime Minister’s Office. Our mission is to develop technologies for the government to ultimately make a difference in the lives of everyday Singaporeans.
+</p>
+<p>
+  Today, we would like to share about our community engagement journey and what drives us to do what we do. Hopefully, by the end of this, you will share our excitement for this community we have built together, as well as what lies ahead in the future.
+</p>
+<h3>How It All Began</h3>
+<p>
+  As developers, we are always learning. That is why we are excited about the potential of a community space where the exchange of knowledge, ideas, and solutions can happen freely. At the same time, we also realise that the government can sometimes be seen as rather opaque by members of the public. This is why we feel community engagement is the perfect way to let everyone learn more about our projects, provide feedback on how we can improve them, and the talented techies behind them.
+</p>
+{% assign page_collection = page.collection %}
+{% assign page_parent_folder = page.id | split: "/" | pop | last %}
+<div class="card-grid-container grid-25rem">
+  {% for article in site[page.collection] %}
+    {% comment %}
+      This will avoid rendering the current overview page
+      if the Page title is Community Engagement Playbook, it will skip it
+    {% endcomment %}
+    {% if page.title != article.title and article.path contains page_parent_folder %}
+    <div class="grid-item">
+      <div class="sgds-card">
+        <div class="sgds-card-content">
+          <h4><a href="{{ article.url }}">{{ article.title }}</a></h4>
+          <p>
+            <!-- TODO: [issue] markdownify create blank <p> tag at the top and bottom of description -->
+            {{ article.description | markdownify }}
+          </p>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+  {% endfor %}
+</div>
+
