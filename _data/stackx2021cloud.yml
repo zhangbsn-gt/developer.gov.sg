@@ -263,8 +263,8 @@
   speakers: 
     - name: Marco Genovese
       image: /assets/img/stack-x-cloud-2021-marco-genovese.png
-      title: Customer Engineer, Google Cloud Security
-      desc: Marco has spent the past 20 years as a security practitioner on both the customer and vendor side. Originally planting his roots in cryptography at PGP Corporation, he has since gone on to secure large scale organizations while at Symantec, Skyhigh Networks and Palo Alto Networks before joining Google to tackle Cloud Security. Currently his focus is on Security Analytics and Zero Trust within the Google portfolio.
+      title: Cloud Security Specialist, Google Cloud Security
+      desc: Marco has spent the past 20+ years as a security practitioner on both the customer and vendor side. Originally planting his roots in cryptography at PGP Corporation, he has since gone on to secure large scale organizations while at Symantec, Skyhigh Networks and Palo Alto Networks before joining Google to tackle Cloud Security. Currently his focus is on Zero Trust and Security Analytics within the Google portfolio.
 
 - type: Government
   timeslot: 3:05 PM - 3:30 PM
