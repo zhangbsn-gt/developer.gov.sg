@@ -51,6 +51,12 @@ The central administration dashboard of APEX serves as a monitoring tool for sys
 
 Other key features of APEX include its self-service model, provision of professional services, ability to support multi-tenanted Environments and modern RESTful and SOAP APIs.
 
+The various open source codes under APEX can be found through these links:
+- [Node.js API signature library](https://github.com/GovTechSG/node-apex-api-security){:target="_blank"}
+- [Java API signature library](https://github.com/GovTechSG/java-apex-api-security){:target="_blank"}
+- [Node.js HTTP Proxy Server for attaching Apex authentication headers](https://github.com/GovTechSG/apex-proxy-node){:target="_blank"}
+- [Apex API signature validator](https://github.com/GovTechSG/apex-signature-validator){:target="_blank"}
+
 ### Why Should APEX be Adopted?
 
 APEX serves over 100 million API calls in a month and supports around 2,400 API functions published by government agencies. Currently, 31 agencies have been onboarded alongside 44 projects. The key benefits of APEX are as shown below.
