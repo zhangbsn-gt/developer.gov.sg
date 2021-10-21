@@ -134,3 +134,10 @@ Administrative access to APEX is only available on the government intranet. Regi
 ### Contact Information
 
 You can email us at <enquiries_apex@tech.gov.sg>.
+
+<br/>**Technical Resources**
+
+- [APEX Quickstart](https://docs.developer.tech.gov.sg/auth/login?originalPath=/docs/apex-quickstart){:target="_blank"}
+
+
+
