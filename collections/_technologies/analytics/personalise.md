@@ -57,9 +57,11 @@ For Government agencies, personalisation leads to more effective targeting and e
 For agencies to begin their personalisation journey, they can first attend a workshop by the Personalise team before they adopt either a web or email personalisation tool.    
 
 **Personalisation Workshop**
+
 This workshop is a good starting point for teams who are still learning about personalisation and need more to develop and conceptualise their personalisation strategy and goals. Through this workshop, agencies will gain a better understanding of personalisation, setting of goals based on user needs and challenges, brainstorming of ideas and the effort required to personalise services. Once an agency’s strategy and goals are established, the Personalise team will collaborate with the agency to achieve them using email and web personalisation tools.
 
 **Email Personalisation Tool** 
+
 This is a web-based eDM platform that allows personalisation of email campaigns in a variety of ways such as:
 
 -	The targeting of email campaigns to audience groups based on specific criteria, such as interests indicated in newsletter signups.
@@ -67,6 +69,7 @@ This is a web-based eDM platform that allows personalisation of email campaigns 
 -	The ability to reach out to less active citizens to inform them about a new service that is relevant to their needs.
 
 **Web Personalisation Tool**
+
 This tool helps bring relevant content to citizens through agency’s websites. The three phases to the implementation of this tool includes:
 
 -	Learning phase – A personalise javascript will be embedded into agencies’ website to learn visitors’ behavior and build a recommendation model based on their browsing patterns.
@@ -76,6 +79,7 @@ This tool helps bring relevant content to citizens through agency’s websites. 
 ### Success Stories 
 
 **Email Personalisation**
+
 The [Ministry of Education (MOE)](https://www.moe.gov.sg/){:target="_blank"} SchoolBag team uses Personalise’s email persoanlisation tool to send out a monthly personalised newsletter to their subscribers to increase their site engagements. Here is how they do it:
 
 The SchoolBag team uploads a new set of subscribers onto the email personalisation tool’s “Audience” module every month. This module ensures that existing records are updated and duplicates are removed. 
@@ -93,6 +97,7 @@ When a campaign is launched, the performance of the campaign will be tracked and
 </figure>
 
 **Web Personalisation**
+
 The [Housing and Development Board (HDB)](https://www.hdb.gov.sg/cs/infoweb/homepage){:target="_blank"} MyNiceHome team uses the web personalisation tool to show relevant HDB web articles to citizens based on their personas when they visit the MyNiceHome website. By analysing citizens' browsing history, the machine learning (ML) model generates the top content that are likely to be consumed by the visitors and tracks the performance of the recommendation through their click-through rates.
 
 The MyNiceHome team achieves web personalisation simply by integrating it with the Whole-of-Government Application Analytics (WOGAA) platform and annotating additional information on their website. The web personalisation tool will then automatically build a custom personalisation model to serve relevant content.
