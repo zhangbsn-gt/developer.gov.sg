@@ -72,7 +72,7 @@ Treadmill sensors are located on the exterior of the machine and help to measure
 SmartGym also utilises a motion sensor to detect inclination. The sensors are placed in a non-intrusive manner with small modifications to ensure that 
 they can be fitted onto different types of treadmills from different manufacturers. The sensors are also able to track the distance covered by the user, 
 as well as the total altitude gained throughout the run. The exercise data from the weight stack machine and treadmill sensors can also be combined to 
-calculate the number of calories burnt.
+calculate the number of calories burned.
 
 <figure style="text-align: center">
   <img
@@ -117,7 +117,7 @@ previous body-metric data, users can visit any of the SmartGym kiosks located at
 
 ### How Do You Use SmartGym?
 
-Each machine comes with a screen that displays workout information relevant to the equipment such as number of reps, calories burnt, speed, and distance. 
+Each machine comes with a screen that displays workout information relevant to the equipment such as number of reps, calories burned, speed, and distance. 
 To start using the SmartGym equipment, scan the QR code on the ActiveSG app to link your account to the equipment and the SmartGym sensors will track your 
 exercise and store workout information. Thereafter, you can view all your workout information at the SmartGym kiosks.
 
