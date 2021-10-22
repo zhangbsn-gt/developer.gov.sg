@@ -71,7 +71,7 @@ APEX serves over 100 million API calls in a month and supports around 2,400 API 
 
 ### How Do You Use APEX?
 
-To begin using APEX, user have to identify their usage model as shown below.
+To begin using APEX, users have to identify their usage model as shown below.
 
 1. API Provider: The back-end resource provider that exposes or serves the respective function(s).
 2. API Consumer : The agencies that consumes the APIs.
