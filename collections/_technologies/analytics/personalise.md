@@ -5,7 +5,7 @@ category: Analytics
 description: Personalise consists of email and web personalisation tools that help agencies better analyse user behaviours and provide tailored experiences to individuals.
 --- 
 
-### Overview?
+### Overview
 
 Personalisation can be used to improve citizen experiences when they engage with Government services. Through personalisation, citizen’s needs can be better understood, and Government services can be curated to create tailored experiences. Currently, personalisation of Government services can be achieved through a web and email personalisation tool that was developed by GovTech’s Personalise team based on the framework shown below.
 
@@ -13,7 +13,7 @@ Personalisation can be used to improve citizen experiences when they engage with
 
 **Remember** target audience behaviour: Besides identifying target audiences, agencies’ need to “Remember” how users had previously engaged with their products/services, why they chose to interact with their products/services in the way that they have and what their interests and preferences are. These insights can help to understand users’ intent when they engage Government products/services.
 
-Recommendation of **relevant** content: Once an understanding of the target audience have been developed, “Relevant” content and services can be recommended based on their intent when using a product/service. As past behaviour does not always predict future actions, it is important to consider contextual data and real-time user behaviour, which will clarify their intent.
+Recommendation of **relevant** content: Once an understanding of the target audience has been developed, “Relevant” content and services can be recommended based on their intent when using a product/service. As past behaviour does not always predict future actions, it is important to consider contextual data and real-time user behaviour, which will clarify their intent.
 
 **Relationship** development with target audiences: Through multiple interactions, Government agencies may develop a stronger “Relationship” with citizens. As the relationship deepens, the likelihood of repeat engagements increases, and citizens will expect a more seamless and personalised experience across all touchpoints. This also involves seeking citizen feedback to create more individualised experiences.
 
