@@ -9,9 +9,9 @@ description: Personalise consists of email and web personalisation tools that he
 
 Personalisation can be used to improve citizen experiences when they engage with Government services. Through personalisation, citizen’s needs can be better understood, and Government services can be curated to create tailored experiences. Currently, personalisation of Government services can be achieved through a web and email personalisation tool that was developed by GovTech’s Personalise team based on the framework shown below.
 
-**Recognise** your target audience: When creating personalised experiences, Government agencies’ first need to understand the citizens that they wish to serve. To “Recognise” is the ability to identify both known and unknown users when they interact with an agencies’ products/services. 
+**Recognise** your target audience: When creating personalised experiences, Government agencies first need to understand the citizens that they wish to serve. To “Recognise” is the ability to identify both known and unknown users when they interact with an agencies’ products/services. 
 
-**Remember** target audience behaviour: Besides identifying target audiences, agencies’ need to “Remember” how users had previously engaged with their products/services, why they chose to interact with their products/services in the way that they have and what their interests and preferences are. These insights can help to understand users’ intent when they engage Government products/services.
+**Remember** target audience behaviour: Besides identifying target audiences, agencies need to “Remember” how users had previously engaged with their products/services, why they chose to interact with their products/services in the way that they have and what their interests and preferences are. These insights can help to understand users’ intent when they engage Government products/services.
 
 Recommendation of **relevant** content: Once an understanding of the target audience has been developed, “Relevant” content and services can be recommended based on their intent when using a product/service. As past behaviour does not always predict future actions, it is important to consider contextual data and real-time user behaviour, which will clarify their intent.
 
