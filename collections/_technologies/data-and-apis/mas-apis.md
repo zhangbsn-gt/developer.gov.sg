@@ -16,7 +16,7 @@ Click [here](https://www.developer.tech.gov.sg/technologies/data-and-apis/overvi
 
 ### Why Should MAS APIs be Adopted?
 
-Instead of developing APIs from scratch, [MAS' APIs](https://secure.mas.gov.sg/api/Search.aspx){:target="_blank"} allow developers to integrate an already developed API into their code for financial applications. MAS APIs also have data that is constantly updated to keep up-to-date with relevant guidelines.
+Instead of developing APIs from scratch, [MAS' APIs](https://secure.mas.gov.sg/api/Search.aspx?utm_source=mas&utm_medium=devportalwebsite&utm_campaign=masapi){:target="_blank"} allow developers to integrate an already developed API into their code for financial applications. MAS APIs also have data that is constantly updated to keep up-to-date with relevant guidelines.
 
 ### How Do You Use MAS' APIs?
 
