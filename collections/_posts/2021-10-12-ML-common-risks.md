@@ -30,7 +30,7 @@ The table below describes key risk areas of using ML systems and possible mitiga
 
 ### KEY CYBERSECURITY FACTORS AND APPROACHES
 
-ML system processes and distils massive amounts of data, reinforcing the need for fundamental cybersecurity measures to protect data confidentiality and integrity, as well as to maintain the availability of ML services. Organisations may consider the following key factors and cybersecurity approaches:
+ML systems process and distil massive amounts of data, reinforcing the need for fundamental cybersecurity measures to protect data confidentiality and integrity, as well as to maintain the availability of ML services. Organisations may consider the following key factors and cybersecurity approaches:
 
 ![ML_intro](/assets/img/ML-keyapproaches.png)
 
