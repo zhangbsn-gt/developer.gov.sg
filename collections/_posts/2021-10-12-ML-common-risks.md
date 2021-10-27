@@ -17,7 +17,7 @@ tags:
   - reduce residual risk
 ---
 
-In order to cater to the demand for complex interconnected systems, Machine Learning (ML) systems have evolved from traditional IT systems, which are typically simple programmes that handle simple datasets. ML systems create more opportunity by enabling organisations to process more complex use-cases which are typically done by humans.
+In order to cater to the demand for complex interconnected systems, Machine Learning (ML) systems have evolved from traditional IT systems, which are typically simple programmes that handle simple datasets. ML systems create more opportunity by enabling organisations to process more complex use cases which are typically done by humans.
 
 ### FEATURES OF ML SYSTEMS
 
