@@ -12,7 +12,7 @@ description: >
 
 [Isomer](https://www.isomer.gov.sg/) is an informational website generator created by the Government Technology Agency of Singapore (GovTech).
 
-It provides templates for websites with hosting and is compliant to applicable clauses in Instruction Manual 8 (IM8), Design Service Standard (DSS) and Usability Checklist (UC).
+It provides templates for websites with hosting and is compliant to applicable clauses in Instruction Manual 8 (IM8), Digital Service Standards (DSS) and Usability Checklist (UC).
 
 GovTech built, provides training for and maintains Isomer as a service to all Singapore Government Agencies.
 
