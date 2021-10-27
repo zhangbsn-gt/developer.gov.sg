@@ -47,7 +47,7 @@
   speakers: 
     - name: Kevin Ng
       image: /assets/img/stack-x-cloud-2021-kevin-ng.png
-      title: Director, CODEX, GovTech
+      title: Director, Core Operations, Development Environment and eXchange (CODEX), GovTech
       desc: Kevin is the CODEX product leader for GCC and Singapore Government Tech Stack products with the goal of transforming developer experience - both inhouse and outsourced teams - for government-built product & services. Prior to joining GovTech, he was the Senior Director of Product and Technology at Expedia and was based in Singapore and London. Kevin has led global teams involved in globalisation, transformed monolithic solutions into microservices on the cloud, created reusable platform components for both customer-facing apps and internal-use pipelines, and re-architected monolithic systems to incorporate artificial intelligence models. With over 100 members, his team spanned across the US, UK, Hungary, Jordan, India, China, Singapore and a few smaller locations, and comprised of engineering and product directors, product managers, technical product managers and engineers. Kevin graduated with a B.Sc. (First Class Honours) in Computer Science from the National University of Singapore (NUS) and holds a M.Sc. (by Research) in Computer Science from NUS.
 
 - type: Keynote
@@ -100,7 +100,7 @@
       desc: Bernard is a Director in GovTech leading the GovTech Cybersecurity consultancy team to provide risk based consultancy services to architect the cybersecurity of Nationwide and Governmentwide strategic projects. Throught his 15 years in the public sector, he has undertaken various cybersecurity roles and projects in areas of Homeland security. He held key roles such as Chief Information Security Officer (CISO) and Head of Information security in MHA, (a) overseeing the Cyber Security Monitoring and Response Center system infrastructure, (b) providing Security Consultancy in various Home Teams wide projects, and (c) establishing MHA wide ICT Security Governance and Security Architecture. In his role as CISO, he was also appointed as security advisor in audit and risk committee to provide security guidance to audit steering committee. Prior to joining GovTech, he was in MHA leading a R&D team and co-authored a set of Secure Coding Practices. He was also a Solution Architect in F5 Networks and Security Lead for Government and Defence Sector. he is currently certified CISSP, ISSMP, ISSAP, CCSP, CISA, CDSPE, AWS and Azure Security engineer, and Scrum master.
     - name: Kevin Ng
       image: /assets/img/stack-x-cloud-2021-kevin-ng.png
-      title: Director, CODEX, GovTech
+      title: Director, Core Operations, Development Environment and eXchange (CODEX), GovTech
       desc: Kevin is the CODEX product leader for GCC and Singapore Government Tech Stack products with the goal of transforming developer experience - both inhouse and outsourced teams - for government-built product & services. Prior to joining GovTech, he was the Senior Director of Product and Technology at Expedia and was based in Singapore and London. Kevin has led global teams involved in globalisation, transformed monolithic solutions into microservices on the cloud, created reusable platform components for both customer-facing apps and internal-use pipelines, and re-architected monolithic systems to incorporate artificial intelligence models. With over 100 members, his team spanned across the US, UK, Hungary, Jordan, India, China, Singapore and a few smaller locations, and comprised of engineering and product directors, product managers, technical product managers and engineers. Kevin graduated with a B.Sc. (First Class Honours) in Computer Science from the National University of Singapore (NUS) and holds a M.Sc. (by Research) in Computer Science from NUS.
     - name: Erlina Ke
       image: /assets/img/stack-x-cloud-2021-erlina-ke.png
@@ -124,7 +124,7 @@
   speakers:
     - name: Kevin Ng
       image: /assets/img/stack-x-cloud-2021-kevin-ng.png
-      title: Director, CODEX, GovTech
+      title: Director, Core Operations, Development Environment and eXchange (CODEX), GovTech
       desc: Kevin is the CODEX product leader for GCC and Singapore Government Tech Stack products with the goal of transforming developer experience - both inhouse and outsourced teams - for government-built product & services. Prior to joining GovTech, he was the Senior Director of Product and Technology at Expedia and was based in Singapore and London. Kevin has led global teams involved in globalisation, transformed monolithic solutions into microservices on the cloud, created reusable platform components for both customer-facing apps and internal-use pipelines, and re-architected monolithic systems to incorporate artificial intelligence models. With over 100 members, his team spanned across the US, UK, Hungary, Jordan, India, China, Singapore and a few smaller locations, and comprised of engineering and product directors, product managers, technical product managers and engineers. Kevin graduated with a B.Sc. (First Class Honours) in Computer Science from the National University of Singapore (NUS) and holds a M.Sc. (by Research) in Computer Science from NUS.
 
 - type: Leader
@@ -138,7 +138,7 @@
       desc: Mia Kai leads a team that oversees the IT architecture for the Inland Revenue Interactive Network 3 (IRIN 3). IRIN 3 is the core system that runs major tax-administrative activities at IRAS. From the beginning of his career with IRAS, he has taken on multiple roles — ranging from a developer to tech planner and a project manager — for various projects with varying degree of complexity. The work experience and skills he has amassed over the years led him to his current position, where he and his brilliant team are always actively exploring and leveraging modern technologies to maintain and improve the efficiency of the tax administration system.
     - name: Kevin Ng
       image: /assets/img/stack-x-cloud-2021-kevin-ng.png
-      title: Director, CODEX, GovTech
+      title: Director, Core Operations, Development Environment and eXchange (CODEX), GovTech
       desc: Kevin is the CODEX product leader for GCC and Singapore Government Tech Stack products with the goal of transforming developer experience - both inhouse and outsourced teams - for government-built product & services. Prior to joining GovTech, he was the Senior Director of Product and Technology at Expedia and was based in Singapore and London. Kevin has led global teams involved in globalisation, transformed monolithic solutions into microservices on the cloud, created reusable platform components for both customer-facing apps and internal-use pipelines, and re-architected monolithic systems to incorporate artificial intelligence models. With over 100 members, his team spanned across the US, UK, Hungary, Jordan, India, China, Singapore and a few smaller locations, and comprised of engineering and product directors, product managers, technical product managers and engineers. Kevin graduated with a B.Sc. (First Class Honours) in Computer Science from the National University of Singapore (NUS) and holds a M.Sc. (by Research) in Computer Science from NUS.
     - name: Bernard Tan
       image: /assets/img/stack-x-cloud-2021-bernard-tan2.png
@@ -177,11 +177,11 @@
   speakers: 
     - name: Tang Bing Wan
       image: /assets/img/stack-x-cloud-2021-tang-bing-wan.png
-      title: Principal Application Infrastructure Architect, Central TS, GovTech
+      title: Principal Application Infrastructure Architect, Central Technical Services, GovTech
       desc: A passionate architect and technical manager, Bing Wan started his career as a software developer (Informix, Java, C) focusing on both banking and shipping domains. He developed a passion in IT infrastructure, security and operations, which guided his subsequent work as an architect even as the landscape shifted from on-premise/physical, virtualisation to cloud, microservices, and trust-based security paradigm. His most recent role as one of GovTech's Principal Infrastructure Architect further honed his skills in enabling a team of fellow passionate professionals to re-factor systems, IT operating model and culture to commercial cloud. His most current interest and focus area is on cloud automation/software defined infrastructure strategy across Singapore's whole-of-government. He is currently an AWS Certified Architect (Professional) and a Certified ScrumMaster.
     - name: Jessica Tan
       image: /assets/img/stack-x-cloud-2021-jessica-tan2.png
-      title: Programme Manager, CODEX, GovTech
+      title: Programme Manager, Core Operations, Development Environment and eXchange (CODEX), GovTech
       desc: Having worked both the private and public sector, Jessica brings with her a wide range of experience in the IT field, ranging from project management, business analysis, business and IT strategic planning, data analysis, data management, data warehousing solutions, data governance, to ITIL service management. She had been featured in the NUS ISS Community Newsroom in 2020 and Straits Times in 2021 for her continual pursuit of knowledge and skills upgrading. Her current focus is on the programme management of GCC.
 
 - type: Product
@@ -195,7 +195,7 @@
       desc: Kent has over 18 years of experience in planning, designing, delivering and operating high-impact applications in the APAC region. In his most recent role in GovTech, he is working with agencies to accelerate service delivery through the adoption of cloud, api and microservice technologies, as well as transformation of enterprise architecture and operating model to exploit the new technologies in the areas of automation and cloud cost optimisation.
     - name: Mahesh Rajagopal
       image: /assets/img/stack-x-cloud-2021-mahesh-rajagopal2.png
-      title: Senior Application Infrastructure Engineer, Central TS, GovTech
+      title: Senior Application Infrastructure Engineer, Central Technical Services, GovTech
       desc: Mahesh is an enterprise architect with 18 years of experience in various roles including automation, enterprise systems architecture, virtualisation and cloud. In his current role as GovTech's senior technical consultant, working with various government agencies to enable them to modernise and migrate their systems to cloud. Also involved in planning cloud automation/security strategy across Singapore's whole-of-government.
 
 - type: Product
