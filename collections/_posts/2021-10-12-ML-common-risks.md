@@ -15,7 +15,7 @@ tags:
   - PaaS
 ---
 
-In order to cater to the demand for complex interconnected systems, Machine Learning (ML) systems have evolved from traditional IT systems, which are typically simple programmes that handle simple datasets. ML systems create more opportunity by enabling organisations to process more complex use-case which are typically done by humans, thus processing and communicating more data across many different processing endpoints and units.
+In order to cater to the demand for complex interconnected systems, Machine Learning (ML) systems have evolved from traditional IT systems, which are typically simple programmes that handle simple datasets. ML systems create more opportunity by enabling organisations to process more complex use-case which are typically done by humans.
 
 ### FEATURES OF ML SYSTEMS
 
