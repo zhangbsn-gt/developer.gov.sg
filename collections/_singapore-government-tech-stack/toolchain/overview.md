@@ -42,7 +42,9 @@ This is a multi-tenanted Software-as-a-Service (SaaS) hosted on Government Comme
  
 Check out [Tools in SHIP-HATS](https://docs.developer.gov.sg/docs/ship-hats-documentation/#/architecture-diagram?id=tools-in-ship-hats){:Target="_blank"} to learn more, find documentation and tutorials.
 
-
+### Technical Documentations
+Check out <a href="https://docs.developer.tech.gov.sg/docs/ship-hats-documentation/#/">SHIP-HATS technical documentation for technical documentations.
+  
 ### Roadmap
 
 <figure style="text-align: center">
