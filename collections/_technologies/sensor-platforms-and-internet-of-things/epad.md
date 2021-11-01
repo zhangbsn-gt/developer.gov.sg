@@ -34,7 +34,7 @@ Users can access and stabilise their tablets to capture proper photos, via an ac
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/epad-fig1.png" width="50%" height="50%" 
+    src="/assets/img/epad-fig1.png" width="75%" height="75%" 
     alt="Fig 1: ePAD"
   />
   <figcaption>Fig 1: ePAD</figcaption>
