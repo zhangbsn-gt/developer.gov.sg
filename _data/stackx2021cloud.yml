@@ -268,7 +268,7 @@
 
 - type: Government
   timeslot: 3:05 PM - 3:30 PM
-  title: Secure Engineering Endpoint Devices
+  title: Securing Access to GCC 2.0 from Engineering Devices
   desc: Introuducing Security Suite for Engineering Engpoint Devices (SEED), the GovTech zero trust platform for GCC 2.0 and Singapore Government Tech Stack (SGTS)
   speakers: 
     - name: Samuel Loh
