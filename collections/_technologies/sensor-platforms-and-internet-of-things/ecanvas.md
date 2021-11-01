@@ -52,7 +52,7 @@ While developing the eCanvas, multiple site testing and alterations were carried
 
 The eCanvas is one of many SIOT products developed as part of the Smart Nation Sensor Platform (SNSP) and is aligned with GovTech’s focus on inclusiveness and aim to develop technology for the public good.
 
-### Why should eCanvas be adopted?
+### Why Should eCanvas be Adopted?
 
 The SIOT team designed the eCanvas with inclusiveness in mind as technology can be used to empower minority groups in society that are often overlooked, such as PWDs. This empowers PWDs to contribute to society and achieve their dreams. As Singapore digitalises and progresses towards our [Smart Nation](https://www.smartnation.gov.sg/){:target="_blank"} plans, it is pertinent for all Singaporeans of all abilities to be included through transformative technologies such as the eCanvas.
 
@@ -64,7 +64,7 @@ The benefits of the eCanvas include:
 
 **Seamless user experience**: With the eCanvas, there is no need to navigate through levels of voice commands like in a phone menu as the options are parallelised onto a single layer. This means that the voice control system interface creates a seamless user experience as only a specific command is required for a desired action to occur.
 
-### How do you use eCanvas?
+### How Do You Use eCanvas?
 
 **Users with zero upper-body mobility but possess strong verbal capabilities.**
 
