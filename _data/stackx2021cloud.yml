@@ -57,7 +57,7 @@
   speakers: 
     - name: Hunter Nield
       image: /assets/img/stack-x-cloud-2021-hunter-nield.png
-      title: Distinguished Engineer, GovTech
+      title: Distinguished Engineer, Government Digital Services, GovTech
       desc: Hunter is a Distinguished Engineer at GovTech who specialises in cloud strategy and engineering. In 2018, he partnered GovTech's Government Digital Services team and shared his technical expertise as a Senior Smart Nation Fellow. Hunter has 20 years of private-sector experience under his belt. Prior to joining the Government, he ran businesses in Asia and Australia focused on Cloud Infrastructure, Digital Transformation and R&D.
     - name: Chia Hsiao Ming
       image: /assets/img/stack-x-cloud-2021-chia-hsiao-ming.png
@@ -229,7 +229,7 @@
   speakers: 
     - name: Hunter Nield
       image: /assets/img/stack-x-cloud-2021-hunter-nield.png
-      title: Distinguished Engineer, GovTech
+      title: Distinguished Engineer, Government Digital Services, GovTech
       desc: Hunter is a Distinguished Engineer at GovTech who specialises in cloud strategy and engineering. In 2018, he partnered GovTech's Government Digital Services team and shared his technical expertise as a Senior Smart Nation Fellow. Hunter has 20 years of private-sector experience under his belt. Prior to joining the Government, he ran businesses in Asia and Australia focused on Cloud Infrastructure, Digital Transformation and R&D.
 
 - type: Government
@@ -268,10 +268,10 @@
 
 - type: Government
   timeslot: 3:05 PM - 3:30 PM
-  title: Cloudflare
-  desc: 
+  title: Secure Engineering Endpoint Devices
+  desc: Introuducing Security Suite for Engineering Engpoint Devices (SEED), the GovTech zero trust platform for GCC 2.0 and Singapore Government Tech Stack (SGTS)
   speakers: 
     - name: Samuel Loh
       image: /assets/img/stack-x-cloud-2021-samuel-loh.png
-      title: Senior Software Engineer, GovTech
+      title: Senior Software Engineer, Engineering Productivity, GovTech
       desc: Samuel is a Senior Software Engineer at GovTech. In his 6 years with GovTech, he participated in the design and implementation of Nectar, the first Kubernetes platform for the Singapore Government Tech Stack and has been a staunch developer advocate, encouraging agencies to design their systems with microservices and containers. He is currently a member of the Cloud Engineering Team, a cross-divisional team working to improve GCC and adoption of cloud native solutions and DevOps practices. As a polyglot programmer, he dabbles in a wide range of technologies.      
