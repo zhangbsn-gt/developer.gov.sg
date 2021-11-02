@@ -11,7 +11,7 @@ redirect_from: /singapore-government-tech-stack/toolchain/subscriptions
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/ship-hats-subscription-table.jpg" width="80%" height="80%" 
+    src="/assets/img/ship-hats-subscription-table.png" width="80%" height="80%" 
     alt="Table 1: SHIP-HATS Resources and Services For Subscription Tiers & Add-Ons"
   />
   <figcaption>Table 1: SHIP-HATS Resources and Services For Subscription Tiers & Add-Ons</figcaption>
