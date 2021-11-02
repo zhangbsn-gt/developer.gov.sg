@@ -51,7 +51,7 @@ Come 2022, the E-Stamping and Donation APIs will be made available for Software 
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/iras-api-marketplace-fig1.png" width="70%" height="70%" 
+    src="/assets/img/iras-api-marketplace-fig1.png" width="100%" height="100%" 
     alt="Fig 1: IRAS API Roadmap 2.0"
   />
   <figcaption>Fig 1: IRAS API Roadmap 2.0</figcaption>
