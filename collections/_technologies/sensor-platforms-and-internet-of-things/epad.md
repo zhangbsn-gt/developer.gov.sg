@@ -96,13 +96,6 @@ For enquiries, email <info@tech.gov.sg>.
   {% endfor %}  
 </div>
 
+Intern:
 
-
-
-
-
-
-
-
-
-
+- Li Cheng Li, Ngee Ann Polytechnic, Diploma in Information Technology 
