@@ -1,51 +1,47 @@
 ---
 title: Managed Services
 layout: layout-page-sidenav
-description: Improve efficiency and reduce the costs of your business by offloading complex operations to a dedicated service provider.
+description: Improve efficiency and reduce costs by leveraging Managed Services, rather than creating services and tools from scratch.
 ---
 
-## What are managed services?
+### Overview
 
-Managed Services are IT solutions for your team to improve efficiency and reduce the costs of your business.
+Improve efficiency and reduce costs by leveraging Managed Services, rather than creating services and tools from scratch.
 
-### What are some examples available for me?
+### What are Managed Services?
 
-Commercial Cloud Services and Government Managed Services are some managed IT services you can adopt.
+Managed Services refer to externally managed IT solutions that you can adopt. The Singapore Government has built a variety of digital services and tools that you can leverage on, including:
+- [NDI](https://www.developer.tech.gov.sg/technologies/digital-identity/national-digital-identity){:target="_blank"}: a digital identity system that enables Singapore residents and businesses to conveniently and securely transact with the public and private sectors
+- [Isomer](https://www.developer.tech.gov.sg/technologies/content-management/isomer){:target="_blank"}: an informational website generator for hosting and deploying static sites
+- [SHIP-HATS](https://www.developer.tech.gov.sg/singapore-government-tech-stack/toolchain/overview.html){:target="_blank"}: the Toolchain component within the [Singapore Government Tech Stack (SGTS)](https://www.developer.tech.gov.sg/singapore-government-tech-stack/overview/index.html#!){:target="_blank"} with security and governance guardrails that enables you to plan, build, test and deploy code to production
+- [SGDS](https://www.developer.tech.gov.sg/technologies/design/singapore-government-design-system){:target="_blank"}: a design framework for Government websites
 
-### What are the benefits of Commercial Cloud Services?
+For a more comprehensive list of services and tools, we recommend that you visit our [technologies page](https://www.developer.gov.sg/technologies/){:target="_blank"}.
 
-We encourage you to adopt solutions by commercial cloud providers. If you are a public servant, you can consider using [Government Commercial Cloud](https://www.developer.gov.sg/technologies/infrastructure-and-hosting/government-commercial-cloud).
+### Why Should Managed Services be Adopted?
 
-Cloud adoption brings you many benefits. This includes:
+By leveraging on existing IT solutions, you can improve efficiency and reduce costs required to build tools and services from scratch. 
 
-- **Improved IT Delivery and Ops**
+For example, Government agencies can consider adopting the [Government Commercial Cloud (GCC)](https://www.developer.tech.gov.sg/technologies/infrastructure-and-hosting/government-commercial-cloud){:target="_blank"}, which brings the modern innovations and capabilities of commercial cloud computing platforms to less sensitive Government systems.
 
-  You can enjoy a reduction in development time, day-to-day support and maintenance  (e.g. using Infra as Code or [CI/CD implementation](https://en.wikipedia.org/wiki/CI/CD)).
+By leveraging GCC, agencies stand to benefit from:
+- **Improved IT delivery and operations**:<br>Enjoy a reduction in development time, day-to-day support, and maintenance.
+- **Flexible infrastructure**:<br>Scale up or down your hosting resources on demand.
+- **Increased Agility**:<br>Rapidly deploy application updates and react to increased service demand or security threats.
+- **Better Security**:<br>Robust security features and internationally recognised certifications that would be a challenge for any single organisation to deliver on its own.
 
-* **Flexible infrastructure**
+### How Do You Use Managed Services?
 
-  With cloud services, you can scale up or down your hosting resources on demand.
+Signup and use details for individual products can be found on our [technologies page](https://www.developer.gov.sg/technologies/){:target="_blank"}.
 
-- **Increased Agility**
+### Success Stories
 
-  You can rapidly deploy application updates and react to increased service demand or security threats.
+Success stories of individual products can be found on our [technologies page](https://www.developer.gov.sg/technologies/){:target="_blank"}.
 
-* **Better Security**
+### What's Next?
 
-  Cloud service providers offer you robust security features and internationally recognised certifications that would be a challenge for any single organisation to deliver on its own.
+Updates of existing products and information on new products will be published on our [technologies page](https://www.developer.gov.sg/technologies/){:target="_blank"}.
 
-### What are the benefits of Government Managed Services?
+### Contact Information
 
-The Government builds and manages a variety of digital services and tools that your development teams can leverage on. You can now save your team time and effort from building tools from scratch. Some of these include:
-
-- [NDI](https://www.developer.gov.sg/technologies/digital-identity/national-digital-identity) - for authenticating your citizens and companies, and providing consent-based access to citizen data
-
-- [Isomer](https://www.developer.gov.sg/technologies/content-management/isomer) - for the hosting and deployment of your static sites
-
-- [Ship](https://www.developer.gov.sg/technologies/devops/ship) - a CI/CD and team collaboration platform
-
-- [Hats](https://www.developer.gov.sg/technologies/devops/hats) - a functional testing platform for your web and mobile applications
-
-- [SGDS](https://www.developer.gov.sg/technologies/design/singapore-government-design-system) - a design system for your government websites
-
-For a more comprehensive list of services, we recommend that you [visit our technologies page](https://www.developer.gov.sg/technologies/).
+For enquiries, email <info@tech.gov.sg>.
