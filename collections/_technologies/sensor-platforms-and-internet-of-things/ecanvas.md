@@ -8,7 +8,7 @@ bios:
   - name: Ong Lay Teen, Team Lead, Lead R&D/Systems Engineer
     img_src: ecanvas-ong-lay-teen.png
     desc: |
-      Lay Teen is the team leader of the Enabling (Assistive) Tech Team and a Lead R&D/Systems Engineer at GovTech.  She has over 20 years of international research and development experience in the industry and academia. Her specialisation includes advanced algorithm development, signal processing and RF/Microwave Engineering.  She received her Ph.D. in Engineering from Cardiff University, UK, Master of Science from the National University of Singapore (NUS) and Degree in Engineering from Nanyang Technological University (NTU). Lay Teen is passionate about learning, exploring, and sharing advanced technologies from/with research institutions and industry.  Her current focus is on leading the team in the development of Enabling/Assistive Technology that enable people of special needs to live independently and have a more fulfilling life.
+      Lay Teen is the team leader of the Enabling (Assistive) Tech Team and a Lead R&D/Systems Engineer at GovTech.  She has over 20 years of international research and development experience in the industry and academia. Her specialisation includes advanced algorithm development, signal processing and RF/Microwave Engineering.  She received her Ph.D. in Engineering from Cardiff University, UK, Master of Science from the National University of Singapore (NUS) and Degree in Engineering from Nanyang Technological University (NTU). Lay Teen is passionate about learning, exploring, and sharing advanced technologies from/with research institutions and industry.  Her current focus is on leading the team in developing Enabling/Assistive Technology that enable people of special needs to live independently and have a more fulfilling life.
 
   - name: Benjamen Lim, Associate R&D Engineer
     img_src: ecanvas-benjamen-lim.png
@@ -52,7 +52,7 @@ While developing the eCanvas, multiple site testing and alterations were carried
 
 The eCanvas is one of many SIOT products developed as part of the Smart Nation Sensor Platform (SNSP) and is aligned with GovTech’s focus on inclusiveness and aim to develop technology for the public good.
 
-### Why should eCanvas be adopted?
+### Why Should eCanvas be Adopted?
 
 The SIOT team designed the eCanvas with inclusiveness in mind as technology can be used to empower minority groups in society that are often overlooked, such as PWDs. This empowers PWDs to contribute to society and achieve their dreams. As Singapore digitalises and progresses towards our [Smart Nation](https://www.smartnation.gov.sg/){:target="_blank"} plans, it is pertinent for all Singaporeans of all abilities to be included through transformative technologies such as the eCanvas.
 
@@ -64,7 +64,7 @@ The benefits of the eCanvas include:
 
 **Seamless user experience**: With the eCanvas, there is no need to navigate through levels of voice commands like in a phone menu as the options are parallelised onto a single layer. This means that the voice control system interface creates a seamless user experience as only a specific command is required for a desired action to occur.
 
-### How do you use eCanvas?
+### How Do You Use eCanvas?
 
 **Users with zero upper-body mobility but possess strong verbal capabilities.**
 
