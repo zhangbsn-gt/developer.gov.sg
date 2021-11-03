@@ -39,6 +39,8 @@ The main benefits of Identiface are:
 
 Identiface is being piloted for logins to government digital services at kiosks located at IRAS Taxpayer and Business Service Centre and Our Tampines Hub’s Public Service Centre since April 2020, and CPF’s Customer Service Centre since September 2020. Over 81,000 access to services at these kiosks have been verified through the Face Verification feature. Users who visit the service centres to reset their Singpass passwords have also seen a reduction in waiting time of over 10 minutes as the technology offers improved convenience and ease of use.
 
+"test"
+
 "Our staff and users found the Singpass face verification useful and helpful with the following benefits: convenient login process, shorter time to login, an alternative for users who forgot password..."<br>**- Senior Manager, Service Centre at Central Provident Fund Board**
 
 Identiface has also improved registration processes of businesses. For example, DBS bank adopted Identiface to make its digital banking registration process more intuitive and seamless. One out of four DBS customers now choose Identiface to complete their verification process.
