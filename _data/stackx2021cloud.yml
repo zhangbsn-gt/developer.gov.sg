@@ -119,7 +119,7 @@
       
 - type: Leader
   timeslot: 2:40 PM - 2:50 PM
-  title: GCC 2.0 At A Glance
+  title: GCC 2.0 at a Glance
   desc: Continuing from the keynote sessions, Kevin will "double click" on the enhancements and how leaders can leverage the new and improved GCC 2.0
   speakers:
     - name: Kevin Ng
