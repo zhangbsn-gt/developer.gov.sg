@@ -69,6 +69,7 @@
     - Myinfo
     - Myinfo business
     - National Digital Identity
+    - Verify
     
 - name: Infrastructure and Hosting
   description: Host applications in secure environments at scale
