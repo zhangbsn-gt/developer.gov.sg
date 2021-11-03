@@ -200,7 +200,7 @@
 
 - type: Product
   timeslot: 3:00 PM - 3:30 PM
-  title: Learning Points from Cloud Operations - Streamlining Your Operational Processes
+  title: Learning Points from Cloud Operations
   desc: 
   speakers: 
     - name: Choong Keng Leong
@@ -224,7 +224,7 @@
 # Government
 - type: Government
   timeslot: 1:30 PM - 1:50 PM
-  title: GCC 2.0 New Features
+  title: What's New in GCC 2.0
   desc: 
   speakers: 
     - name: Hunter Nield
