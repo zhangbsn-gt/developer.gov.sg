@@ -29,7 +29,7 @@ The main benefits of Login are:
 **For end-users**: Users simply scan the QR code provided by Government agencies or businesses using the Singpass app and authenticate themselves with their biometrics or 6-digit passcode. Alternatively, users may tap on the QR code to be redirected to the Singpass app to access digital services on a mobile device.
 
 **For the public and private sectors**: The following steps are required to onboard and integrate Login into a digital service:
--	Product/ business owners can refer to the guidelines [here](https://api.singpass.gov.sg/library/login/business/implementation-key-principles){:target="_blank"}.
+-	Product/business owners can refer to the guidelines [here](https://api.singpass.gov.sg/library/login/business/implementation-key-principles){:target="_blank"}.
 -	Developers can refer to the technical guidelines [here](https://api.singpass.gov.sg/library/login/business/implementation-technical-requirements){:target="_blank"} and follow the steps listed in the tutorials.
 -	Once the product owner has crafted the user journey, they can log in at this [link](https://api.singpass.gov.sg/){:target="_blank"} to submit a linkup request for approval.
 -	Once the linkup request is approved, the product owner can follow up with the subsequent steps to agree to the Terms and Agreement and complete the app configuration.
@@ -51,3 +51,8 @@ Find out more about Login [here](https://api.singpass.gov.sg/library/login/busin
 ### Contact Information
 
 For enquiries, email <engagement_office@assurity.sg>.
+
+<br/>**Resources**
+
+- [Guidelines for Product/Business owners](https://api.singpass.gov.sg/library/verify/business/implementation-key-principles){:target="_blank"}
+- [Technical Guidelines for Developers](https://api.singpass.gov.sg/library/verify/developers/overview){:target="_blank"}
