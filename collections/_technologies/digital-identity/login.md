@@ -54,5 +54,5 @@ For enquiries, email <engagement_office@assurity.sg>.
 
 <br/>**Resources**
 
-- [Guidelines for Product/Business owners](https://api.singpass.gov.sg/library/verify/business/implementation-key-principles){:target="_blank"}
-- [Technical Guidelines for Developers](https://api.singpass.gov.sg/library/verify/developers/overview){:target="_blank"}
+- [Guidelines for Product/Business owners](https://api.singpass.gov.sg/library/login/business/implementation-key-principles){:target="_blank"}
+- [Technical Guidelines for Developers](https://api.singpass.gov.sg/library/login/business/implementation-technical-requirements){:target="_blank"}
