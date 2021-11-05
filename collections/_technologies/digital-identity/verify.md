@@ -32,8 +32,8 @@ The main benefits of Verify are:
 **For end-users**:  Verify is recommended as an alternative means to perform in-person identity verification. Users simply scan the QR code provided by agencies or businesses using their Singpass app when on-site and consents to have his basic personal details used in the transaction.
 
 **For the public and private sectors**: The following steps are required to onboard and integrate Verify into a digital service:
-- Product/ business owners can refer to the guidelines [here](https://api.singpass.gov.sg/library/verify/business/implementation-key-principles){:target="_blank"}.
-- Developers can refer to technical guidelines and tutorials [here](https://api.singpass.gov.sg/library/verify/developers/overview){:target="_blank"}.
+- Product/business owners can refer to the guidelines [here](https://api.singpass.gov.sg/library/verify/business/implementation-key-principles){:target="_blank"}.
+- Developers can refer to the technical guidelines [here](https://api.singpass.gov.sg/library/verify/developers/overview){:target="_blank"} and follow the steps listed in the tutorials.
 - Once the product owner has crafted the user journey, they can log in at this [link](https://api.singpass.gov.sg/){:target="_blank"} to submit a linkup request for approval.
 - Once the linkup request is approved, the product owner can follow up with the subsequent steps to agree to the Terms and Agreement and complete the app configuration.
 
@@ -55,4 +55,6 @@ For technical enquiries, email <support@myinfo.gov.sg>.
 
 <br/>**Technical Resources**
 
-- [Technical Guidelines and Tutorials](https://api.singpass.gov.sg/library/verify/developers/overview){:target="_blank"}
+- [Guidelines for Product/Business Owners](https://api.singpass.gov.sg/library/verify/business/implementation-key-principles){:target="_blank"}
+- [Technical Guidelines for Developers](https://api.singpass.gov.sg/library/verify/developers/overview){:target="_blank"}
+
