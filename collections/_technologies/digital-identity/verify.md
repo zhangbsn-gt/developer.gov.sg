@@ -53,7 +53,7 @@ For business enquiries, email <partner@myinfo.gov.sg>.
 
 For technical enquiries, email <support@myinfo.gov.sg>.
 
-<br/>**Technical Resources**
+<br/>**Resources**
 
 - [Guidelines for Product/Business Owners](https://api.singpass.gov.sg/library/verify/business/implementation-key-principles){:target="_blank"}
 - [Technical Guidelines for Developers](https://api.singpass.gov.sg/library/verify/developers/overview){:target="_blank"}
