@@ -66,10 +66,12 @@
   description: Make use of Government-backed digital identities to identify and transact with individuals and businesses
   items:
     - Overview
+    - Identiface
     - Login
     - Myinfo
     - Myinfo business
     - National Digital Identity
+    - Verify
     
 - name: Infrastructure and Hosting
   description: Host applications in secure environments at scale
