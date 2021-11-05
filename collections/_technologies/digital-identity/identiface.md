@@ -29,7 +29,7 @@ The main benefits of Identiface are:
 **For end-users**: Users simply enter their Singpass ID and password, followed by scanning their face on an Internet-enabled computer with a web camera or a mobile device with a front-facing camera. Users without such devices can also visit selected public locations (like IRAS Taxpayer and Business Service Centre and Our Tampines’ Hub Public Service Centre) equipped with this service. 
 
 **For the public and private sectors**: The following steps are required to onboard and integrate Identiface into a digital service:
--	Product/ business owners can refer to the guidelines [here](https://api.singpass.gov.sg/library/identiface/business/implementation-key-principles){:target="_blank"}.
+-	Product/business owners can refer to the guidelines [here](https://api.singpass.gov.sg/library/identiface/business/implementation-key-principles){:target="_blank"}.
 -	Developers can refer to the technical guidelines [here](https://api.singpass.gov.sg/library/identiface/developers/overview){:target="_blank"} and follow the steps listed in the tutorials.
 -	Please refer to the onboarding process [here](https://api.singpass.gov.sg/library/identiface/business/user-onboarding){:target="_blank"}.
 -	Once the product owner has crafted the user journey, they can log in at this [link](https://api.singpass.gov.sg/){:target="_blank"} to submit a linkup request for approval.
@@ -52,3 +52,8 @@ Find out more about Identiface [here](https://api.singpass.gov.sg/library/identi
 ### Contact Information
 
 For enquiries, email <biometrics_support@ndi.gov.sg>.
+
+<br/>**Resources**
+
+- [Guidelines for Product/Business Owners](https://api.singpass.gov.sg/library/identiface/business/implementation-key-principles){:target="_blank"}
+- [Technical Guidelines for Developers](https://api.singpass.gov.sg/library/identiface/developers/overview){:target="_blank"}
