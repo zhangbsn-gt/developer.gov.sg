@@ -22,7 +22,7 @@
 
 - type: Keynote
   timeslot: 09:40 AM - 10:10 AM
-  title: Impacts and Lessons Learned from NASA/Jet Propulsion Laboratory's Cloud Computing Journey
+  title: Impact and Lessons Learned from NASA/Jet Propulsion Laboratory's Cloud Computing Journey
   desc: Tom Soderstrom, an industry leader in cloud, shares how NASA embarked on its cloud journey and excelled.
   speakers:
     - name: Tom Soderstrom
@@ -225,7 +225,7 @@
 - type: Government
   timeslot: 1:30 PM - 1:50 PM
   title: What's New in GCC 2.0
-  desc: 
+  desc: GCC 2.0 represents a refinement from our initial platform, based on feedback and learning points over the past two years. This session will introduce some of the new features and capabilities that will enable a more cloud native environment for applications.
   speakers: 
     - name: Hunter Nield
       image: /assets/img/stack-x-cloud-2021-hunter-nield.png
