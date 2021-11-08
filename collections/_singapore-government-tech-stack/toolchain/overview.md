@@ -42,9 +42,10 @@ This is a multi-tenanted Software-as-a-Service (SaaS) hosted on Government Comme
  
 Check out [Tools in SHIP-HATS](https://docs.developer.gov.sg/docs/ship-hats-documentation/#/architecture-diagram?id=tools-in-ship-hats){:Target="_blank"} to learn more, find documentation and tutorials.
 
-### Technical Documentations
+### Technical Documentation
 
-Check out [SHIP-HATS technical documentation](https://docs.developer.tech.gov.sg/docs/ship-hats-documentation/#/){:Target="_blank"} to learn more.
+1. [SHIP-HATS technical documentation](https://docs.developer.tech.gov.sg/docs/ship-hats-documentation/#/){:Target="_blank"}.
+2. [DevSecOps Playbook](https://docs.developer.tech.gov.sg/docs/devsecops-playbook/#/){:Target="_blank"}.
 
 ### Roadmap
 
@@ -60,7 +61,7 @@ Check out [SHIP-HATS technical documentation](https://docs.developer.tech.gov.sg
 
 We heard your feedback on Annual Developer Satisfaction Survey 2021 and we are doubling down on providing solid documentation on our products. [Find out what's new](./what-s-new)
 
-### Training Resources
+### Resources
 
 Here are some [training resources](./training-resources) to get started.
 
