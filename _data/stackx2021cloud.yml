@@ -225,7 +225,7 @@
 - type: Government
   timeslot: 1:30 PM - 1:50 PM
   title: What's New in GCC 2.0
-  desc: GCC 2.0 represents a refinement from our initial platform, based on feedback and learnings over the past two yesrs. This session will introduce some of the new features and capabilities that will enable a more cloud native environment for applications.
+  desc: GCC 2.0 represents a refinement from our initial platform, based on feedback and learning points over the past two yesrs. This session will introduce some of the new features and capabilities that will enable a more cloud native environment for applications.
   speakers: 
     - name: Hunter Nield
       image: /assets/img/stack-x-cloud-2021-hunter-nield.png
