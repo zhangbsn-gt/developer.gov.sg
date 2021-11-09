@@ -30,66 +30,15 @@ Based on the feedback from the users, we worked to offer an enhanced GCC 2.0 to:
 
 #### GCC 2.0 Features
 
+-	**Single Identity**: [TechPass](https://www.developer.tech.gov.sg/singapore-government-tech-stack/service-management/techpass.html){:target="_blank"} - Single identity, streamlined on/off boarding and simplified access to GCC
+-	**Endpoint Posture Checks**: SEED - Real-time periodic posture checks with capability to terminate only individual services
+-	**Access Control**: Cloudflare Access - Realtime secured identity (with MFA) and device posture through an encrypted channel to access GCC
+-	**Controls & Compliance**: GCC 2.0 Infra - Security controls using identity access management and policy-as-code. GCC 2.0 CMP - Less dependence on cloud management portal for control and enable more automation over service requests
+-	**Native Workload Administration**: Cloud Native - Relies on more reliable CSP native workload administration
 
+### Getting Started
 
+To know more about GCC 2.0 join a virtual conference, [Stack X Cloud 2021](https://www.developer.tech.gov.sg/communities/events/stack-x-cloud-2021){:target="_blank"} on 17 November 2021. 
 
+While GCC 2.0 gets ready for the pilot phase, agencies can continue to move to GCC 1.0. Sign up to the GCC Foundation Training for basic training on GCC 1.0. 
 
-
-
-
-
-
-
-## Overview
-
-The Government Commercial Cloud Service brings the modern innovations and capabilities of commercial cloud computing platforms to less sensitive Government systems. These leading ICT capabilities are augmented by robust cybersecurity measures and systems to protect the data that resides on commercial cloud platforms.
-
-Multinational conglomerates like Amazon, Google and Microsoft are leading the cloud computing revolution, providing organisations with Commercial Cloud options that are scalable and customisable. Rather than being mired in the cost and hassle of racking, stacking and maintaining computing hardware on-site, developer teams can instead focus on what they do best—build and deliver digital applications that create value for stakeholders within and beyond their organisation.
-
-Government agencies can tap on commercial cloud software to incorporate advanced functionalities into their digital services instead of trying to reinvent the wheel. Application testing and deployment can be automated and done in real-time, speeding up the delivery of high-quality Government digital services to citizens and businesses.
-
-### Get started
-
-To find out more about the GCC, contact [info@tech.gov.sg](mailto:info@tech.gov.sg).
-
-## **GCC Foundation Training**
-
-GovTech is offering a GCC Foundation Training. Upon completion trainees will have reliably demonstrated the ability to select and use the appropriate GCC Services (GCCS) to host systems on GCC.
-
-**Learning Objectives**
-
-- Purpose of each GCCS
-
-- Subscribing and administering GCCS
-
-- Navigating the Cloud Management Portal (CMP)
-
-- GCC hosting framework
-
-- Onboarding, Setup and Operating Systems
-
-**Training Approach**
-
-- eLearning on Udemy
-
-**Assessment**
-
-- Online certification test
-
-- 60 multiple choice questions
-
-- 90 minutes
-
-- Must score 70% to pass
-
-- Open-book using course materials
-
-**Pre-requisites**
-
-- Require Udemy account
-
-- Must be local company in Singapore
-
-### **How to Sign Up**
-
-Please register your interest at [https://go.gov.sg/gcctrainingreg](https://go.gov.sg/gcctrainingreg)
