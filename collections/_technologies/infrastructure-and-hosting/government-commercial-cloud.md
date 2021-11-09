@@ -40,7 +40,7 @@ Based on the feedback from the users, we worked to offer an enhanced GCC 2.0 to:
 
 To know more about GCC 2.0 join a virtual conference, [Stack X Cloud 2021](https://www.developer.tech.gov.sg/communities/events/stack-x-cloud-2021){:target="_blank"} on 17 November 2021. 
 
-While GCC 2.0 gets ready for the pilot phase, agencies can continue to move to GCC 1.0. Sign up to the GCC Foundation Training for basic training on GCC 1.0. 
+While GCC 2.0 gets ready for the pilot phase, agencies can continue to move to GCC 1.0. Sign up for the [GCC Foundation Training](https://www.developer.tech.gov.sg/gcc-foundation-training){:target="_blank"} for basic training on GCC 1.0. 
 
 ### Contact Information
 
