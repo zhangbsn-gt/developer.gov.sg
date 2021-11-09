@@ -1,11 +1,10 @@
 ---
-title: Government Commercial Cloud
+title: Government on Commercial Cloud
 layout: layout-page-sidenav
 category: Hosting
 redirect_from: /singapore-government-tech-stack/government-commercial-cloud
 description: >
-  The Government Commercial Cloud Service brings the modern innovations and 
-  capabilities of commercial cloud computing platforms to Government systems.
+  The Government on Commercial Cloud (GCC) brings the modern innovations and capabilities of commercial cloud computing platforms to Government systems.
 ---
 
 ## Overview
