@@ -1,7 +1,9 @@
 ---
 title: Resources
 layout: layout-page-sidenav
-description: Checkout the documentation and tutorials for SHIP-HATS.
+description: Check out the documentation and tutorials for SHIP-HATS.
+redirect_from: /singapore-government-tech-stack/toolchain/training-resources
+
 ---
 ### Overview 
 Check out the technical documentation, how-to guides and videos to understand SHIP-HATS. We will be adding more content regularly. Check out [What's New](./what-s-new) for the latest updates. 
@@ -9,7 +11,10 @@ Check out the technical documentation, how-to guides and videos to understand SH
 Need a specific training? Submit your [feedback](./ship-hats-enquiries) and we will include it in our prioritisation.
 
 ### Basics
-[DevOps Concepts](./training/training-concepts)<br />[Preparing your team for DevOps](https://www.youtube.com/watch?v=wgW-8vvK5sMte){:target="_blank"}<br />[Tools in SHIP-HATS](https://docs.developer.gov.sg/docs/ship-hats-documentation/#/archi-diagram?id=tools-in-ship-hats){:target="_blank"}<br />
+1. [SHIP-HATS technical documentation](https://docs.developer.tech.gov.sg/docs/ship-hats-documentation/#/){:Target="_blank"}
+2. [DevSecOps Playbook](https://docs.developer.tech.gov.sg/docs/devsecops-playbook/#/){:Target="_blank"}
+3. [DevOps Concepts](./training/training-concepts)<br />[Preparing your team for DevOps](https://www.youtube.com/watch?v=wgW-8vvK5sMte){:target="_blank"}<br />
+4. [Tools in SHIP-HATS](https://docs.developer.gov.sg/docs/ship-hats-documentation/#/archi-diagram?id=tools-in-ship-hats){:target="_blank"}<br />
 
 ### SHIP-HATS 
 
