@@ -1,7 +1,7 @@
 --- 
 title: GCC 1.0 Foundation Training
 layout: layout-page
-permalink: /gcc-1.0-foundation-training
+permalink: /gcc-foundation-training
 ---
 
 GovTech offers a GCC 1.0 Foundation Training. Upon completion trainees will have reliably demonstrated the ability to select and use the appropriate GCC Services (GCCS) to host systems on GCC.
