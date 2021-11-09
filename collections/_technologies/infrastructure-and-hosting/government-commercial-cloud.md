@@ -42,3 +42,6 @@ To know more about GCC 2.0 join a virtual conference, [Stack X Cloud 2021](https
 
 While GCC 2.0 gets ready for the pilot phase, agencies can continue to move to GCC 1.0. Sign up to the GCC Foundation Training for basic training on GCC 1.0. 
 
+### Contact Information
+
+For enquiries, contact <info@tech.gov.sg>.
