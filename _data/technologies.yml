@@ -77,7 +77,7 @@
   description: Host applications in secure environments at scale
   items:
     - Overview
-    - Government Commercial Cloud
+    - Government on Commercial Cloud
 
 - name: Sensor Platforms and Internet of Things
   description: Build on sensors and IOT technologies and leverage their data
