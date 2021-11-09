@@ -28,7 +28,7 @@ Based on the feedback from the users, we worked to offer an enhanced GCC 2.0 to:
 - Replace components with cloud native solutions to **reduce cost and simplify onboarding process** 
 - Provide a **productive environment** where engineers can focus on building and delivering innovative solutions and systems
 
-## GCC 2.0 Features
+#### GCC 2.0 Features
 
 
 
