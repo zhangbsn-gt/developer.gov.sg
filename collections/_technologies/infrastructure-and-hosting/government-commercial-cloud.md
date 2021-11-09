@@ -7,6 +7,39 @@ description: >
   The Government on Commercial Cloud (GCC) brings the modern innovations and capabilities of commercial cloud computing platforms to Government systems.
 ---
 
+### Overview
+
+The Government on Commercial Cloud (GCC) platform takes the vision of Digital Governance forward by bringing the capabilities of commercial cloud computing platforms to ICT systems in public sector.  GCC is a “wrapper” platform that provides agencies with a consistent means to adopt commercial cloud offered by Amazon, Microsoft and Google.
+
+As of 2021, over 500 systems have been onboarded. 
+
+<figure style="text-align: center">
+  <img
+    src="/assets/img/GCC-fig1.png" width="70%" height="70%" 
+    alt="Fig 1: GCC"
+  />
+  <figcaption>Fig 1: GCC</figcaption>
+</figure>
+
+### What's Next: Announcing GCC 2.0
+
+Based on the feedback from the users, we worked to offer an enhanced GCC 2.0 to:
+- Provide **faster response** to changes in policies and business requirements
+- Replace components with cloud native solutions to **reduce cost and simplify onboarding process** 
+- Provide a **productive environment** where engineers can focus on building and delivering innovative solutions and systems
+
+## GCC 2.0 Features
+
+
+
+
+
+
+
+
+
+
+
 ## Overview
 
 The Government Commercial Cloud Service brings the modern innovations and capabilities of commercial cloud computing platforms to less sensitive Government systems. These leading ICT capabilities are augmented by robust cybersecurity measures and systems to protect the data that resides on commercial cloud platforms.
