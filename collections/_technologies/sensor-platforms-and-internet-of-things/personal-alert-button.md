@@ -3,6 +3,36 @@ title: Personal Alert Button (PAB)
 layout: layout-page-sidenav
 category: Sensors and IOT
 description: PAB is an alert device that gives our seniors  greater peace of mind to live independently and safely.
+bios:
+  - name: Joy Ng, Senior UX Designer
+    img_src: pab-joy-ng.png
+    desc: |
+      Joy is a UX Designer working on GovTech Assisted Living Ecosystem (GALE). Prior to GovTech, she worked in Fintech and academia. She has interests in designing crowdsourcing platforms and has worked on projects such as OneService App and ResponderSG App. She holds a Masters in Communications and New Media from NUS.
+
+  - name: Andrew Sng, Product Manager
+    img_src: pab-andrew-sng.png
+    desc: |
+      Andrew is an advocate in developing technology for public good. He joined SIOT in GovTech in September 2017 and has been developing user-friendly hardware solutions for citizens. Outside of work, Andrew loves to eat the best foods in Singapore, play the occasional futsal, and read books.
+      
+  - name: Si-Yan Teo, Systems Engineer
+    img_src: pab-teo-si-yan.png
+    desc: |
+      Si-Yan is a Full-Stack Developer who designs and builds custom applications in DECADA. She enjoys learning new things and has many hobbies, including baking, calligraphy, and board games.
+      
+  - name: Marvin Lee, Associate Systems Engineer
+    img_src: pab-marvin-lee.png
+    desc: |
+      Marvin graduated from the Singapore University of Technology and Design (SUTD) with a degree in Engineering Product Development. He is currently a Systems Engineer working on GALE and oversees the upgrading of DECADA infrastructure and dev-ops. 
+
+  - name: Kelvin Lim, UX Designer
+    img_src: pab-kelvin-lim.png
+    desc: |
+      Kelvin is a UX Designer who worked on the research and design of the PAB. He graduated from LASALLE College of the Arts, with an honours degree in Design Communication. Kelvin is also a trained and detail-oriented graphic designer. In his free time, Kelvin likes to tinker with mechanical keyboards and get his hands dirty from collecting rare house plants.
+
+  - name: Adrian Tan, Delivery Manager
+    img_src: pab-adrian-tan.png
+    desc: |
+      Adrian Tan is a Product Lead and Delivery Manager at GovTech. He has over eight years of experience in Product Management, Business Analyst, Scrum Master, and Product Owner roles. Before joining GovTech, he was a start-up founder, Product Manager at a development house, and Product Owner/Product Manager at Municipal Services Office. Adrian specialises in facilitating inception workshops, managing multiple scrum teams, and mentoring new Delivery Managers. He is deeply interested in using technology to solve complex real-world problems.
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5Jy9Qu4frdg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -73,6 +103,26 @@ For enquiries, contact <gale_support@tech.gov.sg>.
 
 ### Meet the Team!
 
+<div class="card-grid-container grid-25rem">
+  {% for bios in page.bios %}
+  {% assign img_url = "/assets/img/" | append: bios.img_src %}
+  <div class="sgds-card">
+    <div class="sgds-card-content">
+      <img style="float: left; margin-right: 20px;" src="{{ img_url }}" alt="{{ bios.name}}">
+      <p><strong>{{ bios.name}}</strong><br>
+        {{ bios.desc }}
+      </p>
+    </div>
+  </div>
+  {% endfor %}  
+</div>
 
+Big thanks to those who were part of the team: Chan Chien Hsing (SIOT), Yeap Bing Cheng (SIOT), and Song Wee Lee (SIOT).
 
-
+<figure style="text-align: center">
+  <img
+    src="/assets/img/pab-team-photo.png" width="100%" height="100%" 
+    alt="PAB team photo"
+  />
+  <figcaption>PAB team photo</figcaption>
+</figure>
