@@ -12,7 +12,7 @@ bios:
   - name: Andrew Sng, Product Manager
     img_src: pab-andrew-sng.png
     desc: |
-      Andrew is an advocate in developing technology for public good. He joined SIOT in GovTech in September 2017 and has been developing user-friendly hardware solutions for citizens. Outside of work, Andrew loves to eat the best foods in Singapore, play the occasional futsal, and read books.
+      Andrew is an advocate in developing technology for public good. He joined the Sensor Platforms and Internet of Things (SIOT) team in GovTech in September 2017 and has been developing user-friendly hardware solutions for citizens. Outside of work, Andrew loves to eat the best foods in Singapore, play the occasional futsal, and read books.
       
   - name: Si-Yan Teo, Systems Engineer
     img_src: pab-teo-si-yan.png
@@ -95,7 +95,7 @@ _“I was feeling breathless, I can’t reach the phone. I can’t even tell the
 
 ### What's Next?
 
-The team is exploring opportunities to deploy the PAB beyond the 53 rental blocks.
+The team is exploring opportunities to deploy the PAB beyond the current 53 rental blocks.
 
 ### Contact Information
 
