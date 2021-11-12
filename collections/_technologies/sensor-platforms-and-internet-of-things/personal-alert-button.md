@@ -51,7 +51,7 @@ PAB’s 4G technology which enables two-way communication.
 <figure style="text-align: center">
   <img
     src="/assets/img/pab-fig1.png" width="30%" height="30%" 
-    alt="Fig 1: PAB installed in toilet"
+    alt="Fig 1: PAB installed a washroom"
   />
   <figcaption>Fig 1: PAB installed in toilet</figcaption>
 </figure>
