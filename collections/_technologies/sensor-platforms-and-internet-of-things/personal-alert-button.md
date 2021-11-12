@@ -50,7 +50,7 @@ PAB’s 4G technology which enables two-way communication.
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/pab-fig1.png" width="100%" height="100%" 
+    src="/assets/img/pab-fig1.png" width="30%" height="30%" 
     alt="Fig 1: PAB installed in toilet"
   />
   <figcaption>Fig 1: PAB installed in toilet</figcaption>
@@ -58,7 +58,7 @@ PAB’s 4G technology which enables two-way communication.
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/pab-fig2.png" width="100%" height="100%" 
+    src="/assets/img/pab-fig2.png" width="30%" height="30%" 
     alt="Fig 2: PAB buttons"
   />
   <figcaption>Fig 2: PAB buttons</figcaption>
@@ -88,10 +88,10 @@ PABs have been installed in more than 6,000 housing units from 53 rental blocks.
 Between November 2019 and September 2021, the PAB handled 415 emergency cases, including medical, social, and crime-related issues. Hear testimonies from two PAB users:
 
 _“From 9pm to 3am… my leg was so painful. I couldn’t get out of bed… I can’t walk so I pressed the button for help. My son lives in Woodlands, too far away from me. I would have taken a taxi ride to hospital myself, but at 3am… where can I find a taxi?”_ 
-**- Mdm A, a senior who lives alone**
+<br>**- Mdm A, a senior who lives alone**
 
 _“I was feeling breathless, I can’t reach the phone. I can’t even tell the 995 phone operator my address even if I can walk to my phone. [Your system] no need to give address, they knew… and they sent the ambulance to me.”_ 
-**– Mr T, a senior who lives alone**
+<br>**– Mr T, a senior who lives alone**
 
 ### What's Next?
 
@@ -121,7 +121,7 @@ Big thanks to those who were part of the team: Chan Chien Hsing (SIOT), Yeap Bin
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/pab-team-photo.png" width="100%" height="100%" 
+    src="/assets/img/pab-team-photo.png" width="50%" height="50%" 
     alt="PAB team photo"
   />
   <figcaption>PAB team photo</figcaption>
