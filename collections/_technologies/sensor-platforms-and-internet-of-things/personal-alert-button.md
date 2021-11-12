@@ -39,7 +39,9 @@ bios:
 
 ### Overview
 
-PAB is part of the [Government Assisted Living Ecosystem (GALE)](https://www.developer.tech.gov.sg/technologies/digital-solutions-to-address-covid-19/government-assisted-living-ecosystem){:target="_blank"}, a collection of technologies and services to give our seniors greater peace of mind to live safely and independently. 
+Projections estimate that the number of seniors living alone in Singapore will reach 83,000 by 2030. This is a steep increase from 47,000 in 2016. In response, PAB was conceived to ensure that seniors living alone can remain safe and independent.
+
+PAB is part of the [Government Assisted Living Ecosystem (GALE)](https://www.developer.tech.gov.sg/technologies/digital-solutions-to-address-covid-19/government-assisted-living-ecosystem){:target="_blank"}, a collection of technologies and services to give our seniors greater peace of mind and support during their golden years.
 
 ### What is the PAB?
 
@@ -88,7 +90,7 @@ PABs have been installed in more than 6,000 housing units from 53 rental blocks.
 Between November 2019 and September 2021, the PAB handled 415 emergency cases, including medical, social, and crime-related issues. Hear testimonies from two PAB users:
 
 _“From 9pm to 3am… my leg was so painful. I couldn’t get out of bed… I can’t walk so I pressed the button for help. My son lives in Woodlands, too far away from me. I would have taken a taxi ride to hospital myself, but at 3am… where can I find a taxi?”_ 
-<br>**- Mdm A, a senior who lives alone**
+<br>**– Mdm A, a senior who lives alone**
 
 _“I was feeling breathless, I can’t reach the phone. I can’t even tell the 995 phone operator my address even if I can walk to my phone. [Your system] no need to give address, they knew… and they sent the ambulance to me.”_ 
 <br>**– Mr T, a senior who lives alone**
