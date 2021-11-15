@@ -228,66 +228,47 @@ description: >
 <h2>How Do You Use LaaP?</h2>
 
 <p>
-  Contact the product team at <a href="mailto:sensors@tech.gov.sg">sensors@tech.gov.sg</a>  for onboarding instructions.
+  Contact the product team at <a href="mailto:sensors@tech.gov.sg">sensors@tech.gov.sg</a> for onboarding instructions.
 </p>
 
+<h2>Success Stories</h2>
 
-      
+<p>
+  Under Tranche 1 of the LaaP project, 50 smart lampposts were installed in one-north and Geylang to test the technical feasibility of using lampposts as a common infrastructure to create situational awareness for different smart city use cases – including crowd analytics, localised environmental monitoring, information sharing with vehicles, and PMD and bicycle traffic analytics.
+</p>
+
+<figure style="text-align: center">
+  <img
+    src="/assets/img/laap-fig1.png" width="100%" height="100%" 
+    alt="Fig 1: Smart lampposts fitted with different sensors under LaaP Tranche 1"
+  />
+  <figcaption>Fig 1: Smart lampposts fitted with different sensors under LaaP Tranche 1</figcaption>
+</figure>    
      
+<h2>What's Next?</h2>
 
+<p>
+  The LaaP team is exploring new use cases and features for lampposts as part of a smart city’s infrastructure.
+</p>
 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-    
-      
+<h2>Contact Information</h2>
 
-      
-      
-      
+<p>
+  LaaP is currently in the trial and initial deployment stage. Agencies who wish to work with us or find out more about the sensors deployed and data available may contact <a href="mailto:sensors@tech.gov.sg">sensors@tech.gov.sg</a>.
+</p>
 
+<h2>Meet the Team!</h2>
 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+<div class="card-grid-container grid-25rem">
+  {% for bios in page.bios %}
+  {% assign img_url = "/assets/img/" | append: bios.img_src %}
+  <div class="sgds-card">
+    <div class="sgds-card-content">
+      <img style="float: left; margin-right: 20px;" src="{{ img_url }}" alt="{{ bios.name}}">
+      <p><strong>{{ bios.name}}</strong><br>
+        {{ bios.desc }}
+      </p>
+    </div>
+  </div>
+  {% endfor %}  
+</div>
