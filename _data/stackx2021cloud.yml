@@ -57,7 +57,7 @@
   speakers: 
     - name: Hunter Nield
       image: /assets/img/stack-x-cloud-2021-hunter-nield.png
-      title: Distinguished Engineer, Government Digital Services, GovTech
+      title: Distinguished Engineer, GovTech
       desc: Hunter is a Distinguished Engineer at GovTech who specialises in cloud strategy and engineering. In 2018, he partnered GovTech's Government Digital Services team and shared his technical expertise as a Senior Smart Nation Fellow. Hunter has 20 years of private-sector experience under his belt. Prior to joining the Government, he ran businesses in Asia and Australia focused on Cloud Infrastructure, Digital Transformation and R&D.
     - name: Chia Hsiao Ming
       image: /assets/img/stack-x-cloud-2021-chia-hsiao-ming.png
@@ -229,7 +229,7 @@
   speakers: 
     - name: Hunter Nield
       image: /assets/img/stack-x-cloud-2021-hunter-nield.png
-      title: Distinguished Engineer, Government Digital Services, GovTech
+      title: Distinguished Engineer, GovTech
       desc: Hunter is a Distinguished Engineer at GovTech who specialises in cloud strategy and engineering. In 2018, he partnered GovTech's Government Digital Services team and shared his technical expertise as a Senior Smart Nation Fellow. Hunter has 20 years of private-sector experience under his belt. Prior to joining the Government, he ran businesses in Asia and Australia focused on Cloud Infrastructure, Digital Transformation and R&D.
 
 - type: Government
