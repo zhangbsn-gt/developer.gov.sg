@@ -64,9 +64,11 @@ After moving the tablet to a desired angle, users can press the camera-designate
 
 The team’s continuous efforts coupled with strong support from GovTech and CPAS’ staff resulted in the successful delivery of the first ePAD prototype trial in August 2020. CPAS subsequently indicated interest for more ePAD devices to be brought in for clients’ usage, indicating the trial’s success. With feedback on its design from the first trial, the team delivered a new and improved version to CPAS a second trial in July 2021.
 
-The ePAD prototype has also received interest from [Blk.sg](https://blk.sg/){:target="_blank"}, a social enterprise that volunteers teaching professional photography at CPAS. ePAD will be deployed at Blk.sg’s events such as “Disabled can Volunteer – as an inclusive photographer”, which is a ground-up movement organised with the [Singapore Kindness Movement (SKM)](https://www.kindness.sg/){:target="_blank"}. The inaugural event at ChangiSimei, expected to take place in early December 2021, commemorates initiatives that pay tribute to front line warriors by helping them to take family portraits. 
+The ePAD prototype has also received interest from [Blk.sg](https://blk.sg/){:target="_blank"}*, a social enterprise that volunteers teaching professional photography at CPAS. ePAD will be deployed at Blk.sg’s events such as “Disabled can Volunteer – as an inclusive photographer”, which is a ground-up movement organised with the [Singapore Kindness Movement (SKM)](https://www.kindness.sg/){:target="_blank"}. The inaugural event at ChangiSimei, expected to take place in early December 2021, commemorates initiatives that pay tribute to front line warriors by helping them to take family portraits. 
 
 CPAS, among other beneficiaries of ePAD, will be involved in the event as part of Blk.sg’s efforts to imbue students with the necessary skills, knowledge, and attitude. Despite having cerebral palsy, students can gain social skills and showcase their creative talents via ePAD’s enabling system.
+
+*_Blk.sg is undergoing a revamp and will be back online by 01 December 2021._
 
 ### What's Next?
 
