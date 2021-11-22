@@ -14,7 +14,7 @@ Need a specific training? Submit your [feedback](./ship-hats-enquiries) and we w
 1. [SHIP-HATS technical documentation](https://docs.developer.tech.gov.sg/docs/ship-hats-documentation/#/){:Target="_blank"}
 2. [DevSecOps Playbook](https://docs.developer.tech.gov.sg/docs/devsecops-playbook/#/){:Target="_blank"}
 3. [DevOps Concepts](./training/training-concepts)<br />[Preparing your team for DevOps](https://www.youtube.com/watch?v=wgW-8vvK5sMte){:target="_blank"}<br />
-4. [Tools in SHIP-HATS](https://docs.developer.gov.sg/docs/ship-hats-documentation/#/archi-diagram?id=tools-in-ship-hats){:target="_blank"}<br />
+4. [Tools in SHIP-HATS](https://docs.developer.tech.gov.sg/docs/ship-hats-documentation/#/architecture-diagram){:target="_blank"}<br />
 
 ### SHIP-HATS 
 
