@@ -1,5 +1,5 @@
 ---
-title: Myinfo business - A “Tell Us Once” Service that facilitates Online Transactions for Businesses.
+title: Myinfo business - A “Tell Us Once” Service that facilitates Online Transactions for Businesses
 layout: layout-page-sidenav
 description: >
   Myinfo business is a “Tell Us Once” service that enables businesses to pre-fill and provide their corporate data and applicants’ personal data for simpler online transactions. 
