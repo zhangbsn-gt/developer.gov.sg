@@ -3,248 +3,45 @@ title: STACK-X Cloud 2021
 layout: layout-page-sidenav
 description: >
  Stack-X Cloud is a one-day conference for developers and IT leaders to learn about the lates enhancements for GCC with practical lessons on cloud adoption
+video_list_layout: 'stack-x-cloud-2021-video-list.html'
 ---
 
-<style>
-  .speaker-list {
-    margin-top: 2rem;
-  }
-  .speaker-list > .row {
-    margin-bottom: 2rem;
-  }
-  .tab-content figure {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  @media (max-width: 768px) {
-    .tab-content figure {
-      max-width: 33%;
-    }
-  }
-</style>
-
-<figure>
-  <img
-    src="/assets/img/STACK-X-Cloud-Banner01.jpg"
-    alt="Stack-X Cloud"
-  />
-</figure>
-
+<h2>STACK-X Cloud 2021</h2>
 <p>
-  <strong>Enhancements in GCC &bullet; Industry collaboration opportunities &bullet; Technical deep dives</strong>
+  Thank you for joining us at STACK X Cloud 2021. Missed any sessions? You can watch the video replays below
 </p>
-<p>
-  Join this virtual conference to learn how the Singapore
-  Government is accelerating digital transformation by
-  unlocking the power of Government on Commercial Cloud (GCC). 
-  Collaboration opportunities abound for all industry players. 
-  Hear from public sector practitioners & industry partners, covering topics like  
-  the cloud landscape and roadmap, latest GCC enhancements and practical
-  lessons on cloud adoption.
-</p>
-<p>
-<strong>
-    <a
-      class="sgds-button is-primary"
-      href="https://form.gov.sg/#!/615d7795d09a2900145c714f" target="_blank"
-      >Register Now</a
-    >
-  </strong>
-</p>
-
-<section>
-  <h4>Who should attend?</h4>
-  <p>We have tailored content for government agencies and industry partners:</p>
-  <div class="row is-multiline">
-    <div class="col is-6">
-     <ul>
-      <li type= "none">  
-       &ndash; Agency CIOs and IT Directors
-      </li>
-      <li type= "none">  
-       &ndash; Project Managers
-      <li type= "none">  
-       &ndash; Business Analysts
-      </li>
-      <li type= "none">  
-       &ndash; Developers
-      </li>
-      <li type= "none">  
-       &ndash; Solution Architects
-      </li>
-     </ul>
-    </div>
-<!--    <div class="col is-6">
-     <ul>
-      <li type= "none">  
-       &ndash; Industry Professionals
-      </li>
-     </ul>
-    </div> -->
-  </div>
-</section>
-<br />
-<figure>
-  <img
-    src="/assets/img/STACK-X-Cloud-Why-Should-You-Attend01.jpg"
-    alt="explanation on why we should attend Stack-X Cloud conference"
-  />
-</figure>
-
-<section class="col is-boxed">
-  <h4>Event details</h4>
-  <b>17 November 2021</b>
-  <p>Sessions:</p>
- <div class="row is-multiline">
-    <div class="col is-4">
-      <p>09:30 AM - 11:30 AM</p>
-    </div>
-    <div class="col is-8">
-      <p>Keynotes</p>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col is-4">
-      <p>1:30 PM - 3:30 PM</p>
-    </div>
-    <div class="col is-8">
-      <p>Tracks - Leadership, Cloud Onboarding, Cloud Platform & Tools</p>
-    </div>
-  </div>
-  <p>
-    Virtual sessions on Zoom
-  </p>
-</section>
-<br />
-<p>
-  <strong>
-    <a
-      class="sgds-button is-primary"
-      href="https://form.gov.sg/#!/615d7795d09a2900145c714f" target="_blank"
-      >Register Now</a
-    >
-  </strong>
-</p>
-<section>
-  <br />
-  <h4>Programme</h4>
-</section>
 
 <div class="sgds-tabs">
   <ul class="no-margin" role="tablist">
     <li class="is-active">
-      <a data-tab="#tab1" role="tab" aria-selected="true" aria-controls="tab1">
-        Keynotes
-      </a>
+        <a data-tab="#tab1" role="tab" aria-selected="true" aria-controls="tab1">
+          Keynotes
+        </a>
     </li>
     <li>
-      <a data-tab="#tab2" role="tab" aria-selected="false" aria-controls="tab2">
-        Leadership Track
-      </a>
+        <a data-tab="#tab2" role="tab" aria-selected="false" aria-controls="tab2">
+          Cloud Onboarding
+        </a>
     </li>
     <li>
-      <a data-tab="#tab3" role="tab" aria-selected="false" aria-controls="tab3">
-        Cloud Onboarding Track
-      </a>
+        <a data-tab="#tab3" role="tab" aria-selected="false" aria-controls="tab3">
+          Cloud Platform
+        </a>
     </li>
-    <li>
-      <a data-tab="#tab4" role="tab" aria-selected="false" aria-controls="tab4">
-        Cloud Platform & Tools Track
-      </a>
-    </li>
- <!--   <li>
-      <a data-tab="#tab5" role="tab" aria-selected="false" aria-controls="tab5">
-        Workshops
-      </a>
-    </li> -->
   </ul>
 </div>
-{% assign keynotes = site.data.stackx2021cloud | where_exp: "item", "item.type contains 'Keynote'" %}
-{% assign leaders = site.data.stackx2021cloud | where_exp: "item", "item.type contains 'Leader'" %}
-{% assign products = site.data.stackx2021cloud | where_exp: "item", "item.type contains 'Product'" %}
-{% assign governments = site.data.stackx2021cloud | where_exp: "item", "item.type contains 'Government'" %}
-
-<div class="tab-content" id="tab1">
-  <h6>Morning Keynotes</h6>
-  <p><strong>17 November 2021</strong></p>
-  <p>Virtual Conference: Zoom Webinar</p>
-  <p></p>
-  <p>
-    Thought leadership sessions for all – agencies, industry, leadership and
-    practitioners.
-  </p>  
-  {% include_relative includes/stack-x-cloud-2021-itinerary.html itinerary=keynotes %}
-  
+<div class="row" id="tab1">
+  {% if page.video_list_layout %}
+    {% include_relative {{ page.video_list_layout }} type="Keynote - VOD" %}
+  {% endif %}
 </div>
-
-<div class="tab-content" id="tab2">
-  <h6>Leadership Track</h6>
-  <p><strong>17 November 2021</strong></p>
-  <p>Virtual Conference: Zoom Meeting</p>
-  <p>
-    This is a closed virtual track curated for Agency CIOs and IT
-    Leaders to help them build and achieve a successful cloud strategy.
-  </p>
-  {% include_relative includes/stack-x-cloud-2021-itinerary.html itinerary=leaders %}
-
+<div class="row" id="tab2">
+  {% if page.video_list_layout %}
+    {% include_relative {{ page.video_list_layout }} type="CloudOnboarding - VOD" %}
+  {% endif %}
 </div>
-
-
-<div class="tab-content" id="tab3">
-  <h6>Cloud Onboarding Track</h6>
-  <p><strong>17 November 2021</strong></p>
-  <p>Virtual Conference: Zoom Webinar</p>
-  <p>
-    This virtual track is for Tech Leads, Project Managers, Business Analysts and 
-    Developers especially those looking to learn practical experience to onboard to cloud, 
-    including preparation for migration and day 2 operation. There is a live Q&A at the 
-    end of each session!
-  </p>
-  {% include_relative includes/stack-x-cloud-2021-itinerary.html itinerary=products %}
+<div class="row" id="tab3">
+  {% if page.video_list_layout %}
+  {% include_relative {{ page.video_list_layout }} type="CloudPlatform - VOD" %}
+{% endif %}
 </div>
-
-<div class="tab-content" id="tab4">
-  <h6>Cloud Platform & Tools Track</h6>
-  <p><strong>17 November 2021</strong></p>
-  <p>Virtual Conference: Zoom Webinar</p>
-  <p>
-    This virtual track is for developer communities, especially those who are looking
-    to understand Cloud Platform and Tools available within GCC. There is a live Q&A 
-    at the end of each session!
-  </p>
-
-  {% include_relative includes/stack-x-cloud-2021-itinerary.html itinerary=governments %}
-
-</div>
-<p></p>
-  <p>
-   <sub>* Please note that the programme may be subject to change without prior notice</sub>
-  </p><p></p>
-  <p>
-   Have a question? Drop us an email at <strong>STACKX2021@TWISTMEDIA.SG</strong>
-  </p>
-
-<!-- <div class="tab-content" id="tab5">
-  <h6>SHIP-HATS Developer Workshops</h6>
-   <p> Due to recent local Covid-19 developments, we are minimising social interaction. Hence, this session is <strong> postponed </strong>until further notice.</p>
-  
-  <p>
-    The workshop covers how to build and release a container application using
-    SHIP-HATS to Government Commercial Cloud (GCC)
-  </p>
-  <div class="sgds-card">
-    <div class="sgds-card-content">
-      <h4>Continuous Integration</h4>
-      <p>
-        Dependency management using Nexus solution and automated container
-        scanning using Prisma Cloud.
-      </p>
-      <h4>Release Management</h4>
-      <p>
-        Promote release artifacts to production with secure deployment to GCC
-        compartments.
-      </p>
-    </div>
-  </div>
-</div> -->

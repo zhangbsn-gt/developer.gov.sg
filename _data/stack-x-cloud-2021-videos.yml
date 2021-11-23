@@ -1,0 +1,100 @@
+# - type: Video Types
+#   speakers: Speakers in the video. Split by ", "
+#     📢 Please make sure that the speakers name is in the same sequence as speakers title 📢
+#   speakers_title: Speakers' title in the video. Split by "| "
+#   title: Video title
+#   article_link: Slide - article link after the speakers titles'
+#   video_id: Video Id - watch video button
+#   slide_link: Slide - view slide button
+#   Reference: https://docs.google.com/spreadsheets/d/1szkJAWTP0GZCNjZAxQobBAUsor_4URaqheqH70r5BZI/edit#gid=0
+#   Export the data from this excel into a csv file to be converted to a YAML data file
+
+- type: Keynote - VOD
+  speakers: Dr Janil Puthucheary
+  speakers_title: >-
+    Senior Minister of State at Ministry of Communications & Information and
+    Ministry of Health, and Minister-in-Charge of GovTech
+  title: Welcome Remarks
+  video_id: 3Wztk782Sgc
+- type: Keynote - VOD
+  speakers: Tom Soderstrom
+  speakers_title: >-
+    Director of Chief Technologists, Worldwide Public Sector, Amazon Web
+    Services
+  title: >-
+    Impact and Lessons Learned from NASA/Jet Propulsion Laboratory's Cloud
+    Computing Journey
+  video_id: Bl2dcc0yEu4
+- type: Keynote - VOD
+  speakers: Tan Eng Pheng
+  speakers_title: 'Assistant Chief Executive (Services), GovTech'
+  title: Accelerating Digital Transformation with Government on Commercial Cloud
+  video_id: WSRfq88_JvY
+- type: Keynote - VOD
+  speakers: Kevin Ng
+  speakers_title: >-
+    Director, Core Operations Development Environment and eXchange (CODEX),
+    GovTech
+  title: GCC Road Ahead
+  video_id: OKtNwnbWQBQ
+- type: Keynote - VOD
+  speakers: 'Hunter Nield, Chia Hsiao Ming'
+  speakers_title: 'Distinguished Engineer, GovTech| Director, Engineering Productivity, GovTech'
+  title: GCC 2.0 Design Principles and Showcase
+  video_id: FriAm2BnqqA
+- type: CloudOnboarding - VOD
+  speakers: Abhijeet Menon
+  speakers_title: 'Senior Solution Architect, Solution Architect Office, GovTech'
+  title: Building a Successful Cloud Architecture
+  video_id: gq1uwDJ8OhM
+- type: CloudOnboarding - VOD
+  speakers: 'Tang Bing Wan, Jessica Tan'
+  speakers_title: >-
+    Principal Application Infrastructure Architect, Central Technical Services,
+    GovTech| Programme Manager, Core Operations Development Environment and
+    eXchange (CODEX), GovTech
+  title: GCC 2.0 - New Onboarding Experience
+  video_id: cftM662--Cs
+- type: CloudOnboarding - VOD
+  speakers: 'Kent Lai, Mahesh Rajagopal'
+  speakers_title: >-
+    Lead Solution Architect, Solution Architect Office, GovTech| Senior
+    Application Infrastructure Engineer, Central Technical Services, GovTech
+  title: >-
+    Managing Cloud Cost and Security through Automation and Data-Centric
+    Approach
+  video_id: MCV0auno9Cs
+- type: CloudOnboarding - VOD
+  speakers: Choong Keng Leong
+  speakers_title: 'Director, Government Infrastructure Group, GovTech'
+  title: Learning Points from Cloud Operations
+  video_id: tdZt4ZigpFw
+- type: CloudPlatform - VOD
+  speakers: Hunter Nield
+  speakers_title: 'Distinguished Engineer, GovTech'
+  title: What's New in GCC 2.0
+  video_id: KK7dVjQ4LNQ
+- type: CloudPlatform - VOD
+  speakers: 'Stephanie Quek, Yin Yide'
+  speakers_title: >-
+    Lead Cybersecurity Specialist, Cyber Security Group, GovTech| Associate
+    Cybersecurity Specialist, Cyber Security Group, GovTech
+  title: Securing Developers' Engineering Devices
+  video_id: 3M9n5eT8u24
+- type: CloudPlatform - VOD
+  speakers: Kyle Marsh
+  speakers_title: 'Principal Programme Manager, Microsoft'
+  title: >-
+    Enabling Applications to Support Authentication with Azure AD and
+    Conditional Access
+  video_id: lQJVeiZmd0
+- type: CloudPlatform - VOD
+  speakers: Marco Genovese
+  speakers_title: 'Cloud Security Specialist, Google Cloud Security'
+  title: 'Zero Trust: The Future of Secure Remote Access'
+  video_id: I5dpXijcPgU
+- type: CloudPlatform - VOD
+  speakers: Samuel Loh
+  speakers_title: 'Senior Software Engineer, Engineering Productivity, GovTech'
+  title: Securing Access to GCC 2.0 from Engineering Devices
+  video_id: PONKfE9qeo
