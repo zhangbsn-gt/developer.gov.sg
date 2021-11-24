@@ -16,4 +16,6 @@ tags:
   - SGTS
 ---
 
-The virtual STACK-X Cloud 2021 conference highlighting the power of Government on Commercial Cloud (GCC) was held on 17 November 2021. Chief Information Officers (CIOs) and senior IT leaders learned about GCC's journey and facilitates Agencies to formulate migration and system modernisation strategies and accelerate digital transformation.
+The virtual STACK-X Cloud 2021 conference was held on 17 November 2021. It showcased how the Singapore Government is accelerating
+digital transformation by unlocking the power of Government on Commercial Cloud (GCC). The conference highlighted the latest GCC enhancements, and covered topics around cloud landscape and roadmap as well as practical lessons on cloud adoption.
+
