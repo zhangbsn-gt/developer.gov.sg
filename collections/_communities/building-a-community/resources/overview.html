@@ -4,6 +4,22 @@ layout: layout-page-sidenav
 redirect_from: /communities/building-a-community/resources/
 description: >
   insert description here
+bios:
+  - img_src: building-a-community-interview-min-li.png
+    desc: |
+      who is she? Short description of her.
+
+  - img_src: building-a-community-interview-mindy-lim.png
+    desc: |
+      who is she? Short description of her.
+	  
+  - img_src: building-a-community-interview-melvin-tan.png
+    desc: |
+      who is he? Short description of him.
+	  
+  - img_src: building-a-community-interview-michael-cheng.png
+    desc: |
+      who is he? Short description of him.
 ---
 
 <h2>Overview</h2>
@@ -11,74 +27,82 @@ description: >
   insert description for this page
 </p>
 
-<p>
-  <strong>Resoures to help you with your community development journey</strong>.
-</p>
+<h3>Resoures to help you with your community development journey</h3>.
 <div class="card-grid-container grid-25rem">
   <div class="sgds-card">
     <div class="sgds-card-content">
-      <h4>Community Playbook</h4>
+      <h4><a href="/asset/files/community-playbook.pdf" target="_blank" rel="noopener noreferrer nofollow">Community Playbook</a></h4>
       <p>
-        This <a href="/asset/files/community-playbook.pdf" target="_blank" rel="noopener noreferrer nofollow">playbook</a>
-        provides...
+        This playbook provides...
       </p>
     </div>
   </div>
 
   <div class="sgds-card">
     <div class="sgds-card-content">
-      <h4>STACK-X Presentation Tips for Speakers</h4>
+      <h4><a href="/asset/files/Community playbook.pdf" target="_blank" rel="noopener noreferrer nofollow">STACK-X Presentation Tips for Speakers</a></h4>
       <p>
-        This <a href="/asset/files/Community playbook.pdf" target="_blank" rel="noopener noreferrer nofollow">playbook</a>
-        provides...
+        insert description
       </p>
     </div>
   </div>
   
   <div class="sgds-card">
     <div class="sgds-card-content">
-      <h4>STACK-X Deck Template</h4>
+      <h4><a href="/asset/files/Community playbook.pdf" target="_blank" rel="noopener noreferrer nofollow">STACK-X Deck Template</a></h4>
       <p>
-        This <a href="/asset/files/Community playbook.pdf" target="_blank" rel="noopener noreferrer nofollow">playbook</a>
-        provides...
+        insert description
       </p>
     </div>
   </div>
 </div>
 
-<p>
-  <strong>Hear from our Community Leaders</strong>.
-</p>
+<hr />
+
+<h3>Hear from our Community Leaders</h3>.
+
 <div class="card-grid-container grid-25rem">
+  {% for bios in page.bios %}
+  {% assign img_url = "/assets/img/" | append: bios.img_src %}
   <div class="sgds-card">
     <div class="sgds-card-content">
-      <h4>Min Li</h4>
+	  <h4><a href="interview-min-li" target="_blank" rel="noopener noreferrer nofollow">Interview with Min Li</a></h4>
+      <img style="float: right; margin-right: 20px;" src="{{ img_url }}" alt="{{ bios.name}}">
+      <p>{{ bios.desc }}</p>
+    </div>
+  </div>
+  {% endfor %}  
+</div>
+
+<!--<div class="card-grid-container grid-25rem">
+  <div class="sgds-card">
+    <div class="sgds-card-content">
+      <h4><a href="interview-min-li" target="_blank" rel="noopener noreferrer nofollow">Interview with Min Li</a></h4>
       <p>
-        This <a href="/asset/files/community-playbook.pdf" target="_blank" rel="noopener noreferrer nofollow">playbook</a>
-        provides...
+        insert description
       </p>
     </div>
   </div>
 
   <div class="sgds-card">
     <div class="sgds-card-content">
-      <h4>Mindy</h4>
+      <h4><a href="interview-mindy" target="_blank" rel="noopener noreferrer nofollow">Interview with Mindy</a></h4>
       <p>
-        This <a href="/asset/files/Community playbook.pdf" target="_blank" rel="noopener noreferrer nofollow">playbook</a>
-        provides...
+        insert description
       </p>
     </div>
   </div>
   
   <div class="sgds-card">
     <div class="sgds-card-content">
-      <h4>Melvin and Michael</h4>
+      <h4><a href="interview-melvin-and-michael" target="_blank" rel="noopener noreferrer nofollow">Interview with Melvin and Michael</a></h4>
       <p>
-        This <a href="/asset/files/Community playbook.pdf" target="_blank" rel="noopener noreferrer nofollow">playbook</a>
-        provides...
+        insert description
       </p>
     </div>
   </div>
-</div>
+</div>-->
+
+
 
 <!--{% include community-resources-listing.html %}-->
