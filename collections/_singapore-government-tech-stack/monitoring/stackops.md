@@ -2,7 +2,7 @@
 title: StackOps – Your Monitoring and Logging Solution
 redirect_from: /singapore-government-tech-stack/monitoring/stackops
 layout: layout-page-sidenav
-description: StackOps is a Monitoring toolchain that helps users monitor and log the most important and critical user actions for applications.
+description: StackOps is a Monitoring toolchain that helps users monitor and log the most important and critical user actions for their applications.
 ---
 
 ### Overview
