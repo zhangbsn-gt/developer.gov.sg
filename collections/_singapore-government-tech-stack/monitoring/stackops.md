@@ -17,7 +17,6 @@ StackOps focuses on the most important and critical user actions of a service. I
 
 StackOps consists of two main parts:
 1. **StackOps Monitoring** is a package of monitoring applications (Prometheus, Thanos, and Grafana) that are centrally managed, automated, open-sourced, and easy to use.
-
 <figure style="text-align: center">
   <img
     src="/assets/img/stackops-fig1.png" width="50%" height="50%" 
@@ -27,7 +26,6 @@ StackOps consists of two main parts:
 </figure>
 
 2. **StackOps Logging** is a suite of centrally managed logging applications (Elastic, Logstash, and Kibana) that transforms and visualises your data from multiple sources.
-
 <figure style="text-align: center">
   <img
     src="/assets/img/stackops-fig2.png" width="50%" height="50%" 
