@@ -7,7 +7,7 @@ description: >
 
 ### Mindy Lim: Leading the Whole-of-Government Data Science Connect Community
 
-<div class="card-grid-container grid-25rem">
+<div>
   <div div class="sgds-card">
     <div class="sgds-card-content">
       <img style="float: left; margin-right: 20px;" src="/assets/img/building-a-community-interview-mindy-lim.png" alt="Picture of Mindy Lim">
