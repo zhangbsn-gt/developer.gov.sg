@@ -17,6 +17,12 @@
     - APEX
     - Cloud File Transfer
 
+- name: Monitoring
+  description:
+  items:
+    - Overview
+    - StackOps
+    
 - name: Runtime
   description:
   items:
