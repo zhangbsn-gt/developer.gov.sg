@@ -1,28 +1,39 @@
 ---
-title: Interview with Min Li
+title: Interview with Mindy Lim
 layout: layout-page-sidenav
 description: >
   insert description here
 ---
 
-<div>
+## Mindy Lim: Leading the Whole-of-Government Data Science Connect Community
+
+<div class="card-grid-container grid-25rem">
+  <div div class="sgds-card">
+    <div class="sgds-card-content">
+      <img style="float: left; margin-right: 20px;" src="/assets/img/building-a-community-interview-mindy-lim.png" alt="Picture of Mindy Lim">
+	  <p>
+	    Mindy Lim is a Community Manager under the Data Science & Artificial Intelligence Division (DSAID) in GovTech. As part of the team’s overall capability development initiatives to upskill public officers in all things Data Science and AI, she leads the Data Science Connect (DSC) and Data Arcade Tournament (DAT) events together with her team, uplifting agencies in their data transformation journeys.
+	  </p>
+	</div>
+  </div>
+  
+<!--<div>
   <div style="float: left; margin-right: 20px;">
     <img src="/assets/img/building-a-community-interview-mindy-lim.png" alt="Picture of Mindy Lim">
   </div>
   <div>
-    <h2>Mindy Lim: Leading the Whole-of-Government Data Science Connect Community</h2>
     <p>Mindy Lim is a Community Manager under the Data Science & Artificial Intelligence Division (DSAID) in GovTech. As part of the team’s overall capability development initiatives to upskill public officers in all things Data Science and AI, she leads the Data Science Connect (DSC) and Data Arcade Tournament (DAT) events together with her team, uplifting agencies in their data transformation journeys. </p>
   </div>
 </div>
-<p></p>
+<p></p>-->
 
 ### QUICK TIPS FROM MIN LI
 
-1. F1.	Be genuine
+1. Be genuine
 2. Be responsive
 3. Create added value for stakeholders while staying true to the Community’s interests
 
-**Join the community:** [DSC Community](https://go.gov.sg/communityregistration){:target="_blank"}
+**Join the community:** [DSC Community](https://go.gov.sg/communityregistration){:target="_blank"}<br />
 Kindly note that the DSC Community is only open to public officers serving the Singapore Government. Only valid gov.sg email addresses will be accepted.
 
 ### Why is community-building important to you?
