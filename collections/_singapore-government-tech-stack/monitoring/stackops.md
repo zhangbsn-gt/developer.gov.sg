@@ -19,7 +19,13 @@ StackOps consists of two main parts:
 
 1. **StackOps Monitoring** is a package of monitoring applications (Prometheus, Thanos, and Grafana) that are centrally managed, automated, open-sourced, and easy to use.
 
-    <figure style="text-align: center"><img src="/assets/img/stackops-fig1.png" width="50%" height="50%"alt="Fig 1: StackOps Monitoring Applications (Prometheus, Thanos, and Grafana)"/><figcaption>Fig 1: StackOps Monitoring Applications (Prometheus, Thanos, and Grafana)</figcaption></figure>
+    <figure style="text-align: center">
+      <img
+        src="/assets/img/stackops-fig1.png" width="75%" height="75%" 
+        alt="Fig 1: StackOps Monitoring Applications (Prometheus, Thanos, and Grafana)"
+      />
+      <figcaption>Fig 1: StackOps Monitoring Applications (Prometheus, Thanos, and Grafana)</figcaption>
+    </figure>
 
 2. **StackOps Logging** is a suite of centrally managed logging applications (Elastic, Logstash, and Kibana) that transforms and visualises your data from multiple sources.
 <figure style="text-align: center">
