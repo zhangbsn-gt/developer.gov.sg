@@ -16,6 +16,7 @@ description: >
 	<p>Min Li majored in communication at Monash University and completed her Masters in Industrial Design in Milan, Italy. After a hodgepodge of experiences in various start-ups ranging from hardware, healthtech, proptech, edtech, and teaching kids to code, she is now at GovTech, working with JTC's Smart District Division.</p>
   </div>
 </div>
+<p></p>
 
 #### Quick Tips from Min Li
 
