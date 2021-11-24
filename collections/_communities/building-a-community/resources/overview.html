@@ -4,22 +4,6 @@ layout: layout-page-sidenav
 redirect_from: /communities/building-a-community/resources/
 description: >
   insert description here
-bios:
-  - img_src: building-a-community-interview-min-li.png
-    desc: |
-      who is she? Short description of her.
-
-  - img_src: building-a-community-interview-mindy-lim.png
-    desc: |
-      who is she? Short description of her.
-	  
-  - img_src: building-a-community-interview-melvin-tan.png
-    desc: |
-      who is he? Short description of him.
-	  
-  - img_src: building-a-community-interview-michael-cheng.png
-    desc: |
-      who is he? Short description of him.
 ---
 
 <h2>Overview</h2>
@@ -62,47 +46,40 @@ bios:
 <h3>Hear from our Community Leaders</h3>.
 
 <div class="card-grid-container grid-25rem">
-  {% for bios in page.bios %}
-  {% assign img_url = "/assets/img/" | append: bios.img_src %}
-  <div class="sgds-card">
-    <div class="sgds-card-content">
-	  <h4><a href="interview-min-li" target="_blank" rel="noopener noreferrer nofollow">Interview with Min Li</a></h4>
-      <img style="float: right; margin-right: 20px;" src="{{ img_url }}" alt="{{ bios.name}}">
-      <p>{{ bios.desc }}</p>
-    </div>
-  </div>
-  {% endfor %}  
-</div>
-
-<!--<div class="card-grid-container grid-25rem">
   <div class="sgds-card">
     <div class="sgds-card-content">
       <h4><a href="interview-min-li" target="_blank" rel="noopener noreferrer nofollow">Interview with Min Li</a></h4>
       <p>
-        insert description
+        who is she? Short description of her.
       </p>
+	  <img style="float: right; margin-right: 20px;" src="/assets/img/building-a-community-interview-min-li" alt="Min Li">
     </div>
   </div>
 
   <div class="sgds-card">
     <div class="sgds-card-content">
-      <h4><a href="interview-mindy" target="_blank" rel="noopener noreferrer nofollow">Interview with Mindy</a></h4>
+      <h4><a href="interview-mindy" target="_blank" rel="noopener noreferrer nofollow">Interview with Mindy Lim</a></h4>
       <p>
-        insert description
+        who is she? Short description of her.
       </p>
+	  <img style="float: right; margin-right: 20px;" src="/assets/img/building-a-community-interview-mindy-lim" alt="Mindy Lim">
     </div>
   </div>
   
   <div class="sgds-card">
     <div class="sgds-card-content">
-      <h4><a href="interview-melvin-and-michael" target="_blank" rel="noopener noreferrer nofollow">Interview with Melvin and Michael</a></h4>
+      <h4><a href="interview-melvin-and-michael" target="_blank" rel="noopener noreferrer nofollow">Interview with Melvin Tan and Michael Cheng</a></h4>
       <p>
-        insert description
+        who is he? Short description of him.
       </p>
+	  <img style="float: right; margin-right: 20px;" src="/assets/img/building-a-community-interview-melvin-tan" alt="Melvin Tan">
+	  <p>
+        who is he? Short description of him.
+      </p>
+	  <img style="float: right; margin-right: 20px;" src="/assets/img/building-a-community-interview-michael-cheng" alt="Michael Cheng">
     </div>
   </div>
-</div>-->
-
+</div>
 
 
 <!--{% include community-resources-listing.html %}-->
