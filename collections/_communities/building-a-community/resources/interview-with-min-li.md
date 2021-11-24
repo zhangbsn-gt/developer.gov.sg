@@ -18,12 +18,17 @@ description: >
 </div>
 
 #### Quick Tips from Min Li
+
 1. Form a supportive leadership team that aligns with your values and goals for the community.
 2.	Do not be afraid to reach out to your social and professional networks to grow your community and learn from existing community leaders.
 3.	Ensure your fellow admin team members are always kept in the loop and act as a coherent unit.
 
-#### Why is community-building important to you?
+#### Why is Community-building Important to You?
+
 When I returned to Singapore after almost four years abroad, I felt like I lost my community. I no longer had the same work family and friends to lean on which led me to decide that I had to rebuild my networks in Singapore.
 
+<p style="text-align: center;"><i>“I see community-building as having a library of people. Your people are resources that you can refer to when you need inspiration and guidance in your journey, not only industry-wise but also in life. I also believe that having a strong community is key to success in life and work.”</i></p>
 
+### How Did You First Build Your Community
 
+The first step was to find people with common interests– starting a design community in my case. The next step was to invite them out for coffee. The third step is to pick a good coffee place! I did not have any agenda apart from getting to know each other and figuring out if we clicked.
