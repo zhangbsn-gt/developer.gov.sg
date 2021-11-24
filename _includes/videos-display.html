@@ -3,7 +3,6 @@
 {% endcomment %}
 
 {% assign data_file = include._data %}
-{% assign articles_folder = include.articles_folder %} 
 {% assign video_types = include.type | split: ", " %}
 {% assign videos = site.data[data_file]| where_exp: "video", "video_types contains video.type" %}
 
@@ -48,8 +47,7 @@
           </p>
           {% if article_link != nil %}
 
-          <!-- TODO: abstract out the folder reference (done) -->
-          You can read the article <a href="{{ articles_folder | append: '/' | append: video.article_link}}" target="_blank">here</a>.
+          You can read the article <a href="{{ video.article_link}}" target="_blank">here</a>.
           {% endif %}
 
           {% if slide_link != nil %}
