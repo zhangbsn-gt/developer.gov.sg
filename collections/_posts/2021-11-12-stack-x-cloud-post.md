@@ -21,6 +21,6 @@ digital transformation by unlocking the power of Government on Commercial Cloud 
 
 ![StacKX_cloud](/assets/img/stackx-highlights.png)
 
-![StacKX_cloud (/assets/img/stackx-conf-stats.png)](https://www.developer.tech.gov.sg/communities/events/stack-x-cloud-2021)
+[![StacKX_cloud](/assets/img/stackx-conf-stats.png)](https://www.developer.tech.gov.sg/communities/events/stack-x-cloud-2021)
 
 ![StacKX_cloud](/assets/img/stackx-conf-tracks.png)
