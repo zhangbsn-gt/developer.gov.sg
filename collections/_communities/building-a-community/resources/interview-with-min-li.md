@@ -1,6 +1,6 @@
 ---
 title: Interview with Min Li
-layout: layout-blog
+layout: layout-page-sidenav
 description: >
   insert description here
 ---
