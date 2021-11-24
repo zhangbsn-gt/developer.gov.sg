@@ -5,7 +5,7 @@ description: >
   insert description here
 ---
 
-## Mindy Lim: Leading the Whole-of-Government Data Science Connect Community
+### Mindy Lim: Leading the Whole-of-Government Data Science Connect Community
 
 <div class="card-grid-container grid-25rem">
   <div div class="sgds-card">
@@ -16,7 +16,7 @@ description: >
 	  </p>
 	</div>
   </div>
-  
+</div>
 <!--<div>
   <div style="float: left; margin-right: 20px;">
     <img src="/assets/img/building-a-community-interview-mindy-lim.png" alt="Picture of Mindy Lim">

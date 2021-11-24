@@ -5,9 +5,24 @@ description: >
   insert description here
 ---
 
-## Lim Min Li: Leading DesignSG
+### Lim Min Li: Leading DesignSG
 
-<div>
+<div class="card-grid-container grid-25rem">
+  <div div class="sgds-card">
+    <div class="sgds-card-content">
+      <img style="float: left; margin-right: 20px;" src="/assets/img/building-a-community-interview-min-li.png" alt="Picture of Min Li">
+	  <p>
+	    Min Li is the founder of DesignSG, a Telegram community for designers in Singapore. She has been a mentor for aspiring UX designers at social enterprise, Hatch, and GovTech’s ‘Girls in Tech’ programme. She aims to build a library of mentors across the design fields in DesignSG, to eventually run mentorship programmes for designers in Singapore.
+	  </p>
+	
+	  <p>
+	    Min Li majored in communication at Monash University and completed her Masters in Industrial Design in Milan, Italy. After a hodgepodge of experiences in various start-ups ranging from hardware, healthtech, proptech, edtech, and teaching kids to code, she is now at GovTech, working with JTC's Smart District Division.
+	  </p>
+	</div>
+  </div>
+</div>
+
+<!--<div>
   <div style="float: left; margin-right: 20px;">
     <img src="/assets/img/building-a-community-interview-min-li.png" alt="Picture of Min Li">
   </div>
@@ -17,7 +32,7 @@ description: >
 	<p>Min Li majored in communication at Monash University and completed her Masters in Industrial Design in Milan, Italy. After a hodgepodge of experiences in various start-ups ranging from hardware, healthtech, proptech, edtech, and teaching kids to code, she is now at GovTech, working with JTC's Smart District Division.</p>
   </div>
 </div>
-<p></p>
+<p></p>-->
 
 ### QUICK TIPS FROM MIN LI
 
