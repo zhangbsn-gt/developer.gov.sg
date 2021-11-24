@@ -24,6 +24,7 @@ StackOps consists of two main parts:
   />
   <figcaption>Fig 1: StackOps Monitoring Applications (Prometheus, Thanos, and Grafana)</figcaption>
 </figure>
+
 2. **StackOps Logging** is a suite of centrally managed logging applications (Elastic, Logstash, and Kibana) that transforms and visualises your data from multiple sources.
 <figure style="text-align: center">
   <img
