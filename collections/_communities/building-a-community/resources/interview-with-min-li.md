@@ -24,6 +24,8 @@ description: >
 2.	Do not be afraid to reach out to your social and professional networks to grow your community and learn from existing community leaders.
 3.	Ensure your fellow admin team members are always kept in the loop and act as a coherent unit.
 
+**Join the community:** [DesignSG Community](https://t.me/joinchat/jtetn-tdtlc2ndk1){:target="_blank"}
+
 ### Why is community-building important to you?
 
 When I returned to Singapore after almost four years abroad, I felt like I lost my community. I no longer had the same work family and friends to lean on which led me to decide that I had to rebuild my networks in Singapore.
@@ -42,7 +44,7 @@ Once we got down to building the DesignSG community, we began by creating the le
 
 The admin team privately compiled a list of resources which we would post to get discussions rolling. At times, we would post questions and if no one replied, another admin would respond to encourage people to jump in. Sometimes, we also have to learn to be comfortable with silence. At the start, the group was silent which is fine because we understand that as a community that uses Telegram, our members do receive many other messages, so people do need time to tune out of being social. We do not always have to fill the silence because if you fill it up too much with subpar content, people may leave the group and we do not want that to happen!
 
-<p style="text-align: center;"><i>““The key thing to remember is: If there is an activity in the community, it should be useful and engaging.””</i></p>
+<p style="text-align: center;"><i>“The key thing to remember is: If there is an activity in the community, it should be useful and engaging.”</i></p>
 
 ### What was the first initiative that you planned for the community?
 
@@ -67,3 +69,5 @@ The biggest ongoing challenge is managing difficult members of the community. We
 As the admin team keeps enforcing content guidelines, members begin to get a hang of them after a while and model the behaviour. It is wonderful how some of our members take the initiative to step in and respond when someone is getting out of hand. It defuses the situation most of the time. We did have to ban a few people for repeated violations and spammers as well.
 
 <p style="text-align: center;"><i>“Another tip is to have a separate group for the admin team to agree upon how to manage a difficult person or situation. This also ensures that you will come across as a coherent unit. Similarly, keeping each other in the loop is also very important in making decisions so I highly recommend setting up a separate group chat for community leaders to discuss admin matters.”</i></p>
+
+<p></p>
