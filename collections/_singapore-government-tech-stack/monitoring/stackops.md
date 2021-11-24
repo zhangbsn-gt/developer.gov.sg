@@ -16,7 +16,8 @@ StackOps is a Monitoring toolchain that focuses on the most important and critic
 StackOps focuses on the most important and critical user actions of a service. It features automated reactions based on the golden monitoring and logging metrics (latency, load, limit, and errors).
 
 StackOps consists of two main parts:
-1. **StackOps Monitoring** is a package of monitoring applications (Prometheus, Thanos, and Grafana) that are centrally managed, automated, open-sourced, and easy to use.<br><figure style="text-align: center">
+1. **StackOps Monitoring** is a package of monitoring applications (Prometheus, Thanos, and Grafana) that are centrally managed, automated, open-sourced, and easy to use.
+!<figure style="text-align: center">
     <img
       src="/assets/img/stackops-fig1.png" width="50%" height="50%" 
       alt="Fig 1: StackOps Monitoring Applications (Prometheus, Thanos, and Grafana)"
