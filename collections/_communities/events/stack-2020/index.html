@@ -4,8 +4,8 @@ layout: layout-page-sidenav
 description: >
   STACK is GovTech’s flagship conference and the largest government-led developers
   event in Singapore that connects government, industry and the tech community.
-video_list_layout: 'stack-2020-video-list.html'
 ---
+{% assign video_data_file = 'stack2020-videos' %}
 
 <h2>STACK 2020</h2>
 <p>
@@ -42,27 +42,17 @@ video_list_layout: 'stack-2020-video-list.html'
   </ul>
 </div>
 <div class="row" id="tab1">
-  {% if page.video_list_layout %}
-    {% include_relative {{ page.video_list_layout }} type="Opening, Keynote, Panel - Tech Culture" %}
-  {% endif %}
+  {% include videos-display.html type="Opening, Keynote, Panel - Tech Culture" _data=video_data_file %}
 </div>
 <div class="row" id="tab2">
-  {% if page.video_list_layout %}
-    {% include_relative {{ page.video_list_layout }} type="Cloud - Preamble, Cloud - Talk, Cloud - VOD" %}
-  {% endif %}
+  {% include videos-display.html type="Cloud - Preamble, Cloud - Talk, Cloud - VOD" _data=video_data_file %}
 </div>
 <div class="row" id="tab3">
-  {% if page.video_list_layout %}
-  {% include_relative {{ page.video_list_layout }} type="App - Preamble, App - Talk, App - Live Chat, App - VOD" %}
-{% endif %}
+  {% include videos-display.html type="App - Preamble, App - Talk, App - Live Chat, App - VOD" _data=video_data_file %}
 </div>
 <div class="row" id="tab4">
-  {% if page.video_list_layout %}
-  {% include_relative {{ page.video_list_layout }} type="Tech Culture - Preamble, Tech Culture - Talk, Tech Culture - VOD" %}
-{% endif %}
+  {% include videos-display.html type="Tech Culture - Preamble, Tech Culture - Talk, Tech Culture - VOD" _data=video_data_file %}
 </div>
 <div class="row" id="tab5">
-  {% if page.video_list_layout %}
-  {% include_relative {{ page.video_list_layout }} type="COVID-19 Tech -  Preamble, COVID-19 Tech - Talk, COVID-19 Tech - Live Chat" %}
-{% endif %}
+  {% include videos-display.html type="COVID-19 Tech -  Preamble, COVID-19 Tech - Talk, COVID-19 Tech - Live Chat" _data=video_data_file %}
 </div>
