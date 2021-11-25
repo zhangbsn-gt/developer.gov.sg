@@ -14,6 +14,4 @@ scripts
 *.log
 _compress_images_cache.yml
 .DS_Store
-collections/.DS_Store
-collections/_communities/.DS_Store
-collections/_communities/events/.DS_Store
+**/.DS_Store
