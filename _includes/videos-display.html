@@ -6,6 +6,7 @@
 {% assign video_types = include.type | split: ", " %}
 {% assign videos = site.data[data_file]| where_exp: "video", "video_types contains video.type" %}
 
+<div class="card-grid-container is-fullwidth">
 {% for video in videos %}
 {% assign video_id = video.video_id %}
 {% assign video_url = "https://www.youtube.com/watch?v=" | append: video_id %}
@@ -60,3 +61,4 @@
     </div>
   </div>
   {% endfor %}
+</div>
