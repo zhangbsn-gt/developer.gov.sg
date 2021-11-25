@@ -3,8 +3,8 @@ title: STACK-X 2021
 layout: layout-page-sidenav
 description: >
   CI/CD with SHIP-HATS is a two-day conference for developers and IT leaders to modernise securely, learn from peers and steps to get started
-video_list_layout: 'stack-x-2021-conference-video-list.html'
 ---
+{% assign video_data_file = 'stackx2021conference-videos' %}
 
 <figure>
   <img
@@ -33,13 +33,9 @@ video_list_layout: 'stack-x-2021-conference-video-list.html'
 </div>
 
 <div class="tab-content" id="tab1">
-  {% if page.video_list_layout %}
-    {% include_relative {{ page.video_list_layout }} type="Opening, Keynote - VOD, Keynote - Live Chat" %}
-  {% endif %}
+  {% include videos-display.html type="Opening, Keynote - VOD, Keynote - Live Chat" _data=video_data_file %}
 </div>
 
 <div class="tab-content" id="tab2">
-  {% if page.video_list_layout %}
-    {% include_relative {{ page.video_list_layout }} type="Product - VOD" %}
-  {% endif %}
+  {% include videos-display.html type="Product - VOD" _data=video_data_file %}
 </div>
