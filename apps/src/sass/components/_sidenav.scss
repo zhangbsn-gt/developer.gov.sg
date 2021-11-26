@@ -17,7 +17,18 @@
   }
 }
 
-.sgds-menu-list a{
+.productnav {
+  position: sticky;
+  top: 0;
+  max-height: 100vh;
+  overflow-y: auto;
+}
+
+.productnav a.is-active {
+  border-bottom: 3px solid transparent;
+}
+
+.sgds-menu-list a {
   color: $body-color;
 }
 
