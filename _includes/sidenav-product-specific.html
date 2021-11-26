@@ -1,0 +1,56 @@
+{%- assign collectionName = page.collection -%}
+{%- assign filteredCollections = site.collections | where: "label", collectionName -%}
+{%- assign currentCollection = filteredCollections[0] -%}
+{%- assign categories = site.data[currentCollection.label] -%}
+
+{%- for category in categories -%}
+{%- if category.name == page.category -%}
+  {%- assign class = nil -%}
+  {%- assign category_slug = category.name | slugify -%}
+
+  {%- if page.url contains category_slug -%}
+    {%- assign class='is-active' -%}
+  {%- endif -%}
+
+  {%- if category.items -%}
+  
+    {% if page.url contains category_slug %}
+      {% assign hide_nav_section = nil %}
+    {% endif %}
+
+    <ul class="productnav">
+      {%- assign items = category.items -%}
+      {%- for item in items -%}
+
+        {% comment %}
+        Compare page's id (file path without .html extension) to each link to see if page is active.
+        {% endcomment %}
+        {%- assign item_slug = item | slugify -%}
+        {%- assign page_id_terms = page.id | split: "/" -%}
+        {% assign page_id_last = page_id_terms | last %}
+        {% if page_id_last == "index" %}
+          {%- assign page_id_terms = page_id_terms | pop -%}
+          {% assign page_id_last = page_id_terms | last %}
+        {% endif %}
+
+        {%- assign class = nil -%}
+        {%- if (page_id_last == item_slug and page.url contains category_slug) -%}
+          {%- assign class = 'is-active' -%}
+        {%- endif -%}
+        <li>
+          <a
+              class="productnav {{ class }}"
+              href="{{ '/' | append: currentCollection.label | append: '/' | append: category_slug | append: '/' | append: item_slug }}"
+          >
+            {{ item }}
+          </a>
+        </li>
+      {%- endfor -%}
+    </ul>
+  {%- else -%}
+    {% assign link_slug = category.name | slugify %}
+    <li><a href="{{ '/' | append: currentCollection.label | append: '/' | append: link_slug }}" class="{{ class }}">{{ category.name }}</a></li>
+  {%- endif -%}
+{%- endif -%}
+{%- endfor -%}
+
