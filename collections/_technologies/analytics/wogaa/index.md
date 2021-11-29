@@ -2,6 +2,7 @@
 title: Whole-of-Government Application Analytics (WOGAA) - Improve Government Services with Data
 layout: layout-page-sidenav-product-specific
 category: Analytics
+product: WOGAA
 description: >
   WOGAA is an analytics & performance platform for public officers to monitor the health of their government websites and optimise the performance of 
   their digital services with data.
