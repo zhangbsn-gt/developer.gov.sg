@@ -11,6 +11,7 @@
     {% assign document_sub_collection = document.id | split: "/" | shift | shift | first %}
     {% if document_sub_collection == sub_collection and page.title != document.title %}
 
+  {%- unless document.url contains "whats-new" or document.url contains "training-resources" or document.url contains "subscription" or document.url contains "contact-us" -%}
     <div class="sgds-card sgds-card-variant-category-info grid-item">
       <div class="sgds-card-content">
         <header>
@@ -22,6 +23,7 @@
         </p>
       </div>
     </div>
+  {% endunless %}
 
     {% endif %}
   {% endfor %}
