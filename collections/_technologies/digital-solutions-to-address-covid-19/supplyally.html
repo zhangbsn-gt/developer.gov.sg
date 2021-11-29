@@ -4,6 +4,71 @@ layout: layout-page-sidenav
 category: Digital Solutions to Address COVID-19
 description: >
   SupplyAlly is a mobile app to facilitate nationwide logistics distributions during the COVID-19 pandemic.
+bios:
+  - name: Patricia Zhao, Product Manager
+    img_src: supplyally-pat-zhao.png
+    desc: |
+      Pat leads the team in developing solutions that help multiple Government agencies and non-profit partners in their distribution programmes.
+
+  - name: Wynn Chen, Software Engineer
+    img_src: supplyally-wynn.png
+    desc: |
+      Wynn doesn’t mind developing and kick-starting projects that he might be unfamiliar with. He likes spending his time cafe hopping and reflecting.
+
+  - name: Te(Ting) Sze Ying, Software Engineer
+    img_src: supplyally-szeying.png
+    desc: |
+      Sze Ying aims to create software that is usable and maintainable. In her free time, she volunteers with various organisations to make education accessible.
+
+  - name: Satoshi Hayashi, Delivery Manager
+    img_src: supplyally-satoshi.png
+    desc: |
+      Satoshi works with the team to achieve smooth delivery of the various product rollouts.
+
+  - name: Yong Jia Jie, Software Engineer
+    img_src: supplyally-jiajie.png
+    desc: |
+      Jia Jie is interested in learning new things and developing solutions that are extensible and efficient. He is a lover of keyboards and keyboard-related items.
+
+  - name: Sebastian Quek, Tech Lead / Software Engineer
+    img_src: supplyally-sebastian.png
+    desc: |
+      Sebastian strives to design technical solutions that are elegant, scalable, maintainable, and satisfies the needs of citizens and Government agencies alike.
+
+  - name: Auron Siow, Software/Quality Engineer
+    img_src: supplyally-auron.png
+    desc: |
+      Auron contributes to both development and quality aspects of product building. He is able to switch between the two roles to help the team meet its goals.
+
+  - name: Wynn Chen, Software Engineer
+    img_src: supplyally-wynn.png
+    desc: |
+      Wynn doesn’t mind developing and kick-starting projects that he might be unfamiliar with. He likes spending his time cafe hopping and reflecting.
+
+  - name: Immanuella (Imma) Lim, Software Engineer
+    img_src: supplyally-immanuella.png
+    desc: |
+     Imma likes to build stuff and learn how to create better solutions. She has a knack for teaching and is often seen sharing her knowledge with the team.
+
+  - name: Koh Kai Hong, DevOps Engineer
+    img_src: supplyally-kaihong.png
+    desc: |
+      Kai Hong is a cloud-native citizen who is tasked with building castles in the sky. He enjoys developing reliable and scalable solutions for smooth operations.
+
+  - name: Dickson Tan, Software Engineer
+    img_src: supplyally-dickson.png
+    desc: |
+      Dickson loves building software that delight users. His day doesn't begin before his morning latte.
+
+  - name: Eida Tan, UX Designer
+    img_src: supplyally-eida.png
+    desc: |
+      As a young child, Eida had a strong affection for Playmobil toys. She would role-play with them in various settings, from immigration checkpoints to restaurants. These days she gets to facilitate and work with others to improve users’ experience across different touchpoints.
+
+  - name: Visalakshi Chidambaram, Quality Engineer
+    img_src: supplyally-visa.png
+    desc: |
+      Visalakshi loves to challenge a piece of working code to find bugs and crash the system before it reaches the end-user, so that they can have a smooth experience.
 ---
 
 <h2>Overview</h2>
@@ -144,5 +209,20 @@ For more detailed information about SupplyAlly, visit the product site <a href="
   For enquiries, email <a href="mailto:supplyallyhelp@hive.gov.sg">supplyallyhelp@hive.gov.sg</a>.
 </p>
 
+<h2>Meet the Team!</h2>
+
+<div class="card-grid-container grid-25rem">
+  {% for bios in page.bios %}
+  {% assign img_url = "/assets/img/" | append: bios.img_src %}
+  <div class="sgds-card">
+    <div class="sgds-card-content">
+      <img style="float: left; margin-right: 20px;" src="{{ img_url }}" alt="{{ bios.name}}">
+      <p><strong>{{ bios.name}}</strong><br>
+        {{ bios.desc }}
+      </p>
+    </div>
+  </div>
+  {% endfor %}  
+</div>
 
       
