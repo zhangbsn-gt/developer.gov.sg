@@ -2,7 +2,7 @@
 title: BookingSG – A Pre-Booking Tool for Calendaring, Availability, Rostering and Booking (CARB) Management.
 layout: layout-page-sidenav
 category: Data and APIs
-description: BookingSG is a Calendaring, Availability, Rostering and Booking (CARB) management tool for agencies that offer services which require pre-booking.
+description: BookingSG is a Calendaring, Availability, Rostering and Booking (CARB) management tool for agencies that offer services which require pre-booking
 ---
 
 ### Overview
@@ -44,7 +44,7 @@ The various ways to utilise BookingSG are as shown below.
 
 **As an engine**: Use BookingSG as an engine to serve highly complicated use cases and integrate BookingSG using its API to leverage common CARB logic. Government agencies will have full autonomy on how calendars and bookings are presented to users.
 
-**As a combination**: The various service offerings of BookingSG can be used in different combinations - from using the admin portal as a SAAS, to additional business logic defined on the web/app before redirecting to BookingSG for slot selection supported by API integration. This allows the desired user experiences to be achieved.
+**As a combination**: The various service offerings of BookingSG can be used in different combinations - from using the admin portal as a SaaS, to additional business logic defined on the web/app before redirecting to BookingSG for slot selection supported by API integration. This allows the desired user experiences to be achieved.
 
 To start using BookingSG, fill out this [form](https://form.gov.sg/#!/605a9d2e7b204500129b33c7){:target="_blank"}.
 
@@ -58,7 +58,7 @@ To start using BookingSG, fill out this [form](https://form.gov.sg/#!/605a9d2e7b
 
 ### What's Next?
 
-Currently the BookingSG team is improving the product allow it to be more holistic and comparable to commercial SAAS products. This will facilitate the onboarding of more Government agencies into BookingSG.
+Currently the BookingSG team is improving the product allow it to be more holistic and comparable to commercial SaaS products. This will facilitate the onboarding of more Government agencies into BookingSG.
 
 ### Contact Information
 
