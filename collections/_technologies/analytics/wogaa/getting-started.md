@@ -1,9 +1,13 @@
 ---
 title: Whole-of-Government Application Analytics (WOGAA) - Improve Government Services with Data
-layout: layout-page-sidenav-product-specific
+layout: layout-page-sidenav
 category: Analytics
 product: WOGAA
 ---
+
+### Getting Started
+
+WOGAA is only available for Singapore public officers with a government-issued email. Register for your account through this [link](https://go.gov.sg/wogaadp){:target="\_blank"}.
 
 ### How Do You Use WOGAA?
 

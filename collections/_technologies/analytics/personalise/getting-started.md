@@ -1,6 +1,6 @@
 ---
 title: Personalise – Curating Tailored Citizen Experiences
-layout: layout-page-sidenav-product-specific
+layout: layout-page-sidenav
 category: Analytics
 product: Personalise
 ---

@@ -1,6 +1,6 @@
 ---
 title: Whole-of-Government Application Analytics (WOGAA) - Improve Government Services with Data
-layout: layout-page-sidenav-product-specific
+layout: layout-page-sidenav
 category: Analytics
 product: WOGAA
 description: >
@@ -160,57 +160,7 @@ The key benefits of WOGAA from a policy and WOG perspective are as shown below.
 - **Automated Reporting of Key Metrics:** WOGAA automates the reporting of key metrics into daily, weekly, and monthly reports that can be exported as files directly or sent to users' emails. This allows public officers who are not WOGAA users to access insights on the performance of their agency's digital services at their convenience.
 - **WOG Data Sharing:** WOGAA is accessible to all government agencies, hence it enables WOG data sharing. This encourages agencies to learn from each other and improve together.
 
-### How Do You Use WOGAA?
-
-- **WOGAA Uptime:** To use WOGAA Uptime, users can subscribe for email and/or SMS notifications via WOGAA. This allows users to be notified via their preferred platform once downtime occurs.
-- **WOGAA Inspect:** WOGAA Inspect provides a dashboard for viewing the Performance, Accessibility, Best Practice and Searchability/Search Engine Optimisation (SEO) scores of an agencies' digital service. Users can also view actionable recommendations to improve the scores of each component as well or generate a report for further analysis.
-- **WOGAA Analytics:** WOGAA Analytics presents data such as visits, page views, bounce rate, visit duration etc in a consolidated dashboard that can be viewed collectively.
-- **WOGAA Sentiments:** Users can customise the questions, positioning, colours and choose from a selection of designs to ensure the widget matches the page. Once the public leaves user feedback on the relevant services, WOGAA Sentiments presents the scores against a 6-point scale rating in a dashboard, allowing users to view a breakdown of all audience ratings and feedback or download a report containing qualitative and quantitative Sentiments data for further analysis. Users can also subscribe to the Sentiments report to receive daily or weekly user feedback straight to their email inboxes.
-
 ### Success Stories
 
 - The Digital Services KPI Dashboard was created through a combination of technology and policy guidelines. With the aim of uplifting digital services standards across the WOG, the dashboard focuses on six key metrics such as page load time, transaction completion rate, transaction customer satisfaction, Search Engine Optimisation (SEO), accessibility and system uptime. Since its inception, users have noticed a significant reduction in time spent when consolidating the key metrics that matter to them. They have also observed instant improvements in areas such as accessibility and SEO and were able to use the Sentiments feedback collected to improve various aspects of their digital services. From a WOG perspective, this trend is climbing steadily and expected to continue to grow throughout 2021.
 - Building an end-to-end central analytics dashboarding tool is a huge facet of the WOGAA ecosystem. But upskilling public officers and building a data-driven community among the digital service owners/agencies is also crucial in encouraging government agencies to learn and improve together. In FY20, the team saw over 2,600 attendees at WOGAA events altogether, with a doubling of the number of users. WOGAA events cover a range of topics including an introduction to web analytics workshops, product webinars and guest speaker events aimed at providing the community with useful industry practices and insights. The WOGAA team also launched the WOGAA's very own advocate programme that saw a 71% agency take-up rate in its first run. With the influx of new users steadily rising, the team has also continuously made plans to provide more demonstration sessions and resources to support them.
-
-### What's Next?
-
-In 2021, the WOGAA team combined policy and tech for digital services improvement via our Digital Services KPI Dashboard. In 2022, the team intends to launch a dynamic and customisable dashboard for their advanced users.
-
-### Getting Started
-
-WOGAA is only available for Singapore public officers with a government-issued email. Register for your account through this [link](https://go.gov.sg/wogaadp){:target="\_blank"}.
-
-### Contact Information
-
-For enquiries on WOGAA, email <info@tech.gov.sg>.
-
-### Meet the Team!
-
-<div class="card-grid-container grid-25rem">
-  {% for bios in page.bios %}
-  {% assign img_url = "/assets/img/" | append: bios.img_src %}
-  <div class="sgds-card">
-    <div class="sgds-card-content">
-      <img style="float: left; margin-right: 20px;" src="{{ img_url }}" alt="{{ bios.name }}">
-      <p><strong>{{ bios.name }}</strong><br>
-        {{ bios.desc }}
-      </p>
-    </div>
-  </div>
-  {% endfor %}  
-</div>
-
-- William Afendy, Technical Lead
-- Anju Narayan, Quality Engineer
-- Chin Yong How, Software Engineer
-- Chuk Yih Jou, Software Engineer
-- Lee Yi Sheng, Software Engineer
-- Talia Ong, UX Designer
-- Tan Yi Long, Software Engineer
-- Yang Shulin, Data Engineer
-- Shawn Kong, Community Manager
-- Seow Yun Rong, Assistant Community Manager
-- Khairul Anuar Bin Sohaimi, Technical Ops Support
-- Farid Ismail, Technical Ops Support
-- Jeff Ong, Business Analyst
-- Angie Ng, Operations Engineer
