@@ -86,3 +86,7 @@ The MyNiceHome team achieves web personalisation simply by integrating it with t
   />
   <figcaption>Fig 3: Web personalisation use case (HDB’s MyNiceHome website)</figcaption>
 </figure>
+
+### What's Next?
+
+The Personalise team aims to roll out both email and web personalisation tools to most government digital services over a one-year period. The team is also exploring cross-government collaborations to create a seamless citizen journey regardless of which touchpoints citizens land on.
