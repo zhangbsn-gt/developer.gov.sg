@@ -3,7 +3,7 @@ title: Personalise – Curating Tailored Citizen Experiences
 layout: layout-page-sidenav
 redirect_from: /technologies/analytics/personalise/
 _data: products
-single_level: true
+single_level: false
 sub_collection_render: true
 description: Personalise consists of email and web personalisation tools that help agencies better analyse user behaviours and provide tailored experiences to individuals.
 ---
@@ -55,6 +55,30 @@ By personalising citizen-facing websites and emails, citizens will have an impro
 
 For Government agencies, personalisation leads to more effective targeting and engagement strategies which helps to achieve the desired outcomes of Government agencies. It facilitates stronger Government-citizen relationships and builds trust in the Government.
 
+### How Do You Use Personalise?
+
+For agencies to begin their personalisation journey, they can first attend a workshop by the Personalise team before they adopt either a web or email personalisation tool.
+
+**Personalisation Workshop**
+
+This workshop is a good starting point for teams who are still learning about personalisation and need more to develop and conceptualise their personalisation strategy and goals. Through this workshop, agencies will gain a better understanding of personalisation, setting of goals based on user needs and challenges, brainstorming of ideas and the effort required to personalise services. Once an agency’s strategy and goals are established, the Personalise team will collaborate with the agency to achieve them using email and web personalisation tools.
+
+**Email Personalisation Tool**
+
+This is a web-based eDM platform that allows personalisation of email campaigns in a variety of ways such as:
+
+- The targeting of email campaigns to audience groups based on specific criteria, such as interests indicated in newsletter signups.
+- The ability to reach out to citizens who have both interacted with an agency’s website and read at least one newsletter article on an upcoming campaign.
+- The ability to reach out to less active citizens to inform them about a new service that is relevant to their needs.
+
+**Web Personalisation Tool**
+
+This tool helps bring relevant content to citizens through agency’s websites. The three phases to the implementation of this tool includes:
+
+- Learning phase – A personalise javascript will be embedded into agencies’ website to learn visitors’ behavior and build a recommendation model based on their browsing patterns.
+- Implementation phase - After the learning phase, the website interface and APIs will be drafted based on the recommendation model provided. For example, a carousel hero banner on an agency’s landing page with personalised contents can be created based on what the embedded scripts provide.
+- Optimisation phase – The personalise system will help to track and monitor key metrics to ensure that web content is consistently optimised for visitors and that recommendations are regularly provided.
+
 ### Success Stories
 
 **Email Personalisation**
@@ -92,3 +116,7 @@ The MyNiceHome team achieves web personalisation simply by integrating it with t
 ### What's Next?
 
 The Personalise team aims to roll out both email and web personalisation tools to most government digital services over a one-year period. The team is also exploring cross-government collaborations to create a seamless citizen journey regardless of which touchpoints citizens land on.
+
+### Contact Information
+
+To get started, submit queries or provide feedback, ideas and suggestions, email <hello@personalise.gov.sg>.
