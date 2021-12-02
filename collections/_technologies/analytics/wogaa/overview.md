@@ -4,6 +4,7 @@ layout: layout-page-sidenav
 redirect_from: /technologies/analytics/wogaa/
 _data: products
 single_level: true
+sub_collection_render: true
 description: >
   WOGAA is an analytics & performance platform for public officers to monitor the health of their government websites and optimise the performance of
   their digital services with data.
