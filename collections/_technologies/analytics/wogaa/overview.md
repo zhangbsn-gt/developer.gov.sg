@@ -1,10 +1,11 @@
 ---
 title: Whole-of-Government Application Analytics (WOGAA) - Improve Government Services with Data
 layout: layout-page-sidenav
+redirect_from: /technologies/analytics/wogaa/
 category: Analytics
 product: WOGAA
 description: >
-  WOGAA is an analytics & performance platform for public officers to monitor the health of their government websites and optimise the performance of 
+  WOGAA is an analytics & performance platform for public officers to monitor the health of their government websites and optimise the performance of
   their digital services with data.
 bios:
   - name: Lingesvaran Palanisamy, Product Manager
@@ -57,7 +58,6 @@ bios:
     desc: |
       Ming Shu is a Data Scientist in the WOGAA team. He focuses on building data models to perform ETL processes, while also analysing and crunching numbers to derive actionable insights for stakeholders from within GovTech and across the Government. He also has a keen interest in machine learning, and is exploring ways to incorporate it into the WOGAA product.
 ---
-
 ### Overview
 
 With more people interacting with the government through websites and mobile applications, it becomes increasingly important for the government to
@@ -79,7 +79,7 @@ Implementing WOGAA is simple as users just need to integrate two lines of JavaSc
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/wogaa-features.png" width="70%" height="70%" 
+    src="/assets/img/wogaa-features.png" width="70%" height="70%"
     alt="Fig 1: WOGAA’s Four Key Features"
   />
   <figcaption>Fig 1: WOGAA’s Four Key Features</figcaption>
@@ -93,7 +93,7 @@ The four key features of WOGAA are as shown below.
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/uptime.png" width="80%" height="80%" 
+    src="/assets/img/uptime.png" width="80%" height="80%"
     alt="Fig 2: WOGAA Uptime Dashboard (For illustration purposes only)"
   />
   <figcaption>Fig 2: WOGAA Uptime Dashboard (For illustration purposes only)</figcaption>
@@ -105,7 +105,7 @@ The four key features of WOGAA are as shown below.
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/inspect.png" width="80%" height="80%" 
+    src="/assets/img/inspect.png" width="80%" height="80%"
     alt="Fig 3: WOGAA Inspect Score Overview (For illustration purposes only)"
   />
   <figcaption>Fig 3: WOGAA Inspect Score Overview (For illustration purposes only)</figcaption>
@@ -118,7 +118,7 @@ The four key features of WOGAA are as shown below.
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/wogaa-analytics.png" width="80%" height="80%" 
+    src="/assets/img/wogaa-analytics.png" width="80%" height="80%"
     alt="Fig 4: WOGAA Analytics Dashboard (For illustration purposes only)"
   />
   <figcaption>Fig 4: WOGAA Analytics Dashboard (For illustration purposes only)</figcaption>
@@ -128,7 +128,7 @@ The four key features of WOGAA are as shown below.
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/wogaa-widget.jpg" width="30%" height="30%" 
+    src="/assets/img/wogaa-widget.jpg" width="30%" height="30%"
     alt="Fig 5: WOGAA Sentiments Widget on GovTech's Website"
   />
   <figcaption>Fig 5: WOGAA Sentiments Widget on GovTech's Website</figcaption>
@@ -136,7 +136,7 @@ The four key features of WOGAA are as shown below.
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/wogaa-ratingscale.jpg" width="30%" height="30%" 
+    src="/assets/img/wogaa-ratingscale.jpg" width="30%" height="30%"
     alt="Fig 6: WOGAA Sentiments Rating Scale on GovTech's website"
   />
   <figcaption>Fig 6: WOGAA Sentiments Rating Scale on GovTech's website</figcaption>
@@ -144,7 +144,7 @@ The four key features of WOGAA are as shown below.
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/wogaa-questions.png" width="60%" height="60%"  
+    src="/assets/img/wogaa-questions.png" width="60%" height="60%"
     alt="Fig 7: WOGAA Sentiments Questions on GovTech's Website"
   />
   <figcaption>Fig 7: WOGAA Sentiments Questions on GovTech's Website</figcaption>

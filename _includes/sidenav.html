@@ -40,17 +40,6 @@
         {%- if (page_id_last == item_slug and page.url contains category_slug) -%}
           {%- assign class = 'is-active' -%}
         {%- endif -%}
-
-        {% if page.collection == "technologies" %}
-        <li>
-          <a
-              class="second-level-nav-item {{ class }}"
-              href="{{ '/' | append: currentCollection.label | append: '/' | append: category_slug | append: '/' | append: item_slug | append: '/' | append: 'overview.html' }}"
-          >
-            {{ item }}
-          </a>
-        </li>
-        {%- else -%}
         <li>
           <a
               class="second-level-nav-item {{ class }}"
@@ -59,8 +48,6 @@
             {{ item }}
           </a>
         </li>
-        {% endif %}  
-
       {%- endfor -%}
     </ul>
   {%- else -%}
