@@ -2,8 +2,8 @@
 title: Whole-of-Government Application Analytics (WOGAA) - Improve Government Services with Data
 layout: layout-page-sidenav
 redirect_from: /technologies/analytics/wogaa/
-category: Analytics
-product: WOGAA
+_data: products
+single_level: true
 description: >
   WOGAA is an analytics & performance platform for public officers to monitor the health of their government websites and optimise the performance of
   their digital services with data.
@@ -58,6 +58,7 @@ bios:
     desc: |
       Ming Shu is a Data Scientist in the WOGAA team. He focuses on building data models to perform ETL processes, while also analysing and crunching numbers to derive actionable insights for stakeholders from within GovTech and across the Government. He also has a keen interest in machine learning, and is exploring ways to incorporate it into the WOGAA product.
 ---
+
 ### Overview
 
 With more people interacting with the government through websites and mobile applications, it becomes increasingly important for the government to

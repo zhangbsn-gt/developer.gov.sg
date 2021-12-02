@@ -1,8 +1,8 @@
 ---
 title: Personalise – Curating Tailored Citizen Experiences
 layout: layout-page-sidenav
-category: Analytics
-product: Personalise
+_data: products
+single_level: true
 ---
 
 ### What's Next?
