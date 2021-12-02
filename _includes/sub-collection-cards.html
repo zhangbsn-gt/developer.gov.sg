@@ -10,6 +10,10 @@
   {% for document in full_collection %}
     {% assign document_sub_collection = document.id | split: "/" | shift | shift | first %}
     {% assign document_id = document.id | split: "/" | shift | shift | last %}
+    {% comment %}
+      we are checking each page's front matter variable called sub_collection_render when we call document.sub_collection_render
+      if set to false, the page will not render in the sub collection cards
+    {% endcomment %}
     {% if document_sub_collection == sub_collection and page.title != document.title and document.sub_collection_render%}
 
     <div class="sgds-card sgds-card-variant-category-info grid-item">
