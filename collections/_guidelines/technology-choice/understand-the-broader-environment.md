@@ -1,6 +1,7 @@
 ---
 title: Understand the Broader Environment
 layout: layout-page-sidenav
+sub_collection_render: true
 description: External factors can disrupt your project if not well understood.
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: Instruction Manual 8 (IM8)
 layout: layout-page-sidenav
+sub_collection_render: true
 category: Standards & Best Practices
 description: >
   IM8 is a security management tool used by the Government to safeguard Infocomm Technology and Smart Systems (ICT and SS) assets.
@@ -24,7 +25,7 @@ The IM8 uplifts ICT & SS capabilities across the Government, sets out requiremen
 
 ### Use Cases
 
-- Government Personal Data Protection Laws and Policies (data management by public agencies and third parties of public agencies) \[[link](https://www.smartnation.gov.sg/about-smart-nation/secure-smart-nation/personal-data-protection){:target="_blank"}\]
+- Government Personal Data Protection Laws and Policies (data management by public agencies and third parties of public agencies) \[[link](https://www.smartnation.gov.sg/about-smart-nation/secure-smart-nation/personal-data-protection){:target="\_blank"}\]
 
 - Digital Service Standards \[[link](https://www.tech.gov.sg/digital-service-standards/)\]
 

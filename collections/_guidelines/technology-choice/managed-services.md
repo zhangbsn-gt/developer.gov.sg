@@ -1,6 +1,7 @@
 ---
 title: Managed Services
 layout: layout-page-sidenav
+sub_collection_render: true
 description: Improve efficiency and reduce costs by leveraging Managed Services, rather than creating services and tools from scratch.
 ---
 
@@ -11,20 +12,22 @@ Improve efficiency and reduce costs by leveraging Managed Services, rather than 
 ### What are Managed Services?
 
 Managed Services refer to externally managed IT solutions that you can adopt. The Singapore Government has built a variety of digital services and tools that you can leverage on, including:
-- [NDI](https://www.developer.tech.gov.sg/technologies/digital-identity/national-digital-identity){:target="_blank"}: a digital identity system that enables Singapore residents and businesses to conveniently and securely transact with the public and private sectors
-- [Isomer](https://www.developer.tech.gov.sg/technologies/content-management/isomer){:target="_blank"}: an informational website generator for hosting and deploying static sites
-- [SHIP-HATS](https://www.developer.tech.gov.sg/singapore-government-tech-stack/toolchain/overview.html){:target="_blank"}: the Toolchain component within the [Singapore Government Tech Stack (SGTS)](https://www.developer.tech.gov.sg/singapore-government-tech-stack/overview/index.html#!){:target="_blank"} with security and governance guardrails that enables you to plan, build, test and deploy code to production
-- [SGDS](https://www.developer.tech.gov.sg/technologies/design/singapore-government-design-system){:target="_blank"}: a design framework for Government websites
 
-For a more comprehensive list of services and tools, we recommend that you visit our [technologies page](https://www.developer.gov.sg/technologies/){:target="_blank"}.
+- [NDI](https://www.developer.tech.gov.sg/technologies/digital-identity/national-digital-identity){:target="\_blank"}: a digital identity system that enables Singapore residents and businesses to conveniently and securely transact with the public and private sectors
+- [Isomer](https://www.developer.tech.gov.sg/technologies/content-management/isomer){:target="\_blank"}: an informational website generator for hosting and deploying static sites
+- [SHIP-HATS](https://www.developer.tech.gov.sg/singapore-government-tech-stack/toolchain/overview.html){:target="\_blank"}: the Toolchain component within the [Singapore Government Tech Stack (SGTS)](https://www.developer.tech.gov.sg/singapore-government-tech-stack/overview/index.html#!){:target="\_blank"} with security and governance guardrails that enables you to plan, build, test and deploy code to production
+- [SGDS](https://www.developer.tech.gov.sg/technologies/design/singapore-government-design-system){:target="\_blank"}: a design framework for Government websites
+
+For a more comprehensive list of services and tools, we recommend that you visit our [technologies page](https://www.developer.gov.sg/technologies/){:target="\_blank"}.
 
 ### Why Should Managed Services be Adopted?
 
-By leveraging on existing IT solutions, you can improve efficiency and reduce costs required to build tools and services from scratch. 
+By leveraging on existing IT solutions, you can improve efficiency and reduce costs required to build tools and services from scratch.
 
-For example, Government agencies can consider adopting the [Government Commercial Cloud (GCC)](https://www.developer.tech.gov.sg/technologies/infrastructure-and-hosting/government-commercial-cloud){:target="_blank"}, which brings the modern innovations and capabilities of commercial cloud computing platforms to less sensitive Government systems.
+For example, Government agencies can consider adopting the [Government Commercial Cloud (GCC)](https://www.developer.tech.gov.sg/technologies/infrastructure-and-hosting/government-commercial-cloud){:target="\_blank"}, which brings the modern innovations and capabilities of commercial cloud computing platforms to less sensitive Government systems.
 
 By leveraging GCC, agencies stand to benefit from:
+
 - **Improved IT delivery and operations**:<br>Enjoy a reduction in development time, day-to-day support, and maintenance.
 - **Flexible infrastructure**:<br>Scale up or down your hosting resources on demand.
 - **Increased Agility**:<br>Rapidly deploy application updates and react to increased service demand or security threats.
@@ -32,15 +35,15 @@ By leveraging GCC, agencies stand to benefit from:
 
 ### How Do You Use Managed Services?
 
-Signup and use details for individual products can be found on our [technologies page](https://www.developer.gov.sg/technologies/){:target="_blank"}.
+Signup and use details for individual products can be found on our [technologies page](https://www.developer.gov.sg/technologies/){:target="\_blank"}.
 
 ### Success Stories
 
-Success stories of individual products can be found on our [technologies page](https://www.developer.gov.sg/technologies/){:target="_blank"}.
+Success stories of individual products can be found on our [technologies page](https://www.developer.gov.sg/technologies/){:target="\_blank"}.
 
 ### What's Next?
 
-Updates of existing products and information on new products will be published on our [technologies page](https://www.developer.gov.sg/technologies/){:target="_blank"}.
+Updates of existing products and information on new products will be published on our [technologies page](https://www.developer.gov.sg/technologies/){:target="\_blank"}.
 
 ### Contact Information
 

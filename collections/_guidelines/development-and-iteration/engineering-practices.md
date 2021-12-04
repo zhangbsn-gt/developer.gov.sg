@@ -1,6 +1,7 @@
 ---
 title: Engineering Practices
 layout: layout-page-sidenav
+sub_collection_render: true
 description: Implement good engineering practices to improve the development process.
 ---
 

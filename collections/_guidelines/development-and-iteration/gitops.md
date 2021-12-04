@@ -1,6 +1,7 @@
 ---
 title: GitOps
 layout: layout-page-sidenav
+sub_collection_render: true
 description: GitOps shifts DevOps operational processes to rely on the Git repository platform as the single source of truth.
 ---
 
@@ -38,7 +39,7 @@ Authorized approvers then vote to approve the merge request. The master branch C
 
 - Code Validation and Linting
 
-- IaC Plans and Change Delta Analysis, Cost Projection 
+- IaC Plans and Change Delta Analysis, Cost Projection
 
 - Policy as Code (PAC) tests to ensure that your IaC is compliant with security policy
 
@@ -63,14 +64,15 @@ Authorized approvers then vote to approve the merge request. The master branch C
 ### How is the Government Adopting GitOps?
 
 Through several initiatives, we are improving our security policies and guidelines to encourage agencies to:
+
 - Adopt Infrastructure as Code (IaC).
-- Build their secure CI/CD pipelines on [SHIP](https://www.developer.tech.gov.sg/singapore-government-tech-stack/toolchain/overview.html){:target="_blank"}, our Singapore Government Tech Stack (SGTS) Git Repository platform.
-- Leverage cloud-native solutions on the [Government Commercial Cloud](https://www.tech.gov.sg/products-and-services/government-commercial-cloud/){:target="_blank"}, our Cloud Hosting Environment on AWS, Azure and GCP.     
-- Deploy and host cloud-native applications as containers to Kubernetes using GitOps on [Container Stack](https://www.developer.tech.gov.sg/singapore-government-tech-stack/runtime/container-stack){:target="_blank"}, our cloud-based container hosting platform that forms part of the SGTS Runtime Baselayer components that provide modern hosting options for system infrastructure.
+- Build their secure CI/CD pipelines on [SHIP](https://www.developer.tech.gov.sg/singapore-government-tech-stack/toolchain/overview.html){:target="\_blank"}, our Singapore Government Tech Stack (SGTS) Git Repository platform.
+- Leverage cloud-native solutions on the [Government Commercial Cloud](https://www.tech.gov.sg/products-and-services/government-commercial-cloud/){:target="\_blank"}, our Cloud Hosting Environment on AWS, Azure and GCP.
+- Deploy and host cloud-native applications as containers to Kubernetes using GitOps on [Container Stack](https://www.developer.tech.gov.sg/singapore-government-tech-stack/runtime/container-stack){:target="\_blank"}, our cloud-based container hosting platform that forms part of the SGTS Runtime Baselayer components that provide modern hosting options for system infrastructure.
 
 ### GitOps for Kubernetes
 
-Deployment configurations to Kubernetes can be defined declaratively as YAML manifests. These manifest files can be stored in Git, representing the Kubernetes cluster’s desired state. These files are then deployed to Kubernetes as part of CI/CD, ensuring that the desired state matches the live state. 
+Deployment configurations to Kubernetes can be defined declaratively as YAML manifests. These manifest files can be stored in Git, representing the Kubernetes cluster’s desired state. These files are then deployed to Kubernetes as part of CI/CD, ensuring that the desired state matches the live state.
 
 Changes to these configurations, whether application image updates or operations tasks are carried out through Git. Git serves as an “Immutability Firewall” in GitOps for all changes to your Kubernetes cluster.
 
@@ -86,8 +88,6 @@ The Pull Model makes use of GitOps Kubernetes Operators, which are deployed with
 
 By continuously watching for changes in Git, the Pull Model affords benefits not found in the Push Model, such as:
 
-- <b>Automatic synchronization and retries:</b> Should there be unexpected failures during deployments, auto-retry, auto-pruning and auto-healing mechanisms in GitOps, operators continuously ensure that configurations in Git are deployed to the cluster. 
+- <b>Automatic synchronization and retries:</b> Should there be unexpected failures during deployments, auto-retry, auto-pruning and auto-healing mechanisms in GitOps, operators continuously ensure that configurations in Git are deployed to the cluster.
 - <b>Real-time visibility of cluster state:</b> With automated retry mechanisms, the desired state in Git accurately reflects the live state of the cluster.
 - <b>Reduced vector of attack:</b> Sensitive credentials for privileged access to the Kubernetes cluster no longer need to be provided to any CI/CD pipeline for deployments since the GitOps operator residing in the cluster itself handles all deployments.
-
-
