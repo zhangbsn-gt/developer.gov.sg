@@ -39,9 +39,9 @@ bios:
 
 ### Overview
 
-Projections estimate that the number of seniors living alone in Singapore will reach 83,000 by 2030. This is a steep increase from 47,000 in 2016. In response, PAB was conceived to ensure that seniors living alone can remain safe and independent.
+Projections estimate that the number of seniors living alone in Singapore will reach 83,000 by 2030. This is a steep increase from 47,000 in 2016. Surveys show that most seniors prefer to live in their own home rather than elsewhere, such as nursing homes. However, seniors are also anxious about whether they can live safely and independently by themselves. For example, they might be worried that no one will come to their aid when they experience medical emergencies at home. 
 
-PAB is part of the [Government Assisted Living Ecosystem (GALE)](https://www.developer.tech.gov.sg/technologies/digital-solutions-to-address-covid-19/government-assisted-living-ecosystem){:target="_blank"}, a collection of technologies and services to give our seniors greater peace of mind and support during their golden years.
+In response, PAB was conceived to ensure that seniors living alone can remain safe and independent. PAB is part of the [Government Assisted Living Ecosystem (GALE)](https://www.developer.tech.gov.sg/technologies/digital-solutions-to-address-covid-19/government-assisted-living-ecosystem){:target="_blank"}, a collection of technologies and services to give our seniors greater peace of mind and support during their golden years.
 
 ### What is the PAB?
 
