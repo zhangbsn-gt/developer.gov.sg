@@ -15,11 +15,17 @@ class="sgds-section breadcrumb-title-section has-background-general padding--bot
   <div class="wave-gfx">
   </div>
   <div class="sgds-container">
-    
+
+  {%- if page.single_level_nav -%}
+    {% assign main_title = page.id | split: "/" | last | replace: "-", " " | capitalizewords %}
+  {% else %}
+    {% assign main_title = page.title %}
+  {% endif %}
+
     <div class="row">
       <div class="col is-8">
         {% include sgds-breadcrumb.html %}
-        <h1 class="has-text-white has-text-weight-bold">{{ page.title }}</h1>
+        <h1 class="has-text-white has-text-weight-bold">{{ main_title }}</h1>
       </div>
     </div>
   </div>
