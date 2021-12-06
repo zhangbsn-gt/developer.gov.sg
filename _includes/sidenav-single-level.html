@@ -1,0 +1,42 @@
+{% comment %}
+  the category and folder name is obtained directly from page.id
+{% endcomment %}
+{%- assign collection = page.collection -%}
+{%- assign current_category = page.id | split: "/" | shift | shift | first -%}
+{%- assign folder_name = page.id | split: "/" | shift | shift | shift | first -%}
+
+{%- assign active_page = page.id | split: "/" | last -%}
+
+{% comment %}
+  we obtain the _data variable from the front matter of the page so that this sidenav single level can be generic
+{% endcomment %}
+{%- assign sub_collections = site.data[page._data] -%}
+{%- for sub_collection in sub_collections -%}
+
+{% assign collection_name = sub_collection.name | slugify %}
+{%- if collection_name == folder_name -%}
+  {%- assign current_collection = sub_collection-%}
+{% endif %}
+
+{% endfor %}
+
+{%- assign nav_items = current_collection.items -%}
+
+{%- for item in nav_items -%}
+
+{% assign item_url = item | slugify %}
+{%- assign class = nil -%}
+{%- if active_page == item_url -%}
+    {%- assign class = 'is-active' -%}
+{%- endif -%}
+
+<li>
+    <a
+        class="single-level-nav {{ class }}"
+        href="{{ '/' | append: collection | append: '/' | append: current_category | append: '/' | append: folder_name | append: '/' | append: item_url }}"
+    >
+      {{ item }}
+    </a>
+  </li>
+
+{% endfor %}

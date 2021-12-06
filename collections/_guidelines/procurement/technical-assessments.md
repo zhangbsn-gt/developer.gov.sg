@@ -1,6 +1,7 @@
 ---
 title: Technical Assessments for Government ICT Tenders
 layout: layout-page-sidenav
+sub_collection_render: true
 description: Government Agencies will progressively include technical assessments in quality evaluations of tenderers bidding for Government ICT projects.
 ---
 
