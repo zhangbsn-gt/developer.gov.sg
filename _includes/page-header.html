@@ -17,7 +17,9 @@ class="sgds-section breadcrumb-title-section has-background-general padding--bot
   <div class="sgds-container">
 
   {%- if page.single_level_nav -%}
-    {% assign main_title = page.id | split: "/" | last | replace: "-", " " | capitalizewords %}
+    {% assign folder_name = page.id | split: "/" | shift | shift | shift | first | replace: "-", " " | capitalizewords %}
+    {% assign page_name = page.id | split: "/" | last | replace: "-", " " | capitalizewords %}
+    {% assign main_title = folder_name | append: " - " | append: page_name %}
   {% else %}
     {% assign main_title = page.title %}
   {% endif %}

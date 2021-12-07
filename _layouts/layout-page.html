@@ -13,7 +13,7 @@ layout: layout-default
 
 <section class="sgds-section page-{{ page_name }}" style="padding-top: 10px; padding-bottom: 0;">
     <div class="sgds-container content has-default-header-styles" style="padding-top: 0; padding-bottom: 0;">
-        <strong>{{ folder_name | split: "-" | join: " " | upcase }}</strong>
+        <strong class="is-hidden-desktop">{{ folder_name | split: "-" | join: " " | upcase }}</strong>
         <div class="mobile-sidenav is-hidden-desktop">
           <button class="sgds-button is-small mobile-sidenav-toggle" style="font-weight: normal" type="button">
               <span>{{ page_name | split: "-" | join: " " | capitalizewords }}</span>
