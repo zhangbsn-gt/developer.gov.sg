@@ -47,8 +47,7 @@ In response, PAB was conceived to ensure that seniors living alone can remain sa
 
 PAB is an alert device that can be installed in an elderly’s home. When a senior in distress activates the PAB, a distress signal will be sent to either a [Senior Activity Centre (SAC)](https://www.healthhub.sg/a-z/medical-and-care-facilities/8/senior_activity_centre){:target="_blank"} or [CareLine](https://www.singhealth.com.sg/rhs/live-well/CareLine/about-us){:target="_blank"}, which is a 24-hour telecare service provided by Changi General Hospital (CGH).
 
-PAB enables 10-second audio recordings to be sent from distressed seniors to staff from SAC and CareLine. Upon receiving the recordings, staff will triage the situation and respond accordingly. If necessary, staff may communicate with the distressed senior using the
-PAB’s 4G technology which enables two-way communication.
+Upon receiving a distress alert from the PAB, staff will triage the situation and respond accordingly. The staff may communicate with the distressed senior using the PAB’s 4G technology which enables two-way communication, or use a 10 second audio recording to triage the situation within the household.
 
 <figure style="text-align: center">
   <img
@@ -70,8 +69,9 @@ PAB’s 4G technology which enables two-way communication.
 
 PAB is a fast and responsive device that enables our seniors to live safely and independently by providing round-the-clock monitoring and assistance. 
 
-The seniors are allowed to determine the location of the devices as they are wireless and battery-operated, with a lifespan of around five years.
+The seniors are allowed to determine the location* of the devices as they are wireless and battery-operated, with a lifespan of around five years.
 
+_*To ensure that seniors can reach the PAB when they are on floor, there is a maximum height limit for installation of PABs._
 
 ### How Do You Use the PAB?
 
