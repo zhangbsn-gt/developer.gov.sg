@@ -11,15 +11,15 @@ layout: layout-default
 {%- assign folder_name = page.id | split: "/" | shift | shift | shift | first -%}
 {%- assign page_name = page.id | split: "/" | last -%}
 
-<section class="sgds-section page-{{ page_name }}" style="padding-top: 10px; padding-bottom: 0;">
-    <div class="sgds-container content has-default-header-styles" style="padding-top: 0; padding-bottom: 0;">
+<section class="sgds-section page-{{ page_name }}" style="padding-top: 10px; padding-bottom: 0px;">
+    <div class="sgds-container content has-default-header-styles">
         <strong class="is-hidden-desktop">{{ folder_name | split: "-" | join: " " | upcase }}</strong>
         <div class="mobile-sidenav is-hidden-desktop">
           <button class="sgds-button is-small mobile-sidenav-toggle" style="font-weight: normal" type="button">
               <span>{{ page_name | split: "-" | join: " " | capitalizewords }}</span>
               <span class="sgds-icon sgds-icon-chevron-down"></span>
           </button>
-          <ul class="mobile-sidenav-menu is-hidden" style="height: fit-content;">
+          <ul class="mobile-sidenav-menu is-hidden" style="height: fit-content; padding-bottom: 2rem;">
               {% include sidenav-single-level.html %}
           </ul>
       </div>
