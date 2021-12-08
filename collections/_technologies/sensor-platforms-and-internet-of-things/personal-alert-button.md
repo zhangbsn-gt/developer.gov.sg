@@ -126,5 +126,5 @@ Big thanks to those who were part of the team: Chan Chien Hsing (SIOT), Yeap Bin
     src="/assets/img/pab-team-photo.png" width="50%" height="50%" 
     alt="PAB team photo"
   />
-  <figcaption>PAB team photo</figcaption>
+  <figcaption>Fig 3: PAB team photo</figcaption>
 </figure>
