@@ -70,7 +70,7 @@ PAB’s 4G technology which enables two-way communication.
 
 PAB is a fast and responsive device that enables our seniors to live safely and independently by providing round-the-clock monitoring and assistance. 
 
-The seniors are allowed to determine the location of the devices as they are wireless and battery-operated, with a lifespan of around 5 years.
+The seniors are allowed to determine the location of the devices as they are wireless and battery-operated, with a lifespan of around five years.
 
 
 ### How Do You Use the PAB?
@@ -87,7 +87,7 @@ Use the PAB by following these steps:
 
 PABs have been installed in more than 6,000 housing units from 53 rental blocks.
 
-Between November 2019 and September 2021, the PAB handled 415 emergency cases, including medical, social, and crime-related issues. Hear testimonies from two PAB users:
+Between November 2019 and September 2021, the PAB handled 415 emergency cases, including medical, social, and crime-related issues. Testimonies from two PAB users are as shown below:
 
 _“From 9pm to 3am… my leg was so painful. I couldn’t get out of bed… I can’t walk so I pressed the button for help. My son lives in Woodlands, too far away from me. I would have taken a taxi ride to hospital myself, but at 3am… where can I find a taxi?”_ 
 <br>**– Mdm A, a senior who lives alone**
