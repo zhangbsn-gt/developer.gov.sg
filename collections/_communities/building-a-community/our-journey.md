@@ -65,7 +65,7 @@ Also, while our live sessions became a great place for developers to network and
 
 ### Our Successes in Singapore & Beyond!
 
-To date, we have almost 4,000 members in our Meetup group. We are very happy with our community building journey thus far, but we could not have done it without the help of those around us.
+To date, we have over 4,500 members in our Meetup group. We are very happy with our community building journey thus far, but we could not have done it without the help of those around us.
 
 Our efforts were met with strong leadership support and drive, all the way from the very top of our organisation — we have passionate advocates in our senior leadership, GCDTO Cheow Hoe who attends every Meetup and Chief Executive Ping Soon who regularly encourages others to join us. We have also been very fortunate to have access to a wealth of speakers, both from GovTech and spanning the entire tech industry, each deeply enthusiastic and knowledgeable about their own fields. These include colleagues from the Centre for Strategic Infocomm Technologies (CSIT), Ministry of Education (MOE), and the Urban Redevelopment Authority (URA), or from other communities interested in partnering with us.
 
