@@ -35,7 +35,7 @@ bios:
       Adrian Tan is a Product Lead and Delivery Manager at GovTech. He has over eight years of experience in Product Management, Business Analyst, Scrum Master, and Product Owner roles. Before joining GovTech, he was a start-up founder, Product Manager at a development house, and Product Owner/Product Manager at Municipal Services Office. Adrian specialises in facilitating inception workshops, managing multiple scrum teams, and mentoring new Delivery Managers. He is deeply interested in using technology to solve complex real-world problems.
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/5Jy9Qu4frdg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RlS7LeI6UvY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Overview
 
@@ -81,13 +81,13 @@ Use the PAB by following these steps:
 2. **TELL** the PAB what has happened. Your description will be recorded and sent to either an SAC or CareLine.
 3. **WAIT** for SAC or CareLine staff to respond to you or visit your house to provide assistance.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/M1PioioT3eM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/D-xG_UQiTy4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Success Stories
 
-PABs have been installed in more than 6,000 housing units from 53 rental blocks.
+An estimated 10,000 housing units from 53 rental housing blocks will be installed with PABs. To date, PABs have been installed in more than 6,000 units from 36 blocks. 
 
-Between November 2019 and September 2021, the PAB handled 415 emergency cases, including medical, social, and crime-related issues. Testimonies from two PAB users are as shown below:
+Between November 2019 and September 2021, the installed PABs handled 415 emergency cases, including medical, social, and crime-related issues. Testimonies from two PAB users are as shown below:
 
 _“From 9pm to 3am… my leg was so painful. I couldn’t get out of bed… I can’t walk so I pressed the button for help. My son lives in Woodlands, too far away from me. I would have taken a taxi ride to hospital myself, but at 3am… where can I find a taxi?”_ 
 <br>**– Mdm A, a senior who lives alone**
@@ -97,7 +97,7 @@ _“I was feeling breathless, I can’t reach the phone. I can’t even tell the
 
 ### What's Next?
 
-The team is exploring opportunities to deploy the PAB beyond the current 53 rental blocks.
+The team is exploring opportunities to deploy the PAB beyond the current 53 rental housing blocks.
 
 ### Contact Information
 
