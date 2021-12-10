@@ -13,3 +13,5 @@ assets/**/*.bundle.js
 scripts
 *.log
 _compress_images_cache.yml
+.DS_Store
+**/.DS_Store

@@ -1,6 +1,7 @@
 ---
 title: Use Metrics
 layout: layout-page-sidenav
+sub_collection_render: true
 description: Determine the success of your project by measuring quantifiable use metrics.
 ---
 
