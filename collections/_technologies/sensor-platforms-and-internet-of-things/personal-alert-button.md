@@ -71,7 +71,7 @@ PAB is a fast and responsive device that enables our seniors to live safely and 
 
 The seniors are allowed to determine the location* of the devices as they are wireless and battery-operated, with a lifespan of around five years.
 
-_*To ensure that seniors can reach the PAB when they are on floor, there is a maximum height limit for chosen location to install the PAB._
+_*To ensure that seniors can reach the PAB when they are on the floor, there is a maximum height limit for chosen location to install the PAB._
 
 ### How Do You Use the PAB?
 
