@@ -6,7 +6,7 @@ category: Analytics
 redirect_from: /technologies/analytics/personalise/
 _data: products
 sub_collection_render: true
-single_level_nav: true
+single_level_nav: false
 description: Personalise consists of email and web personalisation tools that help agencies better analyse user behaviours and provide tailored experiences to individuals.
 ---
 
