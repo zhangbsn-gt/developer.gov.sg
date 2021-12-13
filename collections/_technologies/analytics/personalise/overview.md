@@ -1,5 +1,6 @@
 ---
 title: Personalise – Curating Tailored Citizen Experiences
+mobile_title: Personalise
 layout: layout-page-sidenav
 category: Analytics
 redirect_from: /technologies/analytics/personalise/
