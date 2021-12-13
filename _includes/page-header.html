@@ -17,14 +17,14 @@ class="sgds-section breadcrumb-title-section has-background-general padding--bot
   <div class="sgds-container">
 
     {% assign main_title = page.title %}
-    {% assign page_name = page.id | split: "/" | last | replace: "-", " " | capitalizewords %}
 
     <div class="row">
       <div class="col is-8">
         {% include sgds-breadcrumb.html %}
-        {% if page.single_level_nav %}
+        {% if page.mobile_title %}
+        {% assign mobile_title = page.mobile_title %}
         <h1 class="has-text-white has-text-weight-bold is-hidden-mobile">{{ main_title }}</h1>
-        <h1 class="has-text-white has-text-weight-bold is-hidden-desktop">{{ page_name }}</h1>
+        <h1 class="has-text-white has-text-weight-bold is-hidden-desktop">{{ mobile_title }}</h1>
         {% else %}
         <h1 class="has-text-white has-text-weight-bold">{{ main_title }}</h1>
         {% endif %}
