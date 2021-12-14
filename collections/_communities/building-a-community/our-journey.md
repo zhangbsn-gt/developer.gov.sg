@@ -15,7 +15,7 @@ If not, that is fine too! To get you up to speed — GovTech is a statutory boar
 
 Today, we would like to share about our community engagement journey and what drives us to do what we do. Hopefully, by the end of this, you will share our excitement for this community we have built together, as well as what lies ahead in the future.
 
-If you are interested to build a tech community but don't know where to start, the team has developed a quick and easy [playbook](/assets/files/community-playbook.pdf){:target="_blank"} to kickstart your community development journey. Other resources that could help you on your journey are also accessible via this [link](resources){:target="_blank"}.
+If you are interested to build a tech community but don't know where to start, the team has developed a quick and easy [playbook](resources/community-playbook.pdf){:target="_blank"} to kickstart your community development journey. Other resources that could help you on your journey are also accessible via this [link](resources){:target="_blank"}.
 
 ### How It All Began
 
