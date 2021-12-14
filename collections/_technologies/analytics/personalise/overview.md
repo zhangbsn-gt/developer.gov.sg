@@ -6,7 +6,7 @@ category: Analytics
 redirect_from: /technologies/analytics/personalise/
 _data: products
 sub_collection_render: true
-single_level_nav: false
+single_level_nav: true
 description: Personalise consists of email and web personalisation tools that help agencies better analyse user behaviours and provide tailored experiences to individuals.
 ---
 
@@ -24,7 +24,7 @@ Recommendation of **relevant** content: Once an understanding of the target audi
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/PERCY Flowchart.jpg"  
+    src="/assets/img/PERCY Flowchart.jpg"
     alt="Fig 1: Framework on personalised service delivery for public sector - (Smart Nation and Digital Government Office (SNDGO), 2021 - adapted from Accenture’s 4R Personalisation Framework)"
   />
   <figcaption>Fig 1: Framework on personalised service delivery for public sector - (Smart Nation and Digital Government Office (SNDGO), 2021 - adapted from Accenture’s 4R Personalisation Framework)</figcaption>
@@ -95,7 +95,7 @@ When a campaign is launched, the performance of the campaign will be tracked and
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/technologies/Fig 2 Email personalisation workflow.png"  
+    src="/assets/img/technologies/Fig 2 Email personalisation workflow.png"
     alt="Fig 2 Email personalisation workflow"
   />
   <figcaption>Fig 2 Email personalisation workflow</figcaption>
@@ -109,7 +109,7 @@ The MyNiceHome team achieves web personalisation simply by integrating it with t
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/technologies/Fig 3 Web personalisation use case (HDB’s MyNiceHome website).PNG"  
+    src="/assets/img/technologies/Fig 3 Web personalisation use case (HDB’s MyNiceHome website).PNG"
     alt="Fig 3: Web personalisation use case (HDB’s MyNiceHome website)"
   />
   <figcaption>Fig 3: Web personalisation use case (HDB’s MyNiceHome website)</figcaption>
