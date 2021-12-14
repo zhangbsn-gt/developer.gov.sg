@@ -7,7 +7,7 @@ redirect_from: /communities/building-a-community/
 
 ### Levelling Up Collectively — Our Community Engagement Journey
 
-It has been almost 2 years since we started the STACK-X community. Take a look at our journey and how we pivoted our efforts amidst the COVID-19 pandemic.
+It has been almost two years since we started the STACK-X community. Take a look at our journey and how we pivoted our efforts amidst the COVID-19 pandemic.
 
 If you have attended one of our STACK-X Meetups, you are probably quite familiar with [GovTech](https://www.tech.gov.sg/who-we-are/our-role/){:target="_blank"}. Chances are, you are also well acquainted with some products we have developed — for example, [TraceTogether](https://www.developer.tech.gov.sg/technologies/digital-solutions-to-address-covid-19/tracetogether){:target="_blank"} and our [Whole-of-Government Application Analytics](https://www.developer.tech.gov.sg/technologies/analytics/wogaa){:target="_blank"}.
 
@@ -15,7 +15,7 @@ If not, that is fine too! To get you up to speed — GovTech is a statutory boar
 
 Today, we would like to share about our community engagement journey and what drives us to do what we do. Hopefully, by the end of this, you will share our excitement for this community we have built together, as well as what lies ahead in the future.
 
-If you are interested to build a tech community but don't know where to start, the team has developed a quick and easy [playbook](/assets/files/community-playbook.pdf){:target="_blank"} to kickstart your community development journey. Other resources that could help you with your journey are also accessible via this [link](resources){:target="_blank"}.
+If you are interested to build a tech community but don't know where to start, the team has developed a quick and easy [playbook](/assets/files/community-playbook.pdf){:target="_blank"} to kickstart your community development journey. Other resources that could help you on your journey are also accessible via this [link](resources){:target="_blank"}.
 
 ### How It All Began
 
@@ -46,7 +46,7 @@ In short, we took every opportunity we could to learn from the people around us!
     src="/assets/img/stack-x-journey-cheow-hoe.png"  
     alt="Fig 2: Chan Cheow Hoe, Government Chief Digital Technology Officer speaking at STACK-X Meetup at GovTech's office."
   />
-  <figcaption>Fig 2: Chan Cheow Hoe, Government Chief Digital Technology Officer(GCDTO) speaking at STACK-X Meetup at GovTech's office.</figcaption>
+  <figcaption>Fig 2: Chan Cheow Hoe, Government Chief Digital Technology Officer (GCDTO) speaking at STACK-X Meetup at GovTech's office.</figcaption>
 </figure>
 
 By early February 2020, it became clear that in-person Meetups were going to be impossible with the ongoing pandemic. It was a small struggle to pivot to online meetups as we had to learn new ways to engage our community. In April 2020, we held our very first [online STACK-X Meetup](https://www.developer.tech.gov.sg/communities/stack-x-meetups/past-webinars/){:target="_blank"}, where we talked about how tech could address some of the problems emerging as a result of the COVID-19 crisis. For this online event, we similarly partnered with EDB’s Tech+65 who was experienced with hosting digital events. Our partner helped to shed some much-needed light on how online events could be run effectively, and we were very grateful for the learning points we gained that night.
@@ -67,7 +67,7 @@ Also, while our live sessions became a great place for developers to network and
 
 To date, we have over 4,500 members in our Meetup group. We are very happy with our community building journey thus far, but we could not have done it without the help of those around us.
 
-Our efforts were met with strong leadership support and drive, all the way from the very top of our organisation — we have passionate advocates in our senior leadership, GCDTO Cheow Hoe who attends every Meetup and Chief Executive Ping Soon who regularly encourages others to join us. We have also been very fortunate to have access to a wealth of speakers, both from GovTech and spanning the entire tech industry, each deeply enthusiastic and knowledgeable about their own fields. These include colleagues from the Centre for Strategic Infocomm Technologies (CSIT), Ministry of Education (MOE), and the Urban Redevelopment Authority (URA), or from other communities interested in partnering with us.
+Our efforts were met with strong leadership support and drive, all the way from the very top of our organisation — we have passionate advocates in our senior leadership, GCDTO Cheow Hoe who attends every Meetup and Chief Executive Ping Soon who regularly encourages others to join us. We have also been very fortunate to have access to a wealth of speakers, both from GovTech and spanning the entire tech industry, each deeply enthusiastic and knowledgeable about their own fields. These include colleagues from the Centre for Strategic Infocomm Technologies (CSIT), Ministry of Education (MOE), and the Urban Redevelopment Authority (URA) or from other communities interested in partnering with us.
 
 ### What's Next?
 
@@ -83,6 +83,6 @@ If you’d like to connect and exchange ideas, please reach out to [Karen](http:
 
 - [Community playbook](resources/community_playbook.pdf){:target="_blank"}
 - Hear from our Community Leaders: [Min Li](resources/interview-with-min-li){:target="_blank"}, [Mindy](resources/interview-with-mindy-lim){:target="_blank"}, and [Melvin and Michael](resources/interview-with-melvin-tan-and-michael-cheng){:target="_blank"}
-- STACK-X Presentation Tips for Speakers
 - [STACK-X Deck Template](resources/STACK-X_deck_template_for_public_use.pptx){:target="_blank"}
+- [STACK-X Virtual Background for Speakers](){:target="_blank"}
 - Join our STACK-X Community on [Meetup](https://www.meetup.com/stack-x-by-govtech-singapore){:target="_blank"} and [Telegram](https://go.gov.sg/stackxtelegram){:target="_blank"}
