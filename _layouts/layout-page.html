@@ -3,15 +3,12 @@ layout: layout-default
 ---
 
 {% include page-header.html %}
-
-{% assign pageTitleSlug = page.title | slugify %}
+{% assign page_title_slug = page.title | slugify %}
 
 {%- if page.single_level_nav -%}
-
-{%- assign page_name = page.id | split: "/" | last -%}
-
+    {%- assign page_name = page.id | split: "/" | last -%}
 <section class="sgds-section page-{{ page_name }} mobile-single-level-nav__section is-hidden-desktop">
-    <div class="sgds-container content has-default-header-styles">
+    <div class="sgds-container">
         <div class="mobile-single-level-nav__section-header">
         <strong class="is-small is-hidden-desktop">PRODUCT MENU</strong>
         </div>
@@ -28,7 +25,7 @@ layout: layout-default
 </section>
 {% endif %}
 
-<section class="sgds-section page-{{ pageTitleSlug }}">
+<section class="sgds-section page-{{ page_title_slug }}">
     <div class="sgds-container content has-default-header-styles">
         {{ content }}
     </div>
