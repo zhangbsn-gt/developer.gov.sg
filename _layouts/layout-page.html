@@ -6,23 +6,7 @@ layout: layout-default
 {% assign page_title_slug = page.title | slugify %}
 
 {%- if page.single_level_nav -%}
-    {%- assign page_name = page.id | split: "/" | last -%}
-<section class="sgds-section page-{{ page_name }} mobile-single-level-nav__section is-hidden-desktop">
-    <div class="sgds-container">
-        <div class="mobile-single-level-nav__section-header">
-        <strong class="is-small is-hidden-desktop">PRODUCT MENU</strong>
-        </div>
-        <div class="mobile-single-level-nav is-hidden-desktop">
-          <button class="sgds-button is-small mobile-sidenav-toggle" type="button">
-              <span class="has-text-weight-normal">{{ page_name | split: "-" | join: " " | capitalizewords }}</span>
-              <span class="sgds-icon sgds-icon-chevron-down"></span>
-          </button>
-          <ul class="mobile-sidenav-menu is-hidden">
-              {% include sidenav-single-level.html %}
-          </ul>
-      </div>
-    </div>
-</section>
+   {% include sidenav-single-level-mobile.html %}
 {% endif %}
 
 <section class="sgds-section page-{{ page_title_slug }}">
