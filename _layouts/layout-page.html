@@ -7,9 +7,11 @@ layout: layout-default
 
 {%- if page.single_level_nav -%}
     {%- assign page_name = page.id | split: "/" | last -%}
-<section class="sgds-section page-{{ page_name }} is-hidden-desktop padding--bottom--none padding--top">
+<section class="sgds-section page-{{ page_name }} is-hidden-desktop has-background-light padding--bottom padding--top">
     <div class="sgds-container">
+        <div class="padding--bottom--sm">
         <strong class="is-small is-hidden-desktop">PRODUCT MENU</strong>
+        </div>
         <div class="mobile-sidenav is-hidden-desktop">
           <button class="sgds-button is-small mobile-sidenav-toggle" type="button">
               <span class="has-text-weight-normal">{{ page_name | split: "-" | join: " " | capitalizewords }}</span>
