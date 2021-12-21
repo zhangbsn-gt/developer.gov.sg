@@ -12,7 +12,7 @@ description: >
     <div class="sgds-card-content">
       <img class="has-text-center margin-right--sm" src="/assets/img/building-a-community-interview-mindy-lim.png" alt="Picture of Mindy Lim">
 	  <p>
-	    Mindy Lim is a Community Manager under the Data Science & Artificial Intelligence Division (DSAID) in GovTech. As part of the team’s overall capability development initiatives to upskill public officers in all things Data Science and AI, she leads the Data Science Connect (DSC) and Data Arcade Tournament (DAT) events together with her team, uplifting agencies in their data transformation journeys.
+	    Mindy Lim is a Central Engagement Manager under the Data Science & Artificial Intelligence Division (DSAID) in GovTech. As part of the team’s overall capability development initiatives to upskill public officers in all things Data Science and AI, she leads the Data Science Connect (DSC) and Data Arcade Tournament (DAT) events together with her team, uplifting agencies in their data transformation journeys.
 	  </p>
 	</div>
   </div>
@@ -81,4 +81,4 @@ We are driven by data, and we are avid fans of feedback metrics to measure our s
 
 ### How do you attract new community members and retain existing ones?
 
-We attract new community members through word of mouth! As the saying goes, “Take care of your employees and they will take care of your customers.” Similarly, when you treat your community members right, they will be your best advocates.
+We attract new community members through word of mouth! As the saying goes, “Take care of your employees and they will take care of your customers”. Similarly, when you treat your community members right, they will be your best advocates.
