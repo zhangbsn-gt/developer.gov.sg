@@ -22,18 +22,6 @@ description: >
   </div>
 </div>
 
-<!--<div>
-  <div class="has-text-center margin-right--sm">
-    <img src="/assets/img/building-a-community-interview-min-li.png" alt="Picture of Min Li">
-  </div>
-  <div>
-    <p>Min Li is the founder of DesignSG, a Telegram community for designers in Singapore. She has been a mentor for aspiring UX designers at social enterprise, Hatch, and GovTech’s ‘Girls in Tech’ programme. She aims to build a library of mentors across the design fields in DesignSG, to eventually run mentorship programmes for designers in Singapore.</p>
-
-	<p>Min Li majored in communication at Monash University and completed her Masters in Industrial Design in Milan, Italy. After a hodgepodge of experiences in various start-ups ranging from hardware, healthtech, proptech, edtech, and teaching kids to code, she is now at GovTech, working with JTC's Smart District Division.</p>
-  </div>
-</div>
-<p></p>-->
-
 ### QUICK TIPS FROM MIN LI
 
 1. Form a supportive leadership team that aligns with your values and goals for the community.
