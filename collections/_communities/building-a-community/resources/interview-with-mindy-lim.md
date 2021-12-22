@@ -10,8 +10,8 @@ description: >
 <div>
   <div div class="sgds-card">
     <div class="sgds-card-content">
-      <img class="has-text-center is-pulled-left" src="/assets/img/building-a-community-interview-mindy-lim.png" alt="Picture of Mindy Lim">
-    <div class="has-text-center margin-right--sm is-pulled-right">
+      <img class="has-text-center is-pulled-left margin" src="/assets/img/building-a-community-interview-mindy-lim.png" alt="Picture of Mindy Lim">
+    <div class="has-text-justified margin--sm">
 	  <p>
 	    Mindy Lim is a Central Engagement Manager under the Data Science & Artificial Intelligence Division (DSAID) in GovTech. As part of the team’s overall capability development initiatives to upskill public officers in all things Data Science and AI, she leads the Data Science Connect (DSC) and Data Arcade Tournament (DAT) events together with her team, uplifting agencies in their data transformation journeys.
 	  </p>

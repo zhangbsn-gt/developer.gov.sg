@@ -10,8 +10,8 @@ description: >
 <div>
   <div div class="sgds-card">
     <div class="sgds-card-content">
-    <img class="has-text-center is-pulled-left" src="/assets/img/building-a-community-interview-min-li.png" alt="Picture of Min Li">
-	<div class="has-text-center margin-right--sm is-pulled-right">
+    <img class="has-text-center is-pulled-left margin" src="/assets/img/building-a-community-interview-min-li.png" alt="Picture of Min Li">
+	<div class="has-text-justified margin--sm">
 	  <p>
 	    Min Li is the founder of DesignSG, a Telegram community for designers in Singapore. She has been a mentor for aspiring UX designers at social enterprise, Hatch, and GovTech’s ‘Girls in Tech’ programme. She aims to build a library of mentors across the design fields in DesignSG, to eventually run mentorship programmes for designers in Singapore.
 	  </p>
