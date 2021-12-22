@@ -10,10 +10,12 @@ description: >
 <div>
   <div div class="sgds-card">
     <div class="sgds-card-content">
-      <img class="has-text-center margin-right--sm" src="/assets/img/building-a-community-interview-mindy-lim.png" alt="Picture of Mindy Lim">
+      <img class="has-text-center is-pulled-left" src="/assets/img/building-a-community-interview-mindy-lim.png" alt="Picture of Mindy Lim">
+    <div class="has-text-center margin-right--sm is-pulled-right">
 	  <p>
 	    Mindy Lim is a Central Engagement Manager under the Data Science & Artificial Intelligence Division (DSAID) in GovTech. As part of the team’s overall capability development initiatives to upskill public officers in all things Data Science and AI, she leads the Data Science Connect (DSC) and Data Arcade Tournament (DAT) events together with her team, uplifting agencies in their data transformation journeys.
 	  </p>
+    </div>
 	</div>
   </div>
 </div>
@@ -24,7 +26,7 @@ description: >
 2. Be responsive
 3. Create added value for stakeholders while staying true to the Community’s interests
 
-**Join the community:** [DSC Community](https://go.gov.sg/communityregistration){:target="_blank"}<br />
+**Join the community:** [DSC Community](https://go.gov.sg/communityregistration){:target="\_blank"}<br />
 Kindly note that the DSC Community is only open to public officers serving the Singapore Government. Only valid gov.sg email addresses will be accepted.
 
 ### Why is community-building important to you?
@@ -33,7 +35,7 @@ I will elaborate using the acronym DSC, which also stands for the community that
 
 <p class="has-text-center"><i>“No man is an island. To learn and grow, we often tap on others for support and advice, especially in the areas we are lacking in. You have to put yourself out there to avoid limiting your perspectives and potential.”</i></p>
 
-C stands for Connect. The beauty of community-building lies in the vast network placed in your hands, allowing you to act as an effective hub that connects different officers and agencies in the community.  It gives me a sense of achievement knowing that the members can meet like-minded friends as a support group they can tap on through our various engagements.
+C stands for Connect. The beauty of community-building lies in the vast network placed in your hands, allowing you to act as an effective hub that connects different officers and agencies in the community. It gives me a sense of achievement knowing that the members can meet like-minded friends as a support group they can tap on through our various engagements.
 
 ### How did you build and grow the DSC Community?
 
