@@ -10,28 +10,31 @@ description: >
 <div class="card-grid-container grid-25rem">
   <div div class="sgds-card">
     <div class="sgds-card-content">
-      <img class="has-text-center margin-right--sm" src="/assets/img/building-a-community-interview-melvin-tan.png" alt="Picture of Melvin Tan">
+      <img class="has-text-center is-pulled-left margin" src="/assets/img/building-a-community-interview-melvin-tan.png" alt="Picture of Melvin Tan">
+		<div class="has-text-justified margin--sm">
 	  <p>
 	    Melvin Tan is the organiser of Singapore’s iOS community and Meetup ‘iOS Dev Scout’, as well as the annual iOS conference ‘iOS Conf SG’. He is the Mobile Engineering Lead in the National Digital Identity (NDI) Team at GovTech and he also represents WorldSkills Singapore as an Industry Expert in Mobile Applications Development.
 	  </p>
-
 	  <p>
 		He is a pioneer iOS Engineer (Objective-C, Swift) with over 15 years of experience in delivering mobile and enterprise solutions. To date, he has published over a hundred submissions to the App Store.
 	  </p>
+		</div>
 	</div>
   </div>
 
   <div div class="sgds-card">
     <div class="sgds-card-content">
-      <img class="has-text-center margin-right--sm" src="/assets/img/building-a-community-interview-michael-cheng.png" alt="Picture of Michael Cheng">
+      <img class="has-text-center is-pulled-left margin" src="/assets/img/building-a-community-interview-michael-cheng.png" alt="Picture of Michael Cheng">
+	  <div class="has-text-justified margin--sm">
 	  <p>
 	    Michael Cheng runs the Singapore PHP User Group, co-founded the iOS Dev Scout, and is the organiser of PHPConf.Asia. His latest passion project is Engineers.SG, a non-profit community initiative to document and archive both the tech and start-up scene in Singapore.
 	  </p>
+      <p>
+    	Michael is a Full Stack Developer with over 10 years of experience building dynamic websites. He is a Zend Certified Engineer/Trainer in PHP development. Currently, he is working with Ruby, a high-level programming language.
+      </p>
+	  </div>
+    </div>
 
-	  <p>
-		Michael is a Full Stack Developer with over 10 years of experience building dynamic websites. He is a Zend Certified Engineer/Trainer in PHP development. Currently, he is working with Ruby, a high-level programming language.
-	  </p>
-	</div>
   </div>
 </div>
 
@@ -41,7 +44,7 @@ description: >
 2. Join the other communities and tap into their contacts to expand your network.
 3. Be regular and consistent with your meetups, even with a low attendance rate.
 
-**Join the community:** [iOS Dev Scout](https://www.meetup.com/Singapore-iOS-Dev-Scout-Meetup/){:target="_blank"}, [JuniorDev Singapore](https://www.meetup.com/Junior-Developers-Singapore/){:target="_blank"} and view recorded meetups at [Engineers.SG](https://engineers.sg/){:target="_blank"}
+**Join the community:** [iOS Dev Scout](https://www.meetup.com/Singapore-iOS-Dev-Scout-Meetup/){:target="\_blank"}, [JuniorDev Singapore](https://www.meetup.com/Junior-Developers-Singapore/){:target="\_blank"} and view recorded meetups at [Engineers.SG](https://engineers.sg/){:target="\_blank"}
 
 ### Why is community-building important to you?
 
@@ -62,7 +65,7 @@ are no similar pre-existing groups.”</i></p>
 
 ### What are some online platforms you would suggest for beginner community leaders?
 
-Michael: [Gather.town](https://gather.town/){:target="_blank"}, Discord, and Club House! We had a mentoring program for JuniorDev Singapore and we used Discord breakout rooms as it allows auto-roaming across different rooms.
+Michael: [Gather.town](https://gather.town/){:target="\_blank"}, Discord, and Club House! We had a mentoring program for JuniorDev Singapore and we used Discord breakout rooms as it allows auto-roaming across different rooms.
 
 Melvin: We’ve been using Facebook, meetup.com, and Slack and in recent times, we are also starting to look into Gather.town, which provides for better interactivity among the attendees and is a step closer towards virtual gatherings in times where physical meetups are not possible.
 
@@ -77,7 +80,6 @@ Melvin: Virtually, there is less interaction, and thus towards the end of each M
 Melvin: Before COVID-19, we maintained relationships through regular Meetups. We usually have four organisers attending each event, so we try to mix around and get to know the members better. When we first started the iOS conferences in 2015, the motivation was to go beyond Singapore as there were no iOS conferences in Southeast Asia. Several of our members and organisers also attend Apple’s WWDC event and when that happens, we hold a get-together with our members at the event venue.
 
 Michael: For JuniorDev Singapore, we have a small team of co-organisers and we catch up with members one-to-one to get to know them better and provide some coaching. When COVID-19 was not so bad, we would catch up at least once or twice a week. We could have done more, but it is increasingly difficult because of video conferencing fatigue.
-
 
 ### How do you manage difficult members/partners and keep your community safe and open?
 
