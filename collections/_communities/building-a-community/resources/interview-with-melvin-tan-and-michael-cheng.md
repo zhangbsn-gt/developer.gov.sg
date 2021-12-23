@@ -11,7 +11,7 @@ description: >
   <div div class="sgds-card">
     <div class="sgds-card-content">
       <img class="has-text-center is-pulled-left margin" src="/assets/img/building-a-community-interview-melvin-tan.png" alt="Picture of Melvin Tan">
-		<div class="has-text-justified margin--sm">
+		<div class="has-text-center margin--sm">
 	  <p>
 	    Melvin Tan is the organiser of Singapore’s iOS community and Meetup ‘iOS Dev Scout’, as well as the annual iOS conference ‘iOS Conf SG’. He is the Mobile Engineering Lead in the National Digital Identity (NDI) Team at GovTech and he also represents WorldSkills Singapore as an Industry Expert in Mobile Applications Development.
 	  </p>
@@ -25,7 +25,7 @@ description: >
   <div div class="sgds-card">
     <div class="sgds-card-content">
       <img class="has-text-center is-pulled-left margin" src="/assets/img/building-a-community-interview-michael-cheng.png" alt="Picture of Michael Cheng">
-	  <div class="has-text-justified margin--sm">
+	  <div class="has-text-center margin--sm">
 	  <p>
 	    Michael Cheng runs the Singapore PHP User Group, co-founded the iOS Dev Scout, and is the organiser of PHPConf.Asia. His latest passion project is Engineers.SG, a non-profit community initiative to document and archive both the tech and start-up scene in Singapore.
 	  </p>
