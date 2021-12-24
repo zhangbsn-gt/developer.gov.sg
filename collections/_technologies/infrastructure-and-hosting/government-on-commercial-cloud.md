@@ -28,33 +28,48 @@ In response to the learning points from GCC 1.0, a rethink was required on how t
 <figure style="text-align: center">
   <img
     src="/assets/img/GCC-fig1.png" width="70%" height="70%" 
-    alt="Fig 1: Illustration of GCC’s “Wrapper” Platform"
+    alt="Fig 1: Illustration of GCC’s &quot;Wrapper&quot; Platform"
   />
   <figcaption>Fig 1: Illustration of GCC’s “Wrapper” Platform</figcaption>
 </figure>
 
-### What's Next: Announcing GCC 2.0
+### Why Should GCC bd Adopted?
 
-Based on the feedback from the users, we worked to offer an enhanced GCC 2.0 to:
+GCC 2.0 represents a refinement from our initial platform, based on feedback from users and learning points over the past two years. The GCC 2.0’s platform vision includes:
 
-- Provide **faster response** to changes in policies and business requirements
-- Replace components with cloud native solutions to **reduce cost and simplify onboarding process**
-- Provide a **productive environment** where engineers can focus on building and delivering innovative solutions and systems
+- **Customer centricity:** Recognising the developer as the customer so they are set up right to deliver to citizens and businesses
+- **Automation focus:** To reduce toil and service requests
+- **Improved observability and auditability:** Promote visibility into apps and traceability over time periods
+- **Compliance and security by design:** Allows agencies to comply with most IMs 
+- **API first:** Exposes service connections via APIs to facilitate government developers 
+- **Native solutions over builds:** Light touch by adopting cloud technology over heavy customisations to move fast
 
-#### GCC 2.0 Features
+The key benefits of GCC 2.0 include:
 
-- **Single Identity**: [TechPass](https://www.developer.tech.gov.sg/singapore-government-tech-stack/service-management/techpass.html){:target="\_blank"} - Single identity, streamlined on/off boarding and simplified access to GCC
-- **Endpoint Posture Checks**: SEED - Real-time periodic posture checks with capability to terminate only individual services
-- **Access Control**: Cloudflare Access - Realtime secured identity (with MFA) and device posture through an encrypted channel to access GCC
-- **Controls & Compliance**: GCC 2.0 Infra - Security controls using identity access management and policy-as-code. GCC 2.0 CMP - Less dependence on cloud management portal for control and enable more automation over service requests
-- **Native Workload Administration**: Cloud Native - Relies on more reliable CSP native workload administration
+- **Single Identity:** Simplifying and accelerating identity and device security through [TechPass](/singapore-government-tech-stack/service-management/techpass.html){:target="_blank"}, which will be the single credential for all logins to access GCC 2.0 or Singapore Government Tech Stack services;
+- **Endpoint Posture Checks:** Through Secure Engineering Environment Device Platform (SEED), there will be real-time periodic posture checks with the capability to terminate access to services when non-compliant (e.g., malware detected on device) only individual services; 
+- **Access Control:** Cloudflare Access Control - Realtime secured identity with multi-factor authentication (MFA) and device posture through an encrypted channel to access GCC 2.0;
+- **Native Workload Administration:** Cloud Native - Relies on more reliable CSP native workload administration; and
+- **Controls & Compliance:** 
+  - GCC 2.0 infra - Security controls using identity access management and policy-as-code (i.e. real time configuration checks), and
+  - GCC 2.0 CMP - Less dependence on cloud management portal for better control and more automation over service requests.
 
-### Getting Started
+### How Do You Use GCC?
 
-To know more about GCC 2.0 join a virtual conference, [Stack X Cloud 2021](https://www.developer.tech.gov.sg/communities/events/stack-x-cloud-2021){:target="\_blank"} on 17 November 2021.
+GCC 2.0 is currently in the Early Adopter Release phase but to tap on GCC 1.0, government agencies can first sign up for the [GCC Foundation Training](/gcc-foundation-training){:target="_blank"} to equip public officers with the knowledge on how to utilise appropriate GCC Services (GCCS) to host ICT systems.
 
-While GCC 2.0 gets ready for the pilot phase, agencies can continue to move to GCC 1.0. Sign up for the [GCC Foundation Training](https://www.developer.tech.gov.sg/gcc-foundation-training){:target="\_blank"} for basic training on GCC 1.0.
+### What's Next
+
+GCC 2.0 is currently in the Early Adopter Phase and will be leveraged as a whole-of-government (WOG) platform along with the Singapore Government Tech Stack (SGTS) for modern app development in the Government. The roadmap for GCC 2.0 is as shown below.
+
+<figure style="text-align: center">
+  <img
+    src="/assets/img/insert pic" width="70%" height="70%" 
+    alt="Fig 2: GCC 2.0 roadmap (subject to changes)"
+  />
+  <figcaption>Fig 2: GCC 2.0 roadmap (subject to changes)</figcaption>
+</figure>
 
 ### Contact Information
 
-For enquiries, contact <info@tech.gov.sg>.
+For enquiries, email <info@tech.gov.sg>.
