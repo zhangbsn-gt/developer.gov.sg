@@ -33,7 +33,7 @@ In response to the learning points from GCC 1.0, a rethink was required on how t
   <figcaption>Fig 1: Illustration of GCC’s “Wrapper” Platform</figcaption>
 </figure>
 
-### Why Should GCC bd Adopted?
+### Why Should GCC be Adopted?
 
 GCC 2.0 represents a refinement from our initial platform, based on feedback from users and learning points over the past two years. The GCC 2.0’s platform vision includes:
 
