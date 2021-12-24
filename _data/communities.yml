@@ -5,6 +5,7 @@
   items:
     - Overview
     - Past Webinars
+    - Community Engagement Playbook
 
 - name: Events
   description: >
@@ -39,3 +40,10 @@
   description: >
     GovBuy is an initiative from the Government to offer engineering, design or
     writing gigs to Singapore citizens and Permanent Residents
+
+- name: Building a Community
+  description: >
+    Learn about STACK-X by GovTech's community engagement journey and what drives us to do what we do. If you are interested to build a tech community, read on to discover the quick and easy resources our team has developed to kickstart your community development journey.
+  items:
+    - Our Journey
+    - Resources
