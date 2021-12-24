@@ -5,14 +5,25 @@ category: Hosting
 redirect_from: /singapore-government-tech-stack/government-on-commercial-cloud
 sub_collection_render: true
 description: >
-  The Government on Commercial Cloud (GCC) brings the modern innovations and capabilities of commercial cloud computing platforms to Government systems.
+  GCC is a “wrapper” platform that allows government agencies to adopt commercial cloud solutions to provide secure, seamless and efficient services.
 ---
 
 ### Overview
 
-The Government on Commercial Cloud (GCC) platform takes the vision of Digital Governance forward by bringing the capabilities of commercial cloud computing platforms to ICT systems in public sector. GCC is a “wrapper” platform that provides agencies with a consistent means to adopt commercial cloud offered by Amazon, Microsoft and Google.
+In late 2018, the Singapore Government announced a five-year plan to migrate most of its information technology (IT) systems from on-premises infrastructure to the commercial Cloud platform to accelerate service delivery and improve services for citizens and businesses. This led to the establishment of the GCC in 2019 to homogenise the onboarding experience and administrative tasks of government agencies on the Cloud, including workload administration, account and billing management, secure access, and compliance to governance policies. In 2020, a whole-of-government (WOG) target to move 70% of eligible government systems onto the Cloud by 2023 was represented in the Digital Government Blueprint. To date, the government has over 600 systems on the Cloud.
 
-As of 2021, over 500 systems have been onboarded.
+Currently, key government services such as [MyCareersFuture](https://www.mycareersfuture.gov.sg/){:target="_blank"}, [GoBusiness](https://www.gobusiness.gov.sg/){:target="_blank"}, [GoBusiness Licensing Portal](https://licence1.business.gov.sg/feportal/web/frontier/home){:target="_blank"}, [SafeEntry](./digital-solutions-to-address-covid-19/safeentry.html){:target="_blank"}, [SupplyAlly](./digital-solutions-to-address-covid-19/supplyally.html){:target="_blank"}, [Whole of Government Application Analytics (WOGAA)](./analytics/wogaa/getting-started.html){:target="_blank"}, and [SHIP-HATS](/singapore-government-tech-stack/toolchain/overview.html){:target="_blank"} utilise the GCC.
+
+Ultimately, cloud migration is not just a data migration exercise, but a holistic strategy to pursue government digital transformation and advancement of citizen and business services through cloud capabilities. For example, during the COVID-19 pandemic, Singapore’s Ministry of Education (MOE) was able to successfully enable home-based learning (HBL) within a week’s notice due to the hosting of its Student Learning Space (SLS) on the GCC, which allowed SLS to tap on cloud IaaS and PaaS functionalities to deliver a seamless and smooth HBL experience for students. This also allowed SLS to meet the increased demand for HBL during the pandemic, by scaling its uptake from 100,000 concurrent students to 300,000 concurrent students. 
+
+### What is GCC?
+
+GCC 1.0 was launched in 2018 as a “wrapper” platform that provides government agencies with a consistent means to adopt commercial cloud solutions offered by Amazon, Microsoft, and Google. However, feedback received include concerns over the tedious process of onboarding the GCC, increased need for automation, cloud native solutions and for less service requests. 
+In response to the learning points from GCC 1.0, a rethink was required on how the GCC is built and operated. As such, GCC was redesigned with the following approaches to give rise to GCC 2.0:
+
+- **Software approach to infrastructure:** Utilise Infrastructure-as-Code (IaC) to implement a core cloud platform
+- **Encourage more usage of native cloud solutions** with more dynamic configuration controls and less static system wide controls
+- **Identity and access management (IAM) focused:** Utilisation of roles for security beyond networks, where multiple accounts are consolidated to Single Sign On (SSO) accounts to enable strong account identity
 
 <figure style="text-align: center">
   <img
