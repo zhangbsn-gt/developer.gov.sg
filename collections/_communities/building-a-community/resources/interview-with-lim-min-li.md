@@ -1,5 +1,5 @@
 ---
-title: Interview with Min Li
+title: Interview with Lim Min Li
 layout: layout-page-sidenav
 description: >
   insert description here
