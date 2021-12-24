@@ -56,7 +56,7 @@ The key benefits of GCC 2.0 include:
 
 ### How Do You Use GCC?
 
-GCC 2.0 is currently in the Early Adopter Release phase but to tap on GCC 1.0, government agencies can first sign up for the [GCC Foundation Training](/gcc-foundation-training){:target="_blank"} to equip public officers with the knowledge on how to utilise appropriate GCC Services (GCCS) to host ICT systems.
+GCC 2.0 is currently in the Early Adopter Release phase but to tap on GCC 1.0, government agencies can first sign up for the [GCC Foundation Training](/gcc-foundation-training){:target="_blank"} to equip public officers with the knowledge on how to utilise appropriate GCC Services (GCCS) to host ICT systems. Refer to the STACK-X Cloud conference for more details on GCC [here](/communities/events/stack-x-cloud-2021){:target="_blank"}.
 
 ### What's Next
 
