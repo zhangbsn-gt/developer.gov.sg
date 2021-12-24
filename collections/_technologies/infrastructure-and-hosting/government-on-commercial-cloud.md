@@ -28,9 +28,9 @@ In response to the learning points from GCC 1.0, a rethink was required on how t
 <figure style="text-align: center">
   <img
     src="/assets/img/GCC-fig1.png" width="70%" height="70%" 
-    alt="Fig 1: GCC"
+    alt="Fig 1: Illustration of GCC’s “Wrapper” Platform"
   />
-  <figcaption>Fig 1: GCC</figcaption>
+  <figcaption>Fig 1: Illustration of GCC’s “Wrapper” Platform</figcaption>
 </figure>
 
 ### What's Next: Announcing GCC 2.0
