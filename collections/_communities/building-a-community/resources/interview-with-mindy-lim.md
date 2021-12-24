@@ -20,7 +20,7 @@ description: >
   </div>
 </div>
 
-### QUICK TIPS FROM MIN LI
+### QUICK TIPS FROM MINDY
 
 1. Be genuine
 2. Be responsive

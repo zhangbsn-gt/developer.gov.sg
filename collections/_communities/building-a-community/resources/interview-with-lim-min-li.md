@@ -1,5 +1,5 @@
 ---
-title: Interview with Min Li
+title: Interview with Lim Min Li
 layout: layout-page-sidenav
 description: >
   insert description here
@@ -30,7 +30,7 @@ description: >
 2. Do not be afraid to reach out to your social and professional networks to grow your community and learn from existing community leaders.
 3. Ensure your fellow admin team members are always kept in the loop and act as a coherent unit.
 
-**Join the community:** [DesignSG Community](https://t.me/joinchat/jtetn-tdtlc2ndk1){:target="\_blank"}
+**Join the community:** [DesignSG Community](https://t.me/+UFqkHiXg5JJmZGFl){:target="_blank"}
 
 ### Why is community-building important to you?
 

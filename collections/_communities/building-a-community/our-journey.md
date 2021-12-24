@@ -33,7 +33,7 @@ At the time, we had just finished conducting our STACK 2018 Conference, the very
   <figcaption>Fig 1: STACK 2018 Conference.</figcaption>
 </figure>
 
-While it wasn’t easy to start from scratch, we were thankfully not alone. As it turned out, several of our developers within GovTech were already local community leaders, such as [Michael Cheng](https://www.linkedin.com/in/miccheng/){:target="_blank"}, [Melvin Tan](https://www.linkedin.com/in/melvintansl/){:target="_blank"}, and [Lim Min Li](https://www.linkedin.com/in/mllim/){:target="_blank"}, who were familiar with building up and managing these groups. We were fortunate to be able to tap on their expertise, gaining lots of useful information about how they had started up and how they had grown their communities. We also spoke to technology leaders such as Amazon and Thoughtworks, who have been extremely successful in building up communities of their own. Finally, we observed other communities we came across in our search and tried to gain as many insights as we could from their examples.
+While it was not easy to start from scratch, we were thankfully not alone. As it turned out, several of our developers within GovTech were already local community leaders, such as [Michael Cheng](https://www.linkedin.com/in/miccheng/){:target="_blank"}, [Melvin Tan](https://www.linkedin.com/in/melvintansl/){:target="_blank"}, and [Lim Min Li](https://www.linkedin.com/in/mllim/){:target="_blank"}, who were familiar with building up and managing these groups. We were fortunate to be able to tap on their expertise, gaining lots of useful information about how they had started up and how they had grown their communities. We also spoke to technology leaders such as Amazon and Thoughtworks, who have been extremely successful in building up communities of their own. Finally, we observed other communities we came across in our search and tried to gain as many insights as we could from their examples.
 
 In short, we took every opportunity we could to learn from the people around us!
 
@@ -82,7 +82,7 @@ If you’d like to connect and exchange ideas, please reach out to [Karen](http:
 <br/>**Resources**
 
 - [Community playbook](resources/community_playbook.pdf){:target="_blank"}
-- Hear from our Community Leaders: [Min Li](resources/interview-with-min-li){:target="_blank"}, [Mindy](resources/interview-with-mindy-lim){:target="_blank"}, and [Melvin and Michael](resources/interview-with-melvin-tan-and-michael-cheng){:target="_blank"}
+- Hear from our Community Leaders: [Min Li](resources/interview-with-lim-min-li){:target="_blank"}, [Mindy](resources/interview-with-mindy-lim){:target="_blank"}, and [Melvin and Michael](resources/interview-with-melvin-tan-and-michael-cheng){:target="_blank"}
 - [STACK-X Deck Template](resources/STACK-X_deck_template_for_public_use.pptx){:target="_blank"}
 - [STACK-X Virtual Background for Speakers](resources/STACK-X_virtual_backgrounds.zip){:target="_blank"}
 - Join our STACK-X Community on [Meetup](https://www.meetup.com/stack-x-by-govtech-singapore){:target="_blank"} and [Telegram](https://go.gov.sg/stackxtelegram){:target="_blank"}
