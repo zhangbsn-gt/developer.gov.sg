@@ -82,7 +82,7 @@ If you’d like to connect and exchange ideas, please reach out to [Karen](http:
 <br/>**Resources**
 
 - [Community playbook](resources/community_playbook.pdf){:target="_blank"}
-- Hear from our Community Leaders: [Min Li](resources/interview-with-min-li){:target="_blank"}, [Mindy](resources/interview-with-mindy-lim){:target="_blank"}, and [Melvin and Michael](resources/interview-with-melvin-tan-and-michael-cheng){:target="_blank"}
+- Hear from our Community Leaders: [Min Li](resources/interview-with-lim-min-li){:target="_blank"}, [Mindy](resources/interview-with-mindy-lim){:target="_blank"}, and [Melvin and Michael](resources/interview-with-melvin-tan-and-michael-cheng){:target="_blank"}
 - [STACK-X Deck Template](resources/STACK-X_deck_template_for_public_use.pptx){:target="_blank"}
 - [STACK-X Virtual Background for Speakers](resources/STACK-X_virtual_backgrounds.zip){:target="_blank"}
 - Join our STACK-X Community on [Meetup](https://www.meetup.com/stack-x-by-govtech-singapore){:target="_blank"} and [Telegram](https://go.gov.sg/stackxtelegram){:target="_blank"}
