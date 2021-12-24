@@ -54,7 +54,7 @@ Melvin: Everyone comes from different walks of life and each has different skill
 
 <p class="has-text-center"><i>“Joining other communities and talking to their members helps you get started, especially when you are planning to enter a new area of technology or a new community.”</i></p>
 
-### How did you build and grow the DSC Community?
+### How did you build and grow your communities?
 
 Michael: Firstly, I created a Facebook group so that users could easily search for and join the community. Next, I went to an event organised by Entrepreneur 27 (E27), a student group interested in technology and requested for the microphone to announce my community. From there, I organised the first Meetup at SMU where my friend and I were the speakers. Since then, we relied on word-of-mouth to grow the community. I think that when you have an interest in something, there’s bound to be someone else in the world who does too.
 
