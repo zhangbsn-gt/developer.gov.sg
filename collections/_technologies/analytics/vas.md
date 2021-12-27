@@ -130,3 +130,33 @@ Insights Service (VA-as-a-service)
 For enquiries, fill in this [form](https://go.gov.sg/vasenquiry){:target="\_blank"}. 
 
 ### Meet the Team!
+
+<div class="card-grid-container grid-25rem">
+  {% for bios in page.bios %}
+  {% assign img_url = "/assets/img/" | append: bios.img_src %}
+  <div class="sgds-card">
+    <div class="sgds-card-content">
+      <img style="float: left; margin-right: 20px;" src="{{ img_url }}" alt="{{ bios.name}}">
+      <p><strong>{{ bios.name}}</strong><br>
+        {{ bios.desc }}
+      </p>
+    </div>
+  </div>
+  {% endfor %}  
+</div>
+
+Other VAS team members:
+-	Bevin Seetoh (VideoIO Full Stack Engineer)
+-	Bill Cai (DevOps Technical Lead)
+-	Chia Tewan (AI QA Engineer)
+-	Goh Kwang Huang (CVX Technical Lead)
+-	Henry Luo (VideoIO Technical Lead)
+-	Jessica Foo (AI QA Engineer)
+-	Muthiah Nachiappan (Insight Service Technical Lead)
+-	Muhammad Nazar (DevOps Engineer)
+-	Rachel Shong (Agency Engagement Manager)
+-	Richard Yan (DevOps Engineer)
+-	Ruth Cheng (Agency Engagement Manager)
+-	Tan Kai Wei (AI and Software Engineer)
+-	Tham Shi Yi (AI QA Engineer)
+-	Wang Yadong (Metadata Standards, QA Engineer)
