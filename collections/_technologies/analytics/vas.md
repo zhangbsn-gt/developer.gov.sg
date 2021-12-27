@@ -76,7 +76,16 @@ The key components of VAS are:
 |Data Classification|Restricted and below|
 |Data Sensitivity|Sensitive (Normal)|
 
-
+|System requirements of VAS||
+|---|---|
+|Device|Government Standard Image Build (GSIB)|
+|Browser|Google Chrome|
+|Minimum Video Resolution|4CIF – 704 x 576p|
+|Minimum Framerate|6 FPS|
+|Video Container Formats|MP4, MKV, FLV, MJPEG|
+|Video Codec Formats|H.264, H.265|
+|Image Formats|JPG, JPEG, PNG|
+|Annotation Formats|PASCAL VOC|
 
 
 
