@@ -7,6 +7,8 @@ description: StackOps is a Monitoring toolchain that helps users monitor and log
 
 ### Overview
 
+StackOps was conceptualised to enable agencies to embrace Site Reliability Engineering (SRE), which emphasises automated monitoring and logging of services. SRE also shifts monitoring and logging processes into the development cycle itself to ensure that operational concerns reliability concepts are build-in.
+
 StackOps is part of the Monitoring component of the [Singapore Government Tech Stack (SGTS)](https://www.developer.tech.gov.sg/singapore-government-tech-stack/overview/index.html){:target="_blank"}, which are tools to help you track application performance and provide you with operational transparency for effective incident response.
 
 ### What is StackOps?
