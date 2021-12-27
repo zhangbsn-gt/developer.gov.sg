@@ -6,6 +6,30 @@ sub_collection_render: true
 description: >
   VAS is a central platform that enable Government agencies to develop in-house video analytics solutions. 
 bios:
+  - name: Christopher Sia, Project Director
+    img_src: vas-christopher.png
+    desc: |
+      Christopher has more than 15 years of industry experience ranging from software development, software testing, project management, business development, to strategic planning. He leads the Engineering team and oversees the development of VA products and solutions. VAS is one such product. Aside from driving product development, Christopher is also passionate about building meaningful partnerships and communities. He is also active in guiding young aspiring engineers who are interested in a career in the field of A.I. Christopher graduated with a Bachelor’s degree in Computer Engineering and a Master of Business Administration (MBA) from Nanyang Technological University.
+
+  - name: Henry Lim, Lead Product Manager
+    img_src: vas-henry.png
+    desc: |
+      Henry is a lead product manager in the VA team at GovTech, where he leads product development of the VAS platform to support the public sector in tapping into the potential of VA to better serve public needs. He has over 20 years of diverse industry experience across product management and technical development on global products across multinational organisations. Henry graduated with a degree in Computer Science from the National University of Singapore and is passionate about building products that makes technology accessible for improving everyday lives.
+      
+  - name: Lee Ning Sung, Lead Product Manager
+    img_src: vas-ning-sung.png
+    desc: |
+      Ning Sung is one of the lead product managers in the VA team at GovTech, where she supports Singapore's public sector in their adoption of VA to improve productivity. She has over 12 years of diverse experience in the Singapore public sector, ranging from fiscal strategy and organisation transformations, strategic planning and foreign diplomacy to product and artificial intelligence. She believes in driving productivity for the greater good. Ning Sung graduated with a BSc in Electrical and Computer Engineering and holds a double major in Human Computer Interaction from Carnegie Mellon University in Pittsburgh, USA, and she obtained her MEng in Electronics Engineering from the University of Tokyo, Japan.     
+
+  - name: Chua Teck Wee, Lead AI Engineer
+    img_src: vas-teck-wee.png
+    desc: |
+      Teck Wee is a Lead AI Engineer in the VA team under the Data Science and Artificial Intelligence Division (DSAID) at GovTech. He leads the development of custom VA solutions for agencies. Teck Wee graduated with a PhD in Electrical and Computer Engineering from the National University of Singapore. He enjoys building AI solutions for public good.
+
+  - name: Ng Yong Kiat, Agency Engagement Lead 
+    img_src: vas-yong-kiat.png
+    desc: |
+      Yong Kiat is a team lead for engagements activities in on-boarding agencies onto WoG VA products and services. He graduated from the National University of Singapore with a MSc in Management of Technology and a Bachelor of Computing in Computer Engineering. He has over 17 years of experience in systems engineering, solutions architecting, and pre-sales. Yong Kiat is passionate about harnessing cutting edge technologies to bring value to various stakeholders.
 ---
 
 ### Overview
