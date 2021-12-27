@@ -53,9 +53,9 @@ Having worked with multiple agencies on a myriad of CCTV and VA requirements, Go
 ### What is VAS?
 
 As a central platform, VAS aims to:
-- Enable agencies to develop and deploy VA solutions.
-- Exchange video data and analytics expertise across the whole-of-government (WOG).
-- Expand the video sensor network and insights derived.
+- **Enable** agencies to develop and deploy VA solutions.
+- **Exchange** video data and analytics expertise across the whole-of-government (WOG).
+- **Expand** the video sensor network and insights derived.
 
 The key components of VAS are:
 
