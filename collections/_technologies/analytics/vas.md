@@ -87,11 +87,46 @@ The key components of VAS are:
 |Image Formats|JPG, JPEG, PNG|
 |Annotation Formats|PASCAL VOC|
 
+### Why Should VAS be Adopted?
 
+The benefits provided by VAS include:
 
+-	**Quicker enablement of VA tasks**: Agencies with VA use-cases can benefit from the get-go with the accessible and intuitive system. Users appreciate the ability to quickly generate insights and analysis from videos collected during trials, POCs, and pre-analysis work. 
+-	**Reduction in manual analysis**: With VAS’ automated analysis processes, agencies can unlock critical time and cost savings.  For example, to help fish hatcheries optimise the usage of artemia (a type of microorganism used as fish feed), officers from the Singapore Food Agency (SFA) had previously reliedon manual counting of artemia, which can number around 1,000 per sample. With VAS, SFA officers now spend considerably less time conducting laborious manual counting. 
+-	**Designed for agencies, by agencies**: Various Design Thinking workshops were held with agencies to seek their inputs. The system is also designed to respond quickly to changes. In sum, VAS is a product that is centered around what agencies need.
 
+### How Do You Use VAS?
 
+Onboarding of the VAS is by invitation only. Interested agencies can fill up this [form](https://go.gov.sg/vasenquiry){:target="\_blank"}. 
 
+### Success Stories
 
+In response to the COVID-19 pandemic, Singapore implemented Circuit Breaker measures in 2020 to contain the spread of the virus. These measures included closure of non-essential workplaces and prohibition of dining-in at eateries. During this Circuit Breaker period, many Singaporeans sought respite in parks and green spaces. As a result, popular parks were congested.
 
+In response, NParks and GovTech collaborated to develop [Safe Distance @ Parks](https://safedistparks.nparks.gov.sg/){:target="\_blank"}. It is a website that provides real-time information on crowd density at Singapore’s green spaces. The website allows users to check crowd density before visiting a park. It also allows the authorities to monitor and prevent the parks from being too crowded.
 
+<figure style="text-align: center">
+  <img
+    src="/assets/img/vas-fig3.png" width="100%" height="100%" 
+    alt="Fig 3: Safe Distance @ Parks"
+  />
+  <figcaption>Fig 3: Safe Distance @ Parks</figcaption>
+</figure>
+
+VAS is a crucial component of Safe Distance @ Parks. It can be understood as the link between physical hardware and the Safe Distance @ Parks website. Input from CCTV cameras physically installed in the parks are sent to VAS for analysis. Thereafter, the analysed information is fed to and displayed on Safe Distance @ Parks.
+
+### What's Next?
+
+Work is in progress for VAS to support the following features in future releases:
+Insights Service (VA-as-a-service)
+-	Marine vessel / kayak detection
+-	Safe distancing measurements and group detection
+-	Compliance checks for biometric photo enrolments
+-	Selected Commercial off the Shelf (COTS) solutions
+-	Enhanced insights reports and API offerings
+
+### Contact Information
+
+For enquiries, fill in this [form](https://go.gov.sg/vasenquiry){:target="\_blank"}. 
+
+### Meet the Team!
