@@ -69,7 +69,7 @@ The key components of VAS are:
 </figure>
 
 |**Technical specifications** of VAS|
-|---|
+|---|---|
 |Hosting Platform|GCC|
 
 
