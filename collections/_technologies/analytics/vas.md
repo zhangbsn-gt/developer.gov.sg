@@ -142,7 +142,7 @@ VAS is a crucial component of Safe Distance @ Parks. It can be understood as the
 ### What's Next?
 
 Work is in progress for VAS to support the following features in future releases:
-Insights Service (VA-as-a-service)
+<br>**Insights Service (VA-as-a-service)**
 -	Marine vessel / kayak detection
 -	Safe distancing measurements and group detection
 -	Compliance checks for biometric photo enrolments
