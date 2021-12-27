@@ -59,3 +59,22 @@ The key components of VAS are:
 
 **Metadata Service**
 - Search and filter aggregated metadata according to available attributes, such as Vehicle Type (e.g., bicycle or Personal Mobility Device (PMD)), Event Type Attribute (e.g., Smoking), and Spatial Attributes (e.g., postal code).
+
+<figure style="text-align: center">
+  <img
+    src="/assets/img/vas-fig2.png" width="100%" height="100%" 
+    alt="Fig 2: VAS components"
+  />
+  <figcaption>Fig 2: VAS components</figcaption>
+</figure>
+
+**Technical specifications** of VAS:
+|Hosting Platform|GCC|
+
+
+
+
+
+
+
+
