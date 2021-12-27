@@ -82,7 +82,7 @@ As a central platform, VAS aims to:
 - Export prediction results to CSV/JSON formats.
 
 **Metadata Service**
-- Search and filter aggregated metadata according to available attributes, such as Vehicle Type (e.g., bicycle or Personal Mobility Device (PMD)), Event Type Attribute (e.g., Smoking), and Spatial Attributes (e.g., postal code).
+- Search and filter aggregated metadata according to available attributes, such as Vehicle Type (e.g., bicycle or Personal Mobility Device (PMD)), Event Type Attribute (e.g., smoking), and Spatial Attributes (e.g., postal code).
 
 <figure style="text-align: center">
   <img
