@@ -3,10 +3,13 @@ layout: layout-default
 ---
 
 {% include page-header.html %}
+{% assign page_title_slug = page.title | slugify %}
 
-{% assign pageTitleSlug = page.title | slugify %}
+{%- if page.single_level_nav -%}
+   {% include sidenav-single-level-mobile.html %}
+{% endif %}
 
-<section class="sgds-section page-{{ pageTitleSlug }}">
+<section class="sgds-section page-{{ page_title_slug }}">
     <div class="sgds-container content has-default-header-styles">
         {{ content }}
     </div>

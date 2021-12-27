@@ -15,11 +15,18 @@ class="sgds-section breadcrumb-title-section has-background-general padding--bot
   <div class="wave-gfx">
   </div>
   <div class="sgds-container">
-    
+
     <div class="row">
       <div class="col is-8">
         {% include sgds-breadcrumb.html %}
-        <h1 class="has-text-white has-text-weight-bold">{{ page.title }}</h1>
+        {% if page.mobile_title %}
+        {% assign mobile_title = page.mobile_title %}
+        {% assign main_title = page.title %}
+        <h1 class="has-text-white has-text-weight-bold is-hidden-mobile">{{ main_title }}</h1>
+        <h1 class="has-text-white has-text-weight-bold is-hidden-desktop">{{ mobile_title }}</h1>
+        {% else %}
+        <h1 class="has-text-white has-text-weight-bold">{{ main_title }}</h1>
+        {% endif %}
       </div>
     </div>
   </div>
