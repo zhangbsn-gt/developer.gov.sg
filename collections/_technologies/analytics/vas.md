@@ -57,7 +57,7 @@ As a central platform, VAS aims to:
 - **Exchange** video data and analytics expertise across the whole-of-government (WOG).
 - **Expand** the video sensor network and insights derived.
 
-The key components of VAS are:
+<br>The key components of VAS are:
 
 **Media Hub (video sharing platform)**
 - Supports the upload, playback, search, request, and sharing of videos.
