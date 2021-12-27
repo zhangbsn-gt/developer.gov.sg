@@ -49,7 +49,7 @@ There are three main use cases for SGDS:
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/sgds-fig1.png" width="75%" height="75%" 
+    src="/assets/img/sgds-fig1.png" width="85%" height="85%" 
     alt="Fig 1: SGDS use cases" />
   <figcaption>Fig 1: SGDS use cases</figcaption>
 </figure>
