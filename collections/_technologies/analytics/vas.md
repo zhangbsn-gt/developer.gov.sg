@@ -70,7 +70,14 @@ The key components of VAS are:
 
 |Technical specifications of VAS||
 |---|---|
-|Hosting Platform|GCC|
+|Hosting Platform|[Government on Commercial Cloud (GCC)](https://www.developer.tech.gov.sg/technologies/infrastructure-and-hosting/government-on-commercial-cloud.html){:target="\_blank"}|
+|Architecture Infrastructure Standard|GovTech Application Infrastructure Architecture Standard (AIAS) "H" Model|
+|Instruction Manual|[IM8 (ICT&SS Management)](https://www.developer.tech.gov.sg/guidelines/standards-and-best-practices/im8.html){:target="\_blank"}|
+|Data Classification|Restricted and below|
+|Data Sensitivity|Sensitive (Normal)|
+
+
+
 
 
 
