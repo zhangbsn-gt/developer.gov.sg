@@ -42,13 +42,7 @@ Government agencies who are new to VA often find themselves these questions: How
 
 Having worked with multiple agencies on a myriad of CCTV and VA requirements, GovTech’s Data Science & Artificial Intelligence Division (DSAID) developed the Video Analytics System (VAS), a central platform for agencies to meet their VA needs.
 
-<figure style="text-align: center">
-  <img
-    src="/assets/img/vas-fig1.png" width="100%" height="100%" 
-    alt="Fig 1: VAS"
-  />
-  <figcaption>Fig 1: VAS</figcaption>
-</figure>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/k_vK6tyc9_0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### What is VAS?
 
@@ -86,10 +80,10 @@ As a central platform, VAS aims to:
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/vas-fig2.png" width="100%" height="100%" 
-    alt="Fig 2: VAS components"
+    src="/assets/img/vas-fig1.png" width="100%" height="100%" 
+    alt="Fig 1: VAS components"
   />
-  <figcaption>Fig 2: VAS components</figcaption>
+  <figcaption>Fig 1: VAS components</figcaption>
 </figure>
 
 |Technical specifications of VAS||
@@ -131,10 +125,10 @@ In response, NParks and GovTech collaborated to develop [Safe Distance @ Parks](
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/vas-fig3.png" width="100%" height="100%" 
-    alt="Fig 3: Safe Distance @ Parks"
+    src="/assets/img/vas-fig2.png" width="100%" height="100%" 
+    alt="Fig 2: Safe Distance @ Parks"
   />
-  <figcaption>Fig 3: Safe Distance @ Parks</figcaption>
+  <figcaption>Fig 2: Safe Distance @ Parks</figcaption>
 </figure>
 
 VAS is a crucial component of Safe Distance @ Parks. It can be understood as the link between physical hardware and the Safe Distance @ Parks website. Input from CCTV cameras physically installed in the parks are sent to VAS for analysis. Thereafter, the analysed information is fed to and displayed on Safe Distance @ Parks.
