@@ -1,34 +1,75 @@
 ---
-title: Instruction Manual 8 (IM8)
+title: Instruction Manual for Infocomm Technology and Smart Systems (ICT&SS) Management
 layout: layout-page-sidenav
 sub_collection_render: true
 category: Standards & Best Practices
 description: >
-  IM8 is a security management tool used by the Government to safeguard Infocomm Technology and Smart Systems (ICT and SS) assets.
+  Instruction Manual for ICT&SS Management provides policies, standards, and guidelines to govern Agencies’ adoption of  ICT&SS systems.
 ---
 
-### Instruction Manual for ICT & SS Management
 
-Technological disruptions and evolutions have decisively changed global industries, economies, and our way of life. In this ongoing digital revolution, the Government must act quickly to seize its transformational potential and digitalise to improve service-delivery, operations, and policy-making in a secure and cost-effective manner. Government Agencies are responsible to operationalise requirements stipulated in the IM8. As owners of Government solutions and services, Government Agencies will define and implement the security and data protection requirements when using ICT & SS (Infocomm Technology and Smart Systems) to deliver public services.
+### Overview
 
-### More Information on IM8
+Technological disruptions and evolutions have drastically changed global industries, markets, and our way of life. To support the Singapore’s ambition to build a Smart Nation, the Government accelerated its digital transformation efforts to improve its service delivery, operations, and policy-making through the use of technology in a secure and cost-effective manner. 
 
-Like other Government Instruction Manuals, the IM8 is a management tool used in the Government to safeguard ICT & SS assets and guides all Government Agencies in adopting ICT & SS to enable their digital transformation.
+The Instruction Manual for ICT&SS Management seeks to support Agencies as they adopt ICT&SS to enable their digital transformation. It provides guidance on best-in-class practices to uplift Agencies’ ICT capabilities, including a mix of ‘what’ and ‘how’ requirements with the risk areas tiered based on System Criticality, Security, and Sensitivity Classification.  
 
-The IM8 uplifts ICT & SS capabilities across the Government, sets out requirements for delivering fit-for-purpose, secure, and cost-effective solutions/ services, and directs focus on the strategic ICT & SS areas. It is structured to cover:
+To maintain relevance when the rate of change in technological applications and practices is exponential, the Instruction Manual for ICT&SS Management is reviewed regularly to be benchmarked with the international standards and practices.
 
-- **Governance of ICT & SS** through the setting of policy mandates and provision of standards and guidelines to support policy implementation;
+### Objective
 
-- **Use of technology and best-in-class practices** across Government Agencies while ensuring tiered risk mitigation, for the Government to be “digital-to-the-core”; and
+The Instruction Manual for ICT&SS Management supports Agencies to deliver fit-for-purpose, secure, and cost-effective solutions/services through:
+-	Ensuring good governance of ICT&SS and balancing between the need for standardisation and affording flexibility for customisatio.
+-	Providing guidance on the use of technology and best-in-class practices while ensuring tiered risk mitigation, for government to be “digital-to-the-core”.
+-	Enabling the acquisition, fusion, access, distribution, exploitation, and protection of data across Agencies to achieve a government that is “data-driven to the core”.
 
-- **Use of data** across Government Agencies from the acquisition, fusion, access & distribution, exploitation to protection of data to achieve a Government that is “data-driven to the core”.
+### Scope
 
-### Use Cases
+The Instruction Manual for ICT&SS Management covers a wide range of domains. Some examples include the Digital Service Standards (DSS), Third Party Management (TPM), and Data.
 
-- Government Personal Data Protection Laws and Policies (data management by public agencies and third parties of public agencies) \[[link](https://www.smartnation.gov.sg/about-smart-nation/secure-smart-nation/personal-data-protection){:target="\_blank"}\]
+**Digital Service Standards (DSS)**
+DSS enables agencies to implement their digital services to meet the Digital Government Blueprint (DGB) goal of delivering digital services that are easy, seamless and relevant for our citizens and businesses.  It is important that all our public facing digital services meet the DSS, so that our citizens and businesses can use consistently good services across the government.
 
-- Digital Service Standards \[[link](https://www.tech.gov.sg/digital-service-standards/)\]
+The design principles of the DSS include:
 
-### Further Information
+<u>Intuitive Design and Usability</u> 
+As the government’s digital ‘shopfront’, our digital services must be well designed so that citizens and businesses can interact and transact with us digitally in an intuitive and easy to use manner.
 
-Please contact [Info@tech.gov.sg](mailto:Info@tech.gov.sg) for enquiries.
+<u>Accessibility and Inclusivity</u>
+Government digital services must be designed to benefit all population segments, including persons with disabilities. We embrace the international accessibility standard, Web Content Accessibility Standards (WCAG), and is also aligned with local standard, SS618: Guidelines on User Interface Design for Older Adults. 
+
+<u>Relevance and Consistency</u>
+Our digital services must be relevant to the needs of our citizens and businesses, and provide a consistent experience across the government. They shall carry a ‘branding’ that uniquely identifies them as government digital services, in keeping with the ethos of one public service.  
+
+**Third Party Management (TPM)**
+The TPM domain provides the requirements for the evaluation and selection, contracting and onboarding service management and exit management of Third Parties like vendors, including standard ICT contract templates for Agencies to use. This ensures that Agencies have oversight over Third Parties to make sure that associated security, data, and project risks in engaging them are adequately managed. The TPM is organised based on the lifecycle stages, such as:
+- Evaluating and Selection, which includes identifying, assessing, prioritising, and mitigating the risks of outsourcing to Third Parties.
+- Contracting and Onboarding, which includes establishing contracts or equivalent instruments with the necessary controls and governance requirements, as well as onboarding of Third Parties like personnel security clearance/briefing.
+- Service Management which includes oversight to ensure associated risks are identified and managed by maintaining a register, establishing governance structure to monitor and review the Third Party’s compliance and performance feedback, and conducting compliance audits/checks like self-assessment by Third Parties.
+- Transition Out, which includes developing exit management plans and conducting exit audits/checks.
+
+**Data**
+The Data Domain Group, encompassing data governance, architecture, protection, sharing and storage, aims to ensure that agencies put in place effective data management practices to utilise and safeguard data in all stages of its lifecycle. This sets out the requirements for the access and distribution, and exploitation of data, which is necessary for sharing of data, organised into the following domains:
+- Data Classification, which includes the Security Classification Framework where Agencies are to classify data based on damage to agency’s interests/national interests/national security due to unauthorised disclosure of data, and the Information Sensitivity Framework where Agencies are to classify data based on potential impact to the individual/entity due to authorised disclosure of data. 
+- Data Protection (Data Security) which refers to the process of protecting the confidentiality, integrity, and availability of data, where Agencies shall use the Data Security Risk Assessment Methodology to assess the data security risk, and adopt a risk based approach to protect data. This ensures that there is a consistent WOG approach to protecting data and ensuring that the appropriate level of security is implemented.
+- Data Acquisition, which includes Data Minimisation where Agencies are not to collect data in excess to minimise the risks due to unauthorised use and disclosure; use of WOG Data Platforms to obtain data for their use cases; maintain good Data Quality by ensuring that data is accurate, consistent, timely, relevant and complete; ensure Data Discoverability by maintaining accurate metadata and making these available for search is a key way to make data discoverable; and comply with Data Storage and Retention Requirements by retaining data only for the period necessary for the fulfilment of the purposes.
+- Data Processing and Fusion, which includes minimising errors arising from data processing, such as coding errors, data entry errors, computation errors, and minimising the risk of unauthorised re-identification of individuals or entities through fusion or integration of de-identified datasets.
+- Data Access and Distribution, where Agencies are to abide with the grounds for disclosure data such as authorised by law or required by order of court, necessary in the public interest, express consent or deemed consent.
+
+### Target Audience and Adoption Criteria
+
+All Government Ministries, Organs of State, Departments, and Statutory Boards are to comply with the Instruction Manual for ICT&SS Management, incorporate the requirements into  tender specifications, and work with the developers and vendors to implement the requirements in the system.
+
+### Resources and Templates
+
+DSS:[https://www.developer.tech.gov.sg/guidelines/standards-and-best-practices/digital-service-standards.html](https://www.developer.tech.gov.sg/guidelines/standards-and-best-practices/digital-service-standards.html){:target="\_blank"}.
+
+TPM: [https://www.smartnation.gov.sg/files/publications/key-policies-third-party-framework.pdf](https://www.smartnation.gov.sg/files/publications/key-policies-third-party-framework.pdf){:target="\_blank"}.
+
+Data: [https://www.smartnation.gov.sg/about-smart-nation/secure-smart-nation/personal-data-protection-laws-and-policies](https://www.smartnation.gov.sg/about-smart-nation/secure-smart-nation/personal-data-protection-laws-and-policies){:target="\_blank"}.
+
+### Case Studies
+
+LifeSG, which is a platform for over 70 digital services provided by more than 40 Agencies, is an example that has benefited from the Instruction Manual for ICT&SS Management. LifeSG complies with the Digital Service Standard (DSS), which involves taking a citizen-centric approach when implementing digital services.
+
+LifeSG was initially conceptualised as Moments of Life, in June 2017, and it aimed to be a platform for residents to access digital services during various stages of their lives. When LifeSG was first released in June 2018, the focus was on supporting digital services for the beginning of one’s life journey, such as birth registrations, access to a baby’s immunisation records, application for the Baby Bonus Scheme, and more. Since then, LifeSG has been enhanced to support other critical moments of life, such as ageing and caregiving. Today, LifeSG provides residents access to a suite of digital services that covers critical moments of life, from cradle to grave.
