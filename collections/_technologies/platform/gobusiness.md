@@ -34,7 +34,7 @@ Furthermore, GoBusiness also provides e-Advisers that provide businesses with re
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/gobusiness-fig1" width="100%" height="100%" 
+    src="/assets/img/gobusiness-fig1.png" width="100%" height="100%" 
     alt="Fig 1: GoBusiness"
   />
   <figcaption>Fig 1: GoBusiness</figcaption>
@@ -83,7 +83,7 @@ These features will be introduced progressively from early 2022.
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/gobusiness-fig2" width="100%" height="100%" 
+    src="/assets/img/gobusiness-fig2.png" width="100%" height="100%" 
     alt="Fig 2: GoBusiness Personalised Dashboard"
   />
   <figcaption>Fig 2: GoBusiness Personalised Dashboard</figcaption>
