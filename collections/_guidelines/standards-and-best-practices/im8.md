@@ -55,7 +55,7 @@ The Data Domain Group, encompassing data governance, architecture, protection, s
 
 ### Target Audience and Adoption Criteria
 
-All Government Ministries, Organs of State, Departments, and Statutory Boards are to comply with the Instruction Manual for ICT&SS Management, incorporate the requirements into  tender specifications, and work with the developers and vendors to implement the requirements in the system.
+All Government Ministries, Organs of State, Departments, and Statutory Boards are to comply with the Instruction Manual for ICT&SS Management, incorporate the requirements into  tender specifications, and work with developers and vendors to implement the requirements in the system.
 
 ### Resources and Templates
 
