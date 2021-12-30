@@ -42,7 +42,7 @@ The design principles of the DSS include:
 The TPM domain provides the requirements for the evaluation and selection, contracting and onboarding service management and exit management of Third Parties like vendors, including standard ICT contract templates for Agencies to use. This ensures that Agencies have oversight over Third Parties to make sure that associated security, data, and project risks in engaging them are adequately managed. The TPM is organised based on the lifecycle stages, such as:
 - Evaluating and Selection, which includes identifying, assessing, prioritising, and mitigating the risks of outsourcing to Third Parties.
 - Contracting and Onboarding, which includes establishing contracts or equivalent instruments with the necessary controls and governance requirements, as well as onboarding of Third Parties like personnel security clearance/briefing.
-- Service Management which includes oversight to ensure associated risks are identified and managed by maintaining a register, establishing governance structure to monitor and review the Third Party’s compliance and performance feedback, and conducting compliance audits/checks like self-assessment by Third Parties.
+- Service Management, which includes oversight to ensure associated risks are identified and managed by maintaining a register, establishing governance structure to monitor and review the Third Party’s compliance and performance feedback, and conducting compliance audits/checks like self-assessment by Third Parties.
 - Transition Out, which includes developing exit management plans and conducting exit audits/checks.
 
 **Data**<br>
