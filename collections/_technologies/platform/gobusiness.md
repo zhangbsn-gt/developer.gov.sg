@@ -62,7 +62,33 @@ Hear testimonies from various businesses about their experience with GoBusiness:
 –	**Jeannie Ong, Founder of Envy Her Pte Ltd**
 
 <i>“The website is clean and easy to navigate. Information is detailed and also laid out in an organised manner…GoBusiness is my first stop when I am looking for any information on business-related Government services…I highly recommend it to other businesses.”</i><br>
-- **Shawn Ow, Managing Director of Genesis One Tech Farm**
+– **Shawn Ow, Managing Director of Genesis One Tech Farm**
 
 <i>“I find that the interface of the website is very modern and clean, with a minimalist design, and that made the communication of information really efficient for me. Initially, we only had a very rough idea on how to start a business. However, with the very clear steps defined by GoBusiness, we were then able to very confidently register our company…I will recommend GoBusiness to first-time entrepreneurs, especially those without a business background like myself, because [GoBusiness] just makes things so much easier to understand.”</i><br>
--	**Joel Lim, Managing Director of ZYRUP Media**
+–	**Joel Lim, Managing Director of ZYRUP Media**
+
+### What's Next?
+
+The GoBusiness team is looking to develop a personalised dashboard for businesses. Businesses will be able to benefit from personalised content on the dashboard to help them:
+
+- **Register for a new business**: After receiving a personalised step-by-step guide on how to register their business, users can choose to complete the incorporation of their business all within the same transaction. Once the business registration is complete, the user will receive suggestions on what to do next, including applying for relevant licences and grants.
+
+-	**Access and apply for more than 200 licences across sectors**: Businesses can access and apply for new licences administered by various Government agencies via the dashboard without having to visit separate portals for different licences. In the same space, businesses can amend, renew, or cancel existing licences. 
+
+-	**Keep track of their applications**: Businesses are kept up-to-date on their licence application status via the dashboard, and will be prompted if any action is required. 
+
+-	**Receive personalised recommendations**: Businesses can receive a range of tailored recommendations via the dashboard. The Government Assistance e-Adviser considers a business’ unique profile when providing suggestions for relevant grants. 
+
+These features will be introduced progressively from early 2022.
+
+<figure style="text-align: center">
+  <img
+    src="/assets/img/gobusiness-fig2" width="100%" height="100%" 
+    alt="Fig 2: GoBusiness Personalised Dashboard."
+  />
+  <figcaption>Fig 2: GoBusiness Personalised Dashboard</figcaption>
+</figure>
+
+### Contact Information
+
+For enquiries, email <poh_quan_wei@tech.gov.sg>.
