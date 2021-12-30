@@ -27,28 +27,25 @@ The Instruction Manual for ICT&SS Management supports Agencies to deliver fit-fo
 
 The Instruction Manual for ICT&SS Management covers a wide range of domains. Some examples include the Digital Service Standards (DSS), Third Party Management (TPM), and Data.
 
-**Digital Service Standards (DSS)**
+**Digital Service Standards (DSS)**<br>
 DSS enables agencies to implement their digital services to meet the Digital Government Blueprint (DGB) goal of delivering digital services that are easy, seamless and relevant for our citizens and businesses.  It is important that all our public facing digital services meet the DSS, so that our citizens and businesses can use consistently good services across the government.
 
 The design principles of the DSS include:
 
-<u>Intuitive Design and Usability</u> 
-As the government’s digital ‘shopfront’, our digital services must be well designed so that citizens and businesses can interact and transact with us digitally in an intuitive and easy to use manner.
+- Intuitive Design and Usability: As the government’s digital ‘shopfront’, our digital services must be well designed so that citizens and businesses can interact and transact with us digitally in an intuitive and easy to use manner.
 
-<u>Accessibility and Inclusivity</u>
-Government digital services must be designed to benefit all population segments, including persons with disabilities. We embrace the international accessibility standard, Web Content Accessibility Standards (WCAG), and is also aligned with local standard, SS618: Guidelines on User Interface Design for Older Adults. 
+- Accessibility and Inclusivity: Government digital services must be designed to benefit all population segments, including persons with disabilities. We embrace the international accessibility standard, Web Content Accessibility Standards (WCAG), and is also aligned with local standard, SS618: Guidelines on User Interface Design for Older Adults. 
 
-<u>Relevance and Consistency</u>
-Our digital services must be relevant to the needs of our citizens and businesses, and provide a consistent experience across the government. They shall carry a ‘branding’ that uniquely identifies them as government digital services, in keeping with the ethos of one public service.  
+- Relevance and Consistency: Our digital services must be relevant to the needs of our citizens and businesses, and provide a consistent experience across the government. They shall carry a ‘branding’ that uniquely identifies them as government digital services, in keeping with the ethos of one public service.  
 
-**Third Party Management (TPM)**
+**Third Party Management (TPM)**<br>
 The TPM domain provides the requirements for the evaluation and selection, contracting and onboarding service management and exit management of Third Parties like vendors, including standard ICT contract templates for Agencies to use. This ensures that Agencies have oversight over Third Parties to make sure that associated security, data, and project risks in engaging them are adequately managed. The TPM is organised based on the lifecycle stages, such as:
 - Evaluating and Selection, which includes identifying, assessing, prioritising, and mitigating the risks of outsourcing to Third Parties.
 - Contracting and Onboarding, which includes establishing contracts or equivalent instruments with the necessary controls and governance requirements, as well as onboarding of Third Parties like personnel security clearance/briefing.
 - Service Management which includes oversight to ensure associated risks are identified and managed by maintaining a register, establishing governance structure to monitor and review the Third Party’s compliance and performance feedback, and conducting compliance audits/checks like self-assessment by Third Parties.
 - Transition Out, which includes developing exit management plans and conducting exit audits/checks.
 
-**Data**
+**Data**<br>
 The Data Domain Group, encompassing data governance, architecture, protection, sharing and storage, aims to ensure that agencies put in place effective data management practices to utilise and safeguard data in all stages of its lifecycle. This sets out the requirements for the access and distribution, and exploitation of data, which is necessary for sharing of data, organised into the following domains:
 - Data Classification, which includes the Security Classification Framework where Agencies are to classify data based on damage to agency’s interests/national interests/national security due to unauthorised disclosure of data, and the Information Sensitivity Framework where Agencies are to classify data based on potential impact to the individual/entity due to authorised disclosure of data. 
 - Data Protection (Data Security) which refers to the process of protecting the confidentiality, integrity, and availability of data, where Agencies shall use the Data Security Risk Assessment Methodology to assess the data security risk, and adopt a risk based approach to protect data. This ensures that there is a consistent WOG approach to protecting data and ensuring that the appropriate level of security is implemented.
