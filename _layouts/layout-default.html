@@ -96,7 +96,6 @@
     <main>
       {%- include top-nav.html -%}
       {% if page.layout == "layout-page-sidenav" or page.layout == "layout-category-listing" %}
-
       {%- unless page.single_level_nav -%}
       <div class="mobile-sidenav is-hidden-desktop">
           <button class="sgds-button is-small mobile-sidenav-toggle" type="button">
@@ -108,11 +107,9 @@
               {% include sidenav.html %}
           </ul>
       </div>
-      {% endunless %}
-      {%- include feedback-banner.html -%}
-      
-
+      {% endunless %}    
       {% endif %}
+      {%- include feedback-banner.html -%}
       <!-- Enable the line below for annoucement banner at home page -->
       <!-- {%- include announcement-banner.html -%} -->
       {{content}}
