@@ -42,4 +42,27 @@ Furthermore, GoBusiness also provides e-Advisers that provide businesses with re
 
 ### Why Should GoBusiness be Adopted?
 
+The benefits of GoBusiness include:
 
+- **Single, reliable source of updated information**: Businesses can reduce time spent searching for information from multiple Government agencies, and can obtain the latest updates on business-related services and resource from the GoBusiness portal.
+
+-	**User-centric products**: GoBusiness conducted consultations with more than 500 companies across different sectors to map out the user journeys of businesses, and to ensure that its features and enhancements address real business challenges. GoBusiness also provides personalised recommendations to point users to licences and grants that are relevant for their business. This helps businesses cut through the clutter and apply for the licences and grants most applicable to them.  
+
+### How Do You Use GoBusiness?
+
+Businesses can visit [gobusiness.gov.sg](https://www.gobusiness.gov.sg){:target="\_blank"} to access its services and resources.
+
+### Success Stories
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wmd7JDBS2cs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Hear testimonies from various businesses about their experience with GoBusiness:
+
+<i>“GoBusiness offers much more than just manpower declaration-related matters…What makes GoBusiness special, is that it thinks from the shoes of business operators, thus making everything much more intuitive to us.</i><br>
+–	**Jeannie Ong, Founder of Envy Her Pte Ltd**
+
+<i>“The website is clean and easy to navigate. Information is detailed and also laid out in an organised manner…GoBusiness is my first stop when I am looking for any information on business-related Government services…I highly recommend it to other businesses.”</i><br>
+- **Shawn Ow, Managing Director of Genesis One Tech Farm**
+
+<i>“I find that the interface of the website is very modern and clean, with a minimalist design, and that made the communication of information really efficient for me. Initially, we only had a very rough idea on how to start a business. However, with the very clear steps defined by GoBusiness, we were then able to very confidently register our company…I will recommend GoBusiness to first-time entrepreneurs, especially those without a business background like myself, because [GoBusiness] just makes things so much easier to understand.”</i><br>
+-	**Joel Lim, Managing Director of ZYRUP Media**
