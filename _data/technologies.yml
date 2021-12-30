@@ -104,6 +104,7 @@
   description: Digital platform for citzens, agencies and businesses
   items:
     - Overview
+    - GoBusiness
     - LifeSG
 
 - name: Productivity Tools
