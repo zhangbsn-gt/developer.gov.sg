@@ -37,7 +37,7 @@ Furthermore, GoBusiness also provides e-Advisers that provide businesses with re
     src="/assets/img/gobusiness-fig1.png" width="100%" height="100%" 
     alt="Fig 1: GoBusiness"
   />
-  <figcaption>Fig 1: GoBusiness</figcaption>
+  <figcaption>Fig 1: GoBusiness' Website Homepage</figcaption>
 </figure>
 
 ### Why Should GoBusiness be Adopted?
@@ -56,7 +56,7 @@ Businesses can visit [gobusiness.gov.sg](https://www.gobusiness.gov.sg){:target=
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wmd7JDBS2cs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Hear testimonies from various businesses about their experience with GoBusiness:
+Testimonies from various businesses about their experience with GoBusiness are as shown below:
 
 <i>“GoBusiness offers much more than just manpower declaration-related matters…What makes GoBusiness special, is that it thinks from the shoes of business operators, thus making everything much more intuitive to us.</i><br>
 –	**Jeannie Ong, Founder of Envy Her Pte Ltd**
