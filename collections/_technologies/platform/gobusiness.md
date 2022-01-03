@@ -24,7 +24,7 @@ As a one-stop platform, GoBusiness supports businesses with easy access to over 
 
 Furthermore, GoBusiness also provides e-Advisers that provide businesses with recommendations on:
 
--	**Business Structure**: By answering a few simple questions, new business owners can receive information that help them decide on the business structure that best suit their needs.
+-	**Business Structure**: By answering a few simple questions, new business owners can receive information to help them decide on the business structure that best suits their needs.
 
 -	**Starting a Business**: New businesses can check the availability of their preferred business name, the availability of proposed business names as usernames on social media channels, find out about the Singapore Standard Industrial Classification Code for their business activities, as well as receive recommendations on the steps to register their business in Singapore.   
 
