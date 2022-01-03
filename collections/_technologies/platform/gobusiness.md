@@ -1,5 +1,5 @@
 ---
-title: GoBusiness – a central touchpoint for Government-to-Business e-services
+title: GoBusiness – A Central Touchpoint for Government-to-Business e-Services
 layout: layout-page-sidenav
 category: Platform
 sub_collection_render: true
