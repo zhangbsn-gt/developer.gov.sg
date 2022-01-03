@@ -12,7 +12,7 @@ With greater adoption of digital services over traditional physical delivery met
 
 Where applicable, SGDS complies with the [Digital Service Standards (DSS)](/guidelines/standards-and-best-practices/digital-service-standards.html){:target="_blank"}, which is a set of policies, standards, and guidelines to help agencies implement digital services that meet the goal of delivering digital services that are easy-to-use, seamless, and relevant, as set out in the [Digital Government Blueprint](https://www.tech.gov.sg/digital-government-blueprint/){:target="_blank"}.
 
-### What is SGTS?
+### What is SGDS?
 
 SGDS consists of two main parts:
 
