@@ -91,4 +91,4 @@ These features will be introduced progressively from early 2022.
 
 ### Contact Information
 
-For enquiries, email <poh_quan_wei@tech.gov.sg>.
+For enquiries, fill in this [form](https://go.gov.sg/gobizcollab){:target="\_blank"}.
