@@ -19,7 +19,7 @@ With Singpass, residents and businesses can look forward to more convenient and 
 
 Singpass is every Singapore resident’s trusted digital identity for convenient and secure access to over 1,700 government and private sector services.
 
-Residents can use Singpass to access more services across sectors – ranging from banking and insurance, to healthcare and charities – and conveniently retrieve their personal information, digitally sign documents and remotely authorise transactions on their Singpass app. 
+Residents can use Singpass to access more services across sectors – ranging from banking and insurance, to healthcare and charities – and conveniently retrieve their personal information, digitally sign documents, and remotely authorise transactions on their Singpass app. 
 
 Singpass app users enjoy seamless access to more services at their fingertips with these features: 
 -	**Digital IC** offers users an alternative method of identity verification. For example, they may present their Digital IC to counter staff or scan the barcode at kiosks located in public libraries and SingHealth polyclinics.
