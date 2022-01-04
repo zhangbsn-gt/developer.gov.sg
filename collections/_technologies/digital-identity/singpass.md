@@ -63,7 +63,7 @@ To log in to digital services easily and securely with Singpass, there are two o
 2)	Use the Singpass portal: Enter your Singpass ID and password, followed by keying in a One-Time Password (OTP) sent via SMS, or a face scan enabled by Singpass Face Verification.
 
 **For public and private sectors**<br>
-The following steps are required to onboard Singpass APIs.
+The following steps are required to onboard Singpass APIs:
 
 1)	Product/business owners can select an API and refer to their respective guidelines [here](https://api.singpass.gov.sg/){:target="\_blank"}.<br>
 2)	Developers can refer to the relevant API’s resources and technical guidelines [here](https://api.singpass.gov.sg/developers){:target="\_blank"} and follow the steps listed in the tutorials.<br>
