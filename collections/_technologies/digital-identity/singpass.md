@@ -59,7 +59,7 @@ Singpass account holders can download the Singpass app from the [App Store](http
 
 To log in to digital services easily and securely with Singpass, there are two options:
 
-1)	Use the Singpass app: Scan the QR code on the login page with the Singpass app or tap the QR code on-screen if logging in from a mobile device. Then, authenticate using fingerprint, face or a 6-digit passcode, without the need to enter passwords. 
+1)	Use the Singpass app: Scan the QR code on the login page with the Singpass app or tap the QR code on-screen if logging in from a mobile device. Then, authenticate using fingerprint, face or a 6-digit passcode, without the need to enter passwords.<br> 
 2)	Use the Singpass portal: Enter your Singpass ID and password, followed by keying in a One-Time Password (OTP) sent via SMS, or a face scan enabled by Singpass Face Verification.
 
 **For public and private sectors**<br>
