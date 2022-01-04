@@ -65,9 +65,9 @@ To log in to digital services easily and securely with Singpass, there are two o
 **For public and private sectors**<br>
 The following steps are required to onboard Singpass APIs.
 
-1)	Product/business owners can select an API and refer to their respective guidelines [here](https://api.singpass.gov.sg/){:target="\_blank"}.
-2)	Developers can refer to the relevant API’s resources and technical guidelines [here](https://api.singpass.gov.sg/developers){:target="\_blank"} and follow the steps listed in the tutorials.
-3)	Once the product owner has crafted the user journey, they can log in to this [link](https://api.singpass.gov.sg/cplogin){:target="\_blank"} to submit a linkup request for approval.
+1)	Product/business owners can select an API and refer to their respective guidelines [here](https://api.singpass.gov.sg/){:target="\_blank"}.<br>
+2)	Developers can refer to the relevant API’s resources and technical guidelines [here](https://api.singpass.gov.sg/developers){:target="\_blank"} and follow the steps listed in the tutorials.<br>
+3)	Once the product owner has crafted the user journey, they can log in to this [link](https://api.singpass.gov.sg/cplogin){:target="\_blank"} to submit a linkup request for approval.<br>
 4)	Once the linkup request is approved, the product owner can follow up with the subsequent steps to agree to the Terms and Agreement and complete the app configuration.
 
 ### Success Stories
