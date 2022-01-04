@@ -10,7 +10,7 @@ description: >
 
 [Singpass](https://www.singpass.gov.sg/){:target="\_blank"}, the National Digital Identity (NDI) initiative, is one of eight [Strategic National Projects](https://www.smartnation.gov.sg/initiatives/strategic-national-projects){:target="\_blank"} that drive Singapore’s Smart Nation Vision. 
 
-As a foundational digital infrastructure, Singpass is critical to improving the lives of citizens, creating opportunities for businesses, and transforming the capabilities of government agencies using technology.
+As a foundational digital infrastructure, Singpass is critical to improving the lives of citizens, creating opportunities for businesses, and transforming the capabilities of Government agencies using technology.
 
 With Singpass, citizens, residents and businesses can look forward to more convenient and secure access across a wide range of services. Businesses can additionally enjoy reduced operating costs and greater efficiency by tapping NDI’s suite of services to enhance their digital services.
 
