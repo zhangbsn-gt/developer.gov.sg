@@ -17,7 +17,7 @@ With Singpass, residents and businesses can look forward to more convenient and 
 
 ### What is Singpass?
 
-Singpass is every Singapore resident’s trusted digital identity for convenient and secure access to over 1,700 government and private sector services online and in person. 
+Singpass is every Singapore resident’s trusted digital identity for convenient and secure access to over 1,700 government and private sector services.
 
 Residents can use Singpass to access more services across sectors – ranging from banking and insurance, to healthcare and charities – and conveniently retrieve their personal information, digitally sign documents and remotely authorise transactions on their Singpass app. 
 
