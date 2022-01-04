@@ -52,7 +52,8 @@ Businesses and agencies can tap on Singpass APIs to enable access or create new 
 
 ### How Do You Use Singpass?
 
-**For end-users**: Individuals can check their eligibility for a Singpass account [here](https://www.ifaq.gov.sg/SINGPASS/apps/Fcd_faqmain.aspx#FAQ_1112272){:target="\_blank"} and refer to the step-by-step guide [here](https://www.singpass.gov.sg/singpass/resources/pdf/Register_For_Singpass_Guide.pdf){:target="\_blank"} to register and set up their account. Upon successful registration, a password PIN mailer will be sent to the registered address for account activation. 
+**For end-users**<br>
+Individuals can check their eligibility for a Singpass account [here](https://www.ifaq.gov.sg/SINGPASS/apps/Fcd_faqmain.aspx#FAQ_1112272){:target="\_blank"} and refer to the step-by-step guide [here](https://www.singpass.gov.sg/singpass/resources/pdf/Register_For_Singpass_Guide.pdf){:target="\_blank"} to register and set up their account. Upon successful registration, a password PIN mailer will be sent to the registered address for account activation. 
 
 Singpass account holders can download the Singpass app from the [App Store](https://apps.apple.com/us/app/singpass-mobile/id1340660807){:target="\_blank"} (for iOS devices), [Google Play Store](https://play.google.com/store/apps/details?id=sg.ndi.sp&hl=en-GB){:target="\_blank"} (for Android devices), or the [HUAWEI AppGallery](https://appgallery.huawei.com/#/app/C104129719){:target="\_blank"} (for Huawei devices).
 
@@ -61,7 +62,8 @@ To log in to digital services easily and securely with Singpass, there are two o
 1)	Use the Singpass app: Scan the QR code on the login page with the Singpass app or tap the QR code on-screen if logging in from a mobile device. Then, authenticate using fingerprint, face or a 6-digit passcode, without the need to enter passwords. 
 2)	Use the Singpass portal: Enter your Singpass ID and password, followed by keying in a One-Time Password (OTP) sent via SMS, or a face scan enabled by Singpass Face Verification.
 
-**For public and private sectors**: The following steps are required to onboard Singpass APIs.
+**For public and private sectors**<br>
+The following steps are required to onboard Singpass APIs.
 
 1)	Product/business owners can select an API and refer to their respective guidelines [here](https://api.singpass.gov.sg/){:target="\_blank"}.
 2)	Developers can refer to the relevant API’s resources and technical guidelines [here](https://api.singpass.gov.sg/developers){:target="\_blank"} and follow the steps listed in the tutorials.
