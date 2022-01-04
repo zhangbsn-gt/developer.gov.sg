@@ -12,7 +12,7 @@ description: >
 
 As a foundational digital infrastructure, Singpass is critical to improving the lives of citizens, creating opportunities for businesses, and transforming the capabilities of Government agencies using technology.
 
-With Singpass, citizens, residents and businesses can look forward to more convenient and secure access across a wide range of services. Businesses can additionally enjoy reduced operating costs and greater efficiency by tapping NDI’s suite of services to enhance their digital services.
+With Singpass, residents and businesses can look forward to more convenient and secure access across a wide range of services. Businesses can additionally enjoy reduced operating costs and greater efficiency by tapping NDI’s suite of services to enhance their digital services.
 
 
 ### What is Singpass?
