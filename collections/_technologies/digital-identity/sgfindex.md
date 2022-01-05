@@ -44,10 +44,39 @@ The developers of SGFinDex also takes great pride in the following features and 
 
 -	**Data encryption**: Users’ personal financial data is encrypted when it is retrieved through SGFinDex. Only the financial planning application/website that the user has authorised to receive the data is able to decrypt it.
 
+### How Do You Use SGFinDex?
 
+Users first log into the respective bank or MyMoneySense with their Singpass and approve the connection of the bank to SGFinDex. Once the bank is connected to SGFinDex, the financial information from the bank and MyInfo can be retrieved securely.
 
+### Success Stories
 
+Since its inception on 7 December 2020, SGFinDex has spurred financial planning among participating bank customers with over 150,000 unique users sign ups, 290,000 bank accounts linked and 620,000 data retrievals made.
 
+### What's Next?
+
+As there is strong demand from other government agencies to integrate with SGFinDex to deliver more value-added services, the current service delivery model can be further tapped upon. 
+
+The underlying SGFinDex infrastructure can also be extended to other industries to provide secure data access across more organisations, hence bringing the breakthrough innovation of SGFinDex beyond the financial sector.
+
+### Contact Information
+
+For enquiries, email <support@sgdex.gov.sg>.
+
+### Meet the Team!
+
+<div class="card-grid-container grid-25rem">
+  {% for bios in page.bios %}
+  {% assign img_url = "/assets/img/" | append: bios.img_src %}
+  <div class="sgds-card">
+    <div class="sgds-card-content">
+      <img style="float: left; margin-right: 20px;" src="{{ img_url }}" alt="{{ bios.name}}">
+      <p><strong>{{ bios.name}}</strong><br>
+        {{ bios.desc }}
+      </p>
+    </div>
+  </div>
+  {% endfor %}  
+</div>
 
 
 
