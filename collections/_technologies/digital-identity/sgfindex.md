@@ -18,7 +18,7 @@ bios:
 
 ### Overview
 
-SGFinDex was developed by the Monetary Authority of Singapore (MAS) and the Smart Nation and Digital Government Group (SNDGG) in collaboration with The Association of Banks in Singapore and seven participating banks to provide a simple solution to a complicated problem. 
+Singapore Financial Data Exchange (SGFinDex) was developed by the Monetary Authority of Singapore (MAS) and the Smart Nation and Digital Government Group (SNDGG) in collaboration with The Association of Banks in Singapore and seven participating banks to provide a simple solution to a complicated problem. 
 
 In Singapore, where individuals have accounts with multiple financial institutions (FIs), it is a challenge for them to transfer their personal financial data held by each FI to another FI or the Government. Private sector FIs, such as banks and insurance companies, have historically faced challenges in sharing data with other entities due to a lack of common data standards and interoperability between platforms. 
 
@@ -26,7 +26,7 @@ The SGFinDex team believed that an opportunity presented itself amidst these cir
 
 ### What is SGFinDex?
 
-The Singapore Financial Data Exchange (SGFinDex) is the world's first public digital infrastructure to use a national digital identity and **centrally managed online consent system** to enable individuals to access, through applications, their financial information held across different government agencies and financial institutions. 
+SGFinDex is the world's first public digital infrastructure to use a national digital identity and **centrally managed online consent system** to enable individuals to access, through applications, their financial information held across different government agencies and financial institutions. 
 
 During the second phase launch, individuals are now able to view information on their investment holdings at The Central Depository (CDP) as part of their consolidated financial position via participating banks’ financial planning applications and MyMoneySense, a free government financial planning digital service.
 
