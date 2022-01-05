@@ -52,6 +52,10 @@ Singpass users benefit from having:
 
 Businesses and agencies can tap on Singpass APIs to enable access or create new value-added services for Singapore residents. The open APIs can be easily integrated with services of organisations, big or small, to enhance customer experiences and improve business efficiency. For example, the use of Singpass for customer logins removes the need for organisations to maintain their own authentication platforms and users can avoid the hassle of managing many different sets of credentials.
 
+Watch this video to hear more about how users and businesses have benefitted from using Singpass:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rUZf1ZcB0NY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ### How Do You Use Singpass?
 
 **For end-users**<br>
