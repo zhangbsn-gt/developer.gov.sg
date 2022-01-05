@@ -44,7 +44,7 @@ Awarded with the Most Innovative Use of Data for Digital Transformation award at
   <figcaption>Fig 1: Kendrick Lee, Director, Trusted Data Division, National Digital Identity, GovTech receiving the award for SGFinDex at the INSPIRE Tech Awards 2021 ceremony.</figcaption>
 </figure>
 
-The developers of SGFinDex also takes great pride in the following features and principles that drives the development of SGFinDex: 	
+The developers of SGFinDex take great pride in the following features and principles that drives the development of SGFinDex: 	
 
 -	**Highly scalable national infrastructure**: Powered by the National Digital Identity tech stack, the public digital infrastructure of SGFinDex can be extended and replicated to other industries beyond the finance sector.
 
