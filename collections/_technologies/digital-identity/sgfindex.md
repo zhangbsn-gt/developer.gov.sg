@@ -1,5 +1,5 @@
 ---
-title: SGFinDex
+title: SGFinDex – Your Data Highway
 layout: layout-page-sidenav
 sub_collection_render: true
 description: >
