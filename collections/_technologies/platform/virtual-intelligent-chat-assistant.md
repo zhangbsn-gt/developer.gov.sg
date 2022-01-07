@@ -35,8 +35,8 @@ These benefits will ultimately translate to a better chatbot, and thus a better 
 Various live versions of VICA chatbots are accessible via the options below:
 -	To enable Gov.sg on WhatsApp, please fill in this [form](https://go.gov.sg/whatsapp){:target="\_blank"}.
 -	To access COVID-19 Info Bot, click [here](https://www.gov.sg/infobot){:target="\_blank"} (thereafter, click on the icon on the bottom right to engage the chatbot).
--	To access COVID-19 Chat for Biz, click [here](https://www.mti.gov.sg/Chatbot/chat){:target="\_blank"}.
-<br>
+-	To access COVID-19 Chat for Biz, click [here](https://www.mti.gov.sg/Chatbot/chat){:target="\_blank"}.<br>
+
 Projected steps for agencies to onboard VICA:
 
 1. Project Commissioning Memorandum to be signed between both parties
