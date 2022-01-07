@@ -1,5 +1,6 @@
 ---
 title: Virtual Intelligent Chat Assistant (VICA)
+redirect_from: /communities/covid-19-volunteering-opportunities/vica.html
 layout: layout-page-sidenav
 category: Platform
 sub_collection_render: true
