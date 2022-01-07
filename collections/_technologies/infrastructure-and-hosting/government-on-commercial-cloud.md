@@ -27,7 +27,7 @@ In response to the learning points from GCC 1.0, a rethink was required on how t
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/GCC-fig1.png" width="70%" height="70%" 
+    src="/assets/img/gcc-fig1.png" width="70%" height="70%" 
     alt="Fig 1: Illustration of GCC’s &quot;Wrapper&quot; Platform"
   />
   <figcaption>Fig 1: Illustration of GCC’s “Wrapper” Platform</figcaption>
@@ -64,7 +64,7 @@ GCC 2.0 is currently in the Early Adopter Phase and will be leveraged as a whole
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/insert pic" width="70%" height="70%" 
+    src="/assets/img/gcc-fig2.png" width="70%" height="70%" 
     alt="Fig 2: GCC 2.0 roadmap (subject to changes)"
   />
   <figcaption>Fig 2: GCC 2.0 roadmap (subject to changes)</figcaption>
