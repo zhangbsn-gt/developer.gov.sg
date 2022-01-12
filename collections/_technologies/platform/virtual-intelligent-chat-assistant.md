@@ -38,7 +38,7 @@ Various live versions of VICA chatbots are accessible via the options below:
 -	To access COVID-19 Info Bot, click [here](https://www.gov.sg/infobot){:target="\_blank"} (thereafter, click on the icon on the bottom right to engage the chatbot).
 -	To access COVID-19 Chat for Biz, click [here](https://www.mti.gov.sg/Chatbot/chat){:target="\_blank"}.<br>
 
-Projected steps for agencies to onboard VICA:
+Steps for agencies to onboard VICA:
 
 1. Project Commissioning Memorandum to be signed between both parties
 2. Going through user story to understand agency’s requirements and whether VICA can fulfil the agency’s needs
