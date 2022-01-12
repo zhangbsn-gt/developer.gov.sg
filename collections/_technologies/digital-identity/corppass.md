@@ -10,7 +10,7 @@ description: >
 
 ### Overview
 
-With more services going digital, it is increasingly important for businesses and other entities such as non-profit organisations and associations to conduct online transactions (such as grant applications and filing of corporate taxes) with Government agencies in a safe and reliable manner. As the corporate arm of Singapore’s [National Digital Identity (NDI)](https://www.developer.tech.gov.sg/technologies/digital-identity/national-digital-identity.html){:target="\_blank"}, Corppass was developed as the single platform for entities to conduct online transactions with agencies. 
+With more services going digital, it is increasingly important for businesses and other entities such as non-profit organisations and associations to conduct online transactions (such as grant applications and filing of corporate taxes) with Government agencies in a safe and reliable manner. As the corporate arm of Singapore’s [National Digital Identity (NDI)](https://www.developer.tech.gov.sg/technologies/digital-identity/national-digital-identity.html){:target="\_blank"}, Corppass was developed to be the single platform for entities to conduct online transactions with agencies. 
 
 ### What is Corppass?
 
