@@ -15,7 +15,7 @@ Compared to Ask Jamie, VICA-based chatbots are easier to onboard and “train”
 
 ### What is VICA?
 
-VICA is a virtual assistant platform for agencies to build and train chatbots. Some examples of chatbots built using VICA include Gov.sg on WhatsApp, COVID-19 Info Bot, and COVID-19 Chat for Biz.
+VICA is a platform for agencies to build and train chatbots. Some examples of chatbots built using VICA include Gov.sg on WhatsApp, COVID-19 Info Bot, and COVID-19 Chat for Biz.
 
 ### Why Should VICA be Adopted?
 
