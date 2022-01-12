@@ -1,5 +1,5 @@
 ---
-title: Virtual Intelligent Chat Assistant (VICA)
+title: Virtual Intelligent Chat Assistant (VICA) – GovTech's Citizen Assistant Platform
 redirect_from: /communities/covid-19-volunteering-opportunities/vica.html
 layout: layout-page-sidenav
 category: Platform
@@ -9,7 +9,7 @@ description: VICA is a virtual assistant platform for Government agencies to bui
 
 ### Overview
 
-VICA is GovTech’s latest virtual assistant platform, which is set to replace the older [Ask Jamie Virtual Assistant](https://www.tech.gov.sg/products-and-services/ask-jamie/){:target="\_blank"}.
+VICA is GovTech’s latest citizen assistant platform, which is set to replace the older [Ask Jamie Virtual Assistant](https://www.tech.gov.sg/products-and-services/ask-jamie/){:target="\_blank"}.
 
 Compared to Ask Jamie, VICA-based chatbots are easier to onboard and “train”, with more automated processes that can translate to better efficiencies for Government agencies’ users in building useful chatbots for their end users.
 
