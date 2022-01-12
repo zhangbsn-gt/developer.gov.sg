@@ -4,7 +4,7 @@ redirect_from: /communities/covid-19-volunteering-opportunities/vica.html
 layout: layout-page-sidenav
 category: Platform
 sub_collection_render: true
-description: VICA is a virtual assistant platform for Government agencies to build smart chatbots that are beneficial and useful to citizens.
+description: VICA is a citizen assistant platform for Government agencies to build smart chatbots that are beneficial and useful to citizens.
 ---
 
 ### Overview
