@@ -6,6 +6,8 @@ description: >
   Corppass is a corporate digital identity for businesses and other entities to conduct online transactions with Government agencies.
 ---
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0xcHKX_So2o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ### Overview
 
 With more services going digital, it is increasingly important for businesses and other entities such as non-profit organisations and associations to conduct online transactions (such as grant applications and filing of corporate taxes) with Government agencies in a safe and reliable manner. As the corporate arm of Singapore’s [National Digital Identity (NDI)](https://www.developer.tech.gov.sg/technologies/digital-identity/national-digital-identity.html){:target="\_blank"}, Corppass was developed as the single platform for entities to conduct online transactions with agencies. 
