@@ -1,5 +1,5 @@
 ---
-title: SGFinDex
+title: SGFinDex – World's First Public Digital Infrastructure
 layout: layout-page-sidenav
 sub_collection_render: true
 description: >
