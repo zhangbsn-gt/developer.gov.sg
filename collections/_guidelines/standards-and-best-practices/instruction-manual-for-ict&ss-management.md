@@ -1,5 +1,6 @@
 ---
 title: Instruction Manual for Infocomm Technology and Smart Systems (ICT&SS) Management
+redirect_from: /guidelines/standards-and-best-practices/im8.html
 layout: layout-page-sidenav
 sub_collection_render: true
 category: Standards & Best Practices
