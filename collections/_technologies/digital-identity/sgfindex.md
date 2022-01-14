@@ -1,5 +1,5 @@
 ---
-title: SGFinDex – World's First Public Digital Infrastructure
+title: SGFinDex –  World’s First Public Digital Infrastructure for Retrieval and Consolidation of Data
 layout: layout-page-sidenav
 sub_collection_render: true
 description: >
@@ -8,7 +8,12 @@ bios:
   - name: Kendrick Lee, Director, Trusted Data & Services
     img_src: sgfindex-kendrick-lee.png
     desc: |
-      Kendrick Lee is Director of Trusted Data & Services at the Government Technology Agency of Singapore (GovTech). In this role, he oversees product management of national digital identity application programming interfaces and digital payments with the aim of enabling seamless transactions for residents, businesses and government agencies.<br><br>Prior to re-joining the public service in 2016, Kendrick held regional leadership roles in consulting, business development and solution architecture at multi-national companies including Ernst & Young and Hewlett-Packard. He started his career at the Defence Science and Technology Agency (DSTA) where he was pioneering programme manager of the government's Risk Assessment and Horizon Scanning system.<br><br>He serves the industry as adjunct lecturer at the Institute of Systems Science (ISS-NUS); and was council member of the Information Technology Management Association (ITMA), Information Technology Standards Committee (ITSC), and past chairman of SGTech's Cloud Computing Chapter.
+      Kendrick Lee is the Director of National Digital Identity (NDI) programme at the Government Technology Agency of Singapore (GovTech). NDI is one of eight strategic national projects that drives Singapore’s Smart Nation vision.
+      
+In his role, Kendrick oversees product management of Singpass application programming interfaces (APIs) as well as digital payments; with the aim of enabling secure and seamless transactions for residents, businesses and government agencies.
+
+He also serves industry as adjunct lecturer of digital product strategy at the Institute of Systems Science (ISS-NUS), digital identity expert group member at the Biometrics Institute, and technical working group member of “Trustworthy Digital Infrastructure for Identity Systems” project with the Alan Turing Institute.
+
 
   - name: Daryl Low, Assistant Director, Trusted Data & Services
     img_src: sgfindex-daryl-low.png
