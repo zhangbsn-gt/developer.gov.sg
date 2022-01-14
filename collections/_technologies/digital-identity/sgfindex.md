@@ -9,8 +9,8 @@ bios:
     img_src: sgfindex-kendrick-lee.png
     desc: |
       Kendrick Lee is the Director of National Digital Identity (NDI) programme at the Government Technology Agency of Singapore (GovTech). NDI is one of eight strategic national projects that drives Singapore’s Smart Nation vision.
-      In his role, Kendrick oversees product management of Singpass application programming interfaces (APIs) as well as digital payments; with the aim of enabling secure and seamless transactions for residents, businesses and government agencies.
-      He also serves industry as adjunct lecturer of digital product strategy at the Institute of Systems Science (ISS-NUS), digital identity expert group member at the Biometrics Institute, and technical working group member of “Trustworthy Digital Infrastructure for Identity Systems” project with the Alan Turing Institute.
+      <br><br>In his role, Kendrick oversees product management of Singpass application programming interfaces (APIs) as well as digital payments; with the aim of enabling secure and seamless transactions for residents, businesses and government agencies.
+      <br><br>He also serves industry as adjunct lecturer of digital product strategy at the Institute of Systems Science (ISS-NUS), digital identity expert group member at the Biometrics Institute, and technical working group member of “Trustworthy Digital Infrastructure for Identity Systems” project with the Alan Turing Institute.
 
 
   - name: Daryl Low, Assistant Director, Trusted Data & Services
