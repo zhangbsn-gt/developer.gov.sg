@@ -8,15 +8,15 @@ bios:
   - name: Kendrick Lee, Director, Trusted Data & Services
     img_src: sgfindex-kendrick-lee.png
     desc: |
-      Kendrick Lee is the Director of National Digital Identity (NDI) programme at the Government Technology Agency of Singapore (GovTech). NDI is one of eight strategic national projects that drives Singapore’s Smart Nation vision.
-      In his role, Kendrick oversees product management of Singpass application programming interfaces (APIs) as well as digital payments; with the aim of enabling secure and seamless transactions for residents, businesses and government agencies.
-      He also serves industry as adjunct lecturer of digital product strategy at the Institute of Systems Science (ISS-NUS), digital identity expert group member at the Biometrics Institute, and technical working group member of “Trustworthy Digital Infrastructure for Identity Systems” project with the Alan Turing Institute.
+      <br>Kendrick Lee is the Director of National Digital Identity (NDI) programme at the Government Technology Agency of Singapore (GovTech). NDI is one of eight strategic national projects that drives Singapore’s Smart Nation vision.</br>
+      <br>In his role, Kendrick oversees product management of Singpass application programming interfaces (APIs) as well as digital payments; with the aim of enabling secure and seamless transactions for residents, businesses and government agencies.</br>
+      <br>He also serves industry as adjunct lecturer of digital product strategy at the Institute of Systems Science (ISS-NUS), digital identity expert group member at the Biometrics Institute, and technical working group member of “Trustworthy Digital Infrastructure for Identity Systems” project with the Alan Turing Institute.</br>
 
 
   - name: Daryl Low, Assistant Director, Trusted Data & Services
     img_src: sgfindex-daryl-low.png
     desc: |
-      Daryl Low is Assistant Director of Trusted Data & Services at the Government Technology Agency of Singapore (GovTech). In this position, he oversees product management of national digital identity’s (NDI) Singapore Data Exchange (SGDex) with the aim of enabling seamless data exchange between government and private institutions. He also currently coordinates NDI’s COVID-19 technology response applications across multiple teams in GovTech and agencies.<br><br>Before joining the public service in 2020, Daryl was a technology entrepreneur with a keen focus on communications, engagement and relationships – with inventions ranging from hardware driven customer relationship management systems to talent acquisition and screening technologies.
+      <br>Daryl Low is Assistant Director of Trusted Data & Services at the Government Technology Agency of Singapore (GovTech). In this position, he oversees product management of national digital identity’s (NDI) Singapore Data Exchange (SGDex) with the aim of enabling seamless data exchange between government and private institutions. He also currently coordinates NDI’s COVID-19 technology response applications across multiple teams in GovTech and agencies.</br><br><br>Before joining the public service in 2020, Daryl was a technology entrepreneur with a keen focus on communications, engagement and relationships – with inventions ranging from hardware driven customer relationship management systems to talent acquisition and screening technologies.
 ---
 
 ### Overview
