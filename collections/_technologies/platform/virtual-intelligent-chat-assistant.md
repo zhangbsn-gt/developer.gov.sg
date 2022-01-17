@@ -1,5 +1,5 @@
 ---
-title: Virtual Intelligent Chat Assistant (VICA) – An NLP Chatbot For Our Citizens
+title: Virtual Intelligent Chat Assistant (VICA) – An Natural Language Processing (NLP) Chatbot For Our Citizens
 redirect_from: /communities/covid-19-volunteering-opportunities/vica.html
 layout: layout-page-sidenav
 category: Platform
@@ -13,7 +13,7 @@ VICA is GovTech’s latest citizen assistant platform that leverages Artificial 
 
 ### What is VICA?
 
-VICA is a platform for agencies to build and train chatbots. It leverages the latest Natural Language Processing (NLP) engines like Google’s [Dialogflow](https://cloud.google.com/dialogflow){:target="\_blank"} to enhance its performance. NLP is a branch of AI that involves the analysis of natural language, such as text and voice messages from humans. NLP can be understood as the brain of a chatbot. It helps chatbots gain better and fuller understanding of the inputs from users, and therefore provide more useful and relevant responses.
+VICA is a platform for agencies to build and train chatbots. It leverages the latest NLP engines like Google’s [Dialogflow](https://cloud.google.com/dialogflow){:target="\_blank"} to enhance its performance. NLP is a branch of AI that involves the analysis of natural language, such as text and voice messages from humans. NLP can be understood as the brain of a chatbot. It helps chatbots gain better and fuller understanding of the inputs from users, and therefore provide more useful and relevant responses.
 
 Some examples of chatbots built using VICA include Gov.sg on WhatsApp, COVID-19 Info Bot, and COVID-19 Chat for Biz.
 
