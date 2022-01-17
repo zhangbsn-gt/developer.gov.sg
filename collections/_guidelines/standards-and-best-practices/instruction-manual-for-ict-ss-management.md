@@ -5,7 +5,7 @@ layout: layout-page-sidenav
 sub_collection_render: true
 category: Standards & Best Practices
 description: >
-  Instruction Manual for ICT&SS Management (previously known as IM8) provides policies, standards, and guidelines to govern Agencies’ adoption of  ICT&SS systems.
+  Instruction Manual for ICT&SS Management (previously known as IM8) provides policies, standards, and guidelines to govern agencies’ adoption of  ICT&SS systems.
 ---
 
 
@@ -13,15 +13,15 @@ description: >
 
 Technological disruptions and evolutions have drastically changed global industries, markets, and our way of life. To support Singapore’s ambition to build a Smart Nation, the Government has accelerated its digital transformation efforts to improve service delivery, operations, and policy-making through the use of technology in a secure and cost-effective manner. 
 
-The Instruction Manual for ICT&SS Management (previously known as IM8) seeks to support agencies as they adopt ICT&SS to enable their digital transformation. It provides guidance on best-in-class practices to uplift agencies’ ICT capabilities, including a mix of ‘what’ and ‘how’ requirements with the risk areas tiered based on System Criticality, Security, and Sensitivity Classification.  
+The Instruction Manual for ICT&SS Management (previously known as IM8) seeks to support agencies as they adopt ICT&SS to enable their digital transformation. It provides guidance on best-in-class practices to uplift agencies’ ICT capabilities, including a mix of ‘what’ and ‘how’ requirements with the risk areas based on their System Criticality, Security, and Sensitivity Classification.  
 
-To maintain relevance when the rate of change in technological applications and practices is exponential, the Instruction Manual for ICT&SS Management is reviewed regularly to be benchmarked with the international standards and practices.
+To maintain relevance in the face of the exponential rate of change in technological applications and practices, the Instruction Manual for ICT&SS Management actively engages agencies to solicit their views, and uses international standards and practices as a benchmark.  
 
 ### Objective
 
 The Instruction Manual for ICT&SS Management supports agencies to deliver fit-for-purpose, secure, and cost-effective solutions/services through:
--	Ensuring good governance of ICT&SS and balancing between the need for standardisation and affording flexibility for customisation.
--	Providing guidance on the use of technology and best-in-class practices while ensuring tiered risk mitigation, for government to be “digital-to-the-core”.
+-	Ensuring good governance of ICT&SS and balancing the need for standardisation with affording flexibility for customisation.
+-	Providing guidance on the use of technology and best-in-class practices while ensuring tiered risk mitigation, for the Government to be “digital-to-the-core”.
 -	Enabling the acquisition, fusion, access, distribution, exploitation, and protection of data across Agencies to achieve a government that is “data-driven to the core”.
 
 ### Scope
@@ -70,7 +70,7 @@ Data: [https://www.smartnation.gov.sg/about-smart-nation/secure-smart-nation/per
 
 LifeSG, which is a platform for over 70 digital services provided by more than 40 agencies, is an example that has benefited from the Instruction Manual for ICT&SS Management. LifeSG complies with the Digital Service Standard (DSS), which involves taking a citizen-centric approach when implementing digital services.
 
-LifeSG was initially conceptualised as Moments of Life, in June 2017, and it aimed to be a platform for residents to access digital services during various stages of their lives. When LifeSG was first released in June 2018, the focus was on supporting digital services for the beginning of one’s life journey, such as birth registrations, access to a baby’s immunisation records, application for the Baby Bonus Scheme, and more. Since then, LifeSG has been enhanced to support other critical moments of life, such as ageing and caregiving. Today, LifeSG provides residents access to a suite of digital services that covers critical moments of life, from cradle to grave.
+LifeSG was initially conceptualised as Moments of Life in June 2017, and it aimed to be a platform for residents to access digital services during various stages of their lives. When LifeSG was first released in June 2018, the focus was on supporting digital services for the beginning of one’s life journey, such as birth registrations, access to a baby’s immunisation records, applications for the Baby Bonus Scheme, and more. Since then, LifeSG has been enhanced to support other critical moments of life, such as ageing and caregiving. Today, LifeSG provides residents access to a suite of digital services that covers critical moments of life, from cradle to grave.
 
 ### Contact Information
 
