@@ -22,7 +22,7 @@ To maintain relevance in the face of the exponential rate of change in technolog
 The Instruction Manual for ICT&SS Management supports agencies to deliver fit-for-purpose, secure, and cost-effective solutions/services through:
 -	Ensuring good governance of ICT&SS and balancing the need for standardisation with affording flexibility for customisation.
 -	Providing guidance on the use of technology and best-in-class practices while ensuring tiered risk mitigation, for the Government to be “digital-to-the-core”.
--	Enabling the acquisition, fusion, access, distribution, exploitation, and protection of data across Agencies to achieve a government that is “data-driven to the core”.
+-	Enabling the acquisition, fusion, access, distribution, exploitation, and protection of data across agencies to achieve a government that is “data-driven to the core”.
 
 ### Scope
 
