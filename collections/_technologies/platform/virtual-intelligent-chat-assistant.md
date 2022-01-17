@@ -1,5 +1,5 @@
 ---
-title: Virtual Intelligent Chat Assistant (VICA) – An Natural Language Processing (NLP) Chatbot For Our Citizens
+title: Virtual Intelligent Chat Assistant (VICA) – A Natural Language Processing (NLP) Chatbot For Our Citizens
 redirect_from: /communities/covid-19-volunteering-opportunities/vica.html
 layout: layout-page-sidenav
 category: Platform
