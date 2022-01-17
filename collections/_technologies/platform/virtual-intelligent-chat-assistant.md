@@ -1,5 +1,5 @@
 ---
-title: Virtual Intelligent Chat Assistant (VICA) – GovTech's Citizen Assistant Platform
+title: Virtual Intelligent Chat Assistant (VICA) – An NLP Chatbot For Our Citizens
 redirect_from: /communities/covid-19-volunteering-opportunities/vica.html
 layout: layout-page-sidenav
 category: Platform
@@ -9,13 +9,13 @@ description: VICA is a citizen assistant platform for Government agencies to bui
 
 ### Overview
 
-VICA is GovTech’s latest citizen assistant platform, which is set to replace the older [Ask Jamie Virtual Assistant](https://www.tech.gov.sg/products-and-services/ask-jamie/){:target="\_blank"}.
-
-Compared to Ask Jamie, VICA-based chatbots are easier to onboard and “train”, with more automated processes that can translate to better efficiencies for Government agencies’ users in building useful chatbots for their end users.
+VICA is GovTech’s latest citizen assistant platform that leverages Artificial Intelligence (AI) to develop chatbots that are more efficient for Government agencies to operate and more useful for end users. Compared to the older [Ask Jamie Virtual Assistant](https://www.tech.gov.sg/products-and-services/ask-jamie/){:target="\_blank"}, VICA’s automated processes help agencies more easily onboard and “train” their chatbots.
 
 ### What is VICA?
 
-VICA is a platform for agencies to build and train chatbots. Some examples of chatbots built using VICA include Gov.sg on WhatsApp, COVID-19 Info Bot, and COVID-19 Chat for Biz.
+VICA is a platform for agencies to build and train chatbots. It leverages the latest Natural Language Processing (NLP) engines like Google’s [Dialogflow](https://cloud.google.com/dialogflow){:target="\_blank"} to enhance its performance. NLP is a branch of AI that involves the analysis of natural language, such as text and voice messages from humans. NLP can be understood as the brain of a chatbot. It helps chatbots gain better and fuller understanding of the inputs from users, and therefore provide more useful and relevant responses.
+
+Some examples of chatbots built using VICA include Gov.sg on WhatsApp, COVID-19 Info Bot, and COVID-19 Chat for Biz.
 
 ### Why Should VICA be Adopted?
 
