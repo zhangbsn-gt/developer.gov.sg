@@ -1,5 +1,6 @@
 ---
 title: GatherSG – Case Management and Coordination System
+redirect_from: /technologies/digital-solutions-to-address-covid-19/government-assisted-living-ecosystem.html
 layout: layout-page-sidenav
 category: Productivity Tools
 sub_collection_render: true
@@ -34,5 +35,30 @@ In several covid response tracks, the GatherSG team reused the stack and pushed 
 
 ### Why Should GatherSG be Adopted?
 
+GatherSG can be customised according to the agency’s specific needs and use cases. Agencies do not need to force fit processes into their system. 
 
+Furthermore, agencies can leverage shared infrastructure and enjoy cost savings. 
 
+### How Do You Use GatherSG?
+
+Interested agencies can approach the GatherSG team to discuss suitable customisation and application. In the ideal setting, GatherSG will be deployed to wrap around the operational needs of the business team so that it will be applied in the most organic manner.
+
+### Success Stories
+
+To ensure that elderly persons can live safely and independently, GatherSG is deployed together with Internet of Things (IoT) devices. It consists of interoperable passive and active monitoring hardware products, a Case Management System (CMS) to receive these alerts and a crowdsourcing mobile application for users.
+
+The setup comprises a hardware IoT button, called the [Personal Alert Button (PAB)](https://www.developer.tech.gov.sg/technologies/sensor-platforms-and-internet-of-things/personal-alert-button){:target="\_blank"}; a case management system that is supported by 24-hr telecare operators and staff from Senior Activity Centres, (SACs) which are elderly social care support centres located in the vicinity of the user’s residence. PABs are installed in the senior’s homes at places where the probability of falls is higher. To call for help, the elderly person presses the PAB which will alert the SAC or a telecare-operator. Within minutes, assistance is rendered. For emergency cases, an ambulance will arrive in less than 10 minutes.
+
+With this setup, more seniors can live safely and independently in their own homes. The elderly will be able to receive assistance in the event of emergencies 24/7. It proved to be very useful during the two-month COVID-19 Circuit Breaker in 2020 as it was the frontline in providing emergency assistance to the elderly who were without their usual support network. CMS also enabled volunteers to deliver basic necessities to them.
+
+To date, the combined system has assisted 100,000 vulnerable elderly living alone, 35,000 government rental flat tenants, and handled almost 400 life-threatening cases. This response model reduces potentially fatal incidents with active and passive monitoring solutions supported by close partnerships with SACs, operators, and agencies.
+
+### What's Next?
+
+In the next phase, social service and public officers can look forward co-creating with the GatherSG team to digitise operation processes and bring them onto a single platform. This enables seamless access of information and good user experience of the system.
+
+As part of SGTS, the GatherSG team will also continue to enhance the base stack to enable more modular and scalable designs.
+
+### Contact Information
+
+For enquiries, contact <adrian_tan@tech.gov.sg>.
