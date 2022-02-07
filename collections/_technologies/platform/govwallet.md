@@ -101,6 +101,8 @@ Furthermore, the 164,000 merchants already onboarded with PayNow, such as e-comm
 
 GovWallet can be accessed using official government apps, such as LifeSG. On the LifeSG app, you can scan the SGQR code or PayNow QR to pay the merchant. More government apps are in the pipeline to use GovWallet.
 
+For agencies interested in onboarding GovWallet, email <patricia_zhao@tech.gov.sg>.
+
 ### Success Stories
 
 GovWallet has worked with CPFB to administer the Workfare Income Supplement scheme for more than 2,500 unbanked beneficiaries, thus removing the need for cheque issuance. The beneficiaries can withdraw their government pay-outs in the form of cash at the OCBC ATMs or spend them as eCredits using the LifeSG app.
@@ -112,8 +114,6 @@ Other agencies have expressed interest to adopt GovWallet for the management of 
 The GovWallet team is looking to expand beyond the PayNow e-Payment ecosystem, to leverage the NETs payment ecosystem which includes more than 120,000 acceptance points in Singapore across 42,000 merchants.
 
 ### Contact Information
-
-For agencies interested in onboarding GovWallet, email <patricia_zhao@tech.gov.sg>.
 
 For general enquiries, email <govwallet_support@tech.gov.sg>.
 
