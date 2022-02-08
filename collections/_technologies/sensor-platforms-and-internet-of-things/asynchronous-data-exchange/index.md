@@ -15,7 +15,7 @@ ADEX originated as the Sensor Data Exchange (SDX), part of the Smart Nation Sens
 
 ADEX is part of the [Singapore Government Tech Stack (SGTS)](https://www.developer.tech.gov.sg/singapore-government-tech-stack/overview/index.html). It is positioned as one of the Communications components, along with [API Exchange (APEX)](https://www.developer.tech.gov.sg/technologies/data-and-apis/apex.html) it is part of the Base Layer of SGTS.
 
-ADEX is hosted on the [Government Commercial Cloud (GCC)](https://www.developer.tech.gov.sg/technologies/infrastructure-and-hosting/government-commercial-cloud.html). It can support an exchange of data that is up to the RESTRICTED classification and considered NON-SENSITIVE.
+ADEX is hosted on the [Government on Commercial Cloud (GCC)](https://www.developer.tech.gov.sg/technologies/infrastructure-and-hosting/government-commercial-cloud.html). It can support an exchange of data that is up to the RESTRICTED classification and considered NON-SENSITIVE.
 
 ### What is ADEX?
 
