@@ -16,7 +16,7 @@ LifeSG is a one-stop resource hub for over 70 government services. It consolidat
 
 LifeSG was initially launched as Moments of Life (MOL), which aimed to serve parents with young children. In August 2020, MOL was rebranded as LifeSG with a new vision to serve citizens during various key stages of their lives.
 
-The app consolidates services and information across various Government agencies, and provides recommendations that are personalised according to user profiles and preferences. Users can currently explore more than 70 government services and receive reminders for appointments and event bookings made on the app. 
+The app consolidates services and information across various Government agencies, and provides recommendations that are personalised according to user profiles and preferences. Users can explore more than 70 government services and receive reminders for appointments and event bookings made on the app. 
 One such service is electronic birth registration, which currently handles 70% of birth registrations in Singapore. The electronic birth registration service integrates birth registration, application for government grant (Baby Bonus), and National Library Board (NLB) membership into a single process, thereby reducing the typical time spent from an hour to just 15 minutes.
 
 To date, the LifeSG app has been downloaded more than 290,000 times. It has facilitated a range of services including electronic birth registration, eligibility checker for more than 30 types of COVID-19 grants and assistance, and access to Merdeka Generation (MG) or Pioneer Generation (PG) e-cards.
