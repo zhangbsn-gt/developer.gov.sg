@@ -42,7 +42,7 @@ The key benefits of LifeSG are:
 Users can connect with the Government using the following features on LifeSG:
 
 - **Personalised Dashboard:** LifeSG's home screen displays a dashboard that contains content, services, and events that are personalised based on the user’s profile.
-- **User-Friendly Guides:** LifeSG contains guides that integrate information across multiple government agencies, making it convenient for users to view all the relevant information they might need in a centralised location.
+- **User-Friendly Guides:** LifeSG contains guides that integrate information across multiple Government agencies, making it convenient for users to view all the relevant information they might need in a centralised location.
 - **Personalised Benefits and Support Module:** View at a glance a list of benefits that a user has received or may be entitled to, such as GST Vouchers and SingapoRediscover Vouchers (SRV). Over 21,000 users accessed this module in January 2021.
 - **Personalised Eligibility Checkers and Calculators:** By simply answering a few simple questions, users can view the list of government support schemes they are eligible for and estimate the amount of benefits and support they can receive. This provides much added convenience as users no longer have to navigate and process the eligibility criteria of each individual scheme.
 - **Explore Services:** Citizens can explore and easily access various government services. Information is grouped according to topics of interest, such as family and parenting, work and employment, healthcare, and housing and property. About 10,000 users access this feature each month.
