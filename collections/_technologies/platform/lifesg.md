@@ -39,7 +39,7 @@ The key benefits of LifeSG are:
 
 ### How Do You Use LifeSG?
 
-Users can connect with the Government using following features on LifeSG:
+Users can connect with the Government using the following features on LifeSG:
 
 - **Personalised Dashboard:** LifeSG's home screen displays a dashboard that contains content, services, and events that are personalised based on the user’s profile.
 - **User-Friendly Guides:** LifeSG contains guides that integrate information across multiple government agencies, making it convenient for users to view all the relevant information they might need in a centralised location.
