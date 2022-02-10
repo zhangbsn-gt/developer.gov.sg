@@ -8,7 +8,7 @@ description: LifeSG, an app that offers users simpler access to digital governme
 
 ### Overview
 
-LifeSG is a one-stop resource hub for over 70 government services. It consolidates and simplifies access to government services so that citizens spend less time browsing multiple websites or apps. As a citizen-centric platform, LifeSG transforms how citizens interact with the Government by providing easy access to government services, personalised experiences, and meaningful solutions.
+LifeSG is a one-stop resource hub for over 70 government services. It consolidates and simplifies access to government services so that citizens can spend less time browsing multiple websites or apps. As a citizen-centric platform, LifeSG transforms how citizens interact with the Government by providing easy access to government services, personalised experiences, and meaningful solutions.
 
 ### What is LifeSG?
 
