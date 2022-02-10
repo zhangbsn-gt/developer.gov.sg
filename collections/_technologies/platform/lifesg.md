@@ -8,7 +8,7 @@ description: LifeSG, an app that offers users simpler access to digital governme
 
 ### Overview
 
-LifeSG provides citizens with an app that consolidates services and information across various government agencies, and provides recommendations that are personalised according to user profiles and preferences. Users can explore more than 70 government services and receive reminders for appointments and event bookings made on the app. One such service is the electronic birth registration, which currently handles 70% of birth registrations in Singapore. The electronic birth registration service integrates birth registrations, application for government grants (e.g. Baby Bonus), and new National Library Board (NLB) membership appliactions into a single process. This reduces the typical time spent from an hour to just 15 minutes!
+LifeSG provides citizens with an app that consolidates services and information across various government agencies, and provides recommendations that are personalised according to user profiles and preferences. Users can explore more than 70 government services and receive reminders for appointments and event bookings made on the app. One such service is the electronic birth registration, which currently handles 70% of birth registrations in Singapore. The electronic birth registration service integrates birth registrations, application for government grants (e.g. Baby Bonus), and new National Library Board (NLB) membership applications into a single process. This reduces the typical time spent from an hour to just 15 minutes!
 
 ### What is LifeSG?
 
