@@ -35,7 +35,7 @@ The key benefits of LifeSG are:
 
 - **Convenience at Your Fingertips:** LifeSG provides citizens with convenient access to important government services, rather than require them to navigate multiple websites or apps.
 - **Government Services that are Clear and Simple:** LifeSG connects citizens with relevant services and information by providing personalised recommendations.
-- **Set Up Your Account in Minutes:** Citizens can set up their profiles instantly with [Myinfo](https://www.developer.tech.gov.sg/technologies/digital-identity/myinfo.html){:target="\_blank"}. Myinfo enables ease of filling up government forms as users only have to provide their personal data once and they can tap on pre-filled forms for subsequent transactions with the Government.
+- **Set Up Your Account in Minutes:** Citizens can set up their profiles instantly with [Myinfo](https://www.developer.tech.gov.sg/technologies/digital-identity/myinfo.html){:target="\_blank"}. Myinfo enables ease of filling up government forms as users only have to provide their personal data once before they can tap on pre-filled forms for subsequent transactions with the Government.
 
 ### How Do You Use LifeSG?
 
