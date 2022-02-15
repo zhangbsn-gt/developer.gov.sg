@@ -3,6 +3,16 @@ title: UX Design
 layout: layout-page-sidenav
 sub_collection_render: true
 description: Good UX design helps you create products and services that are meaningful and impactful to your users.
+bios:
+  - name: Falaumaina Sharil, Senior UX Designer
+    img_src: uxdesign-fala.png
+    desc: |
+      Fala is a Senior UX Designer at GovTech's Government Digital Services. Her key design focus is to streamline citizen experience through digital products. Fala strives to create meaningful experiences for users, through a measurable, human-centered design approach. Besides designing, she is also invested in building up the UX team.
+
+  - name: Liren Tan, UX Designer
+    img_src: uxdesign-liren.png
+    desc: |
+      Liren is a UX designer at GovTech and she drives user centric research to uncover insights to build digital solutions. She previously worked in the healthcare industry, and is passionate about using design to contribute and bring value to the social sector.
 ---
 
 <h2>What is UX Design?</h2>
@@ -182,4 +192,19 @@ description: Good UX design helps you create products and services that are mean
 <p>
     <i>Fala’s sharing covered the SupportGoWhere case study while Liren’s sharing covered the diversity and inclusion sections of this article.</i>
 </p>
-          
+
+<h2>Meet the Team!</h2>
+
+<div class="card-grid-container grid-25rem">
+  {% for bios in page.bios %}
+  {% assign img_url = "/assets/img/" | append: bios.img_src %}
+  <div class="sgds-card">
+    <div class="sgds-card-content">
+      <img style="float: left; margin-right: 20px;" src="{{ img_url }}" alt="{{ bios.name}}">
+      <p><strong>{{ bios.name}}</strong><br>
+        {{ bios.desc }}
+      </p>
+    </div>
+  </div>
+  {% endfor %}  
+</div>
