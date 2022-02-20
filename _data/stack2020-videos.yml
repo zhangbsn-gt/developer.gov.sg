@@ -25,7 +25,7 @@
 - type: Panel - Tech Culture
   speakers: 'Parimal Aswani, Kevin Ng, Patrick Teo'
   speakers_title: >-
-    Director of Technology, Temasek| Director, CODEX, GovTech| Site Lead and
+    Director of Technology, Temasek| Director, Government Digital Services (GDS), GovTech| Site Lead and
     Engineering Director, Payments, Google Singapore
   title: Products to Platforms - Taking the Steps Towards this Journey
   video_id: 'yOGhrxKLLaE'
@@ -158,12 +158,12 @@
   video_id: 'KyTIp-jjnoE'
 - type: App - Talk
   speakers: Kevin Ng
-  speakers_title: 'Director, CODEX, GovTech'
+  speakers_title: 'Director, Government Digital Services (GDS), GovTech'
   title: 'Re-Introducing Singapore Government Tech Stack '
   video_id: 'Cg6aV1IC1jE'
 - type: App - Talk
   speakers: Foo Ji-Haw
-  speakers_title: 'Deputy Director, CODEX, GovTech'
+  speakers_title: 'Deputy Director, Government Digital Services (GDS), GovTech'
   title: 'SHIP and HATS – Today and Beyond '
   video_id: 'KEJ_LPdv6Nw'
 - type: App - Talk
@@ -185,7 +185,7 @@
   video_id: 'GyDqlRy73VQ'
 - type: App - Live Chat
   speakers: 'Kevin Ng, Chia Hsiao Ming'
-  speakers_title: 'Director, CODEX, GovTech| Director, Engineering Productivity, GovTech'
+  speakers_title: 'Director, Government Digital Services (GDS), GovTech| Director, Government Digital Services (GDS), GovTech'
   title: Live Chat with Kevin Ng and Chia Hsiao Ming
   video_id: 'GtkQAL5a3do'
 - type: App - VOD
@@ -312,7 +312,7 @@
   video_id: 'X6MnVW0npCg'
 - type: Tech Culture - Talk
   speakers: 'Chia Hsiao Ming, Wei Junyu'
-  speakers_title: 'Director, Engineering Productivity, GovTech| Associate Software Engineer, GovTech'
+  speakers_title: 'Director, Government Digital Services (GDS), GovTech| Associate Software Engineer, GovTech'
   title: Singapore Government Developer Portal
   video_id: 'UgQ1GVSM_N4'
 - type: Tech Culture - Talk

@@ -33,13 +33,13 @@
 - type: Keynote - VOD
   speakers: Kevin Ng
   speakers_title: >-
-    Director, Core Operations Development Environment and eXchange (CODEX),
+    Director, Government Digital Services (GDS),
     GovTech
   title: GCC Road Ahead
   video_id: OKtNwnbWQBQ
 - type: Keynote - VOD
   speakers: 'Hunter Nield, Chia Hsiao Ming'
-  speakers_title: 'Distinguished Engineer, GovTech| Director, Engineering Productivity, GovTech'
+  speakers_title: 'Distinguished Engineer, GovTech| Director, Government Digital Services (GDS), GovTech'
   title: GCC 2.0 Design Principles and Showcase
   video_id: FriAm2BnqqA
 - type: CloudOnboarding - VOD
@@ -51,8 +51,7 @@
   speakers: 'Tang Bing Wan, Jessica Tan'
   speakers_title: >-
     Principal Application Infrastructure Architect, Central Technical Services,
-    GovTech| Programme Manager, Core Operations Development Environment and
-    eXchange (CODEX), GovTech
+    GovTech| Programme Manager, Government Digital Services (GDS), GovTech
   title: GCC 2.0 - New Onboarding Experience
   video_id: cftM662--Cs
 - type: CloudOnboarding - VOD
@@ -95,6 +94,6 @@
   video_id: I5dpXijcPgU
 - type: CloudPlatform - VOD
   speakers: Samuel Loh
-  speakers_title: 'Senior Software Engineer, Engineering Productivity, GovTech'
+  speakers_title: 'Senior Software Engineer, Government Digital Services (GDS), GovTech'
   title: Securing Access to GCC 2.0 from Engineering Devices
   video_id: PONKfE9q_eo
