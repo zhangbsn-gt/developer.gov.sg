@@ -9,7 +9,7 @@ redirect_from: /communities/building-a-community/
 
 It has been almost two years since we started the STACK-X community. Take a look at our journey and how we pivoted our efforts amidst the COVID-19 pandemic.
 
-If you have attended one of our STACK-X Meetups, you are probably quite familiar with [GovTech](https://www.tech.gov.sg/who-we-are/our-role/){:target="_blank"}. Chances are, you are also well acquainted with some products we have developed — for example, [TraceTogether](https://www.developer.tech.gov.sg/technologies/digital-solutions-to-address-covid-19/tracetogether){:target="_blank"} and our [Whole-of-Government Application Analytics](https://www.developer.tech.gov.sg/technologies/analytics/wogaa){:target="_blank"}.
+If you have attended one of our STACK-X Meetups, you are probably quite familiar with [GovTech](https://www.tech.gov.sg/who-we-are/our-role/){:target="_blank"}. Chances are, you are also well acquainted with some products we have developed — for example, [TraceTogether](/products/categories/digital-solutions-to-address-covid-19/tracetogether){:target="_blank"} and our [Whole-of-Government Application Analytics](/products/categories/analytics/wogaa){:target="_blank"}.
 
 If not, that is fine too! To get you up to speed — GovTech is a statutory board that is part of the [Smart Nation and Digital Government Group](https://www.tech.gov.sg/media/technews/govtech-joins-the-smart-nation-and-digital-government-group){:target="_blank"} (SNDGG), reporting to the Prime Minister’s Office. Our mission is to develop technologies for the government to ultimately make a difference in the lives of everyday Singaporeans.
 
@@ -39,7 +39,7 @@ In short, we took every opportunity we could to learn from the people around us!
 
 ### STACK-X Meetups
 
- By August 2019, the groundwork had been laid and we organised our very first [STACK-X Meetup](https://www.developer.tech.gov.sg/communities/stack-x-meetups/overview.html){:target="_blank"} (around 80 people showed up!) on agile development. As this was our first time, we partnered with YOW!, an established tech community organiser familiar with holding similar events.
+ By August 2019, the groundwork had been laid and we organised our very first [STACK-X Meetup](/communities/stack-x-meetups/overview.html){:target="_blank"} (around 80 people showed up!) on agile development. As this was our first time, we partnered with YOW!, an established tech community organiser familiar with holding similar events.
 
 <figure style="text-align: center">
   <img
@@ -49,7 +49,7 @@ In short, we took every opportunity we could to learn from the people around us!
   <figcaption>Fig 2: Chan Cheow Hoe, Government Chief Digital Technology Officer (GCDTO) speaking at STACK-X Meetup at GovTech's office.</figcaption>
 </figure>
 
-By early February 2020, it became clear that in-person Meetups were going to be impossible with the ongoing pandemic. It was a small struggle to pivot to online meetups as we had to learn new ways to engage our community. In April 2020, we held our very first [online STACK-X Meetup](https://www.developer.tech.gov.sg/communities/stack-x-meetups/past-webinars/){:target="_blank"}, where we talked about how tech could address some of the problems emerging as a result of the COVID-19 crisis. For this online event, we similarly partnered with EDB’s Tech +65 who was experienced with hosting digital events. Our partner helped to shed some much-needed light on how online events could be run effectively, and we were very grateful for the learning points we gained that night.
+By early February 2020, it became clear that in-person Meetups were going to be impossible with the ongoing pandemic. It was a small struggle to pivot to online meetups as we had to learn new ways to engage our community. In April 2020, we held our very first [online STACK-X Meetup](/communities/stack-x-meetups/past-webinars/){:target="_blank"}, where we talked about how tech could address some of the problems emerging as a result of the COVID-19 crisis. For this online event, we similarly partnered with EDB’s Tech +65 who was experienced with hosting digital events. Our partner helped to shed some much-needed light on how online events could be run effectively, and we were very grateful for the learning points we gained that night.
 
 <figure style="text-align: center">
   <img

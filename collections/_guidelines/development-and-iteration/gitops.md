@@ -66,9 +66,9 @@ Authorized approvers then vote to approve the merge request. The master branch C
 Through several initiatives, we are improving our security policies and guidelines to encourage agencies to:
 
 - Adopt Infrastructure as Code (IaC).
-- Build their secure CI/CD pipelines on [SHIP](https://www.developer.tech.gov.sg/singapore-government-tech-stack/toolchain/overview.html){:target="\_blank"}, our Singapore Government Tech Stack (SGTS) Git Repository platform.
+- Build their secure CI/CD pipelines on [SHIP](/singapore-government-tech-stack/toolchain/overview.html){:target="\_blank"}, our Singapore Government Tech Stack (SGTS) Git Repository platform.
 - Leverage cloud-native solutions on the [Government Commercial Cloud](https://www.tech.gov.sg/products-and-services/government-commercial-cloud/){:target="\_blank"}, our Cloud Hosting Environment on AWS, Azure and GCP.
-- Deploy and host cloud-native applications as containers to Kubernetes using GitOps on [Container Stack](https://www.developer.tech.gov.sg/singapore-government-tech-stack/runtime/container-stack){:target="\_blank"}, our cloud-based container hosting platform that forms part of the SGTS Runtime Baselayer components that provide modern hosting options for system infrastructure.
+- Deploy and host cloud-native applications as containers to Kubernetes using GitOps on [Container Stack](/singapore-government-tech-stack/runtime/container-stack){:target="\_blank"}, our cloud-based container hosting platform that forms part of the SGTS Runtime Baselayer components that provide modern hosting options for system infrastructure.
 
 ### GitOps for Kubernetes
 

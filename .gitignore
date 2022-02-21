@@ -15,3 +15,5 @@ scripts
 _compress_images_cache.yml
 .DS_Store
 **/.DS_Store
+
+/bash-scripts

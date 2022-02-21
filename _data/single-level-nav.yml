@@ -1,0 +1,283 @@
+# Analytics
+- name: Personalise
+  items:
+    - Overview
+    - Getting Started
+    - Contact Us
+
+- name: WOGAA
+  items:
+    - Overview
+    - Getting Started
+    - Contact Us
+
+- name: VAS
+  items:
+    - Overview
+
+# Devops
+- name: SHIP-HATS
+  items:
+    - Overview
+    - What's New
+    - Training Resources
+    - Subscription
+    - Contact Us
+
+# Blockchain
+- name: Opencerts
+  items:
+    - Overview
+
+# Content Management
+- name: Content Website Platform
+  items:
+    - Overview
+
+- name: Isomer
+  items:
+    - Overview
+
+- name: OpenDoc
+  items:
+    - Overview
+
+# Data and APIs
+- name: APEX
+  items:
+    - Overview
+
+- name: BookingSG
+  items:
+    - Overview
+
+- name: Cloud File Transfer
+  items:
+    - Overview
+
+- name: data.gov.sg
+  items:
+    - Overview
+
+- name: Enterprise Data Hub
+  items:
+    - Overview
+
+- name: IRAS API Marketplace
+  items:
+    - Overview
+
+- name: Land Transport DataMall
+  items:
+    - Overview
+
+- name: MAS APIs
+  items:
+    - Overview
+
+- name: Networked Trade Platform
+  items:
+    - Overview
+
+- name: OneMap APIs
+  items:
+    - Overview
+
+- name: SingStat APIs
+  items:
+    - Overview
+
+- name: Tourism Information and Services Hub
+  items:
+    - Overview
+
+- name: URA APIs
+  items:
+    - Overview
+
+# Design
+- name: Singapore Government Design System
+  items:
+    - Overview
+
+# Digital Identity
+- name: Corppass
+  items:
+    - Overview
+
+- name: Identiface
+  items:
+    - Overview
+
+- name: Login
+  items:
+    - Overview
+
+- name: Myinfo
+  items:
+    - Overview
+
+- name: Myinfo Business
+  items:
+    - Overview
+
+- name: National Digital Identity
+  items:
+    - Overview
+
+- name: SGFinDex
+  items:
+    - Overview
+
+- name: Singpass
+  items:
+    - Overview
+
+- name: Verify
+  items:
+    - Overview
+
+# Digital Solutions to Address Covid19
+- name: Covid 19 Chatbots
+  items:
+    - Overview
+
+- name: GoBusiness COVID Portal
+  items:
+    - Overview
+
+- name: Government Assisted Living Ecosystem
+  items:
+    - Overview
+
+- name: GoWhere Suite
+  items:
+    - Overview
+
+- name: HealthCerts
+  items:
+    - Overview
+
+- name: SafeEntry
+  items:
+    - Overview
+
+- name: Space Out
+  items:
+    - Overview
+
+- name: SPOTON
+  items:
+    - Overview
+
+- name: SupplyAlly
+  items:
+    - Overview
+
+- name: TraceTogether
+  items:
+    - Overview
+
+- name: VigilantGantry
+  items:
+    - Overview
+
+# Infrastructure and Hosting
+- name: Government on Commercial Cloud
+  items:
+    - Overview
+
+- name: Nectar
+  items:
+    - Overview
+
+# Platform
+- name: GoBusiness
+  items:
+    - Overview
+
+- name: LifeSG
+  items:
+    - Overview
+
+- name: GovWallet
+  items:
+    - Overview
+
+- name: Virtual Intelligent Chat Assistant
+  items:
+    - Overview
+
+# Productivity Tools
+- name: Asset Management System
+  items:
+    - Overview
+
+- name: GatherSG
+  items:
+    - Overview
+
+# Sensor Platforms and Internet of Things
+- name: Asynchronous Data Exchange
+  items:
+    - Overview
+
+- name: DECADA - Cloud
+  items:
+    - Overview
+
+- name: DECADA - Edge Gateway
+  items:
+    - Overview
+
+- name: DECADA - Embedded
+  items:
+    - Overview
+
+- name: DECADA - IoT TechStack
+  items:
+    - Overview
+
+- name: Digital Operations Smart Services
+  items:
+    - Overview
+
+- name: eCanvas
+  items:
+    - Overview
+
+- name: ePAD
+  items:
+    - Overview
+
+- name: Lamppost-as-a-Platform
+  items:
+    - Overview
+
+- name: Personal Alert Button
+  items:
+    - Overview
+
+- name: SenseOps
+  items:
+    - Overview
+
+- name: Sensor Asset Management
+  items:
+    - Overview
+
+- name: Smart Gardens
+  items:
+    - Overview
+
+- name: Smart Gym
+  items:
+    - Overview
+
+- name: SNSP
+  items:
+    - Overview
+
+- name: SPOTON
+  items:
+    - Overview

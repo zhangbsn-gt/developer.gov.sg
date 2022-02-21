@@ -20,6 +20,18 @@ class="sgds-section breadcrumb-title-section has-background-general padding--bot
       <div class="col is-8">
         {% include sgds-breadcrumb.html %}
         {% assign main_title = page.title %}
+
+        {% if collection == "products" %}
+          {% comment %} This checks that current page is a post under products. Instade of checking page.single-level-nav. {% endcomment %}
+          {%- assign page_id_terms = page.id | split: "/" -%}
+          {% assign page_id_last = page_id_terms | last %}
+          {% if page_id_last == "index" %}
+            {%- assign page_id_terms = page_id_terms | pop -%}
+          {% endif %}
+          {% unless page.url contains "all-products" or page_id_terms.size > 4 %}
+            {% assign main_title = "Products" %}
+          {% endunless %}
+        {% endif %}
         {% if page.mobile_title %}
         {% assign mobile_title = page.mobile_title %}
         <h1 class="has-text-white has-text-weight-bold is-hidden-mobile">{{ main_title }}</h1>

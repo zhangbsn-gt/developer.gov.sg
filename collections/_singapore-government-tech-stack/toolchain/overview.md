@@ -3,9 +3,9 @@ title: Toolchain
 layout: layout-page-sidenav
 redirect_from: 
   - /singapore-government-tech-stack/toolchain/
-  - /technologies/devops
-  - /technologies/devops/ship
-  - /technologies/devops/hats
+  - /products/categories/devops
+  - /products/categories/devops/ship
+  - /products/categories/devops/hats
 description: Overview of SHIP-HATS.
 ---
 

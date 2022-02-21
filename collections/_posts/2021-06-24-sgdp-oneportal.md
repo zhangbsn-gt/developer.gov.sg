@@ -11,7 +11,7 @@ tags:
   - digital transformation
 ---
 
-The [Singapore Government Developer Portal](https://www.developer.tech.gov.sg) is a one-stop resource hub for Government digital services and products. As of June 2021, more than
+The [Singapore Government Developer Portal](/) is a one-stop resource hub for Government digital services and products. As of June 2021, more than
 50 products have been published on the portal, ranging from the Singapore Government Tech Stack to COVID-19 technologies and
 resources for the public at large.
 

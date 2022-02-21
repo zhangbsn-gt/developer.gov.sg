@@ -23,6 +23,6 @@ Participants gained valuable insights about how to modernise securely using CI/C
 ![SpeakersPhoto01](/assets/img/stackx-speakers01.png)
 ![SpeakersPhoto01](/assets/img/stackx-speakers02.png)
 
-[![Video_recording](/assets/img/video-record-img.png)](https://www.developer.tech.gov.sg/communities/events/stack-x-ci-cd-2021)
+[![Video_recording](/assets/img/video-record-img.png)](/communities/events/stack-x-ci-cd-2021)
 
 To trial SHIP-HATS for your Agency, email Ask_CODEX@tech.gov.sg.

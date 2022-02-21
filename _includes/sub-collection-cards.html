@@ -15,17 +15,7 @@
     {% endcomment %}
     {% if document_sub_collection == sub_collection and page.title != document.title and document.sub_collection_render%}
 
-    <div class="sgds-card sgds-card-variant-category-info grid-item">
-      <div class="sgds-card-content">
-        <header>
-          <h4><a href="{{ document.url }}">{{ document.title }}</a></h4>
-        </header>
-        <p>
-          <!-- TODO: [issue] markdownify create blank <p> tag at the top and bottom of description -->
-          {{ document.description | markdownify }} <br>
-        </p>
-      </div>
-    </div>
+    {% include sub-collection-card.html document = document %}
 
     {% endif %}
   {% endfor %}

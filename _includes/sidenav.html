@@ -1,57 +1,52 @@
 {%- assign collectionName = page.collection -%}
 {%- assign filteredCollections = site.collections | where: "label", collectionName -%}
 {%- assign currentCollection = filteredCollections[0] -%}
-{%- assign categories = site.data[currentCollection.label] -%}
-{%- for category in categories -%}
+{%- assign first_lvl_nav_item_list = site.data[currentCollection.label] -%}
+{%- assign page_id_terms = page.id | split: "/" -%}
+{% assign page_id_last = page_id_terms | last %}
+{% if page_id_last == "index" %}
+  {%- assign page_id_terms = page_id_terms | pop -%}
+  {% assign page_id_last = page_id_terms | last %}
+{% endif %}
+
+{%- for first_lvl_nav_item in first_lvl_nav_item_list -%}
+  {%- assign second_level_nav_item_list = first_lvl_nav_item.items -%}
   {%- assign class = nil -%}
-  {%- assign category_slug = category.name | slugify -%}
-  {%- if page.url contains category_slug -%}
+  {%- assign first_lvl_nav_item_slug = first_lvl_nav_item.name | slugify -%}
+  {%- if page.url contains first_lvl_nav_item_slug -%}
     {%- assign class='is-active' -%}
   {%- endif -%}
-  {%- if category.items -%}
-    <li class="second-level-nav">
-      <a
-        href="#!"
-        class="{{ class }} second-level-nav-header">
-        {{ category.name }}
-        <i class="sgds-icon sgds-icon-chevron-down" aria-hidden="true"></i>
-      </a>
-    </li>
-    {% assign hide_nav_section = 'is-hidden' %}
-    {% if page.url contains category_slug %}
-      {% assign hide_nav_section = nil %}
-    {% endif %}
-    <ul class="second-level-nav-div {{ hide_nav_section }}">
-      {%- assign items = category.items -%}
-      {%- for item in items -%}
 
+  {%- if second_level_nav_item_list -%}
+    {% assign href = "#!" %}
+    {% assign icon_class = "sgds-icon-chevron-down" %}
+    {% assign label= first_lvl_nav_item.name %}
+    {% assign hide_nav_section = 'is-hidden' %}
+    {% if page.url contains first_lvl_nav_item_slug  %}
+      {% assign hide_nav_section = nil %}
+      {% assign icon_class = "sgds-icon-chevron-up" %}
+    {% endif %}
+    {% include sidenav-first-lvl-nav-item.html label=label href=href icon_class=icon_class class=class %}
+    <ul class="second-level-nav-div {{ hide_nav_section }}">
+      {%- for second_lvl_nav_item in second_level_nav_item_list -%}
         {% comment %}
         Compare page's id (file path without .html extension) to each link to see if page is active.
         {% endcomment %}
-        {%- assign item_slug = item | slugify -%}
-        {%- assign page_id_terms = page.id | split: "/" -%}
-        {% assign page_id_last = page_id_terms | last %}
-        {% if page_id_last == "index" %}
-          {%- assign page_id_terms = page_id_terms | pop -%}
-          {% assign page_id_last = page_id_terms | last %}
-        {% endif %}
+        {%- assign second_lvl_nav_item_slug = second_lvl_nav_item | slugify -%}
 
         {%- assign class = nil -%}
-        {%- if (page_id_last == item_slug and page.url contains category_slug) -%}
+        {%- if (page_id_last == second_lvl_nav_item_slug and page.url contains first_lvl_nav_item_slug) -%}
           {%- assign class = 'is-active' -%}
         {%- endif -%}
-        <li>
-          <a
-              class="second-level-nav-item {{ class }}"
-              href="{{ '/' | append: currentCollection.label | append: '/' | append: category_slug | append: '/' | append: item_slug }}"
-          >
-            {{ item }}
-          </a>
-        </li>
+        {%- assign sidenav_item_url = '/' | append: currentCollection.label | append: '/' | append: first_lvl_nav_item_slug | append: '/' | append: second_lvl_nav_item_slug -%}
+        {% include sidenav-second-lvl-nav-item.html label=second_lvl_nav_item href=sidenav_item_url class=class %}
       {%- endfor -%}
     </ul>
   {%- else -%}
-    {% assign link_slug = category.name | slugify %}
-    <li><a href="{{ '/' | append: currentCollection.label | append: '/' | append: link_slug }}" class="{{ class }}">{{ category.name }}</a></li>
+    {% assign link_slug = first_lvl_nav_item.name | slugify %}
+    {% assign href = '/' | append: currentCollection.label | append: '/' | append: link_slug %}
+    {% assign icon_class = first_lvl_nav_item.icon_class %}
+    {% assign label= first_lvl_nav_item.name %}
+    {% include sidenav-first-lvl-nav-item.html label=label href=href icon_class=icon_class class=class %}
   {%- endif -%}
 {%- endfor -%}

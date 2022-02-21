@@ -21,7 +21,8 @@
                     {%- assign links = site.data.navigation -%}
                     {%- for lvl1item in links -%}
                         {%- assign class = nil -%}
-                        {%- if page.url contains lvl1item.url -%}
+                        {% assign section_url = page.url | split: "/" | shift | first | prepend: "/" %}
+                        {%- if section_url == lvl1item.url -%}
                             {%- assign class = 'is-active' -%}
                         {%- endif -%}
                         {%- if lvl1item.dropdown -%}

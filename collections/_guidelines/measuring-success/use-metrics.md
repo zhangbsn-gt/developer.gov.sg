@@ -25,6 +25,6 @@ More importantly, factors that are meaningful and relevant to users should be id
 
 Quantifiable metrics are useful for visualisable monitoring. It allows for the measurement of the team’s final delivery and productivity. Customer satisfaction, adoption rate and conversion rate are some examples of widely-used metrics.
 
-> Government development teams can make use of [WOGAA](https://www.developer.gov.sg/technologies/analytics/wogaa), a web analytics tool to gather usage statistics and patterns for their digital services easily, at no cost.
+> Government development teams can make use of [WOGAA](/products/categories/analytics/wogaa), a web analytics tool to gather usage statistics and patterns for their digital services easily, at no cost.
 
 Your team should also consider other non-quantifiable metrics to paint a more complete picture. Data sources should include the cost of hosting transactions or qualitative feedback like user satisfaction. With the data collected, you’ll gain a better understanding of your product.

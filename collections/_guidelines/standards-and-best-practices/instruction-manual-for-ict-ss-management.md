@@ -60,7 +60,7 @@ All Government Ministries, Organs of State, Departments, and Statutory Boards ar
 
 ### Resources and Templates
 
-DSS:[https://www.developer.tech.gov.sg/guidelines/standards-and-best-practices/digital-service-standards.html](https://www.developer.tech.gov.sg/guidelines/standards-and-best-practices/digital-service-standards.html){:target="\_blank"}.
+DSS:[/guidelines/standards-and-best-practices/digital-service-standards.html](/guidelines/standards-and-best-practices/digital-service-standards.html){:target="\_blank"}.
 
 TPM: [https://www.smartnation.gov.sg/files/publications/key-policies-third-party-framework.pdf](https://www.smartnation.gov.sg/files/publications/key-policies-third-party-framework.pdf){:target="\_blank"}.
 

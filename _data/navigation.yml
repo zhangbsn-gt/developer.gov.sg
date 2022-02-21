@@ -12,14 +12,13 @@
       of Government development teams
   dropdown: true
 
-- title: Technologies
-  url: /technologies
+- title: Products
+  url: /products
   description:
     heading: Build on existing technologies
     content: >
       Discover technologies to leverage on to build the next digital
       service for Singapore
-  dropdown: true
 
 - title: Singapore Government Tech Stack
   url: /singapore-government-tech-stack
@@ -37,7 +36,6 @@
       Discover events, blogs, open-source technologies and other
       collaboration opportunities
   dropdown: true
-
 # - title: Gigs
 #   url: /gigs
 

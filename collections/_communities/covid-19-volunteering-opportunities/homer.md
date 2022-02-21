@@ -21,7 +21,7 @@ Homer is a location reporting system for individuals serving SHNs or home quaran
 2.	Once the app has been installed and launched, users will be brought to the “Splash” screen.
 <figure style="text-align: center">
   <img
-    src="/assets/img/technologies/Fig 1 Homer’s Splash screen.png" width="70%" height="70%" 
+    src="/assets/img/products/Fig 1 Homer’s Splash screen.png" width="70%" height="70%" 
     alt="Fig 1 Homer’s Splash screen"
   />
   <figcaption>Fig 1 Homer’s Splash screen</figcaption>
@@ -30,7 +30,7 @@ Homer is a location reporting system for individuals serving SHNs or home quaran
 3. Following which users will be prompted to enter their mobile number and select “Get OTP”. Once they receive the six-digit pin, it can be keyed in to proceed to the next step. If an error occurs, it may mean that the mobile number that was keyed in may not be activated for the app. Users can then fill up this [form](https://safe.menlosecurity.com/https:/go.gov.sg/homer-feedback){:target="_blank"} to allow the Homer team to get back to them. 
 <figure style="text-align: center">
   <img
-    src="/assets/img/technologies/Fig 2 Homer’s mobile registration and OTP verification screens respectively.png" width="70%" height="70%" 
+    src="/assets/img/products/Fig 2 Homer’s mobile registration and OTP verification screens respectively.png" width="70%" height="70%" 
     alt="Fig 2: Homer’s mobile registration and OTP verification screens respectively"
   />
   <figcaption>Fig 2: Homer’s mobile registration and OTP verification screens respectively</figcaption>
@@ -39,7 +39,7 @@ Homer is a location reporting system for individuals serving SHNs or home quaran
 4.	Users can then enter the postal code of their SHN/quarantine location, and choose “confirm”.
 <figure style="text-align: center">
   <img
-    src="/assets/img/technologies/Fig 3 Homer’s quarantine address registration screen.png" width="70%" height="70%" 
+    src="/assets/img/products/Fig 3 Homer’s quarantine address registration screen.png" width="70%" height="70%" 
     alt="Fig 3: Homer’s quarantine address registration screen"
   />
   <figcaption>Fig 3: Homer’s quarantine address registration screen</figcaption>
@@ -48,7 +48,7 @@ Homer is a location reporting system for individuals serving SHNs or home quaran
 5.	A screen containing instructions as well as information on user consent will show up next. If users’ consent, they can select “continue.”
 <figure style="text-align: center">
   <img
-    src="/assets/img/technologies/Fig 4 Homer’s consent request screen.png" width="70%" height="70%" 
+    src="/assets/img/products/Fig 4 Homer’s consent request screen.png" width="70%" height="70%" 
     alt="Fig 4: Homer’s consent request screen"
   />
   <figcaption>Fig 4: Homer’s consent request screen</figcaption>
@@ -57,7 +57,7 @@ Homer is a location reporting system for individuals serving SHNs or home quaran
 6.	Homer must be allowed to access a user’s location. For iOS users, select “allow while using app.” For Android users, select “allow all the time.”
 <figure style="text-align: center">
   <img
-    src="/assets/img/technologies/Fig 5 Homer’s location access request screen in iOS and Android devices respectively.png" width="70%" height="70%" 
+    src="/assets/img/products/Fig 5 Homer’s location access request screen in iOS and Android devices respectively.png" width="70%" height="70%" 
     alt="Fig 5: Homer’s location access request screen in iOS and Android devices respectively"
   />
   <figcaption>Fig 5: Homer’s location access request screen in iOS and Android devices respectively</figcaption>
@@ -66,7 +66,7 @@ Homer is a location reporting system for individuals serving SHNs or home quaran
 7.	For iOS devices, select “allow” to enable push notifications. After which, users will be brought to the home screen.
 <figure style="text-align: center">
   <img
-    src="/assets/img/technologies/Fig 6 Homer’s push notification request and homescreen.png" width="70%" height="70%" 
+    src="/assets/img/products/Fig 6 Homer’s push notification request and homescreen.png" width="70%" height="70%" 
     alt="Fig 6: Homer’s push notification request and homescreen. "
   />
   <figcaption>Fig 6: Homer’s push notification request and homescreen. </figcaption>
@@ -81,7 +81,7 @@ Homer is a location reporting system for individuals serving SHNs or home quaran
 10.	When shown the selfie instruction page, select the camera button to proceed. Select “ok” for camera permissions for IOS users and “allow” for Andriod users when prompted for camera permissions. 
 <figure style="text-align: center">
   <img
-    src="/assets/img/technologies/Fig 7 Homer’s selfie instruction page and camera persmissions page on iOS and Android respectively.png" width="70%" height="70%" 
+    src="/assets/img/products/Fig 7 Homer’s selfie instruction page and camera persmissions page on iOS and Android respectively.png" width="70%" height="70%" 
     alt="Fig 7: Homer’s selfie instruction page and camera persmissions page on iOS and Android respectively."
   />
   <figcaption>Fig 7: Homer’s selfie instruction page and camera persmissions page on iOS and Android respectively. </figcaption>
@@ -90,7 +90,7 @@ Homer is a location reporting system for individuals serving SHNs or home quaran
 11.	Users will have to align their faces before pressing the circle button to capture their selfies. Retakes can be done if necessary. Otherwise, select “use photo.”
 <figure style="text-align: center">
   <img
-    src="/assets/img/technologies/Fig 8 Homer’s selfie view with the option to retake or use the captured photo once taken.png" width="70%" height="70%" 
+    src="/assets/img/products/Fig 8 Homer’s selfie view with the option to retake or use the captured photo once taken.png" width="70%" height="70%" 
     alt="Fig 8: Homer’s selfie view with the option to retake or use the captured photo once taken."
   />
   <figcaption>Fig 8: Homer’s selfie view with the option to retake or use the captured photo once taken. </figcaption>
@@ -99,7 +99,7 @@ Homer is a location reporting system for individuals serving SHNs or home quaran
 12.	Users can then fill up their details in the health report and select “submit” to complete the process.
 <figure style="text-align: center">
   <img
-    src="/assets/img/technologies/Fig 9 Homer’s health report declaration page.png" width="70%" height="70%" 
+    src="/assets/img/products/Fig 9 Homer’s health report declaration page.png" width="70%" height="70%" 
     alt="Fig 9: Homer’s health report declaration page."
   />
   <figcaption>Fig 9: Homer’s health report declaration page. </figcaption>

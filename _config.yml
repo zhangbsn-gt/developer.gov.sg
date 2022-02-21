@@ -33,7 +33,7 @@ exclude:
 collections_dir: collections
 
 collections:
-  technologies:
+  products:
     output: yes
   guidelines:
     output: yes

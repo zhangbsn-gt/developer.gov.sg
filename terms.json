@@ -5,7 +5,7 @@
     "full_term": "Apex API Exchange",
     "description": "Apex is a self-service API platform that acts as a centralised and secure API gateway for the Government. On Apex, users can easily publish, secure, monitor, and discovery APIs.",
     "links": [
-      "https://www.developer.gov.sg/technologies/data-and-apis/apex.html"
+      "https://www.developer.gov.sg/productds/categories/data-and-apis/apex"
     ],
     "tags": ["api", "data"]
   },
@@ -65,7 +65,7 @@
     "term": "HATS",
     "full_term": "Hive Agile Testing Solution",
     "description": "Hive Agile Testing Solutions (HATS) is a functional test automation tool for web and mobile applications",
-    "links": ["https://www.developer.gov.sg/technologies/devops/hats"],
+    "links": ["https://www.developer.gov.sg/products/categories/devops/hats"],
     "tags": ["devops", "security", "testing"]
   },
   {
@@ -113,7 +113,7 @@
     "term": "SHIP",
     "full_term": "Secure Hybrid Integration Pipeline",
     "description": "SHIP offers a continuous integration and continuous deployment (CI/CD) platform that automates the delivery of applications and simplifies policy clearance",
-    "links": ["https://www.developer.gov.sg/technologies/devops/ship"],
+    "links": ["https://www.developer.gov.sg/products/categories/devops/ship"],
     "tags": ["devops", "testing"]
   },
   {

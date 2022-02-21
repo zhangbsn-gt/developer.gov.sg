@@ -59,4 +59,4 @@ The chosen CI/T/D system should link the source control, build and testing tools
 
 ### What DevOps product is available for my use?
 
-[SHIP (Secure Hybrid Integrated Pipeline)](/technologies/devops/ship) is a product that provides services of a build pipeline for the government. It provides managed services including Atlassian Bitbucket, Bamboo, Confluence, Jira to enable teams to build applications rapidly.
+[SHIP (Secure Hybrid Integrated Pipeline)](/products/categories/devops/ship) is a product that provides services of a build pipeline for the government. It provides managed services including Atlassian Bitbucket, Bamboo, Confluence, Jira to enable teams to build applications rapidly.

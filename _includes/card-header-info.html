@@ -1,0 +1,14 @@
+{% assign item_count = include.item_count %}
+<header>
+    <a href="{{ include.url_str }}"><h4>{{ include.name }}</h4></a>
+    {% if item_count > 0 and include.disableItemCount == nil %}
+      <small>
+          ({{ item_count }}&nbsp;
+          {%- if item_count == 1 -%}
+            item
+          {%- elsif item_count > 1 -%}
+            items
+          {%- endif -%})
+      </small>
+    {% endif %}
+</header>

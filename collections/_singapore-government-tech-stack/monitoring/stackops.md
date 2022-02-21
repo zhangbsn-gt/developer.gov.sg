@@ -9,7 +9,7 @@ description: StackOps is a Monitoring toolchain that helps users monitor and log
 
 StackOps was conceptualised to enable agencies to embrace Site Reliability Engineering (SRE), which emphasises automated monitoring and logging of services. SRE also shifts monitoring and logging processes into the development cycle itself to ensure that operational concerns reliability concepts are build-in.
 
-StackOps is part of the Monitoring component of the [Singapore Government Tech Stack (SGTS)](https://www.developer.tech.gov.sg/singapore-government-tech-stack/overview/index.html){:target="_blank"}, which are tools to help you track application performance and provide you with operational transparency for effective incident response.
+StackOps is part of the Monitoring component of the [Singapore Government Tech Stack (SGTS)](/singapore-government-tech-stack/overview/index.html){:target="_blank"}, which are tools to help you track application performance and provide you with operational transparency for effective incident response.
 
 ### What is StackOps?
 
@@ -56,7 +56,7 @@ Onboarding can typically be completed within one business day.
 
 ### Success Stories
 
-StackOps’ customer base grew from two to fifteen within five months. It is now used by SGTS products and the [Government on Commercial Cloud (GCC)](https://www.developer.tech.gov.sg/technologies/infrastructure-and-hosting/government-on-commercial-cloud.html){:target="_blank"} platform.
+StackOps’ customer base grew from two to fifteen within five months. It is now used by SGTS products and the [Government on Commercial Cloud (GCC)](/products/categories/infrastructure-and-hosting/government-on-commercial-cloud){:target="_blank"} platform.
 
 ### What's Next?
 
