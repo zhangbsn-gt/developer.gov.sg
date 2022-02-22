@@ -3,7 +3,6 @@
   items:
     - Overview
     - COVID-19 ChatBots
-    - Government Assisted Living Ecosystem
     - GoBusiness COVID Portal
     - GoWhere Suite
     - HealthCerts
@@ -102,6 +101,7 @@
     - Sensor Asset Management
     - Smart Gardens
     - SmartGym
+    - SNSP
     - SPOTON
 
 - name: Platform
