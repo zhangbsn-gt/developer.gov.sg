@@ -1,7 +1,6 @@
 ---
 title: SHIP-HATS - Your CI/CD Solutions
 layout: layout-page-sidenav
-category: DevOps
 description: The Continuous Integration/Continuous Delivery [CI/CD] component within SG Tech Stack (SGTS) with security and governance guardrails that enables developers to plan, build, test and deploy code to production.
 sub_collection_render: true
 single_level_nav: true
