@@ -62,6 +62,9 @@
 - name: Cloud File Transfer
   items:
     - Overview
+    - Features
+    - Getting Started
+    - Resources
 
 - name: data.gov.sg
   items:
