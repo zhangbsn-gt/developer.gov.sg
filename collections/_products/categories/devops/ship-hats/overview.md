@@ -68,7 +68,7 @@ Here are some [training resources](./training-resources){:target="_blank"} to ge
 
 ### Subscription
 
-Interested to get started? Check out the [subscriptions](./subscriptions){:target="_blank"} details.
+Interested to get started? Check out the [subscriptions](./subscription){:target="_blank"} details.
 
 ### Contact Us
 
