@@ -60,8 +60,6 @@ The key steps of the Enabling Loop are to:
 - 	Find out how the team feels at the end of the experiment – their morale level, what works and what additional support and/or improvements might be needed
 - 	Determine which improvements to incorporate into the next cycle or if it is better to abort the experiment and revisit earlier steps (e.g. Spot the Opportunities, Explore the Options or Put to Action).
 
-While these seem to take place (and are often visualised) in a sequential flow, it is meant to be practised in iterations – A data-based decision at each step might sometimes mean that  previous steps need to be revisited.  Often, teams may be required to re-establish the problem or to validate assumptions that were previously overlooked.
-
 <figure style="text-align: center">
   <img
     src="/assets/img/guidelines/EnablingLoop-Diagram-v2.png" 
@@ -69,6 +67,8 @@ While these seem to take place (and are often visualised) in a sequential flow, 
   />
   <figcaption>Fig 1: Enabling Loop for Solving Complex Problems</figcaption>
 </figure>
+
+While these seem to take place (and are often visualised) in a sequential flow, it is meant to be practised in iterations – A data-based decision at each step might sometimes mean that  previous steps need to be revisited.  Often, teams may be required to re-establish the problem or to validate assumptions that were previously overlooked.
 
 ### Contact Information 
 
