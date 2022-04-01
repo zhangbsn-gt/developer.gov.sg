@@ -29,6 +29,7 @@
   items:
     - Overview
     - OpenCerts
+    - TradeTrust
 
 - name: Content Management
   description: Platforms that enable easy and reliable hosting and publishing of content on the web

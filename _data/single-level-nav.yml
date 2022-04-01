@@ -37,6 +37,14 @@
   items:
     - Overview
 
+- name: TradeTrust
+  items:
+    - Overview
+    - Features
+    - Getting Started
+    - Resources
+    - FAQs
+
 # Content Management
 - name: Content Website Platform
   items:
