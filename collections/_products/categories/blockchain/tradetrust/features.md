@@ -1,7 +1,7 @@
 ---
-title: TradeTrust Features
+title: What are TradeTrust's Features?
 layout: layout-page-sidenav
-description: TradeTrust product features
+description: Learn more about TradeTrust's product features and its benefits to government agencies and businesses
 single_level_nav: true
 _data: single-level-nav
 ---
