@@ -7,6 +7,7 @@ redirect_from:
     - /products/categories/analytics/personalise/updates.html
     - /technologies/analytics/personalise/updates.html
 single_level_nav: true
+published: false
 ---
 
 ### What's Next?

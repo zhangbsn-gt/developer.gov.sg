@@ -1,7 +1,8 @@
 ---
-title: Personalise – Curating Tailored Citizen Experiences
+title: Personalise – Curating Tailored Citizen Experiences - Getting started
 mobile_title: Personalise
 layout: layout-page-sidenav
+category: Analytics
 _data: single-level-nav
 redirect_from:
     - /products/categories/analytics/personalise/getting-started.html

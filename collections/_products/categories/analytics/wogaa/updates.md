@@ -5,6 +5,7 @@ layout: layout-page-sidenav
 _data: single-level-nav
 redirect_from:
     - /technologies/analytics/wogaa/updates.html
+published: false
 ---
 
 ### What's Next?

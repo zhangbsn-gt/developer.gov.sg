@@ -1,3 +1,6 @@
+---
+published: false
+---
 # Training Resources 
  
 ## Pre-requisites for Developers, Project Managers, Business Analysts

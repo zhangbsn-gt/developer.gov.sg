@@ -4,15 +4,25 @@
 {
     "pages": [
         {%- for page in site.pages -%}
-            {%- if page.name contains '.html' %} 
+            {%- if page.name contains '.html' and page.title != blank %}
                 {%- unless page.url contains '/search' or page.url contains '404.html' -%}
-                {
-                    "title": "{{ page.title | remove: '"' }}",
-                    "category": "{{ page.category }}",
-                    "content": {{ page.content | strip_html | strip_newlines | strip | jsonify }},
-                    "url": "{{ page.url }}",
-                    "meta": "page"
-                },
+                    {%- comment -%} 
+                    As the search directory and the collections module are distinct and different,
+                    any files belonging to the collection size would be >2 after a split as their routes,
+                    e.g. "/.../.../...html" whereas pages belonging to the pages directory
+                    have a url of "/...html"
+                    {%- endcomment -%}
+
+                    {%- assign sizeIndicator = page.url | split: "/" -%}
+                    {%- if 2 >= sizeIndicator.size -%}
+                        {
+                            "title": "{{ page.title | remove: '"' }}",
+                            "category": "{{ page.category }}",
+                            "content": {{ page.content | strip_html | strip_newlines | strip | jsonify }},
+                            "url": "{{ page.url }}",
+                            "meta": "page"
+                        },
+                    {%- endif -%}
                 {%- endunless -%}
                 {%- if forloop.last -%}{}{%- endif -%}
             {%- else -%}

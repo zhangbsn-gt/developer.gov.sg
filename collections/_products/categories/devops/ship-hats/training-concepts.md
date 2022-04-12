@@ -4,6 +4,7 @@ layout: layout-page-sidenav
 single_level_nav: true
 _data: single-level-nav
 redirect_from: /singapore-government-tech-stack/toolchain/training/training-concepts
+published: false
 ---
 
 ### DevOps Concepts 
