@@ -54,6 +54,19 @@ description: |
   <img src="//d3uzjhjcl6zsbz.cloudfront.net/govbuy_flow.jpg" alt="govbuy flowchart">
 </p>
 
+<h2>Available gigs</h2>
+<div class="row is-multiline">
+  {% for gig in site.data.gigs %}
+  <div class="col is-6 is-flex">
+    {% include gig.html
+      title=gig.title skills=gig.skills
+      posted=gig.posted closing=gig.closing duration=gig.duration offer=gig.offer
+      open=gig.open
+    %}
+  </div>
+  {% endfor %}
+</div>
+
 <h3 id="enquiries">Enquiries</h3>
 <p>
   Further enquiries about GovBuy can be made at
