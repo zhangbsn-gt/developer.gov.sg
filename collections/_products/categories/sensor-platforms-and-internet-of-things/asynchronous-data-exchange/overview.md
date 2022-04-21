@@ -11,6 +11,9 @@ redirect_from:
   - /products/categories/sensor-platforms-and-internet-of-things/asynchronous-data-exchange.html
   - /technologies/sensor-platforms-and-internet-of-things/asynchronous-data-exchange/
   - /technologies/sensor-platforms-and-internet-of-things/asynchronous-data-exchange.html
+sgts_collection_group: [communications]
+sgts_layer_group: [base]
+sgts_title: ADEX (SDX)
 description: >
   ADEX is a centralised data exchange platform for the whole of government (WOG) that allows for seamless data sharing and event streaming.
 ---
@@ -37,7 +40,7 @@ This diagram shows the components of ADEX and its ability to distribute real-tim
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/products/adex-how-it-works.png" width="100%" height="100%" 
+    src="/assets/img/products/adex-how-it-works.png" width="100%" height="100%"
     alt="Fig 1: How ADEX works"
   />
   <figcaption>Fig 1: How ADEX works</figcaption>
@@ -113,7 +116,7 @@ Each payload should be lightweight and less than 1 MB.
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/products/adex-payload.png" width="100%" height="100%" 
+    src="/assets/img/products/adex-payload.png" width="100%" height="100%"
     alt="Fig 2: ADEX payload"
   />
   <figcaption>Fig 2: ADEX payload</figcaption>

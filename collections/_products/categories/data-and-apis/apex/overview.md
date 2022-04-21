@@ -12,6 +12,9 @@ redirect_from:
 sub_collection_render: true
 single_level_nav: true
 collection_group: [Singapore Government Tech Stack]
+sgts_collection_group: [communications]
+sgts_layer_group: [base]
+sgts_title: APEX on Prem
 description: GovTech’s APEX platform enables Singapore’s public sector to share data conveniently and securely through the use of APIs. Find out here.
 ---
 

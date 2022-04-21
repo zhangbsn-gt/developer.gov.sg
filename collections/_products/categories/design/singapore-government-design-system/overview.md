@@ -10,6 +10,9 @@ redirect_from:
     - /products/categories/design/singapore-government-design-system.html
 sub_collection_render: true
 single_level_nav: true
+sgts_collection_group: [design]
+sgts_layer_group: [services]
+sgts_title: SG Design System
 description: The Singapore Government Design System (SGDS) aims to  empower agencies to create fast, accessible, and mobile-friendly digital services.
 ---
 
@@ -56,7 +59,7 @@ There are three main use cases for SGDS:
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/sgds-fig1.png" width="85%" height="85%" 
+    src="/assets/img/sgds-fig1.png" width="85%" height="85%"
     alt="Fig 1: SGDS use cases" />
   <figcaption>Fig 1: SGDS use cases</figcaption>
 </figure>

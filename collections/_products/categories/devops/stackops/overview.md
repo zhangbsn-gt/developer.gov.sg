@@ -7,6 +7,9 @@ sub_collection_render: true
 single_level_nav: true
 _data: single-level-nav
 collection_group: [Singapore Government Tech Stack]
+sgts_collection_group: [monitoring]
+sgts_layer_group: [base]
+sgts_title: StackOps
 redirect_from:
     - /singapore-government-tech-stack/monitoring/stackops
     - /products/categories/devops/stackops/

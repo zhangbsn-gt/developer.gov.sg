@@ -7,6 +7,7 @@ redirect_from:
     - /products/categories/analytics/wogaa/getting-started.html
     - /technologies/analytics/wogaa/getting-started.html
 single_level_nav: true
+published: false
 ---
 
 ### Getting Started

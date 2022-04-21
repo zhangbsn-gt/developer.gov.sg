@@ -10,6 +10,9 @@ redirect_from:
     - /products/categories/digital-identity/corppass.html
     - /technologies/digital-identity/corppass/
     - /technologies/digital-identity/corppass.html
+sgts_collection_group: [digital_identity]
+sgts_layer_group: [services]
+sgts_title: Corppass
 description: >
   Corppass is a corporate digital identity for businesses and other entities to conduct online transactions with Government agencies.
 ---
@@ -18,7 +21,7 @@ description: >
 
 ### Overview
 
-With more services going digital, it is increasingly important for businesses and other entities such as non-profit organisations and associations to conduct online transactions (such as grant applications and filing of corporate taxes) with Government agencies in a safe and reliable manner. As the corporate arm of Singapore’s [National Digital Identity (NDI)](https://www.developer.tech.gov.sg/technologies/digital-identity/national-digital-identity.html){:target="\_blank"}, Corppass was developed to be the single G2B platform for business and other entities to conduct online transactions with government agencies. 
+With more services going digital, it is increasingly important for businesses and other entities such as non-profit organisations and associations to conduct online transactions (such as grant applications and filing of corporate taxes) with Government agencies in a safe and reliable manner. As the corporate arm of Singapore’s [National Digital Identity (NDI)](https://www.developer.tech.gov.sg/technologies/digital-identity/national-digital-identity.html){:target="\_blank"}, Corppass was developed to be the single G2B platform for business and other entities to conduct online transactions with government agencies.
 
 ### What is Corppass?
 
@@ -50,7 +53,7 @@ When the RO and the Corppass Admin are different people, the following additiona
 
 **For Foreign entities**
 
-1. The entity first needs to nominate someone to be the Corppass Admin. 
+1. The entity first needs to nominate someone to be the Corppass Admin.
 2. The chosen Corppass Admin can now register for a Corppass account [here](https://www.corppass.gov.sg/cpauth/login/homepage?URL=%2F&TAM_OP=login){:target="\_blank"}. (Click on the "Services" tab, then select "Register for Corppass".)
 
 Foreign entities can register for a Corppass account via either Singpass or Foreign ID.

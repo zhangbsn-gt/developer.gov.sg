@@ -1,0 +1,140 @@
+$section-highlights-space: 10%;
+
+@mixin sgts-li-icon($image) {
+  background-image: url($image);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  height: 20px;
+  padding-left: 24px;
+  padding-top: 0px;
+}
+
+@mixin sgts-layer-mixin($borderColor, $background-color) {
+  @include until($tablet) {
+    .sgds-container.is-fluid {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+
+    ul {
+      @include until($tablet) {
+        align-items: flex-start;
+        justify-content: space-around;
+        margin: auto;
+      }
+    }
+
+  }
+  background-color: $background-color;
+  border: 3px dashed $borderColor;
+  border-radius: 4px;
+}
+
+.live {
+  @include sgts-li-icon("/assets/icons/oval_green.svg");
+}
+
+.work_in_progress {
+  @include sgts-li-icon("/assets/icons/oval_orange.svg");
+}
+
+.planned {
+  @include sgts-li-icon("/assets/icons/oval_blue.svg");
+}
+
+.service-layer {
+  @include sgts-layer-mixin(#0161af, #e2eff8);
+}
+
+.base-layer {
+  @include sgts-layer-mixin(#0161af, #e2eff8);
+  border-bottom: none;
+}
+
+.hosting-layer {
+  @include sgts-layer-mixin(#98a2b3, #e4e7ec);
+}
+
+.card-grid-container {
+  &.sg-tech-stack {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-auto-rows: 1fr;
+    column-gap: 16px;
+    row-gap: 0;
+
+    @media screen and (max-width: 1215px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include until($tablet) {
+      grid-template-columns: 1fr;
+      grid-auto-rows: auto;
+      row-gap: 16px;
+    }
+
+    .sgds-card-header {
+      background: none;
+    }
+
+    // card header to be center in desktop view and left of mobile view
+    .sgds-card-header-title {
+      color: black;
+
+      @include until($tablet) {
+        justify-content: left;
+      }
+    }
+
+    .sgds-card-content {
+      padding: 0px 24px 24px 24px !important;
+
+      ul {
+        list-style-type: none;
+        display: grid;
+        grid-template-rows: repeat(4, min-content);
+        grid-auto-flow: column;
+
+
+        @media screen and (max-width: 768px) {
+          display: list-item;
+        }
+      }
+
+      li {
+        font-weight: bold !important;
+        list-style-type: none;
+        position: relative;
+        margin-bottom: 24px !important
+      }
+    }
+
+    //sgds-card-ul-hz, to provide horizontal UI/LI
+    .sgds-card-ul-hz {
+      a li {
+        text-decoration: underline;
+      }
+      ul {
+        justify-content: space-evenly !important;
+        flex-wrap: wrap;
+        @include until($tablet) {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+    }
+
+    .sgds-card .sgds-card-content:last-child {
+      border-top: none;
+    }
+
+    //To make the height to grow as the card have more items.
+    .sgds-card {
+      height: calc(100% - (#{$section-highlights-space} / 2));
+
+      @include until($tablet) {
+        height: auto;
+      }
+    }
+
+  }
+}

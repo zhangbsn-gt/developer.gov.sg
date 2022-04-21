@@ -10,6 +10,9 @@ redirect_from:
     - /products/categories/analytics/vas.html
     - /technologies/analytics/vas
     - /technologies/analytics/vas.html
+sgts_collection_group: [data_science]
+sgts_layer_group: [services]
+sgts_title: Video Analytics
 description: >
   VAS is a central platform that enable Government agencies to develop in-house video analytics solutions.
 bios:

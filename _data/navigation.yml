@@ -20,13 +20,13 @@
       Discover technologies to leverage on to build the next digital
       service for Singapore
 
-- title: Singapore Government Tech Stack
+- title: SG Tech Stack
   url: /singapore-government-tech-stack
   description:
     heading: Reimagine Government with code
     content: >
       Enhance developer experience for agile system delivery
-  dropdown: true
+  dropdown: false
 
 - title: Communities
   url: /communities

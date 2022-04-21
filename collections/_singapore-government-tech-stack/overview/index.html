@@ -1,153 +1,194 @@
 ---
 title: Singapore Government Tech Stack
 redirect_from:
-  - /singapore-government-tech-stack/
-  - /sgts/
+- /singapore-government-tech-stack/
+- /sgts/
 layout: layout-page-sidenav
+hide_side_nav: true
+
+sgts_service_layer:
+  analytics: null
+  digital_identity:
+    work_in_progress:
+      - Authorise
+      - Notify
+      - Sign
+  data_science:
+    work_in_progress:
+      - Transcrible
+      - GovText
+      - Fraud Detect
+  data_transfer:
+    work_in_progress:
+      - Video Exchange
+sgts_base_layer:
+  monitoring:
+    planned:
+      - Gov Cyber Sec Ops Centre
+      - Cloudscape
+    work_in_progress:
+      - Endpoint Det & Res
+  communications:
+    work_in_progress:
+      - APEX Cloud
+      - APEX Marketplace
+  runtime:
+    work_in_progress:
+      - IaC
+  service_management:
+    work_in_progress:
+      - Developer Portal
+      - SEED & TechPass
+      - TechBiz
+
 ---
 
-<h2>Introducing Singapore Government Tech Stack</h2>
+<h2>Overview</h2>
 <p>
-  To enable government agencies to build digital services quickly and
-  effectively, GovTech is developing the Singapore Government Tech Stack (SGTS),
-  a common platform that streamlines and simplifies the development process.
-  With SGTS, agencies will be able to utilise a suite of tools and services
-  hosted on a common infrastructure to ensure consistency and high quality in
-  their applications.
+  GovTech is developing the Singapore Government Tech Stack (SGTS) with a vision
+  to modernise development practice across Whole-Of-Government (WOG) to help
+  build secure systems that are responsive to constantly evolving citizens and
+  business needs. To achieve this, we need to adopt a three-pront approach:
+  <strong>People, Platform </strong>and <strong>Practice.</strong>
+<ul>
+  <li>People: We build the right capabilities and a growth mindset to adopt the
+    technology practices in our development teams.</li>
+  <li>Platform: We offer the right set of tools through SGTS for building high quality, secure systems.</li>
+  <li>Practice: We offer guidance on how to use the tools to empower the developers.</li>
+</ul>
+<img src="/assets/img/sgts/overview_sgts.svg" />
 </p>
 <div class="row is-multiline">
   <div class="col is-6-desktop is-12-tablet">
     <p>
-      A tech stack may refer to different sets of applications, depending on the
-      context. Hence, as part of our next steps in adopting cloud for
-      Whole-Of-Government (WOG), we intend to standardise the definition of SGTS
-      - a common Base Layer consisting of components such as Toolchain,
-      Communications, Runtime, Monitoring & Service Management with a clear
-      product roadmap and adoption support plan. GovTech has assembled a new
-      CODEX (Core Operations Development Environment and eXchange) team to do
-      so.
+      SGTS products are built on principles of being developer-focused, driving automation, improving observability and auditability, ensuring compliance and security by design, exposing services via APIs and using native solutions.
     </p>
-    <h3>Why SGTS?</h3>
-    <p>
-      The core focus of SGTS is to supercharge developers with agile development
-      and modernise the development practice with reusable components. Today,
-      <a
-        href="/products/categories/infrastructure-and-hosting/government-on-commercial-cloud"
-        >GCC</a
-      >
-      reduces repetition of acquiring and configuring servers, which minimises
-      set-up errors and costs. With SGTS, agencies will have access to reusable
-      components for application development, such as Runtime (e.g. deployment
-      types like containers and serverless) and Orchestration & Management
-      (e.g., CI/CD, API Gateway and Service Proxy). This will then allow
-      agencies to <strong>build less and deliver more.</strong>
-    </p>
-  </div>
-  <div class="col is-6-desktop is-12-tablet">
-    <div class="sgds-card">
-      <div class="sgds-card-content">
-        <h4>Getting to know CODEX</h4>
-        <p>
-          CODEX is a Strategic National Project for achieving Singapore’s Smart
-          Nation vision by increasing engineering productivity. The team aims to
-          drive the use of GCC
-          <a
-            href="/products/categories/infrastructure-and-hosting/government-on-commercial-cloud"
-            rel="noopener noreferrer nofollow"
-            >(Government on Commercial Cloud)</a
-          >
-          and SGTS products in WOG development, while adhering to security audit
-          and compliance. The government expects to reduce operating costs
-          overall with using highly reusable software components in a
-          collaborative environment.
-        </p>
-      </div>
-    </div>
   </div>
 </div>
-<h3>Moving Up the Line of Innovation</h3>
-<img src="/assets/img/SGTSVision.png" />
-<h3>Impact of SGTS</h3>
-<table class="table is-bordered" style="table-layout: fixed">
-  <tbody>
-    <tr>
-      <td>
-        <p><strong>Applications</strong></p>
-      </td>
-      <td>
-        <p><strong>Developers</strong></p>
-      </td>
-      <td>
-        <p><strong>Management</strong></p>
-      </td>
-    </tr>
-    <tr>
-      <td><p>Are built on reusable standardised parts</p></td>
-      <td><p>Can focus on their core business application</p></td>
-      <td>
-        <p>
-          Can meet and exceed their organisational needs to satisfy their
-          customers
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td style="word-wrap: break-word">
-        <p>Ensures policy compliance — built on standard parts</p>
-        <p>Ensures robustness — standardisation reduces errors</p>
-      </td>
-      <td style="word-wrap: break-word">
-        <p>
-          Enables agility and accommodates frequent changes in customer
-          requirements
-        </p>
-        <p>
-          Eliminates tedious and repetitive configuration and environment set-up
-          tasks
-        </p>
-        <p>
-          Allows stress-free development and deployment as bugs are discovered
-          early in CI/CD
-        </p>
-      </td>
-      <td style="word-wrap: break-word">
-        <p>
-          Delivers products quickly by gathering customer requirements and
-          improving the products incrementally
-        </p>
-        <p>Allows cost savings through software reuse</p>
-        <p>Ensures compliance to security standards</p>
-      </td>
-    </tr>
-  </tbody>
-</table>
-<h3>SGTS Product Roadmap</h3>
-<p>
-  SGTS comprises a two-layer architecture — Base Layer and Services Layer — with
-  components that make up the app development lifecycle, from set-up to going
-  live.
-</p>
+<div class="col is-12-desktop is-12-tablet padding--sm">
+  <h3>Key Objectives</h3>
+  <p>
+    SGTS aims to
+  <ol>
+    <li><strong>improve agility</strong> of app development and deployment by reducing the need for agencies to set up
+      extensive digital
+      infrastructure. It offers a more powerful development ecosystem with right tools that allows the Government and
+      vendors build code efficiently.</li>
+    <li><strong>improve quality and compliance</strong> to policy and cyber security standards by baking them into the
+      development
+      environment
+      and finding vulnerabilities early.</li>
+    <li><strong>lower the costs</strong> of development of digital services by using centrally managed common services
+      offering economies
+      of scale and
+      reducing duplication.</li>
+  </ol>
+  </p>
+</div>
+<h3>What is SGTS?</h3>
+<p>SGTS is a set of platform tools that streamlines and simplifies the development process and enables code reuse across
+  WOG to build secure, high quality applications. SGTS has a 2-layer architecture where the <strong>Base Layer</strong> focuses on
+  standardising development tools and environment and at the top, the <strong>Services Layer</strong> drives code reusability within
+  WOG.</p>
+<img src="/assets/img/sgts/sgts-layers.png " class="margin--top--xl" />
 
-<h5>Base Layer</h5>
-<img src="/assets/img/SGTSBaseLayer1.png" style="border: 2px solid #f5f5f5" />
+<h3>Singapore Government Tech Stack (SGTS)</h3>
+<div class="padding--bottom--sm">
+  <section id="service-layer" class="sgds-section service-layer">
+    <div id="service-layer-header" class="sgds-container is-fluid">
+      <div class="row">
+        <div class="col is-6">
+          <h3>Service Layer</h3>
+        </div>
+        <div id="legend" class="col is-6 legend">
+            <ul class="margin--top--none">
+              <li class="margin--top--none is-inline-block">Legend: </li>
+              <li class="live margin--top--none is-inline-block">Live</li>
+              <li class="planned margin--top--none is-inline-block">Planned</li>
+              <li class="work_in_progress margin--top--none is-inline-block">Work in progress</li>
+            </ul>
+        </div>
+      </div>
+      <!-- Start of cards for each service layer-->
+      <div class="card-grid-container sg-tech-stack">
+        <!-- TODOs: An array of object to iterate through -->
+        {% include sgts-service-layer-card.html category="analytics" header="Analytics" layer="services" card_type="sm" %}
+        {% include sgts-service-layer-card.html category="design" header="Design" layer="services" card_type="sm" %}
+        {% include sgts-service-layer-card.html category="digital_identity" header="Digital Identity" layer="services" card_type="sm" %}
+        {% include sgts-service-layer-card.html category="iot" header="IoT" layer="services" card_type="sm" %}
+        {% include sgts-service-layer-card.html category="data_science" header="Data Science" layer="services" card_type="sm" %}
+        {% include sgts-service-layer-card.html category="data_transfer" header="Data Transfer" layer="services" card_type="sm" %}
+      </div>
+    </div>
+  </section>
+</div>
 
-<h5>Services Layer</h5>
-<p>
-  The services layer comprises rapidly evolving and widely applicable, reusable
-  service components in areas including App services, Data & Analytics,
-  Identity, AI and data exchange.
+<div class="padding--top--sm">
+  <!--base-->
+  <section id="base-layer" class="sgds-section base-layer">
+    <div id="base-layer-header" class="sgds-container is-fluid">
+      <div class="row">
+        <div class="col is-6">
+          <h3>Base Layer</h3>
+        </div>
+        <div id="legend" class="col is-6">
+          <ul class="margin--top--none">
+            <li class="margin--top--none is-inline-block">Legend: </li>
+            <li class="live margin--top--none is-inline-block">Live</li>
+            <li class="planned margin--top--none is-inline-block">Planned</li>
+            <li class="work_in_progress margin--top--none is-inline-block">Work in progress</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Start of cards for each base-->
+      <!-- Start of Communtications-->
+      <div class="row">
+        <div class="col">
+          <div class="card-grid-container sg-tech-stack is-paddingless">
+            {% include sgts-service-layer-card.html category="communications" header="Communications" layer="base" card_type="lg" %}
+          </div>
+        </div>
+      </div>
+      <!-- End of Communtications-->
+      <!-- Start of Between Communications and service managment-->
+      <div class="row">
+        <div class="col">
+          <div class="card-grid-container sg-tech-stack">
+            {% include sgts-service-layer-card.html category="toolchain" header="Toolchain" layer="base" card_type="sm" %}
+            {% include sgts-service-layer-card.html category="runtime" header="Runtime" layer="base" card_type="sm" %}
+            {% include sgts-service-layer-card.html category="monitoring" header="Monitoring" layer="base" card_type="sm" %}
+          </div>
+        </div>
+      </div>
+      <!-- End of Between Communications and service managment-->
+      <!-- Start of service managment-->
+      <div class="row">
+        <div class="col">
+          <div class="card-grid-container sg-tech-stack is-paddingless">
+            {% include sgts-service-layer-card.html category="service_management" header="Service Management" layer="base" card_type="lg"
+            %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="sgds-section hosting-layer">
+    <picture>
+      <source media="(orientation: landscape)" srcset="/assets/img/sgts/hostingLayer_desktop_sgts.svg">
+      <source media="(orientation: portrait)" srcset="/assets/img/sgts/hostingLayer_mobile_sgts.svg">
+
+      <img src="/assets/img/sgts/hostingLayer_desktop_sgts.svg" width="100%" height="auto">
+    </picture>
+  </section>
+</div>
+<h3>Success Stories</h3>
+<p>More than 200 systems from 40 have already reaped the benefits of SGTS by implementing their services or applications
+  on cloud. These include time and cost savings allowing them to focus on the services and applications instead of
+  building cloud architectures.
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=cPw6l7-CAjw" target="_blank">ICA & PA’s Digital transformation journey with SGTS</a></li>
+  <li><a href="https://docs.developer.tech.gov.sg/docs/container-stack-user-guide/#/information/case-studies/moe/" target="_blank">MOE’s Digital Office</a></li>
+</ul>
 </p>
-<h3>Reaping Benefits with SGTS</h3>
-<p>
-  20 agencies, 900 users across 80 systems have already reaped the benefits of
-  SGTS by implementing their services or applications on cloud. These include
-  time and cost savings allowing them to focus on the services and applications
-  instead of building cloud architectures.
-</p>
-<p>
-  Watch Kevin KB Ng, Director of CODEX, present on
-  <a href="https://www.youtube.com/watch?v=Cg6aV1IC1jE&feature=youtu.be">SGTS during STACK 2020.</a>
-</p>
-<p>
-  <i>Get in touch with us at <a href="mailto:ask_codex@tech.gov.sg">ask_codex@tech.gov.sg</a>.</i>
-</p>
+<div>
+</div>

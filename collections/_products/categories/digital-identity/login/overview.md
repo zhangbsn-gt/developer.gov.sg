@@ -10,6 +10,9 @@ redirect_from:
     - /products/categories/digital-identity/login.html
     - /technologies/digital-identity/login/
     - /technologies/digital-identity/login.html
+sgts_collection_group: [digital_identity]
+sgts_layer_group: [services]
+sgts_title: Singpass Login
 description: >
   Login is a password-less login method for users to access public and private sector digital services using the Singpass app.
 ---
