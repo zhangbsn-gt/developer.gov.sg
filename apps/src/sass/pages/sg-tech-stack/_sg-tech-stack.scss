@@ -57,7 +57,7 @@ $section-highlights-space: 10%;
 
 .card-grid-container {
   &.sg-tech-stack {
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-auto-rows: 1fr;
     column-gap: 16px;
     row-gap: 0;
