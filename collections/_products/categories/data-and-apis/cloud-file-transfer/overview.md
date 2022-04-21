@@ -4,9 +4,9 @@ layout: layout-page-sidenav
 category: Data and APIs
 _data: single-level-nav
 redirect_from:
-    - /singapore-government-tech-stack/communications/cloud-file-transfer
     - /products/categories/data-and-apis/cloud-file-transfer/
     - /products/categories/data-and-apis/cloud-file-transfer.html
+    - /singapore-government-tech-stack/communications/cloud-file-transfer
     - /technologies/data-and-apis/cloud-file-transfer/
     - /technologies/data-and-apis/cloud-file-transfer.html
 sub_collection_render: true
