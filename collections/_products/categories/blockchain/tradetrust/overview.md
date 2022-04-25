@@ -5,6 +5,7 @@ category: Blockchain
 _data: single-level-nav
 sub_collection_render: true
 single_level_nav: true
+collection_group: [What's New]
 description: TradeTrust is a blockchain based interoperability framework for the exchange of digital trade documentation between trading partners such as governments and businesses.
 ---
 

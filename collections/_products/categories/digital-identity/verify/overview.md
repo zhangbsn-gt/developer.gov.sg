@@ -13,6 +13,7 @@ redirect_from:
 sgts_collection_group: [digital_identity]
 sgts_layer_group: [services]
 sgts_title: Verify
+collection_group: [Singapore Government Tech Stack]
 description: >
   Verify enables users to securely perform in-person identity verification and data sharing, through scanning of QR codes with their Singpass app.
 ---

@@ -6,6 +6,23 @@
     - APEX
     - Cloud File Transfer
     - Container Stack
-    - Government on Commercial Cloud
+    - Corppass
+    - DECADA IoT Tech Stack
+    - Identiface
+    - Login
+    - Myinfo
+    - Personalise
     - SHIP-HATS
+    - Singapore Government Design System
     - StackOps
+    - VAS
+    - Verify
+    - WOGAA
+
+- name: What's New
+  description: Discover the latest product additions to the Singapore Government Developer Portal here
+  items:
+    - Overview
+    - Cloud File Transfer
+    - OurSG
+    - TradeTrust

@@ -13,6 +13,7 @@ redirect_from:
 sgts_collection_group: [digital_identity]
 sgts_layer_group: [services]
 sgts_title: Identiface
+collection_group: [Singapore Government Tech Stack]
 description: >
   Identiface is a secure authentication method where users verify their identities through facial scanning.
 ---

@@ -13,6 +13,7 @@ redirect_from:
 sgts_collection_group: [digital_identity]
 sgts_layer_group: [services]
 sgts_title: MyInfo
+collection_group: [Singapore Government Tech Stack]
 description: >
   Myinfo is a “Tell Us Once” service that pre-fills personal data retrieved from government sources for online transactions.
 ---

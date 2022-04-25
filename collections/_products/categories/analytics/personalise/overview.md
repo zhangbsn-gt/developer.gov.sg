@@ -14,6 +14,7 @@ single_level_nav: true
 sgts_collection_group: [analytics]
 sgts_layer_group: [services]
 sgts_title: Personalise
+collection_group: [Singapore Government Tech Stack]
 description: Personalise consists of email and web personalisation tools that help agencies better analyse user behaviours and provide tailored experiences to individuals.
 ---
 

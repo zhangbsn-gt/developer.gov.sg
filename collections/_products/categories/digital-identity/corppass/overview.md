@@ -13,6 +13,7 @@ redirect_from:
 sgts_collection_group: [digital_identity]
 sgts_layer_group: [services]
 sgts_title: Corppass
+collection_group: [Singapore Government Tech Stack]
 description: >
   Corppass is a corporate digital identity for businesses and other entities to conduct online transactions with Government agencies.
 ---
