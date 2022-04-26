@@ -9,7 +9,7 @@ collection_group: [What's New]
 description: TradeTrust is a blockchain based interoperability framework for the exchange of digital trade documentation between trading partners such as governments and businesses.
 ---
 
-![TradeTrust header banner](/assets/img/products/TradeTrust-HeaderBanner.png)
+![TradeTrust header banner](/assets/img/tradetrust-header-banner.png)
 
 TradeTrust is a blockchain based interoperability framework between digitally connected trading partners such as governments and businesses for the exchange of digital trade documentation. This allows for secure and efficient trading of digital documentations globally. It is open to all stakeholders involved in cross-border trade and logistics documentation processes, such as shipping lines, shippers/consignees, logistics service providers, financial institutions providing trade financing services, trade and logistics related platform providers and overseas government authorities involved in cross-border shipment clearances.
 
