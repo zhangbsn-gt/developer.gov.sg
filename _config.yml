@@ -4,7 +4,7 @@ timezone: Asia/Singapore
 # SEO; see https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 title: Singapore Government Developer Portal
 description: >
-  The Singapore Government Developer Portal is a one-stop resource hub for Government digital services and products.
+  The Singapore Government Developer Portal is a one-stop resource hub for government digital products and services.
 # url: "https://www.developer.tech.gov.sg" # Need to disable this to have jekyll-redirect-from not obey site.url
 logo: /assets/img/logo_developer.gov.sg.png
 search_placeholder: Search
