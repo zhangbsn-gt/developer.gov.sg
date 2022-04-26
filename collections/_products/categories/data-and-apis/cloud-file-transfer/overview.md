@@ -18,7 +18,7 @@ sgts_title: Cloud File Transfer
 description: CFT is an API-driven Managed File Transfer service that enables agencies to conduct secure and compliant cross-zone file transfer
 ---
 
-![Cloud File Transfer Singapore Government Developer Portal](/assets/img/products/CFT-DevPortalHeaderBanner.png)
+![Cloud File Transfer Singapore Government Developer Portal](/assets/img/cft-header-banner.png)
 
 CFT is a centralised, fully managed, API-driven file transfer service for the Singapore Government agencies. Hosted on the [Government on Commercial Cloud (GCC)](/products/categories/infrastructure-and-hosting/government-on-commercial-cloud/overview.html){:target="_balnk"}, it enables public officers to automate file exchanges with the whole-of-government (WOG) network, business partners and vendors across the Internet and Intranet. CFT forms a part of the Service Layer in the [Singapore Government Tech Stack (SGTS)](/singapore-government-tech-stack/overview/){:target="_blank"}, which improves the quality, speed and agility of software development through code reuse.
 
@@ -30,16 +30,9 @@ File transfers in CFT can be understood using the airport luggage screening proc
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/cft-airport-animation.gif" width="70%" height="70%"
-	alt="Fig 1: Understanding CFT's file transfer workflow via the airport luggage screening analogy"
+    src="/assets/img/CFT-Airport_Animation.gif" width="70%" height="70%"
   />
-  <figcaption>Fig 1: Understanding CFT's file transfer workflow via the airport luggage screening analogy</figcaption>
-</figure>
-
-<figure style="text-align: center">
-  <img
-    src="/assets/img/cft-luggage-analogy.png"
-  />
+	  <figcaption>Fig 1: Understanding CFT's file transfer workflow via the airport luggage screening analogy</figcaption>
 </figure>
 
 ### Key Features
