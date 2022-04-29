@@ -25,6 +25,7 @@ $section-highlights-space: 10%;
     }
 
   }
+
   background-color: $background-color;
   border: 3px dashed $borderColor;
   border-radius: 4px;
@@ -45,23 +46,41 @@ $section-highlights-space: 10%;
 .legend {
   align-items: center;
 
+  @media screen and (min-width: 769px){
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  @media screen and (min-width: 551px) and (max-width: 768px) {
+    justify-content: flex-start;
+  }
+
   .live {
     margin-left: 7px;
   }
-
-  .planned,
-  .work_in_progress {
-    @media screen and (max-width: 915px) {
-      margin-left: 12px;
+  .planned {
+    @media screen and (max-width: 319px) {
+      margin-left: 70px !important;
     }
-
-    margin-left: 24px;
+    @media screen and (min-width: 320px) and (max-width: 360px) {
+      margin-left: 4px;
+    }
+    // For Desktop View
+      margin-left: 24px;
   }
 
-  @include until($tablet) {
-    .work_in_progress {
+  .work_in_progress {
+    @media screen and (min-width: 280px) and (max-width: 550px) {
       margin-left: 70px;
     }
+    @media screen and (min-width: 551px) and (max-width: 768px) {
+      margin-left: 24px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1215px) {
+      margin-left: 70px;
+    }
+    // For Desktop View
+      margin-left: 24px;
   }
 }
 
@@ -76,6 +95,62 @@ $section-highlights-space: 10%;
 
 .hosting-layer {
   @include sgts-layer-mixin(#98a2b3, #e4e7ec);
+  padding-top: 22px;
+  padding-bottom: 31px;
+
+  .row {
+    justify-content: space-between;
+  }
+
+  .host-rows {
+    @include until($desktop) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      row-gap: 42px;
+    }
+
+    .sub-host-rows {
+      @include until($desktop) {
+        display: flex;
+        flex-direction: column;
+        width: calc(100% - (#{$section-highlights-space} / 2));
+
+      }
+    }
+  }
+
+  .title-col {
+    padding-left: 674px !important; 
+
+    @media screen and (min-width: 1024px) and (max-width: 1215px) {
+      padding-left: 346px !important; 
+    }
+    @media screen and (min-width: 1216px) and (max-width: 1407px) {
+      padding-left: 500px !important; 
+    }
+    @include until($desktop) {
+      padding-left: 0px !important;
+      margin-bottom: -35px !important;
+    }
+
+  }
+
+  .width {
+    width: auto !important;
+  }
+
+  .host-box {
+    width: auto;
+    border: 1px solid #667085;
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: #667085;
+  }
+
+  p {
+    color: #667085;
+  }
 }
 
 .card-grid-container {
@@ -107,6 +182,9 @@ $section-highlights-space: 10%;
         justify-content: left !important;
         padding-left: 24px;
       }
+      @media screen and (min-width: 280px) and (max-width: 319px) {
+        padding-left: 5px;
+        }
     }
 
     .sgds-card-content {
@@ -128,7 +206,11 @@ $section-highlights-space: 10%;
         font-weight: bold !important;
         list-style-type: none;
         position: relative;
-        margin-bottom: 24px !important
+        margin-bottom: 24px !important;
+        //Mobile Size below iphone SE (226px)
+        @media screen and (max-width: 330px) {
+          margin-bottom: 30px !important;
+        }
       }
     }
 
@@ -137,9 +219,11 @@ $section-highlights-space: 10%;
       a li {
         text-decoration: underline;
       }
+
       ul {
         justify-content: space-evenly !important;
         flex-wrap: wrap;
+
         @media screen and (max-width: 900px) {
           flex-direction: column;
           align-items: flex-start;

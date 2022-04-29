@@ -108,7 +108,7 @@ sgts_base_layer:
         <div class="col is-6-desktop is-4-tablet">
           <h3>Service Layer</h3>
         </div>
-        <div id="legend" class="col is-6-desktop is-8-tablet legend is-flex is-flex-justify-fe ">
+        <div id="legend" class="col is-6-desktop is-8-tablet legend">
             <ul class="margin--top--none">
               <li class="margin--top--none is-inline-block">Legend: </li>
               <li class="live margin--top--none is-inline-block">Live</li>
@@ -180,13 +180,33 @@ sgts_base_layer:
       </div>
     </div>
   </section>
-  <section class="sgds-section hosting-layer">
-    <picture>
-      <source media="(orientation: landscape)" srcset="/assets/img/sgts/hostingLayer_desktop_sgts.svg">
-      <source media="(orientation: portrait)" srcset="/assets/img/sgts/hostingLayer_mobile_sgts.svg">
-
-      <img src="/assets/img/sgts/hostingLayer_desktop_sgts.svg" width="100%" height="auto">
-    </picture>
+  <section id="hosting-layer" class="sgds-section hosting-layer">
+      <div id="hosting-layer-header" class="sgds-container is-fluid">
+        <div class="row margin--bottom--none">
+          <div class="col is-6-desktop is-4-tablet">
+            <h3>Hosting</h3>
+          </div>
+        </div>
+        <div class="row is-paddingless is-marginless is-hidden-mobile is-hidden-tablet-only">
+            <div class="col is-paddingless title-col"><p class="has-text-weight-bold">WoG Services</p></div>
+        </div>
+        <div class="row is-paddingless is-marginless host-rows">
+          <div class="col is-2-desktop is-paddingless host-box is-flex" >
+            <div class="col width"><p class="has-text-weight-bold">On premise</p></div>
+          </div>
+          <div class="col is-2-desktop is-paddingless host-box sub-host-rows is-flex">
+            <div class="col width"><p class="has-text-weight-bold">Gov on Commercial Cloud</p></div>
+          </div>
+          <div class="is-paddingless is-marginless is-hidden-desktop title-col">
+              <p class="has-text-weight-bold">WoG Services</p>
+          </div>
+          <div class="col is-8-desktop is-6-tablet is-paddingless host-box sub-host-rows is-flex">
+            <div class="col is-2-desktop width"><p class="has-text-weight-bold">WoG (A) AD</p></div>
+            <div class="col is-5-desktop width"><p class="has-text-weight-bold">Priviledged Access</p></div>
+            <div class="col is-5-desktop width"><p class="has-text-weight-bold">Secrets Manager</p></div>
+           </div>
+        </div>
+      </div>
   </section>
 </div>
 <h3>Success Stories</h3>
