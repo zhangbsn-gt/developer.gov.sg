@@ -1,0 +1,205 @@
+---
+title: STACK-X Data Science Connect
+layout: layout-page-sidenav
+description: >
+ Stack-X Cloud is a one-day conference for developers and IT leaders to learn about the lates enhancements for GCC with practical lessons on cloud adoption
+---
+
+<style>
+  .speaker-list {
+    margin-top: 2rem;
+  }
+  .speaker-list > .row {
+    margin-bottom: 2rem;
+  }
+  .tab-content figure {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media (max-width: 768px) {
+    .tab-content figure {
+      max-width: 33%;
+    }
+  }
+</style>
+
+<figure>
+  <img
+    src="/assets/img/stack-x-dsc-jul22-header-banner.png"
+    alt="Stack-X Cloud"
+  />
+</figure>
+
+<p>
+  This July, we're bringing you a 2-day virtual conference where you can learn how the Singapore Government is driving data transformation and delivering public good through the use of Data Science and AI.
+</p>
+<p>
+  Be inspired by real use cases from government and industry speakers. Plus, discover collaboration opportunities available for government agencies and industry players.
+</p>
+<p>
+<strong>
+    <a
+      class="sgds-button is-primary"
+      href="https://go.gov.sg/stack-x-datascienceconnect" target="_blank"
+      >Register Now</a
+    >
+  </strong>
+</p>
+
+<section>
+  <h4>Who should attend?</h4>
+  <p>We welcome data and tech professionals such as Agency CIOs and IT Directors, Project Managers, Business Analysts, Developers and Solution Architects from Government Agencies and industry to join us for this conference.</p>
+
+</section>
+<br />
+
+<section class="col is-boxed">
+  <h4>Event details</h4>
+  <b>7 July 2022, Thursday</b>
+  <p>Sessions:</p>
+ <div class="row is-multiline">
+    <div class="col is-4">
+      <p>09:30 AM - 11:30 AM</p>
+    </div>
+    <div class="col is-8">
+      <p>Welcome Remarks and Keynotes</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col is-4">
+      <p>1:30 PM - 2:00 PM</p>
+    </div>
+    <div class="col is-8">
+      <p>Afternoon Keynote</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col is-4">
+      <p>2:00 PM - 5:00 PM</p>
+    </div>
+    <div class="col is-8">
+      <p>Afternoon Concurrent Tracks: (1) Data Science & Data Transformation, (2) Data Products & Data Engineering, (3) AI Applications and Video Analytics</p>
+    </div>
+  </div>
+  <p></p>
+  <b>8 July 2022, Friday</b>
+  <p>Day 2's event agenda will be confirmed soon. Stay tuned for more updates!</p>
+<!-- <div class="row is-multiline">
+    <div class="col is-4">
+      <p>09:30 AM - 11:30 AM</p>
+    </div>
+    <div class="col is-8">
+      <p>Keynotes</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col is-4">
+      <p>1:30 PM - 3:30 PM</p>
+    </div>
+    <div class="col is-8">
+      <p>Day 2's event agenda will be confirmed soon. Stay tuned for more updates!</p>
+    </div>
+  </div>-->
+  <p>
+    Virtual sessions on Zoom
+  </p>
+</section>
+<br />
+<p>
+  <strong>
+    <a
+      class="sgds-button is-primary"
+      href="https://go.gov.sg/stack-x-datascienceconnect" target="_blank"
+      >Register Now</a
+    >
+  </strong>
+</p>
+<section>
+  <br />
+  <h4>Programme</h4>
+</section>
+
+<div class="sgds-tabs">
+  <ul class="no-margin" role="tablist">
+    <li class="is-active">
+      <a data-tab="#tab1" role="tab" aria-selected="true" aria-controls="tab1">
+        Day 1
+      </a>
+    </li>
+    <li>
+      <a data-tab="#tab2" role="tab" aria-selected="false" aria-controls="tab2">
+        Day 2
+      </a>
+    </li>
+  </ul>
+</div>
+{% assign keynotes = site.data.stackx2022dsc | where_exp: "item", "item.type contains 'Keynote'" %}
+{% assign datatransformation = site.data.stackx2022dsc | where_exp: "item", "item.type contains 'Datatransformation'" %}
+{% assign dataengineering = site.data.stackx2022dsc | where_exp: "item", "item.type contains 'Dataengineering'" %}
+{% assign videoanalytics = site.data.stackx2022dsc | where_exp: "item", "item.type contains 'Videoanalytics'" %}
+
+<div class="tab-content" id="tab1">
+	<h4>7 July 2022</h4>
+	<p>Virtual Conference: Zoom Webinar</p>
+	
+    <h6>Keynotes</h6>
+    {% include_relative includes/stack-x-dsc-2022-itinerary.html itinerary=keynotes %}
+
+	<br />
+	<p></p>
+    <h5>Afternoon Tracks (With Live Q&A)</h5>
+    <p>
+      In the afternoon, we have an exciting line-up of speakers across 3 concurrent tracks. These tracks will be led by technical experts on topics such as Data Transformation, Data Products, Data Engineering, AI Applications and Video Analytics.
+    </p>
+    <p>
+      Each track will run from 2:00 PM - 5 :00 PM and offer attendees the opportunity to interact with speakers through live Q&A sessions. Find out more about each track below.
+    </p>
+
+	<p></p>
+    <h6>Track 1: Data Science & Data Transformation</h6>
+    <p>
+      Join this track to learn how Government agencies are tackling challenges when it comes to Data Science and Data Transformation at the organisational level. Speakers will be sharing on some of the best practices they have adopted as transformation enablers.
+    </p>  
+    {% include_relative includes/stack-x-dsc-2022-itinerary.html itinerary=datatransformation %}
+
+	<br />
+	<p></p>
+    <h6>Track 2: Data Products & Data Engineering</h6>
+    <p>
+      Join this track if you are interested to know how the Government is partnering with industry to democratise the use of data for public good. Speakers will share on the suite of central platform, data infrastructure and engineering capabilities they have developed in accordance with data  governance policies.
+    </p>  
+    {% include_relative includes/stack-x-dsc-2022-itinerary.html itinerary=dataengineering %}
+
+	<br />
+	<p></p>
+    <h6>Track 3: AI Applications and Video Analytics Track</h6>
+    <p>
+      Join this track to find out about different AI approaches that private companies and government have adopted, and discover the range of AI applications and solutions available.
+    </p>  
+    {% include_relative includes/stack-x-dsc-2022-itinerary.html itinerary=videoanalytics %}	
+</div>
+
+<div class="tab-content" id="tab2">
+  <h5>8 July 2022</h5>
+  <p>Virtual Conference: Zoom Webinar</p>
+
+  <h6>Day 2's event agenda will be confirmed soon. Stay tuned for more updates!</h6>
+
+</div>
+
+<p></p>
+<p>
+<strong>
+    <a
+      class="sgds-button is-primary"
+      href="https://go.gov.sg/stack-x-datascienceconnect" target="_blank"
+      >Register Now</a
+    >
+  </strong>
+</p>
+
+<p></p>
+  <p>
+   Have a question? Drop us an email at <strong>stackxdsc@twistmedia.sg</strong>
+  </p>

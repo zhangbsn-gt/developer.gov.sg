@@ -1,0 +1,205 @@
+# Keynotes
+- type: Keynote
+  timeslot: 09:30 AM - 09:40 AM
+  title: Welcome Remarks
+  desc:
+  speakers: 
+    - name: Mr Chng Kai Fong
+      image: /assets/img/photos/chng-kai-fong.png
+      title: Second Permanent Secretary of The Smart Nation and Digital Government Group (SNDGG)
+
+- type: Keynote
+  timeslot: 09:40 AM - 09:50 AM
+  title: How Data Science & AI shapes modernisation in the Singapore Government
+  desc:
+  speakers:
+    - name: Chan Cheow Hoe
+      image: /assets/img/photos/chan-cheow-hoe.png
+      title: Government Chief Digital Technology Officer, SNDGO & Deputy Chief Executive, GovTech
+
+- type: Keynote
+  timeslot: 09:50 AM - 10:20 AM
+  title: Charting out Data Science and AI capabilities for the Government
+  desc:
+  speakers: 
+    - name: Jason See
+      image: /assets/img/photos/jason-see.png
+      title: Senior Director, Data Science & Artificial Intelligence Division (DSAID), GovTech
+
+- type: Keynote
+  timeslot: 10:20 AM - 11:00 AM
+  title: 'Beyond Singapore Government: Harnessing the value of Data and AI'
+  desc:
+  speakers: 
+    - name: Jane Wiseman
+      image: /assets/img/photos/jane-wiseman.png
+      title: Chief Executive Officer, Institute for Excellence in Government​
+
+- type: Keynote
+  timeslot: 11:00 AM - 11:30 AM
+  title: 'Harnessing the value of data and AI in Hulu'
+  desc:
+  speakers: 
+    - name: Jaya Kolhatkar
+      image: /assets/img/photos/blank-photo.png
+      title: Chief Data Officer, Hulu LLC
+
+- type: Keynote
+  timeslot: 1:30 PM - 2:00 PM
+  title: The 3Ds of MOM's data culture
+  desc: 'This presentation gives an overview of MOM’s data strategy and data culture that support its transformation efforts'
+  speakers: 
+    - name: DS Poon Hong Yuen
+      image: /assets/img/photos/poon-hong-yuen.png
+      title: Deputy Secretary (Workforce), Ministry of Manpower
+    
+# Data Science and Data Transformation
+#- type: Datatransformation
+#  timeslot: 1:30 PM - 2:00 PM
+#  title: Within the Singapore Government - Harnessing the valuie of Data and AI in manpower
+#  desc:
+#  speakers: 
+#    - name: Poon Hong Yuen
+#      image: /assets/img/photos/poon-hong-yuen.png
+#      title: Deputy Secretary, Ministry of Manpower
+      
+- type: Datatransformation
+  timeslot: 2:00 PM - 2:30 PM
+  title: Analytics by Design
+  desc: Analytics-readiness is something that all projects should have on Day 1 of its launch. The key to that is to avoid analytics debt. The data collected from policy implementations, or programme executions should address questions that will help finetune refinements down the road. The data generated from products and platforms should help inform how well it is working, and what new features to build, or what to tweak. But this is often not the reality. Many projects face challenges with analytics downstream, potentially leading to disappointments from both from the business side, as well as the data science practitioners. In this sharing, the speaker will share more about Analytics By Design, which is a methodology that GovTech had mooted, and is piloting internally.
+  speakers: 
+    - name: Joseph Tan
+      image: /assets/img/photos/joseph-tan.png
+      title: Deputy Director, Data Science & Artificial Intelligence Division (DSAID), GovTech
+
+- type: Datatransformation
+  timeslot: 2:30 PM - 3:00 PM
+  title: Supporting agency data transformation by proliferating data driven decision making​
+  desc: This presentation gives an overview of how DSAID's Quantitative Strategy team has been actively supporting WOG data transformation by proliferating data-driven decision making in agencies. We will share about some of the high impact projects that the team has delivered over the years, covering a wide range of business domains, use cases and techniques. We will also discuss our philosophy, approach and methodology of using data and analytics and how we customise our service offering based on agency needs and data maturity to drive sustainable impact.
+  speakers: 
+    - name: Dr. Feng Yuzhang
+      image: /assets/img/photos/fang-yuzhang.png
+      title: Director, Data Science & Artificial Intelligence Division (DSAID), GovTech
+    - name: Ann Wei Ling
+      image: /assets/img/photos/ann-wei-ling.png
+      title: Senior Data Scientist, Data Science & Artificial Intelligence Division (DSAID), GovTech
+
+- type: Datatransformation
+  timeslot: 3:00 PM - 3:30 PM
+  title: Our Playbook to Data Transformation​
+  desc: We have started the journey to transform GovTech into a model data analytics-ready organisation that is exemplary in the use of data! This presentation will give an introduction on GovTech’s Data Strategy and the various enablers that have been put in place to empower GovTechies to make use of data to improve their operations and gain insights for policy making.
+  speakers: 
+    - name: Lim Hock Chuan
+      image: /assets/img/photos/lim-hock-chuan.png
+      title: Assistant Director, Data Science & Artificial Intelligence Division (DSAID), GovTech
+    - name: Le-Anne Lee
+      image: /assets/img/photos/le-anne-lee.png
+      title: Manager, Data Science & Artificial Intelligence Division (DSAID), GovTech
+
+# Data Products and Data Engineering
+#- type: Dataengineering
+#  timeslot: 1:30 PM - 2:00 PM
+#  title:
+#  desc:
+#  speakers: 
+#    - name: Poon Hong Yuen
+#      image: /assets/img/photos/poon-hong-yuen.png
+#      title: Deputy Secretary, Ministry of Manpower
+
+- type: Dataengineering
+  timeslot: 2:00 PM - 2:30 PM
+  title: Trusted Centre Sensors​
+  desc: 'This brief discusses how we have enabled user-centric data sharing, concierge services and self-help exploitation of sensor domain core data in our of the four Trusted Centres under the Government Data Architecture: 1) Foundational governance underpinning our approach to data request flow; 2) Importance of leveraging on an enterprise identity provider store (IdP) and its influence on our data fabric; 3) Enabling user-led discovery and exploitation with Databricks.'
+  speakers: 
+    - name: Edwin Seah
+      image: /assets/img/photos/edwin-seah.png
+      title: Deputy Director/ Principal Product Manager, Data Science & Artificial Intelligence Division (DSAID), GovTech
+      
+#- type: Dataengineering
+#  timeslot: 2:30 PM - 3:00 PM
+#  title: Data Bricks
+#  desc:
+#  speakers: 
+#    - name:
+#      image:
+#      title:
+
+- type: Dataengineering
+  timeslot: 3:00 PM - 3:30 PM
+  title: X Strategies you wish you knew before starting a Data Engineering Project
+  desc: Data engineering strategy cultivates organizations to plan out their successful data journey. DSAID’s Data Engineering team has been single-minded in our mission to develop central platforms to support data sharing, analytics and data engineering capabilities, as well as partnering agencies to co-create critical data infrastructure and uplift their in-house data engineering capabilities. In this talk, we will cover components of the data engineering strategy which includes knowing the right processes & data, relevant tools & techniques, latest technology & infrastructure as well as some of our exciting work-in-progress.
+  speakers: 
+    - name: Yap Ghim Eng
+      image: /assets/img/photos/yap-ghim-eng.png
+      title: Deputy Director, Data Science & Artificial Intelligence Division (DSAID), GovTech
+    - name: Melissa Yeo
+      image: /assets/img/photos/melissa-yeo.png
+      title: Engineering Manager, Data Science & Artificial Intelligence Division (DSAID), GovTech
+
+- type: Dataengineering
+  timeslot: 3:30 PM - 4:00 PM
+  title: 'Accelerating the Machine Learning model lifecycle: data quality and state of the art models'
+  desc:
+  speakers: 
+    - name: Alessandro Cerè
+      image: /assets/img/photos/alessandro-cere.png 
+      title: Specialist Solution Architect, AWS
+
+# AI Applications and Video Analytics
+#- type: Videoanalytics
+#  timeslot: 1:30 PM - 2:00 PM
+#  title:
+#  desc:
+#  speakers: 
+#    - name: Poon Hong Yuen
+#      image: /assets/img/photos/poon-hong-yuen.png
+#      title: Deputy Secretary, Ministry of Manpower
+
+- type: Videoanalytics
+  timeslot: 2:00 PM - 2:30 PM
+  title: AI for the public good – Moving from Hype to real applications
+  desc: This presentation gives an overview of the Artificial Intelligence (AI) projects Govtech has done for various agencies as well as the approach taken in supporting government AI use cases. In Singapore, AI is applied in a variety of uses cases, ranging from policy to ops work. Examples include text analytics, speech to text, fraud detection, and video analytics. Essentially GovTech aims to excite officers on the possibilities of AI and get them to think of how they can apply AI to the domain problems they have at hand.
+  speakers: 
+    - name: Alvina Goh
+      image: /assets/img/photos/alvina-goh.png
+      title: Director, Data Science & Artificial Intelligence Division (DSAID), GovTech
+      
+- type: Videoanalytics
+  timeslot: 2:30 PM - 3:00 PM
+  title: 'From multiple deployments to multi-billion dollar savings: How to scale AI across the government with Automated Machine Learning'
+  desc:
+  speakers: 
+    - name: Chandler Mccann
+      image: /assets/img/photos/chandler-mccann.png
+      title: Vice President, FED/SLED/MED Data Science Practice, DataRobot
+
+- type: Videoanalytics
+  timeslot: 3:00 PM - 3:30 PM
+  title: Working with industry to accelerate development of AI-enabled solutions
+  desc: The benefits of AI are widely known today. Increased interest among business users to adopt AI-enabled solutions is pushing the technology’s frontier on a daily basis. The rate of innovation and translation in this space is fast, and advancements in AI are being rapidly productized for commercial applications. An example is AI in the field of Video Analytics. Learn how the VA team at GovTech collaborate with industry to keep pace with advancements in AI and develop solutions for public sector agencies.
+  speakers: 
+    - name: Henry Lim
+      image: /assets/img/vas-henry.png
+      title: Lead Product Manager, Data Science & Artificial Intelligence Division (DSAID), GovTech
+    - name: Tan Congyuan
+      image: /assets/img/photos/tan-congyuan.png
+      title: Senior Manager, Data Science & Artificial Intelligence Division (DSAID), GovTech
+    - name: Dr. Li Guangda
+      image: /assets/img/photos/li-guangda.png
+      title: Co-founder and Chief Technology Officer, ViSenze
+      
+- type: Videoanalytics
+  timeslot: 3:30 PM - 4:00 PM
+  title: Towards a comparable metric for AI model interpretability in Computer Vision
+  desc: The Video Analytics (VA) team builds deep learning models to address specific public sector use cases. As Deep Learning models become more advanced with increasing complexity, the need for model interpretability has come into greater focus. Understanding features that contribute to a Deep Learning model's output helps AI Engineers design better models and troubleshooting. There are methods known today to help with Deep Learning model interpretability, such as those requiring visual explanations on local prediction instances. But we aspire to create a global metric to quantify explainability. Find out how we are doing this in our collaboration with Meta/PyTorch.
+  speakers: 
+    - name: Jessica Foo
+      image: /assets/img/photos/jessica-foo.png
+      title: Associate AI Engineer, Data Science & Artificial Intelligence Division (DSAID), GovTech
+    - name: Howard Yang
+      image: /assets/img/photos/howard-yang.png
+      title: Associate AI Engineer, Data Science & Artificial Intelligence Division (DSAID), GovTech
+    - name: Dr. Matthias Reso
+      image: /assets/img/photos/matthias-reso.png
+      title: Partner Engineer, AI, PyTorch, Meta
+ 
