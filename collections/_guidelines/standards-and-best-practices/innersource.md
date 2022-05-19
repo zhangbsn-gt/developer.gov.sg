@@ -36,7 +36,7 @@ SHIP-HATS is open for onboarding by all government officers. To initiate onboard
 ### Standards, Guidelines and Assessment Criteria
 
 For government project teams that are keen to InnerSource their projects, the following criteria can be considered:
-- Whether the code is reusable or contains shared information for adaptation and learning by other projects. For example, this may include modular components with customisable parameters that allow for adaptation and integration into the software code of other projects and the presence of documentation. This will allow developer communities to learn how to use the software module, modify the code and contribute enhancements to the nnersource code repository.
+- Whether the code is reusable or contains shared information for adaptation and learning by other projects. For example, this may include modular components with customisable parameters that allow for adaptation and integration into the software code of other projects and the presence of documentation. This will allow developer communities to learn how to use the software module, modify the code and contribute enhancements to the innersourced code repository.
 - If it will be more useful to share smaller components instead of an entire project. There is benefit in sharing both if resources allow it.
 - Whether the project contains classified code with restricted access and cannot be shared or reused.
 - If the project code is free of IP ownership restrictions and can be licensed under a permissive government license.
