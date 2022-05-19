@@ -31,7 +31,7 @@ InnerSource is applicable and encouraged for all government software engineers a
 
 Onboarding of SHIP-HATS is recommended for government officers and vendors to initiate InnerSource. This is because SHIP-HATS is the primary platform for government developers and vendors to host their code repositories, track issues and collaboratively share project documentation. Access to the SHIP-HATS code repository platform allows software engineers to find properly tagged InnerSource code repositories, clone and integrate the innersourced code into their projects, as well as write and contribute enhancements and modifications back to the InnerSource code repository. To identify InnerSource projects, look out for the InnerSource label in the SHIP-HATS repository.
  
-SHIP-HATS is open for onboarding by all government officers. To initiate onboarding, officers can fill up this form. For vendors, a government agency must extend SHIP-HATs subscription to an assigned vendor before access can be granted.
+SHIP-HATS is open for onboarding by all government officers. To initiate onboarding, officers can fill up [this form](https://form.gov.sg/#!/62280856ba91100012050933){:target="_blank"}. For vendors, a government agency must extend SHIP-HATs subscription to an assigned vendor before access can be granted.
 
 ### Standards, Guidelines and Assessment Criteria
 
@@ -61,5 +61,5 @@ More updates on InnerSource will be shared when the enhanced SHIP-HATs platform 
 
 ### Contact Information
 
-To find out more about WOG InnerSource, reach out to us through this [form]( https://form.gov.sg/#!/62280856ba91100012050933){:target="_blank"}.
+To find out more about WOG InnerSource, reach out to us through this [form](https://form.gov.sg/#!/62280856ba91100012050933){:target="_blank"}.
 
