@@ -1,0 +1,15 @@
+# From .gitignore
+node_modules
+*.env
+.env*
+
+_site/
+
+.jekyll-cache/
+
+.vscode/*
+!.vscode/launch.json
+test_scripts
+.eslintcache
+
+Gemfile.lock

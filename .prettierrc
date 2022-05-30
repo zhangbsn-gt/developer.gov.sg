@@ -1,0 +1,22 @@
+{
+  "arrowParens": "avoid",
+  "useTabs": false,
+  "quoteProps": "consistent",
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true,
+  "printWidth": 80,
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
+      "options": {
+        "singleQuote": false
+      }
+    },
+    {
+      "files": ["*.md"],
+      "options": {
+        "proseWrap": "never"
+      }
+    }
+  ]
+}

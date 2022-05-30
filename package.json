@@ -33,6 +33,7 @@
     "mini-css-extract-plugin": "^0.8.2",
     "mocha": "^10.0.0",
     "noty": "^3.2.0-beta",
+    "prettier": "^2.6.2",
     "sanitize-html": "^2.3.3",
     "sass": "^1.30.0",
     "sass-loader": "^8.0.0",
@@ -53,7 +54,7 @@
   },
   "dependencies": {
     "@vue/composition-api": "^1.4.6",
-    "swiper": "^6.7.0",
+    "swiper": "^8.1.6",
     "tippy.js": "^6.3.1"
   }
 }
