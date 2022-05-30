@@ -30,7 +30,7 @@ Myinfo allows residents and businesses to benefit from:
 - Reduced incidence of mistakes due to human error; and
 - No more need for physical documents as verification to complete transactions.
 
-For more information on Myinfo API, please read the [documentation](https://api.singpass.gov.sg/library/myinfo/business/introduction).
+For more information on Myinfo API, please read the [documentation](https://api.singpass.gov.sg/library/myinfo/business/introduction){:target="_blank"}. You can also visit our Myinfo product page through this [link](https://www.developer.tech.gov.sg/products/categories/digital-identity/myinfo/overview.html){:target="_blank"}. 
 
 ### Myinfo business
 
@@ -40,7 +40,7 @@ Business users can control and consent to share their data securely with partici
 
 While Myinfo allows businesses to acquire individual customers in a more seamless way, Myinfo business supports Business-to-business (B2B) use cases such as SME loan application, merchant acquisition and KYC.
 
-For more information on Myinfo business API, please read the [documentation](https://api.singpass.gov.sg/library/myinfobiz/business/introduction).
+For more information on Myinfo business API, please read the [documentation](https://api.singpass.gov.sg/library/myinfobiz/business/introduction). You can also visit our Myinfo business product page through this [link](https://www.developer.tech.gov.sg/products/categories/digital-identity/myinfo-business/overview.html){:target="_blank"}. 
 
 ### Login
 
@@ -52,7 +52,7 @@ With Singpass Login, businesses will be able to :
 - offer users the Singpass password-less login experience, and a fast, convenient and secure means of authentication; and
 - provide access to their online services to over 4 million Singpass users.
 
-For more information, refer to Singpass Login API [here](https://api.singpass.gov.sg/library/login/developers/overview-at-a-glance).
+For more information, refer to Singpass Login API [here](https://api.singpass.gov.sg/library/login/developers/overview-at-a-glance). You can also visit our Login product page through this [link](https://www.developer.tech.gov.sg/products/categories/digital-identity/login/overview.html){:target="_blank"}. 
 
 ### Verify
 
@@ -63,7 +63,7 @@ Verify helps businesses:
 - align with PDPC's NRIC Advisory Guidelines, by verifying users digitally without collecting or retaining physical NRICs, FIN cards, and NRIC/FIN numbers. Please refer to the PDPC's Technical Guide [here](https://www.pdpc.gov.sg/-/media/Files/PDPC/PDF-Files/Other-Guides/Technical-Guide-to-Advisory-Guidelines-on-NRIC-Numbers---260819.pdf).
 - enable self-service and contactless verification (e.g. kiosks for registration, or age-verification stations).
 
-For more information on Verify API, please read the [documentation](https://api.singpass.gov.sg/library/verify/business/introduction).
+For more information on Verify API, please read the [documentation](https://api.singpass.gov.sg/library/verify/business/introduction). You can also visit the Verify product page through this [link](https://www.developer.tech.gov.sg/products/categories/digital-identity/verify/overview.html){:target="_blank"}.
 
 ### Sign
 
@@ -72,7 +72,7 @@ Businesses and services such as document signing applications can integrate and 
 
 Sign with Singpass uses signing certificates issued by the National Certification Authority. Upon the National Certification Authority's accreditation, signatures made using the Sign with Singpass will be regarded as secure electronic signatures under Singapore's Electronic Transactions Act.
 
-For more information on Digital Signing API and Digital Signing Application Partners, please read the [documentation](https://api.singpass.gov.sg/library/sign/business/introduction).
+For more information on Digital Signing API and Digital Signing Application Partners, please read the [documentation](https://api.singpass.gov.sg/library/sign/business/introduction). 
 
 ### SafeEntry API
 
@@ -90,7 +90,7 @@ Identiface is a secure authentication method by simply having the user scan thei
 
 Organisations do not have to build, secure and maintain a biometric database and biometric system implementation. Integration is achieved easily though bundled SDKs and APIs.
 
-This service is ideal for use cases that require step-up authentication or to ascertain the user's presence.
+This service is ideal for use cases that require step-up authentication or to ascertain the user's presence. You can also visit the Identiface product page through this [link](https://www.developer.tech.gov.sg/products/categories/digital-identity/identiface/overview.html){:target="_blank"}.
 
 ### Authorise (Coming Soon)
 
