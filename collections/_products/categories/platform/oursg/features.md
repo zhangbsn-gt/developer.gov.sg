@@ -23,3 +23,7 @@ Grant officers can easily route applications towards more relevant grants withou
 
 ### Data security, fraud, and grant governance 
 OSG is integrated with the Fraud Detection Platform (FDP) - an internal, confidential platform that enables government agencies to conduct due diligence on grant recipients, businesses, and partners to counter fraud against Government Assistance Schemes. Approval controls, regulations, and data controls also ensure data security and grant governance. Lastly, OSG incorporates declarations such as the harmonised declaration to prevent double-dipping of grant applications.
+
+### Quicker publishing of grants with GAM
+Grant Admin Module (GAM) is a low-code website builder for grant administration workflows and helps with grant scheme configuration. It exists as a module within OSG which enables grants to be published in as little as two weeks, with the need for only one developer headcount as opposed to eight to ten weeks with two developer headcounts without the use of GAM.  
+

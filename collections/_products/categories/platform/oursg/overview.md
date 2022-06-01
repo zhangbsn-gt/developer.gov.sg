@@ -9,9 +9,9 @@ collection_group: [What's New]
 description: OurSG (OSG) Grants is a one-stop, integrated portal that consolidates the Government's community and social grants into a single platform.
 ---
 
-![OurSG header banner for Singapore Governmeent Developer Portal](/assets/img/oursg-header-banner.png)
+![OurSG header banner for Singapore Governmeent Developer Portal](/assets/img/20220524_190248_238.png) 
 
-OurSG (OSG) Grants is a one-stop, integrated portal that consolidates government grants for the arts, community, heritage, social good, sports, and youth into a single platform.
+OurSG Grants (OSG) is a one-stop, integrated portal that consolidates government grants for the arts, community, heritage, social good, sports, and youth into a single platform.
 
 By consolidating and digitalising grant applications and administration, the portal allows government agencies to expedite grant processing and disbursement and enhance the experience.
 
@@ -38,6 +38,7 @@ OurSG was developed by Government Digital Services (GDS), GovTech, in collaborat
 -	Data aggregation and analysis tools for government officers
 -	Inter-agency routing of applications to other relevant grants without the need for refilling of forms
 -	Data security, fraud, and grant governance for government officers 
+-	Quicker publishing of grants with Grant Admin Module (GAM)
 
 ### Pricing
 
