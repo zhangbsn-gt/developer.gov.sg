@@ -18,43 +18,40 @@ redirect_from:
 
 ### Overview
 
-StackOps was conceptualised to enable agencies to embrace Site Reliability Engineering (SRE), which emphasises automated monitoring and logging of services. SRE also shifts monitoring and logging processes into the development cycle itself to ensure that operational concerns reliability concepts are build-in.
+StackOps was conceptualised to enable agencies to embrace Site Reliability Engineering (SRE), which emphasises automated monitoring and logging of services. SRE also shifts monitoring and logging processes into the development cycle itself to ensure that operational concerns and reliability concepts are built-in.
 
-StackOps is part of the Monitoring component of the [Singapore Government Tech Stack (SGTS)](/singapore-government-tech-stack/overview/index.html){:target="_blank"}, which are tools to help you track application performance and provide you with operational transparency for effective incident response.
+StackOps is part of the Monitoring component of the [Singapore Government Tech Stack (SGTS)](/singapore-government-tech-stack/overview/index.html){:target="_blank"}. This component covers tools that help users track application performance and provide operational transparency for effective incident response.
 
 ### What is StackOps?
 
-StackOps is a Monitoring toolchain that focuses on the most important and critical user actions of your service. It features automated reactions based on the golden monitoring and logging metrics such as latency, load, limit, and errors.
+StackOps is a Monitoring tool that focuses on the most important and critical user actions of a user's service. It features automated reactions based on the golden monitoring and logging metrics such as latency, load, limit, and errors.
 
-StackOps consists of **StackOps Logging**, a suite of centrally managed logging applications such as Elastic, Logstash, and Kibana that transforms and visualises your data from multiple sources.
-
-<figure style="text-align: center">
-    <img
-      src="/assets/img/stackops-fig2.png" width="50%" height="50%"
-      alt="Fig 2: StackOps Logging Applications (Elastic, Logstash, and Kibana)"
-    />
-    <figcaption>Fig 1: StackOps Logging Applications (Elastic, Logstash, and Kibana)</figcaption>
-</figure>
+With StackOps, a user can access Elastic Cloud deployment, a managed service that enables metrics monitoring and application observability using logs and traces. The features of this service includes:
+-	Application Performance Monitoring
+-	Cross-cluster replication
+-	Autoscaling
+-	Monitoring
+-	Network Security
 
 ### Why Should StackOps be Adopted?
 
 Adopting StackOps can benefit users in the following ways:
--	User can start monitoring and logging their systems quickly and simply.
--	Creation of meaningful presentation of metrics that are aggregated based on what service owner, administrators, and customers need to know.
--	Fills current lack of monitoring and logging solutions that are quick and easy to set up.
--	Resolves problem of inability to track System Level Objectives (SLOs) of Whole-of Government (WOG) products and services.
--	Offers a one-stop-shop for monitoring the health of government services.
+-	Users can start monitoring and logging their systems quickly and simply.
+-	It creates meaningful presentations of metrics that are aggregated based on what service owners, administrators, and customers need to know.
+-	It fills the need for monitoring and logging solutions that are quick and easy to set up, which is currently not readily available.
+-	It resolves issues with tracking System Level Objectives (SLOs) for Whole-of Government (WOG) products and services.
+-	It offers a one-stop solution for monitoring the health of government services.
 
 
 ### How Do You Use StackOps?
 
-Contact StackOp’s product manager at <StackOps_SRE@tech.gov.sg> for onboarding details.
+For onboarding details, contact the StackOp’s team by filling out this [form](https://form.gov.sg/#!/62280856ba91100012050933){:target="_blank"}.
 
 Onboarding can typically be completed within one business day.
 
 ### Success Stories
 
-StackOps’ customer base grew from two to fifteen within five months. It is now used by SGTS products and the [Government on Commercial Cloud (GCC)](/products/categories/infrastructure-and-hosting/government-on-commercial-cloud){:target="_blank"} platform.
+StackOps’ customer base grew from two to fifteen within five months. It is now used in SGTS products and the [Government on Commercial Cloud (GCC)](/products/categories/infrastructure-and-hosting/government-on-commercial-cloud){:target="_blank"} platform.
 
 <!--
 ### What's Next?
@@ -67,7 +64,6 @@ StackOps’ customer base grew from two to fifteen within five months. It is now
 
 -->
 
-
 ### Contact Information
 
-For enquiries, email <StackOps_SRE@tech.gov.sg>.
+For enquiries, contact us through this [form](https://form.gov.sg/#!/62280856ba91100012050933){:target="_blank"}
