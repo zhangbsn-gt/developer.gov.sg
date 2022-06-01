@@ -1,0 +1,58 @@
+---
+title: Events
+layout: layout-page-sidenav
+description: Explore multiple events organised by GovTech for individuals involved in all aspects of digital
+  transformation here. Explore upcoming events for developers and technologists to learn from each other and share their experiences as well as opportunities for collaboration.
+redirect_from:
+  - /communities/events/
+  - /communities/events/index.html
+  - /communities/events/overview.html
+event_types:
+  - name: Conferences
+    icon_name: conference
+    description: Explore upcoming conferences for developers and technologists to learn from each other and share their experiences as well as opportunities for collaboration.
+  - name: STACK-X Meetups
+    icon_name: stack_x_meetup
+    description: The STACK-X Meetups community warmly welcomes anyone who is passionate about using technology to improve the lives of Singaporeans.
+---
+
+<h2>Events</h2>
+<p>
+  Join the tech community in a variety of events aimed at building stronger community connections, peer-to-peer
+  learning, sharing of thought leadership from industry experts and the provision of industry updates. Our events are
+  suited for individuals of all ages!
+</p>
+
+<p class="margin--bottom--none has-text-weight-semibold">
+  <a href="/communities/events/all-events/" class="sgds-link-icon" style="text-decoration: none;">
+    <span class="sgds-icon sgds-icon-list" aria-hidden="true" style="font-size: 1.35em; "></span>
+    View all events
+  </a>
+</p>
+
+<hr />
+
+<div class="card-grid-container grid-25rem">
+  {% for sub_section in page.event_types %}
+  {%- assign name = sub_section.name %}
+  {%- assign description = sub_section.description -%}
+  {%- assign sub_section_slug = sub_section.name | slugify -%}
+  {%- assign url_str = sub_section.url | append : sub_section_slug  -%}
+  {%- assign imageCategory = sub_section.icon_name | append : "s"| downcase | slugify -%}
+  {%- assign img_src = '/assets/img/communities/' | append: imageCategory | append: '.svg' | downcase -%}
+
+  <div class="sgds-card {{include.parentCardStyle}}">
+    <div class="sgds-card-content">
+      <img src="{{img_src}}" class="margin--left--none" alt="Icons" />
+      {% include card-header-info.html 
+        name=name 
+        url_str=url_str
+        disableItemCount=disableItemCount 
+      %}
+      <div>
+        <p>{{description}}</p>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>

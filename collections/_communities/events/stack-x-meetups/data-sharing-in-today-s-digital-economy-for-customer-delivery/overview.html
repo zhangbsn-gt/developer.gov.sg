@@ -1,0 +1,92 @@
+---
+title: STACK-X Meetup - Data Sharing in today’s Digital Economy for Customer Delivery
+layout: layout-page-sidenav
+_data: events-nav
+redirect_from:
+  - /communities/events/stack-x-meetups/data-sharing-in-today-s-digital-economy-for-customer-delivery/
+  - /communities/events/stack-x-meetups/data-sharing-in-today-s-digital-economy-for-customer-delivery/overview.html
+multi_level_nav: true
+sub_collection_render: true
+event_rundown:
+  - title: '10:30am: Welcome'
+  - title: '10.35am: Data Mesh in the Singapore Government'
+    speaker: >-
+      By Loh Kian Chai, Engineering Lead for Asynchronous Data Exchange (ADEX),
+      GovTech
+  - title: '10:55am: Enhancing Citizen Services with Event-Driven Architecture'
+    speaker: 'By Kaijun Xu, Solutions Engineer, Confluent'
+  - title: '11:15am: Combined Q&A'
+  - title: '11:30am: End of session'
+speakers:
+  - name: Loh Kian Chai
+    title: 'Engineering Lead for Asynchronous Data Exchange (ADEX), GovTech'
+    desc: >-
+      Kian Chai is the engineering lead for Asynchronous Data Exchange (ADEX) in
+      GovTech. He is a specialist in software development for cloud applications
+      and has 20 years of private-sector experience from domains such as
+      Business-to-Business (B2B), Manufacturing, and Internet of Things (IOT).
+      He has a calm approach to his work and oversees the engineering effort of
+      ADEX in GovTech’s Government Digital Services (GDS) division.
+  - name: Kaijun Xu
+    title: 'Solutions Engineer, Confluent'
+    desc: >-
+      Kaijun is a Solutions Engineer at Confluent, the company founded by the
+      original creators of Apache Kafka. Based in Singapore, he works with
+      customers in the teleco and public sector. He was previously the APAC
+      Cloud Architect at Zerto, working with managed service providers and
+      telcos on designing and bringing Disaster Recovery as a Service (DRaaS)
+      offerings to the market. He has spent the last six years helping customers
+      across APAC with their infrastructure and data management challenges and
+      is VMware, AWS and Confluent-certified.
+---
+<div>
+  <p>
+    For upcoming STACK-X webinars and a full list of our past events, please visit our <a href="https://www.meetup.com/STACK-X-by-GovTech-Singapore/">Meetup page</a>.
+  </p>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/1RvSLnLRQQk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<!-- Event details -->
+<h3>Overview</h3>
+<p>
+    As the API Economy leads the way for how Digital Economy activities impact public agencies and local businesses,
+    creating digital solutions to be more responsive to customer delivery processes is a priority. Data-sharing
+    technology is also growing at an accelerated pace as it plays a crucial role in distributing and receiving data to
+    harness numerous and disparate data sources, resulting in robust, cost-effective practices.
+</p>
+<p>
+    Government organisations recognise that responsive, personalised, and efficient government services are not only
+    increasingly expected by citizens, they also result in better mission success, improved cost-effectiveness, and
+    increased citizen trust.
+</p>
+<p>
+    In response to these developments, GovTech has built the Asynchronous Data Exchange (ADEX). ADEX is hosted on the
+Government on Commercial Cloud (GCC) and serves as a centralised, self-service data exchange and event streaming
+platform for public agencies and local businesses to share and receive lightweight, real-time data securely.
+</p>
+<p>
+    In this Meetup with GovTech’s ADEX team and Confluent, our speakers will be discussing the various data-sharing
+    solutions used by the public sector and industry to overcome challenges in sharing data efficiently and securely,
+    leading to robust, cost-effective practices.
+</p>
+<p>
+    For pre-Meetup reading on ADEX, visit the Singapore Government Developer Portal here:
+    <a href="https://www.developer.tech.gov.sg/technologies/sensor-platforms-and-internet-of-things/asynchronous-data-exchange/index.html">
+      https://www.developer.tech.gov.sg/technologies/sensor-platforms-and-internet-of-things/asynchronous-data-exchange/index.html
+    </a>
+</p>
+
+<h3>Programme Rundown</h3>
+{%- include event-rundown.html 
+  _data=page.event_rundown 
+  description=page.event_rundown_description
+-%}
+
+<h3>Speaker</h3>
+<div class="is-fullwidth margin--top--none margin--bottom">
+  {%- for speaker in page.speakers -%}
+  <div class="margin--top">
+    {%- include accordian-display.html content=speaker -%}
+  </div>
+  {%- endfor -%}
+</div>

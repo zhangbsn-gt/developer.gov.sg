@@ -1,0 +1,41 @@
+{%- assign data_file = include._data -%}
+{%- assign specified_category = include.category | default: '' -%}
+{%- assign event_details = site.data[data_file] | where_exp: "events", "events.type contains specified_category" -%}
+
+<div class="is-fullwidth">
+    {% for event in event_details %}
+    <div class="sgds-card sgds-card-variant-video-info">
+        <div class="sgds-card-content">
+            <div>
+                <p class="margin--bottom--xs is-size-8">{{ event.timeslot }}</p>
+                {% if event.desc %}
+                <div class="sgds-accordion is-borderless is-medium is-white padding--bottom">
+                    <a class="sgds-accordion-header sgds-custom-accordion-header padding--left--none padding--top--none padding--bottom--none d-flex"
+                        role="button" aria-expanded="true">
+                        <strong>{{ event.title }}</strong>
+                        <i class="sgds-icon sgds-icon-chevron-down"></i>
+                    </a>
+                    <div class="sgds-accordion-body padding--none padding--top--sm">
+                        <p>
+                            {{ event.desc }}
+                        </p>
+                    </div>
+                </div>
+                {% else %}
+                <h5>{{ event.title }}</h5>
+                {% endif %}
+                <p class="margin--bottom--sm has-text-dark has-text-weight-semibold">Speaker(s):</p>
+            </div>
+            <div class="sgds-accordion-set">
+                {%- for content in event.speakers -%}
+                {%- include accordian-display.html content=content -%}
+                {%- endfor -%}
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+
+    <div class="margin--top--lg">
+        * Please note that the programme may be subject to change without prior notice
+    </div>
+</div>

@@ -1,0 +1,122 @@
+---
+title: CI/CD with SHIP-HATS
+layout: layout-page-sidenav
+_data: events-nav
+redirect_from:
+  - /communities/events/stack-x-meetups/ci-cd-with-ship-hats/
+  - /communities/events/stack-x-meetups/ci-cd-with-ship-hats/overview.html
+multi_level_nav: true
+sub_collection_render: true
+event_rundown:
+  - title: '6 May 2021, Thu<br />Keynotes: Thought leadership sessions for all'
+  - title: '10:00 – 10:10am – Welcome Remarks'
+    speaker: 'By Kok Ping Soon, Chief Executive, GovTech'
+  - title: '10:10 – 10:25am – CI/CD Shaping Modernisation in Singapore Government'
+    speaker: 'By Chan Cheow Hoe, Government Chief Digital Technology Officer'
+  - title: '10:25 – 11:00am – Fireside Chat with Agencies'
+    speaker: 'By Kevin Ng, Director, CODEX, GovTech'
+  - title: '11:00 – 11:20am – The Journey to Continuous Delivery'
+    speaker: 'By Sriram Narayanan, Technology Principal, ThoughtWorks'
+  - title: '11:20 – 11:40am – SHIP-HATS Roadmap'
+    speaker: 'By Kevin Ng, Director, CODEX, GovTech'
+  - title: '11:40am – 12:00pm – SHIP-HATS – Architecture Approach'
+    speaker: >-
+      By Chia Hsiao Ming, Director, Engineering Productivity, GovTech<br /><br
+      />Product Track: For developer communities, especially those who write or
+      manage code for Singapore Public Agencies looking to understand products
+      and tools available within SHIP-HATS. There is a live Q&A at the end of
+      each session!
+  - title: '13:00 – 13:30pm – SHIP-HATS Overview for Newbies'
+    speaker: 'By Linda Chang, Assistant Director, GovTech'
+  - title: '13:30 – 14:00pm – Security Testing With SHIP-HATS'
+    speaker: 'By Goh Chun Teck, Software Engineer, GovTech'
+  - title: '14:00 – 14:30pm – Continuous Delivery With SHIP-HATS'
+    speaker: 'By Hudson Lee, Lead DevOps Engineer, GovTech'
+  - title: '14:30 – 15:00pm – Understanding SHIP-HATS Subscription'
+    speaker: 'By Chew Pei Yi, Associate Delivery Manager, GovTech'
+  - title: '15:00 – 15:30pm – CI/CD Strategy to Modernisation for PA'
+    speaker: >-
+      By Abhijeet Menon, Senior Solution Architect, GovTech and Sathappan
+      Subramaniam, Lead Project Manager, NCS<br /><br />Government Track: Closed
+      online track for Public Officers to learn how CI/CD can help them achieve
+      compliance with SHIP-HATS and gain practical tips from tendering to
+      onboarding.
+  - title: '13:00 – 13:15pm – Opening Address'
+    speaker: 'By Lim Bee Kwan, Assistant Chief Executive, GovTech'
+  - title: '13:15 – 13:45pm – Applying Security in DevOps Practices'
+    speaker: 'By Chong Rong Hwa, Director, Advanced Cybersecurity Capabilities, GovTech'
+  - title: '13:45 – 14:15pm – Pricing, Budgeting & Contracting For SHIP-HATS'
+    speaker: >-
+      By Aaron Ma, Deputy Director, GovTech and Liyana Muhammad Fauzi, Senior
+      Product Manager, GovTech
+  - title: '14:15 – 14:45pm – Preparing Your Team to Adopt DevOps'
+    speaker: >-
+      By Goh Boon Nam, Digital Agility Practice and Deputy Director, Executive
+      Education Programme NUS-ISS Product Manager
+  - title: '14:45 – 15:15pm – Onboarding SHIP-HATS'
+    speaker: 'By Denise Collard, Product Manager, GovTech'
+---
+
+
+<div>
+  <p>
+    For upcoming STACK-X webinars and a full list of our past events, please visit our <a href="https://www.meetup.com/STACK-X-by-GovTech-Singapore/">Meetup page</a>.
+  </p>
+  <figure>
+    <img src="/assets/img/stack-x-ship-hats-hero.jpg" alt="Stack-X SHIP-HATS Hero" />
+  </figure>
+</div>
+
+<h3>Overview</h3>
+<p>
+  Join our virtual conference to learn about the Singapore Government's vision, approach, and programmes to help
+  agencies accelerate their modernisation and digitalisation plans with CI/CD. The conference spotlights SHIP-HATS - the
+  CI/CD component in the Singapore Government Tech Stack.
+</p>
+<p>
+  Event details:
+  <br />
+  6 May 2021, Thu, 10:00am - 3:30pm
+  <br />
+  [Sessions: Keynotes & Tracks]
+  <br />
+  Virtual sessions on Zoom.
+</p>
+<p>
+  For more details, visit the Singapore Developer Portal here:
+  https://www.developer.tech.gov.sg/communities/events/stack-x-conference
+</p>
+<p>
+  Register here: https://go.gov.sg/stackxconferencecicd
+</p>
+<p>
+  Learn to modernise, securely
+  <br />
+  Understand how CI/CD with SHIP-HATS builds in security features and improves code quality while supporting modern
+  development practices.
+</p>
+<p>Hear from real practitioners
+  <br />
+  Get insights and practical lessons from practitioners of agencies and industry partners who have successfully
+  implemented SHIP-HATS.
+</p>
+<p>
+  Understand SHIP-HATS
+  <br />
+  From planning to onboarding, there are sessions for agencies and industry to run through how to implement CI/CD with
+  SHIP-HATS and the steps to adopt the product.
+</p>
+
+<h3>Programme Rundown</h3>
+{%- include event-rundown.html 
+  _data=page.event_rundown 
+  description=page.event_rundown_description
+-%}
+
+<!-- If speaker data is applicable, add data accordingly -->
+<h3>Speaker</h3>
+<div class="is-fullwidth margin--top--none">
+  {%- for speaker in page.speakers -%}
+  {%- include accordian-display.html content=speaker -%}
+  {%- endfor -%}
+</div>

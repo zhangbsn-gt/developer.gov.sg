@@ -4,12 +4,15 @@
   border-radius: $card-radius;
   border: 1px solid #d6d6d6;
   color: $body-color;
+
   .sgds-card-content:first-child {
     flex: 1 1 auto;
   }
+
   .sgds-card-content:last-child {
     border-top: 1px solid #d6d6d6;
   }
+
   strong,
   b {
     color: $body-color;
@@ -26,6 +29,7 @@
 .sgds-card-footer-item {
   padding-top: 0;
   padding-bottom: 1rem;
+
   .swiper-card & {
     justify-content: left;
     padding-left: 1.5rem;
@@ -34,7 +38,7 @@
 
 // if card-content is the first child, remove border-top
 .sgds-card {
-  > .sgds-card-content:first-child {
+  >.sgds-card-content:first-child {
     border-top: 0;
   }
 }
@@ -60,63 +64,77 @@
 .sgds-card.patterned {
   background-image: url("/assets/img/bg-memphispattern.png");
   color: #ffffff;
+
   a,
   strong {
     color: #fff;
   }
+
   &:hover {
     transform: translateY(-2px);
     box-shadow: 2px 3px 5px gray;
     transition: all 0.3s;
   }
+
   &:active {
     transform: translateY(0);
   }
 }
 
-//dev portal variants - use for products and services
+// dev portal variants - used for products and services
 .sgds-card {
   &.sgds-card-variant-sub-section-info {
     height: 100%;
+
     img {
       margin-left: 0;
     }
+
     header {
       width: 100%;
       display: inline-flex;
       justify-content: space-between;
       gap: 1rem;
+
       :not(small) {
         color: $link;
         text-decoration: underline;
       }
+
       small {
         margin-top: 0.3rem;
       }
     }
   }
+
   // used for webinars
   &.sgds-card-variant-video-info {
     .content-grid {
       display: grid;
       grid-template-columns: auto 1fr;
+
       @media only screen and (max-width: 1240px) {
         grid-template-columns: 1fr;
       }
+
       grid-gap: 1.5rem;
+
       img {
         object-fit: cover;
         margin: 0;
       }
     }
+
     header {
       text-decoration: underline;
     }
+
     .date {
       font-weight: bold;
     }
-    h4 + p,
-    p + p {
+
+    h4+p,
+    p+p {
       margin-top: 1rem;
     }
   }
@@ -135,9 +153,11 @@
     .sgds-card-content {
       padding: 0;
     }
+
     .sgds-card-content-header-group-header {
       background-color: #f5f5f5;
       padding: 24px;
+
       div {
         margin-bottom: 8px;
         display: flex;
@@ -146,31 +166,38 @@
         align-items: center;
         justify-content: start;
       }
+
       span {
         color: #767676;
         font-size: 16px;
         line-height: 16px;
       }
+
       img {
         margin: 0px;
       }
+
       header {
         width: 100%;
         display: inline-flex;
         justify-content: space-between;
         gap: 1rem;
+
         :not(small) {
           color: $link;
           text-decoration: underline;
         }
+
         small {
           margin-top: 0.3rem;
         }
       }
     }
+
     p {
       padding: 24px;
     }
+
     height: 100%;
   }
 }
@@ -183,4 +210,26 @@
 
 .sgds-card-list {
   height: 100%;
+}
+
+// dev portal variants - used for community
+.sgds-calendar-card {
+  .sgds-calendar-card-left {
+    .sgds-calendar-card-left-inner {
+      border-radius: 0.75rem;
+      
+    }
+  }
+
+  .sgds-calendar-card-right {}
+}
+
+.sgds-card-iconography {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
+  span {
+    margin-right: 0.4rem;
+  }
 }

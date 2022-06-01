@@ -1,37 +1,21 @@
-- name: STACK-X Meetups
+- name: Overview
   description: >
-    The STACK-X Meetups community warmly welcomes anyone who is
-    passionate about using technology to improve the lives of Singaporeans.
-  items:
-    - Overview
-    - Past Webinars
+    The overview of the community.
 
 - name: Events
   description: >
     Explore upcoming events for developers and technologists to learn from each
     other and share their experiences as well as opportunities for collaboration.
-  items:
-    - Overview
-    - STACK-X Data Science Connect
-    - STACK-X Cloud 2021
-    - STACK-X CI/CD 2021
-    - STACK 2020
-    - STACK the Flags 2020
 
 - name: Newsletter
   description: >
     Stay ahead of it all with our updates on GCC (Government Commercial Cloud) and 
     SGTS (Singapore Government Tech Stack) in WOG development and more.
 
-- name: Open-source Technologies
-  description: >
-    Developers and businesses can access and leverage the
-    various technologies and tools that Government agencies have open-sourced.
-
 - name: Developer Blogs
   description: Read about the innovations of GovTech’s teams!
 
-- name: COVID-19 Volunteering Opportunities
+- name: Covid 19 Volunteering Opportunities
   description: >
     Find out how you can help the Singapore Government in its digital efforts to
     combat the COVID-19 pandemic
@@ -40,10 +24,3 @@
   description: >
     GovBuy is an initiative from the Government to offer engineering, design or
     writing gigs to Singapore citizens and Permanent Residents
-
-- name: Building a Community
-  description: >
-    Learn about STACK-X by GovTech's community engagement journey and what drives us to do what we do. If you are interested to build a tech community, read on to discover the quick and easy resources our team has developed to kickstart your community development journey.
-  items:
-    - Our Journey
-    - Resources

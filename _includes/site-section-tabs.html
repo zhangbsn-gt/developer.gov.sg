@@ -1,0 +1,82 @@
+<!-- Change to underscores -->
+{%- assign newsletterIncrementer = 0 -%}
+<div class="sgds-tabs">
+    <ul class="no-margin" role="tablist">
+        <li class="is-active">
+            <a data-tab="#tab1" role="tab" aria-selected="true" aria-controls="tab1">
+                Newsletter
+            </a>
+        </li>
+        <li>
+            <a data-tab="#tab2" role="tab" aria-selected="false" aria-controls="tab2">
+                Developer Blogs
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="row" id="tab1">
+    {% if site.posts %}
+    <div class="card-grid-container is-fullwidth">
+        <p class="margin--bottom--none margin--top--none">
+            Want to receive our newsletter via email? Subscribe
+            <a href="#TOBEREPLACED">here</a>.
+        </p>
+        {% for post in site.posts %}
+        {% assign url_str = post.url %}
+        {% assign contentDescription = post.date | date_to_string %}
+        {% if 3 > newsletterIncrementer %}
+        <div class="newsletter-card">
+            {% include card-variant-basic.html 
+                name=post.title
+                url_str=url_str
+                render_calendar=true
+                item_count=item_count
+                description=contentDescription
+                parentCardStyle=parentCardStyle
+            %}
+        </div>
+        {% else %}
+        <div class="newsletter-card" content-visibility-toggle="newsletter">
+            {% include card-variant-basic.html 
+                name=post.title
+                url_str=url_str
+                render_calendar=true
+                item_count=item_count
+                description=contentDescription
+                parentCardStyle=parentCardStyle
+            %}
+        </div>
+        {% endif %}
+        {% assign newsletterIncrementer = newsletterIncrementer | plus: 1 %}
+        {% endfor %}
+        <div class="is-fullwidth is-flex" style="justify-content: center;">
+            <button class="sgds-button is-outlined is-primary" id="newsletter-display-more"
+                onclick="toggleEventsVisibility('newsletter', 'newsletter-display-more')">
+                View all newsletters
+            </button>
+        </div>
+    </div>
+    {% else %}
+    <h5>No newsletters yet.</h5>
+    {% endif %}
+</div>
+<div class="row" id="tab2">
+    <h5>This is the news Section</h5>
+</div>
+
+<script>
+    // Hides the content at the start initially during the creation phase using IIFEs
+    (() => {
+        const nodes = document.querySelectorAll('*[content-visibility-toggle^="newsletter"]');
+        for (var i = 0; i < nodes.length; i++) {
+            nodes[i].style.display = "none";
+        }
+    })();
+
+    function toggleEventsVisibility(attribute, buttonID) {
+        document.querySelectorAll(`*[content-visibility-toggle="${attribute}"]`).forEach((node) => {
+            node.style.display = 'block';
+        });
+        document.getElementById(`${buttonID}`).remove();
+    }
+</script>

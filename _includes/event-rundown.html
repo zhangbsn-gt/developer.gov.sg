@@ -1,0 +1,28 @@
+{%- assign _data = include._data -%}
+{%- assign description = include.description -%}
+
+<div class="is-fullwidth">
+    {%- for event in _data -%}
+    {% if event.speaker %}
+    <div class="sgds-accordion is-borderless is-white">
+        <a href="#!"
+            class="sgds-accordion-header sgds-custom-accordion-header padding--left--none padding--top--none padding--bottom--none d-flex"
+            role="button" aria-expanded="false">
+            <p class="margin--bottom--sm">{{ event.title }}</p>
+            <i class="sgds-icon sgds-icon-chevron-down"></i>
+        </a>
+        <div class="sgds-accordion-body padding--none">
+            <div class="margin--bottom">
+                {% if event.speaker %}
+                <p class="has-text-weight-light">{{- event.speaker -}}</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    {%- else -%}
+    <div class="sgds-accordion is-borderless is-white">
+        <p class="margin--bottom">{{ event.title }}</p>
+    </div>
+    {%- endif-%}
+    {%- endfor -%}
+</div>

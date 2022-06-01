@@ -1,0 +1,38 @@
+{%- assign events = site.data['events-nav'] -%}
+{%- assign category = include.specified_category_tag | default: '' -%}
+{%- assign filtered_events = events | where_exp: "item", "item.event_category contains category" | sort: "event_date" -%}
+
+<div class="card-grid-container is-fullwidth">
+    {%- for sub_section in filtered_events reversed -%}
+        {%- assign sub_section_slug = sub_section.name | slugify -%}
+        {%- assign recordings_uploaded = sub_section.event_recording_link | default: false -%}
+        {%- assign url_str = page.url | remove: 'index.html' | append: sub_section_slug -%}
+        {%- assign event_date_and_timing = sub_section.event_date | default: sub_section.date -%}
+        {%- assign image_category = sub_section.event_category | append : "s"| downcase | slugify -%}
+        {%- assign img_src = '/assets/img/communities/' | append: image_category | append: '.svg' | downcase -%}
+
+        {% if page.title == "Communities"%}
+            {% if sub_section.event_category contains "Conference" %}
+                {%- assign url_str = "/communities/events/conferences/" | append: sub_section_slug-%}
+            {% elsif sub_section.event_category contains "Stack-X Meetup"%}
+                {%- assign url_str = "/communities/events/stack-x-meetups/" | append: sub_section_slug-%}
+            {% else %}
+                {%- assign url_str = "/communities/events/hackathons/" | append: sub_section_slug-%}
+            {% endif %}
+        {% endif %}
+
+        <!-- Remove the index.html then append sub_section_slug -->
+        <div data-future-date="{{ event_date_and_timing | date: '%Y%m%d' }}">
+            {% include card-variant-calendar.html 
+                name=sub_section.name
+                category=sub_section.event_category
+                description=sub_section.event_description
+                img_src=img_src
+                url_str=url_str
+                recordings_uploaded=recordings_uploaded
+                event_date_and_timing=event_date_and_timing
+                disableItemCount=include.disableItemCount
+            %}
+        </div>
+    {%- endfor -%}
+</div>

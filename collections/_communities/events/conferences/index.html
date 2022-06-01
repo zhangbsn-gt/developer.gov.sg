@@ -1,0 +1,70 @@
+---
+title: Conferences
+layout: layout-page-sidenav
+description: >
+    Explore our various community engagement channels here, from STACK-X Meetups to newsletters to open source technologies
+    to COVID-19 volunteering opportunities!
+redirect_from:
+    - /communities/events/conferences/
+    - /communities/events/conferences/index.html
+---
+
+<!-- Introduction -->
+<div>
+    <h2>Overview for Conferences</h2>
+    <p>
+        Join the tech community in a variety of events aimed at building stronger community connections,
+        peer-to-peer learning, sharing of thought leadership from industry experts and the provision of industry
+        updates. Our events are suited for individuals of all ages!
+    </p>
+</div>
+
+<hr />
+
+<!-- Upcoming Events -->
+<div>
+    <h3>All Upcoming Conferences</h3>
+    <div id="upcoming-events-container" class="card-grid-container is-fullwidth"></div>
+    <div class="is-fullwidth is-flex" style="justify-content: center;" id="upcoming-conferences-button">
+        <button class="sgds-button sgds-button--primary" onclick="toggleEventsVisibility('upcoming-conferences','upcoming-conferences-button')">
+            View all events
+        </button>
+    </div>
+    <div id="no-upcoming-events-message" class="margin--top margin--bottom--xl has-text-centered">
+        Sorry, there is currently no upcoming available events.
+    </div>
+</div>
+
+<hr />
+
+<!-- Past Events -->
+<div>
+    <h3>Past Conferences</h3>
+    <div id="past-events-container" class="card-grid-container is-fullwidth"></div>
+    <div class="is-fullwidth is-flex" style="justify-content: center;" id="past-conferences-button">
+        <button class="sgds-button sgds-button--primary" onclick="toggleEventsVisibility('past-conferences', 'past-conferences-button')">
+            View all events
+        </button>
+    </div>
+    <div id="no-past-events-message" class="margin--top margin--bottom--xl has-text-centered">
+        Sorry, there are currently no past events.
+    </div>
+</div>
+
+{% include site-section-event-listing.html 
+    specified_category_tag="Conference"
+%}
+
+<!-- Sorting and theming script -->
+<script async defer="defer" data-content-limit=2 data-id="conferences-webinars-sort"
+    src="/assets/bundles/conferences-webinars-sort.bundle.js">
+</script>
+<!-- Script to hide content -->
+<script type="text/javascript">
+    function toggleEventsVisibility(attribute, buttonID) {
+        document.querySelectorAll(`*[content-visibility-toggle="${attribute}"]`).forEach((node) => {
+            node.style.display = 'block';
+        });
+        document.getElementById(`${buttonID}`).remove();
+    }
+</script>

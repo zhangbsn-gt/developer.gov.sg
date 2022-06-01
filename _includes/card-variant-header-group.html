@@ -1,9 +1,9 @@
 <div class="sgds-card {{include.parentCardStyle}}">
-    <div class="sgds-card-content">
-      <div class="{{include.contentHeaderStyle}}">
-        <div><img src="{{include.img_src}}" alt=""/><span>{{include.img_label}}</span></div>
-        {% include card-header-info.html disableItemCount=include.disableItemCount name=include.name item_count=include.item_count url_str=include.url_str %}
-      </div>
-      <p>{{ include.description }}</p>
+  <div class="sgds-card-content">
+    <div class="{{include.contentHeaderStyle}}">
+      <div><img src="{{include.img_src}}" alt="" /><span>{{include.img_label}}</span></div>
+      {% include card-header-info.html disableItemCount=include.disableItemCount name=include.name item_count=include.item_count url_str=include.url_str %}
     </div>
+    <p>{{ include.description }}</p>
+  </div>
 </div>

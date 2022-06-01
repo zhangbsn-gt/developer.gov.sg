@@ -1,0 +1,62 @@
+{%- assign sub_collection = page.id | split: "/" | shift | shift | first -%}
+{%- assign folder_name = page.id | split: "/" | shift | shift | shift | shift | first -%}
+
+{%- for sub_collection in site.data[page._data] -%}
+{% assign collection_name = sub_collection.name | slugify %}
+{%- if collection_name == folder_name -%}
+{%- assign current_collection = sub_collection-%}
+{% endif %}
+{% endfor %}
+
+{%- comment -%} Links {%- endcomment -%}
+{%- assign event_recording_link = current_collection.event_recording_link -%}
+{%- assign event_registration_link = current_collection.event_registration_link -%}
+{%- comment -%} Event Timing {%- endcomment -%}
+{%- assign event_date_and_timing = current_collection.event_date | default: page.event_date -%}
+{%- assign event_date_and_timing_parsed = event_date_and_timing | date: '%Y%m%d'-%}
+{%- comment -%} Event Registration End Date {%- endcomment -%}
+{%- assign event_registration_end_date = current_collection.event_registration_end_date | default: event_date_and_timing -%}
+{%- assign event_registration_end_date_parsed = event_registration_end_date | date: '%Y%m%d'-%}
+{%- assign image_category = current_collection.event_category | append : "s"| downcase | slugify-%}
+{%- assign img_src = '/assets/img/communities/' | append: image_category | append: '.svg' | downcase -%}
+
+<div class="sgds-card sgds-card-variant-video-info margin--bottom--lg"
+    data-future-date="{{ event_date_and_timing | date: '%Y%m%d' }}">
+    <div class="has-text-centered event-status-container">
+        <p class="has-text-weight-bold has-text-white event-status">PAST</p>
+    </div>
+    <div class="sgds-card-content padding--top padding--bottom">
+        <div class="row margin--bottom--none is-flex-touch" style="justify-content: start; align-items: center;">
+            <div class="col is-2 padding--right--none padding--left--none is-size-4" style="color: #767676;">
+                <span class="sgds-icon sgds-icon-calendar" role="img" aria-label="iconName"></span>
+            </div>
+            <div class="col is-10">
+                {{- event_date_and_timing | date: "%d %b %Y" -}}
+            </div>
+        </div>
+        <div class="row margin--bottom--none is-flex-touch" style="justify-content: start; align-items: center;">
+            <div class="col is-2 padding--right--none padding--left--none">
+                <img src="{{- img_src -}}" alt="{{- img_src -}} icon" style="width: 1.5em;"
+                    class="margin--bottom--none margin--right--none margin--left--none" />
+            </div>
+            <div class="col">
+                {{- current_collection.event_category -}}
+            </div>
+        </div>
+        <div class="row margin--bottom--none is-flex-touch" style="justify-content: start; align-items: center;">
+            <div class="col is-2 padding--right--none padding--left--none is-size-4" style="color: #767676;">
+                <span class="sgds-icon sgds-icon-place" role="img" aria-label="iconName"></span>
+            </div>
+            <div class="col">
+                {{- current_collection.event_type -}}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col padding--right--none padding--left--none">
+                <button onclick="buttonEventHandler()" id="dynamic-event-button" class="sgds-button has-text-white">
+                    Register now
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

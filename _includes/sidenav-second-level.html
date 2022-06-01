@@ -1,0 +1,85 @@
+<!-- TODO: Refactoring to make it generic for other pages usage -->
+{% comment %}
+Note: This is configured for the folder structure of products and conferences page.
+{% endcomment %}
+{% comment %} Get the main collection {% endcomment%}
+{%- assign main_collection = page.collection -%}
+{% comment %} Get the sub conlectiob {% endcomment%}
+{%- assign sub_collection = page.id | split: "/" | shift | shift | first -%}
+{% comment %} Get the category. Such as conferences in ./communities/events/ or analytics in ./products/all-products {% endcomment%}
+{%- assign current_category = page.id | split: "/" | shift | shift | shift | first -%}
+{% comment %} Get the folder where the page is stored at. {% endcomment %}
+{%- assign folder_name = page.id | split: "/" | shift | shift | shift | shift | first -%}
+
+{% comment %} Gets a item from the specified file located in the _data folder. e.g. in ./data/events-nav, get title {% endcomment %}
+{%- for sub_collection in site.data[page._data] -%}
+    {% comment %} Gets the name of the event. {% endcomment %}
+    {% assign collection_name = sub_collection.name | slugify %}
+
+    {% comment %} It returns true if it matches the folder_name, such as stack-x-cloud-2021. {% endcomment %}
+    {%- if collection_name == folder_name -%}
+        {%- assign current_collection = sub_collection-%}
+    {% endif %}
+{% endfor %}
+
+{%- assign nav_items = current_collection.items -%}
+{%- assign active_page = page.id | split: "/" | last -%}
+{%- assign page_id_terms = page.id | split: "/" -%}
+{% assign page_id_last = page_id_terms | last %}
+{% if page_id_last == "index" %}
+    {%- assign page_id_terms = page_id_terms | pop -%}
+    {% assign page_id_last = page_id_terms | last %}
+{% endif %}
+
+{%- if current_collection.event_date -%}
+    <div class="is-hidden-touch">
+        {% include card-variant-event-information.html %}
+    </div>
+{%- endif -%}
+
+{% for first_lvl_nav_item in nav_items %}
+    {%- assign class = nil -%}
+    {%- assign label = first_lvl_nav_item.item_name -%}
+    {%- assign first_lvl_nav_item_slug = first_lvl_nav_item.item_name | slugify -%}
+    {%- assign second_level_nav_item_list = first_lvl_nav_item.item_sub_item -%}
+    {%- assign href = '/' | append: main_collection | append: '/' | append: sub_collection | append: '/' | append: current_category | append: '/' | append: folder_name | append: '/' | append: first_lvl_nav_item_slug -%}
+
+    {% comment %} If the url matches the slug, this sets the sidebar nav items to blue. {% endcomment %}
+    {%- if page.url contains first_lvl_nav_item_slug -%}
+        {%- assign class = 'is-active' -%}
+    {%- endif -%}
+
+    {%comment %} If YAML items such as item_sub_item, will loop through the item_sub_items under the first_level_nav_items {% endcomment %}
+    {%- if second_level_nav_item_list -%}
+        {% comment %} Displays the chervron icon {% endcomment %}
+        {%- assign icon_class = "sgds-icon-chevron-down" -%}
+        {%- assign hide_nav_section = 'is-hidden' -%}
+        {%- assign first_lvl_nav_item_slug = first_lvl_nav_item.item_name | slugify -%}
+
+        {% if page.url contains first_lvl_nav_item_slug  %}
+            {% assign hide_nav_section = nil %}
+                {% assign icon_class = "sgds-icon-chevron-up" %}
+            {% endif %}
+
+            {% include sidenav-first-lvl-nav-item.html label=label href="#!" icon_class=icon_class class=class %}
+            <ul class="second-level-nav-div {{ hide_nav_section }}">
+                {% comment %} Render the sub items under a unique item {% endcomment %}
+                {%- for second_lvl_nav_item in second_level_nav_item_list -%}
+                    {%- assign label = second_lvl_nav_item.sub_item_name -%}
+                    {%- assign second_lvl_nav_item_slug = second_lvl_nav_item.sub_item_name | slugify -%}
+
+                    {%- assign class = nil -%}
+                        {%- if (page_id_last == second_lvl_nav_item_slug and page.url contains first_lvl_nav_item_slug) -%}
+                        {%- assign class = 'is-active' -%}
+                    {%- endif -%}
+
+                    {%- assign sidenav_item_url = href | append: '/' | append: second_lvl_nav_item_slug -%}
+                    {% include sidenav-second-lvl-nav-item.html label=label href=sidenav_item_url class=class %}
+                {%- endfor -%}
+            </ul>
+    {%- else -%}
+        {% comment %} Provided fliexibility for users to specify what icon they want {% endcomment %}
+        {% assign icon_class = first_lvl_nav_item.icon_class %}
+        {% include sidenav-first-lvl-nav-item.html label=label href=href icon_class=icon_class class=class %}
+    {%- endif -%}
+{% endfor %}

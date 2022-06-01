@@ -1,0 +1,35 @@
+---
+---
+
+{
+    "pages": [
+        {%- assign events = site.data['events-nav'] -%}
+        {%- assign sorted_events = events | sort: 'event_date'-%}
+        
+        {%- for document in sorted_events reversed -%}
+            {%- assign sub_section_slug = document.name | slugify -%}
+            {%- assign event_recording_link = document.event_recording_link | default: false-%}
+            {%- assign target_group_joined = document.target_group | join: ", " -%}
+
+            {% if document.event_category == "Conference" %}
+                {%- assign url_str = "/communities/events/conferences/" | append: sub_section_slug -%}
+            {% else %}
+                {%- assign url_str = "/communities/events/stack-x-meetups/" | append: sub_section_slug -%}
+            {% endif %}
+                {
+                "title": "{{- document.name | remove: '"' -}}",
+                "description": "{{- document.event_description | remove: '>' | remove: '"' | strip -}}",
+                "targetGroup": "{{- target_group_joined -}}",
+                "category": "{{- document.event_category -}}",
+                "content": {{ document.event_description | strip_html | strip_newlines | strip | jsonify }},
+                "url": "{{ url_str }}",
+                "icon_path": "/assets/img/communities/{{- document.event_category | append : "s"| downcase | slugify -}}.svg",
+                "event_date": "{{ document.event_date | date: '%Y%m%d' }}",
+                "event_date_raw": "{{ document.event_date }}",
+                "event_recording_link": "{{ event_recording_link }}",
+                "meta": "document"
+                },
+            {%- if forloop.last -%}{}{%- endif -%}
+        {%- endfor -%}
+    ]
+}

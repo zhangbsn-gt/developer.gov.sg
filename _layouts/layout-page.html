@@ -9,6 +9,10 @@ layout: layout-default
    {% include sidenav-single-level-mobile.html %}
 {% endif %}
 
+{%- if page.multi_level_nav -%}
+   {% include sidenav-second-level-mobile.html %}
+{% endif %}
+
 <section class="sgds-section page-{{ page_title_slug }}">
     <div class="sgds-container content has-default-header-styles">
         {{ content }}

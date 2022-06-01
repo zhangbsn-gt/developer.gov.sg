@@ -17,6 +17,13 @@ module.exports = (env, argv) => {
       "vue-search-app-all-products":
         "./apps/src/search/vue-search-app-all-products.js",
       "vue-blogs-app": "./apps/src/blogs/vue-blogs-app.js",
+      "vue-search-app-all-events":
+        "./apps/src/search/vue-search-app-all-events.js",
+      "community-overview": "./apps/src/communities/community-overview.js",
+      "conferences-webinars-sort":
+        "./apps/src/communities/conferences-webinars-sort.js",
+      "layout-page-sidenav-calendar":
+        "./apps/src/communities/layout-page-sidenav-calendar.js",
       main: "./apps/src/main.js",
     },
     output: {

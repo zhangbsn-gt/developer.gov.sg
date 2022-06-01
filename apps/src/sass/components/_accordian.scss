@@ -1,0 +1,28 @@
+.sgds-custom-accordion-header {
+    /* Flex */
+    align-items: center;
+    justify-content: space-between;
+    /* Styles */
+    color: #323232;
+
+    .sgds-accordian-speaker-content {
+        align-items: center;
+        justify-content: start;
+
+        .sgds-accordian-speaker-image {
+            height: 2.75em;
+        }
+    }
+
+    .is-active {
+        background-color: white;
+    }
+
+    &:hover {
+        background-color: white !important;
+    }
+}
+
+.sgds-accordion.is-white .sgds-accordion-header.is-active {
+    background-color: white;
+}

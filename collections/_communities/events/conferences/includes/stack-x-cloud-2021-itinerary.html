@@ -1,0 +1,30 @@
+{% for item in include.itinerary %}
+<div class="sgds-card">
+  <div class="sgds-card-content">
+    <small>{{ item.timeslot }}</small>
+    <h4>{{ item.title }}</h4>
+    <p>
+      {{ item.desc }}
+    </p>
+    {% if item.speakers != nil %}
+    <b style="margin-left:10px; font-size:larger">Speaker(s) </b>
+    {% endif %}
+    {% for speaker in item.speakers %}
+    <div class="sgds-accordion is-borderless">
+      <a class="sgds-accordion-header" role="button" aria-expanded="true">
+        <div style="color:black; display:flex;align-items: center">
+          <img src="{{speaker.image}}" alt="{{speaker.name}}" style="width:56px;margin: 0 10px 0 0" />
+          <p>{{speaker.name}}<b></b>, {{speaker.title}}</p>
+        </div>
+        <i class="sgds-icon sgds-icon-chevron-down"></i>
+      </a>
+      <div class="sgds-accordion-body">
+        <p>
+          {{speaker.desc}}
+        </p>
+      </div>
+    </div>
+    {% endfor%}
+  </div>
+</div>
+{% endfor %}

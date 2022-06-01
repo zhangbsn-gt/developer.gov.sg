@@ -1,0 +1,68 @@
+---
+title: STACK 2020
+layout: layout-page-sidenav
+_data: events-nav
+description: >
+  STACK is GovTech’s flagship conference and the largest government-led developers
+  event in Singapore that connects government, industry and the tech community.
+redirect_from:
+  - /communities/events/conferences/stack-2020/
+  - /communities/events/conferences/stack-2020/overview.html
+multi_level_nav: true
+sub_collection_render: true
+---
+{% assign video_data_file = 'stack2020-videos' %}
+
+<div class="is-fullwidth is-hidden-desktop">
+  {% include card-variant-event-information.html %}
+</div>
+
+<h2>STACK 2020</h2>
+<p>
+  Thank you for joining us at STACK 2020. Missed any sessions? You can watch the video replays below
+</p>
+
+<div class="sgds-tabs">
+  <ul class="no-margin" role="tablist">
+    <li class="is-active">
+      <a data-tab="#tab1" role="tab" aria-selected="true" aria-controls="tab1">
+        Opening & Keynotes
+      </a>
+    </li>
+    <li>
+      <a data-tab="#tab2" role="tab" aria-selected="false" aria-controls="tab2">
+        Cloud
+      </a>
+    </li>
+    <li>
+      <a data-tab="#tab3" role="tab" aria-selected="false" aria-controls="tab3">
+        App
+      </a>
+    </li>
+    <li>
+      <a data-tab="#tab4" role="tab" aria-selected="false" aria-controls="tab4">
+        Tech Culture
+      </a>
+    </li>
+    <li>
+      <a data-tab="#tab5" role="tab" aria-selected="false" aria-controls="tab5">
+        Covid-19 Tech
+      </a>
+    </li>
+  </ul>
+</div>
+<div class="row" id="tab1">
+  {% include videos-display.html type="Opening, Keynote, Panel - Tech Culture" _data=video_data_file %}
+</div>
+<div class="row" id="tab2">
+  {% include videos-display.html type="Cloud - Preamble, Cloud - Talk, Cloud - VOD" _data=video_data_file %}
+</div>
+<div class="row" id="tab3">
+  {% include videos-display.html type="App - Preamble, App - Talk, App - Live Chat, App - VOD" _data=video_data_file %}
+</div>
+<div class="row" id="tab4">
+  {% include videos-display.html type="Tech Culture - Preamble, Tech Culture - Talk, Tech Culture - VOD" _data=video_data_file %}
+</div>
+<div class="row" id="tab5">
+  {% include videos-display.html type="COVID-19 Tech -  Preamble, COVID-19 Tech - Talk, COVID-19 Tech - Live Chat" _data=video_data_file %}
+</div>

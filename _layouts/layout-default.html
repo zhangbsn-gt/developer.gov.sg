@@ -96,7 +96,7 @@
     <main>
       {%- include top-nav.html -%}
       {% if page.layout == "layout-page-sidenav" or page.layout == "layout-category-listing" %}
-      {%- unless page.single_level_nav -%}
+      {%- unless page.single_level_nav or page.multi_level_nav -%}
       {% if page.hide_side_nav == nil %}
       <div class="mobile-sidenav is-hidden-desktop">
           <button class="sgds-button is-small mobile-sidenav-toggle" type="button">

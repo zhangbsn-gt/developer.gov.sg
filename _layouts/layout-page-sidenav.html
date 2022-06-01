@@ -10,49 +10,86 @@ layout: layout-page
     <aside class="sgds-menu">
       <ul class="sgds-menu-list">
         {%- if page.single_level_nav -%}
-          {%- include sidenav-single-level.html -%}
+        {%- include sidenav-single-level.html -%}
+        {%- elsif page.multi_level_nav -%}
+        {%- include sidenav-second-level.html -%}
         {% else %}
-          {%- include sidenav.html -%}
+        {%- include sidenav.html -%}
         {% endif %}
       </ul>
     </aside>
   </div>
   {% endif %}
   {% if page.sharable == true or page.sharable == nil %}
-    {% if page.hide_side_nav == nil %}
-    <div class="col is-8 is-offset-1 is-12-mobile">
+  {% if page.hide_side_nav == nil %}
+  <div class="col is-8 is-offset-1 is-12-mobile">
     {% else %}
     <div class="col is-11 is-12-mobile">
-    {% endif %}
-    {% if collectionName == "products" and url_last != "overview" and page.single_level_nav == nil %}
+      {% endif %}
+      {% if collectionName == "products" and url_last != "overview" and page.single_level_nav == nil %}
       <h2>{{page.title}}</h2>
       <p id="collections">{{page.sub-title}}</p>
-      <hr/>
-    {% endif %}
-    {{ content }}
-    <p class="text-last-updated">
-      <em>
-        Last updated {{ page.last_modified_at | date: '%d %B %Y' }}
-      </em>
-    </p>
-    <div class="small-viewport-social-media-buttons">
-      {% include social-media.html display="mobile" %}
+      <hr />
+      {% endif %}
+      {{ content }}
+      <p class="text-last-updated">
+        <em>
+          Last updated {{ page.last_modified_at | date: '%d %B %Y' }}
+        </em>
+      </p>
+      <div class="small-viewport-social-media-buttons">
+        {% include social-media.html display="mobile" %}
+      </div>
+      {%- include feedback.html -%}
     </div>
-    {%- include feedback.html -%}
-  </div>
-  {% else %}
-  <div class="col is-9 is-offset-1 is-12-mobile">
-    {{ content }}
-    <p class="text-last-updated">
-      <em>
-        Last updated {{ page.last_modified_at | date: '%d %B %Y' }}
-      </em>
-    </p>
-    {%- include feedback.html -%}
-  </div>
-  {% endif %}
+    {% else %}
+    <div class="col is-9 is-offset-1 is-12-mobile">
+      {{ content }}
+      <p class="text-last-updated">
+        <em>
+          Last updated {{ page.last_modified_at | date: '%d %B %Y' }}
+        </em>
+      </p>
+      {%- include feedback.html -%}
+    </div>
+    {% endif %}
 
-  {% if page.sharable == true or page.sharable == nil %}
-  {% include social-media.html display="wide" %}
-  {% endif %}
-</div>
+    {% if page.sharable == true or page.sharable == nil %}
+    {% include social-media.html display="wide" %}
+    {% endif %}
+  </div>
+
+  <!-- TODO: Refactoring this component -->
+  <!-- TODO: Test Whether we need to load this everytime for every page as well-->
+  <script defer="defer" type="text/javascript" data-id="layout-page-sidenav-calendar"
+    data-nav-level="{{- page.multi_level_nav -}}" data-event-recording-link="{{- event_recording_link -}}"
+    data-event-registration-end-date="{{- event_registration_end_date_parsed -}}"
+    src="/assets/bundles/layout-page-sidenav-calendar.bundle.js">
+  </script>
+  <script defer="defer" type="text/javascript">
+    function getCompareDate() {
+      // gets local time, sg / kl timing
+      var d = new Date(),
+        month = "" + (d.getMonth() + 1),
+        day = "" + d.getDate(),
+        year = d.getFullYear();
+      if (month.length < 2) month = "0" + month;
+      if (day.length < 2) day = "0" + day;
+      return [year, month, day].join("");
+    }
+
+    // Overriding the default behaviour of the button
+    function buttonEventHandler() {
+      if (document.querySelector('[data-future-date]').getAttribute('data-future-date') > getCompareDate()) {
+        // If today's date < event date, then enable the button and redirect to the event pageÎ
+        if ('{{- event_registration_link -}}') {
+          location.href = '{{- event_registration_link -}}';
+        }
+      }
+
+      // If today's date > event date, then disable the button
+      if (document.querySelector('[data-future-date]').getAttribute('data-future-date') < getCompareDate()) {
+        location.href = '{{- event_recording_link -}}'
+      }
+    }
+  </script>

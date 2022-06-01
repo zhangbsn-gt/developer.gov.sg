@@ -1,7 +1,17 @@
 <div class="sgds-card {{include.parentCardStyle}}">
-  <div class="sgds-card-content">
-      <img src="{{include.img_src}}" alt=""/>
-      {% include card-header-info.html disableItemCount=include.disableItemCount name=include.name item_count=include.item_count url_str=include.url_str%}
-    <p>{{ include.description }}</p>
-  </div>
+    <div class="sgds-card-content">
+        {% if include.img_src %}
+        <img src="{{include.img_src}}" alt="" />
+        {% endif%}
+        {% include card-header-info.html disableItemCount=include.disableItemCount name=include.name item_count=include.item_count url_str=include.url_str%}
+        <div style="display: flex; align-items: center; justify-content: start;">
+            <p class="is-flex search-result-status sgds-card-iconography margin--bottom--none">
+                {% if include.render_calendar %}
+                <span class="sgds-icon sgds-icon-calendar margin--right--sm is-size-4" role="img"
+                    aria-label="sgds-icon-calendar"></span>
+                {% endif %}
+                {{ include.description }}
+            </p>
+        </div>
+    </div>
 </div>

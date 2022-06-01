@@ -1,0 +1,97 @@
+---
+title: (Where's the) Security in the Internet of Things?
+layout: layout-page-sidenav
+_data: events-nav
+redirect_from:
+  - >-
+    /communities/events/stack-x-meetups/where-s-the-security-in-the-internet-of-things/
+  - >-
+    /communities/events/stack-x-meetups/where-s-the-security-in-the-internet-of-things/overview.html
+multi_level_nav: true
+sub_collection_render: true
+event_rundown:
+- title: "7:00 – 7:05pm: Introduction by GovTech"
+- title: "7:05 – 7:35pm: A Hacker's Perspective - Identifying vulnerabilities in an IoT ecosystem + Q&A"
+  speaker: "By: Keith Tay, Cybersecurity Specialist and Goh Jing Loon, Associate Cybersecurity Specialist, Advanced Cyber Attack Simulation, GovTech"
+- title: "7:35 - 8:05pm: A Security Perspective - Eliminating the root of all (Internet of Things) Evil + Q&A"
+  speaker: "By: Kelvin Wong, Senior Cybersecurity Specialist, National Strategic Projects, GovTech"
+- title: "8:05 - 8:15pm: Combined Q&A"
+speakers:
+  - name: Keith Tay
+    title: Cybersecurity Specialist, Advanced Cyber Attack Simulation, GovTech
+    desc: >-
+      Keith Tay is a cybersecurity specialist who leads GovTech’s IoT
+      Penetration Testing team by day, and is an adjunct lecturer for Singapore
+      Polytechnic by night. In 2020, Keith responsibly disclosed three
+      vulnerabilities in a Wi-Fi mesh router, which allowed an attacker in close
+      proximity to perform a complete takeover of the device. Keith is a
+      certified penetration tester with OSWE/OSCE/OSCP/GAWN/CRT credentials.
+  - name: Goh Jing Loon
+    title: Associate Cybersecurity Specialist, Advanced Cyber Attack Simulation, GovTech
+    desc: >-
+      Goh Jing Loon is an Associate Cybersecurity Specialist at GovTech. He is a
+      member of GovTech’s IoT Penetration Testing team where he focuses on
+      testing wireless technologies. He is also an avid security researcher who
+      spends time researching and disclosing vulnerabilities. In 2019, Jing Loon
+      was awarded the MINDEF Top 10 Bounty Hunter award and has also responsibly
+      disclosed a cross-site scripting vulnerability in an open source package
+      frequently used by IoT projects. Jing Loon is a certified penetration
+      tester with OSWE/OSCP/GAWN/CRT credentials.
+  - name: Kelvin Wong
+    title: Senior Cybersecurity Specialist, National Strategic Projects, GovTech
+    desc: >-
+      Kelvin Wong is a Senior Cybersecurity Specialist from GovTech’s
+      Cybersecurity Group, supporting the Smart Nation Sensor Platform
+      programme. His main focus is in IoT and Cloud Security, practising risk
+      assessment and security by design.
+---
+<div>
+  <p>
+    For upcoming STACK-X webinars and a full list of our past events, please visit our <a
+      href="https://www.meetup.com/STACK-X-by-GovTech-Singapore/">Meetup page</a>.
+  </p>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/1G9gZC6TMvc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<!-- Event details -->
+<h3>Overview</h3>
+<p>
+  Who should attend: If you are a software engineer, IoT engineer, device manufacturer or security manager, this talk is
+  for you!
+</p>
+<p>
+  The Internet of Things (IoT) technologies offer many potential benefits to consumers and organisations. Some uses of
+  IoT include the monitoring of sensor data, system automation, and the remote control of smart devices.
+</p>
+<p>
+  With the advancements in low-powered computing and lower costs of implementation, we are witnessing an acceleration of
+  the transformation of traditional analog systems into smart systems. However, more often than not, the security aspect
+  of IoT systems tend to lag behind the technological advancements.
+</p>
+<p>As such, hackers are turning to IoT smart systems as a prime target to pounce on.</p>
+<p>In the first session, Keith and Jing Loon will be sharing insights on exploiting vulnerabilities in an IoT ecosystem
+  from a hacker’s perspective. The sharing will include the thought process for identifying vulnerabilities, common ways
+  of exploitation, and key security issues which IoT implementers should be mindful of.
+</p>
+<p>
+  In the second session, Kelvin will be discussing about possible security measures that device manufacturers can adopt
+  to improve the security posture of their products. He will highlight the risks that may arise from a smart device
+  concept, the importance of getting the requirements right at the start of a product development lifecycle, and the
+  security considerations around the hardware and software of device development.
+</p>
+
+<!-- If programme rundown is applicable, add data accordingly-->
+<h3>Programme Rundown</h3>
+{%- include event-rundown.html 
+  _data=page.event_rundown 
+  description=page.event_rundown_description
+-%}
+
+<h3>Speaker</h3>
+<div class="is-fullwidth margin--top--none margin--bottom">
+  {%- for speaker in page.speakers -%}
+  <div class="margin--top">
+    {%- include accordian-display.html content=speaker -%}
+  </div>
+  {%- endfor -%}
+</div>

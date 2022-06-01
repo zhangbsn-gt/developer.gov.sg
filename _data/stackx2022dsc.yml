@@ -86,7 +86,7 @@
 
 - type: Datatransformation
   timeslot: 3:00 PM - 3:30 PM
-  title: Our Playbook to Data Transformation​
+  title: Our Playbook to Data Transformation
   desc: We have started the journey to transform GovTech into a model data analytics-ready organisation that is exemplary in the use of data! This presentation will give an introduction on GovTech’s Data Strategy and the various enablers that have been put in place to empower GovTechies to make use of data to improve their operations and gain insights for policy making.
   speakers: 
     - name: Lim Hock Chuan
@@ -108,7 +108,7 @@
 
 - type: Dataengineering
   timeslot: 2:00 PM - 2:30 PM
-  title: Trusted Centre Sensors​
+  title: Trusted Centre Sensors
   desc: 'This brief discusses how we have enabled user-centric data sharing, concierge services and self-help exploitation of sensor domain core data in our of the four Trusted Centres under the Government Data Architecture: 1) Foundational governance underpinning our approach to data request flow; 2) Importance of leveraging on an enterprise identity provider store (IdP) and its influence on our data fabric; 3) Enabling user-led discovery and exploitation with Databricks.'
   speakers: 
     - name: Edwin Seah

@@ -1,0 +1,200 @@
+title: Past Webinars
+layout: layout-page-sidenav
+description: >
+  View past STACK-X webinars here.
+webinars:
+  - name: >
+      STACK-X: Meetup - Reimagining Government Payout with GovWallet
+    description: |
+        In our second Tech for Public Good-themed Meetup, the team behind GovWallet, one of GovTech's latest digital tools, shared about this improved way of distributing government payouts. GovWallet streamlines the payout process for users to receive government-issued monies and credits. The team talked about the GovWallet development journey of enhancing the user experience for citizens and shared behind-the-scenes stories on overcoming the challenges when developing this digital tool!
+    video_id: PtG0Lj1YqAw
+    date: 2022-05-19
+  - name: >
+      STACK-X Hybrid Meetup: Tech for Public Good - Enhancing the User Journey for Singapore Government Grants
+    description: |
+        First STACK-X Hybrid Meetup: In this Tech for Public Good-themed Meetup, speakers from the Government Digital Services team at GovTech, Shaina Tan (Associate UX Designer) and Keith Choo (Associate Quality Engineer) shared more about designing the Singapore Government’s grant administration ecosystem, which consists of OurSG Grants (OSG) Portal, the Business Grants Portal (BGP), and the Fraud Detection Platform (FDP). This approach facilitates a greatly improved application and administration process for Government assistance. Through tech, the grant journey is harmonised and streamlined while grant governance is also enhanced.
+    video_id: 0kYrbpdXtpI
+    date: 2022-05-12
+  - name: >
+      STACK-X: Meetup - Agile Coaching Methods to Create Great Products as a Team
+    description: |
+      In this Meetup with the GovTech Services Agile Coach Team, our speakers discuss their Signature Agile Coaching approach which combines the agile way of working and team coaching to help teams solve complex challenges effectively. This results in high-creation teams that can successfully create and support impactful products and services.
+    video_id: 11XsPbWNJvA
+    date: 2022-03-23
+  - name: >
+      STACK-X: Meetup - Data Sharing in today’s Digital Economy for Customer Delivery
+    description: |
+      In this Meetup with GovTech’s [Asynchronous Data Exchange (ADEX)](/products/categories/sensor-platforms-and-internet-of-things/asynchronous-data-exchange){:target="_blank"} team and Confluent, our speakers discussed the various data-sharing solutions used by the public sector and industry to overcome challenges in sharing data efficiently and securely, leading to robust, cost-effective practices.
+    video_id: 1RvSLnLRQQk
+    date: 2022-01-27
+  - name: >
+      STACK-X: Meetup - UI/UX Design by the International Community
+    description: |
+      In STACK-X’s first international event with the tech community in US, we proudly present STACK-X Meetup: UI/UX Design by the International Community. This        Meetup welcomes overseas Singaporeans and the local UX/UI community to gather and discuss the fast-evolving role of design, UX research for diversity and          inclusivity, and more!
+    video_id: d044VlD22Tk
+    date: 2021-10-15
+  - name: >
+      STACK-X: Meetup - Exploring Different Forms of Ops in Government Commercial Cloud
+    description: |
+      GovTech has been migrating an increasing number of projects to the Cloud. 
+      Operating and managing an environment consisting of multiple Clouds and services pose numerous challenges. 
+      There is also a need to transform operations into xOps in order to support multiple projects within the GCC.
+    video_id: lAu5PITJ5Bk
+    date: 2021-09-23
+  - name: >
+      STACK-X: Meetup - Singpass in Healthcare Use Cases and GovTech's HealthCerts
+    description: |
+      The NDI Industry Engagement Office and Assurity Trusted Solutions shared how different businesses can leverage Singpass to develop value-added services for their customers.
+      Use cases of Singpass adoption in HealthCerts and Accredify START, a healthcare portal facilitating safe return to work were also covered.
+    video_id: 3Bb08djz6VY
+    date: 2021-08-26
+  - name: >
+      STACK X Meetup - Automate Deployments In Government The GitOps Way
+    description: |
+      Learn about the GitOps workflow, benefits of GitOps in leveraging Continuous Integration and Continuous Delivery (CI/CD) automation, and how it is being adopted 
+      in Government projects such as the Singapore Government Tech Stack (SGTS), Container Stack platform, and the Government Commercial Cloud (GCC).
+    video_id: n2TtkE_mbxk
+    date: 2021-08-14
+  - name: >
+      STACK X Meetup x DSSG: Using Natural Language Processing and Machine Learning for effective feedback and workflow
+    description: |
+      Watch this webinar and hear from our speakers at the Data Science and Artificial Intelligence Division (DSAID) in GovTech to learn how NLP and Deep 
+      Learning work to automatically analyse municipal issues feedback. You will also discover how a small team quickly prototyped an NLP workflow to understand 
+      business concerns.
+    video_id: Kig-eMiIDXo
+    date: 2021-07-08
+  - name: >
+      STACK X Meetup x CSIT: How Open Policy Agent adds value to your organisation
+    description: |
+      This meetup, co-organised with the Centre for Strategic Infocomm Technologies (CSIT), shared how OPA is implemented, how Envoy and OPA proved 
+      invaluable in CSIT’s journey in breaking up monoliths into microservices, and how our Whole-of-Government Platform-as-a-Service (PaaS) makes use 
+      of OPA (Gatekeeper) to enforce a variety of requirements.
+    video_id: F8Csz4u5sVE
+    date: 2021-06-23
+  - name: >
+      STACK-X Workshop: Coding Dojo - Learn the basics of TDD & Pair-Programming
+    description: |
+      For the very first time, STACK-X Meetup ran a Coding Dojo workshop on the basics of TDD & Pair-Programming. This popular technical workshop was 
+      fully subscribed at STACK 2020 – GovTech’s flagship developers conference.
+    video_id: 3OB5zygth9o
+    date: 2021-05-27
+  - name: >
+      STACK-X: Meetup - (Where's the) Security in the Internet of Things
+    description: |
+      The Internet of Things (IoT) offers many potential benefits to consumers and organisations such as monitoring sensor data, 
+      system automation, and the remote control of smart devices. As vendors and developers look to converge IoT with modern-day 
+      technologies, security is one factor that tends to lag behind technological advancements, making IoT smart systems a prime target for hackers.
+    video_id: 1G9gZC6TMvc
+    date: 2021-04-22
+  - name: >
+      STACK-X: Meetup x BAS - Preparing for Safe Travel: Blockchain's Opportunities and Challenges
+    description: |
+      Jointly organised by STACK-X and Blockchain Association of Singapore, the GovTech HealthCerts
+      team and our partners will share about Blockchain in the healthcare sector.
+    video_id: L8DxftuGRS8
+    date: 2021-03-31
+  - name: >
+      STACK-X: Meetup - Introducing the Singapore Government Developer Portal
+    description: |
+      This meetup will discuss what it takes to build the [Singapore Government Developer Portal](https://www.developer.gov.sg/), 
+      the single portal for the Government to share our products with our partners and the community.
+      Discover how this collaborative documentation publishing service was designed and engineered to
+      be useful for both public and private developers.
+    video_id: kJwhfaHLQbw
+    date: 2021-03-30
+  - name: >
+      STACK-X: Meetup - What is GovTech's National Digital Identity Stack?
+    description: |
+      GovTech's National Digital Identity (NDI) team spoke about leveraging
+      a cloud-native tech stack and adopting Infrastructure-as-Code to build,
+      reuse and rapidly assemble infrastructure for quick and secure service rollouts. **You can also read
+      our article on this webinar [here](https://medium.com/ndi-sg/stack-x-webinar-national-digital-identity-stack-introduction-to-ndi-34b5dbed9565).**
+    video_id: -IXqbuMOwYg
+    date: 2020-10-08
+  - name: >
+      STACK-X: Meetup - Tech for Public Good: Supporting the community
+    description: |
+      In this Tech for Public Good series, discover how GovTech teams
+      digitalised the supply and distribution processes for masks and
+      other essential resources by creating SupplyAlly, and built
+      SupportGoWhere - a website that hosts useful information
+      on Government support schemes and ways for citizens to apply directly. **You can also read
+      our two-part article on this webinar here:**
+
+      - [Part 1 (SupplyAlly)](/communities/stack-x-meetups/past-webinars/supporting-the-community-part-1)
+      - [Part 2 (SupportGoWhere)](/communities/stack-x-meetups/past-webinars/supporting-the-community-part-2)
+    video_id: Ms_K513U1lI
+    date: 2020-08-27
+  - name: >
+      STACK-X: Meetup x DevOps Vietnam - How DevOps transforms software development
+    description: |
+      In our first Spotlight on ASEAN series, GovTech's DevOps Engineer
+      Fabian Lim will share the tools that enable DevSecOps practices in the
+      organisation, and Vinh Vo from DevOps Vietnam will discuss the benefits
+      and pitfalls of deploying Kubernetes on-prem.
+    video_id: QrEItP_5S8g
+    date: 2020-08-05
+  - name: >
+      STACK-X: Meetup - Building secure mobile applications with OWASP MASVS and MSTG
+    description: |
+      The mobile application penetration testing team from GovTech’s Cyber Security
+      Group (CSG) discussed how common security vulnerabilities can be avoided
+      by following mobile application security best practices. **You can also read
+      our article on this webinar [here](https://medium.com/csg-govtech/stack-x-webinar-an-introduction-to-building-secure-mobile-apps-96a0df6229cf).**
+    video_id: KJEu4Ga1ZFk
+    date: 2020-07-16
+
+  - name: >
+      STACK-X: Meetup - Zero-Knowledge Proof
+    description: |
+      A speaker from GovTech teaches audiences how zero-knowledge proof works,
+      how they can be used for new privacy-preserving techniques, and demonstrates
+      building an application that leverages zero-knowledge proof. **You can also read
+      our two-part article on this webinar here:**
+
+      - [Part 1](/communities/stack-x-meetups/past-webinars/zero-knowledge-proof-part-1)
+      - [Part 2](/communities/stack-x-meetups/past-webinars/zero-knowledge-proof-part-2)
+    video_id: ewUs2fqBGhI
+    date: 2020-06-25
+
+  - name: >
+      STACK-X: Meetup x DataScience SG - Enriching Lives through AI Solutions
+    description: |
+      In this webinar, explore how artificial intelligence (AI) enriches
+      citizens’ day-to-day interactions with government services.
+    video_id: h9m0BIDIzBA
+    date: 2020-06-16
+
+  - name: >
+      STACK-X: Meetup - Tech for Public Good: Designing Community Platforms
+    description: |
+      The teams behind MaskGoWhere / FluGoWhere, and the popular Community Circuit Breaker
+      (iamaccb.sg) website discuss how they built these key platforms in a matter of days without
+      compromising on design and usability.
+    video_id: dwHtHFVXIdY
+    date: 2020-06-10
+
+  - name: >
+      STACK-X: Meetup - Data-driven solutions for a post-circuit breaker world
+    description: |
+      Speakers from GovTech and URA discuss the development of SPOT,
+      VigilantGantry and SpaceOut, three data-driven solutions that will
+      play an important part in physical distancing and temperature scanning
+      when Singapore resumes activities after the circuit breaker.
+    video_id: -wtORFpvFCg
+    date: 2020-05-28
+
+  - name: Contact Tracing & Re-opening the Economy
+    description: |
+      Speakers from GovTech, SNDGG and MOH discuss two problem statements
+      together with webinar participants.
+    video_id: hRYGpTEVlIs
+    date: 2020-05-08
+
+  - name: >
+      Stack x Tech +65: Facing A Pandemic - Tech In The Time Of Covid-19
+    description: |
+      Find out more about how companies and government outfits
+      are pivoting and innovating to meet the COVID-19 challenges head-on
+    video_id: ltsAlBM6Gvs
+    date: 2020-04-16

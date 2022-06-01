@@ -1,0 +1,45 @@
+---
+title: Communities
+layout: layout-page-sidenav
+description: >
+    Explore our various community engagement channels here, from STACK-X Meetups to newsletters to open source technologies
+    to COVID-19 volunteering opportunities!
+redirect_from:
+    - /communities/
+    - /communities/overview.html
+---
+
+<h2>GovTech’s Community Development Efforts</h2>
+<p>
+    We are excited to engage with the wider developer ecosystem as we continue to build and refine digital
+    products. We believe that our goal – to build better products for the public good – can be achieved only
+    through meaningful collaboration with the developer community.
+</p>
+
+<!-- Upcoming Events -->
+<div>
+    <h3>Upcoming Events</h3>
+    <div id="upcoming-events-container" class="card-grid-container is-fullwidth"></div>
+    <div id="no-upcoming-events-message" class="margin--top margin--bottom--xl has-text-centered">
+        Sorry, there is currently no upcoming available events.
+    </div>
+    <div class="is-fullwidth is-flex" style="justify-content: center;" id="upcoming-conferences-button">
+        <a class="sgds-button sgds-button--primary is-outlined" href="/communities/events/all-events/index.html">
+            View all events
+        </a>
+    </div>
+    {%- include site-section-event-listing.html -%}
+</div>
+
+<hr />
+
+<!-- Site Section Tabs -->
+<div>
+    <h3 class="margin--bottom--none">What's New</h3>
+    {%- include site-section-tabs.html -%}
+</div>
+
+<!-- Sorting and theming script -->
+<script type="text/javascript" data-id="community-overview" data-content-limit="2"
+    src="/assets/bundles/community-overview.bundle.js">
+</script>

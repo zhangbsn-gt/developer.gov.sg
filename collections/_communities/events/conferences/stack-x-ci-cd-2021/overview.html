@@ -1,0 +1,53 @@
+---
+title: STACK-X CI/CD 2021
+layout: layout-page-sidenav
+_data: events-nav
+redirect_from:
+  - /communities/events/conferences/stack-x-ci-cd-2021/
+  - /communities/events/conferences/stack-x-ci-cd-2021.html
+description: >
+  CI/CD with SHIP-HATS is a two-day conference for developers and IT leaders to modernise securely, learn from peers and steps to get started
+multi_level_nav: true
+sub_collection_render: true
+---
+
+<div class="is-fullwidth is-hidden-desktop">
+  {% include card-variant-event-information.html %}
+</div>
+
+<div>
+  {% assign video_data_file = 'stackx2021conference-videos' %}
+
+  <figure>
+    <img src="/assets/img/stack-x-ship-hats-hero.jpg" alt="Stack-X SHIP-HATS Hero" />
+  </figure>
+
+  <p>
+    Thank you for joining us at STACK-X - CI/CD with SHIP-HATS. Missed any sessions? You can watch the video replays
+    below.
+  </p>
+
+  <div class="sgds-tabs">
+    <ul class="no-margin" role="tablist">
+      <li class="is-active">
+        <a data-tab="#tab1" role="tab" aria-selected="true" aria-controls="tab1">
+          Keynote
+        </a>
+      </li>
+      <li>
+        <a data-tab="#tab2" role="tab" aria-selected="false" aria-controls="tab2">
+          Product
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="tab-content" id="tab1">
+    {% include videos-display.html type="Opening, Keynote - VOD, Keynote - Live Chat" _data=video_data_file %}
+  </div>
+
+  <div class="tab-content" id="tab2">
+    {% include videos-display.html type="Product - VOD" _data=video_data_file %}
+  </div>
+
+</div>

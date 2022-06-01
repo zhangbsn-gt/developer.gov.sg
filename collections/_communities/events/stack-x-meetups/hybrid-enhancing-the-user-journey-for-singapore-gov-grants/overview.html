@@ -1,0 +1,93 @@
+---
+title: (Hybrid) Enhancing the User Journey for Singapore Gov grants
+layout: layout-page-sidenav
+_data: events-nav
+redirect_from:
+  - >-
+    /communities/events/stack-x-meetups/hybrid-enhancing-the-user-journey-for-singapore-gov-grants/
+  - >-
+    /communities/events/stack-x-meetups/hybrid-enhancing-the-user-journey-for-singapore-gov-grants/overview.html
+multi_level_nav: true
+sub_collection_render: true
+event_rundown:
+  - title: '7:00pm: Welcome'
+  - title: '7:10pm: Opening Address'
+    speaker: 'By Chan Cheow Hoe, Government Chief Digital Technology Officer'
+  - title: >-
+      7:20pm: Introduction to OurSG Grants and the Business Grants Portals – The
+      Development Journey and Integration of the Fraud Detection Platform
+      towards improved grant governance
+    speaker: 'By Shaina Tan, Associate UX Designer, Government Digital Services, GovTech'
+  - title: '7:40pm: About the Grant Admin Module (GAM): Overview and Demo'
+    speaker: >-
+      By Keith Choo, Associate Quality Engineer, Government Digital Services,
+      GovTech
+  - title: '8:00pm: Combined Q&A'
+  - title: '8:30pm: End of Meetup'
+speakers:
+  - name: Shaina Tan
+    title: 'Associate UX Designer, Government Digital Services, GovTech'
+    desc: >-
+      Shaina is a UX Designer from the Government Digital Services division of
+      GovTech. Along with a team of designers, she designs the end to end
+      workflows for various agencies on OurSG Grants portal, ensuring that
+      processes and features are built are intuitive and scalable for the
+      platform
+  - name: Keith Choo
+    title: 'Associate Quality Engineer, Government Digital Services, GovTech'
+    desc: >-
+      Keith is a Quality Engineer from the Government Digital Services division
+      of GovTech. As a member of OurSG Grants portal team, he provides oversight
+      to the quality of the features delivered for the system, giving the
+      end-users a more seamless and positive user experience.
+---
+
+<div>
+  <p>
+    For upcoming STACK-X webinars and a full list of our past events, please visit our <a href="https://www.meetup.com/STACK-X-by-GovTech-Singapore/">Meetup page</a>.
+  </p>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/0kYrbpdXtpI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<h3>Overview</h3>
+<p>
+    With the sheer number of grants offered by various government agencies across different platforms, it may be
+    challenging for applicants to discover and apply for suitable grants. Additionally, grant processes are often
+    largely manual for both grant applicants and administrators, leading to longer lead times in approving much-needed
+    grants.
+</p>
+<p>
+    In this Tech for Public Good-themed Meetup, our speakers will share about designing the Singapore Government’s grant
+    administration ecosystem, which consists of <b>OurSG Grants (OSG) Portal</b>, the <b>Business Grants Portal
+        (BGP)</b> , and the
+    <b>Fraud Detection Platform (FDP)</b>. The tripartite approach of OSG, BGP, and FDP facilitates a greatly improved
+    application and administration process for Government assistance to harmonise and streamline the grant journey as
+    well as provide enhanced grant governance.
+</p>
+
+<p>
+    The session will discuss and demo a backend module which was built to ensure that agencies can set up grants on the
+    portals with minimal development effort to scale the onboarding process. The team will also talk about continually
+    enhancing support for businesses and citizens, including the unexpected operation challenges during COVID-19.
+</p>
+<p>
+    In line with Singapore’s Smart Nation initiatives, GovTech partnered the Ministry of Culture, Community and Youth
+    and its agencies to develop the OSG Portal, and the Ministry of Trade & Industry’s (MTI) Grant Management Office for
+    BGP. For additional security, FDP, which was developed by GovTech in collaboration with MTI, was also integrated
+    into the portals.
+</p>
+
+<h3>Programme Rundown</h3>
+{%- include event-rundown.html 
+  _data=page.event_rundown 
+  description=page.event_rundown_description
+-%}
+
+<h3>Speaker</h3>
+<div class="is-fullwidth margin--top--none margin--bottom">
+  {%- for speaker in page.speakers -%}
+  <div class="margin--top">
+    {%- include accordian-display.html content=speaker -%}
+  </div>
+  {%- endfor -%}
+</div>

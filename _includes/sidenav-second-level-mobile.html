@@ -1,0 +1,19 @@
+{%- assign page_name = page.id | split: "/" | last -%}
+{%- assign mobile_menu_title = page.mobile_menu_title | upcase | default: "EVENT MENU"-%}
+
+<section class="sgds-section page-{{ page_name }} is-hidden-desktop has-background-light padding--bottom padding--top">
+    <div class="sgds-container">
+        <div class="padding--bottom--sm">
+            <strong class="is-small is-hidden-desktop">{{- mobile_menu_title -}}</strong>
+        </div>
+        <div class="mobile-sidenav is-hidden-desktop">
+            <button class="sgds-button is-small mobile-sidenav-toggle" type="button">
+                <span class="has-text-weight-normal">{{ page_name | split: "-" | join: " " | capitalizewords }}</span>
+                <span class="sgds-icon sgds-icon-chevron-down"></span>
+            </button>
+            <ul class="mobile-sidenav-menu mobile-sidenav-menu-fit-content is-hidden">
+                {% include sidenav-second-level.html _data= page._data%}
+            </ul>
+        </div>
+    </div>
+</section>
