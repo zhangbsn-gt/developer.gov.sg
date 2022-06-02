@@ -138,7 +138,7 @@
   title: Strategies You Wish You Knew Before Starting a Data Engineering Project
   desc: Data engineering strategy cultivates organizations to plan out their successful data journey. DSAID’s Data Engineering team has been single-minded in our mission to develop central platforms to support data sharing, analytics and data engineering capabilities, as well as partnering agencies to co-create critical data infrastructure and uplift their in-house data engineering capabilities. In this talk, we will cover components of the data engineering strategy which includes knowing the right processes & data, relevant tools & techniques, latest technology & infrastructure as well as some of our exciting work-in-progress.
   speakers: 
-    - name: Yap Ghim Eng
+    - name: Dr. Yap Ghim Eng
       image: /assets/img/photos/yap-ghim-eng.png
       title: Deputy Director, Data Science & Artificial Intelligence Division (DSAID), GovTech
     - name: Melissa Yeo
