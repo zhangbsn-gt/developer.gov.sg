@@ -39,11 +39,11 @@ Solutions that automate your deployment processes improve the productivity of bo
 
 #### Testings
 
-CI/T/D helps to automate the process of creating new builds, running tests and deploying them. It reduces the reliance on manual testing and frees up the team to concentrate on other tasks. Over time, CI/T/D can also highlight problematic areas for you to enhance.
+CI/CD helps to automate the process of creating new builds, running tests and deploying them. It reduces the reliance on manual testing and frees up the team to concentrate on other tasks. Over time, CI/CD can also highlight problematic areas for you to enhance.
 
-The chosen CI/T/D system should link the source control, build and testing tools used by the team. A dashboard to display build progress and test results is also desirable. Lastly, the system should be configurable to target the desired deployment environment.
+The chosen CI/CD system should link the source control, build and testing tools used by the team. A dashboard to display build progress and test results is also desirable. Lastly, the system should be configurable to target the desired deployment environment.
 
-### How can I benefit from CI/T/D?
+### How can I benefit from CI/CD?
 
 - **Lower costs for you** – fewer errors, fewer human hours needed for deployments means lower costs
 
@@ -59,4 +59,4 @@ The chosen CI/T/D system should link the source control, build and testing tools
 
 ### What DevOps product is available for my use?
 
-[SHIP (Secure Hybrid Integrated Pipeline)](/products/categories/devops/ship) is a product that provides services of a build pipeline for the government. It provides managed services including Atlassian Bitbucket, Bamboo, Confluence, Jira to enable teams to build applications rapidly.
+The [Singapore Government Tech Stack (SGTS)](/singapore-government-tech-stack/overview/index.html){:target="_blank"} offers tools for implementing DevOps in public sector agencies.
