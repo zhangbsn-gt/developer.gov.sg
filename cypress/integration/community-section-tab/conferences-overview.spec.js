@@ -1,8 +1,9 @@
 /// <reference types="cypress" />
 
-describe("Conferences Overview Page Test", function() {
+describe("Conferences Overview Page Test", function () {
   context("Desktop Test Case", () => {
     before(() => {
+      // Navigate to the root
       cy.visit("/communities/events/conferences");
     });
 
@@ -10,25 +11,40 @@ describe("Conferences Overview Page Test", function() {
       cy.viewport("macbook-13");
     });
 
-    it("Should only be able to get events that belongs to the conference category", () => {
-      // RESET
+    it("Should be able to navigate to the Conference overview page from the community Section Index page.", () => {
+      // COMMUNITIES OVERVIEW SIDENAV
+      cy.get(".sgds-menu")
+        .find(".sgds-menu-list")
+        .find(".second-level-nav")
+        .contains("Events")
+        .click({
+          force: true,
+        });
+
+      cy.get(".sgds-card", { timeout: 5000 })
+        .get("a[href='conferences']")
+        .click({ force: true });
+
+      cy.url().should("include", "/communities/events/conferences/");
+    });
+
+    it("Should only be able to get events that belongs to the Conferences category", () => {
       cy.get("img[alt='Event Icon']", { timeout: 5000 }).each($el => {
-        expect(
-          $el
-            .parent()
-            .text()
-            .trim()
-        ).to.eq("Conference");
+        expect($el.parent().text().trim()).to.eq("Conference");
       });
     });
 
     it("Should only display less or equal to 2 content for All Upcoming Conferences", () => {
-      // Get the All upcoming conferences meetups container that goes by the id, upcoming-events-container
+      // Get the All upcoming stack-x meetups container that goes by the id, upcoming-events-container
       // Afterwards, get all the cards and ensure that number of cards is less than or equal to 2
-      cy.get("#upcoming-events-container")
-        .find("div[data-future-date]:visible")
-        .its("length")
-        .should("be.lte", 2);
+      cy.get("#upcoming-events-container").then($body => {
+        if ($body.find("div[data-future-date]:visible").length) {
+          cy.get($body)
+            .find("div[data-future-date]:visible")
+            .its("length")
+            .should("be.lte", 2);
+        }
+      });
     });
 
     it("Should only display less or equal to 2 content for Recent Past Conferences", () => {
@@ -99,6 +115,7 @@ describe("Conferences Overview Page Test", function() {
 
   context("Mobile Test Case", () => {
     before(() => {
+      // Navigate to the root
       cy.visit("/communities/events/conferences");
     });
 
@@ -106,24 +123,37 @@ describe("Conferences Overview Page Test", function() {
       cy.viewport("iphone-xr");
     });
 
+    it("Should be able to navigate to the Stack-X Meetups overview page from the community Section Index page.", () => {
+      // COMMUNITIES OVERVIEW SIDENAV
+      cy.get(".mobile-sidenav-toggle").contains("Communities").click();
+
+      // SIDENAV OVERLAY
+      cy.contains("Events").click({ force: true });
+
+      cy.get(".sgds-card", { timeout: 5000 })
+        .get("a[href='conferences']")
+        .click({ force: true });
+
+      cy.url().should("include", "/communities/events/conferences/");
+    });
+
     it("Should only be able to get events that belongs to the conference category", () => {
       cy.get("img[alt='Event Icon']", { timeout: 5000 }).each($el => {
-        expect(
-          $el
-            .parent()
-            .text()
-            .trim()
-        ).to.eq("Conference");
+        expect($el.parent().text().trim()).to.eq("Conference");
       });
     });
 
     it("Should only display less or equal to 2 content for All Upcoming Conferences", () => {
       // Get the All upcoming stack-x meetups container that goes by the id, upcoming-events-container
       // Afterwards, get all the cards and ensure that number of cards is less than or equal to 2
-      cy.get("#upcoming-events-container")
-        .find("div[data-future-date]:visible")
-        .its("length")
-        .should("be.lte", 2);
+      cy.get("#upcoming-events-container").then($body => {
+        if ($body.find("div[data-future-date]:visible").length) {
+          cy.get($body)
+            .find("div[data-future-date]:visible")
+            .its("length")
+            .should("be.lte", 2);
+        }
+      });
     });
 
     it("Should only display less or equal to 2 content for Recent Past Conferences", () => {

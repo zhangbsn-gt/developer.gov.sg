@@ -1,17 +1,12 @@
 /// <reference types="cypress" />
-describe("Community Section Overview Page Test", function() {
+describe("Community Section Overview Page Test", function () {
   context("Desktop Test Case", () => {
     before(() => {
       // Navigate to the root
-      cy.visit("http://localhost:4000/");
-      // Click on the community tab anchor tag
-      cy.contains("Communities").click({ force: true });
-      // Check whether it's the community tab by checking the url
-      cy.url().should("include", "/communities");
+      cy.visit("/communities");
     });
 
     beforeEach(() => {
-      cy.clearLocalStorage();
       cy.viewport("macbook-13");
     });
 
@@ -27,10 +22,14 @@ describe("Community Section Overview Page Test", function() {
     it("Should only display less than or equal to 2 content for all upcoming events.", () => {
       // Get the All upcoming stack-x meetups container that goes by the id, upcoming-events-container
       // Afterwards, get all the cards and ensure that number of cards is less than or equal to 2
-      cy.get("#upcoming-events-container")
-        .find("div[data-future-date]:visible")
-        .its("length")
-        .should("be.lte", 2);
+      cy.get("#upcoming-events-container").then($body => {
+        if ($body.find("div[data-future-date]:visible").length) {
+          cy.get($body)
+            .find("div[data-future-date]:visible")
+            .its("length")
+            .should("be.lte", 2);
+        }
+      });
     });
 
     it("Should display the 'View all events' button even if there is no upcoming events.", () => {
@@ -49,6 +48,22 @@ describe("Community Section Overview Page Test", function() {
       cy.url().should("include", "/communities/events/all-events/");
     });
 
+    // Newsletter
+    it("Should display the newsletter signup form when clicked on the 'Join our newsletter' button.", () => {
+      // Reset
+      cy.visit("http://localhost:4000/communities");
+
+      cy.get("#tab1")
+        .find("a[id='newsletter-signup-link']")
+        .click({ force: true });
+
+      // check if the url is correct
+      cy.url().should(
+        "include",
+        "https://form.gov.sg/#!/620c7a0ba71f3d001367f9b5"
+      );
+    });
+
     it("Should display at least 3 newsletter.", () => {
       // Reset
       cy.visit("http://localhost:4000/communities");
@@ -63,31 +78,40 @@ describe("Community Section Overview Page Test", function() {
         .should("be.lte", 3);
     });
 
-    it("Should be able to click on the “View All Newsletter” that will display more information. Should be greater than the initial number.", () => {
-      // Click on the view more content
-      cy.get("#newsletter-display-more")
-        .scrollIntoView()
-        .click();
-      // Check if the last element is exactly 'Ensuring Secure Migration of Data to the Cloud'
-      cy.get("#tab1")
-        .find(".card-grid-container")
-        .find(".newsletter-card:visible")
-        .its("length")
-        .should("be.gt", 3);
-    });
-
-    it("Should hide the button after clicking on the “View All Newsletter” button.", () => {
+    it("Should redirect after after clicking on the “View All Newsletter” button.", () => {
       // Scroll into view
       cy.get("#tab1")
-        .get(".card-grid-container")
-        .get(".newsletter-card")
+        .find(".card-grid-container")
+        .find(".newsletter-card")
         .last()
         .scrollIntoView();
 
-      // Check whether the "VView all newsletters" button is gone."
+      // Click on the button and check for redirection status
       cy.get("#tab1")
-        .not(".newsletter-card")
-        .should("not.contain", "View all newsletters");
+        .find("div[id='view-all-newsletter-button']")
+        .children()
+        .click({ force: true });
+
+      // Check if the url is corressponds corretly
+      cy.url().should("include", "/communities/newsletter/");
+    });
+
+    // Developer blogs
+    it("Should redirect after after clicking on the “View All Developer Blogs button.", () => {
+      // Reset
+      cy.visit("http://localhost:4000/communities");
+
+      // Click on tab2 via the anchor tag via the attribute data-tab
+      cy.get("li > a[data-tab='#tab2']").click();
+
+      // Click on the button and check for redirection status
+      cy.get("#tab2")
+        .find("div[id='view-all-developer-blogs-link']")
+        .children()
+        .click();
+
+      // Check if the url is corressponds corretly
+      cy.url().should("include", "/communities/developer-blogs/");
     });
   });
 
@@ -118,10 +142,14 @@ describe("Community Section Overview Page Test", function() {
     it("Should only display less than or equal to 2 content for all upcoming events.", () => {
       // Get the All upcoming stack-x meetups container that goes by the id, upcoming-events-container
       // Afterwards, get all the cards and ensure that number of cards is less than or equal to 2
-      cy.get("#upcoming-events-container")
-        .find("div[data-future-date]:visible")
-        .its("length")
-        .should("be.lte", 2);
+      cy.get("#upcoming-events-container").then($body => {
+        if ($body.find("div[data-future-date]:visible").length) {
+          cy.get($body)
+            .find("div[data-future-date]:visible")
+            .its("length")
+            .should("be.lte", 2);
+        }
+      });
     });
 
     it("Should display the 'View all events' button even if there is no upcoming events.", () => {
@@ -140,6 +168,22 @@ describe("Community Section Overview Page Test", function() {
       cy.url().should("include", "/communities/events/all-events/");
     });
 
+    // Newsletter
+    it("Should display the newsletter signup form when clicked on the 'Join our newsletter' button.", () => {
+      // Reset
+      cy.visit("http://localhost:4000/communities");
+
+      cy.get("#tab1")
+        .find("a[id='newsletter-signup-link']")
+        .click({ force: true });
+
+      // check if the url is correct
+      cy.url().should(
+        "include",
+        "https://form.gov.sg/#!/620c7a0ba71f3d001367f9b5"
+      );
+    });
+
     it("Should display at least 3 newsletter.", () => {
       // Reset
       cy.visit("http://localhost:4000/communities");
@@ -154,32 +198,40 @@ describe("Community Section Overview Page Test", function() {
         .should("be.lte", 3);
     });
 
-    it("Should be able to click on the “View All Newsletter” that will display more information. Should be greater than the initial number.", () => {
-      // Click on the view more content
-      cy.get("#newsletter-display-more")
-        .scrollIntoView()
-        .click();
-
-      // Check if the last element is exactly 'Ensuring Secure Migration of Data to the Cloud'
-      cy.get("#tab1")
-        .find(".card-grid-container")
-        .find(".newsletter-card:visible")
-        .its("length")
-        .should("be.gt", 3);
-    });
-
-    it("Should hide the button after clicking on the “View All Newsletter” button", () => {
+    it("Should redirect after after clicking on the “View All Newsletter” button.", () => {
       // Scroll into view
       cy.get("#tab1")
-        .get(".card-grid-container")
-        .get(".newsletter-card")
+        .find(".card-grid-container")
+        .find(".newsletter-card")
         .last()
         .scrollIntoView();
 
-      // Check whether the "VView all newsletters" button is gone."
+      // Click on the button and check for redirection status
       cy.get("#tab1")
-        .not(".newsletter-card")
-        .should("not.contain", "View all newsletters");
+        .find("div[id='view-all-newsletter-button']")
+        .children()
+        .click({ force: true });
+
+      // Check if the url is corressponds corretly
+      cy.url().should("include", "/communities/newsletter/");
+    });
+
+    // Developer blogs
+    it("Should redirect after after clicking on the “View All Developer Blogs button.", () => {
+      // Reset
+      cy.visit("http://localhost:4000/communities");
+
+      // Click on tab2 via the anchor tag via the attribute data-tab
+      cy.get("li > a[data-tab='#tab2']").click();
+
+      // Click on the button and check for redirection status
+      cy.get("#tab2")
+        .find("div[id='view-all-developer-blogs-link']")
+        .children()
+        .click();
+
+      // Check if the url is corressponds corretly
+      cy.url().should("include", "/communities/developer-blogs/");
     });
   });
 });

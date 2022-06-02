@@ -22,9 +22,8 @@ import { getEventDataByDate } from "../lib/communities";
 
       // Gets the mobile and desktop view
       for (var j = 0; j < node.querySelectorAll(".event-status").length; j++) {
-        node.querySelectorAll(".event-status")[
-          j
-        ].innerHTML = status.toUpperCase();
+        node.querySelectorAll(".event-status")[j].innerHTML =
+          status.toUpperCase();
         node.querySelectorAll(".event-status-container")[
           j
         ].style.backgroundColor = backgroundColor;

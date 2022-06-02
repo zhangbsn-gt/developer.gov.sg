@@ -19,7 +19,8 @@
     <div class="card-grid-container is-fullwidth">
         <p class="margin--bottom--none margin--top--none">
             Want to receive our newsletter via email? Subscribe
-            <a href="#TOBEREPLACED">here</a>.
+            <a id="newsletter-signup-link" href="https://form.gov.sg/#!/620c7a0ba71f3d001367f9b5"
+                _target="blank">here</a>.
         </p>
         {% for post in site.posts %}
         {% assign url_str = post.url %}
@@ -35,48 +36,37 @@
                 parentCardStyle=parentCardStyle
             %}
         </div>
-        {% else %}
-        <div class="newsletter-card" content-visibility-toggle="newsletter">
-            {% include card-variant-basic.html 
-                name=post.title
-                url_str=url_str
-                render_calendar=true
-                item_count=item_count
-                description=contentDescription
-                parentCardStyle=parentCardStyle
-            %}
-        </div>
         {% endif %}
         {% assign newsletterIncrementer = newsletterIncrementer | plus: 1 %}
         {% endfor %}
-        <div class="is-fullwidth is-flex" style="justify-content: center;">
-            <button class="sgds-button is-outlined is-primary" id="newsletter-display-more"
-                onclick="toggleEventsVisibility('newsletter', 'newsletter-display-more')">
-                View all newsletters
-            </button>
+        <div class="is-fullwidth is-flex" style="justify-content: center;" id="view-all-newsletter-button">
+            <a class="sgds-button sgds-button--primary is-outlined" href="/communities/newsletter/index.html">
+                View all newsletter
+            </a>
         </div>
     </div>
     {% else %}
     <h5>No newsletters yet.</h5>
     {% endif %}
 </div>
-<div class="row" id="tab2">
-    <h5>This is the news Section</h5>
+<div class="row" id="tab2" style="justify-content: center;">
+    <div class="is-fullwidth margin--top">
+        <div id="blogs-app" class="is-fullwidth">
+            <!-- This spinner will show when the Vue app is loading -->
+            <div class="spinner">
+                <div class="rect1"></div>
+                <div class="rect2"></div>
+                <div class="rect3"></div>
+                <div class="rect4"></div>
+                <div class="rect5"></div>
+            </div>
+        </div>
+        <div class="is-fullwidth is-flex" style="justify-content: center;" id="view-all-developer-blogs-link">
+            <a class="sgds-button sgds-button--primary is-outlined" href="/communities/developer-blogs/index.html">
+                View all developer blogs
+            </a>
+        </div>
+    </div>
 </div>
 
-<script>
-    // Hides the content at the start initially during the creation phase using IIFEs
-    (() => {
-        const nodes = document.querySelectorAll('*[content-visibility-toggle^="newsletter"]');
-        for (var i = 0; i < nodes.length; i++) {
-            nodes[i].style.display = "none";
-        }
-    })();
-
-    function toggleEventsVisibility(attribute, buttonID) {
-        document.querySelectorAll(`*[content-visibility-toggle="${attribute}"]`).forEach((node) => {
-            node.style.display = 'block';
-        });
-        document.getElementById(`${buttonID}`).remove();
-    }
-</script>
+<script defer async src="/assets/bundles/vue-blogs-app.bundle.js"></script>

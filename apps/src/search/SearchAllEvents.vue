@@ -30,10 +30,13 @@
             <template v-slot:calendar>
               <div class="sgds-card-image is-hidden-touch">
                 <div class="margin--right--lg">
-                  <div class="has-text-centered" style="width: 6.65rem;">
+                  <div class="has-text-centered" style="width: 6.65rem">
                     <div
                       class="event-status-container"
-                      style="border-top-right-radius: 0.5rem; border-top-left-radius: 0.5rem;"
+                      style="
+                        border-top-right-radius: 0.5rem;
+                        border-top-left-radius: 0.5rem;
+                      "
                       :style="{ backgroundColor: result.backgroundColor }"
                     >
                       <p
@@ -44,7 +47,11 @@
                     </div>
                     <div
                       class="padding---top--xs"
-                      style="border: 1px solid #323232; border-bottom-left-radius: 0.5rem; border-bottom-right-radius: 0.5rem;"
+                      style="
+                        border: 1px solid #323232;
+                        border-bottom-left-radius: 0.5rem;
+                        border-bottom-right-radius: 0.5rem;
+                      "
                     >
                       <div class="padding--top--sm padding--bottom--sm">
                         <p
@@ -75,20 +82,20 @@
               <div class="is-hidden-desktop is-flex is-centered">
                 <p
                   class="is-flex margin--bottom--sm"
-                  style="align-items: center;"
+                  style="align-items: center"
                 >
                   <span
-                    class="sgds-icon sgds-icon-calendar is-size-5 margin--right--sm"
+                    class="sgds-icon sgds-icon-calendar is-size-4 margin--right--sm"
                     role="img"
                     aria-label="iconName"
-                    style="-webkit-text-stroke: .5px white;"
+                    style="-webkit-text-stroke: 0.5px white"
                   ></span>
                   {{
                     result.mobileDateFormat.dayFormat +
-                      " " +
-                      result.mobileDateFormat.monthFormat +
-                      " " +
-                      result.mobileDateFormat.yearFormat
+                    " " +
+                    result.mobileDateFormat.monthFormat +
+                    " " +
+                    result.mobileDateFormat.yearFormat
                   }}
                 </p>
               </div>
@@ -97,7 +104,12 @@
             <template v-if="result.event_recording_link" v-slot:recording>
               <div
                 class="is-hidden-touch has-text-weight-semibold padding--left--sm padding--right--sm margin--bottom margin--top padding--top--sm padding--bottom--sm is-size-8"
-                style="background-color: #CCE4F7; width: fit-content; border-radius: 0.1rem; border-radius: .25rem;"
+                style="
+                  background-color: #cce4f7;
+                  width: fit-content;
+                  border-radius: 0.1rem;
+                  border-radius: 0.25rem;
+                "
               >
                 Recordings available
               </div>
@@ -108,7 +120,7 @@
                 <img
                   alt="Event Image"
                   class="margin--right--sm margin--left--none margin--bottom--none margin--top--none"
-                  style="width: 1.5em; height: 1.5em;"
+                  style="width: 1.5em; height: 1.5em"
                   :src="result.icon_path"
                 />
                 <p v-html="result.category"></p>
@@ -180,7 +192,7 @@ export default {
     };
   },
   computed: {
-    filterSearchResults: function() {
+    filterSearchResults: function () {
       const dateParam = new URL(window.location.href).searchParams.get(
         "year_filter"
       )
@@ -195,8 +207,13 @@ export default {
       document.getElementById("query-all-year").value = dateParam;
       document.getElementById("query-all-category").value = categoryParam;
 
-      for (var i = 0; i < this.searchResults.length; i++) {
-        const dt = new Date(this.searchResults[i].event_date_raw);
+      for (let i = 0; i < this.searchResults.length; i++) {
+        // iOS doesn't support the Javascript Date function as well as Android, so we need to convert the date to a iso8601 format
+        // For more information, check out https://stackoverflow.com/questions/26657353/date-on-ios-device-returns-nan#:~:text=It%20probably%20means%20that%20the,all%20the%20APIs%20return%20NaN%20.&text=Thanks%20%40Ian%20formatting%20it%20indeed%20fixed%20it
+        const t = this.searchResults[i].event_date_raw.split(/[- :]/);
+        const d = new Date(t[0], t[1] - 1, t[2], t[3], t[4], t[5]);
+        const dt = new Date(d);
+
         const { status, backgroundColor } = getEventDataByDate(
           this.searchResults[i].event_date
         );
@@ -210,10 +227,7 @@ export default {
               month: "short",
             })
             .toUpperCase(),
-          yearFormat: dt
-            .getFullYear()
-            .toString()
-            .substr(-2),
+          yearFormat: dt.getFullYear().toString().substr(-2),
         };
         this.searchResults[i].mobileDateFormat = {
           dayFormat: dt.getDate() < 10 ? "0" + dt.getDate() : dt.getDate(),
@@ -223,7 +237,7 @@ export default {
       }
 
       return this.searchResults
-        .filter((node) => {
+        .filter(node => {
           // Converts the date in the page's front matter to a date object then to full years
           const eventDateInYears = new Date(node.event_date_raw).getFullYear();
           // If no specified date (by param), just return ignore and return everything as it is
@@ -235,7 +249,7 @@ export default {
             return true;
           }
         })
-        .filter((node) => {
+        .filter(node => {
           if (categoryParam === "All Types") {
             return true;
           }

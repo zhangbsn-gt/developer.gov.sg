@@ -1,11 +1,11 @@
 /// <reference types="cypress" />
 const yaml = require("js-yaml");
 
-describe("All Events Page Test", function() {
+describe("All Events Page Test", function () {
   context("Desktop Test Case", () => {
     before(() => {
       // Navigate to the root
-      cy.visit("http://localhost:4000/communities");
+      cy.visit("/communities");
       // Communities overview page
       cy.contains("Communities").click({ force: true });
       cy.url().should("include", "/communities");
@@ -17,7 +17,7 @@ describe("All Events Page Test", function() {
 
     it("Should be able to navigate to the search events page from the community tab index page, “View all events” button", () => {
       cy.get("a[href='/communities/events/all-events/index.html']").click({
-        force: true
+        force: true,
       });
 
       cy.url().should("include", "/communities/events/all-events/");
@@ -25,7 +25,7 @@ describe("All Events Page Test", function() {
 
     it("Should be able to navigate to the search events page from the community tab sidebar", () => {
       // RESET
-      cy.visit("http://localhost:4000/communities");
+      cy.visit("/communities");
 
       // COMMUNITIES OVERVIEW SIDENAV
       cy.get(".sgds-menu")
@@ -33,12 +33,12 @@ describe("All Events Page Test", function() {
         .find(".second-level-nav")
         .contains("Events")
         .click({
-          force: true
+          force: true,
         });
 
       // EVENTS OVERVIEW
       cy.get("a[href='/communities/events/all-events/']").click({
-        force: true
+        force: true,
       });
 
       cy.url().should("include", "/communities/events/all-events/");
@@ -61,7 +61,7 @@ describe("All Events Page Test", function() {
     });
 
     it("Should have the right category of search results after filtering for only the stack-x category", () => {
-      cy.visit("http://localhost:4000/communities/events/all-events/");
+      cy.visit("/communities/events/all-events/");
       cy.get("#query-all-category").select("Stack-x Meetup");
 
       cy.get(".card-grid-container")
@@ -115,7 +115,7 @@ describe("All Events Page Test", function() {
         .contains("Back to Events Overview")
         .scrollIntoView()
         .click({
-          force: true
+          force: true,
         });
 
       cy.url().should("include", "/communities");
@@ -125,14 +125,13 @@ describe("All Events Page Test", function() {
   context("Mobile Test Case", () => {
     before(() => {
       // Navigate to the root
-      cy.visit("http://localhost:4000/communities");
+      cy.visit("/communities");
       // Communities overview page
       cy.contains("Communities").click({ force: true });
       cy.url().should("include", "/communities");
     });
 
     beforeEach(() => {
-      cy.clearLocalStorage();
       cy.viewport("iphone-xr");
     });
 
@@ -142,19 +141,17 @@ describe("All Events Page Test", function() {
       cy.get("a[href='/communities/events/all-events/index.html']")
         .contains("View all events")
         .click({
-          force: true
+          force: true,
         });
 
       cy.url().should("include", "/communities/events/all-events/");
     });
 
     it("Should be able to navigate to the search events page from the community tab sidebar", () => {
-      cy.visit("http://localhost:4000/communities");
+      cy.visit("/communities");
 
       // COMMUNITIES OVERVIEW SIDENAV
-      cy.get(".mobile-sidenav-toggle")
-        .contains("Communities")
-        .click();
+      cy.get(".mobile-sidenav-toggle").contains("Communities").click();
       // SIDENAV OVERLAY
       cy.contains("Events").click({ force: true });
 
@@ -162,7 +159,7 @@ describe("All Events Page Test", function() {
 
       // EVENTS OVERVIEW
       cy.get("a[href='/communities/events/all-events/']").click({
-        force: true
+        force: true,
       });
 
       cy.url().should("include", "/communities/events/all-events/");
@@ -184,7 +181,7 @@ describe("All Events Page Test", function() {
     });
 
     it("Should have the right category of search results after filtering for only the stack-x category", () => {
-      cy.visit("http://localhost:4000/communities/events/all-events/");
+      cy.visit("/communities/events/all-events/", { timeout: 5000 });
       cy.get("#query-all-category").select("Stack-x Meetup");
 
       cy.get(".card-grid-container")
@@ -238,7 +235,7 @@ describe("All Events Page Test", function() {
         .contains("Back to Events Overview")
         .scrollIntoView()
         .click({
-          force: true
+          force: true,
         });
 
       cy.url().should("include", "/communities");

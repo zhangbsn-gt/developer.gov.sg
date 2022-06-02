@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-describe("Stack X Overview Page Test", function() {
+describe("Stack X Overview Page Test", function () {
   context("Desktop Test Case", () => {
     before(() => {
       // Navigate to the root
@@ -21,7 +21,7 @@ describe("Stack X Overview Page Test", function() {
         .find(".second-level-nav")
         .contains("Events")
         .click({
-          force: true
+          force: true,
         });
 
       cy.get(".sgds-card", { timeout: 5000 })
@@ -33,12 +33,7 @@ describe("Stack X Overview Page Test", function() {
 
     it("Should only be able to get events that belongs to the Stack-X Meetups category", () => {
       cy.get("img[alt='Event Icon']", { timeout: 5000 }).each($el => {
-        expect(
-          $el
-            .parent()
-            .text()
-            .trim()
-        ).to.eq("Stack-x meetup");
+        expect($el.parent().text().trim()).to.eq("Stack-x meetup");
       });
     });
 
@@ -136,9 +131,7 @@ describe("Stack X Overview Page Test", function() {
 
     it("Should be able to navigate to the Stack-X Meetups overview page from the community Section Index page.", () => {
       // COMMUNITIES OVERVIEW SIDENAV
-      cy.get(".mobile-sidenav-toggle")
-        .contains("Communities")
-        .click();
+      cy.get(".mobile-sidenav-toggle").contains("Communities").click();
 
       // SIDENAV OVERLAY
       cy.contains("Events").click({ force: true });
@@ -152,12 +145,7 @@ describe("Stack X Overview Page Test", function() {
 
     it("Should only be able to get events that belongs to the Stack-X Meetups category", () => {
       cy.get("img[alt='Event Icon']", { timeout: 5000 }).each($el => {
-        expect(
-          $el
-            .parent()
-            .text()
-            .trim()
-        ).to.eq("Stack-x meetup");
+        expect($el.parent().text().trim()).to.eq("Stack-x meetup");
       });
     });
 
