@@ -68,7 +68,7 @@ GCC 2.0 is currently in the Early Adopter Release phase but to tap on GCC 1.0, g
 
 ### What's Next
 
-GCC 2.0 is currently in the Early Adopter Phase and will be leveraged as a whole-of-government (WOG) platform along with the Singapore Government Tech Stack (SGTS) for modern app development in the Government. The roadmap for GCC 2.0 is as shown below.
+GCC 2.0 will be leveraged as a whole-of-government (WOG) platform along with the Singapore Government Tech Stack (SGTS) for modern app development in the Government. The roadmap for GCC 2.0 is as shown below. General Availability (GA) of GCC 2.0 for Amazon Web Services (AWS) has been made on 4 May 2022 while GCC 2.0 for Azure is planned to be ready at around Q3 of 2022.
 
 <figure style="text-align: center">
   <img
