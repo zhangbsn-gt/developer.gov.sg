@@ -90,11 +90,20 @@
   desc:
   speakers: 
     - name: Tham Zheng Kang
-      image: /assets/img/photos/blank-photo.png
+      image: /assets/img/photos/tham-zheng-kang.png
       title: Quantitative Analyst, Data Science & Artificial Intelligence Division (DSAID), GovTech
-      
+
 - type: Datatransformation
   timeslot: 3:30 PM - 4:00 PM
+  title: 'Statistical Modelling & Machine Learning;  Inference & Prediction'
+  desc: In this presentation, we review recent trends & discussions concerning concepts in Statistical Modelling and Machine Learning. We will also delve into the difference between inference & prediction and discuss strengths and concerns with some of the popular ideas that has evolved in the last century (e.g., use of p-value). 
+  speakers: 
+    - name: Victor Ong
+      image: /assets/img/photos/victor-ong.png
+      title: Senior Data Scientist, Data Science & Artificial Intelligence Division (DSAID), GovTech
+      
+- type: Datatransformation
+  timeslot: 4:00 PM - 4:30 PM
   title: Our Data Transformation Playbook
   desc: We have started the journey to transform GovTech into a model data analytics-ready organisation that is exemplary in the use of data! This presentation will give an introduction on GovTech’s Data Strategy and the various enablers that have been put in place to empower GovTechies to make use of data to improve their operations and gain insights for policy making.
   speakers: 
