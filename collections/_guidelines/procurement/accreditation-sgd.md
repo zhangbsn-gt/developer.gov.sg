@@ -58,13 +58,13 @@ To participate in the programme, companies must fulfill the following criteria:
 
    iii. The product to be accredited must demonstrate strong and unique value proposition, and competitive advantage to competitors/alternative  substitutes in the market
 
-To access the list of accredited companies, click [here.](https:/www.imda.gov.sg/for-industry/technology-and-innovation/innovative-Tech-Companies?keyword=accreditation&industry=all&page=1){:target="_blank"}
+To access the list of accredited companies, click [here.](https://www.imda.gov.sg/for-industry/technology-and-innovation/innovative-Tech-Companies?keyword=accreditation&industry=all&page=1){:target="_blank"}
 
 ### Standards, Guidelines and Assessment Criteria
 
 Fig 1 provides a summary of the accreditation process, which begins with an application from companies. Thereafter, companies are shortlisted and evaluated based on financial, operational, and technical criteria, which can be viewed in detail in Fig 2. Once accreditation has been awarded, it will be valid for 12 to 18 months, and companies will be subjected to routine reviews. Renewal of the accreditation will be done through evaluation of the company’s financial, operational, and technical aspects without the need to go through the application and shortlisting process again. If companies fail to qualify for renewal they will graduate from the programme.
 
-Guidelines on the accreditation process can be found here and the Terms and Conditions can be accessed through this [link.](https:/www.imda.gov.sg/-/media/Imda/Files/Programme/AccreditationSGD/Accreditation-TCsV5.pdf){:target="_blank"} For cybersecurity companies interested in the SecureTech track, more details of the application process can be found [here.](https:/www.imda.gov.sg/-/media/Imda/Files/Industry-Development/Startups/Accreditation-SecureTech-GuidelinesV1.pdf){:target="_blank"}
+Guidelines on the accreditation process can be found here and the Terms and Conditions can be accessed through this [link.](https://www.imda.gov.sg/-/media/Imda/Files/Programme/AccreditationSGD/Accreditation-TCsV5.pdf){:target="_blank"} For cybersecurity companies interested in the SecureTech track, more details of the application process can be found [here.](https://www.imda.gov.sg/-/media/Imda/Files/Industry-Development/Startups/Accreditation-SecureTech-GuidelinesV1.pdf){:target="_blank"}
 
 <figure style="text-align: center">
   <img
@@ -85,15 +85,15 @@ Guidelines on the accreditation process can be found here and the Terms and Cond
 ### Resources and Templates
 
 View the resources below for more information on Accreditation@SGD
-- [Guidelines](https:/www.imda.gov.sg/-/media/Imda/Files/Industry-Development/Startups/Accreditation-SecureTech-GuidelinesV1.pdf){:target="_blank"} on the SecureTech track process
-- Accreditation@SGD process [guidelines](https:/www.imda.gov.sg/-/media/Imda/Files/Programme/AccreditationSGD/Accreditation-SGD-Guidelines.pdf){:target="_blank"}
-- [Terms and Conditions](https:/www.imda.gov.sg/-/media/Imda/Files/Programme/AccreditationSGD/Accreditation-TCsV5.pdf){:target="_blank"} of the Accreditation@SGD process
+- [Guidelines](https://www.imda.gov.sg/-/media/Imda/Files/Industry-Development/Startups/Accreditation-SecureTech-GuidelinesV1.pdf){:target="_blank"} on the SecureTech track process
+- Accreditation@SGD process [guidelines](https://www.imda.gov.sg/-/media/Imda/Files/Programme/AccreditationSGD/Accreditation-SGD-Guidelines.pdf){:target="_blank"}
+- [Terms and Conditions](https://www.imda.gov.sg/-/media/Imda/Files/Programme/AccreditationSGD/Accreditation-TCsV5.pdf){:target="_blank"} of the Accreditation@SGD process
 
 ### Case Studies
 
 As of March 2022, accredited companies have gained over $814 million worth of earnings across more than 2,000 projects with the government. Over $450 million in new growth investments have also been funneled to companies during and after their accreditation. This is due to the increased credibility associated to the Accreditation@SGD programme.
 
-For details on companies’ use cases, click [here.](https:/www.imda.gov.sg/programme-listing/accreditation-at-sgd/Success-Use-Cases){:target="_blank"}
+For details on companies’ use cases, click [here.](https://www.imda.gov.sg/programme-listing/accreditation-at-sgd/Success-Use-Cases){:target="_blank"}
 
 ### What's Next?
 

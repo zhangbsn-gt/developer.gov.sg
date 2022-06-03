@@ -40,7 +40,7 @@ OBP is applicable and open to all government agencies that are either,
 - Looking to procure ICT solutions but are unable to find existing solutions in the market that can meet the agency’s needs, or 
 - Looking for new and innovative solutions from the industry
 
-However, if agencies are already certain aboutthe type of solutions that can best meet their ICT requirements, the traditional procurement approach of structuring contracts and sourcing for competitive bids through an open tender would be more suitable over OBP.
+However, if agencies are already certain about the type of solutions that can best meet their ICT requirements, the traditional procurement approach of structuring contracts and sourcing for competitive bids through an open tender would be more suitable over OBP.
 
 ### Contact Information
 
