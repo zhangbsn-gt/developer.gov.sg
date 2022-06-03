@@ -1,64 +1,37 @@
 import Vue from "vue";
 import Vuex from "vuex";
-import { Editor } from "tiptap";
-import {
-  Blockquote,
-  CodeBlock,
-  HardBreak,
-  Heading,
-  HorizontalRule,
-  OrderedList,
-  BulletList,
-  ListItem,
-  TodoItem,
-  TodoList,
-  Bold,
-  Code,
-  Italic,
-  Link,
-  Strike,
-  Underline,
-  History,
-  Image,
-  Table,
-  TableHeader,
-  TableCell,
-  TableRow
-} from "tiptap-extensions";
 
-Vue.use(Vuex);
+import { Editor } from "@tiptap/core";
+import StartKit from "@tiptap/starter-kit";
+import Link from "@tiptap/extension-link";
+import Image from "@tiptap/extension-image";
+import Underline from "@tiptap/extension-underline";
+import Table from "@tiptap/extension-table";
+import TableCell from "@tiptap/extension-table-cell";
+import TableHeader from "@tiptap/extension-table-header";
+import TableRow from "@tiptap/extension-table-row";
 
 const extensions = [
-  new Blockquote(),
-  new BulletList(),
-  new CodeBlock(),
-  new HardBreak(),
-  new Heading({ levels: [1, 2, 3, 4, 5, 6] }),
-  new HorizontalRule(),
-  new ListItem(),
-  new OrderedList(),
-  new TodoItem(),
-  new TodoList(),
-  new Link(),
-  new Bold(),
-  new Code(),
-  new Italic(),
-  new Strike(),
-  new Underline(),
-  new History(),
-  new Image(),
-  new Table({
-    resizable: true
+  StartKit.configure({
+    heading: {
+      levels: [1, 2, 3, 4, 5, 6],
+    },
   }),
-  new TableHeader(),
-  new TableCell(),
-  new TableRow()
+  Image,
+  Link,
+  Table,
+  TableCell,
+  TableHeader,
+  TableRow,
+  Underline,
 ];
+
+Vue.use(Vuex);
 
 const pageEditor = {
   namespaced: true,
   state: {
-    editor: null
+    editor: null,
   },
   mutations: {
     setContent({ editor }, content) {
@@ -73,15 +46,15 @@ const pageEditor = {
         state.editor = new Editor({
           extensions,
           content: `<h1>This is a page builder.</h1>
-<p>You can compose <em>rich</em> <strong>content</strong> here.</p>`
+<p>You can compose <em>rich</em> <strong>content</strong> here.</p>`,
         });
       } else {
         state.editor = new Editor({
           extensions,
-          content: content
+          content: content,
         });
       }
-    }
+    },
   },
   actions: {
     initializeEditor({ commit }, content) {
@@ -92,13 +65,13 @@ const pageEditor = {
     },
     destroyEditor({ commit }) {
       commit("destroyEditor");
-    }
+    },
   },
-  getters: {}
+  getters: {},
 };
 
 export default new Vuex.Store({
   modules: {
-    pageEditor
-  }
+    pageEditor,
+  },
 });

@@ -1,33 +1,20 @@
 module.exports = {
-    "env": {
-        "es6": true,
-        "node": true,
-        "browser": true,
-        "mocha": true
-    },
-    "extends": "eslint:recommended",
-    "parserOptions": {
-        "ecmaVersion": 2018,
-        "sourceType": "module"
-    },
-    "rules": {
-        "indent": [
-            "error",
-            2
-        ],
-        "linebreak-style": [
-            "error",
-            "unix"
-        ],
-        "quotes": [
-            "error",
-            "double", {
-                allowTemplateLiterals: true
-            }
-        ],
-        "semi": [
-            "error",
-            "always"
-        ]
-    }
+  env: {
+    es6: true,
+    node: true,
+    browser: true,
+    mocha: true,
+  },
+  extends: ["eslint:recommended", "plugin:vue/recommended", "prettier"],
+  parserOptions: {
+    ecmaVersion: 2018,
+    sourceType: "module",
+  },
+  rules: {
+    "no-undef": ["off"],
+    "no-unused-vars": ["warn"],
+    "vue/attributes-order": ["off"],
+    "vue/multi-word-component-names": ["off"],
+    "vue/order-in-components": ["off"],
+  },
 };

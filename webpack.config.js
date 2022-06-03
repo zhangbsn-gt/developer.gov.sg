@@ -1,8 +1,9 @@
 const path = require("path");
 const webpack = require("webpack");
-const { VueLoaderPlugin } = require("vue-loader");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const Dotenv = require("dotenv-webpack");
+const { VueLoaderPlugin } = require("vue-loader");
+
 module.exports = (env, argv) => {
   const config = {
     mode: "development", // Use cli args for prod
@@ -24,7 +25,7 @@ module.exports = (env, argv) => {
         "./apps/src/communities/conferences-webinars-sort.js",
       "layout-page-sidenav-calendar":
         "./apps/src/communities/layout-page-sidenav-calendar.js",
-      main: "./apps/src/main.js",
+      "main": "./apps/src/main.js",
     },
     output: {
       filename: "[name].bundle.js",
@@ -57,11 +58,7 @@ module.exports = (env, argv) => {
         },
         {
           test: /\.(png|jpe?g|gif|svg|eot|ttf|woff|woff2)$/,
-          loader: "url-loader",
-          options: {
-            limit: 8192,
-            fallback: "file-loader",
-          },
+          type: "asset/resource",
         },
         {
           test: /\.vue$/,
@@ -78,7 +75,9 @@ module.exports = (env, argv) => {
         API_URL:
           argv.mode === "production"
             ? "https://api.developer.gov.sg/v1/api"
-            : process.env.API_URL,
+            : process.env.API_URL
+            ? process.env.API_URL
+            : "http://localhost:4001/dummy-api-url",
       }),
     ],
   };

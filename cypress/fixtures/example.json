@@ -1,4 +1,5 @@
-[{
+[
+  {
     "name": "Using fixtures to represent data",
     "event_category": "hello@cypress.io",
     "event_description": "Fixtures are a great way to mock data for responses to routes",
@@ -8,7 +9,5 @@
     "event_recording_link": "",
     "event_registration_link": ""
   },
-  {
-
-  }
+  {}
 ]

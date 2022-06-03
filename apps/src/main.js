@@ -4,7 +4,7 @@ import "sgds-govtech/js/sgds.js";
 // import Swiper JS
 import Swiper, { Pagination, Navigation } from "swiper";
 // import Swiper styles
-import "swiper/swiper-bundle.css";
+import "swiper/css/bundle";
 
 import tippy from "tippy.js";
 import "tippy.js/dist/tippy.css"; // optional for styling

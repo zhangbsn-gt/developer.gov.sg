@@ -1,4 +1,5 @@
 <template>
+  <!-- TODO: rewire the editor. Breaking changes when updating tiptap from v1 to v2 -->
   <div class="editor">
     <editor-menu-bar :editor="editor" v-slot="{ commands, isActive }">
       <div class="menubar">
@@ -231,7 +232,7 @@
 </template>
 
 <script>
-import { EditorContent, EditorMenuBar, EditorMenuBubble } from "tiptap";
+import { EditorContent, FloatingMenu, BubbleMenu } from "@tiptap/vue-2";
 import { mapState, mapActions } from "vuex";
 import TableIcons from "./TableIcons";
 
@@ -239,8 +240,8 @@ export default {
   name: "text-editor",
   components: {
     EditorContent,
-    EditorMenuBar,
-    EditorMenuBubble
+    FloatingMenu,
+    BubbleMenu
   },
   props: {
     initialContent: {

@@ -2,8 +2,6 @@
   "arrowParens": "avoid",
   "useTabs": false,
   "quoteProps": "consistent",
-  "importOrderSeparation": true,
-  "importOrderSortSpecifiers": true,
   "printWidth": 80,
   "overrides": [
     {
@@ -15,7 +13,7 @@
     {
       "files": ["*.md"],
       "options": {
-        "proseWrap": "never"
+        "proseWrap": "preserve"
       }
     }
   ]
