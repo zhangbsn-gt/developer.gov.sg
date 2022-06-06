@@ -64,7 +64,14 @@ The key benefits of GCC 2.0 include:
 
 ### How Do You Use GCC?
 
-GCC 2.0 is currently in the Early Adopter Release phase but to tap on GCC 1.0, government agencies can first sign up for the [GCC Foundation Training](/gcc-foundation-training){:target="\_blank"} to equip public officers with the knowledge on how to utilise appropriate GCC Services (GCCS) to host ICT systems. Refer to the STACK-X Cloud conference for more details on GCC [here](/communities/events/stack-x-cloud-2021){:target="\_blank"}.
+For information on GCC 2.0, you can check out the information and documentations [here](https://docs.developer.tech.gov.sg/docs/overview-of-gcc-version-2/#/){:target="_blank"} (require TechPass account).
+
+- Refer to the STACK-X Cloud conference for more details on GCC [here](/communities/events/conferences/stack-x-cloud-2021/overview.html){:target="_blank"}.
+- The 26th Jan GCC 2.0 Workshop presentations and recordings are available on [GCC Portal](https://sgdcs.sgnet.gov.sg/sites/GOVTECH-gcc/_layouts/15/start.aspx#/SitePages/Presentations.aspx?RootFolder=%2Fsites%2FGOVTECH%2Dgcc%2FPresentations%20Document%20Library%2FGCC%202%2E0%20Workshop%20%2826%20Jan%202022%29&FolderCTID=0x012000786ED207E10AED4C8B224D2AEA8BDF9E&View=%7B86DE7B87%2DA162%2D4C87%2D8741%2D595D67C2A26D%7D){:target="_blank"} (only accessible by Public Officers) or the [Singapore Government Developer Portal](https://docs.developer.tech.gov.sg/docs/gcc-20-workshops/){:target="_blank"} (for TechPass Account holders).
+- The Tech Talk presentations and recordings are available on the [GCC Portal](https://sgdcs.sgnet.gov.sg/sites/GOVTECH-gcc/_layouts/15/start.aspx#/SitePages/Presentations.aspx?RootFolder=%2Fsites%2FGOVTECH%2Dgcc%2FPresentations%20Document%20Library%2FGCC%202%2E0%20Tech%20Talks%20%2818%20April%20%2D%206%20May%202022%29&FolderCTID=0x012000786ED207E10AED4C8B224D2AEA8BDF9E&View=%7B86DE7B87%2DA162%2D4C87%2D8741%2D595D67C2A26D%7D){:target="_blank"} (only accessible by Public Officers) or the [Singapore Government Developer Portal]https://docs.developer.tech.gov.sg/docs/gcc-2-tech-talks/){:target="_blank"} (for TechPass Account holders).
+- For information on GCC 2.0, you can check out the [Singapore Government Developer Portal](https://docs.developer.tech.gov.sg/docs/overview-of-gcc-version-2/){:target="_blank"} (for TechPass Account holders). 
+
+Please note that some information shared in the Workshop and Tech Talks can be superseded as we continue to add new features and make improvements to the capabilities. We strive to keep the information and guides in the documentation portal updated consistently.
 
 ### What's Next
 
