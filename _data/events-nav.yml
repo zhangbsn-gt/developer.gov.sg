@@ -17,7 +17,7 @@
 - name: STACK-X Cloud 2021
   # Categories limited to Conference, Stack-X Meetup and Hackathon
   event_category: Conference
-  event_description: Stack-X Cloud is a one-day conference for developers and IT leaders to learn about the lates enhancements for GCC with practical lessons on cloud adoption
+  event_description: STACK-X Cloud is a one-day conference for developers and IT leaders to learn about the latest enhancements for GCC with practical lessons on cloud adoption
   # Event location
   event_type: Hive Center
   event_date: 2021-11-17T00:00:00.000Z

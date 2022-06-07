@@ -37,12 +37,12 @@
 
 - type: Keynote
   timeslot: 11:00 AM - 11:30 AM
-  title: 'Harnessing the Value of Data and AI in Hulu'
+  title: 'Harnessing the Value of Data and AI at Disney Streaming'
   desc:
   speakers: 
     - name: Jaya Kolhatkar
-      image: /assets/img/photos/blank-photo.png
-      title: Chief Data Officer, Hulu LLC
+      image: /assets/img/photos/jaya-kolhatkar.png
+      title: Executive Vice President, Data at Disney Streaming
 
 - type: Keynote
   timeslot: 1:30 PM - 2:00 PM
