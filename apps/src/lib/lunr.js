@@ -6,11 +6,11 @@ export function getBasicLunrIndex(
   lunrIndexPages,
   lunrIndexRef
 ) {
-  return lunr(function() {
+  return lunr(function () {
     this.ref(lunrIndexRef);
-    lunrIndexFields.forEach((item) => this.field(item));
+    lunrIndexFields.forEach(item => this.field(item));
     this.metadataWhitelist = ["position"];
-    lunrIndexPages.forEach(function(page) {
+    lunrIndexPages.forEach(function (page) {
       this.add(page);
     }, this);
   });
@@ -19,7 +19,7 @@ export function getBasicLunrIndex(
 export function highlightContentMatches(parentText, targetText) {
   return parentText.replace(
     new RegExp(`${escapeRegExp(targetText)}`, "gi"),
-    function(match) {
+    function (match) {
       // Callback so that matching word's case will be kept and not replaced by the case of searchQuery.
       return `<mark>${match}</mark>`;
     }
@@ -60,14 +60,14 @@ export function getHighlightedSearchResult(
   lunrSearchResult,
   targetText
 ) {
-  lunrIndexFields.forEach((item) => {
+  lunrIndexFields.forEach(item => {
     // To catch cases where the index field dont exist in the actual search result
     if (!(item in lunrSearchResult)) {
       return;
     }
     let parentText = lunrSearchResult[item];
     if (item === "content") {
-      const firstMatchIndex = getFirstMatchIndex(lunrSearchResult, item);
+      let firstMatchIndex = getFirstMatchIndex(lunrSearchResult, item);
       // Continue to next iteration if no match.
       if (firstMatchIndex === -1) return;
       // Start 32 characters left of first match. Unless first match index < 32

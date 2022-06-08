@@ -29,6 +29,7 @@ test:
     files:
       - "**/*.png"
       - "**/*.mp4"
+      - "**/*.html"
   phases:
     preTest:
       commands:
@@ -38,7 +39,7 @@ test:
         - "npx pm2 start npm -- run dev:concurrent & npx wait-on http://127.0.0.1:4000"
     test:
       commands:
-        - npx cypress run --record --reporter mochawesome --reporter-options "reportDir=cypress/report/mochawesome-report,overwrite=false,html=false,json=true,timestamp=mmddyyyy_HHMMss"
+        - npx cypress run --record --reporter mochawesome --reporter-options "reportDir=cypress/report/mochawesome-report,overwrite=true,html=false,json=true,timestamp=mmddyyyy_HHMMss"
 
     postTest:
       commands:

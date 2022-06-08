@@ -1,53 +1,68 @@
 <div class="masthead-container has-background-white" id="sgds-navbar">
-    {% include sgds-masthead.html %}
-    <nav class="sgds-navbar">
-        <div class="sgds-container">
-            <div class="sgds-navbar-brand">
-                <a class="sgds-navbar-item" href="/">
-                    <img src="/assets/img/logo_color.svg" alt="Home">
-                </a>
+  {% include sgds-masthead.html %}
+  <nav class="sgds-navbar">
+    <div class="sgds-container">
+      <div class="sgds-navbar-brand">
+        <a class="sgds-navbar-item" href="/">
+          <img src="/assets/img/logo_color.svg" alt="Home">
+        </a>
 
-                <div class="sgds-navbar-burger" data-target="sgds-navbar-main">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-            <div id="sgds-navbar-main" class="sgds-navbar-menu">
-                <div class="sgds-navbar-start">
-                    <form action="/search/" method="get" class="is-hidden-desktop">
-                        {% include search-box.html id='query-mobile' %}
-                    </form>
-                    {%- assign links = site.data.navigation -%}
-                    {%- for lvl1item in links -%}
-                        {%- assign class = nil -%}
-                        {% assign section_url = page.url | split: "/" | shift | first | prepend: "/" %}
-                        {%- if section_url == lvl1item.url -%}
-                            {%- assign class = 'is-active' -%}
-                        {%- endif -%}
-                        {%- if lvl1item.dropdown -%}
-                            {% include top-nav-mega-dropdown.html navItem=lvl1item isActive=class %}
-                        {%- else -%}
-                            <a
-                                href="{{ lvl1item.url }}" 
-                                class="sgds-navbar-item has-text-weight-semibold {{ class }}">
-                                {{ lvl1item.title }}
-                            </a>
-                        {%- endif -%}
-                    {%- endfor -%}
-                </div>
-                <div class="sgds-navbar-end">
-                    <div class="sgds-navbar-item"><a href="https://docs.developer.gov.sg/" target="_blank" class="sgds-button is-outlined is-black">Documentation</a></div>
-                    
-                    {% if page.layout != 'search' %}
-                    <div class="sgds-navbar-item is-hidden-touch">
-                        <form action="/search/" method="get">
-                            {% include search-box.html id='query-desktop' %}
-                        </form>
-                    </div>
-                    {% endif %}
-                </div>
-            </div>
+        <div class="sgds-navbar-burger" data-target="sgds-navbar-main">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-    </nav>
+      </div>
+      <div id="sgds-navbar-main" class="sgds-navbar-menu">
+        <div class="sgds-navbar-start">
+          <form method="get" class="is-hidden-desktop" onsubmit="return redirect('query-mobile')">
+            {% include search-box.html id='query-mobile' %}
+          </form>
+          {%- assign links = site.data.navigation -%}
+          {%- for lvl1item in links -%}
+          {%- assign class = nil -%}
+          {% assign section_url = page.url | split: "/" | shift | first | prepend: "/" %}
+          {%- if section_url == lvl1item.url -%}
+          {%- assign class = 'is-active' -%}
+          {%- endif -%}
+          {%- if lvl1item.dropdown -%}
+          {% include top-nav-mega-dropdown.html navItem=lvl1item isActive=class %}
+          {%- else -%}
+          <a href="{{ lvl1item.url }}" class="sgds-navbar-item has-text-weight-semibold {{ class }}">
+            {{ lvl1item.title }}
+          </a>
+          {%- endif -%}
+          {%- endfor -%}
+        </div>
+        <div class="sgds-navbar-end">
+          <div class="sgds-navbar-item"><a href="https://docs.developer.gov.sg/" target="_blank"
+              class="sgds-button is-outlined is-black">Documentation</a></div>
+
+          {% if page.layout != 'search' %}
+          <div class="sgds-navbar-item is-hidden-touch">
+            <form method="get" onsubmit="return redirect('query-desktop')">
+              {% include search-box.html id='query-desktop' %}
+            </form>
+          </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </nav>
 </div>
+<script defer="defer" type="text/javascript">
+  // As there is multiple forms, we need to track which form is being submitted and get's its value
+  function redirect(id) {
+    try {
+      const query = document.getElementById(id).value;
+
+      // Afterwards, redirect users to the search page, located at localhost:4000/search
+      window.location.href =  `/search/?query=${query}`;
+
+      return false;
+    } catch (e) {
+      return true;
+    }
+  }
+
+</script>
