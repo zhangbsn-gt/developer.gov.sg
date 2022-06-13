@@ -5,15 +5,17 @@
       <p class="search-result-status">
         {{
           `Showing ${
-            filterSearchResults.length > 0 ? filterSearchResults.length : 0
-          } out of ${totalPages}`
+            filterSearchResults.preProcessedNumberOfResults > 0
+              ? filterSearchResults.postProcessedNumberOfResults
+              : 0
+          } out of ${filterSearchResults.preProcessedNumberOfResults} results`
         }}
       </p>
       <h6 class="is-danger" v-if="errorMsg">{{ errorMsg }}</h6>
       <div class="card-grid-container is-fullwidth">
         <div
           class="sgds-card-list"
-          v-for="result of filterSearchResults"
+          v-for="result of filterSearchResults.processedResults"
           :key="result.url"
         >
           <CardCalendar>
@@ -57,13 +59,13 @@
                         <p
                           class="padding--top--sm padding--bottom--xs margin--bottom--none is-size-2 has-text-weight-bold has-text-centered"
                         >
-                          {{ result.desktopDateFormat.dayFormat }}
+                          {{ result.dayFormat }}
                         </p>
                       </div>
                       <div class="padding--bottom--none">
                         <p class="padding--bottom--none">
-                          {{ result.desktopDateFormat.monthFormat }}&nbsp;‘
-                          {{ result.desktopDateFormat.yearFormat }}
+                          {{ result.monthFormat }}&nbsp;‘
+                          {{ result.yearFormat }}
                         </p>
                       </div>
                     </div>
@@ -91,11 +93,11 @@
                     style="-webkit-text-stroke: 0.5px white"
                   ></span>
                   {{
-                    result.mobileDateFormat.dayFormat +
+                    result.dayFormat +
                     " " +
-                    result.mobileDateFormat.monthFormat +
+                    result.monthFormat +
                     " " +
-                    result.mobileDateFormat.yearFormat
+                    result.yearFormat
                   }}
                 </p>
               </div>
@@ -154,12 +156,22 @@ import Loader from "../lib/Loader.vue";
 import CardCalendar from "../lib/CardCalendar.vue";
 import useLunrSearch from "../composables/useLunrSearch";
 import { computed } from "@vue/composition-api";
-import { getEventDataByDate } from "../lib/communities";
+import { getEventDataByDate, convertDateForIos } from "../lib/communities";
 
 export default {
   components: { Loader, CardCalendar },
   setup() {
-    let queryParam = new URL(window.location.href).searchParams.get("query");
+    const params = new URLSearchParams(window.location.search);
+    const { queryParam, dateParam, categoryParam } = {
+      queryParam: params.get("query"),
+      dateParam: params.get("year_filter")
+        ? params.get("year_filter")
+        : "All Time",
+      categoryParam: params.get("category_filter")
+        ? params.get("category_filter")
+        : "All Types",
+    };
+
     const {
       isLoading,
       totalPages,
@@ -168,6 +180,7 @@ export default {
       generateSearchResults,
       errorMsg,
     } = useLunrSearch();
+
     generateSearchResults({
       queryParam: queryParam,
       jsonPath: "/search/events.json",
@@ -181,7 +194,67 @@ export default {
       ],
     });
 
+    document.getElementById("query-all-year").value = dateParam;
     document.getElementById("query-all-events").value = queryParam;
+    document.getElementById("query-all-category").value = categoryParam;
+
+    const filterSearchResults = computed(() => {
+      // Processing fixed-varied variables for the search results, such as dateParams and categoryParams
+      const preProcessedNumberOfResults = searchResults.value.length;
+      for (let i = 0; i < searchResults.value.length; i++) {
+        const result = searchResults.value[i];
+
+        // Result specific
+        const category = result.category;
+        const date = convertDateForIos(result.event_date_raw);
+        const { status, backgroundColor } = getEventDataByDate(
+          result.event_date
+        );
+
+        // PRE PROCESSING
+        // Processing fixed-varied variables for the search results, such as dateParams and categoryParams
+        // if they do not match the search results, then remove the result from the search results
+        // afterwards, skip the loop and start the next iteration
+        if (dateParam !== "All Time") {
+          if (dateParam != date.getFullYear()) {
+            searchResults.value.splice(i, 1);
+            i--;
+            continue;
+          }
+        }
+
+        if (categoryParam !== "All Types") {
+          if (
+            categoryParam.trim().toLowerCase() !== category.trim().toLowerCase()
+          ) {
+            searchResults.value.splice(i, 1);
+            i--;
+            continue;
+          }
+        }
+
+        // POST PROCESSING
+        result.status = status.toUpperCase();
+        result.backgroundColor = backgroundColor;
+        result.dayFormat =
+          date.getDate() < 10 ? "0" + date.getDate() : date.getDate();
+        result.monthFormat =
+          window.innerWidth < 1025
+            ? date.toLocaleString("en-SG", { month: "long" })
+            : date.toLocaleString("en-SG", { month: "short" }).toUpperCase();
+        result.yearFormat =
+          window.innerWidth < 1025
+            ? date.getFullYear().toString()
+            : date.getFullYear().toString().substr(-2);
+      }
+
+      const postProcessedNumberOfResults = searchResults.value.length;
+      return {
+        preProcessedNumberOfResults: preProcessedNumberOfResults,
+        postProcessedNumberOfResults: postProcessedNumberOfResults,
+        processedResults: searchResults.value,
+      };
+    });
 
     return {
       totalPages,
@@ -189,78 +262,8 @@ export default {
       isNonEmptySearch,
       searchResults,
       errorMsg,
+      filterSearchResults,
     };
-  },
-  computed: {
-    filterSearchResults: function () {
-      const dateParam = new URL(window.location.href).searchParams.get(
-        "year_filter"
-      )
-        ? new URL(window.location.href).searchParams.get("year_filter")
-        : "All Time";
-      const categoryParam = new URL(window.location.href).searchParams.get(
-        "category_filter"
-      )
-        ? new URL(window.location.href).searchParams.get("category_filter")
-        : "All Types";
-
-      document.getElementById("query-all-year").value = dateParam;
-      document.getElementById("query-all-category").value = categoryParam;
-
-      for (let i = 0; i < this.searchResults.length; i++) {
-        // iOS doesn't support the Javascript Date function as well as Android, so we need to convert the date to a iso8601 format
-        // For more information, check out https://stackoverflow.com/questions/26657353/date-on-ios-device-returns-nan#:~:text=It%20probably%20means%20that%20the,all%20the%20APIs%20return%20NaN%20.&text=Thanks%20%40Ian%20formatting%20it%20indeed%20fixed%20it
-        const t = this.searchResults[i].event_date_raw.split(/[- :]/);
-        const d = new Date(t[0], t[1] - 1, t[2], t[3], t[4], t[5]);
-        const dt = new Date(d);
-
-        const { status, backgroundColor } = getEventDataByDate(
-          this.searchResults[i].event_date
-        );
-
-        this.searchResults[i].status = status.toUpperCase();
-        this.searchResults[i].backgroundColor = backgroundColor;
-        this.searchResults[i].desktopDateFormat = {
-          dayFormat: dt.getDate() < 10 ? "0" + dt.getDate() : dt.getDate(),
-          monthFormat: dt
-            .toLocaleString("en-SG", {
-              month: "short",
-            })
-            .toUpperCase(),
-          yearFormat: dt.getFullYear().toString().substr(-2),
-        };
-        this.searchResults[i].mobileDateFormat = {
-          dayFormat: dt.getDate() < 10 ? "0" + dt.getDate() : dt.getDate(),
-          monthFormat: dt.toLocaleString("en-SG", { month: "long" }),
-          yearFormat: dt.getFullYear().toString(),
-        };
-      }
-
-      return this.searchResults
-        .filter(node => {
-          // Converts the date in the page's front matter to a date object then to full years
-          const eventDateInYears = new Date(node.event_date_raw).getFullYear();
-          // If no specified date (by param), just return ignore and return everything as it is
-          if (dateParam === "All Time") {
-            return true;
-          }
-          // If there is a targetted / specific year the user wants, then provide filtering
-          if (eventDateInYears == dateParam) {
-            return true;
-          }
-        })
-        .filter(node => {
-          if (categoryParam === "All Types") {
-            return true;
-          }
-          if (
-            node.category.trim().toLowerCase() ===
-            categoryParam.trim().toLowerCase()
-          ) {
-            return true;
-          }
-        });
-    },
   },
 };
 </script>

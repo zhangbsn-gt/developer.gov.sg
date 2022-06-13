@@ -3,14 +3,17 @@
     h1 {
       line-height: $size-1-lh;
       margin-bottom: 0.5rem;
+
       &.display {
         line-height: $size-0-lh;
       }
     }
+
     h2 {
       line-height: $size-2-lh;
       margin-bottom: 0.5rem;
     }
+
     h3 {
       line-height: $size-3-lh;
       margin-bottom: 0.5rem;
@@ -25,17 +28,19 @@
       line-height: $size-7-lh;
     }
 
-    h1 + h2 {
+    h1+h2 {
       margin-top: 1.5rem !important;
     }
-    h2 + h3 {
+
+    h2+h3 {
       margin-top: 1rem !important;
     }
-    h3 + h4 {
+
+    h3+h4 {
       margin-top: 0.5rem !important;
     }
 
-    p + :is(h1, h2, h3, h4) {
+    p+ :is(h1, h2, h3, h4) {
       margin-top: 2rem !important;
     }
 
@@ -49,7 +54,7 @@ p.text-last-updated {
   color: hsl(0, 0%, 46%);
 }
 
-p.muted{
+p.text-muted {
   color: #767676;
 }
 
@@ -76,9 +81,11 @@ p.muted{
     h4 {
       margin-bottom: 0px;
     }
+
     p {
       margin-bottom: 0px;
     }
+
     strong {
       margin-bottom: 0px;
       font-size: 18px;
