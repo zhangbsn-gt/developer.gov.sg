@@ -33,9 +33,7 @@ describe("Stack X Overview Page Test", function () {
 
     it("Should only be able to get events that belongs to the Stack-X Meetups category", () => {
       cy.get("img[alt='Event Icon']", { timeout: 5000 }).each($el => {
-        expect($el.parent().text().trim().toLowerCase()).to.eq(
-          "stack-x meetup"
-        );
+        expect($el.parent().text().trim()).to.eq("Stack-x meetup");
       });
     });
 
@@ -147,9 +145,7 @@ describe("Stack X Overview Page Test", function () {
 
     it("Should only be able to get events that belongs to the Stack-X Meetups category", () => {
       cy.get("img[alt='Event Icon']", { timeout: 5000 }).each($el => {
-        expect($el.parent().text().trim().toLowerCase()).to.eq(
-          "stack-x meetup"
-        );
+        expect($el.parent().text().trim()).to.eq("Stack-x meetup");
       });
     });
 

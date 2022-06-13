@@ -1,73 +1,72 @@
 <!-- Change to underscores -->
 {%- assign newsletterIncrementer = 0 -%}
-<div class="sgds-container is-fullwidth">
-  <div class="sgds-tabs">
+<div class="sgds-tabs">
     <ul class="no-margin" role="tablist">
-      <li class="is-active">
-        <a data-tab="#tab1" role="tab" aria-selected="true" aria-controls="tab1">
-          Newsletter
-        </a>
-      </li>
-      <li>
-        <a data-tab="#tab2" role="tab" aria-selected="false" aria-controls="tab2">
-          Developer Blogs
-        </a>
-      </li>
+        <li class="is-active">
+            <a data-tab="#tab1" role="tab" aria-selected="true" aria-controls="tab1">
+                Newsletter
+            </a>
+        </li>
+        <li>
+            <a data-tab="#tab2" role="tab" aria-selected="false" aria-controls="tab2">
+                Developer Blogs
+            </a>
+        </li>
     </ul>
-  </div>
-  <div class="row" id="tab1">
+</div>
+<div class="row" id="tab1">
     {% if site.posts %}
     <div class="card-grid-container is-fullwidth">
-      <p class="margin--bottom--none margin--top--none">
-        Want to receive our newsletter via email? Subscribe
-        <a id="newsletter-signup-link" href="https://form.gov.sg/#!/620c7a0ba71f3d001367f9b5" _target="blank">here</a>.
-      </p>
-      {% for post in site.posts %}
-      {% assign url_str = post.url %}
-      {% assign contentDescription = post.date | date_to_string %}
-      {% if 3 > newsletterIncrementer %}
-      <div class="newsletter-card">
-        {% include card-variant-basic.html
-          name=post.title
-          url_str=url_str
-          render_calendar=true
-          item_count=item_count
-          description=contentDescription
-          parentCardStyle=parentCardStyle
-      %}
-      </div>
-      {% endif %}
-      {% assign newsletterIncrementer = newsletterIncrementer | plus: 1 %}
-      {% endfor %}
-      <div class="is-fullwidth is-flex" style="justify-content: center;" id="view-all-newsletter-button">
-        <a class="sgds-button is-outlined is-link" href="/communities/newsletter/index.html">
-          View all newsletter
-        </a>
-      </div>
+        <p class="margin--bottom--none margin--top--none">
+            Want to receive our newsletter via email? Subscribe
+            <a id="newsletter-signup-link" href="https://form.gov.sg/#!/620c7a0ba71f3d001367f9b5"
+                _target="blank">here</a>.
+        </p>
+        {% for post in site.posts %}
+        {% assign url_str = post.url %}
+        {% assign contentDescription = post.date | date_to_string %}
+        {% if 3 > newsletterIncrementer %}
+        <div class="newsletter-card">
+            {% include card-variant-basic.html 
+                name=post.title
+                url_str=url_str
+                render_calendar=true
+                item_count=item_count
+                description=contentDescription
+                parentCardStyle=parentCardStyle
+            %}
+        </div>
+        {% endif %}
+        {% assign newsletterIncrementer = newsletterIncrementer | plus: 1 %}
+        {% endfor %}
+        <div class="is-fullwidth is-flex" style="justify-content: center;" id="view-all-newsletter-button">
+            <a class="sgds-button sgds-button--primary is-outlined" href="/communities/newsletter/index.html">
+                View all newsletter
+            </a>
+        </div>
     </div>
     {% else %}
     <h5>No newsletters yet.</h5>
     {% endif %}
-  </div>
-  <div class="row" id="tab2" style="justify-content: center;">
+</div>
+<div class="row" id="tab2" style="justify-content: center;">
     <div class="is-fullwidth margin--top">
-      <div id="blogs-app" class="is-fullwidth">
-        <!-- This spinner will show when the Vue app is loading -->
-        <div class="spinner">
-          <div class="rect1"></div>
-          <div class="rect2"></div>
-          <div class="rect3"></div>
-          <div class="rect4"></div>
-          <div class="rect5"></div>
+        <div id="blogs-app" class="is-fullwidth">
+            <!-- This spinner will show when the Vue app is loading -->
+            <div class="spinner">
+                <div class="rect1"></div>
+                <div class="rect2"></div>
+                <div class="rect3"></div>
+                <div class="rect4"></div>
+                <div class="rect5"></div>
+            </div>
         </div>
-      </div>
-      <div class="is-fullwidth is-flex" style="justify-content: center;" id="view-all-developer-blogs-link">
-        <a class="sgds-button is-outlined is-link" href="/communities/developer-blogs/index.html">
-          View all developer blogs
-        </a>
-      </div>
+        <div class="is-fullwidth is-flex" style="justify-content: center;" id="view-all-developer-blogs-link">
+            <a class="sgds-button sgds-button--primary is-outlined" href="/communities/developer-blogs/index.html">
+                View all developer blogs
+            </a>
+        </div>
     </div>
-  </div>
 </div>
 
-<script defer="defer" src="/assets/bundles/vue-blogs-app.bundle.js"></script>
+<script defer async src="/assets/bundles/vue-blogs-app.bundle.js"></script>

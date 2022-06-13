@@ -5,14 +5,11 @@
 <div class="card-grid-container is-fullwidth">
     {%- for sub_section in filtered_events reversed -%}
         {%- assign sub_section_slug = sub_section.name | slugify -%}
+        {%- assign recordings_uploaded = sub_section.event_recording_link | default: false -%}
         {%- assign url_str = page.url | remove: 'index.html' | append: sub_section_slug -%}
         {%- assign event_date_and_timing = sub_section.event_date | default: sub_section.date -%}
         {%- assign image_category = sub_section.event_category | append : "s"| downcase | slugify -%}
         {%- assign img_src = '/assets/img/communities/' | append: image_category | append: '.svg' | downcase -%}
-
-        {% comment %} Optional Fields {% endcomment %}
-        {%- assign event_number_of_days = sub_section.event_number_of_days | default: 1-%}
-        {%- assign recordings_uploaded = sub_section.event_recording_link | default: false -%}
 
         {% if page.title == "Communities"%}
             {% if sub_section.event_category contains "Conference" %}
@@ -26,16 +23,15 @@
 
         <!-- Remove the index.html then append sub_section_slug -->
         <div data-future-date="{{ event_date_and_timing | date: '%Y%m%d' }}">
-            {% include card-variant-calendar.html
-              name=sub_section.name
-              category=sub_section.event_category
-              description=sub_section.event_description
-              img_src=img_src
-              url_str=url_str
-              recordings_uploaded=recordings_uploaded
-              event_number_of_days=event_number_of_days
-              event_date_and_timing=event_date_and_timing
-              disableItemCount=include.disableItemCount
+            {% include card-variant-calendar.html 
+                name=sub_section.name
+                category=sub_section.event_category
+                description=sub_section.event_description
+                img_src=img_src
+                url_str=url_str
+                recordings_uploaded=recordings_uploaded
+                event_date_and_timing=event_date_and_timing
+                disableItemCount=include.disableItemCount
             %}
         </div>
     {%- endfor -%}

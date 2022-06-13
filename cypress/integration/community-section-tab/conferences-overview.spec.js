@@ -30,7 +30,7 @@ describe("Conferences Overview Page Test", function () {
 
     it("Should only be able to get events that belongs to the Conferences category", () => {
       cy.get("img[alt='Event Icon']", { timeout: 5000 }).each($el => {
-        expect($el.parent().text().trim().toLowerCase()).to.eq("conference");
+        expect($el.parent().text().trim()).to.eq("Conference");
       });
     });
 
@@ -139,7 +139,7 @@ describe("Conferences Overview Page Test", function () {
 
     it("Should only be able to get events that belongs to the conference category", () => {
       cy.get("img[alt='Event Icon']", { timeout: 5000 }).each($el => {
-        expect($el.parent().text().trim().toLowerCase()).to.eq("conference");
+        expect($el.parent().text().trim()).to.eq("Conference");
       });
     });
 

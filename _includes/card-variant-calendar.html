@@ -1,71 +1,71 @@
 <div class="sgds-card">
-  <!-- Only available on Mobile View -->
-  <div class="is-hidden-desktop">
-    <div class="has-text-centered padding--bottom--sm padding--top--sm event-status-container">
-      <p class="has-text-weight-bold has-text-white event-status">PAST</p>
-    </div>
-  </div>
-  <div class="sgds-card-content sgds-card-variant-calendar">
-    <div class="content-grid is-flex">
-      <!-- Desktop Calendar Slot -->
-      <div class="sgds-card-image is-hidden-touch">
-        <div class="margin--right--lg">
-          <div class="has-text-centered" style="width: 6.65rem;">
-            <div class="event-status-container"
-              style="border-top-right-radius: 0.5rem; border-top-left-radius: 0.5rem;">
-              <p class="is-size-8 has-text-weight-bold has-text-white event-status">PAST</p>
-            </div>
-            <div class="padding---top--xs"
-              style="border: 1px solid #323232; border-bottom-left-radius: 0.5rem; border-bottom-right-radius: 0.5rem;">
-              <div class="padding--top--sm padding--bottom--sm">
-                <p class="padding--top--xs padding--bottom--none is-size-2 has-text-weight-bold has-text-centered">
-                  {{- include.event_date_and_timing | date: "%d" -}}
-                </p>
-              </div>
-              <div>
-                <p class="padding--bottom">
-                  {{- include.event_date_and_timing |  date: "%b" | upcase -}}&nbsp;‘
-                  {{- include.event_date_and_timing | date: "%y" -}}
-                </p>
-              </div>
-            </div>
-          </div>
+    <!-- Only available on Mobile View -->
+    <div class="is-hidden-desktop">
+        <div class="has-text-centered padding--bottom--sm padding--top--sm event-status-container">
+            <p class="has-text-weight-bold has-text-white event-status">PAST</p>
         </div>
-      </div>
-      <!-- Content Slot -->
-      <div>
-        {% include card-header-info.html disableItemCount=include.disableItemCount name=include.name item_count=include.item_count url_str=include.url_str%}
-        <div>
-          <!-- Mobile Calendar Slot -->
-          <div class="is-hidden-desktop is-flex is-centered" style="filter:contrast(0.2);">
-            <p class="is-flex margin--bottom--xs is-size-8" style="align-items: center;">
-              <span class="sgds-icon sgds-icon-calendar is-size-4 margin--right--sm" role="img" aria-label="iconName"
-                style="-webkit-text-stroke: .1px white;"></span>
-              {{- include.event_date_and_timing | date: "%d" -}}&nbsp;
-              {{- include.event_date_and_timing | date: "%B" -}}&nbsp;
-              {{- include.event_date_and_timing | date: "%Y" -}}
-            </p>
-          </div>
-          <!-- Recording Slot -->
-          {%- if include.recordings_uploaded -%}
-          <div
-            class="is-hidden-touch has-text-weight-semibold padding--left padding--right margin--bottom margin--top padding--top--xs padding--bottom--xs is-size-8"
-            style="background-color: #CCE4F7; width: fit-content; border-radius: 0.1rem; border-radius: .25rem;"
-            data-recording-available="true">
-            Recordings available
-          </div>
-          {%- endif -%}
-          <!-- Category Slot -->
-          {%- if include.category -%}
-          <div class="is-size-8 is-flex margin--bottom--none" style="filter:contrast(0.2);">
-            <img src="{{include.img_src}}" class="margin--left--none marign--bottom--none margin--right--sm"
-              alt="Event Icon" style="height: 1.5em; width: 1.5em;" />
-            {{- include.category -}}
-          </div>
-          {%- endif -%}
-          <p>{{- include.description -}}</p>
-        </div>
-      </div>
     </div>
-  </div>
+    <div class="sgds-card-content">
+        <div class="content-grid is-flex">
+            <!-- Desktop Calendar Slot -->
+            <div class="sgds-card-image is-hidden-touch">
+                <div class="margin--right--lg">
+                    <div class="has-text-centered" style="width: 6.65rem;">
+                        <div class="event-status-container"
+                            style="border-top-right-radius: 0.5rem; border-top-left-radius: 0.5rem;">
+                            <p class="has-text-weight-bold has-text-white event-status">PAST</p>
+                        </div>
+                        <div class="padding---top--xs"
+                            style="border: 1px solid #323232; border-bottom-left-radius: 0.5rem; border-bottom-right-radius: 0.5rem;">
+                            <div class="padding--top--sm padding--bottom--sm">
+                                <p
+                                    class="padding--top--xs padding--bottom--none is-size-2 has-text-weight-bold has-text-centered ">
+                                    {{- include.event_date_and_timing | date: "%d" -}}
+                                </p>
+                            </div>
+                            <div>
+                                <p class="padding--bottom">
+                                    {{- include.event_date_and_timing |  date: "%b" | upcase -}}&nbsp;‘
+                                    {{- include.event_date_and_timing | date: "%y" -}}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Content Slot -->
+            <div>
+                {% include card-header-info.html disableItemCount=include.disableItemCount name=include.name item_count=include.item_count url_str=include.url_str%}
+                <div>
+                    <!-- Mobile Calendar Slot -->
+                    <div class="is-hidden-desktop is-flex is-centered">
+                        <p class="is-flex margin--bottom--sm" style="align-items: center;">
+                            <span class="sgds-icon sgds-icon-calendar is-size-4 margin--right--sm" role="img"
+                                aria-label="iconName" style="-webkit-text-stroke: .5px white;"></span>
+                            {{- include.event_date_and_timing | date: "%d" -}}&nbsp;
+                            {{- include.event_date_and_timing | date: "%b" -}}&nbsp;
+                            {{- include.event_date_and_timing | date: "%Y" -}}
+                        </p>
+                    </div>
+                    <!-- Recording Slot -->
+                    {%- if include.recordings_uploaded -%}
+                    <div class="is-hidden-touch has-text-weight-semibold padding--left padding--right margin--bottom margin--top padding--top--sm padding--bottom--sm is-size-8"
+                        style="background-color: #CCE4F7; width: fit-content; border-radius: 0.1rem; border-radius: .25rem;"
+                        data-recording-available="true">
+                        Recordings available
+                    </div>
+                    {%- endif -%}
+                    <!-- Category Slot -->
+                    {%- if include.category -%}
+                    <p class="is-flex margin--bottom--none">
+                        <img src="{{include.img_src}}" class="margin--left--none margin--right--sm" alt="Event Icon"
+                            style="height: 1.5em; width: 1.5em;" />
+                        {{- include.category | capitalize -}}
+                    </p>
+                    {%- endif -%}
+                    <p>{{- include.description | capitalize -}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
