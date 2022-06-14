@@ -86,12 +86,12 @@
 
 - type: Datatransformation
   timeslot: 3:00 PM - 3:30 PM
-  title: Technical Sharing of GovTech's Use Cases (TBC)
-  desc:
+  title: Multilevel Modelling
+  desc: 'A multilevel model is a regression on grouped data in which parameters (i.e., the intercept or slopes/regression coefficients) are randomly varying and given a probability model. We will learn how it is differs from classical regression and briefly explore how multilevel modelling can be used in the context of schools.'
   speakers: 
     - name: Tham Zheng Kang
       image: /assets/img/photos/tham-zheng-kang.png
-      title: Quantitative Analyst, Data Science & Artificial Intelligence Division (DSAID), GovTech
+      title: Data Scientist, Data Science & Artificial Intelligence Division (DSAID), GovTech
 
 - type: Datatransformation
   timeslot: 3:30 PM - 4:00 PM
