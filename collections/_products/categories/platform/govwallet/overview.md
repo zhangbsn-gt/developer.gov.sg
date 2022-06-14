@@ -89,41 +89,43 @@ bios:
 
 GovWallet is a module integration that was developed by GovTech’s Government Digital Services (GDS) team to provide an alternative means to distribute government pay-outs. Currently, agencies may develop individual systems to conduct their respective distribution exercises. Beneficiaries may then find themselves going through multiple touchpoints, which can be tedious.
 
-To prevent isolated systems, GovWallet was developed as an internal pilot project at GovTech which enabled GovTechies to credit staff benefits into GovWallet and transfer them to their PayNow accounts or use them at merchants that accept PayNow e-Payment.
+To prevent silos, GovWallet was developed as an internal pilot project at GovTech to enable GovTechies to credit staff benefits into GovWallet instead and transfer these benefits to their PayNow accounts or use them at merchants that accept the PayNow or NETS e-Payment methods.
 
 Since then, GovWallet has partnered local banks and agencies to become a payment facilitator between agencies distributing pay-outs and beneficiaries who are receiving them.
 
 ### What is GovWallet?
 
-GovWallet facilitates distribution of pay-outs from agencies to beneficiaries. It allows agencies to maintain control of their distribution exercises and enables beneficiaries to track their pay-out and spending history via the [LifeSG](https://www.life.gov.sg){:target="\_blank"} app. A key feature of GovWallet is that it enables agencies to select specific merchants and control where pay-outs can be used.
+GovWallet facilitates the distribution of pay-outs from agencies to beneficiaries. It allows agencies to maintain control of their distribution exercises and enables beneficiaries to track their pay-out and spending history via the LifeSG app. A key feature of GovWallet is that it enables agencies to select specific merchants and control where pay-outs can be used.
 
-By leveraging local banks’ PayNow e-Payment ecosystem, GovWallet is able to perform instant transfers from agencies to beneficiaries. For beneficiaries without bank accounts and mobile devices, the GovWallet team has partnered with the Central Provision Fund Board (CPFB) and OCBC Bank to allow beneficiaries to withdraw their pay-outs from OCBC’s ATMs.
+By leveraging local banks’ PayNow and NETS e-Payment ecosystems, GovWallet is able to perform instant transfers from agencies to the merchants. For beneficiaries without bank accounts and mobile devices, the GovWallet team has partnered with the Central Provision Fund Board (CPFB) and OCBC Bank to allow beneficiaries to withdraw their pay-outs from OCBC’s ATMs.
 
 ### Why Should GovWallet be Adopted?
 
-GovWallet serves to improve the user experience as the single wallet to view and use the available pay-outs from various agencies. It mitigates confusion on how much pay-out is received by beneficiaries, while enhancing security without the need to click on potentially suspicious SMSes.
+GovWallet improves the user experience as it provides a single wallet for oversight and for access to the available pay-outs from various agencies. It mitigates confusion on how much pay-outs has been received by beneficiaries, while enhancing security by removing the need to click on potentially suspicious SMSes.
 
-Furthermore, the 164,000 merchants already onboarded with PayNow, such as e-commerce platforms like Shopee and Lazada, and charity organisations like Giving.sg, can enjoy lower barrier of entry if they wish to participate in government disbursement programmes.
+Furthermore, there are more than 164,000 and 43,000 merchants registered with PayNow and NETS respectively. e-commerce platforms like Shopee and Lazada, and charity organisations like Giving.sg, can also enjoy lower barriers of entry if they wish to participate in government disbursement programmes.
 
 ### How Do You Use GovWallet?
 
-GovWallet can be accessed using official government apps, such as LifeSG. On the LifeSG app, you can scan the SGQR code or PayNow QR to pay the merchant. More government apps are in the pipeline to use GovWallet.
+GovWallet can be accessed using official government apps, such as LifeSG, Healthy 365 and Singpass mobile. On the LifeSG and Healthy 365 apps, you can scan the SGQR, NETS or PayNow QR codes to pay the merchants. Moving forward, GovWallet will be available on more government apps.
 
-For agencies interested in onboarding GovWallet, email <patricia_zhao@tech.gov.sg>.
+For agencies interested in onboarding GovWallet, please fill up this [form](https://form.gov.sg/#!/62280856ba91100012050933){:target="_blank"}.
 
 ### Success Stories
 
-GovWallet has worked with CPFB to administer the Workfare Income Supplement scheme for more than 2,500 unbanked beneficiaries, thus removing the need for cheque issuance. The beneficiaries can withdraw their government pay-outs in the form of cash at the OCBC ATMs or spend them as eCredits using the LifeSG app.
+The GovWallet team has worked with CPFB to administer the Workfare Income Supplement scheme for more than 6,200 unbanked beneficiaries, thus removing the need for cheque issuance. Through this collaboration, beneficiaries can now withdraw their government pay-outs in the form of cash at OCBC ATMs or spend them as eCredits using the LifeSG app.
 
-Other agencies have expressed interest to adopt GovWallet for the management of household and social development, sector-specific relief, and staff recognition programmes. More details will be released in due time.
+GovWallet has also partnered with MINDEF and MHA to administer the NS reward schemes to their servicemen. For the Healthy 365 app, users can also convert their reward points to e-Credits managed by the GovWallet system.
+
+To add to this, more government agencies have expressed interest to adopt GovWallet for the management of household and social development, sector-specific relief, and staff recognition programmes. More details will be released in due time.
 
 ### What's Next?
 
-The GovWallet team is looking to expand beyond the PayNow e-Payment ecosystem, to leverage the NETs payment ecosystem which includes more than 120,000 acceptance points in Singapore across 42,000 merchants.
+The GovWallet team is embarking on the journey to build a self-service portal for agency users to better administer their schemes and for citizens to view their GovWallet pay outs and spending transactions.
 
 ### Contact Information
 
-For general enquiries, email <govwallet_support@tech.gov.sg>.
+For general enquiries, reach out to the product team through this [form](https://safe.menlosecurity.com/https://form.gov.sg/#!/62280856ba91100012050933){:target="_blank"}.
 
 ### Meet the Team!
 
