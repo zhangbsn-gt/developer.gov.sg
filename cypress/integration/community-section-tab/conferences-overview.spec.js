@@ -4,7 +4,7 @@ describe("Conferences Overview Page Test", function () {
   context("Desktop Test Case", () => {
     before(() => {
       // Navigate to the root
-      cy.visit("/communities/events/conferences");
+      cy.visit("/communities/events/");
     });
 
     beforeEach(() => {
@@ -22,13 +22,17 @@ describe("Conferences Overview Page Test", function () {
         });
 
       cy.get(".sgds-card", { timeout: 5000 })
-        .get("a[href='conferences']")
+        .find("a")
+        .contains("Conferences")
         .click({ force: true });
 
       cy.url().should("include", "/communities/events/conferences/");
     });
 
     it("Should only be able to get events that belongs to the Conferences category", () => {
+      // RESET
+      cy.visit("/communities/events/conferences/");
+
       cy.get("img[alt='Event Icon']", { timeout: 5000 }).each($el => {
         expect($el.parent().text().trim()).to.eq("Conference");
       });
@@ -131,7 +135,8 @@ describe("Conferences Overview Page Test", function () {
       cy.contains("Events").click({ force: true });
 
       cy.get(".sgds-card", { timeout: 5000 })
-        .get("a[href='conferences']")
+        .find("a")
+        .contains("Conferences")
         .click({ force: true });
 
       cy.url().should("include", "/communities/events/conferences/");

@@ -4,7 +4,7 @@ describe("Stack X Overview Page Test", function () {
   context("Desktop Test Case", () => {
     before(() => {
       // Navigate to the root
-      cy.visit("http://localhost:4000/communities");
+      cy.visit("/communities");
       // Communities overview page
       cy.contains("Communities").click({ force: true });
       cy.url().should("include", "/communities");
@@ -25,7 +25,8 @@ describe("Stack X Overview Page Test", function () {
         });
 
       cy.get(".sgds-card", { timeout: 5000 })
-        .get("a[href='stack-x-meetups']")
+        .find("a")
+        .contains("STACK-X Meetups")
         .click({ force: true });
 
       cy.url().should("include", "/communities/events/stack-x-meetups/");
@@ -119,7 +120,7 @@ describe("Stack X Overview Page Test", function () {
   context("Mobile Test Case", () => {
     before(() => {
       // Navigate to the root
-      cy.visit("http://localhost:4000/communities");
+      cy.visit("/");
       // Communities overview page
       cy.contains("Communities").click({ force: true });
       cy.url().should("include", "/communities");
@@ -137,7 +138,8 @@ describe("Stack X Overview Page Test", function () {
       cy.contains("Events").click({ force: true });
 
       cy.get(".sgds-card", { timeout: 5000 })
-        .get("a[href='stack-x-meetups']")
+        .find("a")
+        .contains("STACK-X Meetups")
         .click({ force: true });
 
       cy.url().should("include", "/communities/events/stack-x-meetups/");

@@ -51,7 +51,7 @@ describe("Community Section Overview Page Test", function () {
     // Newsletter
     it("Should display the newsletter signup form when clicked on the 'Join our newsletter' button.", () => {
       // Reset
-      cy.visit("http://localhost:4000/communities");
+      cy.visit("/communities");
 
       cy.get("#tab1")
         .find("a[id='newsletter-signup-link']")
@@ -66,7 +66,7 @@ describe("Community Section Overview Page Test", function () {
 
     it("Should display at least 3 newsletter.", () => {
       // Reset
-      cy.visit("http://localhost:4000/communities");
+      cy.visit("/communities");
 
       // Scroll into view
       cy.get(".sgds-tabs").scrollIntoView();
@@ -99,7 +99,7 @@ describe("Community Section Overview Page Test", function () {
     // Developer blogs
     it("Should redirect after after clicking on the “View All Developer Blogs button.", () => {
       // Reset
-      cy.visit("http://localhost:4000/communities");
+      cy.visit("/communities");
 
       // Click on tab2 via the anchor tag via the attribute data-tab
       cy.get("li > a[data-tab='#tab2']").click();
@@ -118,7 +118,7 @@ describe("Community Section Overview Page Test", function () {
   context("Mobile Test Case", () => {
     before(() => {
       // Navigate to the root
-      cy.visit("http://localhost:4000/");
+      cy.visit("/");
       // Click on the community tab anchor tag
       cy.contains("Communities").click({ force: true });
       // Check whether it's the community tab by checking the url
@@ -171,7 +171,7 @@ describe("Community Section Overview Page Test", function () {
     // Newsletter
     it("Should display the newsletter signup form when clicked on the 'Join our newsletter' button.", () => {
       // Reset
-      cy.visit("http://localhost:4000/communities");
+      cy.visit("/communities");
 
       cy.get("#tab1")
         .find("a[id='newsletter-signup-link']")
@@ -186,7 +186,7 @@ describe("Community Section Overview Page Test", function () {
 
     it("Should display at least 3 newsletter.", () => {
       // Reset
-      cy.visit("http://localhost:4000/communities");
+      cy.visit("/communities");
 
       // Scroll into view
       cy.get(".sgds-tabs").scrollIntoView();
@@ -219,7 +219,7 @@ describe("Community Section Overview Page Test", function () {
     // Developer blogs
     it("Should redirect after after clicking on the “View All Developer Blogs button.", () => {
       // Reset
-      cy.visit("http://localhost:4000/communities");
+      cy.visit("/communities");
 
       // Click on tab2 via the anchor tag via the attribute data-tab
       cy.get("li > a[data-tab='#tab2']").click();

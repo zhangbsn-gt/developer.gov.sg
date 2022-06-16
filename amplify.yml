@@ -36,7 +36,7 @@ test:
         - npm install
         - npm install wait-on pm2
         - npm install mocha mochawesome mochawesome-merge mochawesome-report-generator
-        - "npx pm2 start npm -- run dev:concurrent & npx wait-on http://127.0.0.1:4000"
+        - "npx pm2 start npm -- run test:server & npx wait-on http://127.0.0.1:8000"
     test:
       commands:
         - npx cypress run --record --reporter mochawesome --reporter-options "reportDir=cypress/report/mochawesome-report,overwrite=true,html=false,json=true,timestamp=mmddyyyy_HHMMss"
@@ -45,3 +45,4 @@ test:
       commands:
         - npx mochawesome-merge cypress/report/mochawesome-report/*.json > cypress/report/mochawesome.json
         - npx pm2 kill
+        - npx pm2 list

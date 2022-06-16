@@ -4,7 +4,7 @@ describe("Full Site Page Test", function () {
   context("Desktop Test Case", () => {
     before(() => {
       // Navigate to the root
-      cy.visit("http://localhost:4000/", {
+      cy.visit("/", {
         onBeforeLoad: win => {
           win.sessionStorage.clear();
         },
@@ -163,7 +163,7 @@ describe("Full Site Page Test", function () {
   context("Mobile Test Case", () => {
     before(() => {
       // Navigate to the root
-      cy.visit("http://localhost:4000/", {
+      cy.visit("/", {
         onBeforeLoad: win => {
           win.sessionStorage.clear();
         },

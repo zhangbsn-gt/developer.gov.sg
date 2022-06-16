@@ -37,17 +37,18 @@ event_types:
   {%- assign name = sub_section.name %}
   {%- assign description = sub_section.description -%}
   {%- assign sub_section_slug = sub_section.name | slugify -%}
-  {%- assign url_str = sub_section.url | append : sub_section_slug  -%}
+  <!-- Log the sub-section_slug -->
+  {%- assign url_str = "/communities/events/" | append : sub_section_slug | append : "/" -%}
   {%- assign imageCategory = sub_section.icon_name | append : "s"| downcase | slugify -%}
   {%- assign img_src = '/assets/img/communities/' | append: imageCategory | append: '.svg' | downcase -%}
 
   <div class="sgds-card {{include.parentCardStyle}}">
     <div class="sgds-card-content">
       <img src="{{img_src}}" class="margin--left--none" alt="Icons" />
-      {% include card-header-info.html 
-        name=name 
+      {% include card-header-info.html
+        name=name
         url_str=url_str
-        disableItemCount=disableItemCount 
+        disableItemCount=disableItemCount
       %}
       <div>
         <p>{{description}}</p>
