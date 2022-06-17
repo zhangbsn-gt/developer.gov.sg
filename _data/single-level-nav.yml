@@ -9,27 +9,9 @@
   items:
     - Overview
     - Getting Started
-    - Contact Us
     - Meet The Team
 
 - name: VAS
-  items:
-    - Overview
-
-# Devops
-- name: Container Stack
-  items:
-    - Overview
-    
-- name: SHIP-HATS
-  items:
-    - Overview
-    - What's New
-    - Training Resources
-    - Subscription
-    - Contact Us
-    
-- name: StackOps
   items:
     - Overview
 
@@ -120,6 +102,23 @@
   items:
     - Overview
 
+# Devops
+- name: Container Stack
+  items:
+    - Overview
+     
+- name: SHIP-HATS
+  items:
+    - Overview
+    - What's New
+    - Training Resources
+    - Subscription
+    - Contact Us
+    
+- name: StackOps
+  items:
+    - Overview
+    
 # Digital Identity
 - name: Corppass
   items:
@@ -206,14 +205,18 @@
   items:
     - Overview
 
-# Infrastructure and Hosting
+# Infrastructure and Hosting   
 - name: Government on Commercial Cloud
   items:
     - Overview
-
-- name: Nectar
+    
+- name: 'I2C (Infra to Code)'
   items:
     - Overview
+    - Features
+    - Getting Started
+    - Resources
+    - Meet The Team
 
 # Platform
 - name: GoBusiness

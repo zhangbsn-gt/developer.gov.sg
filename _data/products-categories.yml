@@ -89,6 +89,7 @@
   items:
     - Overview
     - Government on Commercial Cloud
+    - 'I2C {{Infra to Code}}'
 
 - name: Sensor Platforms and Internet of Things
   description: Build on sensors and IOT technologies and leverage their data

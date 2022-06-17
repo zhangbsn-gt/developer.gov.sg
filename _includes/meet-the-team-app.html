@@ -1,7 +1,7 @@
 {% assign data = include.bios %}
 <div class="card-grid-container grid-17rem">
     {% for bio in data %}
-    {% assign img_url = "/assets/img/" | append: bio.img_src %}
+    {% assign img_url = "/assets/img/photos/" | append: bio.img_src %}
     <div class="sgds-card">
         <div class="sgds-card-image">
             <figure class="sgds-image is-9by9">
