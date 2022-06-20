@@ -336,7 +336,7 @@
 
 - type: Demo
   timeslot:
-  title: Enabling Data Exploitation for Whole-of-Government​
+  title: Analytics.Gov - Enabling Data Exploitation for Whole-of-Government​
   desc: With an increasing demand for data analytics driven work, there is a growing need to enable Whole-of-Government to carry out analytical work in a robust and secure environment. This presentation will share how the Data Engineering (DE) team has sought to build Analytics.gov, a data exploitation platform that supports agencies with their data exploitation work.
   speakers: 
     - name: Hansel Ng
