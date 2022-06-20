@@ -1,3 +1,12 @@
 {% for item in include.item %}
-  <li class="{{include.class}} margin--top--none">{{ item }}</li>
+  {% comment %}
+    Hardcoded the if statement for Developer Portal as Developer Portal is not a product and does not have it's own product md files.
+  {% endcomment %}
+  {% if item == "Developer Portal" %}
+    <a href="/" target="_blank">
+      <li class="live margin--top--none">{{ item }}</li>
+    </a>
+  {% else %}
+    <li class="{{include.class}} margin--top--none">{{ item }}</li>
+  {% endif %}
 {% endfor %}
