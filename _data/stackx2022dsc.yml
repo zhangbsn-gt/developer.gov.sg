@@ -163,6 +163,15 @@
       image: /assets/img/photos/alessandro-cere.png 
       title: Specialist Solution Architect, AWS
 
+- type: Dataengineering
+  timeslot: 4:00 PM - 4:30 PM
+  title: National Economic Research & Visualisation Engine (NERVE)
+  desc:
+  speakers: 
+    - name: Kuhan Harichandra
+      image: /assets/img/photos/blank-photo.png 
+      title: Director (Digitalisation Office), Ministry of Trade and Industry
+
 # AI Applications and Video Analytics
 #- type: Videoanalytics
 #  timeslot: 1:30 PM - 2:00 PM
