@@ -25,6 +25,7 @@ module.exports = (env, argv) => {
         "./apps/src/communities/conferences-webinars-sort.js",
       "layout-page-sidenav-calendar":
         "./apps/src/communities/layout-page-sidenav-calendar.js",
+      "toggle-accordion": "./apps/src/communities/toggle-accordion.js",
       "main": "./apps/src/main.js",
     },
     output: {
@@ -80,6 +81,8 @@ module.exports = (env, argv) => {
             : "http://localhost:4001/dummy-api-url",
       }),
     ],
+    devtool: "source-map",
+    
   };
 
   return config;

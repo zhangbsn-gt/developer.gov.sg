@@ -3,80 +3,58 @@
 {%- assign sectionDescription = include.sectionDescription-%}
 
 <div>
-    <div class="row is-desktop" style="align-items:center;">
-        <div class="col">
-            <h2><b>{{sectionName}}</b></h2>
-            <p class="is-hidden-desktop">
-                {{sectionDescription}}
-            </p>
-        </div>
-        <div class="col is-flex-justify-fe is-nested">
-            <div class="row is-desktop">
-                <div class="col">
-                    <button class="sgds-button is-fullwidth" onclick="toggleAccordions(true)">Expand All
-                        <span class="sgds-icon sgds-icon-plus margin--left--xs" role="img" aria-label="iconName"></span>
-                    </button>
-                </div>
-                <div class="col">
-                    <button class="sgds-button is-outlined-mobile is-fullwidth margin--top--sm--mobile"
-                        onclick="toggleAccordions(false)">Collapse All
-                        <span class="sgds-icon sgds-icon-minus margin--left--xs" role="img"
-                            aria-label="iconName"></span>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <p class="is-hidden-touch">
+  <div class="row is-desktop" style="align-items:center;">
+    <div class="col">
+      <h2><b>{{sectionName}}</b></h2>
+      <p class="is-hidden-desktop">
         {{sectionDescription}}
-    </p>
+      </p>
+    </div>
+    <div class="col is-flex-justify-fe is-nested">
+      <div class="row is-desktop">
+        <div class="col">
+          <button class="sgds-button is-fullwidth" id="button-expand-all-accordions">Expand All
+            <span class="sgds-icon sgds-icon-plus margin--left--xs" role="img" aria-label="iconName"></span>
+          </button>
+        </div>
+        <div class="col">
+          <button class="sgds-button is-outlined-mobile is-fullwidth margin--top--sm--mobile"
+            id="button-collapse-all-accordions">Collapse All
+            <span class="sgds-icon sgds-icon-minus margin--left--xs" role="img" aria-label="iconName"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="is-hidden-touch">
+    {{sectionDescription}}
+  </p>
 </div>
 <div class="margin--top">
-    {%- for faq in faqData -%}
-    <div class="sgds-accordion margin--bottom">
-        <a href="#!" class="sgds-accordion-header padding--top padding--bottom has-text-dark has-background-white"
-            role="button" aria-expanded="false">
-            {{faq.name}}
-            <i class="sgds-icon sgds-icon-chevron-down"></i>
-        </a>
-        <div class="sgds-accordion-body">
-            <p>{{faq.description}}</p>
-            <div class="row is-mobile is-multiline">
-                {% for image in faq.images %}
-                {%- assign img_url = "/assets/img/" | append: image.name -%}
-                {%- assign grid_spacing = image.grid_spacing | default: 6 -%}
+  {%- for faq in faqData -%}
+  <div class="sgds-accordion margin--bottom">
+    <a href="#!" class="sgds-accordion-header padding--top padding--bottom has-text-dark has-background-white"
+      role="button" aria-expanded="false">
+      {{faq.name}}
+      <i class="sgds-icon sgds-icon-chevron-down"></i>
+    </a>
+    <div class="sgds-accordion-body">
+      <p>{{faq.description}}</p>
+      <div class="row is-mobile is-multiline">
+        {% for image in faq.images %}
+        {%- assign img_url = "/assets/img/" | append: image.name -%}
+        {%- assign grid_spacing = image.grid_spacing | default: 6 -%}
 
-                <div class="col is-12-mobile is-12-tablet is-{{grid_spacing}}-desktop">
-                    <img class="is-fullwidth" src="{{img_url}}" alt="Image" style="width: 100%;">
-                </div>
-                {% endfor %}
-            </div>
+        <div class="col is-12-mobile is-12-tablet is-{{grid_spacing}}-desktop">
+          <img class="is-fullwidth" src="{{img_url}}" alt="Image" style="width: 100%;">
         </div>
+        {% endfor %}
+      </div>
     </div>
-    {% endfor %}
+  </div>
+  {% endfor %}
 </div>
 
-<script>
-    // The user will pass in a boolean variable to determine if the accordion it to be expanded or to be collapsed.
-    function toggleAccordions(shouldExpand = false) {
-        const accoridions = document.querySelectorAll(".sgds-accordion");
-        accoridions.forEach(function (accordion) {
-            const header = accordion.querySelector(".sgds-accordion-header");
-            const headerAttribute = header.getAttribute("aria-expanded");
+<script defer="defer" src="/assets/bundles/toggle-accordion.bundle.js">
 
-            if (shouldExpand) {
-                accordion.classList.add("is-open");
-                if (headerAttribute === "false") {
-                    header.click();
-                    header.setAttribute("aria-expanded", "true");
-                }
-            } else {
-                accordion.classList.remove("is-open");
-                if (headerAttribute === "true") {
-                    header.click();
-                    header.setAttribute("aria-expanded", "false");
-                }
-            }
-        });
-    };
 </script>
