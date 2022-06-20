@@ -27,7 +27,7 @@
       title: Senior Director, Data Science & Artificial Intelligence Division (DSAID), GovTech
 
 - type: Keynote
-  timeslot: 10:20 AM - 11:00 AM
+  timeslot: 10:20 AM - 10:50 AM
   title: 'Beyond Singapore Government: Harnessing the Value of Data and AI'
   desc:
   speakers: 
@@ -36,7 +36,7 @@
       title: Chief Executive Officer, Institute for Excellence in Government​
 
 - type: Keynote
-  timeslot: 11:00 AM - 11:30 AM
+  timeslot: 10:50 AM - 11:20 AM
   title: 'Harnessing the Value of Data and AI at Disney Streaming'
   desc:
   speakers: 
@@ -98,7 +98,7 @@
   title: 'Statistical Modelling & Machine Learning;  Inference & Prediction'
   desc: In this presentation, we review recent trends & discussions concerning concepts in Statistical Modelling and Machine Learning. We will also delve into the difference between inference & prediction and discuss strengths and concerns with some of the popular ideas that has evolved in the last century (e.g., use of p-value). 
   speakers: 
-    - name: Victor Ong
+    - name: Dr. Victor Ong
       image: /assets/img/photos/victor-ong.png
       title: Senior Data Scientist, Data Science & Artificial Intelligence Division (DSAID), GovTech
       
@@ -178,7 +178,7 @@
   title: AI for the Public Good – Moving From Hype to Real Applications
   desc: This presentation gives an overview of the Artificial Intelligence (AI) projects Govtech has done for various agencies as well as the approach taken in supporting government AI use cases. In Singapore, AI is applied in a variety of uses cases, ranging from policy to ops work. Examples include text analytics, speech to text, fraud detection, and video analytics. Essentially GovTech aims to excite officers on the possibilities of AI and get them to think of how they can apply AI to the domain problems they have at hand.
   speakers: 
-    - name: Alvina Goh
+    - name: Dr. Alvina Goh
       image: /assets/img/photos/alvina-goh.png
       title: Director, Data Science & Artificial Intelligence Division (DSAID), GovTech
       
@@ -230,3 +230,155 @@
       image: /assets/img/photos/matthias-reso.png
       title: Partner Engineer, AI, PyTorch, Meta
  
+# Day 2 Programme
+
+#Speed Dataing
+- type: Speeddataing
+  timeslot: 10:00 AM - 11:00 AM
+  title: ​Sharing by GovTech’s GVG on WOG dashboard​
+  desc:
+  
+- type: Speeddataing
+  timeslot: 11:00 AM - 12:00 PM
+  title: Democratise AI for everyone
+  desc: How does Google define and inspire an Artificial Intelligence (AI) learning journey to democratise AI? This is a sharing session on how Google technology and innovation, power research and applied AI to transform public, private and citizen services. Learn more as Dambo Ren presents (through partnering public sector customers) relevant and purposeful use cases in this session.
+  speakers: 
+    - name: Dambo Ren
+      image: /assets/img/photos/dambo-ren.png
+      title: Specialist Customer Engineer Manager, Public Sector (APAC), Google Cloud
+
+# Afternoon Keynote      
+- type: Day2-keynote
+  timeslot: 13:30 PM - 14:00 PM
+  title: Becoming a Data Driven Bank – DBS Transformation Journey
+  desc: The future for DBS lies in leveraging data and analytics to change the way we run business – so that we can be nimbler, reduce time to market, deliver exponential outcomes, and help create truly differentiated products, services and customer experiences. The talk will provide an overview of DBS’ digital transformation journey and highlight how the bank is tapping data-driven insights to redesign customer and employee solutions.
+  speakers: 
+    - name: Sameer Gupta
+      image: /assets/img/photos/sameer-gupta.png
+      title: MD & Chief Analytics Officer, DBS
+
+# Launch of Data Arcade Tournament 2022      
+- type: Dataarcade
+  timeslot: 14:00 PM - 14:05 PM
+  title: Opening Address
+  desc:
+  speakers: 
+    - name: Joseph Tan
+      image: /assets/img/photos/joseph-tan.png
+      title: Deputy Director, Data Science & Artificial Intelligence Division (DSAID), GovTech
+      
+- type: Dataarcade
+  timeslot: 14:05 PM - 14:30 PM
+  title: Launch of DAT2022
+  desc: Join us at the Launch of DAT2022, now in its 5th year running! We are debuting some exciting news – expect a new track partner, new awards and more prizes than ever! ​Be the first to catch the unveiling of our DAT202 theme, participation timeline, DAT2022 finale and more.
+  speakers: 
+    - name: Nicole Lee
+      image: /assets/img/photos/nicole-lee.png
+      title: Community Manager, Data Science & Artificial Intelligence Division (DSAID), GovTech
+
+- type: Dataarcade
+  timeslot: 14:30 PM - 14:45 PM
+  title: 'Power BI : Leveraging AI and Making AI Accessible for Everyone'
+  desc: An introduction to Power BI. AI is changing the way we get insights and drive results. See how Power BI leverages AI to aid in data exploration, automatically find patterns, help users understand what the data means, even help you code and create data marts to get more out of your data to tell your perfect story.
+  speakers: 
+    - name: Jason Boon
+      image: /assets/img/photos/blank-photo.png
+      title: Azure Data AI Specialist, Microsoft Power BI
+      
+- type: Dataarcade
+  timeslot: 14:45 PM - 15:00 PM
+  title: My 5 Favourite Things About Qlik Sense
+  desc: Join Qlik in this session and learn about Qlik Partnership with GovTech for DAT2022, Qlik's unique capabilities that you can use to build the winning dashboard, steps to registering for a test drive session and extending your knowledge into advanced topics like Geospatial, AutoML, automation and more.
+  speakers: 
+    - name: Edy Tan
+      image: /assets/img/photos/blank-photo.png
+      title: Solution Architect, Qlik Singapore
+
+- type: Dataarcade
+  timeslot: 15:00 PM - 15:15 PM
+  title: Start Your Own Tableau Story
+  desc: Start your own amazing journey with Tableau! In this engaging 15 min segment, you will find who and what is Tableau, be introduced to Tableau Public Sector use cases, learn about what's in it for you and hear some amazing Tableau stories.
+  speakers: 
+    - name: Benjamin Tan
+      image: /assets/img/photos/blank-photo.png
+      title: SE Team Lead (SG), Tableau
+
+- type: Dataarcade
+  timeslot: 15:15 PM - 15:30 PM
+  title: A look at The Social Service Landscape and Quality of Life
+  desc: As main dataset sponsor of this year’s DAT, the NCSS will be introducing its two Quality of Life datasets, as well as insights generated from their Quality of Life research. To measure quality of life, NCSS used the World Health Organisation's quality of life measure (WHOQOL), examining an individual's perception of their position in life within their culture and value systems. NCSS will also share potential areas of collaboration with other public officers.
+  speakers: 
+    - name: Lim Zhong Hao
+      image: /assets/img/photos/blank-photo.png
+      title: Assistant Director, Centre for Applied Research & Evaluation, Translation Social Service Division, National Council of Social Service
+      
+- type: Dataarcade
+  timeslot: 15:30 PM - 15:45 PM
+  title: Scaling Analytics and Delivering Insights in the Data Cloud
+  desc: Discover how Snowflake enables you to deliver interactive data analytics regardless of the data volume and scale, and learn how to rapidly analyse large sets of data. Explore what's possible in the Data Cloud.
+  speakers: 
+    - name: Wilson Tan
+      image: /assets/img/photos/blank-photo.png
+      title: Sales Director, Public Sector, Snowflake
+    - name: Lim Jie-Hong
+      image: /assets/img/photos/blank-photo.png
+      title: Senior Sales Engineer, Public Sector, Snowflake
+
+# Product Demo Tracks (Concurrent)
+- type: Demo
+  timeslot:
+  title: Fraud Detection Platform​
+  desc: Introduction to Fraud Detection Platform, a WOG platform targeting grant fraud within Government Assistance Schemes.
+  speakers: 
+    - name: Esther Gao
+      image: /assets/img/photos/esther-gao.png
+      title: 'Deputy Director/Principal Product Manager, Data Science and Artificial Intelligence Division (DSAID), GovTech'
+
+- type: Demo
+  timeslot:
+  title: Enabling Data Exploitation for Whole-of-Government​
+  desc: With an increasing demand for data analytics driven work, there is a growing need to enable Whole-of-Government to carry out analytical work in a robust and secure environment. This presentation will share how the Data Engineering (DE) team has sought to build Analytics.gov, a data exploitation platform that supports agencies with their data exploitation work.
+  speakers: 
+    - name: Hansel Ng
+      image: /assets/img/photos/hansel-ng.png
+      title: Associate Data Engineer​, Data Science and Artificial Intelligence Division (DSAID), GovTech
+    - name: Ishmahfaris Ismail
+      image: /assets/img/photos/ishmahfaris-ismail.png
+      title: Associate Data Engineer​, Data Science and Artificial Intelligence Division (DSAID), GovTech
+
+- type: Demo
+  timeslot:
+  title: GovText, the Txt Analysis Platform for Whole of Government (WOG)
+  desc: We deal with massive text data everyday, such as service feedback and news scanning. This session shares the basics of Natural Language Processing (NLP), or text analytics, and the different services brought by the text analytics platform GovText to the Whole of Government.
+  speakers: 
+    - name: Han Jing
+      image: /assets/img/photos/han-jing.png
+      title: Lead Product Manager​, Data Science and Artificial Intelligence Division (DSAID), GovTech
+      
+- type: Demo
+  timeslot:
+  title: Transcribe 101 – Know Your WOG Speech-To-Text Tool
+  desc: Transcribe is a Speech-To-Text platform developed by GovTech DSAID for WOG officers and agencies. It provides speech-to-text services to users in many different scenarios such as interviews, speeches, and recent COS debate. Available in both Internet and Intranet environment, it is a flexible tool that WOG officers and agencies can use in their daily work routine. API services are also available for system integration which would be shared more in the session. Come find out more about Transcribe and the variety of features available!
+  speakers: 
+    - name: Wang Xiaofan
+      image: /assets/img/photos/wang-xiaofan.png
+      title: Associate Product Manager​, Data Science and Artificial Intelligence Division (DSAID), GovTech
+      
+- type: Demo
+  timeslot:
+  title: 'AMA: DAT2022'
+  desc: Ask me anything!
+  speakers: 
+    - name: Nicole Lee
+      image: /assets/img/photos/nicole-lee.png
+      title: Community Manager​, Data Science and Artificial Intelligence Division (DSAID), GovTech
+
+# Closing Note
+- type: Closing
+  timeslot: 16:30 PM - 17:00 PM
+  title: Large Language Models and Voice Assistants
+  desc: Recent developments in large language models (LLMs) such as GPT-3 are opening new frontiers in how machine learning can be applied to real world problems. In this presentation, I will cover an overview of the technology behind these LLMs and how these developments could positively and negatively impact the future of voice assistants.
+  speakers: 
+    - name: Arun Kishore
+      image: /assets/img/photos/arun-kishore.png
+      title: Data Science Lead, Ex-SmartNation Fellow, Google Assistant
