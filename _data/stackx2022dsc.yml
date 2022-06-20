@@ -348,7 +348,7 @@
 
 - type: Demo
   timeslot:
-  title: GovText, the Txt Analysis Platform for Whole of Government (WOG)
+  title: GovText, the Text Analysis Platform for Whole of Government (WOG)
   desc: We deal with massive text data everyday, such as service feedback and news scanning. This session shares the basics of Natural Language Processing (NLP), or text analytics, and the different services brought by the text analytics platform GovText to the Whole of Government.
   speakers: 
     - name: Han Jing
