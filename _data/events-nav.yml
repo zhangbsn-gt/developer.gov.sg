@@ -1,4 +1,14 @@
 ### Conferences
+- name: STACK 2022 Developer Conference
+  event_category: Conference
+  event_description: With over 4,000 attendees expected to attend, we invite you to join the conversation! Send us your content proposal for what you wish to share with our attendees.
+  event_type: In-person event
+  event_date: 2022-11-14T00:00:00.000Z
+  event_registration_end_date:
+  event_registration_link:
+  items:
+    - item_name: Overview
+
 - name: STACK-X Data Science Connect 2022
   event_category: Conference
   event_description: Join this virtual conference to learn how the Singapore Government is driving data transformation and delivering public good through the use of Data Science and AI.

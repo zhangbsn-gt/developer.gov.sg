@@ -11,3 +11,11 @@
         }
     }
 }
+
+.feedback-banner {
+  position: relative;
+  z-index: 1;
+  a.feedback-banner-link {
+    text-decoration: underline;
+  }
+}
