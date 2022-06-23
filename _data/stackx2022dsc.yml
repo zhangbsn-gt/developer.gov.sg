@@ -51,7 +51,7 @@
   speakers: 
     - name: DS Poon Hong Yuen
       image: /assets/img/photos/poon-hong-yuen.png
-      title: Deputy Secretary (Workforce), Ministry of Manpower
+      title: 'Deputy Secretary (Workforce) / Chief Data Officer, Ministry of Manpower'
     
 # Data Science and Data Transformation
 #- type: Datatransformation
@@ -161,7 +161,7 @@
   speakers: 
     - name: Alessandro Cerè
       image: /assets/img/photos/alessandro-cere.png 
-      title: Specialist Solution Architect, AWS
+      title: AIML Specialist Solution Architect, Amazon Web Services
 
 - type: Dataengineering
   timeslot: 4:00 PM - 4:30 PM
@@ -291,7 +291,7 @@
   desc: An introduction to Power BI. AI is changing the way we get insights and drive results. See how Power BI leverages AI to aid in data exploration, automatically find patterns, help users understand what the data means, even help you code and create data marts to get more out of your data to tell your perfect story.
   speakers: 
     - name: Jason Boon
-      image: /assets/img/photos/blank-photo.png
+      image: /assets/img/photos/jason-boon.png
       title: Azure Data AI Specialist, Microsoft Power BI
       
 - type: Dataarcade
@@ -300,7 +300,7 @@
   desc: Join Qlik in this session and learn about Qlik Partnership with GovTech for DAT2022, Qlik's unique capabilities that you can use to build the winning dashboard, steps to registering for a test drive session and extending your knowledge into advanced topics like Geospatial, AutoML, automation and more.
   speakers: 
     - name: Edy Tan
-      image: /assets/img/photos/blank-photo.png
+      image: /assets/img/photos/edy-tan.png
       title: Solution Architect, Qlik Singapore
 
 - type: Dataarcade
@@ -309,8 +309,8 @@
   desc: Start your own amazing journey with Tableau! In this engaging 15 min segment, you will find who and what is Tableau, be introduced to Tableau Public Sector use cases, learn about what's in it for you and hear some amazing Tableau stories.
   speakers: 
     - name: Benjamin Tan
-      image: /assets/img/photos/blank-photo.png
-      title: SE Team Lead (SG), Tableau
+      image: /assets/img/photos/benjamin-tan.png
+      title: Lead Solution Engineer, Tableau
 
 - type: Dataarcade
   timeslot: 15:15 PM - 15:30 PM
@@ -330,7 +330,7 @@
       image: /assets/img/photos/blank-photo.png
       title: Sales Director, Public Sector, Snowflake
     - name: Lim Jie-Hong
-      image: /assets/img/photos/blank-photo.png
+      image: /assets/img/photos/lim-jie-hong.png
       title: Senior Sales Engineer, Public Sector, Snowflake
 
 # Product Demo Tracks (Concurrent)
@@ -345,14 +345,14 @@
 
 - type: Demo
   timeslot:
-  title: Analytics.Gov - Enabling Data Exploitation for Whole-of-Government​
+  title: Analytics.gov - Enabling Data Exploitation for Whole-of-Government​
   desc: With an increasing demand for data analytics driven work, there is a growing need to enable Whole-of-Government to carry out analytical work in a robust and secure environment. This presentation will share how the Data Engineering (DE) team has sought to build Analytics.gov, a data exploitation platform that supports agencies with their data exploitation work.
   speakers: 
     - name: Hansel Ng
       image: /assets/img/photos/hansel-ng.png
       title: Associate Data Engineer​, Data Science and Artificial Intelligence Division (DSAID), GovTech
-    - name: Ishmahfaris Ismail
-      image: /assets/img/photos/ishmahfaris-ismail.png
+    - name: Ismahfaris Ismail
+      image: /assets/img/photos/ismahfaris-ismail.png
       title: Associate Data Engineer​, Data Science and Artificial Intelligence Division (DSAID), GovTech
 
 - type: Demo
