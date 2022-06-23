@@ -11,7 +11,6 @@
     - Overview
     - Agile Development
     - DevOps
-    - Enabling Loop for Solving Complex Problems
     - Engineering Practices
     - GitOps
     - UX Design
@@ -51,6 +50,7 @@
   items:
     - Overview
     - Digital Service Standards
+    - Enabling Loop for Solving Complex Problems
     - IM8
     - InnerSource
     - Secure Coding

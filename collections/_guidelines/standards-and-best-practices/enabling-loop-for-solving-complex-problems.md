@@ -1,6 +1,8 @@
 ---
 title: Enabling Loop for Solving Complex Problems 
 layout: layout-page-sidenav
+redirect_from:
+    - /guidelines/development-and-iteration/enabling-loop-for-solving-complex-problems.html
 sub_collection_render: true
 description: The Enabling Loop is a holistic guide for solving complex problems, be it in product development, operations or business support functions.
 ---
@@ -58,7 +60,7 @@ The key steps of the Enabling Loop are to:
 
 4.	Improve Continuously
 - 	Find out how the team feels at the end of the experiment – their morale level, what works and what additional support and/or improvements might be needed
-- 	Determine which improvements to incorporate into the next cycle or if it is better to abort the experiment and revisit earlier steps (e.g. Spot the Opportunities, Explore the Options or Put to Action).
+- 	- 	Determine which improvements to incorporate into the next cycle or if it is better to abort the experiment and revisit earlier steps (e.g. Spot the Opportunities, Explore the Options or Put to Action).
 
 <figure style="text-align: center">
   <img
