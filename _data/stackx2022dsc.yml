@@ -37,7 +37,7 @@
 
 - type: Keynote
   timeslot: 10:50 AM - 11:20 AM
-  title: 'Harnessing the Value of Data and AI at Disney Streaming'
+  title: 'Harnessing the Value of Data at Disney Streaming'
   desc:
   speakers: 
     - name: Jaya Kolhatkar
@@ -166,10 +166,10 @@
 - type: Dataengineering
   timeslot: 4:00 PM - 4:30 PM
   title: National Economic Research & Visualisation Engine (NERVE)
-  desc:
+  desc: NERVE serves as the Sectoral Data Hub for the economic domain, facilitating access to identifiable firm-level, industry-level and macro-level data across government agencies. It draws data from both within the government as well as the private sector to enhance economic surveillance, inform strategy formulation, evaluate policy outcomes and facilitate service delivery.
   speakers: 
     - name: Kuhan Harichandra
-      image: /assets/img/photos/blank-photo.png 
+      image: /assets/img/photos/kuhan-harichandra.png 
       title: Director (Digitalisation Office), Ministry of Trade and Industry
 
 # AI Applications and Video Analytics
@@ -216,10 +216,10 @@
   speakers: 
     - name: Henry Lim
       image: /assets/img/vas-henry.png
-      title: Lead Product Manager, Data Science & Artificial Intelligence Division (DSAID), GovTech
+      title: Lead Product Manager, Video Analytics Systems (VAS), Data Science & Artificial Intelligence Division (DSAID), GovTech
     - name: Tan Congyuan
       image: /assets/img/photos/tan-congyuan.png
-      title: Senior Manager, Data Science & Artificial Intelligence Division (DSAID), GovTech
+      title: Senior Manager, Industry Partnerships, Data Science & Artificial Intelligence Division (DSAID), GovTech
     - name: Dr. Li Guangda
       image: /assets/img/photos/li-guangda.png
       title: Co-founder and Chief Technology Officer, ViSenze
@@ -241,12 +241,77 @@
  
 # Day 2 Programme
 
+#Data Leaders Dialogue
+- type: Leadersdialogue
+  timeslot: 9:00 AM - 9:10 AM
+  title: Opening and Welcome
+  desc:
+  speakers: 
+    - name: Jason See
+      image: /assets/img/photos/jason-see.png
+      title: Senior Director, Data Science & Artificial Intelligence Division (DSAID), GovTech
+
+- type: Leadersdialogue
+  timeslot: 9:10 AM - 9:40 AM
+  title: Enabling True Self-Service Analytics
+  desc: Self-service is designed to enable everyone to ask and answer their own questions using trusted data to make informed decisions. Governance is the combination of controls, roles, and repeatable processes that creates trust and confidence in data and analytics. In a successful self-service environment, the appropriate levels of governance create accountability and enable, rather than restrict, access to trusted content for users in your organization.  Perhaps the most important principle when adopting modern analytics is that self-service and governance are not at odds with each other. IT and business stakeholders on the project team are responsible for defining data and content governance together. In this presentation, we will discuss how getting the right balance of flexibility and control can help realize the benefits of both self-service and governance.
+  speakers: 
+    - name: Katerina Hanna
+      image: /assets/img/photos/katerina-hanna.png
+      title: Senior Director, Customer Success APJ Tableau (Salesforce)
+      
+- type: Leadersdialogue
+  timeslot: 9:40 AM - 10:10 AM
+  title: 7 Habits of a Data-driven Government Organization
+  desc: 'Data continues to grow at astounding rates, creating exciting opportunities for government agencies/departments to improve outcomes, enhance financial performance and create a better citizen experience. But when it comes to generating true value from various data and analytics investments, the differentiator often comes down to one or a mix of these 7 key principles. This session will highlight best practices from around the world on how they have adopted the 7 habits required to create a data-driven culture within your organization. Examples from local and international Qlik Public Sector customers will be highlighted throughout the discussion and questions will be encouraged.'
+  speakers: 
+    - name: Charlie Farah
+      image: /assets/img/photos/charlie-farah.png
+      title: Senior Director and Industry Solution Lead, Public Sector and Healthcare APJ, Qlik
+
+- type: Leadersdialogue
+  timeslot: 10:15 AM - 10:45 AM
+  title: 'Data Culture: A Step towards Analytics Maturity'
+  desc: The ultimate goal of data strategy is to build a data culture where data is treated as an asset, everyone is empowered to use data to enhance their daily work, and fully utilize organization’s potential by making decisions more successful and insight-driven. Although everyone agrees that data is the new oil, the execution of data strategy has stalled at providing tools to data people. In this session, we will discuss the technology that can empower everyone with governed and trusted data & analytics platform, and how to inject insights to everywhere to achieve the true pervasive analytics.
+  speakers: 
+    - name: Kyung-Whu Chung
+      image: /assets/img/photos/kyung-whu-chung.png
+      title: Head of Engineering APAC, MicroStrategy
+      
+- type: Leadersdialogue
+  timeslot: 10:45 AM - 11:15 AM
+  title: Elements of a modern Business Intelligence (BI) Platform
+  desc: Data fuels digital transformation. For organizations to become more data-driven, instilling the data culture is pivotal. A new-age Business Intelligence platform is a catalyst for that culture. This talk will cover the key elements that a modern BI platform should have that go beyond dashboards and reports and truly brings the value of data for all.
+  speakers: 
+    - name: Pradeep Menon
+      image: /assets/img/photos/pradeep-menon.png
+      title: Cloud Scale Analytics Lead, GBB (Asia)
+      
+- type: Leadersdialogue
+  timeslot: 11:15 AM - 11:30 AM
+  title: Discussion and Closing
+  desc:
+  speakers: 
+    - name: Joseph Tan
+      image: /assets/img/photos/joseph-tan.png
+      title: Deputy Director, Data Science & Artificial Intelligence Division (DSAID), GovTech
+
 #Speed Dataing
 - type: Speeddataing
   timeslot: 10:00 AM - 11:00 AM
-  title: ​Sharing by GovTech’s GVG on WOG dashboard​
-  desc:
-  
+  title: ​Our data-driven journey with State of ICT&SS Ministry Family Governance Dashboards
+  desc: 'Join us on this session to learn more on our journey to digitalise the state of ICT&SS Governance Reporting through the use of visualisation dashboards to reduce toil and improve agility and speed to insights.'
+  speakers: 
+    - name: Ng Chun Kiam
+      image: /assets/img/photos/blank-photo.png
+      title: Director, Governance Group, GovTech
+    - name: Mark Chan
+      image: /assets/img/photos/mark-chan.png
+      title: Deputy Director, Governance Group, GovTech
+    - name: Elise Lee
+      image: /assets/img/photos/elise-lee.png
+      title: Assistant Manager, Governance Group, GovTech
+      
 - type: Speeddataing
   timeslot: 11:00 AM - 12:00 PM
   title: Democratise AI for everyone
@@ -314,11 +379,11 @@
 
 - type: Dataarcade
   timeslot: 15:15 PM - 15:30 PM
-  title: A look at The Social Service Landscape and Quality of Life
-  desc: As main dataset sponsor of this year’s DAT, the NCSS will be introducing its two Quality of Life datasets, as well as insights generated from their Quality of Life research. To measure quality of life, NCSS used the World Health Organisation's quality of life measure (WHOQOL), examining an individual's perception of their position in life within their culture and value systems. NCSS will also share potential areas of collaboration with other public officers.
+  title: 'The Quality of Life Approach: Towards a More Evidence-Informed Social Service Sector'
+  desc: As main dataset sponsor of this year’s DAT, the NCSS will be introducing its Quality of Life research series which examine the well-being and needs of individuals across different groups in need of support, and two datasets that will be provided from the studies. To measure quality of life, NCSS is aligned with the World Health Organisation, which takes a holistic, person-centred approach towards understanding what people perceive of their position in life. NCSS will also share potential areas of collaboration with other public officers.
   speakers: 
     - name: Lim Zhong Hao
-      image: /assets/img/photos/blank-photo.png
+      image: /assets/img/photos/lim-zhong-hao.png
       title: Assistant Director, Centre for Applied Research & Evaluation, Translation Social Service Division, National Council of Social Service
       
 - type: Dataarcade
@@ -327,7 +392,7 @@
   desc: Discover how Snowflake enables you to deliver interactive data analytics regardless of the data volume and scale, and learn how to rapidly analyse large sets of data. Explore what's possible in the Data Cloud.
   speakers: 
     - name: Wilson Tan
-      image: /assets/img/photos/blank-photo.png
+      image: /assets/img/photos/wilson-tan.png
       title: Sales Director, Public Sector, Snowflake
     - name: Lim Jie-Hong
       image: /assets/img/photos/lim-jie-hong.png
