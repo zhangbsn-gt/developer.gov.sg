@@ -5,7 +5,6 @@ category: Platform
 _data: single-level-nav
 sub_collection_render: true
 single_level_nav: true
-collection_group: [What's New]
 description: OurSG (OSG) Grants is a one-stop, integrated portal that consolidates the Government's community and social grants into a single platform.
 ---
 
