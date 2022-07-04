@@ -17,6 +17,8 @@ redirect_from:
     - /products/categories/devops/ship-hats.html
 ---
 
+![SHIPHATs header banner for Singapore Governmeent Developer Portal](/assets/img/ship-hats-HeaderBanner-v2.png)
+
 ### What is SHIP-HATS?
 
 **SHIP (Secure Hybrid Integration Pipeline)-HATS (Hive Agile Testing Solutions)** is the Continuous Integration/Continuous Delivery [CI/CD](https://en.wikipedia.org/wiki/CI/CD){:target="_blank"} component within SG Government Tech Stack (SGTS) with security and governance guardrails that enables developers to plan, build, test and deploy code to production.
