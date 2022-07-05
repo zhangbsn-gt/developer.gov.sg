@@ -6,11 +6,11 @@
   speakers: 
     - name: Mr Chng Kai Fong
       image: /assets/img/photos/chng-kai-fong.png
-      title: Second Permanent Secretary of The Smart Nation and Digital Government Group (SNDGG)
+      title: Second Permanent Secretary of the Smart Nation and Digital Government Group (SNDGG)
 
 - type: Keynote
   timeslot: 09:40 AM - 09:50 AM
-  title: How Data Science & AI Shapes Modernisation in the Singapore Government
+  title: Solving the Data Conundrum
   desc:
   speakers:
     - name: Chan Cheow Hoe
@@ -165,8 +165,8 @@
 
 - type: Dataengineering
   timeslot: 4:00 PM - 4:30 PM
-  title: National Economic Research & Visualisation Engine (NERVE)
-  desc: NERVE serves as the Sectoral Data Hub for the economic domain, facilitating access to identifiable firm-level, industry-level and macro-level data across government agencies. It draws data from both within the government as well as the private sector to enhance economic surveillance, inform strategy formulation, evaluate policy outcomes and facilitate service delivery.
+  title: Sectoral Data Hub for the Economic Domain
+  desc: 'National Economic Research & Visualisation Engine (NERVE) serves as the Sectoral Data Hub for the economic domain, facilitating access to identifiable firm-level, industry-level and macro-level data across government agencies. It draws data from both within the government as well as the private sector to enhance economic surveillance, inform strategy formulation, evaluate policy outcomes and facilitate service delivery.'
   speakers: 
     - name: Kuhan Harichandra
       image: /assets/img/photos/kuhan-harichandra.png 
@@ -253,12 +253,12 @@
 
 - type: Leadersdialogue
   timeslot: 9:10 AM - 9:40 AM
-  title: Enabling True Self-Service Analytics
+  title: 'Reimagine Governance: Innovate with Self-Service and Agility'
   desc: Self-service is designed to enable everyone to ask and answer their own questions using trusted data to make informed decisions. Governance is the combination of controls, roles, and repeatable processes that creates trust and confidence in data and analytics. In a successful self-service environment, the appropriate levels of governance create accountability and enable, rather than restrict, access to trusted content for users in your organization.  Perhaps the most important principle when adopting modern analytics is that self-service and governance are not at odds with each other. IT and business stakeholders on the project team are responsible for defining data and content governance together. In this presentation, we will discuss how getting the right balance of flexibility and control can help realize the benefits of both self-service and governance.
   speakers: 
     - name: Katerina Hanna
       image: /assets/img/photos/katerina-hanna.png
-      title: Senior Director, Customer Success APJ Tableau (Salesforce)
+      title: Senior Director, Customer Success APJ, Tableau at Salesforce
       
 - type: Leadersdialogue
   timeslot: 9:40 AM - 10:10 AM
@@ -285,7 +285,7 @@
   speakers: 
     - name: Pradeep Menon
       image: /assets/img/photos/pradeep-menon.png
-      title: Cloud Scale Analytics Lead, GBB (Asia)
+      title: Cloud Scale Analytics Lead, GBB (Asia), Microsoft
       
 - type: Leadersdialogue
   timeslot: 11:15 AM - 11:30 AM
@@ -447,8 +447,8 @@
       image: /assets/img/photos/nicole-lee.png
       title: Community Manager​, Data Science and Artificial Intelligence Division (DSAID), GovTech
 
-# Closing Note
-- type: Closing
+# Industry Sharing
+- type: Industry
   timeslot: 16:30 PM - 17:00 PM
   title: Large Language Models and Voice Assistants
   desc: Recent developments in large language models (LLMs) such as GPT-3 are opening new frontiers in how machine learning can be applied to real world problems. In this presentation, I will cover an overview of the technology behind these LLMs and how these developments could positively and negatively impact the future of voice assistants.
