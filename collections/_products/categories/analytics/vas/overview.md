@@ -13,7 +13,7 @@ redirect_from:
 sgts_collection_group: [data_science]
 sgts_layer_group: [services]
 sgts_title: Video Analytics
-collection_group: [Singapore Government Tech Stack]
+collection_group: [Singapore Government Tech Stack, Data Science and Artificial Intelligence]
 description: >
   VAS is a central platform that enable Government agencies to develop in-house video analytics solutions.
 bios:

@@ -4,6 +4,12 @@
     - Overview
     - 'I2C {{Infra to Code}}'
     
+- name: Data Science and Artificial Intelligence
+  description: Access Data Science and Artificial Intelligence (DSAI) products developed by the Singapore Government, best practices and other resources here.
+  items:
+    - Overview
+    - VAS
+
 - name: Singapore Government Tech Stack
   description: A common platform that streamlines and simplifies the development process
   items:
@@ -24,5 +30,3 @@
     - VAS
     - Verify
     - WOGAA
-
-
