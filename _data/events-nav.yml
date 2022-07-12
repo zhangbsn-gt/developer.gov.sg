@@ -20,6 +20,7 @@
     - item_name: Overview
     - item_name: Agenda
       item_sub_item:
+        - sub_item_name: All Agenda
         - sub_item_name: Day 1 Programme
         - sub_item_name: Day 2 Programme
 
