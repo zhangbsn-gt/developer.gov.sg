@@ -59,7 +59,7 @@
                 class="margin--bottom--none margin--left--none margin--right--sm"
               />
               {{ option.category.type }}
-              <span class="icon icon--checkLight" style="align-items: center">
+              <span class="pilllist-icon pilllist-icon--checkLight" style="align-items: center">
                 <i
                   class="sgds-icon sgds-icon-check margin--bottom--none is-size-7"
                   role="img"

@@ -35,21 +35,21 @@
   text-decoration: none;
 }
 
-.pilllist-item input[type="checkbox"]:checked+.pilllist-label .icon--checkLight {
+.pilllist-item input[type="checkbox"]:checked+.pilllist-label .pilllist-icon--checkLight {
   display: flex;
 }
 
-.pilllist-item input[type="checkbox"]:checked+.pilllist-label .icon--addLight,
-.pilllist-label .icon--checkLight,
+.pilllist-item input[type="checkbox"]:checked+.pilllist-label .pilllist-icon--addLight,
+.pilllist-label .pilllist-icon--checkLight,
 .pilllist-children {
   display: none;
 }
 
-.pilllist-label .icon {
+.pilllist-label .pilllist-icon {
   margin: 0 0 0 6px;
 }
 
-.icon {
+.pilllist-icon {
   background: transparent;
   display: inline-block;
   font-style: normal;
