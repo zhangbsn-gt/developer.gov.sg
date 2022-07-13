@@ -3,6 +3,7 @@
   items:
     - Overview
     - 'I2C {{Infra to Code}}'
+    - Notarise
     
 - name: Data Science and Artificial Intelligence
   description: Access Data Science and Artificial Intelligence (DSAI) products developed by the Singapore Government, best practices and other resources here.

@@ -181,6 +181,14 @@
   items:
     - Overview
 
+- name: Notarise
+  items:
+    - Overview
+    - Features
+    - Getting Started
+    - Resources
+    - FAQs
+    
 - name: SafeEntry
   items:
     - Overview
