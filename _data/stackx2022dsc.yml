@@ -42,7 +42,7 @@
 - type: Keynote
   timeslot: 10:50 AM - 11:20 AM
   timeslot_metadata: 2022-12-07T10:50:00+08:00
-  title: 'Harnessing the Value of Data at Disney Streaming'
+  title: 'Harnessing the Power of Data at Disney Streaming'
   desc:
   speakers:
     - name: Jaya Kolhatkar
@@ -55,7 +55,7 @@
   title: The 3Ds of MOM's Data Culture
   desc: 'This presentation gives an overview of MOM’s data strategy and data culture that support its transformation efforts'
   speakers:
-    - name: DS Poon Hong Yuen
+    - name: Mr Poon Hong Yuen
       image: /assets/img/photos/poon-hong-yuen.png
       title: 'Deputy Secretary (Workforce) / Chief Data Officer, Ministry of Manpower'
 

@@ -1,0 +1,143 @@
+# - type: Video Types
+#   speakers: Speakers in the video. Split by ", "
+#     📢 Please make sure that the speakers name is in the same sequence as speakers title 📢
+#   speakers_title: Speakers' title in the video. Split by "| "
+#   title: Video title
+#   article_link: Slide - article link after the speakers titles'
+#   video_id: Video Id - watch video button
+#   slide_link: Slide - view slide button
+#   Reference: https://docs.google.com/spreadsheets/d/1szkJAWTP0GZCNjZAxQobBAUsor_4URaqheqH70r5BZI/edit#gid=0
+#   Export the data from this excel into a csv file to be converted to a YAML data file
+
+- type: Keynote - VOD
+  speakers: Mr Chng Kai Fong
+  speakers_title: Second Permanent Secretary of the Smart Nation and Digital Government Group (SNDGG)
+  title: Opening Remarks
+  video_id: e-HRK05qyqg
+  
+- type: Keynote - VOD
+  speakers: Chan Cheow Hoe
+  speakers_title: Government Chief Digital Technology Officer, SNDGO & Deputy Chief Executive, GovTech
+  title: >-
+    Solving the Data Conundrum
+  video_id: -eyQTpgC4ng
+  
+- type: Keynote - VOD
+  speakers: Jason See
+  speakers_title: Senior Director, Data Science & Artificial Intelligence Division (DSAID), GovTech
+  title: Charting out Data Science and AI Capabilities for the Government
+  video_id: pNHFWfDPNns
+  
+- type: Keynote - VOD
+  speakers: Jane Wiseman
+  speakers_title: Chief Executive Officer, Institute for Excellence in Government
+  title: 'Beyond Singapore Government: Harnessing the Value of Data and AI'
+  video_id: QQGgrmA-w1I
+
+- type: Keynote - VOD
+  speakers: Jaya Kolhatkar
+  speakers_title: Executive Vice President, Data at Disney Streaming
+  title: 'Harnessing the Power of Data at Disney Streaming'
+  video_id: X78RQFgYJGg
+
+- type: Keynote - VOD
+  speakers: Mr Poon Hong Yuen
+  speakers_title: 'Deputy Secretary (Workforce) / Chief Data Officer, Ministry of Manpower'
+  title: The 3Ds of MOM's Data Culture
+  video_id: d-Yx85jYj5o
+  
+#- type: Keynote - VOD
+#  speakers: 'Hunter Nield, Chia Hsiao Ming'
+#  speakers_title: 'Distinguished Engineer, GovTech| Director, Government Digital Services (GDS), GovTech'
+#  title: GCC 2.0 Design Principles and Showcase
+#  video_id: FriAm2BnqqA
+  
+- type: DataTransformation - VOD
+  speakers: Joseph Tan
+  speakers_title: Deputy Director, Data Science & Artificial Intelligence Division (DSAID), GovTech
+  title: Analytics by Design
+  video_id: 4Xat5I-yi34
+  
+- type: DataTransformation - VOD
+  speakers: 'Dr. Feng Yuzhang, Ann Wei Ling'
+  speakers_title: Director, Data Science & Artificial Intelligence Division (DSAID), GovTech| Senior Data Scientist, Data Science & Artificial Intelligence Division (DSAID), GovTech
+  title: Supporting Agency Data Transformation by Proliferating Data Driven Decision Making
+  video_id: pdcwyb6WCDM
+
+- type: DataTransformation - VOD
+  speakers: Tham Zheng Kang
+  speakers_title: Data Scientist, Data Science & Artificial Intelligence Division (DSAID), GovTech
+  title: Multilevel Modelling
+  video_id: MlRxyME45uE
+  
+- type: DataTransformation - VOD
+  speakers: Dr. Victor Ong
+  speakers_title: Senior Data Scientist, Data Science & Artificial Intelligence Division (DSAID), GovTech
+  title: 'Statistical Modelling & Machine Learning;  Inference & Prediction'
+  video_id: RyQXgJNqZjs
+  
+- type: DataTransformation - VOD
+  speakers: 'Lim Hock Chuan, Le-Anne Lee'
+  speakers_title: 'Assistant Director, Data Science & Artificial Intelligence Division (DSAID), GovTech| Manager, Data Science & Artificial Intelligence Division (DSAID), GovTech'
+  title: Our Data Transformation Playbook
+  video_id: g4LC_xakPuU
+  
+- type: DataEngineering - VOD
+  speakers: Edwin Seah
+  speakers_title: Deputy Director/ Principal Product Manager, Data Science & Artificial Intelligence Division (DSAID), GovTech
+  title: Trusted Centre Sensors
+  video_id: l4mxCm0nCnk
+  
+- type: DataEngineering - VOD
+  speakers: Lim Tau Herng
+  speakers_title: Solutions Architect, Databricks
+  title: Trends in Data & AI Rise of the Lakehouse Paradigm
+  video_id: XXaNi1o7QxY
+  
+- type: DataEngineering - VOD
+  speakers: 'Dr. Yap Ghim Eng, Melissa Yeo'
+  speakers_title: 'Deputy Director, Data Science & Artificial Intelligence Division (DSAID), GovTech| Engineering Manager, Data Science & Artificial Intelligence Division (DSAID), GovTech'
+  title: Strategies You Wish You Knew Before Starting a Data Engineering Project
+  video_id: Uk3GHhVhAoU
+  
+- type: DataEngineering - VOD
+  speakers: Alessandro Cerè
+  speakers_title: AIML Specialist Solution Architect, Amazon Web Services
+  title: 'Accelerating the Machine Learning Model Lifecycle: Data Quality and State of the Art Models'
+  video_id: CjrrjBZDEYE
+  
+- type: DataEngineering - VOD
+  speakers: Kuhan Harichandra
+  speakers_title: Director (Digitalisation Office), Ministry of Trade and Industry
+  title: Sectoral Data Hub for the Economic Domain
+  video_id: gHi369LVbU0
+  
+- type: AIApplications - VOD
+  speakers: Dr. Alvina Goh
+  speakers_title: Director, Data Science & Artificial Intelligence Division (DSAID), GovTech
+  title: AI for the Public Good – Moving From Hype to Real Applications
+  video_id: VWwvEtwjKQw
+  
+- type: AIApplications - VOD
+  speakers: Chandler Mccann
+  speakers_title: Vice President, FED/SLED/MED Data Science Practice, DataRobot
+  title: 'From Multiple Deployments to Multi-Billion Dollar Savings: How to Scale AI Across the Government with Automated Machine Learning'
+  video_id: PKzr5_J3t3U
+  
+- type: AIApplications - VOD
+  speakers: Eugene Lim
+  speakers_title: Cybersecurity Specialist, GovTech
+  title: Application of AI in Cybersecurity
+  video_id: t3lrXHSlFPI
+  
+- type: AIApplications - VOD
+  speakers: 'Henry Lim, Tan Congyuan, Dr. Li Guangda'
+  speakers_title: 'Lead Product Manager, Video Analytics Systems (VAS), Data Science & Artificial Intelligence Division (DSAID), GovTech| Senior Manager, Industry Partnerships, Data Science & Artificial Intelligence Division (DSAID), GovTech| Co-founder and Chief Technology Officer, ViSenze'
+  title: Working With Industry to Accelerate Development of AI-Enabled Solutions
+  video_id: 2ARLB8sENx8
+  
+- type: AIApplications - VOD
+  speakers: 'Jessica Foo, Howard Yang, Dr. Matthias Reso'
+  speakers_title: 'Associate AI Engineer, Data Science & Artificial Intelligence Division (DSAID), GovTech| Associate AI Engineer, Data Science & Artificial Intelligence Division (DSAID), GovTech| Partner Engineer, AI, PyTorch, Meta'
+  title: Towards a Comparable Metric for AI Model Interpretability in Computer Vision
+  video_id: ZqslKQmAof4
