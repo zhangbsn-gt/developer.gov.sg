@@ -139,7 +139,7 @@
     }
   }
 
-  //use for blog card
+  // use for blog card
   &.sgds-card-variant-blog-info {
     .sgds-card-content {
       display: flex;
@@ -199,6 +199,13 @@
     }
 
     height: 100%;
+  }
+
+  // use for calendar card
+  .sgds-card-variant-calendar {
+    .text-muted {
+      color: #767676;
+    }
   }
 }
 

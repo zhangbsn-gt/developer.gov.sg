@@ -26,7 +26,7 @@
         <hr v-if="index !== 0" />
         <header>
           <h3 class="has-text-weight-bold margin--bottom--none">{{ feed.FeedTitle }}</h3>
-          <a :href="feed.FeedUrl" class="sgds-button is-outlined is-black" target="_blank">More stories</a>
+          <a :href="feed.FeedUrl" class="sgds-button is-outlined is-secondary" target="_blank">More stories</a>
         </header>
         <p v-html="feed.FeedDescription" />
         <div class="card-grid-container grid-25rem">

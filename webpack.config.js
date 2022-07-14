@@ -25,6 +25,7 @@ module.exports = (env, argv) => {
         "./apps/src/communities/conferences-webinars-sort.js",
       "layout-page-sidenav-calendar":
         "./apps/src/communities/layout-page-sidenav-calendar.js",
+      "back-to-the-top": "./apps/src/communities/back-to-the-top.js",
       "toggle-accordion": "./apps/src/communities/toggle-accordion.js",
       "vue-app-all-sessions": "./apps/src/pages/vue-app-all-sessions.js",
       "main": "./apps/src/main.js",

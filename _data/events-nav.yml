@@ -14,6 +14,7 @@
   event_description: Join this virtual conference to learn how the Singapore Government is driving data transformation and delivering public good through the use of Data Science and AI.
   event_type: Online event
   event_date: 2022-07-07T00:00:00.000Z
+  event_number_of_days: 2
   event_recording_link: /communities/events/conferences/stack-x-data-science-connect-2022/recordings/all-recordings.html
   event_registration_end_date: 2022-07-07T00:00:00.000Z
   event_registration_link: https://go.gov.sg/stack-x-datascienceconnect
@@ -31,7 +32,7 @@
         - sub_item_name: Data Science & Data Transformation
         - sub_item_name: Data Products & Data Engineering
         - sub_item_name: AI Applications and Video Analytics
-        
+
 # > THIS IS THE IDEAL SAMPLE
 - name: STACK-X Cloud 2021
   # Categories limited to Conference, Stack-X Meetup and Hackathon

@@ -5,11 +5,18 @@
     "pages": [
         {%- assign events = site.data['events-nav'] -%}
         {%- assign sorted_events = events | sort: 'event_date'-%}
-        
+
         {%- for document in sorted_events reversed -%}
             {%- assign sub_section_slug = document.name | slugify -%}
             {%- assign event_recording_link = document.event_recording_link | default: false-%}
             {%- assign target_group_joined = document.target_group | join: ", " -%}
+            {%- assign event_number_of_days = document.event_number_of_days | default : 1-%}
+
+            {%- assign event_title = document.name -%}
+            {% if event_number_of_days >= 2 %}
+              {% assign additional_tag = "[" | append : event_number_of_days | append: "-Day Event] " %}
+              {% assign event_title = event_title | prepend : additional_tag  %}
+            {% endif %}
 
             {% if document.event_category == "Conference" %}
                 {%- assign url_str = "/communities/events/conferences/" | append: sub_section_slug -%}
@@ -17,7 +24,7 @@
                 {%- assign url_str = "/communities/events/stack-x-meetups/" | append: sub_section_slug -%}
             {% endif %}
                 {
-                "title": "{{- document.name | remove: '"' -}}",
+                "title": "{{ event_title }}",
                 "description": "{{- document.event_description | remove: '>' | remove: '"' | strip -}}",
                 "targetGroup": "{{- target_group_joined -}}",
                 "category": "{{- document.event_category -}}",

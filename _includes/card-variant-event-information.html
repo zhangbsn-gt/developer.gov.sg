@@ -13,7 +13,14 @@
 {%- assign event_registration_link = current_collection.event_registration_link -%}
 {%- comment -%} Event Timing {%- endcomment -%}
 {%- assign event_date_and_timing = current_collection.event_date | default: page.event_date -%}
-{%- assign event_date_and_timing_parsed = event_date_and_timing | date: '%Y%m%d'-%}
+{%- assign event_number_of_days = current_collection.event_number_of_days | default: 1 -%}
+
+{% if event_number_of_days >= 2 %}
+  {% assign seconds = event_number_of_days | minus: 1 | times: 86400 %}
+  {% assign parsedDate = event_date_and_timing | date: "%s" | plus: seconds | date: '%Y%m%d' %}
+{% else %}
+  {% assign parsedDate = event_date_and_timing | date: '%Y%m%d' %}
+{% endif %}
 {%- comment -%} Event Registration End Date {%- endcomment -%}
 {%- assign event_registration_end_date = current_collection.event_registration_end_date | default: event_date_and_timing -%}
 {%- assign event_registration_end_date_parsed = event_registration_end_date | date: '%Y%m%d'-%}
@@ -21,7 +28,7 @@
 {%- assign img_src = '/assets/img/communities/' | append: image_category | append: '.svg' | downcase -%}
 
 <div class="sgds-card sgds-card-variant-video-info margin--bottom--lg"
-    data-future-date="{{ event_date_and_timing | date: '%Y%m%d' }}">
+    data-future-date="{{ parsedDate }}">
     <div class="has-text-centered event-status-container">
         <p class="has-text-weight-bold has-text-white event-status">PAST</p>
     </div>

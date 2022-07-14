@@ -2,7 +2,7 @@
   <div class="sgds-card">
     <!-- Only available on Mobile View -->
     <slot name="event-status"></slot>
-    <div class="sgds-card-content">
+    <div class="sgds-card-content sgds-card-variant-calendar">
       <div class="content-grid is-flex">
         <!--Desktop Calendar Slot -->
         <slot name="calendar"></slot>
@@ -27,5 +27,7 @@
 </template>
 
 <script lang="ts">
-export default {};
+export default {
+  name: "CardCalendar",
+};
 </script>
