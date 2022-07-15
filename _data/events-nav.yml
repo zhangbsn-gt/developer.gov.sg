@@ -101,6 +101,17 @@
     - item_name: Overview
 
 ### Stack X Events
+- name: 'Solutioning for Automated Test Data Generation: NPHC'
+  event_category: Stack-X Meetup
+  event_description: >-
+    Healthcare claims can be complex to analyse holistically with hundreds of different data fields and multiple backend systems used by medical providers in Singapore. In this session, the team will deep dive into how National Platform for Healthcare Claims’s (NPHC) Automated Test Data Generator allows product owners and Quality Engineers to define and expand test scenarios easily.
+  event_type: 10 Pasir Panjang Rd
+  event_date: 2022-07-28T19:00:00.000Z
+  event_registration_end_date: 2022-07-28T19:00:00.000Z
+  event_registration_link: https://go.gov.sg/stackxmeetup28jul
+  items:
+    - item_name: Overview
+    
 - name: (Hybrid) Reimagining Government Payouts with GovWallet
   event_category: Stack-X Meetup
   event_description: >-
