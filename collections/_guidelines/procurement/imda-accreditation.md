@@ -1,14 +1,15 @@
 ---
-title: Accreditation@SG Digital (Accreditation@SGD)
+title: IMDA Accreditation
 layout: layout-page-sidenav
-sub_collection_render: true
-description: Accreditation@SGD provides Singapore-based ICM companies with a streamlined procurement process for government ICT projects. Find out more here!
-redirect_from: /guidelines/procurement/accreditation-sg.html
+description: IMDA Accreditation provides Singapore-based ICM companies with a streamlined procurement process for government ICT projects. Find out more here!
+redirect_from: 
+    - /guidelines/procurement/accreditation-sg.html
+    - /guidelines/procurement/accreditation-sgd.html
 ---
 
 ### Overview
 
-The Accreditation@SGD programme allows Singapore-based companies that have developed or own innovative and high-growth infocomm media (ICM) products to gain accreditation from the Infocomm Media Development Authority (IMDA). This expedites the procurement of products and services from accredited companies by government and large enterprise buyers. A “streamlined procurement” process was also established where government buyers must consider these accredited companies listed in the **Panel of Accredited Companies (AC Panel)** first if they offer solutions that they are seeking.
+The IMDA Accreditation programme allows Singapore-based companies that have developed or own innovative and high-growth infocomm media (ICM) products to gain accreditation from the Infocomm Media Development Authority (IMDA). This expedites the procurement of products and services from accredited companies by government and large enterprise buyers. A “streamlined procurement” process was also established where government buyers must consider these accredited companies listed in the **Panel of Accredited Companies (AC Panel)** first if they offer solutions that they are seeking.
 
 <figure style="text-align: center">
   <img
@@ -18,15 +19,15 @@ The Accreditation@SGD programme allows Singapore-based companies that have devel
   <figcaption> Fig 1: Current approach for procurement through bulk tenders (left) vs the “streamlined procurement” process for accredited companies (right)</figcaption>
 </figure>
 
-The programme was launched in July 2014 by IMDA to grow and nurture the local Infocomm Media (ICM) ecosystem. Through Accreditation@SGD, Singapore-based ICM companies can establish credentials, build business traction, grow, and compete in the global market as more opportunities are created for their products to be showcased and bought. For buyers from the government and large enterprises, the accreditation process provides an independent third-party evaluation of these ICM companies’ product core functionalities and ability to deliver.
+The programme was launched in July 2014 by IMDA to grow and nurture the local Infocomm Media (ICM) ecosystem. Through IMDA Accreditation, Singapore-based ICM companies can establish credentials, build business traction, grow, and compete in the global market as more opportunities are created for their products to be showcased and bought. For buyers from the government and large enterprises, the accreditation process provides an independent third-party evaluation of these ICM companies’ product core functionalities and ability to deliver.
 
-Accreditation@SGD contributes to Singapore’s ICM sector by promoting the next generation of digital expertise and business. This is aligned with Singapore’s Smart Nation initiative and is a key contributor to Singapore’s Digital Economy Strategy.
+IMDA Accreditation contributes to Singapore’s ICM sector by promoting the next generation of digital expertise and business. This is aligned with Singapore’s Smart Nation initiative and is a key contributor to Singapore’s Digital Economy Strategy.
 
-Since March 2019, the SecureTech track has also been launched in partnership with the Cyber Security Agency of Singapore (CSA) to improve the quality of local cybersecurity technologies. This is part of the efforts to grow the cybersecurity ecosystem in Singapore and support SG:D Accredited SecureTech companies with international expansion. With the SecureTech Track, companies are required to obtain Common Criteria certification or other security certifications as directed by CSA, for the product to be accredited.
+Since March 2019, the SecureTech track has also been launched in partnership with the Cyber Security Agency of Singapore (CSA) to improve the quality of local cybersecurity technologies. This is part of the efforts to grow the cybersecurity ecosystem in Singapore and support the IMDA Accreditation programme with international expansion opportunities. With the SecureTech Track, companies are required to obtain Common Criteria certification or other security certifications as directed by CSA, for the product to be accredited.
 
 ### Objective
 
-Accreditation@SGD helps with:
+IMDA Accreditation helps with:
 
 - Accrediting promising and innovative high-growth ICM companies to establish their credentials and position them as qualified contenders
 - Providing potential end-users with an assurance of the accredited companies’ competency and ability to deliver
@@ -38,11 +39,11 @@ Accreditation@SGD helps with:
 
 ### Scope
 
-Accreditation@SGD covers government procurement for all ICM products from accredited companies.   
+IMDA Accreditation covers government procurement for all ICM products from accredited companies.   
 
 ### Target Audience and Adoption Criteria
 
-Accreditation@SGD is targeted at Singapore-based companies that develop and own innovative high-growth info communications products for the enterprise market.
+IMDA Accreditation is targeted at Singapore-based companies that develop and own innovative high-growth info communications products for the enterprise market.
 
 To participate in the programme, companies must fulfill the following criteria:
 
@@ -69,31 +70,31 @@ Guidelines on the accreditation process can be found here and the Terms and Cond
 <figure style="text-align: center">
   <img
     src="/assets/img/Accreditation@SGD-Fig2-v3.png"  
-    alt="Fig 2: Accreditation process under Accreditation@SGD"
+    alt="Fig 2: Accreditation process under IMDA Accreditation"
   />
-  <figcaption> Fig 2: Accreditation process under Accreditation@SGD</figcaption>
+  <figcaption> Fig 2: Accreditation process under IMDA Accreditation</figcaption>
 </figure>
 
 <figure style="text-align: center">
   <img
     src="/assets/img/Accreditation@SGD-Fig3-v1.png"  
-    alt="Fig 3: The technical, financial and operational aspects for accreditation evaluation under Accreditation@SGD"
+    alt="Fig 3: The technical, financial and operational aspects for accreditation evaluation under IMDA Accreditation"
   />
-  <figcaption> Fig 3: The technical, financial and operational aspects for accreditation evaluation under Accreditation@SGD</figcaption>
+  <figcaption> Fig 3: The technical, financial and operational aspects for accreditation evaluation under IMDA Accreditation</figcaption>
 </figure>
 
 ### Resources and Templates
 
-View the resources below for more information on Accreditation@SGD
+View the resources below for more information on IMDA Accreditation:
 - [Guidelines](https://www.imda.gov.sg/-/media/Imda/Files/Industry-Development/Startups/Accreditation-SecureTech-GuidelinesV1.pdf){:target="_blank"} on the SecureTech track process
-- Accreditation@SGD process [guidelines](https://www.imda.gov.sg/-/media/Imda/Files/Programme/AccreditationSGD/Accreditation-SGD-Guidelines.pdf){:target="_blank"}
-- [Terms and Conditions](https://www.imda.gov.sg/-/media/Imda/Files/Programme/AccreditationSGD/Accreditation-TCsV5.pdf){:target="_blank"} of the Accreditation@SGD process
+- IMDA Accreditation process [guidelines](https://www.imda.gov.sg/-/media/Imda/Files/Programme/AccreditationSGD/Accreditation-SGD-Guidelines.pdf){:target="_blank"}
+- [Terms and Conditions](https://www.imda.gov.sg/-/media/Imda/Files/Programme/AccreditationSGD/Accreditation-TCsV5.pdf){:target="_blank"} of the IMDA Accreditation process
 
 ### Case Studies
 
-As of March 2022, accredited companies have gained over $814 million worth of earnings across more than 2,000 projects with the government. Over $450 million in new growth investments have also been funneled to companies during and after their accreditation. This is due to the increased credibility associated to the Accreditation@SGD programme.
+As of March 2022, accredited companies have gained over $814 million worth of earnings across more than 2,000 projects with the government. Over $450 million in new growth investments have also been funneled to companies during and after their accreditation. This is due to the increased credibility associated to the IMDA Accreditation programme.
 
-For details on companies’ use cases, click [here.](https://www.imda.gov.sg/programme-listing/accreditation-at-sgd/Success-Use-Cases){:target="_blank"}
+For details on companies’ use cases, click [here.](https://www.imda.gov.sg/for-industry/innovation/innovative-Tech-Companies?keyword=accreditation&industry=all&page=1){:target="_blank"}
 
 ### What's Next?
 
@@ -113,4 +114,4 @@ The Tech Acceleration Lab (TAL) for government buyers was launched in Jan 2021 a
    
 ### Contact Information
 
-For more information on Accreditation@SG, contact the team through this [form.](https://form.gov.sg/#!/62280856ba91100012050933){:target="_blank"}
+For more information on IMDA Accreditation, contact the team through this [form.](https://form.gov.sg/#!/62280856ba91100012050933){:target="_blank"}
