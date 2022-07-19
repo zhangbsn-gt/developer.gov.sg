@@ -1,7 +1,7 @@
 ---
 title: Getting Started with Cloud File Transfer (CFT)
 layout: layout-page-sidenav
-description: Resources provided by Cloud File Transfer (CFT).
+description: Onboarding steps for Cloud File Transfer (CFT).
 single_level_nav: true
 _data: single-level-nav
 redirect_from:
