@@ -5,9 +5,9 @@
 <div>
   <div class="row is-desktop" style="align-items:center;">
     <div class="col">
-      <h2><b>{{sectionName}}</b></h2>
+      <h2><b>{{- sectionName -}}</b></h2>
       <p class="is-hidden-desktop">
-        {{sectionDescription}}
+        {{- sectionDescription -}}
       </p>
     </div>
     <div class="col is-flex-justify-fe is-nested">
@@ -27,7 +27,7 @@
     </div>
   </div>
   <p class="is-hidden-touch">
-    {{sectionDescription}}
+    {{- sectionDescription -}}
   </p>
 </div>
 <div class="margin--top">
@@ -35,18 +35,18 @@
   <div class="sgds-accordion margin--bottom">
     <a href="#!" class="sgds-accordion-header padding--top padding--bottom has-text-dark has-background-white"
       role="button" aria-expanded="false">
-      {{faq.name}}
+      {{- faq.name -}}
       <i class="sgds-icon sgds-icon-chevron-down"></i>
     </a>
     <div class="sgds-accordion-body">
-      <p>{{faq.description}}</p>
+      <p>{{- faq.description -}}</p>
       <div class="row is-mobile is-multiline">
         {% for image in faq.images %}
         {%- assign img_url = "/assets/img/" | append: image.name -%}
         {%- assign grid_spacing = image.grid_spacing | default: 6 -%}
 
-        <div class="col is-12-mobile is-12-tablet is-{{grid_spacing}}-desktop">
-          <img class="is-fullwidth" src="{{img_url}}" alt="Image" style="width: 100%;">
+        <div class="col is-12-mobile is-12-tablet is-{{- grid_spacing -}}-desktop">
+          <img class="is-fullwidth" src="{{- img_url -}}" alt="Image" style="width: 100%;">
         </div>
         {% endfor %}
       </div>
