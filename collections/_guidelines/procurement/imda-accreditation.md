@@ -59,7 +59,7 @@ To participate in the programme, companies must fulfill the following criteria:
 
    iii. The product to be accredited must demonstrate strong and unique value proposition, and competitive advantage to competitors/alternative  substitutes in the market
 
-To access the list of accredited companies, click [here.](https://www.imda.gov.sg/for-industry/technology-and-innovation/innovative-Tech-Companies?keyword=accreditation&industry=all&page=1){:target="_blank"}
+To access the list of accredited companies, click [here.](https://www.imda.gov.sg/for-industry/innovation/innovative-Tech-Companies?keyword=accreditation&industry=all&page=1){:target="_blank"}
 
 ### Standards, Guidelines and Assessment Criteria
 
@@ -94,7 +94,7 @@ View the resources below for more information on IMDA Accreditation:
 
 As of March 2022, accredited companies have gained over $814 million worth of earnings across more than 2,000 projects with the government. Over $450 million in new growth investments have also been funneled to companies during and after their accreditation. This is due to the increased credibility associated to the IMDA Accreditation programme.
 
-For details on companies’ use cases, click [here.](https://www.imda.gov.sg/for-industry/innovation/innovative-Tech-Companies?keyword=accreditation&industry=all&page=1){:target="_blank"}
+For details on companies’ use cases, click [here.](https://www.imda.gov.sg/programme-listing/IMDA-Accreditation/Success-Use-Cases){:target="_blank"}
 
 ### What's Next?
 
