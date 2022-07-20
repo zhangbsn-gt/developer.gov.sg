@@ -19,4 +19,4 @@ Tenderers will be required to send a few personnel who will be a part of the pro
 
 ### Contact Information
 
-For enquiries, email <PRD@tech.gov.sg>
+For enquiries, reach out to us through this [form](https://form.gov.sg/#!/62280856ba91100012050933){:target="_blank"}
