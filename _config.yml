@@ -29,6 +29,7 @@ exclude:
   - netlify.toml
   - package*.json
   - webpack.config.js
+  - README.md
 
 collections_dir: collections
 
