@@ -261,6 +261,13 @@
   items:
     - Overview
 
+- name: TechBiz
+  items:
+    - Overview
+    - Features
+    - Getting Started
+    - Resources
+
 # Sensor Platforms and Internet of Things
 - name: Asynchronous Data Exchange
   items:

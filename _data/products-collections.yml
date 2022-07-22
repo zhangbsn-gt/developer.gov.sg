@@ -4,6 +4,7 @@
     - Overview
     - 'I2C {{Infra to Code}}'
     - Notarise
+    - TechBiz
     
 - name: Data Science and Artificial Intelligence
   description: Access Data Science and Artificial Intelligence (DSAI) products developed by the Singapore Government, best practices and other resources here.
@@ -28,6 +29,7 @@
     - SHIP-HATS
     - Singapore Government Design System
     - StackOps
+    - TechBiz
     - VAS
     - Verify
     - WOGAA
