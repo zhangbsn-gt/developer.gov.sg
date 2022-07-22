@@ -261,15 +261,6 @@
   items:
     - Overview
 
-- name: Transcribe  
-  items:
-    - Overview
-    - Features    
-    - Pricing    
-    - Getting Started    
-    - Resources    
-    - FAQs
-
 # Sensor Platforms and Internet of Things
 - name: Asynchronous Data Exchange
   items:
