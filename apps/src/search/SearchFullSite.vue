@@ -62,7 +62,7 @@
           <p id="search-result-number-of-results" class="margin--top--sm">
             {{
               isNonEmptySearch
-                ? `Returned ${filteredResult.currentNumberOfItems} out of ${filteredResult.filteredSearchResult.length} results:`
+                ? `Returned ${filteredResult.currentNumberOfItems} out of ${filteredResult.sanitizedFilteredSearchResultByPage.length} results:`
                 : "No search query specified."
             }}
           </p>
@@ -71,7 +71,7 @@
           <div v-if="isNonEmptySearch">
             <div id="search-full-site-results">
               <div
-                v-for="result of filteredResult.filteredSearchResultByPage"
+                v-for="result of filteredResult.sanitizedFilteredSearchResultByPage"
                 :key="result.url"
                 class="margin--bottom--lg"
               >
@@ -130,25 +130,27 @@
 import Card from "../lib/Card.vue";
 import Loader from "../lib/Loader.vue";
 import CheckBox from "../lib/CheckBox.vue";
+import { sanitize } from "../lib/index.js";
 import useLunrSearch from "../composables/useLunrSearch";
 import { computed, onMounted, ref, watch } from "@vue/composition-api";
 
 export default {
   components: { Loader, Card, CheckBox },
   setup() {
-    let queryParam = new URL(window.location.href).searchParams.get("query");
-    // console.log(document.referrer);
-    let categoryCheckbox = ref([]);
     let options = ref([]);
     let currentPage = ref(1);
     let rowsPerPage = ref(10);
+    let categoryCheckbox = ref([]);
+    let queryParam = sanitize(
+      new URL(window.location.href).searchParams.get("query")
+    );
 
     const getDefaultCheckedCategories = () => {
       categoryCheckbox.value = sessionStorage.getItem(
         "search_full_site_categories"
       )
         ? sessionStorage.getItem("search_full_site_categories").split("_")
-        : ["products", "events", "communities", 'guidelines', "others"];
+        : ["products", "events", "communities", "guidelines", "others"];
     };
 
     const getCategoryOptions = () => {
@@ -222,6 +224,16 @@ export default {
               currentPage.value * rowsPerPage.value
             );
 
+      const sanitizedFilteredSearchResultByPage =
+        filteredSearchResultByPage.map(item => {
+          return {
+            url: sanitize(item.url),
+            title: sanitize(item.title),
+            directory: sanitize(item.directory),
+            content: sanitize(item.content),
+          };
+        });
+
       const currentNumberOfItems =
         filteredSearchResultByPage.length +
         (currentPage.value - 1) * rowsPerPage.value;
@@ -232,6 +244,7 @@ export default {
         filteredSearchResult,
         currentNumberOfItems,
         filteredSearchResultByPage,
+        sanitizedFilteredSearchResultByPage,
       };
     });
 
@@ -239,6 +252,8 @@ export default {
       window.scrollTo(0, 0);
       currentPage.value = page;
     };
+
+    document.getElementById("search-title").innerText = queryParam;
 
     return {
       searchQuery,

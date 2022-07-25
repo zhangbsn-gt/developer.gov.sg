@@ -1,22 +1,29 @@
 <template>
   <div>
+    <!-- Loader -->
     <loader :active="isLoading" />
+    <!-- Content-->
     <div class="sgds-container search-content" v-show="!isLoading">
+      <!-- Count -->
       <p class="search-result-status">
         {{
           `Showing ${
-            filterSearchResults.preProcessedNumberOfResults > 0
-              ? filterSearchResults.postProcessedNumberOfResults
-              : 0
-          } out of ${filterSearchResults.preProcessedNumberOfResults} results`
+            filteredSearchResults.sanitizedSortedFilteredSearchResults.length >
+            0
+              ? filteredSearchResults.sanitizedSortedFilteredSearchResults
+                  .length
+              : totalPages
+          } out of ${totalPages} results`
         }}
       </p>
+      <!-- Status -->
       <h6 class="is-danger" v-if="errorMsg">{{ errorMsg }}</h6>
+      <!-- Results -->
       <div class="card-grid-container is-fullwidth">
         <div
-          class="sgds-card-list"
-          v-for="result of filterSearchResults.processedResults"
           :key="result.url"
+          class="sgds-card-list"
+          v-for="result of filteredSearchResults.sanitizedSortedFilteredSearchResults"
         >
           <CardCalendar>
             <!-- Event Status -->
@@ -59,13 +66,13 @@
                         <p
                           class="padding--top--sm padding--bottom--xs margin--bottom--none is-size-2 has-text-weight-bold has-text-centered"
                         >
-                          {{ result.dayFormat }}
+                          {{ result.calendarFormat.dayFormat }}
                         </p>
                       </div>
                       <div class="padding--bottom--none">
                         <p class="padding--bottom--none">
-                          {{ result.monthFormat }}&nbsp;‘
-                          {{ result.yearFormat }}
+                          {{ result.calendarFormat.monthFormat }}&nbsp;‘
+                          {{ result.calendarFormat.yearFormat }}
                         </p>
                       </div>
                     </div>
@@ -93,11 +100,11 @@
                     style="-webkit-text-stroke: 0.5px white"
                   ></span>
                   {{
-                    result.dayFormat +
+                    result.calendarFormat.dayFormat +
                     " " +
-                    result.monthFormat +
+                    result.calendarFormat.monthFormat +
                     " " +
-                    result.yearFormat
+                    result.calendarFormat.yearFormat
                   }}
                 </p>
               </div>
@@ -132,17 +139,8 @@
             <!-- Front matter attributes -->
             <template v-slot:front-matter-attributes>
               <div class="spacing-container-vertical spacing-16">
-                <div
-                  v-if="result.targetGroup !== ''"
-                  class="spacing-container-vertical spacing-8"
-                >
-                  <strong>Target Group</strong>
-                  <p v-html="result.targetGroup"></p>
-                </div>
                 <!-- Display event's description -->
-                <div class="">
-                  <p v-html="result.description"></p>
-                </div>
+                <p v-html="result.description"></p>
               </div>
             </template>
           </CardCalendar>
@@ -154,9 +152,10 @@
 
 <script>
 import Loader from "../lib/Loader.vue";
+import { sanitize } from "../lib/index.js";
+import { computed } from "@vue/composition-api";
 import CardCalendar from "../lib/CardCalendar.vue";
 import useLunrSearch from "../composables/useLunrSearch";
-import { computed } from "@vue/composition-api";
 import { getEventDataByDate, convertDateForIos } from "../lib/communities";
 
 export default {
@@ -165,12 +164,12 @@ export default {
     // Variables
     const params = new URLSearchParams(window.location.search);
     const { queryParam, dateParam, categoryParam } = {
-      queryParam: params.get("query"),
+      queryParam: sanitize(params.get("query")),
       dateParam: params.get("year_filter")
-        ? params.get("year_filter")
+        ? sanitize(params.get("year_filter"))
         : "All Time",
       categoryParam: params.get("category_filter")
-        ? params.get("category_filter")
+        ? sanitize(params.get("category_filter"))
         : "All Types",
     };
 
@@ -189,73 +188,96 @@ export default {
       lunrIndexFields: [
         "title",
         "description",
-        "targetGroup",
         "category",
+        "content",
         "random",
       ],
+    });
+
+    const filteredSearchResults = computed(() => {
+      // Check if param is empty
+      const queryIsEmpty = !queryParam || /^\s*$/.test(queryParam);
+
+      // Adding extra attributes that is used during the filtering process, such as the date
+      const processedSearchResults = searchResults.value.map(item => {
+        const date = convertDateForIos(item.event_date_raw);
+        const { status, backgroundColor } = getEventDataByDate(item.event_date);
+
+        return {
+          ...item,
+          date: date,
+          calendarFormat: {
+            dayFormat:
+              date.getDate() < 10 ? "0" + date.getDate() : date.getDate(),
+            monthFormat:
+              window.innerWidth < 1025
+                ? date.toLocaleString("en-SG", { month: "long" })
+                : date
+                    .toLocaleString("en-SG", { month: "short" })
+                    .toUpperCase(),
+            yearFormat: date
+              .getFullYear()
+              .toString()
+              .substr(window.innerWidth < 1025 ? 0 : -2),
+          },
+          status: status.toUpperCase(),
+          backgroundColor: backgroundColor,
+        };
+      });
+
+      // Filtering out the results based on the date filter and category filter
+      const filteredSearchResults = processedSearchResults
+        .filter(item => {
+          if (dateParam === "All Time") {
+            return true;
+          }
+
+          return item.date.getFullYear() === parseInt(dateParam);
+        })
+        .filter(item => {
+          const trimmedCategoryParam = categoryParam.trim().toLocaleLowerCase();
+          if (trimmedCategoryParam === "all types") {
+            return true;
+          }
+
+          return item.category.trim().toLowerCase() === trimmedCategoryParam;
+        });
+
+      // If param is emtpy, perform a sort using event's time, else return full obj
+      const sortedFilteredSearchResults = queryIsEmpty
+        ? filteredSearchResults.sort((a, b) => {
+            const dateA = new Date(a.date);
+            const dateB = new Date(b.date);
+
+            return dateB - dateA;
+          })
+        : filteredSearchResults;
+
+      const sanitizedSortedFilteredSearchResults =
+        sortedFilteredSearchResults.map(item => {
+          return {
+            ...item,
+            title: sanitize(item.title),
+            description: sanitize(item.description),
+            category: sanitize(item.category),
+            content: sanitize(item.content),
+          };
+        });
+
+      const postProcessedNumberOfResults =
+        sanitizedSortedFilteredSearchResults.length;
+
+      return {
+        processedSearchResults,
+        filteredSearchResults,
+        postProcessedNumberOfResults,
+        sanitizedSortedFilteredSearchResults,
+      };
     });
 
     document.getElementById("query-all-year").value = dateParam;
     document.getElementById("query-all-events").value = queryParam;
     document.getElementById("query-all-category").value = categoryParam;
-
-    const filterSearchResults = computed(() => {
-      // Processing fixed-varied variables for the search results, such as dateParams and categoryParams
-      const preProcessedNumberOfResults = searchResults.value.length;
-      for (let i = 0; i < searchResults.value.length; i++) {
-        const result = searchResults.value[i];
-
-        // Result specific
-        const category = result.category;
-        const date = convertDateForIos(result.event_date_raw);
-        const { status, backgroundColor } = getEventDataByDate(
-          result.event_date
-        );
-
-        // PRE PROCESSING
-        // Processing fixed-varied variables for the search results, such as dateParams and categoryParams
-        // if they do not match the search results, then remove the result from the search results
-        // afterwards, skip the loop and start the next iteration
-        if (dateParam !== "All Time") {
-          if (dateParam != date.getFullYear()) {
-            searchResults.value.splice(i, 1);
-            i--;
-            continue;
-          }
-        }
-
-        if (categoryParam !== "All Types") {
-          if (
-            categoryParam.trim().toLowerCase() !== category.trim().toLowerCase()
-          ) {
-            searchResults.value.splice(i, 1);
-            i--;
-            continue;
-          }
-        }
-
-        // POST PROCESSING
-        result.status = status.toUpperCase();
-        result.backgroundColor = backgroundColor;
-        result.dayFormat =
-          date.getDate() < 10 ? "0" + date.getDate() : date.getDate();
-        result.monthFormat =
-          window.innerWidth < 1025
-            ? date.toLocaleString("en-SG", { month: "long" })
-            : date.toLocaleString("en-SG", { month: "short" }).toUpperCase();
-        result.yearFormat =
-          window.innerWidth < 1025
-            ? date.getFullYear().toString()
-            : date.getFullYear().toString().substr(-2);
-      }
-
-      const postProcessedNumberOfResults = searchResults.value.length;
-      return {
-        preProcessedNumberOfResults: preProcessedNumberOfResults,
-        postProcessedNumberOfResults: postProcessedNumberOfResults,
-        processedResults: searchResults.value,
-      };
-    });
 
     return {
       totalPages,
@@ -263,7 +285,7 @@ export default {
       isNonEmptySearch,
       searchResults,
       errorMsg,
-      filterSearchResults,
+      filteredSearchResults,
     };
   },
 };

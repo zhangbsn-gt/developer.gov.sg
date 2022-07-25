@@ -13,7 +13,7 @@
       <div class="card-grid-container grid-25rem">
         <div
           class="sgds-card-list"
-          v-for="result of searchResults"
+          v-for="result of filteredSearchResults"
           :key="result.url"
         >
           <card>
@@ -25,7 +25,10 @@
             </template>
             <template v-slot:front-matter-attributes>
               <div class="spacing-container-vertical spacing-16">
-                <div v-if="result.targetGroup !== '' " class="spacing-container-vertical spacing-8">
+                <div
+                  v-if="result.targetGroup !== ''"
+                  class="spacing-container-vertical spacing-8"
+                >
                   <strong>Target Group</strong>
                   <p v-html="result.targetGroup"></p>
                 </div>
@@ -43,14 +46,19 @@
 </template>
 
 <script>
-import Loader from "../lib/Loader.vue";
 import Card from "../lib/Card.vue";
+import Loader from "../lib/Loader.vue";
+import { sanitize } from "../lib/index.js";
+import { computed } from "@vue/composition-api";
 import useLunrSearch from "../composables/useLunrSearch";
 
 export default {
   components: { Loader, Card },
   setup() {
-    let queryParam = new URL(window.location.href).searchParams.get("query");
+    let queryParam = sanitize(
+      new URL(window.location.href).searchParams.get("query")
+    );
+
     const {
       isLoading,
       totalPages,
@@ -73,6 +81,19 @@ export default {
       ],
     });
 
+    const filteredSearchResults = computed(() => {
+      return searchResults.value.map(item => {
+        return {
+          title: sanitize(item.title),
+          description: sanitize(item.description),
+          targetGroup: sanitize(item.targetGroup),
+          category: sanitize(item.category),
+          content: sanitize(item.content),
+          url: item.url,
+        };
+      });
+    });
+
     document.getElementById("query-all-products").value = queryParam;
 
     return {
@@ -81,6 +102,7 @@ export default {
       isNonEmptySearch,
       searchResults,
       errorMsg,
+      filteredSearchResults,
     };
   },
 };

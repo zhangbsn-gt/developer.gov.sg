@@ -26,7 +26,6 @@
                 {
                 "title": "{{ event_title }}",
                 "description": "{{- document.event_description | remove: '>' | remove: '"' | strip -}}",
-                "targetGroup": "{{- target_group_joined -}}",
                 "category": "{{- document.event_category -}}",
                 "content": {{ document.event_description | strip_html | strip_newlines | strip | jsonify }},
                 "url": "{{ url_str }}",
