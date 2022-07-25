@@ -267,6 +267,14 @@
     - Features
     - Getting Started
     - Resources
+    
+- name: Transcribe
+  items:
+    - Overview
+    - Features
+    - Getting Started
+    - Resources
+    - FAQs
 
 # Sensor Platforms and Internet of Things
 - name: Asynchronous Data Exchange
