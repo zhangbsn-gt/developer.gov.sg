@@ -1,7 +1,7 @@
 # Keynotes
 - type: Keynote
   timeslot: 09:30 AM - 09:40 AM
-  timeslot_metadata: 2022-12-07T09:30:00+08:00
+  timeslot_metadata: 2022-07-07T09:30:00+08:00 - 2022-07-07T09:40:00+08:00
   title: Opening Remarks
   desc:
   speakers:
@@ -11,7 +11,7 @@
 
 - type: Keynote
   timeslot: 09:40 AM - 09:50 AM
-  timeslot_metadata: 2022-12-07T09:40:00+08:00
+  timeslot_metadata: 2022-07-07T09:40:00+08:00 - 2022-07-07T09:50:00+08:00
   title: Solving the Data Conundrum
   desc:
   speakers:
@@ -21,7 +21,7 @@
 
 - type: Keynote
   timeslot: 09:50 AM - 10:20 AM
-  timeslot_metadata: 2022-12-07T09:50:00+08:00
+  timeslot_metadata: 2022-07-07T09:50:00+08:00 - 2022-07-07T10:20:00+08:00
   title: Charting out Data Science and AI Capabilities for the Government
   desc:
   speakers:
@@ -31,7 +31,7 @@
 
 - type: Keynote
   timeslot: 10:20 AM - 10:50 AM
-  timeslot_metadata: 2022-12-07T10:20:00+08:00
+  timeslot_metadata: 2022-07-07T10:20:00+08:00 - 2022-07-07T10:50:00+08:00
   title: 'Beyond Singapore Government: Harnessing the Value of Data and AI'
   desc:
   speakers:
@@ -41,7 +41,7 @@
 
 - type: Keynote
   timeslot: 10:50 AM - 11:20 AM
-  timeslot_metadata: 2022-12-07T10:50:00+08:00
+  timeslot_metadata: 2022-07-07T10:50:00+08:00 - 2022-07-07T11:20:00+08:00
   title: 'Harnessing the Power of Data at Disney Streaming'
   desc:
   speakers:
@@ -51,7 +51,7 @@
 
 - type: Keynote
   timeslot: 01:30 PM - 02:00 PM
-  timeslot_metadata: 2022-12-07T13:30:00+08:00
+  timeslot_metadata: 2022-07-07T13:30:00+08:00 - 2022-07-07T14:00:00+08:00
   title: The 3Ds of MOM's Data Culture
   desc: 'This presentation gives an overview of MOM’s data strategy and data culture that support its transformation efforts'
   speakers:
@@ -59,19 +59,9 @@
       image: /assets/img/photos/poon-hong-yuen.png
       title: 'Deputy Secretary (Workforce) / Chief Data Officer, Ministry of Manpower'
 
-# Data Science and Data Transformation
-#- type: Datatransformation
-#  timeslot: 01:30 PM - 02:00 PM
-#  title: Within the Singapore Government - Harnessing the valuie of Data and AI in manpower
-#  desc:
-#  speakers:
-#    - name: Poon Hong Yuen
-#      image: /assets/img/photos/poon-hong-yuen.png
-#      title: Deputy Secretary, Ministry of Manpower
-
 - type: Data Transformation
   timeslot: 02:00 PM - 02:30 PM
-  timeslot_metadata: 2022-12-07T14:00:00+08:00
+  timeslot_metadata: 2022-07-07T14:00:00+08:00 - 2022-07-07T14:30:00+08:00
   title: Analytics by Design
   desc: Analytics-readiness is something that all projects should have on Day 1 of its launch. The key to that is to avoid analytics debt. The data collected from policy implementations, or programme executions should address questions that will help finetune refinements down the road. The data generated from products and platforms should help inform how well it is working, and what new features to build, or what to tweak. But this is often not the reality. Many projects face challenges with analytics downstream, potentially leading to disappointments from both from the business side, as well as the data science practitioners. In this sharing, the speaker will share more about Analytics By Design, which is a methodology that GovTech had mooted, and is piloting internally.
   speakers:
@@ -81,7 +71,7 @@
 
 - type: Data Transformation
   timeslot: 02:30 PM - 03:00 PM
-  timeslot_metadata: 2022-12-07T14:30:00+08:00
+  timeslot_metadata: 2022-07-07T14:30:00+08:00 - 2022-07-07T15:00:00+08:00
   title: Supporting Agency Data Transformation by Proliferating Data Driven Decision Making
   desc: This presentation gives an overview of how DSAID's Quantitative Strategy team has been actively supporting WOG data transformation by proliferating data-driven decision making in agencies. We will share about some of the high impact projects that the team has delivered over the years, covering a wide range of business domains, use cases and techniques. We will also discuss our philosophy, approach and methodology of using data and analytics and how we customise our service offering based on agency needs and data maturity to drive sustainable impact.
   speakers:
@@ -94,7 +84,7 @@
 
 - type: Data Transformation
   timeslot: 03:00 PM - 03:30 PM
-  timeslot_metadata: 2022-12-07T15:00:00+08:00
+  timeslot_metadata: 2022-07-07T15:00:00+08:00 - 2022-07-07T15:30:00+08:00
   title: Multilevel Modelling
   desc: 'A multilevel model is a regression on grouped data in which parameters (i.e., the intercept or slopes/regression coefficients) are randomly varying and given a probability model. We will learn how it is differs from classical regression and briefly explore how multilevel modelling can be used in the context of schools.'
   speakers:
@@ -104,7 +94,7 @@
 
 - type: Data Transformation
   timeslot: 03:30 PM - 04:00 PM
-  timeslot_metadata: 2022-12-07T15:30:00+08:00
+  timeslot_metadata: 2022-07-07T15:30:00+08:00 - 2022-07-07T16:00:00+08:00
   title: 'Statistical Modelling & Machine Learning;  Inference & Prediction'
   desc: In this presentation, we review recent trends & discussions concerning concepts in Statistical Modelling and Machine Learning. We will also delve into the difference between inference & prediction and discuss strengths and concerns with some of the popular ideas that has evolved in the last century (e.g., use of p-value).
   speakers:
@@ -114,7 +104,7 @@
 
 - type: Data Transformation
   timeslot: 04:00 PM - 04:30 PM
-  timeslot_metadata: 2022-12-07T16:00:00+08:00
+  timeslot_metadata: 2022-07-07T16:00:00+08:00 - 2022-07-07T16:30:00+08:00
   title: Our Data Transformation Playbook
   desc: We have started the journey to transform GovTech into a model data analytics-ready organisation that is exemplary in the use of data! This presentation will give an introduction on GovTech’s Data Strategy and the various enablers that have been put in place to empower GovTechies to make use of data to improve their operations and gain insights for policy making.
   speakers:
@@ -137,7 +127,7 @@
 
 - type: Data Engineering
   timeslot: 02:00 PM - 02:30 PM
-  timeslot_metadata: 2022-12-07T14:00:00+08:00
+  timeslot_metadata: 2022-07-07T14:00:00+08:00 - 2022-07-07T14:30:00+08:00
   title: Trusted Centre Sensors
   desc: 'This brief discusses how we have enabled user-centric data sharing, concierge services and self-help exploitation of sensor domain core data in our of the four Trusted Centres under the Government Data Architecture: 1) Foundational governance underpinning our approach to data request flow; 2) Importance of leveraging on an enterprise identity provider store (IdP) and its influence on our data fabric; 3) Enabling user-led discovery and exploitation with Databricks.'
   speakers:
@@ -147,7 +137,7 @@
 
 - type: Data Engineering
   timeslot: 02:30 PM - 03:00 PM
-  timeslot_metadata: 2022-12-07T14:30:00+08:00
+  timeslot_metadata: 2022-07-07T14:30:00+08:00 - 2022-07-07T15:00:00+08:00
   title: Trends in Data & AI Rise of the Lakehouse Paradigm
   desc: Data and AI have become strategic priorities for every organisation, but today's complex and outdated legacy infrastructure struggles to deliver on the promise of AI. It's time for a new data architecture build to meet your needs today - and future-proofed so it's ready for whatever tomorrow brings. Find out how the Databricks Lakehouse combines the best of both data warehouses and data lakes with a lake-first approach.
   speakers:
@@ -157,7 +147,7 @@
 
 - type: Data Engineering
   timeslot: 03:00 PM - 03:30 PM
-  timeslot_metadata: 2022-12-07T15:00:00+08:00
+  timeslot_metadata: 2022-07-07T15:00:00+08:00 - 2022-07-07T15:30:00+08:00
   title: Strategies You Wish You Knew Before Starting a Data Engineering Project
   desc: Data engineering strategy cultivates organizations to plan out their successful data journey. DSAID’s Data Engineering team has been single-minded in our mission to develop central platforms to support data sharing, analytics and data engineering capabilities, as well as partnering agencies to co-create critical data infrastructure and uplift their in-house data engineering capabilities. In this talk, we will cover components of the data engineering strategy which includes knowing the right processes & data, relevant tools & techniques, latest technology & infrastructure as well as some of our exciting work-in-progress.
   speakers:
@@ -170,7 +160,7 @@
 
 - type: Data Engineering
   timeslot: 03:30 PM - 04:00 PM
-  timeslot_metadata: 2022-12-07T15:30:00+08:00
+  timeslot_metadata: 2022-07-07T15:30:00+08:00 - 2022-07-07T16:00:00+08:00
   title: 'Accelerating the Machine Learning Model Lifecycle: Data Quality and State of the Art Models'
   desc:
   speakers:
@@ -180,7 +170,7 @@
 
 - type: Data Engineering
   timeslot: 04:00 PM - 04:30 PM
-  timeslot_metadata: 2022-12-07T16:00:00+08:00
+  timeslot_metadata: 2022-07-07T16:00:00+08:00 - 2022-07-07T16:30:00+08:00
   title: Sectoral Data Hub for the Economic Domain
   desc: 'National Economic Research & Visualisation Engine (NERVE) serves as the Sectoral Data Hub for the economic domain, facilitating access to identifiable firm-level, industry-level and macro-level data across government agencies. It draws data from both within the government as well as the private sector to enhance economic surveillance, inform strategy formulation, evaluate policy outcomes and facilitate service delivery.'
   speakers:
@@ -200,7 +190,7 @@
 
 - type: Video Analytics
   timeslot: 02:00 PM - 02:30 PM
-  timeslot_metadata: 2022-12-07T14:00:00+08:00
+  timeslot_metadata: 2022-07-07T14:00:00+08:00 - 2022-07-07T14:30:00+08:00
   title: AI for the Public Good – Moving From Hype to Real Applications
   desc: This presentation gives an overview of the Artificial Intelligence (AI) projects Govtech has done for various agencies as well as the approach taken in supporting government AI use cases. In Singapore, AI is applied in a variety of uses cases, ranging from policy to ops work. Examples include text analytics, speech to text, fraud detection, and video analytics. Essentially GovTech aims to excite officers on the possibilities of AI and get them to think of how they can apply AI to the domain problems they have at hand.
   speakers:
@@ -210,7 +200,7 @@
 
 - type: Video Analytics
   timeslot: 02:30 PM - 03:00 PM
-  timeslot_metadata: 2022-12-07T14:30:00+08:00
+  timeslot_metadata: 2022-07-07T14:30:00+08:00 - 2022-07-07T15:00:00+08:00
   title: 'From Multiple Deployments to Multi-Billion Dollar Savings: How to Scale AI Across the Government with Automated Machine Learning'
   desc: The gap between the promise of AI and the value it brings to government agencies is closing but still wide. In this presentation, Chandler McCann will share the technical and practical approaches to model development and production that have led to massive results across the U.S Government with automated machine learning.
   speakers:
@@ -220,7 +210,7 @@
 
 - type: Video Analytics
   timeslot: 03:00 PM - 03:30 PM
-  timeslot_metadata: 2022-12-07T15:00:00+08:00
+  timeslot_metadata: 2022-07-07T15:00:00+08:00 - 2022-07-07T15:30:00+08:00
   title: Application of AI in Cybersecurity
   desc: Eugene will discuss various applications of AI in cybersecurity, from detecting machine-generated phishing emails to automating code review. He will highlight established use cases as well as cutting-edge research.He will also examine the latest proposed standards in the use of AI on cybersecurity.
   speakers:
@@ -230,7 +220,7 @@
 
 - type: Video Analytics
   timeslot: 03:30 PM - 04:00 PM
-  timeslot_metadata: 2022-12-07T15:30:00+08:00
+  timeslot_metadata: 2022-07-07T15:30:00+08:00 - 2022-07-07T16:00:00+08:00
   title: Working With Industry to Accelerate Development of AI-Enabled Solutions
   desc: The benefits of AI are widely known today. Increased interest among business users to adopt AI-enabled solutions is pushing the technology’s frontier on a daily basis. The rate of innovation and translation in this space is fast, and advancements in AI are being rapidly productized for commercial applications. An example is AI in the field of Video Analytics. Learn how the VA team at GovTech collaborate with industry to keep pace with advancements in AI and develop solutions for public sector agencies.
   speakers:
@@ -246,7 +236,7 @@
 
 - type: Video Analytics
   timeslot: 04:00 PM - 04:30 PM
-  timeslot_metadata: 2022-12-07T16:00:00+08:00
+  timeslot_metadata: 2022-07-07T16:00:00+08:00 - 2022-07-07T16:30:00+08:00
   title: Towards a Comparable Metric for AI Model Interpretability in Computer Vision
   desc: The Video Analytics (VA) team builds deep learning models to address specific public sector use cases. As Deep Learning models become more advanced with increasing complexity, the need for model interpretability has come into greater focus. Understanding features that contribute to a Deep Learning model's output helps AI Engineers design better models and troubleshooting. There are methods known today to help with Deep Learning model interpretability, such as those requiring visual explanations on local prediction instances. But we aspire to create a global metric to quantify explainability. Find out how we are doing this in our collaboration with Meta/PyTorch.
   speakers:
@@ -265,7 +255,7 @@
 #Data Data Leader Dialogue
 - type: Data Leader Dialogue
   timeslot: 9:00 AM - 9:10 AM
-  timeslot_metadata: 2022-12-08T09:00:00+08:00
+  timeslot_metadata: 2022-07-08T09:00:00+08:00 - 2022-07-08T09:10:00+08:00
   title: Opening and Welcome
   desc:
   speakers:
@@ -275,7 +265,7 @@
 
 - type: Data Leader Dialogue
   timeslot: 9:10 AM - 9:40 AM
-  timeslot_metadata: 2022-12-08T09:10:00+08:00
+  timeslot_metadata: 2022-07-08T09:10:00+08:00 - 2022-07-08T09:40:00+08:00
   title: 'Reimagine Governance: Innovate with Self-Service and Agility'
   desc: Self-service is designed to enable everyone to ask and answer their own questions using trusted data to make informed decisions. Governance is the combination of controls, roles, and repeatable processes that creates trust and confidence in data and analytics. In a successful self-service environment, the appropriate levels of governance create accountability and enable, rather than restrict, access to trusted content for users in your organization.  Perhaps the most important principle when adopting modern analytics is that self-service and governance are not at odds with each other. IT and business stakeholders on the project team are responsible for defining data and content governance together. In this presentation, we will discuss how getting the right balance of flexibility and control can help realize the benefits of both self-service and governance.
   speakers:
@@ -285,7 +275,7 @@
 
 - type: Data Leader Dialogue
   timeslot: 9:40 AM - 10:10 AM
-  timeslot_metadata: 2022-12-08T09:40:00+08:00
+  timeslot_metadata: 2022-07-08T09:40:00+08:00 - 2022-07-08T10:10:00+08:00
   title: 7 Habits of a Data-driven Government Organization
   desc: 'Data continues to grow at astounding rates, creating exciting opportunities for government agencies/departments to improve outcomes, enhance financial performance and create a better citizen experience. But when it comes to generating true value from various data and analytics investments, the differentiator often comes down to one or a mix of these 7 key principles. This session will highlight best practices from around the world on how they have adopted the 7 habits required to create a data-driven culture within your organization. Examples from local and international Qlik Public Sector customers will be highlighted throughout the discussion and questions will be encouraged.'
   speakers:
@@ -295,7 +285,7 @@
 
 - type: Data Leader Dialogue
   timeslot: 10:15 AM - 10:45 AM
-  timeslot_metadata: 2022-12-08T10:15:00+08:00
+  timeslot_metadata: 2022-07-08T10:15:00+08:00 - 2022-07-08T10:45:00+08:00
   title: 'Data Culture: A Step towards Analytics Maturity'
   desc: The ultimate goal of data strategy is to build a data culture where data is treated as an asset, everyone is empowered to use data to enhance their daily work, and fully utilize organization’s potential by making decisions more successful and insight-driven. Although everyone agrees that data is the new oil, the execution of data strategy has stalled at providing tools to data people. In this session, we will discuss the technology that can empower everyone with governed and trusted data & analytics platform, and how to inject insights to everywhere to achieve the true pervasive analytics.
   speakers:
@@ -305,7 +295,7 @@
 
 - type: Data Leader Dialogue
   timeslot: 10:45 AM - 11:15 AM
-  timeslot_metadata: 2022-12-08T10:45:00+08:00
+  timeslot_metadata: 2022-07-08T10:45:00+08:00 - 2022-07-08T11:15:00+08:00
   title: Elements of a modern Business Intelligence (BI) Platform
   desc: Data fuels digital transformation. For organizations to become more data-driven, instilling the data culture is pivotal. A new-age Business Intelligence platform is a catalyst for that culture. This talk will cover the key elements that a modern BI platform should have that go beyond dashboards and reports and truly brings the value of data for all.
   speakers:
@@ -315,7 +305,7 @@
 
 - type: Data Leader Dialogue
   timeslot: 11:15 AM - 11:30 AM
-  timeslot_metadata: 2022-12-08T11:15:00+08:00
+  timeslot_metadata: 2022-07-08T11:15:00+08:00 - 2022-07-08T11:30:00+08:00
   title: Discussion and Closing
   desc:
   speakers:
@@ -326,7 +316,7 @@
 #Speed Dataing
 - type: Speed Dataing
   timeslot: 10:00 AM - 11:00 AM
-  timeslot_metadata: 2022-12-08T10:00:00+08:00
+  timeslot_metadata: 2022-07-08T10:00:00+08:00 - 2022-07-08T11:00:00+08:00
   title: Our data-driven journey with State of ICT&SS Ministry Family Governance Dashboards
   desc: 'Join us on this session to learn more on our journey to digitalise the state of ICT&SS Governance Reporting through the use of visualisation dashboards to reduce toil and improve agility and speed to insights.'
   speakers:
@@ -342,7 +332,7 @@
 
 - type: Speed Dataing
   timeslot: 11:00 AM - 12:00 PM
-  timeslot_metadata: 2022-12-08T11:00:00+08:00
+  timeslot_metadata: 2022-07-08T11:00:00+08:00 - 2022-07-08T12:00:00+08:00
   title: Democratise AI for everyone
   desc: How does Google define and inspire an Artificial Intelligence (AI) learning journey to democratise AI? This is a sharing session on how Google technology and innovation, power research and applied AI to transform public, private and citizen services. Learn more as Dambo Ren presents (through partnering public sector customers) relevant and purposeful use cases in this session.
   speakers:
@@ -353,7 +343,7 @@
 # Afternoon Keynote
 - type: Day2, keynote
   timeslot: 01:30 PM - 02:00 PM
-  timeslot_metadata: 2022-12-08T13:30:00+08:00
+  timeslot_metadata: 2022-07-08T13:30:00+08:00 - 2022-07-08T14:00:00+08:00
   title: Becoming a Data Driven Bank – DBS Transformation Journey
   desc: The future for DBS lies in leveraging data and analytics to change the way we run business – so that we can be nimbler, reduce time to market, deliver exponential outcomes, and help create truly differentiated products, services and customer experiences. The talk will provide an overview of DBS’ digital transformation journey and highlight how the bank is tapping data-driven insights to redesign customer and employee solutions.
   speakers:
@@ -364,7 +354,7 @@
 # Launch of Data Arcade Tournament Tournament 2022
 - type: Data Arcade Tournament
   timeslot: 02:00 PM - 02:05 PM
-  timeslot_metadata: 2022-12-08T14:00:00+08:00
+  timeslot_metadata: 2022-07-08T14:00:00+08:00 - 2022-07-08T14:05:00+08:00
   title: Opening Address
   desc:
   speakers:
@@ -374,7 +364,7 @@
 
 - type: Data Arcade Tournament
   timeslot: 02:05 PM - 02:30 PM
-  timeslot_metadata: 2022-12-08T14:05:00+08:00
+  timeslot_metadata: 2022-07-08T14:05:00+08:00 - 2022-07-08T14:30:00+08:00
   title: Launch of DAT2022
   desc: Join us at the Launch of DAT2022, now in its 5th year running! We are debuting some exciting news – expect a new track partner, new awards and more prizes than ever! ​Be the first to catch the unveiling of our DAT202 theme, participation timeline, DAT2022 finale and more.
   speakers:
@@ -384,7 +374,7 @@
 
 - type: Data Arcade Tournament
   timeslot: 02:30 PM - 02:45 PM
-  timeslot_metadata: 2022-12-08T14:30:00+08:00
+  timeslot_metadata: 2022-07-08T14:30:00+08:00 - 2022-07-08T14:45:00+08:00
   title: 'Power BI : Leveraging AI and Making AI Accessible for Everyone'
   desc: An introduction to Power BI. AI is changing the way we get insights and drive results. See how Power BI leverages AI to aid in data exploration, automatically find patterns, help users understand what the data means, even help you code and create data marts to get more out of your data to tell your perfect story.
   speakers:
@@ -394,7 +384,7 @@
 
 - type: Data Arcade Tournament
   timeslot: 02:45 PM - 03:00 PM
-  timeslot_metadata: 2022-12-08T14:45:00+08:00
+  timeslot_metadata: 2022-07-08T14:45:00+08:00 - 2022-07-08T15:00:00+08:00
   title: My 5 Favourite Things About Qlik Sense
   desc: Join Qlik in this session and learn about Qlik Partnership with GovTech for DAT2022, Qlik's unique capabilities that you can use to build the winning dashboard, steps to registering for a test drive session and extending your knowledge into advanced topics like Geospatial, AutoML, automation and more.
   speakers:
@@ -404,7 +394,7 @@
 
 - type: Data Arcade Tournament
   timeslot: 03:00 PM - 03:15 PM
-  timeslot_metadata: 2022-12-08T15:00:00+08:00
+  timeslot_metadata: 2022-07-08T15:00:00+08:00 - 2022-07-08T15:15:00+08:00
   title: Start Your Own Tableau Story
   desc: Start your own amazing journey with Tableau! In this engaging 15 min segment, you will find who and what is Tableau, be introduced to Tableau Public Sector use cases, learn about what's in it for you and hear some amazing Tableau stories.
   speakers:
@@ -414,7 +404,7 @@
 
 - type: Data Arcade Tournament
   timeslot: 03:15 PM - 03:30 PM
-  timeslot_metadata: 2022-12-08T15:15:00+08:00
+  timeslot_metadata: 2022-07-08T15:15:00+08:00 - 2022-07-08T15:30:00+08:00
   title: 'The Quality of Life Approach: Towards a More Evidence-Informed Social Service Sector'
   desc: As main dataset sponsor of this year’s DAT, the NCSS will be introducing its Quality of Life research series which examine the well-being and needs of individuals across different groups in need of support, and two datasets that will be provided from the studies. To measure quality of life, NCSS is aligned with the World Health Organisation, which takes a holistic, person-centred approach towards understanding what people perceive of their position in life. NCSS will also share potential areas of collaboration with other public officers.
   speakers:
@@ -424,7 +414,7 @@
 
 - type: Data Arcade Tournament
   timeslot: 03:30 PM - 03:45 PM
-  timeslot_metadata: 2022-12-08T15:30:00+08:00
+  timeslot_metadata: 2022-07-08T15:30:00+08:00 - 2022-07-08T15:45:00+08:00
   title: Scaling Analytics and Delivering Insights in the Data Cloud
   desc: Discover how Snowflake enables you to deliver interactive data analytics regardless of the data volume and scale, and learn how to rapidly analyse large sets of data. Explore what's possible in the Data Cloud.
   speakers:
@@ -436,9 +426,9 @@
       title: Senior Sales Engineer, Public Sector, Snowflake
 
 # Product Demo Tracks (Concurrent)
-# PZ - note: edited
 - type: Demo
   timeslot: 03:30 PM - 03:45 PM
+  timeslot_metadata: 2022-07-08T15:30:00+08:00 - 2022-07-08T15:45:00+08:00
   title: Fraud Detection Platform
   desc: Introduction to Fraud Detection Platform, a WOG platform targeting grant fraud within Government Assistance Schemes.
   speakers:
@@ -448,7 +438,7 @@
 
 - type: Demo
   timeslot:
-  title: Analytics.gov - Enabling Data Exploitation for Whole-of-Government​
+  title: Analytics.gov - Enabling Data Exploitation for Whole-of-Government
   desc: With an increasing demand for data analytics driven work, there is a growing need to enable Whole-of-Government to carry out analytical work in a robust and secure environment. This presentation will share how the Data Engineering (DE) team has sought to build Analytics.gov, a data exploitation platform that supports agencies with their data exploitation work.
   speakers:
     - name: Hansel Ng
@@ -460,6 +450,7 @@
 
 - type: Demo
   timeslot: 03:30 PM - 03:45 PM
+  timeslot_metadata: 2022-07-08T15:30:00+08:00 - 2022-07-08T15:45:00+08:00
   title: GovText, the Text Analysis Platform for Whole of Government (WOG)
   desc: We deal with massive text data everyday, such as service feedback and news scanning. This session shares the basics of Natural Language Processing (NLP), or text analytics, and the different services brought by the text analytics platform GovText to the Whole of Government.
   speakers:
@@ -469,27 +460,29 @@
 
 - type: Demo
   timeslot: 03:30 PM - 03:45 PM
+  timeslot_metadata: 2022-07-08T15:30:00+08:00 - 2022-07-08T15:45:00+08:00
   title: Transcribe 101 – Know Your WOG Speech-To-Text Tool
   desc: Transcribe is a Speech-To-Text platform developed by GovTech DSAID for WOG officers and agencies. It provides speech-to-text services to users in many different scenarios such as interviews, speeches, and recent COS debate. Available in both Internet and Intranet environment, it is a flexible tool that WOG officers and agencies can use in their daily work routine. API services are also available for system integration which would be shared more in the session. Come find out more about Transcribe and the variety of features available!
   speakers:
     - name: Wang Xiaofan
       image: /assets/img/photos/wang-xiaofan.png
-      title: Associate Product Manager​, Data Science and Artificial Intelligence Division (DSAID), GovTech
+      title: Associate Product Manager, Data Science and Artificial Intelligence Division (DSAID), GovTech
 
 - type: Demo
   timeslot: 03:30 PM - 03:45 PM
+  timeslot_metadata: 2022-07-08T15:30:00+08:00 - 2022-07-08T15:45:00+08:00
   title: 'AMA: DAT2022'
   desc: Ask me anything!
   speakers:
     - name: Nicole Lee
       image: /assets/img/photos/nicole-lee.png
       title: Community Manager, Data Science and Artificial Intelligence Division (DSAID), GovTech
-## EDIT ENDS HERE
 
 # Industry Sharing
+# 2022-07-18T16:30:00+08:00
 - type: Industry Sharing
   timeslot: 04:30 PM - 05:00 PM
-  timeslot_metadata: 2022-12-08T16:30:00+08:00
+  timeslot_metadata: 2022-07-08T16:30:00+08:00 - 2022-07-08T17:00:00+08:00
   title: Large Language Models and Voice Assistants
   desc: Recent developments in large language models (LLMs) such as GPT-3 are opening new frontiers in how machine learning can be applied to real world problems. In this presentation, I will cover an overview of the technology behind these LLMs and how these developments could positively and negatively impact the future of voice assistants.
   speakers:

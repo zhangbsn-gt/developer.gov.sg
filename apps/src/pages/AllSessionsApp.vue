@@ -59,7 +59,10 @@
                 class="margin--bottom--none margin--left--none margin--right--sm"
               />
               {{ option.category.type }}
-              <span class="pilllist-icon pilllist-icon--checkLight" style="align-items: center">
+              <span
+                class="pilllist-icon pilllist-icon--checkLight"
+                style="align-items: center"
+              >
                 <i
                   class="sgds-icon sgds-icon-check margin--bottom--none is-size-7"
                   role="img"
@@ -75,7 +78,7 @@
     <div>
       <button
         type="button"
-        class="sgds-button"
+        class="sgds-button padding--left--none padding--right--none padding--top--none padding--bottom--none"
         @click="clearAllFilters"
         style="border: none; color: #007aff"
       >
@@ -92,13 +95,23 @@
         <div class="is-borderless">
           <!-- Header -->
           <div class="sgds-accordion-header is-active" style="border: 0px">
-            <p class="has-text-weight-semibold has-text-black">
-              {{ key }}
-            </p>
+            <div class="is-flex" style="align-items: center">
+              <p
+                class="has-text-weight-semibold has-text-black margin--bottom--none margin--right--sm"
+              >
+                {{ key }}
+              </p>
+              <small
+                v-if="result.isBannerActive"
+                class="blink small-rounded-corner has-background-success has-text-white padding--left--sm padding--right--sm padding--top--xs padding--bottom--xs"
+              >
+                Now
+              </small>
+            </div>
           </div>
           <!-- Content -->
           <div class="margin--sm">
-            <div v-for="(item, index) in result" :key="index">
+            <div v-for="(item, index) in result.events" :key="index">
               <div
                 class="sgds-card-variant-all-agenda-content margin--top--sm margin--left--xs margin--right--xs padding--sm has-text-dark"
               >
@@ -117,7 +130,11 @@
                   </div>
                 </div>
                 <!-- Time and category-->
-                <small>{{ item.timeslot }} / {{ item.category.type }} </small>
+                <small
+                  >{{ item.timeslot_metadata.start_time }} -
+                  {{ item.timeslot_metadata.end_time }} /
+                  {{ item.category.type }}
+                </small>
                 <!-- Description-->
                 <div
                   v-if="item.content"
@@ -145,7 +162,6 @@
 <script>
 import Card from "../lib/Card.vue";
 import Loader from "../lib/Loader.vue";
-import { convertDateForIos } from "../lib/communities";
 import useLunrSearch from "../composables/useLunrSearch";
 import { computed, ref, watch, onMounted } from "@vue/composition-api";
 
@@ -159,6 +175,8 @@ export default {
 
     const { jsonPath } = scriptElement.dataset;
 
+    // Inital rerender to true
+    const rerender = ref(true);
     const categorySelectedValues = ref("");
     const categoryOptions = ref([]);
     const pillSelectedValues = ref([]);
@@ -183,23 +201,28 @@ export default {
 
     const initialiseCategoryValues = () => {
       categoryOptions.value = computed(() => {
-        const unfilteredOptions = searchResults.value.map(item => {
-          return item.timeslot_metadata.date;
-        });
+        // Sort by date
+        const unfilteredSortedSearchResult = searchResults.value.sort(
+          (a, b) => {
+            const dateA = new Date(a.timeslot_metadata.start_date);
+            const dateB = new Date(b.timeslot_metadata.start_date);
+            return dateA - dateB;
+          }
+        );
 
-        // Sort the filtered options by date
-        const sortedFilteredOptions = Array.from(
-          new Set(unfilteredOptions)
-        ).sort((a, b) => {
-          const dateA = new Date(a);
-          const dateB = new Date(b);
-          return dateA - dateB;
-        });
+        // Get unique dates
+        const filteredSortedSearchResult = Array.from(
+          new Set(
+            unfilteredSortedSearchResult.map(item => {
+              return item.timeslot_metadata.date;
+            })
+          )
+        );
 
         // Set the active item to the first item in the sorted filtered options
-        categorySelectedValues.value = sortedFilteredOptions[0];
+        categorySelectedValues.value = filteredSortedSearchResult[0];
 
-        return sortedFilteredOptions;
+        return filteredSortedSearchResult;
       });
     };
 
@@ -222,12 +245,10 @@ export default {
             return acc;
           }, [])
           .sort((a, b) => {
-            const dateA = convertDateForIos(a.timeslot_metadata.full_date);
-            const dateB = convertDateForIos(b.timeslot_metadata.full_date);
+            const dateA = new Date(a.timeslot_metadata.start_date);
+            const dateB = new Date(b.timeslot_metadata.start_date);
             return dateA - dateB;
           });
-
-        console.log(filteredOptions);
 
         // Spread the filtered options into an array of strings
         const stringFilteredOptions = filteredOptions.map(item => {
@@ -263,10 +284,12 @@ export default {
 
     watch(categorySelectedValues, function (newValue) {
       categorySelectedValues.value = newValue;
+      rerender.value = true;
     });
 
     watch(pillSelectedValues, function (newValue) {
       pillSelectedValues.value = newValue;
+      rerender.value = true;
     });
 
     const filteredResult = computed(() => {
@@ -280,23 +303,51 @@ export default {
         pillSelectedValues.value.includes(item.category.type)
       );
 
+      // Add extra attribute to the filteredSearchResultByCategory, isActive, which is used to display whether the event is currently active or not
+      let iterations = filteredSearchResultByCategory.length;
+      const filteredSearchResultByCategoryWithActive =
+        filteredSearchResultByCategory.map(item => {
+          if (rerender.value) {
+            if (!isLoading.value && !--iterations) {
+              rerender.value = false;
+            }
+
+            const currentDate = new Date();
+            const startDate = new Date(item.timeslot_metadata.start_date);
+            const endDate = new Date(item.timeslot_metadata.end_date);
+
+            const isActive = currentDate >= startDate && currentDate <= endDate;
+            return {
+              ...item,
+              isActive,
+            };
+          } else {
+            return item;
+          }
+        });
+
       // After filtering the data, next we will sort the data by date
-      const sortedFilteredSearchResult = filteredSearchResultByCategory.sort(
-        (a, b) => {
-          const dateA = convertDateForIos(a.timeslot_metadata.full_date);
-          const dateB = convertDateForIos(b.timeslot_metadata.full_date);
+      const sortedFilteredSearchResult =
+        filteredSearchResultByCategoryWithActive.sort((a, b) => {
+          const dateA = new Date(a.timeslot_metadata.start_date);
+          const dateB = new Date(b.timeslot_metadata.start_date);
+
           return dateA - dateB;
-        }
-      );
+        });
 
       // After sorting the data, aggregrate / group the data by the date
       const groupedFilteredSearchResult = sortedFilteredSearchResult.reduce(
         (acc, curr) => {
-          const date = curr.timeslot_metadata.time;
+          const date = curr.timeslot_metadata.start_time;
           if (!acc[date]) {
-            acc[date] = [];
+            acc[date] = { events: [], isBannerActive: false };
           }
-          acc[date].push(curr);
+
+          acc[date].events.push(curr);
+
+          if (curr.isActive) {
+            acc[date].isBannerActive = true;
+          }
           return acc;
         },
         {}
@@ -319,6 +370,12 @@ export default {
       };
     });
 
+    // Every 20 seconds, set rerender to true, which will trigger the computed function to re-render the data
+    // this is because rerendering is expensive and shouldnt always be triggered
+    setInterval(() => {
+      rerender.value = true;
+    }, 20 * 1000);
+
     return {
       searchQuery,
       isLoading,
@@ -336,4 +393,8 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.small-rounded-corner {
+  border-radius: 0.2em;
+}
+</style>
