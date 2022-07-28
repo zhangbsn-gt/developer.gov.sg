@@ -55,24 +55,27 @@
           </div>
         </div>
       </div>
-
       <div>
+        <!-- Loader -->
         <loader :active="isLoading" />
+        <!-- Content-->
         <div class="sgds-container search-content" v-show="!isLoading">
+          <!-- Count -->
           <p id="search-result-number-of-results" class="margin--top--sm">
             {{
               isNonEmptySearch
-                ? `Returned ${filteredResult.currentNumberOfItems} out of ${filteredResult.sanitizedFilteredSearchResultByPage.length} results:`
+                ? `Returned ${filteredResult.currentNumberOfItems} out of ${filteredResult.filteredSearchResult.length} results:`
                 : "No search query specified."
             }}
           </p>
+          <!-- Status -->
           <h6 class="is-danger" v-if="errorMsg">{{ errorMsg }}</h6>
           <!-- Results -->
           <div v-if="isNonEmptySearch">
             <div id="search-full-site-results">
               <div
-                v-for="result of filteredResult.sanitizedFilteredSearchResultByPage"
                 :key="result.url"
+                v-for="result of filteredResult.sanitizedFilteredSearchResultByPage"
                 class="margin--bottom--lg"
               >
                 <h5 class="margin--bottom--xs">
@@ -224,6 +227,7 @@ export default {
               currentPage.value * rowsPerPage.value
             );
 
+      // Sanitizing the end result
       const sanitizedFilteredSearchResultByPage =
         filteredSearchResultByPage.map(item => {
           return {
@@ -235,7 +239,7 @@ export default {
         });
 
       const currentNumberOfItems =
-        filteredSearchResultByPage.length +
+        sanitizedFilteredSearchResultByPage.length +
         (currentPage.value - 1) * rowsPerPage.value;
 
       // Returns all objects
