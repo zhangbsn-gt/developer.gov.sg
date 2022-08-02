@@ -12,12 +12,16 @@ redirect_from:
 
 ### Overview
 
-[SHIP-HATS](./overview){:target="_blank"} manages its tenants through subscriptions and only agencies can subscribe to SHIP-HATS. Agencies can extend subscriptions to non-agency users such as vendors. **There are 4 subscription tiers: Starter, Squad, Team, and Tribe.**
+[SHIP-HATS](./overview){:target="_blank"} manages its tenants through subscriptions and only agencies can subscribe to SHIP-HATS. Agencies can extend subscriptions to non-agency users such as vendors. 
+
+Table 1 shows the subscription details of SHIP-HATS 1.0. We are working on SHIP-HATS 2.0 subscription details - stay tuned for updates. 
+
+**There are 4 subscription tiers: Starter, Squad, Team, and Tribe. in SHIP-HATS 1.0**
 
 <figure style="text-align: center">
   <img
     src="/assets/img/ship-hats-subscription-table.png" width="80%" height="80%" 
-    alt="Table 1: SHIP-HATS Resources and Services For Subscription Tiers & Add-Ons"
+    alt="Table 1: SHIP-HATS 1.0 Resources and Services For Subscription Tiers & Add-Ons"
   />
   <figcaption>Table 1: SHIP-HATS Resources and Services For Subscription Tiers & Add-Ons</figcaption>
 </figure>
