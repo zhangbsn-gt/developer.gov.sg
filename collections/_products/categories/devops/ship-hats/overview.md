@@ -1,5 +1,5 @@
 ---
-title: SHIP-HATS - Your CI/CD Solutions
+title: SHIP-HATS - Your CI/CD Solution
 layout: layout-page-sidenav
 description: The Continuous Integration/Continuous Delivery [CI/CD] component within SG Tech Stack (SGTS) with security and governance guardrails that enables developers to plan, build, test and deploy code to production.
 sub_collection_render: true
@@ -21,9 +21,9 @@ redirect_from:
 
 ### What is SHIP-HATS?
 
-**SHIP (Secure Hybrid Integration Pipeline)-HATS (Hive Agile Testing Solutions)** is the Continuous Integration/Continuous Delivery [CI/CD](https://en.wikipedia.org/wiki/CI/CD){:target="_blank"} component within SG Government Tech Stack (SGTS) with security and governance guardrails that enables developers to plan, build, test and deploy code to production.
+**SHIP (Secure Hybrid Integration Pipeline)-HATS (Hive Agile Testing Solutions)** is Continuous Integration/Continuous Delivery [CI/CD](https://en.wikipedia.org/wiki/CI/CD){:target="_blank"} component within SG Government Tech Stack (SGTS) with security and governance guardrails that enables developers to plan, build, test and deploy code to production.
 
-This is a multi-tenanted Software-as-a-Service (SaaS) hosted on Government Commercial Cloud (GCC) for all applications that is classified as restricted and below.
+This is a multi-tenanted Software-as-a-Service (SaaS) based end-to-end CI/CD for all applications that is classified as restricted and below.
 
 [Why is CI/CD important?](https://youtu.be/RlZCyexsJBc?t=260){:Target="_blank"}
 
@@ -34,46 +34,33 @@ This is a multi-tenanted Software-as-a-Service (SaaS) hosted on Government Comme
 3. **Visibility & Transparency:** Agencies will always have access to source code and hence a better understanding of how the project is progressing.
 4. **Shortened Time-to-market:** Agencies can shorten the time to market by leveraging on SHIP-HATS CI/CD tools with predefined & re-usable configurations into their system and do not have to invest in resources/time to do procurement with different commercial providers. Agencies also do not have to invest resources to re-train staff who were re-deployed across agencies.
 5. **Economies of Scale:** SHIP-HATS purchases licenses in bulk and redistributes them for use in smaller quantities to agencies and is offered as a complete package with no hidden cost.
-6. **GovTech Managed:** The CI/CD tools are set-up, hosted, maintained and supported by GovTech letting you focus on your core application.
-
+6. **GovTech Managed:** The CI/CD tools are procured and managed by GovTech letting you focus on your core application.
+7. **Performance Management Dashboard:** Value-Stream Measurement capabilities that allow Agencies to capture key industry metrics, such as lead time to deployment and deployment frequency, to monitor the effectiveness of their DevSecOps practices
 ### Tools in SHIP-HATS
 
 |     Category  |                  Tools                     |
 |     --------  | ------------------------------------------ |
-|  Development  |        Jira, Confluence, Bitbucket         |
-|     Build     |         Bamboo, Nexus IQ, Nexus Repository        |
-| QA & Security | pCloudy, SonarQube, Fortify SCA & WebInspect, Prisma Cloud Container Image Scanner, Accessibility |
-|    Release    |                Digital.ai                  |
+|  Project Management  |        GitLab Service Desk, Issues & Wiki, Jira (Cloud), Confluence (Cloud)         |
+|  Development, Build, Release  |       GitLab        |
+| QA & Security | GitLab, SonarQube, Fortify SCA & WebInspect, Prisma Cloud Container Image Scanner |
 
 
-Check out [Tools in SHIP-HATS](https://docs.developer.gov.sg/docs/ship-hats-documentation/#/architecture-diagram?id=tools-in-ship-hats){:Target="_blank"} to learn more, find documentation and tutorials.
+Check out [Tools in SHIP-HATS 2.0](https://docs.developer.tech.gov.sg/docs/ship-hats-migration/#/ship-hats-migration-overview?id=change-summary){:Target="_blank"} to learn more.
 
 ### Technical Documentation
 
-1. [SHIP-HATS technical documentation](https://docs.developer.tech.gov.sg/docs/ship-hats-documentation/#/){:Target="_blank"}.
-2. [DevSecOps Playbook](https://docs.developer.tech.gov.sg/docs/devsecops-playbook/#/){:Target="_blank"}.
+1. SHIP-HATS 2.0 technical documentation - Coming soon!
+2. [SHIP-HATS 1.0 technical documentation](https://docs.developer.tech.gov.sg/docs/ship-hats-documentation/#/){:Target="_blank"}.
+3. [DevSecOps Playbook](https://docs.developer.tech.gov.sg/docs/devsecops-playbook/#/){:Target="_blank"}.
 
-### Roadmap
-
-<figure style="text-align: center">
-  <img
-    src="https://user-images.githubusercontent.com/85614716/123921126-44b7b780-d9b9-11eb-9daf-61b3c587fc21.png"
-    alt="Fig 1: SHIP-HATS Roadmap"
-  />
-  <figcaption>Fig 1: SHIP-HATS Roadmap</figcaption>
-</figure>
 
 ### What’s New?
 
-We heard your feedback on Annual Developer Satisfaction Survey 2021 and we are doubling down on providing solid documentation on our products. [Find out what's new](./what-s-new){:target="_blank"}
-
-### Resources
-
-Here are some [training resources](./training-resources){:target="_blank"} to get started.
+SHIP-HATS 2.0 tools are announced! Check out the [migration documentation](https://docs.developer.tech.gov.sg/docs/ship-hats-migration/#/ship-hats-migration-to-2.0) for details. 
 
 ### Subscription
 
-Interested to get started? Check out the [subscriptions](./subscription){:target="_blank"} details.
+While we work on SHIP-HATS 2.0 subscription details, you can check out [SHIP-HAT 1.0 subscriptions](./subscription){:target="_blank"} details. Stay tuned for updates. 
 
 ### Contact Us
 
