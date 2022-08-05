@@ -15,21 +15,26 @@ collection_group: [Singapore Government Tech Stack, Data Science and Artificial 
 description: Transcribe provides auto-transcription and localised Speech-to-Text services for Singapore government officers. Find out more here.
 ---
 
-![Transcribe header banner](/assets/img/Transcribe-HeaderBanner-v1.png)
+![Transcribe header banner](/assets/img/Transcribe-HeaderBanner-v2.png)
 
 Transcribe is a Speech-to-Text (STT) platform with auto-transcription technologies and localised STT services across various speech models and data classification. Its Application Programming Interfaces (APIs) enable integration with other systems. 
 
-Transcribe can be used to produce transcripts of interviews, speeches and meeting minutes. Given the confidential nature of government documents, the platform is designed to be secure, yet easily accessible. Transcribe aims to improve the productivity of public officers with these unique offerings: 
+Transcribe can be used to produce transcripts of interviews, speeches and meeting minutes. Given the confidential nature of government documents, the platform is designed to be secure, yet easily accessible.
 
+### Key Features
+
+Transcribe aims to improve the productivity of public officers with these unique offerings:
 - Available on both Internet and the Intranet environment for flexible use 
 - Hosts up to Restricted and Sensitive Normal data 
 - From mid-August 2022, there will be no additional registration process required for all public officers 
-- Open to addressing agencies' needs through collaboration on operational use cases and model adaptation
 
 Other key features include:
+- Open to addressing agencies' needs through collaboration on operational use cases and model adaptation
 - Live and media file transcription 
 - Workspace collaboration across Whole-of-Government 
 - Multi-language support
+
+### Success Story
 
 Transcribe was first used in Parliament Sittings to generate verbatim transcripts for Parliament users to produce the Hansard Report. This was done by integrating Transcribe into the workflow. By using Transcribe, Parliament users were also able to reduce the man hours from 2.5hrs to 1.5hrs for each 15 min transcript produced. 
 

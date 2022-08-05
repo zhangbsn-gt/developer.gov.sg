@@ -15,19 +15,21 @@ collection_group: [Singapore Government Tech Stack, What's New]
 description: TechBiz is a service management tool for government officers to manage SGTS services on a single console. Find out more here!
 ---
 
-![TechBiz header banner](/assets/img/techbiz-HeaderBanner-v1.png)
+![TechBiz header banner](/assets/img/techbiz-HeaderBanner-v2.png)
 
 TechBiz is a service management tool that helps government officers discover, subscribe, and manage SGTS services on a single console. It is currently in the Beta stage and is one of the three tools in the Engineering Suite of the SGTS. The other two tools are [TechPass](https://www.developer.tech.gov.sg/products/categories/digital-identity/techpass/overview.html){:target="\_blank"} and TechHelp, which are in the General Availability (GA) and development stages respectively.
 
 By integrating all SGTS services into a single console and offering a consistent and streamlined interface for users, TechBiz overcomes the complexity of reconciling subscription plans, resource usage and invoicing data across multiple services as more SGTS products are rolled out across the government.
 
-**The key features of TechBiz includes:**
+### Key Features
+
+The key features of TechBiz includes:
 
 - Contract and portfolio management
 - Digital billing
 - Monitoring and reporting of data
 
-**The benefits of TechBiz are as follows.**
+### Benefits
 
 For Product Tenants:
 - Reduced operational effort in managing the onboarding of new subscribers
