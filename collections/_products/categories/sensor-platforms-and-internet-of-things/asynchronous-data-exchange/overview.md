@@ -138,6 +138,7 @@ ADEX has extended its fee waiver trial till end of FY21 (31 March 2022) and will
 
 If your agency has real-time data sharing needs across agencies, ADEX could be a suitable platform for your use case. Alternatively, if you require another agency's data, sensors or non-sensors, we can help to broker.
 
-### Contact Information
+### Contact Us
 
-For enquiries, email <sense@tech.gov.sg>.
+{% include contact-us-form.html %}
+

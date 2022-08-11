@@ -80,9 +80,9 @@ Feature enhancements are also in the works to add more customisability to the co
 
 On top of feature enhancements, the team will be creating additional patterns and templates.
 
-### Contact Information
+### Contact Us
 
-For enquiries, fill up this [form](https://form.gov.sg/#!/5bc440ac507956000fdbae91){:target="_blank"} and the SGDS team will assist with your query.
+{% include contact-us-form.html %}
 
 <br/>**Technical Resources**
 - [SGDS Guide for Developers](https://www.designsystem.tech.gov.sg/guides/developers-accessibility/){:target="_blank"}

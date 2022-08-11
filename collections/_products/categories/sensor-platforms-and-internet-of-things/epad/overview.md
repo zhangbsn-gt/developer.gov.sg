@@ -86,9 +86,9 @@ The team is also working on eCamera, a software application that aims to be more
 
 Both the ePAD and eCamera will be showcased as a complete and integrated assistive system in December 2021. It will be presented during the “Disabled can Volunteer – as an inclusive photographer” event.
 
-### Contact Information
+### Contact Us
 
-For enquiries, email <info@tech.gov.sg>.
+{% include contact-us-form.html %}
 
 ### Meet the Team!
 

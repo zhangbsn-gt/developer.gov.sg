@@ -97,6 +97,6 @@ These features will be introduced progressively from early 2022.
   <figcaption>Fig 2: GoBusiness Personalised Dashboard</figcaption>
 </figure>
 
-### Contact Information
+### Contact Us
 
-For enquiries, fill in this [form](https://go.gov.sg/gobizcollab){:target="\_blank"}.
+{% include contact-us-form.html %}

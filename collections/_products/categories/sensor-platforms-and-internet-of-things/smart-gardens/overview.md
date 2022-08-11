@@ -53,9 +53,9 @@ Currently, the Sensors and IoT (SIOT) team at GovTech is working on an operation
 
 The SIOT team is also working to develop IoT systems for the Whole-Of-Government (WOG) and integrate the Gardens by the Bay IoT systems into a DECADA system. This is a multi-tenant IoT Cloud platform that provides support for device management, dashboard, controls and data acquisition capabilities.
 
-### Contact Information
+### Contact Us
 
-For enquiries, email <Christopher_TONG@tech.gov.sg>.
+{% include contact-us-form.html %}
 
 ### Meet the Team!
 

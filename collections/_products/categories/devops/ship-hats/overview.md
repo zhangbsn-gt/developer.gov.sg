@@ -64,4 +64,5 @@ While we work on SHIP-HATS 2.0 subscription details, you can check out [SHIP-HAT
 
 ### Contact Us
 
-Got feedback on SHIP-HATS? Submit your feedback in [SHIP-HATS Enquiry](./ship-hats-enquiries){:target="_blank"} and we will respond within 5 business days.
+{% include contact-us-form.html %}
+

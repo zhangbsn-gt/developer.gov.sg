@@ -45,4 +45,4 @@ OSG is free for onboarding in FY22. From FY23 onwards, there will be a fee to on
 
 ### Contact Us
 
-Reach out to the product team with your queries or feedback through this [form.](https://form.gov.sg/#!/62280856ba91100012050933){:target="\_blank"} 
+{% include contact-us-form.html %} 

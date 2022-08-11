@@ -103,6 +103,6 @@ The Singpass Digital IC is currently accepted by all government agencies as well
 
 The team will also continue to enhance the user interface and usability of the Singpass app to make digital transactions fuss-free for everyone. Users may also expect more digital identity cards and corporate account switching capabilities added to the app, and more public and private sector services integrated with Singpass APIs.
 
-### Contact Information
+### Contact Us
 
-For enquiries, contact the team at <support@singpass.gov.sg>.
+{% include contact-us-form.html %}

@@ -99,7 +99,11 @@ Smart features such as chatbot and an online interactive helpdesk will be availa
 
 On top of traditional operation center capabilities, SNOC will also be incorporating next generation of operations such as smart facility management. This allows operators to interact with the physical world through a digital platform.
 
-### Contact Information
+### Operations Support
 
-Government agencies interested in SNOC’s services may contact <sensors@tech.gov.sg>.
 For operational or technical support, contact the SNOC Service Desk at <SNSP_Service_Desk@tech.gov.sg>.
+
+### Contact Us
+
+{% include contact-us-form.html %}
+

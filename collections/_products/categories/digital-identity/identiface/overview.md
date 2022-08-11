@@ -64,9 +64,9 @@ Identiface is currently available for organisations to integrate with their digi
 
 Find out more about Identiface [here](https://api.singpass.gov.sg/library/identiface/business/introduction){:target="\_blank"}.
 
-### Contact Information
+### Contact Us
 
-For enquiries, email <biometrics_support@ndi.gov.sg>.
+{% include contact-us-form.html %}
 
 <br/>**Resources**
 

@@ -64,9 +64,9 @@ For more information, click [here](https://docs.developer.tech.gov.sg/docs/techp
 
 TechPass is working to support one-time password (OTP) authentication, system-to-system account authentication, Central Account Management (AM), and more. Stay tuned for updates!
 
-### Contact Information
+### Contact Us
 
-For enquiries or feedback, please fill in this [form](https://go.gov.sg/engineering-suite-form){:target="_blank"} and the product team will respond within 5 working days.
+{% include contact-us-form.html %}
 
 <br/>**Technical Resources**
 

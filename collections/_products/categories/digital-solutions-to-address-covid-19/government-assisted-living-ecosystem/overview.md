@@ -46,6 +46,6 @@ The aim is to reduce the financial impact of COVID-19 to the vulnerable and unde
 GALE CMS was further enhanced with another new sub-system to enable SGO and their volunteers to engage elderly through various channels e.g. House Visits,
 video conference to educate and encourage elderly to be vaccinated.
 
-### Get Started
+### Contact Us
 
-To find out more, please contact <gale_support@tech.gov.sg>.
+{% include contact-us-form.html %}

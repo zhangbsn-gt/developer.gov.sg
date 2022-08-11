@@ -91,9 +91,9 @@ Plugins in the following categories are currently available:
 
 DECADA Edge has been successfully deployed and is running in various projects including Smart Offices, [Smart Gym](/products/categories/sensor-platforms-and-internet-of-things/smartgym){:target="\_blank"} and Smart Lamppost (CETRAN).
 
-### Contact Information
+### Contact Us
 
-If you are interested to learn more and get started on DECADA, please email <tony_varghese@tech.gov.sg>.
+{% include contact-us-form.html %}
 
 ### Meet the Team!
 

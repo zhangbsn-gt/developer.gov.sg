@@ -72,6 +72,6 @@ The product team is looking to increase automation processes so that fewer human
 
 The team is also working on developing ways to better understand user behaviour. Currently, feedback is received via star ratings and thumbs up/down buttons that are explicitly provided by users of the chatbot. In the future, the team is also looking to incorporate implicit feedback via the types of queries posed and their associated contexts.
 
-### Contact Information
+### Contact Us
 
-For enquiries, email <daniel_chong@tech.gov.sg>.
+{% include contact-us-form.html %}

@@ -63,9 +63,9 @@ Login is available for private sector businesses to use for their digital servic
 
 Find out more about Login [here](https://api.singpass.gov.sg/library/login/business/introduction){:target="\_blank"}.
 
-### Contact Information
+### Contact Us
 
-For enquiries, email <engagement_office@assurity.sg>.
+{% include contact-us-form.html %}
 
 <br/>**Resources**
 

@@ -84,6 +84,6 @@ GCC 2.0 will be leveraged as a whole-of-government (WOG) platform along with the
   <figcaption>Fig 2: GCC 2.0 roadmap (subject to changes)</figcaption>
 </figure>
 
-### Contact Information
+### Contact Us
 
-For enquiries, email <info@tech.gov.sg>.
+{% include contact-us-form.html %}

@@ -123,9 +123,9 @@ To add to this, more government agencies have expressed interest to adopt GovWal
 
 The GovWallet team is embarking on the journey to build a self-service portal for agency users to better administer their schemes and for citizens to view their GovWallet pay outs and spending transactions.
 
-### Contact Information
+### Contact Us
 
-For general enquiries, reach out to the product team through this [form](https://safe.menlosecurity.com/https://form.gov.sg/#!/62280856ba91100012050933){:target="_blank"}.
+{% include contact-us-form.html %}
 
 ### Meet the Team!
 

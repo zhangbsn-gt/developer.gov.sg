@@ -68,6 +68,6 @@ To start using BookingSG, fill out this [form](https://form.gov.sg/#!/605a9d2e7b
 
 Currently the BookingSG team is improving the product allow it to be more holistic and comparable to commercial SaaS products. This will facilitate the onboarding of more Government agencies into BookingSG.
 
-### Contact Information
+### Contact Us
 
-For enquiries, please fill in this [form](https://form.gov.sg/#!/605a9d2e7b204500129b33c7){:target="\_blank"}.
+{% include contact-us-form.html %}

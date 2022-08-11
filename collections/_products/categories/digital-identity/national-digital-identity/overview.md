@@ -100,4 +100,8 @@ For example, businesses can request authorisation from users to share informatio
 
 ### For more information
 
-Please read the [Singpass-API documentation](https://api.singpass.gov.sg/) or [contact the Singpass Engagement team](https://go.gov.sg/engage-ndi).
+Please read the [Singpass-API documentation](https://api.singpass.gov.sg/).
+
+### Contact Us
+
+{% include contact-us-form.html %}

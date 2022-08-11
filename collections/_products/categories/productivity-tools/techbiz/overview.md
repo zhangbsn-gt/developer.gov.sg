@@ -43,4 +43,4 @@ TechBiz is now integrated with [Container Stack](https:/www.developer.tech.gov.s
 
 ### Contact Us
 
-Reach out to the product team with your queries or feedback through this [form](https://form.gov.sg/#!/62280856ba91100012050933){:target="\_blank"} 
+{% include contact-us-form.html %}

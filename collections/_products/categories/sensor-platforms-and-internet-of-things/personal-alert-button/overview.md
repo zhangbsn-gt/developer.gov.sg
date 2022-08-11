@@ -107,9 +107,9 @@ _“I was feeling breathless, I can’t reach the phone. I can’t even tell the
 
 The team is exploring opportunities to deploy the PAB beyond the current 53 rental housing blocks.
 
-### Contact Information
+### Contact Us
 
-For enquiries, contact <gale_support@tech.gov.sg>.
+{% include contact-us-form.html %}
 
 ### Meet the Team!
 

@@ -71,9 +71,9 @@ The MOE Digital Office leveraged CStack to launch a campaign microsite for Teach
 
 CStack provided the development team a compliant platform which allowed them to reduce the scope of Vulnerability Assessment and Penetration Testing (VAPT).  The reduced scope then allowed them to complete the VAPT exercise within 1.5 months, despite the small team consisting of only three members.
 
-### Contact Information
+### Contact Us
 
-For enquiries, email <enquiries_cstack@tech.gov.sg>.
+{% include contact-us-form.html %}
 
 <br/>**Technical Resources**
 

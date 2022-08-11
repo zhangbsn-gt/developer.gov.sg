@@ -82,9 +82,9 @@ As there is strong demand from other government agencies to integrate with SGFin
 
 The underlying SGFinDex infrastructure can also be extended to other industries to provide secure data access across more organisations, hence bringing the breakthrough innovation of SGFinDex beyond the financial sector.
 
-### Contact Information
+### Contact Us
 
-For enquiries, email <support@sgdex.gov.sg>.
+{% include contact-us-form.html %}
 
 ### Meet the Team!
 

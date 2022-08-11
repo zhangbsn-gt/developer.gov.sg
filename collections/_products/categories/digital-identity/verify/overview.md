@@ -62,11 +62,9 @@ Verify is expected to be adopted by more organisations to facilitate contactless
 
 Find out more about Verify [here](https://api.singpass.gov.sg/library/verify/business/introduction){:target="\_blank"}.
 
-### Contact Information
+### Contact Us
 
-For business enquiries, email <partner@myinfo.gov.sg>.
-
-For technical enquiries, email <support@myinfo.gov.sg>.
+{% include contact-us-form.html %}
 
 <br/>**Resources**
 

@@ -73,12 +73,14 @@ There are multiple uses for DOSS. The examples below illustrate two benefits for
 
 - **SPOTON (v1.0):** SPOTON is a smart thermal scanner and the first smart sensor payload that was developed using the DOSS platform.
 
-### Contact Information
-
-For enquiries relating to DOSS, contact <sensors@tech.gov.sg>.
-
 ### Operations Support
 
 For operational or technical support for SNSP products such as DOSS, Government agencies can contact the Smart Nation Operation Centre (SNOC) at <SNSP_Service_Desk@tech.gov.sg>.
 
 For more information on the SNOC, visit this [page](snsp/snoc){:target="\_blank"}.
+
+### Contact Us
+
+{% include contact-us-form.html %}
+
+

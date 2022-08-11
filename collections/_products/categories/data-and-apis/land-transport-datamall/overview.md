@@ -38,6 +38,6 @@ DataMall is the only land transport services focused data and API platform by th
 
 Users can refer to the [API user guide](https://datamall.lta.gov.sg/content/dam/datamall/datasets/LTA_DataMall_API_User_Guide.pdf){:target="\_blank"} on how to utilise DataMall’s APIs.
 
-### Contact Information
+### Contact Us
 
-For general enquiries and feedback, you can reach out to LTA through this [form](https://form.gov.sg/#!/5e4369640f4d080011e9202c){:target="\_blank"}.
+{% include contact-us-form.html %}

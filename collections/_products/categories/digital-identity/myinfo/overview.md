@@ -82,9 +82,9 @@ The integration of Myinfo API to improve Wise’s customer onboarding process ha
 
 Myinfo is expected to integrate into more online services to faciliate seamless customer experiences and streamline business processes. Future plans for Myinfo will be showcased on this page when they are available.
 
-### Contact Information
+### Contact Us
 
-For enquiries, email <partner@myinfo.gov.sg>.
+{% include contact-us-form.html %}
 
 <br/>**Technical Resources**
 

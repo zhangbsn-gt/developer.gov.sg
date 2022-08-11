@@ -71,9 +71,9 @@ DECADA Cloud is used in nearly all of SIOT’s deployments. Some notable use-cas
 
 The [SafeEntry Gateway](/products/categories/digital-solutions-to-address-covid-19/safeentry){:target="\_blank"} pushes token data to DECADA Cloud, and relies on integrations within DECADA Cloud with other GovTech services to ensure that up-to-date information is always available to enable smooth contact tracing efforts.
 
-### Contact Information
+### Contact Us
 
-If you are interested to learn more and get started with DECADA, please email <tony_varghese@tech.gov.sg>.
+{% include contact-us-form.html %}
 
 ### Meet the Team!
 

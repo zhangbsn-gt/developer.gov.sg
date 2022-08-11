@@ -64,6 +64,6 @@ StackOps’ customer base grew from two to fifteen within five months. It is now
 
 -->
 
-### Contact Information
+### Contact Us
 
-For enquiries, contact us through this [form](https://form.gov.sg/#!/62280856ba91100012050933){:target="_blank"}
+{% include contact-us-form.html %}

@@ -65,6 +65,6 @@ Foreign entities can register for a Corppass account via either Singpass or Fore
 
 Corppass is currently used by more than 550,000 entities to conduct online transactions for over 250 services with agencies and to manage digital access of employees.
 
-### Contact Information
+### Contact Us
 
-For enquiries, email <support@corppass.gov.sg>.
+{% include contact-us-form.html %}

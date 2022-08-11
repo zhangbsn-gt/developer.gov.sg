@@ -104,9 +104,9 @@ Prior to the COVID-19 pandemic, numerous social service agencies have indicated 
 
 The eCanvas project also represents the start of GovTech’s assistive technology plans, with more products and prototypes for PWDs currently in the pipeline. This aligns with our goal of creating a more inclusive society through inclusive technologies!
 
-### Contact Information
+### Contact Us
 
-For enquiries, email <info@tech.gov.sg>.
+{% include contact-us-form.html %}
 
 ### Meet the Team!
 

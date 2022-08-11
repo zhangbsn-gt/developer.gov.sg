@@ -175,9 +175,9 @@ Sport Singapore, Gardens by the Bay, National Parks Board (NParks), and the Cent
 
 Generic implementation of Secure Boot Process and Firmware Over-the-Air (FOTA) Update are currently in the pipeline. Stay tuned!
 
-### Contact Information
+### Contact Us
 
-For enquiries, contact Christopher Tong (Product Manager) at <christopher_tong@tech.gov.sg>.
+{% include contact-us-form.html %}
 
 ### Meet the Team!
 

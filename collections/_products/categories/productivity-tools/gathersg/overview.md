@@ -65,6 +65,6 @@ In the next phase, social service and public officers can look forward co-creati
 
 As part of SGTS, the GatherSG team will also continue to enhance the base stack to enable more modular and scalable designs.
 
-### Contact Information
+### Contact Us
 
-For enquiries, contact <adrian_tan@tech.gov.sg>.
+{% include contact-us-form.html %}

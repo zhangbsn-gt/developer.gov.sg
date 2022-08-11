@@ -37,6 +37,6 @@ you may [contact MAS](https://www.mas.gov.sg/feedback/){:target="\_blank"}.
 
 If you wish to make use of MAS’ APIs to advance your business solutions, click [here](https://secure.mas.gov.sg/api/Search.aspx){:target="\_blank"} to start using the available datasets.
 
-### Contact Information
+### Contact Us
 
-For general enquiries and feedback you may reach out to MAS via this [form](https://www.mas.gov.sg/feedback/){:target="\_blank"}.
+{% include contact-us-form.html %}

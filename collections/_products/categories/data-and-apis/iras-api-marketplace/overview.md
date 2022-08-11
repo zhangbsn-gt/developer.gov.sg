@@ -64,8 +64,6 @@ Come 2022, the E-Stamping and Donation APIs will be made available for Software 
   <figcaption>Fig 1: IRAS API Roadmap 2.0</figcaption>
 </figure>
 
-### Contact Information
+### Contact Us
 
-If you have questions or would like to explore collaboration opportunities with IRAS, email <digital_partnerships@iras.gov.sg>.
-
-For technical queries or support on existing APIs, email <api_support@iras.gov.sg>.
+{% include contact-us-form.html %}

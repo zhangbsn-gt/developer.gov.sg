@@ -76,3 +76,7 @@ To volunteer with the OpenCerts team, indicate the project name and complete the
 **Commmitment**
 
 - Work remotely as much as possible.
+
+### Contact Us
+
+{% include contact-us-form.html %}

@@ -54,6 +54,6 @@ The Singapore National Employers Federation has integrated Myinfo business for [
 
 Since 11 November 2020, Myinfo business is publicly available for any organisation to tap on for their digital services. The team is looking to encourage more businesses to use Myinfo business for services that require entity and applicant’s personal data.
 
-### Contact Information
+### Contact Us
 
-For enquiries, you can email us at <partner@myinfo.gov.sg>.
+{% include contact-us-form.html %}

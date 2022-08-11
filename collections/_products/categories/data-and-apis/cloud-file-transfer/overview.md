@@ -52,4 +52,4 @@ Early adopters of CFT can enjoy the service for free till end FY22. An indicativ
 
 ### Contact Us
 
-Reach out to the product team with your queries or feedback through this [form](https://form.gov.sg/#!/62280856ba91100012050933){:target="\_blank"}
+{% include contact-us-form.html %}

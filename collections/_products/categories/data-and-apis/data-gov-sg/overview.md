@@ -43,4 +43,8 @@ The following data sharing principles help guide the Government agencies' Open D
 
 - Data shall be as raw as possible
 
-[Discover open data and APIs on data.gov.sg](https://data.gov.sg/)
+Discover open data and APIs on [data.gov.sg](https://data.gov.sg/).
+
+### Contact Us
+
+{% include contact-us-form.html %}

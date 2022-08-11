@@ -152,9 +152,9 @@ A later version of APEX 2.0 running on containers is planned in Q1 FY22, which w
 
 Administrative access to APEX is only available on the government intranet. Register for APEX through this [link](https://portal.apex.gov.sg/register){:target="\_blank"} or email us at <enquiries_apex@tech.gov.sg>.
 
-### Contact Information
+### Contact Us
 
-You can email us at <enquiries_apex@tech.gov.sg>.
+{% include contact-us-form.html %}
 
 <br/>**Technical Resources**
 

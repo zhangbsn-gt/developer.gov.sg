@@ -75,6 +75,6 @@ Users can download the LifeSG app from the App Store for iPhone users and Google
 
 For more details on LifeSG, including links to download the app, please visit <https://www.life.gov.sg>.
 
-### Contact Information
+### Contact Us
 
-If you have questions, technical reports, or feedback, please click [here](https://www.life.gov.sg/get-in-touch){:target="\_blank"}.
+{% include contact-us-form.html %}

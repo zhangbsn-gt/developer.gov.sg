@@ -77,9 +77,9 @@ Upcoming features for AMS include:
   <figcaption>Fig 3: AMS Roadmap</figcaption>
 </figure>
 
-### Contact Information
+### Contact Us
 
-For enquires, email <AMS_Engage@digitalworkplace.gov.sg>.
+{% include contact-us-form.html %}
 
 <br/>**Other Resources**
 

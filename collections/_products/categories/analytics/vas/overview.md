@@ -154,9 +154,9 @@ Work is in progress for VAS to support the following features in future releases
 -	Selected Commercial off the Shelf (COTS) solutions
 -	Enhanced insights reports and API offerings
 
-### Contact Information
+### Contact Us
 
-For enquiries, fill in this [form](https://go.gov.sg/vasenquiry){:target="\_blank"}.
+{% include contact-us-form.html %}
 
 ### Meet the Team!
 

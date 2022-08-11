@@ -153,9 +153,9 @@ such as through the implementation of an upcoming app that allows users to acces
   <figcaption>Fig 5: SmartGym Roadmap</figcaption>
 </figure>
 
-### Contact Information
+### Contact Us
 
-To find out more about SmartGym, please email <SmartGym_Support@tech.gov.sg>.
+{% include contact-us-form.html %}
 
 ### Meet the Team!
 

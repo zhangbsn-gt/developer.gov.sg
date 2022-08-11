@@ -127,6 +127,6 @@ The MyNiceHome team achieves web personalisation simply by integrating it with t
 
 The Personalise team aims to roll out both email and web personalisation tools to most government digital services over a one-year period. The team is also exploring cross-government collaborations to create a seamless citizen journey regardless of which touchpoints citizens land on.
 
-### Contact Information
+### Contact Us
 
-To get started, submit queries or provide feedback, ideas and suggestions, email <hello@personalise.gov.sg>.
+{% include contact-us-form.html %}
