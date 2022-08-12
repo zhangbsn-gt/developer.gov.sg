@@ -224,6 +224,13 @@
     - Resources
     - Meet The Team
 
+- name: Secure Infrastructure-as-Code
+  items:
+    - Overview
+    - Features
+    - Getting Started
+    - Resources
+
 # Platform
 - name: GoBusiness
   items:
