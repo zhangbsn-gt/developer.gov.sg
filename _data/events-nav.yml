@@ -5,7 +5,7 @@
   event_type: In-person event
   event_date: 2022-11-14T00:00:00.000Z
   event_registration_end_date:
-  event_registration_link:
+  event_registration_link: https://form.gov.sg/#!/62b1879d0c90650012931edb
   items:
     - item_name: Overview
 
