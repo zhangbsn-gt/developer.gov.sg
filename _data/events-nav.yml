@@ -2,8 +2,9 @@
 - name: STACK 2022 Developer Conference
   event_category: Conference
   event_description: With over 4,000 attendees expected to attend, we invite you to join the conversation! Send us your content proposal for what you wish to share with our attendees.
-  event_type: In-person event
+  event_type: In-person/virtual event
   event_date: 2022-11-15T00:00:00.000Z
+  event_number_of_days: 2
   event_registration_end_date:
   event_registration_link: https://form.gov.sg/#!/62b1879d0c90650012931edb
   items:
