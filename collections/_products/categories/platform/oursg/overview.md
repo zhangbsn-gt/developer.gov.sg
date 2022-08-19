@@ -3,6 +3,7 @@ title: OurSG Grants Portal – Creating Seamless Grant Administrative Processes 
 layout: layout-page-sidenav
 category: Platform
 _data: single-level-nav
+collection_group: [Citizen-facing Products]
 sub_collection_render: true
 single_level_nav: true
 description: OurSG (OSG) Grants is a one-stop, integrated portal that consolidates the Government's community and social grants into a single platform.

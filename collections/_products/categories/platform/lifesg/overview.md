@@ -5,6 +5,7 @@ category: Platform
 sub_collection_render: true
 single_level_nav: true
 _data: single-level-nav
+collection_group: [Citizen-facing Products]
 redirect_from:
   - /products/categories/platform/lifesg/
   - /products/categories/platform/lifesg.html

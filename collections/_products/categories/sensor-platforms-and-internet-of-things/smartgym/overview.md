@@ -5,6 +5,7 @@ category: Sensors and IOT
 sub_collection_render: true
 single_level_nav: true
 _data: single-level-nav
+collection_group: [Citizen-facing Products]
 redirect_from:
   - /products/categories/sensor-platforms-and-internet-of-things/smartgym/
   - /products/categories/sensor-platforms-and-internet-of-things/smartgym.html

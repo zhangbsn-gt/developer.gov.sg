@@ -3,6 +3,7 @@ title: BookingSG – A Pre-Booking Tool for Calendaring, Availability, Rostering
 layout: layout-page-sidenav
 category: Data and APIs
 _data: single-level-nav
+collection_group: [Citizen-facing Products]
 redirect_from:
     - /products/categories/data-and-apis/bookingsg/
     - /products/categories/data-and-apis/bookingsg.html

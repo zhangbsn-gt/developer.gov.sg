@@ -8,7 +8,34 @@
     - Transcribe
     - TechBiz
     - Transcribe
-    
+
+- name: Citizen-facing Products
+  description: Explore the government products for providing citizens with the services they need. This includes citizen life journey, grant services, and more!
+  items:
+    - Overview
+    - BookingSG
+    - COVID-19 Chatbots
+    - eCanvas
+    - ePad
+    - GovWallet
+    - Government Assisted Living Ecosystem
+    - GoWhere Suite
+    - HealthCerts
+    - Identiface
+    - LifeSG
+    - Login
+    - MyInfo
+    - Notarise
+    - OurSG
+    - Personal Alert Button
+    - SafeEntry
+    - SGFinDex
+    - Singpass
+    - SmartGym
+    - Space Out
+    - TraceTogether
+    - Verify
+
 - name: Data Science and Artificial Intelligence
   description: Access Data Science and Artificial Intelligence (DSAI) products developed by the Singapore Government, best practices and other resources here.
   items:
