@@ -1,6 +1,7 @@
 ---
 title: IMDA Accreditation
 layout: layout-page-sidenav
+sub_collection_render: true
 description: IMDA Accreditation provides Singapore-based ICM companies with a streamlined procurement process for government ICT projects. Find out more here!
 redirect_from: 
     - /guidelines/procurement/accreditation-sg.html
