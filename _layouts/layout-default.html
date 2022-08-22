@@ -113,7 +113,9 @@
       {% endif %}
       {%- include feedback-banner.html -%}
       <!-- Enable the line below for annoucement banner at home page -->
+      {% comment %}
       {%- include announcement-banner.html -%}
+      {% endcomment %}
       {{content}}
 
       {% include button-back-to-the-top.html %}
