@@ -26,7 +26,7 @@ Transcribe can be used to produce transcripts of interviews, speeches and meetin
 Transcribe aims to improve the productivity of public officers with these unique offerings:
 - Available on both Internet and the Intranet environment for flexible use 
 - Hosts up to Restricted and Sensitive Normal data 
-- From mid-August 2022, there will be no additional registration process required for all public officers 
+- Auto-onboard all public officers via WOG AAD authentication 
 
 Other key features include:
 - Open to addressing agencies' needs through collaboration on operational use cases and model adaptation
