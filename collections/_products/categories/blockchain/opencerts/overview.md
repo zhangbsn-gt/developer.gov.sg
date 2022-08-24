@@ -2,7 +2,6 @@
 title: OpenCerts - An Easy Way to Check and Verify Your Certificates
 layout: layout-page-sidenav
 category: Blockchain
-collection_group: [What's new]
 redirect_from:
     - /products/categories/blockchain/opencerts/
     - /products/categories/blockchain/opencerts.html
@@ -12,7 +11,6 @@ _data: single-level-nav
 sub_collection_render: true
 single_level_nav: true
 description: OpenCerts is a platform using blockchain to provide an easy and reliable way to issue and validate tamper-proof certificates.
-published: false
 ---
 
 ### Overview
