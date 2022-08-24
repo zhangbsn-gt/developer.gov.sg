@@ -2,10 +2,10 @@
   description: Discover the latest product additions to the Singapore Government Developer Portal here
   items:
     - Overview
+    - CloudScape
     - 'I2C {{Infra to Code}}'
     - Notarise
     - Secure Infrastructure-as-Code
-    - Transcribe
     - TechBiz
     - Transcribe
 

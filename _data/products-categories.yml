@@ -38,7 +38,12 @@
     - Overview
     - Content Website Platform
     - Isomer
-    - OpenDoc
+    
+- name: CyberSecurity
+  description: Platforms and tools to protect your networks, systems and applications from digital attacks
+  items:
+    - Overview
+    - Cloudscape
 
 - name: Data and APIs
   description: Open APIs and platforms allowing developers to connect with data and services from the Government

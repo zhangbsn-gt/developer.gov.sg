@@ -41,6 +41,14 @@
   items:
     - Overview
 
+# Cybersecurity
+- name: CloudSCAPE
+  items:
+    - Overview
+    - Features
+    - Getting Started
+    - FAQs
+
 # Data and APIs
 - name: APEX
   items:
