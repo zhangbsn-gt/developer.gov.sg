@@ -8,7 +8,7 @@
             {%- if document.url contains 'overview.html' and document.url contains '/categories' -%}
                 {
                     "title": "{{ document.title | remove: '"' }}",
-                    "description": "{{ document.description | remove: '>' | remove: '"' | strip }}",
+                    "description": "{{ document.description | remove: '"' | strip }}",
                     "targetGroup": "{{ target_group_joined }}",
                     "category": "{{ document.category }}",
                     "content": {{ document.content | strip_html | strip_newlines | strip | jsonify }},
