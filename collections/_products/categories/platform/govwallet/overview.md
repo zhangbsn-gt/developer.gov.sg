@@ -11,6 +11,10 @@ redirect_from:
   - /products/categories/platform/govwallet.html
   - /technologies/platform/govwallet/
   - /technologies/platform/govwallet.html
+sgts_collection_group: [payment]
+sgts_layer_group: [services]
+sgts_title: GovWallet
+collection_group: [Singapore Government Tech Stack]
 description: GovWallet is a payment facilitator between agencies and beneficiaries.
 bios:
   - name: Patricia Zhao, Product Manager

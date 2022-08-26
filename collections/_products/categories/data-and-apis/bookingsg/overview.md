@@ -9,6 +9,10 @@ redirect_from:
     - /products/categories/data-and-apis/bookingsg.html
     - /technologies/data-and-apis/bookingsg/
     - /technologies/data-and-apis/bookingsg.html
+sgts_collection_group: [productivity_&_utility]
+sgts_layer_group: [services]
+sgts_title: BookingSG
+collection_group: [Singapore Government Tech Stack]    
 sub_collection_render: true
 single_level_nav: true
 description: BookingSG is a Calendaring, Availability, Rostering and Booking (CARB) management tool for agencies that offer services which require pre-booking
