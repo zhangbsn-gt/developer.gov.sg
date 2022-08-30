@@ -1,5 +1,5 @@
 ---
-title: MyMoneySense - A free digital service to help Singaporeans manage their finances
+title: MyMoneySense - A Free Digital Service to Help Singaporeans Manage Their Finances
 layout: layout-page-sidenav
 category: Platform
 _data: single-level-nav
