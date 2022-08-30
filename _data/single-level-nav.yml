@@ -248,6 +248,12 @@
   items:
     - Overview
 
+- name: MyMoneySense
+  items:
+    - Overview
+    - Features
+    - Meet The Team
+
 - name: GovWallet
   items:
     - Overview
