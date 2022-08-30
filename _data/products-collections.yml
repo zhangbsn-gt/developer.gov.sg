@@ -2,12 +2,9 @@
   description: Discover the latest product additions to the Singapore Government Developer Portal here
   items:
     - Overview
-    - CloudScape
-    - 'I2C {{Infra to Code}}'
-    - Notarise
+    - CloudSCAPE
+    - MyMoneySense
     - Secure Infrastructure-as-Code
-    - TechBiz
-    - Transcribe
 
 - name: Citizen-facing Products
   description: Explore the government products for providing citizens with the services they need. This includes citizen life journey, grant services, and more!
@@ -40,8 +37,11 @@
   description: Access Data Science and Artificial Intelligence (DSAI) products developed by the Singapore Government, best practices and other resources here.
   items:
     - Overview
+    - Transcribe
     - VAS
     - Analytics by Design
+    - Data Transformation Playbook
+    - Public Sector AI Playbook
     - Data Literacy ePrimer
 
 - name: Singapore Government Tech Stack
