@@ -1,5 +1,5 @@
 ---
-title: Verify (Digital Certificates) - A blockchain-powered way to quickly and easily verify digital certificates
+title: Verify (Digital Certificates) - A Blockchain-Powered Way to Quickly and Easily Verify Digital Certificates
 layout: layout-page-sidenav
 category: Digital Solutions to Address COVID-19
 redirect_from:
