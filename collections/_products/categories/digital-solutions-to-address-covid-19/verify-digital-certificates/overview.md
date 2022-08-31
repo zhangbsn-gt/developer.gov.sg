@@ -22,7 +22,7 @@ Verify is built upon the public blockchain to reduce entry barriers to publishin
 
 A user with an .OA digital certificate may simply scan the QR code provided or click on the link to be brought to the verification page before the content is displayed.
 
-Public officers can visit <https://www.verify.gov.sg> to start the process of verifying digital documents.
+Relevant authorities such as immigration offficers and employers can visit <https://www.verify.gov.sg> to start the process of verifying digital documents that can include travel documentation and health certificates.
 
 ### Key Features
 
