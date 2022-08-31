@@ -214,6 +214,14 @@
 - name: TraceTogether
   items:
     - Overview
+    
+- name: Verify (Digital Certificates)
+  items:
+    - Overview
+    - Features
+    - Resources
+    - FAQs
+    - Meet The Team
 
 - name: VigilantGantry
   items:
