@@ -17,7 +17,7 @@ bios:
     linkedin_url: https://www.linkedin.com/in/shivani-gupta-b70b267b/
 
   - name: Yong Jia Hao
-    title: Associate DevOps Engineer
+    title: Software Engineer
     img_src: yong-jia-hao.png
     linkedin_url: https://www.linkedin.com/in/jh-yong/
 
