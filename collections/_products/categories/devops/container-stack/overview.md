@@ -50,26 +50,22 @@ The benefits of CStack include:
 
 - Simple Storage Service (S3)
 - Relational Database Service (RDS)
-    - MySQL
+  - MySQL
 	- PostgreSQL
 - NoSql Database Service – DynamoDB
 - Simple Notification Service (SNS)
 - Simple Queue Service (SQS)
 - Simple Email Service (SES)
 - Redis ElastiCache
+- VPC Endpoints
 
-** List of Unsupported Managed Services**
-
-- API Gateway (Encouraged to use APEX Cloud)
-- Lambda (Kubernetes FaaS under consideration)
-
-CStack is currently in private beta. To receive an invitation, please fill in this [form](https://go.gov.sg/cstack-signup){:target="_blank"}
+CStack is currently running pilots with public agencies. If you're interested to participate in the pilot, please respond using this [form](https://go.gov.sg/cstack-signup){:target="_blank"}
 
 ### Success Stories
 
-The MOE Digital Office leveraged CStack to launch a campaign microsite for Teacher’s Day 2021. The microsite was custom developed using a containerised Wordpress engine that is deployed using CStack.
+The MOE Digital Office leveraged CStack to launch a campaign microsite for Teacher’s Day 2021/2022. The microsite was custom developed using a containerised Wordpress engine that is deployed on CStack.
 
-CStack provided the development team a compliant platform which allowed them to reduce the scope of Vulnerability Assessment and Penetration Testing (VAPT).  The reduced scope then allowed them to complete the VAPT exercise within 1.5 months, despite the small team consisting of only three members.
+CStack provided the development team a compliant platform which allowed them to reduce the scope of Vulnerability Assessment and Penetration Testing (VAPT).  The reduced scope then allowed them to complete the VAPT exercise within 1.5 months, despite the them being a small team of 3 members.
 
 ### Contact Us
 
@@ -77,4 +73,4 @@ CStack provided the development team a compliant platform which allowed them to 
 
 <br/>**Technical Resources**
 
-- [Container Stack user guide](https://docs.developer.tech.gov.sg/docs/container-stack-user-guide){:target="_blank"}
+- [Container Stack Documentation](https://go.gov.sg/cstack-docs){:target="_blank"}
