@@ -34,6 +34,8 @@ exclude:
 collections_dir: collections
 
 collections:
+  our-digital-journey:
+    output: yes
   products:
     output: yes
   guidelines:

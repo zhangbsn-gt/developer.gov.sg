@@ -1,7 +1,12 @@
 # - title: Workflows
 #   url: /workflows/
-- title: About Us
-  url: /about-us
+- title: Our Digital Journey
+  url: /our-digital-journey
+  description:
+    heading: Partner us for your digital government projects 
+    content: >
+      Learn about our digital government journey, partnerships, platforms and the Singapore Government Developer Portal here.
+  dropdown: true
 
 - title: Guidelines
   url: /guidelines

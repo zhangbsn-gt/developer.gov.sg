@@ -1,0 +1,18 @@
+- name: Singapore Digital Government Journey
+  description: Learn about Singapore's digital government journey and how we have built a Smart Nation, from GovTech's role in spearheading digital transformation within the government to our national achievements.
+  items:
+    - Overview
+    - Key Lessons
+    - Digital Government Efforts
+
+- name: International Partnerships
+  description: Learn more about the Singapore government's awards, partnerships and collaboration opportunities for digital government projects.   
+  
+- name: Digital Government Exchange 
+  description: DGX is an annual global gathering of Government CIOs and public sector leaders from digital governments and smart cities. Access our DGX reports here!
+  items:
+    - Overview
+    - Working Groups 2021
+  
+- name: About Us
+  description: Learn more about the Singapore Government Developer Portal and the team behind it here!
