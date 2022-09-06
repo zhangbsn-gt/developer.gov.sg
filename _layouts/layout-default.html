@@ -89,6 +89,11 @@
       })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
     </script>
     {% endif %}
+
+    {% if site.git_branch == 'master' %}
+    <script async type="text/javascript" src="https://secure.kota3chat.com/js/263654.js" ></script>
+    <noscript><img alt="" src="https://secure.page9awry.com/263654.png" style="display:none;"/></noscript>
+    {%  endif %}
     {% seo %}
   </head>
 
