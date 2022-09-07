@@ -23,8 +23,8 @@ Given the COVID-19 pandemic, a special edition of the Digital Government Exchang
 
 Our WGs have also produced in-depth reports on 2021's topics. Please click on the links below to download the reports.
 
-- [Cloud governance by the DGX Cloud Working Group](files/DGX Cloud Working Group Report 2021 - Baseline Policies.pdf){:target="_blank"}
-- ["Digital Identity in response to COVID-19" by the DGX Digital Identity Working Group](files/dgx_2021_digital_identity_in_response_to_covid-19.pdf){:target="_blank"}
-- [Digitial Maturity Minimum Viable Product (MVP) framework by the DGX Digital Identity Working Group](files/DGX Digital Maturity Working Group Report 2021 - Digital Maturity MVP.pdf){:target="_blank"}
+- [Cloud governance by the DGX Cloud WG](files/DGX Cloud Working Group Report 2021 - Baseline Policies.pdf){:target="_blank"}
+- ["Digital Identity in response to COVID-19" by the DGX Digital Identity WG](files/dgx_2021_digital_identity_in_response_to_covid-19.pdf){:target="_blank"}
+- [Digitial Maturity Minimum Viable Product (MVP) framework by the DGX Digital Identity WG](files/DGX Digital Maturity Working Group Report 2021 - Digital Maturity MVP.pdf){:target="_blank"}
 
 Feel free to contact us at <tmo@tech.gov.sg> for more information.
