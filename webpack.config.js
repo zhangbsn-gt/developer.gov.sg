@@ -20,6 +20,8 @@ module.exports = (env, argv) => {
       "vue-blogs-app": "./apps/src/blogs/vue-blogs-app.js",
       "vue-search-app-all-events":
         "./apps/src/search/vue-search-app-all-events.js",
+      "vue-search-app-all-event-videos":
+        "./apps/src/search/vue-search-app-all-event-videos.js",
       "community-overview": "./apps/src/communities/community-overview.js",
       "conferences-webinars-sort":
         "./apps/src/communities/conferences-webinars-sort.js",

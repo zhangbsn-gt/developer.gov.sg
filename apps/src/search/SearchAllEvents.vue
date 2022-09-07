@@ -152,7 +152,7 @@
 
 <script>
 import Loader from "../lib/Loader.vue";
-import { sanitize } from "../lib/index.js";
+import { sanitize, isQueryEmpty } from "../lib/index.js";
 import { computed } from "@vue/composition-api";
 import CardCalendar from "../lib/CardCalendar.vue";
 import useLunrSearch from "../composables/useLunrSearch";
@@ -196,7 +196,7 @@ export default {
 
     const filteredSearchResults = computed(() => {
       // Check if param is empty
-      const queryIsEmpty = !queryParam || /^\s*$/.test(queryParam);
+      const queryIsEmpty = isQueryEmpty(queryParam);
 
       // Adding extra attributes that is used during the filtering process, such as the date
       const processedSearchResults = searchResults.value.map(item => {

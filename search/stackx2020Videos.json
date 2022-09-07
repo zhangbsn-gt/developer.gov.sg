@@ -1,0 +1,60 @@
+---
+---
+
+{
+  "pages": [
+    {%- assign videos = site.data['stack2020-videos'] -%}
+
+    {% for video in videos %}
+      {%- assign type = video.type -%}
+      {%- assign title = video.title -%}
+      {%- assign categories = video.category -%}
+      {%- assign description = video.description -%}
+
+      {%- assign video_id = video.video_id -%}
+      {%- assign video_index = forloop.index -%}
+      {%- assign speakers = video.speakers | split: ", " -%}
+      {%- assign speakers_title = video.speakers_title | split: "| " -%}
+
+      {%- assign embed_url = "https://www.youtube.com/embed/" | append: video_id -%}
+      {%- assign video_url = "https://www.youtube.com/watch?v=" | append: video_id -%}
+      {%- assign video_image = "https://img.youtube.com/vi/" | append: video_id | append : "/hqdefault.jpg" -%}
+      {%- assign searchEngineAmplifier = title | append: " by, " | append: video.speakers | append: " " | append: video.speakers_title -%}
+
+      {
+        "type": "{{ type | remove: '"' }}",
+        "title": "{{ title | remove: '"' }}",
+        "description": "{{ description | remove: '"' }}",
+        "speakers": [
+          {%- for speaker in speakers -%}
+            {%- assign speaker_index = forloop.index | minus: 1 -%}
+            {%- assign speaker_title = speakers_title[speaker_index] -%}
+            {
+              "name": "{{ speaker | remove: '"' }}",
+              "title": "{{ speaker_title | remove: '"' }}"
+            }
+            {%- if forloop.last == false -%},{%- endif -%}
+            {%- endfor -%}
+        ],
+        "categories": [
+          {%- for category in categories -%}
+            "{{- category -}}"
+            {%- if forloop.last == false -%}, {%- endif -%}
+          {%- endfor -%}
+        ],
+        "video_id": "{{- video_id -}}",
+        "video_index": "{{- video_index -}}",
+        "embed_url": "{{ embed_url | remove: '"' }}",
+        "video_image": "https://img.youtube.com/vi/{{- video_id -}}/hqdefault.jpg",
+        "video_image_small": "https://img.youtube.com/vi/{{- video_id -}}/sddefault.jpg",
+        "video_image_medium": "https://img.youtube.com/vi/{{- video_id -}}/mqdefault.jpg",
+        "video_image_large": "https://img.youtube.com/vi/{{- video_id -}}/maxresdefault.jpg",
+        "content": "{{- searchEngineAmplifier | remove: '>' | remove: '"' | strip -}}",
+        "url": "{{- video_url | remove: '"' -}}",
+        "targetGroup": "{{- target_group_joined | default : "" -}}",
+        "meta": "video"
+      }
+      {%- if forloop.last == false -%},{%- endif -%}
+    {%- endfor -%}
+  ]
+}

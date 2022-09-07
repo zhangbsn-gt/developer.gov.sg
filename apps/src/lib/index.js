@@ -41,7 +41,7 @@ export const apiClient = axios.create({
 export function detectFormErrors({ form, fields = [] }) {
   let formFields = fields.length === 0 ? Object.keys(form) : fields;
   let errors = {};
-  formFields.forEach((field) => {
+  formFields.forEach(field => {
     if (!form[field] || form[field] === "") {
       errors[field] = "Please enter a valid value.";
     } else {
@@ -55,4 +55,8 @@ export function hasErrors(errors) {
   return Object.values(errors).reduce((prev, curr) => {
     return (curr != null && curr !== "") || prev;
   }, false);
+}
+
+export function isQueryEmpty(string) {
+  return /^\s*$/.test(string.replace(/[\u200B-\u200D\uFEFF]/g, ""));
 }

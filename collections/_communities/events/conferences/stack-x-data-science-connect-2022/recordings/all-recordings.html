@@ -3,8 +3,8 @@ title: STACK-X Data Science Connect 2022
 layout: layout-page-sidenav
 _data: events-nav
 redirect_from:
-    - /communities/events/conferences/stack-x-data-science-connect-2022/recordings/
-    - /communities/events/conferences/stack-x-data-science-connect-2022/recordings.html
+  - /communities/events/conferences/stack-x-data-science-connect-2022/recordings/
+  - /communities/events/conferences/stack-x-data-science-connect-2022/recordings.html
 multi_level_nav: true
 ---
 {% assign video_data_file = 'stackx2022dsc-videos' %}
@@ -17,4 +17,8 @@ multi_level_nav: true
 
 <hr />
 
-{% include videos-display-advance.html type="Keynote - VOD, DataTransformation - VOD, DataEngineering - VOD, AIApplications - VOD" _data=video_data_file %}
+<!-- Stats -->
+<div id="search-app-all-event-videos"></div>
+
+<script data-id="search-all-event-videos" data-json-path="/search/stackx2022DscVideos.json"
+  src="/assets/bundles/vue-search-app-all-event-videos.bundle.js"></script>
