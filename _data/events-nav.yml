@@ -102,6 +102,18 @@
     - item_name: Overview
 
 ### Stack X Events
+- name: 'CIO - Edition'
+  event_category: Stack-X Meetup
+  event_description: >-
+    Sing Khang Leong, Chief Information Officer, Ministry of Manpower and Cluster Director of Manpower Cluster, Services Group, GovTech will be sharing on the increasing importance of Ops-Tech integration as a key success factor for digitalisation/business transformation in today's world.
+  event_type: 10 Pasir Panjang Rd
+  event_date: 2022-08-18T19:00:00.000Z
+  event_registration_end_date: 2022-08-18T19:00:00.000Z
+  event_recording_link: https://youtu.be/BsaKY86V1Ek
+  event_registration_link: https://go.gov.sg/stackx18aug
+  items:
+    - item_name: Overview
+    
 - name: 'Solutioning for Automated Test Data Generation: NPHC'
   event_category: Stack-X Meetup
   event_description: >-
