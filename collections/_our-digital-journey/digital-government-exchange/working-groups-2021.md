@@ -17,7 +17,7 @@ The 2021 Working Groups (WGs) saw representatives share experiences and opportun
 
 * **The digital maturity WG** developed a Minimum Viable Product (MVP) framework for understanding different levels of digital maturity and conducted research interviews with member countries to validate the 7 elements of digital maturity in reimagining and redesigning governments’ digital estate. These elements are user-centred design, culture of digital by design, data-driven approach, appropriate technology and infrastructure, senior leadership buy-in and appropriate governance, appropriate institutional funding and capacity, and digital capability.
 
-Given the COVID-19 pandemic, a special edition of the Digital Government Exchange Safe Travel WG was convened in 2021. Digital governments and smart cities discussed safe travel solutions such as the generation of digital health certificates, cross-border verification, and open-sourced technical specifications or frameworks. These insights have been published on the United Nations Department of Economic and Social Affairs Public Institutions [blog](https://publicadministration.un.org/en/Home/Blog){:target="_blank"}.
+Given the COVID-19 pandemic, a special edition of the Digital Government Exchange Safe Travel WG was convened in 2021. Digital governments and smart cities discussed safe travel solutions such as the generation of digital health certificates, cross-border verification, and open-sourced technical specifications or frameworks. These insights have been published on the United Nations Department of Economic and Social Affairs (UN DESA) Public Institutions [blog](https://publicadministration.un.org/en/Home/Blog){:target="_blank"}.
 
 ### DGX WG Reports
 

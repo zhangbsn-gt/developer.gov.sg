@@ -9,7 +9,7 @@ description: >
 
 The 2022 Working Groups (WGs) saw representatives share experiences and opportunities on topics covering Artificial Intelligence (AI), Digital Identity and Cybersecurity.
 
-- **The artificial intelligence WG** developed a Minimum Viable Product (MVP) of good practices to guide teams that are building or procuring AI projects. The areas covered are based on common thematic areas derived from the co-designed survey as well as secondary research on good practices from international GovTech and AI communities.
+- **The AI WG** developed a Minimum Viable Product (MVP) of good practices to guide teams that are building or procuring AI projects. The areas covered are based on common thematic areas derived from the co-designed survey as well as secondary research on good practices from international GovTech and AI communities.
 
 ### DGX Working Groups 2022
 
