@@ -2,7 +2,7 @@ import "./main.scss";
 import "sgds-govtech/js/sgds.js";
 
 // import Swiper JS
-import Swiper, { Pagination, Navigation } from "swiper";
+import Swiper, { Pagination, Navigation, Autoplay } from "swiper";
 // import Swiper styles
 import "swiper/css/bundle";
 
@@ -131,20 +131,20 @@ $(function () {
   });
   // END: annoucement banner
 
-  const swiper = new Swiper(".swiper", {
+  const swiper = new Swiper(".swiper-explore", {
     modules: [Pagination, Navigation],
     // Optional parameters
     observeSlideChildren: true,
     loop: true,
     roundLengths: true,
     pagination: {
-      el: ".swiper-pagination",
+      el: ".swiper-pagination-explore",
       type: "bullets",
     },
 
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".swiper-button-next-explore",
+      prevEl: ".swiper-button-prev-explore",
     },
 
     breakpoints: {
@@ -168,6 +168,34 @@ $(function () {
         loop: true,
         centeredSlides: false,
       },
+    },
+  });
+
+  //carousel
+  const carousel = new Swiper(".swiper-hero", {
+    modules: [Pagination, Navigation, Autoplay],
+    // Optional parameters
+    observeSlideChildren: true,
+    loop: true,
+    roundLengths: true,
+    slidesPerView: 1,
+    spaceBetween: 0,
+    slidesPerGroup: 1,
+    centeredSlides: false,
+    allowTouchMove: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination-hero",
+      type: "bullets",
+      clickable: true,
+    },
+
+    navigation: {
+      nextEl: ".swiper-button-next-hero",
+      prevEl: ".swiper-button-prev-hero",
     },
   });
 

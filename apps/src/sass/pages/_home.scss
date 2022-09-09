@@ -1,4 +1,20 @@
 .card-grid-container {
+    // Added &.stack-banner for carousel
+    &.stack-banner {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-auto-rows: 1fr;
+    @media screen and (min-width: 1409px) {
+      grid-template-columns: 1.5fr 1fr;
+      grid-gap: 2rem;
+      grid-auto-rows: 1fr;
+    }
+    @media screen and (max-width: 1215px) {
+      grid-template-columns: repeat(2fr, 1fr);
+    }
+    @include until($tablet) {
+      grid-template-columns: 1fr;
+    }
+  }
   &.home {
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     grid-auto-rows: 1fr;
@@ -34,12 +50,37 @@
   }
   &-stack-2022-gradient {
     background: linear-gradient(253.82deg, #ff7920 11.24%, #b41e8e 88.76%);
-    padding-top: 0px;
-    padding-bottom: 96px;
   }
-  height: 28.75rem;
-  @include until($tablet) {
-    height: auto;
+  &-stack-2022-event-gradient {
+    background: linear-gradient(268.19deg, #151048 -0.09%, hsl(227deg, 80%, 25%) 98.08%)
+  }
+
+  // Added for carousel
+  height: 31.31rem;
+  @media screen and (min-width: 915px) and (max-width: 1215px) {
+    height: 37.75rem;
+  }
+
+  @media screen and (min-width: 809px) and (max-width: 914px) {
+    height: 40.75rem;
+  }
+  @media screen and (min-width: 769px) and (max-width: 808px) {
+    height: 46.25rem;
+  }
+  @media screen and (min-width: 500px) and (max-width: 769px) {
+    height: 54.75rem;
+  }
+  @media only screen and (max-device-width: 480px) {
+    height: 60.75rem;
+    /* styles for mobile browsers smaller than 480px; (iPhone) */
+  }
+  @media only screen and (device-width: 768px) {
+    height: 50.75rem;
+    /* default iPad screens */
+  }
+  @media only screen and (max-device-width: 280px) {
+    height: 70.75rem;
+    /* styles for mobile browsers smaller than 480px; (iPhone) */
   }
 }
 
@@ -92,3 +133,37 @@ article {
     margin: 0;
   }
 }
+
+// Added for carousel
+.banner {
+  &.sgds-section {
+    padding-top: 3rem !important;
+    // @media screen and (max-width: 1405px) {
+    //   padding-top: 2rem !important;
+    // }
+    @media screen and (max-width: 1220px) {
+      padding-top: 2rem !important;
+    }
+    @include until($tablet) {
+      //padding-top: 0rem !important;
+      padding: 3rem 1.5rem;
+    }
+  } 
+  
+}
+// Added for carousel
+.sgds-container {
+  &.carousel {
+    padding-left: calc(var(--global-alignment) * var(--global-alignment-multiplier-xl)) !important;
+    padding-right: calc(var(--global-alignment) * var(--global-alignment-multiplier-xl)) !important;
+    @include until($tablet) {
+      padding-left: calc(var(--global-alignment) * var(--global-alignment-multiplier-lg)) !important;
+      padding-right: calc(var(--global-alignment) * var(--global-alignment-multiplier-lg)) !important;
+    }
+    @media only screen and (max-device-width: 280px) {
+      padding-left: 1rem !important;
+      padding-right: 1rem !important;
+    }
+  }
+}
+

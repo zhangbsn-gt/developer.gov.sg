@@ -1,33 +1,166 @@
-.swiper{
-    width: 70%;
-    height: 31.25rem;
-    @include until($tablet){
-        width: 100vw;
-        height: auto;
-        @at-root .section-explore{
-            padding-left: 0;
-            padding-right: 0;
-        }
+.swiper {
+  width: 70%;
+  height: 31.25rem;
+  @include until($tablet) {
+    width: 100vw;
+    height: auto;
+    @at-root .section-explore {
+      padding-left: 0;
+      padding-right: 0;
     }
-    
-    &-slide{
-        height: auto;
-        align-self: stretch;
+  }
 
-        .sgds-card{
-            box-sizing:border-box;
-            height: 100%;
-            &-content{
-                flex-grow:1;
-            }
-        }
-    }
+  &-slide {
+    height: auto;
+    align-self: stretch;
 
-    &-pagination{
-        position: inherit!important;
-        margin-top: 1rem;
-        .swiper-pagination-bullet:not(:last-child){
-            margin-right: 0.5rem;
-        }
+    .sgds-card {
+      box-sizing: border-box;
+      height: 100%;
+      &-content {
+        flex-grow: 1;
+      }
     }
+  }
+
+  &-pagination {
+    position: inherit !important;
+    margin-top: 1rem;
+    .swiper-pagination-bullet:not(:last-child) {
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+// Added for carousel
+.swiper-carousel {
+  height: 31.25rem;
+  @media screen and (min-width: 915px) and (max-width: 1215px) {
+    height: 37.25rem;
+  }
+
+  @media screen and (min-width: 809px) and (max-width: 914px) {
+    height: 40.25rem;
+  }
+
+  @media screen and (min-width: 769px) and (max-width: 808px) {
+    height: 46.25rem;
+  }
+  @media screen and (min-width: 500px) and (max-width: 768px) {
+    height: 53.75rem;
+  }
+  @media only screen and (max-device-width: 480px) {
+    height: 60.75rem;
+    /* styles for mobile browsers smaller than 480px; (iPhone) */
+  }
+  @media only screen and (device-width: 768px) {
+    height: 50.75rem;
+    /* default iPad screens */
+  }
+  @media only screen and (max-device-width: 280px) {
+    height: 70.75rem;
+    /* styles for mobile browsers smaller than 480px; (iPhone) */
+  }
+  @include until($tablet) {
+    width: 100vw;
+    //height: auto;
+    @at-root .section-carousel {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  &-slide {
+    height: auto;
+    align-self: stretch;
+
+    .sgds-card {
+      box-sizing: border-box;
+      height: 100%;
+      &-content {
+        flex-grow: 1;
+      }
+    }
+  }
+
+  &-pagination {
+    position: inherit !important;
+    margin-top: 1rem;
+    .swiper-pagination-bullet:not(:last-child) {
+      margin-right: 0.5rem;
+    }
+  }
+
+  &-arrow-prev {
+    left: 1rem !important;
+    top: 15rem !important;
+    @media screen and (min-width: 1024px) {
+      left: 0rem !important;
+    }
+  }
+
+  &-arrow-next {
+    right: 1rem !important;
+    top: 15rem !important;
+    @media screen and (min-width: 1024px) {
+      right: 0rem !important;
+    }
+  }
+
+  .swiper-wrapper {
+    z-index: 0 !important;
+    height: auto !important;
+  }
+
+  .swiper-pagination {
+    margin-top: -8rem !important;
+    @media screen and (min-width: 915px) and (max-width: 1215px) {
+      margin-top: -8rem !important;
+    }
+    @media screen and (min-width: 809px) and (max-width: 914px) {
+      margin-top: -8rem !important;
+    }
+    @media screen and (min-width: 769px) and (max-width: 808px) {
+      margin-top: -8rem !important;
+    }
+    @media screen and (min-width: 500px) and (max-width: 769px) {
+      margin-top: -10rem !important;
+    }
+    @media only screen and (max-device-width: 480px) {
+      margin-top: -8rem !important;
+      /* styles for mobile browsers smaller than 480px; (iPhone) */
+    }
+    @media only screen and (device-width: 768px) {
+      margin-top: -8rem !important;
+      /* default iPad screens */
+    }
+    @media only screen and (max-device-width: 280px) {
+      margin-top: -8rem !important;
+      /* styles for mobile browsers smaller than 480px; (iPhone) */
+    }
+  }
+  .swiper-pagination-bullet-active {
+    transform: none !important ;
+    width: 79px !important;
+    height: 4px !important;
+    border-radius: 24px !important;
+  }
+  .swiper-pagination-bullet {
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+    color: white !important;
+    background-color: #f7f7f7 !important;
+    opacity: 100%;
+  }
+}
+
+.section-carousel {
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    content: "";
+  }
+}
+.swiper-card-carousel {
+  border: none !important;
 }
