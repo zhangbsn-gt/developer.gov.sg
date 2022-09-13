@@ -58,6 +58,7 @@
     - Identiface
     - Login
     - Myinfo
+    - Notify
     - Personalise
     - SHIP-HATS
     - Singapore Government Design System
@@ -68,3 +69,9 @@
     - VAS
     - Verify
     - WOGAA
+
+- name: What's New
+  description: Discover the latest product additions to the Singapore Government Developer Portal here
+  items:
+    - Overview
+    - Notify
