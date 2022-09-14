@@ -62,21 +62,6 @@ Government agencies interested in AMS can first take the [agency readiness surve
 
 To start using AMS, subscribing government agencies can refer to the [admin user guide](https://docs.developer.gov.sg/docs/admin-user-guide/#/){:target="\_blank"} for the step-by-step guide.
 
-### Success Stories
-
-In the first two years after its launch, AMS was adopted by 46 public agencies. In the next two years, it is expected to be adopted by up to 75 agencies.
-
-### What's Next?
-
-Upcoming features for AMS include:
-
-<figure style="text-align: center">
-  <img
-    src="/assets/img/ams-roadmap.png" alt="Fig 3: AMS Roadmap"
-  />
-  <figcaption>Fig 3: AMS Roadmap</figcaption>
-</figure>
-
 ### Contact Us
 
 {% include contact-us-form.html %}
