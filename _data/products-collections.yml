@@ -4,6 +4,7 @@
     - Overview
     - CloudSCAPE
     - MyMoneySense
+    - Notify
     - Secure Infrastructure-as-Code
     - Verify (Digital Certificates)
 
@@ -24,6 +25,7 @@
     - Login
     - MyInfo
     - Notarise
+    - Notify
     - OurSG
     - Personal Alert Button
     - SafeEntry
@@ -69,9 +71,3 @@
     - VAS
     - Verify
     - WOGAA
-
-- name: What's New
-  description: Discover the latest product additions to the Singapore Government Developer Portal here
-  items:
-    - Overview
-    - Notify
