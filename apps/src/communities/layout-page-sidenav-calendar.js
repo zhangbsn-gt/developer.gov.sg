@@ -46,7 +46,7 @@ import { getCompareDate, getEventDataByDate } from "../lib/communities";
           }
 
           eventButton.disabled = false;
-          eventButton.innerHTML = "Register Now";
+          eventButton.innerHTML = "Register Interest";
           eventButton.style.backgroundColor = "#0161AF";
           break;
       }
