@@ -105,6 +105,11 @@
   items:
     - Overview
 
+- name: Vault
+  items:
+    - Overview
+    - Features
+
 # Design
 - name: Singapore Government Design System
   items:

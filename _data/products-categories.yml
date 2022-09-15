@@ -61,6 +61,7 @@
     - SingStat APIs
     - Tourism Information and Services Hub
     - URA APIs
+    - Vault
 
 - name: Design
   description: Design guidelines and libraries

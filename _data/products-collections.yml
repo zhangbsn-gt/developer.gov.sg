@@ -7,6 +7,7 @@
     - Notify
     - Secure Infrastructure-as-Code
     - Verify (Digital Certificates)
+    - Vault
 
 - name: Citizen-facing Products
   description: Explore the government products for providing citizens with the services they need. This includes citizen life journey, grant services, and more!
