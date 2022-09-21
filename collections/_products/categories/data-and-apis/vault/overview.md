@@ -43,7 +43,7 @@ The key features of Vault include:
   
 - Multiple ways to securely consume data, including programmatically via API, temporarily via Vault Send, or directly via the portal. 
 
-## Use Case
+### Use Case
 
 Vault has: 
 
@@ -54,7 +54,7 @@ Vault has:
 - Served 1800+ dataset requests on the portal
 
 
-## Getting Started
+### Getting Started
 
 Public officers can access [Vault](https://vault.gov.sg){:target="_blank"} by using their work computers and logging in with their '.gov.sg' email. 
 
