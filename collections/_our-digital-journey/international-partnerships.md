@@ -92,18 +92,9 @@ Contact us at <info@tech.gov.sg> if you would like to collaborate on various dig
 
 <div class="row">
   <div class="col" style="text-align: center">
-    <a href="https://www.tech.gov.sg/media/technews/subscribe" target="_blank">
+    <a href="https://form.gov.sg/#!/620c7a0ba71f3d001367f9b5" target="_blank">
       <img src="/assets/img/digital-transformation/TechNews-newsletter.png" alt="TechNews Newsletter" /></a>
-    <figcaption><b>TechNews Newsletter</b></figcaption>
+    <figcaption><b>Singapore Government Developer Portal Digest</b></figcaption>
   </div>
 
-  <div class="col" style="text-align: center">
-    <a href="https://www.tech.gov.sg/media/corporate-publications" target="_blank">
-      <img src="/assets/img/digital-transformation/GovTech-publications.png" alt="GovTech's Publications" /></a>
-    <figcaption><b>GovTech's Publications</b></figcaption>
-  </div>
-  <div class="col"></div>
-  <div class="col"></div>
-</div>
-
-Sign up for TechNews [here](https://www.tech.gov.sg/media/technews/subscribe){:target="_blank"} to receive updates about our digital government efforts. To view GovTech’s publications, you can refer to this [link](https://www.tech.gov.sg/media/corporate-publications/){:target="_blank"}. 
+Sign up for our monthly eDM, the Singapore Government Developer Portal Digest, [here](https://form.gov.sg/#!/620c7a0ba71f3d001367f9b5){:target="_blank"} to receive updates about our digital government efforts. 

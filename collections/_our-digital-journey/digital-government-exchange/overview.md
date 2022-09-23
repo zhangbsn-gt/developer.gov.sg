@@ -25,4 +25,4 @@ The Digital Government Exchange (DGX) is an annual global gathering of Governmen
 
 The platform also features technical Working Groups (WGs) where countries and cities deep dive into specific subject matters pertinent to governments’ drive for digitalisation. Designed with the intent of providing an open conversation yearly, the DGX WGs bring together international experts in their respective fields to conduct in-depth analysis.
 
-Feel free to contact us at <tmo@tech.gov.sg> for more information.
+Feel free to contact us at <info@tech.gov.sg> for more information.
