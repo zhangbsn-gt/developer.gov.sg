@@ -16,7 +16,7 @@ description: >
   Notify is an in-app message service on the Singpass app for government agencies to send official messages to residents. Find out more!
 ---
 
-![Notify header banner](/assets/img/notify-HeaderBanner.png)
+![Notify header banner](/assets/img/Notify-HeaderBanner-v2.png))
 
 Notify is an in-app message service on the Singpass app for government agencies to securely send official notifications and messages to users, especially messages that require higher identity assurance. 
 
