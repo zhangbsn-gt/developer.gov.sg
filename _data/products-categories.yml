@@ -61,7 +61,6 @@
     - SingStat APIs
     - Tourism Information and Services Hub
     - URA APIs
-    - Vault
 
 - name: Design
   description: Design guidelines and libraries
@@ -87,7 +86,6 @@
     - Myinfo
     - Myinfo business
     - National Digital Identity
-    - Notify
     - SGFinDex
     - Singpass
     - TechPass

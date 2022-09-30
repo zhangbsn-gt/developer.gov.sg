@@ -1,14 +1,21 @@
 ### Conferences
-###- name: STACK 2022 Developer Conference
-###  event_category: Conference
-###  event_description: With over 4,000 attendees expected to attend, we invite you to join the conversation! Send us your content proposal for what you wish to share with our attendees.
-###  event_type: In-person/virtual event
-###  event_date: 2022-11-15T00:00:00.000Z
-###  event_number_of_days: 2
-###  event_registration_end_date:
-###  event_registration_link: https://www.govtechstack.sg/page/stack-2022-home
-###  items:
-###    - item_name: Overview
+- name: STACK 2022 Developer Conference
+  event_category: Conference
+  event_description: With over 4,000 attendees expected to attend, we invite you to join the conversation! Send us your content proposal for what you wish to share with our attendees.
+  event_type: In-person/virtual event
+  event_date: 2022-11-15T00:00:00.000Z
+  event_number_of_days: 2
+  event_registration_end_date:
+  event_registration_link: https://www.gevme.com/STACK-2022-Developers-Conference?pk_vid=4ad0a718c170fa601662746739f53e90
+  items:
+    - item_name: Overview
+    - item_name: Agenda
+      item_sub_item:
+        - sub_item_name: All Agenda
+        - sub_item_name: Opening Address
+        - sub_item_name: Keynotes
+        - sub_item_name: Panel Discussion
+        - sub_item_name: Plenary
 
 - name: STACK-X Data Science Connect 2022
   event_category: Conference

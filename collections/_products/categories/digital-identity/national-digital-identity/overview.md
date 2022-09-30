@@ -92,12 +92,6 @@ Organisations do not have to build, secure and maintain a biometric database and
 
 This service is ideal for use cases that require step-up authentication or to ascertain the user's presence. You can also visit the Identiface product page through this [link](https://www.developer.tech.gov.sg/products/categories/digital-identity/identiface/overview.html){:target="_blank"}.
 
-### Notify
-
-Notify is an in-app message service on the Singpass app for government agencies to securely send official notifications and messages to users, especially messages that require higher identity assurance. 
-
-You can visit the Notify product page through this [link](https://www.developer.tech.gov.sg/products/categories/digital-identity/notify/overview.html){:target="_blank"}.
-
 ### Authorise (Coming Soon)
 
 Authorise enables businesses to notify and seek authorisation for transactions from customers without being physically present. Businesses will be able to make use of Singpass to obtain trusted authorisations/instructions from citizens.

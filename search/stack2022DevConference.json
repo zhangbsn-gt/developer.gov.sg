@@ -1,0 +1,67 @@
+---
+---
+
+{
+    "pages": [
+      {%- assign events = site.data['stack-2022-dev-conference'] -%}
+      {%- assign sorted_events = events | sort: 'timeslot_metadata'-%}
+      {%- assign icons = "star, square, triangle, circle, hexagon, parallelogram, diamond, plus, cresent, heart" | split: ', ' -%}
+
+      {%- assign categories = '' | split: ',' %}
+
+      {%- for document in sorted_events -%}
+        {%- if document.type -%}
+          {%- assign event_type = document.type -%}
+          {%- assign categories = categories | push: event_type -%}
+        {%- endif -%}
+      {%- endfor -%}
+
+      {%- assign categories = categories | uniq | sort -%}
+
+      {%- for document in sorted_events -%}
+        {%- if document.timeslot_metadata -%}
+          {%- assign speakers = document.speakers -%}
+          {%- assign target_group_joined = document.target_group | join: ", " -%}
+
+          {%- assign pointer = 0 -%}
+          {%- assign category_pointer = 0 -%}
+          {%- for category in categories -%}
+            {%- if category == document.type -%}
+              {%- assign category_pointer = pointer -%}
+            {%- endif -%}
+            {%- assign pointer = pointer | plus: 1 -%}
+          {%- endfor -%}
+
+          {
+              "title": "{{ document.title | remove: '"' }}",
+              "content": "{{ document.desc | remove: '>' | remove: '"' | strip }}",
+              "targetGroup": "{{ target_group_joined | default : "" }}",
+              "category": {
+                "type" : "{{ document.type | default : "" }}",
+                "icon" : "{{- "/assets/icons/" | append: icons[category_pointer] | append: ".svg"| default : "/assets/icons/star.svg" -}}"
+              },
+              "timeslot_metadata":{
+                "full_date": "{{- document.timeslot_metadata -}}",
+                "start_date": "{{- document.timeslot_metadata | split: " - " | first -}}",
+                "start_time": "{{ document.timeslot_metadata | split: " - " | first | date: '%I:%M %p' }}",
+                "end_date": "{{- document.timeslot_metadata | split: " - " | last -}}",
+                "end_time": "{{ document.timeslot_metadata | split: " - " | last | date: '%I:%M %p' }}",
+                "date": "{{ document.timeslot_metadata | split: " - " | first | date: "%d/%m/%Y" }}"
+              },
+              "speakers" : [
+                  {%- for speaker in speakers -%}
+                      {
+                          "name": "{{ speaker.name | remove: '"' }}",
+                          "title": "{{ speaker.title | remove: '"' }}",
+                          "image": "{{ speaker.image | remove: '"' }}"
+                        }
+                        {%- if forloop.last == false -%},{%- endif -%}
+                    {%- endfor -%}
+              ],
+              "meta": "document"
+          }
+          {%- if forloop.last == false -%},{%- endif -%}
+          {%- endif -%}
+      {%- endfor -%}
+    ]
+}

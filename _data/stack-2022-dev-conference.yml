@@ -1,0 +1,227 @@
+# Day 1
+#- type: Workshops
+#  timeslot: 09:30 AM - 06:00 PM
+#  timeslot_metadata: 2022-11-14T09:30:00+08:00 - 2022-11-14T18:00:00+08:00
+#  title: Workshops
+#  desc:
+#  speakers:
+
+# Day 1
+- type: Day 1, Opening Address
+  timeslot: 09:30 AM - 10:00 AM
+  timeslot_metadata: 2022-11-15T09:30:00+08:00 - 2022-11-15T10:00:00+08:00
+  title: Opening Address
+  desc:
+  speakers:
+    - name: Mrs Josephine Teo
+      image: /assets/img/photos/josephine-teo.png
+      title: Minister for Communications and Information, and Minister-in-charge of Smart Nation and Cybersecurity
+
+- type: Day 1, Keynotes
+  timeslot: 10:00 AM - 10:20 AM
+  timeslot_metadata: 2022-11-15T10:00:00+08:00 - 2022-11-15T10:20:00+08:00
+  title: Embracing a Brave New World of Technology – A Government Journey
+  desc:
+  speakers:
+    - name: Mr Chan Cheow Hoe
+      image: /assets/img/photos/chan-cheow-hoe.png
+      title: Government Chief Digital Technology Officer and Deputy Chief Executive, GovTech
+      desc: Mr Chan Cheow Hoe is the Government Chief Digital Technology Officer (GCDTO) of the Smart Nation and Digital Government Office (SNDGO). He is also concurrently the Deputy Chief Executive of the Government Technology Agency of Singapore (GovTech). As the GCDTO, Cheow Hoe oversees the development of the Government’s digital infrastructure and digital technology capability, as well as talent development in information and communication technology and smart systems (ICT&SS). He will also oversee the development of platforms to enable resource sharing and interoperability across Government,so as  to drive the development and delivery of innovative government digital services for citizens and businesses. In his role as Deputy Chief Executive, GovTech, he oversees multi-disciplinary teams that develop and manage key government’s digital products such as the National Digital Identity.Cheow Hoe has more than two decades of extensive experience both in the public and private sectors, with a strong track record in leading digital transformation changes in organisations and the government. Prior to joining GovTech, Cheow Hoe held senior appointments in international banks and consulting companies in the areas of technology, operations, finance and business. Cheow Hoe graduated from the National University of Singapore, and obtained his masters from Wharton School.
+
+- type: Day 1, Keynotes
+  timeslot: 10:20 AM - 10:50 AM
+  timeslot_metadata: 2022-11-15T10:20:00+08:00 - 2022-11-15T10:50:00+08:00
+  title: Why SaaS and PaaS are Perfect for Government -- Almost Every Time!
+  desc: Can SaaS and PaaS platforms handle the security, complexity, and scale of government IT? Join us as we explore how today’s Cloud 3.0-based platforms deliver on the 5 essential building blocks of digital transformation for Government. Learn how to leverage SaaS to increase agility, speed, security, reuse, and success in today’s most demanding government IT environments.
+  speakers:
+    - name: Mr Paul Tatum
+      image: /assets/img/photos/paul-tatum.png
+      title: Executive Vice President, Solution Engineering for Global Public Sector, Salesforce
+      desc: Paul Tatum leads the Global Public Sector Solutions Engineering team, helping governments around the world modernise their businesses and missions using Salesforce leading PaaS and SaaS offerings. Paul is responsible for overall technical direction, architecture, and solutions based on Salesforce cloud services. Paul brings over 30 years of experience working with Public Sector customers and provides technical and business executive insights in the areas of Cloud Computing, CRM, Case Management, Security, Integrated Platforms, AI/ML, Analytics, and IT trends in government. Paul has held Solutions Engineering leadership roles since 2000, always focusing on technical excellence and customer success.
+
+- type: Day 1, Keynotes
+  timeslot: 10:50 AM - 11:20 AM
+  timeslot_metadata: 2022-11-15T10:50:00+08:00 - 2022-11-15T11:20:00+08:00
+  title: Extending the AWS Cloud Outside of Public Regions
+  desc: The AWS Nitro System is the underlying platform for our next generation of EC2 instances that enables AWS to innovate faster, further reduce cost for our customers, and deliver added benefits like increased security and new instance types. AWS has completely re-imagined our virtualisation infrastructure. Traditionally, hypervisors protect the physical hardware and bios, virtualise the CPU, storage, networking, and provide a rich set of management capabilities. With the Nitro System, we are able to break apart those functions, offload them to dedicated hardware and software, and reduce costs by delivering practically all of the resources of a server to your instances. In this talk, we will explore the improved hardware-based security in the Nitro System, including how we can leverage this technology outside of traditional public cloud regions using AWS Outposts and Local Zones.
+  speakers:
+    - name: Mr Anthony Liguori
+      image: /assets/img/photos/anthony-liguori.png
+      title: Vice President & Distinguished Engineer, Amazon Web Services
+      desc: Anthony leads the virtualisation teams within EC2 for public cloud and edge offerings. Anthony led the development of the Nitro System, Firecracker, and AWS Outposts. Prior to join AWS, Anthony led the Open Source QEMU VMM project.
+
+- type: Day 1, Keynotes
+  timeslot: 11:20 AM - 11:50 AM
+  timeslot_metadata: 2022-11-15T11:20:00+08:00 - 2022-11-15T11:50:00+08:00
+  title: Delivering Trust in a Data Driven World
+  desc: Trust has become critical in the data-driven world. As digital activity continues to grow, more information on our lives becomes available online, and more decisions rely on online data; trust is crucial. Yet, it is easy to lose trust but difficult to rebuild it. This talk will address the technology and policy approaches to maintaining trust, deriving unbiased data-driven insights, and securing systems. It will illustrate how to build trustworthy systems for your users to interact confidently in the digital world.
+  speakers:
+    - name: Ms Rebecca Parsons
+      image: /assets/img/photos/rebecca-parsons.png
+      title: Chief Technology Officer, Thoughtworks
+      desc: Rebecca is CTO at Thoughtworks and is a scientist with a strong love of programming languages. Beyond her technical achievements, she is a strong advocate for diversity and inclusion in the industry, particularly increasing the number of women in coding and STEM. She has served on the boards of CodeChix and the Agile Alliance, is currently on the board of trustees of AnitaB.org and is an advisor to Women Who Code. She leads the Thoughtworks global technical staff with wisdom, a willingness to embrace new technologies, and a deep understanding of tech culture. She has also co-authored a number of books, including Domain-Specific Languages, The Thoughtworks Anthology, and Building Evolutionary Architectures.
+
+- type: Day 1, Keynotes
+  timeslot: 04:00 PM - 04:30 PM
+  timeslot_metadata: 2022-11-15T16:00:00+08:00 - 2022-11-15T16:30:00+08:00
+  title: How to Scale Your Business with a DevOps Platform
+  desc: The past few years have shown that all companies must become software companies if they want to quickly adapt and compete - and DevOps plays a critical role in helping businesses achieve this. But what's the difference between DevOps tools and a DevOps platform? Join Sid Sijbrandij, CEO and co-founder of GitLab (the One DevOps platform), as he answers why a platform has a greater impact on productivity, security, and operational excellence. You'll also hear how other businesses and the public sector are leveraging a DevOps platform, and how you can further the scalability of a platform by co-creating with the community.
+  speakers:
+    - name: Mr Sytse 'Sid' Sijbrandij
+      image: /assets/img/photos/sytse-sijbrandij.png
+      title: Chief Executive Officer & Co-founder, GitLab
+      desc: Sid Sijbrandij is the Co-founder and CEO of GitLab Inc., the DevOps platform. GitLab’s single application helps organisations deliver software faster and more efficiently while strengthening security and compliance. Sid’s career path is untraditional, from building recreational submarines to working at the Ministerie van Justitie en Veiligheid on the Legis project. A self-taught programmer, in 2012 he discovered GitLab and his passion for open source. Soon after, Sid commercialized GitLab and led the company through Y Combinator’s Winter 2015 batch. Under his leadership, GitLab has grown with an estimated 30 million+ registered users from startups to global enterprises.
+
+- type: Day 1, Plenary
+  timeslot: 02:00 PM - 02:30 PM
+  timeslot_metadata: 2022-11-15T14:00:00+08:00 - 2022-11-15T14:30:00+08:00
+  title: The Heart of Data and AI
+  desc:
+  speakers:
+    - name: Mr Tok Wee Hyong
+      image: /assets/img/photos/blank-photo.png
+      title: Senior Director, Cloud and AI, Microsoft
+
+- type: Day 1, Plenary
+  timeslot: 02:30 PM - 03:00 PM
+  timeslot_metadata: 2022-11-15T14:30:00+08:00 - 2022-11-15T15:00:00+08:00
+  title: Innersource - The Road to Engineering Collaboration across Government
+  desc:
+  speakers:
+    - name: Mr Hunter Nield
+      image: /assets/img/photos/hunter-nield.png
+      title: Distinguished Engineer, GovTech
+
+- type: Day 1, Plenary
+  timeslot: 03:00 PM - 03:30 PM
+  timeslot_metadata: 2022-11-15T15:00:00+08:00 - 2022-11-15T15:30:00+08:00
+  title: SG Tech Stack + Developer Portal
+  desc:
+  speakers:
+    - name: Mr Kevin Ng
+      image: /assets/img/photos/kevin-ng.png
+      title: Director, CODEX, GovTech
+
+- type: Day 1, Plenary
+  timeslot: 03:00 PM - 03:30 PM
+  timeslot_metadata: 2022-11-15T15:00:00+08:00 - 2022-11-15T15:30:00+08:00
+  title: Changed Responsibilities in Modern Software Development Environments
+  desc:
+  speakers:
+    - name: Mr Martin Knobloch
+      image: /assets/img/photos/martin-knobloch.png
+      title: Global AppSec Strategist, Micro Focus
+
+# Day 2
+- type: Day 2, Opening Address
+  timeslot: 10:00 AM - 10:20 AM
+  timeslot_metadata: 2022-11-16T10:00:00+08:00 - 2022-11-15T10:20:00+08:00
+  title: Opening Address
+  desc:
+  speakers:
+    - name: Dr Janil Puthucheary
+      image: /assets/img/photos/janil-puthucheary.png
+      title: Senior Minister of State at Ministry of Communications and Information, and Minister-in-charge of GovTech
+      desc: Dr Janil Puthucheary was elected Member of Parliament in 2011. He is currently Senior Minister of State, Ministry of Communications and Information, and Ministry of Health. He is concurrently the Minister-in-charge of the Government Technology Agency (GovTech) where he coordinates GovTech’s strategy with industry development efforts as part of the Smart Nation initiative, and is a member of the Ministerial Committee overseeing the Smart Nation and Digital Government Group (SNDGG). He chairs OnePeople.sg, which works to promote racial harmony in Singapore. His political roles include Chair of Young PAP (the youth wing of the People's Action Party), and the Government Whip.
+
+- type: Day 2, Panel Discussion
+  timeslot: 10:20 AM - 11:00 AM
+  timeslot_metadata: 2022-11-16T10:20:00+08:00 - 2022-11-16T11:00:00+08:00
+  title: Talent, Culture and Purpose
+  desc:
+  speakers:
+    - name: Mr Kok Ping Soon
+      title: Chief Executive, GovTech
+      image: /assets/img/photos/kok-ping-soon.png
+      desc: Ping Soon is Chief Executive of the Government Technology Agency of Singapore (GovTech), the lead agency driving Singapore’s Smart Nation initiative and public sector digital transformation. Prior to his current appointment, Ping Soon held various positions in the Ministry of Manpower, National Security Co-ordination Secretariat, Ministry of Trade & Industry, Singapore Tourism Board, Contact Singapore (CS) and Economic Development Board (EDB). He spent six years in the United States working for CS and EDB. He serves on the Board of Info-comm Media Development Authority (IMDA), Defence Science & Technology Agency (DSTA), Institute of System Sciences (ISS) and is a member of the National Institute of Education (NIE) Council. Ping Soon is a graduate of the National University of Singapore where he majored in Economics. He attended the Advanced Management Programme by the International Institute for Management Development (IMD), Stanford Executive Programme by the Stanford Graduate School of Business, and was also awarded the Lien Ying Chow Legacy Fellowship to pursue a research project in China.
+    - name: Mr Noah Pepper
+      image: /assets/img/photos/blank-photo.png
+      title: Former APAC Head, Stripe
+    - name: Mr Frank Koo
+      image: /assets/img/photos/frank-koo.png
+      title: Head of Asia, Talent and Learning Solutions, LinkedIn
+      desc: Frank Koo is currently the Asia Head of Talent & Learning Solutions at LinkedIn. Frank’s team supports companies in talent acquisition, development and retention through the LinkedIn platform and solutions. Prior to LinkedIn, Frank was the Chief Operating Officer of BE Education based in Shanghai and Asia Pacific President of Learning Solutions at Pearson Education. At Oracle, he was the MD for Singapore and South Asia Growth Economies. Frank is a  Bachelor of Business Administration graduate from the National University of Singapore. He has also attended executive programs with INSEAD and IMD.
+
+- type: Day 2, Keynotes
+  timeslot: 11:00 AM - 11:30 AM
+  timeslot_metadata: 2022-11-16T11:00:00+08:00 - 2022-11-16T11:30:00+08:00
+  title: Zero Trust at Scale
+  desc: Customers and countries have an increasing dual challenge of modernizing end-user experiences- while defending against ever-increasing security threats. Zero trust is a paradigm that allows digital transformation to deliver innovative applications and architectures as well as evolving cybersecurity. This session will discuss zero trust through products and practices that protect applications, data, devices, identity, infrastructure, and networks on a national scale.
+  speakers:
+    - name: Mr Paul Lorimer
+      image: /assets/img/photos/paul-lorimer.png
+      title: Corporate Vice President, Microsoft Enterprise and Cloud
+      desc: As Corporate Vice President of Enterprise and Cloud, Paul Lorimer leads the engineering and operations teams in Microsoft 365 focused on both business growth and service quality for our enterprise customers. He is responsible for driving Microsoft 365 growth through international expansion, public sector offerings, and investments in enterprise targeted capabilities. In addition, Lorimer leads key areas within Microsoft 365 business including Exchange, Skype for Business and Consumer, the development of new productivity features for complex organizations, and Compliance and Privacy. Committed to ensuring customers experience the value of Microsoft products within their business, Lorimer also supports government and large enterprise customers as they transition to the cloud.
+
+- type: Day 2, Keynotes
+  timeslot: 11:30 AM - 12:00 PM
+  timeslot_metadata: 2022-11-16T11:30:00+08:00 - 2022-11-16T12:00:00+08:00
+  title: What’s New in Google Cloud Infrastructure
+  desc: Google Cloud has long enabled transformation in the public sector by providing a spectrum of security and compliance features and offerings to meet diverse needs of public sector customers. It is built on planet-scale, distributed infrastructure that thousands of customers across the globe rely on, and it continues to grow rapidly. Hear from Sachin Gupta, VP and GM of Google Cloud Infrastructure, about the latest enhancements in the infrastructure offerings focused on optimizing cost, security, compliance, and ease of use as well as transformational benefits.
+  speakers:
+    - name: Mr Sachin Gupta
+      image: /assets/img/photos/sachin-gupta.png
+      title: Vice President & General Manager, IaaS, Google Cloud
+      desc: Sachin Gupta is the Vice President and General Manager of Infrastructure as a Service (IaaS) at Google Cloud. Having joined Google in 2020, Sachin brings together Product, Strategy, and UX across Cloud Compute, Storage, Networking, and Google Distributed Cloud businesses. His team is also responsible for global expansion, reliability infrastructure and Technical Infrastructure which serves the needs of all Google product areas. Through a deep understanding of enterprise customers, Sachin has a 20+ year track record of building solid teams and creating innovative products and services. Before joining Google, Sachin worked at Cisco for 23 years, where he served as SVP of Product for Enterprise Networking. Within his teams, Sachin has been a long-time champion of customer focus and an inclusive team culture. He holds a Bachelor of Science in Electrical Engineering from Purdue, a Master of Science in Electrical Engineering from Stanford University, and an MBA from Wharton.
+
+- type: Day 2, Keynotes
+  timeslot: 12:00 PM - 12:30 PM
+  timeslot_metadata: 2022-11-16T12:00:00+08:00 - 2022-11-16T12:30:00+08:00
+  title: Simplifying Data and AI with Lakehouse Platforms
+  desc: "Traditionally, building data and AI applications in most enterprises has been complex because data is stored and processed across many disparate systems: data lakes such as Amazon S3, SQL data warehouses, message bus systems, and others. Enterprises have to staff large data engineering projects to move data across these systems, and end-users experience long delays and reliability problems. In the past few years, the cloud and open source have enabled a new class of data platform that unifies data lakes and warehouses, the lakehouse, and makes it significantly easier to share data across an organisation for all use cases. Because these platforms use open source formats, they are also directly usable in AI and streaming applications. I will describe how lakehouse systems such as the open source Delta Lake project, and how Databricks customers are using the lakehouse to achieve unprecedented scale and operational simplicity across analytics and AI use cases."
+  speakers:
+    - name: Mr Matei Zaharia
+      image: /assets/img/photos/matei-zaharia.png
+      title: Co-founder & Chief Technologist, Databricks
+      desc: Matei Zaharia is a Cofounder and Chief Technologist at Databricks as well as an Assistant Professor of Computer Science at Stanford. He started the Apache Spark project during his PhD at UC Berkeley in 2009, and has worked broadly on other widely used data and machine learning software, including MLflow, Delta Lake and Apache Mesos. He works on a wide variety of projects in data management and machine learning at Databricks and Stanford. Matei’s research was recognized through the 2014 ACM Doctoral Dissertation Award, an NSF CAREER Award, and the US Presidential Early Career Award for Scientists and Engineers (PECASE).
+
+- type: Day 2, Keynotes
+  timeslot: 04:00 PM - 04:30 PM
+  timeslot_metadata: 2022-11-16T16:00:00+08:00 - 2022-11-16T16:30:00+08:00
+  title: 'The Rise of the Platforms Team: An Organisational Response to Developer Experience'
+  desc: One area of work culture that receives a lot of focus is Developer Experience. As we seek to provide engineers with autonomy, it is easy to expect them to know too much about too many things, detracting from their core capabilities and contributing to burnout. In this session, Grant explores how Platform Engineering can reduce cognitive load, improving Developer Experience. You will learn how Platform Engineering functions at HashiCorp, how it interfaces with other teams as part of a release process, and what skills you should be on the lookout for as you seek to build your own Platform Team.
+  speakers:
+    - name: Mr Grant Orchard
+      image: /assets/img/photos/grant-orchard.png
+      title: Field Chief Technology Officer, Hashicorp
+      desc: Grant is an emerging technology executive, and a key influencer for the use of software development patterns in infrastructure automation. He communicates HashiCorp’s vision and ethos with customers and partners, using his experience to help organisations navigate the challenges of their heterogeneous technology landscape.
+
+- type: Day 2, Plenary
+  timeslot: 02:00 PM - 02:30 PM
+  timeslot_metadata: 2022-11-16T14:00:00+08:00 - 2022-11-16T14:30:00+08:00
+  title: Scaling Data for Organisational Transformation
+  desc:
+  speakers:
+    - name: Mr Damian Leach
+      image: /assets/img/photos/damian-leach.png
+      title: Chief Technology Officer, Asia Pacific and Japan, Workday
+
+- type: Day 2, Plenary
+  timeslot: 02:30 PM - 03:00 PM
+  timeslot_metadata: 2022-11-16T14:30:00+08:00 - 2022-11-16T15:00:00+08:00
+  title: Navigating Cybersecurity in the Digital Darkness
+  desc:
+  speakers:
+    - name: Mr Chong Rong Hwa
+      image: /assets/img/photos/chong-rong-hwa.png
+      title: Director, Cyber Security Group, GovTech
+
+- type: Day 2, Plenary
+  timeslot: 03:00 PM - 03:30 PM
+  timeslot_metadata: 2022-11-16T15:00:00+08:00 - 2022-11-16T15:30:00+08:00
+  title: 'Cyber Physical Masterplanning: The Need for a Digital Twin'
+  desc:
+  speakers:
+    - name: Mr James Tan
+      image: /assets/img/photos/blank-photo.png
+      title: Director, Sensors and IoT, GovTech
+
+- type: Day 2, Plenary
+  timeslot: 03:30 PM - 04:00 PM
+  timeslot_metadata: 2022-11-16T15:30:00+08:00 - 2022-11-16T16:00:00+08:00
+  title: Upskilling Trends for the Humans of DevOps
+  desc:
+  speakers:
+    - name: Ms Jayne Groll
+      image: /assets/img/photos/jayne-groll.png
+      title: CEO and Co-founder, DevOps Institute

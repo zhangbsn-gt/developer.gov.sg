@@ -24,7 +24,9 @@
                 {% else %}
                 <h5>{{ event.title }}</h5>
                 {% endif %}
-                <p class="margin--bottom--sm has-text-dark has-text-weight-semibold">Speaker(s):</p>
+				{% if event.speakers %}
+					<p class="margin--bottom--sm has-text-dark has-text-weight-semibold">Speaker(s):</p>
+				{% endif %}
             </div>
             <div class="sgds-accordion-set">
                 {%- for content in event.speakers -%}

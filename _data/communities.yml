@@ -2,12 +2,6 @@
   description: >
     The overview of the community.
 
-- name: Building a Community
-  description: to be updated
-  items:
-    - Our Journey
-    - Resources
-
 - name: Events
   description: >
     Explore upcoming events for developers and technologists to learn from each

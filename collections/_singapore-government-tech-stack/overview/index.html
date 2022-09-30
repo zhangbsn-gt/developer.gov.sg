@@ -11,6 +11,7 @@ sgts_service_layer:
   digital_identity:
     work_in_progress:
       - Authorise
+      - Notify
       - Sign
   data_science:
     work_in_progress:
@@ -19,10 +20,6 @@ sgts_service_layer:
   data_transfer:
     work_in_progress:
       - Video Exchange
-  communications:
-    work_in_progress:
-      - APEX Cloud
-      - APEX Marketplace
 sgts_base_layer:
   monitoring:
     planned:
@@ -30,6 +27,10 @@ sgts_base_layer:
       - Cloudscape
     work_in_progress:
       - Endpoint Det & Res
+  communications:
+    work_in_progress:
+      - APEX Cloud
+      - APEX Marketplace
   runtime:
     work_in_progress:
   service_management:
@@ -124,15 +125,6 @@ sgts_base_layer:
         {% include sgts-service-layer-card.html category="payment" header="Payment" layer="services" card_type="sm" %}
         {% include sgts-service-layer-card.html category="productivity_&_utility" header="Productivity & Utility" layer="services" card_type="sm" %}
       </div>
-      <!-- Start of Communtications-->
-      <div class="row">
-        <div class="col">
-          <div class="card-grid-container sg-tech-stack is-paddingless">
-            {% include sgts-service-layer-card.html category="communications" header="Communications" layer="services" card_type="lg" %}
-          </div>
-        </div>
-      </div>
-      <!-- End of Communtications-->
     </div>
   </section>
 </div>
@@ -155,7 +147,16 @@ sgts_base_layer:
         </div>
       </div>
       <!-- Start of cards for each base-->
-      <!-- Start of each card for base layer-->
+      <!-- Start of Communtications-->
+      <div class="row">
+        <div class="col">
+          <div class="card-grid-container sg-tech-stack is-paddingless">
+            {% include sgts-service-layer-card.html category="communications" header="Communications" layer="base" card_type="lg" %}
+          </div>
+        </div>
+      </div>
+      <!-- End of Communtications-->
+      <!-- Start of Between Communications and service managment-->
       <div class="row">
         <div class="col">
           <div class="card-grid-container sg-tech-stack">
@@ -165,7 +166,7 @@ sgts_base_layer:
           </div>
         </div>
       </div>
-      <!-- End of each card for base layer-->
+      <!-- End of Between Communications and service managment-->
       <!-- Start of service managment-->
       <div class="row">
         <div class="col">

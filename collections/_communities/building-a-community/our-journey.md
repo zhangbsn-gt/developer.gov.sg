@@ -2,10 +2,7 @@
 title: Building a Community
 layout: layout-page-sidenav
 description:
-redirect_from:
-  - /communities/building-a-community/
-  - /communities/building-a-community/overview.html
-  - /communities/building-a-community/our-journey.html
+redirect_from: /communities/building-a-community/
 ---
 
 ### Levelling Up Collectively — Our Community Engagement Journey

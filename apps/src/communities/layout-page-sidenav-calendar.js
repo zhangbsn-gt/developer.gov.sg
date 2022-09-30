@@ -33,7 +33,7 @@ import { getCompareDate, getEventDataByDate } from "../lib/communities";
           break;
         case status === "upcoming":
           eventButton.style.color = "white";
-          eventButton.innerHTML = "Register Interest";
+          eventButton.innerHTML = "Register Now";
           eventButton.style.backgroundColor = "#0161AF";
           break;
         default:
@@ -46,7 +46,7 @@ import { getCompareDate, getEventDataByDate } from "../lib/communities";
           }
 
           eventButton.disabled = false;
-          eventButton.innerHTML = "Register Interest";
+          eventButton.innerHTML = "Register Now";
           eventButton.style.backgroundColor = "#0161AF";
           break;
       }
