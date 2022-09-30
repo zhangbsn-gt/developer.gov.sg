@@ -11,3 +11,5 @@ redirect_from:
 ### Documentation
 
 - [CFT Rest APIs](https://docs.developer.tech.gov.sg/docs/cft-rest-api-documentation/){:target="_blank"}
+
+- [CFT User Documentation](https://docs.developer.tech.gov.sg/docs/cft-user-guide/){:target="_blank"}
