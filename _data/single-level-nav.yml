@@ -105,6 +105,11 @@
   items:
     - Overview
 
+- name: Vault
+  items:
+    - Overview
+    - Features
+    
 # Design
 - name: Singapore Government Design System
   items:
@@ -149,6 +154,14 @@
 - name: National Digital Identity
   items:
     - Overview
+
+- name: Notify
+  items:
+    - Overview
+    - Features
+    - Getting Started
+    - Resources
+    - FAQs
 
 - name: SGFinDex
   items:
@@ -343,6 +356,7 @@
 - name: Personal Alert Button
   items:
     - Overview
+    - Case Study
 
 - name: SenseOps
   items:

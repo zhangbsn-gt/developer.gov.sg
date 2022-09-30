@@ -4,7 +4,9 @@
     - Overview
     - CloudSCAPE
     - MyMoneySense
+    - Notify
     - Secure Infrastructure-as-Code
+    - Vault
     - Verify (Digital Certificates)
 
 - name: Citizen-facing Products
@@ -24,6 +26,7 @@
     - Login
     - MyInfo
     - Notarise
+    - Notify
     - OurSG
     - Personal Alert Button
     - SafeEntry
@@ -58,6 +61,7 @@
     - Identiface
     - Login
     - Myinfo
+    - Notify
     - Personalise
     - SHIP-HATS
     - Singapore Government Design System
