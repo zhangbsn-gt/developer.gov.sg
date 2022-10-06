@@ -14,11 +14,26 @@
 
   .sgds-card {
     height: 100%;
+
+    .sgds-card-image-size {
+      width: 100%;
+      aspect-ratio: 1;
+    }
   }
 
   @include until($tablet) {
     grid-template-columns: 1fr;
+    grid-gap: 1rem;
+  }
+
+  &.grid-dynamic-rem {
     gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+
+    // On mobile, the grid will be 2 columns wide
+    @include until(600px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   @include from($tablet) {

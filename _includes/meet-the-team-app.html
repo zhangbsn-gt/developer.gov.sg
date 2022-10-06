@@ -1,24 +1,34 @@
 {% assign data = include.bios %}
-<div class="card-grid-container grid-17rem">
-    {% for bio in data %}
-    {% assign img_url = "/assets/img/photos/" | append: bio.img_src %}
-    <div class="sgds-card">
-        <div class="sgds-card-image">
-            <figure class="sgds-image is-9by9">
-                <img class="margin--bottom--none" src="{{ img_url }}" alt="{{ bio.name }}">
-            </figure>
-        </div>
-        <div class="sgds-card-content" style="border-top: 0px">
-            <h4 class="margin--bottom--sm"><strong>{{ bio.name }}</strong></h4>
-            <p class="margin--bottom--sm has-text-dark"><strong>{{ bio.title }}</strong></p>
-            {% if bio.linkedin_url %}
-            <p>
-                <strong>
-                    <a href="{{bio.linkedin_url}}">Linkedin</a>
-                </strong>
-            </p>
-            {% endif %}
-        </div>
+<div class="card-grid-container grid-dynamic-rem" id="meet-the-team-grid">
+  {% for bio in data %}
+  {% assign img_url = "/assets/img/photos/" | append: bio.img_src %}
+
+  <div class="sgds-card meet-the-team-card">
+    <div class="sgds-card-image">
+      <figure class="sgds-image">
+        <img class="margin--bottom--none sgds-card-image-size" src="{{ img_url }}" alt="{{ bio.name }} profile image"
+          style="vertical-align: bottom;">
+      </figure>
     </div>
-    {% endfor %}
+    <div class="sgds-card-content">
+      <div class="meet-the-team-content">
+        <p class="meet-the-team-content-bio margin--bottom--xs"><strong>{{ bio.name }}</strong></p>
+        <p class="meet-the-team-content-title margin--bottom">{{- bio.title -}}</p>
+      </div>
+      {% if bio.linkedin_url %}
+      <footer>
+        <p class="margin--top--sm">
+          <strong>
+            <a href="{{ -bio.linkedin_url -}}">LinkedIn</a>
+            
+          </strong>
+        </p>
+      </footer>
+      {% endif %}
+    </div>
+  </div>
+  {% endfor %}
 </div>
+
+<script defer="defer" src="/assets/bundles/meet-the-team.bundle.js">
+</script>

@@ -28,6 +28,7 @@ module.exports = (env, argv) => {
       "layout-page-sidenav-calendar":
         "./apps/src/communities/layout-page-sidenav-calendar.js",
       "back-to-the-top": "./apps/src/communities/back-to-the-top.js",
+      "meet-the-team": "./apps/src/communities/meet-the-team.js",
       "toggle-accordion": "./apps/src/communities/toggle-accordion.js",
       "vue-app-all-sessions": "./apps/src/pages/vue-app-all-sessions.js",
       "main": "./apps/src/main.js",
@@ -86,7 +87,6 @@ module.exports = (env, argv) => {
       }),
     ],
     devtool: "source-map",
-
   };
 
   return config;
