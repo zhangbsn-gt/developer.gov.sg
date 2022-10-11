@@ -301,6 +301,14 @@
   items:
     - Overview
 
+- name: RedeemSG
+  items:
+    - Overview
+    - Features
+    - Getting Started
+    - Resources
+    - FAQs
+
 - name: TechBiz
   items:
     - Overview
