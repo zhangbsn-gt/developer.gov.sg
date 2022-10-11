@@ -11,10 +11,10 @@ redirect_from:
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/digital-transformation/dgx_2019_group_picture.png" width="80%" height="80%"
+    src="/assets/img/digital-transformation/dgx-2022.jpg" width="80%" height="80%"
     alt="The annual DGX in Singapore where digital governments hold closed-door discussions on the most relevant issues around the world."
   />
-  <figcaption>The annual DGX in Singapore where digital governments hold closed-door discussions on the most relevant issues around the world. (Taken in 2019, prior to COVID-19)</figcaption>
+  <figcaption>The annual DGX in Singapore where digital governments hold closed-door discussions on the most relevant issues around the world</figcaption>
 </figure>
 
 ### What is the DGX?
