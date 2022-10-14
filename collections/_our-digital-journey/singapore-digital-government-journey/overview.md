@@ -30,6 +30,9 @@ Finally, to drive the vision of a Smart Nation, five Strategic National Projects
 
 View the full timeline of our digital milestones [here](https://www.tech.gov.sg/who-we-are/our-journey/){:target="_blank"}.
 
+Find out more about how GovTech supports Singapore's Digital Government journey [in this factsheet](files/govtech-singapore-digital-government-journey-factsheet.pdf){:target="_blank"}.
+
+
 ### National Achievements 2020
 The Survey on Satisfaction with Government Digital Services for citizens and businesses is conducted annually by GovTech in collaboration with the Smart Nation and Digital Government Office (SNDGO) to assess citizens’ and businesses’ satisfaction with key government digital services and to identify areas for improvement.
 
