@@ -42,7 +42,7 @@ bios:
     linkedin_url: https://www.linkedin.com/in/terence-peh-17b363163/
 
   - name: Jenn Lim
-    title: Associate UX Engineer
+    title: Associate UX Designer
     img_src: Jenn_Lim.png
     linkedin_url: https://www.linkedin.com/in/jenn-lim/
 ---
