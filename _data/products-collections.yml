@@ -2,13 +2,8 @@
   description: Discover the latest product additions to the Singapore Government Developer Portal here
   items:
     - Overview
-    - CloudSCAPE
     - RedeemSG
-    - MyMoneySense
-    - Notify
-    - Secure Infrastructure-as-Code
-    - Vault
-    - Verify (Digital Certificates)
+    - Singpass
 
 - name: Citizen-facing Products
   description: Explore the government products for providing citizens with the services they need. This includes citizen life journey, grant services, and more!

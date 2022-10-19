@@ -170,6 +170,12 @@
 - name: Singpass
   items:
     - Overview
+    - Features
+    - Pricing
+    - Getting Started
+    - Resources
+    - FAQs
+    - Meet The Team
 
 - name: TechPass
   items:
