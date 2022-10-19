@@ -2,6 +2,7 @@
   description: Discover the latest product additions to the Singapore Government Developer Portal here
   items:
     - Overview
+    - Government on Commercial Cloud
     - RedeemSG
     - Singpass
 
@@ -52,9 +53,12 @@
     - Asynchronous Data Exchange
     - APEX
     - Cloud File Transfer
+    - CloudSCAPE
     - Container Stack
     - Corppass
     - DECADA IoT Tech Stack
+    - Government on Commercial Cloud
+    - GovWallet
     - Identiface
     - Login
     - Myinfo
@@ -66,6 +70,6 @@
     - StackOps
     - TechBiz
     - Transcribe
-    - VAS
     - Verify
+    - Video Analytics System
     - WOGAA

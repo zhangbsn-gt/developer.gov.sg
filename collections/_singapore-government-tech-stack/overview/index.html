@@ -191,7 +191,10 @@ sgts_base_layer:
             <div class="col width"><p class="has-text-weight-bold">On premise</p></div>
           </div>
           <div class="col is-2-desktop is-paddingless host-box sub-host-rows is-flex">
-            <div class="col width"><p class="has-text-weight-bold">Gov on Commercial Cloud</p></div>
+            <div class="col width">
+              <!--category should be sgts_collection_group, header is equal to sgts_title, layer is equal to sgts_layer_group-->
+              {% include sgts-host-layer-items.html category="infrastructure_and_hosting" header="Gov on Commercial Cloud" layer="host" %}
+            </div>
           </div>
           <div class="is-paddingless is-marginless is-hidden-desktop title-col">
               <p class="has-text-weight-bold">WoG Services</p>

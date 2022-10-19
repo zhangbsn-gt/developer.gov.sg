@@ -250,6 +250,9 @@
 - name: Government on Commercial Cloud
   items:
     - Overview
+    - Features
+    - Getting Started
+    - Resources 
     
 - name: 'I2C (Infra to Code)'
   items:
