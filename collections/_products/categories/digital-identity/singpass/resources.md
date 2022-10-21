@@ -7,6 +7,7 @@ _data: single-level-nav
 ---
 
 ### World Bank x GovTech Case Study
+- [Virtual Launch Event](https://www.worldbank.org/en/events/2022/10/19/singapore-s-national-digital-identity-and-governance-data-sharing-a-case-study-of-singpass-and-apex){:target="_blank"}
 - [National Digital Identity and Government Data Sharing in Singapore: A Case Study of Singpass and APEX](/assets/files/GovTech World Bank NDI APEX report.pdf){:target="_blank"}
 
 ### Product Videos
