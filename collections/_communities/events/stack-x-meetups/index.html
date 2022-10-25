@@ -65,11 +65,10 @@ redirect_from:
 <div>
     <h3>All Upcoming STACK-X Meetups</h3>
     <div id="upcoming-events-container" class="card-grid-container is-fullwidth"></div>
-    <div class="is-fullwidth is-flex" style="justify-content: center;" id="upcoming-conferences-button">
-        <button class="sgds-button is-outlined is-secondary"
-            onclick="toggleEventsVisibility('upcoming-conferences','upcoming-conferences-button')">
-            View all events
-        </button>
+    <div class="is-fullwidth is-flex is-flex-justify-c" id="upcoming-events-view-more-button">
+      <button class="sgds-button sgds-button--primary" onclick="toggleEventsVisibility('upcoming-event','upcoming-events-view-more-button')">
+        View all events
+      </button>
     </div>
     <div id="no-upcoming-events-message" class="margin--top margin--bottom--xl has-text-centered">
         Sorry, there is currently no upcoming available events
@@ -82,9 +81,8 @@ redirect_from:
 <div>
     <h3>Past STACK-X Meetups</h3>
     <div id="past-events-container" class="card-grid-container is-fullwidth"></div>
-    <div class="is-fullwidth is-flex" style="justify-content: center;" id="past-conferences-button">
-        <button class="sgds-button is-outlined is-secondary"
-            onclick="toggleEventsVisibility('past-conferences', 'past-conferences-button')">
+    <div class="is-fullwidth is-flex is-flex-justify-c" id="past-events-view-more-button">
+        <button class="sgds-button is-outlined is-secondary" onclick="toggleEventsVisibility('past-event', 'past-events-view-more-button')">
             View all events
         </button>
     </div>
@@ -98,9 +96,15 @@ redirect_from:
 %}
 
 <!-- Sorting and theming script -->
-<script async defer="defer" data-content-limit=2 data-id="conferences-webinars-sort"
-    src="/assets/bundles/conferences-webinars-sort.bundle.js">
-</script>
+<script
+  type="text/javascript"
+  data-content-limit="2"
+  data-display-upcoming="true"
+  data-display-past="true"
+  data-id="community-overview"
+  src="/assets/bundles/community-events.bundle.js"
+></script>
+
 <!-- Script to hide content -->
 <script type="text/javascript">
     function toggleEventsVisibility(attribute, buttonID) {

@@ -23,15 +23,15 @@ redirect_from:
 <div>
     <h3>Upcoming Events</h3>
     <div id="upcoming-events-container" class="card-grid-container is-fullwidth"></div>
+    {%- include site-section-event-listing.html -%}
     <div id="no-upcoming-events-message" class="margin--top margin--bottom--xl has-text-centered">
         Sorry, there is currently no upcoming available events.
     </div>
-    <div class="is-fullwidth is-flex" style="justify-content: center;" id="upcoming-conferences-button">
+    <div class="is-fullwidth is-flex is-flex-justify-c" id="upcoming-conferences-button">
         <a class="sgds-button is-outlined is-secondary" href="/communities/events/all-events/index.html">
             View all events
         </a>
     </div>
-    {%- include site-section-event-listing.html -%}
 </div>
 
 <hr />
@@ -44,10 +44,10 @@ redirect_from:
 
 <!-- Sorting and theming script -->
 <script
-  async
-  defer
   type="text/javascript"
   data-id="community-overview"
+  data-display-upcoming="true"
+  data-display-past="false"
   data-content-limit="2"
-  src="/assets/bundles/community-overview.bundle.js"
+  src="/assets/bundles/community-events.bundle.js"
 ></script>

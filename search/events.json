@@ -2,40 +2,67 @@
 ---
 
 {
-    "pages": [
-        {%- assign events = site.data['events-nav'] -%}
-        {%- assign sorted_events = events | sort: 'event_date'-%}
+  "pages": [
+    {%- assign events = site.data['events-nav'] -%}
 
-        {%- for document in sorted_events reversed -%}
-            {%- assign sub_section_slug = document.name | slugify -%}
-            {%- assign event_recording_link = document.event_recording_link | default: false-%}
-            {%- assign target_group_joined = document.target_group | join: ", " -%}
-            {%- assign event_number_of_days = document.event_number_of_days | default : 1-%}
+    {%- for document in events -%}
+      {%- assign name = document.name -%}
+      {%- assign sub_section_slug = document.name | slugify -%}
+      {%- assign target_group_joined = document.target_group | join: ", " -%}
+      {%- assign event_number_of_days = document.event_number_of_days | default : 1-%}
 
-            {%- assign event_title = document.name -%}
-            {% if event_number_of_days >= 2 %}
-              {% assign additional_tag = "[" | append : event_number_of_days | append: "-Day Event] " %}
-              {% assign event_title = event_title | prepend : additional_tag  %}
-            {% endif %}
+      {%- assign recordings_uploaded = document.recording_link | default: false -%}
 
-            {% if document.event_category == "Conference" %}
-                {%- assign url_str = "/communities/events/conferences/" | append: sub_section_slug -%}
-            {% else %}
-                {%- assign url_str = "/communities/events/stack-x-meetups/" | append: sub_section_slug -%}
-            {% endif %}
-                {
-                "title": "{{ event_title }}",
-                "description": "{{- document.event_description | remove: '>' | remove: '"' | strip -}}",
-                "category": "{{- document.event_category -}}",
-                "content": {{ document.event_description | strip_html | strip_newlines | strip | jsonify }},
-                "url": "{{ url_str }}",
-                "icon_path": "/assets/img/communities/{{- document.event_category | append : "s"| downcase | slugify -}}.svg",
-                "event_date": "{{ document.event_date | date: '%Y%m%d' }}",
-                "event_date_raw": "{{ document.event_date }}",
-                "event_recording_link": "{{ event_recording_link }}",
-                "meta": "document"
-                },
-            {%- if forloop.last -%}{}{%- endif -%}
-        {%- endfor -%}
-    ]
+      {%- assign event_title = document.name -%}
+      {% if event_number_of_days >= 2 %}
+        {% assign additional_tag = "[" | append : event_number_of_days | append: "-Day Event] " %}
+        {% assign event_title = event_title | prepend : additional_tag  %}
+      {% endif %}
+
+      {%- if document.category contains "Conference" -%}
+        {%- assign img_src = '/assets/img/communities/conferences.svg' -%}
+        {%- assign url_str = "/communities/events/conferences/" | append: sub_section_slug-%}
+      {%- elsif document.category contains "Stack-X Meetup"-%}
+        {%- assign img_src = '/assets/img/communities/stack-x-meetups.svg' -%}
+        {%- assign url_str = "/communities/events/stack-x-meetups/" | append: sub_section_slug-%}
+      {%- else -%}
+        {%- assign img_src = '/assets/img/communities/hackathons.svg' -%}
+        {%- assign url_str = "/communities/events/hackathons/" | append: sub_section_slug-%}
+      {%- endif -%}
+
+      {%- if document.event_date contains " - " -%}
+        {%- assign start_date = document.event_date | split: " - " | first -%}
+        {%- assign end_date = document.event_date | split: " - " | last | default:start_date -%}
+
+        {%- assign start_date_second = start_date | date: "%s" -%}
+        {%- assign end_date_second = end_date | date: "%s" -%}
+        {%- assign event_number_of_days = end_date_second | minus: start_date_second | divided_by: 86400 | plus: 1 -%}
+
+        {% if event_number_of_days >= 2 %}
+          {%- assign additional_tag = "[" | append : event_number_of_days | append: "-Day Event] " -%}
+          {%- assign name = name | prepend : additional_tag -%}
+        {% endif %}
+      {%- else -%}
+        {%- assign event_date = document.event_date -%}
+        {%- assign event_end_date = document.event_date -%}
+      {%- endif -%}
+
+      {
+        "title": "{{- name -}}",
+        "description": "{{- document.description | remove: '>' | remove: '"' | strip -}}",
+        "content": {{ document.event_description | strip_html | strip_newlines | strip | jsonify }},
+        "category": "{{- document.category -}}",
+        "url": "{{ url_str }}",
+        "icon_path": "{{ img_src }}",
+        "date_time": {
+          "full_date_and_time": "{{- document.event_date -}}",
+          "start_date_time": "{{- document.event_date | split: " - " | first -}}",
+          "end_date_time": "{{- document.event_date | split: " - " | last -}}"
+        },
+        "event_recording_link": "{{ recordings_uploaded }}",
+        "meta": "document"
+      }
+      {%- if forloop.last == false -%},{%- endif -%}
+    {%- endfor -%}
+  ]
 }

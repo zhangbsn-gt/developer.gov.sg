@@ -58,38 +58,11 @@ layout: layout-page
     {% include social-media.html display="wide" %}
     {% endif %}
   </div>
+</div>
 
-  <!-- TODO: Refactoring this component -->
-  <!-- TODO: Test Whether we need to load this everytime for every page as well-->
-  <script defer="defer" type="text/javascript" data-id="layout-page-sidenav-calendar"
-    data-nav-level="{{- page.multi_level_nav -}}" data-event-recording-link="{{- event_recording_link -}}"
-    data-event-registration-end-date="{{- event_registration_end_date_parsed -}}"
-    src="/assets/bundles/layout-page-sidenav-calendar.bundle.js">
-  </script>
-  <script defer="defer" type="text/javascript">
-    function getCompareDate() {
-      // gets local time, sg / kl timing
-      var d = new Date(),
-        month = "" + (d.getMonth() + 1),
-        day = "" + d.getDate(),
-        year = d.getFullYear();
-      if (month.length < 2) month = "0" + month;
-      if (day.length < 2) day = "0" + day;
-      return [year, month, day].join("");
-    }
-
-    // Overriding the default behaviour of the button
-    function buttonEventHandler() {
-      if (document.querySelector('[data-future-date]').getAttribute('data-future-date') > getCompareDate()) {
-        // If today's date < event date, then enable the button and redirect to the event pageÎ
-        if ('{{- event_registration_link -}}') {
-          location.href = '{{- event_registration_link -}}';
-        }
-      }
-
-      // If today's date > event date, then disable the button
-      if (document.querySelector('[data-future-date]').getAttribute('data-future-date') < getCompareDate()) {
-        location.href = '{{- event_recording_link -}}'
-      }
-    }
+<script type="text/javascript" src="/assets/bundles/layout-page-sidenav-calendar.bundle.js"
+  data-id="layout-page-sidenav-calendar"
+  data-nav-level="{{- page.multi_level_nav -}}"
+  data-event-recording-link="{{- event_recording_link -}}"
+  data-event-registration-end-date="{{- event_registration_end_date_parsed -}}">
   </script>

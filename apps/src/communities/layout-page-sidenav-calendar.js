@@ -1,64 +1,85 @@
-import { getCompareDate, getEventDataByDate } from "../lib/communities";
+import {
+  getEventStatusAndBackgroundColor,
+  setEventStatusAndBackgroundColor,
+} from "../lib/communities";
 
 (() => {
-  // Variables
-  const scriptElement = document.querySelector(
-    'script[data-id="layout-page-sidenav-calendar"]'
-  );
+  try {
+    // Variables
+    const { navLevel } = document.querySelector(
+      'script[data-id="layout-page-sidenav-calendar"]'
+    ).dataset;
 
-  const {
-    navLevel,
-    eventRecordingLink,
-    eventRegistrationEndDate,
-  } = scriptElement.dataset;
+    // Since the script is only run on the layout-page-sidenav-calendar page, we can assume that page.multi_level_layout is present
+    if (navLevel) {
+      // Selectors
+      const sgdsCardEventInformation = document.querySelectorAll(
+        ".sgds-card-event-information"
+      );
 
-  // Since the script is only run on the layout-page-sidenav-calendar page, we can assume that page.multi_level_layout is present
-  if (navLevel) {
-    document.querySelectorAll("[data-future-date]").forEach((node) => {
-      const eventDate = node.getAttribute("data-future-date");
-      const eventButton = node.querySelector("#dynamic-event-button");
-      const { status, backgroundColor } = getEventDataByDate(eventDate, node);
+      // 1. Set the event status and background color
+      // 2. Programatically set the anchor tag, event-information-link to the event recording link if the event has ended
+      [...sgdsCardEventInformation].map(function (el) {
+        const {
+          startDate,
+          endDate,
+          registrationEndDate,
+          registrationLink,
+          recordingLink,
+        } = el.dataset;
+        const eventInformationAnchorTag = el.querySelector(
+          "#event-information-link"
+        );
+        const { status, backgroundColor } = getEventStatusAndBackgroundColor(
+          startDate,
+          endDate,
+          el
+        );
 
-      switch (true) {
-        case status === "past":
-          if (eventRecordingLink) {
-            eventButton.innerHTML = "View recordings";
-            eventButton.style.backgroundColor = "#0161AF";
+        // There are three cases:
+        // 1. The event has not started yet
+        // 2. The event is currently happening (Now)
+        // 3. The event has ended
+        setEventStatusAndBackgroundColor(el, status, backgroundColor);
+
+        switch (true) {
+          case status === "upcoming":
+            eventInformationAnchorTag.href = registrationLink;
+            eventInformationAnchorTag.textContent = "Register Now";
+            eventInformationAnchorTag.style.backgroundColor = "#0161AF";
             break;
-          }
+          case status === "past":
+            if (recordingLink) {
+              eventInformationAnchorTag.href = recordingLink;
+              eventInformationAnchorTag.textContent = "View Recording";
+              eventInformationAnchorTag.style.backgroundColor = "#0161AF";
+              break;
+            }
 
-          eventButton.disabled = true;
-          eventButton.innerHTML = "Pending upload";
-          eventButton.style.backgroundColor = "#C6C6C6";
-          break;
-        case status === "upcoming":
-          eventButton.style.color = "white";
-          eventButton.innerHTML = "Register Now";
-          eventButton.style.backgroundColor = "#0161AF";
-          break;
-        default:
-          // if todays date is greater than the end date of the registration date, then the registration is closed
-          if (getCompareDate() > eventRegistrationEndDate) {
-            eventButton.disabled = true;
-            eventButton.innerHTML = "Registration closed";
-            eventButton.style.backgroundColor = "#c6c6c6";
+            // Disable the anchor tag
+            eventInformationAnchorTag.textContent = "Pending upload";
+            eventInformationAnchorTag.style.cursor = "not-allowed";
+            eventInformationAnchorTag.style.pointerEvents = "none";
+            eventInformationAnchorTag.style.backgroundColor = "#C6C6C6";
             break;
-          }
+          case status === "now":
+            // Compare the registration end date with the current date
+            if (new Date() > new Date(registrationEndDate)) {
+              eventInformationAnchorTag.textContent = "Registration Closed";
+              eventInformationAnchorTag.style.backgroundColor = "#C6C6C6";
+              eventInformationAnchorTag.style.cursor = "not-allowed";
+              eventInformationAnchorTag.style.pointerEvents = "none";
+              break;
+            }
 
-          eventButton.disabled = false;
-          eventButton.innerHTML = "Register Now";
-          eventButton.style.backgroundColor = "#0161AF";
-          break;
-      }
-
-      for (var j = 0; j < node.querySelectorAll(".event-status").length; j++) {
-        node.querySelectorAll(".event-status")[
-          j
-        ].innerHTML = status.toUpperCase();
-        node.querySelectorAll(".event-status-container")[
-          j
-        ].style.backgroundColor = backgroundColor;
-      }
-    });
+            eventInformationAnchorTag.href = registrationLink;
+            eventInformationAnchorTag.textContent = "Register Now";
+            eventInformationAnchorTag.style.backgroundColor = "#0161AF";
+            break;
+        }
+      });
+    }
+  } catch (e) {
+    console.error(e);
   }
 })();

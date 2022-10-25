@@ -22,9 +22,7 @@ module.exports = (env, argv) => {
         "./apps/src/search/vue-search-app-all-events.js",
       "vue-search-app-all-event-videos":
         "./apps/src/search/vue-search-app-all-event-videos.js",
-      "community-overview": "./apps/src/communities/community-overview.js",
-      "conferences-webinars-sort":
-        "./apps/src/communities/conferences-webinars-sort.js",
+      "community-events": "./apps/src/communities/community-events.js",
       "layout-page-sidenav-calendar":
         "./apps/src/communities/layout-page-sidenav-calendar.js",
       "back-to-the-top": "./apps/src/communities/back-to-the-top.js",

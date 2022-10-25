@@ -3,36 +3,35 @@
     <!-- Loader -->
     <loader :active="isLoading" />
     <!-- Content-->
-    <div class="sgds-container search-content" v-show="!isLoading">
+    <div v-show="!isLoading" class="sgds-container search-content">
       <!-- Count -->
-      <p class="search-result-status">
-        {{
-          `Showing ${
-            filteredSearchResults.sanitizedSortedFilteredSearchResults.length >
-            0
-              ? filteredSearchResults.sanitizedSortedFilteredSearchResults
-                  .length
-              : totalPages
-          } out of ${totalPages} results`
-        }}
-      </p>
-      <!-- Status -->
-      <h6 class="is-danger" v-if="errorMsg">{{ errorMsg }}</h6>
+      <div>
+        <p class="margin--bottom text-muted">
+          Showing {{ filteredResult.totalFilteredResults }} out of
+          {{ totalPages }} events
+        </p>
+        <!-- Status -->
+        <h6 class="is-danger" v-if="errorMsg">{{ errorMsg }}</h6>
+      </div>
       <!-- Results -->
       <div class="card-grid-container is-fullwidth">
         <div
           :key="result.url"
           class="sgds-card-list"
-          v-for="result of filteredSearchResults.sanitizedSortedFilteredSearchResults"
+          v-for="result of filteredResult.sortedResultsByDate"
         >
           <CardCalendar>
             <!-- Event Status -->
             <template v-slot:event-status>
               <div
                 :style="{ backgroundColor: result.backgroundColor }"
-                class="is-hidden-desktop has-text-centered has-text-white has-text-weight-semibold padding--bottom--sm padding--top--sm"
+                class="is-hidden-desktop has-text-centered padding--bottom--sm padding--top--sm event-status-container"
               >
-                {{ result.status }}
+                <p
+                  class="has-text-weight-bold has-text-white event-status margin--bottom--none"
+                >
+                  {{ result.status }}
+                </p>
               </div>
             </template>
             <!-- Calendar -->
@@ -64,15 +63,18 @@
                     >
                       <div class="padding--top--sm padding--bottom--sm">
                         <p
-                          class="padding--top--sm padding--bottom--xs margin--bottom--none is-size-2 has-text-weight-bold has-text-centered"
+                          class="padding--top--xs padding--bottom--none is-size-2 has-text-weight-bold has-text-centered margin--bottom--sm"
                         >
                           {{ result.calendarFormat.dayFormat }}
                         </p>
                       </div>
-                      <div class="padding--bottom--none">
-                        <p class="padding--bottom--none">
-                          {{ result.calendarFormat.monthFormat }}&nbsp;‘
-                          {{ result.calendarFormat.yearFormat }}
+                      <div>
+                        <p class="padding--bottom margin--bottom--none">
+                          {{
+                            result.calendarFormat.monthFormat +
+                            " ’" +
+                            result.calendarFormat.yearFormat
+                          }}
                         </p>
                       </div>
                     </div>
@@ -89,16 +91,17 @@
             <!-- Mobile Calendar Slot -->
             <template v-slot:mobile-calender>
               <div class="is-hidden-desktop is-flex is-centered">
-                <p
-                  class="is-flex margin--bottom--sm"
-                  style="align-items: center"
-                >
+                <div class="is-flex margin--bottom--sm is-vcentered">
                   <span
                     class="sgds-icon sgds-icon-calendar is-size-4 margin--right--sm"
                     role="img"
                     aria-label="iconName"
-                    style="-webkit-text-stroke: 0.5px white"
+                    style="
+                      -webkit-text-stroke: 0.5px white;
+                      filter: contrast(0.25);
+                    "
                   ></span>
+                  <!-- Concat result.calendarFormat dayFormat, monthFormat and yearFormat together  -->
                   {{
                     result.calendarFormat.dayFormat +
                     " " +
@@ -106,14 +109,15 @@
                     " " +
                     result.calendarFormat.yearFormat
                   }}
-                </p>
+                </div>
               </div>
             </template>
             <!-- Recording Slot -->
             <template v-slot:recording>
+              <!-- Error with the v-if -->
               <div
                 v-if="result.event_recording_link !== 'false'"
-                class="is-hidden-touch has-text-weight-semibold padding--left--sm padding--right--sm margin--bottom margin--top padding--top--sm padding--bottom--sm is-size-8"
+                class="is-hidden-touch has-text-weight-semibold padding--left padding--right margin--bottom margin--top padding--top--xs padding--bottom--xs is-size-8"
                 style="
                   background-color: #cce4f7;
                   width: fit-content;
@@ -125,22 +129,25 @@
               </div>
             </template>
             <!-- Category Slot-->
-            <template v-slot:category>
-              <div class="is-flex" style="filter: contrast(0.25)">
+            <template #category>
+              <div class="is-flex margin--bottom--sm">
                 <img
                   alt="Event Image"
-                  class="margin--right--sm margin--left--none margin--bottom--none margin--top--none"
-                  style="width: 1.5em; height: 1.5em"
                   :src="result.icon_path"
+                  class="margin--right--sm margin--left--none margin--bottom--none margin--top--none"
+                  style="width: 1.5em; height: 1.5em; filter: contrast(0.25)"
                 />
-                <p v-html="result.category"></p>
+                <div
+                  v-html="result.category"
+                  class="margin--bottom--none"
+                ></div>
               </div>
             </template>
             <!-- Front matter attributes -->
             <template v-slot:front-matter-attributes>
               <div class="spacing-container-vertical spacing-16">
                 <!-- Display event's description -->
-                <p v-html="result.description"></p>
+                <p class="margin--bottom--none" v-html="result.description"></p>
               </div>
             </template>
           </CardCalendar>
@@ -152,11 +159,11 @@
 
 <script>
 import Loader from "../lib/Loader.vue";
-import { sanitize, isQueryEmpty } from "../lib/index.js";
 import { computed } from "@vue/composition-api";
 import CardCalendar from "../lib/CardCalendar.vue";
 import useLunrSearch from "../composables/useLunrSearch";
-import { getEventDataByDate, convertDateForIos } from "../lib/communities";
+import { sanitize, isQueryEmpty } from "../lib/index.js";
+import { getEventStatusAndBackgroundColor } from "../lib/communities";
 
 export default {
   components: { Loader, CardCalendar },
@@ -194,84 +201,79 @@ export default {
       ],
     });
 
-    const filteredSearchResults = computed(() => {
+    const isMobileAndTablet = computed(() => {
+      return window.innerWidth <= 1024;
+    });
+
+    const filteredResult = computed(() => {
       // Check if param is empty
       const queryIsEmpty = isQueryEmpty(queryParam);
 
-      // Adding extra attributes that is used during the filtering process, such as the date
+      // Set the event status and background color
       const processedSearchResults = searchResults.value.map(item => {
-        const date = convertDateForIos(item.event_date_raw);
-        const { status, backgroundColor } = getEventDataByDate(item.event_date);
+        const eventStartDateAndTime = new Date(item.date_time.start_date_time);
+        const { status, backgroundColor } = getEventStatusAndBackgroundColor(
+          item.date_time.start_date_time,
+          item.date_time.end_date_time,
+          null
+        );
 
         return {
           ...item,
-          date: date,
           calendarFormat: {
-            dayFormat:
-              date.getDate() < 10 ? "0" + date.getDate() : date.getDate(),
-            monthFormat:
-              window.innerWidth < 1025
-                ? date.toLocaleString("en-SG", { month: "long" })
-                : date
-                    .toLocaleString("en-SG", { month: "short" })
-                    .toUpperCase(),
-            yearFormat: date
-              .getFullYear()
-              .toString()
-              .substr(window.innerWidth < 1025 ? 0 : -2),
+            dayFormat: eventStartDateAndTime.toLocaleDateString("en-SG", {
+              day: "2-digit",
+            }),
+            monthFormat: isMobileAndTablet.value
+              ? eventStartDateAndTime.toLocaleString("en-SG", {
+                  month: "long",
+                })
+              : eventStartDateAndTime
+                  .toLocaleString("en-SG", { month: "short" })
+                  .toUpperCase(),
+            yearFormat: eventStartDateAndTime
+              .toLocaleDateString("en-SG", {
+                year: "numeric",
+              })
+              .slice(isMobileAndTablet.value ? 0 : 2),
           },
           status: status.toUpperCase(),
           backgroundColor: backgroundColor,
         };
       });
 
-      // Filtering out the results based on the date filter and category filter
-      const filteredSearchResults = processedSearchResults
-        .filter(item => {
-          if (dateParam === "All Time") {
-            return true;
-          }
+      // Filter by category
+      const filteredResultsByCategory = processedSearchResults.filter(item => {
+        return categoryParam === "All Types"
+          ? true
+          : item.category.toLowerCase() === categoryParam.toLowerCase();
+      });
 
-          return item.date.getFullYear() === parseInt(dateParam);
-        })
-        .filter(item => {
-          const trimmedCategoryParam = categoryParam.trim().toLocaleLowerCase();
-          if (trimmedCategoryParam === "all types") {
-            return true;
-          }
+      // Filter by date
+      const filteredResultsByDate = filteredResultsByCategory.filter(item => {
+        return dateParam === "All Time"
+          ? true
+          : new Date(item.date_time.start_date_time).getFullYear() ==
+              parseInt(dateParam);
+      });
 
-          return item.category.trim().toLowerCase() === trimmedCategoryParam;
-        });
-
-      // If param is emtpy, perform a sort using event's time, else return full obj
-      const sortedFilteredSearchResults = queryIsEmpty
-        ? filteredSearchResults.sort((a, b) => {
-            const dateA = new Date(a.date);
-            const dateB = new Date(b.date);
-
+      // Sort by date in a descending order
+      const sortedResultsByDate = queryIsEmpty
+        ? filteredResultsByDate.sort((a, b) => {
+            const dateA = new Date(a.date_time.start_date_time);
+            const dateB = new Date(b.date_time.start_date_time);
             return dateB - dateA;
           })
-        : filteredSearchResults;
+        : filteredResultsByDate;
 
-      const sanitizedSortedFilteredSearchResults =
-        sortedFilteredSearchResults.map(item => {
-          return {
-            ...item,
-            title: sanitize(item.title),
-            description: sanitize(item.description),
-            category: sanitize(item.category),
-            content: sanitize(item.content),
-          };
-        });
-
-      const postProcessedNumberOfResults =
-        sanitizedSortedFilteredSearchResults.length;
+      // Get the total number of results after filtering
+      const totalFilteredResults = sortedResultsByDate.length;
 
       return {
+        queryIsEmpty,
         processedSearchResults,
-        filteredSearchResults,
-        postProcessedNumberOfResults,
-        sanitizedSortedFilteredSearchResults,
+        sortedResultsByDate,
+        totalFilteredResults,
       };
     });
 
@@ -285,7 +287,7 @@ export default {
       isNonEmptySearch,
       searchResults,
       errorMsg,
-      filteredSearchResults,
+      filteredResult,
     };
   },
 };
