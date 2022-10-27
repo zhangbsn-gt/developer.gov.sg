@@ -1,5 +1,5 @@
 ---
-title: data.gov.sg
+title: Data.gov.sg — The one-stop open data portal for publicly available Singapore Government datasets
 layout: layout-page-sidenav
 category: Data and APIs
 _data: single-level-nav
@@ -10,40 +10,47 @@ redirect_from:
     - /technologies/data-and-apis/data-gov-sg.html
 sub_collection_render: true
 single_level_nav: true
-description: data.gov.sg is a one-stop portal to publicly-available datasets from 70 public agencies.
+collection_group: [Citizen-facing Products, What's New]
+description: Learn from Data.gov.sg, Singapore’s one-stop open data portal offering government datasets. Dive in now!
 ---
 
-## Overview
+![Data.gov.sg header banner](/assets/img/Datagovsg-HeaderBanner-v2b.png)
 
-[data.gov.sg](https://data.gov.sg/) was first launched in 2011 as the Government's one-stop portal to its publicly-available datasets from 70 public agencies. To date, more than 100 apps have been created using the government’s open data.
+[Data.gov.sg](https://data.gov.sg/){:target="_blank"} is Singapore’s open data portal, with datasets from over 90 government agencies at your fingertips. More than 100 apps have been created using data from the site since the portal’s launch in 2011.
+Well received by data enthusiasts, the vision for Data.gov.sg is to make government open data accessible and usable by anyone – with or without a background in data.
 
-### Self-Service Portal
+Through visualisations and data-driven narratives, anyone can start creating charts and analyzing data in seconds, whether if you are a novice using Excel or an experienced programmer.
 
-data.gov.sg aims to include:
+The goal of Data.gov.sg is to:
 
-- Provide one-stop access to the government’s publicly-available data
+- Provide one-stop access to the government’s publicly-available data.
 
-- Communicate government data and analysis through visualisations and articles
+- Communicate government data and analysis through visualizations and articles.
 
-- Create value by catalysing application development
+- Create value by catalyzing application development.
 
-- Facilitate analysis and research
+- Facilitate analysis and research through verified government data.
 
-### Data Sharing Principles
+### Key Features
 
-The following data sharing principles help guide the Government agencies' Open Data efforts.
+- Curated dashboards based on topics and topicality. 
 
-- Data shall be made easily accessible
+- Data visualizations.
 
-- Data shall be made available for co-creation
+- High-quality data.
 
-- Data shall be released in a timely manner
+- Quick access to open data APIs from multiple agencies.
 
-- Data shall be shared in machine-readable format
+- Data blog with best practices.
 
-- Data shall be as raw as possible
+### FAQs
 
-Discover open data and APIs on [data.gov.sg](https://data.gov.sg/).
+For the Data.gov.sg standard FAQ guides and workflows, contact the product team through [this form](https://form.gov.sg/#!/62280856ba91100012050933){:target="_blank"}.
+
+### Pricing
+
+Data.gov.sg is free to use for both public officers uploading open data, and citizens who are interested in exploring or using the data for private use. 
+There is no registration fee and no cost for leveraging the data on the platform.
 
 ### Contact Us
 

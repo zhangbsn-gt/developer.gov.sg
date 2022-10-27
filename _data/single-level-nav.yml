@@ -65,9 +65,11 @@
     - Getting Started
     - Resources
 
-- name: data.gov.sg
+- name: Data.gov.sg
   items:
     - Overview
+    - Features
+    - Meet The Team
 
 - name: Enterprise Data Hub
   items:
