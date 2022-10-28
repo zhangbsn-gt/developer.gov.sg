@@ -2,10 +2,20 @@
   description: Discover the latest product additions to the Singapore Government Developer Portal here
   items:
     - Overview
+    - CloudSCAPE
     - Data.gov.sg
     - Government on Commercial Cloud
+    - I2C {{Infra to Code}}
+    - MyMoneySense
+    - Notarise
+    - Notify
     - RedeemSG
+    - Secure Infrastructure-as-Code
     - Singpass
+    - TechBiz
+    - Transcribe
+    - Vault
+    - Verify
 
 - name: Citizen-facing Products
   description: Explore the government products for providing citizens with the services they need. This includes citizen life journey, grant services, and more!

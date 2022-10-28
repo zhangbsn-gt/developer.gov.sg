@@ -6,7 +6,7 @@ single_level_nav: true
 _data: single-level-nav
 ---
 
-### Documentation
+### Technical Documentations
 
 You may access the following GCC 2.0 documentation through your TechPass account.
 
