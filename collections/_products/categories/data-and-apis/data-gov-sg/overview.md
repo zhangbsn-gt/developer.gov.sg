@@ -1,5 +1,5 @@
 ---
-title: Data.gov.sg — The one-stop open data portal for publicly available Singapore Government datasets
+title: Data.gov.sg — The One-Stop Open Data Portal for Publicly Available Singapore Government Datasets
 layout: layout-page-sidenav
 category: Data and APIs
 _data: single-level-nav

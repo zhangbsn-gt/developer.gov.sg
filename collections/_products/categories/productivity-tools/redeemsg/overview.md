@@ -1,5 +1,5 @@
 ---
-title: RedeemSG — The trusted voucher system for nationwide campaigns  
+title: RedeemSG — The Trusted Voucher System for Nationwide Campaigns  
 layout: layout-page-sidenav
 category: Productivity Tools
 _data: single-level-nav
@@ -11,6 +11,8 @@ single_level_nav: true
 collection_group: [Citizen-facing Products, What's New]
 description: RedeemSG digitalises, simplifies and enhances the voucher redemption process for public agencies, participating merchants and citizens. Find out more!
 ---
+
+![Data.gov.sg header banner](/assets/img/redeemsg-HeaderBanner-v1.png)
 
 RedeemSG is a national voucher system developed by GovTech’s Open Government Products (OGP) team. It digitalises, simplifies and enhances the user experience for public agencies, participating merchants and recipients in each Government voucher campaign. RedeemSG provides a digital solution that solves the inefficiencies and costs involved in paper voucher schemes.
 
