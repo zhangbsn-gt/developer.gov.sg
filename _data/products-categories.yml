@@ -30,6 +30,7 @@
   description: Distributed ledger technologies that enable the usage of decentralised, tamper-proof records
   items:
     - Overview
+    - OpenAttestation
     - OpenCerts
     - TradeTrust
 
