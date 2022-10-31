@@ -17,6 +17,10 @@ The Instruction Manual for ICT&SS Management (previously known as IM8) seeks to 
 
 To maintain relevance in the face of the exponential rate of change in technological applications and practices, the Instruction Manual for ICT&SS Management actively engages agencies to solicit their views, and uses international standards and practices as a benchmark.  
 
+### Awards and Recongitions
+
+In 2021, the Instruction Manual for ICT&SS Management was awarded the Agile Governance through Digitalisation award in the Administration category of the IDC Smart City Asia Pacific Awards (SCAPA).
+
 ### Objective
 
 The Instruction Manual for ICT&SS Management supports agencies to deliver fit-for-purpose, secure, and cost-effective solutions/services through:
