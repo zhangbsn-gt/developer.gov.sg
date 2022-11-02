@@ -21,7 +21,7 @@
   timeslot: 10:00 AM - 10:20 AM
   timeslot_metadata: 2022-11-15T10:00:00+08:00 - 2022-11-15T10:20:00+08:00
   title: Embracing a Brave New World of Technology – A Government Journey
-  desc:
+  desc: Many large organizations are quickly overtaken by the rapid progress of technology around them and for governments around the world, this is no exception. Venturing into the brave new world of technology is like a young person leaving home for the first time. It is full of freedom, excitement and anxiety, It is also full of risks, fear and uncertainties. Ignoring technology like Cloud, SaaS, full stack, etc., is no more an option. The days of building bespoke monolithic systems from scratch is risky, costly and wasteful. The new world is about reusability, iterations and automation. It’s about talent, culture and design. The Singapore Government, like everyone else, needs to embrace this brave new world or risk becoming irrelevant.
   speakers:
     - name: Mr Chan Cheow Hoe
       image: /assets/img/photos/chan-cheow-hoe.png
@@ -76,41 +76,49 @@
   timeslot: 02:00 PM - 02:30 PM
   timeslot_metadata: 2022-11-15T14:00:00+08:00 - 2022-11-15T14:30:00+08:00
   title: The Heart of Data and AI
-  desc:
+  desc: Why do some data and AI projects thrive and make significant impact? And why do some data and AI projects struggle to deliver impact? Besides focusing on the technology that is used to power Data and AI projects, this talk invites participants to think deeply about the purpose of data and AI projects, putting people at the center of it, and be an enabler for Tech for Good. Using lessons learned from working with some of the top companies in the world, the talk provides a practitioner's perspective on leading successful outcomes with practical guidance.
   speakers:
     - name: Mr Tok Wee Hyong
       image: /assets/img/photos/blank-photo.png
       title: Senior Director, Cloud and AI, Microsoft
+      desc: Wee Hyong is a Senior Director with the Cloud and AI organization at Microsoft. He is a seasoned Data and AI leader with a proven track record of running a cloud business and growing it to sustained industry leadership positions. He has worn many hats - developer, product manager, data scientist, researcher, and technical advisor. Wee Hyong holds a PhD in Computer Science from National University of Singapore. Wee Hyong is the author of more than 10 product, data and artificial intelligence books. These rich career experiences have given him unique superpowers to solve some of the world's most complex technology problems.
 
 - type: Day 1, Plenary
   timeslot: 02:30 PM - 03:00 PM
   timeslot_metadata: 2022-11-15T14:30:00+08:00 - 2022-11-15T15:00:00+08:00
   title: Innersource - The Road to Engineering Collaboration across Government
-  desc:
+  desc: "Earlier this year, GovTech embarked on a journey to improve engineering collaboration and code sharing across government, through the use of internal open source practices. In this talk, we will cover the background, practices, challenges as well as looking towards to the future. Who should attend: Engineers, Managers and Leaders."
   speakers:
     - name: Mr Hunter Nield
       image: /assets/img/photos/hunter-nield.png
       title: Distinguished Engineer, GovTech
+      desc: Hunter is a Distinguished Engineer at GovTech who specialises in cloud strategy and engineering. In 2018, he partnered GovTech's Government Digital Services team and shared his technical expertise as a Senior Smart Nation Fellow. Hunter has 20 years of private-sector experience under his belt. Prior to joining the Government, he ran businesses in Asia and Australia focused on Cloud Infrastructure, Digital Transformation and R&D.
 
 - type: Day 1, Plenary
   timeslot: 03:00 PM - 03:30 PM
   timeslot_metadata: 2022-11-15T15:00:00+08:00 - 2022-11-15T15:30:00+08:00
-  title: SG Tech Stack + Developer Portal
-  desc:
+  title: Retooling Government Developer Experience
+  desc: The Singapore Government Developer Portal serves as a one-stop resource hub for Government Digital Products and Services. With a wealth of product and technical documentation, policy guidelines and community resources, the portal aims to support developers in their digital transformation journey. These include the Singapore Government Technology Stack (SGTS), a set of platform tools that streamline and simplifies the development process. SGTS enables code reuse across the whole of government to build secure, high quality applications. With over 40 agencies and 200 systems have benefited from the platform.
   speakers:
     - name: Mr Kevin Ng
       image: /assets/img/photos/kevin-ng.png
       title: Director, CODEX, GovTech
+      desc: Kevin is an accomplished global tech leader with over 20 years of working experience. He has significant experience in launching new technology capabilities, as well as growing new product and engineering teams. At GovTech, he leads the product and engineering teams for Government on Commercial Cloud (GCC) and Singapore Government Techstack (SGTS) as Director of GDS Central. Prior to joining GovTech, he was the Senior Director, Product and Technology at Expedia and was based in Singapore and London. Kevin has led global teams involved in search and globalisation, transformed monolithic solutions into microservices on the cloud, created reusable platform components for both customer-facing apps and internal-use pipelines, and re-architected monolithic systems to incorporate artificial intelligence models. With over 100 members, his team spanned across US, UK, Hungary, Jordan, India, China, Singapore and a few smaller locations, and comprised engineering and product directors, product managers, technical product managers and engineers. Kevin graduated with a B.Sc. (First Class Honours) in Computer Science from the National University of Singapore (NUS) and holds a M.Sc. (by Research) in Computer Science from NUS.
+    - name: Ms Karen Kee
+      image: /assets/img/aboutus-karen.png
+      title: Deputy Director, Technology Management Office, GovTech
+      desc: Karen leads the international and community development efforts at GovTech. She is passionate about building developer communities to develop great products with the government. This is done through the Singapore Government Developer Portal, a rich resource of almost 200 products and technical documentation, and STACK Developer Community with over 12,000 members. Karen is also one of the lead organisers for the STACK developer conference. Karen also represents Singapore globally at many overseas forums. Her team organizes an annual meeting for global public sector leaders, the Digital Government Exchange. Through her career, she has managed several government-wide projects. Prior to this role, Karen has spent many years in Accenture developing government-wide systems and a telco's billing system. She graduated from the University of Melbourne with a Bachelor of Science (Information Systems).     
 
 - type: Day 1, Plenary
   timeslot: 03:00 PM - 03:30 PM
   timeslot_metadata: 2022-11-15T15:00:00+08:00 - 2022-11-15T15:30:00+08:00
   title: Changed Responsibilities in Modern Software Development Environments
-  desc:
+  desc: "With business increasing the pressure and demand for flexibility of the development team, the agile movement was pushed to the limits. CI/CD was born to reduce manual steps to reduce human errors and increase speed to go-live! With DevOps, the teams also took on application responsibilities, from cradle to grave. Nevertheless, software security is still missing in many full-stack developers' resumes and application security responsibilities are still pushed off to the security department. A real pity, because the agile, CI/CD and DevOps are security-enabling practices. This session explains Shift-left, early security enablement in the development Lifecycle. As the application development becomes more developer centric, the developer’s toolset must match the new challenges to have responsibilities matching capabilities. Learn from rugged software to supply chain cleanliness. Learn to avoid the common pitfalls and benefits of modern application development strategies. Hear why security champions programmes tend to fail, compliance driven security training is a waste of time and money. Security teams struggle and fail to integrate security tooling in release pipelines. Take back the best practices, proven solutions and Shift Left beyond the development. Who should attend: Dev Teams, Appsec, Security Specialists."
   speakers:
     - name: Mr Martin Knobloch
       image: /assets/img/photos/martin-knobloch.png
       title: Global AppSec Strategist, Micro Focus
+      desc: Martin Knobloch, Global AppSec Strategist at Micro Focus, is a long-time information security leader with more than 15 years of experience in the field. With a background in software development and architecture, his focus is on software security. Martin is actively involved in OWASP where he is a frequent contributor to various projects and initiatives, as well as a member of the Board of Directors. During his career, Martin has been a recognized teacher, guest lecturer at various universities and invited speaker and trainer at local and international software development, testing and security conferences throughout the world.
 
 # Day 2
 - type: Day 2, Opening Address
@@ -128,7 +136,7 @@
   timeslot: 10:20 AM - 11:00 AM
   timeslot_metadata: 2022-11-16T10:20:00+08:00 - 2022-11-16T11:00:00+08:00
   title: Talent, Culture and Purpose
-  desc:
+  desc: With impact from global trends such as the great resignation and quiet quitting, what is the current state and outlook for tech hiring and what does it mean for the tech sector? Join our panel as they share their insights and examine how a strong organisational tech culture and sense of purpose can have a great impact on both attracting and retaining talent, and the practical steps in engineering such a culture.
   speakers:
     - name: Mr Kok Ping Soon
       title: Chief Executive, GovTech
@@ -137,6 +145,7 @@
     - name: Mr Noah Pepper
       image: /assets/img/photos/blank-photo.png
       title: Former APAC Head, Stripe
+      desc: Mr Noah Pepper is currently working on a new venture headquartered in Singapore, returning to his start-up roots. He was most recently Head of APAC at Stripe overseeing business strategy and execution in the region, and product and engineering teams across Singapore, Japan, and India. Before moving to Singapore, he managed Stripe's Applications group, including creation of products like Stripe Invoicing, Stripe Billing, and Stripe Capital. Prior to Stripe, Mr Pepper held product and engineering leadership roles at Twitter, which acquired the company, Lucky Sort, where he was co-founder and CEO.
     - name: Mr Frank Koo
       image: /assets/img/photos/frank-koo.png
       title: Head of Asia, Talent and Learning Solutions, LinkedIn
@@ -190,38 +199,42 @@
   timeslot: 02:00 PM - 02:30 PM
   timeslot_metadata: 2022-11-16T14:00:00+08:00 - 2022-11-16T14:30:00+08:00
   title: Scaling Data for Organisational Transformation
-  desc:
+  desc: "In this talk we discover how the role of Data in agile organisations has changed and how it is of equal if not more importance for organisations to change operationally in order adapt successfully on their data journey. We discuss the fundamental principles of adaptability and talk through some real-life examples of success and failures for transformation that we have observed in the field. Who should attend: CIOs, Data Leads, Technologists, CDOs, CEOs, Program Managers, CFOs, CHROs, Cloud Teams, Engineering, Transformation Teams, Digital Change Champions."
   speakers:
     - name: Mr Damian Leach
       image: /assets/img/photos/damian-leach.png
       title: Chief Technology Officer, Asia Pacific and Japan, Workday
+      desc: Damian is proudly Singaporean, having lived and worked in Singapore for over 12 years. Prior to joining Workday, Damian spent 20 years working in various global Banking Technology and practice lead roles in Singapore, Australia and London. Damian joins Workday Singapore as CTO for Asia Pacific and Japan and holds an international EMBA from Nanyang Technological University, focused on Asian Business and Entrepreneurship studying overseas segments at both Wharton and UC Berkeley. Damian is focused on human centered design and helping businesses move to the cloud and become more agile. In his spare time, he helps his wife's F&B business in Singapore scale, is a trained Barista and is passionate about helping startups in Asia as a mentor and coach and has supported Slingshot Asia's largest Deep Tech pitch event for the last few years.
 
 - type: Day 2, Plenary
   timeslot: 02:30 PM - 03:00 PM
   timeslot_metadata: 2022-11-16T14:30:00+08:00 - 2022-11-16T15:00:00+08:00
   title: Navigating Cybersecurity in the Digital Darkness
-  desc:
+  desc: "As the Singapore government embarks on a massive digitalisation journey, there is also an increasing awareness about the importance of cybersecurity - the foundation of digital trust for our government's services. With awareness of it growing, cybersecurity has been said to be one of the biggest reasons why digitalisation is getting more expensive. This prompted me to investigate further to understand why. When we dove deeper, I came to realise that the biggest problem is that everyone wants to provide a solution even when we are not sure what the problem really is. It is akin to navigating cybersecurity in the digital darkness. By the end of this presentation, I hope to empower attendees on how to identify and avoid artificial constraints, think more critically about cybersecurity threats, and implement simpler systems and operations for better security performance. Who should attend: CIOs, CISOs, Product Owners, Cybersecurity Auditors, and Cybersecurity Consultants."
   speakers:
     - name: Mr Chong Rong Hwa
       image: /assets/img/photos/chong-rong-hwa.png
       title: Director, Cyber Security Group, GovTech
+      desc: Mr. Chong Rong Hwa is leading both the GovTech’s Cyber Strategy and Policy (GCP) and the Advanced Cyber Capabilities (ACC) divisions. He is responsible for developing the public sector's cybersecurity capabilities on multiple fronts – developing cybersecurity strategies, delivering pragmatic cybersecurity policies, delivering deep-dive security testing, building contextualised cyber products, and uplifting cybersecurity specialists’ skills.
 
 - type: Day 2, Plenary
   timeslot: 03:00 PM - 03:30 PM
   timeslot_metadata: 2022-11-16T15:00:00+08:00 - 2022-11-16T15:30:00+08:00
   title: 'Cyber Physical Masterplanning: The Need for a Digital Twin'
-  desc:
+  desc: "Digital twin is a real time virtual representation of a real world physical system. A digital twin at the national level is increasingly important as it allows simulation, testing and monitoring before implementing changes in the real world. It supports the planning process before deployment, operation management and historical studies that will facilitate use case discovery. Who should attend: CIOs and CTOs, Tech Leaders."
   speakers:
     - name: Mr James Tan
       image: /assets/img/photos/blank-photo.png
       title: Director, Sensors and IoT, GovTech
+      desc: James is the Director for Sensors and IoT in GovTech as well as the Director for Smart District Division in JTC. James leads a team that develops the Open Digital Platform- the Smart District Operating System for system interoperability. His team has been using digital twin technology to build a command and control system for the Punggol Digital District in Singapore.
 
 - type: Day 2, Plenary
   timeslot: 03:30 PM - 04:00 PM
   timeslot_metadata: 2022-11-16T15:30:00+08:00 - 2022-11-16T16:00:00+08:00
   title: Upskilling Trends for the Humans of DevOps
-  desc:
+  desc: "Digital transformation requires Human Transformation which in turn requires a personal and cultural commitment to continuous learning. This session will explore current trends in continuous learning based on data from DevOps Institute's 2022 Upskilling IT community research report. The session will focus on five skill domains: Process, Human, Technical, Automation and Leadership. Within each domain, attendees will learn which specific skills or topics are considered <b>must have, nice to have and not as important</b> in both the APAC region and on a global level. Who should attend: All tech professionals involved in DevOps and digital transformation since the session explores upskilling, cultural considerations and career development."
   speakers:
     - name: Ms Jayne Groll
       image: /assets/img/photos/jayne-groll.png
       title: CEO and Co-founder, DevOps Institute
+      desc: Jayne Groll is CEO and Co-founder of the DevOps Institute. Prior to founding DevOps Institute in 2015, Jayne had an extensive IT career focused mostly on IT Operations. Jayne is active in the DevOps, SRE, ITSM and Agile communities and is a frequent presenter at local, virtual and international events.
