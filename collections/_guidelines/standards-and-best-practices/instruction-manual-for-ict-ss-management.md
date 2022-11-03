@@ -79,3 +79,5 @@ LifeSG was initially conceptualised as Moments of Life in June 2017, and it aime
 ### Contact Information
 
 For enquiries, contact <info@tech.gov.sg>.
+
+**Disclaimer: This page does not set out the full set of compliance requirements under the Instruction Manual (“IM”) for ICT&SS Management. Please approach your agency’s intranet resources for more information on the IM for ICT&SS Management.**
