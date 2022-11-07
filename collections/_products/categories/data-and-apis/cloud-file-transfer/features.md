@@ -20,6 +20,11 @@ CFT enables public officers to exchange up to 1GB of Restricted and Sensitive-No
 
 This ensures that data from agencies are safe and tamper-proof.
 
+### HTTPS and SFTP support
+
+CFT uses HTTPS or SFTP protocols to establish a secure connection and to ensure that data is encrypted.
+
+
 ### Audit and monitor functions
 
 Centralised controls and a simple user-interface offer end-to-end visibility on file transfers.

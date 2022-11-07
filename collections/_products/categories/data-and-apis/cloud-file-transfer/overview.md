@@ -20,9 +20,9 @@ description: CFT is an API-driven Managed File Transfer service that enables age
 
 ![Cloud File Transfer header banner](/assets/img/CFT-Example.png)
 
-CFT is a centralised, fully managed, API-driven file transfer service for the Singapore Government agencies. Hosted on the [Government on Commercial Cloud (GCC)](/products/categories/infrastructure-and-hosting/government-on-commercial-cloud/overview.html){:target="_balnk"}, it enables public officers to automate file exchanges with the whole-of-government (WOG) network, business partners and vendors across the Internet and Intranet. CFT forms a part of the Service Layer in the [Singapore Government Tech Stack (SGTS)](/singapore-government-tech-stack/overview/){:target="_blank"}, which improves the quality, speed and agility of software development through code reuse.
+Cloud File Transfer (CFT) is a Service Layer product in the [Singapore Government Tech Stack (SGTS)](/singapore-government-tech-stack/overview/){:target="_blank"} that offers a centralised, secure, cross-zone, and fully managed file transfer service. Hosted on the [Government on Commercial Cloud (GCC)](/products/categories/infrastructure-and-hosting/government-on-commercial-cloud/overview.html){:target="_blank"}, it enables public officers to automate file exchanges with the whole-of-government (WOG) network, business partners, and vendors across the internet and intranet. 
 
-Today, the Instruction Manual for Infocomm Technology and Smart Systems (ICT&SS) Management (previously known as Instruction Manual 8/IM8) policy requires applications to be separated into internet and intranet zones. While API gateways such as [API Exchange (APEX)](/products/categories/data-and-apis/apex/overview.html){:target="_blank"} allow information sharing across zones, they are typically used to share small payloads – usually in text format. Thus, CFT was built as a complementary service to address our agencies’ growing needs to send/receive larger payloads such as high-resolution images and videos.
+Currently, the Instruction Manual for Infocomm Technology and Smart Systems (ICT&SS) Management (previously known as Instruction Manual 8/IM8) policy requires applications to be separated into internet and intranet zones. While API gateways, such as [API Exchange (APEX)](/products/categories/data-and-apis/apex/overview.html){:target="_blank"}, allow information sharing across zones, they typically share small payloads - usually in text format. Thus, CFT was built as a complementary service to meet the growing need for transferring larger files, such as high-resolution images and videos.
 
 ### How does CFT Work?
 
@@ -32,7 +32,7 @@ File transfers in CFT can be understood using the airport luggage screening proc
   <img
     src="/assets/img/CFT-Airport_Animation.gif" width="70%" height="70%"
   />
-	  <figcaption>Fig 1: Understanding CFT's file transfer workflow via the airport luggage screening analogy</figcaption>
+	  <figcaption>Fig 1: CFT workflow via the airport luggage screening analogy.</figcaption>
 </figure>
 
 ### Key Features
@@ -40,6 +40,7 @@ File transfers in CFT can be understood using the airport luggage screening proc
 - Compliant with the Singapore Government’s Application Infrastructure Architecture Standard (AIAS) and  ICT&SS Management policy
 - Large file exchanges between the public and private sectors
 - File encryption for data integrity and security
+- HTTPS and SFTP support
 - Audit and monitor functions for file transfers
 - Configurable security policies and workflows
 - Real-time notification alerts
@@ -48,7 +49,7 @@ File transfers in CFT can be understood using the airport luggage screening proc
 
 ### Pricing
 
-Early adopters of CFT can enjoy the service for free till end FY22. An indicative pricing will be released in Q3FY22.
+Early adopters of CFT can enjoy the service for free until the end of FY22. We will release the indicative pricing in Q3 of FY22.
 
 ### Contact Us
 
