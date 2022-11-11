@@ -47,14 +47,4 @@ bios:
     linkedin_url: https://www.linkedin.com/in/jenn-lim/
 ---
 
-### Meet the team!
-{%- include meet-the-team-app.html bios=page.bios -%}
 
-- Elita Lawalata, Senior Engagement Manager
-- Lewis Poh, Product Manager
-- Xiuquan Yong, Senior Infrastructure Engineer
-- Roanne Tang, Senior Cybersecurity Engineer
-- Kay Heen Chong, Associate Software Engineer
-- Xin Wei Wong, Associate Software Engineer
-- Terence Peh, Associate Software Engineer
-- Jenn Lim, Associate UX Designer
