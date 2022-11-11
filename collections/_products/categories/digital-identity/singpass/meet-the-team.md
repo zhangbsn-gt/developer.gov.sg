@@ -46,5 +46,5 @@ bios:
     img_src: Jenn_Lim.png
     linkedin_url: https://www.linkedin.com/in/jenn-lim/
 ---
-
-
+### Meet the team!
+{%- include meet-the-team-app.html bios=page.bios -%}
