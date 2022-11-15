@@ -379,7 +379,14 @@
 - name: Lamppost-as-a-Platform
   items:
     - Overview
-
+    
+- name: Open Digital Platform
+  items:
+    - Overview
+    - Features
+    - Resources
+    - Meet The Team
+    
 - name: Personal Alert Button
   items:
     - Overview
