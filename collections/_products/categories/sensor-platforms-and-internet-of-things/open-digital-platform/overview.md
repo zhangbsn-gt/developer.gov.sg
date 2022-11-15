@@ -4,7 +4,8 @@ layout: layout-page-sidenav
 category: Platform
 _data: single-level-nav
 redirect_from:
-    - /products/categories/sensor-platforms-and-internet-of-things/opendigitalplatform/
+    - /products/categories/sensor-platforms-and-internet-of-things/open-digital-platform/
+    - /products/categories/sensor-platforms-and-internet-of-things/open-digital-platform.html
 sub_collection_render: true
 single_level_nav: true
 collection_group: [What's New]
