@@ -6,14 +6,15 @@ multi_level_nav: true
 ---
 
 <!-- Header -->
-### Panel Discussion
+
+## Panel Discussion
 
 <hr />
 
-#### 16 November 2022 (Wednesday)
-
 {% include agenda-app.html
-    _data='stack-2022-dev-conference'
-    category="Day 2, Panel Discussion"
+title="Wednesday (16/11/22)"
+_data='stack-2022-dev-conference'
+category="Wed, Panel Discussion"
 %}
+
 <br />

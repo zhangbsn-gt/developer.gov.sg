@@ -140,7 +140,7 @@
                   v-if="item.content"
                   class="margin--top--sm margin--bottom--sm"
                 >
-                  <small>{{ item.content }}</small>
+                  <small v-html="item.content"></small>
                 </div>
                 <!-- Speakers -->
                 <div v-for="(speaker, index) in item.speakers" :key="index">

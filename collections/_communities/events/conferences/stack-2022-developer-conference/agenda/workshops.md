@@ -6,8 +6,12 @@ multi_level_nav: true
 ---
 
 <!-- Header -->
-### Workshops
+
+## Workshops
 
 <hr />
 
-#### 14 November 2022 (Monday)
+{% include agenda-app.html
+title="Monday (14/11/22)"
+_data='stack-2022-dev-conference'
+category="Workshops" %}

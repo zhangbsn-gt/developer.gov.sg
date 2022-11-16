@@ -1,43 +1,87 @@
 {%- assign data_file = include._data -%}
+{%- assign agenda_header = include.title -%}
 {%- assign specified_category = include.category | default: '' -%}
 {%- assign event_details = site.data[data_file] | where_exp: "events", "events.type contains specified_category" -%}
 
 <div class="is-fullwidth">
-    {% for event in event_details %}
-    <div class="sgds-card sgds-card-variant-video-info">
-        <div class="sgds-card-content">
-            <div>
-                <p class="margin--bottom--xs is-size-8">{{ event.timeslot }}</p>
-                {% if event.desc %}
-                <div class="sgds-accordion is-borderless is-medium is-white padding--bottom">
-                    <a class="sgds-accordion-header sgds-custom-accordion-header padding--left--none padding--top--none padding--bottom--none d-flex"
-                        role="button" aria-expanded="true">
-                        <strong>{{ event.title }}</strong>
-                        <i class="sgds-icon sgds-icon-chevron-down"></i>
-                    </a>
-                    <div class="sgds-accordion-body padding--none padding--top--sm">
-                        <p>
-                            {{ event.desc }}
-                        </p>
-                    </div>
-                </div>
-                {% else %}
-                <h5>{{ event.title }}</h5>
-                {% endif %}
-				{% if event.speakers %}
-					<p class="margin--bottom--sm has-text-dark has-text-weight-semibold">Speaker(s):</p>
-				{% endif %}
-            </div>
-            <div class="sgds-accordion-set">
-                {%- for content in event.speakers -%}
-                {%- include accordian-display.html content=content -%}
-                {%- endfor -%}
-            </div>
-        </div>
-    </div>
-    {% endfor %}
+  {% if agenda_header %}
+  <div
+    class="has-background-light margin--top--lg margin--bottom--lg padding--xs padding--left has-text-weight-bold is-size-8">
+    {{- agenda_header -}}
+  </div>
+  {% endif %}
+  {% for event in event_details %}
+  <div class="sgds-card sgds-card-variant-video-info" style="border-radius: 0px;">
+    <div class="sgds-card-content">
+      <div>
+        {% comment %} Event Timing {% endcomment %}
+        <p class="margin--bottom--none is-size-8 text-muted has-text-weight-semibold">
+          {{- event.timeslot -}}
+        </p>
 
-    <div class="margin--top--lg">
-        * Please note that the programme may be subject to change without prior notice
+        {% comment %} Event Description {% endcomment %}
+        {% if event.desc %}
+          {%- include accordion-app.html
+            title=event.title
+            content=event.desc
+            isTitleHeaderSize=true
+          -%}
+        {% else %}
+        <h5>
+          {{- event.title -}}
+        </h5>
+        {% endif %}
+
+        {% comment%}
+        This acts as a hardpoint pylon where it's optional to add more information if needed {%
+        endcomment%}
+        {% if event.additional_info_1 %}
+        {% assign title = event.additional_info_1 | split: " | " | first %}
+        {% assign body = event.additional_info_1 | split: " | " | last %}
+        {%- include accordion-app.html
+          title=title
+          content=body
+          isTitleHeaderSize=false
+        -%}
+        {% endif %}
+
+        {% if event.additional_info_2 %}
+        {% assign title = event.additional_info_2 | split: " | " | first %}
+        {% assign body = event.additional_info_2 | split: " | " | last %}
+        {%- include accordion-app.html
+        title=title
+        content=body
+        isTitleHeaderSize=false
+        -%}
+        {% endif %}
+        
+        {% if event.additional_info_3 %}
+        {% assign title = event.additional_info_3 | split: " | " | first %}
+        {% assign body = event.additional_info_3 | split: " | " | last %}
+        {%- include accordion-app.html
+        title=title
+        content=body
+        isTitleHeaderSize=false
+        -%}
+        {% endif %}
+
+        {% comment %}
+        Event Speaker
+        {% endcomment%}
+        {% if event.speakers %}
+        <p class="margin--bottom--sm has-text-dark has-text-weight-semibold is-size-8">Speaker(s)</p>
+        <div class="sgds-accordion-set">
+          {%- for content in event.speakers -%}
+          {%- include accordian-display.html content=content -%}
+          {%- endfor -%}
+        </div>
+        {% endif %}
+      </div>
     </div>
+  </div>
+  {% endfor %}
+
+  <div class="margin--top">
+    * Please note that the programme may be subject to change without prior notice
+  </div>
 </div>

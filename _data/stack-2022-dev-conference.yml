@@ -6,8 +6,8 @@
 #  desc:
 #  speakers:
 
-# Day 1
-- type: Day 1, Opening Address
+# Tues
+- type: Tues, Opening Address
   timeslot: 09:30 AM - 10:00 AM
   timeslot_metadata: 2022-11-15T09:30:00+08:00 - 2022-11-15T10:00:00+08:00
   title: Opening Address
@@ -17,7 +17,7 @@
       image: /assets/img/photos/josephine-teo.png
       title: Minister for Communications and Information, and Minister-in-charge of Smart Nation and Cybersecurity
 
-- type: Day 1, Keynotes
+- type: Tues, Keynotes
   timeslot: 10:00 AM - 10:20 AM
   timeslot_metadata: 2022-11-15T10:00:00+08:00 - 2022-11-15T10:20:00+08:00
   title: Embracing a Brave New World of Technology – A Government Journey
@@ -28,7 +28,7 @@
       title: Government Chief Digital Technology Officer and Deputy Chief Executive, GovTech
       desc: Mr Chan Cheow Hoe is the Government Chief Digital Technology Officer (GCDTO) of the Smart Nation and Digital Government Office (SNDGO). He is also concurrently the Deputy Chief Executive of the Government Technology Agency of Singapore (GovTech). As the GCDTO, Cheow Hoe oversees the development of the Government’s digital infrastructure and digital technology capability, as well as talent development in information and communication technology and smart systems (ICT&SS). He will also oversee the development of platforms to enable resource sharing and interoperability across Government,so as  to drive the development and delivery of innovative government digital services for citizens and businesses. In his role as Deputy Chief Executive, GovTech, he oversees multi-disciplinary teams that develop and manage key government’s digital products such as the National Digital Identity.Cheow Hoe has more than two decades of extensive experience both in the public and private sectors, with a strong track record in leading digital transformation changes in organisations and the government. Prior to joining GovTech, Cheow Hoe held senior appointments in international banks and consulting companies in the areas of technology, operations, finance and business. Cheow Hoe graduated from the National University of Singapore, and obtained his masters from Wharton School.
 
-- type: Day 1, Keynotes
+- type: Tues, Keynotes
   timeslot: 10:20 AM - 10:50 AM
   timeslot_metadata: 2022-11-15T10:20:00+08:00 - 2022-11-15T10:50:00+08:00
   title: Why SaaS and PaaS are Perfect for Government -- Almost Every Time!
@@ -37,31 +37,31 @@
     - name: Mr Paul Tatum
       image: /assets/img/photos/paul-tatum.png
       title: Executive Vice President, Solution Engineering for Global Public Sector, Salesforce
-      desc: Paul Tatum leads the Global Public Sector Solutions Engineering team, helping governments around the world modernise their businesses and missions using Salesforce leading PaaS and SaaS offerings. Paul is responsible for overall technical direction, architecture, and solutions based on Salesforce cloud services. Paul brings over 30 years of experience working with Public Sector customers and provides technical and business executive insights in the areas of Cloud Computing, CRM, Case Management, Security, Integrated Platforms, AI/ML, Analytics, and IT trends in government. Paul has held Solutions Engineering leadership roles since 2000, always focusing on technical excellence and customer success.
+      desc: "Paul Tatum leads the Global Public Sector Solutions Engineering team, helping governments around the world modernise their businesses and missions using Salesforce leading PaaS and SaaS offerings. Paul is responsible for overall technical direction, architecture, and solutions based on Salesforce cloud services.<br><br>Paul brings over 30 years of experience working with Public Sector customers and provides technical and business executive insights in the areas of Cloud Computing, CRM, Case Management, Security, Integrated Platforms, AI/ML, Analytics, and IT trends in government. Paul has held Solutions Engineering leadership roles since 2000, always focusing on technical excellence and customer success."
 
-- type: Day 1, Keynotes
+- type: Tues, Keynotes
   timeslot: 10:50 AM - 11:20 AM
   timeslot_metadata: 2022-11-15T10:50:00+08:00 - 2022-11-15T11:20:00+08:00
   title: Extending the AWS Cloud Outside of Public Regions
-  desc: The AWS Nitro System is the underlying platform for our next generation of EC2 instances that enables AWS to innovate faster, further reduce cost for our customers, and deliver added benefits like increased security and new instance types. AWS has completely re-imagined our virtualisation infrastructure. Traditionally, hypervisors protect the physical hardware and bios, virtualise the CPU, storage, networking, and provide a rich set of management capabilities. With the Nitro System, we are able to break apart those functions, offload them to dedicated hardware and software, and reduce costs by delivering practically all of the resources of a server to your instances. In this talk, we will explore the improved hardware-based security in the Nitro System, including how we can leverage this technology outside of traditional public cloud regions using AWS Outposts and Local Zones.
+  desc: "The AWS Nitro System is the underlying platform for our next generation of EC2 instances that enables AWS to innovate faster, further reduce cost for our customers, and deliver added benefits like increased security and new instance types. AWS has completely re-imagined our virtualisation infrastructure. Traditionally, hypervisors protect the physical hardware and bios, virtualise the CPU, storage, networking, and provide a rich set of management capabilities. With the Nitro System, we are able to break apart those functions, offload them to dedicated hardware and software, and reduce costs by delivering practically all of the resources of a server to your instances.<br><br>In this talk, we will explore the improved hardware-based security in the Nitro System, including how we can leverage this technology outside of traditional public cloud regions using AWS Outposts and Local Zones."
   speakers:
     - name: Mr Anthony Liguori
       image: /assets/img/photos/anthony-liguori.png
       title: Vice President & Distinguished Engineer, Amazon Web Services
       desc: Anthony leads the virtualisation teams within EC2 for public cloud and edge offerings. Anthony led the development of the Nitro System, Firecracker, and AWS Outposts. Prior to join AWS, Anthony led the Open Source QEMU VMM project.
 
-- type: Day 1, Keynotes
+- type: Tues, Keynotes
   timeslot: 11:20 AM - 11:50 AM
   timeslot_metadata: 2022-11-15T11:20:00+08:00 - 2022-11-15T11:50:00+08:00
   title: Delivering Trust in a Data Driven World
-  desc: Trust has become critical in the data-driven world. As digital activity continues to grow, more information on our lives becomes available online, and more decisions rely on online data; trust is crucial. Yet, it is easy to lose trust but difficult to rebuild it. This talk will address the technology and policy approaches to maintaining trust, deriving unbiased data-driven insights, and securing systems. It will illustrate how to build trustworthy systems for your users to interact confidently in the digital world.
+  desc: "Trust has become critical in the data-driven world. As digital activity continues to grow, more information on our lives becomes available online, and more decisions rely on online data; trust is crucial. Yet, it is easy to lose trust but difficult to rebuild it. This talk will address the technology and policy approaches to maintaining trust, deriving unbiased data-driven insights, and securing systems.<br><br>It will illustrate how to build trustworthy systems for your users to interact confidently in the digital world."
   speakers:
     - name: Ms Rebecca Parsons
       image: /assets/img/photos/rebecca-parsons.png
       title: Chief Technology Officer, Thoughtworks
       desc: Rebecca is CTO at Thoughtworks and is a scientist with a strong love of programming languages. Beyond her technical achievements, she is a strong advocate for diversity and inclusion in the industry, particularly increasing the number of women in coding and STEM. She has served on the boards of CodeChix and the Agile Alliance, is currently on the board of trustees of AnitaB.org and is an advisor to Women Who Code. She leads the Thoughtworks global technical staff with wisdom, a willingness to embrace new technologies, and a deep understanding of tech culture. She has also co-authored a number of books, including Domain-Specific Languages, The Thoughtworks Anthology, and Building Evolutionary Architectures.
 
-- type: Day 1, Keynotes
+- type: Tues, Keynotes
   timeslot: 04:00 PM - 04:30 PM
   timeslot_metadata: 2022-11-15T16:00:00+08:00 - 2022-11-15T16:30:00+08:00
   title: How to Scale Your Business with a DevOps Platform
@@ -70,35 +70,36 @@
     - name: Mr Sytse 'Sid' Sijbrandij
       image: /assets/img/photos/sytse-sijbrandij.png
       title: Chief Executive Officer & Co-founder, GitLab
-      desc: Sid Sijbrandij is the Co-founder and CEO of GitLab Inc., the DevOps platform. GitLab’s single application helps organisations deliver software faster and more efficiently while strengthening security and compliance. Sid’s career path is untraditional, from building recreational submarines to working at the Ministerie van Justitie en Veiligheid on the Legis project. A self-taught programmer, in 2012 he discovered GitLab and his passion for open source. Soon after, Sid commercialized GitLab and led the company through Y Combinator’s Winter 2015 batch. Under his leadership, GitLab has grown with an estimated 30 million+ registered users from startups to global enterprises.
+      desc: "Sid Sijbrandij is the Co-founder and CEO of GitLab Inc., the DevOps platform. GitLab’s single application helps organisations deliver software faster and more efficiently while strengthening security and compliance.<br><br>Sid’s career path is untraditional, from building recreational submarines to working at the Ministerie van Justitie en Veiligheid on the Legis project. A self-taught programmer, in 2012 he discovered GitLab and his passion for open source. Soon after, Sid commercialized GitLab and led the company through Y Combinator’s Winter 2015 batch. Under his leadership, GitLab has grown with an estimated 30 million+ registered users from startups to global enterprises."
 
-- type: Day 1, Plenary
+- type: Tues, Plenary
   timeslot: 02:00 PM - 02:30 PM
   timeslot_metadata: 2022-11-15T14:00:00+08:00 - 2022-11-15T14:30:00+08:00
   title: The Heart of Data and AI
   desc: Why do some data and AI projects thrive and make significant impact? And why do some data and AI projects struggle to deliver impact? Besides focusing on the technology that is used to power Data and AI projects, this talk invites participants to think deeply about the purpose of data and AI projects, putting people at the center of it, and be an enabler for Tech for Good. Using lessons learned from working with some of the top companies in the world, the talk provides a practitioner's perspective on leading successful outcomes with practical guidance.
   speakers:
-    - name: Mr Tok Wee Hyong
-      image: /assets/img/photos/blank-photo.png
+    - name: Dr Tok Wee Hyong
+      image: /assets/img/photos/tok-wee-hyong.png
       title: Senior Director, Cloud and AI, Microsoft
-      desc: Wee Hyong is a Senior Director with the Cloud and AI organization at Microsoft. He is a seasoned Data and AI leader with a proven track record of running a cloud business and growing it to sustained industry leadership positions. He has worn many hats - developer, product manager, data scientist, researcher, and technical advisor. Wee Hyong holds a PhD in Computer Science from National University of Singapore. Wee Hyong is the author of more than 10 product, data and artificial intelligence books. These rich career experiences have given him unique superpowers to solve some of the world's most complex technology problems.
+      desc: "Wee Hyong is a Senior Director with the Cloud and AI organization at Microsoft. He is a seasoned Data and AI leader with a proven track record of running a cloud business and growing it to sustained industry leadership positions. He has worn many hats - developer, product manager, data scientist, researcher, and technical advisor.<br><br>Wee Hyong holds a PhD in Computer Science from National University of Singapore. Wee Hyong is the author of more than 10 product, data and artificial intelligence books. These rich career experiences have given him unique superpowers to solve some of the world's most complex technology problems."
 
-- type: Day 1, Plenary
+- type: Tues, Plenary
   timeslot: 02:30 PM - 03:00 PM
   timeslot_metadata: 2022-11-15T14:30:00+08:00 - 2022-11-15T15:00:00+08:00
   title: Innersource - The Road to Engineering Collaboration across Government
-  desc: "Earlier this year, GovTech embarked on a journey to improve engineering collaboration and code sharing across government, through the use of internal open source practices. In this talk, we will cover the background, practices, challenges as well as looking towards to the future. Who should attend: Engineers, Managers and Leaders."
+  desc: Earlier this year, GovTech embarked on a journey to improve engineering collaboration and code sharing across government, through the use of internal open source practices. In this talk, we will cover the background, practices, challenges as well as looking towards to the future.
+  additional_info_1: "Who should attend | Engineers, Managers and Leaders."
   speakers:
     - name: Mr Hunter Nield
       image: /assets/img/photos/hunter-nield.png
       title: Distinguished Engineer, GovTech
       desc: Hunter is a Distinguished Engineer at GovTech who specialises in cloud strategy and engineering. In 2018, he partnered GovTech's Government Digital Services team and shared his technical expertise as a Senior Smart Nation Fellow. Hunter has 20 years of private-sector experience under his belt. Prior to joining the Government, he ran businesses in Asia and Australia focused on Cloud Infrastructure, Digital Transformation and R&D.
 
-- type: Day 1, Plenary
+- type: Tues, Plenary
   timeslot: 03:00 PM - 03:30 PM
   timeslot_metadata: 2022-11-15T15:00:00+08:00 - 2022-11-15T15:30:00+08:00
   title: Retooling Government Developer Experience
-  desc: The Singapore Government Developer Portal serves as a one-stop resource hub for Government Digital Products and Services. With a wealth of product and technical documentation, policy guidelines and community resources, the portal aims to support developers in their digital transformation journey. These include the Singapore Government Technology Stack (SGTS), a set of platform tools that streamline and simplifies the development process. SGTS enables code reuse across the whole of government to build secure, high quality applications. With over 40 agencies and 200 systems have benefited from the platform.
+  desc: "The Singapore Government Developer Portal serves as a one-stop resource hub for Government Digital Products and Services. With a wealth of product and technical documentation, policy guidelines and community resources, the portal aims to support developers in their digital transformation journey.<br><br>These include the Singapore Government Technology Stack (SGTS), a set of platform tools that streamline and simplifies the development process. SGTS enables code reuse across the whole of government to build secure, high quality applications. With over 40 agencies and 200 systems have benefited from the platform."
   speakers:
     - name: Mr Kevin Ng
       image: /assets/img/photos/kevin-ng.png
@@ -107,21 +108,22 @@
     - name: Ms Karen Kee
       image: /assets/img/aboutus-karen.png
       title: Deputy Director, Technology Management Office, GovTech
-      desc: Karen leads the international and community development efforts at GovTech. She is passionate about building developer communities to develop great products with the government. This is done through the Singapore Government Developer Portal, a rich resource of almost 200 products and technical documentation, and STACK Developer Community with over 12,000 members. Karen is also one of the lead organisers for the STACK developer conference. Karen also represents Singapore globally at many overseas forums. Her team organizes an annual meeting for global public sector leaders, the Digital Government Exchange. Through her career, she has managed several government-wide projects. Prior to this role, Karen has spent many years in Accenture developing government-wide systems and a telco's billing system. She graduated from the University of Melbourne with a Bachelor of Science (Information Systems).     
+      desc: "Karen leads the international and community development efforts at GovTech. She is passionate about building developer communities to develop great products with the government. This is done through the Singapore Government Developer Portal, a rich resource of almost 200 products and technical documentation, and STACK Developer Community with over 12,000 members. Karen is also one of the lead organisers for the STACK developer conference.<br><br>Karen also represents Singapore globally at many overseas forums. Her team organizes an annual meeting for global public sector leaders, the Digital Government Exchange. Through her career, she has managed several government-wide projects. Prior to this role, Karen has spent many years in Accenture developing government-wide systems and a telco's billing system. She graduated from the University of Melbourne with a Bachelor of Science (Information Systems)."
 
-- type: Day 1, Plenary
+- type: Tues, Plenary
   timeslot: 03:00 PM - 03:30 PM
   timeslot_metadata: 2022-11-15T15:00:00+08:00 - 2022-11-15T15:30:00+08:00
   title: Changed Responsibilities in Modern Software Development Environments
-  desc: "With business increasing the pressure and demand for flexibility of the development team, the agile movement was pushed to the limits. CI/CD was born to reduce manual steps to reduce human errors and increase speed to go-live! With DevOps, the teams also took on application responsibilities, from cradle to grave. Nevertheless, software security is still missing in many full-stack developers' resumes and application security responsibilities are still pushed off to the security department. A real pity, because the agile, CI/CD and DevOps are security-enabling practices. This session explains Shift-left, early security enablement in the development Lifecycle. As the application development becomes more developer centric, the developer’s toolset must match the new challenges to have responsibilities matching capabilities. Learn from rugged software to supply chain cleanliness. Learn to avoid the common pitfalls and benefits of modern application development strategies. Hear why security champions programmes tend to fail, compliance driven security training is a waste of time and money. Security teams struggle and fail to integrate security tooling in release pipelines. Take back the best practices, proven solutions and Shift Left beyond the development. Who should attend: Dev Teams, Appsec, Security Specialists."
+  desc: With business increasing the pressure and demand for flexibility of the development team, the agile movement was pushed to the limits. CI/CD was born to reduce manual steps to reduce human errors and increase speed to go-live! With DevOps, the teams also took on application responsibilities, from cradle to grave. Nevertheless, software security is still missing in many full-stack developers' resumes and application security responsibilities are still pushed off to the security department. A real pity, because the agile, CI/CD and DevOps are security-enabling practices. This session explains Shift-left, early security enablement in the development Lifecycle. As the application development becomes more developer centric, the developer’s toolset must match the new challenges to have responsibilities matching capabilities. Learn from rugged software to supply chain cleanliness. Learn to avoid the common pitfalls and benefits of modern application development strategies. Hear why security champions programmes tend to fail, compliance driven security training is a waste of time and money. Security teams struggle and fail to integrate security tooling in release pipelines. Take back the best practices, proven solutions and Shift Left beyond the development.
+  additional_info_1: "Who should attend | Dev Teams, Appsec, Security Specialists."
   speakers:
     - name: Mr Martin Knobloch
       image: /assets/img/photos/martin-knobloch.png
       title: Global AppSec Strategist, Micro Focus
       desc: Martin Knobloch, Global AppSec Strategist at Micro Focus, is a long-time information security leader with more than 15 years of experience in the field. With a background in software development and architecture, his focus is on software security. Martin is actively involved in OWASP where he is a frequent contributor to various projects and initiatives, as well as a member of the Board of Directors. During his career, Martin has been a recognized teacher, guest lecturer at various universities and invited speaker and trainer at local and international software development, testing and security conferences throughout the world.
-
-# Day 2
-- type: Day 2, Opening Address
+  
+# Wed
+- type: Wed, Opening Address
   timeslot: 10:00 AM - 10:20 AM
   timeslot_metadata: 2022-11-16T10:00:00+08:00 - 2022-11-15T10:20:00+08:00
   title: Opening Address
@@ -130,9 +132,9 @@
     - name: Dr Janil Puthucheary
       image: /assets/img/photos/janil-puthucheary.png
       title: Senior Minister of State at Ministry of Communications and Information, and Minister-in-charge of GovTech
-      desc: Dr Janil Puthucheary was elected Member of Parliament in 2011. He is currently Senior Minister of State, Ministry of Communications and Information, and Ministry of Health. He is concurrently the Minister-in-charge of the Government Technology Agency (GovTech) where he coordinates GovTech’s strategy with industry development efforts as part of the Smart Nation initiative, and is a member of the Ministerial Committee overseeing the Smart Nation and Digital Government Group (SNDGG). He chairs OnePeople.sg, which works to promote racial harmony in Singapore. His political roles include Chair of Young PAP (the youth wing of the People's Action Party), and the Government Whip.
+      desc: "Dr Janil Puthucheary was elected Member of Parliament in 2011. He is currently Senior Minister of State, Ministry of Communications and Information, and Ministry of Health.<br><br>He is concurrently the Minister-in-charge of the Government Technology Agency (GovTech) where he coordinates GovTech’s strategy with industry development efforts as part of the Smart Nation initiative, and is a member of the Ministerial Committee overseeing the Smart Nation and Digital Government Group (SNDGG).<br><br>He chairs OnePeople.sg, which works to promote racial harmony in Singapore. His political roles include Chair of Young PAP (the youth wing of the People's Action Party), and the Government Whip."
 
-- type: Day 2, Panel Discussion
+- type: Wed, Panel Discussion
   timeslot: 10:20 AM - 11:00 AM
   timeslot_metadata: 2022-11-16T10:20:00+08:00 - 2022-11-16T11:00:00+08:00
   title: Talent, Culture and Purpose
@@ -141,17 +143,17 @@
     - name: Mr Kok Ping Soon
       title: Chief Executive, GovTech
       image: /assets/img/photos/kok-ping-soon.png
-      desc: Ping Soon is Chief Executive of the Government Technology Agency of Singapore (GovTech), the lead agency driving Singapore’s Smart Nation initiative and public sector digital transformation. Prior to his current appointment, Ping Soon held various positions in the Ministry of Manpower, National Security Co-ordination Secretariat, Ministry of Trade & Industry, Singapore Tourism Board, Contact Singapore (CS) and Economic Development Board (EDB). He spent six years in the United States working for CS and EDB. He serves on the Board of Info-comm Media Development Authority (IMDA), Defence Science & Technology Agency (DSTA), Institute of System Sciences (ISS) and is a member of the National Institute of Education (NIE) Council. Ping Soon is a graduate of the National University of Singapore where he majored in Economics. He attended the Advanced Management Programme by the International Institute for Management Development (IMD), Stanford Executive Programme by the Stanford Graduate School of Business, and was also awarded the Lien Ying Chow Legacy Fellowship to pursue a research project in China.
+      desc: "Ping Soon is Chief Executive of the Government Technology Agency of Singapore (GovTech), the lead agency driving Singapore’s Smart Nation initiative and public sector digital transformation. Prior to his current appointment, Ping Soon held various positions in the Ministry of Manpower, National Security Co-ordination Secretariat, Ministry of Trade & Industry, Singapore Tourism Board, Contact Singapore (CS) and Economic Development Board (EDB). He spent six years in the United States working for CS and EDB.<br><br>He serves on the Board of Info-comm Media Development Authority (IMDA), Defence Science & Technology Agency (DSTA), Institute of System Sciences (ISS) and is a member of the National Institute of Education (NIE) Council.<br><br>Ping Soon is a graduate of the National University of Singapore where he majored in Economics. He attended the Advanced Management Programme by the International Institute for Management Development (IMD), Stanford Executive Programme by the Stanford Graduate School of Business, and was also awarded the Lien Ying Chow Legacy Fellowship to pursue a research project in China."
     - name: Mr Noah Pepper
-      image: /assets/img/photos/blank-photo.png
+      image: /assets/img/photos/noah-pepper.png
       title: Former APAC Head, Stripe
       desc: Mr Noah Pepper is currently working on a new venture headquartered in Singapore, returning to his start-up roots. He was most recently Head of APAC at Stripe overseeing business strategy and execution in the region, and product and engineering teams across Singapore, Japan, and India. Before moving to Singapore, he managed Stripe's Applications group, including creation of products like Stripe Invoicing, Stripe Billing, and Stripe Capital. Prior to Stripe, Mr Pepper held product and engineering leadership roles at Twitter, which acquired the company, Lucky Sort, where he was co-founder and CEO.
     - name: Mr Frank Koo
       image: /assets/img/photos/frank-koo.png
       title: Head of Asia, Talent and Learning Solutions, LinkedIn
-      desc: Frank Koo is currently the Asia Head of Talent & Learning Solutions at LinkedIn. Frank’s team supports companies in talent acquisition, development and retention through the LinkedIn platform and solutions. Prior to LinkedIn, Frank was the Chief Operating Officer of BE Education based in Shanghai and Asia Pacific President of Learning Solutions at Pearson Education. At Oracle, he was the MD for Singapore and South Asia Growth Economies. Frank is a  Bachelor of Business Administration graduate from the National University of Singapore. He has also attended executive programs with INSEAD and IMD.
+      desc: "Frank Koo is currently the Asia Head of Talent & Learning Solutions at LinkedIn. Frank’s team supports companies in talent acquisition, development and retention through the LinkedIn platform and solutions. Prior to LinkedIn, Frank was the Chief Operating Officer of BE Education based in Shanghai and Asia Pacific President of Learning Solutions at Pearson Education. At Oracle, he was the MD for Singapore and South Asia Growth Economies.<br><br>Frank is a  Bachelor of Business Administration graduate from the National University of Singapore. He has also attended executive programs with INSEAD and IMD."
 
-- type: Day 2, Keynotes
+- type: Wed, Keynotes
   timeslot: 11:00 AM - 11:30 AM
   timeslot_metadata: 2022-11-16T11:00:00+08:00 - 2022-11-16T11:30:00+08:00
   title: Zero Trust at Scale
@@ -162,7 +164,7 @@
       title: Corporate Vice President, Microsoft Enterprise and Cloud
       desc: As Corporate Vice President of Enterprise and Cloud, Paul Lorimer leads the engineering and operations teams in Microsoft 365 focused on both business growth and service quality for our enterprise customers. He is responsible for driving Microsoft 365 growth through international expansion, public sector offerings, and investments in enterprise targeted capabilities. In addition, Lorimer leads key areas within Microsoft 365 business including Exchange, Skype for Business and Consumer, the development of new productivity features for complex organizations, and Compliance and Privacy. Committed to ensuring customers experience the value of Microsoft products within their business, Lorimer also supports government and large enterprise customers as they transition to the cloud.
 
-- type: Day 2, Keynotes
+- type: Wed, Keynotes
   timeslot: 11:30 AM - 12:00 PM
   timeslot_metadata: 2022-11-16T11:30:00+08:00 - 2022-11-16T12:00:00+08:00
   title: What’s New in Google Cloud Infrastructure
@@ -171,9 +173,9 @@
     - name: Mr Sachin Gupta
       image: /assets/img/photos/sachin-gupta.png
       title: Vice President & General Manager, IaaS, Google Cloud
-      desc: Sachin Gupta is the Vice President and General Manager of Infrastructure as a Service (IaaS) at Google Cloud. Having joined Google in 2020, Sachin brings together Product, Strategy, and UX across Cloud Compute, Storage, Networking, and Google Distributed Cloud businesses. His team is also responsible for global expansion, reliability infrastructure and Technical Infrastructure which serves the needs of all Google product areas. Through a deep understanding of enterprise customers, Sachin has a 20+ year track record of building solid teams and creating innovative products and services. Before joining Google, Sachin worked at Cisco for 23 years, where he served as SVP of Product for Enterprise Networking. Within his teams, Sachin has been a long-time champion of customer focus and an inclusive team culture. He holds a Bachelor of Science in Electrical Engineering from Purdue, a Master of Science in Electrical Engineering from Stanford University, and an MBA from Wharton.
+      desc: "Sachin Gupta is the Vice President and General Manager of Infrastructure as a Service (IaaS) at Google Cloud. Having joined Google in 2020, Sachin brings together Product, Strategy, and UX across Cloud Compute, Storage, Networking, and Google Distributed Cloud businesses. His team is also responsible for global expansion, reliability infrastructure and Technical Infrastructure which serves the needs of all Google product areas.<br><br>Through a deep understanding of enterprise customers, Sachin has a 20+ year track record of building solid teams and creating innovative products and services. Before joining Google, Sachin worked at Cisco for 23 years, where he served as SVP of Product for Enterprise Networking. Within his teams, Sachin has been a long-time champion of customer focus and an inclusive team culture. He holds a Bachelor of Science in Electrical Engineering from Purdue, a Master of Science in Electrical Engineering from Stanford University, and an MBA from Wharton."
 
-- type: Day 2, Keynotes
+- type: Wed, Keynotes
   timeslot: 12:00 PM - 12:30 PM
   timeslot_metadata: 2022-11-16T12:00:00+08:00 - 2022-11-16T12:30:00+08:00
   title: Simplifying Data and AI with Lakehouse Platforms
@@ -184,57 +186,1085 @@
       title: Co-founder & Chief Technologist, Databricks
       desc: Matei Zaharia is a Cofounder and Chief Technologist at Databricks as well as an Assistant Professor of Computer Science at Stanford. He started the Apache Spark project during his PhD at UC Berkeley in 2009, and has worked broadly on other widely used data and machine learning software, including MLflow, Delta Lake and Apache Mesos. He works on a wide variety of projects in data management and machine learning at Databricks and Stanford. Matei’s research was recognized through the 2014 ACM Doctoral Dissertation Award, an NSF CAREER Award, and the US Presidential Early Career Award for Scientists and Engineers (PECASE).
 
-- type: Day 2, Keynotes
+- type: Wed, Keynotes
   timeslot: 04:00 PM - 04:30 PM
   timeslot_metadata: 2022-11-16T16:00:00+08:00 - 2022-11-16T16:30:00+08:00
   title: 'The Rise of the Platforms Team: An Organisational Response to Developer Experience'
-  desc: One area of work culture that receives a lot of focus is Developer Experience. As we seek to provide engineers with autonomy, it is easy to expect them to know too much about too many things, detracting from their core capabilities and contributing to burnout. In this session, Grant explores how Platform Engineering can reduce cognitive load, improving Developer Experience. You will learn how Platform Engineering functions at HashiCorp, how it interfaces with other teams as part of a release process, and what skills you should be on the lookout for as you seek to build your own Platform Team.
+  desc: "One area of work culture that receives a lot of focus is Developer Experience. As we seek to provide engineers with autonomy, it is easy to expect them to know too much about too many things, detracting from their core capabilities and contributing to burnout.<br><br>In this session, Grant explores how Platform Engineering can reduce cognitive load, improving Developer Experience. You will learn how Platform Engineering functions at HashiCorp, how it interfaces with other teams as part of a release process, and what skills you should be on the lookout for as you seek to build your own Platform Team."
   speakers:
-    - name: Mr Grant Orchard
-      image: /assets/img/photos/grant-orchard.png
-      title: Field Chief Technology Officer, Hashicorp
-      desc: Grant is an emerging technology executive, and a key influencer for the use of software development patterns in infrastructure automation. He communicates HashiCorp’s vision and ethos with customers and partners, using his experience to help organisations navigate the challenges of their heterogeneous technology landscape.
+    - name: Mr Ned Shawa
+      image: /assets/img/photos/ned-shawa.png
+      title: Senior Director, Solutions Engineering APJ, Hashicorp
+      desc: Ned Shawa leads the Solutions Engineering Team in Asia Pacific and Japan for HashiCorp, directly aligning with CIOs and CTOs in the Financial industry, the Technology sector and Governments advising on application modernisation, cloud adoption and multi-cloud strategies, with DevOps and DataOps and application delivery pipelines in the centre. Ned has over 15 years of experience in infrastructure and analytics – in his current role, he was the first employee for HashiCorp in the APJ region, leading the awareness of the challenges of multi-cloud and how to overcome them using infrastructure and cloud-agnostic platforms that address a long term challenge of provisioning, securing and interconnecting a multi-cloud and infrastructure environments. This allows a long term resilience and maximum agility for platform engineering teams and lays the foundation for modern application delivery and modern data centres.
 
-- type: Day 2, Plenary
+- type: Wed, Plenary
   timeslot: 02:00 PM - 02:30 PM
   timeslot_metadata: 2022-11-16T14:00:00+08:00 - 2022-11-16T14:30:00+08:00
   title: Scaling Data for Organisational Transformation
-  desc: "In this talk we discover how the role of Data in agile organisations has changed and how it is of equal if not more importance for organisations to change operationally in order adapt successfully on their data journey. We discuss the fundamental principles of adaptability and talk through some real-life examples of success and failures for transformation that we have observed in the field. Who should attend: CIOs, Data Leads, Technologists, CDOs, CEOs, Program Managers, CFOs, CHROs, Cloud Teams, Engineering, Transformation Teams, Digital Change Champions."
+  desc: In this talk we discover how the role of Data in agile organisations has changed and how it is of equal if not more importance for organisations to change operationally in order adapt successfully on their data journey. We discuss the fundamental principles of adaptability and talk through some real-life examples of success and failures for transformation that we have observed in the field.
+  additional_info_1: "Who should attend | CIOs, Data Leads, Technologists, CDOs, CEOs, Program Managers, CFOs, CHROs, Cloud Teams, Engineering, Transformation Teams, Digital Change Champions."
   speakers:
     - name: Mr Damian Leach
       image: /assets/img/photos/damian-leach.png
       title: Chief Technology Officer, Asia Pacific and Japan, Workday
       desc: Damian is proudly Singaporean, having lived and worked in Singapore for over 12 years. Prior to joining Workday, Damian spent 20 years working in various global Banking Technology and practice lead roles in Singapore, Australia and London. Damian joins Workday Singapore as CTO for Asia Pacific and Japan and holds an international EMBA from Nanyang Technological University, focused on Asian Business and Entrepreneurship studying overseas segments at both Wharton and UC Berkeley. Damian is focused on human centered design and helping businesses move to the cloud and become more agile. In his spare time, he helps his wife's F&B business in Singapore scale, is a trained Barista and is passionate about helping startups in Asia as a mentor and coach and has supported Slingshot Asia's largest Deep Tech pitch event for the last few years.
 
-- type: Day 2, Plenary
+- type: Wed, Plenary
   timeslot: 02:30 PM - 03:00 PM
   timeslot_metadata: 2022-11-16T14:30:00+08:00 - 2022-11-16T15:00:00+08:00
   title: Navigating Cybersecurity in the Digital Darkness
-  desc: "As the Singapore government embarks on a massive digitalisation journey, there is also an increasing awareness about the importance of cybersecurity - the foundation of digital trust for our government's services. With awareness of it growing, cybersecurity has been said to be one of the biggest reasons why digitalisation is getting more expensive. This prompted me to investigate further to understand why. When we dove deeper, I came to realise that the biggest problem is that everyone wants to provide a solution even when we are not sure what the problem really is. It is akin to navigating cybersecurity in the digital darkness. By the end of this presentation, I hope to empower attendees on how to identify and avoid artificial constraints, think more critically about cybersecurity threats, and implement simpler systems and operations for better security performance. Who should attend: CIOs, CISOs, Product Owners, Cybersecurity Auditors, and Cybersecurity Consultants."
+  desc: As the Singapore government embarks on a massive digitalisation journey, there is also an increasing awareness about the importance of cybersecurity - the foundation of digital trust for our government's services. With awareness of it growing, cybersecurity has been said to be one of the biggest reasons why digitalisation is getting more expensive. This prompted me to investigate further to understand why. When we dove deeper, I came to realise that the biggest problem is that everyone wants to provide a solution even when we are not sure what the problem really is. It is akin to navigating cybersecurity in the digital darkness. By the end of this presentation, I hope to empower attendees on how to identify and avoid artificial constraints, think more critically about cybersecurity threats, and implement simpler systems and operations for better security performance.
+  additional_info_1: "Who should attend | CIOs, CISOs, Product Owners, Cybersecurity Auditors, and Cybersecurity Consultants."
   speakers:
     - name: Mr Chong Rong Hwa
       image: /assets/img/photos/chong-rong-hwa.png
       title: Director, Cyber Security Group, GovTech
       desc: Mr. Chong Rong Hwa is leading both the GovTech’s Cyber Strategy and Policy (GCP) and the Advanced Cyber Capabilities (ACC) divisions. He is responsible for developing the public sector's cybersecurity capabilities on multiple fronts – developing cybersecurity strategies, delivering pragmatic cybersecurity policies, delivering deep-dive security testing, building contextualised cyber products, and uplifting cybersecurity specialists’ skills.
 
-- type: Day 2, Plenary
+- type: Wed, Plenary
   timeslot: 03:00 PM - 03:30 PM
   timeslot_metadata: 2022-11-16T15:00:00+08:00 - 2022-11-16T15:30:00+08:00
-  title: 'Cyber Physical Masterplanning: The Need for a Digital Twin'
-  desc: "Digital twin is a real time virtual representation of a real world physical system. A digital twin at the national level is increasingly important as it allows simulation, testing and monitoring before implementing changes in the real world. It supports the planning process before deployment, operation management and historical studies that will facilitate use case discovery. Who should attend: CIOs and CTOs, Tech Leaders."
+  title: "Cyber Physical Masterplanning: The Need for a Digital Twin"
+  desc: "Digital twin is a real time virtual representation of a real world physical system. A digital twin at the national level is increasingly important as it allows simulation, testing and monitoring before implementing changes in the real world. It supports the planning process before deployment, operation management and historical studies that will facilitate use case discovery."
+  additional_info_1: "Who should attend | CIOs and CTOs, Tech Leaders."
   speakers:
     - name: Mr James Tan
-      image: /assets/img/photos/blank-photo.png
+      image: /assets/img/photos/james-tan.png
       title: Director, Sensors and IoT, GovTech
       desc: James is the Director for Sensors and IoT in GovTech as well as the Director for Smart District Division in JTC. James leads a team that develops the Open Digital Platform- the Smart District Operating System for system interoperability. His team has been using digital twin technology to build a command and control system for the Punggol Digital District in Singapore.
 
-- type: Day 2, Plenary
+- type: Wed, Plenary
   timeslot: 03:30 PM - 04:00 PM
   timeslot_metadata: 2022-11-16T15:30:00+08:00 - 2022-11-16T16:00:00+08:00
   title: Upskilling Trends for the Humans of DevOps
-  desc: "Digital transformation requires Human Transformation which in turn requires a personal and cultural commitment to continuous learning. This session will explore current trends in continuous learning based on data from DevOps Institute's 2022 Upskilling IT community research report. The session will focus on five skill domains: Process, Human, Technical, Automation and Leadership. Within each domain, attendees will learn which specific skills or topics are considered <b>must have, nice to have and not as important</b> in both the APAC region and on a global level. Who should attend: All tech professionals involved in DevOps and digital transformation since the session explores upskilling, cultural considerations and career development."
+  desc: "Digital transformation requires Human Transformation which in turn requires a personal and cultural commitment to continuous learning. This session will explore current trends in continuous learning based on data from DevOps Institute's 2022 Upskilling IT community research report. The session will focus on five skill domains: Process, Human, Technical, Automation and Leadership. Within each domain, attendees will learn which specific skills or topics are considered \"must have, nice to have and not as important\" in both the APAC region and on a global level."
+  additional_info_1: "Who should attend | All tech professionals involved in DevOps and digital transformation since the session explores upskilling, cultural considerations and career development."
   speakers:
     - name: Ms Jayne Groll
       image: /assets/img/photos/jayne-groll.png
       title: CEO and Co-founder, DevOps Institute
       desc: Jayne Groll is CEO and Co-founder of the DevOps Institute. Prior to founding DevOps Institute in 2015, Jayne had an extensive IT career focused mostly on IT Operations. Jayne is active in the DevOps, SRE, ITSM and Agile communities and is a frequent presenter at local, virtual and international events.
+      
+# Workshops
+- type: Workshops
+  timeslot: 10:00 AM - 12:00 PM
+  timeslot_metadata: 2022-11-14T10:00:00+08:00 - 2022-11-14T12:00:00+08:00
+  title: "[Workshop 1] GCC 2.0"
+  desc: "To experience GCC 2.0 from creating a tenant, a CSP account, and deploying a simple web application."
+  additional_info_1: "Who should attend | Public officers who are planning to develop on the GCC."
+  additional_info_2: "Workshops prerequisite for participants | Internet enabled laptop."
+  speakers:
+    - name: Mr Tang Bing Wan
+      image: /assets/img/photos/tang-bing-wan.png
+      title: Director, GovTech
+      desc: A passionate architect and technical leader, Bing Wan started his career as a software developer (Informix, Java, C) focusing on both banking and shipping domains. He developed a passion in IT infrastructure, security and operations, which guided his subsequent work as an architect even as the landscape shifted from on-premise/physical, virtualisation to cloud, microservices, and trust-based security paradigm. In his most recent role as Director (Codex/Government Commercial Cloud), he further honed his skills in enabling a team of fellow passionate professionals to re-factor systems, IT operating model and culture on to commercial cloud. His most current interest and focus area is on cloud automation/software defined infrastructure strategy across Singapore's whole-of-government. He is currently an AWS Certified Architect (Professional) and a Certified Scrum Master.
+
+- type: Workshops
+  timeslot: 10:00 AM - 12:00 PM
+  timeslot_metadata: 2022-11-14T10:00:00+08:00 - 2022-11-14T12:00:00+08:00
+  title: "[Workshop 2] Do More with your Data, with Less"
+  desc: "When you truly use data to drive your organisation, you will find yourself needing much more out of your data infrastructure. For starters you will need a more intuitive way to model and query your data that is in line with modern applications. Beyond storing and retrieving data, you will want to leverage your data more with capabilities like search, real-time analytics and even edge to Cloud synchronization. However this does not mean you should be destined to manage a complex data infrastructure riddled with operational and security inconsistencies.<br><br>In this two hour workshop we will show you how MongoDB solves that problem with a Developer Data Platform that helps you to do more with your data with a single consistent multi-cloud infrastructure to drive developer productivity while reducing both operational and security complexity.<br><br>Specifically we will show how you can: -<br><br>- Easily deploy a multi-cloud distributed database<br>- Intuitively model data with the document model and a flexible schema paradigm<br>- Add search functionality to your application without additional infrastructure and without learning additional frameworks<br>- Achieve real-time analytics without having to setup a different database cluster and with native visualisation tools included."
+  additional_info_1: "Who should attend | Developers, Application Development Leaders, Application Architects and Enterprise Architects."
+  additional_info_2: "Workshops prerequisite for participants | Participants should bring along their own laptop that has access to internet and be able to access https://cloud.mongodb.com/. Participants may find their experience elevated if they are able to download and install MongoDB Compass on their laptop.<br>(https://www.mongodb.com/try/download/compass)"
+  speakers:
+    - name: Mr Derrick Chua
+      image: /assets/img/photos/derrick-chua.png
+      title: Senior Solutions Architect, MongoDB
+      desc: Derrick is obsessed with helping customers go fast in delivering valuable software to their customers because that make things great for everyone. He has been working on modern application architectures, development methodologies and cloud platforms for the last few years; and has joined MongoDB in 2020 to help developers working on modern applications to work more productively with data and to help database engineers move into the new world of operating distributed systems at scale. Derrick was first and foremost a developer and remains fascinated at how software has been solving the world’s problems.
+      
+- type: Workshops
+  timeslot: 10:00 AM - 12:00 PM
+  timeslot_metadata: 2022-11-14T10:00:00+08:00 - 2022-11-14T12:00:00+08:00
+  title: "[Workshop 3] Coding Dojo: Learn the Basics of TDD & Pair-Programming"
+  desc: In this workshop, we will be learning about how software engineers in GovTech build software. We will have some fun solving a Programming Puzzle at the same time - and hopefully to introduce you to software engineering practices such as Test Driven Development (TDD) and Behavior Driven Development (BDD). This workshop will be done in a group setting where we will also be practicing Pair-Programming and Mob-Programming.
+  additional_info_1: "Who should attend | Tech and non-tech people who might be interested in finding out how developers use TDD & Pair-Programming to deliver working code."
+  additional_info_2: "Workshop prerequisite for participants | Some basic knowledge in a programming language would be preferred but not necessary."
+  speakers:
+    - name: Mr Michael Cheng
+      image: /assets/img/photos/michael-cheng.png
+      title: Lead Software Engineer, GovTech
+      desc: Michael Cheng is a full stack developer with more than 10 years of experience building dynamic websites. He is a Zend Certified Engineer/Trainer in PHP development. He currently does Ruby & Go Lang. He runs the Singapore PHP User Group, co-founded the iOS Dev Scouts and is the organiser of PHPConf.Asia. He also runs Engineers.SG, a not-for-profit community initiative to document and archive the tech and startup scene in Singapore. His latest passion project is JuniorDevSG, a support group for junior developers in Singapore. Michael is currently a Lead Software Engineer with GovTech Singapore.
+
+- type: Workshops
+  timeslot: 10:00 AM - 12:00 PM
+  timeslot_metadata: 2022-11-14T10:00:00+08:00 - 2022-11-14T12:00:00+08:00
+  title: "[Workshop 4] Real Time Data Streaming Pipelines Made Simple"
+  desc: "Learn how to set your data in motion with Confluent Cloud, a fully managed data streaming platform that delivers Apache Kafka® and the surrounding toolchain needed for all of your streaming use cases. Explore using Confluent Cloud through the simple use case of transactions and payments to modernise your applications and data infrastructure. You will gain an understanding how hybrid and multicloud architectures are able to power real-time interoperability between all of the systems, applications, and datastores that run across any number of on-premises and cloud environments so you can innovate faster, increase revenue, reduce risk and maximize the value of cloud. You will learn in this workshop how to provision clusters, create API keys, assign roles and access, connect to external systems to fetch data, define message formats, build stream processing applications, expose real-time data via APIs, and learn, build, break, fix."
+  additional_info_1: "Who should attend | Architects, Developers, Data Scientists & Analysts."
+  additional_info_2: "Workshop prerequisite for participants | 1. Understanding and appreciation of cloud technology.<br>2. Familiarity with configuring and connecting to IT systems - databases, web applications, running SQL statements.<br>3. Eagerness to learn something new."
+  additional_info_3: "Checklist for participants | 1. Own notebook/laptop<br>2. Install browser (Chrome/Firefox)<br>3. Wifi connection (provided at venue)<br>4. Use a google/gmail account - to access and run the exercises on Colab (access viathe browser)<br>5. Sign up for Confluent Cloud (if not already an existing user - access via the browser)" 
+  speakers:
+    - name: Mr Jason Esli
+      image: /assets/img/photos/jason-esli.png
+      title: Staff Solutions Engineer, Confluent Singapore Pte Ltd
+      desc: Jason Esli is a Staff Solutions Engineer at Confluent focusing on Singapore Government Customers. Jason is also one of the founders of the Singapore SRE Meetup which focuses on Observability, a field that Jason has extensive experience in.
+      
+- type: Workshops
+  timeslot: 10:00 AM - 12:00 PM
+  timeslot_metadata: 2022-11-14T10:00:00+08:00 - 2022-11-14T12:00:00+08:00
+  title: "[Workshop 5] Data Privacy 101: Introduction to Privacy-Preserving Technologies"
+  desc: "Do you or your organisation face difficulties in sharing data due to privacy restrictions, or fears of a data breach? In a digital landscape fraught with emerging threats and regulatory concerns, there is a growing need for organisations to collect and share data safely, without compromising the privacy of stakeholders.<br><br>In this workshop, you will be introduced to the emerging field of data privacy and privacy-preserving technologies (PP-Tech). Participants will learn more about Singapore's data privacy landscape and how various forms PP-Tech can help manage privacy-utility tradeoffs.<br><br>Participants will have the opportunity to test drive enCRYPT, GovTech's Central Privacy Toolkit, which helps non-expert users to anonymise data and address re-identification risk. Participants will also learn practical implementations of differential privacy through a mini tech clinic."
+  additional_info_1: "Who should attend | Data practitioners, Developers, Public Sector Officers, or anyone interested in data privacy. No technical knowledge is required (though basic Python background is recommended for the differential privacy segment)."
+  additional_info_2: "Workshop prerequisite for participants | Internet enabled laptop"
+  speakers:
+    - name: Mr Alan Tang
+      image: /assets/img/photos/alan-tang.png
+      title: Senior Product Manager, GovTech
+      desc: Alan is the product manager for new and experimental team focused on harnessing the benefits of Privacy-Preserving Technologies for the public sector. Prior to joining GovTech, Alan worked as a cyber threat analyst dissecting key threats and actors in cyberspace. He is passionate about working at the intersection of policy, technology and citizen needs.
+    - name: Ms Ansha Singh
+      image: /assets/img/photos/ansha-singh.png
+      title: Privacy Researcher, GovTech
+      desc: Anshu is a privacy researcher at GovTech, where she helps in the development of an anonymisation tool and does research on different privacy enhancing technologies to protect citizens' privacy. Prior to joining GovTech, she spent 2 years in AI research, particularly at the intersection of computer vision and privacy, at the NUS Centre for Research in Privacy Technologies (N-CRiPT). She earned her masters from the NUS in AI.
+    - name: Mr Zul Yang
+      image: /assets/img/photos/zul-yang.png
+      title: Associate Software Engineer, GovTech
+      desc: Zul Yang is a software engineer at GovTech building solutions to protect citizens’ privacy. Prior to joining GovTech, he was with the Singapore Civil Defence Force’s Transformation and Future Technology Department developing products to enhance emergency response and public safety.
+      
+- type: Workshops
+  timeslot: 01:30 PM - 03:30 PM
+  timeslot_metadata: 2022-11-14T13:30:00+08:00 - 2022-11-14T15:30:00+08:00
+  title: "[Workshop 6] Data-graphi-cation"
+  desc: "Data-fication means accessing and using data with many different format and layout. Data-fication means finding business values hidden in gigantic pile of data. Data-fication means convincing stakeholders to invest in data without being sure of the outcome. Neo4j Graph Database will fit into any infrastructure, consuming data from anywhere, and bringing instant impact to business users. Today, we want to show a practical example of how multiples datasets can be linked for new insights."
+  additional_info_1: "Who should attend | People who want to have a hands-on experience on graph databases. People who want to understand how connected data brings values to the business."
+  additional_info_2: "Workshop prerequisite for participants | Bring your own internet laptop as you will be able to run all the commands shown during the workshop on our AuraDB Free edition."
+  speakers:
+    - name: Mr Xavier Pilas
+      image: /assets/img/photos/xavier-pilas.png
+      title: Pre-Sales Consultant, Neo4j
+      desc: Xavier Pilas is a software developer and a solution builder by heart. After 15 years in Finance and Banking, he became Pre-Sales consultant 6 years ago to work closely with clients to use the right software to solve real life business use cases.
+
+- type: Workshops
+  timeslot: 01:30 PM - 03:30 PM
+  timeslot_metadata: 2022-11-14T13:30:00+08:00 - 2022-11-14T15:30:00+08:00
+  title: "[Workshop 7] Be Real-Time: Design, Document, Discover and Develop Event-Driven APIs"
+  desc: "Most organisations are adopting an Event-Driven Architecture (EDA) to compete in a world where customer satisfaction requires real-time outcomes.<br><br>In this workshop, we'll build and expand your toolbox by sharing how an Event Portal, paired with industry standard specifications and frameworks, enables a smooth journey to bring your EDA from initial architecture and design to code running in production, while also setting your team up for success as the business needs, architecture and applications themselves are enhanced over time.<br><br>Throughout this workshop we will get hands-on and talk about:<br>1. PubSub+ Event Portal<br>- Architect, design and extend an EDA which includes multiple applications, events, and schemas.<br>- Document applications, events, and schemas along with best practices for documentation.<br>- Use the Event Catalog and Designer to learn, understand and ideate.<br><br>2. AsyncAPI<br>- AsyncAPI is an open initiative for defining asynchronous APIs, providing a specification, and tooling such as code generation.<br>- Use the AsyncAPI Generator to generate skeleton code and object models for event-driven microservices."
+  additional_info_1: "Who should attend | Architects, Developers"
+  additional_info_2: "Workshop prerequisite for participants | - Laptop with internet connectivity and browser<br>- Familiarity with publish/subscribe pattern, Topics and Queues an asset<br>- Knowledge of Java and/or JavaScript an asset"
+  speakers:
+    - name: Mr Aaron Lee
+      image: /assets/img/photos/aaron-lee.png
+      title: Developer, Solace Corporation Inc
+      desc: "Based in Singapore, Aaron is a developer advocate at Solace. He enjoys coding demos, making videos, running workshops – and writing blog posts when he must. He will happily discuss event-driven architecture, microservices, networking protocols, application design, monitoring, time-series data, and visualisation frameworks for as long as you’ll listen.<br><br>During his 11 years at Solace, he has worked as a pre-sales engineer and a professional services consultant around the globe, including in Hong Kong, London, New York and his hometown of Ottawa. He has conducted lots of developer workshops to help folks better understand how to monitor event-driven systems powered by Solace infrastructure, and how to apply event-driven thinking to their programming and application design.<br><br>Aaron holds a Master's degree in computer science and a Bachelor's degree in mathematics, both from Carleton University, which makes hobbies like geometry and data visualisations make sense, along with the unexpected kite surfing and riding motorcycles."
+   
+- type: Workshops
+  timeslot: 01:30 PM - 03:30 PM
+  timeslot_metadata: 2022-11-14T13:30:00+08:00 - 2022-11-14T15:30:00+08:00
+  title: "[Workshop 8] Zero to Kubernetes"
+  desc: "You've heard of Docker and Kubernetes, and you can tell that they are the next big thing to learn. You want to master Kubernetes, but where should you start? Enter Zero to Kubernetes: a step-by-step course on how to architect, develop and deploy applications in Kubernetes. This course walks you through the full path from coding an application to deploying it to a production-grade Kubernetes cluster."
+  additional_info_1: "You will learn how to | - Write a note-taking application in Node.js or Java.<br>- Package the app as a Docker image.<br>- Deploy the containerised application to a local Minikube cluster.<br>- Refactor your application to make it stateless and scalable.<br>- Deploy the improved application to a production-grade Kubernetes cluster on AWS."
+  additional_info_2: "Who should attend | - Docker and Kubernetes beginners.<br>- Developers who build and architect cloud-native applications.<br>- DevOps and system administrators."
+  additional_info_3: "Workshop prerequisite for participants | - Java or Node.js installed<br>- Minikube and kubectl<br>- Docker - Git, curl<br>This workshop is Windows, macOS and Ubuntu friendly."
+  speakers:
+    - name: Mr Daniele Polencic
+      image: /assets/img/photos/daniele-polencic.png
+      title: Instructor, Learnk8s
+      desc: Daniele is an instructor at Learnk8s, where he teaches Kubernetes and containers to small and large enterprises.
+  
+- type: Workshops
+  timeslot: 01:30 PM - 06:00 PM
+  timeslot_metadata: 2022-11-14T13:30:00+08:00 - 2022-11-14T18:00:00+08:00
+  title: "[Workshop 12] SG Tech Stack for Public Sector Developers"
+  desc: "GovTech has developed the Singapore Government Tech Stack (SGTS), a suite of products and services that enables government agencies to build secure digital services quickly and effectively. This workshop is for developers to get basic understanding of SHIP-HATS 2.0 – the CI/CD tool, Container Stack – the Container tool and StackOps – the monitoring and observability tool.<br><br>SHIP-HATS 2.0<br>This segment offers a hands-on guidance to construct a CI/CD pipeline on SHIP-HATS 2.0 that follows industry best practices. The workflow builds a Docker image that gets deployed to a registry. In this simple setup, security as well as compliance aspects will be covered in depth.<br><br>Container Stack (CStack)<br>CStack segment showcases managing applications and cloud services using CStack over the SHIP-HATS pipeline. From the artifact built from SHIP-HATS pipeline integrated with CStack, we'll go through how to deploy applications easily using GitOps as well as introduce tools & integration provided from the platform.<br><br>StackOps<br>In this segment, participants will get a hands-on experience with StackOps on the ingesting of the logs to monitor toolchain and retrieve logs, creating dashboards, using Application Performance Monitoring (APM) tool to derive insights into an application. In addition, there will be a demonstration of the StackOps Portal in which a project can be onboarded to monitor infrastructure or applications."
+  additional_info_1: "Who should attend | Devops engineers who would like to learn about e2e implementation in compliance of CICD, orchestration to a k8s cluster and service monitoring and alerting."
+  additional_info_2: "Workshop prerequisite for participants | - Attendees should bring their own internet laptops<br>- Laptop able to install and support https://clients.amazonworkspaces.com/<br>- They should come prepared to do configuration in yaml and thus have some software / devops engineering background"
+  speakers:
+    - name: Ms Chua Peiling
+      image: /assets/img/photos/chua-peiling.png
+      title: Full Stack Engineer, GovTech
+      desc: Full stack Engineer for SHIP, worked on the enablement of SHIP's devops toolchain and the development of data visualisation pipeline to drive devsecops adoption.
+    - name: Mr Yap Yi Sheng
+      image: /assets/img/photos/yap-yi-sheng.png
+      title: DevOps Engineer, GovTech
+      desc: Technical lead for Container Stack, a platform to enable transformative development.      
+    - name: Mr Shan Mahanama
+      image: /assets/img/photos/shan-mahanama.png
+      title: DevOps Engineer, GovTech
+      desc: Shan is a DevOps Engineer in StackOps who involves in deploying, maintaining and upgrading the infrastructure for StackOps.
+
+- type: Workshops
+  timeslot: 01:30 PM - 06:00 PM
+  timeslot_metadata: 2022-11-14T13:30:00+08:00 - 2022-11-14T18:00:00+08:00
+  title: "[Workshop 13] Introduction to Accessibility Testing, Ever Wondered about the State of the Accessibility of your Digital Service?"
+  desc: "The introductory workshop will demonstrate how you can leverage automated and manual accessibility testing to improve the accessibility of your web and mobile applications. Featuring Purple HATS an accessibility testing tool that fits right into your CI/CD pipeline. You will get to experience hands-on methodology on how to test for accessibility issues with screen readers too.<br><br>Note: While the workshop might be a little technical, we welcome officers of different technical backgrounds to experience the tool for themselves. Assistance will be provided."
+  additional_info_1: "Who should attend | UX Designer, Software Engineer, Quality Engineer, Business Analyst, Everyone interested in Accessibility."
+  additional_info_2: "Workshop prerequisite for participants | No prerequisite knowledge required. In order to get the best workshop experience, you will need to have a MacOS or Windows laptop with a web browser and direct Internet connection to install open-source software.<br><br>Please install Purple hats on your laptop before the workshop with this guide: https://go.gov.sg/purple-hats-install-guide . Also, bring along *either* a Bluetooth, or USB-C and 3.5mm earphones/headphones as there are segments which will require you to listen to audio from your laptop."
+  speakers:
+    - name: Mr Lim Zui Young
+      image: /assets/img/photos/lim-zui-young.png
+      title: Senior DevOps Engineer, GovTech
+      desc: Zui Young is a Senior DevOps and Quality Engineer at GovTech Singapore. He believes in the power of technology to improve people’s lives. He is passionate about DevOps, cybersecurity and e-accessibility domains. He possesses a wide and varied experience from building monolithic to serverless architecture applications.
+    - name: Mr Royce Cheng
+      image: /assets/img/photos/royce-cheng.png
+      title: UX Designer, GovTech
+      desc: Royce is a UX Designer at GovTech Singapore. With experience in software engineering and accessibility, he is able to scale product solutions to a broader audience in a range of environments. His obsessive attention to detail is reflected in his clean codes and pixel perfect mockups. Outside of work, he enjoys volunteering and spending time with family.      
+    - name: Mr Tan Han Yang
+      image: /assets/img/photos/tan-han-yang.png
+      title: Quality Engineer, GovTech
+      desc: Han Yang is a Quality Engineer at GovTech Singapore. His passion is exploring test automation technologies to improve software quality and the testing experience for the whole team. Currently the Quality Engineering lead for TraceTogether, he enjoys harnessing the latest mobile technologies to create innovative digital solutions for Singaporeans.
+      
+- type: Workshops
+  timeslot: 04:00 PM - 06:00 PM
+  timeslot_metadata: 2022-11-14T16:00:00+08:00 - 2022-11-14T18:00:00+08:00
+  title: "[Workshop 9] What are you Overlooking? How to Measure and Close the Gaps in your Attack Resistance"
+  desc: "Digital transformation has a downside: It causes a gap between the attack surface your organisation knows about and protects, and your actual attack surface with assets that are beyond your security team's scope and therefore left unprotected.<br><br>In this workshop, we’ll explore the ways to measure that gap and how HackerOne’s platform can help close it. Participants will learn a new approach to gaining full visibility across their attack surface, driving down risk, and increasing attack resistance across applications and cloud assets."
+  additional_info_1: "You will learn how to | - Stay ahead of threats in a fast-changing application landscape<br>- Measure and close the gaps in cyber-risk identification<br>- Find risks that scanners, automation, and AI miss<br>- Use real-world vulnerabilities to educate and train developers<br>- Fill security skills shortages on demand"
+  additional_info_2: "Who should attend | Security leaders and Practitioners."
+  additional_info_3: "Workshop prerequisite for participants | - Join us in a hands-on group activity! You will work in groups to collaborate as a Security Team for a fictional organisation. Together you will understand, validate and determine the impact of vulnerability report POC's taken from the HackerOne platform.<br>- This is a unique opportunity to collaborate, learn from other security professionals, discuss the impact of critical vulnerabilities and work through the challenges your organisation could encounter. We hope to see you there!<br>- Any level of technical knowledge is suitable!"
+  speakers:
+    - name: Mr Adam Gray
+      image: /assets/img/photos/adam-gray.png
+      title: Senior Manager, Security Advisory Services - EMEA, HackerOne
+      desc: "Adam has over a decade of experience in a variety of cyber security disciplines. He started his career as a systems engineer building secure systems on behalf of the UK Government. Adam, then transitioned into offensive security where he developed a wide spectrum of skills that ranged from web applications to infrastructure and hardware hacking. He made the switch from red to blue and established himself as an authority in the development of large scale cyber monitoring capabilities leveraging emerging big data technologies and has successfully helped large enterprises around the globe implement next-generation SOCs and is most proud of the work he has contributed to a number of national capabilities that underpin NCSC’s around the globe. He recently joined HackerOne where his skills in building world-class advisory teams will be used to create the HackerOne security advisory practice.<br><br>Outside of work, Adam is fanatical about sports and spending time with his young family."
+
+- type: Workshops
+  timeslot: 04:00 PM - 06:00 PM
+  timeslot_metadata: 2022-11-14T16:00:00+08:00 - 2022-11-14T18:00:00+08:00
+  title: "[Workshop 10] Breaking the Silos and Driving API Adoption"
+  desc: "Need to break silos? Drive adoption? Understand more about what you have? We will show you how to understand everything you need to know about your API ecosystem."
+  additional_info_1: "Workshop prerequisite for participants | Internet enabled laptops"
+  speakers:
+    - name: Mr Savio Mascarenhas
+      image: /assets/img/photos/savio-mascarenhas.png
+      title: Principal Pre-Sales Architect, Axway
+      desc: "Principal Solution Architect with extensive experience in architecture design, development and implementation of enterprise applications."
+    - name: Mr Mihir Mone
+      image: /assets/img/photos/mihir-mone.png
+      title: Sales Manager, Axway
+      desc: "Accomplished Tech Sales Manager with a proven track record working with clients across the globe for implementing enterprise grade API management and integration software."
+    - name: Mr Bill Kearney
+      image: /assets/img/photos/bill-kearney.png
+      title: GM, APAC, Axway
+      desc: "With 20 years of executive experience, he has cultivated a deep-rooted passion in building and growing teams focused on creating business value for customers and impactful returns for their organisations. He has always placed customer success at the epicenter of what he does and appreciates every opportunity to engage with and listens to customers directly."      
+      
+- type: Workshops
+  timeslot: 04:00 PM - 07:00 PM
+  timeslot_metadata: 2022-11-14T16:00:00+08:00 - 2022-11-14T19:00:00+08:00
+  title: "[Workshop 11] Unleashing the Service Mesh"
+  desc: "In this workshop, students will learn about Service Mesh technology for DevOps and SRE teams. OpenShift Service Mesh provides a platform insight and operational control over your network microservices in a service mesh. Students will learn to prevent cascading failures in a distributed environment, how to detect misbehaving services, and how to avoid having to implement resiliency and monitoring in your business logic. After the workshop, you will be able to resolve microservices concerns using Service Mesh declarative way."
+  additional_info_1: "Topics covered in the workshop are | - Fail-Safe application with Service Mesh<br>- Creating Distributed Services<br>- Service Visualization and Monitoring<br>- Zero-Trust security with Service Mesh"
+  additional_info_2: "Site Reliability Engineers, Developers, DevOps Engineers, Technologists."
+  additional_info_3: "Workshop prerequisite for participants | - Bring their own unrestricted internet-accessible laptop (Mac or Windows OS)<br>- Obtained an email account<br>- Knowledge of working with containers or Kubernetes"
+  speakers:
+    - name: Mr Stephen Bylo
+      image: /assets/img/photos/stephen-bylo.png
+      title: Senior Specialist Solution Architect Seasoned Technologist, Red Hat
+      desc: "Stephen Bylo, Senior Specialist Solution Architect Seasoned technologist, is a highly passionate and motivated leader in software development & infrastructure management."      
+      
+# Tues, Lightning Talks      
+- type: Tues, Lightning
+  timeslot: 02:00 PM - 02:15 PM
+  timeslot_metadata: 2022-11-15T14:00:00+08:00 - 2022-11-15T14:15:00+08:00
+  title: Transform the Way You Transact with Singpass API
+  desc: "Learn how organisations can leverage on Singpass Transact APIs for the purpose of exchanging information and making decisions. The session is meant for business users and developers exploring to streamline their digital journey.<br><br>Theme: Building Digital Trust"
+  additional_info_1: "Who should attend | Business Partners, Government Officers, Transformation Partners, Developers."
+  speakers:
+    - name: Mr Roland Tan
+      image: /assets/img/photos/roland-tan.png
+      title: Assistant Director, GovTech
+      desc: Roland is a Lead Product Manager at GovTech, National Digital Identity, delivering transact APIs which aims to enable organisations in providing seamless digital journey to their customers.
+
+- type: Tues, Lightning
+  timeslot: 02:00 PM - 02:15 PM
+  timeslot_metadata: 2022-11-15T14:00:00+08:00 - 2022-11-15T14:15:00+08:00
+  title: "Application Modernisation: The Elephants in the Room"
+  desc: "It’s a common story: someone from the business wants to develop a new feature and delivery teams are excited to work on something new. But… a huge system lurking in the background is hard to change and slows everybody down. Most application modernisation initiatives seeking to improve such situations tend to be long and risky affairs driven by IT departments, while business stakeholders are unconvinced and reluctant to lend their support.<br><br>In this talk, we will share how the Economic Development Board (EDB) and VMware Tanzu Labs tamed the ‘elephants’ in the room by using the Swift method to:<br>- Understand how a monolithic legacy system supports existing business flows.<br>- Future-proof an existing system by re-architecting it to be flexible to change.<br>- Start small and make incremental gains with buy-in from the business."
+  additional_info_1: "Join us if you’re any of the following | - A stressed and under-funded IT stakeholder<br>- A frustrated and disgruntled business user<br>- A jaded and overworked software delivery team."
+  speakers:
+    - name: Mr Leong Jern-Kuan
+      image: /assets/img/photos/leong-jern-kuan.png
+      title: Project Director, EDB & VMware Tanzu Labs
+      desc: Jern Kuan Leong is a Project Director at EDB, leading and growing software engineering teams within EDB. He has been spearheading the modernization effort of EDB internal systems, lowering the barrier to introducing new products. In his previous life, he used to develop UX for self-driving vehicles and video games for a living. He still enjoys coding and savors every opportunity to code.
+    - name: Ms Liza Ng
+      image: /assets/img/photos/liza-ng.png
+      title: Senior Member Of Technical Staff, VMware Tanzu Labs
+      desc: Liza Ng is a Senior Member of Technical Staff at VMware Tanzu Labs (formerly known as Pivotal Labs), where she guides clients in shaping their software products, systems and teams. She usually (officially) plays the role of a software engineer, but occasionally pretends to be a technical product manager in the hope of bringing business and technical perspectives closer together.
+
+- type: Tues, Lightning
+  timeslot: 02:00 PM - 02:15 PM
+  timeslot_metadata: 2022-11-15T14:00:00+08:00 - 2022-11-15T14:15:00+08:00
+  title: "Continuous Integration and Delivery in 2022 - What's Next?"
+  desc: "Continuous integration and delivery (CICD for short) has evolved quite a bit in the last few years, and in 2022 there are an abundance of different tools and methodologies for software developers to recruit in order to deliver their products to the market faster. In this talk, Aries will highlight some of these best practices, as well as dive into the future of what CICD looks like. Topics such as managing complex application state, application dependency management, and continuous security as a part of CI will be covered.<br><br>Theme: Fail-Safe App Development"
+  additional_info_1: "Who should attend | Attendees in the cloud, application engineering, DevOps, DevSecOps, and computer, network and cyber security would benefit from this talk."
+  speakers:
+    - name: Mr Aris Youssefian
+      image: /assets/img/photos/aris-youssefian.png
+      title: Product Architect, CloudCover
+      desc: "Aries Youssefian is a product architect working for CloudCover, a cloud-native systems integration and software delivery company based in Singapore. He is primarily focused on building the next generation of developer tooling and platforms for an increasingly hyper-converged cloud and software world. Prior to CloudCover, Aries worked for software startups Stratoscale and Tesora, and is also an alumnus of Dell and VMware. He holds a Bachelors of Information Technology (Honours) from the University of Ontario Institute of Technology in Oshawa, Ontario, Canada."
+
+- type: Tues, Lightning
+  timeslot: 02:00 PM - 02:15 PM
+  timeslot_metadata: 2022-11-15T14:00:00+08:00 - 2022-11-15T14:15:00+08:00
+  title: "AI Driven Smart City"
+  desc: "Imagine driving your car and looking for a place to park. You speak to your phone, asking for the nearest available parking slot. After a short while, you get a verbal response giving you direction to the nearest and available slot. A few technologies are at play here. First, we need to train a Deep Learning model to make accurate inferences. After that, the model can be deployed close to the data source to process the video frames. This is where Edge Computing comes into play, running the algorithm with the trained model. Through chatbots, analytics, database, AI and other solutions, you can be guided to the nearest slot. This presentation touches on several smart city use cases and the associated data pipeline as well as some of the key technologies and considerations to make our city smarter.<br><br>Theme: Smart City: Vision to Reality"
+  additional_info_1: "Who should attend | IT practitioners, town planners and others."
+  speakers:
+    - name: Mr Francis Han
+      image: /assets/img/photos/francis-han.png
+      title: Senior Director, Oracle
+      desc: "Francis Han has 32 years of IT experience across Artificial Intelligence, Analytics, Enterprise Solutions, and Smart City domains. During the last 20 years in Oracle, Francis has assumed roles in consulting, presales, sales, as well as technical leadership positions. He is currently Senior Director, responsible for the Oracle Solution Centers across the JAPAC region and is a keen evangelist of cutting-edge technologies."
+
+- type: Tues, Lightning
+  timeslot: 02:15 PM - 02:30 PM
+  timeslot_metadata: 2022-11-15T14:15:00+08:00 - 2022-11-15T14:30:00+08:00
+  title: "Authenticated Communication for Building Digital Trust"
+  desc: "In this digital era, everything has moved online, even for frauds and scams. Be it spoofed websites, phishing emails, fake SMSes and calls, and various other creative ways of scamming the people are only on the rise. Government websites and other communication channels are especially vulnerable to scams as citizens may easily fall prey. It is thus vital to know what can be trusted on the Internet. At OGP, we believe in bringing public officers and the citizens together to fight scams, by providing means of building digital trust and secure collaboration. We will talk about GoGovSG and ForSG, a link shortener that authenticates communication between public officers and citizens. We will highlight the impact of this product and how it will continue to develop to play a role in our nation's defense-in-depth strategy against scams.<br><br>Theme: Building Digital Trust"
+  additional_info_1: "Who should attend | Public officers, members of the public."
+  speakers:
+    - name: Ms Hena Shah
+      image: /assets/img/photos/hena-shah.png
+      title: Product Manager, Open Government Products, GovTech
+      desc: "Hena Shah is an engineer-turned-product manager. She is the product manager for GoGovSG and its sister products (ForEduSG and ForSG) at Open Government Products."
+
+- type: Tues, Lightning
+  timeslot: 02:15 PM - 02:30 PM
+  timeslot_metadata: 2022-11-15T14:15:00+08:00 - 2022-11-15T14:30:00+08:00
+  title: "Policy as Code"
+  desc: "At Google, we build technology that helps people do more for the planet. For the STACK 2022 session, we will showcase a want to propose a deep dive and demo on a revolutionary technology from Google called Kubernetes config connector, which helps to simplify compliance and DevSecOps, FinOps.<br><br>Theme: Fail-Safe App Development"
+  additional_info_1: "Who should attend | Application Developers, Infra as code developers, Security Analyst."
+  speakers:
+    - name: Mr Ramneek Khurana
+      image: /assets/img/photos/ramneek-khurana.png
+      title: Customer Engineer, Google
+      desc: "Ramneek Khurana is a technical hands-on leader with 16+ years of experience in the financial and consulting industries. He enjoys applying technology with a data-driven eye to identify problems and build innovative solutions to improve customer experience. He believes in great ideas and stronger execution. Delivery is of paramount value to him. His focus has always been on producing small, incremental improvements to customer experience through engineering technical innovation. In his current role at Google as a Customer Engineer, he works with some of the largest financial institutions on building their cloud strategy, choosing right solutions on cloud with appropriate price/performance ratios while ensuring FSI industry compliance on the cloud."
+
+- type: Tues, Lightning
+  timeslot: 02:15 PM - 02:30 PM
+  timeslot_metadata: 2022-11-15T14:15:00+08:00 - 2022-11-15T14:30:00+08:00
+  title: "Multi-cluster Release Workflow"
+  desc: "With the widespread adoption of Kubernetes in organisations, engineering teams have found themselves managing a variety of clusters that differ in scale and usage. As the number of clusters grow, the complexity in managing them introduces new challenges for engineers to tackle. Maintaining clusters involves frequent changes related to upgrades, security and adding new components; a multi-cluster setup further complicates these operations. For engineering teams to be efficient and productive, an ideal multi-cluster management strategy and release workflow is paramount.<br><br>This session aims to showcase how a multi-cluster release workflow can reduce operational overheads and streamline the cluster management with the aid of automation and GitOps best practices.<br><br>Theme: Fail-Safe App Development"
+  additional_info_1: "Who should attend | DevOps Practitioners, SREs, DevOps Engineers, Software Engineers. Knowledge in CI/CD, Git, GitOps and/or Kubernetes are a plus. DevOps Practitioners, DevOps Engineers, Knowledge in CI/CD, Git, GitOps and/or Kubernetes are a plus."
+  speakers:
+    - name: Mr Ernest Boey
+      image: /assets/img/photos/ernest-boey.png
+      title: DevOps Engineer, GovTech
+      desc: "Ernest Boey, DevOps Engineer, GDS ENP Ernest is an Associate DevOps Engineer for Container Stack. In his role, he designs the CI/CD workflows that are used internally and by other Government agencies. These workflows make use of tools and methodologies like GitLab CI and GitOps. He works collaboratively with his stakeholders to set up automated pipelines and infrastructure for greater productivity. In his free time, he enjoys building keyboards and playing darts."
+    - name: Mr Azman Salleh
+      image: /assets/img/photos/azman-salleh.png
+      title: DevOps Engineer, GovTech
+      desc: "Azman Salleh, DevOps Engineer, GDS ENP Azman is an Associate DevOps Engineer for Container Stack. His day to day involves him automating Kubernetes workloads and enhancing GitOps workflow. He enjoys reading up on open source DevOps tools that can level up his team. When not working, he enjoys collecting trading cards and gaming with his friends."
+
+- type: Tues, Lightning
+  timeslot: 02:15 PM - 02:30 PM
+  timeslot_metadata: 2022-11-15T14:15:00+08:00 - 2022-11-15T14:30:00+08:00
+  title: "Crowd Density Monitoring in Outdoor Environments with Edge AI"
+  desc: "Crowd counting outdoors is a challenging problem as there are no defined entrances and exits. Furthermore, using existing CCTVs may not always be ideal to detect and count people accurately due to factors such as camera mounting height, field-of-view and lighting conditions. In this talk, we present our work developing cloud-connected edge AI solutions that count the number of people present in outdoor spaces. This will provide facility operators with the real-time information they need to manage these spaces. We will provide an overview of the system architecture, hardware, algorithms, software and backend monitoring elements of our solution, as well as results from deployments.<br><br>Theme: Smart City: Vision to Reality"
+  additional_info_1: "Who should attend | AI Technologists, Developers, Computer Vision Engineers."
+  speakers:
+    - name: Mr Kelvin Tan
+      image: /assets/img/photos/kelvin-tan.png
+      title: Associate System Engineer, GovTech
+      desc: "Kelvin is a Systems Engineer with the Sensors & IoT department at Government Technology Agency of Singapore (GovTech), where he works on developing and deploying Vision AI applications on the edge."
+
+- type: Tues, Lightning
+  timeslot: 02:30 PM - 02:45 PM
+  timeslot_metadata: 2022-11-15T14:30:00+08:00 - 2022-11-15T14:45:00+08:00
+  title: "Composing a Solution for Composing Documents?"
+  desc: "We will be introducing the development journey of docComposer, previously known as ChopChopDoc. docComposer is definitely one of the more agile and bold cross-agency projects we've had so far!<br><br>The presentation will be sharing about our onboarding to CStack, and our close collaboration with OGP and GovTech. We would also like to share how CPFB management has given the team the freedom and trust to build these products, giving us the opportunity to innovate not just for CPFB but for WOG too.<br><br>Theme: Government Track"
+  additional_info_1: "Agenda | - Intro to our team at CPFB, Frontier Products Team<br>- Intro to docComposer<br>- Usage of products from other agencies (CStack, FormSG)<br>- Deployment journey on CStack (by Akmal)<br>- Our discussions/collaboration with other agencies<br>- CPFB management giving us freedom, allowing us to work faster and smarter<br><br>Background below: docComposer originated in CPFB's Automation Lab, which then collaborated with OGP during Hack for Public Good 2021. With the newly formed Frontier Products Team in CPFB, we have taken back the development and running of docComposer, rebuilding it partially to be JS-based and deployed on cloud. The close integration with FormSG and usage of the new CStack led to many discussions and beta-testing signups with OGP and GovTech. As existing users of ChopChopDoc, HDB has been involved in user testing also."
+  additional_info_2: "Who should attend | All Developers, especially those looking to deploy containerised applications on GCC."
+  speakers:
+    - name: Mr Eugene Foo
+      image: /assets/img/photos/eugene-foo.png
+      title: IT Consultant, CPF Board
+      desc: "Eugene is a budding full-stack developer, having worked primarily on the frontend of docComposer."
+    - name: Mr Muhammad Nur Akmal Zubir
+      image: /assets/img/photos/muhammad-nur-akmal-zubir.png
+      title: IT Consultant, CPF Board
+      desc: "Akmal is the main DevSecOps guy who has been single-handedly deploying the team's products onto CStack/GCC2.0."
+
+- type: Tues, Lightning
+  timeslot: 02:30 PM - 02:45 PM
+  timeslot_metadata: 2022-11-15T14:30:00+08:00 - 2022-11-15T14:45:00+08:00
+  title: "The Combination of Digital Technologies"
+  desc: "The future is increasingly hyper-connected, politically and technologically fractured, and filled with carbon markets. These disruptive trends give rise to new use cases, for example, in healthcare, maritime, and forestry domains. We discuss the new use cases with a combination of digital technologies, such as Data and AI / ML, Cloud, 5G, Satellite Communications, Un-manned Tech, AR/VR/MR/XR, and Cybersecurity.<br><br>Theme: Tech for Tomorrow"
+  additional_info_1: "Who should attend | Anyone interested in digital, especially AI/ML, 5G/6G, and the metaverse."
+  speakers:
+    - name: Mr Clifton Phua
+      image: /assets/img/photos/clifton-phua.png
+      title: CTO, Digital Systems, ST Engineering
+      desc: "Clifton Phua is Chief Technology Officer of Digital Systems at ST Engineering. He looks after the R&D and productisation roadmaps of digital systems, especially in Data and AI, Cloud or Edge Computing, 5G or 6G, Satellite Communications or Imaging, Autonomous or Unmanned Tech, AR/VR/MR/XR, and Cybersecurity.<br><br>Previously, Clifton was Regional Vice President at DataRobot focusing on data science practice in Asia Pacific, Director at NCS leading their data scientist team, and data scientist at SAS and A*STAR.<br><br>Clifton graduated with a PhD and Bachelors (first class honours) in Information Technology from Monash University in Australia. He has completed the INSEAD Advanced Management Program."
+
+- type: Tues, Lightning
+  timeslot: 02:30 PM - 02:45 PM
+  timeslot_metadata: 2022-11-15T14:30:00+08:00 - 2022-11-15T14:45:00+08:00
+  title: "Know Your Data Next Generation Data Intelligence & Governance"
+  desc: "My talk will share how we can deploy effective methodologies to generate the next generation of data intelligence and governance.<br><br>Theme: Datafication"
+  additional_info_1: "Who should attend | Data leaders, Chief Data Officer, Data analyst, Scientist, Developers and Business Analysts."
+  speakers:
+    - name: Mr Sachin Tonk
+      image: /assets/img/photos/sachin-tonk.png
+      title: Deputy Director, GovTech
+      desc: "Technology Leader with 16+ years in delivering bespoke technology solutions by engaging agile and waterfall methodologies. Seasoned in Program and Project management in Banking and Consulting Industry. Diverse professional exposure in international settings across India, Singapore, United Kingdom and the Middle East (Riyadh/Dubai). Outstanding track record in automation, artificial intelligence, data analytics, business intelligence, Innovation, business transformation, governance, migration and architecture. Proven abilities in leading high-performing, multi-cultural and cross-functional teams in the delivery of multiple concurrent projects and operations of technology solutions. An excellent communicator capable of translating complex technical ideas into actionable solutions. Excellent ability in engaging clients, vendors, stakeholders across all levels to bring commercial and business growth and achieve organisational KPIs."
+
+- type: Tues, Lightning
+  timeslot: 02:30 PM - 02:45 PM
+  timeslot_metadata: 2022-11-15T14:30:00+08:00 - 2022-11-15T14:45:00+08:00
+  title: "GCC 2.0, The Bold Step Forward"
+  desc: "Government Commercial Cloud (GCC) 1.0 was launched in 2018 as a “wrapper” platform that provides government agencies with a consistent means to adopt commercial cloud solutions. However, feedback received include concerns over the tedious process of onboarding the GCC, increased need for automation, cloud native solutions and for less service requests. The redesigning of GCC gave rise to GCC 2.0 which various refinement from the first version of the platform.<br><br>This presentation will share the vision and key benefits of GCC 2.0, and how the design leads to acceleration of service delivery and service improvements for citizens and businesses.<br><br>Theme: Beyond Cloud"
+  additional_info_1: "Who should attend | IT professionals who are interested to learn more about what Government Commercial Cloud has to offer."
+  speakers:
+    - name: Mr Tang Bing Wan
+      image: /assets/img/photos/tang-bing-wan.png
+      title: Director, GovTech
+      desc: "A passionate architect and technical leader, Bing Wan started his career as a software developer (Informix, Java, C) focusing on both banking and shipping domains. He developed a passion in IT infrastructure, security and operations, which guided his subsequent work as an architect even as the landscape shifted from on-premise/physical, virtualisation to cloud, microservices, and trust-based security paradigm. In his most recent role as Director (Codex/Government Commercial Cloud), he further honed his skills in enabling a team of fellow passionate professionals to re-factor systems, IT operating model and culture on to commercial cloud. His most current interest and focus area is on cloud automation/software defined infrastructure strategy across Singapore's whole-of-government. He is currently an AWS Certified Architect (Professional) and a Certified Scrum Master."
+         
+- type: Tues, Lightning
+  timeslot: 02:45 PM - 03:00 PM
+  timeslot_metadata: 2022-11-15T14:45:00+08:00 - 2022-11-15T15:00:00+08:00
+  title: "Improving Government Services with Data: Best Practices, Tips and Insights from WOGAA"
+  desc: "Singaporeans’ love for the internet is undeniable. According to a 2020 study, almost 90% of the population uses the internet, with an average time spent of 8 hours a day. With such a high internet penetration rate, providing a good web browsing experience to consumers is paramount. What are some of the factors contributing to a good digital experience? In terms of usability, the website must be readily available, load quickly and is easily searchable, so as to deliver its intended outcome to users of all demographics and abilities in a simple and efficient manner. At the same time, as we strive towards becoming a more inclusive society, web accessibility is also becoming a major priority, to make sure that a person with disabilities or physical limitations has equal access to the content like the rest of the online community. Over the years, the Whole-of-Government Application Analytics (WOGAA) has developed services to help agencies have a better grasp of how their digital services are performing, as the Singapore government strives towards the Digital Government Blueprint’s goal of becoming a \"digital-to-the-core Government that serves with heart\". In this presentation, we hope to shed more light on how WOGAA helps to drive agencies to achieve excellence in areas such as usability, digital service availability and web content accessibility. This includes initiatives such as the Digital Service Awards, which provides positive reinforcement to motivate public officers to improve their digital services, as well as the Digital Service Dashboard, incorporating a set of KPIs to nudge agencies to achieve service excellence in areas such as Web Accessibility and Search Engine Optimisation. As Steve Jobs once said, \"If a user is having a problem, it's our problem.\" We hope that service owners recognise that usability is a shared responsibility among all stakeholders of a product, and through this presentation, audiences can learn about best practices and gain useful tips on how to better leverage WOGAA to improve their digital services to benefit their end users.<br><br>Theme: Government Track"
+  additional_info_1: "Who should attend | Public officers who use WOGAA, website and digital service owners or anyone who has an interest in web analytics."
+  speakers:
+    - name: Mr Seah Ming Shu
+      image: /assets/img/photos/seah-ming-shu.png
+      title: Data Scientist, GovTech
+      desc: "Seah Ming Shu is a data-driven individual, with over 6 years of experience in data analytics roles. Prior to joining the Public Service, he worked in the media and finance industries, dealing with projects in business intelligence, market research as well as machine learning. Since joining GovTech in January 2020, he has been working in the WOGAA team as a data scientist. His job scope includes building data models for various new product features, designing dashboards for product monitoring, as well as conducting workshops for fellow public officers on web analytics."     
+         
+- type: Tues, Lightning
+  timeslot: 02:45 PM - 03:00 PM
+  timeslot_metadata: 2022-11-15T14:45:00+08:00 - 2022-11-15T15:00:00+08:00
+  title: "Networking in GCC 2.0"
+  desc: "GCC consists of hundreds of accounts and network compartments (VPCs and VNETs) to segment different tenants and applications. This level of scale creates challenges around scalability, security, agility and segregation of traffic between applications in Cloud, and on-premises.<br><br>Let's talk about how to design your highly available and secure multi-cloud networking in a large scale deployment!<br><br>Theme: Beyond Cloud"
+  additional_info_1: "Who should attend | Cloud Engineers and Architects, Network Engineers."
+  speakers:
+    - name: Mr Sathiyamoorthi Chinnasamy
+      image: /assets/img/photos/sathiyamoorthi-chinnasamy.png
+      title: Lead Infrastructure Engineer, GovTech
+      desc: "Sathiya has over 20 years of on-premise, private and public cloud computing experience.<br><br>Sathiya was responsible for the network design in GCC and GCC 2.0. He currently leads the Managed Hosting engineering team in designing and enhancing services to help Agencies host and operate systems in the cloud.<br><br>Prior to joining GovTech, Sathiya was a Technical Architect and Database Administrator at StarHub."
+         
+- type: Tues, Lightning
+  timeslot: 02:45 PM - 03:00 PM
+  timeslot_metadata: 2022-11-15T14:45:00+08:00 - 2022-11-15T15:00:00+08:00
+  title: "Enabling Everyday AI"
+  desc: "Since 2013, Dataiku has been the leader in democratising data and empowering organisation-wide collaboration. In this talk, we will cover how some organisations have grasped and implemented robust analytics and AI programs and realised the full potential from these technologies. We will also share how to integrate data and AI organically throughout the organisation, as well as the importance of governance capabilities at an organisational and individual level. We believe that by allowing everyone to imagine, execute, control, and have governance over their work, data and AI become business assets that propel the company forward.<br><br>Theme: Datafication"
+  additional_info_1: "Who should attend | CxOs, Managers, Team leads who are spearheading/ involved in the data transformation journey at their organisations."
+  speakers:
+    - name: Ms Chua Hui Xiang
+      image: /assets/img/photos/chua-hui-xiang.png
+      title: Senior Data Scientist, Dataiku
+      desc: "Hui Xiang Chua is Senior Data Scientist at Dataiku, helping enterprises with data democratisation and enabling them to build their own path to AI. Dataiku is a 2x Gartner Magic Quadrant Leader for Data Science and Machine-Learning Platforms (as of 2021)."
+         
+- type: Tues, Lightning
+  timeslot: 02:45 PM - 03:00 PM
+  timeslot_metadata: 2022-11-15T14:45:00+08:00 - 2022-11-15T15:00:00+08:00
+  title: "Cloud Services for Digital Medicine Framework"
+  desc: "When we move towards the future of healthcare, the use of digital medicine will be prevalent. Yet, around the globe, most institutions have yet to develop a framework that ensure the digital medicines we prescribe one day will follow the stringent protocol of the pharmaceutical drug approval. In this talk, we will share how we adopt the software as a medical device framework and how we rationalise the cloud infrastructure that enables us to realise a robust and future proof cloud based digital medicine framework.<br><br>Theme: Tech for Tomorrow"
+  additional_info_1: "Who should attend | Anyone who might be interested in the future of cloud based digital medicine framework and implementation."
+  speakers:
+    - name: Dr Ng Kian Bee
+      image: /assets/img/photos/ng-kian-bee.png
+      title: Co-Director, gAmes for HeaLth InnoVations CentrE (ALIVE)
+      desc: "Kian Bee is the co-director of ALIVE, a research collaboration centre between LKCMedicine and its primary healthcare partner - the National Healthcare Group (NHG)."   
+         
+- type: Tues, Lightning
+  timeslot: 03:00 PM - 03:15 PM
+  timeslot_metadata: 2022-11-15T15:00:00+08:00 - 2022-11-15T15:15:00+08:00
+  title: "User Testing for e-Accessibility"
+  desc: "With increased digitalisation, more transactions are moving online, be it for commerce, leisure, learning, work or government services. Persons with disabilities will not be able to access important information or perform digital transactions if the content and platforms are not accessible to them. As such, there is an imperative to ensure that digital content and platforms are made accessible to them, especially for critical information and essential services. This session will share about the importance of e-accessibility, and offer tips on how to make your content e-accessible for persons with disabilities as we embark on this Smart City journey.<br><br>Theme: Smart City: Vision to Reality"
+  additional_info_1: "Who should attend | Developers, Content Creators, Owners of customer facing units."
+  speakers:
+    - name: Mr Alvin Tan
+      image: /assets/img/photos/alvin-tan.png
+      title: Head, Technology Catalyst, SG Enable
+      desc: "As Head, Technology Catalyst at SG Enable, Alvin brings his strength in technology foresight to the Assistive Technology (AT) domain, and seeks to infuse a fresh perspective on the acceptance and use of AT in Singapore. He strongly believes in the potential of technology for social good, and aims to realise this potential through his role in SG Enable. Through technology, he seeks to empower persons with disabilities by enhancing their capabilities in technology use, and help persons with disabilities be more engaged with the society. Alvin holds a Bachelor’s degree in Computer Engineering from Nanyang Technological University."      
+    - name: Mr Josh Tseng
+      image: /assets/img/photos/josh-tseng.png
+      title: Head of Digital Accessibility Services, Etch Empathy
+      desc: "Josh leads the team at Etch Empathy to provide digital accessible services that make software more inclusive for everyone. With partners at SG Enable, Josh and his team engage organisations to conduct accessibility assessments of apps, consultations, and workshops. As a person with a visual impairment, Josh has experienced part of the struggle other persons with disabilities face when encountering inaccessible software, and hopes to combine his technical experience and communication skills to empower developers with the right understanding to cater to persons with disabilities. Josh is also an avid public speaker and storyteller, promoting inclusivity for persons with disability at events for the likes of TEDx, Microsoft, and the Inclusive Business Forum 2022. Josh has a Bachelor's in Information Systems from Singapore Management University."        
+         
+- type: Tues, Lightning
+  timeslot: 03:00 PM - 03:15 PM
+  timeslot_metadata: 2022-11-15T15:00:00+08:00 - 2022-11-15T15:15:00+08:00
+  title: "Building Inclusive Teams - A Sharing from Women in GovTech ERG (Employment Resource Group)"
+  desc: "Join us for an interactive session where we share our journey of setting up the community of Women In (Gov)Tech and learnings along the way. This is not only about women, it is for anyone who is looking to build high performing teams!<br><br>Theme: Nurturing the Tech Culture & Careers"
+  additional_info_1: "Who should attend | Anyone who wants to run or be in happy, inspired innovative tech teams!"
+  speakers:
+    - name: Ms Ramakrishnan Sowmya
+      image: /assets/img/photos/ramakrishnan-sowmya.png
+      title: Lead Product Manager, GovTech
+      desc: "Sowmya Ramakrishnan is the Chair for the inaugural Women in Tech team at GovTech. She is a Lead Product Manager at GovTech spearheading product marketing and adoption programs under CODEX – a Smart Nation initiative to modernise Government IT systems with cloud technologies. Prior to GovTech, she spent 15 years working in the tech industry. She spent 8 years with Google in regional and global roles leading Go-to-Market teams for Cloud, EdTech and AdTech in Asia Pacific and the US. Her other professional experiences include being a software developer at IBM. She is also running a startup in wellness technology space.<br><br>Sowmya holds a Bachelor of Computer Engineering from Nanyang Technological University and a Master of Business Administration from Indian School of Business.<br><br>Sowmya is passionate about removing barriers to equity such as creating access to education, uncovering biases, enabling safe space for self-expression. She is also a visual artist, fiction writer and holistic wellness enthusiast."
+    - name: Ms Liyana Muhammad Fauzi
+      image: /assets/img/photos/liyana-muhammad-fauzi.png
+      title: Lead Product Manager, GovTech
+      desc: "Liyana is the Vice-Chairperson of GovTech’s Women in (Gov)Tech Group, and the Lead Product Manager for the SG Tech Stack which aims to enable agencies to build better apps with good developer tools and practices.<br><br>Liyana also volunteers with The Codette Project, and enjoys travelling and exploring new places. In 2021, Liyana was an awardee of the SG 100 Women in Tech 2021 List."
+         
+- type: Tues, Lightning
+  timeslot: 03:00 PM - 03:15 PM
+  timeslot_metadata: 2022-11-15T15:00:00+08:00 - 2022-11-15T15:15:00+08:00
+  title: "Exploiting Vulnerabilities and Flaws to Attack Supply Chain"
+  desc: "In the supply chain eco-system there are many vulnerable platforms that are trusted by the majority of developers. These platforms can be exploited in a number of ways by attackers.<br><br>In this session we will show just a few of these attack vectors and techniques.<br><br>We will examine supply chain vulnerabilities and flaws in three sections: source code management (SCM), package managers, and CI/CD.<br><br>Theme: Building Digital Trust"
+  additional_info_1: "Who should attend | Developers that rely on open-source projects, and Developers of open-source projects."
+  speakers:
+    - name: Mr Ilay Goldman
+      image: /assets/img/photos/ilay-goldman.png
+      title: Security Researcher, Aqua Security
+      desc: "Ilay is a Security Researcher at Aqua. As part of Team Nautilus, he discovers different techniques of supply chain attacks and finds vulnerabilities and attack vectors in cloud native environments. Before Aqua, he worked as a red teamer."
+    - name: Mr Yakir Kadkoda
+      image: /assets/img/photos/yakir-kadkoda.png
+      title: Security Researcher, Aqua Security
+      desc: "Yakir is a Security Researcher at Team Nautilus, Aqua’s research team. He focuses on finding and researching new vulnerabilities and attack vectors in cloud native environments. Prior to Aqua, he worked as a red teamer."
+         
+- type: Tues, Lightning
+  timeslot: 03:00 PM - 03:15 PM
+  timeslot_metadata: 2022-11-15T15:00:00+08:00 - 2022-11-15T15:15:00+08:00
+  title: "Demystifying Security and Compliance for Cloud Deployments on GCC 2.0"
+  desc: "Meet CloudSCAPE, GovTech's Cloud Security and Compliance Platform Ecosystem. Join us to find out how CloudSCAPE can help Agencies secure their Cloud deployments on GCC 2.0, and simplify compliance processes through automation!<br><br>Theme: Fail-Safe App Development"
+  additional_info_1: "Who should attend | Agency CIOs and IT Directors, Project Managers, Business Analysts, Developers, Solution Architects, Policy Developers, Auditors, Industry Collaborators."
+  speakers:
+    - name: Mr Eugene Ng
+      image: /assets/img/photos/eugene-ng.png
+      title: Deputy Director, GovTech
+      desc: "With more than 11 years of working experience in the IT and cybersecurity industry, Eugene has delved deep into various technologies in the binary vulnerability and exploitation aspect, and breath across cloud and web security, secure coding, and infrastructure.<br><br>At GovTech, he leads the cybersecurity product development team to build a range of products and tools to address cyber hygiene, as well as advanced capabilities to tip the scales to the defender's advantage.<br><br>Prior to this, he led efforts in discovering unknown security vulnerabilities in critical Government projects and commonly used software."
+
+- type: Tues, Lightning
+  timeslot: 03:15 PM - 03:30 PM
+  timeslot_metadata: 2022-11-15T15:15:00+08:00 - 2022-11-15T15:30:00+08:00
+  title: "How to Develop Cloud Applications Without Cloud?"
+  desc: "As most of the applications are moving to cloud it is important to find ways to develop cloud applications with agility, reduced cost, and quick time to market with flexibility to change. In this presentation, We will share:<br>- how we used this method of local cloud development toolkit for building applications in an agile way.<br>- how we use localstack to overcome development environment requirements in cloud for serverless apps and native services.<br>- practical experience using such technique for some important apps which changed the course of things during pandemic, allowing faster time to market where speed is everything.<br>- planning the development blueprint, reference design, cost optimisation areas, opportunities and next steps for future enhancements.<br><br>Theme: Beyond Cloud"
+  additional_info_1: "Who should attend | Architects and Tech Specialists who are interested in understanding and identifying challenges for Cloud development and designing a Shift Left Cloud development methodology which costs less and allows faster delivery of business apps."
+  speakers:
+    - name: Mr Menon Abhijeet Mohankumar
+      image: /assets/img/photos/menon-abhijeet-mohankumar.png
+      title: Lead Solution Architect, GovTech
+      desc: "Over 19 years of experience in planning, designing and architecting applications. Currently assisting agencies to solution modernised applications using CI / CD, Cloud-native services, Containers, SaaS and other areas of Cloud adoption and migration. Also involved in planning designs to allow enterprise level productivity using microservices and cost optimisation for the Agency."
+ 
+- type: Tues, Lightning
+  timeslot: 03:15 PM - 03:30 PM
+  timeslot_metadata: 2022-11-15T15:15:00+08:00 - 2022-11-15T15:30:00+08:00
+  title: "Compliance Techniques for Safe Robot Co-sharing of Space with People"
+  desc: "To fuel pervasive use of service robotics in human spaces, safety and social compliance are necessary considerations. In this talk, we shall share our development journey to endow robots with capability to co-share space with people. We first describe our general safety provisions in conformance to the standards body. Then we shall share snippets in our technical development effort in simulations and prototyping.<br><br>Theme: Smart City: Vision to Reality"
+  additional_info_1: "Who should attend | Smart City Policy Makers, Technical ROS audience."
+  speakers:
+    - name: Mr Wan Kong Wah
+      image: /assets/img/photos/wan-kong-wah.png
+      title: Senior Scientist, Institute for Infocomm Research
+      desc: "Wan Kong Wah is a Senior Scientist at the Institute for Infocomm Research, A*STAR and currently leads the Perception group in the Robotics and Autonomous Systems Department. He has worked with local SME and public agencies on numerous AI projects, including deploying the world's first Container Number Recognition Systems at the Singapore ports and the award-winning Automated Passenger In-Car Clearance System at the checkpoint border crossing. More recently, he has led several NRP-funded grant projects focusing on hospital in-ward robotic navigation. He believes that the time is ripe for the pervasive use of robots in human society and actively contributes cost-effective technology for robots to be smarter, safer, and better able to cope with unstructured environments."       
+ 
+- type: Tues, Lightning
+  timeslot: 03:15 PM - 03:30 PM
+  timeslot_metadata: 2022-11-15T15:15:00+08:00 - 2022-11-15T15:30:00+08:00
+  title: "How to Stay Up To Date and Where You Can Start on Your DevOps Journey"
+  desc: "So you’re running microservices in containers? Congratulations! This is an important step towards meeting those business needs around delivering applications to the hands of your customers as soon as possible. When DevOps first made its way into many organisations, It was believed to be a Dev & Ops initiative. Sergiu will explain how the traditional expressions of CALMS (Culture, Automation, Lean, Measurement, and Sharing) are still relevant. How to stay up to date and where you can start on your DevOps Journey here in Singapore.<br><br>Theme: Nurturing the Tech Culture & Careers"
+  additional_info_1: "Who should attend | DevOps enthusiasts as well as Practitioners."
+  speakers:
+    - name: Mr Sergiu Bodiu
+      image: /assets/img/photos/sergiu-bodiu.png
+      title: APAC Enterprise Strategic Deal Making & BVA Leader, Red Hat
+      desc: "As a servant technology leader with over 16 years experience, he is the organiser of DevOps meetup, and the annual conference DevOpsDays Singapore and holds a Bachelor's in Computer Science. He has worked with some of the world’s largest names in banking, technology, and other industrial era companies, advising on their digital transformation strategies.<br><br>With nearly a decade in the Asia-Pacific region, Sergiu brings an applied background in strategic planning, complex change management, process transformation, and technology enablement and helping enterprises extract business value from modern technologies and methodologies."       
+ 
+- type: Tues, Lightning
+  timeslot: 03:15 PM - 03:30 PM
+  timeslot_metadata: 2022-11-15T15:15:00+08:00 - 2022-11-15T15:30:00+08:00
+  title: "Confidentiality & Privacy in the Cloud: Protecting Data in Use"
+  desc: "Uncover the technology advancements that secure sensitive and regulated data while it is processed in the cloud, preventing access by cloud providers, administrator and users, and increasing data privacy and security surrounding business and consumer data. Understand how this would help deliver new insights and collaboration by enabling multiparty data analytics and machine learning that combine datasets, while keeping data private among participants. Take advantage of the broad range of confidential compute offerings Azure provides, including hardware, services, SDKs, and deployment tools, as well as confidential computing solutions architectures can be rapidly applied to various use cases across government, financial services and healthcare.<br><br>Theme: Building Digital Trust"
+  additional_info_1: "Who should attend | Developers, Architects, Security Specialists."
+  speakers:
+    - name: Mr Cai Zonghe
+      image: /assets/img/photos/cai-zonghe.png
+      title: Account Technology Strategist, Singapore Public Sector, Microsoft Singapore
+      desc: "Zonghe is a self-motivated, passionate and pragmatic innovator with broad experience across the public sector domain, in Singapore and abroad. He believes in working together with diverse stakeholders and industry to help transform our digital government to improve citizen well-being and business efficiencies.<br><br>His experiences in startups, product development, system integration and strategic consulting provide applicable skills and knowledge that seek to make a difference to the world we live in."      
+ 
+- type: Tues, Lightning
+  timeslot: 03:30 PM - 03:45 PM
+  timeslot_metadata: 2022-11-15T15:30:00+08:00 - 2022-11-15T15:45:00+08:00
+  title: "Analytics By Design"
+  desc: "All projects should be primed for success in analytics right from the start. The data collected from policy implementations, or programme execution should address questions that will help finetune refinements down the road. The data generated from products and platforms should help inform how well it is working, and what new features to build, or what to tweak. But this is often not the reality. We need to do more to reduce analytics debt. Many projects face challenges with analytics downstream, potentially leading to disappointments from both from the business side, as well as the data science practitioners. In this sharing, the speaker will share more about Analytics By Design, which is a methodology that GovTech had mooted, and is piloting internally. Detailed Write-up here: https://go.gov.sg/analytics-by-design.<br><br>Theme: Datafication"
+  additional_info_1: "Who should attend | Executives, CDOs, CIOs, Digitalisation Officers, Transformation Officers, Product Managers, Project Managers, etc."
+  speakers:
+    - name: Mr Joseph Tan
+      image: /assets/img/photos/joseph-tan.png
+      title: Deputy Director, GovTech
+      desc: "Joseph is the Deputy Director (Strategy & Transformation) in GovTech's Data Science and AI Division. He leads the Strategy & Transformation team that oversees the strategy planning and engagement efforts of the division. The team also runs a suite of data initiatives to transform agencies across the whole-of-government and carry out projects to spur the innovative use of data. Prior to that, Joseph was spearheading the data transformation efforts of GovTech. His interests and experience are diverse, spanning from technical work, training to programme management and leadership roles."      
+ 
+- type: Tues, Lightning
+  timeslot: 03:30 PM - 03:45 PM
+  timeslot_metadata: 2022-11-15T15:30:00+08:00 - 2022-11-15T15:45:00+08:00
+  title: "Building Trust in Healthcare with OpenAttestation Verifiable Credentials"
+  desc: "Amidst the COVID-19 pandemic, the healthcare sector has rapidly expanded and has been quick on the uptake of telehealth and other innovative services. Digital identities and the need to verify the authenticity of healthcare records have never been more important in a world that requires trust and identity. Verifiable Credentials (VCs) present a robust mechanism for digital verification, in a way that's seamless, secure and transparent. We discuss a particular implementation, known as OpenAttestation VCs, and how it allows for new innovations in healthcare delivery.<br><br>Theme: Tech for Tomorrow"
+  additional_info_1: "Who should attend | This talk is relevant for healthcare professionals spanning the clinical and policy space, Web 3.0 developers interested in the application of verifiable credentials and W3C standards, and digital identity industry leaders."
+  speakers:
+    - name: Mr Yeo Yong Kiat
+      image: /assets/img/photos/yeo-yong-kiat.png
+      title: Assistant Director, GovTech
+      desc: "Yong Kiat currently serves as a strategic planning lead at Government Digital Services in GovTech. He oversees a team of design thinkers and software engineers in building tools and services for Singapore's grant policies.<br><br>Previously, he led public policy teams in healthcare finance policy and education planning. A quantum physicist by training, he believes in policy simulation to complement data-driven policy making."      
+    - name: Mr Barry Lim
+      image: /assets/img/photos/barry-lim.png
+      title: Deputy Director, GovTech
+      desc: "Barry is a Deputy Director from the Government Digital Services division of Government Technology Agency. With more than 10 years in the software development industry, he currently oversees the conceptualisation and delivery of features from the development side of things, applying himself at the interface between technology and business value creation."      
+ 
+- type: Tues, Lightning
+  timeslot: 03:30 PM - 03:45 PM
+  timeslot_metadata: 2022-11-15T15:30:00+08:00 - 2022-11-15T15:45:00+08:00
+  title: "More with LeSS – Scaling Agile at Ministry of Manpower (MOM)"
+  desc: "Sharing on lessons learnt/experiences from scaling Agile using Large-Scale Scrum (LeSS) at MOM WINS division (in-house Agile development setup).<br><br>Theme: Government Track"
+  additional_info_1: "Who should attend | Government agencies who are looking to scale-up from small Agile/Scrum teams to a larger setup."
+  speakers:
+    - name: Mr Kelvin Soh
+      image: /assets/img/photos/kelvin-soh.png
+      title: Senior Delivery Manager, GovTech
+      desc: "Kelvin is particularly interested in large-scale Agile delivery and is currently involved in the LeSS transformational initiative in WINS.<br><br>Kelvin is a Senior Delivery Manager from the Government Digital Services division in GovTech. He is currently seconded out to the Ministry Of Manpower’s WINS (Workpass INtegrated Systems) division, as part of an Ops-Tech setup with 250 personnel.<br><br>Prior to joining GovTech in 2019, Kelvin served in various capacities in the domains of project and knowledge management, across the public and private sector.<br><br>He has been invited to speak at various knowledge management conferences and has also been featured in 'The IT Society' (a publication by the Singapore Computer Society).<br><br>Kelvin is particularly interested in large-scale Agile delivery and is currently involved in the LeSS transformational initiative in WINS."      
+    - name: Mr Will Lin Zhixun
+      image: /assets/img/photos/will-lin-zhixun.png
+      title: Senior Delivery Manager, GovTech
+      desc: "Zhixun (Will) joined GovTech’s Development Centre based at the Ministry of Manpower (MOM) in 2019. As a delivery manager with the in-house development team, he manages the continued delivery of key MOM initiatives such as myMoneySense, AccessCode, and the Workpass Integrated System.<br><br>Prior to joining GovTech, Zhixun was the lead Product Owner (PO) with the Ministry of Trade and Industry (MTI), and the Consumers Association of Singapore (CASE). As a PO, he worked on key e-services such as the Business Grant Portal, and also consumer facing applications such as Price Kaki (grocery price comparison app) and Fuel Kaki (petrol price comparison site).<br><br>Zhixun is passionate about product development and delivery, and has experience in multiple roles across the development team (product owner, agile coach, delivery manager, project manager). He is a strong believer that the best products are built by teams that collaborate closely across different functions, and spends his spare time working with teams to be a better version of themselves."      
+ 
+- type: Tues, Lightning
+  timeslot: 03:30 PM - 03:45 PM
+  timeslot_metadata: 2022-11-15T15:30:00+08:00 - 2022-11-15T15:45:00+08:00
+  title: "Unlocking Engineering Productivity through Unlimited Isolated Test Environments"
+  desc: "As cloud adoption within an organisation increases, it is only natural for engineering teams to start adopting more managed services. Over time, as the complexity of the cloud tech stack grows, it becomes increasingly hard, if not impossible, to replicate the production environment on a developer’s device or even in a shared location. At best, organisations maintain a couple of \"dev\" and \"staging\" environments that they try to keep as similar to \"production\" as possible. The challenge imposed by these handfuls of shared environments is that they become bottlenecks to delivery with multiple engineering teams jostling for their use. At Endowus, we went through a similar journey. Thus, in this session, we will share how we overcame this challenge by building an internal service to rapidly provide isolated \"production-like\" environments that enable parallel testing and deliveries by multiple engineering teams. By combining the power of Infrastructure as Code (IaC) with on-demand cloud infrastructure and managed services, we will demonstrate how we manage the lifecycle of these environments exposed through self-service APIs to provide a great platform experience to our development teams. We will also cover how we are now integrating this capability with our automated testing infrastructure to further accelerate our deliveries.<br><br>Theme: Beyond Cloud"
+  additional_info_1: "Who should attend | Product Developers, Engineers, Platform Teams (specifically in fintech/wealthtech)."
+  speakers:
+    - name: Mr Deepak Sarda
+      image: /assets/img/photos/deepak-sarda.png
+      title: VP of Engineering, Endowus
+      desc: "Deepak Sarda is the VP of Engineering at Endowus, a leading digital wealth platform in Asia. With over 18 years of experience in delivering greenfield software products in complex domains, Deepak is responsible for leading and growing Endowus’ high-performing agile software engineering team. Prior to Endowus, Deepak was the Head of Developer Solutions Architecture for ASEAN at Amazon Web Services (AWS). He had also spent more than a decade in the financial services industry, including at JPMorgan Chase & Co."
+ 
+- type: Tues, Lightning
+  timeslot: 03:45 PM - 04:00 PM
+  timeslot_metadata: 2022-11-15T15:45:00+08:00 - 2022-11-15T16:00:00+08:00
+  title: "Develop Resilient Applications for Lean Operations"
+  desc: "In an increasingly manpower-lean operating environment, it is essential to design and develop applications that are resilient and minimise manpower efforts to monitor and mediate service interruptions.<br><br>Application requirements have changed and escalated drastically over the past decade and more so with the advent of cloud. A fail-safe app development will need to employ techniques and methodology from multiple disciplines.<br><br>For example, there is a plethora of different frameworks and approaches to building resilient applications:<br>1. System Reliability Engineering (SRE). This seeks to take a data-driven approach, with feedback for continuous improvement decisions.<br>2. DevSecOps with SHIP-HATS. This seeks to have a holistic approach to chain the activities from development, security to operations so that there are no gaps left behind to achieve a quality system that is ‘fail-safe’ to security vulnerability.<br>3. Architecture approaches such as Reactive architecture seek to be responsive, elastic, resilient, and message-driven.<br>4. Build compliant and cost-effective solutions by moving up skill levels in cloud adoption maturity with Containerisation, serverless solutions to minimise maintenance overheads, and IaC for automation maximisation.<br>5. Importantly, how do we align to WOG-level SGTS services, and direction including authentication – WOG AD/AAD/CAM, GTBA.<br>6. And, there is of course what I would call ‘common sense’ – foundations of computer science that are irrespective of the technologies that will be employed to build resilience of systems; such as the handling distributed transactions, respecting what constitute global state.<br><br>In this talk, we seek to un-tangle the different approaches, which are all correct because they come from different stakeholder’s perspective. But how do we tie them together? What are the practical practice-able things that can be done to achieve ‘Fail-safe application development’? This is what this talk will share and will be interesting to seek feedback from practitioners from the audience in the session.<br><br>Theme: Fail-Safe App Development"
+  additional_info_1: "Who should attend | Architect, Developers."
+  speakers:
+    - name: Mr Tan Pow Hwee
+      image: /assets/img/photos/tan-pow-hwee.png
+      title: Director, Systems and Programmes, GovTech
+      desc: "Pow Hwee has been with GovTech for 4 years. He led the first wave for cloud migration for government systems to GCC and has been supporting cloud migration journeys of various applications. He is also involved in large scale system development projects in GovTech. Prior to GovTech, Pow Hwee worked primarily in FSI domain with banks in consulting and SI environments, in roles as architect for major development projects."      
+ 
+- type: Tues, Lightning
+  timeslot: 03:45 PM - 04:00 PM
+  timeslot_metadata: 2022-11-15T15:45:00+08:00 - 2022-11-15T16:00:00+08:00
+  title: "Do Robots Need Legs?"
+  desc: "Legged robots are ubiquitous in today's pop culture and are often depicted as having extraordinary capabilities in viral videos. However, adopting them for use in the real world is not as simple. We will share the considerations behind fielding legged robots, and why they are particularly useful in rugged environments.<br><br>Theme: Tech for Tomorrow"
+  additional_info_1: "Who should attend | Roboticists, System Integrators, Developers."
+  speakers:
+    - name: Mr Bryan Ng Kin Loong
+      image: /assets/img/photos/bryan-ng-kin-loong.png
+      title: Head Capability Development (Unmanned Ground Vehicles), DSTA
+      desc: "Bryan is the Head Capability Development of Unmanned Ground Vehicles (UGV) at the Defence Science & Technology Agency (DSTA). He oversees the UGV and Robotics portfolio, and devises innovative ways of employing robotics for defence & security."
+ 
+- type: Tues, Lightning
+  timeslot: 03:45 PM - 04:00 PM
+  timeslot_metadata: 2022-11-15T15:45:00+08:00 - 2022-11-15T16:00:00+08:00
+  title: "The Non-Existent Playbook to Designing for the Future in Government"
+  desc: "Come and hear from us on our ups and downs in attempting to shape designs of digital services and products while battling red tape, naysayers and pushing the designs to be future-ready.<br><br>Theme: Government Track"
+  additional_info_1: "Who should attend | Fellow public officers who have roles dealing with innovation, technology, design and are well-aware (or want to hear about) the challenges and lessons learnt in trying to overcome them."
+  speakers:
+    - name: Mr Leon Voon
+      image: /assets/img/photos/leon-voon.png
+      title: Lead Designer, GovTech
+      desc: "Leon is a designer at the Experience Strategy and Design team (ESD) in the ACE clan, GovTech. The ESD team has been working in several projects at the nexus of design x technology x digital services. Besides GovTech, Leon has close to 15 years of public service experience, in both policy and innovation work. He has worked at MCYS, PSD and a short stint in Fintech, before landing at GovTech in 2019."
+ 
+- type: Tues, Lightning
+  timeslot: 03:45 PM - 04:00 PM
+  timeslot_metadata: 2022-11-15T15:45:00+08:00 - 2022-11-15T16:00:00+08:00
+  title: "Managing Infrastructure-as-Code: Common Mistakes in Terraform When Starting Out"
+  desc: "More developers are using Infrastructure-as-Code (IaC) tools than ever to manage and deploy their resources onto the cloud. While IaC provides a huge array of benefits, there are other longer term considerations that developers should take note of when making use of it to deploy their applications. This session covers some of the mistakes that are commonly made by developers that are just starting out with Terraform, as well as some opinions on what might be better practices for developers who have used Terraform for awhile.<br><br>Theme: Fail-Safe App Development"
+  additional_info_1: "Who should attend | Beginner/Intermediate. All that are interested in the use of Infrastructure-as-Code as a means of managing resources on the Cloud."
+  speakers:
+    - name: Mr Darryl Sw
+      image: /assets/img/photos/darryl-sw.png
+      title: DevOps Engineer, GovTech
+      desc: "Darryl is a DevOps Engineer with GovTech. In his current role with the Engineering Productivity team of the Government Digital Services, he tinkers with tools and solutions to improve the reliability, efficiency, and speed of product development. He currently works on Container Stack, a Whole-of-Government container hosting platform, as well as GCC 2.0."
+
+# Wed, Lightning Talks
+- type: Wed, Lightning
+  timeslot: 02:00 PM - 02:15 PM
+  timeslot_metadata: 2022-11-16T14:00:00+08:00 - 2022-11-16T14:15:00+08:00
+  title: "Know and Measure DevSecOps Best Practices"
+  desc: "SHIP-HATS is a continuous integration/continuous delivery component within the Singapore Government Tech Stack, we ensure security and governance guardrails to enable developers to run end to end pipelines, and deliver secure and quality code. With SHIP-HATS 2.0 latest multi-tenanted Gitlab SaaS platform, we provide development tools and environment setup in compliance with AIAS and IM8 policy standards for the whole of government.<br><br>Join us as we share what DevSecOps is and how it can be applied on SHIP-HATS 2.0 to help developers automate the entire DevOps lifecycle. Understand how we can achieve pipeline governance and security with the compliance framework, observability and build-in security features. We will also be showcasing a bonus demonstration on how we can leverage Gitlab features to gamify the DevSecOps experience.<br><br>Theme: Fail-Safe App Development"
+  additional_info_1: "Who should attend | Government Officers, Software Engineers, DevOps Engineers, Security Engineers, Project Managers."
+  speakers:
+    - name: Mr Russell Chua
+      image: /assets/img/photos/russell-chua.png
+      title: Associate Software Engineer, GovTech
+      desc: "Software Engineer for SHIP, worked on the enablement of SHIP's devops toolchain and the development of data visualisation pipeline to drive devsecops adoption."
+ 
+- type: Wed, Lightning
+  timeslot: 02:00 PM - 02:15 PM
+  timeslot_metadata: 2022-11-16T14:00:00+08:00 - 2022-11-16T14:15:00+08:00
+  title: "DevSecOps Driven Workload to Workload Zero Trust to Detect Advanced Threats"
+  desc: "SHIP-HATS is a continuous integration/continuous delivery component within the Singapore Government Tech Stack, we ensure security and governance guardrails to enable developers to run end to end pipelines, and deliver secure and quality code. With SHIP-HATS 2.0 latest multi-tenanted Gitlab SaaS platform, we provide development tools and environment setup in compliance with AIAS and IM8 policy standards for the whole of government.<br><br>Join us as we share what DevSecOps is and how it can be applied on SHIP-HATS 2.0 to help developers automate the entire DevOps lifecycle. Understand how we can achieve pipeline governance and security with the compliance framework, observability and build-in security features. We will also be showcasing a bonus demonstration on how we can leverage Gitlab features to gamify the DevSecOps experience.<br><br>Theme: Building Digital Trust"
+  additional_info_1: "Who should attend | Developers, Security Professionals and Site Reliability Engineers."
+  speakers:
+    - name: Mr Mudit Tyagi
+      image: /assets/img/photos/mudit-tyagi.png
+      title: Senior Director for Innovations in Office of the CTO, F5
+      desc: "Mudit Tyagi is a Senior Director in the office of the CTO and focuses on security of modern applications. He has 20 years of experience in Software Engineering and System Architecture design for delivery of secure applications for Financial and HealthCare services. In his current role, Mudit studies security implications related to use of Cloud and Open-Source Technologies and modern API based application architectures utilising microservices. He works with industry thought leaders to develop strategies for delivering secure applications. Prior to F5, Mudit was the Founder and CEO of Confiserve, a secure application development firm focused on Financial Services and HealthCare. Mudit was also an early employee at various Networking and Security startup companies including Rapid City(BayNetworks), Nevis Networks(Qualys), Damballa Networks(Core Security), Inkra Networks(Cisco). He has Bachelor's degrees in Physics and Electrical Engineering from Columbia University and a Masters in Computer Engineering from University of New Mexico."
+ 
+- type: Wed, Lightning
+  timeslot: 02:00 PM - 02:15 PM
+  timeslot_metadata: 2022-11-16T14:00:00+08:00 - 2022-11-16T14:15:00+08:00
+  title: "Building Blocks of a Successful Digital Transformation with Datafication"
+  desc: "Almost every organisation is going through a rapid digital transformation to serve its customers and stakeholders, while creating efficiencies and cost savings in response to the macro economic environment. A successful digital transformation needs an effective data transformation and data culture to make sense of all the new data being generated. In this session, we will cover what the building blocks of an effective data transformation are that the most successful Fortune 500 companies use across various layers of data infrastructure, tools, people and process.<br><br>Theme: Datafication"
+  additional_info_1: "Who should attend | This session is for those who work with data and are responsible for any of these functions:<br>- Strategy & Planning / Innovation<br>- Data Management<br>- Data Science & Artificial Intelligence<br>- Analytics / Business Intelligence / Research & Analysis<br>- Digital Transformation / Citizen Experience & Engagement / Community Building<br>- Information Technology<br>- Data Architecture / Data Governance / Data Security<br>- Operations (including Finance, Internal Audit, Human Resources, Capability Development, Procurement, Marketing, Services)"
+  speakers:
+    - name: Mr Seth Cheong
+      image: /assets/img/photos/seth-cheong.png
+      title: Principal Success Manager, Tableau at Salesforce
+      desc: "Seth Cheong is a key member of the Tableau Southeast Asia team, and is responsible for driving customer success in adopting data culture, unlocking value from use cases and data assets, and scaling up employees’ analytics proficiency. With over two decades of experience in data management, BI reporting, web analytics, and building and managing analytics teams, he has always enjoyed supporting and partnering senior management and functions such as Finance, HR, Customer Services, Sales and Marketing, and Operations in organisations to transform through technology."
+ 
+- type: Wed, Lightning
+  timeslot: 02:00 PM - 02:15 PM
+  timeslot_metadata: 2022-11-16T14:00:00+08:00 - 2022-11-16T14:15:00+08:00
+  title: "Security Suite for Engineering Endpoint Devices (SEED) - Featuring TechPass and DEEP"
+  desc: "This lightning talk covers what is the SEED suite and how it secures access to GCC 2.0 and SGTS applications. We will also cover the underlying principle of User Focused Security and the enhancements and developments to the SEED suite components over the past year.<br><br>Theme: Government Track"
+  additional_info_1: "Who should attend | General Public and Vendors who are interested in the TechPass Identity platform and our GCC 2.0 Zero Trust Networking, MDM and EDR solutions."
+  speakers:
+    - name: Mr Samuel Loh
+      image: /assets/img/photos/samuel-loh.png
+      title: Senior DevOps Engineer, GovTech
+      desc: "Samuel is a Senior DevOps Engineer at GovTech. In his 7 years with GovTech, he participated in the design and implementation of Singapore Government Tech Stack Service. He is currently a member of the Cloud Engineering Team, a cross-divisional team working to improve GCC and advocate cloud native solutions and DevOps practices in the Singapore Government. As a polyglot programmer, he dabbles in a wide range of technologies."      
+    - name: Mr Govind Venugopalan
+      image: /assets/img/photos/govind-venugopalan.png
+      title: Associate Cybersecurity Specialist, GovTech
+      desc: "At GovTech, Govind has been involved in implementing various solutions to secure cloud infrastructure, as well as advocating for better endpoint security posture.<br><br>This includes integrating DevSecOps practices into development on the Cloud, and ensuring that these additions improve the overall developer experience.<br><br>As one of the pioneering developers working on SEED, Govind is committed to making the development experience across the government a safe and enjoyable one." 
+      
+- type: Wed, Lightning
+  timeslot: 02:15 PM - 02:30 PM
+  timeslot_metadata: 2022-11-16T14:15:00+08:00 - 2022-11-16T14:30:00+08:00
+  title: "Runtime in No Time!"
+  desc: "As the world comes out of the pandemic, governments and businesses have been put under great pressure to digitally transform their operations. With this high on the agenda, how can we best leverage the cloud and get ourselves from zero to running in the shortest time? This lightning talk will speak about the challenges and solutions to deliver running applications fast in public sector. Get ready, get set, get stacked up!<br><br>Theme: Fail-Safe App Development"
+  additional_info_1: "Who should attend | Project Managers, Product Managers, DevOps Engineers, Software Engineers, Solution Architects, Application Developers."
+  speakers:
+    - name: Mr Alex Chng
+      image: /assets/img/photos/alex-chng.png
+      title: Senior Product Manager, GovTech
+      desc: "Alex is a product manager at GovTech and he oversees product development for SGTS Runtime.<br><br>Before joining GovTech, he launched a data platform at a global travel retailer while leading middleware development and API management initiatives.<br><br>In his free time, he enjoys movies at home with his family and spending time with his growing 3 year old boy. He loves sharing about technology while learning from others in the field."
+      
+- type: Wed, Lightning
+  timeslot: 02:15 PM - 02:30 PM
+  timeslot_metadata: 2022-11-16T14:15:00+08:00 - 2022-11-16T14:30:00+08:00
+  title: "Building a Distributed Data Mesh with a DevOps Approach"
+  desc: "Applications have moved from being traditional monoliths to microservice services driven architecture. Similarly, data platforms are facing that transitional moment and the advent of a distributed data mesh is the data platform or microservices. Originated from Zhamak Dehghani, a ThoughtWorks consultant, a distributed data mesh is a platform architecture that supports distributed, data-specific domains and serves \"data-as-a-product\" owned and managed by different domain owners. This in turn enables data sharing between different domains across an organization with more feasibility and flexibility.<br><br>To build a distributed data mesh, similar to how we build microservices, good DevOps practices must be in place in order to help iterate through changes and deploy updates quickly. For example, how do we efficiently deploy our data code? How do we manage different data environments across domains? Is it possible to create reproducible pipelines and infrastructure through an automated fashion?<br><br>We will look at how<br>a) using a data platform such as Snowflake extends a Data Mesh approach by enabling domains to not only share data as product but also processing logic as product.<br>b) we embed DevOps tools (such as Jenkin, Terraform) and open source transformation tools (such as DBT and Apache Airflow) to build elastic data pipelines, repeatable infrastructure and scalable data products.<br>c) governance is enforced within each domain and propagated downstream.<br><br>Theme: Datafication"
+  additional_info_1: "Who should attend | Data Engineers, Data Architects, DevOps, Data Ops, Cloud Architects."
+  speakers:
+    - name: Mr Adrian Lee
+      image: /assets/img/photos/adrian-lee.png
+      title: Senior Solutions Engineer, Snowflake
+      desc: "Adrian is a Senior Sales Engineer based in Singapore working on Enterprise Financial Services customers as well as various digital natives around ASEAN.<br><br>He diligently works with customers to ensure that they see success in Snowflake from the initial architecture and design all the way to their go-live.<br><br>Adrian likes to combine DevOps practices with data and has created multiple technical collaterals integrating DevOps tooling and practices with Snowflake. He has spoken at the following events:<br>- Snowflake Summit 2022 for Snowpark for Data Engineering with Java and Scala.<br>- VMware 2019 Partner Forum Summit on Kubernetes."      
+      
+- type: Wed, Lightning
+  timeslot: 02:15 PM - 02:30 PM
+  timeslot_metadata: 2022-11-16T14:15:00+08:00 - 2022-11-16T14:30:00+08:00
+  title: "The Singapore Government Developer Console: The Next Evolution for Accelerating WOG Digital Transformation"
+  desc: "As agencies adopt more digital services as part of their digital transformation efforts, it has become increasingly challenging to discover, onboard and manage the different services separately.<br><br>In this session, find out how different teams managing product discoverability, IAM, business and design, have come together to unify the user experience for the different digital services and what its future entails not just for agencies, but participating services as well.<br><br>Theme: Government Track"
+  additional_info_1: "Who should attend | Public Officers, Business Partners and Tech Communities involved in digital transformation."
+  speakers:
+    - name: Mr Damien Ngor
+      image: /assets/img/photos/damien-ngor.png
+      title: Senior Delivery Manager, GovTech
+      desc: "Damien is a Senior Delivery Manager at GovTech, focusing on TechPass and TechBiz to improve the experience of developers using the Singapore Government Tech Stack. His responsibilities include working on upcoming product deliverables and liaising with the various stakeholders. In his free time, he enjoys playing sports and gaining new experiences."       
+    - name: Mr Teo Cheng Yong
+      image: /assets/img/photos/teo-cheng-yong.png
+      title: Senior Software Engineer, GovTech
+      desc: "Cheng Yong is a Senior Software Engineer at GovTech. He leads a team of software engineers with product mindset in Singapore Government Developer Portal, focusing on discoverability and accessibility of Whole-of-Government digital services.<br><br>Prior to joining GovTech, he had experience in creating frameworks and tools for engineers - whether it is design system for better collaboration between designers and engineers, or building reusable services for different product teams."      
+      
+- type: Wed, Lightning
+  timeslot: 02:15 PM - 02:30 PM
+  timeslot_metadata: 2022-11-16T14:15:00+08:00 - 2022-11-16T14:30:00+08:00
+  title: "How the ScamShield Product Suite is Fighting Scams in Singapore"
+  desc: "As the millions of dollars lost to scams continue to increase in Singapore, it has become clear that fighting scams is a national issue. To tackle this, a team at Open Government Products (OGP) has built an ecosystem of products to help members of public and government authorities in Singapore to check, report, and block scam messages and calls. During this talk, learn more about how the ScamShield team at OGP is leveraging the power of the community to identify and block scammers while simplifying the workload for police officers in their fight against scams, and how they are continuing to evolve their strategy towards a more holistic approach.<br><br>Theme: Building Digital Trust"
+  additional_info_1: "Who should attend | Product Managers, Designers, Developers, Policy, Anyone interested in the fight against scams."
+  speakers:
+    - name: Ms Jennifer Liu
+      image: /assets/img/photos/jennifer-liu.png
+      title: Product Manager, Open Government Products, GovTech
+      desc: "Passionate about discovering and developing solutions to serve stigmatised and underserved communities."         
+      
+- type: Wed, Lightning
+  timeslot: 02:30 PM - 02:45 PM
+  timeslot_metadata: 2022-11-16T14:30:00+08:00 - 2022-11-16T14:45:00+08:00
+  title: "Data Driven IT Operations & Benefits"
+  desc: "Management insights through real-time dashboards for better visibility into events and metrics.<br><br>Measure operations performance for better problem resolution and operations improvement.<br><br>Theme: Government Track"
+  additional_info_1: "Who should attend | IT Leaders, Application & Infras Operations team."
+  speakers:
+    - name: Mr Karunakaran Prasanth Kumar
+      image: /assets/img/photos/karunakaran-prasanth-kumar.png
+      title: Director & Specialist Leader, MAS
+      desc: "20+ Years of experience in IT Operations, Engineering & Architecture in FSI.<br><br>Experience with implementing and maintaining DevSecOps & SRE practices."       
+      
+- type: Wed, Lightning
+  timeslot: 02:30 PM - 02:45 PM
+  timeslot_metadata: 2022-11-16T14:30:00+08:00 - 2022-11-16T14:45:00+08:00
+  title: "How We Soup Up Robots"
+  desc: "Why be satisfied with plain vanilla robots when you can soup them up? We discuss the various ways to enhance a robot's abilities through the integration of novel payloads, and the integration considerations that we need to look out for.<br><br>Theme: Tech for Tomorrow"
+  additional_info_1: "Who should attend | Roboticists, System Integrators, Developers."
+  speakers:
+    - name: Mr Bryan Ng Kin Loong
+      image: /assets/img/photos/bryan-ng-kin-loong.png
+      title: Head Capability Development (Unmanned Ground Vehicles), DSTA
+      desc: "Bryan is the Head Capability Development of Unmanned Ground Vehicles (UGV) at the Defence Science & Technology Agency (DSTA). He oversees the UGV and Robotics portfolio, and devises innovative ways of employing robotics for defence & security."
+         
+- type: Wed, Lightning
+  timeslot: 02:30 PM - 02:45 PM
+  timeslot_metadata: 2022-11-16T14:30:00+08:00 - 2022-11-16T14:45:00+08:00
+  title: "Why You Can't Ignore Observability Anymore in the Public Sector?"
+  desc: "Observability aka o11y (a term derived from Control Theory) encourages developers to create software that pushes out traces and logs, that captures the performance and app behaviour right from development to production. This session shares the benefits and how public sector developers can leverage the Singapore Government Tech Stack to improve observability.<br><br>Theme: Fail-Safe App Development"
+  additional_info_1: "Who should attend | Engineers, PMs, CIOs."
+  speakers:
+    - name: Mr Paul George Karippaparambil
+      image: /assets/img/photos/paul-george.png
+      title: Senior Product Manager, GovTech
+      desc: "Paul is a product manager taking care of StackOps, the monitoring component of the Singapore Government Tech Stack (SGTS).<br><br>Before joining GovTech, Paul spent a decade in an automotive software firm—starting his career there as a software engineer. He later switched roles to transform traditional monolithic platforms to service-oriented architecture and drive agile adoption for global teams. During his free time, Paul might be seen riding up north across the causeway on his motorbike."
+        
+- type: Wed, Lightning
+  timeslot: 02:30 PM - 02:45 PM
+  timeslot_metadata: 2022-11-16T14:30:00+08:00 - 2022-11-16T14:45:00+08:00
+  title: "Big Data Solution for MRT Platform Crowd Analysis"
+  desc: "The contribution of this talk is two-fold:<br>1) Create a real time dashboard to monitor train platform crowd status.<br>2) Create a classification model to predict the crowd level of each MRT station.<br><br>The multi-classification model is trained using random forest and SMOTE (Synthetic Minority Oversampling Technique). We use various types of data including train station information, weather information and train platform crowd levels collected from different data providers such as LTA, NEA and OneMap to monitor MRT platform crowd level in real-time. The monitor system is built on top of a big data framework. Big data ecosystem is established as follows:<br>1) Apache Flume and Kafka are used to ingest real time data.<br>2) Spark Streaming reads and processes the streaming data from Kafka and write the processed data into HBase.<br>3) Spark SQL and Hive are used to transfer data from HBase to MySQL.<br>4) Tableau is used to create real time dashboard to monitor and visualise MRT platform crowd status.<br><br>Theme: Smart City: Vision to Reality"
+  additional_info_1: "Who should attend | Data analysts and Data Engineers, who want to gain skills to handle large amounts of data in public transport area."
+  speakers:
+    - name: Ms Liu Fan
+      image: /assets/img/photos/liu-fan.png
+      title: Lecturer, Institute of Systems Science, National University of Singapore
+      desc: "Liu Fan is a lecturer in the Software Systems Practice, specializing in software engineering, big data engineering and data analytics. She received her Ph.D. degree from School of Electrical and Electronic Engineering, Nanyang Technological University, Singapore. Prior to joining ISS, she was a lecturer at the School of Informatics & IT, Temasek Polytechnic. She has also worked at GovTech as a Data Scientist, handling Big Data Analytics for the Smart Nation Sensor Platform. Her research interests are in big data analytics, fuzzy neural networks and machine learning."
+        
+- type: Wed, Lightning
+  timeslot: 02:45 PM - 03:00 PM
+  timeslot_metadata: 2022-11-16T14:45:00+08:00 - 2022-11-16T15:00:00+08:00
+  title: "Integration of Apache Iceberg Into Cloudera’s CDP Platform"
+  desc: "A short talk on what Apache Iceberg is, how Cloudera integrated it into our platform and a showcase of main Iceberg features like query time travel, partition evolution and automated table maintenance.<br><br>Theme: Tech for Tomorrow"
+  additional_info_1: "Who should attend | Perfect presentation for people curious about modern data platforms based on open data formats. Low to medium tech level, the presentation will have some high-level SQL and Spark statement examples."
+  speakers:
+    - name: Mr Daniel Schöberle
+      image: /assets/img/photos/daniel-schoberle.png
+      title: Senior Solutions Engineer, Cloudera
+      desc: "With almost 20 years in IT, Daniel is still as curious about new technologies as at the beginning of his career. With a long history of designing and implementing enterprise solutions, Daniel is currently helping customers to successfully start using Cloudera's hybrid data platform."
+        
+- type: Wed, Lightning
+  timeslot: 02:45 PM - 03:00 PM
+  timeslot_metadata: 2022-11-16T14:45:00+08:00 - 2022-11-16T15:00:00+08:00
+  title: "Eat a Peach, Build a Team!"
+  desc: "What is the secret sauce behind high performing engineering teams? Countless books and podcasts have tackled the topic, but the answer is highly subjective and hence remains elusive.<br><br>Inspiration usually strikes in the unlikeliest of places. David Chang's memoir - Eat a Peach, is a chronicle of his life as an entrepreneur, restaurateur, chef and media personality. This book was a very inspiring and entertaining read. But, more importantly, it made clear the core principles for building high performing teams, irrespective of whether it's a team of chefs and cooks plating up delicious food meal after meal or a team of engineers deploying code to production every day.<br><br>Culture is a hard thing to get right since it's never as simple as following a prescribed set of steps to get the desired result. However, there are some core tenets that are non-negotiable to building high performing engineering teams.<br><br>In this talk, I will cover the fundamental principles essential to setting up and nurturing efficient teams, inspired by the book as well as based on my experiences in working with high performing teams in the last few years. There'll be plenty of examples from the world of restaurants and software engineering alike!<br><br>Theme: Nurturing the Tech Culture & Careers"
+  additional_info_1: "Who should attend | Tech Leads, Team Leads, Engineering Managers - all engineering leaders looking to improve or scale their team's culture. Developers, Product Managers, Quality Analysts, Business Analysts, Designers - in short anyone who's part of any cross functional agile team."
+  speakers:
+    - name: Ms Archanaa Ravikumar
+      image: /assets/img/photos/archanaa-ravikumar.png
+      title: Head of Engineering, Autumn Life
+      desc: "Archanaa is the Head of Engineering at Autumn Life, Singapore. She has worked in a variety of domains including retail, education, micro-finance, travel and IoT in the last 13 years as an engineer and tech lead. She has experience in facilitating product design, architecting applications, leading teams to deliver solutions and coaching individuals & teams. She has worked across different technologies like .Net, Java, RoR, Golang and Clojure. She is an avid reader, a board game geek and a coffee addict."
+        
+- type: Wed, Lightning
+  timeslot: 02:45 PM - 03:00 PM
+  timeslot_metadata: 2022-11-16T14:45:00+08:00 - 2022-11-16T15:00:00+08:00
+  title: "Infrastructure as Code and CI/CD in Practice with AWS CDK"
+  desc: "DevOps is the combination of cultural philosophies, practices, and tools to increase development velocity to deliver apps. In general, practicing DevOps enables organisations to better serve customers and compete effectively in the market. Infrastructure as Code and release pipelines with CI/CD are two of best practices in DevOps, and considered the best entry for developers who just getting started with DevOps. Join us in this session to understand how we can implement IaC and CI/CD using AWS Cloud Development Kit. We will show you a step-by-step demo to help you get started. After this session, you will understand the overall concept of IaC and CI/CD, AWS services you need to use and developer tools for seamless integration with your development workflow.<br><br>Theme: Fail-Safe App Development"
+  additional_info_1: "Who should attend | Developers, Ops, SysOps, Head of IT."
+  speakers:
+    - name: Mr Donnie Prakoso
+      image: /assets/img/photos/donnie-prakoso.png
+      title: Principal Developer Advocate, AWS
+      desc: "Donnie Prakoso is a software engineer, self-proclaimed barista, café racer enthusiast, and Senior Developer Advocate at AWS covering ASEAN and AEM, and based in Singapore. With more than 17 years of experience in the technology industry, from telecommunications, banking to startups. He's now focusing on helping the developers to understand varieties of technology to transform their ideas into execution. He loves coffee and any discussion of any topics from microservices to AI / ML."
+      
+- type: Wed, Lightning
+  timeslot: 02:45 PM - 03:00 PM
+  timeslot_metadata: 2022-11-16T14:45:00+08:00 - 2022-11-16T15:00:00+08:00
+  title: "SmartGym - Personalised Fitness Goal Setting"
+  desc: "SmartGym is a holistic health and fitness data platform that provides users with fitness insights measured through a series of connected sensors built into gym equipment and health metric measurements. These sensors are currently installed on three types of gym equipment:<br>1) weight stack machines;<br>2) treadmills; and<br>3) weighing machines.<br><br>SmartGym equipment is currently deployed in three community gyms across Singapore – Our Tampines Hub, Jurong East and Heartbeat @ Bedok. Personalised Fitness Goal Setting builds on health and fitness data to personalise the recommended workout intensity to the needs of each individual. The users are guided through their workout sessions to achieve their health and fitness goals.<br><br>Theme: Smart City: Vision to Reality"
+  additional_info_1: "Who should attend | General Public, Developers, Sensor Providers, Facility Managers, Event/Program Planners, Public Officers, Fitness Coaches, Healthcare Workers, Caregivers."
+  speakers:
+    - name: Mr Caleb Lee
+      image: /assets/img/photos/caleb-lee.png
+      title: System Engineer, GovTech
+      desc: "Caleb graduated from Singapore University of Technology and Design with a degree in Computer Science. He specialises in Artificial Intelligence and web development. Caleb is highly curious about most things and is passionate about connecting the dots across different disciplines."
+        
+- type: Wed, Lightning
+  timeslot: 03:00 PM - 03:15 PM
+  timeslot_metadata: 2022-11-16T15:00:00+08:00 - 2022-11-16T15:15:00+08:00
+  title: "CRM Integration to SaaS CICD"
+  desc: "DevOps has reaped great benefits on project delivery and delivered much business value to users, and this session demystifies and showcases how we can run ShipHat 2.0 on SaaS.<br><br>Theme: Tech for Tomorrow"
+  additional_info_1: "Who should attend | Developers, Government Officers, SaaS Vendors."
+  speakers:
+    - name: Mr Alex Lew
+      image: /assets/img/photos/alex-lew.png
+      title: Senior Program Architect, Salesforce
+      desc: "Alex Lew is a certified Salesforce Application Architect and System Architect, who runs advisory services and Salesforce implementations for government and corporate clients"
+            
+- type: Wed, Lightning
+  timeslot: 03:00 PM - 03:15 PM
+  timeslot_metadata: 2022-11-16T15:00:00+08:00 - 2022-11-16T15:15:00+08:00
+  title: "Cloud Native or Cloud Naïve?"
+  desc: "IRAS has embarked on our cloud native journey, building our core system with predominantly PaaS and SaaS components.<br><br>This has helped us move towards:<br>- shortening the turnaround time to setup systems in the cloud.<br>- improving availability, maintainability and scalability.<br>- achieving zero downtime.<br><br>However, there were also lessons learnt regarding:<br>- how infallible are PaaS and SaaS services.<br>- scaling limits of cloud components.<br>- etc.<br><br>IRAS will share on what we have learnt from our cloud native journey thus far - i.e. things we wish we knew before we embarked on our journey.<br><br>Theme: Beyond Cloud"
+  additional_info_1: "Who should attend | Those interested in learning about the benefits of leveraging on PaaS and SaaS to transition to the cloud."
+  speakers:
+    - name: Mr Peter Teo
+      image: /assets/img/photos/peter-teo.png
+      title: Lead Architect, IRAS
+      desc: "Peter leads the team for infrastructure and security in the architecture office for IRAS."
+            
+- type: Wed, Lightning
+  timeslot: 03:00 PM - 03:15 PM
+  timeslot_metadata: 2022-11-16T15:00:00+08:00 - 2022-11-16T15:15:00+08:00
+  title: "GovTech Projects - A General Recipe"
+  desc: "Sharing the experiences of setting up projects like GCC 2.0 and SEED, with the need for many different roles for a project to succeed. This talk covers some of the critical common engineering and non-engineering roles that were instrumental during our journey implementing GCC 2.0 and SEED. This session intends to share possible specialties for those who are new to government projects, and hopefully inspires interest for more talents to join us in our journey in designing our imagined futures.<br><br>Theme: Nurturing the Tech Culture & Careers"
+  additional_info_1: "Who should attend | General Public and Vendors who are interested in how Government Projects are run."
+  speakers:
+    - name: Mr Samuel Loh
+      image: /assets/img/photos/samuel-loh.png
+      title: Senior DevOps Engineer, GovTech
+      desc: "Samuel is a Senior DevOps Engineer at GovTech. In his 7 years with GovTech, he participated in the design and implementation of Singapore Government Tech Stack Service. He is currently a member of the Cloud Engineering Team, a cross-divisional team working to improve GCC and advocate cloud native solutions and DevOps practices in the Singapore Government. As a polyglot programmer, he dabbles in a wide range of technologies."
+    - name: Ms Koh Lay Hian
+      image: /assets/img/photos/koh-lay-hian.png
+      title: Senior Infrastructure Architect, GovTech
+      desc: "Lay Hian is a Senior Infrastructure Architect at Govtech. With 15 years of experience in the government sector, she has supported the design and delivery of several key network and cloud infrastructure implementation. Currently also a member of the Cloud Engineering Team, she contributes to the enhancement of GCC and GPC in the areas of Identity, Access and Managed Services."
+            
+- type: Wed, Lightning
+  timeslot: 03:00 PM - 03:15 PM
+  timeslot_metadata: 2022-11-16T15:00:00+08:00 - 2022-11-16T15:15:00+08:00
+  title: "High Fidelity Deployment of MicroServices"
+  desc: "In this talk, Samantha will share how her team employs a mix of Environment Branching, Canary and Blue-Green Deployment strategies to achieve a lower cortisol deployment experience.<br><br>Theme: Fail-Safe App Development"
+  additional_info_1: "Who should attend | Folks interested in discussing and implementing low-stress deployments."
+  speakers:
+    - name: Ms Samantha Wong
+      image: /assets/img/photos/samantha-wong.png
+      title: Software Engineer, GovTech
+      desc: "Samantha leads a work stream in GoBusiness. She is occupationally invested in fuss-free cross-environment deployments."
+            
+- type: Wed, Lightning
+  timeslot: 03:15 PM - 03:30 PM
+  timeslot_metadata: 2022-11-16T15:15:00+08:00 - 2022-11-16T15:30:00+08:00
+  title: "Guarding the Keys to your Kingdom : A Pragmatic Approach to Zero Trust within Public and Private Clouds"
+  desc: "As we start increasing adoption of the cloud to unlock infrastructure elasticity and modernize application architectures for scale, this is transforming how your security boundaries are defined and controlled. Changing boundaries require changing approaches in how we secure critical systems and data sources from attackers.<br><br>In this session, we will talk about how HashiCorp Vault allows you to achieve a dynamic security posture that is intended to help thwart both external and internal hostile actors. We will also review Vault’s architecture and how it is able to scale to handle trillions of transactions a year.<br><br>Theme: Building Digital Trust"
+  additional_info_1: "Who should attend | Cybersecurity, Security Architects, CISOs, Solution Architects."
+  speakers:
+    - name: Mr Johnny Fang
+      image: /assets/img/photos/johnny-fang.png
+      title: Senior Solutions Engineer, Hashicorp
+      desc: "Johnny Fang is a Senior Solutions Engineer for Public Sector at HashiCorp and is based out of Singapore. With over 25 years of consulting experience in various platforms and technologies, he has been an architect on a number of large scale Enterprise projects. Prior to HashiCorp, he was a lead cloud architect at AWS running various infra automation projects for large scale migrations and cloud landing zones. In his current role, Johnny enjoys working with various enterprise customers to derive the maximum value from the HashiCorp technology stack."
+            
+- type: Wed, Lightning
+  timeslot: 03:15 PM - 03:30 PM
+  timeslot_metadata: 2022-11-16T15:15:00+08:00 - 2022-11-16T15:30:00+08:00
+  title: "The 10-minute Guide to Running an API Program"
+  desc: "APIs, or Application Programming Interfaces, are like doors that provide access to information and functionality to other systems but they are more than just backend technical implementation. APIs are products for developers that build today’s customer experience and mechanism through which value is increasingly exchanged in digital economies. Within the government, APIs are key in facilitating data exchange, opening up collaboration and innovation across different teams and agencies. Externally, they are enabling our digital economy and driving efficiency for businesses. To realise the value of APIs as accelerators, it is important to adopt an API as a Product mindset – to design and deliver APIs with full lifecycles and long term roadmaps that continue to provide strategic value.<br><br>Theme: Government Track"
+  additional_info_1: "Who should attend | Agencies Product Leads who are charged with digitalisation / transformation initiatives."
+  speakers:
+    - name: Mr Zen Chua
+      image: /assets/img/photos/zen-chua.png
+      title: Lead Product Manager, GovTech
+      desc: "Zen Chua is a Lead Product Manager leading the SGTS’ APIs & Communications family of products at GovTech. As a formal engineering manager and software engineer developing applications across different industries such as banking, finance, travel, hospitality, he is passionate about the intersection between technology and business. He is now supporting government agencies in realising their digital transformation, formulating their API strategy, opening up collaboration and innovation within the government and with external businesses. In his free time, he enjoys cycling and taking strolls with his 2 sons in the parks."      
+            
+- type: Wed, Lightning
+  timeslot: 03:15 PM - 03:30 PM
+  timeslot_metadata: 2022-11-16T15:15:00+08:00 - 2022-11-16T15:30:00+08:00
+  title: "Automating Cloud FinOps : Real Life Experiences from Large Scale Cloud Operations Across Organisations"
+  desc: "Cloud FinOps involves \"cloud financial management discipline and cultural practices that enable organisations to get maximum business value by helping engineering, finance, technology and business teams to collaborate on data-driven spending decisions\". Forward-thinking organisations are adopting new cost optimisation techniques that move beyond the traditional to a more automated, intelligent approach that delivers better business outcomes.<br><br>In this talk, we will share how we automated the Cloud FinOps across organisations and share real life experiences from large scale cloud operations:<br>- How to make costs visible and relate them to business needs.<br>- How to reduce cloud costs while optimising application performance.<br>- How to leverage automation to save money and reduce time spent managing your cloud spend.<br>- How to establish a proactive culture around cloud cost monitoring, management, and optimisation.<br>- How to leverage cloud cost intelligence to make more informed business decisions.<br>-  How to develop benchmarks for cloud forecasting and \"Shift-Left\" practices on Cloud FinOps.<br>- How to implement Cloud FinOps maturity assessment.<br><br>Theme: Beyond Cloud"
+  additional_info_1: "Who should attend | Cloud Architects, Cloud Application Managers, Cloud Developers."
+  speakers:
+    - name: Dr T S Sakthivel
+      image: /assets/img/photos/t-s-sakthivel.png
+      title: Director, Solution Architect Office (SAO), GovTech
+      desc: "Dr Sakthivel heads the SAO in GovTech and drives GovTech-managed agencies' application architecture strategy, systems development, and manages the solution architect team. He also drives the Government Commercial Cloud adoption programme by providing cloud application consultancy to agencies to migrate their systems to the cloud. Dr. Sakthivel has more than 25 years of industry experience in architecting, designing and developing large-scale application systems."
+      
+- type: Wed, Lightning
+  timeslot: 03:15 PM - 03:30 PM
+  timeslot_metadata: 2022-11-16T15:15:00+08:00 - 2022-11-16T15:30:00+08:00
+  title: "Design Thinking in DevOps"
+  desc: "Let’s automate everything! Sounds familiar? Automation is indeed the fundamental of DevOps to improve software delivery performance across the build, test and deployment stages. However, automation is a double-edged sword, without a proper planning and a well-defined process, the results can be disastrous or there can be no result at all. Developing automation in DevOps is not as straightforward as saying \"let’s automate everything\" because it may involve different tools and processes for different stages. Although we very much hope that these tools are plug-and-play, there is no one-size-fits-all process so we need a team, typically DevOps/SRE engineers, to develop tool-specific scripts. Why is it so challenging to automate everything despite a strong push for automation in DevOps? Automation development is similar to product development in some ways. Although the goal is to improve software delivery performance, the main beneficiaries are the developers and operations team because it offloads them from repetitive and mundane tasks. So whether the automation eventually gets implemented in production, it really depends on them. If the automation is not going to help them in any ways, you’ll see all your efforts in the bin. Or, if they’re asking for something not realistic, it’s not going to benefit anyone as well so sometimes it’s not because of the technology but the human element that’s hindering the automation development. This is where Design Thinking comes into play. You’ll learn the practical adoption of Design Thinking and how we use it to approach automation development. By the end of the session, we can all call ourselves Automation Designers (if you pay attention and grasp the concept well).<br><br>Theme: Fail-Safe App Development"
+  additional_info_1: "Who should attend | Anyone who handles software development such as DevOps/SRE Engineers, Developers, Scrum Masters etc."
+  speakers:
+    - name: Mr Owi Wei How
+      image: /assets/img/photos/owi-wei-how.png
+      title: DevOps Senior Solution Specialist, Oracle
+      desc: "As an alumnus of the Design Centric Program in NUS, Design Thinking has become \"muscle memory\" in my daily life. Started my career as a cloud operations engineer in Singtel, where I experienced the challenges of managing a cloud infrastructure for mission critical workloads. To address the pain points, I have implemented the DevOps methodology driven by automation and observability to streamline the cloud infrastructure operations.<br><br>On my quest to better understand cloud adoption beyond the Telco industry, I moved on to GovTech where I was tasked to manage the GPC services and provide advice to the GPC tenants on Cloud Native and DevOps adoption. In order for me to gain exposure to broader spectrum of DevOps adoption and to address pain points of larger developer communities, I decided to join Oracle as a DevOps Senior Solution Specialist to consult enterprise of all sizes in multiple industries in Asia Pacific region.<br><br>As a practitioner of Design Thinking, I strongly believe that users should be the focal point of any solutions. This is how I address any requirements to make developers' lives better."      
+      
+- type: Wed, Lightning
+  timeslot: 03:30 PM - 03:45 PM
+  timeslot_metadata: 2022-11-16T15:30:00+08:00 - 2022-11-16T15:45:00+08:00
+  title: "Enabling Data Sharing Ecosystems"
+  desc: "SGDex (Singapore Data Exchange), an initiative by GovTech, is a public digital infrastructure hosted on the Government on Commercial Cloud (GCC). SGDex provides a flexible data exchange layer for trusted and seamless multilateral consent-based data sharing between government agencies and private sector organisations. SGDex enables faster development of scalable, secure and resilient sector-level data applications which can leverage standardised data exchange components. As the economy’s pace of digitalisation accelerates, businesses will need to exchange data in a secure manner with each other and the Government to unlock new opportunities. A proper combination of technologies and public-private collaboration is needed to build scalable and secure platforms that perform standards-based data exchanges, and support the automation of the data flow and interoperability between platforms. SGDex currently supports data platforms in the financial services and supply chain sectors, Singapore Financial Data Exchange (SGFinDex) and Singapore Trade Data Exchange (SGTraDex) respectively.<br><br>Theme: Building Digital Trust"
+  additional_info_1: "Who should attend | We welcome data and tech professionals such as Agency and Industry CIOs and IT Directors, Project Managers, Business Analysts, Developers and Solution Architects who with data transformation projects to join us and learn more about how SGDex can work as a catalyst for your needs."
+  speakers:
+    - name: Mr Daryl Low
+      image: /assets/img/photos/daryl-low.png
+      title: Assistant Director, GovTech
+      desc: "Daryl Low is Assistant Director of Trusted Data & Services at the Government Technology Agency of Singapore (GovTech). In this position, he oversees product management of national digital identity’s (NDI) Singapore Data Exchange (SGDex) with the aim of enabling seamless data exchanges between government and private institutions. Before joining the public service in 2020, Daryl was a technology entrepreneur with a keen focus on communications, engagement and relationships – with inventions ranging from hardware-driven customer relationship management systems to talent acquisition and screening technologies."       
+      
+- type: Wed, Lightning
+  timeslot: 03:30 PM - 03:45 PM
+  timeslot_metadata: 2022-11-16T15:30:00+08:00 - 2022-11-16T15:45:00+08:00
+  title: "Breaking Down Video Silos with CVX"
+  desc: "With the prevalence of high-resolution cameras to enable operations work, organisations are able to derive more insights from video content – from simple detection and alerts, to complex intelligence about behaviours and events. Over time, agencies may implement video systems from different sources that inevitably hamper video access, video sharing and insights generation. In GovTech, we intend to address this problem via Cloud Video Exchange (CVX). We will share our approach for using CVX to empower Government agencies to unify their video systems on a single cloud platform, increasing collaboration and productivity. Together with industry partners, we seek to democratise video content and sharing of insights within and across organisations.<br><br>Theme: Datafication"
+  additional_info_1: "Who should attend | Business/ Operations Leads, Product Managers or Developers interested in video systems or video sharing."
+  speakers:
+    - name: Mr Suresh Kumar Sarad
+      image: /assets/img/photos/suresh-kumar-sarad.png
+      title: Product Manager, GovTech
+      desc: "Suresh is a Product Manager with the Data Science and Artificial Intelligence Division (DSAID) in GovTech. He is passionate about helping organisations reimagine their products with technology to drive meaningful change. Prior to GovTech, Suresh was with Singapore Airlines working on digital innovation and venture building in aviation and travel."      
+      
+- type: Wed, Lightning
+  timeslot: 03:30 PM - 03:45 PM
+  timeslot_metadata: 2022-11-16T15:30:00+08:00 - 2022-11-16T15:45:00+08:00
+  title: "The CISO Ecosystem in Government"
+  desc: "Senior executives in companies need to move away from the belief that cybersecurity issues are relevant only to the IT team. In a world where cybersecurity issues are getting increasingly complex and challenging, this calls for strong leadership right from the top in fostering the security culture of the entire organisation. This presentation looks at the role that Chief Information Security Officers (CISO) play in shaping the security culture in organisations and ensuring security issues are addressed at the right organisational level. Presenter will share on the setup of the community of CISOs across the whole of government and how this network of CISOs forms a core fabric in the Government's cyber defence.<br><br>Theme: Government Track"
+  additional_info_1: "Who should attend | Chief Information Security Officer, Chief Information Officer, Director of Security, IT Director/Manager, Security Systems Engineer, Security Analyst, Security Manager, Security Auditor, Security Architect, Security Consultant, Network Architect."
+  speakers:
+    - name: Mr Derek Gooh
+      image: /assets/img/photos/derek-gooh.png
+      title: Director of Government CISO Office, GovTech
+      desc: "Derek Gooh is the Director of the Government CISO Office where he oversees several Whole of Government (WOG) cybersecurity programmes including the Cyber Maturity and Capability Development programme, WOG Cybersecurity Scorecard as well as Competency development of the Chief Information Security Officer (CISO) profession. Derek is also the Head of the Ministry CISOs overseeing the team of MCISOs seconded to the Ministries, who in turn coordinate and lead the Agency CISOs within the Ministry Family. As Head of the CISOs community, Derek leads the community and engages them through the regular forums and channels established for the community to gain insights to the latest cybersecurity developments and learn best practices from one another."
+      
+- type: Wed, Lightning
+  timeslot: 03:30 PM - 03:45 PM
+  timeslot_metadata: 2022-11-16T15:30:00+08:00 - 2022-11-16T15:45:00+08:00
+  title: "{{I2C}} – An Infra to Code ToolKit"
+  desc: "{{I2C}} which, represents Infrastructure-to-Code, is a toolkit developed by the Government Infrastructure Group to enable Agencies to quickly provision cloud resources in a consistent and repeatable manner with minimum effort. It embodies automation best practices to codify existing environments thus supporting use cases such as configuration backup, rapid duplication and recovery of systems, effortless setup of one environment from another – for example setting up a new production environment from an existing UAT environment. Join us to learn more about how {{I2C}} can help you save time and effort while eliminating human error when managing systems and multiple environments in the cloud.<br><br>Theme: Beyond Cloud"
+  additional_info_1: "Who should attend | DevOps Engineer, Infrastructure Engineer, Cloud Administrator."
+  speakers:
+    - name: Mr Nicolas Ni
+      image: /assets/img/photos/nicolas-ni.png
+      title: Senior Infrastructure Engineer, GovTech
+      desc: "Nicolas is a member of the Managed Hosting Infrastructure team where he champions the modernisation of infrastructure provisioning through the use of code.<br><br>Bringing with him more than 15 years experience in ICT, Nicolas specialises in pulling together Cloud Infrastructure, software defined data centre, containerisation and DevOps technologies to improve the deployment and operations of systems in the cloud through automation."
+      
+- type: Wed, Lightning
+  timeslot: 03:45 PM - 04:00 PM
+  timeslot_metadata: 2022-11-16T15:45:00+08:00 - 2022-11-16T16:00:00+08:00
+  title: "Building a Robust Threat Detection System for Social"
+  desc: "In 2021, cyber criminals impersonating OCBC Bank through text messages successfully scammed hundreds of Singaporeans of their life savings. In May ‘22, the FBI reported up to $43 billion dollars of business losses to cyber criminals due to similar social engineered attacks between 2016 and 2021. Instead of a spray and pray method where the same attack is sent to multiple users, cyber criminals are now pivoting to highly targeted social engineered attacks. They attempt to gain your trust by impersonating someone you already know or trust - your manager, your colleagues etc. They then aim to trick you into executing the cyber attack, be it running malware, providing your credentials or sending money to a fake bank account. However, legacy security solutions that have defended us against cyber threats are built on brittle rules and threat intelligence feeds - this lends them to perform poorly against these zero day, hyper targeted attacks. In order to solve these emerging threats, one would need a completely new approach - we propose that a behavioral detection engine with modern ML techniques would deliver a solution with both higher recall and precision. In place of building lists of \"known bad\" entities, we propose first building profiles of what is considered normal within user environments. Machine Learning models trained to detect deviations against this baseline understanding of normality are then capable of differentiating attacker vs safe user behavior with a higher level of accuracy. I am a founding engineer at Abnormal Security, a next-gen Email Security startup. I’ve spent the last four years building this behavioral detection engine that aims to detect all types of malicious emails, especially socially engineered email attacks (e.g. sending a Fake Invoice while impersonating a Vendor). In my proposed talk, I will discuss the unique parameters of modern cybersecurity attacks in relation to machine learning, particularly the adversarial nature of the problem and how it shows up in data and model performance. Using the email security problem as an example, I will then discuss the requirements of a robust threat detection system, describing how both ML and software systems are required to solve cyberthreats in different time horizons. I will then focus on our machine learning stack, discussing how we incorporate the behavioral detection approach with our feature aggregation engine, the various components of ML solution and their various results.<br><br>Theme: Building Digital Trust"
+  additional_info_1: "Who should attend | Software engineers, ML Engineers, Cyber Security Professionals, Anyone interested in the Content Moderation/Abuse space."
+  speakers:
+    - name: Mr Lee Yu Zhou
+      image: /assets/img/photos/lee-yu-zhou.png
+      title: Founding Engineer, Abnormal Security
+      desc: "Lee Yu Zhou is a founding engineer of Abnormal Security, a next generation Email Security company, where he leads a team of Software and Machine Learning Engineers to build systems and solutions within its core detection product. He has spent the last 4 years working on the frontlines of the email security problem, building out its core detection technology, including several novel and patented detection solutions for modern email security threats. Previously, he co-founded an agriculture technology startup, Farmshots, which was acquired in 2018 by Synenta, a leading agricultural company. He holds a degree in Computer Science from Duke University."
+      
+- type: Wed, Lightning
+  timeslot: 03:45 PM - 04:00 PM
+  timeslot_metadata: 2022-11-16T15:45:00+08:00 - 2022-11-16T16:00:00+08:00
+  title: "Gamifying to a Smarter Nation"
+  desc: "A Smart Nation is built together with her citizens. However, despite the rapid adoption of technology amongst the people, agencies still find it challenging to engage the nation not only at scale but also in an operationally efficient manner, and harness the power of the collective intelligence of the crowd. From citizens with specialised skill sets to the ideas and feedback of the general public, the citizens of a nation in collaboration with the government presents as an untapped mine of possibilities. Following in the footsteps of successful brands and companies, gamification is a concept that has been used to engage customers and fans on a global scale with much success. Regardless of age, culture or language, play is a term that is widely understood by the crowd and is an effective tool to drive meaningful engagement with an audience. At Crowdtask.sg, we believe that gamification can be the spark that drives the ethos of a more engaged nation. We are excited to share the different ways gamification can help shape the behavior of the nation, where the ultimate goal is to have citizens intrinsically motivated to engage with agencies to build better products and policies. We are also proud to introduce our newly launched platform, which will help push Singapore towards a smarter tomorrow.<br><br>Theme: Smart City: Vision to Reality"
+  additional_info_1: "Who should attend | Agencies who are interested in engaging their communities to help build a smarter nation."
+  speakers:
+    - name: Mr Kenneth Lo
+      image: /assets/img/photos/kenneth-lo.png
+      title: Software Engineer, GovTech
+      desc: "Tech lead for Crowdtask.SG"
+    - name: Ms Lynette Tay
+      image: /assets/img/photos/lynette-tay.png
+      title: Delivery Manager, GovTech
+      desc: "Delivery Manager for Crowdtask.SG."
+       
+- type: Wed, Lightning
+  timeslot: 03:45 PM - 04:00 PM
+  timeslot_metadata: 2022-11-16T15:45:00+08:00 - 2022-11-16T16:00:00+08:00
+  title: "Indexing Videos on VAS"
+  desc: "As volume of video data grows, it comes to a point where identifying and categorising videos based on relevant concepts becomes very laborious. With the advancement of AI technology, it is possible for a less labour-intensive method to derive context from videos that can help the retrieval of relevant video content more easily. Govtech’s Video Analytics System (VAS) intends to address this with the implementation of Video Indexer. Powered by Azure Cognitive services, we will share our views and approach of how agencies can adopt AI-enabled computer vision solutions for their use cases, utilising both commercial-off-the-shelf (COTS) and those built by Govtech’s DSAID-VA team. With VAS as a platform for VA, we intend to bring ease of access to video analytics capabilities across WOG agencies.<br><br>Theme: Datafication"
+  additional_info_1: "Who should attend | Agency users interested in exploring the use of video indexing."
+  speakers:
+    - name: Mr Henry Lim
+      image: /assets/img/photos/henry-lim.png
+      title: Lead Product Manager, GovTech
+      desc: "Henry is a lead product manager in the Datascience and AI Division at GovTech, where he leads product development of the Video Analytics. With over 20 years of diverse industry experience across product management and technical development on global products across multinational organisations. He is passionate about building products that make technology accessible for improving everyday lives."
+       
+- type: Wed, Lightning
+  timeslot: 03:45 PM - 04:00 PM
+  timeslot_metadata: 2022-11-16T15:45:00+08:00 - 2022-11-16T16:00:00+08:00
+  title: "Serverless Revolution: Functions or Containers"
+  desc: "What does it truly mean to modernise? In your journey to cloud, you will have some applications you rewrite or refactor into new cloud native workloads. As a developer, you have choices for deployment, including container based platforms based on Kubernetes, Event Driven Architectures with Kafka and Lambda, and many others. With all the architecture options for compute, this session will focus on key pillars for modernisation, including strategies for workloads, automation, DevOps, performance, resiliency, observability, security, and culture.<br><br>Theme: Beyond Cloud"
+  additional_info_1: "Who should attend | CTOs, Software Architects, Engineers, Developers, Platform Builders, DevOps Engineers, and SREs."
+  speakers:
+    - name: Mr Roland Barcia
+      image: /assets/img/photos/roland-barcia.png
+      title: Director, Serverless Solution Architecture, AWS
+      desc: "Roland is the Worldwide Solution Architecture Director for Serverless at AWS. Roland has led the building of transformational Cloud Solutioning assets focused on enterprise adoption, including Kubernetes, App Modernisation, Microservices, Serverless, Integration, and App Development. He is recognised for creating industry-leading architecture blueprints and is a recognised leader in the client adoption of cloud strategy. Roland is a former IBM Fellow, has written 5 books, written over 50 articles, and has a Master's Degree from NJIT."

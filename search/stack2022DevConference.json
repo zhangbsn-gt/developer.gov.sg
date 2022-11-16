@@ -34,7 +34,7 @@
 
           {
               "title": "{{ document.title | remove: '"' }}",
-              "content": "{{ document.desc | remove: '>' | remove: '"' | strip }}",
+              "content": "{{ document.desc | remove: '"' | strip }}",
               "targetGroup": "{{ target_group_joined | default : "" }}",
               "category": {
                 "type" : "{{ document.type | default : "" }}",

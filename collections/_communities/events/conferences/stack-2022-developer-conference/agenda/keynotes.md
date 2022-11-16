@@ -6,22 +6,22 @@ multi_level_nav: true
 ---
 
 <!-- Header -->
+
 ### Keynotes
 
 <hr />
 
-#### 15 November 2022 (Tuesday)
-
 {% include agenda-app.html
-    _data='stack-2022-dev-conference'
-    category="Day 1, Keynotes"
+title="Tuesday (15/11/22)"
+category="Tues, Keynotes"
+_data='stack-2022-dev-conference'
 %}
+
 <br />
 
-#### 16 November 2022 (Wednesday)
-
 {% include agenda-app.html
-    _data='stack-2022-dev-conference'
-    category="Day 2, Keynotes"
+title="Wednesday (16/11/22)"
+category="Wed, Keynotes"
+_data='stack-2022-dev-conference'
 %}
 <br />

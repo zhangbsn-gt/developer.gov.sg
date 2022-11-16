@@ -1,0 +1,32 @@
+{%- assign title = include.title -%}
+{%- assign content = include.content -%}
+{%- assign isTitleHeaderSize = include.isTitleHeaderSize -%}
+
+{%- assign contentStyle = '' -%}
+{%- assign accordionProps = 'padding--bottom--sm' -%}
+
+{%- if isTitleHeaderSize -%}
+{%- assign contentStyle = 'margin--bottom--sm' -%}
+{%- assign accordionProps = 'padding--bottom' -%}
+{%- endif -%}
+
+<div class="sgds-accordion is-borderless is-medium is-white {{ accordionProps }}">
+  <a class="sgds-accordion-header sgds-custom-accordion-header padding--left--none padding--top--none padding--bottom--none is-flex"
+    href="#!" role="button" aria-expanded="false">
+    {%- if isTitleHeaderSize -%}
+    <strong class="is-size-4 is-size-5-mobile is-size-5-tablet">
+      {{- title -}}
+    </strong>
+    {%- else -%}
+    <p class="margin--bottom--xs has-text-dark has-text-weight-semibold is-size-8">
+      {{- title -}}
+    </p>
+    {%- endif -%}
+    <i class="sgds-icon sgds-icon-chevron-down"></i>
+  </a>
+  <div class="sgds-accordion-body padding--none padding--top--sm margin--bottom">
+    <p class="{{- contentStyle -}}">
+      {{- content -}}
+    </p>
+  </div>
+</div>

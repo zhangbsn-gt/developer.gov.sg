@@ -15,6 +15,8 @@
         - sub_item_name: Keynotes
         - sub_item_name: Panel Discussion
         - sub_item_name: Plenary
+        - sub_item_name: Lightning Talks
+        - sub_item_name: Workshops
 
 - name: STACK-X Data Science Connect 2022
   description: Join this virtual conference to learn how the Singapore Government is driving data transformation and delivering public good through the use of Data Science and AI.
