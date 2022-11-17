@@ -1,0 +1,16 @@
+{% comment %}
+  This part is for the login button of a product's login page to be placed in the sideNav.
+{% endcomment %}
+{% for item in site.products %}
+  {%- assign current_folder_name = item.id | split: "/" | shift | shift | shift | shift | first -%}
+  {% if current_folder_name == folder_name %}
+    {% if item.product_homepage_links and include.mobile == false %}
+      <li>
+        <a id="dynamic-product-homepage-button" class="sgds-button is-secondary sgds-hero-buttons is-hidden-touch product-login-button is-fullwidth" href="{{ item.product_homepage_links | default : '#!' }}" target="_blank">Login</a>
+      </li>
+    {%- endif -%}
+    {% if item.product_homepage_links and include.mobile == true %}
+      <a id="dynamic-product-homepage-button" class="sgds-button is-secondary sgds-hero-buttons is-hidden-desktop product-login-button is-fullwidth" href="{{ item.product_homepage_links | default : '#!' }}" target="_blank">Login</a>
+  {%- endif -%}
+  {%- endif -%}  
+{% endfor %} 
