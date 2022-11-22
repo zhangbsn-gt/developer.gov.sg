@@ -14,3 +14,10 @@ multi_level_nav: true
 title="Tuesday (15/11/2022)" 
 type="Tues Plenary - VOD" _data=video_data_file 
 %}
+
+<br />
+
+{% include videos-display.html 
+title="Wednesday (16/11/2022)" 
+type="Wed Plenary - VOD" _data=video_data_file 
+%}

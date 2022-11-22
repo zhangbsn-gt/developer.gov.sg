@@ -12,3 +12,7 @@ multi_level_nav: true
 <hr />
 
 {% include videos-display.html title="Tuesday (15/11/2022)" type="Tues Keynotes - VOD" _data=video_data_file %} 
+
+<br />
+
+{% include videos-display.html title="Wednesday (16/11/2022)" type="Wed Keynotes - VOD" _data=video_data_file %} 
