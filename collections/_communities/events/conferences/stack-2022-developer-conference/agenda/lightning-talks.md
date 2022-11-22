@@ -26,3 +26,11 @@ category="Wed, Lightning"
 %}
 
 <br />
+
+{% include agenda-app.html
+title="Bonus Track"
+_data='stack-2022-dev-conference'
+category="Bonus Track"
+%}
+
+<br />

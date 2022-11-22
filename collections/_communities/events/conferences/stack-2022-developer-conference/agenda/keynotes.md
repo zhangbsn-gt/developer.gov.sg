@@ -12,7 +12,7 @@ multi_level_nav: true
 <hr />
 
 {% include agenda-app.html
-title="Tuesday (15/11/22)"
+title="Tuesday (15/11/2022)"
 category="Tues, Keynotes"
 _data='stack-2022-dev-conference'
 %}
@@ -20,7 +20,7 @@ _data='stack-2022-dev-conference'
 <br />
 
 {% include agenda-app.html
-title="Wednesday (16/11/22)"
+title="Wednesday (16/11/2022)"
 category="Wed, Keynotes"
 _data='stack-2022-dev-conference'
 %}

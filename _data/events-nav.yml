@@ -6,6 +6,7 @@
   event_date: 2022-11-15T09:30:00+08:00 - 2022-11-16T16:30:00+08:00
   registration_end_date: 2022-11-15T09:30:00+08:00
   registration_link: https://www.gevme.com/STACK-2022-Developers-Conference?pk_vid=4ad0a718c170fa601662746739f53e90
+  recording_link: /communities/events/conferences/stack-2022-developer-conference/recordings/all-recordings.html
   items:
     - item_name: Overview
     - item_name: Agenda
@@ -17,7 +18,13 @@
         - sub_item_name: Plenary
         - sub_item_name: Lightning Talks
         - sub_item_name: Workshops
-
+    - item_name: Recordings
+      item_sub_item:
+        - sub_item_name: All Recordings
+        - sub_item_name: Opening Address
+        - sub_item_name: Keynotes
+        - sub_item_name: Plenary
+        
 - name: STACK-X Data Science Connect 2022
   description: Join this virtual conference to learn how the Singapore Government is driving data transformation and delivering public good through the use of Data Science and AI.
   category: Conference

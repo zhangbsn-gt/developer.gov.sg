@@ -16,12 +16,13 @@
     - name: Mrs Josephine Teo
       image: /assets/img/photos/josephine-teo.png
       title: Minister for Communications and Information, and Minister-in-charge of Smart Nation and Cybersecurity
+      desc: "Minister Josephine Teo was appointed Minister for Communications and Information and Minister-in-charge of Smart Nation and Cybersecurity on 15 May 2021. She is also a member of the National Jobs Council and the Future Economy Council and has been concurrently the Second Minister of Home Affairs since May 2018.<br><br>Mrs Teo was the Minister for Manpower from May 2018 till May 2021. She previously served in the Prime Minister’s Office and the Finance, Transport and Foreign Affairs ministries.<br><br>A member of Parliament since 2006, Mrs Teo was formerly Chairman of the Government Parliamentary Committee for Education and Assistant Secretary – General of the National Trades Union Congress (NTUC). Mrs Teo was concurrently Chief Executive Officer of the not-for-profit organisation Business China, a platform launched by then Minister Mentor Lee Kuan Yew and then China Premier Wen Jiabao to strengthen Singapore’s bicultural foundation.<br><br>An alumna of Dunman High School and Raffles Junior College, Mrs Teo graduated from the National University of Singapore, winning several honours including the Rachel Meyer Book Prize for being the Best Woman Student. She obtained a Master of Science in Economics from the London School of Economics on scholarship from the Economic Development Board.<br><br>She is married and has three grown-up children. She enjoys creating memorable experiences for family and friends."
 
 - type: Tues, Keynotes
   timeslot: 10:00 AM - 10:20 AM
   timeslot_metadata: 2022-11-15T10:00:00+08:00 - 2022-11-15T10:20:00+08:00
   title: Embracing a Brave New World of Technology – A Government Journey
-  desc: Many large organizations are quickly overtaken by the rapid progress of technology around them and for governments around the world, this is no exception. Venturing into the brave new world of technology is like a young person leaving home for the first time. It is full of freedom, excitement and anxiety, It is also full of risks, fear and uncertainties. Ignoring technology like Cloud, SaaS, full stack, etc., is no more an option. The days of building bespoke monolithic systems from scratch is risky, costly and wasteful. The new world is about reusability, iterations and automation. It’s about talent, culture and design. The Singapore Government, like everyone else, needs to embrace this brave new world or risk becoming irrelevant.
+  desc: Many large organisations have been quickly overtaken by the rapid progress of technology around them, and this is no exception for governments around the world. Venturing into the brave new world of technology is like a young person leaving home for the first time. It is full of freedom, excitement and anxiety, It is also full of risks, fear and uncertainties. Ignoring technology like Cloud, SaaS, full stack, etc., is no longer an option. The days of building bespoke monolithic systems from scratch is risky, costly and wasteful. The new world is about reusability, iterations and automation. It’s about talent, culture and design. The Singapore Government, like everyone else, needs to embrace this brave new world or risk becoming irrelevant.
   speakers:
     - name: Mr Chan Cheow Hoe
       image: /assets/img/photos/chan-cheow-hoe.png
@@ -76,7 +77,7 @@
   timeslot: 02:00 PM - 02:30 PM
   timeslot_metadata: 2022-11-15T14:00:00+08:00 - 2022-11-15T14:30:00+08:00
   title: The Heart of Data and AI
-  desc: Why do some data and AI projects thrive and make significant impact? And why do some data and AI projects struggle to deliver impact? Besides focusing on the technology that is used to power Data and AI projects, this talk invites participants to think deeply about the purpose of data and AI projects, putting people at the center of it, and be an enabler for Tech for Good. Using lessons learned from working with some of the top companies in the world, the talk provides a practitioner's perspective on leading successful outcomes with practical guidance.
+  desc: Why do some data and AI projects thrive and make significant impact? And why do some data and AI projects struggle to deliver impact? Besides focusing on the technology that is used to power Data and AI projects, this talk invites participants to think deeply about the purpose of data and AI projects, putting people at the centre of it, and be an enabler for Tech for Good. Using lessons learned from working with some of the top companies in the world, the talk provides a practitioner's perspective on leading successful outcomes with practical guidance.
   speakers:
     - name: Dr Tok Wee Hyong
       image: /assets/img/photos/tok-wee-hyong.png
@@ -87,7 +88,7 @@
   timeslot: 02:30 PM - 03:00 PM
   timeslot_metadata: 2022-11-15T14:30:00+08:00 - 2022-11-15T15:00:00+08:00
   title: Innersource - The Road to Engineering Collaboration across Government
-  desc: Earlier this year, GovTech embarked on a journey to improve engineering collaboration and code sharing across government, through the use of internal open source practices. In this talk, we will cover the background, practices, challenges as well as looking towards to the future.
+  desc: Earlier this year, GovTech embarked on a journey to improve engineering collaboration and code sharing across the Government through the use of internal open source practices. In this talk, we will cover the background practices, challenges, as well as looking towards to the future.
   additional_info_1: "Who should attend | Engineers, Managers and Leaders."
   speakers:
     - name: Mr Hunter Nield
@@ -99,7 +100,7 @@
   timeslot: 03:00 PM - 03:30 PM
   timeslot_metadata: 2022-11-15T15:00:00+08:00 - 2022-11-15T15:30:00+08:00
   title: Retooling Government Developer Experience
-  desc: "The Singapore Government Developer Portal serves as a one-stop resource hub for Government Digital Products and Services. With a wealth of product and technical documentation, policy guidelines and community resources, the portal aims to support developers in their digital transformation journey.<br><br>These include the Singapore Government Technology Stack (SGTS), a set of platform tools that streamline and simplifies the development process. SGTS enables code reuse across the whole of government to build secure, high quality applications. With over 40 agencies and 200 systems have benefited from the platform."
+  desc: "The Singapore Government Developer Portal serves as a one-stop resource hub for Government Digital Products and Services. With a wealth of product and technical documentation, policy guidelines and community resources, the portal aims to support developers in their digital transformation journey.<br><br>These include the Singapore Government Technology Stack (SGTS), a set of platform tools that streamline and simplifies the development process. The SGTS enables code reuse across the Government to build secure, high-quality applications. Over 40 agencies and 200 systems have benefited from the platform."
   speakers:
     - name: Mr Kevin Ng
       image: /assets/img/photos/kevin-ng.png
@@ -157,7 +158,7 @@
   timeslot: 11:00 AM - 11:30 AM
   timeslot_metadata: 2022-11-16T11:00:00+08:00 - 2022-11-16T11:30:00+08:00
   title: Zero Trust at Scale
-  desc: Customers and countries have an increasing dual challenge of modernizing end-user experiences- while defending against ever-increasing security threats. Zero trust is a paradigm that allows digital transformation to deliver innovative applications and architectures as well as evolving cybersecurity. This session will discuss zero trust through products and practices that protect applications, data, devices, identity, infrastructure, and networks on a national scale.
+  desc: Customers and countries have an increasing dual challenge of modernising end-user experiences while defending against ever-increasing security threats. Zero trust is a paradigm that allows digital transformation to deliver innovative applications and architectures as well as evolving cybersecurity. This session will discuss zero trust through products and practices that protect applications, data, devices, identity, infrastructure, and networks on a national scale.
   speakers:
     - name: Mr Paul Lorimer
       image: /assets/img/photos/paul-lorimer.png
@@ -168,7 +169,7 @@
   timeslot: 11:30 AM - 12:00 PM
   timeslot_metadata: 2022-11-16T11:30:00+08:00 - 2022-11-16T12:00:00+08:00
   title: What’s New in Google Cloud Infrastructure
-  desc: Google Cloud has long enabled transformation in the public sector by providing a spectrum of security and compliance features and offerings to meet diverse needs of public sector customers. It is built on planet-scale, distributed infrastructure that thousands of customers across the globe rely on, and it continues to grow rapidly. Hear from Sachin Gupta, VP and GM of Google Cloud Infrastructure, about the latest enhancements in the infrastructure offerings focused on optimizing cost, security, compliance, and ease of use as well as transformational benefits.
+  desc: Google Cloud has long enabled transformation in the public sector by providing a spectrum of security and compliance features and offerings to meet diverse needs of public sector customers. It is built on planet-scale, distributed infrastructure that thousands of customers across the globe rely on, and it continues to grow rapidly. Hear from Sachin Gupta, VP and GM of Google Cloud Infrastructure, about the latest enhancements in the infrastructure offerings focused on optimising cost, security, compliance, and ease of use as well as transformational benefits.
   speakers:
     - name: Mr Sachin Gupta
       image: /assets/img/photos/sachin-gupta.png
@@ -194,7 +195,7 @@
   speakers:
     - name: Mr Ned Shawa
       image: /assets/img/photos/ned-shawa.png
-      title: Senior Director, Solutions Engineering APJ, Hashicorp
+      title: Senior Director, Solutions Engineering APJ, HashiCorp
       desc: Ned Shawa leads the Solutions Engineering Team in Asia Pacific and Japan for HashiCorp, directly aligning with CIOs and CTOs in the Financial industry, the Technology sector and Governments advising on application modernisation, cloud adoption and multi-cloud strategies, with DevOps and DataOps and application delivery pipelines in the centre. Ned has over 15 years of experience in infrastructure and analytics – in his current role, he was the first employee for HashiCorp in the APJ region, leading the awareness of the challenges of multi-cloud and how to overcome them using infrastructure and cloud-agnostic platforms that address a long term challenge of provisioning, securing and interconnecting a multi-cloud and infrastructure environments. This allows a long term resilience and maximum agility for platform engineering teams and lays the foundation for modern application delivery and modern data centres.
 
 - type: Wed, Plenary
