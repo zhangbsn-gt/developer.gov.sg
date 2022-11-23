@@ -150,14 +150,13 @@
 </template>
 
 <script>
-import Card from "../lib/Card.vue";
 import Loader from "../lib/Loader.vue";
 import { sanitize, isQueryEmpty } from "../lib/index.js";
 import useLunrSearch from "../composables/useLunrSearch";
 import { computed, onMounted, ref, watch } from "@vue/composition-api";
 
 export default {
-  components: { Loader, Card },
+  components: { Loader },
   setup() {
     // Variables
     const scriptElement = document.querySelector(
