@@ -36,6 +36,7 @@
 #   title: "Video Message from the Japan Digital Agency"
 #   video_id: UXlDA4Qsh38
 
+# Keynotes
 - type: Tues Keynotes - VOD
   speakers: Mr Chan Cheow Hoe
   speakers_title: Government Chief Digital Technology Officer and Deputy Chief Executive, GovTech
@@ -88,15 +89,9 @@
   speakers: Mr Ned Shawa
   speakers_title: Senior Director, Solutions Engineering APJ, HashiCorp
   title: "The Rise of the Platforms Team: An Organisational Response to Developer Experience"
-  video_id: tApg4zGSPD0
-
-# Plenary
-- type: Wed Plenary - VOD
-  speakers: Mr Damian Leach
-  speakers_title: Chief Technology Officer, Asia Pacific and Japan, Workday
-  title: "Scaling Data for Organisational Transformation"
   video_id: nf_BE2lJ0rk
 
+# Plenary
 - type: Tues Plenary - VOD
   speakers: Dr Tok Wee Hyong
   speakers_title: Senior Director, Cloud and AI, Microsoft
@@ -120,6 +115,12 @@
   speakers_title: Global AppSec Strategist, Micro Focus
   title: "Changed Responsibilities in Modern Software Development Environments"
   video_id: SBqEkwAONkU
+
+- type: Wed Plenary - VOD
+  speakers: Mr Damian Leach
+  speakers_title: Chief Technology Officer, Asia Pacific and Japan, Workday
+  title: "Scaling Data for Organisational Transformation"
+  video_id: _xgiFYL05BU
 
 - type: Wed Plenary - VOD
   speakers: Mr Chong Rong Hwa
