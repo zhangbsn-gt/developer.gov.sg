@@ -37,10 +37,14 @@
             {%- endfor -%}
         ],
         "categories": [
-          {%- for category in categories -%}
-            "{{- category -}}"
-            {%- if forloop.last == false -%}, {%- endif -%}
-          {%- endfor -%}
+          {% if categories and categories != '' %}
+            {%- for category in categories -%}
+              "{{- category -}}"
+              {%- if forloop.last == false -%}, {%- endif -%}
+            {%- endfor -%}
+          {% else %}
+            "{{- type -}}"
+          {% endif %}
         ],
         "video_id": "{{- video_id -}}",
         "video_index": "{{- video_index -}}",
