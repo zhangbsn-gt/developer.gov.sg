@@ -316,6 +316,14 @@
   items:
     - Overview
 
+- name: FormSG
+  items:
+    - Overview
+    - Features
+    - Getting Started
+    - Resources
+    - Meet The Team
+
 - name: GatherSG
   items:
     - Overview
