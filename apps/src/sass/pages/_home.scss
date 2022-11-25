@@ -48,13 +48,19 @@
   &-gradient {
     background: linear-gradient(268.19deg, #00c0f3 -0.09%, $primary 98.08%);
   }
-  &-stack-2022-gradient {
-    background: linear-gradient(253.82deg, #ff7920 11.24%, #b41e8e 88.76%);
+  &-redeemsg-gradient {
+    background: #505798;
   }
-  &-stack-2022-event-gradient {
-    background: linear-gradient(268.19deg, #151048 -0.09%, hsl(227deg, 80%, 25%) 98.08%)
+  &-ndi-gradient {
+    background: #f87c82;
   }
-
+  &-gcc-gradient {
+    background: #35a4cb;
+  }
+  &-data-gov-sg-gradient {
+    background: #afbdc5;
+  }
+  
   // Added for carousel
   height: 31.31rem;
   @media screen and (min-width: 915px) and (max-width: 1215px) {
