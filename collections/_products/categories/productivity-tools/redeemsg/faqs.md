@@ -21,3 +21,6 @@ faqs:
 ---
 
 {% include faqs-app.html sectionName="FAQs" sectionDescription=page.section_description faqData=page.faqs %}
+<br/>
+More FAQs on RedeemSG can be found [here](https://redeem.gov.sg/faq.html){:target="_blank"}.
+
