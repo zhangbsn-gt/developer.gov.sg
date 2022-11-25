@@ -2,23 +2,11 @@
   description: Discover the latest product additions to the Singapore Government Developer Portal here
   items:
     - Overview
-    - CloudSCAPE
-    - Data.gov.sg
     - FormSG
-    - Government on Commercial Cloud
-    - OpenAttestation
-    - I2C {{Infra to Code}}
-    - MyMoneySense
-    - Notarise
-    - Notify
+    - GovText
+    - MASH
     - Open Digital Platform
-    - RedeemSG
-    - Secure Infrastructure-as-Code
-    - Singpass
-    - TechBiz
-    - Transcribe
-    - Vault
-    - Verify
+    - SEED
 
 - name: Citizen-facing Products
   description: Explore the government products for providing citizens with the services they need. This includes citizen life journey, grant services, and more!
@@ -60,6 +48,7 @@
     - Data Transformation Playbook
     - Public Sector AI Playbook
     - Data Literacy ePrimer
+    - GovText
 
 - name: Singapore Government Tech Stack
   description: A common platform that streamlines and simplifies the development process
@@ -73,6 +62,7 @@
     - Corppass
     - DECADA IoT Tech Stack
     - Government on Commercial Cloud
+    - GovText
     - GovWallet
     - Identiface
     - Login

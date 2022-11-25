@@ -22,6 +22,7 @@
   description: Web analytics tools to help you better understand your users and make data-driven decisions
   items:
     - Overview
+    - GovText
     - Personalise
     - VAS
     - WOGAA
