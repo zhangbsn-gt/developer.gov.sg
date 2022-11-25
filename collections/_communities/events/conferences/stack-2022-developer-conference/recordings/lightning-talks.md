@@ -6,18 +6,27 @@ multi_level_nav: true
 ---
 {% assign video_data_file = 'stack-2022-dev-conference-videos' %}
 
-### Plenary
+### Lightning Talks
 
 <hr />
 
 {% include videos-display.html 
 title="Tuesday (15/11/2022)" 
-type="Plenary (Tues)" _data=video_data_file 
+type="Lightning (Tues)" _data=video_data_file 
 %}
 
 <br />
 
 {% include videos-display.html 
 title="Wednesday (16/11/2022)" 
-type="Plenary (Wed)" _data=video_data_file 
+type="Lightning (Wed)" _data=video_data_file 
 %}
+
+<br />
+
+{% include videos-display.html 
+title="Bonus Tracks" 
+type="Lightning (Bonus Track)" _data=video_data_file 
+%}
+
+<br />

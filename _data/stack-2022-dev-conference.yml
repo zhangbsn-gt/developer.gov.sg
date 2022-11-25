@@ -115,7 +115,7 @@
   timeslot: 03:00 PM - 03:30 PM
   timeslot_metadata: 2022-11-15T15:00:00+08:00 - 2022-11-15T15:30:00+08:00
   title: Changed Responsibilities in Modern Software Development Environments
-  desc: With business increasing the pressure and demand for flexibility of the development team, the agile movement was pushed to the limits. CI/CD was born to reduce manual steps to reduce human errors and increase speed to go-live! With DevOps, the teams also took on application responsibilities, from cradle to grave. Nevertheless, software security is still missing in many full-stack developers' resumes and application security responsibilities are still pushed off to the security department. A real pity, because the agile, CI/CD and DevOps are security-enabling practices. This session explains Shift-left, early security enablement in the development Lifecycle. As the application development becomes more developer centric, the developer’s toolset must match the new challenges to have responsibilities matching capabilities. Learn from rugged software to supply chain cleanliness. Learn to avoid the common pitfalls and benefits of modern application development strategies. Hear why security champions programmes tend to fail, compliance driven security training is a waste of time and money. Security teams struggle and fail to integrate security tooling in release pipelines. Take back the best practices, proven solutions and Shift Left beyond the development.
+  desc: "With business increasing the pressure and demand for flexibility of development teams, the agile movement was pushed to the limit. CI/CD was born to reduce manual steps and the errors that arise from them, as well as increase the speed of going live. With DevOps, the teams also took on application responsibilities, from cradle to grave. Nevertheless, software security is still missing in many full-stack developers' resumes and application security responsibilities are still pushed off to the security department. This is a real pity, because agile, CI/CD and DevOps are security-enabling practices. This session explains Shift-left and early security enablement in the development lifecycle. As the application development becomes more developer-centric, the developer’s toolset must include new capabilities to match the new challenges. Learn about rugged software and supply chain cleanliness, and how to avoid the common pitfalls of modern application development strategies. Hear why security champions programmes tend to fail, compliance-driven security training is a waste of time and money, and why security teams struggle and fail to integrate security tooling in release pipelines. Take back the best practices, proven solutions and Shift Left beyond the development."
   additional_info_1: "Who should attend | Dev Teams, Appsec, Security Specialists."
   speakers:
     - name: Mr Martin Knobloch
@@ -473,7 +473,7 @@
   speakers:
     - name: Mr Leong Jern-Kuan
       image: /assets/img/photos/leong-jern-kuan.png
-      title: Project Director, EDB & VMware Tanzu Labs
+      title: Project Director, EDB
       desc: Jern Kuan Leong is a Project Director at EDB, leading and growing software engineering teams within EDB. He has been spearheading the modernization effort of EDB internal systems, lowering the barrier to introducing new products. In his previous life, he used to develop UX for self-driving vehicles and video games for a living. He still enjoys coding and savors every opportunity to code.
     - name: Ms Liza Ng
       image: /assets/img/photos/liza-ng.png
@@ -533,7 +533,7 @@
   timeslot_metadata: 2022-11-15T14:15:00+08:00 - 2022-11-15T14:30:00+08:00
   title: "Multi-cluster Release Workflow"
   desc: "With the widespread adoption of Kubernetes in organisations, engineering teams have found themselves managing a variety of clusters that differ in scale and usage. As the number of clusters grow, the complexity in managing them introduces new challenges for engineers to tackle. Maintaining clusters involves frequent changes related to upgrades, security and adding new components; a multi-cluster setup further complicates these operations. For engineering teams to be efficient and productive, an ideal multi-cluster management strategy and release workflow is paramount.<br><br>This session aims to showcase how a multi-cluster release workflow can reduce operational overheads and streamline the cluster management with the aid of automation and GitOps best practices.<br><br>Theme: Fail-Safe App Development"
-  additional_info_1: "Who should attend | DevOps Practitioners, SREs, DevOps Engineers, Software Engineers. Knowledge in CI/CD, Git, GitOps and/or Kubernetes are a plus. DevOps Practitioners, DevOps Engineers, Knowledge in CI/CD, Git, GitOps and/or Kubernetes are a plus."
+  additional_info_1: "Who should attend | DevOps Practitioners, SREs, DevOps Engineers, Software Engineers. Knowledge in CI/CD, Git, GitOps and/or Kubernetes are a plus."
   speakers:
     - name: Mr Ernest Boey
       image: /assets/img/photos/ernest-boey.png
@@ -840,10 +840,10 @@
   desc: "Legged robots are ubiquitous in today's pop culture and are often depicted as having extraordinary capabilities in viral videos. However, adopting them for use in the real world is not as simple. We will share the considerations behind fielding legged robots, and why they are particularly useful in rugged environments.<br><br>Theme: Tech for Tomorrow"
   additional_info_1: "Who should attend | Roboticists, System Integrators, Developers."
   speakers:
-    - name: Mr Bryan Ng Kin Loong
-      image: /assets/img/photos/bryan-ng-kin-loong.png
-      title: Head Capability Development (Unmanned Ground Vehicles), DSTA
-      desc: "Bryan is the Head Capability Development of Unmanned Ground Vehicles (UGV) at the Defence Science & Technology Agency (DSTA). He oversees the UGV and Robotics portfolio, and devises innovative ways of employing robotics for defence & security."
+    - name: Mr Quek Yong Jian
+      image: /assets/img/photos/quek-yong-jian.png
+      title: Senior Engineer (Unmanned Ground Vehicles), DSTA
+      desc: "Yong Jian is a Senior Engineer at the Defence Science & Technology Agency of Singapore (DSTA). He works at the intersection of mechnical engineering and computer science to develop robotic systems for the real world."
  
 - type: Tues, Lightning
   timeslot: 03:45 PM - 04:00 PM
@@ -886,7 +886,7 @@
   timeslot: 02:00 PM - 02:15 PM
   timeslot_metadata: 2022-11-16T14:00:00+08:00 - 2022-11-16T14:15:00+08:00
   title: "DevSecOps Driven Workload to Workload Zero Trust to Detect Advanced Threats"
-  desc: "SHIP-HATS is a continuous integration/continuous delivery component within the Singapore Government Tech Stack, we ensure security and governance guardrails to enable developers to run end to end pipelines, and deliver secure and quality code. With SHIP-HATS 2.0 latest multi-tenanted Gitlab SaaS platform, we provide development tools and environment setup in compliance with AIAS and IM8 policy standards for the whole of government.<br><br>Join us as we share what DevSecOps is and how it can be applied on SHIP-HATS 2.0 to help developers automate the entire DevOps lifecycle. Understand how we can achieve pipeline governance and security with the compliance framework, observability and build-in security features. We will also be showcasing a bonus demonstration on how we can leverage Gitlab features to gamify the DevSecOps experience.<br><br>Theme: Building Digital Trust"
+  desc: "MITRE ATT&CK framework offers a taxonomy that can be used to describe any attack. This is very useful as we discuss the structure of an advanced attack that has multiple stages and is executed over time as a succession of achievement of tactical goals. In our research we notice that adoption of Zero Trust principles (assume breach, explicitly verify, use least privilege, continually assess), orchestrated by DevSecOps, the chances of detecting execution of procedures that employ techniques for carrying out a tactical goal, increase significantly. A study of tactics, techniques, and procedures (TTPs) carried out by use of Sunburst, a malware that was employed in the Solarigate attacks, shows that the most relevant zero trust principles whose adoption would help in detecting the TTPs are ‘assume breach’ and ‘continually assess’. Signals generated by activities of threat modeling, SAST, DAST, Pen Testing and additional techniques to observe process level characteristics and communication profiles of workloads during the development phase of the software development lifecycle, allow development of a baseline against which anomalies can be detected via continuous monitoring in runtime during the operational phase of the cycle. Machine Learning assisted contextual analysis of anomalies help identify TTPs and generate a risk score which is used to take an appropriate mitigation action. In our talk we discuss practical ways for leveraging DevSecOps to follow zero trust principles of ‘assume breach’ and ‘continually assess’, in order to detect TTPs thwarting hackers' attempts to reach their tactical goals.<br><br>Theme: Building Digital Trust"
   additional_info_1: "Who should attend | Developers, Security Professionals and Site Reliability Engineers."
   speakers:
     - name: Mr Mudit Tyagi
@@ -993,10 +993,10 @@
   desc: "Why be satisfied with plain vanilla robots when you can soup them up? We discuss the various ways to enhance a robot's abilities through the integration of novel payloads, and the integration considerations that we need to look out for.<br><br>Theme: Tech for Tomorrow"
   additional_info_1: "Who should attend | Roboticists, System Integrators, Developers."
   speakers:
-    - name: Mr Bryan Ng Kin Loong
-      image: /assets/img/photos/bryan-ng-kin-loong.png
-      title: Head Capability Development (Unmanned Ground Vehicles), DSTA
-      desc: "Bryan is the Head Capability Development of Unmanned Ground Vehicles (UGV) at the Defence Science & Technology Agency (DSTA). He oversees the UGV and Robotics portfolio, and devises innovative ways of employing robotics for defence & security."
+    - name: Mr Quek Yong Jian
+      image: /assets/img/photos/quek-yong-jian.png
+      title: Senior Engineer (Unmanned Ground Vehicles), DSTA
+      desc: "Yong Jian is a Senior Engineer at the Defence Science & Technology Agency of Singapore (DSTA). He works at the intersection of mechanical engineering and computer science to develop robotic systems for the real world."
          
 - type: Wed, Lightning
   timeslot: 02:30 PM - 02:45 PM
@@ -1131,7 +1131,7 @@
   speakers:
     - name: Mr Johnny Fang
       image: /assets/img/photos/johnny-fang.png
-      title: Senior Solutions Engineer, Hashicorp
+      title: Senior Solutions Engineer, HashiCorp
       desc: "Johnny Fang is a Senior Solutions Engineer for Public Sector at HashiCorp and is based out of Singapore. With over 25 years of consulting experience in various platforms and technologies, he has been an architect on a number of large scale Enterprise projects. Prior to HashiCorp, he was a lead cloud architect at AWS running various infra automation projects for large scale migrations and cloud landing zones. In his current role, Johnny enjoys working with various enterprise customers to derive the maximum value from the HashiCorp technology stack."
             
 - type: Wed, Lightning
@@ -1221,7 +1221,7 @@
 - type: Wed, Lightning
   timeslot: 03:45 PM - 04:00 PM
   timeslot_metadata: 2022-11-16T15:45:00+08:00 - 2022-11-16T16:00:00+08:00
-  title: "Building a Robust Threat Detection System for Social"
+  title: "Building a Robust Threat Detection System for Social Engineered Cyber Threats"
   desc: "In 2021, cyber criminals impersonating OCBC Bank through text messages successfully scammed hundreds of Singaporeans of their life savings. In May ‘22, the FBI reported up to $43 billion dollars of business losses to cyber criminals due to similar social engineered attacks between 2016 and 2021. Instead of a spray and pray method where the same attack is sent to multiple users, cyber criminals are now pivoting to highly targeted social engineered attacks. They attempt to gain your trust by impersonating someone you already know or trust - your manager, your colleagues etc. They then aim to trick you into executing the cyber attack, be it running malware, providing your credentials or sending money to a fake bank account. However, legacy security solutions that have defended us against cyber threats are built on brittle rules and threat intelligence feeds - this lends them to perform poorly against these zero day, hyper targeted attacks. In order to solve these emerging threats, one would need a completely new approach - we propose that a behavioral detection engine with modern ML techniques would deliver a solution with both higher recall and precision. In place of building lists of \"known bad\" entities, we propose first building profiles of what is considered normal within user environments. Machine Learning models trained to detect deviations against this baseline understanding of normality are then capable of differentiating attacker vs safe user behavior with a higher level of accuracy. I am a founding engineer at Abnormal Security, a next-gen Email Security startup. I’ve spent the last four years building this behavioral detection engine that aims to detect all types of malicious emails, especially socially engineered email attacks (e.g. sending a Fake Invoice while impersonating a Vendor). In my proposed talk, I will discuss the unique parameters of modern cybersecurity attacks in relation to machine learning, particularly the adversarial nature of the problem and how it shows up in data and model performance. Using the email security problem as an example, I will then discuss the requirements of a robust threat detection system, describing how both ML and software systems are required to solve cyberthreats in different time horizons. I will then focus on our machine learning stack, discussing how we incorporate the behavioral detection approach with our feature aggregation engine, the various components of ML solution and their various results.<br><br>Theme: Building Digital Trust"
   additional_info_1: "Who should attend | Software engineers, ML Engineers, Cyber Security Professionals, Anyone interested in the Content Moderation/Abuse space."
   speakers:
@@ -1241,10 +1241,6 @@
       image: /assets/img/photos/kenneth-lo.png
       title: Software Engineer, GovTech
       desc: "Tech lead for Crowdtask.SG"
-    - name: Ms Lynette Tay
-      image: /assets/img/photos/lynette-tay.png
-      title: Delivery Manager, GovTech
-      desc: "Delivery Manager for Crowdtask.SG."
        
 - type: Wed, Lightning
   timeslot: 03:45 PM - 04:00 PM
@@ -1269,3 +1265,73 @@
       image: /assets/img/photos/roland-barcia.png
       title: Director, Serverless Solution Architecture, AWS
       desc: "Roland is the Worldwide Solution Architecture Director for Serverless at AWS. Roland has led the building of transformational Cloud Solutioning assets focused on enterprise adoption, including Kubernetes, App Modernisation, Microservices, Serverless, Integration, and App Development. He is recognised for creating industry-leading architecture blueprints and is a recognised leader in the client adoption of cloud strategy. Roland is a former IBM Fellow, has written 5 books, written over 50 articles, and has a Master's Degree from NJIT."
+       
+- type: Bonus Track, Lightning
+  timeslot:
+  timeslot_metadata: Bonus Tracks - Lightning Talks
+  title: "Enterprise Ready AI: Managing Governance and Risk"
+  desc: "Even the safest roads have guardrails to keep drivers from falling off the edge. It’s the same with machine learning. A well-designed model, coupled with proper governance, can help prevent unintended outcomes. You need a good mix of people, processes, and technologies to minimise risks when managing your AI projects. In this session, Ted Kwartler will provide some strategies for building good governance processes and tips for monitoring your AI system. He’ll show you how to get started by creating a plan for governance, identifying your existing resources, and where to ask for help.<br><br>The audience will learn:<br>- The importance of context, operations, and development in ML governance.<br>- How to evaluate diverse types of risk.<br>- Which industries are experiencing regulatory pressure.<br>- Tips to deliver value and reduce risk using DataRobot’s technology.<br><br>Theme: Datafication"
+  additional_info_1: "Who should attend | This session will be suited to a general business audience and will be useful for anyone who has models in deployment that wants to understand more about frameworks for managing risk, removing bias and deal with regulatory compliance."
+  speakers:
+    - name: Mr Ted Kwartler
+      image: /assets/img/photos/ted-kwartler.png
+      title: VP, AI Trust, DataRobot
+      desc: "Ted Kwartler is the VP of Trusted AI at DataRobot. At DataRobot, Ted sets product strategy for explainable and ethical uses of data technology in the company's applications. Ted brings unique insights and experience utilising data, business acumen and ethics to his current and previous positions at Liberty Mutual Insurance and Amazon. In addition to having 4 DataCamp courses, he teaches graduate courses at the Harvard Extension School and is the author of Text Mining in Practice with R. Ted is an advisor to the US Government Bureau of Economic Affairs sitting on a Congressionally mandated committed called the \"Advisory Committee for Data for Evidence Building\" advocating for data-driven policies."
+       
+- type: Bonus Track, Lightning
+  timeslot:
+  timeslot_metadata: Bonus Tracks - Lightning Talks
+  title: "Best Practice Migrations to Cloud"
+  desc: "Do you want to better understand what it takes to migrate a critical e-commerce client from a legacy on-premise system to Cloud? Want to learn more about the steps to migrate, its risks/pitfalls and the end to end methodology of one of Singapore's leading e-commerce organisation? I will also touch on the modernisation elements to move from a legacy monolith architecture to a micro services architecture, and the business and end customer benefits.<br><br>Theme: Beyond Cloud"
+  additional_info_1: "Who should attend | CEOs, CTOs, CMOs, Head of Technology/ Infrastructure, Head of Marketing."
+  speakers:
+    - name: Mr Callum Davies
+      image: /assets/img/photos/callum-davis.png
+      title: Managing Director, Just After Midnight
+      desc: "Callum is Managing Director of Just After Midnight, Asia. Callum has over a decade of experience working in cloud and infrastructure sales and consulting across Europe and Asia-Pacific. Callum is a certified Open Group Master Architect with extensive migration experience across multiple industries."      
+       
+- type: Bonus Track, Lightning
+  timeslot:
+  timeslot_metadata: Bonus Tracks - Lightning Talks
+  title: "Introduction to enCRYPT: The Central Privacy Toolkit"
+  desc: "enCRYPT is a new one-stop, self-service, central privacy toolkit that helps public sector users apply anonymisation techniques to sensitive datasets, while preserving the data’s value for sharing and analysis.<br><br>Find out how enCRYPT can help your agency transform your datasets to meet the new IM8 Anonymisation Guidelines, address re-identification risks, and manage privacy-utility tradeoffs.<br><br>Theme: Datafication"
+  additional_info_1: "Who should attend | CISOs, CDOs, and any public service officers dealing with data sharing issues."
+  speakers:
+    - name: Mr Alan Tang
+      image: /assets/img/photos/alan-tang.png
+      title: Senior Product Manager, GovTech
+      desc: "Alan is the product manager for new and experimental team focused on harnessing the benefits of Privacy-Preserving Technologies for the public sector. Prior to joining GovTech, Alan worked as a cyber threat analyst dissecting key threats and actors in cyberspace. He is passionate about working at the intersection of policy, technology and citizen needs."
+    - name: Mr Zul Yang
+      image: /assets/img/photos/zul-yang.png
+      title: Associate Software Engineer, GovTech
+      desc: "Zul Yang is a software engineer at GovTech building solutions to protect citizens’ privacy. Prior to joining GovTech, he was with the Singapore Civil Defence Force’s Transformation and Future Technology Department developing products to enhance emergency response and public safety."
+       
+- type: Bonus Track, Lightning
+  timeslot:
+  timeslot_metadata: Bonus Tracks - Lightning Talks
+  title: "Fairness in AI: How can Algorithmic Approaches Guide AI Governance?"
+  desc: "Artificial intelligence (\"AI\") is now a ubiquitous feature in many products we use or processes we interact with, from our mobile phones to our loan applications. With its meteoric rise comes a new set of challenges: AI models have been found to be systematically biased against historically disadvantaged groups, and this is especially problematic for important applications of AI in the space of credit risk ratings, university admissions, and even parole decisions. In this lightning talk, we dive into the emerging field of algorithmic fairness, which focuses on how to incorporate fairness into AI algorithms itself, and highlight the important technical and legal implications it has on AI governance.<br><br>Theme: Tech for Tomorrow"
+  additional_info_1: "Who should attend | Anyone interested in AI governance or fairness in AI applications."
+  speakers:
+    - name: Mr Shaun Khoo
+      image: /assets/img/photos/shaun-khoo.png
+      title: Data Scientist, GovTech
+      desc: "Shaun is a data scientist in the Data Science and AI Division (DSAID) at GovTech. He leads the forward-deployed data science team at the Ministry of Manpower, where he has worked on a variety of projects from building policy simulation dashboards to developing neural networks for text classification. Having studied both political philosophy and data science, he is interested in the ethical and fairness implications of AI and how algorithmic approaches can address them. Outside of work, he enjoys good food, great books, and excellent coffee."
+    - name: Ms Chow Zi En
+      image: /assets/img/photos/chow-zi-en.png
+      title: State Counsel, Attorney General's Chambers
+      desc: "Zi En is a State Counsel at the Attorney-General's Chambers, where she advises the Government on a wide spectrum of legal issues. She was previously a Legal Consultant at the World Bank. Zi En is interested in and has published papers on the intersection of law and technology, such as drones and privacy, and intermediary rights. She is dual-qualified in Singapore and New York, and graduated with an LLB from Singapore Management University and a LLM from New York University."
+
+       
+- type: Bonus Track, Lightning
+  timeslot:
+  timeslot_metadata: Bonus Tracks - Lightning Talks
+  title: "Securing Kubernetes OpenShift Clusters to Ensure Maximum Safety with Minimal Efforts"
+  desc: "Data is the new oil. The more you mine it, the better the results. Information extracted holds the power to unlock new horizons. However, the high value associated with the data comes at a cost, i.e making it vulnerable to external threats. It becomes imperative that the organisations have to spend quality efforts and resources to safeguard this data, be it at rest or in transit.<br><br>Various SaaS offerings run into numerous threats that come in different shapes and sizes. More so, if you are into Database and Datawarehouse offerings, that are integrated and managed as part of the Cluster Management. It requires a good amount of expertise wrt tools and utilities of cluster management resources, exposure to a varied degree of integrations and interactions, and familiarity with the nature of threats coming in the form of hacking, intrusion, etc, to be able to safeguard the data.<br><br>In this lightning talk, they share their thoughts on the process and steps that will help build/prepare the Kubernetes and OpenShift clusters to be safe and secure, insulating them from external threats.<br><br>Some methodologies and measures that strengthen the security aspects are:<br>- Securing the container images,<br>- Access control to the source code,<br>- End point detection and response,<br>- Vulnerability scanning of endpoints,<br>- Inventory management,<br>- Log analysis and SIEM, and<br>- Pod Security Policies (SCC).<br><br>Theme: Building Digital Trust"
+  additional_info_1: "Co-Contributors of Content | <b>Mr Hrishikesh Kumar</b>, Advisory Software Engineer, IBM<br><b>Mr Thuan Ngo</b>, Advisory Software Engineer, IBM"
+  additional_info_2: "Who should attend | - Cloud Architects & Engineers working on Cluster Orchestration in a multi-cloud environment.<br>- Application Developers involved in development of a Cloud Service.<br>- Developers involved in building applications on Cloud.<br>- Security Experts and Compliance teams that overlook product/service security on Cloud."
+  speakers:
+    - name: Mr Prasanna Alur Mathada
+      image: /assets/img/photos/prasanna-alur-mathada.png
+      title: Advisory Software Engineer, IBM
+      desc: "An experienced software professional, Prasanna Alur Mathada is currently an Infrastructure SRE Ops resource managing Kubernetes clusters and Infrastructure management in a multi-cloud environment.<br><br>He holds a Post Graduate Diploma in Business Administration with specialisation in Marketing. As a skilled engineer, he brings vast amounts of experience in the areas of Internet of Things (IoT), Business Development (In India & South East Asia), Relational Databases, and Product Interoperability, in over 16 years of a corporate career at IBM. He is a seasoned team player with hands-on experience in technologies such as Informix databases, Time Series Analytics, Data Warehousing, Developer Experience and DevOps SRE.<br><br>An avid reader & blogger, he has a penchant for technology courses. In addition to numerous published articles, blogs, and technical white papers, he has 4 Patents, 7 File rated disclosures, and numerous Publish-rated disclosures in the areas of Cognitive analytics, Emerging technologies and Artificial Intelligence."

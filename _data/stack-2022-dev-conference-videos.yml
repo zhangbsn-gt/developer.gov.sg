@@ -10,140 +10,547 @@
 #   Export the data from this excel into a csv file to be converted to a YAML data file
 
 # Opening Address
-- type: Tues Opening Address - VOD
+- type: Opening Address (Tues)
   speakers: Mrs Josephine Teo
   speakers_title: Minister for Communications and Information, and Minister-in-charge of Smart Nation and Cybersecurity
   title: "Opening Address (Tuesday)"
   video_id: ubdTAArSTvk
 
-- type: Wed Opening Address - VOD
+- type: Opening Address (Wed)
   speakers: Dr Janil Puthucheary
   speakers_title: Senior Minister of State at Ministry of Communications and Information, and Minister-in-charge of GovTech
   title: "Opening Address (Wednesday)"
   video_id: DgWF3zUzGNA
 
 # Panel Discussion
-- type: Wed Panel Discussion - VOD
+- type: Panel Discussion (Wed)
   speakers: "Mr Kok Ping Soon, Mr Noah Pepper, Mr Frank Koo"
   speakers_title: "Chief Executive, GovTech| Former APAC Head, Stripe| Head of Asia, Talent and Learning Solutions, LinkedIn"
   title: "Talent, Culture and Purpose"
   video_id: Xq0noBdZH3g
 
 # Keynotes
-# - type: Tues Keynotes - VOD
+# - type: Keynotes (Tues)
 #   speakers: Mr Kono Tara
 #   speakers_title: "Minister for Digital Transformation, Japan"
 #   title: "Video Message from the Japan Digital Agency"
 #   video_id: UXlDA4Qsh38
 
 # Keynotes
-- type: Tues Keynotes - VOD
+- type: Keynotes (Tues)
   speakers: Mr Chan Cheow Hoe
   speakers_title: Government Chief Digital Technology Officer and Deputy Chief Executive, GovTech
   title: "Embracing a Brave New World of Technology – A Government Journey"
   video_id: j7rbtnKOlP4
 
-- type: Tues Keynotes - VOD
+- type: Keynotes (Tues)
   speakers: Mr Paul Tatum
   speakers_title: Executive Vice President, Solution Engineering for Global Public Sector, Salesforce
   title: "Why SaaS and PaaS are Perfect for Government -- Almost Every Time!"
   video_id: EiB0lK4oLng
 
-- type: Tues Keynotes - VOD
+- type: Keynotes (Tues)
   speakers: Mr Anthony Liguori
   speakers_title: Vice President & Distinguished Engineer, Amazon Web Services
   title: "Extending the AWS Cloud Outside of Public Regions"
   video_id: yLm72fMdVjo
 
-- type: Tues Keynotes - VOD
+- type: Keynotes (Tues)
   speakers: Ms Rebecca Parsons
   speakers_title: Chief Technology Officer, Thoughtworks
   title: "Delivering Trust in a Data Driven World"
   video_id: ycPYbSofQOQ
 
-- type: Tues Keynotes - VOD
+- type: Keynotes (Tues)
   speakers: Mr Sytse 'Sid' Sijbrandij
   speakers_title: Chief Executive Officer & Co-founder, GitLab
   title: "How to Scale Your Business with a DevOps Platform"
   video_id: uU597jRqBNQ
 
-- type: Wed Keynotes - VOD
+- type: Keynotes (Wed)
   speakers: Mr Paul Lorimer
   speakers_title: Corporate Vice President, Microsoft Enterprise and Cloud
   title: "Zero Trust at Scale"
   video_id: 5_N2EAXcqkY
 
-- type: Wed Keynotes - VOD
+- type: Keynotes (Wed)
   speakers: Mr Sachin Gupta
   speakers_title: Vice President & General Manager, IaaS, Google Cloud
   title: "What’s New in Google Cloud Infrastructure"
   video_id: auhxbxUgwUw
 
-- type: Wed Keynotes - VOD
+- type: Keynotes (Wed)
   speakers: Mr Matei Zaharia
   speakers_title: Co-founder & Chief Technologist, Databricks
   title: "Simplifying Data and AI with Lakehouse Platforms"
   video_id: tApg4zGSPD0
 
-- type: Wed Keynotes - VOD
+- type: Keynotes (Wed)
   speakers: Mr Ned Shawa
   speakers_title: Senior Director, Solutions Engineering APJ, HashiCorp
   title: "The Rise of the Platforms Team: An Organisational Response to Developer Experience"
   video_id: nf_BE2lJ0rk
 
 # Plenary
-- type: Tues Plenary - VOD
+- type: Plenary (Tues)
   speakers: Dr Tok Wee Hyong
   speakers_title: Senior Director, Cloud and AI, Microsoft
   title: "The Heart of Data and AI"
   video_id: zSBHR4X7EYg
 
-- type: Tues Plenary - VOD
+- type: Plenary (Tues)
   speakers: Mr Hunter Nield
   speakers_title: Distinguished Engineer, GovTech
   title: "Innersource - The Road to Engineering Collaboration across Government"
   video_id: PWKWTSgxiZA
 
-- type: Tues Plenary - VOD
+- type: Plenary (Tues)
   speakers: "Mr Kevin Ng, Ms Karen Kee"
   speakers_title: "Director, CODEX, GovTech|  Deputy Director, Technology Management Office, GovTech"
   title: "Retooling Government Developer Experience"
   video_id: j4XdbTJ2pCU
 
-- type: Tues Plenary - VOD
+- type: Plenary (Tues)
   speakers: Mr Martin Knobloch
   speakers_title: Global AppSec Strategist, Micro Focus
   title: "Changed Responsibilities in Modern Software Development Environments"
   video_id: SBqEkwAONkU
 
-- type: Wed Plenary - VOD
+- type: Plenary (Wed)
   speakers: Mr Damian Leach
   speakers_title: Chief Technology Officer, Asia Pacific and Japan, Workday
   title: "Scaling Data for Organisational Transformation"
   video_id: _xgiFYL05BU
 
-- type: Wed Plenary - VOD
+- type: Plenary (Wed)
   speakers: Mr Chong Rong Hwa
   speakers_title: Director, Cyber Security Group, GovTech
   title: "Navigating Cybersecurity in the Digital Darkness"
   video_id: XG_Sh44_ohk
 
-- type: Wed Plenary - VOD
+- type: Plenary (Wed)
   speakers: Mr James Tan
   speakers_title: Director, Sensors and IoT, GovTech
   title: "Cyber Physical Masterplanning: The Need for a Digital Twin"
   video_id: A6_EuHRs6D8
 
-- type: Wed Plenary - VOD
+- type: Plenary (Wed)
   speakers: Ms Jayne Groll
   speakers_title: CEO and Co-founder, DevOps Institute
   title: "Upskilling Trends for the Humans of DevOps"
   video_id: Ae8INEF7gWg
 
+# Lightning Talks
+- type: Lightning (Tues)
+  speakers: Mr Roland Tan
+  speakers_title: Assistant Director, GovTech
+  title: "Transform the Way You Transact with Singpass API"
+  video_id: rGfJzlRTtyc
 
+- type: Lightning (Tues)
+  speakers: "Mr Leong Jern-Kuan, Ms Liza Ng"
+  speakers_title: "Project Director, EDB| Senior Member Of Technical Staff, VMware Tanzu Labs"
+  title: "Application Modernisation: The Elephants in the Room"
+  video_id: avOVZFrTeYI
 
+- type: Lightning (Tues)
+  speakers: "Mr Aris Youssefian"
+  speakers_title: "Product Architect, CloudCover"
+  title: "Continuous Integration and Delivery in 2022 - What's Next?"
+  video_id: AY2mYaPNBQM
 
+- type: Lightning (Tues)
+  speakers: "Mr Francis Han"
+  speakers_title: "Senior Director, Oracle"
+  title: "AI Driven Smart City"
+  video_id: XjTuz7VcDv4
 
+- type: Lightning (Tues)
+  speakers: "Ms Hena Shah"
+  speakers_title: "Product Manager, Open Government Products, GovTech"
+  title: "Authenticated Communication for Building Digital Trust"
+  video_id: 4eM1l--yc5E
 
+- type: Lightning (Tues)
+  speakers: "Mr Ramneek Khurana"
+  speakers_title: "Customer Engineer, Google"
+  title: "Policy as Code"
+  video_id: SkGkz2plxiU
 
+- type: Lightning (Tues)
+  speakers: "Mr Ernest Boey, Mr Azman Salleh"
+  speakers_title: "DevOps Engineer, GovTech| DevOps Engineer, GovTech"
+  title: "Multi-cluster Release Workflow"
+  video_id: KQZOCy6ZQuA  
 
+- type: Lightning (Tues)
+  speakers: "Mr Kelvin Tan"
+  speakers_title: "Associate System Engineer, GovTech"
+  title: "Crowd Density Monitoring in Outdoor Environments with Edge AI"
+  video_id: M6uJ3SbOYpY
+
+- type: Lightning (Tues)
+  speakers: "Mr Eugene Foo, Mr Muhammad Nur Akmal Zubir"
+  speakers_title: "IT Consultant, CPF Board| IT Consultant, CPF Board"
+  title: "Composing a Solution for Composing Documents?"
+  video_id: E_feH0k7nsQ
+
+- type: Lightning (Tues)
+  speakers: "Mr Clifton Phua"
+  speakers_title: "CTO, Digital Systems, ST Engineering"
+  title: "The Combination of Digital Technologies"
+  video_id: HvnZATrbw7k  
+
+- type: Lightning (Tues)
+  speakers: "Mr Sachin Tonk"
+  speakers_title: "Deputy Director, GovTech"
+  title: "Know Your Data Next Generation Data Intelligence & Governance"
+  video_id: XOTuHPDROHI
+  
+- type: Lightning (Tues)
+  speakers: "Mr Tang Bing Wan"
+  speakers_title: "Director, GovTech"
+  title: "GCC 2.0, The Bold Step Forward"
+  video_id: bIsnFDwtlPc
+  
+- type: Lightning (Tues)
+  speakers: "Mr Seah Ming Shu"
+  speakers_title: "Data Scientist, GovTech"
+  title: "Improving Government Services with Data: Best Practices, Tips and Insights from WOGAA"
+  video_id: mUtiXsCzYCE
+  
+- type: Lightning (Tues)
+  speakers: "Mr Sathiyamoorthi Chinnasamy"
+  speakers_title: "Lead Infrastructure Engineer, GovTech"
+  title: "Networking in GCC 2.0"
+  video_id: 3gj52sRY6Ac
+  
+- type: Lightning (Tues)
+  speakers: "Ms Chua Hui Xiang"
+  speakers_title: "Senior Data Scientist, Dataiku"
+  title: "Enabling Everyday AI"
+  video_id: lHOH2SNVXTk
+  
+- type: Lightning (Tues)
+  speakers: "Dr Ng Kian Bee"
+  speakers_title: "Co-Director, gAmes for HeaLth InnoVations CentrE (ALIVE)"
+  title: "Cloud Services for Digital Medicine Framework"
+  video_id: Ozy9cSFOcAw
+  
+- type: Lightning (Tues)
+  speakers: "Mr Alvin Tan, Mr Josh Tseng"
+  speakers_title: "Head, Technology Catalyst, SG Enable| Head of Digital Accessibility Services, Etch Empathy"
+  title: "User Testing for e-Accessibility"
+  video_id: VlSa3ovtCcw
+  
+- type: Lightning (Tues)
+  speakers: "Ms Ramakrishnan Sowmya, Ms Liyana Muhammad Fauzi"
+  speakers_title: "Lead Product Manager, GovTech| Lead Product Manager, GovTech"
+  title: "Building Inclusive Teams - A Sharing from Women in GovTech ERG (Employment Resource Group)"
+  video_id: 19Kt3RIP898  
+  
+- type: Lightning (Tues)
+  speakers: "Mr Ilay Goldman, Mr Yakir Kadkoda"
+  speakers_title: "Security Researcher, Aqua Security| Security Researcher, Aqua Security"
+  title: "Exploiting Vulnerabilities and Flaws to Attack Supply Chain"
+  video_id: EIzd44cqLMw
+  
+- type: Lightning (Tues)
+  speakers: "Mr Eugene Ng"
+  speakers_title: "Deputy Director, GovTech"
+  title: "Demystifying Security and Compliance for Cloud Deployments on GCC 2.0"
+  video_id: GMpc-Z6GXIo  
+  
+- type: Lightning (Tues)
+  speakers: "Mr Menon Abhijeet Mohankumar"
+  speakers_title: "Lead Solution Architect, GovTech"
+  title: "How to Develop Cloud Applications Without Cloud?"
+  video_id: gXPJNbI2JOw
+  
+- type: Lightning (Tues)
+  speakers: "Mr Wan Kong Wah"
+  speakers_title: "Senior Scientist, Institute for Infocomm Research"
+  title: "Compliance Techniques for Safe Robot Co-sharing of Space with People"
+  video_id: k9tDlji16uw  
+  
+- type: Lightning (Tues)
+  speakers: "Mr Sergiu Bodiu"
+  speakers_title: "APAC Enterprise Strategic Deal Making & BVA Leader, Red Hat"
+  title: "How to Stay Up To Date and Where You Can Start on Your DevOps Journey"
+  video_id: EHZshpjamds
+  
+- type: Lightning (Tues)
+  speakers: "Mr Cai Zonghe"
+  speakers_title: "Account Technology Strategist, Singapore Public Sector, Microsoft Singapore"
+  title: "Confidentiality & Privacy in the Cloud: Protecting Data in Use"
+  video_id: vQSDfvXrl84
+  
+- type: Lightning (Tues)
+  speakers: "Mr Joseph Tan"
+  speakers_title: "Deputy Director, GovTech"
+  title: "Analytics By Design"
+  video_id: ksFWR30mUQI
+  
+- type: Lightning (Tues)
+  speakers: "Mr Yeo Yong Kiat, Mr Barry Lim"
+  speakers_title: "Assistant Director, GovTech| Deputy Director, GovTech"
+  title: "Building Trust in Healthcare with OpenAttestation Verifiable Credential"
+  video_id: yAO0HivCuJI
+  
+- type: Lightning (Tues)
+  speakers: "Mr Kelvin Soh, Mr Will Lin Zhixun"
+  speakers_title: "Senior Delivery Manager, GovTech| Senior Delivery Manager, GovTech"
+  title: "More with LeSS – Scaling Agile at Ministry of Manpower (MOM)"
+  video_id: 748uW078uMI  
+  
+- type: Lightning (Tues)
+  speakers: "Mr Deepak Sarda"
+  speakers_title: "VP of Engineering, Endowus"
+  title: "Unlocking Engineering Productivity through Unlimited Isolated Test Environments"
+  video_id: 3iJbS7xazpo
+  
+- type: Lightning (Tues)
+  speakers: "Mr Tan Pow Hwee"
+  speakers_title: "Director, Systems and Programmes, GovTech"
+  title: "Develop Resilient Applications for Lean Operations"
+  video_id: 3gq0q4fbIl8
+  
+- type: Lightning (Tues)
+  speakers: "Mr Quek Yong Jian"
+  speakers_title: "Senior Engineer (Unmanned Ground Vehicles), DSTA"
+  title: "Do Robots Need Legs?"
+  video_id: ecA6lA2VjVA
+  
+- type: Lightning (Tues)
+  speakers: "Mr Leong Voon"
+  speakers_title: "Lead Designer, GovTech"
+  title: "The Non-Existent Playbook to Designing for the Future in Government"
+  video_id: 8inhdkTSHHY
+  
+- type: Lightning (Tues)
+  speakers: "Mr Darryl Sw"
+  speakers_title: "DevOps Engineer, GovTech"
+  title: "Managing Infrastructure-as-Code: Common Mistakes in Terraform When Starting Out"
+  video_id: TwMTe5mnTM4
+
+- type: Lightning (Wed)
+  speakers: "Mr Russell Chua"
+  speakers_title: "Associate Software Engineer, GovTech"
+  title: "Know and Measure DevSecOps Best Practices"
+  video_id: SkJqR4kuef4
+  
+- type: Lightning (Wed)
+  speakers: "Mr Mudit Tyagi"
+  speakers_title: "Senior Director for Innovations in Office of the CTO, F5"
+  title: "DevSecOps Driven Workload to Workload Zero Trust to Detect Advanced Threats"
+  video_id: uBt2ewhZRgI
+  
+- type: Lightning (Wed)
+  speakers: "Mr Seth Cheong"
+  speakers_title: "Principal Success Manager, Tableau at Salesforce"
+  title: "Building Blocks of a Successful Digital Transformation with Datafication"
+  video_id: fqqAxQQwqCM
+  
+- type: Lightning (Wed)
+  speakers: "Mr Samuel Loh, Mr Govind Venugopalan"
+  speakers_title: "Senior DevOps Engineer, GovTech| Associate Cybersecurity Specialist, GovTech"
+  title: "Security Suite for Engineering Endpoint Devices (SEED) - Featuring TechPass and DEEP"
+  video_id: 74nhAskZqzI
+  
+- type: Lightning (Wed)
+  speakers: "Mr Alex Chng"
+  speakers_title: "Senior Product Manager, GovTech"
+  title: "Runtime in No Time!"
+  video_id: F4Wr5K_dq_U
+  
+- type: Lightning (Wed)
+  speakers: "Mr Adrian Lee"
+  speakers_title: "Senior Solutions Engineer, Snowflake"
+  title: "Building a Distributed Data Mesh with a DevOps Approach"
+  video_id: Wd2NOyO98nk
+  
+- type: Lightning (Wed)
+  speakers: "Mr Damien Ngor, Mr Teo Cheng Yong"
+  speakers_title: "Senior Delivery Manager, GovTech| Senior Software Engineer, GovTech"
+  title: "The Singapore Government Developer Console: The Next Evolution for Accelerating WOG Digital Transformation"
+  video_id: ttQDiPoMzy4
+  
+- type: Lightning (Wed)
+  speakers: "Ms Jennifer Liu"
+  speakers_title: "Product Manager, Open Government Products, GovTech"
+  title: "How the ScamShield Product Suite is Fighting Scams in Singapore"
+  video_id: BSkDHCDSKHc  
+  
+- type: Lightning (Wed)
+  speakers: "Mr Karunakaran Prasanth Kumar"
+  speakers_title: "Director & Specialist Leader, MAS"
+  title: "Data Driven IT Operations & Benefits"
+  video_id: gyMxzoPtr54
+  
+- type: Lightning (Wed)
+  speakers: "Mr Quek Yong Jian"
+  speakers_title: "Senior Engineer (Unmanned Ground Vehicles), DSTA"
+  title: "How We Soup Up Robots"
+  video_id: t32wjIlCxNc
+  
+- type: Lightning (Wed)
+  speakers: "Mr Paul George Karippaparambil"
+  speakers_title: "Senior Product Manager, GovTech"
+  title: "Why You Can't Ignore Observability Anymore in the Public Sector?"
+  video_id: gzSy86HNCbQ
+  
+- type: Lightning (Wed)
+  speakers: "Ms Liu Fan"
+  speakers_title: "Lecturer, Institute of Systems Science, National University of Singapore"
+  title: "Big Data Solution for MRT Platform Crowd Analysis"
+  video_id: L3bnyxZyC8E
+  
+- type: Lightning (Wed)
+  speakers: "Mr Daniel Schöberle"
+  speakers_title: "Senior Solutions Engineer, Cloudera"
+  title: "Integration of Apache Iceberg Into Cloudera’s CDP Platform"
+  video_id: NCgsaqeOOFw
+  
+- type: Lightning (Wed)
+  speakers: "Ms Archanaa Ravikumar"
+  speakers_title: "Head of Engineering, Autumn Life"
+  title: "Eat a Peach, Build a Team!"
+  video_id: UfJVNF4tBAs
+  
+- type: Lightning (Wed)
+  speakers: "Mr Donnie Prakoso"
+  speakers_title: "Principal Developer Advocate, AWS"
+  title: "Infrastructure as Code and CI/CD in Practice with AWS CDK"
+  video_id: sXnkC2U-QQk
+  
+- type: Lightning (Wed)
+  speakers: "Mr Caleb Lee"
+  speakers_title: "System Engineer, GovTech"
+  title: "SmartGym - Personalised Fitness Goal Setting"
+  video_id: 2A0zA0wKwI4
+  
+- type: Lightning (Wed)
+  speakers: "Mr Alex Lew"
+  speakers_title: "Senior Program Architect, Salesforce"
+  title: "CRM Integration to SaaS CICD"
+  video_id: ZRhmCfHgh1Y
+  
+- type: Lightning (Wed)
+  speakers: "Mr Peter Teo"
+  speakers_title: "Lead Architect, IRAS"
+  title: "Cloud Native or Cloud Naïve?"
+  video_id: 8U9DhwKKiQE
+  
+- type: Lightning (Wed)
+  speakers: "Mr Samuel Loh, Ms Koh Lay Hian"
+  speakers_title: "Senior DevOps Engineer, GovTech| Senior Infrastructure Architect, GovTech"
+  title: "GovTech Projects - A General Recipe"
+  video_id: O2FV38C9ibY
+  
+- type: Lightning (Wed)
+  speakers: "Ms Samantha Wong"
+  speakers_title: "Software Engineer, GovTech"
+  title: "High Fidelity Deployment of MicroServices"
+  video_id: s-QZ3rR8WXU
+
+- type: Lightning (Wed)
+  speakers: "Mr Johnny Fang"
+  speakers_title: "Senior Solutions Engineer, HashiCorp"
+  title: "Guarding the Keys to your Kingdom : A Pragmatic Approach to Zero Trust within Public and Private Clouds"
+  video_id: d-s7q6EIuY8
+  
+- type: Lightning (Wed)
+  speakers: "Mr Zen Chua"
+  speakers_title: "Lead Product Manager, GovTech"
+  title: "The 10-minute Guide to Running an API Program"
+  video_id: Rhk5GxgEEyw
+  
+- type: Lightning (Wed)
+  speakers: "Dr T S Sakthivel"
+  speakers_title: "Director, Solution Architect Office (SAO), GovTech"
+  title: "Automating Cloud FinOps : Real Life Experiences from Large Scale Cloud Operations Across Organisations"
+  video_id: wCzGgs86I58
+  
+- type: Lightning (Wed)
+  speakers: "Mr Owi Wei How"
+  speakers_title: "DevOps Senior Solution Specialist, Oracle"
+  title: "Design Thinking in DevOps"
+  video_id: v8j5wjKK8z0
+  
+- type: Lightning (Wed)
+  speakers: "Mr Daryl Low"
+  speakers_title: "Assistant Director, GovTech"
+  title: "Enabling Data Sharing Ecosystems"
+  video_id: k1Zm2lalIu0
+  
+- type: Lightning (Wed)
+  speakers: "Mr Suresh Kumar Sarad"
+  speakers_title: "Product Manager, GovTech"
+  title: "Breaking Down Video Silos with CVX"
+  video_id: OXTU34zkeFE
+  
+- type: Lightning (Wed)
+  speakers: "Mr Derek Gooh"
+  speakers_title: "Director of Government CISO Office, GovTech"
+  title: "The CISO Ecosystem in Government"
+  video_id: NEUC7Ywwonc
+  
+- type: Lightning (Wed)
+  speakers: "Mr Nicolas Ni"
+  speakers_title: "Senior Infrastructure Engineer, GovTech"
+  title: "{{I2C}} – An Infra to Code ToolKit"
+  video_id: 7VULgMPK_JE
+  
+- type: Lightning (Wed)
+  speakers: "Mr Lee Yu Zhou"
+  speakers_title: "Founding Engineer, Abnormal Security"
+  title: "Building a Robust Threat Detection System for Social Engineered Cyber Threats"
+  video_id: Mztu41r-mg0
+  
+- type: Lightning (Wed)
+  speakers: "Mr Kenneth Lo"
+  speakers_title: "Software Engineer, GovTech"
+  title: "Gamifying to a Smarter Nation"
+  video_id: ZqfkZzWuuoQ
+  
+- type: Lightning (Wed)
+  speakers: "Mr Henry Lim"
+  speakers_title: "Lead Product Manager, GovTech"
+  title: "Indexing Videos on VAS"
+  video_id: rdncK7MQJ-E
+  
+- type: Lightning (Wed)
+  speakers: "Mr Roland Barcia"
+  speakers_title: "Director, Serverless Solution Architecture, AWS"
+  title: "Serverless Revolution: Functions or Containers"
+  video_id: RW6Yqtrrzmk
+  
+- type: Lightning (Bonus Track)
+  speakers: "Mr Ted Kwartler"
+  speakers_title: "VP, AI Trust, DataRobot"
+  title: "Enterprise Ready AI: Managing Governance and Risk"
+  video_id: V7M3joq2hmI
+ 
+- type: Lightning (Bonus Track)
+  speakers: "Mr Callum Davies"
+  speakers_title: "Managing Director, Just After Midnight"
+  title: "Best Practice Migrations to Cloud"
+  video_id: mjzBxOUYnCI
+  
+- type: Lightning (Bonus Track)
+  speakers: "Mr Alan Tang, Mr Zul Yang"
+  speakers_title: "Senior Product Manager, GovTech| Associate Software Engineer, GovTech"
+  title: "Introduction to enCRYPT: The Central Privacy Toolkit"
+  video_id: JSztbbxkRis
+  
+- type: Lightning (Bonus Track)
+  speakers: "Mr Shaun Khoo, Ms Chow Zi En"
+  speakers_title: "Data Scientist, GovTech| State Counsel, Attorney General's Chambers"
+  title: "Fairness in AI: How can Algorithmic Approaches Guide AI Governance?"
+  video_id: s14QEzrsrpo
+  
+- type: Lightning (Bonus Track)
+  speakers: "Mr Prasanna Alur Mathada"
+  speakers_title: "Advisory Software Engineer, IBM"
+  title: "Securing Kubernetes OpenShift Clusters to Ensure Maximum Safety with Minimal Efforts"
+  video_id: LkeepU3bRlg

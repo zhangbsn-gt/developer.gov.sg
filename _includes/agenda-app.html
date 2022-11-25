@@ -15,10 +15,12 @@
     <div class="sgds-card-content">
       <div>
         {% comment %} Event Timing {% endcomment %}
-        <p class="margin--bottom--none is-size-8 text-muted has-text-weight-semibold">
-          {{- event.timeslot -}}
-        </p>
-
+        {% if event.timeslot %}
+          <p class="margin--bottom--none is-size-8 text-muted has-text-weight-semibold">
+            {{- event.timeslot -}}
+          </p>
+        {% endif %}
+        
         {% comment %} Event Description {% endcomment %}
         {% if event.desc %}
           {%- include accordion-app.html

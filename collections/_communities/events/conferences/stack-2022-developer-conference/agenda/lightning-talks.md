@@ -30,7 +30,7 @@ category="Wed, Lightning"
 {% include agenda-app.html
 title="Bonus Track"
 _data='stack-2022-dev-conference'
-category="Bonus Track"
+category="Bonus Track, Lightning"
 %}
 
 <br />

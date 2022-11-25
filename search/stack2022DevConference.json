@@ -5,7 +5,7 @@
     "pages": [
       {%- assign events = site.data['stack-2022-dev-conference'] -%}
       {%- assign sorted_events = events | sort: 'timeslot_metadata'-%}
-      {%- assign icons = "star, square, triangle, circle, hexagon, parallelogram, diamond, plus, cresent, heart" | split: ', ' -%}
+      {%- assign icons = "star, square, triangle, circle, hexagon, parallelogram, diamond, plus, cresent, heart, clover, semicircle" | split: ', ' -%}
 
       {%- assign categories = '' | split: ',' %}
 

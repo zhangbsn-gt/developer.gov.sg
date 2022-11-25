@@ -12,14 +12,14 @@ multi_level_nav: true
 
 {% include videos-display.html 
 title="Tuesday (15/11/2022)"
-type="Tues Opening Address - VOD" 
+type="Opening Address (Tues)" 
 _data=video_data_file %}
 
 <br />
 
 {% include videos-display.html
 title="Wednesday (16/11/2022)"
-type="Wed Opening Address - VOD" 
+type="Opening Address (Wed)" 
 _data=video_data_file %}
 
 <br />
