@@ -47,6 +47,7 @@
   items:
     - Overview
     - Cloudscape
+    - SEED
 
 - name: Data and APIs
   description: Open APIs and platforms allowing developers to connect with data and services from the Government

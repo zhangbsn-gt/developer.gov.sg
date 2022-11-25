@@ -4,9 +4,8 @@
     - Overview
     - FormSG
     - GovText
-    - MASH
-    - Open Digital Platform
     - SEED
+    - Open Digital Platform
 
 - name: Citizen-facing Products
   description: Explore the government products for providing citizens with the services they need. This includes citizen life journey, grant services, and more!
@@ -72,6 +71,7 @@
     - SHIP-HATS
     - Singapore Government Design System
     - Secure Infrastructure-as-Code
+    - SEED
     - StackOps
     - TechBiz
     - Transcribe

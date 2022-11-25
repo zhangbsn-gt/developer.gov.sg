@@ -63,6 +63,13 @@
     - Features
     - Getting Started
     - FAQs
+    
+- name: SEED
+  items:
+    - Overview
+    - Features
+    - Getting Started
+    - Resources
 
 # Data and APIs
 - name: APEX
