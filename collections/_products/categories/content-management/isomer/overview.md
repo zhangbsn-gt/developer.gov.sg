@@ -1,5 +1,5 @@
 ---
-title: Isomer
+title: Isomer - The one-stop static site builder for government informational sites
 layout: layout-page-sidenav
 category: Content management
 _data: single-level-nav
@@ -10,39 +10,51 @@ redirect_from:
     - /technologies/content-management/isomer.html
 sub_collection_render: true
 single_level_nav: true
-description: >
-  Isomer is an informational website generator that provides templates
-  for websites with hosting and is compliant to applicable clauses in
-  Instruction Manual 8 (IM8), Design Service Standard (DSS) and Usability Checklist (UC).
+description: Isomer helps public agencies build static, secure, and usable websites quickly. Find out more.
 ---
 
-## Overview
+![Isomer header banner](/assets/img/isomer-HeaderBanner-v1.png)
 
-[Isomer](https://www.isomer.gov.sg/) is an informational website generator created by the Government Technology Agency of Singapore (GovTech).
+[Isomer](https://www.isomer.gov.sg/){:target="\_blank"} is an informational website generator created by GovTech's Open Government Products team. It is an easy-to-deploy static website building and hosting service designed to help public officers create usable, secure, and faster informational websites within days.
 
-It provides templates for websites with hosting and is compliant to applicable clauses in Instruction Manual 8 (IM8), Digital Service Standards (DSS) and Usability Checklist (UC).
+It provides templates for websites with hosting and is compliant with applicable clauses in the [Instruction Manual for Infocomm Technology and Smart Systems (ICT&SS) Management](https://www.developer.tech.gov.sg/guidelines/standards-and-best-practices/instruction-manual-for-ict-ss-management.html){:target="\_blank"} (previously known as previously known as IM8), the [Digital Service Standards (DSS)](https://www.developer.tech.gov.sg/guidelines/standards-and-best-practices/digital-service-standards.html){:target="\_blank"} and the Usability Checklist (UC).
 
-GovTech built, provides training for and maintains Isomer as a service to all Singapore Government Agencies.
+GovTech built and maintains Isomer as a service to all Singapore Government Agencies and Healthcare Institutions. The free service covers website hosting, maintenance, and support for the system. 
 
-Isomer is free of charge. The service covers website hosting, maintenance, support and training for the system.
+As Isomer sites are static sites, there are no databases to hack and no vulnerabilities like SQL injections or XSS.
 
-### IM Compliance
+<figure style="text-align: center">
+  <img
+    src="/assets/img/isomer-examples.png" width="100%" height="100%"
+  />
+	  <figcaption>Fig 1: Examples of Isomer websites.</figcaption>
+</figure>
 
-Isomer users do not need to worry about applicable clauses in IM8 for websites that are on Isomer. The fulfillment of these clauses will be centrally managed by GovTech.
+GovTech creates and manages the design for all Isomer sites and ensures they remain accessible, secure, and fast. This model works very well for sites that are informational in nature, such as small corporate or initiative sites, that need to launch quickly.
 
-### Responsibilities of Isomer users
+The Isomer team is now working on enhancing Isomer’s Security to verify the legitimacy of users, and keeping the end-to-end experience within the CMS by moving users off GitHub. Upcoming plans include exploring new templates for various use cases and Block Editing to improve the user experience in editing the CMS. In the future, the Isomer team will be bridging the gaps to cater to larger, more complex sites.
 
-Your agency will be responsible for maintaining and ensuring that your website content meets content-related standards in DSS. Isomer will be responsible for website hosting, maintenance, support and ensuring compliance to relevant clauses of IM8, DSS and UC.
 
-### Migrating existing content
+### Key Features 
 
-Your agency will be responsible for choosing what content to migrate and also the migration of the content. GovTech will support your agency by providing training.
+- Accessibility by default with pre-tested user interface
+- Static site architecture
+- Automated monitoring
+- WYSIWYG content editor
+- Integration with useful services such as YouTube, Google Calendar, FormSG
+- Auto-renewable SSL Certificate
+- Compliance with the Instruction Manual for ICT&SS Management
+- Secure by default
 
-### What are my options if I am unable to use Isomer?
+### Success Stories
 
-If a static site generator does not fit your requirements, consider using [CWP](/products/categories/content-management/content-website-platform) coupled with [Government Design System (SGDS)](/products/categories/design/singapore-government-design-system).
+- Over 150 live agency sites across 50 agencies
+- Isomer has a 99.99% uptime record for government websites
+- Websites such as [Singapore Together](https://www.singaporetogether.gov.sg/){:target="\_blank"} and [www.covid.gov.sg](https://www.covid.gov.sg/){:target="\_blank"} have been launched in a matter of days
 
-[Find out more about Isomer](https://www.isomer.gov.sg/).
+### Pricing 
+
+Isomer is free of charge for Singapore Government agencies. The Isomer service covers website hosting, maintenance, and support for the system.
 
 ### Contact Us
 

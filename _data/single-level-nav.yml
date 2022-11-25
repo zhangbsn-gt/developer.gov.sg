@@ -51,6 +51,11 @@
 - name: Isomer
   items:
     - Overview
+    - Features
+    - Getting Started
+    - Resources
+    - FAQs
+    - Meet The Team
 
 - name: OpenDoc
   items:
