@@ -65,8 +65,8 @@
 - type: Tues, Keynotes
   timeslot: 04:00 PM - 04:30 PM
   timeslot_metadata: 2022-11-15T16:00:00+08:00 - 2022-11-15T16:30:00+08:00
-  title: How to Scale Your Business with a DevOps Platform
-  desc: The past few years have shown that all companies must become software companies if they want to quickly adapt and compete - and DevOps plays a critical role in helping businesses achieve this. But what's the difference between DevOps tools and a DevOps platform? Join Sid Sijbrandij, CEO and co-founder of GitLab (the One DevOps platform), as he answers why a platform has a greater impact on productivity, security, and operational excellence. You'll also hear how other businesses and the public sector are leveraging a DevOps platform, and how you can further the scalability of a platform by co-creating with the community.
+  title: Our Values Shape Our Product
+  desc: "The past few years have shown that all companies must become software companies if they want to quickly adapt and compete – and DevOps plays a critical role in helping businesses achieve this. But what’s the difference between DevOps tools and a DevOps platform? And how do company values impact the value of the company’s products? Join Sid Sijbrandij, CEO and Co-founder of GitLab (the One DevOps platform), as he answers why a platform has a greater impact on productivity, security, and operational excellence. You’ll also hear how values had a major impact on GitLab’s journey to create the One DevOps platform and how other companies can benefit from the culture-focused lessons learned by GitLab."
   speakers:
     - name: Mr Sytse 'Sid' Sijbrandij
       image: /assets/img/photos/sytse-sijbrandij.png
