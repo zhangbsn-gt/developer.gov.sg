@@ -5,7 +5,6 @@ category: Infrastructure and Hosting
 _data: single-level-nav
 sub_collection_render: true
 single_level_nav: true
-collection_group: [What's New]
 description: I<sub>2</sub>C is an API-based solution to manage and maintain cloud resources programmatically. Learn more!
 ---
 

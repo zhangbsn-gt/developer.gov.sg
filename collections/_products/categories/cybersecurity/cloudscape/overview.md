@@ -11,7 +11,7 @@ single_level_nav: true
 sgts_collection_group: [monitoring]
 sgts_layer_group: [base]
 sgts_title: CloudSCAPE
-collection_group: [Singapore Government Tech Stack, What's New]
+collection_group: [Singapore Government Tech Stack]
 description: CloudSCAPE provides continuous security scans and simplifies compliance management for Government systems deployed on GCC 2.0. Find out more.
 product_homepage_links: https://cloudscape.tech.gov.sg
 ---

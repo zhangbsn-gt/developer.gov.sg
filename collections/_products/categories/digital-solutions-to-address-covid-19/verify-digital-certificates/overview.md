@@ -8,7 +8,6 @@ redirect_from:
 _data: single-level-nav
 sub_collection_render: true
 single_level_nav: true
-collection_group: [What's New]
 description: Verify (Digital Certificates) is the Singapore Government's trusted government verifier for OpenAttestation (.OA) files.
 ---
 

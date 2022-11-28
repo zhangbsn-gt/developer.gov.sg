@@ -8,7 +8,6 @@ redirect_from:
 _data: single-level-nav
 sub_collection_render: true
 single_level_nav: true
-collection_group: [What's New]
 description: Vault is a platform where government data is consolidated, organised and made discoverable for public servants to explore, search and securely access.
 ---
 

@@ -5,7 +5,7 @@ category: Digital Identity
 sub_collection_render: true
 single_level_nav: true
 _data: single-level-nav
-collection_group: [Citizen-facing Products, What's New]
+collection_group: [Citizen-facing Products]
 redirect_from:
     - /products/categories/digital-identity/singpass/
     - /products/categories/digital-identity/singpass.html

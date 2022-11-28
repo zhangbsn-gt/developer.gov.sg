@@ -11,7 +11,7 @@ single_level_nav: true
 sgts_collection_group: [service_management]
 sgts_layer_group: [base]
 sgts_title: TechBiz
-collection_group: [Singapore Government Tech Stack, What's New]
+collection_group: [Singapore Government Tech Stack]
 description: TechBiz is a service management tool for government officers to manage SGTS services on a single console. Find out more here!
 ---
 

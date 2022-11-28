@@ -8,7 +8,6 @@ redirect_from:
 _data: single-level-nav
 sub_collection_render: true
 single_level_nav: true
-collection_group: [What's New]
 description: OpenAttestation is an open-source framework for verifiable documents and transferable records on the blockchain. Find out more.
 ---
 

@@ -8,7 +8,7 @@ redirect_from:
     - /products/categories/productivity-tools/redeemsg.html
 sub_collection_render: true
 single_level_nav: true
-collection_group: [Citizen-facing Products, What's New]
+collection_group: [Citizen-facing Products]
 description: RedeemSG digitalises, simplifies and enhances the voucher redemption process for public agencies, participating merchants and citizens. Find out more!
 ---
 

@@ -11,7 +11,7 @@ single_level_nav: true
 sgts_collection_group: [data_science]
 sgts_layer_group: [services]
 sgts_title: Transcribe
-collection_group: [Singapore Government Tech Stack, Data Science and Artificial Intelligence, What's New]
+collection_group: [Singapore Government Tech Stack, Data Science and Artificial Intelligence]
 description: Transcribe provides auto-transcription and localised Speech-to-Text services for Singapore government officers. Find out more here.
 ---
 

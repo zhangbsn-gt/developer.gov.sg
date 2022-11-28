@@ -8,7 +8,7 @@ redirect_from:
 _data: single-level-nav
 sub_collection_render: true
 single_level_nav: true
-collection_group: [What's New, Citizen-facing Products]
+collection_group: [Citizen-facing Products]
 description: Notarise allows government agencies to authenticate and endorse HealthCerts for safe travel. Learn from Singapore’s model here.
 ---
 

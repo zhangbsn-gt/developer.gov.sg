@@ -7,7 +7,6 @@ redirect_from:
     - /products/categories/platform/mymoneysense/
 sub_collection_render: true
 single_level_nav: true
-collection_group: [What's New]
 description: MyMoneySense is a free financial planning digital service provided by the Singapore government for citizens. Find out more!
 ---
 

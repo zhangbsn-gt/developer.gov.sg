@@ -11,7 +11,7 @@ single_level_nav: true
 sgts_collection_group: [runtime]
 sgts_layer_group: [base]
 sgts_title: SIaC
-collection_group: [Singapore Government Tech Stack, What's New]
+collection_group: [Singapore Government Tech Stack]
 description: SIaC provides reference templates to configure and deploy secure infrastructure onto the Singapore Government on Commercial Cloud 2.0. Find out more here!
 ---
 

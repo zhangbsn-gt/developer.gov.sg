@@ -15,7 +15,7 @@ redirect_from:
 sgts_collection_group: [infrastructure_and_hosting]
 sgts_layer_group: [host]
 sgts_title: Gov on Commercial Cloud
-collection_group: [Singapore Government Tech Stack, What's New]
+collection_group: [Singapore Government Tech Stack]
 description: >
   Through GCC, government agencies can now onboard systems into commercial clouds, improving service delivery and efficiency of work processes. Adopt GCC now!
 ---
