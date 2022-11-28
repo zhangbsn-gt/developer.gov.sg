@@ -309,6 +309,9 @@
 - name: LifeSG
   items:
     - Overview
+    - Features
+    - Getting Started
+    - FAQs
 
 - name: MyMoneySense
   items:
