@@ -1,5 +1,5 @@
 ---
-title: FormSG — Create digital forms for citizens in minutes  
+title: FormSG — Create Digital Forms for Citizens in Minutes  
 layout: layout-page-sidenav
 category: Productivity Tools
 _data: single-level-nav
