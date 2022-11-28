@@ -1,5 +1,5 @@
 ---
-title: Isomer - The one-stop static site builder for government informational sites
+title: Isomer - The One-stop Static Site Builder for Government Informational Sites
 layout: layout-page-sidenav
 category: Content management
 _data: single-level-nav
