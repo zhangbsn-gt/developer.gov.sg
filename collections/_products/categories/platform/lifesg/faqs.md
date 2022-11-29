@@ -7,7 +7,7 @@ _data: single-level-nav
 faqs:
   - name: How can I get help with LifeSG?
     description: >
-      If you’re experiencing technical problems with the LifeSG app, email helpdesk@life.gov.sg.
+      If you’re experiencing technical problems with the LifeSG app, email <a href="mailto:helpdesk@life.gov.sg">helpdesk@life.gov.sg</a>.
       
       If you’re a senior looking to learn how to use digital government services, explore <a href="https://www.imda.gov.sg/en/seniorsgodigital" target="_blank">Seniors Go Digital</a> programmes by the Infocomm Media Development Authority (IMDA).
 
