@@ -487,7 +487,7 @@
   desc: "Continuous integration and delivery (CICD for short) has evolved quite a bit in the last few years, and in 2022 there are an abundance of different tools and methodologies for software developers to recruit in order to deliver their products to the market faster. In this talk, Aries will highlight some of these best practices, as well as dive into the future of what CICD looks like. Topics such as managing complex application state, application dependency management, and continuous security as a part of CI will be covered.<br><br>Theme: Fail-Safe App Development"
   additional_info_1: "Who should attend | Attendees in the cloud, application engineering, DevOps, DevSecOps, and computer, network and cyber security would benefit from this talk."
   speakers:
-    - name: Mr Aris Youssefian
+    - name: Mr Aries Youssefian
       image: /assets/img/photos/aris-youssefian.png
       title: Product Architect, CloudCover
       desc: "Aries Youssefian is a product architect working for CloudCover, a cloud-native systems integration and software delivery company based in Singapore. He is primarily focused on building the next generation of developer tooling and platforms for an increasingly hyper-converged cloud and software world. Prior to CloudCover, Aries worked for software startups Stratoscale and Tesora, and is also an alumnus of Dell and VMware. He holds a Bachelors of Information Technology (Honours) from the University of Ontario Institute of Technology in Oshawa, Ontario, Canada."
