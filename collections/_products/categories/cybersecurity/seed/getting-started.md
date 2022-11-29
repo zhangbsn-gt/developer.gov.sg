@@ -8,7 +8,7 @@ _data: single-level-nav
 
 Users can onboard their Government Furnished Equipment or vendor-supplied equipment to SEED. 
 
-You will need a TechPass account, SEED provisioning and a device with the supported operating systems and the required permissions.
+You will need a [TechPass](https://www.developer.tech.gov.sg/products/categories/digital-identity/techpass/overview){:target="_blank"} account, SEED provisioning and a device with the supported operating systems and the required permissions.
 
 For more information on the prerequisites for onboarding to SEED, click [here](https://docs.developer.tech.gov.sg/docs/security-suite-for-engineering-endpoint-devices/prerequisites-for-onboarding){:target="_blank"} 
 

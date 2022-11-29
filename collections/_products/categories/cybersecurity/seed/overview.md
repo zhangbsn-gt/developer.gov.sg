@@ -6,11 +6,9 @@ _data: single-level-nav
 redirect_from:
     - /products/categories/cybersecurity/seed/
     - /products/categories/cybersecurity/seed.html
-    - /products/categories/digital-identity/techpass/
-    - /products/categories/digital-identity/techpass.html
 sub_collection_render: true
 single_level_nav: true
-sgts_collection_group: [service management]
+sgts_collection_group: [service_management]
 sgts_layer_group: [base]
 sgts_title: SEED
 collection_group: [Singapore Government Tech Stack, What's New]
@@ -19,7 +17,7 @@ description: SEED is a Mobile Device Management (MDM) platform for the Governmen
 
 ![SEED header banner](/assets/img/SEED-HeaderBanner-v1.png)
 
-SEED is the Singapore Government's implementation of an Identity and Access Management (IAM) and zero trust platform that protects against unauthorised access to Government engineering resources for services such as the Government on Commercial Cloud (GCC) 2.0 and the Singapore Government Tech Stack (SGTS). 
+SEED is the Singapore Government's implementation of an Identity and Access Management (IAM) and zero trust platform that protects against unauthorised access to Government engineering resources for services such as the Government on Commercial Cloud (GCC) 2.0 and the Singapore Government Tech Stack (SGTS).
 
 SEED is part of the service management component of the [Singapore Government Tech Stack (SGTS)](https://www.developer.tech.gov.sg/singapore-government-tech-stack/overview/index.html){:target="_blank"}. SGTS is a set of platform tools that streamlines and simplifies the development process and enables code reuse across WOG to build secure, high-quality applications.
 
@@ -35,7 +33,7 @@ Zero Trust replaces traditional Virtual Private Network (VPN) connections and ne
 
 SEED comprises the following components:
 
-- TechPass - An Identity & Access Management (IAM) and Single Sign-On (SSO) solution
+- [TechPass](/products/categories/digital-identity/techpass/overview.html){:target="_blank"} - An Identity & Access Management (IAM) and Single Sign-On (SSO) solution
 - Cloudflare Teams - A security platform that enforces Zero trust network access 
 - DEEP (Development Environment Endpoint Posture) – the device management layer of the MDM platform
 

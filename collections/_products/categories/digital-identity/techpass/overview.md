@@ -11,7 +11,7 @@ sub_collection_render: true
 single_level_nav: true
 sgts_collection_group: [service_management]
 sgts_layer_group: [base]
-sgts_title: SEED & TechPass
+sgts_title: TechPass
 collection_group: [Singapore Government Tech Stack]
 description: >
   TechPass is an Identity & Access Management (IAM) system that is equipped with Single Sign On (SSO).
