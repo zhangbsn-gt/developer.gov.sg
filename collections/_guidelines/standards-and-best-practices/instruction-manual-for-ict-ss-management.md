@@ -64,11 +64,9 @@ All Government Ministries, Organs of State, Departments, and Statutory Boards ar
 
 ### Resources and Templates
 
-DSS:[/guidelines/standards-and-best-practices/digital-service-standards.html](/guidelines/standards-and-best-practices/digital-service-standards.html){:target="\_blank"}.
-
-TPM: [https://www.smartnation.gov.sg/files/publications/key-policies-third-party-framework.pdf](https://www.smartnation.gov.sg/files/publications/key-policies-third-party-framework.pdf){:target="\_blank"}.
-
-Data: [https://www.smartnation.gov.sg/about-smart-nation/secure-smart-nation/personal-data-protection-laws-and-policies](https://www.smartnation.gov.sg/about-smart-nation/secure-smart-nation/personal-data-protection-laws-and-policies){:target="\_blank"}.
+- [DSS](/guidelines/standards-and-best-practices/digital-service-standards.html){:target="\_blank"}
+- [TPM](https://www.smartnation.gov.sg/files/publications/key-policies-third-party-framework.pdf){:target="\_blank"}
+- [Data](https://www.smartnation.gov.sg/about-smart-nation/secure-smart-nation/personal-data-protection-laws-and-policies){:target="\_blank"}
 
 ### Case Studies
 

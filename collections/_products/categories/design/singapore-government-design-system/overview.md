@@ -83,9 +83,3 @@ On top of feature enhancements, the team will be creating additional patterns an
 ### Contact Us
 
 {% include contact-us-form.html %}
-
-<br/>**Technical Resources**
-- [SGDS Guide for Developers](https://www.designsystem.tech.gov.sg/guides/developers-accessibility/){:target="_blank"}
-- [SGDS Guide for Designers](https://www.designsystem.tech.gov.sg/guides/designers-accessibility/){:target="_blank"}
-- [SGDS Guide for Writers](https://www.designsystem.tech.gov.sg/guides/writers-accessibility/){:target="_blank"}
-- [Components and getting started](https://www.designsystem.tech.gov.sg/docs/getting-started/){:target="_blank"}
