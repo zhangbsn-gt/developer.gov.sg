@@ -56,7 +56,7 @@ Check out [Tools in SHIP-HATS 2.0](https://docs.developer.tech.gov.sg/docs/ship-
 
 ### What’s New?
 
-SHIP-HATS 2.0 tools are announced! Check out the [migration documentation](https://docs.developer.tech.gov.sg/docs/ship-hats-migration/#/ship-hats-migration-to-2.0) for details. 
+SHIP-HATS 2.0 tools are announced! Check out the [migration documentation](https://docs.developer.tech.gov.sg/docs/ship-hats-migration/#/ship-hats-migration-to-2.0){:target="_blank"} for details. 
 
 ### Subscription
 
