@@ -6,11 +6,11 @@
   {% if current_folder_name == folder_name %}
     {% if item.product_homepage_links and include.mobile == false %}
       <li>
-        <a id="dynamic-product-homepage-button" class="sgds-button is-secondary sgds-hero-buttons is-hidden-touch product-login-button is-fullwidth" href="{{ item.product_homepage_links | default : '#!' }}" target="_blank">Login</a>
+        <a id="dynamic-product-homepage-button" class="sgds-button is-secondary sgds-hero-buttons is-hidden-touch product-login-button is-fullwidth" href="{{ item.product_homepage_links | default : '#!' }}" target="_blank" rel="noopener noreferrer">Login</a>
       </li>
     {%- endif -%}
     {% if item.product_homepage_links and include.mobile == true %}
-      <a id="dynamic-product-homepage-button" class="sgds-button is-secondary sgds-hero-buttons is-hidden-desktop product-login-button is-fullwidth" href="{{ item.product_homepage_links | default : '#!' }}" target="_blank">Login</a>
+      <a id="dynamic-product-homepage-button" class="sgds-button is-secondary sgds-hero-buttons is-hidden-desktop product-login-button is-fullwidth" href="{{ item.product_homepage_links | default : '#!' }}" target="_blank" rel="noopener noreferrer">Login</a>
   {%- endif -%}
-  {%- endif -%}  
-{% endfor %} 
+  {%- endif -%}
+{% endfor %}

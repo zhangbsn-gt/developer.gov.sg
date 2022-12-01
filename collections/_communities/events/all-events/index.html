@@ -13,8 +13,8 @@ layout: layout-page
 
   <div class="spacing-container-horizontal spacing-16">
     <strong class="label-text-to-hide">Filter lists: </strong>
-    <form name="form" style="flex: auto;" class="search-box-defined-width row" action="/communities/events/all-events/"
-      method="get">
+    <form method="get" name="form" class="search-box-defined-width row" style="flex: auto;"
+      onsubmit="return redirectAllEvents()">
       <div class="col">
         {% include search-box.html id='query-all-events' placeholder='Search event titles' %}
       </div>
@@ -22,7 +22,7 @@ layout: layout-page
         <div class="field">
           <div class="control has-icons-right is-expanded is-fullwidth">
             <select class="input" id='query-all-category' name="category_filter" autocomplete="off"
-              onchange="redirect()">
+              onchange="redirectAllEvents()">
               <option value="All Types">All Types</option>
               <option value="Conference">Conference</option>
               <option value="Stack-x Meetup">STACK-X Meetup</option>
@@ -36,7 +36,8 @@ layout: layout-page
       <div class="col">
         <div class="field">
           <div class="control has-icons-right is-expanded is-fullwidth">
-            <select class="input" id='query-all-year' name="year_filter" autocomplete="off" onchange="redirect()">
+            <select class="input" id='query-all-year' name="year_filter" autocomplete="off"
+              onchange="redirectAllEvents()">
               <option value="All Time">All Time</option>
               <option value="2022">2022</option>
               <option value="2021">2021</option>
@@ -54,18 +55,21 @@ layout: layout-page
   <div id="search-app-all-events">
   </div>
 </div>
-<script>
-  function redirect() {
+<script defer="defer" type="text/javascript">
+  function redirectAllEvents() {
     var params = {};
-    for (var i = 0; i < document.form.elements.length; i++) {
-      var fieldName = document.form.elements[i].name;
-      var fieldValue = document.form.elements[i].value;
-      params[fieldName] = fieldValue;
-    }
+    try {
+      for (var i = 0; i < document.form.elements.length; i++) {
+        var fieldName = document.form.elements[i].name;
+        var fieldValue = document.form.elements[i].value;
+        params[fieldName] = fieldValue;
+      }
 
-    window.location.href = '?query=' + params['query'] + '&' + 'category_filter=' + params['category_filter'] +
-      '&' + 'year_filter=' + params['year_filter'];
-    return false;
+      window.location.href = encodeURI("/communities/events/all-events/?query=" + params["query"] + "&" + "category_filter=" + params["category_filter"] + "&" + "year_filter=" + params["year_filter"]);
+      return false;
+    } catch (err) {
+      return true;
+    }
   }
 </script>
 <script async id="all-events-script-tag" src="/assets/bundles/vue-search-app-all-events.bundle.js"

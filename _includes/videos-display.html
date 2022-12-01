@@ -66,11 +66,11 @@
           </p>
           {% if article_link != nil %}
 
-          You can read the article <a href="{{ video.article_link}}" target="_blank">here</a>.
+          You can read the article <a href="{{ video.article_link}}" target="_blank" rel="noopener noreferrer">here</a>.
           {% endif %}
 
           {% if slide_link != nil %}
-          <a href="{{ '/assets/files/' | append: video.slide_link }}" target="_blank">
+          <a href="{{ '/assets/files/' | append: video.slide_link }}" target="_blank" rel="noopener noreferrer">
             View Slides
           </a>
           {% endif %}

@@ -19,7 +19,7 @@ sgts_title: Personalise
 
         {% for item in site.products  %}
           {% if item.sgts_collection_group contains include.category and item.sgts_layer_group contains include.layer %}
-            <a href={{item.redirect_from[0]}} target="_blank">
+            <a href={{item.redirect_from[0]}} target="_blank" rel="noopener noreferrer">
               <li class="live margin--top--none margin--bottom">{{item.sgts_title}}</li>
             </a>
           {% endif %}

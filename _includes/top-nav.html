@@ -57,7 +57,7 @@
       const query = document.getElementById(id).value;
 
       // Afterwards, redirect users to the search page, located at localhost:4000/search
-      window.location.href =  `/search/?query=${query}`;
+      window.location.href =  encodeURI(`/search/?query=${query}`);
 
       return false;
     } catch (e) {
