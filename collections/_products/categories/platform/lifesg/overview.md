@@ -34,7 +34,7 @@ The LifeSG team is working with partner agencies to onboard more services and gu
 - Explore services
 - Profile with Inbox and Appointment functions
 
-Refer to the “Features” tab for more details. 
+Refer to the [Features](/products/categories/platform/lifesg/features){:target="_blank"} tab for more details. 
 
 ### Success Stories
 
