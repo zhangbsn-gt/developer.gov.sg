@@ -48,7 +48,7 @@ To date, over 600 government digital services are on the GCC. Examples of some o
 
 During the COVID-19 pandemic, Singapore’s [Ministry of Education (MOE)](https://www.moe.gov.sg/){:target="\_blank"} was able to successfully enable Home-Based Learning (HBL) within a week’s notice. This was due to the hosting of its Student Learning Space (SLS) on the GCC, which allowed SLS to ride on cloud IaaS and PaaS functionalities to deliver a seamless and smooth HBL experience for students. This allowed SLS to meet the increased demand for HBL during the pandemic by scaling its uptake from 100,000 to 300,000 concurrent students.
 
-General Availability (GA) of GCC 2.0 for AWS was implemented on 4 May 2022, while GCC 2.0 for Azure is estimated to be ready around Q3 of 2022. It will be leveraged as a whole-of-government (WOG) platform along with the Singapore Government Tech Stack (SGTS) for modern app development. The roadmap for GCC 2.0 includes milestones for integration with different cloud service providers and the implementation of a co-sourced model, as shown below.
+General Availability (GA) of GCC 2.0 for AWS was implemented on 4 May 2022, while GCC 2.0 for Azure was released on 30 November 2022. GCC will be leveraged as a whole-of-government (WOG) platform along with the Singapore Government Tech Stack (SGTS) for modern app development. The roadmap for GCC 2.0 includes milestones for integration with different cloud service providers and the implementation of a co-sourced model, as shown below.
 
 <figure style="text-align: center">
   <img
