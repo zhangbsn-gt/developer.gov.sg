@@ -19,7 +19,7 @@ Our WGs have also produced in-depth reports on 2022's topics. Please click on th
 
 - [MVP - good practice for new AI products and services for governments and central government departments by the DGX AI WG](files/mvp-ai-good-practice-for-governments-and-central-govt-departments.pdf){:target="_blank"}
 - [Use cases on AI by the DGX AI WG](files/dgx-2022-ai-group-use-cases.pdf){:target="_blank"}
-- [Digital Identity and Verifiable Credentials in centralised, decentralised and hybrid systems by the DGX Digital Identity WG](files/DGX Working Group_Digital Identity.pdf){:target="_blank"}
+- [Digital Identity and Verifiable Credentials in centralised, decentralised and hybrid systems by the DGX Digital Identity WG](files/DGX DIWG 2022 Report v1.5.pdf){:target="_blank"}
 - [Update on Zero Trust by the DGX Cybersecurity WG](files/DGX Working Group_Cybersecurity.pdf){:target="_blank"}
 
 Feel free to contact us at <tmo@tech.gov.sg> for more information.
