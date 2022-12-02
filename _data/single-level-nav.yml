@@ -306,6 +306,8 @@
 - name: GoBusiness
   items:
     - Overview
+    - Features
+    - FAQs
 
 - name: LifeSG
   items:
