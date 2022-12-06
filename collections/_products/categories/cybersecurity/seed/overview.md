@@ -1,5 +1,5 @@
 ---
-title: Security Suite for Engineering Endpoint Devices (SEED) – Mobile Device Management (MDM) platform for GCC 2.0 environment  
+title: Security Suite for Engineering Endpoint Devices (SEED) – Mobile Device Management (MDM) Platform for GCC 2.0 Environment  
 layout: layout-page-sidenav
 category: Cybersecurity
 _data: single-level-nav

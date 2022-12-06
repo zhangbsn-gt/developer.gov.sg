@@ -1,5 +1,5 @@
 ---
-title: Getting started with SEED
+title: Getting Started with SEED
 layout: layout-page-sidenav
 description: Onboarding steps for SEED
 single_level_nav: true
