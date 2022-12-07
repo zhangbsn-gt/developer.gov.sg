@@ -14,21 +14,6 @@ redirect_from:
 
 [SHIP-HATS](./overview){:target="_blank"} manages its tenants through subscriptions and only agencies can subscribe to SHIP-HATS. Agencies can extend subscriptions to non-agency users such as vendors. 
 
-Table 1 shows the subscription details of SHIP-HATS 1.0. We are working on SHIP-HATS 2.0 subscription details - stay tuned for updates. 
+All Public Officers can [**view pricing details on GSIB**](https://go.gov.sg/sh2indicative){:target="_blank"} (via link hosted on intranet).
 
-**There are 4 subscription tiers: Starter, Squad, Team, and Tribe. in SHIP-HATS 1.0**
-
-<figure style="text-align: center">
-  <img
-    src="/assets/img/ship-hats-subscription-table.png" width="80%" height="80%" 
-    alt="Table 1: SHIP-HATS 1.0 Resources and Services For Subscription Tiers & Add-Ons"
-  />
-  <figcaption>Table 1: SHIP-HATS Resources and Services For Subscription Tiers & Add-Ons</figcaption>
-</figure>
-
-Public officers can visit the [intranet website for pricing](https://sgdcs.sgnet.gov.sg/sites/IDA-GoSync/gdspdd-ai/ship/_layouts/15/start.aspx#/SitePages/Pricing.aspx){:target="_blank"}. For further queries on pricing, please drop us an email at <enquiries_ENP@tech.gov.sg>.  
- 
-### Understanding SHIP-HATS subscription
-<iframe src="https://www.youtube.com/embed/ksUEnR78m4w?showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-For more information, refer to [Subscription FAQ](https://docs.developer.tech.gov.sg/docs/ship-hats-documentation/#/subscription){:target="_blank"}
+Refer to [SHIP-HATS 2.0 Subscription documentation](https://docs.developer.tech.gov.sg/docs/ship-hats-getting-started/subscription){:target="_blank"} for details.

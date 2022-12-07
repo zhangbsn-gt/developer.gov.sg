@@ -36,23 +36,20 @@ This is a multi-tenanted Software-as-a-Service (SaaS) based end-to-end CI/CD for
 5. **Economies of Scale:** SHIP-HATS purchases licenses in bulk and redistributes them for use in smaller quantities to agencies and is offered as a complete package with no hidden cost.
 6. **GovTech Managed:** The CI/CD tools are procured and managed by GovTech letting you focus on your core application.
 7. **Performance Management Dashboard:** Value-Stream Measurement capabilities that allow Agencies to capture key industry metrics, such as lead time to deployment and deployment frequency, to monitor the effectiveness of their DevSecOps practices
+
 ### Tools in SHIP-HATS
 
-|     Category  |                  Tools                     |
-|     --------  | ------------------------------------------ |
-|  Project Management  |        GitLab Service Desk, Issues & Wiki, Jira (Cloud), Confluence (Cloud)         |
-|  Development, Build, Release  |       GitLab        |
-| QA & Security | GitLab, SonarQube, Fortify SCA & WebInspect, Prisma Cloud Container Image Scanner |
-
-
-Check out [Tools in SHIP-HATS 2.0](https://docs.developer.tech.gov.sg/docs/ship-hats-migration/#/ship-hats-migration-overview?id=change-summary){:Target="_blank"} to learn more.
+Check out [Tools in SHIP-HATS 2.0](https://docs.developer.tech.gov.sg/docs/ship-hats-getting-started/ship-hats-tools){:target="_blank"} to learn more.
 
 ### Technical Documentation
 
-1. SHIP-HATS 2.0 technical documentation - Coming soon!
-2. [SHIP-HATS 1.0 technical documentation](https://docs.developer.tech.gov.sg/docs/ship-hats-documentation/#/){:Target="_blank"}.
-3. [DevSecOps Playbook](https://docs.developer.tech.gov.sg/docs/devsecops-playbook/#/){:Target="_blank"}.
+SHIP-HATS 2.0 provides you with the following documentation resources to assist you in onboarding to SHIP-HATS and get started with your CI/CD pipeline: 
 
+- [Getting Started documentation](https://docs.developer.tech.gov.sg/docs/ship-hats-getting-started/#/){:target="_blank"}
+- [Portal documentation](https://docs.developer.tech.gov.sg/docs/ship-hats-portal/#/ship-hats-portal-overview){:target="_blank"}
+- [Tools documentation](https://docs.developer.tech.gov.sg/docs/ship-hats-tools/#/){:target="_blank"}
+- [DevSecOps Playbook](https://docs.developer.tech.gov.sg/docs/devsecops-playbook/#/){:target="_blank"}
+- [SHIP-HATS 1.0 technical documentation](https://docs.developer.tech.gov.sg/docs/ship-hats-documentation/#/){:target="_blank"}
 
 ### What’s New?
 
@@ -60,7 +57,7 @@ SHIP-HATS 2.0 tools are announced! Check out the [migration documentation](https
 
 ### Subscription
 
-While we work on SHIP-HATS 2.0 subscription details, you can check out [SHIP-HAT 1.0 subscriptions](./subscription){:target="_blank"} details. Stay tuned for updates. 
+Refer to [SHIP-HATS 2.0 Subscription](https://docs.developer.tech.gov.sg/docs/ship-hats-getting-started/subscription){:target="_blank"} for details. 
 
 ### Contact Us
 
