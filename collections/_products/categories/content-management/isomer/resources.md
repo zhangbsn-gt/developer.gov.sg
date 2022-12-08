@@ -6,7 +6,7 @@ single_level_nav: true
 _data: single-level-nav
 ---
 
-### Technical Documentation
+### Technical documentation
 -	[Isomer on GitHub](https://github.com/isomerpages){:target="\_blank"} 
 
 ### Multimedia
