@@ -35,7 +35,7 @@ Zero Trust replaces traditional Virtual Private Network (VPN) connections and ne
 
 SEED comprises the following components:
 
-- [TechPass](/products/categories/digital-identity/techpass/overview.html){:target="_blank"} - An Identity & Access Management (IAM) and Single Sign-On (SSO) solution
+- TechPass - An Identity & Access Management (IAM) and Single Sign-On (SSO) solution
 - Cloudflare Teams - A security platform that enforces Zero trust network access 
 - DEEP (Development Environment Endpoint Posture) – the device management layer of the MDM platform
 

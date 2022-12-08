@@ -9,7 +9,7 @@ _data: single-level-nav
 SEED comprises the following components:
 
 ### TechPass 
-[TechPass](https://www.developer.tech.gov.sg/products/categories/digital-identity/techpass/overview){:target="_blank"} is an IAM solution that is equipped with Single Sign On (SSO). It taps on Azure Active Directory, which is an enterprise identity service from Microsoft.
+TechPass is an IAM solution that is equipped with Single Sign On (SSO). It taps on Azure Active Directory, which is an enterprise identity service from Microsoft.
 
 It complies with the [Government Instruction Manual for ICT&SS Management](https://www.developer.tech.gov.sg/guidelines/standards-and-best-practices/instruction-manual-for-ict-ss-management.html){:target="_blank"}(also known as IM8). It utilises popular open standards [OAuth 2.0](https://oauth.net/2/){:target="_blank"}, [OpenID Connect](https://openid.net/connect/){:target="_blank"}, and Security Assertion Markup Language 2.0 for authentication and authorisation processes.
 
