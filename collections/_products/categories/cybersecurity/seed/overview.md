@@ -6,6 +6,8 @@ _data: single-level-nav
 redirect_from:
     - /products/categories/cybersecurity/seed/
     - /products/categories/cybersecurity/seed.html
+    - /products/categories/digital-identity/techpass/
+    - /products/categories/digital-identity/techpass.html
 sub_collection_render: true
 single_level_nav: true
 sgts_collection_group: [service_management]
