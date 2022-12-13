@@ -22,19 +22,9 @@ description: >
 
 ![WOGAA header banner for Singapore Governmeent Developer Portal](/assets/img/WOGAA-HeaderBanner-v2.png)
 
-
 The Whole-of-Government Application Analytics (WOGAA) monitors real-time performance of government websites and digital services. It presents key information such as website traffic, user feedback, recommendations to improve site performance, as well as benchmarks against Whole-of-Government (WOG) averages in a single dashboard. Designed with a fuss-free user interface, these useful data points allow public officers to conveniently access the information they need so that they can make effective data-driven decisions and proactively improve their services. Providing this as a central service allows the government to reap benefits from economies of scale, and provide additional cross-agency features such as performing comparisons across other government agencies, sectors and users to cultivate the notion of learning from one another and accelerate improvements.
 
-### WOGAA's Four Micro Products
-1. **Uptime** tracks daily uptime and downtime of digital services
-2. **Inspect** generates technical scores and recommendations to improve digital metrics
-3. **Analytics** provides an overview of the performance of digital services
-4. **Sentiments** enables users to collect feedback and ratings
-
-Refer to [Features](/products/categories/analytics/wogaa/features){:target="_blank"} for more details
-
-### Benefits 
-
+### Key Benefits 
 - **An automated central platform for data sharing**: WOGAA’s central platform brings together data from various tools and agencies. It enables users to view the performance of other agencies' website and services, and take steps to improve. This enhances the communication across WOG, saving valuable man-hours.
 
 - **Economies of scale**: WOGAA is a free platform for all government agencies. As WOGAA is maintained centrally, it greatly reduces the cost and effort required by agencies to track and monitor their digital services.
@@ -42,6 +32,17 @@ Refer to [Features](/products/categories/analytics/wogaa/features){:target="_bla
 - **Data governance**: WOGAA provides the WOG digital universe for public officers in Singapore, eliminating the need for manual and multiple engagements for data governance needs.
 
 - **Advanced reporting of key metrics**: WOGAA automates the reporting of key metrics into daily, weekly, and monthly reports that can be exported as files directly or sent to users’ emails. This allows public officers who are not WOGAA users to access insights on the performance of their agency’s digital services at their convenience.
+
+### Key Features
+
+WOGAA consists of four micro products integrated onto one platform:
+
+1. **Uptime** tracks daily uptime and downtime of digital services
+2. **Inspect** generates technical scores and recommendations to improve digital metrics
+3. **Analytics** provides an overview of the performance of digital services
+4. **Sentiments** enables users to collect feedback and ratings
+
+Refer to the [Features](/products/categories/analytics/wogaa/features){:target="_blank"} tab for more details.
 
 ### Use Case
 The WOGAA Dashboard focuses on six key metrics such as page load time, transaction completion rate, transaction customer satisfaction, Search Engine Optimisation (SEO), accessibility and system uptime. Since its inception, users have noticed a significant reduction in time spent when consolidating the key metrics that matter to them. They have also observed instant improvements in areas such as accessibility and SEO and were able to use feedback collected from WOGAA Sentiments to improve various aspects of their digital services.
