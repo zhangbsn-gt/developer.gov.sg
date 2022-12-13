@@ -15,8 +15,10 @@
 - name: WOGAA
   items:
     - Overview
+    - Features
     - Getting Started
     - Meet The Team
+    - FAQs
 
 - name: VAS
   items:

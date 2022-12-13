@@ -1,50 +1,23 @@
 ---
-title: Whole-of-Government Application Analytics (WOGAA) - Improve Government Services with Data
-mobile_title: WOGAA
+title: WOGAA FAQs
 layout: layout-page-sidenav
-category: Analytics
-_data: single-level-nav
+description: WOGAA FAQs
 single_level_nav: true
+_data: single-level-nav
 faqs:
-  - name: FAQ item 1
+  - name: Is WOGAA only accessible via the Internet?
     description: >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue id turpis vel malesuada. Proin sit amet augue at magna commodo tincidunt vel eu odio. Etiam eros felis, cursus sagittis rutrum eget, commodo eu lectus. Maecenas facilisis vestibulum mattis. Nullam luctus dui iaculis ex ullamcorper interdum. Pellentesque magna nisl, maximus quis mollis vel, fermentum non ante.
-  - name: FAQ item 2
+      Yes, WOGAA is only accessible via an internet-enabled machine.
+
+  - name: Does WOGAA track internal government websites (e.g. OneSpace, iLearn)
     description: >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue id turpis vel malesuada. Proin sit amet augue at magna commodo tincidunt vel eu odio. Etiam eros felis, cursus sagittis rutrum eget, commodo eu lectus. Maecenas facilisis vestibulum mattis. Nullam luctus dui iaculis ex ullamcorper interdum. Pellentesque magna nisl, maximus quis mollis vel, fermentum non ante.
-    images:
-      - name: circulur_diagram.png
-        grid_spacing: 12
-      - name: wogaa-lim-kim-yong-full.png
-        grid_spacing: 4
-      - name: wogaa-lingesvaran-palanisamy-full.png
-        grid_spacing: 4
-      - name: wogaa-lim-kim-yong-full.png
-        grid_spacing: 4
-  - name: FAQ item 3    
+      No, WOGAA only tracks internet-facing websites.
+
+  - name: Can users from different departments/agencies view my website's data?
     description: >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue id turpis vel malesuada. Proin sit amet augue at magna commodo tincidunt vel eu odio. Etiam eros felis, cursus sagittis rutrum eget, commodo eu lectus. Maecenas facilisis vestibulum mattis. Nullam luctus dui iaculis ex ullamcorper interdum. Pellentesque magna nisl, maximus quis mollis vel, fermentum non ante.
-  - name: FAQ item 4
-    description: >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue id turpis vel malesuada. Proin sit amet augue at magna commodo tincidunt vel eu odio. Etiam eros felis, cursus sagittis rutrum eget, commodo eu lectus. Maecenas facilisis vestibulum mattis. Nullam luctus dui iaculis ex ullamcorper interdum. Pellentesque magna nisl, maximus quis mollis vel, fermentum non ante.
-  - name: FAQ item 5
-    description: >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue id turpis vel malesuada. Proin sit amet augue at magna commodo tincidunt vel eu odio. Etiam eros felis, cursus sagittis rutrum eget, commodo eu lectus. Maecenas facilisis vestibulum mattis. Nullam luctus dui iaculis ex ullamcorper interdum. Pellentesque magna nisl, maximus quis mollis vel, fermentum non ante.
-  - name: FAQ item 6
-    description: >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue id turpis vel malesuada. Proin sit amet augue at magna commodo tincidunt vel eu odio. Etiam eros felis, cursus sagittis rutrum eget, commodo eu lectus. Maecenas facilisis vestibulum mattis. Nullam luctus dui iaculis ex ullamcorper interdum. Pellentesque magna nisl, maximus quis mollis vel, fermentum non ante.
-  - name: FAQ item 7
-    description: >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue id turpis vel malesuada. Proin sit amet augue at magna commodo tincidunt vel eu odio. Etiam eros felis, cursus sagittis rutrum eget, commodo eu lectus. Maecenas facilisis vestibulum mattis. Nullam luctus dui iaculis ex ullamcorper interdum. Pellentesque magna nisl, maximus quis mollis vel, fermentum non ante.
-  - name: FAQ item 8
-    description: >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue id turpis vel malesuada. Proin sit amet augue at magna commodo tincidunt vel eu odio. Etiam eros felis, cursus sagittis rutrum eget, commodo eu lectus. Maecenas facilisis vestibulum mattis. Nullam luctus dui iaculis ex ullamcorper interdum. Pellentesque magna nisl, maximus quis mollis vel, fermentum non ante.
-  - name: FAQ item 9
-    description: >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue id turpis vel malesuada. Proin sit amet augue at magna commodo tincidunt vel eu odio. Etiam eros felis, cursus sagittis rutrum eget, commodo eu lectus. Maecenas facilisis vestibulum mattis. Nullam luctus dui iaculis ex ullamcorper interdum. Pellentesque magna nisl, maximus quis mollis vel, fermentum non ante.
-section_description: >
-  With more people interacting with the government through websites and mobile applications, it becomes increasingly important for the government to understand the user experience and impact of its digital services. This inspired the creation of WOGAA.
-published: false
+      All WOGAA users can view analytics data of any Informational/Transactional Service on the dashboard. However, they can only manage services which they own.
 ---
 
-{% include faqs-app.html sectionName="FAQs" sectionDescription=page.section_description faqData=page.faqs%}
+{% include faqs-app.html sectionName="FAQs" sectionDescription=page.section_description faqData=page.faqs %}
+<br>
+_More questions and answers on WOGAA can be found on their [FAQ page](https://wogaa.sg/home/index.html#/faq){:target="_blank"}._

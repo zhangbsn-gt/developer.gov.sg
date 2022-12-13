@@ -1,76 +1,106 @@
 ---
-title: Meet The Team of WOGAA
-mobile_title: Meet the Team
+title: Meet the WOGAA team
 layout: layout-page-sidenav
-category: Analytics
+description: Meet the WOGAA team
 _data: single-level-nav
 single_level_nav: true
 bios:
   - name: Lingesvaran Palanisamy
-    title: Product Manager
+    title: Lead Product Manager
     img_src: lingesvaran-palanisamy-full.png
-    linkedin_url: https://www.linkedin.com/in/lingesvaran-p-6a23a137/?originalSubdomain=sg
+    linkedin_url: https://sg.linkedin.com/in/lingesvaran-p-6a23a137/
 
   - name: Lim Kim Yong
-    title: Business Analyst
-    img_src: lim-kim-yong-full.png
-    linkedin_url: https://www.linkedin.com/in/kimyonglim/?originalSubdomain=sg
+    title: Delivery Manager
+    img_src: lim-kim-yong.jpg
+    linkedin_url: https://sg.linkedin.com/in/kimyonglim/
 
-  - name: Clement Foo
-    title: Business Operations Manager
-    img_src: clement-foo-full.png
-    linkedin_url: https://www.linkedin.com/in/clement-foo-b89b2b92/?originalSubdomain=sg
+  - name: Jeff Ong Hong An
+    title: Delivery Manager
+    img_src: jeff-ong-hong-an.jpg
+    linkedin_url: https://sg.linkedin.com/in/onghongan
 
-  - name: Ryan Tan
+  - name: William Afendy
     title: Technical Lead
-    img_src: ryan-tan-full.png
-    linkedin_url: https://www.linkedin.com/in/ryantan/?originalSubdomain=sg
-
+    img_src: william-afendy.jpeg
+    linkedin_url: https://sg.linkedin.com/in/williamafendy
+    
+  - name: Chin Yong How
+    title: Lead Software Engineer
+    img_src: chin-yong-how.jpg
+    linkedin_url: https://sg.linkedin.com/in/yonghowchin/
+    
   - name: Wong Wai Shan
     title: Quality Engineer
-    img_src: wong-wai-shan-full.png
-    linkedin_url: https://www.linkedin.com/in/wai-shan-wong-475202101/?originalSubdomain=sg
+    img_src: wong-wai-shan.png
+    linkedin_url: https://sg.linkedin.com/in/wai-shan-wong-475202101/
+
+  - name: Anju Narayan
+    title: Quality Engineer
+    img_src: anju-narayan.jpeg
+    linkedin_url: https://sg.linkedin.com/in/anju-narayan-16482012/
 
   - name: Buddhi Weragoda
     title: Cloud Specialist & Data Engineer
     img_src: buddhi-weragoda-full.png
-    linkedin_url: https://www.linkedin.com/in/buddhi-weragoda/?originalSubdomain=sg
+    linkedin_url: https://sg.linkedin.com/in/buddhi-weragoda/
 
-  - name: Malindu Warapitiya
+  - name: Chuk Yih Jou
     title: Software Engineer
-    img_src: malindu-warapitiya-full.png
-    linkedin_url: https://www.linkedin.com/in/mwarapitiya/?originalSubdomain=sg
+    img_src: chuk-yih-jou.jpeg
+    linkedin_url: https://sg.linkedin.com/in/ichi-jou/
+ 
+  - name: Lee Yi Sheng
+    title: Software Engineer
+    img_src: lee-yi-sheng.png
+    linkedin_url: https://sg.linkedin.com/in/yishenglee/
+    
+  - name: Talia Ong
+    title: UX Designer
+    img_src: talia-ong.png
+    linkedin_url: https://sg.linkedin.com/in/taliaong/
 
   - name: Nathanael Ang
     title: UX Designer
     img_src: nathanael-ang-full.png
-    linkedin_url: https://www.linkedin.com/in/nathanaelang/?originalSubdomain=sg
+    linkedin_url: https://sg.linkedin.com/in/nathanaelang/
 
   - name: Nicholas Yeo
     title: Data Scientist
-    img_src: nicholas-yeo-full.png
-    linkedin_url: https://www.linkedin.com/in/yeoyo/?originalSubdomain=sg
+    img_src: nicholas-yeo.jpg
+    linkedin_url: https://sg.linkedin.com/in/yeoyo/
 
   - name: Seah Ming Shu
     title: Data Scientist
-    img_src: seah-ming-shu-full.png
-    linkedin_url: https://www.linkedin.com/in/ming-shu-seah-08452893/?originalSubdomain=sg
+    img_src: seah-ming-shu.png
+    linkedin_url: https://sg.linkedin.com/in/ming-shu-seah-08452893/
+    
+  - name: Yang Shulin
+    title: Data Engineer
+    img_src: yang-shulin.jpeg
+    linkedin_url: https://sg.linkedin.com/in/shulin-yang-0b428528/
+    
+  - name: Shawn Kong
+    title: Community Manager
+    img_src: shawn-kong.jpeg
+    linkedin_url: https://sg.linkedin.com/in/shawn-kong
+    
+  - name: Seow Yun Rong
+    title: Assistant Community Manager
+    img_src: seow-yunrong.png
+    linkedin_url: https://sg.linkedin.com/in/yunrong-seow
 ---
 
-### Meet the team!
 {%- include meet-the-team-app.html bios=page.bios -%}
 
-- William Afendy, Technical Lead
-- Anju Narayan, Quality Engineer
-- Chin Yong How, Software Engineer
-- Chuk Yih Jou, Software Engineer
-- Lee Yi Sheng, Software Engineer
-- Talia Ong, UX Designer
-- Tan Yi Long, Software Engineer
-- Yang Shulin, Data Engineer
-- Shawn Kong, Community Manager
-- Seow Yun Rong, Assistant Community Manager
-- Khairul Anuar Bin Sohaimi, Technical Ops Support
-- Farid Ismail, Technical Ops Support
-- Jeff Ong, Business Analyst
-- Angie Ng, Operations Engineer
+- **Angie Ng**, Operations Engineer
+- **Catherine Masinloc**, Software Engineer
+- **Farid Ismail**, Technical Ops Support
+- **Joe Gunaseelan**, UX Designer
+- **Kusala Subasinghe**, Software Engineer
+- **Leong Wei Cong**, Software Engineer
+- **Nancy Soo**, Business Analyst
+- **Rebecca Tan**, UX Designer
+- **Serene Tan**, Quality Engineer
+- **Win Aung**, Software Engineer
+
