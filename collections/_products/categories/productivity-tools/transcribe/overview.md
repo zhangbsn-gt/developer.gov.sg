@@ -25,7 +25,7 @@ Transcribe can be used to produce transcripts of interviews, speeches and meetin
 
 Transcribe aims to improve the productivity of public officers with these unique offerings:
 - Available on both Internet and the Intranet environment for flexible use 
-- Hosts up to Restricted and Sensitive Normal data 
+- Hosts up to RESTRICTED and SENSITIVE (NORMAL) data 
 - Auto-onboard all public officers via WOG AAD authentication 
 
 Other key features include:

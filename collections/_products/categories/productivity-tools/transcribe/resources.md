@@ -6,6 +6,6 @@ single_level_nav: true
 _data: single-level-nav
 ---
 
-### Documentation
+### Technical Documentation
 
-- [User guide](https://www.transcribe.gov.sg/user_guide/){:target="_blank"}
+- [Transcribe User Guide](https://www.transcribe.gov.sg/user_guide/){:target="_blank"}

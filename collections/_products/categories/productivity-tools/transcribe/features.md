@@ -10,7 +10,7 @@ _data: single-level-nav
 Transcribe provides attainable APIs for agency systems to incorporate speech-to-text services into their existing platforms. 
 
 ### Secure platform
-Hosted on the Government on Commercial Cloud (GCC) and supports up to Restricted and Sensitive (Normal) data. 
+Hosted on the Government on Commercial Cloud (GCC) and supports up to RESTRICTED and SENSITIVE (NORMAL) data. 
 
 ### Live transcription and batch transcription 
 Users can upload a pre-recorded audio or video file for processing. A transcript of audio received by a laptop microphone can also be attained instantaneously. 
