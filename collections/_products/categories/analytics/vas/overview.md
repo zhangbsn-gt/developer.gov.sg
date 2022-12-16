@@ -102,8 +102,8 @@ As a central platform, VAS aims to:
 |Hosting Platform|[Government on Commercial Cloud (GCC)](/products/categories/infrastructure-and-hosting/government-on-commercial-cloud){:target="\_blank"}|
 |Architecture Infrastructure Standard|GovTech Application Infrastructure Architecture Standard (AIAS) "H" Model|
 |Instruction Manual|[IM8 (ICT&SS Management)](/guidelines/standards-and-best-practices/im8.html){:target="\_blank"}|
-|Data Classification|Restricted and below|
-|Data Sensitivity|Sensitive (Normal)|
+|Data Classification|RESTRICTED and below|
+|Data Sensitivity|SENSITIVE (NORMAL)|
 
 |System requirements of VAS||
 |---|---|
