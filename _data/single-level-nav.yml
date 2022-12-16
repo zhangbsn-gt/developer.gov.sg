@@ -383,6 +383,11 @@
 - name: Asynchronous Data Exchange
   items:
     - Overview
+    - Features
+    - Case Study
+    - Getting Started
+    - Resources
+    - FAQs
 
 - name: DECADA - Cloud
   items:

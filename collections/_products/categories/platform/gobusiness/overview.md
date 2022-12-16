@@ -29,7 +29,7 @@ Businesses can easily access more than 300 government e-services, find the most 
 - Personalised dashboard for simplified transactions
 - e-Advisers to provide personalised recommendations
 
-Refer to the [Features](/products/categories/platform/gobusiness/features){:target="_blank"} for more details.
+Refer to [Features](/products/categories/platform/gobusiness/features){:target="_blank"} for more details.
 
 <figure style="text-align: center">
   <img
@@ -48,7 +48,7 @@ In 2021, GoBusiness facilitated more than 6 million Government-to-Business trans
 There are currently no fees for using the GoBusiness platform.
 
 ### Getting Started
-Users can visit [gobusiness.gov.sg](gobusiness.gov.sg) to access its services and resources.
+Users can visit [gobusiness.gov.sg](gobusiness.gov.sg){:target="_blank"} to access its services and resources.
 
 ### Contact Us
 
