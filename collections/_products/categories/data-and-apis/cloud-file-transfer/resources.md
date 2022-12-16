@@ -8,7 +8,7 @@ redirect_from:
     - /products/categories/data-and-apis/cloud-file-transfer/resources.html
 ---
 
-### Documentation
+### Technical Documentation
 
 - [CFT Rest APIs](https://docs.developer.tech.gov.sg/docs/cft-rest-api-documentation/){:target="_blank"}
 

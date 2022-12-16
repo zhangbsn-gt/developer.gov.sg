@@ -14,7 +14,7 @@ CFT automatically scans incoming files for malware and removes malicious content
 
 ### Large file exchanges with industry partners
 
-CFT enables public officers to exchange up to 1GB of Restricted and Sensitive-Normal files with external parties across different applications and systems securely.
+CFT enables public officers to exchange up to 1GB of RESTRICTED and SENSITIVE (NORMAL) files with external parties across different applications and systems securely.
 
 ### File encryption
 
