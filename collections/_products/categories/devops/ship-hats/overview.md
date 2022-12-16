@@ -23,7 +23,7 @@ redirect_from:
 
 **SHIP (Secure Hybrid Integration Pipeline)-HATS (Hive Agile Testing Solutions)** is Continuous Integration/Continuous Delivery [CI/CD](https://en.wikipedia.org/wiki/CI/CD){:target="_blank"} component within SG Government Tech Stack (SGTS) with security and governance guardrails that enables developers to plan, build, test and deploy code to production.
 
-This is a multi-tenanted Software-as-a-Service (SaaS) based end-to-end CI/CD for all applications that is classified as restricted and below.
+This is a multi-tenanted Software-as-a-Service (SaaS) based end-to-end CI/CD for all applications that is classified as RESTRICTED and below.
 
 [Why is CI/CD important?](https://youtu.be/RlZCyexsJBc?t=260){:Target="_blank"}
 
