@@ -1,5 +1,5 @@
 ---
-title: GovWallet – Reimagining Government Disbursements
+title: GovWallet – The e-Wallet Module that Makes Government Disbursements a Breeze
 layout: layout-page-sidenav
 category: Platform
 sub_collection_render: true
@@ -15,140 +15,73 @@ sgts_collection_group: [payment]
 sgts_layer_group: [services]
 sgts_title: GovWallet
 collection_group: [Singapore Government Tech Stack]
-description: GovWallet is a payment facilitator between agencies and beneficiaries.
-bios:
-  - name: Patricia Zhao, Product Manager
-    img_src: supplyally-pat-zhao.png
-    desc: |
-      Pat leads the team in developing solutions that help multiple Government agencies and non-profit partners in their distribution programmes.
+description: GovWallet facilitates the distribution of pay-outs from government agencies to beneficiaries, conveniently and securely.
 
-  - name: Wynn Chen, Software Engineer
-    img_src: supplyally-wynn.png
-    desc: |
-      Wynn doesn’t mind developing and kick-starting projects that he might be unfamiliar with. He likes spending his time cafe hopping and reflecting.
-
-  - name: Satoshi Hayashi, Delivery Manager
-    img_src: supplyally-satoshi.png
-    desc: |
-      Satoshi works with the team to achieve smooth delivery of the various product rollouts.
-
-  - name: Yong Jia Jie, Software Engineer
-    img_src: supplyally-jiajie.png
-    desc: |
-      Jia Jie is interested in learning new things and developing solutions that are extensible and efficient. He is a lover of keyboards and keyboard-related items.
-
-  - name: Auron Siow, Software/Quality Engineer
-    img_src: supplyally-auron.png
-    desc: |
-      Auron contributes to both development and quality aspects of product building. He is able to switch between the two roles to help the team meet its goals.
-
-  - name: Immanuella (Imma) Lim, Software Engineer
-    img_src: supplyally-immanuella.png
-    desc: |
-      Imma likes to build stuff and learn how to create better solutions. She has a knack for teaching and is often seen sharing her knowledge with the team.
-
-  - name: Koh Kai Hong, DevOps Engineer
-    img_src: supplyally-kaihong.png
-    desc: |
-      Kai Hong is a cloud-native citizen who is tasked with building castles in the sky. He enjoys developing reliable and scalable solutions for smooth operations.
-
-  - name: Dalson Tan, Software Engineer
-    img_src: supplyally-dalson.png
-    desc: |
-      Dalson aspires to develop creative, high-quality, and scalable solutions to solve real-world problems. He enjoys working on projects that support social causes.
-
-  - name: Ryan Goh, DevOps Engineer
-    img_src: supplyally-ryan.png
-    desc: |
-      Ryan is interested in reliably and frequently getting code to product. He is also interested in using cloud infrastructure to build scalable and reliable systems.
-
-  - name: Dickson Tan, Software Engineer
-    img_src: supplyally-dickson.png
-    desc: |
-      Dickson loves building software that delight users. His day doesn't begin before his morning latte.
-
-  - name: Eida Tan, UX Designer
-    img_src: supplyally-eida.png
-    desc: |
-      As a young child, Eida had a strong affection for Playmobil toys. She would role-play with them in various settings, from immigration checkpoints to restaurants. These days she gets to facilitate and work with others to improve users’ experience across different touchpoints.
-
-  - name: Visalakshi Chidambaram, Quality Engineer
-    img_src: supplyally-visa.png
-    desc: |
-      Visalakshi loves to challenge a piece of working code to find bugs and crash the system before it reaches the end-user, so that they can have a smooth experience.
-
-  - name: Raphael Tan, Software Engineer
-    img_src: supplyally-raphael.png
-    desc: |
-      Raphael likes to work on stuff that have applicable benefits for others and himself.
-
-  - name: Yee Sheng Jie, Quality Engineer
-    img_src: supplyally-shengjie.png
-    desc: |
-      Sheng Jie lives through his motto 'Work hard, Play hard'. He is always ready to resolve defects and kill bugs to ensure the best quality of the product. He is also interested in language translation and improving his mother tongue language by writing Chinese novel during his free time.
-
-  - name: Adam Chee, Software Engineer
-    img_src: supplyally-adam.png
-    desc: |
-      Adam strives to create elegant, user-centric solutions that deliver good impact.
 ---
+
+![GovWallet header banner for Singapore Government Developer Portal](/assets/img/GovWallet-HeaderBanner-v1b.png)
+
+[GovWallet](https://www.wallet.gov.sg/){:target="_blank"} is a digital wallet module that Government agencies can use to disburse monies and credits to citizens and beneficiaries conveniently and securely.
+
+GovWallet is part of the Service layer of the [Singapore Government Tech Stack (SGTS)](https://www.developer.tech.gov.sg/singapore-government-tech-stack/){:target="_blank"}. As a backend service module, GovWallet can be integrated with any government mobile applications (e.g. LifeSG and Singpass) to allow beneficiaries to spend the credits at merchants with PayNow and NETS e-payment methods. It is also integrated with ATMs to facilitate cash disbursement to people without banking accounts.
+
+GovWallet allows the agencies to maintain control of their distribution exercises, while beneficiaries can track their pay-out and spending history via various frontend channels. One of its key features is that it enables agencies to select specific merchants and control where pay-outs can be used.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wZTU7YibAVU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-### Overview
-
-GovWallet is a module integration that was developed by GovTech’s Government Digital Services (GDS) team to provide an alternative means to distribute government pay-outs. Currently, agencies may develop individual systems to conduct their respective distribution exercises. Beneficiaries may then find themselves going through multiple touchpoints, which can be tedious.
-
-To prevent silos, GovWallet was developed as an internal pilot project at GovTech to enable GovTechies to credit staff benefits into GovWallet instead and transfer these benefits to their PayNow accounts or use them at merchants that accept the PayNow or NETS e-Payment methods.
-
-Since then, GovWallet has partnered local banks and agencies to become a payment facilitator between agencies distributing pay-outs and beneficiaries who are receiving them.
-
-### What is GovWallet?
-
-GovWallet facilitates the distribution of pay-outs from agencies to beneficiaries. It allows agencies to maintain control of their distribution exercises and enables beneficiaries to track their pay-out and spending history via the LifeSG app. A key feature of GovWallet is that it enables agencies to select specific merchants and control where pay-outs can be used.
-
 By leveraging local banks’ PayNow and NETS e-Payment ecosystems, GovWallet is able to perform instant transfers from agencies to the merchants. For beneficiaries without bank accounts and mobile devices, the GovWallet team has partnered with the Central Provision Fund Board (CPFB) and OCBC Bank to allow beneficiaries to withdraw their pay-outs from OCBC’s ATMs.
 
-### Why Should GovWallet be Adopted?
+It started off as an internal pilot project by GovTech’s Government Digital Services (GDS) team to enable GovTech to credit staff benefits into GovWallet and allows the recipients to transfer these benefits to their PayNow accounts or use them at merchants that accept the PayNow e-Payment method. 
 
-GovWallet improves the user experience as it provides a single wallet for oversight and for access to the available pay-outs from various agencies. It mitigates confusion on how much pay-outs has been received by beneficiaries, while enhancing security by removing the need to click on potentially suspicious SMSes.
+Agencies no longer need to develop individual systems to conduct their respective distribution exercises, and beneficiaries can easily access their government pay-outs through familiar app interfaces.
 
-Furthermore, there are more than 164,000 and 43,000 merchants registered with PayNow and NETS respectively. e-commerce platforms like Shopee and Lazada, and charity organisations like Giving.sg, can also enjoy lower barriers of entry if they wish to participate in government disbursement programmes.
+Since then, GovWallet has received interest from many organisations to be used in household and social assistance programmes, sector-specific relief programmes, and even staff recognition programmes.
 
-### How Do You Use GovWallet?
+### Key Benefits
 
-GovWallet can be accessed using official government apps, such as LifeSG, Healthy 365 and Singpass mobile. On the LifeSG and Healthy 365 apps, you can scan the SGQR, NETS or PayNow QR codes to pay the merchants. Moving forward, GovWallet will be available on more government apps.
+- **For beneficiaries**
 
-For agencies interested in onboarding GovWallet, please fill up this [form](https://form.gov.sg/#!/62280856ba91100012050933){:target="_blank"}.
+GovWallet retains familiar user experience by integrating with existing government apps. It provides beneficiaries a view of their government pay-outs and spending, allows immediate access to their available government pay-outs and reminds beneficiaries to spend their remaining credit balance.
+What used to take multiple steps and even a visit to a service counter can now be done anytime, anywhere by beneficiaries. It also helps to reduce confusion on how much pay-outs have been received, and enhances security by removing the need for beneficiaries to click on potentially suspicious SMSes.
+
+It also promotes inclusion because even people without bank accounts can view and utilise their government pay-outs via apps like LifeSG.
+
+- **For merchants**
+
+GovWallet makes payments to merchants a convenient and seamless process.  Payments are made through the PayNow and NETS e-payments infrastructure, which means that fund transfers are instant. Many merchants are already onboard PayNow and NETS, so no additional sign-ups or additional equipment are required.
+
+This makes it easier for e-commerce platforms like Shopee and Lazada, and charity organisations like ComChest and Giving.sg, to participate in government disbursement programmes, as there are now lower barriers of entry on the e-payment front.
+
+- **For government agencies**
+
+GovWallet makes it easy for agencies to design e-credits and voucher schemes that are more targeted, and to disburse to beneficiaries in a secure and convenient way. It also reduces the need for the physical printing of vouchers and the manpower required to manage related administrative tasks.
+
+Agencies can specify the list of merchants that qualify for each scheme. For example, they can ensure that the credits or vouchers have to be spent at heartland shops or at merchants that meet healthy lifestyle standards.
+
+### Key Features
+
+- Control of where pay-outs can be spent
+- Control of pay-outs validity period
+- Integration with frontend interfaces
+- Supports PayNow and NETS payment
+- Supports GovCash (withdrawal of pay-outs in cash via ATMs)
+
+Refer to the [Features](/products/categories/platform/govwallet/features){:target="_blank"} tab for more details.
 
 ### Success Stories
 
-The GovWallet team has worked with CPFB to administer the Workfare Income Supplement scheme for more than 6,200 unbanked beneficiaries, thus removing the need for cheque issuance. Through this collaboration, beneficiaries can now withdraw their government pay-outs in the form of cash at OCBC ATMs or spend them as eCredits using the LifeSG app.
+MINDEF and the Ministry of Home Affairs are currently using GovWallet to disburse NS recognition benefits for more than 1 million SAF, SCDF and SPF men through the LifeSG app. CPFB has also tapped on GovWallet to create GovCash to administer the Workfare Income Supplement and GST Voucher schemes, which replaces cheque issuance to all their unbanked recipients. 
 
-GovWallet has also partnered with MINDEF and MHA to administer the NS reward schemes to their servicemen. For the Healthy 365 app, users can also convert their reward points to e-Credits managed by the GovWallet system.
+The unbanked citizens can withdraw their pay-outs from the OCBC ATMs integrated with GovWallet, or spend their pay-outs via the LifeSG app.
 
-To add to this, more government agencies have expressed interest to adopt GovWallet for the management of household and social development, sector-specific relief, and staff recognition programmes. More details will be released in due time.
+As a backend module, GovWallet has integrated with LifeSG, Singpass and Healthy 365 apps, servicing around 1.3 million users.
 
-### What's Next?
+The team has also worked with bank industry partners such as DBS, OCBC and NETS to provide more spending options for the citizens. Users on GovWallet can spend their funds at merchants with PayNow and/or NETS payment rails. This means tapping into the PayNow payment ecosystem of 164,000 merchants and the NETS payment ecosystem of 43,000 merchants today.
 
-The GovWallet team is embarking on the journey to build a self-service portal for agency users to better administer their schemes and for citizens to view their GovWallet pay outs and spending transactions.
+### Pricing
+
+For queries about GovWallet’s pricing and transaction costs, contact the product team through this [form](https://form.gov.sg/62280856ba91100012050933){:target="_blank"}.
 
 ### Contact Us
 
 {% include contact-us-form.html %}
-
-### Meet the Team!
-
-<div class="card-grid-container grid-25rem">
-  {% for bios in page.bios %}
-  {% assign img_url = "/assets/img/" | append: bios.img_src %}
-  <div class="sgds-card">
-    <div class="sgds-card-content">
-      <img style="float: left; margin-right: 20px;" src="{{ img_url }}" alt="{{ bios.name}}">
-      <p><strong>{{ bios.name}}</strong><br>
-        {{ bios.desc }}
-      </p>
-    </div>
-  </div>
-  {% endfor %}  
-</div>

@@ -325,7 +325,10 @@
 - name: GovWallet
   items:
     - Overview
+    - Features
+    - Getting Started
     - Resources
+    - FAQs
 
 - name: OurSG
   items:
