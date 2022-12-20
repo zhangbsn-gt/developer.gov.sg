@@ -37,7 +37,6 @@ This diagram shows the components of ADEX and its ability to distribute real-tim
 </figure>
 
 ### Differences between APEX & ADEX
-
 | **APEX**                                                                                                                                   | **ADEX**                                                                                                                                       |
 | :----------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------- |
 | **API gateway**<br>• REST and SOAP<br>• Up to Confidential                                                                                 | **Message-queue + stream hub**<br>• MQTT and Kafka<br>• Up to Restricted                                                                       |
@@ -45,7 +44,6 @@ This diagram shows the components of ADEX and its ability to distribute real-tim
 | **Synchronous**<br>• Request-Response model<br>• Provider responds to acknowledge request from Consumer<br>• Immediate feedback of receipt | **Asynchronous**<br>- Response is decoupled<br>• Provider doesn't need a response from Consumer<br>• No immediate feedback of receipt            |
 
 ### Key Features
-
 - Asynchronous data exchange for WOG
 - Provides a data sharing marketplace
 - Offers central exchange service to facilitate sharing
@@ -54,21 +52,20 @@ This diagram shows the components of ADEX and its ability to distribute real-tim
 Refer to [Features](/products/categories/sensor-platforms-and-internet-of-things/asynchronous-data-exchange/features){:target="_blank"} for more details. Users can look forward to the addition of streaming capabiltiies, which is currently under development.
 
 ### Use Cases
-
 ADEX is currently live and serving the needs of Government agencies. Some examples include:
 - The Ministry of Health and the Home Team Science and Technology Agency published enforcement data for COVID-19 social distancing measures to participating agencies. This data is consumed by SenseOps, a visualisation & dashboard tool, for efficient sense-making to deploy safe distancing officers to hotspot locations. Further details are elaborated in the [Case Study](/products/categories/sensor-platforms-and-internet-of-things/asynchronous-data-exchange/case-study){:target="_blank"}.
 - The Sentosa Development Corporation published and subscribed to SafeEntry dataset for crowd control at the various recreation nodes in Sentosa.
 - The National Environmental Agency publishes environmental topics like rainfall, temperature, wind speed, wind direction, wind gust speed, wind gust direction, PSI and PM2.5.
 
 ### Awards
-
 **2022**
 - [IDC Smart City Awards (SCAPA) 2022 – Administration Category](https://www.idc.com/getdoc.jsp?containerId=prAP49267722){:target="_blank"}
 - [IDC Future Enterprise Awards 2022 – Best in Future of Connectedness](https://www.idc.com/getdoc.jsp?containerId=prAP49756122){:target="_blank"}
 
 Find out more in this [press release](https://govinsider.asia/connected-gov/smart-city-projects-flourish-in-asia-pacific-amid-uptick-in-public-interest/){:target="_blank"}.
 
+### Pricing
+For pricing details, contact the ADEX team through the form below.
+
 ### Contact Us
-
 {% include contact-us-form.html %}
-
