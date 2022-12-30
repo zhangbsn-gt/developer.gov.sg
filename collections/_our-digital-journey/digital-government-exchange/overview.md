@@ -21,6 +21,8 @@ redirect_from:
 
 The Digital Government Exchange (DGX) is an annual global gathering of Government Chief Information Officers (CIOs) and public sector leaders from digital governments and smart cities. These include Australia, the Netherlands (Amsterdam), Canada, China (Shanghai), Denmark, Estonia, Finland, France, Israel, Japan, New Zealand, Sweden, the United Kingdom (UK) and the U.S (New York). Organised by the Smart Nation and Digital Government Group since 2016, DGX is a one-of-its-kind international platform that has developed a community of like-minded leaders who can engage in information exchange, sharing of experiences, and mutual learning, while exploring future collaboration opportunities. Representatives from multilateral institutions such as the United Nations (UN), the World Economic Forum (WEF) and the World Bank also attend these discussions. 
 
+To learn more about DGX's impact in the wider international digital government community, please view this [joint blog](https://blogs.worldbank.org/governance/dgx-bringing-govtech-community-together){:target="_blank"} between our Government Chief Digital Technology Officer, Chan Cheow Hoe, and the World Bank.
+
 ### DGX Working Groups
 
 The platform also features technical Working Groups (WGs) where countries and cities deep dive into specific subject matters pertinent to governments’ drive for digitalisation. Designed with the intent of providing an open conversation yearly, the DGX WGs bring together international experts in their respective fields to conduct in-depth analysis.
