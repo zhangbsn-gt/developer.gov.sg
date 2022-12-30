@@ -1,0 +1,6 @@
+const config = {
+  MAX_NUMBER_OF_VISIBLE_EVENTS_ONLOAD: 2,
+  MAX_NUMBER_OF_VISIBLE_NEWSLETTERS_ONLOAD: 3,
+};
+
+export default config;

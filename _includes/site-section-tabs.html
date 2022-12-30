@@ -4,18 +4,18 @@
   <div class="sgds-tabs">
     <ul class="no-margin" role="tablist">
       <li class="is-active">
-        <a data-tab="#tab1" role="tab" aria-selected="true" aria-controls="tab1">
+        <a data-cy="newsletters-tab" data-tab="#tab1" role="tab" aria-selected="true" aria-controls="tab1">
           Newsletter
         </a>
       </li>
       <li>
-        <a data-tab="#tab2" role="tab" aria-selected="false" aria-controls="tab2">
+        <a data-cy="developer-blogs-tab" data-tab="#tab2" role="tab" aria-selected="false" aria-controls="tab2">
           Developer Blogs
         </a>
       </li>
     </ul>
   </div>
-  <div id="tab1">
+  <div id="tab1" data-cy="newsletters-container">
     {% if site.posts %}
     <div class="card-grid-container is-fullwidth">
       <p class="margin--bottom--none margin--top--none">
@@ -40,7 +40,7 @@
       {% assign newsletterIncrementer = newsletterIncrementer | plus: 1 %}
       {% endfor %}
       <div class="is-fullwidth is-flex" style="justify-content: center;" id="view-all-newsletter-button">
-        <a href="/communities/newsletter/index.html" class="sgds-button is-outlined is-secondary">
+        <a id="view-all-newsletters-button" href="/communities/newsletter/index.html" class="sgds-button is-outlined is-secondary">
           View all newsletter
         </a>
       </div>
@@ -49,7 +49,7 @@
     <h5>No newsletters yet.</h5>
     {% endif %}
   </div>
-  <div id="tab2" style="justify-content: center;">
+  <div id="tab2" data-cy="developer-blogs-container" style="justify-content: center;">
     <div class="is-fullwidth margin--top">
       <div id="blogs-app" class="is-fullwidth">
         <!-- This spinner will show when the Vue app is loading -->
@@ -62,7 +62,7 @@
         </div>
       </div>
       <div class="is-fullwidth is-flex" style="justify-content: center;" id="view-all-developer-blogs-link">
-        <a class="sgds-button is-outlined is-secondary" href="/communities/developer-blogs/index.html">
+        <a id="view-all-developer-blogs-button" class="sgds-button is-outlined is-secondary" href="/communities/developer-blogs/index.html">
           View all developer blogs
         </a>
       </div>

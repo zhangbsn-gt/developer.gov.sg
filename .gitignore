@@ -18,5 +18,6 @@ _compress_images_cache.yml
 
 cypress/report/**
 cypress/videos/**
+cypress/screenshots/**
 
 /bash-scripts

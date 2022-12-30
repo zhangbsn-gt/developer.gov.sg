@@ -13,31 +13,31 @@ describe("Home Page Carousel Test", function () {
     });
 
     it("Should it contain the carousel section", () => {
-      cy.get('.swiper-carousel')
+      cy.get(".swiper-carousel");
     });
 
     it("Should it contain the carousel next and prev button", () => {
-      cy.get('.swiper-button-prev-hero')
-      cy.get('.swiper-button-next-hero')
+      cy.get(".swiper-button-prev-hero");
+      cy.get(".swiper-button-next-hero");
     });
 
     it("Should it contain the carousel pagination button", () => {
-      cy.get('.swiper-pagination-hero')
+      cy.get(".swiper-pagination-hero");
     });
 
     it("Should it contain the one stop reource slide", () => {
-      cy.get('.swiper-slide-active > .sgds-card > .sgds-section')
+      cy.get(".swiper-slide-active > .sgds-card > .sgds-section");
     });
 
     it("Should it be able to navigate to next slide", () => {
-      cy.get('.swiper-button-next-hero > img').click({
-            force: true,
+      cy.get(".swiper-button-next-hero > img").click({
+        force: true,
       });
     });
 
     it("Should it be able to navigate to prev slide", () => {
-      cy.get('.swiper-button-prev-hero > img').click({
-            force: true,
+      cy.get(".swiper-button-prev-hero > img").click({
+        force: true,
       });
     });
   });
@@ -53,31 +53,31 @@ describe("Home Page Carousel Test", function () {
     });
 
     it("Should it contain the carousel section", () => {
-      cy.get('.swiper-carousel')
+      cy.get(".swiper-carousel");
     });
 
     it("Should it contain the carousel next and prev button", () => {
-      cy.get('.swiper-button-prev-hero')
-      cy.get('.swiper-button-next-hero')
+      cy.get(".swiper-button-prev-hero");
+      cy.get(".swiper-button-next-hero");
     });
 
     it("Should it contain the carousel pagination button", () => {
-      cy.get('.swiper-pagination-hero')
+      cy.get(".swiper-pagination-hero");
     });
 
     it("Should it contain the one stop reource slide", () => {
-      cy.get('.swiper-slide-active > .sgds-card > .sgds-section')
+      cy.get(".swiper-slide-active > .sgds-card > .sgds-section");
     });
 
     it("Should it be able to navigate to next slide", () => {
-      cy.get('.swiper-button-next-hero > img').click({
-            force: true,
+      cy.get(".swiper-button-next-hero > img").click({
+        force: true,
       });
     });
 
     it("Should it be able to navigate to prev slide", () => {
-      cy.get('.swiper-button-prev-hero > img').click({
-            force: true,
+      cy.get(".swiper-button-prev-hero > img").click({
+        force: true,
       });
     });
   });

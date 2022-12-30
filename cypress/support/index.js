@@ -14,11 +14,19 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
-import './commands'
-Cypress.on('uncaught:exception', (err, runnable) => {
+import "./config";
+import "./commands";
+
+// After i imported config.js, what do i do with it copilot?
+// For exampl,e i want to use the config max number of visible events onload value in my test
+// How do i do that?
+// You can use it like this:
+// cy.get("div").should("have.length", Cypress.config("maxVisibleEventsOnLoad"));
+
+Cypress.on("uncaught:exception", (err, runnable) => {
   // returning false here prevents Cypress from failing the test
-  return false
-})
+  return false;
+});
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
