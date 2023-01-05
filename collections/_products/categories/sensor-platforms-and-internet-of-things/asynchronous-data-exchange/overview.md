@@ -18,6 +18,8 @@ description: >
   ADEX is a secure data exchange and event streaming platform for Whole-of-Government and local businesses.
 ---
 
+![ADEX header banner for Singapore Governmeent Developer Portal](/assets/img/adex-HeaderBanner-v2.png)
+
 Asynchronous Data Exchange (ADEX) is a centralised, self-service data exchange and event streaming platform for Whole-of-Government (WOG) and local business entities to share and receive lightweight, real-time data securely. It is part of the [Singapore Government Tech Stack (SGTS)](/singapore-government-tech-stack/overview/index.html){:target="_blank"} and one of its Communications Pillar components, along with [API Exchange (APEX)](/products/categories/data-and-apis/apex){:target="_blank"} and [Cloud File Transfer (CFT)](/products/categories/data-and-apis/cloud-file-transfer/){:target="_blank"}.
 
 ADEX originated as the Sensor Data Exchange (SDX), part of the Smart Nation Sensor Platform (SNSP). Currently, ADEX has broadened its scope to support the exchange of both sensor and non-sensor data. In this context, non-sensor data may also refer to processed sensor data (i.e. raw sensor data after processing/analytics). For example, mall footfalls are considered raw sensor data (i.e. how many steps are counted at Level 1 of a shopping centre). After processing/analytics, the data can be defined as “Level 1 is at 80% capacity”, which can be considered non-sensor data.
@@ -57,7 +59,7 @@ ADEX is currently live and serving the needs of Government agencies. Some exampl
 - The Sentosa Development Corporation published and subscribed to SafeEntry dataset for crowd control at the various recreation nodes in Sentosa.
 - The National Environmental Agency publishes environmental topics like rainfall, temperature, wind speed, wind direction, wind gust speed, wind gust direction, PSI and PM2.5.
 
-### Awards
+### Awards and Recognition
 **2022**
 - [IDC Smart City Awards (SCAPA) 2022 – Administration Category](https://www.idc.com/getdoc.jsp?containerId=prAP49267722){:target="_blank"}
 - [IDC Future Enterprise Awards 2022 – Best in Future of Connectedness](https://www.idc.com/getdoc.jsp?containerId=prAP49756122){:target="_blank"}
