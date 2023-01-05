@@ -4,9 +4,9 @@
     - Overview
     - FormSG
     - GovText
-    - Postman
-    - SEED
+    - MASH
     - Open Digital Platform
+    - SEED
 
 - name: Citizen-facing Products
   description: Explore the government products for providing citizens with the services they need. This includes citizen life journey, grant services, and more!
@@ -67,6 +67,7 @@
     - GovWallet
     - Identiface
     - Login
+    - MASH
     - Myinfo
     - Notify
     - Personalise

@@ -47,6 +47,7 @@
   items:
     - Overview
     - Cloudscape
+    - MASH
     - SEED
 
 - name: Data and APIs
