@@ -359,6 +359,14 @@
   items:
     - Overview
 
+- name: Postman
+  items:
+    - Overview
+    - Features
+    - Getting Started
+    - Resources
+    - Meet The Team
+
 - name: RedeemSG
   items:
     - Overview

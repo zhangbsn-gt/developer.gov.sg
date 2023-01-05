@@ -2,7 +2,7 @@
 title: Meet The Team of Isomer
 mobile_title: Meet the Team
 layout: layout-page-sidenav
-category: Infrastructure and Hosting
+category: Content management
 _data: single-level-nav
 single_level_nav: true
 bios:
