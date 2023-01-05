@@ -39,11 +39,12 @@ This diagram shows the components of ADEX and its ability to distribute real-tim
 </figure>
 
 ### Differences between APEX & ADEX
+
 | **APEX**                                                                                                                                   | **ADEX**                                                                                                                                       |
 | :----------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------- |
 | **API gateway**<br>• REST and SOAP<br>• Up to Confidential                                                                                 | **Message-queue + stream hub**<br>• MQTT and Kafka<br>• Up to Restricted                                                                       |
-| **On-Demand**<br>• Consumers call API when needed<br>• Orchestration and transformation supported<br>• Retry-able                          | **Event-driven**<br>• Consumers get informed when Provider has new data<br>• Stream processing<br>• Replay-able |
-| **Synchronous**<br>• Request-Response model<br>• Provider responds to acknowledge request from Consumer<br>• Immediate feedback of receipt | **Asynchronous**<br>- Response is decoupled<br>• Provider doesn't need a response from Consumer<br>• No immediate feedback of receipt            |
+| **On-Demand**<br>• Consumers call API when needed<br>• Orchestration and transformation supported<br>• Retry-able                          | **Event-driven**<br>• Consumers get informed when Provider has new data<br>• Stream processing<br>• Replay-able                                |
+| **Synchronous**<br>• Request-Response model<br>• Provider responds to acknowledge request from Consumer<br>• Immediate feedback of receipt | **Asynchronous**<br>• Response is decoupled<br>• Provider doesn't need a response from Consumer<br>• No immediate feedback of receipt          |
 
 ### Key Features
 - Asynchronous data exchange for WOG
