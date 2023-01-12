@@ -139,6 +139,10 @@
 - name: Tourism Information and Services Hub
   items:
     - Overview
+    - Features
+    - Getting Started
+    - Resources
+    - FAQs
 
 - name: URA APIs
   items:
