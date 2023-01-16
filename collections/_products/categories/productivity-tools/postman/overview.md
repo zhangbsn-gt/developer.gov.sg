@@ -12,7 +12,7 @@ collection_group: [Citizen-facing Products, What's New]
 description: Postman is a multichannel cloud-based service for Singapore government agencies to send mass personalized messages in minutes. Find out more.
 ---
 
-![Postman header banner](/assets/img/Postman-HeaderBanner-v1.png)
+![Postman header banner](/assets/img/postman-HeaderBanner-v2.png)
 
 [Postman](https://postman.gov.sg){:target="_blank"} is an easy-to-use multichannel cloud-based platform that enables the Singapore Government to deliver essential information to citizens promptly.
 
