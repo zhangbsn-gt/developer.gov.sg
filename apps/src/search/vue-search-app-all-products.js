@@ -1,9 +1,4 @@
-import Vue from "vue";
+import { createApp } from "vue";
 import SearchAllProducts from "./SearchAllProducts.vue";
-import VueCompositionAPI from "@vue/composition-api";
-Vue.use(VueCompositionAPI);
 
-new Vue({
-  el: "#search-app-all-products",
-  render: (h) => h(SearchAllProducts),
-});
+createApp(SearchAllProducts).mount("#search-app-all-products");

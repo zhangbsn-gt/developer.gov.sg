@@ -153,7 +153,7 @@
 import Loader from "../lib/Loader.vue";
 import { sanitize, isQueryEmpty } from "../lib/index.js";
 import useLunrSearch from "../composables/useLunrSearch";
-import { computed, onMounted, ref, watch } from "@vue/composition-api";
+import { computed, onMounted, ref, watch } from "vue";
 
 export default {
   components: { Loader },

@@ -1,4 +1,4 @@
-import { ref, computed } from "@vue/composition-api";
+import { ref, computed } from "vue";
 import axios from "axios";
 import { getBasicLunrIndex, getHighlightedSearchResult } from "../lib/lunr";
 export default function () {

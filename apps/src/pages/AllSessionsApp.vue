@@ -163,7 +163,7 @@
 import Card from "../lib/Card.vue";
 import Loader from "../lib/Loader.vue";
 import useLunrSearch from "../composables/useLunrSearch";
-import { computed, ref, watch, onMounted } from "@vue/composition-api";
+import { computed, ref, watch, onMounted } from "vue";
 
 export default {
   components: { Loader, Card },

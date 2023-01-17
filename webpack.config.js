@@ -8,11 +8,11 @@ module.exports = (env, argv) => {
   const config = {
     mode: "development", // Use cli args for prod
     entry: {
-      "vue-article-editor-app": "./apps/src/articles/vue-article-editor-app.js",
+      // "vue-add-page-app": "./apps/src/pages/vue-add-page-app.js",
+      // "vue-article-editor-app": "./apps/src/articles/vue-article-editor-app.js",
+      // "vue-workflow-app": "./apps/src/workflows/vue-workflow-app.js",
+      // "vue-events-app": "./apps/src/events/vue-events-app.js",
       "vue-terms-app": "./apps/src/terms/vue-terms-app.js",
-      "vue-events-app": "./apps/src/events/vue-events-app.js",
-      "vue-workflow-app": "./apps/src/workflows/vue-workflow-app.js",
-      "vue-add-page-app": "./apps/src/pages/vue-add-page-app.js",
       "vue-search-app-full-site":
         "./apps/src/search/vue-search-app-full-site.js",
       "vue-search-app-all-products":
@@ -22,13 +22,13 @@ module.exports = (env, argv) => {
         "./apps/src/search/vue-search-app-all-events.js",
       "vue-search-app-all-event-videos":
         "./apps/src/search/vue-search-app-all-event-videos.js",
+      "vue-app-all-sessions": "./apps/src/pages/vue-app-all-sessions.js",
       "community-events": "./apps/src/communities/community-events.js",
       "layout-page-sidenav-calendar":
         "./apps/src/communities/layout-page-sidenav-calendar.js",
       "back-to-the-top": "./apps/src/communities/back-to-the-top.js",
       "meet-the-team": "./apps/src/communities/meet-the-team.js",
       "toggle-accordion": "./apps/src/communities/toggle-accordion.js",
-      "vue-app-all-sessions": "./apps/src/pages/vue-app-all-sessions.js",
       "main": "./apps/src/main.js",
     },
     output: {
@@ -82,6 +82,9 @@ module.exports = (env, argv) => {
             : process.env.API_URL
             ? process.env.API_URL
             : "http://localhost:4001/dummy-api-url",
+      }),
+      new webpack.DefinePlugin({
+        __VUE_OPTIONS_API__: true,
       }),
     ],
     devtool: "source-map",

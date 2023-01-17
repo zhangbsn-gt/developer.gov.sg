@@ -1,17 +1,17 @@
-import Vue from "vue";
+import { createApp } from "vue";
 import store from "../lib/pageEditorStore";
 import AddPageApp from "./AddPageApp.vue";
 import "noty/lib/noty.css";
 import "noty/lib/themes/mint.css";
 
 const mountElement = document.querySelector("#add-page");
-new Vue({
+createApp({
   store,
   render: createElement => {
     return createElement(AddPageApp, {
       props: {
-        ...mountElement.dataset
-      }
+        ...mountElement.dataset,
+      },
     });
-  }
-}).$mount("#add-page");
+  },
+}).mount("#add-page");

@@ -9,12 +9,8 @@
       :class="{ active: showPageEditor }"
     >
       Page content
-      <i class="material-icons" v-if="showPageEditor">
-        expand_less
-      </i>
-      <i class="material-icons" v-else>
-        expand_more
-      </i>
+      <i class="material-icons" v-if="showPageEditor"> expand_less </i>
+      <i class="material-icons" v-else> expand_more </i>
     </button>
 
     <div v-show="showPageEditor">
@@ -55,12 +51,8 @@
       style="margin-top: 4rem"
     >
       Page details
-      <i class="material-icons" v-if="showPageFields">
-        expand_less
-      </i>
-      <i class="material-icons" v-else>
-        expand_more
-      </i>
+      <i class="material-icons" v-if="showPageFields"> expand_less </i>
+      <i class="material-icons" v-else> expand_more </i>
     </button>
     <div class="meta-fields" v-show="showPageFields">
       <div class="field">
@@ -165,13 +157,13 @@
 import Noty from "noty";
 import Loading from "vue-loading-overlay";
 import { mapState } from "vuex";
-import "vue-loading-overlay/dist/vue-loading.css";
+import "vue-loading-overlay/dist/css/index.css";
 import {
   urlRegex,
   sanitize,
   apiClient,
   detectFormErrors,
-  hasErrors
+  hasErrors,
 } from "./index";
 import VerifyAndSubmit from "./VerifyAndSubmit.vue";
 import TextEditor from "./TextEditor.vue";
@@ -181,35 +173,35 @@ export default {
     editorType: {
       type: String,
       required: true,
-      validator: value => ["add", "edit"].indexOf(value) !== -1
+      validator: value => ["add", "edit"].indexOf(value) !== -1,
     },
     page_title: {
-      type: String
+      type: String,
     },
     page_layout: {
-      type: String
+      type: String,
     },
     page_category: {
-      type: String
+      type: String,
     },
     page_description: {
-      type: String
+      type: String,
     },
     page_path: {
-      type: String
+      type: String,
     },
     page_content: {
-      type: String
+      type: String,
     },
     page_collection: {
       type: String,
-      required: true
+      required: true,
     },
     page_categories: {
       // List of existing categories
       type: Array,
-      required: true
-    }
+      required: true,
+    },
   },
   components: { VerifyAndSubmit, Loading, TextEditor },
   created() {
@@ -227,18 +219,18 @@ export default {
       form: {
         title: this.page_title,
         category: this.page_category,
-        description: this.page_description
+        description: this.page_description,
       },
       errors: {
         title: "",
         category: "",
-        description: ""
+        description: "",
       },
       edit: {
         title: this.editorType === "add",
         category: this.editorType === "add",
-        description: this.editorType === "add"
-      }
+        description: this.editorType === "add",
+      },
     };
   },
   computed: {
@@ -252,12 +244,12 @@ export default {
         path = "/request-new-page";
       }
       return path;
-    }
+    },
   },
   methods: {
     validateForm() {
       let errors = detectFormErrors({
-        form: { ...this.form }
+        form: { ...this.form },
       });
       Object.assign(this.errors, errors);
       return !hasErrors(errors);
@@ -275,13 +267,13 @@ export default {
           ...submission,
           email,
           otp,
-          otpRequestId
+          otpRequestId,
         })
         .then(response => {
           let prLink = response.data.pr;
           new Noty({
             type: "success",
-            text: `Your submission ${this.form.title} is successfulsubmitted! <a href='${prLink}'>View its approval progress here</a>`
+            text: `Your submission ${this.form.title} is successfulsubmitted! <a href='${prLink}'>View its approval progress here</a>`,
           }).show();
           this.$emit("close");
         })
@@ -292,7 +284,7 @@ export default {
           }
           new Noty({
             type: "error",
-            text: `There was an error with submission. ${message}`
+            text: `There was an error with submission. ${message}`,
           }).show();
         })
         .finally(() => {
@@ -310,7 +302,7 @@ export default {
         page_description: this.page_description,
         page_path: this.page_path,
         page_content: sanitize(updatedContent),
-        page_collection: this.page_collection
+        page_collection: this.page_collection,
       };
       let editableFields = Object.keys(this.edit);
       for (let field of editableFields) {
@@ -319,8 +311,8 @@ export default {
         }
       }
       return submissions;
-    }
-  }
+    },
+  },
 };
 </script>
 

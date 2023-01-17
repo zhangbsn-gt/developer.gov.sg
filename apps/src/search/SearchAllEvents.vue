@@ -159,7 +159,7 @@
 
 <script>
 import Loader from "../lib/Loader.vue";
-import { computed } from "@vue/composition-api";
+import { computed } from "vue";
 import CardCalendar from "../lib/CardCalendar.vue";
 import useLunrSearch from "../composables/useLunrSearch";
 import { sanitize, isQueryEmpty } from "../lib/index.js";

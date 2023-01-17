@@ -10,6 +10,7 @@
                 :checkboxValue="option.checkboxValue"
                 :checkboxLabel="option.checkboxLabel"
                 v-model="categoryCheckbox"
+                :value="categoryCheckbox"
               />
             </a>
           </li>
@@ -50,6 +51,7 @@
                 :checkboxValue="option.checkboxValue"
                 :checkboxLabel="option.checkboxLabel"
                 v-model="categoryCheckbox"
+                :value="categoryCheckbox"
               />
             </div>
           </div>
@@ -130,15 +132,14 @@
 </template>
 
 <script>
-import Card from "../lib/Card.vue";
 import Loader from "../lib/Loader.vue";
 import CheckBox from "../lib/CheckBox.vue";
 import { sanitize } from "../lib/index.js";
+import { computed, onMounted, ref, watch } from "vue";
 import useLunrSearch from "../composables/useLunrSearch";
-import { computed, onMounted, ref, watch } from "@vue/composition-api";
 
 export default {
-  components: { Loader, Card, CheckBox },
+  components: { Loader, CheckBox },
   setup() {
     let options = ref([]);
     let currentPage = ref(1);
@@ -202,6 +203,7 @@ export default {
     });
 
     watch(categoryCheckbox, function (newValue) {
+      console.log("PARENT COMPONENT: categoryCheckbox changed!", newValue);
       // P.S. 1000 * 60 = 1 second * 60  = 1 minute * 60 = 1 hour * 24 = 1 day
       sessionStorage.setItem("search_full_site_categories", newValue.join("_"));
       // Resetting the current page to 1

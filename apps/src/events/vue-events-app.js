@@ -1,16 +1,13 @@
-import Vue from "vue";
+import { createApp } from "vue";
+import moment from "vue-moment";
 import EventsApp from "./EventsApp.vue";
 
-Vue.use(require("vue-moment"));
+const app = createApp(EventsApp);
+app.use(moment);
 
 const appElement = document.querySelector("#events-app");
-
-new Vue({
-  render: (createElement) => {
-    return createElement(EventsApp, {
-      props: {
-        ...appElement.dataset,
-      },
-    });
+app.mount(appElement, {
+  props: {
+    ...appElement.dataset,
   },
-}).$mount(appElement);
+});

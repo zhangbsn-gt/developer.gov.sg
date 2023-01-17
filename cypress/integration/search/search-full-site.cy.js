@@ -31,6 +31,13 @@ describe("Full Site Page Test", function () {
     });
 
     it("Should be able to check and uncheck the checkbox to filter the results", () => {
+      // Check for default state of the checkboxes which should be checked
+      cy.get("#checkbox-1").should("be.checked");
+      cy.get("#checkbox-2").should("be.checked");
+      cy.get("#checkbox-3").should("be.checked");
+      cy.get("#checkbox-4").should("be.checked");
+      cy.get("#checkbox-5").should("be.checked");
+
       cy.get("#checkbox_0").uncheck().should("not.be.checked");
       cy.get("#checkbox_1").uncheck().should("not.be.checked");
       cy.get("#checkbox_2").uncheck().should("not.be.checked");

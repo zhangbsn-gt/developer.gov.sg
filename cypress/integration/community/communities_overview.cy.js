@@ -109,9 +109,9 @@ describe("Community Section Overview Page Test", function () {
         .should("be.visible")
         .contains("View all newsletter")
         .click();
-
       cy.url().should("contains", "/communities/newsletter/");
     });
+
 
     it("Navigates to the Developer Blogs page when the 'View all developer blogs' button is clicked", () => {
       // Click the "Developer Blogs" tab

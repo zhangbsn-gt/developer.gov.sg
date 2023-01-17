@@ -1,4 +1,4 @@
-import Vue from "vue";
+import { createApp } from "vue";
 import Vuex from "vuex";
 
 import { Editor } from "@tiptap/core";
@@ -26,7 +26,8 @@ const extensions = [
   Underline,
 ];
 
-Vue.use(Vuex);
+const app = createApp();
+app.use(Vuex);
 
 const pageEditor = {
   namespaced: true,

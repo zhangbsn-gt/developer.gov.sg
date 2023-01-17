@@ -232,7 +232,7 @@
 </template>
 
 <script>
-import { EditorContent, FloatingMenu, BubbleMenu } from "@tiptap/vue-2";
+import { EditorContent, FloatingMenu, BubbleMenu } from "@tiptap/vue-3";
 import { mapState, mapActions } from "vuex";
 import TableIcons from "./TableIcons";
 

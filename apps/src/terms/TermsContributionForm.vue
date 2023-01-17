@@ -167,7 +167,7 @@ import Noty from "noty";
 import Loading from "vue-loading-overlay";
 import { urlRegex, apiClient, detectFormErrors, hasErrors } from "../lib";
 import VerifyAndSubmit from "../lib/VerifyAndSubmit.vue";
-import "vue-loading-overlay/dist/vue-loading.css";
+import "vue-loading-overlay/dist/css/index.css";
 
 export default {
   components: { VerifyAndSubmit, Loading },

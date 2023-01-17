@@ -49,7 +49,7 @@
 import Card from "../lib/Card.vue";
 import Loader from "../lib/Loader.vue";
 import { sanitize } from "../lib/index.js";
-import { computed } from "@vue/composition-api";
+import { computed } from "vue";
 import useLunrSearch from "../composables/useLunrSearch";
 
 export default {

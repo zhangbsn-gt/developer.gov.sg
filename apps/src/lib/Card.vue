@@ -3,10 +3,7 @@
     <slot name="header"></slot>
     <slot name="content">
       <div
-        class="
-          sgds-card-content sgds-card-content-space-between
-          spacing-container-vertical spacing-16
-        "
+        class="sgds-card-content sgds-card-content-space-between spacing-container-vertical spacing-16"
       >
         <div class="spacing-container-vertical spacing-16">
           <slot name="main-content"></slot>
@@ -18,6 +15,6 @@
   </div>
 </template>
 
-<script lang="ts">
+<script>
 export default {};
 </script>

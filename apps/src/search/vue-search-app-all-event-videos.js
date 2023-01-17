@@ -1,9 +1,4 @@
-import Vue from "vue";
+import { createApp } from "vue";
 import SearchAllEventVideos from "./SearchAllEventVideos.vue";
-import VueCompositionAPI from "@vue/composition-api";
-Vue.use(VueCompositionAPI);
 
-new Vue({
-  el: "#search-app-all-event-videos",
-  render: h => h(SearchAllEventVideos),
-});
+createApp(SearchAllEventVideos).mount("#search-app-all-event-videos");
