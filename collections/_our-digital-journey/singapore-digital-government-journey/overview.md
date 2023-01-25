@@ -28,9 +28,9 @@ In order to drive co-creation and learning among the public and private sectors,
 
 Finally, to drive the vision of a Smart Nation, five Strategic National Projects were launched in 2017, these covered GoBusiness, CODEX, e-Payments, LifeSG, National Digital Identity, the Punggol Smart Town, Smart Nation Sensor Platform and Smart Urban Mobility. These projects lay the foundation for a Smart Nation by serving as a foundation for the adoption of digital and smart technologies throughout the economy and society. More details on each project can be found [here](https://www.smartnation.gov.sg/initiatives/strategic-national-projects){:target="_blank"}.
 
-View the full timeline of our digital milestones [here](https://www.tech.gov.sg/who-we-are/our-journey/){:target="_blank"}.
+View the full timeline of our digital milestones [here](https://www.tech.gov.sg/who-we-are/our-journey/){:target="_blank"} or through our Government Chief Digital Technology Officer's (GCDTO), Chan Cheow Hoe, podcast interview with Ernst & Young in 2021 [here](https://www.ey.com/en_gl/podcasts/leading-into-tomorrow/2021/11/episode-01-start-small-act-fast-and-think-big-to-digitally-transform-government){:target="_blank"}.
 
-Find out more about how GovTech supports Singapore's Digital Government journey [in this factsheet](files/govtech-singapore-digital-government-journey-factsheet.pdf){:target="_blank"}.
+Find out more about how GovTech supports Singapore's Digital Government journey through [this factsheet](files/govtech-singapore-digital-government-journey-factsheet.pdf){:target="_blank"}.
 
 
 ### National Achievements 2020
