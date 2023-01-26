@@ -33,7 +33,7 @@ By leveraging local banks’ PayNow and NETS e-Payment ecosystems, GovWallet is 
 
 It started off as an internal pilot project by GovTech’s Government Digital Services (GDS) team to enable GovTech to credit staff benefits into GovWallet and allows the recipients to transfer these benefits to their PayNow accounts or use them at merchants that accept the PayNow e-Payment method.
 
-GovTech’s Government Digital Services (GDS) team built and deployed GovWallet fully on the AWS Cloud, which allows the team to flexibly scale compute and storage capacities based on the data demands of the respective campaigns. Adopting a serverless architecture allowed the team to focus on making GovWallet more cost-efficient, performant, and responsive to traffic surge.
+GovTech’s Government Digital Services (GDS) team built and deployed GovWallet fully on the cloud, which allows the team to flexibly scale compute and storage capacities based on the data demands of the respective campaigns. Adopting a serverless architecture allowed the team to focus on making GovWallet more cost-efficient, performant, and responsive to traffic surge.
 
 Agencies no longer need to develop individual systems to conduct their respective distribution exercises, and beneficiaries can easily access their government pay-outs through familiar app interfaces.
 
