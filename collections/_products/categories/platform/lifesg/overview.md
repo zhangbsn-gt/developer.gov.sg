@@ -34,8 +34,6 @@ The LifeSG team is working with partner agencies to onboard more services and gu
 - Explore services
 - Profile with Inbox and Appointment functions
 
-Refer to the [Features](/products/categories/platform/lifesg/features){:target="_blank"} tab for more details. 
-
 ### Success Stories
 
 - With LifeSG, Chien Koh Wei, a second-time dad, was able to swiftly register the birth of his second child and save himself a trip to the Immigration and Checkpoints Authority (ICA). The app enabled Koh Wei to complete the birth registration process as well as apply for his child’s Baby Bonus without leaving his wife’s side after birth. When the time comes for Koh Wei to plan for his children’s future, he can also easily search and narrow down childcare centres and preschools with LifeSG.
