@@ -1,5 +1,5 @@
 ---
-title: Security Suite for Engineering Endpoint Devices (SEED) – Mobile Device Management (MDM) Platform for GCC 2.0 Environment  
+title: Security Suite for Engineering Endpoint Devices (SEED) – Mobile Device Management (MDM) Platform for GCC 2.0 Environment
 layout: layout-page-sidenav
 category: Cybersecurity
 _data: single-level-nav
@@ -14,7 +14,7 @@ single_level_nav: true
 sgts_collection_group: [service_management]
 sgts_layer_group: [base]
 sgts_title: SEED
-collection_group: [Singapore Government Tech Stack, What's New]
+collection_group: [Singapore Government Tech Stack]
 description: SEED is a Mobile Device Management (MDM) platform for the Government hosted on Government on Commercial Cloud (GCC) 2.0 environment.
 ---
 

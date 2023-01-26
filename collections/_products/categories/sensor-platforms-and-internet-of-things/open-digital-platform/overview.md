@@ -8,7 +8,6 @@ redirect_from:
     - /products/categories/sensor-platforms-and-internet-of-things/open-digital-platform.html
 sub_collection_render: true
 single_level_nav: true
-collection_group: [What's New]
 description: The Open Digital Platform (ODP) by GovTech and JTC integrates smart city solutions on one platform. Find out more
 ---
 

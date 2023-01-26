@@ -2,11 +2,8 @@
   description: Discover the latest product additions to the Singapore Government Developer Portal here
   items:
     - Overview
-    - FormSG
-    - GovText
     - MASH
-    - Open Digital Platform
-    - SEED
+    - Postman
 
 - name: Citizen-facing Products
   description: Explore the government products for providing citizens with the services they need. This includes citizen life journey, grant services, and more!

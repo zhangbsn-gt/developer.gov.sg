@@ -8,7 +8,7 @@ redirect_from:
     - /products/categories/productivity-tools/formsg.html
 sub_collection_render: true
 single_level_nav: true
-collection_group: [What's New]
+collection_group: [Citizen-facing Products]
 description: FormSG helps public officers to create digital forms for citizens conveniently and securely. Find out more!
 ---
 

@@ -11,7 +11,7 @@ single_level_nav: true
 sgts_collection_group: [data_science]
 sgts_layer_group: [services]
 sgts_title: GovText
-collection_group: [Singapore Government Tech Stack, Data Science and Artificial Intelligence, What's New]
+collection_group: [Singapore Government Tech Stack, Data Science and Artificial Intelligence]
 description: Analyse your textual data efficiently with the GovText Natural Language Processing (NLP) platform for WOG. Discover more!
 ---
 
