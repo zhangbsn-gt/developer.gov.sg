@@ -24,12 +24,11 @@ Jointly developed by the Smart Nation and Digital Government Office (SNDGO), Min
 Businesses can easily access more than 300 government e-services, find the most updated business regulatory information and obtain relevant business recommendations on the GoBusiness platform. To create a seamless experience for users, GoBusiness strings these services together, allowing users to search for information, apply and track applications across multiple government agencies all in one place.
 
 ### Key Features
+
 - User-friendly website with consolidated information
 - Step-by-step guidance for new businesses
 - Personalised dashboard for simplified transactions
 - e-Advisers to provide personalised recommendations
-
-Refer to [Features](/products/categories/platform/gobusiness/features){:target="_blank"} for more details.
 
 <figure style="text-align: center">
   <img
@@ -40,14 +39,17 @@ Refer to [Features](/products/categories/platform/gobusiness/features){:target="
 </figure>
 
 ### Success Stories
+
 In 2021, GoBusiness facilitated more than 6 million Government-to-Business transactions, and more than 56,000 individuals and businesses benefited from the e-Adviser recommendations. Businesses at various stages share how they have benefited from GoBusiness:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wmd7JDBS2cs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Pricing
+
 There are currently no fees for using the GoBusiness platform.
 
 ### Getting Started
+
 Users can visit [gobusiness.gov.sg](gobusiness.gov.sg){:target="_blank"} to access its services and resources.
 
 ### Contact Us
