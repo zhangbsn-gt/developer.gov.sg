@@ -42,12 +42,12 @@ WOGAA consists of four micro products integrated onto one platform:
 3. **Analytics** provides an overview of the performance of digital services
 4. **Sentiments** enables users to collect feedback and ratings
 
-Refer to the [Features](/products/categories/analytics/wogaa/features){:target="_blank"} tab for more details.
-
 ### Use Case
+
 The WOGAA Dashboard focuses on six key metrics such as page load time, transaction completion rate, transaction customer satisfaction, Search Engine Optimisation (SEO), accessibility and system uptime. Since its inception, users have noticed a significant reduction in time spent when consolidating the key metrics that matter to them. They have also observed instant improvements in areas such as accessibility and SEO and were able to use feedback collected from WOGAA Sentiments to improve various aspects of their digital services.
 
 ### Pricing
+
 WOGAA is currently free to use. We will also provide third-party tools at a small cost in the near future.
 
 ### Contact Us
