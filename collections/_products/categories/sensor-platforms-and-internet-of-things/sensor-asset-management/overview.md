@@ -14,7 +14,7 @@ collection_group:
 description: SAM+ is an all-encompassing sensor management platform for the Whole of Government.Find out more.
 ---
 
-![Open Digital Platform header banner](/assets/img/SAM-HeaderBanner-v2.png)
+![Sensor Asset Management banner](/assets/img/SAM-HeaderBanner-v2.png)
 
 SAM+ is an all-encompassing Whole-of-Government (WOG) sensor management platform. It provides users full visibility of all sensors deployed across the Government, enabling them to search for sensors and data of interest.
 SAM+ aggregates voluminous data from numerous channels into simple visualisations for ease of analysis, and offers a workspace with in-built workflow engines for agencies to collaborate in sensor planning. These capabilities enable agencies to unlock the value of sensor data and deliver better public services to citizens.
@@ -43,17 +43,6 @@ SAM+ also provides a dashboard of the lifecycle of all its sensors assets, allow
 
 Following the trial period,  SAM+ will be enhanced to develop its first operational version that can help agencies in their sensor planning and deployment. 
 
-
-### Key Features
-Currently, the SAM+ platform is under development with more than 90 features planned in the development pipeline. These features are grouped into 5 pillars of services:
-- Search and discovery
-- Data aggregation
-- Visualization and analytics
-- Planning
-- Workflows
-
-Refer to the [Features](/products/categories/sensor-platforms-and-internet-of-things/sensor-asset-management/features){:target="_blank"} tab for more details.
-
 ### Key Benefits
 SAM+ offers a myriad of benefits:
 
@@ -64,6 +53,16 @@ SAM+ offers a myriad of benefits:
 - Cost savings: With greater insights across the Government, agencies can avoid the duplication of sensor deployments efforts and investments in sensor infrastructure, thus reducing costs.
 
 - A cost-efficient ecosystem: SAM+ provides enhanced capabilities to agencies at low cost by building an ecosystem connecting to multiple channels. It connects to the Trusted Centres, Agencies’ sensor systems and the Sensor As A Service Bulk Tender to ingest sensor related data and data useful for planning. It also leverages the core expertise of other products in the capability centres such as [DECADA](https://www.developer.tech.gov.sg/products/categories/sensor-platforms-and-internet-of-things/decada-iot-tech-stack/overview.html){:target="_blank"}, the [Video Analytics System (VAS)](https://www.developer.tech.gov.sg/products/categories/analytics/vas/overview.html){:target="_blank"} and the Cloud Video Exchange (CVX) to provide a wider suite of services for its users.
+
+
+### Key Features
+Currently, the SAM+ platform is under development with more than 90 features planned in the development pipeline. These features are grouped into 5 pillars of services:
+- Search and discovery
+- Data aggregation
+- Visualization and analytics
+- Planning
+- Workflows
+
 
 ### Getting Started
 Agencies that are keen to test SAM+’s staging environment and explore the use of SAM+ in their respective use cases, can contact the product team through this [form](https://form.gov.sg/62280856ba91100012050933){:target="_blank"}.
