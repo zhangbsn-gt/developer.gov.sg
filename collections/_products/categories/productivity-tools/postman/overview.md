@@ -37,8 +37,6 @@ The Postman team is also exploring how to help agencies reach out to citizens mo
 - Performance tracking through analytics
 - Ready API to integrate with agency systems
 
-Refer to the [Features](/products/categories/productivity-tools/postman/features){:target="_blank"} tab for more details.
-
 ### Use Cases
 
 Over 78 million messages have been sent through email, SMS, and Telegram.
