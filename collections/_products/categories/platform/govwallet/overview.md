@@ -68,8 +68,6 @@ Agencies can specify the list of merchants that qualify for each scheme. For exa
 - Supports PayNow and NETS payment
 - Supports GovCash (withdrawal of pay-outs in cash via ATMs)
 
-Refer to the [Features](/products/categories/platform/govwallet/features){:target="_blank"} tab for more details.
-
 ### Success Stories
 
 MINDEF and the Ministry of Home Affairs are currently using GovWallet to disburse NS recognition benefits for more than 1 million SAF, SCDF and SPF men through the LifeSG app. CPFB has also tapped on GovWallet to create GovCash to administer the Workfare Income Supplement and GST Voucher schemes, which replaces cheque issuance to all their unbanked recipients. 
