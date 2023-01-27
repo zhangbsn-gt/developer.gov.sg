@@ -29,8 +29,6 @@ MASH is a part of the [Singapore Government Tech Stack (SGTS)](/singapore-govern
 - Continuous Integration, Continuous Delivery/Deployment (CI/CD) integration
 - Leverages industry standards
 
-Refer to [Features](/products/categories/cybersecurity/mash/features){:target="_blank"} for more details.
-
 ### Contact Us
 
 {% include contact-us-form.html %}
