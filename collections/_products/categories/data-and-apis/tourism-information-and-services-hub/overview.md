@@ -24,19 +24,6 @@ TIH aims to build a vibrant and innovative tourism industry through collaboratio
 
 <iframe src="https://www.youtube.com/embed/6KOMO8dE3K0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-
-### Key Features
-
-TIH offers a range of features including:
-
-- Content library for marketing needs and plug-and-play travel software services
-- Over 100 information and content Application Programme Interfaces (APIs) for websites or apps to use
-
-Refer to [Features](/products/categories/data-and-apis/tourism-information-and-services-hub/features){:target="_blank"} for more details.
-
-(Data accurate as of 30 September 2022.)
-
-
 ### Key Benefits
 
 TIH provides key benefits for partners in the tourism industry, including:
@@ -48,6 +35,16 @@ TIH provides key benefits for partners in the tourism industry, including:
 - Hotels – Key information such as the latest offers, services, F&B or events can be placed on TIH to enhance the awareness of a hotel’s offerings. Integrating digital services with TIH’s APIs allows updates to be uploaded automatically onto TIH.
 
 - App Developers – TIH offers ready APIs and travel software services like Enhanced Navigation Services to develop immersive Singapore experiences for your customers and the travel industry. The available APIs that TIH has to offer can be found [here](https://tih-dev.stb.gov.sg/api-products-documentation){:target="_blank"}.
+
+
+### Key Features
+
+TIH offers a range of features including:
+
+- Content library for marketing needs and plug-and-play travel software services
+- Over 100 information and content Application Programme Interfaces (APIs) for websites or apps to use
+
+(Data accurate as of 30 September 2022.)
 
 
 ### Success Stories
