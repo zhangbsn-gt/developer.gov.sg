@@ -82,7 +82,7 @@ bios:
 
 ### Transform with the Singapore Government Developer Portal
 
-The Singapore Government Developer Portal (DevPortal) offers public officers, government business partners, and tech community members with key resources that support their digital transformation efforts.
+The Singapore Government Developer Portal (Dev Portal) offers public officers, government business partners, and tech community members key resources that support their digital transformation efforts.
 
 **Our Mission:** To provide a one-stop resource hub for government digital products and services.
 
@@ -104,7 +104,7 @@ The Singapore Government Developer Portal (DevPortal) offers public officers, go
 					<p>Our logo represents the product development cycle. The overall look portrays a digital book or knowledge hub.</p>
 					<p><b>The curly brackets:</b> Mimic the book cover.</p>
 					<p><b>The inner bars:</b> Represent the code that embody our government products.</p>
-					<p><b>Colours used in our logo:</b> Representative of the colours in development dashboards.</p>
+					<p><b>The colours used in our logo:</b> Represent the colours in development dashboards.</p>
 				</div>
 			</div>
 		</div>
@@ -112,12 +112,12 @@ The Singapore Government Developer Portal (DevPortal) offers public officers, go
 </div>
 <p></p>
 
-**Download our logos and branding guide**
+**Download our logos and brand guide**
 
-to insert something on when and how they can use our logo and to following the branding guide?
+The Dev Portal’s brand identity guidelines covers the correct usage of our logo, creative style, and the look and feel of our digital and physical assets. Please refer to this guide when incorporating any of our brand elements. You may also incorporate our logos for co-marketing efforts, acknowledgement of our brand etc.     
 
-- [The DevPortal logos](/assets/files/singapore-government-developer-portal-logos.zip){:target="_blank"}
-- The DevPortal branding guide (coming soon)
+- [Dev Portal logos](/assets/files/singapore-government-developer-portal-logos.zip){:target="_blank"}
+- [Dev Portal brand guide](/assets/files/SGDP-Brand_Identity_Guidelines_260123.pdf){:target="_blank"}
 
 ### Our Milestones and Achievements               
 
