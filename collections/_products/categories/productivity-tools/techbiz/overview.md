@@ -17,7 +17,7 @@ description: TechBiz is a service management tool for government officers to man
 
 ![TechBiz header banner](/assets/img/techbiz-HeaderBanner-v2.png)
 
-TechBiz is a service management tool that helps government officers discover, subscribe, and manage SGTS services on a single console. It is currently in the Beta stage and is one of the three tools in the Engineering Suite of the SGTS. The other two tools are [TechPass](https://www.developer.tech.gov.sg/products/categories/digital-identity/techpass/overview.html){:target="\_blank"} and TechHelp, which are in the General Availability (GA) and development stages respectively.
+TechBiz is a service management tool that helps government officers discover, subscribe, and manage SGTS services on a single console. It is currently in the Beta stage and is one of the two tools in the Engineering Suite of the SGTS. 
 
 By integrating all SGTS services into a single console and offering a consistent and streamlined interface for users, TechBiz overcomes the complexity of reconciling subscription plans, resource usage and invoicing data across multiple services as more SGTS products are rolled out across the government.
 
@@ -39,7 +39,7 @@ For Users:
 - Better and more efficient subscription experiences for SGTS services
 - Oversight of resource consumption for more informed planning decisions and reporting
 
-TechBiz is now integrated with [Container Stack](https:/www.developer.tech.gov.sg/singapore-government-tech-stack/runtime/container-stack){:target="\_blank"} and moving forward, it will be integrated with more SGTS services such as [SHIP-HATS](https:/www.developer.tech.gov.sg/singapore-government-tech-stack/toolchain/ship-hats/){:target="\_blank"}, [StackOps](https:/www.developer.tech.gov.sg/singapore-government-tech-stack/monitoring/stackops){:target="\_blank"} etc.
+TechBiz is now integrated with [SHIP-HATS](https://www.developer.tech.gov.sg/products/categories/devops/ship-hats/overview.html){:target="\_blank"} and moving forward, it will be integrated with more SGTS services such as [StackOps](https://www.developer.tech.gov.sg/products/categories/devops/stackops/overview.html){:target="\_blank"}, [Container Stack](https://www.developer.tech.gov.sg/products/categories/devops/container-stack/overview.html){:target="\_blank"} etc.
 
 ### Contact Us
 
