@@ -40,15 +40,37 @@ Singapore actively participates in international platforms by providing keynote 
 
 Through these engagements, we want to help, and learn from one another.
 
-Here are some of our more recent key partnership initiatives on the international front.
+Here are some of our more recent key partnership initiatives on the international front:
+
+#### November 2022
+
+- Visit by Japan’s Vice-Minister for Digital Transformation and Chief Officer of Digital Agency, Asanuma Takashi
+- Visit by Indonesia KOMINFO’s Director General of Informatics Applications, Semuel Abrijani Pangerapan
+- Visit by Bavaria’s State Minister of Digital Affairs, Judith Gerlach
+
+#### September 2022
+
+- Hosting of GovTech’s [Digital Government Exchange](/our-digital-journey/digital-government-exchange/overview){:target="_blank"} and the [56th ICA Conference](https://ica-it.org/index.php/conferences/previous-conferences/56th-ica-conference){:target="_blank"}
+
+#### August 2022
+
+- Visit by Cambodia Telecommunication Regulator's Chariman, Chenda Chong
+- Visit by Thailand's Permanent Secretary of Ministry of Digital Economy and Society, Ajarin Pattanapanchai
+- Visit by Kazakhstan's Deputy Prime Minister, Mukhtar Tileuberdi
+- Visit by South Korea's Director-General of Ministry of Science and ICT, Song Sang Hoon
+
+#### July 2022
+
+- Visit by Japan Tokyo Metropolitan Government’s Senior Director of the Bureau of Digital Services, Masayao Maruyama
+- [Memorandum of Understanding between GovTech and UK Government Digital Services on the design and delivery of digital government public services](https://www.tech.gov.sg/media/media-releases/2022-07-04-mou-signing-between-govtech-and-uk-government-digital-service){:target="_blank"}
 
 #### June 2022
 
-- Visit by Malaysia’s Minister of Health, Khairy Jamaluddin.
+- Visit by Malaysia’s Minister of Health, Khairy Jamaluddin
 
 #### May 2022
 
-- [Memorandum of Cooperation (MOC) between GovTech and the Digital Agency of Japan in the area of Digital Government.](https://www.tech.gov.sg/media/technews/govtech-partners-the-digital-agency-of-japan-to-push-digital-government-transformation){:target="_blank"}
+- [Memorandum of Cooperation (MOC) between GovTech and the Digital Agency of Japan in the area of Digital Government](https://www.tech.gov.sg/media/technews/govtech-partners-the-digital-agency-of-japan-to-push-digital-government-transformation){:target="_blank"}
 
 ### Achievements
 
