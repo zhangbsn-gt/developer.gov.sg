@@ -1,5 +1,5 @@
 ---
-title: TechBiz - Your one-stop portal to subscribe to Singapore Government Tech Stack (SGTS) Services!  
+title: TechBiz - Your one-stop portal to subscribe to Singapore Government Tech Stack (SGTS) Services
 layout: layout-page-sidenav
 category: Productivity Tools
 _data: single-level-nav
