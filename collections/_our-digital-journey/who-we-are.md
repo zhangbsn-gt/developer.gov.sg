@@ -2,7 +2,7 @@
 title: Who We Are
 layout: layout-page-sidenav
 description: >
-  TO UPDATE
+  Learn about the team and logo behind the Singapore Government Developer Portal.
 bios:
   - name: Karen Kee
     title: Deputy Director
