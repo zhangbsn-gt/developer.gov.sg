@@ -99,7 +99,7 @@
             >
               <a
                 class="sgds-pagination-previous"
-                :disabled="currentPage === 1"
+                :disabled="currentPage === 1 ? true : undefined"
                 @click="setCurrentPage(currentPage - 1)"
                 >Previous</a
               >
@@ -119,7 +119,12 @@
               </ul>
               <a
                 class="sgds-pagination-next"
-                :disabled="currentPage === filteredResult.numberOfFilteredPages"
+                :disabled="
+                  currentPage === filteredResult.numberOfFilteredPages ||
+                  filteredResult.numberOfFilteredPages === 0
+                    ? true
+                    : undefined
+                "
                 @click="setCurrentPage(currentPage + 1)"
                 >Next</a
               >
@@ -203,7 +208,6 @@ export default {
     });
 
     watch(categoryCheckbox, function (newValue) {
-      console.log("PARENT COMPONENT: categoryCheckbox changed!", newValue);
       // P.S. 1000 * 60 = 1 second * 60  = 1 minute * 60 = 1 hour * 24 = 1 day
       sessionStorage.setItem("search_full_site_categories", newValue.join("_"));
       // Resetting the current page to 1
