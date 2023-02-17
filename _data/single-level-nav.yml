@@ -357,6 +357,13 @@
     - Overview
 
 # Productivity Tools
+- name: CrowdTaskSG
+  items:
+    - Overview
+    - Features
+    - Getting Started
+    - Resources
+
 - name: FormSG
   items:
     - Overview

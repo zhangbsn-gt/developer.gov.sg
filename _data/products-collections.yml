@@ -2,6 +2,9 @@
   description: Discover the latest product additions to the Singapore Government Developer Portal here
   items:
     - Overview
+    - CrowdTaskSG
+    - FormSG
+    - GovText
     - MASH
     - Postman
 
@@ -11,6 +14,7 @@
     - Overview
     - BookingSG
     - COVID-19 Chatbots
+    - CrowdTaskSG
     - Data.gov.sg
     - eCanvas
     - ePad

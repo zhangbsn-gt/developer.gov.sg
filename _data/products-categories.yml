@@ -141,6 +141,7 @@
   description: Tools to enhance your experience at work and help you achieve more
   items:
     - Overview
+    - CrowdTaskSG
     - FormSG
     - GatherSG
     - Postman
