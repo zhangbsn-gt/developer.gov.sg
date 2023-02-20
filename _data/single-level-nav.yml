@@ -23,6 +23,10 @@
 - name: VAS
   items:
     - Overview
+    - Features
+    - Getting Started
+    - Resources
+    - Meet The Team
 
 # Blockchain
 - name: OpenAttestation
