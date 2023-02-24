@@ -24,7 +24,7 @@ CStack ships with a base CI pipeline out-of-the-box to get your CI/CD started fr
 
 ### GitOps built-in to automate/reconcile deployments on Kubernetes
 
-CStack has GitOps built-in, which will miminimise any potential issues in managing drift and orphaned resources while working with Kubernetes. With GitOps, the CStack platform automatically checks your code repositories to reconcile runtime resources with your configuration code.
+CStack has GitOps built-in, which will minimise any potential issues in managing drift and orphaned resources while working with Kubernetes. With GitOps, the CStack platform automatically checks your code repositories to reconcile runtime resources with your configuration code.
 
 ### Supports custom resource definitions to automate cloud resource configurations
 
