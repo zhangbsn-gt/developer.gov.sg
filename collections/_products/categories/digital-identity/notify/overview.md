@@ -27,11 +27,11 @@ Using Notify, agencies can:
 - Send notifications securely via the Singpass app 
 - Customise messages and track actionable campaign statistics 
 - Conduct flexible campaigns through one time/on-demand messages or recurring message campaigns 
-- Reach over 3.5 million Singpass app users 
+- Reach over 4.2 million Singpass app users 
 
 ### Key Features
 
-- Its wide audience reach of over 3.5 million Singpass app users
+- Its wide audience reach of over 4.2 million Singpass app users
 - Allows agencies to send messages securely as a trusted source   
 - The ability to customise messages with actionable campaign statistics 
 
