@@ -36,7 +36,7 @@ The main benefits of Login are:
 
 - **Cost-savings**: Businesses save time and money without the need to implement and operate additional infrastructure and systems
 - **Convenience**: Offer customers the Singpass password-less login experience as a fast, convenient, and secure means of authentication
-- **Ready-access**: Allow over four million Singpass users to access their online services
+- **Ready-access**: Allow over five million Singpass users to access their online services
 
 ### How Do You Use Login?
 
@@ -55,7 +55,7 @@ Login was first piloted for private sector use in mid-2019, with early adopters 
 
 Other successful businesses that have integrated Login include OCBC, HSBC, Prudential, SingTel, SGX, ViewQwest, JustLogin, and SMEs like Eduquest, WhiteCoat, Ray of Hope, Ministry of Helpers and PropYoda.
 
-As of October 2021, there are more than 130 private sector digital services leveraging Login as an authentication gateway to enable their customers to access services conveniently with the Singpass app.
+To date, there are more than 230 private sector digital services leveraging Login as an authentication gateway.
 
 ### What's Next?
 
