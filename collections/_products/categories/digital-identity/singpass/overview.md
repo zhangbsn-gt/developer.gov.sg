@@ -21,7 +21,7 @@ Singpass, Singapore’s National Digital Identity (NDI), is a strategic national
 
 As a foundational digital infrastructure that is critical to achieving Singapore’s vision of improving the lives of citizens, Singpass creates new opportunities for businesses, and transforms the capabilities of government agencies by providing a convenient and secure platform for users to conduct transactions.
 
-As of February 2022, over 700 organisations offering more than 2,000 services have adopted Singpass. Singpass has over 4.5 million users, which consists of 97% of Singapore Citizens and Permanent Residents aged 15 and above. In addition, more than 350 million personal and corporate transactions are facilitated by Singpass every year. 
+To date, this includes 800 organisations offering more than 2,700 services. Today, Singapore has a user base of more than five million users, covering 97% of Singapore Citizens and Permanent Residents aged 15 and above. More than 500 million personal and corporate transactions are facilitated via Singpass every year.
 
 Singpass’ suite of services for businesses and citizens include: 
 -	Myinfo: A "tell-us-once" service that allows pre-filling of forms and the expedition of electronic Know-Your-Customer (eKYC) verification processes 
@@ -29,7 +29,6 @@ Singpass’ suite of services for businesses and citizens include:
 -	Verify: A  secure QR code based in-person identity verification and data sharing service 
 -	Sign: A secure electronic signature service that allows digital signing of documents 
 -	Identiface: A secure authentication service driven by facial recognition technology
--	Authorise: A service that allows remote authorisation of digital transactions (coming soon!)
 
 ### Use Cases
 
