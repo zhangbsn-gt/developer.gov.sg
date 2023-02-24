@@ -35,7 +35,7 @@ The private and public sector can integrate their digital services with Myinfo A
 
 ### Why Should Myinfo be Adopted?
 
-As of July 2021, close to 700 digital services offered by Government agencies and businesses have been onboarded to Myinfo.
+To date, more than 1,000 digital services offered by government agencies and businesses have been onboarded to Myinfo.
 
 Since adopting Myinfo, businesses have reported:
 
@@ -49,7 +49,7 @@ Businesses were also able to create a new category of instant products and servi
 
 ### How do You Use Myinfo?
 
-**For end-users:** Users must authenticate themselves via Singpass to use Myinfo as an alternative option to complete online forms automatically instead of manual form filling. Upon providing their consent for Myinfo API to retrieve their personal data from the respective datasets of various government agencies, users can tap on Myinfo seamlessly when accessing and transacting with close to 700 digital services offered by government agencies and businesses currently onboarded to Myinfo.
+**For end-users:** Users must authenticate themselves via Singpass to use Myinfo as an alternative option to complete online forms automatically instead of manual form filling. Upon providing their consent for Myinfo API to retrieve their personal data from the respective datasets of various government agencies, users can tap on Myinfo seamlessly when accessing and transacting with more than 1,000 digital services offered by government agencies and businesses currently onboarded to Myinfo.
 
 **For the private and public sectors:** The following steps are required to integrate Myinfo into a digital service.
 
