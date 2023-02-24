@@ -168,6 +168,9 @@
 - name: Container Stack
   items:
     - Overview
+    - Features
+    - Getting Started
+    - Resources
      
 - name: SHIP-HATS
   items:

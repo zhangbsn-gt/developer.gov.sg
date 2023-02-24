@@ -1,5 +1,5 @@
 ---
-title: Container Stack (CStack) – Your Code-in-a-Container, Our Stack-in-a-Cluster
+title: Container Stack (CStack) – Managed Platform for Apps using Kubernetes
 layout: layout-page-sidenav
 category: DevOps
 description: Container Stack is a cloud-based container hosting platform and a Runtime component within Singapore Government Tech Stack.
@@ -16,61 +16,33 @@ sgts_layer_group: [base]
 sgts_title: Container Stack
 ---
 
-### Overview
+![Container Stack (CStack) header banner](/assets/img/containerstack-HeaderBanner-v2.png)
 
-CStack is part of the Runtime component in the [Singapore Government Tech Stack (SGTS)](/singapore-government-tech-stack/overview){:target="_blank"}. It helps agencies reduce overheads in setting up and maintaining the infrastructure required for DevSecOps so that development teams can focus on building great products. By leveraging CStack, agencies can kickstart their DevSecOps practices and accelerate their journey into agile application development.
+Container Stack (CStack), a Base Layer product in the [Singapore Government Tech Stack (SGTS)](/singapore-government-tech-stack/){:target="_blank"}, offers a centralised, secure, and fully managed development platform for containers and Kubernetes.
 
-### What is CStack?
+Hosted on the [Government on Commercial Cloud (GCC)](/products/categories/infrastructure-and-hosting/government-on-commercial-cloud/){:target="_blank"}, CStack is used together with [SHIP-HATS](/products/categories/devops/ship-hats/){:target="_blank"} and [StackOps](products/categories/devops/stackops/){:target="_blank"} to provide an end-to-end agile development platform, so that development teams can focus on delivering applications instead of setting up and managing tools.
 
-CStack is a cloud-based container development and hosting platform ([IM8 compliant](/guidelines/standards-and-best-practices/im8){:target="_blank"}) that:
+The [Instruction Manual for Infocomm Technology and Smart Systems (ICT&SS) Management](/guidelines/standards-and-best-practices/instruction-manual-for-ict-ss-management.html){:target="_blank"} (previously known as Instruction Manual 8/IM8) policy requires applications that use containers to have secure development pipelines and underlying runtime platforms, and this could be challenging for the uninitiated. 
 
-- Leverages features of Kubernetes to automate deployment, and manage & scale containerised applications.
-- Integrates with [SHIP-HATS](/products/categories/devops/ship-hats){:target="_blank"} to enable Continuous Integration, Continuous Delivery/Deployment (CICD) and automated application testing.
-- Automates application deployment where Git is the single source of truth.
-- Provisions and integrates cloud managed services such as object storage and relational databases using a declarative approach.
-- Provides dashboards for developers to monitor their system metrics.
-- Secures your workloads by providing an integrated set of container security tools.
+CStack was built to assist teams planning to modernise applications using containers and Kubernetes to get a head start without setting up the infrastructure themselves.
 
-### Why Should CStack be Adopted?
+### Key Benefits
 
-The benefits of CStack include:
+- **Reduces overheads for setup and maintenance of application infrastructure**: By leveraging CStack’s collective expertise to manage Kubernetes, you can focus on delivering value to your customers by building great products. Dive straight into application development and deployment from week one, and  skip the infrastructure setup.
 
-- **Leverage** CStack product team’s collective expertise to manage Kubernetes for you so that your team can focus on building great products.
-- **Kickstart** your DevSecOps practices and agile development from day one rather than spending time setting up tools for development yourself.
-- **Elevate** developer experience and performance: CStack fills the gap between operations and developers by enabling developers to manage infrastructure through code. CStack also allows agencies to deploy fast and learn from feedback with each release.
-- **Stay** secure and compliant with every release: CStack’s infrastructure-as-code and policies-as-code mechanisms offer agencies the ability to enable automated auditing, thereby ensuring that your applications or services stay secure and compliant with every release.
-
-### How Do You Use CStack?
-
-1. Build your applications by maintaining your source code in CStack repositories.
-2. Deploy your applications automatically using infrastructure-as-code.
-3. Secure your applications using the out-of-box base pipeline that scans your code and container images for security vulnerabilities.
-
-**List of Supported Managed Services (Cloud Managed Services)**
-
-- Simple Storage Service (S3)
-- Relational Database Service (RDS)
-  - MySQL
-	- PostgreSQL
-- NoSql Database Service – DynamoDB
-- Simple Notification Service (SNS)
-- Simple Queue Service (SQS)
-- Simple Email Service (SES)
-- Redis ElastiCache
-- VPC Endpoints
-
-CStack is currently running pilots with public agencies. If you're interested to participate in the pilot, please respond using this [form](https://go.gov.sg/cstack-signup){:target="_blank"}
+- **Accelerates application development and DevSecOps practices**: CStack lets you kickstart your DevSecOps practices and agile development quickly instead of spending time setting up tools and automation. It provides a CI pipeline out-of-the-box and GitOps to automate application deployments. This enables agencies to deploy and release applications frequently while iterating on user feedback.
 
 ### Success Stories
 
-The MOE Digital Office leveraged CStack to launch a campaign microsite for Teacher’s Day 2021/2022. The microsite was custom developed using a containerised Wordpress engine that is deployed on CStack.
+The MOE Digital Office leveraged CStack to launch a campaign microsite for Teacher’s Day 2021 and 2022. The microsite was customised using WordPress and was deployed as a containerised application on CStack.
 
-CStack provided the development team a compliant platform which allowed them to reduce the scope of Vulnerability Assessment and Penetration Testing (VAPT).  The reduced scope then allowed them to complete the VAPT exercise within 1.5 months, despite the them being a small team of 3 members.
+CStack served as a compliant platform which allowed the team to reduce the scope of Vulnerability Assessment and Penetration Testing (VAPT). The reduction allowed them to complete the exercise within six weeks, despite being a lean team of three members.
+
+### Pricing
+
+Early adopters of CStack can enjoy the service for free until Mar 2023.
+
 
 ### Contact Us
 
 {% include contact-us-form.html %}
-
-<br/>**Technical Resources**
-
-- [Container Stack Documentation](https://go.gov.sg/cstack-docs){:target="_blank"}
