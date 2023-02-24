@@ -44,13 +44,13 @@ For more information on Myinfo business API, please read the [documentation](htt
 
 ### Login
 
-Singpass Login, is now available for private sector use via an API integration. With Login, users can do away with remembering one additional set of credentials. Businesses will be able to authenticate and onboard existing Singpass users with higher assurance.
+Singpass Login is now available for private sector use via an API integration. With Login, users can do away with remembering one additional set of credentials. Businesses will be able to authenticate and onboard existing Singpass users with higher assurance.
 
-With Singpass Login, businesses will be able to :
+With Singpass Login, businesses will be able to:
 
-- authenticate users without the need to implement and operate additional infrastructure and systems;
-- offer users the Singpass password-less login experience, and a fast, convenient and secure means of authentication; and
-- provide access to their online services to over 4 million Singpass users.
+- authenticate users without the need to implement and operate additional infrastructure and systems
+- offer users the Singpass password-less login experience, and a fast, convenient and secure means of authentication
+- provide access to their online services to the Singpass user base of more than five million users
 
 For more information, refer to Singpass Login API [here](https://api.singpass.gov.sg/library/login/developers/overview-at-a-glance). You can also visit our Login product page through this [link](https://www.developer.tech.gov.sg/products/categories/digital-identity/login/overview.html){:target="_blank"}. 
 
@@ -97,12 +97,6 @@ This service is ideal for use cases that require step-up authentication or to as
 Notify is an in-app message service on the Singpass app for government agencies to securely send official notifications and messages to users, especially messages that require higher identity assurance. 
 
 You can visit the Notify product page through this [link](https://www.developer.tech.gov.sg/products/categories/digital-identity/notify/overview.html){:target="_blank"}.
-
-### Authorise (Coming Soon)
-
-Authorise enables businesses to notify and seek authorisation for transactions from customers without being physically present. Businesses will be able to make use of Singpass to obtain trusted authorisations/instructions from citizens.
-
-For example, businesses can request authorisation from users to share information/instruction from another public or private body. Users will receive notifications on Singpass app, informing them that there are pending requests for authorisation. Users can consent to this request, and the authorisation will be share with the requesting party, doing away with the need for him to be physically present and without the need to approach two different parties to pass the information/instruction around them.
 
 ### For more information
 
