@@ -16,7 +16,7 @@ description: >
 
 ### Overview
 
-Myinfo business enables businesses to pre-fill digital forms with data from Government sources, such as corporate profile, financial performance and ownership information, for simpler online transactions. It facilitates over 190 digital services offered by Government agencies and businesses.
+Myinfo business enables businesses to pre-fill digital forms with data from Government sources, such as corporate profile, financial performance and ownership information, for simpler online transactions. To date, more than 250 digital services offered by government agencies and businesses have been onboarded to Myinfo business.
 
 Through Myinfo business, business users leveraging on [Singpass](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjduemY6rfyAhWDUn0KHUvoCPoQFnoECA4QAw&url=https%3A%2F%2Fwww.singpass.gov.sg%2F&usg=AOvVaw1nQmkVeH5_kfXYyA9Cs0Hz){:target="\_blank"} can control and consent to sharing both their corporate and relevant personal data simultaneously and securely with participating businesses for more seamless digital transactions.
 
@@ -24,7 +24,7 @@ Find out more about Myinfo business [here](https://api.singpass.gov.sg/library/m
 
 ### Why should Myinfo business be adopted?
 
-To date, Myinfo business enables over 190 digital services and facilitates an average of over 500,000 monthly transactions for the public and private sectors.
+More than 300,000 entities have benefitted from the use of Myinfo business, amounting to over seven million transactions a year.
 
 By using Myinfo business’ profile, business users can enjoy less repetitive form-filling, lower incidence of mistakes resulting from human error, and a reduced need to submit physical documentation as verification to complete online transactions. For example, businesses can pre-fill digital forms for online transactions such as opening a corporate utility account or applying for SME loans by consenting to share their corporate data and applicant’s personal data from government sources via Singpass.
 
