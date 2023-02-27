@@ -45,11 +45,18 @@ For example, uploading files to a common file repository at regular intervals.
 
 CFT can be set up quickly. Agencies are able to transfer files fast, without incurring the operational costs and overheads of setting up a similar service. They can scale as required based on their transfer needs.
 
-CFT is currently in closed beta and the expected general availability (GA) date is approximately in Q1 2021. For pilot users, please note that CFT version 1.1 will be updated to CFT version 2.1 from May 2022. A comparison of the features between both versions are listed below: 
+CFT is currently in closed beta and the expected general availability (GA) date is approximately in Q1 of FY 2023. 
+
+<!-- 
+
+NOTE: Table of features being updated by product manager. Will add new table once available. Removing the old (outdated) one for now.
+
+The GA features are listed below: 
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/CFT-Table2-FA.png" 
+    src="/assets/img/CFT-Table2-FA-2.png" 
   />
       <figcaption>Fig 1: A comparison of CFT version 1.1 and 2.1's features</figcaption>
 </figure>
+-->

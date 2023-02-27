@@ -49,7 +49,7 @@ File transfers in CFT can be understood using the airport luggage screening proc
 
 ### Pricing
 
-Early adopters of CFT can enjoy the service for free until the end of FY22. We will release the indicative pricing in Q3 of FY22.
+If you're an early adopter of CFT, you can use the service for free until further notice. If you want to learn more about indicative pricing, [get in touch with us](#contact-us) and we'll provide you with all the details.
 
 ### Contact Us
 

@@ -8,15 +8,17 @@ redirect_from:
     - /products/categories/data-and-apis/cloud-file-transfer/getting-started.html
 ---
 
-### How Do You Onboard CFT?
+### How Do You Onboard to CFT?
 
-Agencies and their partners can onboard and integrate CFT as a closed beta digital service in three simple steps:
+Agencies and their partners can onboard and start using CFT as a closed beta digital service in three simple steps:
 
-1. Qualification for Closed-Beta
-	- We are no longer taking in new closed-beta users for CFT version 1.1 as we are upgrading to CFT version 2.1 from May 2022. Agencies which are keen can [register their interest](https://form.gov.sg/#!/62280856ba91100012050933){:target="_blank"} to be a closed-beta user for CFT version 2.1. 
+1. Qualify for Closed Beta
+	- Agencies that are keen on becoming a closed beta user for CFT can [register their interest](https://form.gov.sg/#!/62280856ba91100012050933){:target="_blank"} with us.
 
 2. Technical Assessment
-	- The CFT team will review your use case and if found suitable, follow-up with you for the implementation details.
+	- Once we receive your application, our team will review your use case to determine suitability and capacity. If approved, we'll follow up with you to discuss implementation details.
 	
-3. Test, Sign and Use
-	- Try out the CFT APIs and if our APIs are suitable for your use, get some simple paperwork done and you are good to go!
+3. Test, Sign, and Use
+	- After your use case is approved, you can start testing out the CFT APIs. If they work well for your needs, we'll provide you with some simple paperwork to sign and you'll be ready to go!
+
+If you have any questions or concerns, don't hesitate to reach out to us for support.

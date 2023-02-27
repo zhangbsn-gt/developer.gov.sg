@@ -10,6 +10,10 @@ redirect_from:
 
 ### Technical Documentation
 
-- [CFT Rest APIs](https://docs.developer.tech.gov.sg/docs/cft-rest-api-documentation/){:target="_blank"}
+To learn more about using CFT, refer to the following documentation:
 
-- [CFT User Documentation](https://docs.developer.tech.gov.sg/docs/cft-user-guide/){:target="_blank"}
+- [CFT User Guide](https://docs.developer.tech.gov.sg/docs/cft-user-guide/){:target="_blank"}
+
+- [CFT REST API Reference Documentation](https://docs.developer.tech.gov.sg/docs/cft-rest-api-documentation/){:target="_blank"}
+
+
