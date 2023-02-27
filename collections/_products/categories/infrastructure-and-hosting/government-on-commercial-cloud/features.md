@@ -33,7 +33,7 @@ A light-touch approach towards cloud-native solutions is adopted. Native solutio
 ### Remote administration
 Native solutions from CSPs enable remote administrators to manage, access and troubleshoot cloud resources, including Elastic Compute Cloud instances and virtual machines. They provide a consistent way to gather operational insights, carry out routine management tasks, track your development, access test and production environments, and proactively act on events or active incidents.
 
-For example, [AWS System Manager](https://aws.amazon.com/systems-manager/){:target="_blank"} with AWS Systems Manager Agent (SSM Agent) allows remote administration such as Secure Shell (SSH) terminal remote administration and Remote Desktop Protocol (RDP) remote adminisration with Fleet Manager, configuration management, patching operating systems, and the execution of Policy-as-Code inspections.   
+For example, [AWS System Manager](https://aws.amazon.com/systems-manager/){:target="_blank"} with AWS Systems Manager Agent (SSM Agent) allows remote administration such as Secure Shell (SSH) terminal remote administration and Remote Desktop Protocol (RDP) remote administration with Fleet Manager, configuration management, patching operating systems, and the execution of Policy-as-Code inspections.   
 
 ### Continuous log export and retention capability
 GCC 2.0 enables users to collate logs and findings from your cloud services and export them to a centralised location, such as the Log S3 bucket on the core login account. Authorised users from agencies can then access your cloud account logs and findings from this centralised location.

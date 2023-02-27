@@ -19,7 +19,7 @@ MASH is a GovTech-developed Static Application Security Testing (SAST) tool that
 
 MASH takes an “outside-in” approach, by extracting content from iOS (.ipa) and Android OS (.apk) files to identify potential vulnerabilities and the unintended exposure of sensitive data such as hardcoded secret keys, debugging information and Application Programming Interface (API) key strings. Support for Android OS .aab files will be added in a future release.
 
-Additionally, MASH has the functionality to test mobile-specific settings, such as analysing the P-list file for iOS configurations, or the preference.xml file for Android configurations. For Android applications, MASH will attempt to decompile the APK file for deeper analysis.
+Additionally, MASH has the functionality to test mobile-specific settings, such as analysing the P-list file for iOS configurations, or the AndroidManifest.xml file for Android configurations. For Android applications, MASH will attempt to decompile the APK file for deeper analysis.
 
 MASH is a part of the [Singapore Government Tech Stack (SGTS)](/singapore-government-tech-stack/){:target="_blank"} and can be integrated with [SHIP-HATS](/products/categories/devops/ship-hats/overview.html){:target="_blank"}. Developers are encouraged to use MASH as a security hygiene check before their applications undergo Vulnerability Assessment and Penetration Testing (VAPT).
 
