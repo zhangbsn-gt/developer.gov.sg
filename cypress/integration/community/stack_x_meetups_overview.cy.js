@@ -21,21 +21,21 @@ const verifyEventPlacementByTimingStatus = (upcomingEvents, elementId) => {
   });
 };
 
-describe("Stack-X Meetup Overview Page Test", function () {
+describe("STACK Meetup Overview Page Test", function () {
   context("Mobile and Desktop Test Case", () => {
     beforeEach(() => {
       cy.viewport("macbook-13");
       // Wipe out state from the previous tests
-      cy.visit("/communities/events/stack-x-meetups/");
+      cy.visit("/communities/events/stack-meetups/");
     });
 
-    it("Is the number of events on the Stack-X Meetup page equal to the number of stack-x events in the events data file", () => {
+    it("Is the number of events on the STACK Meetup page equal to the number of stack-x events in the events data file", () => {
       // Get the events data from the response
       getEventsData().then(response => {
-        // Filter the events data to get only the events that belongs to the Stack-X Meetup category
+        // Filter the events data to get only the events that belongs to the STACK Meetup category
         const stackXEvents = filterEventsByCategory(
           response.body,
-          "Stack-X Meetup"
+          "STACK Meetup"
         );
 
         // Verify that the page contains the same number of events as the filtered events data
@@ -49,10 +49,10 @@ describe("Stack-X Meetup Overview Page Test", function () {
     it("Is the events sorted correctly into the upcoming-events-container and past-events-container", () => {
       // Get the events data from the response
       getEventsData().then(response => {
-        // Filter the events data to get only the events that belongs to the Stack-X Meetups category
+        // Filter the events data to get only the events that belongs to the STACK Meetups category
         const stackXEvents = filterEventsByCategory(
           response.body,
-          "Stack-X Meetup"
+          "STACK Meetup"
         );
 
         // Filter the events data to get events by timing status
@@ -76,10 +76,10 @@ describe("Stack-X Meetup Overview Page Test", function () {
       // Get attribute, alt, of the event icon
       cy.get("img[data-cy='event-category-iconography']").each($eventCard => {
         // Verify that the event icon is rendered correctly
-        expect($eventCard.parent().text().trim()).to.eq("Stack-X Meetup");
+        expect($eventCard.parent().text().trim()).to.eq("STACK Meetup");
         // Expect the src of the event icon to be equal to the conference icon
         expect($eventCard.attr("src")).to.eq(
-          "/assets/img/communities/stack-x-meetups.svg"
+          "/assets/img/communities/stack-meetups.svg"
         );
       });
     });
@@ -108,10 +108,10 @@ describe("Stack-X Meetup Overview Page Test", function () {
 
     it("Is the 'recordings available' text rendered for past events that belongs to the key value pair of event_recording_link", () => {
       getEventsData().then(response => {
-        // Filter the events data to get only the events that belongs to the Stack-X Meetup category
+        // Filter the events data to get only the events that belongs to the STACK Meetup category
         const stackXEvents = filterEventsByCategory(
           response.body,
-          "Stack-X Meetup"
+          "STACK Meetup"
         );
 
         // Filter the events data to get only the events that are upcoming
@@ -153,16 +153,16 @@ describe("Stack-X Meetup Overview Page Test", function () {
             case numberOfUpcomingEventsCards <=
               MAX_NUMBER_OF_VISIBLE_EVENTS_ONLOAD:
               cy.get(
-                "button[id='view-all-upcoming-stack-x-events-button']"
+                "button[id='view-all-upcoming-stack-events-button']"
               ).should("not.exist");
               break;
             case numberOfUpcomingEventsCards >
               MAX_NUMBER_OF_VISIBLE_EVENTS_ONLOAD:
               cy.get(
-                "button[id='view-all-upcoming-stack-x-events-button']"
+                "button[id='view-all-upcoming-stack-events-button']"
               ).should("be.visible");
               cy.get(
-                "button[id='view-all-upcoming-stack-x-events-button']"
+                "button[id='view-all-upcoming-stack-events-button']"
               ).click();
               cy.get("#upcoming-events-container")
                 .find("div[class='community-section-event-card']")
@@ -183,15 +183,15 @@ describe("Stack-X Meetup Overview Page Test", function () {
             cy.get("div[id='no-past-events-message']").should("be.visible");
             break;
           case numberOfPastEventsCards <= MAX_NUMBER_OF_VISIBLE_EVENTS_ONLOAD:
-            cy.get("button[id='view-all-past-stack-x-events-button']").should(
+            cy.get("button[id='view-all-past-stack-events-button']").should(
               "not.exist"
             );
             break;
           case numberOfPastEventsCards > MAX_NUMBER_OF_VISIBLE_EVENTS_ONLOAD:
-            cy.get("button[id='view-all-past-stack-x-events-button']").should(
+            cy.get("button[id='view-all-past-stack-events-button']").should(
               "be.visible"
             );
-            cy.get("button[id='view-all-past-stack-x-events-button']").click();
+            cy.get("button[id='view-all-past-stack-events-button']").click();
             cy.get("#past-events-container")
               .find("div")
               .its("length")

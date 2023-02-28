@@ -1,0 +1,76 @@
+---
+title: Meetup x CSIT - How Open Policy Agent adds value to your organisation
+layout: layout-page-sidenav
+_data: events-nav
+redirect_from:
+  - /communities/events/stack-meetups/meetup-x-csit-how-open-policy-agent-adds-value-to-your-organisation/
+  - /communities/events/stack-x-meetups/meetup-x-csit-how-open-policy-agent-adds-value-to-your-organisation/
+  - /communities/events/stack-x-meetups/meetup-x-csit-how-open-policy-agent-adds-value-to-your-organisation/overview.html
+multi_level_nav: true
+sub_collection_render: true
+event_rundown:
+- title: "7:00 – 7:05pm: Introduction by GovTech"
+- title: "7:05 – 7:30pm: Securing Microservices with Open Policy Agent (OPA) and Envoy"
+  speaker: "By: Shane Soh, Engineering Manager, CSIT"
+- title: "7:30 - 7:55pm: Administering a Compliant Kubernetes Cluster with OPA (Gatekeeper"
+  speaker: "By: Darryl Sw, Associate DevOps Engineer, GovTech"
+- title: "7:55 - 8:10pm: Policy as code for painless Role-Based Access Control (RBAC)"
+  speaker: "By: Magdalene Lee, Senior Software Engineer, GovTech"
+- title: "8:10 - 8:40pm: Combined Q&A Panel"
+speakers:
+- name: "Shane Soh"
+  title: "Engineering Manager, CSIT"
+  desc: "Shane Soh is an engineering manager in the Centre for Strategic Infocomm Technologies (CSIT). He leads a team building infrastructure and platforms for mission-critical systems that identify and disrupt national security threats."
+- name: "Darryl Sw"
+  title: Associate DevOps Engineer, GovTech
+  desc: "Darryl Sw is an Associate DevOps Engineer with GovTech. In his current role at Container Stack, he uses a large variety of tools including Terraform, Bamboo, Operator SDK, Gatekeeper OPA, etc. to administer and manage Kubernetes clusters that are hosted on the cloud.
+
+  <br/><br/>
+
+  He is passionate about applying the right technology for the purpose of improving efficiency, generally through automation. In his free time, he enjoys hiking, traveling and the great nature. Prior to joining GovTech, Darryl graduated from Carnegie Mellon University with a Master of Information Systems Management in 2019."
+- name: "Magdalene Lee"
+  title: "Senior Software Engineer, GovTech"
+  desc: "Magdalene Lee is a Senior Software Engineer in Engineering Productivity tribe at GovTech. She is part of a large cross-function team building out of the next generation of Government Commercial Cloud. She is passionate about getting things done easily. In her free time she likes to watercolour-paint.
+  <br /> <br />
+  Prior to joining GovTech she was working at a Continuous Delivery Unicorn in the Bay Area."
+---
+
+<div>
+  <p>
+    For upcoming STACK-X webinars and a full list of our past events, please visit our <a
+      href="https://www.meetup.com/STACK-X-by-GovTech-Singapore/">Meetup page</a>.
+  </p>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/F8Csz4u5sVE" title="YouTube video player"
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
+</div>
+
+<h3>Overview</h3>
+<p>
+  Who should attend: If you have an interest in API Security and microservices, this Meetup is for you!
+</p>
+
+<p>
+  Want to learn how Open Policy Agent (OPA) benefits an organisation? Join us for this STACK Meetup, co-organised with
+  the Centre for Strategic Infocomm Technologies (CSIT), to discover more.
+</p>
+<p>
+  Speakers from CSIT and GovTech will share on how OPA is being implemented, how Envoy and OPA proved invaluable in
+  CSIT's journey in breaking up monoliths into microservices, and how the Whole-of-Government Platform-as-a-Service
+  (PaaS) makes use of OPA (Gatekeeper) to enforce a variety of requirements.
+</p>
+
+<h3>Programme Rundown</h3>
+{%- include event-rundown.html
+  _data=page.event_rundown
+  description=page.event_rundown_description
+-%}
+
+<h3>Speaker</h3>
+<div class="is-fullwidth margin--top--none margin--bottom">
+  {%- for speaker in page.speakers -%}
+  <div class="margin--top">
+    {%- include accordian-display.html content=speaker -%}
+  </div>
+  {%- endfor -%}
+</div>

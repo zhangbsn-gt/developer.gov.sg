@@ -16,7 +16,7 @@ Note: This is configured for the folder structure of products and conferences pa
     {% comment %} Gets the name of the event. {% endcomment %}
     {% assign collection_name = sub_collection.name | slugify %}
 
-    {% comment %} It returns true if it matches the folder_name, such as stack-x-cloud-2021. {% endcomment %}
+    {% comment %} It returns true if it matches the folder_name, such as stack-conference-2021. {% endcomment %}
     {%- if collection_name == folder_name -%}
         {%- assign current_collection = sub_collection-%}
     {% endif %}

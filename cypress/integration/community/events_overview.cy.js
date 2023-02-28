@@ -22,7 +22,7 @@ describe("Events Page Test", function () {
 
     // Instead of repeating the same logic for each of the links,
     // we can define a helper function that we can use to test
-    // the links to the "Conferences" and "STACK-X Meetups" pages
+    // the links to the "Conferences" and "STACK Meetups" pages
     const testLink = (linkSelector, pageUrl, title) => {
       it(`should have a link to the '${title}' page`, () => {
         cy.get(".sgds-card")
@@ -40,16 +40,16 @@ describe("Events Page Test", function () {
       });
     };
 
-    // Use the helper function to test the links to the "Conferences" and "STACK-X Meetups" pages
+    // Use the helper function to test the links to the "Conferences" and "STACK Meetups" pages
     testLink(
       "a[href='/communities/events/conferences/']",
       "/communities/events/conferences/",
       "Conferences"
     );
     testLink(
-      "a[href='/communities/events/stack-x-meetups/']",
-      "/communities/events/stack-x-meetups/",
-      "STACK-X Meetups"
+      "a[href='/communities/events/stack-meetups/']",
+      "/communities/events/stack-meetups/",
+      "STACK Meetups"
     );
   });
 });

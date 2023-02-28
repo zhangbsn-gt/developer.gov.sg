@@ -9,33 +9,38 @@ layout: layout-page
   <div class="col is-2 is-hidden-touch sidenav">
     <aside class="sgds-menu">
       <ul class="sgds-menu-list">
-        {%- if page.single_level_nav -%}
-        {%- include sidenav-single-level.html -%}
-        {%- elsif page.multi_level_nav -%}
-        {%- include sidenav-second-level.html -%}
-        {% else %}
-        {%- include sidenav.html -%}
-        {% endif %}
+        {%- if page.single_level_nav -%} {%- include sidenav-single-level.html
+        -%} {%- elsif page.multi_level_nav -%} {%- include
+        sidenav-second-level.html -%} {% else %} {%- include sidenav.html -%} {%
+        endif %}
       </ul>
     </aside>
   </div>
   {% endif %}
-  {% if page.sharable == true or page.sharable == nil %}
-  {% if page.hide_side_nav == nil %}
+
+  {% if page.sharable == true or page.sharable == nil %} {% if
+  page.hide_side_nav == nil %}
   <div class="col is-8 is-offset-1 is-12-mobile">
     {% else %}
     <div class="col is-11 is-12-mobile">
-      {% endif %}
-      {% if collectionName == "products" and url_last != "overview" and page.single_level_nav == nil %}
+      {% endif %} {% if collectionName == "products" and url_last != "overview"
+      and page.single_level_nav == nil %}
       <h2>{{page.title}}</h2>
       <p id="collections">{{page.sub-title}}</p>
       <hr />
       {% endif %}
+      {% if collectionName == "communities" and page.multi_level_nav == true %}
+        {%- assign numberOfElements = page.id | split: "/" | size -%}
+        {%- if numberOfElements == 6 -%}
+          <!-- If this is a community page with multi-level navigation and the ID has 6 elements, include the event information card -->
+          <div class="is-fullwidth is-hidden-desktop">
+            {% include card-variant-event-information.html %}
+          </div>
+        {%- endif -%}
+      {% endif %}
       {{ content }}
       <p class="text-last-updated">
-        <em>
-          Last updated {{ page.last_modified_at | date: '%d %B %Y' }}
-        </em>
+        <em> Last updated {{ page.last_modified_at | date: '%d %B %Y' }} </em>
       </p>
       <div class="small-viewport-social-media-buttons">
         {% include social-media.html display="mobile" %}
@@ -46,9 +51,7 @@ layout: layout-page
     <div class="col is-9 is-offset-1 is-12-mobile">
       {{ content }}
       <p class="text-last-updated">
-        <em>
-          Last updated {{ page.last_modified_at | date: '%d %B %Y' }}
-        </em>
+        <em> Last updated {{ page.last_modified_at | date: '%d %B %Y' }} </em>
       </p>
       {%- include feedback.html -%}
     </div>
@@ -60,9 +63,11 @@ layout: layout-page
   </div>
 </div>
 
-<script type="text/javascript" src="/assets/bundles/layout-page-sidenav-calendar.bundle.js"
+<script
+  type="text/javascript"
+  src="/assets/bundles/layout-page-sidenav-calendar.bundle.js"
   data-id="layout-page-sidenav-calendar"
   data-nav-level="{{- page.multi_level_nav -}}"
   data-event-recording-link="{{- event_recording_link -}}"
-  data-event-registration-end-date="{{- event_registration_end_date_parsed -}}">
-  </script>
+  data-event-registration-end-date="{{- event_registration_end_date_parsed -}}"
+></script>

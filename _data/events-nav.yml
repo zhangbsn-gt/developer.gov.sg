@@ -27,14 +27,14 @@
         - sub_item_name: Plenary
         - sub_item_name: Lightning Talks
         
-- name: STACK-X Data Science Connect 2022
+- name: STACK Data Science Connect 2022
   description: Join this virtual conference to learn how the Singapore Government is driving data transformation and delivering public good through the use of Data Science and AI.
   category: Conference
   location: Online event
   event_date: 2022-07-07T00:00:00+08:00 - 2022-07-08T17:00:00+08:00
   registration_end_date: 2022-07-07T00:00:00+08:00
-  registration_link: https://go.gov.sg/stack-x-datascienceconnect
-  recording_link: /communities/events/conferences/stack-x-data-science-connect-2022/recordings/all-recordings.html
+  registration_link: https://go.gov.sg/STACK-datascienceconnect
+  recording_link: /communities/events/conferences/STACK-data-science-connect-2022/recordings/all-recordings.html
   items:
     - item_name: Overview
     - item_name: Agenda
@@ -50,13 +50,13 @@
         - sub_item_name: Data Products & Data Engineering
         - sub_item_name: AI Applications and Video Analytics
 
-- name: STACK-X Cloud 2021
-  description: STACK-X Cloud is a one-day conference for developers and IT leaders to learn about the latest enhancements for GCC with practical lessons on cloud adoption
+- name: STACK Cloud 2021
+  description: STACK Cloud is a one-day conference for developers and IT leaders to learn about the latest enhancements for GCC with practical lessons on cloud adoption
   category: Conference
   location: Hive Center
   event_date: 2021-11-17T00:00:00+08:00 - 2021-11-17T23:59:00+08:00
   registration_end_date: 2021-11-17T00:00:00+08:00
-  recording_link: /communities/events/conferences/stack-x-cloud-2021/recordings/all-recordings.html
+  recording_link: /communities/events/conferences/STACK-cloud-2021/recordings/all-recordings.html
   registration_link: https://go.gov.sg/stackx-cloud-public
   items:
     - item_name: Overview
@@ -95,22 +95,58 @@
   items:
     - item_name: Overview
 
-- name: STACK-X CI/CD 2021
+- name: STACK CI/CD 2021
   description: CI/CD with SHIP-HATS is a two-day conference for developers and IT leaders to modernise securely, learn from peers and steps to get started
   category: Conference
   location: Online (via Zoom)
   event_date: 2021-05-11T00:00:00+08:00 - 2021-05-11T23:59:00+08:00
   registration_end_date: 2021-05-11T00:00:00+08:00
-  recording_link: /communities/events/conferences/stack-x-ci-cd-2021/overview.html
+  recording_link: /communities/events/conferences/STACK-ci-cd-2021/overview.html
   registration_link: https://go.gov.sg/stackxconferencecicd
   items:
     - item_name: Overview
 
-# Stack-X Events
+# Stack Events
+- name: "Inspiring Digital Change [International Women's Day Edition]"
+  description: >-
+    Join Sharon and May as we explore how to champion digital transformation and inclusion in tech. Find out how you can successfully bridge transformation journeys amidst legacy systems and spearhead innovation. Learn how our speakers cultivate mentorship and promote effective leadership, all while maintaining an inclusive culture in a Panel Discussion moderated by DN Prasad.
+  category: STACK Meetup
+  location: 10 Pasir Panjang Rd, Level 10
+  event_date: 2023-03-09T19:00:00+08:00 - 2023-03-09T20:30:00+08:00
+  registration_end_date: 2023-03-08T18:30:00+08:00
+  recording_link: 
+  registration_link: https://www.meetup.com/stack-by-govtech-singapore/events/291906892/
+  items:
+    - item_name: Overview
+
+- name: "Managed ML Pipelines for WoG Video Analytics"
+  description: >-
+    Curious about GovTech's Video Analytics System? Hear more from GovTech's Jason See, Elizabeth Lim, Goh Jia Yi and AWS Bill Cai. Our experts will share about this centralised AI-powered platform that enables rapid development and deployment of video analytics solutions.
+  category: STACK Meetup
+  location: 10 Pasir Panjang Rd
+  event_date: 2023-02-23T19:00:00+08:00 - 2023-02-23T20:30:00+08:00
+  registration_end_date: 2023-02-22T18:30:00+08:00
+  recording_link: 
+  registration_link: https://go.gov.sg/stackmeetup23feb2023
+  items:
+    - item_name: Overview
+    
+- name: "Developing SGTS [Engineering Productivity Series]"
+  description: >-
+    In our inaugural STACK Meetup for 2023, Government Chief Digital Technology Officer, Chan Cheow Hoe and Kevin Ng, Director of Government Digital Services, GovTech will share GovTech's engineering productivity approach and showcase SGTS. They will be joined by Ketan Mujumdar, Director of Engineering from Carousell, who will talk about the company's development practices.
+  category: STACK Meetup
+  location: 10 Pasir Panjang Rd
+  event_date: 2023-02-16T19:30:00+08:00 - 2023-02-16T21:00:00+08:00
+  registration_end_date: 2023-02-15T18:30:00+08:00
+  recording_link: https://youtu.be/Z5U17iqHhXg
+  registration_link: https://go.gov.sg/stackmeetup16feb
+  items:
+    - item_name: Overview
+    
 - name: "CIO - Edition"
   description: >-
     Sing Khang Leong, Chief Information Officer, Ministry of Manpower and Cluster Director of Manpower Cluster, Services Group, GovTech will be sharing on the increasing importance of Ops-Tech integration as a key success factor for digitalisation/business transformation in today's world.
-  category: Stack-X Meetup
+  category: STACK Meetup
   location: 10 Pasir Panjang Rd
   event_date: 2022-08-18T18:30:00+08:00 - 2022-08-18T20:15:00+08:00
   registration_end_date: 2022-08-18T18:30:00+08:00
@@ -122,7 +158,7 @@
 - name: "Solutioning for Automated Test Data Generation: NPHC"
   description: >-
     Healthcare claims can be complex to analyse holistically with hundreds of different data fields and multiple backend systems used by medical providers in Singapore. In this session, the team will deep dive into how National Platform for Healthcare Claims’s (NPHC) Automated Test Data Generator allows product owners and Quality Engineers to define and expand test scenarios easily.
-  category: Stack-X Meetup
+  category: STACK Meetup
   location: 10 Pasir Panjang Rd
   event_date: 2022-07-28T18:30:00+08:00 - 2022-07-28T20:15:00+08:00
   registration_end_date: 2022-07-28T18:30:00+08:00
@@ -132,15 +168,15 @@
 
 - name: (Hybrid) Reimagining Government Payouts with GovWallet
   description: >-
-    In this Tech for Public Good-themed STACK-X Meetup, the team behind
+    In this Tech for Public Good-themed STACK Meetup, the team behind
     GovWallet, GovTech’s latest digital tool, will share the technicalities of
     this improved way of distributing government payouts.
-  category: Stack-X Meetup
+  category: STACK Meetup
   location: 10 Pasir Panjang Rd
   event_date: 2022-05-19T18:30:00+08:00 - 2022-05-19T20:15:00+08:00
   registration_end_date: 2022-05-19T18:30:00+08:00
   recording_link: >-
-    /communities/events/stack-x-meetups/hybrid-reimagining-government-payouts-with-govwallet/overview.html
+    /communities/events/STACK-meetups/hybrid-reimagining-government-payouts-with-govwallet/overview.html
   items:
     - item_name: Overview
 
@@ -151,12 +187,12 @@
     and apply for suitable grants. Additionally, grant processes are often
     largely manual for both grant applicants and administrators, leading to
     longer lead times in approving much-needed grants.
-  category: Stack-X Meetup
+  category: STACK Meetup
   location: 10 Pasir Panjang Rd
   event_date: 2022-05-12T18:30:00+08:00 - 2022-05-12T20:15:00+08:00
   registration_end_date: 2022-05-12T18:30:00+08:00
   recording_link: >-
-    /communities/events/stack-x-meetups/hybrid-enhancing-the-user-journey-for-singapore-gov-grants/overview.html
+    /communities/events/STACK-meetups/hybrid-enhancing-the-user-journey-for-singapore-gov-grants/overview.html
   items:
     - item_name: Overview
 
@@ -164,15 +200,15 @@
   description: >-
     In developing products, growing and enabling great teams is essential. Team
     coaching enables high value-creation teams to deliver effective solutions.
-    This STACK-X Meetup will equip you with the essential key solution
+    This STACK Meetup will equip you with the essential key solution
     conceptualisation mindset and development skillsets to succeed at creating
     and supporting impactful products and services.
-  category: Stack-X Meetup
+  category: STACK Meetup
   location: Online (via Zoom)
   event_date: 2022-03-23T18:30:00+08:00 - 2022-03-23T20:15:00+08:00
   registration_end_date: 2022-03-23T18:30:00+08:00
   recording_link: >-
-    /communities/events/stack-x-meetups/agile-coaching-methods-to-create-great-products-as-a-team/overview.html
+    /communities/events/STACK-meetups/agile-coaching-methods-to-create-great-products-as-a-team/overview.html
   items:
     - item_name: Overview
 
@@ -184,12 +220,12 @@
     technology is also growing at an accelerated pace as it plays a crucial role
     in distributing and receiving data to harness numerous and disparate data
     sources, resulting in robust, cost-effective practices.
-  category: Stack-X Meetup
+  category: STACK Meetup
   location: Online (via Zoom)
   event_date: 2022-01-27T18:30:00+08:00 - 2022-01-27T20:15:00+08:00
   registration_end_date: 2022-01-27T18:30:00+08:00
   recording_link: >-
-    /communities/events/stack-x-meetups/data-sharing-in-today-s-digital-economy-for-customer-delivery/overview.html
+    /communities/events/STACK-meetups/data-sharing-in-today-s-digital-economy-for-customer-delivery/overview.html
   items:
     - item_name: Overview
 
@@ -201,11 +237,11 @@
     players. Hear from public sector practitioners & industry partners, covering
     topics like the cloud landscape and roadmap, latest GCC enhancements, and
     practical lessons on cloud adoption.
-  category: Stack-X Meetup
+  category: STACK Meetup
   location: Online (via Zoom)
   event_date: 2021-11-17T18:30:00+08:00 - 2021-11-17T20:15:00+08:00
   registration_end_date: 2021-11-17T18:30:00+08:00
-  recording_link: /communities/events/stack-x-meetups/cloud-conference/overview.html
+  recording_link: /communities/events/STACK-meetups/cloud-conference/overview.html
   items:
     - item_name: Overview
 
@@ -217,12 +253,12 @@
     agencies in person. Liren's Lightning Talk will then centre around the
     challenges and insights from designing inclusively during the research
     period for the diverse groups who use our products and solutions.
-  category: Stack-X Meetup
+  category: STACK Meetup
   location: Online (via Zoom)
   event_date: 2021-10-15T18:30:00+08:00 - 2021-10-15T20:15:00+08:00
   registration_end_date: 2021-10-15T18:30:00+08:00
   recording_link: >-
-    /communities/events/stack-x-meetups/ux-ui-design-by-the-international-community/overview.html
+    /communities/events/STACK-meetups/ux-ui-design-by-the-international-community/overview.html
   items:
     - item_name: Overview
 
@@ -231,12 +267,12 @@
     GovTech has been migrating an increasing number of projects to the Cloud.
     Operating and managing an environment consisting of multiple Clouds and
     services pose numerous challenges.
-  category: Stack-X Meetup
+  category: STACK Meetup
   location: Online (via Zoom)
   event_date: 2021-09-23T18:30:00+08:00 - 2021-09-23T20:15:00+08:00
   registration_end_date: 2021-09-23T18:30:00+08:00
   recording_link: >-
-    /communities/events/stack-x-meetups/exploring-different-forms-of-ops-in-government-commercial-cloud/overview.html
+    /communities/events/STACK-meetups/exploring-different-forms-of-ops-in-government-commercial-cloud/overview.html
   items:
     - item_name: Overview
 
@@ -246,12 +282,12 @@
     multiple login credentials, Singpass is a key enabler for achieving a
     digital economy. As part of the National Digital Identity (NDI) initiative,
     GovTech works with industry partners to extend the use of Singpass products.
-  category: Stack-X Meetup
+  category: STACK Meetup
   location: Online (via Zoom)
   event_date: 2021-08-26T18:30:00+08:00 - 2021-08-26T20:15:00+08:00
   registration_end_date: 2021-08-26T18:30:00+08:00
   recording_link: >-
-    /communities/events/stack-x-meetups/singpass-in-healthcare-use-cases-and-govtech-healthcerts/overview.html
+    /communities/events/STACK-meetups/singpass-in-healthcare-use-cases-and-govtech-healthcerts/overview.html
   items:
     - item_name: Overview
 
@@ -261,12 +297,12 @@
     Integration and Continuous Delivery (CI/CD) automation, and how it is being
     adopted in Government projects such as the Singapore Government Tech Stack
     (SGTS), Container Stack platform, and the Government Commercial Cloud (GCC).
-  category: Stack-X Meetup
+  category: STACK Meetup
   location: Online (via Zoom)
   event_date: 2021-08-12T18:30:00+08:00 - 2021-08-12T20:15:00+08:00
   registration_end_date: 2021-08-12T18:30:00+08:00
   recording_link: >-
-    /communities/events/stack-x-meetups/automate-deployments-in-government-the-gitops-way/overview.html
+    /communities/events/STACK-meetups/automate-deployments-in-government-the-gitops-way/overview.html
   items:
     - item_name: Overview
 
@@ -276,40 +312,40 @@
     (DSAID) in GovTech to learn how NLP and Deep Learning work to automatically
     analyse municipal issues feedback. Discover how a small team quickly
     prototyped an NLP workflow to understand business concerns too.
-  category: Stack-X Meetup
+  category: STACK Meetup
   location: Online (via Zoom)
   event_date: 2021-07-08T18:30:00+08:00 - 2021-07-08T20:15:00+08:00
   registration_end_date: 2021-07-08T18:30:00+08:00
   recording_link: >-
-    /communities/events/stack-x-meetups/meetup-x-dssg-using-nlp-and-ml-for-effective-feedback-and-workflow/overview.html
+    /communities/events/STACK-meetups/meetup-x-dssg-using-nlp-and-ml-for-effective-feedback-and-workflow/overview.html
   items:
     - item_name: Overview
 
 - name: Meetup x CSIT - How Open Policy Agent adds value to your organisation
   description: >-
     Want to learn how Open Policy Agent (OPA) benefits an organisation? Join us
-    for this STACK-X Meetup, co-organised with the Centre for Strategic Infocomm
+    for this STACK Meetup, co-organised with the Centre for Strategic Infocomm
     Technologies (CSIT), to discover more.
-  category: Stack-X Meetup
+  category: STACK Meetup
   location: Online (via Zoom)
   event_date: 2021-06-23T18:30:00+08:00 - 2021-06-23T20:15:00+08:00
   registration_end_date: 2021-06-23T18:30:00+08:00
   recording_link: >-
-    /communities/events/stack-x-meetups/meetup-x-csit-how-open-policy-agent-adds-value-to-your-organisation/overview.html
+    /communities/events/STACK-meetups/meetup-x-csit-how-open-policy-agent-adds-value-to-your-organisation/overview.html
   items:
     - item_name: Overview
 
 - name: Coding Dojo – Learn the basics of TDD & Pair-Programming
   description: >-
-    For the first time in a STACK-X Meetup, Michael Cheng, Lead Software
+    For the first time in a STACK Meetup, Michael Cheng, Lead Software
     Engineer, Government Digital Services will be running his highly reviewed
     Coding Dojo workshop on the basics of TDD & Pair- Programming.
-  category: Stack-X Meetup
+  category: STACK Meetup
   location: Online (via Zoom)
   event_date: 2021-05-27T00:00:00.00+08:00 - 2021-05-27T23:59:00+08:00
   registration_end_date: 2021-05-27T00:00:00+08:00
   recording_link: >-
-    /communities/events/stack-x-meetups/coding-dojo-learn-the-basics-of-tdd-pair-programming/overview.html
+    /communities/events/STACK-meetups/coding-dojo-learn-the-basics-of-tdd-pair-programming/overview.html
   items:
     - item_name: Overview
 
@@ -319,21 +355,21 @@
     vision, approach, and programmes to help agencies accelerate their
     modernisation and digitalisation plans with CI/CD. The conference spotlights
     SHIP-HATS - the CI/CD component in the Singapore Government Tech Stack.
-  category: Stack-X Meetup
+  category: STACK Meetup
   location: Online (via Zoom)
   event_date: 2021-05-06T18:30:00+08:00 - 2021-05-06T20:15:00+08:00
   registration_end_date: 2021-05-06T18:30:00+08:00
-  recording_link: /communities/events/stack-x-meetups/ci-cd-with-ship-hats/overview.html
+  recording_link: /communities/events/STACK-meetups/ci-cd-with-ship-hats/overview.html
   items:
     - item_name: Overview
 
 - name: (Where's the) Security in the Internet of Things?
-  description: In developing products, growing and enabling great teams is essential. Team coaching enables high value-creation teams to deliver effective solutions. This STACK-X Meetup will equip you with the essential key solution conceptualisation mindset and development skillsets to succeed at creating and supporting impactful products and services.
-  category: Stack-X Meetup
+  description: In developing products, growing and enabling great teams is essential. Team coaching enables high value-creation teams to deliver effective solutions. This STACK Meetup will equip you with the essential key solution conceptualisation mindset and development skillsets to succeed at creating and supporting impactful products and services.
+  category: STACK Meetup
   location: Online (via Zoom)
   event_date: 2021-03-22T18:30:00+08:00 - 2021-03-22T20:15:00+08:00
   registration_end_date: 2021-03-22T18:30:00+08:00
   recording_link: >-
-    /communities/events/stack-x-meetups/where-s-the-security-in-the-internet-of-things/overview.html
+    /communities/events/STACK-meetups/where-s-the-security-in-the-internet-of-things/overview.html
   items:
     - item_name: Overview

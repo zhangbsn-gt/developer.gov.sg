@@ -27,6 +27,7 @@ import {
           registrationLink,
           recordingLink,
         } = el.dataset;
+
         const eventInformationAnchorTag = el.querySelector(
           "#event-information-link"
         );
@@ -43,7 +44,18 @@ import {
         setEventStatusAndBackgroundColor(el, status, backgroundColor);
 
         switch (true) {
-          case status === "upcoming":
+          case status === "upcoming" || status === "now":
+            // Compare the registration end date with the current date
+            // For status === "now", the organisers may allow people to join even when the program has started
+            // As such, i accounted for this rare possibility
+            if (new Date() > new Date(registrationEndDate)) {
+              eventInformationAnchorTag.textContent = "Registration Closed";
+              eventInformationAnchorTag.style.backgroundColor = "#C6C6C6";
+              eventInformationAnchorTag.style.cursor = "not-allowed";
+              eventInformationAnchorTag.style.pointerEvents = "none";
+              break;
+            }
+
             eventInformationAnchorTag.href = registrationLink;
             eventInformationAnchorTag.textContent = "Register Now";
             eventInformationAnchorTag.style.backgroundColor = "#0161AF";
@@ -61,20 +73,6 @@ import {
             eventInformationAnchorTag.style.cursor = "not-allowed";
             eventInformationAnchorTag.style.pointerEvents = "none";
             eventInformationAnchorTag.style.backgroundColor = "#C6C6C6";
-            break;
-          case status === "now":
-            // Compare the registration end date with the current date
-            if (new Date() > new Date(registrationEndDate)) {
-              eventInformationAnchorTag.textContent = "Registration Closed";
-              eventInformationAnchorTag.style.backgroundColor = "#C6C6C6";
-              eventInformationAnchorTag.style.cursor = "not-allowed";
-              eventInformationAnchorTag.style.pointerEvents = "none";
-              break;
-            }
-
-            eventInformationAnchorTag.href = registrationLink;
-            eventInformationAnchorTag.textContent = "Register Now";
-            eventInformationAnchorTag.style.backgroundColor = "#0161AF";
             break;
         }
       });

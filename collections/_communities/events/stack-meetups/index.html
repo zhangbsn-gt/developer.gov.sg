@@ -1,0 +1,163 @@
+---
+title: STACK Meetups
+layout: layout-page-sidenav
+description: >
+  Learn more about STACK Community and
+redirect_from:
+  - /communities/events/stack-x-meetups/
+  - /communities/events/stack-x-meetups.html
+  - /communities/events/stack-meetups/
+  - /communities/events/stack-meetups.html
+  - /communities/stack-x-meetups/past-webinars/
+  - /communities/stack-x-meetups/upcoming-meetups/
+  - /communities/stack-x-meetups/overview.html
+---
+
+<!-- Introduction -->
+<div>
+  <picture>
+    <img
+      src="/assets/img/IWD_Meetup-DevPortalHeaderBanner-v2.png"
+      alt="STACK Meetup header banner"
+    />
+  </picture>
+  <h2 class="margin--bottom--lg margin--top">Overview for STACK Meetups</h2>
+  <p>
+    Conceived in 2019,
+    <a href="https://www.tech.gov.sg/" target="_blank">GovTech's</a> STACK
+    Community brings together like-minded individuals who share a passion for
+    exploring innovative ways of using Tech for Public Good.
+  </p>
+  <p>
+    Community members are encouraged to share knowledge, cross-learn, and
+    network with peers and subject matter experts through events such as our:
+    <ol>
+      <li> <b>STACK Conference</b> which is GovTech's flagship event and the largest government-led developer conference. It is held every two years with the next run being in 2024 </li>
+      <li> <b>STACK Mini Conference</b> which is aimed at exploring a single key topic and will be held every year </li>
+      <li> <b>STACK Meetups</b> which are more close-knit monthly meetings for the tech community to discuss various topics of interest </li>
+  </ol>
+      </p>
+  <p>
+    Learn about our
+    <a href="https://www.meetup.com/STACK-by-GovTech-Singapore/" target="_blank"
+      >STACK Community journey</a
+    >
+    here and ride on our
+    <a href="/communities/building-a-community/resources/" target="_blank"
+      >resource kit</a
+    >
+    to kickstart your community engagement journey.
+  </p>
+  <p>
+    Join our
+    <a href="https://www.meetup.com/STACK-by-GovTech-Singapore/" target="_blank"
+      >STACK Community</a
+    >
+    and
+    <a href="https://go.gov.sg/stackxtelegram" target="_blank"
+      >Telegram group</a
+    >
+    to learn more about GovTech’s Tech for Public Good initiatives and hear from our line-up
+    of both public sector as well as industry speakers on the latest
+    technological advancements.
+  </p>
+</div>
+
+<br />
+
+<div>
+  <h3>About GovTech</h3>
+  <p>
+    GovTech spearheads Singapore’s digital government transformation and is a
+    key contributor to the Smart Nation vision. We currently boost a headcount
+    of over 3,000 and consistently recruit the best talent to contribute to the
+    development of Singapore’s digital government services. Our work can be
+    categorised into three main areas: products, services and cybersecurity &
+    governance. Find out more about us
+    <a href="https://www.tech.gov.sg/who-we-are/our-role/" target="_blank"
+      >here.</a
+    >
+  </p>
+</div>
+
+<hr />
+
+<!-- Upcoming Events -->
+<div>
+  <h3>All Upcoming STACK Meetups</h3>
+  <div
+    id="upcoming-events-container"
+    class="card-grid-container is-fullwidth"
+  ></div>
+  <div
+    class="is-fullwidth is-flex is-flex-justify-c"
+    id="upcoming-events-view-more-button"
+  >
+    <button
+      id="view-all-upcoming-stack-events-button"
+      class="sgds-button sgds-button--primary"
+      onclick="toggleEventsVisibility('upcoming-event','upcoming-events-view-more-button')"
+    >
+      View all events
+    </button>
+  </div>
+  <div
+    id="no-upcoming-events-message"
+    class="margin--top margin--bottom--xl has-text-centered"
+  >
+    Sorry, there is currently no upcoming available events
+  </div>
+</div>
+
+<hr />
+
+<!-- Past Events -->
+<div>
+  <h3>Past STACK Meetups</h3>
+  <div
+    id="past-events-container"
+    class="card-grid-container is-fullwidth"
+  ></div>
+  <div
+    class="is-fullwidth is-flex is-flex-justify-c"
+    id="past-events-view-more-button"
+  >
+    <button
+      id="view-all-past-stack-events-button"
+      class="sgds-button is-outlined is-secondary"
+      onclick="toggleEventsVisibility('past-event', 'past-events-view-more-button')"
+    >
+      View all events
+    </button>
+  </div>
+  <div
+    id="no-past-events-message"
+    class="margin--top margin--bottom--xl has-text-centered"
+  >
+    Sorry, there are currently no past events
+  </div>
+</div>
+
+{%- include site-section-event-listing.html specified_category_tag="STACK Meetup" -%}
+
+<!-- Sorting and theming script -->
+<script
+  type="text/javascript"
+  data-content-limit="2"
+  data-display-upcoming="true"
+  data-display-past="true"
+  data-id="community-overview"
+  src="/assets/bundles/community-events.bundle.js"
+></script>
+
+<!-- Script to hide content -->
+<script type="text/javascript">
+  function toggleEventsVisibility(attribute, buttonID) {
+    document
+      .querySelectorAll(`*[content-visibility-toggle="${attribute}"]`)
+      .forEach(node => {
+        node.style.display = "block";
+      });
+    document.getElementById(`${buttonID}`).remove();
+  }
+</script>

@@ -62,13 +62,13 @@ describe("All Events Page Test", function () {
 
     it("Should have the right category of search results after filtering for only the stack-x category", () => {
       cy.visit("/communities/events/all-events/");
-      cy.get("#query-all-category").select("Stack-x Meetup");
+      cy.get("#query-all-category").select("STACK Meetup");
 
       cy.get(".card-grid-container")
         .find(".sgds-card-list")
         .find('img[alt="Event Image"]')
         .each($el => {
-          expect($el.next().text()).to.eq("Stack-X Meetup");
+          expect($el.next().text()).to.eq("STACK Meetup");
         });
     });
 
@@ -82,11 +82,11 @@ describe("All Events Page Test", function () {
         });
     });
 
-    it("Should be able to pass in multiple filters, cloud (free text), stack-x meetup (select), 2021 (select), and state should be persistent.", () => {
+    it("Should be able to pass in multiple filters, cloud (free text), STACK Meetup (select), 2021 (select), and state should be persistent.", () => {
       // Filters
       cy.get("#query-all-events").clear();
       cy.get("#query-all-events").type("cloud");
-      cy.get("#query-all-category").select("Stack-x Meetup");
+      cy.get("#query-all-category").select("STACK Meetup");
       cy.get("#query-all-year").select("2021");
 
       // Gets all the cards that are generated
@@ -182,13 +182,13 @@ describe("All Events Page Test", function () {
 
     it("Should have the right category of search results after filtering for only the stack-x category", () => {
       cy.visit("/communities/events/all-events/", { timeout: 5000 });
-      cy.get("#query-all-category").select("Stack-x Meetup");
+      cy.get("#query-all-category").select("STACK Meetup");
 
       cy.get(".card-grid-container")
         .find(".sgds-card-list")
         .find('img[alt="Event Image"]')
         .each($el => {
-          expect($el.next().text()).to.eq("Stack-X Meetup");
+          expect($el.next().text()).to.eq("STACK Meetup");
         });
     });
 
@@ -202,11 +202,11 @@ describe("All Events Page Test", function () {
         });
     });
 
-    it("Should be able to pass in multiple filters, cloud (free text), stack-x meetup (select), 2021 (select), and state should be persistent.", () => {
+    it("Should be able to pass in multiple filters, cloud (free text), STACK Meetup (select), 2021 (select), and state should be persistent.", () => {
       // Filters
       cy.get("#query-all-events").clear();
       cy.get("#query-all-events").type("cloud");
-      cy.get("#query-all-category").select("Stack-x Meetup");
+      cy.get("#query-all-category").select("STACK Meetup");
       cy.get("#query-all-year").select("2021");
 
       // Gets all the cards that are generated

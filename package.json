@@ -17,7 +17,9 @@
     "test:jekyll": "JEKYLL_ENV=testing bundle exec jekyll serve --livereload",
     "test:concurrent": "concurrently \"npm run dev:static\" \"npm run test:jekyll\"",
     "test:site": "NODE_ENV=production mocha --require @babel/register --recursive ./apps/src/tests/**/*.js",
-    "test:server": "web-dev-server --open --root-dir ./_site/ --port 8000"
+    "test:server": "web-dev-server --open --root-dir ./_site/ --port 8000",
+    "test:e2e-headless": "npx cypress run --headless",
+    "test:e2e-gui": "npx cypress open"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",

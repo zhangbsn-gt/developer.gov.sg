@@ -22,9 +22,9 @@
       {%- if document.category contains "Conference" -%}
         {%- assign img_src = '/assets/img/communities/conferences.svg' -%}
         {%- assign url_str = "/communities/events/conferences/" | append: sub_section_slug-%}
-      {%- elsif document.category contains "Stack-X Meetup"-%}
-        {%- assign img_src = '/assets/img/communities/stack-x-meetups.svg' -%}
-        {%- assign url_str = "/communities/events/stack-x-meetups/" | append: sub_section_slug-%}
+      {%- elsif document.category contains "STACK Meetup"-%}
+        {%- assign img_src = '/assets/img/communities/stack-meetups.svg' -%}
+        {%- assign url_str = "/communities/events/stack-meetups/" | append: sub_section_slug-%}
       {%- else -%}
         {%- assign img_src = '/assets/img/communities/hackathons.svg' -%}
         {%- assign url_str = "/communities/events/hackathons/" | append: sub_section_slug-%}
