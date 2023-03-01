@@ -17,10 +17,12 @@ _data: single-level-nav
 - [SafeEntry API](https://api.singpass.gov.sg/library/safeentry-api/business/introduction){:target="_blank"}
 
 ### Case Studies
-- [National Digital Identity and Government Data Sharing in Singapore: A Case Study of Singpass and APEX (collaboration with the World Bank)](/assets/files/GovTech World Bank NDI APEX report.pdf){:target="_blank"}
+- National Digital Identity and Government Data Sharing in Singapore: A Case Study of Singpass and APEX (GovTech x World Bank collaboration)
+  - [Full report](/assets/files/GovTech World Bank NDI APEX report.pdf){:target="_blank"}
+  - [Abridged report](/assets/files/GovTech World Bank NDI APEX report (abridged version).pdf){:target="_blank"}
 
 ### Multimedia
-- [Virtual Launch of National Digital Identity and Government Data Sharing in Singapore: A Case Study of Singpass and APEX (joint launch with the World Bank)](https://www.worldbank.org/en/events/2022/10/19/singapore-s-national-digital-identity-and-governance-data-sharing-a-case-study-of-singpass-and-apex){:target="_blank"}
+- [Virtual Launch of National Digital Identity and Government Data Sharing in Singapore: A Case Study of Singpass and APEX (GovTech x World Bank collaboration)](https://www.worldbank.org/en/events/2022/10/19/singapore-s-national-digital-identity-and-governance-data-sharing-a-case-study-of-singpass-and-apex){:target="_blank"}
 - [How Singapore’s National Digital Identity and government digital data sharing platform fosters inclusion and resilience](https://blogs.worldbank.org/digital-development/how-singapores-national-digital-identity-and-government-digital-data-sharing){:target="_blank"}
 - [Empowering users everyday](https://www.youtube.com/watch?v=rUZf1ZcB0NY){:target="_blank"}
 - [Singpass Digital IC - Evolving our identity](https://www.youtube.com/watch?v=J5GrO-RQybc){:target="_blank"}
