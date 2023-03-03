@@ -27,7 +27,7 @@
         - sub_item_name: Plenary
         - sub_item_name: Lightning Talks
         
-- name: STACK Data Science Connect 2022
+- name: STACK-X Data Science Connect 2022
   description: Join this virtual conference to learn how the Singapore Government is driving data transformation and delivering public good through the use of Data Science and AI.
   category: Conference
   location: Online event
@@ -50,8 +50,8 @@
         - sub_item_name: Data Products & Data Engineering
         - sub_item_name: AI Applications and Video Analytics
 
-- name: STACK Cloud 2021
-  description: STACK Cloud is a one-day conference for developers and IT leaders to learn about the latest enhancements for GCC with practical lessons on cloud adoption
+- name: STACK-X Cloud 2021
+  description: STACK-X Cloud is a one-day conference for developers and IT leaders to learn about the latest enhancements for GCC with practical lessons on cloud adoption
   category: Conference
   location: Hive Center
   event_date: 2021-11-17T00:00:00+08:00 - 2021-11-17T23:59:00+08:00
@@ -95,7 +95,7 @@
   items:
     - item_name: Overview
 
-- name: STACK CI/CD 2021
+- name: STACK-X CI/CD 2021
   description: CI/CD with SHIP-HATS is a two-day conference for developers and IT leaders to modernise securely, learn from peers and steps to get started
   category: Conference
   location: Online (via Zoom)
