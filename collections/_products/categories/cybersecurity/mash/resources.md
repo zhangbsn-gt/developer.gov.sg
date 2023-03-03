@@ -7,4 +7,8 @@ _data: single-level-nav
 ---
 
 ### Technical Documentation
-- [MASH technical documentation](https://api.mash.tech.gov.sg/v2/api/doc/index.html){:target="_blank"}: Developers can access the technical documentation using a [SEED](https://www.developer.tech.gov.sg/products/categories/cybersecurity/seed){:target="_blank"}-enabled device.
+
+A TechPass account is required to access the following MASH documentation. TechPass is a component of the [SEED](products/categories/cybersecurity/seed/){:target="_blank"} platform.
+
+- [MASH User Guide](https://docs.developer.tech.gov.sg/docs/mash-user-guide/){:target="_blank"}
+- [MASH API specifications](https://docs.developer.tech.gov.sg/docs/mash-openapi-docs/){:target="_blank"}

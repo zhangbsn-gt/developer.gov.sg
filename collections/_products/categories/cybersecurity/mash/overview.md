@@ -15,6 +15,8 @@ sgts_title: MASH
 description: MASH performs security scanning on iOS (IPA) and Android (APK) mobile application files from the outside-in. Find out more.
 ---
 
+![MASH header banner](/assets/img/MASH-HeaderBanner-v2.png)
+
 MASH is a GovTech-developed Static Application Security Testing (SAST) tool that can be used to identify common vulnerabilities or unnecessary exposures in mobile applications. 
 
 MASH takes an “outside-in” approach, by extracting content from iOS (.ipa) and Android OS (.apk) files to identify potential vulnerabilities and the unintended exposure of sensitive data such as hardcoded secret keys, debugging information and Application Programming Interface (API) key strings. Support for Android OS .aab files will be added in a future release.
