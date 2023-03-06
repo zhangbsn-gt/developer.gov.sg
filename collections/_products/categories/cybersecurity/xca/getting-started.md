@@ -15,15 +15,14 @@ XCA CI runs in two situations:
 **To access XCA findings:**
 
 1. When a Merge Request is created: Wait for the job to complete and check the security scanning Merge Request widget.
-  <figure style="text-align: center">
-    <img src="/assets/img/xca-fig-1-merge-request.png" width="80%" height="80%" />
-	    <figcaption>Fig 1: A screenshot of the Merge Request.</figcaption>
-  </figure><br />
+    <figure style="text-align: center">
+      <img src="/assets/img/xca-fig-1-merge-request.png" width="80%" height="80%" />
+	      <figcaption>Fig 1: A screenshot of the Merge Request.</figcaption>
+    </figure><br />
 2. When new code is committed to the default branch: Wait for the job to complete and check the project’s Security & Compliance > Vulnerability Report page. XCA findings are marked as “XCA” under the Identifier and Tool columns.
-
-  <figure style="text-align: center">
-    <img
-      src="/assets/img/xca-fig-2-report.png" width="80%" height="80%"
-    />
-	    <figcaption>Fig 2: A screenshot of the XCA findings on the Vulnerability Report page.</figcaption>
-  </figure>
+    <figure style="text-align: center">
+      <img
+        src="/assets/img/xca-fig-2-report.png" width="80%" height="80%"
+      />
+	      <figcaption>Fig 2: A screenshot of the XCA findings on the Vulnerability Report page.</figcaption>
+    </figure>
