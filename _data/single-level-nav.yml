@@ -90,6 +90,15 @@
     - Resources
     - FAQs
 
+- name: XCA
+  items:
+    - Overview
+    - Features
+    - Getting Started
+    - Resources
+    - FAQs
+    - Meet The Team
+ 
 # Data and APIs
 - name: APEX
   items:
