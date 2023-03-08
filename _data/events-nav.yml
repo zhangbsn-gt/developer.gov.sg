@@ -114,7 +114,7 @@
   location: 10 Pasir Panjang Rd, Level 10
   event_date: 2023-03-09T19:00:00+08:00 - 2023-03-09T20:30:00+08:00
   registration_end_date: 2023-03-08T18:30:00+08:00
-  recording_link: 
+  recording_link:  
   registration_link: https://www.meetup.com/stack-by-govtech-singapore/events/291906892/
   items:
     - item_name: Overview
@@ -126,7 +126,7 @@
   location: 10 Pasir Panjang Rd
   event_date: 2023-02-23T19:00:00+08:00 - 2023-02-23T20:30:00+08:00
   registration_end_date: 2023-02-22T18:30:00+08:00
-  recording_link: 
+  recording_link: https://youtu.be/Z5U17iqHhXg
   registration_link: https://go.gov.sg/stackmeetup23feb2023
   items:
     - item_name: Overview
