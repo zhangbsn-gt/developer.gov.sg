@@ -33,8 +33,8 @@
   location: Online event
   event_date: 2022-07-07T00:00:00+08:00 - 2022-07-08T17:00:00+08:00
   registration_end_date: 2022-07-07T00:00:00+08:00
-  registration_link: https://go.gov.sg/STACK-datascienceconnect
-  recording_link: /communities/events/conferences/STACK-data-science-connect-2022/recordings/all-recordings.html
+  registration_link: https://go.gov.sg/stack-x-datascienceconnect
+  recording_link: /communities/events/conferences/stack-x-data-science-connect-2022/recordings/all-recordings.html
   items:
     - item_name: Overview
     - item_name: Agenda
@@ -56,7 +56,7 @@
   location: Hive Center
   event_date: 2021-11-17T00:00:00+08:00 - 2021-11-17T23:59:00+08:00
   registration_end_date: 2021-11-17T00:00:00+08:00
-  recording_link: /communities/events/conferences/STACK-cloud-2021/recordings/all-recordings.html
+  recording_link: /communities/events/conferences/stack-x-cloud-2021/recordings/all-recordings.html
   registration_link: https://go.gov.sg/stackx-cloud-public
   items:
     - item_name: Overview
@@ -101,7 +101,7 @@
   location: Online (via Zoom)
   event_date: 2021-05-11T00:00:00+08:00 - 2021-05-11T23:59:00+08:00
   registration_end_date: 2021-05-11T00:00:00+08:00
-  recording_link: /communities/events/conferences/STACK-ci-cd-2021/overview.html
+  recording_link: /communities/events/conferences/stack-x-ci-cd-2021/overview.html
   registration_link: https://go.gov.sg/stackxconferencecicd
   items:
     - item_name: Overview
