@@ -20,6 +20,8 @@ Many of the vulnerabilities that ACAS addresses are high-risk in nature, found i
 
 ACAS uses [Django](https://djangoproject.com){:target="_blank"}, a high-level Python web framework that encourages rapid development. Built and maintained by experienced developers, Django handles many web application development hassles, so developers can focus on writing apps without reinventing the wheel.
 
+ACAS is supported by the Smart Nation and Digital Government Office (SNDGO) and the National Research Foundation (NRF), under the Public Sector Translational R&D Grant Funding Initiative (TRANS Grant).
+
 ### How It Works
 
 ACAS comprises several independent Django modules that alter Django’s behavior to close security gaps. Each module safeguards the application from a specific category of vulnerability, with minimal configuration or modification to the application.
