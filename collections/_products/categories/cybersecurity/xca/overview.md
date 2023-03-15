@@ -18,7 +18,7 @@ Extended Code Analysis (XCA) is an integrated tool in [SHIP-HATS](/products/cate
 
 Developed by GovTech’s [Cyber Security Group (CSG)](https://www.tech.gov.sg/cyber-security-group){:target="_blank"} , XCA is integrated and enabled for all SHIP-HATS 2.0 GitLab tenants. It helps to detect and prevent repeated vulnerabilities at scale through SHIP-HATS 2.0 GitLab repositories. Individual projects benefit from XCA scans with no additional configuration required.
 
-XCA augments existing code scans such as GitLab SAST, Fortify Source Code Analyzer (SCA), and Synk. XCA’s “secret sauce” are custom rules, based on insecure code patterns identified through vulnerabilities discovered by CSG’s security testing  and vulnerability disclosures. XCA custom rules are not available in default rulesets by other code scanning solutions.
+XCA augments existing code scans such as GitLab SAST, Fortify Source Code Analyzer (SCA), and Snyk. XCA’s “secret sauce” are custom rules, based on insecure code patterns identified through vulnerabilities discovered by CSG’s security testing  and vulnerability disclosures. XCA custom rules are not available in default rulesets by other code scanning solutions.
 
 XCA comprises the following components:
 - XCA Rules: Custom rules written by CSG cybersecurity specialists as well as developers across government agencies
