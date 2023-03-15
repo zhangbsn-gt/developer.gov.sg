@@ -14,7 +14,7 @@ description: “Anyhow Code Also Secure” (ACAS) extends the Django Python web 
 
 ![“Anyhow Code Also Secure”(ACAS) header banner](/assets/img/ACAS-HeaderBanner-v2.png)
 
-“Anyhow Code Also Secure”(ACAS) was jointly developed by GovTech’s [Cyber Security Group (CSG)](https://www.tech.gov.sg/cyber-security-group){:target="_blank"} and A*STAR’s Institute for Infocomm Research to eliminate the undesirable effects of insecure code through a secure-by-default framework. ACAS brings web application security to the next level by removing or limiting insecure behavior in the application. Hence, the impact of vulnerabilities is reduced or removed, even when developers write insecure code by accident.
+“Anyhow Code Also Secure”(ACAS) was jointly developed by GovTech’s [Cyber Security Group (CSG)](https://www.tech.gov.sg/cyber-security-group){:target="_blank"} and A*STAR’s Institute for Infocomm Research to eliminate the undesirable effects of insecure code through a secure-by-default framework. ACAS brings web application security to the next level by removing or limiting insecure behaviours in applications. Hence, the impact of vulnerabilities is reduced or removed, even when developers write insecure code by accident.
 
 Many of the vulnerabilities that ACAS addresses are high-risk in nature, found in the OWASP Top-10, and have been around for over 20 years. These include “Cross-site Scripting” (XSS), “OS command injection”, and “Indirect Object References (IDOR)”.
 
