@@ -63,12 +63,7 @@ The central administration dashboard of APEX serves as a monitoring tool for sys
 
 Other key features of APEX include its self-service model, provision of professional services, ability to support multi-tenanted Environments and modern RESTful and SOAP APIs.
 
-The various open source codes under APEX can be found through these links:
-
-- [Node.js API signature library](https://github.com/GovTechSG/node-apex-api-security){:target="\_blank"}
-- [Java API signature library](https://github.com/GovTechSG/java-apex-api-security){:target="\_blank"}
-- [Node.js HTTP Proxy Server for attaching Apex authentication headers](https://github.com/GovTechSG/apex-proxy-node){:target="\_blank"}
-- [Apex API signature validator](https://github.com/GovTechSG/apex-signature-validator){:target="\_blank"}
+The various open source codes under APEX can be found [here](/products/categories/data-and-apis/apex/resources){:target="\_blank"}.
 
 ### Why Should APEX be Adopted?
 
@@ -137,8 +132,6 @@ Tenants may need to perform the exchange of certificates based a needs basis.
 
 Tenants can start to create APIs that would be taught in the APEX training session. If there are any exceptions in this stage, the tenant can approach the support team for assistance.
 
-For more technical information, refer to the APEX Quickstart guide [here](https://docs.developer.tech.gov.sg/docs/apex-quickstart){:target="\_blank"} and FAQs [here](https://docs.developer.tech.gov.sg/docs/frequently-asked-questions-faqs){:target="\_blank"}.
-
 ### Success Stories
 
 - MyInfo is a government service in which users only have to provide their personal data to the government once before they can tap on their government-verified data to pre-fill online forms for subsequent government and private sector digital services. Thus, making digital transactions to quicker and simpler. Currently, APEX has enabled over 220 government digital services and more than 2,400 commercial services to be linked to the MyInfo service. This helps citizens to access services more efficiently and quickly by retrieving their data from various government sources through one platform, eventually doing away with the need for physical documents as verifications to complete transactions.
@@ -155,12 +148,3 @@ Administrative access to APEX is only available on the government intranet. Regi
 ### Contact Us
 
 {% include contact-us-form.html %}
-
-<br/>**Technical Resources**
-
-- [APEX Quickstart guide](https://docs.developer.tech.gov.sg/docs/apex-quickstart){:target="\_blank"}
-- [APEX FAQs](https://docs.developer.tech.gov.sg/docs/frequently-asked-questions-faqs){:target="\_blank"}
-- [Node.js API signature library](https://github.com/GovTechSG/node-apex-api-security){:target="\_blank"}
-- [Java API signature library](https://github.com/GovTechSG/java-apex-api-security){:target="\_blank"}
-- [Node.js HTTP Proxy Server for attaching Apex authentication headers](https://github.com/GovTechSG/apex-proxy-node){:target="\_blank"}
-- [Apex API signature validator](https://github.com/GovTechSG/apex-signature-validator){:target="\_blank"}

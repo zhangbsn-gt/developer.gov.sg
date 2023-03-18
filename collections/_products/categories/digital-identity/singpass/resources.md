@@ -20,6 +20,10 @@ _data: single-level-nav
 - National Digital Identity and Government Data Sharing in Singapore: A Case Study of Singpass and APEX (GovTech x World Bank collaboration)
   - [Full report](/assets/files/GovTech World Bank NDI APEX report.pdf){:target="_blank"}
   - [Abridged report](/assets/files/GovTech World Bank NDI APEX report (abridged version).pdf){:target="_blank"}
+  
+### Factsheet
+
+- [Singpass Factsheet](/assets/files/singpass-factsheet-121022.pdf){:target="_blank"}
 
 ### Multimedia
 - [Virtual Launch of National Digital Identity and Government Data Sharing in Singapore: A Case Study of Singpass and APEX (GovTech x World Bank collaboration)](https://www.worldbank.org/en/events/2022/10/19/singapore-s-national-digital-identity-and-governance-data-sharing-a-case-study-of-singpass-and-apex){:target="_blank"}

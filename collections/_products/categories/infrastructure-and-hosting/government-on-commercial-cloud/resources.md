@@ -17,3 +17,7 @@ You may access the following GCC 2.0 documentation through your TechPass account
 You may access the following via the Intranet on government officers’ GSIB laptops only.
 
 - [GCC 2.0 pricing](https://sgdcs.sgnet.gov.sg/sites/tech/SNDigiGov/CentralICTServices/MHI/Pages/GCC-2.0.aspx){:target="_blank"}
+
+### Factsheet
+
+- [GCC Factsheet](/assets/files/gcc-factsheet-121222.pdf){:target="_blank"}

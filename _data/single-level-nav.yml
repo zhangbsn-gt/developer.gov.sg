@@ -109,6 +109,7 @@
 - name: APEX
   items:
     - Overview
+    - Resources
 
 - name: BookingSG
   items:
