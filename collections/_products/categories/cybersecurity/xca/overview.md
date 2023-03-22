@@ -32,7 +32,7 @@ XCA CI has been added as a required pipeline configuration in SHIP-HATS 2.0 GitL
 
 ### Key Benefits
 
-- Detects and reduces repeated vulnerabilities in your applications’ code based on insecure code patterns identified from other Government products
+- Detects and reduces repeated vulnerabilities in your applications’ code based on insecure code patterns identified from other government products
 - Seamlessly integrated with GitLab
 - All project code hosted on SHIP-HATS 2.0 GitLab is onboarded automatically to XCA
 

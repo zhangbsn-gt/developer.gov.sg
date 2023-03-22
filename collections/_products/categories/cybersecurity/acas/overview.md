@@ -36,7 +36,7 @@ Developers can incorporate ACAS modules in their existing Django web application
 
 ### Pricing
 
-ACAS is free and can be used for any Singapore Government projects.
+ACAS is free and can be used for any Singapore government projects.
 
 ### Contact Us
 
