@@ -1,5 +1,5 @@
 ---
-title: Extended Code Analysis (XCA) – Detect repeated vulnerabilities from security testing in code  
+title: Extended Code Analysis (XCA) – Detect Repeated Vulnerabilities from Security Testing in Code  
 layout: layout-page-sidenav
 category: Cybersecurity
 _data: single-level-nav
