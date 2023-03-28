@@ -1,5 +1,5 @@
 ---
-title: “Anyhow Code Also Secure”(ACAS) –  Software module for the Python Django framework that enhances web application security  
+title: “Anyhow Code Also Secure”(ACAS) –  Software Module for the Python Django Framework that Enhances Web Application Security  
 layout: layout-page-sidenav
 category: Cybersecurity
 _data: single-level-nav
