@@ -1,5 +1,5 @@
 ---
-title: CloudSCAPE – Simplifying security and compliance for Cloud deployments in GCC 2.0  
+title: CloudSCAPE – Simplifying Security and Compliance for Cloud Deployments in GCC 2.0  
 layout: layout-page-sidenav
 category: Cybersecurity
 _data: single-level-nav
