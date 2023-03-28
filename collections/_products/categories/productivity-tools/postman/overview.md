@@ -8,7 +8,6 @@ redirect_from:
     - /products/categories/productivity-tools/postman.html
 sub_collection_render: true
 single_level_nav: true
-collection_group: [Citizen-facing Products, What's New]
 description: Postman is a multichannel cloud-based service for Singapore government agencies to send mass personalized messages in minutes. Find out more.
 ---
 

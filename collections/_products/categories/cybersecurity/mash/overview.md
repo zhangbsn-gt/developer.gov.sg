@@ -8,7 +8,7 @@ redirect_from:
     - /products/categories/cybersecurity/mash.html
 sub_collection_render: true
 single_level_nav: true
-collection_group: [Singapore Government Tech Stack, What's New]
+collection_group: [Singapore Government Tech Stack]
 sgts_collection_group: [toolchain]
 sgts_layer_group: [base]
 sgts_title: MASH

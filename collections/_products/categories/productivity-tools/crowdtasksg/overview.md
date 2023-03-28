@@ -8,7 +8,7 @@ redirect_from:
     - /products/categories/productivity-tools/crowdtasksg.html
 sub_collection_render: true
 single_level_nav: true
-collection_group: [Citizen-facing Products, What's New]
+collection_group: [Citizen-facing Products]
 description: The CrowdTaskSG digital platform allows public agencies to crowdsource ideas and engage with citizens for activities and tasks that help shape our nation’s future.
 ---
 
