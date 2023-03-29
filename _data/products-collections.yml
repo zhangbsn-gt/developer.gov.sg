@@ -2,6 +2,7 @@
   description: Discover the latest product additions to the Singapore Government Developer Portal here
   items:
     - Overview
+    - Analytics.gov
     - ACAS
     - CrowdTaskSG
     - FormSG
@@ -46,6 +47,7 @@
   description: Access Data Science and Artificial Intelligence (DSAI) products developed by the Singapore Government, best practices and other resources here.
   items:
     - Overview
+    - Analytics.gov
     - Transcribe
     - VAS
     - Analytics by Design
