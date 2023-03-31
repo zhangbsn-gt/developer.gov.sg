@@ -120,6 +120,13 @@
     - Overview
     - Resources
 
+- name: APEX Cloud
+  items:
+    - Overview
+    - Features
+    - Getting Started
+    - Resources
+
 - name: BookingSG
   items:
     - Overview

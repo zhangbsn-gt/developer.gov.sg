@@ -12,6 +12,7 @@
   items:
     - Overview
     - APEX
+    - APEX Cloud
     - Cloud File Transfer
 
 - name: Monitoring

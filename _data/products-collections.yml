@@ -2,13 +2,8 @@
   description: Discover the latest product additions to the Singapore Government Developer Portal here
   items:
     - Overview
-    - Analytics.gov
     - ACAS
-    - CrowdTaskSG
-    - FormSG
-    - GovText
-    - MASH
-    - Postman
+    - APEX Cloud
     - XCA
 
 - name: Citizen-facing Products
