@@ -13,4 +13,4 @@ APEX Cloud supports multiple onboarding pathways for different user types.
 - Public officers can onboard APEX Cloud through the API Manager Portal via their TechPass account
 - Non-government users however can onboard APEX Cloud through the API Developer Portal via their Corppass account
 
-Refer to our detailed onboarding guide in the resources tab for more instructions
+Refer to our detailed [onboarding guide](https://docs.developer.tech.gov.sg/docs/apex-cloud-onboarding/){:target="_blank"} for more instructions
