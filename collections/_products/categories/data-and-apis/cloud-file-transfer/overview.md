@@ -26,6 +26,8 @@ Currently, the Instruction Manual for Infocomm Technology and Smart Systems (ICT
 
 ### How does CFT Work?
 
+CFT is a backend system-to-system file transfer service. As a tenant or subscriber, you can transfer files to and from HTTPS systems or SFTP systems.
+
 File transfers in CFT can be understood using the airport luggage screening process as an analogy.
 
 <figure style="text-align: center">
