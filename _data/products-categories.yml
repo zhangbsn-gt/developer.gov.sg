@@ -76,6 +76,7 @@
   items:
     - Overview
     - Singapore Government Design System
+    - Purple HATS
 
 - name: DevOps
   description: Tools that enable the delivery of software quickly, securely and reliably in the spirit of DevOps
