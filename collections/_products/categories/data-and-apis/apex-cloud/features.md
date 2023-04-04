@@ -14,11 +14,11 @@ The API Manager is the core of the APEX Cloud API management solution. It is a s
 
 ### An API gateway for security and connectivity between APIs and consumers
 
-The API gateway is the core infrastructure that provides security and connectivity between APIs and its consumers. It is the “front-door” that sits between the clients and the backend services that it provides security for. It takes API calls from clients and routes them to the correct backend services.
+The API gateway is the core infrastructure that provides security and connectivity between APIs and their consumers. It is the “front-door” that sits between the clients and the backend services that it provides security for. It takes API calls from clients and routes them to the correct backend services.
 
 ### An API builder for integration and orchestration with service providers
 
-The API Builder is an open-source, Node.js software that acts as an integration and orchestration layer between APEX Cloud and any existing service providers. It comes with a low/no code approach and rich set of ready-to-use libraries that allows users to develop integration use cases much faster than when implementing them manually. 
+The API Builder is an open-source, Node.js software that acts as an integration and orchestration layer between APEX Cloud and any existing service providers. It comes with a low/no-code approach and a rich set of ready-to-use libraries that allows users to develop integration use cases much faster than when implementing them manually. 
 
 ### An API portal for businesses and individuals to access government APIs
 
@@ -26,4 +26,4 @@ The API Portal is a web-based portal that enables external, non-government devel
 
 ### A real-time API monitoring feature for analysis 
 
-The API manager also comes with real-time API monitoring which allows users to analyse their API use and discover insights and trends.Centralised controls and a simple user-interface offer end-to-end visibility on file trano   The API manager also comes with real-time API monitoring which allows users to analyse their API use and discover insights a]nd trends. 
+The API manager also comes with real-time API monitoring which allows users to analyse their API use and discover insights and trends.
