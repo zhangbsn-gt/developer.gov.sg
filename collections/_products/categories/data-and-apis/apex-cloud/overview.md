@@ -50,15 +50,8 @@ Incorporation of industry standardisation and best practices for user security
 
 ### Pricing
 
-Currently only publishers have to pay to use APEX Cloud. This includes a $4,000 monthly base fee, and a $0.004 fee per API request. With this, publishers can access the following functions:
+Currently, only API publishers have to pay to use APEX Cloud. Public officers can [view pricing details on GSIB](https://sgdcs.sgnet.gov.sg/sites/IDA-GoSync/gdspdd-ai/SitePages/APEX-Cloud-Pricing.aspx) (link hosted on intranet).
 
-- Developers’ Portal
-- Staging Intranet environment
-- Staging Internet environment
-- Production Intranet environment
-- Production Internet environment
-- Production Sandbox environment
-- Stackops logging, reports & dashboards
 
 ### Contact Us
 
