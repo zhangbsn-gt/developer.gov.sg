@@ -322,6 +322,11 @@
 - name: SupplyAlly
   items:
     - Overview
+    - Features
+    - Use Cases
+    - Getting Started
+    - Resources
+    - Meet The Team
 
 - name: TraceTogether
   items:
