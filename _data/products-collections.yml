@@ -5,6 +5,7 @@
     - ACAS
     - Analytics.gov
     - APEX Cloud
+    - enCRYPT
     - Purple HATS
     - XCA
 
@@ -45,6 +46,7 @@
   items:
     - Overview
     - Analytics.gov
+    - enCRYPT
     - Transcribe
     - VAS
     - Analytics by Design
