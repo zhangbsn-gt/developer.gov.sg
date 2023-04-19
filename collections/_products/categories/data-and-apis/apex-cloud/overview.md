@@ -50,8 +50,7 @@ Incorporation of industry standardisation and best practices for user security
 
 ### Pricing
 
-Currently, only API publishers have to pay to use APEX Cloud. Public officers can [view pricing details on GSIB](https://sgdcs.sgnet.gov.sg/sites/IDA-GoSync/gdspdd-ai/SitePages/APEX-Cloud-Pricing.aspx) (link hosted on intranet).
-
+Currently, only API publishers have to pay to use APEX Cloud. Refer to [the pricing schedule for APEX Cloud on our documentation service](https://docs.developer.tech.gov.sg/docs/apex-cloud-subscription/){:target="_blank"} for more information.
 
 ### Contact Us
 
