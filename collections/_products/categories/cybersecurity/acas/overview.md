@@ -8,7 +8,6 @@ redirect_from:
     - /products/categories/cybersecurity/acas.html
 sub_collection_render: true
 single_level_nav: true
-collection_group: [What's New]
 description: “Anyhow Code Also Secure” (ACAS) extends the Django Python web framework to neutralise vulnerabilities and remove the attack surfaces of web applications.
 ---
 
