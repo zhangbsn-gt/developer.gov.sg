@@ -8,7 +8,7 @@ _data: single-level-nav
 
 ### Technical Documentations
 
-You may access the following GCC 2.0 Documentation via TechPass login..
+You may access the following GCC 2.0 Documentation via TechPass login.
 
 - [GCC 2.0 workshop & tech talks archive](https://docs.developer.tech.gov.sg/docs/gcc-2-tech-talks/){:target="_blank"}
 - [GCC 2.0 user documentation](https://docs.developer.tech.gov.sg/docs/gcc-version-2-user-documentation){:target="_blank"}
