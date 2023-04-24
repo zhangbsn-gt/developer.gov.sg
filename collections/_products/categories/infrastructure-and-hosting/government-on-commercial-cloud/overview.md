@@ -60,7 +60,7 @@ General Availability (GA) of GCC 2.0 for AWS was implemented on 4 May 2022, whil
 
 ### Pricing
 
-For details on GCC 2.0’s pricing, click [here](https://sgdcs.sgnet.gov.sg/sites/tech/SNDigiGov/CentralICTServices/MHI/Pages/GCC-2.0.aspx){:target="_blank"} (Only accessible via the Intranet on government officers’ GSIB laptops). 
+For details on GCC 2.0’s pricing, click [here](https://gccprod.sharepoint.com/sites/GOVTECH-digitalgov/MHI/GCC/SitePages/MHI-GCC-GCC2.0.aspx){:target="_blank"} (Only accessible via the Intranet on government officers’ GSIB laptops). 
 
 ### Contact Us
 
