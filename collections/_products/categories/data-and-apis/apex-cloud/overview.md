@@ -48,9 +48,23 @@ Incorporation of industry standardisation and best practices for user security
 -	Mutual Transport Layer Security (TLS) with JWKS (JSON Web Key Sets) and secured data exchange with JWT (JSON Web Token) for same and cross-zone exchange
 -	API sandbox to promote discovery and self service sampling of APIs
 
+### Technical Specifications
+
+| **APEX Cloud**  | Defaults  | Can be increased/decreased? (Quotas) |
+| -------------------------------- | ------------------------------------------------------------------------------------------- | ----------------------------------- |
+| **Authentication**  | Inbound:<br>API Key + JWT<br>Outbound: <br>API Key, TLS, MTLS,<br>AWS Signature v4,<br>custom policies | Not Applicable |
+| **Authorization**   | Token-based AuthZ with OAuth,<br>OAuth with Singpass/Corppass  | Not Applicable                      |
+| **Protocols Supported** | SOAP, REST, JSON, XML | Not Applicable  |
+| **Payload Size Limit (send)**    | 10 MB  | No   |
+| **Payload Size Limit (receive)** | 10 MB  | No   |
+| **Concurrent connections**       | 128    | Yes  |
+| **Connection timeout**           | 30 seconds    | Yes   |
+| **Active timeout**               | 30 seconds    | Yes   |
+
+
 ### Pricing
 
-Currently, only API publishers have to pay to use APEX Cloud. Refer to [the pricing schedule for APEX Cloud on our documentation service](https://docs.developer.tech.gov.sg/docs/apex-cloud-subscription/){:target="_blank"} for more information.
+Currently, only API publishers have to pay to use APEX Cloud. Refer to [the pricing schedule for APEX Cloud on our documentation service](https://docs.developer.tech.gov.sg/docs/apex-cloud-getting-started-guide/docs/subscription){:target="_blank"} for more information.
 
 ### Contact Us
 
