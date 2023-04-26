@@ -107,6 +107,18 @@
     - item_name: Overview
 
 # Stack Events
+- name: "Building Trust through Privacy Engineering [DSAI Series]"
+  description: >-
+    This Meetup is an exciting opportunity to learn about the emerging field of PP-Tech, discover practical implementations of privacy tools and technologies, and explore collaborations to unlock the potential of data.
+  category: STACK Meetup
+  location: 10 Pasir Panjang Rd, Level 10
+  event_date: 2023-04-27T19:00:00+08:00 - 2023-04-27T20:30:00+08:00
+  registration_end_date: 2023-04-26T18:30:00+08:00
+  recording_link:
+  registration_link: https://www.meetup.com/stack-by-govtech-singapore/events/292949413/
+  items:
+    - item_name: Overview
+
 - name: "Inspiring Digital Change [International Women's Day Edition]"
   description: >-
     Join Sharon and May as we explore how to champion digital transformation and inclusion in tech. Find out how you can successfully bridge transformation journeys amidst legacy systems and spearhead innovation. Learn how our speakers cultivate mentorship and promote effective leadership, all while maintaining an inclusive culture in a Panel Discussion moderated by DN Prasad.
