@@ -22,7 +22,7 @@ The COVID-19 pandemic produced an urgent need to address logistical challenges o
 
 Automating logistic distributions prevents wastage of resources that can occur because of a lapse in the distribution system. This prevents duplicate distributions and optimises volunteers’ efforts. SupplyAlly provides convenience to citizens while maintaining operational flexibility for different points and modes of distribution.
 
-In response to these urgent logistical challenges, GovTech’s Government Digital Services (GDS) team developed SupplyAlly, a centralized distribution system to facilitate nationwide logistics distributions, in 2020.
+In response to these urgent logistical challenges, GovTech’s Government Digital Services (GDS) team developed SupplyAlly, a centralised distribution system to facilitate nationwide logistics distributions, in 2020.
 
 SupplyAlly has a user-friendly app that helps volunteers quickly scan the ID cards of recipients who show up to collect the items being distributed, and track the distribution process to ensure that there has been no duplication of distributions.
 
