@@ -1,4 +1,15 @@
 # Conferences
+- name: 'STACKx Data & AI 2023'
+  description: Join this conference and dive into the latest techcnology trends around AI and how a solid data foundation is needed for AI to thrive in the Singapore Government.
+  category: Conference
+  location: Suntec Singapore Convention and Exhibition Centre (Summit 1)
+  event_date: 2023-07-18T08:30:00+08:00 - 2023-07-18T17:30:00+08:00
+  registration_end_date: 2023-07-18T08:30:00+08:00
+  registration_link:
+  recording_link:
+  items:
+    - item_name: Overview
+
 - name: STACK 2022 Developer Conference
   description: With over 4,000 attendees expected to attend, we invite you to join the conversation! Send us your content proposal for what you wish to share with our attendees.
   category: Conference
