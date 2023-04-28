@@ -6,8 +6,6 @@ single_level_nav: true
 _data: single-level-nav
 ---
 
-enCRYPT offers the following features to support different privacy-preserving use cases:
-
 ### Tabular anonymisation
 
 Anonymise your datasets in line with the [Instruction Manual for ICT&SS Management](/guidelines/standards-and-best-practices/instruction-manual-for-ict-ss-management.html){:target="_blank"} guidelines quickly and with confidence. Implement custom data anonymisation techniques, address re-identification risk, and generate detailed reports on how your data was transformed.
