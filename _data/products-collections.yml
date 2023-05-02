@@ -55,6 +55,20 @@
     - Data Literacy ePrimer
     - GovText
 
+- name: Product Factsheets and Case Studies
+  description: Download the factsheets and case studies, and learn about Singapore's Digital Government journey and the products developed by the Singapore Government.
+  items:
+    - Overview
+    - Singapore Digital Government Journey factsheet
+    - APEX factsheet
+    - GoBusiness factsheet
+    - GCC factsheet
+    - LifeSG factsheet
+    - SGTS factsheet
+    - Singpass factsheet
+    - NDI and APEX case study (full and abridged report)
+    - Singapore's Digital Government Journey (video interviews)
+
 - name: Singapore Government Tech Stack
   description: A common platform that streamlines and simplifies the development process
   items:
