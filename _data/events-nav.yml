@@ -118,6 +118,18 @@
     - item_name: Overview
 
 # Stack Events
+- name: "Learnings from the Government Zero Trust Architecture (GovZTA) Programme [Security Series]"
+  description: >-
+    This meetup will include key learnings from GovTech’s Cyber Security Group’s Government Zero Trust Architecture (GovZTA) programme to facilitate industry professionals with the development and/or improvement of their Zero Trust programmes. 
+  category: STACK Meetup
+  location: 10 Pasir Panjang Rd, Level 10
+  event_date: 2023-05-11T19:00:00+08:00 - 2023-05-11T20:30:00+08:00
+  registration_end_date: 2023-05-11T14:00:00+08:00
+  recording_link:
+  registration_link: https://www.go.gov.sg/stackmeetuppage11may23
+  items:
+    - item_name: Overview
+
 - name: "Building Trust through Privacy Engineering [DSAI Series]"
   description: >-
     This Meetup is an exciting opportunity to learn about the emerging field of PP-Tech, discover practical implementations of privacy tools and technologies, and explore collaborations to unlock the potential of data.
