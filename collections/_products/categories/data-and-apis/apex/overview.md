@@ -18,6 +18,8 @@ sgts_title: APEX on Prem
 description: GovTech’s APEX platform enables Singapore’s public sector to share data conveniently and securely through the use of APIs. Find out here.
 ---
 
+*This page is for APEX On-Prem which will decommission by May 2023. Please go to [APEX Cloud](/products/categories/data-and-apis/apex-cloud/overview.html){:target="_blank"} to learn about APEX Cloud which will replace APEX On-Prem.*
+
 ### Overview
 
 APEX is a self-service API platform that acts as a centralised and secure API gateway for the government. Through APEX, users can easily publish, monitor, and
