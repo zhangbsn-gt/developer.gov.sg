@@ -11,7 +11,7 @@ single_level_nav: true
 description: OpenAttestation is an open-source framework for verifiable documents and transferable records on the blockchain. Find out more.
 ---
 
-![OpenAttestation header banner](/assets/img/OpenAttestation-HeaderBanner-v2.png)
+![OpenAttestation header banner](/assets/img/OpenAttestation-NewHeaderBanner.png)
 
 OpenAttestation, part of Singapore’s Smart Nation initiative, is an open-source framework to simplify the endorsement and verification of documents using the blockchain. 
 

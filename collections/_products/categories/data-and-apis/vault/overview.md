@@ -11,6 +11,8 @@ single_level_nav: true
 description: Vault is a platform where government data is consolidated, organised and made discoverable for public servants to explore, search and securely access.
 ---
 
+![Vault header banner for Singapore Government Developer Portal](/assets/img/Vault-NewHeaderBanner.png)
+
 Vault was created by GovTech’s Open Government Products (OGP) to improve the efficiency of data discovery and sharing within the government. 
 With data existing in siloes and differing approval processes across agencies, obtaining data usually takes a few months to even a year, which leads to projects being delayed or shelved permanently. 
 

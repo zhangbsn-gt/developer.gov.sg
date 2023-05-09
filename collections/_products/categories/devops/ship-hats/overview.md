@@ -17,7 +17,7 @@ redirect_from:
     - /products/categories/devops/ship-hats.html
 ---
 
-![SHIPHATs header banner for Singapore Governmeent Developer Portal](/assets/img/SHIP-HATS-HeaderBanner-v8.png)
+![SHIPHATs header banner for Singapore Government Developer Portal](/assets/img/ShipHATS-NewHeaderBanner.png)
 
 ### What is SHIP-HATS?
 

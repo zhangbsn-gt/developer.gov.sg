@@ -11,7 +11,7 @@ single_level_nav: true
 description: Verify (Digital Certificates) is the Singapore Government's trusted government verifier for OpenAttestation (.OA) files.
 ---
 
-![Verify header banner](/assets/img/verify-headerbanner.png)
+![Verify header banner](/assets/img/Verify-NewHeaderBanner.png)
 
 Verify (Digital Certificates) is the Singapore Government's platform to conveniently and securely authenticate and validate .OA (OpenAttestation) format documents that have been issued by government entities.
 	

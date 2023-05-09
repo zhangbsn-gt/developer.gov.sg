@@ -15,7 +15,7 @@ collection_group: [Singapore Government Tech Stack, Data Science and Artificial 
 description: Transcribe provides auto-transcription and localised Speech-to-Text services for Singapore government officers. Find out more here.
 ---
 
-![Transcribe header banner](/assets/img/Transcribe-HeaderBanner-v2.png)
+![Transcribe header banner](/assets/img/Transcribe-NewHeaderBanner.png)
 
 Transcribe is a Speech-to-Text (STT) platform with auto-transcription technologies and localised STT services across various speech models and data classification. Its Application Programming Interfaces (APIs) enable integration with other systems. 
 

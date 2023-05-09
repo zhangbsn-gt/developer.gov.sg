@@ -15,7 +15,7 @@ collection_group: [Singapore Government Tech Stack]
 description: TechBiz is a service management tool for government officers to manage SGTS services on a single console. Find out more here!
 ---
 
-![TechBiz header banner](/assets/img/techbiz-HeaderBanner-v2.png)
+![TechBiz header banner](/assets/img/Techbiz-NewHeaderBanner.png)
 
 TechBiz is a service management tool that helps government officers discover, subscribe, and manage SGTS services on a single console. It is currently in the Beta stage and is one of the two tools in the Engineering Suite of the SGTS. 
 

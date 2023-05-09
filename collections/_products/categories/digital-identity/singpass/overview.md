@@ -15,7 +15,7 @@ description: >
   Singpass, Singapore’s National Digital Identity, is used by over 4.5m residents, as a trusted and secure identity and data platform for digital transactions. 
 ---
 
-![Singpass header banner](/assets/img/singpass-HeaderBanner-v2.png)
+![Singpass header banner](/assets/img/Singpass-HeaderBannerResized16.png)
 
 Singpass, Singapore’s National Digital Identity (NDI), is a strategic national project implemented and managed by the [Government Technology Agency (GovTech)](http://www.tech.gov.sg/){:target="\_blank"} under the [Smart Nation Digital Government Group (SNDGG)](https://www.smartnation.gov.sg/about-smart-nation/sndgg){:target="\_blank"}. SNDGG was formed in 2017 and is housed under the [Prime Minister’s Office (PMO)](https://www.pmo.gov.sg/){:target="\_blank"}. 
 

@@ -8,7 +8,7 @@ single_level_nav: true
 description: TradeTrust is a framework for verifying authenticity and source of documents and for performing title ownership transfers of electronic transferable records.
 ---
 
-![TradeTrust header banner](/assets/img/TradeTrust-HeaderBanner-v5.png)
+![TradeTrust header banner](/assets/img/TradeTrust-NewHeaderBanner.png)
 
 TradeTrust is a framework that comprises <b>globally accepted standards</b> connecting governments and businesses to a <b>public blockchain</b>. This enables <b>trusted interoperability</b> of electronic trade documents across <b>digital platforms</b>. Thus, TradeTrust is offered as a <b>digital utility</b>. TradeTrust has proven capability in tracing the source of digitally issued documents and verifying their integrity independently. Examples of use cases include validating the authenticity and provenance of government-issued documents, title transfers of electronic Billing of Lading and more. 
 
