@@ -2,7 +2,7 @@
 title: Meet The Team of VAS
 mobile_title: Meet the Team
 layout: layout-page-sidenav
-category: Productivity Tools
+category: Analytics
 _data: single-level-nav
 single_level_nav: true
 bios:

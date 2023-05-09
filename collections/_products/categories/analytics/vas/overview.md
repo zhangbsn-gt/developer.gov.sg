@@ -15,10 +15,10 @@ sgts_layer_group: [services]
 sgts_title: Video Analytics
 collection_group: [Singapore Government Tech Stack, Data Science and Artificial Intelligence]
 description: >
-  VAS is a central platform that enable Government agencies to develop in-house video analytics solutions.
+  VAS is a central platform that enables Government agencies to develop in-house video analytics solutions. Find out more.
 ---
 
-![Video Analytics System header banner](/assets/img/VAS-HeaderBanner-v4.png)
+![Video Analytics System header banner](/assets/img/VAS-NewHeaderBanner.png)
 
 
 With the amount and quality of collected video data increasing every day, Video Analytics (VA) algorithms are gaining popularity in use cases that include situational awareness, post-incident investigation, real-time analysis and monitoring, and extraction of insights and trends for further analysis.

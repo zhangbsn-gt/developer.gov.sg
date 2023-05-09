@@ -20,7 +20,7 @@ description: >
   their digital services with data.
 ---
 
-![WOGAA header banner for Singapore Governmeent Developer Portal](/assets/img/WOGAA-HeaderBanner-v2.png)
+![WOGAA header banner for Singapore Government Developer Portal](/assets/img/WOGAA-NewHeaderBanner.png)
 
 The Whole-of-Government Application Analytics (WOGAA) monitors real-time performance of government websites and digital services. It presents key information such as website traffic, user feedback, recommendations to improve site performance, as well as benchmarks against Whole-of-Government (WOG) averages in a single dashboard. Designed with a fuss-free user interface, these useful data points allow public officers to conveniently access the information they need so that they can make effective data-driven decisions and proactively improve their services. Providing this as a central service allows the government to reap benefits from economies of scale, and provide additional cross-agency features such as performing comparisons across other government agencies, sectors and users to cultivate the notion of learning from one another and accelerate improvements.
 

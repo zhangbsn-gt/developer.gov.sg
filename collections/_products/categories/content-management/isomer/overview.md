@@ -13,7 +13,7 @@ single_level_nav: true
 description: Isomer helps public agencies build static, secure, and usable websites quickly. Find out more.
 ---
 
-![Isomer header banner](/assets/img/isomer-HeaderBanner-v1.png)
+![Isomer header banner](/assets/img/Isomer-NewHeaderBanner.png)
 
 [Isomer](https://www.isomer.gov.sg/){:target="\_blank"} is an informational website generator created by GovTech's Open Government Products team. It is an easy-to-deploy static website building and hosting service designed to help public officers create usable, secure, and faster informational websites within days.
 

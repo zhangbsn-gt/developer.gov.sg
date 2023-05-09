@@ -13,7 +13,7 @@ single_level_nav: true
 description: TIH is a one-stop digital resource hub that aims to build a vibrant and innovative tourism industry in Singapore. Find out more.
 ---
 
-![TIH header banner for Singapore Governmeent Developer Portal](/assets/img/TIH-HeaderBanner-v2.png)
+![TIH header banner for Singapore Government Developer Portal](/assets/img/TIH-NewHeaderBanner.png)
 
 The [Tourism Information and Services Hub (TIH)](https://tih.stb.gov.sg/content/tih/en/home.html){:target="_blank"} under the [Singapore Tourism Board (STB)](https://www.stb.gov.sg/){:target="_blank"} is a one-stop digital resource platform that helps tourism businesses save time, effort, and money by providing up-to-date content on Singapore’s tourism offerings, travel software services, and more.
 

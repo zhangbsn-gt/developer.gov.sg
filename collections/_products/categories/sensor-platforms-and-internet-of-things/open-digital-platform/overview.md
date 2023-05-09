@@ -11,7 +11,7 @@ single_level_nav: true
 description: The Open Digital Platform (ODP) by GovTech and JTC integrates smart city solutions on one platform. Find out more
 ---
 
-![Open Digital Platform header banner](/assets/img/ODP-HeaderBanner-v3.png)
+![Open Digital Platform header banner](/assets/img/ODP-NewHeaderBanner.png)
 
 
 The award-winning Open Digital Platform (ODP) is a key component in the digital infrastructure underpinning Singapore’s Smart Nation ambitions.

@@ -14,7 +14,7 @@ collection_group:
 description: SAM+ is an all-encompassing sensor management platform for the Whole of Government.Find out more.
 ---
 
-![Sensor Asset Management banner](/assets/img/SAM-HeaderBanner-v2.png)
+![Sensor Asset Management banner](/assets/img/SAM-NewHeaderBanner.png)
 
 SAM+ is an all-encompassing Whole-of-Government (WOG) sensor management platform. It provides users full visibility of all sensors deployed across the Government, enabling them to search for sensors and data of interest.
 SAM+ aggregates voluminous data from numerous channels into simple visualisations for ease of analysis, and offers a workspace with in-built workflow engines for agencies to collaborate in sensor planning. These capabilities enable agencies to unlock the value of sensor data and deliver better public services to citizens.

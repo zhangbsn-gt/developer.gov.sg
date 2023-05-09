@@ -14,7 +14,7 @@ redirect_from:
 description: Delivering government services and information in a user-centric manner.
 ---
 
-![LifeSG header banner for Singapore Governmeent Developer Portal](/assets/img/LifeSG-HeaderBanner-v2.png)
+![LifeSG header banner for Singapore Government Developer Portal](/assets/img/LifeSG-NewHeaderBanner.png)
 
 LifeSG consolidates services and information across various government agencies and provides recommendations that are personalised according to user profiles and preferences. Users can explore more than 100 government services which are grouped according to the needs they address at different life junctures and significant milestones. 
 
