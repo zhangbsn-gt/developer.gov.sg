@@ -15,7 +15,7 @@ collection_group: [Singapore Government Tech Stack, Data Science and Artificial 
 description: Analyse your textual data efficiently with the GovText Natural Language Processing (NLP) platform for WOG. Discover more!
 ---
 
-![GovText header banner](/assets/img/GovText-HeaderBanner-v2.png)
+![GovText header banner](/assets/img/GovText-NewHeaderBanner.png)
 
 GovText is a comprehensive Natural Language Processing (NLP)-based text analytics platform with an intuitive user interface. Developed by GovTech’s [Data Science and Artificial Intelligence Division (DSAID)](https://www.tech.gov.sg/capability-centre-dsaid){:target="_blank"}, the platform aims to help public officers analyse their textual data efficiently.
 

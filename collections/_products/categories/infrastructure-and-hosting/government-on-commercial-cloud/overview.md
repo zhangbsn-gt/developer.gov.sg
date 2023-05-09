@@ -20,7 +20,7 @@ description: >
   Through GCC, government agencies can now onboard systems into commercial clouds, improving service delivery and efficiency of work processes. Adopt GCC now!
 ---
 
-![GCC header banner](/assets/img/GCC-HeaderBanner-v1.png)
+![GCC header banner](/assets/img/GCC-NewHeaderBanner.png)
 
 GCC is a “wrapper” platform that provides government agencies with a consistent means to adopt commercial cloud solutions offered by cloud service providers. To improve the user experience and ease the adoption of commercial cloud solutions provided by the leading service providers such as Amazon Web Services (AWS), Azure and Google Cloud, GCC 1.0 was redesigned to give rise to GCC 2.0. GCC 2.0 leverages existing cloud-native capabilities and aligns with cloud security practices. It enables product teams to deliver government digital services more quickly and securely at reduced costs.
 

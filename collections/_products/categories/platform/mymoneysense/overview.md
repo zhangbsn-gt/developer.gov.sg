@@ -10,7 +10,7 @@ single_level_nav: true
 description: MyMoneySense is a free financial planning digital service provided by the Singapore government for citizens. Find out more!
 ---
 
-![MyMoneySense header banner for Singapore Governmeent Developer Portal](/assets/img/mymoneysense-headerbannerv2.png)
+![MyMoneySense header banner for Singapore Governmeent Developer Portal](/assets/img/mymoneysense-NewHeaderBanner.png)
 
 MyMoneySense is a free financial planning digital service jointly developed by the Ministry of Manpower (MOM) and GovTech. It is an initiative under MoneySense, overseen by the MoneySense Council. Monetary Authority of Singapore (MAS) and MOM are co-chairs of the council, which comprises representatives from various government agencies.
 

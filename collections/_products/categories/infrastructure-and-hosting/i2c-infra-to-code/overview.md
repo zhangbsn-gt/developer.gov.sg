@@ -8,7 +8,7 @@ single_level_nav: true
 description: I<sub>2</sub>C is an API-based solution to manage and maintain cloud resources programmatically. Learn more!
 ---
 
-![Infra to Code header banner](/assets/img/I2C-HeaderBanner-v2.png)
+![Infra to Code header banner](/assets/img/I2C-NewHeaderBanner.png)
 
 An API-based solution to manage and maintain cloud resources programmatically, through exporting existing cloud infrastructure resources into Terraform templates.
 

@@ -14,7 +14,7 @@ collection_group: [Citizen-facing Products]
 description: Learn from Data.gov.sg, Singapore’s one-stop open data portal offering government datasets. Dive in now!
 ---
 
-![Data.gov.sg header banner](/assets/img/Datagovsg-HeaderBanner-v2b.png)
+![Data.gov.sg header banner](/assets/img/Datagovsg-NewHeaderBanner.png)
 
 [Data.gov.sg](https://data.gov.sg/){:target="_blank"} is Singapore’s open data portal, with datasets from over 90 government agencies at your fingertips. More than 100 apps have been created using data from the site since the portal’s launch in 2011.
 Well received by data enthusiasts, the vision for Data.gov.sg is to make government open data accessible and usable by anyone – with or without a background in data.

@@ -7,7 +7,7 @@ description: >
   Analytics By Design is a methodology that seeks to improve the analytics-readiness of projects by planning out how data should be generated and collected before the project starts.
 ---
 
-![Analytics by Design header banner](/assets/img/1655953918638_ABD-HeaderBanner-v4.png)
+![Analytics by Design header banner](/assets/img/AnalyticsbyDesign-NewHeaderBanner.png)
 
 ### Overview
 

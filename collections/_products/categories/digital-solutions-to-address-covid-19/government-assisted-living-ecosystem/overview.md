@@ -14,6 +14,8 @@ redirect_from:
 description: Find out how the Government Assisted Living Ecosystem (GALE) supports seniors, rental tenants and lower income families amidst the COVID-19 pandemic.
 ---
 
+![GALE header banner](/assets/img/GALE-NewHeaderBanner.png)
+
 ## Overview
 
 Government Assisted Living Ecosystem (GALE) consists of technology and care layers - i) hardware IoT button, the Personal Alert Button (PAB)
