@@ -19,7 +19,7 @@ description: GovWallet facilitates the distribution of pay-outs from government 
 
 ---
 
-![GovWallet header banner for Singapore Government Developer Portal](/assets/img/GovWallet-HeaderBanner-v1b.png)
+![GovWallet header banner for Singapore Government Developer Portal](/assets/img/GovWallet-NewHeaderBanner.png)
 
 [GovWallet](https://www.wallet.gov.sg/){:target="_blank"} is a digital wallet module that Government agencies can use to disburse monies and credits to citizens and beneficiaries conveniently and securely.
 

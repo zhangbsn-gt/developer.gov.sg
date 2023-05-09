@@ -13,7 +13,7 @@ redirect_from:
 description: Making access to government services and resources seamless for businesses.
 ---
 
-![GoBusiness header banner for Singapore Governmeent Developer Portal](/assets/img/gobusiness-HeaderBanner-v3.png)
+![GoBusiness header banner for Singapore Government Developer Portal](/assets/img/GoBusiness-NewHeaderBanner.png)
 
 GoBusiness is designed to provide businesses in Singapore with integrated, personalised and seamless access to business information and services from the Singapore Government. The platform serves as a single, reliable Government touchpoint for businesses at every stage of their journey – from starting, to running and growing the business. 
 

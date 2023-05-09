@@ -16,7 +16,7 @@ sgts_layer_group: [base]
 sgts_title: Container Stack
 ---
 
-![Container Stack (CStack) header banner](/assets/img/containerstack-HeaderBanner-v2.png)
+![Container Stack (CStack) header banner](/assets/img/ContainerStack-NewHeaderBanner.png)
 
 Container Stack (CStack), a Base Layer product in the [Singapore Government Tech Stack (SGTS)](/singapore-government-tech-stack/){:target="_blank"}, offers a centralised, secure, and fully managed development platform for containers and Kubernetes.
 

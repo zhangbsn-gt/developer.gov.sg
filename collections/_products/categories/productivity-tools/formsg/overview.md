@@ -12,7 +12,7 @@ collection_group: [Citizen-facing Products]
 description: FormSG helps public officers to create digital forms for citizens conveniently and securely. Find out more!
 ---
 
-![FormSG header banner](/assets/img/FormSG-HeaderBanner-v1.png)
+![FormSG header banner](/assets/img/FormSG-NewHeaderBanner.png)
 
 [FormSG](https://form.gov.sg/){:target="_blank"} is a digital form builder used by the Singapore government and public healthcare institutions to collect data from residents and businesses securely.
 

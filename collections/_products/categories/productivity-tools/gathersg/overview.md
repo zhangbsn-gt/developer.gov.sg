@@ -13,6 +13,10 @@ redirect_from:
   - /technologies/productivity-tools/gathersg.html
 ---
 
+
+![GatherSG header banner](/assets/img/GatherSG-NewHeaderBanner.png)
+
+
 ### Overview
 
 GatherSG is a lightweight case management and case coordination system that is built for all domains. There are a variety of modern features such as Kanban Board, Collaborative Assessment, Collaborative Minutes Taking, integrated video conferencing tool, Statistical Dashboard designed and built with the Whole-of-Government (WOG) context.

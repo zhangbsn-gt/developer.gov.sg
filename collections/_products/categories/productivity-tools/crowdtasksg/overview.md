@@ -12,7 +12,7 @@ collection_group: [Citizen-facing Products]
 description: The CrowdTaskSG digital platform allows public agencies to crowdsource ideas and engage with citizens for activities and tasks that help shape our nation’s future.
 ---
 
-![CrowdTaskSG header banner](/assets/img/crowdtasksg-HeaderBanner-v1.png)
+![CrowdTaskSG header banner](/assets/img/CrowdTaskSG-NewHeaderBanner.png)
 
 Public agencies can enhance citizen engagement efforts with CrowdTaskSG - a Whole-of-Government (WOG) Citizen Engagement Tool that is designed for task creation, distribution, engagement and analysis.
 

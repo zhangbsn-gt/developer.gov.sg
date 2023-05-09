@@ -18,7 +18,7 @@ description: >
   ADEX is a secure data exchange and event streaming platform for Whole-of-Government and local businesses.
 ---
 
-![ADEX header banner for Singapore Governmeent Developer Portal](/assets/img/adex-HeaderBanner-v2.png)
+![ADEX header banner for Singapore Government Developer Portal](/assets/img/Adex-NewHeaderBanner.png)
 
 Asynchronous Data Exchange (ADEX) is a centralised, self-service data exchange and event streaming platform for Whole-of-Government (WOG) and local business entities to share and receive lightweight, real-time data securely. It is part of the [Singapore Government Tech Stack (SGTS)](/singapore-government-tech-stack/overview/index.html){:target="_blank"} and one of its Communications Pillar components, along with [API Exchange (APEX)](/products/categories/data-and-apis/apex){:target="_blank"} and [Cloud File Transfer (CFT)](/products/categories/data-and-apis/cloud-file-transfer/){:target="_blank"}.
 
