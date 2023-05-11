@@ -6,7 +6,7 @@ single_level_nav: true
 _data: single-level-nav
 ---
 
-### Technical Documentations 
+### Technical Documentation 
 - [Singpass API Developer and Partner Portal](https://api.singpass.gov.sg/){:target="_blank"}
 - [Myinfo API](https://api.singpass.gov.sg/library/myinfo/business/introduction){:target="_blank"}
 - [Myinfo business API](https://api.singpass.gov.sg/library/myinfobiz/business/introduction){:target="_blank"}
@@ -37,5 +37,5 @@ _data: single-level-nav
 - [Singpass Identiface – Secure biometrics authentication for higher identity assurance](https://youtu.be/5naDqp_pzy8){:target="_blank"}
 
 ### Media Coverage
-- [Singapore wants to share its learnings on digital ID, so does World Bank](https://www.biometricupdate.com/202210/singapore-wants-to-share-its-learnings-on-digital-id-so-does-world-bank){:target="_blank"}
+- [Biometric Update: Singapore wants to share its learnings on digital ID, so does World Bank](https://www.biometricupdate.com/202210/singapore-wants-to-share-its-learnings-on-digital-id-so-does-world-bank){:target="_blank"}
 
