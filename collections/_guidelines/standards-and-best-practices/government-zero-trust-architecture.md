@@ -8,6 +8,8 @@ category: Standards & Best Practices
 description: Government Zero Trust Architecture provides government agencies with a framework for adopting Zero Trust security practices. Find out more here!
 ---
 
+![Header banner for Government Zero Trust Architecture by GovTech's Cyber Security Group](/assets/img/govzta-logo.png)
+
 ### Overview
 
 The Government Zero Trust Architecture (GovZTA) provides a framework for the Singapore Government to implement Zero Trust, which is based on the core principle of "never trust, always verify."  
@@ -26,7 +28,7 @@ The GovZTA provides an overarching Enterprise Security Architecture to guide the
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/GovZTA-2.png" 
+    src="/assets/img/GovZTA-2-v2.png" 
     alt="Fig 1: Illustration of how the GovZTA enforces and establishes trust over all aspects of a digital estate."
   />
   <figcaption>Fig 1: Illustration of how the GovZTA enforces and establishes trust over all aspects of a digital estate.</figcaption>
@@ -42,7 +44,7 @@ The GovZTA is governed by four key principles (apply least privilege and enforce
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/GovZTA-1-v2.png" 
+    src="/assets/img/GovZTA-1-v3.png" 
     alt="Fig 2: Table of the four GovZTA principles."
   />
   <figcaption>Fig 2: Table of the four GovZTA principles.</figcaption>
@@ -52,7 +54,7 @@ Guided by the four GovZTA principles, an implementation framework made up of fiv
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/GovZTA-3.png" 
+    src="/assets/img/GovZTA-3-v2.png" 
     alt="Fig 3: The five pillars and two enablers of the GovZTA implementation framework."
   />
   <figcaption>Fig 3: The five pillars and two enablers of the GovZTA implementation framework.</figcaption>
@@ -62,7 +64,7 @@ At the core of these capabilities is the “Zero Trust Engine”.  It comprises 
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/GovZTA-4.png" 
+    src="/assets/img/GovZTA-4-v2.png" 
     alt="Fig 4: Illustration of the roles of the PDP and PEP in the Zero Trust Engine."
   />
   <figcaption>Fig 4: Illustration of the roles of the PDP and PEP in the Zero Trust Engine.</figcaption>
@@ -72,7 +74,7 @@ Unlike traditional security measures that strengthen the perimeter and provide i
 
 <figure style="text-align: center">
   <img
-    src="/assets/img/GovZTA-5.png" 
+    src="/assets/img/GovZTA-5-v2.png" 
     alt="Fig 5: Differences between a traditional security approach and Zero Trust framework."
   />
   <figcaption>Fig 5: Differences between a traditional security approach and Zero Trust framework.</figcaption>

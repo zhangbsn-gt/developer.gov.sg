@@ -50,14 +50,15 @@
   }
   &-xca-gradient {
     background: #3d68bd;
-    
+
   }
   &-acas-gradient {
     background: #004A57;
   }
   &-stackiwdmeetup-gradient {
     background: #91c2b9;
-  
+  }
+
   // Added for carousel
   height: 31.31rem;
   @media screen and (min-width: 915px) and (max-width: 1215px) {
@@ -151,8 +152,8 @@ article {
       //padding-top: 0rem !important;
       padding: 3rem 1.5rem;
     }
-  } 
-  
+  }
+
 }
 // Added for carousel
 .sgds-container {
