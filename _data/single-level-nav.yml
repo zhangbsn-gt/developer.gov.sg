@@ -494,6 +494,13 @@
     - Resources
     - FAQs
 
+- name: Cloud Video Exchange
+  items:
+    - Overview
+    - Features
+    - Use Cases
+    - Getting Started
+    
 - name: DECADA - Cloud
   items:
     - Overview
