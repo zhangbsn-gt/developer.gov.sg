@@ -46,6 +46,15 @@
     - Resources
     - FAQs
 
+- name: OpenAttestation Wallet App
+  items:
+    - Overview
+    - Features
+    - Use Cases
+    - Getting Started
+    - Resources
+    - FAQs
+
 - name: Opencerts
   items:
     - Overview
