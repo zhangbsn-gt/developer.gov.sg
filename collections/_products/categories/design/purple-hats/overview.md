@@ -8,7 +8,6 @@ redirect_from:
     - /products/categories/design/purple-hats.html
 sub_collection_render: true
 single_level_nav: true
-collection_group: [What's New]
 description: Purple HATS is an automated testing tool that detects accessibility issues, helping developers to build more inclusive digital products.
 ---
 
