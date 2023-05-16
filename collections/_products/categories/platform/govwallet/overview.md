@@ -29,7 +29,7 @@ GovWallet allows the agencies to maintain control of their distribution exercise
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wZTU7YibAVU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-By leveraging local banks’ PayNow and NETS e-Payment ecosystems, GovWallet is able to perform instant transfers from agencies to the merchants. For beneficiaries without bank accounts and mobile devices, the GovWallet team has partnered with the Central Provision Fund Board (CPFB) and OCBC Bank to allow beneficiaries to withdraw their pay-outs from OCBC’s ATMs.
+By leveraging local banks’ PayNow and NETS e-Payment ecosystems, GovWallet is able to perform instant transfers from agencies to the merchants. For beneficiaries without bank accounts and mobile devices, the GovWallet team has partnered with the Central Provident Fund Board (CPFB) and OCBC Bank to allow beneficiaries to withdraw their pay-outs from OCBC’s ATMs.
 
 It started off as an internal pilot project by GovTech’s Government Digital Services (GDS) team to enable GovTech to credit staff benefits into GovWallet and allows the recipients to transfer these benefits to their PayNow accounts or use them at merchants that accept the PayNow e-Payment method.
 
