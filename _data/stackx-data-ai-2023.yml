@@ -1,0 +1,241 @@
+# Day 1
+#- type: Workshops
+#  timeslot: 09:30 AM - 09:40 PM
+#  timeslot_metadata: 2022-11-14T09:30:00+08:00 - 2022-11-14T09:40:00+08:00
+#  title: Workshops
+#  desc:
+#  speakers:
+
+# Opening
+- type: Opening Remarks
+  timeslot: 09:30 AM - 09:40 AM
+  timeslot_metadata: 2023-07-18T09:30:00+08:00 - 2023-07-18T09:40:00+
+  title: Opening Remarks
+  desc:
+  speakers:
+    - name: "Dr Janil Puthucheary"
+      image: /assets/img/photos/janil-puthucheary.png
+      title: "Senior Minister of State at Ministry of Communications and Information, and Minister-in-charge of GovTech"
+      desc: "Dr Janil Puthucheary was elected Member of Parliament in 2011. He is currently Senior Minister of State, Ministry of Communications and Information, and Ministry of Health.<br><br>He is concurrently the Minister-in-charge of the Government Technology Agency (GovTech) where he coordinates GovTech’s strategy with industry development efforts as part of the Smart Nation initiative, and is a member of the Ministerial Committee overseeing the Smart Nation and Digital Government Group (SNDGG).<br><br>He chairs OnePeople.sg, which works to promote racial harmony in Singapore. His political roles include Chair of Young PAP (the youth wing of the People's Action Party), and the Government Whip."
+
+# Keynotes
+- type: Keynotes
+  timeslot:
+  timeslot_metadata: 2023-07-18T09:40:00+08:00 - 2023-07-18T10:10:00+08:00
+  title: "AI Breakthrough: The Next Phase of Artificial Intelligence (working title)"
+  desc:
+  speakers:
+    - name: "Mr Andrew Ng"
+      image: /assets/img/photos/andrew-ng.png
+      title: "Managing General Partner at AI Fund, Founder of DeepLearning.AI, and an Adjunct Professor at Stanford University"
+      desc: "As a pioneer both in machine learning and online education, Dr. Ng has changed countless lives through his work in AI, and has taught over 7 million people AI.  He was the founding lead of the Google Brain team, which led Google’s drive to adopt modern AI, as well as the chief scientist at Baidu.<br><br>He is also the co-founder and Chairman of Coursera – the world’s largest MOOC platform. He was also named one of the world’s 100 most influential people by TIME magazine in 2013. Dr. Ng now focuses his time primarily on his entrepreneurial ventures, looking for the best ways to accelerate responsible AI practices in the larger global economy."
+
+- type: Keynotes
+  timeslot: 10:10 AM - 10:25 AM
+  timeslot_metadata: 2023-07-18T10:10:00+08:00 - 2023-07-18T10:25:00+08:00
+  title: "Keynote Presentation"
+  desc:
+  speakers:
+    - name: "Mr Chang Sau Sheong"
+      image: /assets/img/photos/chang-sau-sheong.png
+      title: "Deputy Chief Executive, Product and Engineering, GovTech"
+      desc: "Prior to GovTech, Sau Sheong was an Operating Partner, Digital for Temasek, a global investment company headquartered in Singapore and part of the AI Strategy and Solutions team.<br><br>Before that, he ran SPDigital, the digital business unit of SPGroup. He also headed IT, OT and digital transformation for the whole of SPGroup for more than 6 years. Sau Sheong was instrumental in changing SPGroup from a traditional utility company to a regional energy player.<br><br>In his 28 years of industry experience, he has built and led product engineering teams at PayPal, Yahoo and HP building various software products for enterprise businesses and consumers globally.<br><br>He was previously a co-founder of a software company and was involved in startups for more than 10 years. He is active and contributes to many technology communities in Singapore and Southeast Asia and has written 4 programming books, currently working on a 5th book.<br><br>Sau Sheong has a Bachelor’s Degree in Computer Engineering, a Master’s in Commercial Law and a Postgraduate Certificate in International Arbitration."
+
+- type: Keynotes
+  timeslot: 10:25 AM - 10:45 AM
+  timeslot_metadata: 2023-07-18T10:25:00+08:00 - 2023-07-18T10:45:00+08:00
+  title: "Keynote Presentation"
+  desc:
+  speakers:
+    - name: "Mr Jason See"
+      image: /assets/img/photos/jason-see.png
+      title: "Senior Director, Data Science & Artificial Intelligence Division (DSAID), GovTech"
+      desc: "Mr Jason See is the Senior Director of the Data Science and Artificial Intelligence Division at the Government Technology Agency, focusing on driving digital transformation across the public sector using data science and AI, through consultancy projects, technology incubation, product and platform development and capability development efforts. Prior to joining GovTech, he led the start-up of a new division at MINDEF which comprised the CIO Office, the Corporate Development Directorate and the Data Science Department. He was responsible for the strategy and resource prioritisation for MINDEF digital transformation efforts, including pushing new initiatives with Agile and the commercial cloud. Jason is passionate about innovation and challenging the status quo to make a positive difference."
+      
+- type: Keynotes
+  timeslot: 04:30 PM - 05:00 PM
+  timeslot_metadata: 2023-07-18T16:30:00+08:00 - 2023-07-18T17:00:00+08:00
+  title: "Closing Keynote"
+  desc:
+  speakers:
+    - name: "Mr Mike Zeller"
+      image: /assets/img/photos/blank-photo.png
+      title: "Head, AI Strategy & Solutions at Temasek"
+      desc:
+ 
+# Panel
+- type: Panel Discussion
+  timeslot: 10:45 AM - 11:30 AM
+  timeslot_metadata: 2023-07-18T10:45:00+08:00 - 2023-07-18T11:30:00+08:00
+  title: "Pushing Possibilities and Navigating Risks With AI"
+  desc:
+  speakers:
+    - name: "Mr Chang Sau Sheong"
+      image: /assets/img/photos/chang-sau-sheong.png
+      title: "Deputy Chief Executive, Product and Engineering, GovTech"
+      desc: "Prior to GovTech, Sau Sheong was an Operating Partner, Digital for Temasek, a global investment company headquartered in Singapore and part of the AI Strategy and Solutions team.<br><br>Before that, he ran SPDigital, the digital business unit of SPGroup. He also headed IT, OT and digital transformation for the whole of SPGroup for more than 6 years. Sau Sheong was instrumental in changing SPGroup from a traditional utility company to a regional energy player.<br><br>In his 28 years of industry experience, he has built and led product engineering teams at PayPal, Yahoo and HP building various software products for enterprise businesses and consumers globally.<br><br>He was previously a co-founder of a software company and was involved in startups for more than 10 years. He is active and contributes to many technology communities in Singapore and Southeast Asia and has written 4 programming books, currently working on a 5th book.<br><br>Sau Sheong has a Bachelor’s Degree in Computer Engineering, a Master’s in Commercial Law and a Postgraduate Certificate in International Arbitration." 
+    - name: "Mr Andrew Ng"
+      image: /assets/img/photos/andrew-ng.png
+      title: "Managing General Partner at AI Fund, Founder of DeepLearning.AI, and an Adjunct Professor at Stanford University"
+      desc: "As a pioneer both in machine learning and online education, Dr. Ng has changed countless lives through his work in AI, and has taught over 7 million people AI.  He was the founding lead of the Google Brain team, which led Google’s drive to adopt modern AI, as well as the chief scientist at Baidu.<br><br>He is also the co-founder and Chairman of Coursera – the world’s largest MOOC platform. He was also named one of the world’s 100 most influential people by TIME magazine in 2013. Dr. Ng now focuses his time primarily on his entrepreneurial ventures, looking for the best ways to accelerate responsible AI practices in the larger global economy."
+    - name: "Mr He Ruimin"
+      image: /assets/img/photos/blank-photo.png
+      title: "Chief Technology Advisor, Technology Office, Ministry of Communications and Information (MCI)"
+      desc:
+    - name: "Ms Weng Wanyi"
+      image: /assets/img/photos/blank-photo.png
+      title: "Director, Government Data Office, Smart Nation and Digital Government Office (SNDGO)"
+      desc:
+      
+# Presentations
+- type: Presentations
+  timeslot: 11:30 AM - 12:00 PM
+  timeslot_metadata: 2023-07-18T11:30:00+08:00 - 2023-07-18T12:00:00+08:00
+  title: "AI & Data for Tourism: eXtended Reality and Recommendations"
+  desc:
+  speakers:
+    - name: "Mr Wong Ming Fai"
+      image: /assets/img/photos/wong-ming-fai.png
+      title: "Chief Technology Officer & Quality Service Manager, Singapore Tourism Board"
+      desc:
+     
+- type: Presentations
+  timeslot: 02:00 PM - 02:25 PM
+  timeslot_metadata: 2023-07-18T14:00:00+08:00 - 2023-07-18T14:25:00+08:00
+  title: "Industry Presentation"
+  desc:
+     
+- type: Presentations
+  timeslot: 02:25 PM - 02:50 PM
+  timeslot_metadata: 2023-07-18T14:25:00+08:00 - 2023-07-18T14:50:00+08:00
+  title: "Jumstart Your Career"
+  desc:
+  speakers:
+    - name: "Mr Goh Zuo Min"
+      image: /assets/img/photos/blank-photo.png
+      title: "Product Manager, Data Science & Artificial Intelligence Division (DSAID), GovTech"
+      desc:       
+     
+- type: Presentations
+  timeslot: 02:50 PM - 03:15 PM
+  timeslot_metadata: 2023-07-18T14:50:00+08:00 - 2023-07-18T13:15:00+08:00
+  title: "Enabling the Public Service with AI: GovTech’s Approach To Building A Central Text Analytics Product"
+  desc:
+  speakers:
+    - name: "Dr Alvina Goh"
+      image: /assets/img/photos/alvina-goh.png
+      title: "Director, AI Platforms, Data Science & Artificial Intelligence Division (DSAID), GovTech"
+      desc:       
+    - name: "Dr Watson Chua"
+      image: /assets/img/photos/blank-photo.png
+      title: "Lead Data Scientist, Data Science & Artificial Intelligence Division (DSAID), GovTech"
+      desc:       
+    - name: "Dr Li Lu"
+      image: /assets/img/photos/blank-photo.png
+      title: "Data Scientist (II), Data Science & Artificial Intelligence Division (DSAID), GovTech"
+      desc:       
+     
+- type: Presentations
+  timeslot: 03:15 PM - 03:40 PM
+  timeslot_metadata: 2023-07-18T15:15:00+08:00 - 2023-07-18T15:40:00+08:00
+  title: "XOps - Turning Data Into A Strategic Asset"
+  desc:
+  speakers:
+    - name: "Dr Yap Ghim-Eng"
+      image: /assets/img/photos/yap-ghim-eng.png
+      title: "Director, Data Engineering, Data Science & Artificial Intelligence Division (DSAID), GovTech"
+      desc:       
+     
+- type: Presentations
+  timeslot: 03:40 PM - 04:05 PM
+  timeslot_metadata: 2023-07-18T15:40:00+08:00 - 2023-07-18T16:05:00+08:00
+  title: "Industry Presentation"
+  desc:
+      
+- type: Presentations
+  timeslot: 04:05 PM - 04:30 PM
+  timeslot_metadata: 2023-07-18T16:05:00+08:00 - 2023-07-18T16:30:00+08:00
+  title: "Empowering Public Officers, Democratising AI"
+  desc:
+  speakers:
+    - name: "Mr Joseph Tan"
+      image: /assets/img/photos/joseph-tan.png
+      title: "Deputy Director, Data Science & Artificial Intelligence Division (DSAID), GovTech"
+      desc:       
+
+# Product/Tech Track Talks   
+#- type: Product/Tech Track Talks
+#  timeslot: 02:10 PM - 02:30 PM
+#  timeslot_metadata: 2023-07-18T14:10:00+08:00 - 2023-07-18T14:30:00+08:00
+#  title: "Laying The Data Mesh Foundations For Domain-Driven Data Analytics"
+#  desc:
+#  speakers:
+#    - name: "Mr Sachin Tonk"
+#      image: /assets/img/photos/sachin-tonk.png
+#      title: "Deputy Chief Data Officer, Data Science & Artificial Intelligence Division (DSAID), GovTech"
+#      desc:      
+
+# Workshops
+- type: Workshops
+  timeslot: 01:30 PM - 03:00 PM
+  timeslot_metadata: 2023-07-17T13:30:00+08:00 - 2023-07-17T15:00:00+08:00
+  title: "[Workshop A1] English Is The New Programming Language | Prompt Enginnering Workshop With LaunchPad"
+  desc:
+  additional_info_1: "Who should attend | Public Officers only"
+  speakers:
+    - name: "Ms Chan Li Shing"
+      image: /assets/img/photos/blank-photo.png
+      title: "Manager, Data Science & Artificial Intelligence Division (DSAID), GovTech"
+      desc:
+    - name: "Mr Vincent Ng"
+      image: /assets/img/photos/blank-photo.png
+      title: "AI Engineer, Data Science & Artificial Intelligence Division (DSAID), GovTech"
+      desc:
+
+- type: Workshops
+  timeslot: 03:30 PM - 04:45 PM
+  timeslot_metadata: 2023-07-17T15:30:00+08:00 - 2023-07-17T16:45:00+08:00
+  title: "[Workshop A2] Unlocking Powers of Computer Vision, Starting From Data (Video/Image) Acquisition"
+  desc:
+  additional_info_1: "Who should attend | Public Officers only"
+  speakers:
+    - name: "Ms Lee Ning Sung"
+      image: /assets/img/photos/blank-photo.png
+      title: "Assistant Director, Data Science & Artificial Intelligence Division (DSAID), GovTech"
+      desc:
+    - name: "Mr Suresh Kumar"
+      image: /assets/img/photos/blank-photo.png
+      title: "Product Manager, Data Science & Artificial Intelligence Division (DSAID), GovTech"
+      desc:
+      
+- type: Workshops
+  timeslot: 01:30 PM - 03:00 PM
+  timeslot_metadata: 2023-07-17T13:30:00+08:00 - 2023-07-17T15:00:00+08:00
+  title: "[Workshop B1] Vision-and-Language Research and Applications: Towards Universal Multimodal Intelligence"
+  desc:
+  additional_info_1: "Who should attend | Open to all"
+  speakers:
+    - name: "Dr Li Junnan"
+      image: /assets/img/photos/blank-photo.png
+      title: "Senior Research Manager, Salesforce"
+      desc:
+    - name: "Dr Li Lu"
+      image: /assets/img/photos/blank-photo.png
+      title: "Data Scientist (II), Data Science & Artificial Intelligence Division (DSAID), GovTech"
+      desc:
+
+- type: Workshops
+  timeslot: 03:30 PM - 04:45 PM
+  timeslot_metadata: 2023-07-17T15:30:00+08:00 - 2023-07-17T16:45:00+08:00
+  title: "[Workshop B2] Harvest Your Alpaca In Your Environment: LLMs Local Training and Hosting (Advanced For WoG Data Analysts / Data Scientist"
+  desc:
+  additional_info_1: "Who should attend | Open to all"
+  speakers:
+    - name: "Dr Watson Chua"
+      image: /assets/img/photos/blank-photo.png
+      title: "Lead Data Scientist, Data Science & Artificial Intelligence Division (DSAID), GovTech"
+      desc:
+    - name: "Dr Li Lu"
+      image: /assets/img/photos/blank-photo.png
+      title: "Data Scientist (II), Data Science & Artificial Intelligence Division (DSAID), GovTech"
+      desc: 
