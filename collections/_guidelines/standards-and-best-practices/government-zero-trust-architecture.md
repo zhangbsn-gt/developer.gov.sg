@@ -8,7 +8,7 @@ category: Standards & Best Practices
 description: Government Zero Trust Architecture provides government agencies with a framework for adopting Zero Trust security practices. Find out more here!
 ---
 
-![Header banner for Government Zero Trust Architecture by GovTech's Cyber Security Group](/assets/img/govzta-logo.png)
+![Header banner for Government Zero Trust Architecture by GovTech's Cyber Security Group](/assets/img/home/1684206563030_GovZTA-HeaderBanner-v1.png)
 
 ### Overview
 
