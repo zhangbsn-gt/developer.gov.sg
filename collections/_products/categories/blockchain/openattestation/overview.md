@@ -11,7 +11,7 @@ single_level_nav: true
 description: OpenAttestation is an open-source framework for verifiable documents and transferable records on the blockchain. Find out more.
 ---
 
-![OpenAttestation header banner](/assets/img/OpenAttestation-NewHeaderBanner.png)
+![OpenAttestation header banner](/assets/img/OpenAttestation-NewHeaderBanner-v4.png)
 
 OpenAttestation, part of Singapore’s Smart Nation initiative, is an open-source framework to simplify the endorsement and verification of documents using the blockchain. 
 
@@ -27,7 +27,7 @@ The OpenAttestation framework can help you to:
 
 Technically, OpenAttestation is a decentralised database with no single point of failure, such as a central database going down. Verifications also take place on the client browser without the need for backend integration.
 
-### Awards and Recognitions
+### Awards and Recognition
 
 OpenAttestation has been listed in the [Digital Public Goods registry](https://digitalpublicgoods.net/registry/openattestation.html){:target="\_blank"} by the [Digital Public Goods Alliance (DPGA)](https://digitalpublicgoods.net/who-we-are/){:target="\_blank"}. DPGA is a multistakeholder initiative supported by the Norwegian Agency for Development Cooperation (Norad), United Nations Development Programme (UNDP), and UNICEF.
 

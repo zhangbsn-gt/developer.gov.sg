@@ -6,7 +6,7 @@ single_level_nav: true
 _data: single-level-nav
 ---
 
-### Technical Documentations
+### Technical Documentation
 -	[OpenAttestation Guide](https://www.openattestation.com/docs/docs-section/introduction/){:target="\_blank"} 
 -	[OpenAttestation GitHub and Installation Guide](https://github.com/Open-Attestation/open-attestation){:target="\_blank"}
 
