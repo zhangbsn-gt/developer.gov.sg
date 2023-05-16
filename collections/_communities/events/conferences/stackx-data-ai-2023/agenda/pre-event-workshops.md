@@ -7,14 +7,14 @@ multi_level_nav: true
 
 <!-- Header -->
 
-### Opening Remarks
+### Pre-event Workshops
 
 <hr />
 
 {% include agenda-app.html
-title="Tuesday (18/07/2023)"
+title="Monday (17/07/2023)"
 _data='stackx-data-ai-2023'
-category="Opening Remarks"
+category="Workshops"
 %}
 
 <br />

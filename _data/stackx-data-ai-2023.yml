@@ -25,7 +25,7 @@
   title: "AI Breakthrough: The Next Phase of Artificial Intelligence (working title)"
   desc:
   speakers:
-    - name: "Mr Andrew Ng"
+    - name: "Dr Andrew Ng"
       image: /assets/img/photos/andrew-ng.png
       title: "Managing General Partner at AI Fund, Founder of DeepLearning.AI, and an Adjunct Professor at Stanford University"
       desc: "As a pioneer both in machine learning and online education, Dr. Ng has changed countless lives through his work in AI, and has taught over 7 million people AI.  He was the founding lead of the Google Brain team, which led Google’s drive to adopt modern AI, as well as the chief scientist at Baidu.<br><br>He is also the co-founder and Chairman of Coursera – the world’s largest MOOC platform. He was also named one of the world’s 100 most influential people by TIME magazine in 2013. Dr. Ng now focuses his time primarily on his entrepreneurial ventures, looking for the best ways to accelerate responsible AI practices in the larger global economy."
@@ -58,7 +58,7 @@
   title: "Closing Keynote"
   desc:
   speakers:
-    - name: "Mr Mike Zeller"
+    - name: "Mr Michael Zeller"
       image: /assets/img/photos/blank-photo.png
       title: "Head, AI Strategy & Solutions at Temasek"
       desc:
@@ -74,18 +74,10 @@
       image: /assets/img/photos/chang-sau-sheong.png
       title: "Deputy Chief Executive, Product and Engineering, GovTech"
       desc: "Prior to GovTech, Sau Sheong was an Operating Partner, Digital for Temasek, a global investment company headquartered in Singapore and part of the AI Strategy and Solutions team.<br><br>Before that, he ran SPDigital, the digital business unit of SPGroup. He also headed IT, OT and digital transformation for the whole of SPGroup for more than 6 years. Sau Sheong was instrumental in changing SPGroup from a traditional utility company to a regional energy player.<br><br>In his 28 years of industry experience, he has built and led product engineering teams at PayPal, Yahoo and HP building various software products for enterprise businesses and consumers globally.<br><br>He was previously a co-founder of a software company and was involved in startups for more than 10 years. He is active and contributes to many technology communities in Singapore and Southeast Asia and has written 4 programming books, currently working on a 5th book.<br><br>Sau Sheong has a Bachelor’s Degree in Computer Engineering, a Master’s in Commercial Law and a Postgraduate Certificate in International Arbitration." 
-    - name: "Mr Andrew Ng"
+    - name: "Dr Andrew Ng"
       image: /assets/img/photos/andrew-ng.png
       title: "Managing General Partner at AI Fund, Founder of DeepLearning.AI, and an Adjunct Professor at Stanford University"
       desc: "As a pioneer both in machine learning and online education, Dr. Ng has changed countless lives through his work in AI, and has taught over 7 million people AI.  He was the founding lead of the Google Brain team, which led Google’s drive to adopt modern AI, as well as the chief scientist at Baidu.<br><br>He is also the co-founder and Chairman of Coursera – the world’s largest MOOC platform. He was also named one of the world’s 100 most influential people by TIME magazine in 2013. Dr. Ng now focuses his time primarily on his entrepreneurial ventures, looking for the best ways to accelerate responsible AI practices in the larger global economy."
-    - name: "Mr He Ruimin"
-      image: /assets/img/photos/blank-photo.png
-      title: "Chief Technology Advisor, Technology Office, Ministry of Communications and Information (MCI)"
-      desc:
-    - name: "Ms Weng Wanyi"
-      image: /assets/img/photos/blank-photo.png
-      title: "Director, Government Data Office, Smart Nation and Digital Government Office (SNDGO)"
-      desc:
       
 # Presentations
 - type: Presentations
@@ -215,10 +207,6 @@
   desc:
   additional_info_1: "Who should attend | Open to all"
   speakers:
-    - name: "Dr Li Junnan"
-      image: /assets/img/photos/blank-photo.png
-      title: "Senior Research Manager, Salesforce"
-      desc:
     - name: "Dr Li Lu"
       image: /assets/img/photos/blank-photo.png
       title: "Data Scientist (II), Data Science & Artificial Intelligence Division (DSAID), GovTech"
