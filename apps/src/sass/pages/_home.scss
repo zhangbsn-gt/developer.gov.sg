@@ -51,16 +51,19 @@
   &-stackxdataai2023-gradient {
     background: #31358C;
   }
-  &-xca-gradient {
-    background: #3d68bd;
+  &-whatsnew-gradient {
+    background: #0061af;  
   }
-  &-acas-gradient {
-    background: #004A57;
+  &-govzta-gradient {
+    background: #50d3df;
   }
-  &-stackiwdmeetup-gradient {
-    background: #91c2b9;
+  &-wcag21-gradient {
+    background: #d1dbde;
   }
-
+  &-stackmeetupgovzta-gradient {
+    background: #f17922;
+  }
+  
   // Added for carousel
   height: 31.31rem;
   @media screen and (min-width: 915px) and (max-width: 1215px) {
