@@ -5,13 +5,13 @@ description: ADEX FAQs
 single_level_nav: true
 _data: single-level-nav
 faqs:
-  - name: What is the service-level agreement (SLA) for ADEX?
+  - name: Is ADEX intended for the Whole of Government only?
     description: >
-      ADEX is committed to service uptime of 99.5%.
+      The ADEX Service facilitates the exchange of lightweight real-time data securely between public agencies, and the businesses that support the operations of these agencies or that collaborate with these agencies.
 
   - name: What is the support for ADEX like?
     description: >
-      We have an awesome team that’s lean and we operate like a startup. Our in-house developers operate on an agile framework, and the platform is constantly improved to deliver more value to our end users.
+      We have an awesome team that’s lean and we operate like a startup. Our in-house developers operate on an agile framework, and we constantly improve the platform to deliver more value to our end users.
 
 ---
 
