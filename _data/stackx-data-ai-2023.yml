@@ -84,7 +84,7 @@
   timeslot: 11:30 AM - 12:00 PM
   timeslot_metadata: 2023-07-18T11:30:00+08:00 - 2023-07-18T12:00:00+08:00
   title: "AI & Data for Tourism: eXtended Reality and Recommendations"
-  desc:
+  desc: "To overcome Singapore’s land limitations, we need to extend our tourism offerings into the digital space to make Singapore a compact yet dynamic destination.  STB partnered Snap and Google, and leveraged their AI technologies for location identification and object recognition, to deliver immersive XR experiences.  I will also be sharing about an in-house built recommendation engine to help visitors discover relevant parts of Singapore more quickly."
   speakers:
     - name: "Mr Wong Ming Fai"
       image: /assets/img/photos/wong-ming-fai.png
@@ -104,7 +104,7 @@
   desc:
   speakers:
     - name: "Mr Goh Zuo Min"
-      image: /assets/img/photos/blank-photo.png
+      image: /assets/img/photos/goh-zuo-min.png
       title: "Product Manager, Data Science & Artificial Intelligence Division (DSAID), GovTech"
       desc:       
      
@@ -131,7 +131,7 @@
   timeslot: 03:15 PM - 03:40 PM
   timeslot_metadata: 2023-07-18T15:15:00+08:00 - 2023-07-18T15:40:00+08:00
   title: "XOps - Turning Data Into A Strategic Asset"
-  desc:
+  desc: "The data engineering capability centre is building up our WOG muscles in DataOps and ModelOps, as strategic foundational capabilities that ensure our public service is well-placed to capitalise on the latest AI innovations and translate these to create value through production use cases. We are experimenting and trailblazing this via WOG systems like AG which democratises the infrastructure for agencies so they can focus on effectively leveraging their data to develop and deploy AI models at scale. To go far, our public and industry sectors have to learn from each other and embark on this transformation journey together."
   speakers:
     - name: "Dr Yap Ghim-Eng"
       image: /assets/img/photos/yap-ghim-eng.png
@@ -141,14 +141,19 @@
 - type: Presentations
   timeslot: 03:40 PM - 04:05 PM
   timeslot_metadata: 2023-07-18T15:40:00+08:00 - 2023-07-18T16:05:00+08:00
-  title: "Industry Presentation"
-  desc:
-      
+  title: "Democratising Data and AI with Dolly"
+  desc: "Join us for a keynote presentation as Databricks covers the recently released Dolly large language model (LLM) - the first open source, instruction-following LLM, fine-tuned on a human-generated instruction dataset licensed for research and commercial use."
+  speakers:
+    - name: "Mr Nicholas Eayrs"
+      image: /assets/img/photos/nick-eayrs.png
+      title: "VP, Field Engineering for Asia-Pacific and Japan, Databricks"
+      desc:       
+       
 - type: Presentations
   timeslot: 04:05 PM - 04:30 PM
   timeslot_metadata: 2023-07-18T16:05:00+08:00 - 2023-07-18T16:30:00+08:00
   title: "Empowering Public Officers, Democratising AI"
-  desc:
+  desc: "Every new technology wave creates a new skills gap where we need to upskill and bridge. But it is also an opportunity to embrace it, and use it to enhance our way of working.​<br><br>The explosion of Generative AI technologies is one such wave. We must seize the opportunity to understand it, harness its power, and democratize its usage for all. This talk will delve into how GovTech plans to empower public officers to use AI effectively and equip them with the skills they need to thrive in a AI-driven future.​"
   speakers:
     - name: "Mr Joseph Tan"
       image: /assets/img/photos/joseph-tan.png
