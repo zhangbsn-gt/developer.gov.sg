@@ -36,7 +36,7 @@ With the imperative to scale with the growing number of users, DSAID expanded th
 
 The Analytics.gov team plans to bring in new features on AG@GCC to enhance the platform's capabilities, such as cloud services and tools to support Machine Learning Operations (MLOps) so that agencies can efficiently develop and deploy ML models at scale in the near future.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/cqpXrAnTwRM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rRNVCBznzd4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ### How It Works
 
@@ -53,7 +53,7 @@ The Analytics.gov platform aims to:
 - Enable users to work on and produce deployable analytical codes that can be made operational
 
  <figure style="text-align: center">
-      <img src="/assets/img/Analytics-gov-fig1-screenshots.jpg" width="90%" height="90%" />
+      <img src="/assets/img/Analytics-gov-fig1-screenshots-v2.png" width="95%" height="95%" />
 	      <figcaption>Fig 1: Notable ways in which Analytics.gov empowers public service officers.</figcaption>
     </figure><br />
 
