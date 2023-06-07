@@ -76,7 +76,7 @@ MyInfo is now an integral part of DBS’s digitalisation efforts and is expected
 
 - For Wise, customer verification is now an instant process as Wise assists customers with money transfers globally. Before integrating with Myinfo in September 2018, customers had to verify their identities by presenting documentation such as identity cards in Wise’s physical offices. Even when Wise became the first international money transfer company to verify customer identities through selfies containing official documentation shots, this still required manual vetting of photos by staff, resulting in delays. Thus, late payments for university tuition fees or credit loans could be incurred by customers, reducing overall customer satisfaction. Just two months after the adoption of Myinfo, statistics showed that close to 35% of Wise’s customers opted to verify their identity through Myinfo instead, which has improved efficiency and cut verification costs by 30
 
-The integration of Myinfo API to improve Wise’s customer onboarding process has been seamless through the use of tools on the [Singpass Developer & Partner Portal](C:\Users\GT-JONGXH\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\LK707QU4\api.singpass.gov.sg){:target="\_blank"}, which allowed Wise’s development team to run apps in a sandbox for testing before rolling it out.
+The integration of Myinfo API to improve Wise’s customer onboarding process has been seamless through the use of tools on the [Singpass Developer & Partner Portal](https://api.singpass.gov.sg/library/myinfo/developers/overview){:target="\_blank"}, which allowed Wise’s development team to run apps in a sandbox for testing before rolling it out.
 
 ### What's Next?
 
