@@ -18,6 +18,3 @@ category="Presentations"
 %}
 
 <br />
-<div class="col padding--right--none padding--left--none">
-        <a id="event-information-link" class="sgds-button is-primary is-fullwidth is-flex-justify-c" style="background-color: rgb(1, 97, 175);" href="https://go.gov.sg/stackxdataai-register" target="_blank">Register Now</a>
-      </div>
