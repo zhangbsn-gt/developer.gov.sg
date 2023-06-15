@@ -2,37 +2,25 @@ import { debounce } from "../lib/communities";
 
 (() => {
   try {
-    // Values
     const showOnPx = 50;
-    const backToTheTopButton = document.getElementById(
-      "navigate-to-the-top-button"
-    );
+    const backToTheTopButton = document.getElementById("navigate-to-the-top-button");
 
-    // Function
-    function topFunction() {
+    const topFunction = () => {
       window.scrollTo({
         top: 0,
         behavior: "smooth",
       });
-    }
+    };
 
-    function scrollFunction() {
-      const scrollVal =
-        document.documentElement.scrollTop || document.body.scrollTop;
+    const scrollFunction = () => {
+      const scrollVal = window.scrollY || document.documentElement.scrollTop;
 
-      if (scrollVal > showOnPx) {
-        backToTheTopButton.classList.remove("back-to-the-top-button-hidden");
-      } else {
-        backToTheTopButton.classList.add("back-to-the-top-button-hidden");
-      }
-    }
+      backToTheTopButton.classList.toggle("back-to-the-top-button-hidden", scrollVal <= showOnPx);
+    };
 
-    backToTheTopButton.onclick = topFunction;
-
-    // Desktop
-    window.addEventListener("scroll", debounce(scrollFunction, 100));
-    // Mobile
-    window.addEventListener("touchmove", debounce(scrollFunction, 100));
+    backToTheTopButton.addEventListener("click", topFunction);
+    window.addEventListener("scroll", debounce(scrollFunction, 10));
+    window.addEventListener("touchmove", debounce(scrollFunction, 10));
   } catch (e) {
     console.log("Error, back-to-the-top: " + e);
   }
