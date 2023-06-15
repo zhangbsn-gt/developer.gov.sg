@@ -6,6 +6,7 @@ single_level_nav: true
 _data: single-level-nav
 redirect_from:
     - /products/categories/data-and-apis/apex-cloud/resources.html
+    - /products/categories/data-and-apis/apex/resources
 ---
 
 ### Technical Documentation
