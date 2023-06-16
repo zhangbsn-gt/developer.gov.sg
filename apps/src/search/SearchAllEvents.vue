@@ -132,6 +132,7 @@
             <template #category>
               <div class="is-flex margin--bottom--sm">
                 <img
+                  loading="lazy"
                   alt="Event Image"
                   :src="result.icon_path"
                   class="margin--right--sm margin--left--none margin--bottom--none margin--top--none"

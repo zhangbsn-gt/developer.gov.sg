@@ -1,7 +1,7 @@
 <div class="sgds-card {{include.parentCardStyle}}">
     <div class="sgds-card-content">
         {% if include.img_src %}
-        <img src="{{include.img_src}}" alt="" />
+        <img loading="lazy" src="{{include.img_src}}" alt="" />
         {% endif%}
         {% include card-header-info.html disableItemCount=include.disableItemCount name=include.name item_count=include.item_count url_str=include.url_str%}
         <div style="display: flex; align-items: center; justify-content: start;">

@@ -27,7 +27,7 @@
         {% endif %}
         {% for speaker in item.speakers %}
         <div style="color:black; display:flex;align-items: center">
-            <img src="{{speaker.image}}" alt="Wei Junyu" style="width:56px;margin: 0 10px 0 0" />
+            <img loading="lazy" src="{{speaker.image}}" alt="Wei Junyu" style="width:56px;margin: 0 10px 0 0" />
             <p>{{speaker.name}}<b></b>, {{speaker.title}}</p>
         </div>
 

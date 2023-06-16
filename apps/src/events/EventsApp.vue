@@ -28,6 +28,7 @@
           style="display: flex; justify-content: center; align-items: center;"
         >
           <img
+            loading="lazy"
             :src="event.featured_photo.photo_link"
             :alt="`featured photo for ${event.name}`"
           />

@@ -4,7 +4,6 @@
 {%- assign video_types = include.type | split: ", " -%}
 {%- assign videos = site.data[data_file] | where_exp: "video", "video_types contains video.type" -%}
 
-
 <div class="is-fullwidth card-grid-container">
   {% if section_title %}
   <div class="has-background-light padding--xs padding--left has-text-weight-bold is-size-8">
@@ -29,7 +28,7 @@
         <div class="sgds-card-image">
           <figure class="sgds-image">
             <a href="{{ video_url }}" target="_blank" rel="noopener noreferrer">
-              <img alt="stack video thumbnail" src="{{ video_image }}" />
+              <img loading="lazy" alt="stack video thumbnail" src="{{ video_image }}" />
             </a>
           </figure>
         </div>

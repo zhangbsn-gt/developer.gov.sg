@@ -55,6 +55,7 @@
             />
             <span class="pilllist-label is-flex" style="align-items: center">
               <img
+                loading="lazy"
                 :src="option.category.icon"
                 class="margin--bottom--none margin--left--none margin--right--sm"
               />
@@ -118,7 +119,7 @@
                 <!-- Title and Icon-->
                 <div>
                   <div class="is-flex" style="align-items: center">
-                    <img
+                    <img loading="lazy"
                       :src="item.category.icon"
                       class="margin--right--sm margin--left--none margin--bottom--none margin--top--none"
                     />

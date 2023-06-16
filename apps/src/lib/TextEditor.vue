@@ -150,33 +150,33 @@
             })
           "
         >
-          <img :src="TableIcons.Table" alt="create-table" />
+          <img loading="lazy" :src="TableIcons.Table" alt="create-table" />
         </button>
         <div :style="{flexBasis: '100%', height: 0}"></div> <!-- flex break -->
         <div class="table-controls" v-if="isActive.table()" >
           <button class="menubar__button" @click.prevent="commands.deleteTable">
-            <img :src="TableIcons.DeleteTable" alt="" />
+            <img loading="lazy" :src="TableIcons.DeleteTable" alt="" />
           </button>
           <button class="menubar__button" @click.prevent="commands.addColumnBefore">
-            <img :src="TableIcons.AddColBefore" alt="" />
+            <img loading="lazy" :src="TableIcons.AddColBefore" alt="" />
           </button>
           <button class="menubar__button" @click.prevent="commands.addColumnAfter">
-            <img :src="TableIcons.AddColAfter" alt="" />
+            <img loading="lazy" :src="TableIcons.AddColAfter" alt="" />
           </button>
           <button class="menubar__button" @click.prevent="commands.deleteColumn">
-            <img :src="TableIcons.DeleteCol" alt="" />
+            <img loading="lazy" :src="TableIcons.DeleteCol" alt="" />
           </button>
           <button class="menubar__button" @click.prevent="commands.addRowBefore">
-            <img :src="TableIcons.AddRowBefore" alt="" />
+            <img loading="lazy" :src="TableIcons.AddRowBefore" alt="" />
           </button>
           <button class="menubar__button" @click.prevent="commands.addRowAfter">
-            <img :src="TableIcons.AddRowAfter" alt="" />
+            <img loading="lazy" :src="TableIcons.AddRowAfter" alt="" />
           </button>
           <button class="menubar__button" @click.prevent="commands.deleteRow">
-            <img :src="TableIcons.DeleteRow" alt="" />
+            <img loading="lazy" :src="TableIcons.DeleteRow" alt="" />
           </button>
           <button class="menubar__button" @click.prevent="commands.toggleCellMerge">
-            <img :src="TableIcons.CombineCells" alt="" />
+            <img loading="lazy" :src="TableIcons.CombineCells" alt="" />
           </button>
         </div>
       </div>

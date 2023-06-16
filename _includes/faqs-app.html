@@ -46,7 +46,7 @@
         {%- assign grid_spacing = image.grid_spacing | default: 6 -%}
 
         <div class="col is-12-mobile is-12-tablet is-{{- grid_spacing -}}-desktop">
-          <img class="is-fullwidth" src="{{- img_url -}}" alt="Image" style="width: 100%;">
+          <img loading="lazy" class="is-fullwidth" src="{{- img_url -}}" alt="Image" style="width: 100%;">
         </div>
         {% endfor %}
       </div>

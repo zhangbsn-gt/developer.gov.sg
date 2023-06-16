@@ -83,6 +83,7 @@
                     <figure class="sgds-image">
                       <a :href="item.url">
                         <img
+                          loading="lazy"
                           alt="stack video thumbnail"
                           :src="item.video_image"
                         />

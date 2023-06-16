@@ -11,7 +11,7 @@
     class="sgds-accordion-header sgds-custom-accordion-header padding--left--none padding--top--none padding--bottom--none d-flex">
     <div class="is-flex sgds-accordian-speaker-content has-text-dark has-text-weight-semibold is-size-8">
       {% if content.image %}
-      <img class="sgds-accordian-speaker-image margin--top--none margin--bottom--none margin--right is-size-7"
+      <img loading="lazy" class="sgds-accordian-speaker-image margin--top--none margin--bottom--none margin--right is-size-7"
         src="{{ content.image | default: " /assets/img/photos/blank-photo.png" }}" alt="Speakr Avatar Image" />
       {% endif%}
       {{- content.name | append: ", " | append : content.title -}}
@@ -45,7 +45,7 @@
     class="sgds-accordion-header sgds-custom-accordion-header padding--left--none padding--top--none padding--bottom--none d-flex">
     <div class="is-flex sgds-accordian-speaker-content has-text-dark has-text-weight-semibold is-size-8">
       {% if content.image %}
-      <img class="sgds-accordian-speaker-image margin--top--none margin--bottom--none margin--right is-size-7"
+      <img loading="lazy" class="sgds-accordian-speaker-image margin--top--none margin--bottom--none margin--right is-size-7"
         src="{{ content.image | default: " /assets/img/photos/blank-photo.png" }}" alt="Speakr Avatar Image" />
       {% endif%}
       {{- content.name | append: ", " | append : content.title -}}
