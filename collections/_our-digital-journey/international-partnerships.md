@@ -13,7 +13,7 @@ GovTech’s active engagements on the international front are key to advancing d
 
 We are keen to explore international collaboration opportunities for digital government projects, and to share our experience and ideas. Examples of our international collaboration platforms can be found below.
 
-For an overview of Singapore’s digital government journey, watch a special video collaboration between GovTech and the United Nations Department of Economic and Social Affairs (DESA) in our Digital Government Journey page [here](/our-digital-journey/singapore-digital-government-journey/key-lessons){:target="_blank"}. The four videos feature Government Chief Digital Technology Officer (GCDTO), Chan Cheow Hoe, sharing key learning points from Singapore’s Digital Government transformation.
+For an overview of Singapore’s digital government journey, watch a special video collaboration between GovTech and the United Nations Department of Economic and Social Affairs (DESA) on our Digital Government Journey page [here](/our-digital-journey/singapore-digital-government-journey/key-lessons){:target="_blank"}. The four videos feature Government Chief Digital Technology Officer (GCDTO), Chan Cheow Hoe, sharing key learning points from Singapore’s Digital Government transformation.
 
 ### Digital Government Exchange
 
@@ -34,7 +34,7 @@ Our multi-pronged international partnerships strategy includes:
 - **Bilateral Partnerships:** Hosting foreign delegations keen to learn from our experiences.
 - **Multilateral Partnerships:**  Engagement of international organisations and governments, and participation in global forums for international cooperation on Digital Government by the UN, World Bank and, European Union (EU).
 - **Partnerships with Non-Profit Organisations and Civil Societies:** Sharing Singapore’s digital transformation journey at platforms such as the WEF.
-- **Knowledge sharing via the Singapore Government Developer Portal:** The developer portal is a one-stop resource hub for governmnt digital products and services.
+- **Knowledge sharing via the Singapore Government Developer Portal:** The developer portal is a one-stop resource hub for government digital products and services.
 
 Singapore actively participates in international platforms by providing keynote talks and conducting workshops. We believe such engagements will serve a much larger community of countries looking to learn from Singapore’s journey.
 
