@@ -51,18 +51,18 @@
       image: /assets/img/photos/jason-see.png
       title: "Senior Director, Data Science & Artificial Intelligence Division (DSAID), GovTech"
       desc: "Mr Jason See is the Senior Director of the Data Science and Artificial Intelligence Division at the Government Technology Agency, focusing on driving digital transformation across the public sector using data science and AI, through consultancy projects, technology incubation, product and platform development and capability development efforts. Prior to joining GovTech, he led the start-up of a new division at MINDEF which comprised the CIO Office, the Corporate Development Directorate and the Data Science Department. He was responsible for the strategy and resource prioritisation for MINDEF digital transformation efforts, including pushing new initiatives with Agile and the commercial cloud. Jason is passionate about innovation and challenging the status quo to make a positive difference."
-      
+
 - type: Keynotes
   timeslot: 04:30 PM - 05:00 PM
   timeslot_metadata: 2023-07-18T16:30:00+08:00 - 2023-07-18T17:00:00+08:00
   title: "Generative AI - Quo Vadis?"
-  desc:
+  desc: "Dr. Zeller will also discuss the potential pathways and future trajectory of Generative AI, and shares his thoughts on how the developer community could navigate this exciting frontier."
   speakers:
     - name: "Dr Michael Zeller"
       image: /assets/img/photos/michael-zeller.png
-      title: "Head, AI Strategy & Solutions at Temasek"
+      title: "Head, AI Strategy & Solutions, Temasek"
       desc: "Dr. Michael Zeller is the Head of Artificial Intelligence & Solutions at Temasek and is responsible for the investment company’s AI venture building and accelerating the deployment of AI technologies to create scalable AI products and solutions.<br><br>Dr. Michael Zeller joined Temasek in July 2020 and is a founding team and board member of Aicadium, a global tech company founded by Temasek in 2021 to provide Artificial Intelligence solutions to companies in its ecosystem and beyond. Temasek’s AI Centre of Excellence. Aicadium comprises a team of global, best-in-class AI talent seeking to empower companies to achieve better outcomes through the adoption and delivery of AI technologies and solutions. He also represents Temasek on the Board of Aicadium.<br><br>Prior to joining Temasek, Dr. Zeller was the CEO of Dynam.AI, an AI consultancy and solutions firm. He has over 20 years of experience as an entrepreneur, executive and advisor of technology-centric organisations.<br><br>Dr. Zeller led the Strategy & Innovation function at Software AG, an enterprise platform integration and IOT solutions provider. He was previously CEO and co-founder of Zementis, a leading software solutions provider for predictive analytics, which was acquired by Software AG. Before founding Zementis, Dr. Zeller was CEO at OTW Software, a company providing software engineering processes and design services, and worked in various engineering and IT roles with major aerospace corporations.<br><br>From 2013 to 2021, Dr. Zeller served as Secretary/Treasurer on the Executive Committee of ACM SIGKDD, the premier international organization for data science. With a special emphasis on applied machine learning and big data solutions, his mission as SIGKDD Executive Committee Member was to foster a strong partnership between research institutions & industry organisations as the key for the continued success of the global SIGKDD community."
- 
+
 # Panel
 - type: Panel Discussion
   timeslot: 10:45 AM - 11:30 AM
@@ -73,15 +73,15 @@
     - name: "Mr Chang Sau Sheong"
       image: /assets/img/photos/chang-sau-sheong.png
       title: "Deputy Chief Executive, Product & Engineering, GovTech"
-      desc: "Sau Sheong is the Deputy Chief Executive, Product & Engineering, for GovTech Singapore. Prior to GovTech, Sau Sheong was an Operating Partner, Digital for Temasek, a global investment company headquartered in Singapore and part of the AI Strategy and Solutions team.<br><br>Before that, he ran SPDigital, the digital business unit of SPGroup. He also headed IT, OT and digital transformation for the whole of SPGroup for more than 6 years. Sau Sheong was instrumental in changing SPGroup from a traditional utility company to a regional energy player.<br><br>In his 28 years of industry experience, he has built and led product engineering teams at PayPal, Yahoo and HP building various software products for enterprise businesses and consumers globally.<br><br>He was previously a co-founder of a software company and was involved in startups for more than 10 years. He is active and contributes to many technology communities in Singapore and Southeast Asia and has written 4 programming books, currently working on a 5th book.<br><br>Sau Sheong has a Bachelor’s Degree in Computer Engineering, a Master’s in Commercial Law and a Postgraduate Certificate in International Arbitration." 
+      desc: "Sau Sheong is the Deputy Chief Executive, Product & Engineering, for GovTech Singapore. Prior to GovTech, Sau Sheong was an Operating Partner, Digital for Temasek, a global investment company headquartered in Singapore and part of the AI Strategy and Solutions team.<br><br>Before that, he ran SPDigital, the digital business unit of SPGroup. He also headed IT, OT and digital transformation for the whole of SPGroup for more than 6 years. Sau Sheong was instrumental in changing SPGroup from a traditional utility company to a regional energy player.<br><br>In his 28 years of industry experience, he has built and led product engineering teams at PayPal, Yahoo and HP building various software products for enterprise businesses and consumers globally.<br><br>He was previously a co-founder of a software company and was involved in startups for more than 10 years. He is active and contributes to many technology communities in Singapore and Southeast Asia and has written 4 programming books, currently working on a 5th book.<br><br>Sau Sheong has a Bachelor’s Degree in Computer Engineering, a Master’s in Commercial Law and a Postgraduate Certificate in International Arbitration."
     - name: "Dr Andrew Ng"
       image: /assets/img/photos/andrew-ng.png
-      title: "Managing General Partner at AI Fund, Founder of DeepLearning.AI, and an Adjunct Professor at Stanford University"
-      desc: "Andrew Ng is the Managing General Partner at AI Fund, Founder of DeepLearning.AI, and an Adjunct Professor at Stanford University. As a pioneer both in machine learning and online education, Dr. Ng has changed countless lives through his work in AI, and has taught over 7 million people AI.  He was the founding lead of the Google Brain team, which led Google’s drive to adopt modern AI, as well as the chief scientist at Baidu.<br><br>He is also the co-founder and Chairman of Coursera – the world’s largest MOOC platform. He was also named one of the world’s 100 most influential people by TIME magazine in 2013. Dr. Ng now focuses his time primarily on his entrepreneurial ventures, looking for the best ways to accelerate responsible AI practices in the larger global economy."
-      
+      title: "Managing General Partner at AI Fund, Founder of DeepLearning.AI, and Adjunct Professor, Stanford University"
+      desc: "Andrew Ng is the Managing General Partner at AI Fund, Founder of DeepLearning.AI, and an Adjunct Professor at Stanford University. As a pioneer both"
+
 # Presentations
 - type: Presentations
-  timeslot: 11:30 AM - 12:00 PM
+  timeslot: 11:30 AM - 11:50 AM
   timeslot_metadata: 2023-07-18T11:30:00+08:00 - 2023-07-18T12:00:00+08:00
   title: "AI & Data for Tourism: eXtended Reality and Recommendations"
   desc: "To overcome Singapore’s land limitations, we need to extend our tourism offerings into the digital space to make Singapore a compact yet dynamic destination.  STB partnered Snap and Google, and leveraged their AI technologies for location identification and object recognition, to deliver immersive XR experiences.  I will also be sharing about an in-house built recommendation engine to help visitors discover relevant parts of Singapore more quickly."
@@ -90,43 +90,59 @@
       image: /assets/img/photos/wong-ming-fai.png
       title: "Chief Technology Officer & Quality Service Manager, Singapore Tourism Board"
       desc:
-     
+
+- type: Presentations
+  timeslot: 11:50 AM - 12:10 PM
+  timeslot_metadata: 2023-07-18T14:00:00+08:00 - 2023-07-18T14:25:00+08:00
+  title: "Future of Search with AI (working title)"
+  desc:
+  speakers:
+    - name: "Mr Burak Gokturk"
+      image: /assets/img/photos/blank-photo.png
+      title: "VP of AI Engineering and Industry Solutions, Google"
+      desc:
+
 - type: Presentations
   timeslot: 02:00 PM - 02:25 PM
-  timeslot_metadata: 2023-07-18T14:00:00+08:00 - 2023-07-18T14:25:00+08:00
-  title: "Industry Presentation"
-  desc:
-     
+  timeslot_metadata: 2023-07-18T14:25:00+08:00 - 2023-07-18T14:50:00+08:00
+  title: "Accelerate Development of Generative AI Applications"
+  desc: "Learn how multi-model AI models in the Generative AI space can be useful to streamline your operations and operate more effectively. From building better customer experiences with Large Language Models (LLM) and better personalized experiences, improved employee efficiency through language related helpers, improved search, as well as faster image and video visual generations."
+  speakers:
+    - name: "Mr Olivier Klein"
+      image:  /assets/img/photos/olivier-klein.png
+      title: "Chief Technologist, Asia Pacific & Japan, Amazon Web Services"
+      desc:
+
 - type: Presentations
   timeslot: 02:25 PM - 02:50 PM
   timeslot_metadata: 2023-07-18T14:25:00+08:00 - 2023-07-18T14:50:00+08:00
   title: "Jumpstart Your Career"
-  desc:
+  desc: "Last year, JumpStart shared about its job recommender. There has been several progress since: JumpStart launched an upgraded course search feature on MySkillsFuture, which allows users to ask more natural queries like ‘skills for lawyers’ when finding courses. Recently, JumpStart also launched CareersFinder, a feature on MyCareersFuture where users can obtain personalised occupation,  job and course recommendations, to help them plan their career. We will share the technical details underlying these recommenders. Underlying these two new features is the JumpStart platform, which comprises a set of reusable data, MLOps infrastructure, models, and AI microservices. We are just scratching the surface of what could be powered by the JumpStart platform, and JumpStart’s ambition is to become a national platform that developers across public agencies, industry partners, and research institutions can use to power jobs and skills-related recommendations."
   speakers:
     - name: "Mr Goh Zuo Min"
       image: /assets/img/photos/goh-zuo-min.png
       title: "Product Manager, Data Science & Artificial Intelligence Division (DSAID), GovTech"
-      desc:       
-     
+      desc:
+
 - type: Presentations
   timeslot: 02:50 PM - 03:15 PM
   timeslot_metadata: 2023-07-18T14:50:00+08:00 - 2023-07-18T13:15:00+08:00
   title: "Enabling the Public Service with AI: GovTech’s Approach To Building A Central Text Analytics Product"
-  desc:
+  desc: "The Artificial Intelligence Platforms (AIPF) team develops central AI products that focuses on enabling public service with AI. We will explore GovText's capabilities in analysing unstructured text data, and discuss IM8 Q&A and DocuBot tools for improving service delivery. Benefits include increased efficiency, cost savings, and enhanced service delivery. We will also address challenges such as data security, trust, and potential harm from misleading information, while outlining future development plans for AI products in public service."
   speakers:
     - name: "Dr Alvina Goh"
       image: /assets/img/photos/alvina-goh.png
       title: "Director, AI Platforms, Data Science & Artificial Intelligence Division (DSAID), GovTech"
-      desc:       
+      desc:
     - name: "Dr Watson Chua"
-      image: /assets/img/photos/blank-photo.png
+      image: /assets/img/photos/watson-chua.png
       title: "Lead Data Scientist, Data Science & Artificial Intelligence Division (DSAID), GovTech"
-      desc:       
+      desc:
     - name: "Dr Li Lu"
-      image: /assets/img/photos/blank-photo.png
+      image: /assets/img/photos/li-lu.png
       title: "Data Scientist (II), Data Science & Artificial Intelligence Division (DSAID), GovTech"
-      desc:       
-     
+      desc:
+
 - type: Presentations
   timeslot: 03:15 PM - 03:40 PM
   timeslot_metadata: 2023-07-18T15:15:00+08:00 - 2023-07-18T15:40:00+08:00
@@ -136,8 +152,12 @@
     - name: "Dr Yap Ghim-Eng"
       image: /assets/img/photos/yap-ghim-eng.png
       title: "Director, Data Engineering, Data Science & Artificial Intelligence Division (DSAID), GovTech"
-      desc:       
-     
+      desc:
+    - name: "Jeffrey Chai"
+      image: /assets/img/photos/jeffrey-chai.png
+      title: "Product Manager, Data Engineering, Data Science & Artificial Intelligence Division (DSAID), GovTech"
+      desc:
+
 - type: Presentations
   timeslot: 03:40 PM - 04:05 PM
   timeslot_metadata: 2023-07-18T15:40:00+08:00 - 2023-07-18T16:05:00+08:00
@@ -147,88 +167,143 @@
     - name: "Mr Nicholas Eayrs"
       image: /assets/img/photos/nick-eayrs.png
       title: "VP, Field Engineering for Asia-Pacific and Japan, Databricks"
-      desc:       
-       
+      desc:
+
 - type: Presentations
   timeslot: 04:05 PM - 04:30 PM
   timeslot_metadata: 2023-07-18T16:05:00+08:00 - 2023-07-18T16:30:00+08:00
   title: "Empowering Public Officers, Democratising AI"
-  desc: "Every new technology wave creates a new skills gap where we need to upskill and bridge. But it is also an opportunity to embrace it, and use it to enhance our way of working.​<br><br>The explosion of Generative AI technologies is one such wave. We must seize the opportunity to understand it, harness its power, and democratize its usage for all. This talk will delve into how GovTech plans to empower public officers to use AI effectively and equip them with the skills they need to thrive in a AI-driven future.​"
+  desc: "Many would have known by now the explosion of Generative AI technologies, but how are you preparing for the future where AI is part and parcel of your work? Join me for an exciting talk that will delve into how we plan to empower public officers to use AI effectively and equip them with the skills they need to thrive in an AI-driven future. Don't miss this opportunity to enhance your way of working and bridge the skills gap with confidence. Let's embrace the change together and transform the future of AI!"
+  Fun Fact: "This synopsis was generated using LaunchPad which we'll be demo-ing during the session."
   speakers:
     - name: "Mr Joseph Tan"
       image: /assets/img/photos/joseph-tan.png
       title: "Deputy Director, Data Science & Artificial Intelligence Division (DSAID), GovTech"
-      desc:       
+      desc: ""
 
-# Product/Tech Track Talks   
-#- type: Product/Tech Track Talks
-#  timeslot: 02:10 PM - 02:30 PM
-#  timeslot_metadata: 2023-07-18T14:10:00+08:00 - 2023-07-18T14:30:00+08:00
-#  title: "Laying The Data Mesh Foundations For Domain-Driven Data Analytics"
-#  desc:
-#  speakers:
-#    - name: "Mr Sachin Tonk"
-#      image: /assets/img/photos/sachin-tonk.png
-#      title: "Deputy Chief Data Officer, Data Science & Artificial Intelligence Division (DSAID), GovTech"
-#      desc:      
+# Product/Tech Track Talks
+- type: Product/Tech Track Talks
+  timeslot: 02:20 PM - 02:40 PM
+  timeslot_metadata: 2023-07-18T14:10:00+08:00 - 2023-07-18T14:30:00+08:00
+  title: "Towards the Next Generation of Public Service: The Evolution of Virtual Intelligent Citizen Assistant (VICA) and the Rise of AI-Assisted Citizen Services"
+  desc: "In a world increasingly driven by AI, how does the public sector keep up, adapt, and even lead the change? We’ll delve into its origins of VICA, the challenges of chatbot engineering encountered along the way, and the innovative solutions used to overcome them. From the contextual customisation to each chatbot, to the experimental unified virtual assistant Alphabot, to the discovery of prompt engineering and the ground-breaking implications of OpenAI, we’ve been pushing the boundaries of Conversational AI to transform the public service. Looking ahead, we’ll discuss VICA 2 and its potential to revolutionise public services, creating a more efficient and accessible experience for millions of Singaporeans. Join us as we peek into the future of Conversational AI in public service and explore why it matters."
+  speakers:
+    - name: "Mr Ho Ren Sen"
+      image:  /assets/img/photos/ho-ren-shen.png
+      title: "Software Engineer (I), Virtual Intelligent Citizen Assistant, GovTech"
+      desc:
+
+- type: Product/Tech Track Talks
+  timeslot: 02:40 PM - 03:00 PM
+  timeslot_metadata: 2023-07-18T14:10:00+08:00 - 2023-07-18T14:30:00+08:00
+  title: "Video Analytics – the Next Bound"
+  desc: "Join us as we share on how the GovTech Video Analytics (VA) team helps agencies on their digital transformation journey! Taking a collaborative approach in partnership with industry partners, research institutes and academia, the team drives towards multiplying the value of video analytics across the government. Discover how the team support agencies’ video analytics adoption from ideation to operationalization through design thinking, product platforms such as Video Analytics System (VAS) and transforming agencies’ day-to-day operations."
+  speakers:
+    - name: "Mr Ethan Goh"
+      image: /assets/img/photos/ethan-goh.png
+      title: "Deputy Director, Video Analytics, GovTech"
+      desc:
+    - name: "Mr Henry Lim"
+      image: /assets/img/photos/henry-lim.png
+      title: "Lead Product Manager, Video Analytics, GovTech"
+      desc:
+
+- type: Product/Tech Track Talks
+  timeslot: 03:00 PM - 03:20 PM
+  timeslot_metadata: 2023-07-18T14:10:00+08:00 - 2023-07-18T14:30:00+08:00
+  title: "Transcribe – Introducing Whisper to WOG"
+  desc: "Get ready to experience the latest innovation in speech-to-text technology! Transcribe is proud to unveil the OpenAI Whisper model, a cutting-edge addition to our platform that boasts increased accuracy and perform well even under Singlish environment. As an AI professional or business leader, you can trust that our state-of-the-art model will help you address your Speech-to-Text needs with ease and efficiency. Reach out to us for collaboration ideas or opportunities!"
+  Fun Fact: "This synopsis was generated using LaunchPad, one of GovTech's AI platform to serve public officers"
+  speakers:
+    - name: "Ms Han Jing"
+      image: /assets/img/photos/han-jing.png
+      title: "Lead Product Manager, Artificial Intelligence Platforms, GovTech"
+      desc:
+
+- type: Product/Tech Track Talks
+  timeslot: 03:20 PM - 03:40 PM
+  timeslot_metadata: 2023-07-18T14:10:00+08:00 - 2023-07-18T14:30:00+08:00
+  title: "Sharing on Plan.AI (working title)"
+  desc:
+  speakers:
+    - name: "Mr Alvin Chua"
+      image: /assets/img/photos/blank-photo.png
+      title: "Senior Data Scientist, Design and Planning Lab, Urban Redevelopment Authority"
+      desc:
+
+- type: Product/Tech Track Talks
+  timeslot: 03:40 PM - 04:00 PM
+  timeslot_metadata: 2023-07-18T14:10:00+08:00 - 2023-07-18T14:30:00+08:00
+  title: "Trustworthy AI: What Does it Mean and How to Evaluate and Test"
+  desc: "Join me for an insightful presentation on the driving forces behind the greater need for trustworthy AI and the need to evaluate all asepcts of AI governance due to the increasing risks of foundation models and generative AI. Hear about technical methods for assessment and mitigation of AI risks and gain valuable insights into fairness, robustness, privacy and security issues. This is a must-attend event for AI enthusiasts and practitioners in Singapore who are keen to stay on top of the latest developments in AI governance. Don't miss this opportunity to stay ahead of the curve!"
+  speakers:
+    - name: "Mr Liu Feng-Yuan"
+      image: /assets/img/photos/liu-feng-yuan.png
+      title: "Vice President, Certitude.ai"
+      desc:
 
 # Workshops
 - type: Workshops
   timeslot: 01:30 PM - 03:00 PM
   timeslot_metadata: 2023-07-17T13:30:00+08:00 - 2023-07-17T15:00:00+08:00
   title: "[Workshop A1] English Is The New Programming Language | Prompt Engineering Workshop With LaunchPad"
-  desc:
+  desc: "Master how you can speak to AI with us! In this session, you can: Get a sneak preview into the latest AI-empowered functions of GovTech's latest platform, LaunchPad, and how it can empower you in using AI, understand the fundamental principles and concepts of prompt engineering, including the anatomy of an engineered prompt, and apply the CO-STAR methodology to supercharge your prompts, learn how to apply the prompt engineering mindset to create effective prompts for various use cases, be it summarisation, classification, rewriting, generation and more and, develop best practices and learn tips & tricks that helps your prompts stand out from your peers."
   additional_info_1: "Who should attend | Public Officers only"
   speakers:
     - name: "Ms Chan Li Shing"
-      image: /assets/img/photos/blank-photo.png
+      image: /assets/img/photos/chan-li-shing.png
       title: "Manager, Data Science & Artificial Intelligence Division (DSAID), GovTech"
       desc:
     - name: "Mr Vincent Ng"
-      image: /assets/img/photos/blank-photo.png
+      image: /assets/img/photos/vincent-ng.png
       title: "AI Engineer, Data Science & Artificial Intelligence Division (DSAID), GovTech"
       desc:
 
 - type: Workshops
-  timeslot: 03:30 PM - 04:45 PM
+  timeslot: 03:15 PM - 04:45 PM
   timeslot_metadata: 2023-07-17T15:30:00+08:00 - 2023-07-17T16:45:00+08:00
   title: "[Workshop A2] Unlocking Powers of Computer Vision, Starting From Data (Video/Image) Acquisition"
-  desc:
+  desc: "Discover the world of different ways to acquire data. Unlock the full potential of Computer Vision and understand how to extract valuable insights from your data. Join our workshop to learn the latest techniques for data acquisition, deep learning models, and no-code development software. Unlock the power of Computer Vision to transform the way we work, play and live!"
   additional_info_1: "Who should attend | Public Officers only"
   speakers:
     - name: "Ms Lee Ning Sung"
-      image: /assets/img/photos/blank-photo.png
+      image: /assets/img/photos/lee-ning-sung.png
       title: "Assistant Director, Data Science & Artificial Intelligence Division (DSAID), GovTech"
       desc:
     - name: "Mr Suresh Kumar"
-      image: /assets/img/photos/blank-photo.png
+      image: /assets/img/photos/suresh-kumar.png
       title: "Product Manager, Data Science & Artificial Intelligence Division (DSAID), GovTech"
       desc:
-      
+
 - type: Workshops
   timeslot: 01:30 PM - 03:00 PM
   timeslot_metadata: 2023-07-17T13:30:00+08:00 - 2023-07-17T15:00:00+08:00
   title: "[Workshop B1] Vision-and-Language Research and Applications: Towards Universal Multimodal Intelligence"
-  desc:
+  desc: "Vision-and-language research has received much success recently, enabling improved performance in many downstream multimodal AI applications. This talk will introduce the efforts from Salesforce Research in advancing state-of-the-art vision-and-language AI from two perspectives: library development and fundamental research. For the library, we introduce LAVIS (4.3k stars), a one-stop solution for vision-language research and applications. LAVIS is a central hub that supports 40+ vision-language models with a unified interface for training and inference. For research, we introduce our line of research work including ALBEF, BLIP, BLIP-2, and the latest InstructBLIP. In particular, this talk will focus on BLIP-2, a generic vision-language pre-training method that enables frozen LLMs to understand images."
   additional_info_1: "Who should attend | Open to all"
   speakers:
     - name: "Dr Li Lu"
-      image: /assets/img/photos/blank-photo.png
+      image: /assets/img/photos/li-lu.png
       title: "Data Scientist (II), Data Science & Artificial Intelligence Division (DSAID), GovTech"
+      desc:
+    - name: "Dr Li Junnan"
+      image: /assets/img/photos/blank-photo.png
+      title: "Senior Research Manager, Salesforce"
       desc:
 
 - type: Workshops
-  timeslot: 03:30 PM - 04:45 PM
+  timeslot: 03:15 PM - 04:45 PM
   timeslot_metadata: 2023-07-17T15:30:00+08:00 - 2023-07-17T16:45:00+08:00
   title: "[Workshop B2] Harvest Your Alpaca In Your Environment: LLMs Local Training and Hosting (Advanced For WoG Data Analysts / Data Scientist"
-  desc:
+  desc: "Large Learning Models (LLMs) are powerful and with game-changing capabilities. We will introduce LLMs, their use cases, strengths, and limitations. LLMs come in various sizes and some of them can be trained and hosted locally. We will discuss model selection, emphasising that size isn’t everything, and explore smaller LLMs like LLaMa, Alpaca, Vicuna, and Dolly. We will focus on demonstrating how to effectively finetune a LLM by leveraging libraries such as PEFT and LoRA with a hands-on session."
   additional_info_1: "Who should attend | Open to all"
   speakers:
     - name: "Dr Watson Chua"
-      image: /assets/img/photos/blank-photo.png
+      image: /assets/img/photos/watson-chua.png
       title: "Lead Data Scientist, Data Science & Artificial Intelligence Division (DSAID), GovTech"
       desc:
     - name: "Dr Li Lu"
-      image: /assets/img/photos/blank-photo.png
+      image: /assets/img/photos/li-lu.png
       title: "Data Scientist (II), Data Science & Artificial Intelligence Division (DSAID), GovTech"
-      desc: 
+      desc:
+
