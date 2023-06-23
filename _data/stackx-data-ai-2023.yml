@@ -92,17 +92,6 @@
       desc:
 
 - type: Presentations
-  timeslot: 11:50 AM - 12:10 PM
-  timeslot_metadata: 2023-07-18T14:00:00+08:00 - 2023-07-18T14:25:00+08:00
-  title: "Future of Search with AI (working title)"
-  desc:
-  speakers:
-    - name: "Mr Burak Gokturk"
-      image: /assets/img/photos/blank-photo.png
-      title: "VP of AI Engineering and Industry Solutions, Google"
-      desc:
-
-- type: Presentations
   timeslot: 02:00 PM - 02:25 PM
   timeslot_metadata: 2023-07-18T14:25:00+08:00 - 2023-07-18T14:50:00+08:00
   title: "Accelerate Development of Generative AI Applications"
@@ -164,9 +153,9 @@
   title: "Democratising Data and AI with Dolly"
   desc: "Join us for a keynote presentation as Databricks covers the recently released Dolly large language model (LLM) - the first open source, instruction-following LLM, fine-tuned on a human-generated instruction dataset licensed for research and commercial use."
   speakers:
-    - name: "Mr Nicholas Eayrs"
-      image: /assets/img/photos/nick-eayrs.png
-      title: "VP, Field Engineering for Asia-Pacific and Japan, Databricks"
+    - name: "Ms Brooke Wenig"
+      image: /assets/img/photos/brooke-wenig.png
+      title: "Director, Global Machine Learning, Databricks"
       desc:
 
 - type: Presentations
@@ -221,17 +210,6 @@
       desc:
 
 - type: Product/Tech Track Talks
-  timeslot: 03:20 PM - 03:40 PM
-  timeslot_metadata: 2023-07-18T14:10:00+08:00 - 2023-07-18T14:30:00+08:00
-  title: "Sharing on Plan.AI (working title)"
-  desc:
-  speakers:
-    - name: "Mr Alvin Chua"
-      image: /assets/img/photos/blank-photo.png
-      title: "Senior Data Scientist, Design and Planning Lab, Urban Redevelopment Authority"
-      desc:
-
-- type: Product/Tech Track Talks
   timeslot: 03:40 PM - 04:00 PM
   timeslot_metadata: 2023-07-18T14:10:00+08:00 - 2023-07-18T14:30:00+08:00
   title: "Trustworthy AI: What Does it Mean and How to Evaluate and Test"
@@ -282,13 +260,13 @@
   desc: "Vision-and-language research has received much success recently, enabling improved performance in many downstream multimodal AI applications. This talk will introduce the efforts from Salesforce Research in advancing state-of-the-art vision-and-language AI from two perspectives: library development and fundamental research. For the library, we introduce LAVIS (4.3k stars), a one-stop solution for vision-language research and applications. LAVIS is a central hub that supports 40+ vision-language models with a unified interface for training and inference. For research, we introduce our line of research work including ALBEF, BLIP, BLIP-2, and the latest InstructBLIP. In particular, this talk will focus on BLIP-2, a generic vision-language pre-training method that enables frozen LLMs to understand images."
   additional_info_1: "Who should attend | Open to all"
   speakers:
+    - name: "Dr Li Junnan"
+      image: /assets/img/photos/li-junnan.png
+      title: "Senior Research Manager, Salesforce"
+      desc:
     - name: "Dr Li Lu"
       image: /assets/img/photos/li-lu.png
       title: "Data Scientist (II), Data Science & Artificial Intelligence Division (DSAID), GovTech"
-      desc:
-    - name: "Dr Li Junnan"
-      image: /assets/img/photos/blank-photo.png
-      title: "Senior Research Manager, Salesforce"
       desc:
 
 - type: Workshops
