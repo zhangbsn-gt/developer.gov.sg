@@ -44,8 +44,8 @@
 - type: Keynotes
   timeslot: 10:25 AM - 10:45 AM
   timeslot_metadata: 2023-07-18T10:25:00+08:00 - 2023-07-18T10:45:00+08:00
-  title: "Keynote Presentation"
-  desc:
+  title: "Enabling AI for Public Good"
+  desc: "Artificial intelligence (AI) has become a tool of great potential in our everyday lives. At DSAID/GovTech, we are committed to leveraging AI to improve public services, optimize resources, and solve real-world problems. In this presentation, we will share practical examples of how we have been able to create value with AI, as well as push recent experimentations in generative AI. We believe that AI should be accessible and usable across the public sector. To support this, we have developed a set of central tools to help facilitate AI innovation and development. We will also share our efforts to support the relevant competency and culture-building with our public officers and public agencies. Join us as we share our pragmatic approach to harnessing the potential of AI in the Singapore government."
   speakers:
     - name: "Mr Jason See"
       image: /assets/img/photos/jason-see.png
@@ -155,7 +155,7 @@
   speakers:
     - name: "Ms Brooke Wenig"
       image: /assets/img/photos/brooke-wenig.png
-      title: "Director, Global Machine Learning, Databricks"
+      title: "Director, Global Machine Learning Practice, Databricks"
       desc:
 
 - type: Presentations
@@ -172,6 +172,17 @@
 
 # Product/Tech Track Talks
 - type: Product/Tech Track Talks
+  timeslot: 02:00 PM - 02:20PM
+  timeslot_metadata: 2023-07-18T14:10:00+08:00 - 2023-07-18T14:30:00+08
+  title: "Urban Planning in the Age of AI"
+  desc: "Recent developments in AI technology present significant new opportunities to transform the way we plan our city. AI has the potential to not just improve how we work, but also our capacity to deliver more holistic, integrated evidence based plans. Successful adoption of AI requires a clear strategy to co-create with stakeholders and overcome limitations associated with the technology. This talk will cover our perspectives and considerations for the use of AI technologies in various aspects of work at URA. Join us as we share insights from on-going projects to harness NLP for feedback analytics and case retrieval, as well as explorations into LLMs and Generative AI for public engagement. We will also discuss the outlook for AI in the Urban Planning and Design sector moving forward."
+  speakers:
+    - name: 
+      image:  /assets/img/photos/blank-photo.png
+      title: 
+      desc:
+
+- type: Product/Tech Track Talks
   timeslot: 02:20 PM - 02:40 PM
   timeslot_metadata: 2023-07-18T14:10:00+08:00 - 2023-07-18T14:30:00+08:00
   title: "Towards the Next Generation of Public Service: The Evolution of Virtual Intelligent Citizen Assistant (VICA) and the Rise of AI-Assisted Citizen Services"
@@ -185,7 +196,7 @@
 - type: Product/Tech Track Talks
   timeslot: 02:40 PM - 03:00 PM
   timeslot_metadata: 2023-07-18T14:10:00+08:00 - 2023-07-18T14:30:00+08:00
-  title: "Video Analytics – the Next Bound"
+  title: "Reimagining Possibilities: Leveraging WOG Video Analytics Ecosystem to Unlock the Potential of Videos in your Digital Transformation Journey"
   desc: "Join us as we share on how the GovTech Video Analytics (VA) team helps agencies on their digital transformation journey! Taking a collaborative approach in partnership with industry partners, research institutes and academia, the team drives towards multiplying the value of video analytics across the government. Discover how the team support agencies’ video analytics adoption from ideation to operationalization through design thinking, product platforms such as Video Analytics System (VAS) and transforming agencies’ day-to-day operations."
   speakers:
     - name: "Mr Ethan Goh"
@@ -240,7 +251,7 @@
 - type: Workshops
   timeslot: 03:15 PM - 04:45 PM
   timeslot_metadata: 2023-07-17T15:30:00+08:00 - 2023-07-17T16:45:00+08:00
-  title: "[Workshop A2] Unlocking Powers of Computer Vision, Starting From Data (Video/Image) Acquisition"
+  title: "[Workshop A2] Unlocking Powers of Computer Vision, Starting from Data (Video/Image) Acquisition"
   desc: "Discover the world of different ways to acquire data. Unlock the full potential of Computer Vision and understand how to extract valuable insights from your data. Join our workshop to learn the latest techniques for data acquisition, deep learning models, and no-code development software. Unlock the power of Computer Vision to transform the way we work, play and live!"
   additional_info_1: "Who should attend | Public Officers only"
   speakers:
@@ -272,7 +283,7 @@
 - type: Workshops
   timeslot: 03:15 PM - 04:45 PM
   timeslot_metadata: 2023-07-17T15:30:00+08:00 - 2023-07-17T16:45:00+08:00
-  title: "[Workshop B2] Harvest Your Alpaca In Your Environment: LLMs Local Training and Hosting (Advanced For WoG Data Analysts / Data Scientist"
+  title: "[Workshop B2] Harvest Your Alpaca In Your Environment: LLMs Local Training and Hosting (Advanced For WoG Data Analysts / Data Scientists)"
   desc: "Large Learning Models (LLMs) are powerful and with game-changing capabilities. We will introduce LLMs, their use cases, strengths, and limitations. LLMs come in various sizes and some of them can be trained and hosted locally. We will discuss model selection, emphasising that size isn’t everything, and explore smaller LLMs like LLaMa, Alpaca, Vicuna, and Dolly. We will focus on demonstrating how to effectively finetune a LLM by leveraging libraries such as PEFT and LoRA with a hands-on session."
   additional_info_1: "Who should attend | Open to all"
   speakers:
