@@ -11,7 +11,7 @@
   timeslot: 09:30 AM - 09:40 AM
   timeslot_metadata: 2023-07-18T09:30:00+08:00 - 2023-07-18T09:40:00+
   title: Opening Remarks
-  desc:
+  desc: 
   speakers:
     - name: "Dr Janil Puthucheary"
       image: /assets/img/photos/janil-puthucheary.png
@@ -22,8 +22,15 @@
 - type: Keynotes
   timeslot: 9:40 AM - 10:10 AM
   timeslot_metadata: 2023-07-18T09:40:00+08:00 - 2023-07-18T10:10:00+08:00
-  title: "AI Breakthrough: The Next Phase of Artificial Intelligence (working title)"
-  desc:
+  title: "Opportunities in AI"
+  desc: "AI, similar to electricity, is a General Purpose Technology with applications in all corners of the economy and all areas of society. In this presentation, I will describe some major technology trends in AI:
+ <ul>
+ <li>Generative AI, beyond being a powerful consumer tool (such as ChatGPT) is also a powerful developer tool that is enabling new applications in many industries, such as  finance, logistics, education, and healthcare.</li> 
+ <li>Low code development platforms, including ones built on generative AI, is enabling more AI applications to be built not just in the tech sector, but in the “long tail” of AI applications.</li>
+ <li>Technology developed and proven out in text processing is also making its way to other types of data, especially image data.</li> 
+ </ul>
+ <br>I will describe how these technology trends are creating new opportunities for everyone to create and use AI, and share some tips for doing so.
+ <br>Finally, I will discuss the risks posed by AI, and how we can move forward to embrace its many benefits while mitigating its harms."
   speakers:
     - name: "Dr Andrew Ng"
       image: /assets/img/photos/andrew-ng.png
@@ -56,7 +63,7 @@
   timeslot: 04:30 PM - 05:00 PM
   timeslot_metadata: 2023-07-18T16:30:00+08:00 - 2023-07-18T17:00:00+08:00
   title: "Generative AI - Quo Vadis?"
-  desc: "Dr. Zeller will also discuss the potential pathways and future trajectory of Generative AI, and shares his thoughts on how the developer community could navigate this exciting frontier."
+  desc: "Dr. Zeller will discuss the potential pathways and future trajectory of Generative AI, and share his thoughts on how the developer community could navigate this exciting frontier."
   speakers:
     - name: "Dr Michael Zeller"
       image: /assets/img/photos/michael-zeller.png
