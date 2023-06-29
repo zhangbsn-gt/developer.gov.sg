@@ -8,7 +8,7 @@ redirect_from:
     - /products/categories/sensor-platforms-and-internet-of-things/cloud-video-exchange.html
 sub_collection_render: true
 single_level_nav: true
-collection_group: [What's New, Singapore Government Tech Stack]
+collection_group: [Singapore Government Tech Stack]
 sgts_collection_group: [data_transfer]
 sgts_layer_group: [services]
 sgts_title: Cloud Video Exchange

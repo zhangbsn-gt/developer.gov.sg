@@ -8,7 +8,7 @@ _data: single-level-nav
 sgts_collection_group: [digital_identity]
 sgts_layer_group: [services]
 sgts_title: Sign with Singpass
-collection_group: [What's New, Singapore Government Tech Stack, Citizen-facing Products]
+collection_group: [Singapore Government Tech Stack, Citizen-facing Products]
 redirect_from:
     - /products/categories/digital-identity/sign-with-singpass/
     - /products/categories/digital-identity/sign-with-singpass.html

@@ -8,7 +8,7 @@ redirect_from:
     - /products/categories/productivity-tools/encrypt.html
 sub_collection_render: true
 single_level_nav: true
-collection_group: [What's New, Data Science and Artificial Intelligence]
+collection_group: [Data Science and Artificial Intelligence]
 description: enCRYPT empowers public officers to implement public sector anonymisation guidelines quickly and with confidence.
 ---
 

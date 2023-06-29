@@ -10,7 +10,7 @@ redirect_from:
     - /products/categories/analytics/analytics-gov.html
     - /technologies/analytics/analytics-gov
     - /technologies/analytics/analytics-gov.html
-collection_group: [Data Science and Artificial Intelligence, What's New]
+collection_group: [Data Science and Artificial Intelligence]
 description: >
   Analytics.gov is a Whole-Of-Government (WOG) data exploitation platform to support the analysis of data by agencies.
 ---

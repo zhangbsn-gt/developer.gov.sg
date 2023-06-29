@@ -5,7 +5,6 @@ category: Blockchain
 redirect_from:
     - /products/categories/blockchain/openattestation-wallet-app/
     - /products/categories/data-and-apis/openattestation-wallet-app.html
-collection_group: [What's New]
 _data: single-level-nav
 sub_collection_render: true
 single_level_nav: true
