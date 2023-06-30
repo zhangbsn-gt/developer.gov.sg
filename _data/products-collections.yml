@@ -1,16 +1,8 @@
 - name: What's New
   description: Discover the latest product additions to the Singapore Government Developer Portal here
   items:
-    - Overview
-    - ACAS
-    - Analytics.gov
-    - APEX Cloud
     - Data Infrastructure in a Box
-    - OpenAttestation Wallet App
-    - Cloud Video Exchange
-    - enCRYPT
     - Purple HATS
-    - XCA
 
 - name: Citizen-facing Products
   description: Explore the government products for providing citizens with the services they need. This includes citizen life journey, grant services, and more!
