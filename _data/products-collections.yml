@@ -5,6 +5,7 @@
     - ACAS
     - Analytics.gov
     - APEX Cloud
+    - Data Infrastructure in a Box
     - OpenAttestation Wallet App
     - Cloud Video Exchange
     - enCRYPT
@@ -49,6 +50,7 @@
   items:
     - Overview
     - Analytics.gov
+    - Data Infrastructure in a Box
     - enCRYPT
     - Transcribe
     - VAS
@@ -83,6 +85,7 @@
     - Cloud Video Exchange
     - Container Stack
     - Corppass
+    - Data Infrastructure in a Box
     - DECADA IoT Tech Stack
     - Government on Commercial Cloud
     - GovText

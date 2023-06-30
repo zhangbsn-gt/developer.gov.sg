@@ -359,6 +359,14 @@
     - Overview
 
 # Infrastructure and Hosting   
+- name: Data Infrastructure in a Box
+  items:
+    - Overview
+    - Features
+    - Getting Started
+    - Resources
+    - FAQs 
+
 - name: Government on Commercial Cloud
   items:
     - Overview
