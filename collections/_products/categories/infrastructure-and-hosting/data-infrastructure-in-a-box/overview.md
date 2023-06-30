@@ -15,7 +15,7 @@ redirect_from:
 sgts_collection_group: [runtime]
 sgts_layer_group: [base]
 sgts_title: DIAB
-collection_group: [Singapore Government Tech Stack, Data Science and Artificial Intelligence]
+collection_group: [Singapore Government Tech Stack, Data Science and Artificial Intelligence, What's New]
 description: >
   Data Infrastructure in a Box (DIAB) offers Instruction Manual-compliant templates and reference architectures to help speed up data infrastructure deployment on Government on Commercial Cloud (GCC).
 ---
