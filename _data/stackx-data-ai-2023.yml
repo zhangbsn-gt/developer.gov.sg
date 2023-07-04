@@ -184,8 +184,8 @@
   title: "Urban Planning in the Age of AI"
   desc: "Recent developments in AI technology present significant new opportunities to transform the way we plan our city. AI has the potential to not just improve how we work, but also our capacity to deliver more holistic, integrated evidence based plans. Successful adoption of AI requires a clear strategy to co-create with stakeholders and overcome limitations associated with the technology. This talk will cover our perspectives and considerations for the use of AI technologies in various aspects of work at URA. Join us as we share insights from on-going projects to harness NLP for feedback analytics and case retrieval, as well as explorations into LLMs and Generative AI for public engagement. We will also discuss the outlook for AI in the Urban Planning and Design sector moving forward."
   speakers:
-    - name: 
-      image:  /assets/img/photos/blank-photo.png
+    - name: "Dr Alvin Chua, Senior Data Scientist, Design & Planning Lab, URA"
+      image:  /assets/img/photos/alvin-chua.png
       title: 
       desc:
 
@@ -225,6 +225,18 @@
     - name: "Ms Han Jing"
       image: /assets/img/photos/han-jing.png
       title: "Lead Product Manager, Artificial Intelligence Platforms, GovTech"
+      desc:
+
+- type: Product/Tech Track Talks
+  timeslot: 03:20 PM - 03:40 PM
+  timeslot_metadata: 2023-07-18T14:10:00+08:00 - 2023-07-18T14:30:00+08:00
+  title: "Beyond Queries: The Art of Prompt Engineering"
+  desc: "LLMs are unique models that require unique inputs. This session will cover how we can utilise good prompts to extend the power of LLMs beyond simple chat and queries, while also sharing best practices in structuring and maintaining prompts used in production grade applications."
+  Fun Fact: "This synopsis was generated using LaunchPad, one of GovTech's AI platform to serve public officers"
+  speakers:
+    - name: "Mr Pek Zhi Xuan"
+      image: /assets/img/photos/zhi-xuan-pek.png
+      title: "Pek Zhi Xuan, APAC AI Pillar Lead, Microsoft"
       desc:
 
 - type: Product/Tech Track Talks
