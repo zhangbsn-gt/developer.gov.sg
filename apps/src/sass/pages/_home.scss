@@ -48,20 +48,17 @@
   &-gradient {
     background: linear-gradient(268.19deg, #00c0f3 -0.09%, $primary 98.08%);
   }
-  &-stackxdataai2023-gradient {
-    background: #31358C;
-  }
   &-whatsnew-gradient {
     background: #0061af;  
   }
-  &-govzta-gradient {
-    background: #50d3df;
-  }
-  &-wcag21-gradient {
-    background: #333333;
-  }
-  &-stackmeetupgovzta-gradient {
+  &-stackmeetupcloud-gradient {
     background: #f17922;
+  }
+  &-dsa-gradient {
+    background: #c20092;
+  }
+  &-stackxdataai2023-gradient {
+    background: #31358C; 
   }
   
   // Added for carousel
