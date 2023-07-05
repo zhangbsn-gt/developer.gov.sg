@@ -122,7 +122,7 @@
 
 - type: Presentations
   timeslot: 02:50 PM - 03:15 PM
-  timeslot_metadata: 2023-07-18T14:50:00+08:00 - 2023-07-18T13:15:00+08:00
+  timeslot_metadata: 2023-07-18T14:50:00+08:00 - 2023-07-18T15:15:00+08:00
   title: "Enabling the Public Service with AI: GovTech’s Approach To Building A Central Text Analytics Product"
   desc: "The Artificial Intelligence Platforms (AIPF) team develops central AI products that focuses on enabling public service with AI. We will explore GovText's capabilities in analysing unstructured text data, and discuss IM8 Q&A and DocuBot tools for improving service delivery. Benefits include increased efficiency, cost savings, and enhanced service delivery. We will also address challenges such as data security, trust, and potential harm from misleading information, while outlining future development plans for AI products in public service."
   speakers:
