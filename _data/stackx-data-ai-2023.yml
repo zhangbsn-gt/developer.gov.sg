@@ -9,7 +9,7 @@
 # Opening
 - type: Opening Remarks
   timeslot: 09:30 AM - 09:40 AM
-  timeslot_metadata: 2023-07-18T09:30:00+08:00 - 2023-07-18T09:40:00+
+  timeslot_metadata: 2023-07-18T09:30:00+08:00 - 2023-07-18T09:40:00+08:00
   title: Opening Remarks
   desc: 
   speakers:
@@ -29,8 +29,8 @@
  <li>Low code development platforms, including ones built on generative AI, is enabling more AI applications to be built not just in the tech sector, but in the “long tail” of AI applications.</li>
  <li>Technology developed and proven out in text processing is also making its way to other types of data, especially image data.</li> 
  </ul>
- <br>I will describe how these technology trends are creating new opportunities for everyone to create and use AI, and share some tips for doing so.
- <br>Finally, I will discuss the risks posed by AI, and how we can move forward to embrace its many benefits while mitigating its harms."
+ I will describe how these technology trends are creating new opportunities for everyone to create and use AI, and share some tips for doing so.
+ <br><br>Finally, I will discuss the risks posed by AI, and how we can move forward to embrace its many benefits while mitigating its harms."
   speakers:
     - name: "Dr Andrew Ng"
       image: /assets/img/photos/andrew-ng.png
@@ -40,8 +40,8 @@
 - type: Keynotes
   timeslot: 10:10 AM - 10:25 AM
   timeslot_metadata: 2023-07-18T10:10:00+08:00 - 2023-07-18T10:25:00+08:00
-  title: "Keynote Presentation"
-  desc:
+  title: "Engineering a Digital Government with AI"
+  desc: "Are the recent AI developments just hype? Like any technologies that come up every now and then, AI needs to be useful, and the business model needs to be sustainable for it to be successful. I will share examples of how we are trying out different things and using AI in different ways to to deliver value."
   speakers:
     - name: "Mr Chang Sau Sheong"
       image: /assets/img/photos/chang-sau-sheong.png
@@ -52,7 +52,7 @@
   timeslot: 10:25 AM - 10:45 AM
   timeslot_metadata: 2023-07-18T10:25:00+08:00 - 2023-07-18T10:45:00+08:00
   title: "Enabling AI for Public Good"
-  desc: "Artificial intelligence (AI) has become a tool of great potential in our everyday lives. At DSAID/GovTech, we are committed to leveraging AI to improve public services, optimize resources, and solve real-world problems. In this presentation, we will share practical examples of how we have been able to create value with AI, as well as push recent experimentations in generative AI. We believe that AI should be accessible and usable across the public sector. To support this, we have developed a set of central tools to help facilitate AI innovation and development. We will also share our efforts to support the relevant competency and culture-building with our public officers and public agencies. Join us as we share our pragmatic approach to harnessing the potential of AI in the Singapore government."
+  desc: "Artificial intelligence (AI) has become a tool of great potential in our everyday lives. At DSAID/GovTech, we are committed to leveraging AI to improve public services, optimize resources, and solve real-world problems. In this presentation, we will share practical examples of how we have been able to create value with AI, as well as push recent experimentations in generative AI.<br><br>We believe that AI should be accessible and usable across the public sector. To support this, we have developed a set of central tools to help facilitate AI innovation and development. We will also share our efforts to support the relevant competency and culture-building with our public officers and public agencies. Join us as we share our pragmatic approach to harnessing the potential of AI in the Singapore government."
   speakers:
     - name: "Mr Jason See"
       image: /assets/img/photos/jason-see.png
@@ -63,7 +63,7 @@
   timeslot: 04:30 PM - 05:00 PM
   timeslot_metadata: 2023-07-18T16:30:00+08:00 - 2023-07-18T17:00:00+08:00
   title: "Generative AI - Quo Vadis?"
-  desc: "Dr. Zeller will discuss the potential pathways and future trajectory of Generative AI, and share his thoughts on how the developer community could navigate this exciting frontier."
+  desc: "In this keynote, Dr. Zeller will explore the rapid evolution of Generative AI, a field that has seen unprecedented growth and innovation in recent months.<br><br>His keynote will delve into the key technologies that are driving this progress, their current and potential applications, and touch on the limits, challenges and risks that technologist and practitioners must be aware of.<br><br>Dr. Zeller will also discuss the potential pathways and future trajectory of Generative AI, and shares his thoughts on how the developer community could navigate this exciting frontier."
   speakers:
     - name: "Dr Michael Zeller"
       image: /assets/img/photos/michael-zeller.png
@@ -84,12 +84,12 @@
     - name: "Dr Andrew Ng"
       image: /assets/img/photos/andrew-ng.png
       title: "Managing General Partner at AI Fund, Founder of DeepLearning.AI, and Adjunct Professor, Stanford University"
-      desc: "Andrew Ng is the Managing General Partner at AI Fund, Founder of DeepLearning.AI, and an Adjunct Professor at Stanford University. As a pioneer both"
+      desc: "Andrew Ng is the Managing General Partner at AI Fund, Founder of DeepLearning.AI, and an Adjunct Professor at Stanford University. As a pioneer both in machine learning and online education, Dr. Ng has changed countless lives through his work in AI, and has taught over 7 million people AI.  He was the founding lead of the Google Brain team, which led Google’s drive to adopt modern AI, as well as the chief scientist at Baidu.<br><br>He is also the co-founder and Chairman of Coursera – the world’s largest MOOC platform. He was also named one of the world’s 100 most influential people by TIME magazine in 2013. Dr. Ng now focuses his time primarily on his entrepreneurial ventures, looking for the best ways to accelerate responsible AI practices in the larger global economy."
 
 # Presentations
 - type: Presentations
   timeslot: 11:30 AM - 11:50 AM
-  timeslot_metadata: 2023-07-18T11:30:00+08:00 - 2023-07-18T12:00:00+08:00
+  timeslot_metadata: 2023-07-18T11:30:00+08:00 - 2023-07-18T11:50:00+08:00
   title: "AI & Data for Tourism: eXtended Reality and Recommendations"
   desc: "To overcome Singapore’s land limitations, we need to extend our tourism offerings into the digital space to make Singapore a compact yet dynamic destination.  STB partnered Snap and Google, and leveraged their AI technologies for location identification and object recognition, to deliver immersive XR experiences.  I will also be sharing about an in-house built recommendation engine to help visitors discover relevant parts of Singapore more quickly."
   speakers:
@@ -99,8 +99,19 @@
       desc:
 
 - type: Presentations
+  timeslot: 11:50 AM - 12:10 PM
+  timeslot_metadata: 2023-07-18T11:50:00+08:00 - 2023-07-18T12:10:00+08:00
+  title: "The Age of AI: Building AI and Sustainability Future with Google"
+  desc: "The presentation provided an illuminating and compelling journey into the role of artificial intelligence in molding our current landscape and guiding our future path. It strongly advocated for us to recognize AI's potential, while also encouraging a responsible and advantageous integration of it into society. Further emphasized was the crucial role of ethics, transparency, and the partnership between major AI enterprises and the government."
+  speakers:
+    - name: "Mr Martin Chee"
+      image: /assets/img/photos/blank-photo.png
+      title: "Managing Director, AI Specialist, APAC, Google"
+      desc:
+
+- type: Presentations
   timeslot: 02:00 PM - 02:25 PM
-  timeslot_metadata: 2023-07-18T14:25:00+08:00 - 2023-07-18T14:50:00+08:00
+  timeslot_metadata: 2023-07-18T14:00:00+08:00 - 2023-07-18T14:25:00+08:00
   title: "Accelerate Development of Generative AI Applications"
   desc: "Learn how multi-model AI models in the Generative AI space can be useful to streamline your operations and operate more effectively. From building better customer experiences with Large Language Models (LLM) and better personalized experiences, improved employee efficiency through language related helpers, improved search, as well as faster image and video visual generations."
   speakers:
@@ -113,11 +124,15 @@
   timeslot: 02:25 PM - 02:50 PM
   timeslot_metadata: 2023-07-18T14:25:00+08:00 - 2023-07-18T14:50:00+08:00
   title: "Jumpstart Your Career"
-  desc: "Last year, JumpStart shared about its job recommender. There has been several progress since: JumpStart launched an upgraded course search feature on MySkillsFuture, which allows users to ask more natural queries like ‘skills for lawyers’ when finding courses. Recently, JumpStart also launched CareersFinder, a feature on MyCareersFuture where users can obtain personalised occupation,  job and course recommendations, to help them plan their career. We will share the technical details underlying these recommenders. Underlying these two new features is the JumpStart platform, which comprises a set of reusable data, MLOps infrastructure, models, and AI microservices. We are just scratching the surface of what could be powered by the JumpStart platform, and JumpStart’s ambition is to become a national platform that developers across public agencies, industry partners, and research institutions can use to power jobs and skills-related recommendations."
+  desc: "Last year, JumpStart shared about its job recommender. There has been several progress since: JumpStart launched an upgraded course search feature on MySkillsFuture, which allows users to ask more natural queries like ‘skills for lawyers’ when finding courses. Recently, JumpStart also launched CareersFinder, a feature on MyCareersFuture where users can obtain personalised occupation,  job and course recommendations, to help them plan their career. We will share the technical details underlying these recommenders.<br><br>Underlying these two new features is the JumpStart platform, which comprises a set of reusable data, MLOps infrastructure, models, and AI microservices. We are just scratching the surface of what could be powered by the JumpStart platform, and JumpStart’s ambition is to become a national platform that developers across public agencies, industry partners, and research institutions can use to power jobs and skills-related recommendations. "
   speakers:
     - name: "Mr Goh Zuo Min"
       image: /assets/img/photos/goh-zuo-min.png
       title: "Product Manager, Data Science & Artificial Intelligence Division (DSAID), GovTech"
+      desc:
+    - name: "Mr Leo Li"
+      image: /assets/img/photos/blank-photo.png
+      title: "Quantitative Analyst, Data Science & Artificial Intelligence Division (DSAID), GovTech"
       desc:
 
 - type: Presentations
@@ -149,7 +164,7 @@
       image: /assets/img/photos/yap-ghim-eng.png
       title: "Director, Data Engineering, Data Science & Artificial Intelligence Division (DSAID), GovTech"
       desc:
-    - name: "Jeffrey Chai"
+    - name: "Mr Jeffrey Chai"
       image: /assets/img/photos/jeffrey-chai.png
       title: "Product Manager, Data Engineering, Data Science & Artificial Intelligence Division (DSAID), GovTech"
       desc:
@@ -175,23 +190,23 @@
     - name: "Mr Joseph Tan"
       image: /assets/img/photos/joseph-tan.png
       title: "Deputy Director, Data Science & Artificial Intelligence Division (DSAID), GovTech"
-      desc: ""
+      desc:
 
 # Product/Tech Track Talks
 - type: Product/Tech Track Talks
   timeslot: 02:00 PM - 02:20PM
-  timeslot_metadata: 2023-07-18T14:10:00+08:00 - 2023-07-18T14:30:00+08
+  timeslot_metadata: 2023-07-18T14:00:00+08:00 - 2023-07-18T14:20:00+08:00
   title: "Urban Planning in the Age of AI"
   desc: "Recent developments in AI technology present significant new opportunities to transform the way we plan our city. AI has the potential to not just improve how we work, but also our capacity to deliver more holistic, integrated evidence based plans. Successful adoption of AI requires a clear strategy to co-create with stakeholders and overcome limitations associated with the technology. This talk will cover our perspectives and considerations for the use of AI technologies in various aspects of work at URA. Join us as we share insights from on-going projects to harness NLP for feedback analytics and case retrieval, as well as explorations into LLMs and Generative AI for public engagement. We will also discuss the outlook for AI in the Urban Planning and Design sector moving forward."
   speakers:
-    - name: "Dr Alvin Chua, Senior Data Scientist, Design & Planning Lab, URA"
+    - name: "Dr Alvin Chua"
       image:  /assets/img/photos/alvin-chua.png
-      title: 
+      title: "Senior Data Scientist, Design & Planning Lab, URA"
       desc:
 
 - type: Product/Tech Track Talks
   timeslot: 02:20 PM - 02:40 PM
-  timeslot_metadata: 2023-07-18T14:10:00+08:00 - 2023-07-18T14:30:00+08:00
+  timeslot_metadata: 2023-07-18T14:20:00+08:00 - 2023-07-18T14:40:00+08:00
   title: "Towards the Next Generation of Public Service: The Evolution of Virtual Intelligent Citizen Assistant (VICA) and the Rise of AI-Assisted Citizen Services"
   desc: "In a world increasingly driven by AI, how does the public sector keep up, adapt, and even lead the change? We’ll delve into its origins of VICA, the challenges of chatbot engineering encountered along the way, and the innovative solutions used to overcome them. From the contextual customisation to each chatbot, to the experimental unified virtual assistant Alphabot, to the discovery of prompt engineering and the ground-breaking implications of OpenAI, we’ve been pushing the boundaries of Conversational AI to transform the public service. Looking ahead, we’ll discuss VICA 2 and its potential to revolutionise public services, creating a more efficient and accessible experience for millions of Singaporeans. Join us as we peek into the future of Conversational AI in public service and explore why it matters."
   speakers:
@@ -202,7 +217,7 @@
 
 - type: Product/Tech Track Talks
   timeslot: 02:40 PM - 03:00 PM
-  timeslot_metadata: 2023-07-18T14:10:00+08:00 - 2023-07-18T14:30:00+08:00
+  timeslot_metadata: 2023-07-18T14:40:00+08:00 - 2023-07-18T15:00:00+08:00
   title: "Reimagining Possibilities: Leveraging WOG Video Analytics Ecosystem to Unlock the Potential of Videos in your Digital Transformation Journey"
   desc: "Join us as we share on how the GovTech Video Analytics (VA) team helps agencies on their digital transformation journey! Taking a collaborative approach in partnership with industry partners, research institutes and academia, the team drives towards multiplying the value of video analytics across the government. Discover how the team support agencies’ video analytics adoption from ideation to operationalization through design thinking, product platforms such as Video Analytics System (VAS) and transforming agencies’ day-to-day operations."
   speakers:
@@ -217,10 +232,9 @@
 
 - type: Product/Tech Track Talks
   timeslot: 03:00 PM - 03:20 PM
-  timeslot_metadata: 2023-07-18T14:10:00+08:00 - 2023-07-18T14:30:00+08:00
+  timeslot_metadata: 2023-07-18T15:00:00+08:00 - 2023-07-18T15:20:00+08:00
   title: "Transcribe – Introducing Whisper to WOG"
-  desc: "Get ready to experience the latest innovation in speech-to-text technology! Transcribe is proud to unveil the OpenAI Whisper model, a cutting-edge addition to our platform that boasts increased accuracy and perform well even under Singlish environment. As an AI professional or business leader, you can trust that our state-of-the-art model will help you address your Speech-to-Text needs with ease and efficiency. Reach out to us for collaboration ideas or opportunities!"
-  Fun Fact: "This synopsis was generated using LaunchPad, one of GovTech's AI platform to serve public officers"
+  desc: "Get ready to experience the latest innovation in speech-to-text technology! Transcribe is proud to unveil the OpenAI Whisper model, a cutting-edge addition to our platform that boasts increased accuracy and perform well even under Singlish environment. As an AI professional or business leader, you can trust that our state-of-the-art model will help you address your Speech-to-Text needs with ease and efficiency. Reach out to us for collaboration ideas or opportunities!<br><br>[Fun Fact: This synopsis was generated using LaunchPad, one of GovTech's AI platform to serve public officers]"
   speakers:
     - name: "Ms Han Jing"
       image: /assets/img/photos/han-jing.png
@@ -229,19 +243,18 @@
 
 - type: Product/Tech Track Talks
   timeslot: 03:20 PM - 03:40 PM
-  timeslot_metadata: 2023-07-18T14:10:00+08:00 - 2023-07-18T14:30:00+08:00
+  timeslot_metadata: 2023-07-18T15:20:00+08:00 - 2023-07-18T15:40:00+08:00
   title: "Beyond Queries: The Art of Prompt Engineering"
   desc: "LLMs are unique models that require unique inputs. This session will cover how we can utilise good prompts to extend the power of LLMs beyond simple chat and queries, while also sharing best practices in structuring and maintaining prompts used in production grade applications."
-  Fun Fact: "This synopsis was generated using LaunchPad, one of GovTech's AI platform to serve public officers"
   speakers:
     - name: "Mr Pek Zhi Xuan"
       image: /assets/img/photos/zhi-xuan-pek.png
-      title: "Pek Zhi Xuan, APAC AI Pillar Lead, Microsoft"
+      title: "APAC AI Pillar Lead, Microsoft"
       desc:
 
 - type: Product/Tech Track Talks
   timeslot: 03:40 PM - 04:00 PM
-  timeslot_metadata: 2023-07-18T14:10:00+08:00 - 2023-07-18T14:30:00+08:00
+  timeslot_metadata: 2023-07-18T15:40:00+08:00 - 2023-07-18T16:00:00+08:00
   title: "Trustworthy AI: What Does it Mean and How to Evaluate and Test"
   desc: "Join me for an insightful presentation on the driving forces behind the greater need for trustworthy AI and the need to evaluate all asepcts of AI governance due to the increasing risks of foundation models and generative AI. Hear about technical methods for assessment and mitigation of AI risks and gain valuable insights into fairness, robustness, privacy and security issues. This is a must-attend event for AI enthusiasts and practitioners in Singapore who are keen to stay on top of the latest developments in AI governance. Don't miss this opportunity to stay ahead of the curve!"
   speakers:
@@ -260,7 +273,7 @@
   speakers:
     - name: "Ms Chan Li Shing"
       image: /assets/img/photos/chan-li-shing.png
-      title: "Manager, Data Science & Artificial Intelligence Division (DSAID), GovTech"
+      title: "Product Manager, Data Science & Artificial Intelligence Division (DSAID), GovTech"
       desc:
     - name: "Mr Vincent Ng"
       image: /assets/img/photos/vincent-ng.png
@@ -301,7 +314,7 @@
 
 - type: Workshops
   timeslot: 03:15 PM - 04:45 PM
-  timeslot_metadata: 2023-07-17T15:30:00+08:00 - 2023-07-17T16:45:00+08:00
+  timeslot_metadata: 2023-07-17T15:15:00+08:00 - 2023-07-17T16:45:00+08:00
   title: "[Workshop B2] Harvest Your Alpaca In Your Environment: LLMs Local Training and Hosting (Advanced For WoG Data Analysts / Data Scientists)"
   desc: "Large Learning Models (LLMs) are powerful and with game-changing capabilities. We will introduce LLMs, their use cases, strengths, and limitations. LLMs come in various sizes and some of them can be trained and hosted locally. We will discuss model selection, emphasising that size isn’t everything, and explore smaller LLMs like LLaMa, Alpaca, Vicuna, and Dolly. We will focus on demonstrating how to effectively finetune a LLM by leveraging libraries such as PEFT and LoRA with a hands-on session."
   additional_info_1: "Who should attend | Open to all"
