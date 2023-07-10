@@ -105,7 +105,7 @@
   desc: "The presentation provided an illuminating and compelling journey into the role of artificial intelligence in molding our current landscape and guiding our future path. It strongly advocated for us to recognize AI's potential, while also encouraging a responsible and advantageous integration of it into society. Further emphasized was the crucial role of ethics, transparency, and the partnership between major AI enterprises and the government."
   speakers:
     - name: "Mr Martin Chee"
-      image: /assets/img/photos/blank-photo.png
+      image: /assets/img/photos/martin-chee.png
       title: "Managing Director, AI Specialist, APAC, Google"
       desc:
 
@@ -131,8 +131,8 @@
       title: "Product Manager, Data Science & Artificial Intelligence Division (DSAID), GovTech"
       desc:
     - name: "Mr Leo Li"
-      image: /assets/img/photos/blank-photo.png
-      title: "Quantitative Analyst, Data Science & Artificial Intelligence Division (DSAID), GovTech"
+      image: /assets/img/photos/leo-li.png
+      title: "Senior Data Scientist, Data Science & Artificial Intelligence Division (DSAID), GovTech"
       desc:
 
 - type: Presentations
@@ -173,7 +173,7 @@
   timeslot: 03:40 PM - 04:05 PM
   timeslot_metadata: 2023-07-18T15:40:00+08:00 - 2023-07-18T16:05:00+08:00
   title: "Democratising Data and AI with Dolly"
-  desc: "Join us for a keynote presentation as Databricks covers the recently released Dolly large language model (LLM) - the first open source, instruction-following LLM, fine-tuned on a human-generated instruction dataset licensed for research and commercial use."
+  desc: "Join us for this presentation as Databricks covers the recently released Dolly large language model (LLM) - the first open source, instruction-following LLM, fine-tuned on a human-generated instruction dataset licensed for research and commercial use."
   speakers:
     - name: "Ms Brooke Wenig"
       image: /assets/img/photos/brooke-wenig.png
