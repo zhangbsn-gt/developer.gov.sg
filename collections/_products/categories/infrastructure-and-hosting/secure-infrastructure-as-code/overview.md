@@ -15,6 +15,8 @@ collection_group: [Singapore Government Tech Stack]
 description: SIaC provides reference templates to configure and deploy secure infrastructure onto the Singapore Government on Commercial Cloud 2.0. Find out more here!
 ---
 
+![SIaC header banner](/assets/img/SIaC-HeaderBanner-v1.png)
+
 SIaC templates serve as a reference for deploying Cloud infrastructure in a secure, compliant and automated manner. When paired with Continuous Integration/Continuous Deployment (CI/CD) tools, deployment and management of infrastructure resources can be audited and carried out systematically.
 
 Besides providing secure configuration of various managed services and tools from Cloud Service Providers (CSPs), SIaC templates are written to be modular and easily adaptable. New users can refer to detailed step-by-step guides and sample applications that come with the templates.

@@ -16,6 +16,8 @@ description: CloudSCAPE provides continuous security scans and simplifies compli
 product_homepage_links: https://cloudscape.tech.gov.sg
 ---
 
+![CloudSCAPE header banner](/assets/img/CloudSCAPE-HeaderBanner-v1.png)
+
 The Cloud Security and Compliance Automation Platform Ecosystem (CloudSCAPE) is a GovTech-developed platform that helps agencies secure Government systems deployed on the [Government on Commercial Cloud (GCC 2.0)](https://www.developer.tech.gov.sg/products/categories/infrastructure-and-hosting/government-on-commercial-cloud/overview.html){:target="_blank"} by providing guidance to meet compliance requirements, as well as automated scans to monitor and send alerts when systems do not meet the security baseline.
 
 CloudSCAPE monitors deployments on GCC 2.0 in adherence to the Singapore Government's [Infocomm Technology and Smart Systems (ICT&SS) management policy](https://www.developer.tech.gov.sg/guidelines/standards-and-best-practices/instruction-manual-for-ict-ss-management.html){:target="_blank"} and provides remediation guides to secure cloud resources.
