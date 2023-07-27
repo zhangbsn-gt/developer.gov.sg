@@ -12,6 +12,7 @@ single_level_nav: true
 description: Purple HATS is an automated testing tool that detects accessibility issues, helping developers to build more inclusive digital products.
 ---
 
+![Purple HATS  header banner](/assets/img/PurpleHATS-HeaderBanner-v5.png)
 
 Purple HATS is a customizable, automated web accessibility testing tool that allows software development teams to find and fix accessibility problems to improve the access of persons with disabilities (PWDs) to digital services.
 
