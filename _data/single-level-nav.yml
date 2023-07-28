@@ -245,6 +245,10 @@
 - name: Myinfo
   items:
     - Overview
+    - Features
+    - Getting Started
+    - Resources
+    - FAQs
 
 - name: Myinfo Business
   items:
