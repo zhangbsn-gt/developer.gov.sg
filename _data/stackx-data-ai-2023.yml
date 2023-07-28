@@ -7,10 +7,10 @@
 #  speakers:
 
 # Opening
-- type: Opening Remarks
+- type: Opening Remark
   timeslot: 09:30 AM - 09:40 AM
   timeslot_metadata: 2023-07-18T09:30:00+08:00 - 2023-07-18T09:40:00+08:00
-  title: Opening Remarks
+  title: Opening Remark
   desc: 
   speakers:
     - name: "Dr Janil Puthucheary"

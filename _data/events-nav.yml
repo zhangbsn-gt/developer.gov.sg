@@ -12,12 +12,19 @@
     - item_name: Agenda
       item_sub_item:
         - sub_item_name: All Agenda
-        - sub_item_name: Opening Remarks
+        - sub_item_name: Opening Remark
         - sub_item_name: Keynote Presentations
         - sub_item_name: Panel Discussion
         - sub_item_name: Presentations
         - sub_item_name: Product/Tech Track Talks
         - sub_item_name: Pre-event Workshops
+    - item_name: Recordings
+      item_sub_item:
+        - sub_item_name: All Recordings
+        - sub_item_name: Opening Remark
+        - sub_item_name: Keynote Presentations
+        - sub_item_name: Panel Discussion
+        - sub_item_name: Presentations
 
 - name: STACK 2022 Developer Conference
   description: With over 4,000 attendees expected to attend, we invite you to join the conversation! Send us your content proposal for what you wish to share with our attendees.

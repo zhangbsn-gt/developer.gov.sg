@@ -1,0 +1,81 @@
+# Opening
+- type: Opening Remark
+  speakers: "Dr Janil Puthucheary"
+  speakers_title: "Senior Minister of State at Ministry of Communications and Information, and Minister-in-charge of GovTech"
+  title: "Opening Remark"
+  video_id: 8MBgLMQJu9o
+
+# Keynotes
+- type: Keynotes
+  speakers: "Dr Michael Zeller"
+  speakers_title: "Head, AI Strategy & Solutions, Temasek"
+  title: "Generative AI - Quo Vadis?"
+  video_id: cSQ9dgFn-m4
+
+- type: Keynotes
+  speakers: "Mr Chang Sau Sheong"
+  speakers_title: "Deputy Chief Executive, Product and Engineering, GovTech"
+  title: "Engineering a Digital Government with AI"
+  video_id: VITF6nN8las
+
+- type: Keynotes
+  speakers: "Mr Jason See"
+  speakers_title: "Senior Director, Data Science & Artificial Intelligence Division (DSAID), GovTech"
+  title: "Enabling AI for Digital Government"
+  video_id: V4mF6UeZUGA
+
+# Panel
+- type: Panel Discussion
+  speakers: "Mr Chang Sau Sheong, Dr Michael Zeller"
+  speakers_title: "Deputy Chief Executive, Product & Engineering, GovTech| Head, AI Strategy & Solutions, Temasek"
+  title: "Pushing Possibilities and Navigating Risks With AI"
+  video_id: 90fbY4K5oNg 
+
+# Presentations
+- type: Presentations
+  speakers: "Mr Wong Ming Fai"
+  speakers_title: "Chief Technology Officer & Quality Service Manager, Singapore Tourism Board"
+  title: "AI & Data for Tourism: eXtended Reality and RecommendaEnabling AI for Digital Government"
+  video_id: jvOmNF_g7ro
+
+- type: Presentations
+  speakers: "Mr Martin Chee"
+  speakers_title: "Managing Director, AI Specialist, APAC, Google"
+  title: "The Age of AI: Building an AI Future with Google"
+  video_id: 6OtEENy-0-A
+
+- type: Presentations
+  speakers: "Mr Olivier Klein"
+  speakers_title: "Chief Technologist, Asia Pacific & Japan, Amazon Web Services"
+  title: "Accelerate Development of Generative AI Applications"
+  video_id: 4z9kZECa850
+
+- type: Presentations
+  speakers: "Mr Goh Zuo Min, Mr Leo Li"
+  speakers_title: "Product Manager, Data Science & Artificial Intelligence Division (DSAID), GovTech| Senior Data Scientist, Data Science & Artificial Intelligence Division (DSAID), GovTech"
+  title: "Jumpstart Your Career"
+  video_id: LkEwjEaHQBc
+
+- type: Presentations
+  speakers: "Dr Alvina Goh, Dr Watson Chua, Dr Li Lu"
+  speakers_title: "Director, AI Platforms, Data Science & Artificial Intelligence Division (DSAID), GovTech| Lead Data Scientist, Data Science & Artificial Intelligence Division (DSAID), GovTech| Data Scientist (II), Data Science & Artificial Intelligence Division (DSAID), GovTech"
+  title: "Enabling the Public Service with AI: GovTech’s Approach To Building A Central Text Analytics Product"
+  video_id: UnOYviJbKWM
+
+- type: Presentations
+  speakers: "Dr Yap Ghim-Eng, Mr Jeffrey Chai"
+  speakers_title: "Director, Data Engineering, Data Science & Artificial Intelligence Division (DSAID), GovTech| Product Manager, Data Engineering, Data Science & Artificial Intelligence Division (DSAID), GovTech"
+  title: "XOps - Turning Data Into A Strategic Asse"
+  video_id: AeXab0q3z5c
+
+- type: Presentations
+  speakers: "Ms Brooke Wenig"
+  speakers_title: "Director, Global Machine Learning Practice, Databricks"
+  title: "Democratising Data and AI with Dolly"
+  video_id: 2rhs_6QooQs
+
+- type: Presentations
+  speakers: "Mr Joseph Tan"
+  speakers_title: "Deputy Director, Data Science & Artificial Intelligence Division (DSAID), GovTech"
+  title: "Empowering Public Officers, Democratising AI"
+  video_id: FxShtJG6nTI
