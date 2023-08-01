@@ -44,11 +44,11 @@ In general, Software Developers can integrate and consume various API Products i
 
 Software Developers can browse the catalogue of APIs offered at the API Marketplace and discover the right APIs that aligns with their business [here](https://apiservices.iras.gov.sg/iras/devportal/product){:target="\_blank"}. The platform provides self-service facilities to create your own account and subscriptions.
 
-A Sandbox environment is also provided for Software Developers to test and validate their API integration through their software before moving to Production. For APIs that require Corppass Authentication, refer to the Corppass and Callback URL Guide [here](https://go.gov.sg/iras-corppassguide){:target="\_blank"}.
+A Sandbox environment is also provided for Software Developers to test and validate their API integration through their software before moving to Production. For APIs that require Corppass Authentication, refer to the Corppass and Callback URL Guide [here](https://go.gov.sg/iras-corppass-callback-guide){:target="\_blank"}.
 
 To gain access to IRAS API Marketplace, sign up as a developer [here](https://apiservices.iras.gov.sg/iras/devportal/user/register){:target="\_blank"}.
 
-To participate in our key API Initiatives, submit your interest [here](https://go.gov.sg/iras-api){:target="\_blank"}.
+To participate in our key API Initiatives, submit your interest [here](https://go.gov.sg/apicallback){:target="\_blank"}.
 
 ### What's Next?
 
