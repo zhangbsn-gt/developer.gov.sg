@@ -42,6 +42,8 @@ DIAB is part of the Runtime component of the [Singapore Government Tech Stack](/
 
 In summary, DIAB aims to help agencies build consistent and scalable data infrastructure.
 
+Note: As DIAB is an IaC product, knowledge of the open-source Terraform IaC tool is needed to properly utilise it.
+
 ### Key Benefits
 
 - **Ease of Use**: Reduces the technical complexity by providing easy-to-use templates for agencies to get started on their cloud data transformation journey.

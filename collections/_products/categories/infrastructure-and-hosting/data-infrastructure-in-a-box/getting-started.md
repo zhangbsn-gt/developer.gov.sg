@@ -8,6 +8,7 @@ _data: single-level-nav
 
 1. Interested agencies will have to complete the following prerequisites before access to DIAB can be granted:
    - Own a [SHIP-HATS account](https://docs.developer.tech.gov.sg/docs/ship-hats-getting-started/){:target="\_blank"}
+   - Have project team members with knowledge of Terraform, an open-source Infrastructure-as-Code (IaC) tool
    - Read and agree to the DIAB Terms of Use
    - Submit an onboarding form with details including:
      - a write-up of use case
