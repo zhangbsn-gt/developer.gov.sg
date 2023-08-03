@@ -79,3 +79,34 @@
   speakers_title: "Deputy Director, Data Science & Artificial Intelligence Division (DSAID), GovTech"
   title: "Empowering Public Officers, Democratising AI"
   video_id: FxShtJG6nTI
+
+# Product/Tech Track Talks
+- type: Product/Tech Track Talks
+  speakers: "Dr Alvin Chua"
+  speakers_title: "Senior Data Scientist, Design & Planning Lab, URA"
+  title: "Urban Planning in the Age of AI"
+  video_id: MYeE0WosdmQ
+
+- type: Product/Tech Track Talks
+  speakers: "Mr Ho Ren Sen"
+  speakers_title: "Software Engineer (I), Virtual Intelligent Citizen Assistant, GovTech"
+  title: "Towards the Next Generation of Public Service: The Evolution of Virtual Intelligent Citizen Assistant (VICA) and the Rise of AI-Assisted Citizen Services"
+  video_id: M4vpjDp46YA
+
+- type: Product/Tech Track Talks
+  speakers: "Mr Ethan Goh, Mr Henry Lim"
+  speakers_title: "Deputy Director, Video Analytics, GovTech| Lead Product Manager, Video Analytics, GovTech"
+  title: "Reimagining Possibilities: Leveraging WOG Video Analytics Ecosystem to Unlock the Potential of Videos in your Digital Transformation Journey"
+  video_id: O7uud3fxJQE
+  
+- type: Product/Tech Track Talks
+  speakers: "Ms Han Jing"
+  speakers_title: "Lead Product Manager, Artificial Intelligence Platforms, GovTech"
+  title: "Transcribe – Introducing Whisper to WOG"
+  video_id: UyZex9UUD8s
+
+- type: Product/Tech Track Talks
+  speakers: "Mr Pek Zhi Xuan"
+  speakers_title: "APAC AI Pillar Lead, Microsoft"
+  title: "Beyond Queries: The Art of Prompt Engineering"
+  video_id: daXea8aw_WI
