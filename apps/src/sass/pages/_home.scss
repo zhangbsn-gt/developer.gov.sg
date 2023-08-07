@@ -1,4 +1,4 @@
-te.card-grid-container {
+.card-grid-container {
     // Added &.stack-banner for carousel
     &.stack-banner {
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
