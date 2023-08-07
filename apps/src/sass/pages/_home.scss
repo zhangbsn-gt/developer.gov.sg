@@ -1,4 +1,4 @@
-.card-grid-container {
+te.card-grid-container {
     // Added &.stack-banner for carousel
     &.stack-banner {
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -50,6 +50,9 @@
   }
   &-whatsnew-gradient {
     background: #0061af;  
+  }
+  &-stackadvocate-gradient {
+    background: #40a594;
   }
   &-stackmeetupcloud-gradient {
     background: #f17922;
