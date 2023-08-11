@@ -1,8 +1,8 @@
 - name: What's New
   description: Discover the latest product additions to the Singapore Government Developer Portal here
   items:
-    - Data Infrastructure in a Box
     - Purple HATS
+    - Myinfo
 
 - name: Citizen-facing Products
   description: Explore the government products for providing citizens with the services they need. This includes citizen life journey, grant services, and more!
@@ -44,13 +44,14 @@
     - Analytics.gov
     - Data Infrastructure in a Box
     - enCRYPT
+    - GovText
     - Transcribe
     - VAS
     - Analytics by Design
     - Data Transformation Playbook
     - Public Sector AI Playbook
     - Data Literacy ePrimer
-    - GovText
+    - Data Engineering Initiatives Playbook
 
 - name: Product Factsheets and Case Studies
   description: Download the factsheets and case studies, and learn about Singapore's Digital Government journey and the products developed by the Singapore Government.
