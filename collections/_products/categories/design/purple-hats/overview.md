@@ -44,7 +44,7 @@ After the scan, the bot assesses the impact rating of the accessibility issues b
 The scan results are then compiled in JSON format, and an HTML report is generated. The report provides a recommendation on how these fixes should be prioritised.
 
 <figure style="text-align: center">
-  <img src="/assets/img/purple-hats-accessibility-report-new.png" width="80%" height="80%" alt="Fig 1: Sample screenshot of a Purple HATS report showing accessibility issues regarding images and links with missing alt text."/>
+  <img src="/assets/img/Fig-1-Purple-HATS-Report.png" width="85%" height="85%" alt="Fig 1: Sample screenshot of a Purple HATS report showing accessibility issues regarding images missing alt text."/>
 	  <figcaption>Fig 1: Sample screenshot of a Purple HATS report showing accessibility issues regarding images and links with missing alt text.</figcaption>
 </figure>
 
