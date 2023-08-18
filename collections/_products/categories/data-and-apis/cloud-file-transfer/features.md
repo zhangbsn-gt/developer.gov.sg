@@ -46,7 +46,7 @@ CFT can be set up quickly. Agencies are able to transfer files fast, without inc
 
 ### Summary of General Availability features
 
-CFT is currently in closed beta and the expected General Availability (GA) date is approximately in Q2 of FY 2023. 
+CFT is currently in closed beta and the expected General Availability (GA) date is approximately in Q3 of FY 2023. 
 
 - **Automation**
   - API support for backend systems

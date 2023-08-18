@@ -24,7 +24,7 @@ these steps.
 - If you decide to proceed, we will send you the   onboarding form.
 
 #### 3. Fill out the onboarding form
-- Complete the onboarding form and send it back to CFT.
+- Complete the [CFT Onboarding Form](https://go.gov.sg/cft-onboarding).
 - We will review the onboarding form, and if you are a non-GCC 2.0 AWS tenant, we will send you a CLZ (Cloud Landing Zone) implementation form.
 - We will also create a tenant account for you in the admin portal.
 

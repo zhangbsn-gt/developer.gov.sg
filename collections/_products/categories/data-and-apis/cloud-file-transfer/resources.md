@@ -16,4 +16,4 @@ To learn more about using CFT, refer to the following documentation:
 
 - [CFT REST API Reference Documentation](https://docs.developer.tech.gov.sg/docs/cft-rest-api-documentation/){:target="_blank"}
 
-
+- [CFT FAQs](https://docs.developer.tech.gov.sg/docs/cft-user-guide/faq){:target="_blank"}
