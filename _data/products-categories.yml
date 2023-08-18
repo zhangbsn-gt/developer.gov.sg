@@ -48,11 +48,11 @@
   description: Platforms and tools to protect your networks, systems and applications from digital attacks
   items:
     - Overview
-    - ACAS
     - Cloudscape
     - MASH
     - SEED
     - XCA
+    - XCG
 
 - name: Data and APIs
   description: Open APIs and platforms allowing developers to connect with data and services from the Government
