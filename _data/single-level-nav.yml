@@ -11,8 +11,9 @@
 - name: Personalise
   items:
     - Overview
+    - Features
     - Getting Started
-    - Contact Us
+    - FAQs
 
 - name: GovText
   items:
