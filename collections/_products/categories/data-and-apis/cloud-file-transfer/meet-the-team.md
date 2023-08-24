@@ -32,7 +32,7 @@ bios:
     linkedin_url: https://www.linkedin.com/in/faithang/
     
   - name: Axdy Ng
-    title: UX Designer
+    title: Full-stack Developer
     img_src: Axdy_Ng.png
     linkedin_url: https://www.linkedin.com/in/axdy
 
@@ -40,6 +40,11 @@ bios:
     title: Full-stack Developer
     img_src: Marlowe_Destua.png
     linkedin_url:  
+
+  - name: Aaron Ong
+    title: Software Engineer
+    img_src: Aaron_Ong.png
+    linkedin_url: https://www.linkedin.com/in/aaron-ongys
 
   - name: Vijayadevan Velachamy
     title: DevOps Engineer
@@ -64,5 +69,4 @@ bios:
 
 - <b>Alvin Ng</b>, Technical Lead
 - <b>Lynda Li</b>, Senior DevOps Engineer
-- <b>Aaron Ong</b>, Software Engineer
 - <b>Carlton Foo</b>, Intern, [LinkedIn](https://www.linkedin.com/in/carltonafoo/){:target="_blank"}
