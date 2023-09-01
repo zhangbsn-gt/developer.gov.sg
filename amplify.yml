@@ -10,7 +10,7 @@ frontend:
       commands:
         - bundle update --bundler
         - bundle install
-        - npm i -g npm
+        - npm i -g npm@9.8.1
         - npm ci
     build:
       commands:
