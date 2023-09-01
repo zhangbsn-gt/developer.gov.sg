@@ -71,7 +71,7 @@ Incorporation of industry standardisation and best practices for user security
 
 ### Pricing
 
-Currently, only API publishers have to pay to use APEX Cloud. Refer to [the pricing schedule for APEX Cloud on our documentation service](https://docs.developer.tech.gov.sg/docs/apex-cloud-getting-started-guide/docs/subscription){:target="_blank"} for more information.
+Currently, only API publishers have to pay to use APEX Cloud. For more information, refer to the [indicative pricing details for APEX Cloud](https://docs.developer.tech.gov.sg/docs/apex-cloud-onboarding/docs/subscription){:target="_blank"}.
 
 ### Contact Us
 

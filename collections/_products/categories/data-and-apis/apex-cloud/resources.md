@@ -11,11 +11,13 @@ redirect_from:
 
 ### Technical Documentation
 
-- [APEX Cloud user guide](https://docs.developer.tech.gov.sg/docs/apex-cloud-user-guide){:target="_blank"}
-- [APEX Cloud onboarding guide](https://docs.developer.tech.gov.sg/docs/apex-cloud-onboarding){:target="_blank"}  
-- [APEX Cloud Authentication guide](https://docs.developer.tech.gov.sg/docs/apex-cloud-authentication){:target="_blank"}
-- [APEX Cloud troubleshooting guide](https://docs.developer.tech.gov.sg/docs/apex-cloud-troubleshooting-guide){:target="_blank"} 
+- [APEX Cloud Onboarding Guide](https://docs.developer.tech.gov.sg/docs/apex-cloud-onboarding){:target="_blank"} 
+- [APEX Cloud User Guide](https://docs.developer.tech.gov.sg/docs/apex-cloud-user-guide){:target="_blank"} 
+- [APEX Cloud Authentication Guide](https://docs.developer.tech.gov.sg/docs/apex-cloud-authentication){:target="_blank"}
+- [APEX Cloud Troubleshooting Guide](https://docs.developer.tech.gov.sg/docs/apex-cloud-troubleshooting-guide){:target="_blank"} 
+- [APEX Cloud Notices](https://docs.developer.tech.gov.sg/docs/apex-cloud-notices/)
+- [Complete list of available APEX Cloud Documenation](https://docs.developer.tech.gov.sg/docs?product=APEX%20Cloud){:target="_blank"} 
 
 ### Media Coverage
 
-- [Govinsider: Hear from lead product manager of Singapore’s whole-of-government API management solution at GovInsider’s upcoming panel](https://govinsider.asia/intl-en/article/hear-from-lead-product-manager-of-singapores-whole-of-government-api-management-solution-at-govinsiders-upcoming-panel){:target="_blank"}
+- [GovInsider: Hear from lead product manager of Singapore’s whole-of-government API management solution at GovInsider’s upcoming panel](https://govinsider.asia/intl-en/article/hear-from-lead-product-manager-of-singapores-whole-of-government-api-management-solution-at-govinsiders-upcoming-panel){:target="_blank"}
